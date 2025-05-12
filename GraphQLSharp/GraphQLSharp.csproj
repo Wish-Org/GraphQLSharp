@@ -5,7 +5,7 @@
 	  <PackageProjectUrl>https://github.com/Wish-Org/GraphQLSharp</PackageProjectUrl>
 	  <RepositoryUrl>https://github.com/Wish-Org/GraphQLSharp</RepositoryUrl>
 	  <Description>.NET utilities for GraphQL</Description>
-	  <Version>2.0.0</Version>
+	  <Version>2.1.0</Version>
 	  <PackageTags>graphql types classes schema generator strongly typed</PackageTags>
   </PropertyGroup>
 
