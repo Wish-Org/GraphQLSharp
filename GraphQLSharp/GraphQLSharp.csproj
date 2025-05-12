@@ -1,13 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <Authors>Wish Org</Authors>
-	  <Company>Wish Org</Company>
-	  <Product></Product>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	  <PackageProjectUrl>https://github.com/Wish-Org/GraphQLSharp</PackageProjectUrl>
 	  <RepositoryUrl>https://github.com/Wish-Org/GraphQLSharp</RepositoryUrl>
-	  <Description>Auto-generate c# types by using GraphQL schema introspection</Description>
+	  <Description>.NET utilities for GraphQL</Description>
 	  <Version>2.0.0</Version>
 	  <PackageTags>graphql types classes schema generator strongly typed</PackageTags>
   </PropertyGroup>

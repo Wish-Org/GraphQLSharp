@@ -40,7 +40,7 @@ public class GraphQLSharp_Tests
             EnumMembersAsString = true
         };
 
-        var generator = new GraphQLSharp();
+        var generator = new GraphQLTypeGenerator();
         var shopifyDoc = JsonDocument.Parse(File.OpenRead(@"./shopify.json"));
         var code = generator.GenerateTypes(options, shopifyDoc);
         File.WriteAllText("../../../shopify.cs", code);
@@ -68,11 +68,10 @@ public class GraphQLSharp_Tests
                     { "TimeZone", "string" },
                     { "Duration", "string" },
                     { "Cursor", "string" },
-                },
-            EnumMembersAsString = false
+                }
         };
 
-        var generator = new GraphQLSharp();
+        var generator = new GraphQLTypeGenerator();
         var shopifyDoc = JsonDocument.Parse(File.OpenRead(@"./square.json"));
         var code = generator.GenerateTypes(options, shopifyDoc);
         File.WriteAllText("../../../square.cs", code);
