@@ -1,6 +1,6 @@
 namespace GraphQLSharp;
 
-public class GraphQLSharpOptions
+public class GraphQLTypeGeneratorOptions
 {
     /// <summary>
     /// The namespace to use for the generated types.

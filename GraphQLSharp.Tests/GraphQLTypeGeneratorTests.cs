@@ -10,7 +10,7 @@ public class GraphQLSharp_Tests
     [TestMethod]
     public void GenerateShopifyTypes()
     {
-        var options = new GraphQLSharpOptions
+        var options = new GraphQLTypeGeneratorOptions
         {
             Namespace = "shopify",
             ScalarNameTypeToTypeName = new Dictionary<string, string>
@@ -49,7 +49,7 @@ public class GraphQLSharp_Tests
     [TestMethod]
     public void GenerateSquareTypes()
     {
-        var options = new GraphQLSharpOptions
+        var options = new GraphQLTypeGeneratorOptions
         {
             Namespace = "square",
             ScalarNameTypeToTypeName = new Dictionary<string, string>

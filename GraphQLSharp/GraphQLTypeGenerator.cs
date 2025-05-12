@@ -213,13 +213,13 @@ public class GraphQLTypeGenerator
             }
             """;
 
-    public async Task<string> GenerateTypesAsync(GraphQLSharpOptions options, SendGraphQLQueryAsync sendQuery)
+    public async Task<string> GenerateTypesAsync(GraphQLTypeGeneratorOptions options, SendGraphQLQueryAsync sendQuery)
     {
         var response = await sendQuery(INTROSPECTION_QUERY);
         return GenerateTypes(options, response);
     }
 
-    public string GenerateTypes(GraphQLSharpOptions options, JsonDocument introspectionQueryResponse)
+    public string GenerateTypes(GraphQLTypeGeneratorOptions options, JsonDocument introspectionQueryResponse)
     {
         // Get the "data.__schema" element or "__schema" element if the "data" property doesn't exist
         var schemaElt = introspectionQueryResponse.RootElement.TryGetProperty("data", out var dataElt) ?
@@ -257,7 +257,7 @@ public class GraphQLTypeGenerator
         return "#nullable enable\r\n" + formattedCode;
     }
 
-    private StringBuilder GenerateType(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLSharpOptions options, ILookup<string, GraphQLType> objectTypeNameToUnionTypes)
+    private StringBuilder GenerateType(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options, ILookup<string, GraphQLType> objectTypeNameToUnionTypes)
     {
         return type.kind switch
         {
@@ -270,7 +270,7 @@ public class GraphQLTypeGenerator
         };
     }
 
-    private StringBuilder GenerateUnion(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLSharpOptions options)
+    private StringBuilder GenerateUnion(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options)
     {
         var str = new StringBuilder()
                         .AppendLine(GenerateDescriptionComment(type.description))
@@ -309,7 +309,7 @@ public class GraphQLTypeGenerator
         return str;
     }
 
-    private StringBuilder GenerateInterface(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLSharpOptions options)
+    private StringBuilder GenerateInterface(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options)
     {
         var str = new StringBuilder()
                         .AppendLine(GenerateDescriptionComment(type.description))
@@ -350,7 +350,7 @@ public class GraphQLTypeGenerator
     }
 
 
-    private StringBuilder GenerateClass(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLSharpOptions options, ILookup<string, GraphQLType> objectTypeNameToUnionTypes)
+    private StringBuilder GenerateClass(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options, ILookup<string, GraphQLType> objectTypeNameToUnionTypes)
     {
         string className = GenerateTypeName(type, options);
         var str = new StringBuilder()
@@ -407,7 +407,7 @@ public class GraphQLTypeGenerator
         return str;
     }
 
-    private StringBuilder GenerateField(GraphQLType containingType, GraphQLField f, GraphQLSharpOptions options)
+    private StringBuilder GenerateField(GraphQLType containingType, GraphQLField f, GraphQLTypeGeneratorOptions options)
     {
         var str = new StringBuilder()
                         .AppendLine(GenerateDescriptionComment(f.description));
@@ -418,14 +418,14 @@ public class GraphQLTypeGenerator
         return str;
     }
 
-    private bool TryGetTypeNameOverride(GraphQLType containingType, string fieldName, GraphQLSharpOptions options, out string typeName)
+    private bool TryGetTypeNameOverride(GraphQLType containingType, string fieldName, GraphQLTypeGeneratorOptions options, out string typeName)
     {
         typeName = null;
         return containingType != null && options.GraphQLTypeToTypeNameOverride?.TryGetValue((containingType.name, fieldName), out typeName) == true;
     }
 
     // fieldName and containingType are used to get the type name override and only set in the context of generating a field
-    private string GenerateTypeName(GraphQLType type, GraphQLSharpOptions options, string fieldName = null, GraphQLType containingType = null)
+    private string GenerateTypeName(GraphQLType type, GraphQLTypeGeneratorOptions options, string fieldName = null, GraphQLType containingType = null)
     {
         if (type.kind == GraphQLTypeKind.ENUM)
         {
@@ -448,7 +448,7 @@ public class GraphQLTypeGenerator
                                                             (type.kind == GraphQLTypeKind.SCALAR ? this.GetScalarTypeName(fieldName, type.name, options, containingType) : type.name);
     }
 
-    private string GetScalarTypeName(string fieldName, string typeName, GraphQLSharpOptions options, GraphQLType containingType)
+    private string GetScalarTypeName(string fieldName, string typeName, GraphQLTypeGeneratorOptions options, GraphQLType containingType)
     {
         if (TryGetTypeNameOverride(containingType, fieldName, options, out var overrideTypeName))
             return overrideTypeName;
