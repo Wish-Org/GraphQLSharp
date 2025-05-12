@@ -1,0 +1,1 @@
+- `GraphQLTypeGenerator` can be used to generate .NET types from a GraphQL endpoint. It works by issuing an introspection query and generate a `.cs` file.
