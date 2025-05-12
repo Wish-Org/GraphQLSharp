@@ -1,7 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using shopify;
-using System.Collections.Generic;
-using System.IO;
 using System.Text.Json;
 
 namespace GraphQLSharp.Tests;
