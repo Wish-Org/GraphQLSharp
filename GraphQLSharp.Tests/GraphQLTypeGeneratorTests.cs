@@ -1,7 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using shopify;
-using System.Collections.Generic;
-using System.IO;
 using System.Text.Json;
 
 namespace GraphQLSharp.Tests;
@@ -42,7 +40,7 @@ public class GraphQLSharp_Tests
             EnumMembersAsString = true
         };
 
-        var generator = new GraphQLSharp();
+        var generator = new GraphQLTypeGenerator();
         var shopifyDoc = JsonDocument.Parse(File.OpenRead(@"./shopify.json"));
         var code = generator.GenerateTypes(options, shopifyDoc);
         File.WriteAllText("../../../shopify.cs", code);
@@ -74,7 +72,7 @@ public class GraphQLSharp_Tests
             EnumMembersAsString = false
         };
 
-        var generator = new GraphQLSharp();
+        var generator = new GraphQLTypeGenerator();
         var shopifyDoc = JsonDocument.Parse(File.OpenRead(@"./square.json"));
         var code = generator.GenerateTypes(options, shopifyDoc);
         File.WriteAllText("../../../square.cs", code);

@@ -1,17 +1,13 @@
 ﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace GraphQLSharp;
 
 public delegate Task<JsonDocument> SendGraphQLQueryAsync(string graphqlQuery);
 
-public class GraphQLSharp
+public class GraphQLTypeGenerator
 {
     //we go quite deep because ofType is used for non-nullable and list
     //example: orders: [[String!]!]! would require 5 levels deep
