@@ -68,8 +68,7 @@ public class GraphQLSharp_Tests
                     { "TimeZone", "string" },
                     { "Duration", "string" },
                     { "Cursor", "string" },
-                },
-            EnumMembersAsString = false
+                }
         };
 
         var generator = new GraphQLTypeGenerator();

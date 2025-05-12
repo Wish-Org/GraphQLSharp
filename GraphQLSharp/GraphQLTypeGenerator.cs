@@ -421,7 +421,7 @@ public class GraphQLTypeGenerator
     private bool TryGetTypeNameOverride(GraphQLType containingType, string fieldName, GraphQLSharpOptions options, out string typeName)
     {
         typeName = null;
-        return containingType != null && options.GraphQLTypeToTypeNameOverride.TryGetValue((containingType.name, fieldName), out typeName);
+        return containingType != null && options.GraphQLTypeToTypeNameOverride?.TryGetValue((containingType.name, fieldName), out typeName) == true;
     }
 
     // fieldName and containingType are used to get the type name override and only set in the context of generating a field
@@ -453,7 +453,7 @@ public class GraphQLTypeGenerator
         if (TryGetTypeNameOverride(containingType, fieldName, options, out var overrideTypeName))
             return overrideTypeName;
 
-        if (options.ScalarNameTypeToTypeName.TryGetValue(typeName, out var customTypeName))
+        if (options.ScalarNameTypeToTypeName?.TryGetValue(typeName, out var customTypeName) == true)
             return customTypeName;
 
         if (_builtInScalarNameToTypeName.TryGetValue(typeName, out var builtInTypeName))
