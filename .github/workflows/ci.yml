@@ -25,6 +25,9 @@ jobs:
             - name: Build
               run: dotnet build -c Release --no-restore
 
+            - name: Test
+              run: dotnet test --no-restore --verbosity normal
+
             - name: Publish to nuget
               if: github.event_name == 'workflow_dispatch' # Only runs when manually triggered for deployment
               env:
