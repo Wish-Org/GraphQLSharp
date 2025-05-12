@@ -30,6 +30,4 @@ jobs:
 
             - name: Publish to nuget
               if: github.event_name == 'workflow_dispatch' # Only runs when manually triggered for deployment
-              env:
-                  NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
               run: dotnet nuget push GraphQLSharp/bin/Release/*.nupkg  -s https://api.nuget.org/v3/index.json --skip-duplicate -k $NUGET_API_KEY
