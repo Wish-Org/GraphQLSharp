@@ -1,0 +1,27 @@
+name: Build Test Publish
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v3
+    - name: Install dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+    - name: Publish to nuget
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      env:
+        NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+      run: dotnet nuget push GraphQLSharp/bin/Release/*.nupkg  -s https://api.nuget.org/v3/index.json --skip-duplicate -k $NUGET_API_KEY
