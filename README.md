@@ -1,3 +1,6 @@
+![Build](https://github.com/Wish-Org/GraphQLSharp/actions/workflows/ci.yml/badge.svg)
+[![NuGet](https://img.shields.io/nuget/v/GraphQLSharp.svg)](https://www.nuget.org/packages/GraphQLSharp)
+
 Use `GraphQLTypeGenerator` to generate .NET types from a GraphQL endpoint.
 
 Example:
