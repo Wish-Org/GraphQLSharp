@@ -478,6 +478,19 @@ public class GraphQLTypeGenerator
 
         str.AppendLine("}");
 
+        // Generate Enum string values
+        str.AppendLine();
+        str.AppendLine($"public static class {type.name}StringValues")
+            .AppendLine("{");
+        type.enumValues
+            .ForEach(v =>
+            {
+                if (v.isDeprecated)
+                    str.AppendLine($"[Obsolete({SymbolDisplay.FormatLiteral(v.deprecationReason.TrimEnd(), true)})]");
+                str.AppendLine($"public const string {EscapeCSharpKeyword(v.name)} = \"{EscapeCSharpKeyword(v.name)}\";");
+            });
+        str.AppendLine("}");
+
         return str;
     }
 
