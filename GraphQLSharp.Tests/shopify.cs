@@ -5,117 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using GraphQLSharp;
 
 namespace shopify
 {
-    public static class Serializer
-    {
-        public static readonly JsonSerializerOptions Options = new JsonSerializerOptions
-        {
-            NumberHandling = JsonNumberHandling.AllowReadingFromString,
-            Converters =
-            {
-                new JsonStringEnumConverter()
-            },
-            DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
-        };
-        public static string Serialize(object obj)
-        {
-            return JsonSerializer.Serialize(obj, obj.GetType(), Options);
-        }
-
-        public static object? Deserialize(string json, Type type)
-        {
-            return JsonSerializer.Deserialize(json, type, Options);
-        }
-
-        public static T? Deserialize<T>(string json)
-            where T : class
-        {
-            return JsonSerializer.Deserialize<T>(json, Options);
-        }
-    }
-
-    public interface IGraphQLObject
-    {
-    }
-
-    public abstract class GraphQLObject<TSelf> : IGraphQLObject where TSelf : GraphQLObject<TSelf>
-    {
-        public static TSelf? FromJson(string json) => Serializer.Deserialize<TSelf>(json);
-    }
-
-    public static class GraphQLObjectExtensions
-    {
-        public static string ToJson(this IGraphQLObject o) => Serializer.Serialize(o);
-    }
-
-    public interface IEdge
-    {
-        string? cursor { get; set; }
-
-        object? node { get; set; }
-    }
-
-    public interface IEdge<TNode> : IEdge
-    {
-        object? IEdge.node { get => this.node; set => this.node = (TNode? )value; }
-        new TNode? node { get; set; }
-    }
-
-    public interface IConnection
-    {
-        PageInfo? pageInfo { get; set; }
-
-        Type GetNodeType();
-        IEnumerable? GetNodes();
-    }
-
-    public interface IConnectionWithNodes : IConnection
-    {
-        IEnumerable? nodes { get; set; }
-
-        IEnumerable? IConnection.GetNodes() => this.nodes;
-    }
-
-    public interface IConnectionWithNodes<TNode> : IConnectionWithNodes
-    {
-        IEnumerable? IConnectionWithNodes.nodes { get => this.nodes; set => this.nodes = (IEnumerable<TNode>? )value; }
-        new IEnumerable<TNode>? nodes { get; set; }
-
-        Type IConnection.GetNodeType() => typeof(TNode);
-    }
-
-    public interface IConnectionWithEdges : IConnection
-    {
-        IEnumerable<IEdge>? edges { get; set; }
-
-        Type GetEdgeType();
-        IEnumerable? IConnection.GetNodes() => this.edges?.Select(e => e.node);
-    }
-
-    public interface IConnectionWithEdges<TNode> : IConnectionWithEdges
-    {
-        IEnumerable<IEdge>? IConnectionWithEdges.edges { get => this.edges; set => this.edges = (IEnumerable<IEdge<TNode>>? )value; }
-        new IEnumerable<IEdge<TNode>>? edges { get; set; }
-
-        Type IConnection.GetNodeType() => typeof(TNode);
-    }
-
-    public interface IConnectionWithEdges<TEdge, TNode> : IConnectionWithEdges<TNode> where TEdge : IEdge<TNode>
-    {
-        IEnumerable<IEdge<TNode>>? IConnectionWithEdges<TNode>.edges { get => this.edges?.Cast<IEdge<TNode>>(); set => this.edges = value?.Cast<TEdge>(); }
-        new IEnumerable<TEdge>? edges { get; set; }
-
-        Type IConnectionWithEdges.GetEdgeType() => typeof(TEdge);
-    }
-
-    public interface IConnectionWithNodesAndEdges<TEdge, TNode> : IConnectionWithEdges<TEdge, TNode>, IConnectionWithNodes<TNode> where TEdge : IEdge<TNode>
-    {
-        Type IConnection.GetNodeType() => typeof(TNode);
-        IEnumerable? IConnection.GetNodes() => this.nodes ?? this.edges?.Select(e => e.node);
-    }
-
     ///<summary>
     ///A checkout that was abandoned by the customer.
     ///</summary>
@@ -45660,31 +45553,6 @@ namespace shopify
         ///The item at the end of PageEdge.
         ///</summary>
         public Page? node { get; set; }
-    }
-
-    ///<summary>
-    ///Returns information about pagination in a connection, in accordance with the
-    ///[Relay specification](https://relay.dev/graphql/connections.htm#sec-undefined.PageInfo).
-    ///For more information, please read our [GraphQL Pagination Usage Guide](https://shopify.dev/api/usage/pagination-graphql).
-    ///</summary>
-    public class PageInfo : GraphQLObject<PageInfo>
-    {
-        ///<summary>
-        ///The cursor corresponding to the last node in edges.
-        ///</summary>
-        public string? endCursor { get; set; }
-        ///<summary>
-        ///Whether there are more pages to fetch following the current page.
-        ///</summary>
-        public bool? hasNextPage { get; set; }
-        ///<summary>
-        ///Whether there are any pages prior to the current page.
-        ///</summary>
-        public bool? hasPreviousPage { get; set; }
-        ///<summary>
-        ///The cursor corresponding to the first node in edges.
-        ///</summary>
-        public string? startCursor { get; set; }
     }
 
     ///<summary>

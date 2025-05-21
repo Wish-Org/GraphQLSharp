@@ -96,123 +96,6 @@ public class GraphQLTypeGenerator
 
     private const string IGraphQLObjectInterfaceName = "IGraphQLObject";
 
-    private const string STATIC_PREFACE = $$"""
-            public static class Serializer
-            {
-                public static readonly JsonSerializerOptions Options = new JsonSerializerOptions
-                {
-                    NumberHandling = JsonNumberHandling.AllowReadingFromString,
-                    Converters = { new JsonStringEnumConverter() },
-                    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
-                };
-
-                public static string Serialize(object obj)
-                {
-                    return JsonSerializer.Serialize(obj, obj.GetType(), Options);
-                }
-
-                public static object? Deserialize(string json, Type type)
-                {
-                    return JsonSerializer.Deserialize(json, type, Options);
-                }
-
-                public static T? Deserialize<T>(string json) where T : class
-                {
-                    return JsonSerializer.Deserialize<T>(json, Options);
-                }
-            }
-
-            public interface {{IGraphQLObjectInterfaceName}}
-            {
-            }
-
-            public abstract class GraphQLObject<TSelf> : {{IGraphQLObjectInterfaceName}} where TSelf : GraphQLObject<TSelf>
-            {
-                public static TSelf? FromJson(string json) => Serializer.Deserialize<TSelf>(json);
-            }
-
-            public static class GraphQLObjectExtensions
-            {
-                public static string ToJson(this {{IGraphQLObjectInterfaceName}} o) => Serializer.Serialize(o);
-            }
-
-            public interface IEdge
-            {
-                string? cursor { get; set; }
-
-                object? node { get; set; }
-            }
-
-            public interface IEdge<TNode> : IEdge
-            {
-                object? IEdge.node
-                {
-                    get => this.node;
-                    set => this.node = (TNode?)value;
-                }
-                new TNode? node { get; set; }
-            }
-
-            public interface IConnection
-            {
-                PageInfo? pageInfo { get; set; }
-                Type GetNodeType();
-                IEnumerable? GetNodes();
-            }
-
-            public interface IConnectionWithNodes : IConnection
-            {
-                IEnumerable? nodes { get; set; }
-                IEnumerable? IConnection.GetNodes() => this.nodes;
-            }
-
-            public interface IConnectionWithNodes<TNode> : IConnectionWithNodes
-            {
-                IEnumerable? IConnectionWithNodes.nodes
-                {
-                    get => this.nodes;
-                    set => this.nodes = (IEnumerable<TNode>?)value;
-                }
-                new IEnumerable<TNode>? nodes { get; set; }
-                Type IConnection.GetNodeType() => typeof(TNode);
-            }
-
-            public interface IConnectionWithEdges : IConnection
-            {
-                IEnumerable<IEdge>? edges { get; set; }
-                Type GetEdgeType();
-                IEnumerable? IConnection.GetNodes() => this.edges?.Select(e => e.node);
-            }
-
-            public interface IConnectionWithEdges<TNode> : IConnectionWithEdges
-            {
-                IEnumerable<IEdge>? IConnectionWithEdges.edges
-                {
-                    get => this.edges;
-                    set => this.edges = (IEnumerable<IEdge<TNode>>?)value;
-                }
-                new IEnumerable<IEdge<TNode>>? edges { get; set; }
-                Type IConnection.GetNodeType() => typeof(TNode);
-            }
-
-            public interface IConnectionWithEdges<TEdge, TNode> : IConnectionWithEdges<TNode> where TEdge : IEdge<TNode>
-            {
-                IEnumerable<IEdge<TNode>>? IConnectionWithEdges<TNode>.edges
-                {
-                    get => this.edges?.Cast<IEdge<TNode>>();
-                    set => this.edges = value?.Cast<TEdge>();
-                }
-                new IEnumerable<TEdge>? edges { get; set; }
-                Type IConnectionWithEdges.GetEdgeType() => typeof(TEdge);
-            }
-
-            public interface IConnectionWithNodesAndEdges<TEdge, TNode> : IConnectionWithEdges<TEdge, TNode>, IConnectionWithNodes<TNode> where TEdge : IEdge<TNode>
-            {
-                Type IConnection.GetNodeType() => typeof(TNode);
-                IEnumerable? IConnection.GetNodes() => this.nodes ?? this.edges?.Select(e => e.node);
-            }
-            """;
-
     public async Task<string> GenerateTypesAsync(GraphQLTypeGeneratorOptions options, SendGraphQLQueryAsync sendQuery)
     {
         var response = await sendQuery(INTROSPECTION_QUERY);
@@ -235,6 +118,7 @@ public class GraphQLTypeGenerator
                     .AppendLine("using System.Linq;")
                     .AppendLine("using System.Text.Json;")
                     .AppendLine("using System.Text.Json.Serialization;")
+                    .AppendLine("using GraphQLSharp;")
                     .AppendLine($"namespace {options.Namespace} {{");
 
         var objectTypeNameToUnionTypes = allTypes.Where(t => t.kind == GraphQLTypeKind.UNION)
@@ -242,8 +126,6 @@ public class GraphQLTypeGenerator
                                                   .ToLookup(i => i.tObject.name, i => i.tUnion);
 
         var typeNameToType = allTypes.ToDictionary(t => t.name);
-
-        str.AppendLine(STATIC_PREFACE);
 
         allTypes.Select(t => GenerateType(t, typeNameToType, options, objectTypeNameToUnionTypes))
                 .ForEach(strType => str.Append(strType).AppendLine());
@@ -353,6 +235,10 @@ public class GraphQLTypeGenerator
     private StringBuilder GenerateClass(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options, ILookup<string, GraphQLType> objectTypeNameToUnionTypes)
     {
         string className = GenerateTypeName(type, options);
+
+        if (className == "ShopInfo")
+            return new StringBuilder();
+
         var str = new StringBuilder()
                         .AppendLine(GenerateDescriptionComment(type.description))
                         .Append($"public class {className} : GraphQLObject<{className}>");
