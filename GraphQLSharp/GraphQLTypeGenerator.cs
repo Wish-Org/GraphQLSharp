@@ -94,7 +94,6 @@ public class GraphQLTypeGenerator
                 { "ID", "string" },
             };
 
-    private const string IGraphQLObjectInterfaceName = "IGraphQLObject";
 
     public async Task<string> GenerateTypesAsync(GraphQLTypeGeneratorOptions options, SendGraphQLQueryAsync sendQuery)
     {
@@ -166,7 +165,7 @@ public class GraphQLTypeGenerator
             str.AppendLine($"[JsonDerivedType(typeof({GenerateTypeName(t, options)}), typeDiscriminator: \"{t.name}\")]");
         }
 
-        str.AppendLine($"public interface {GenerateTypeName(type, options)} : {IGraphQLObjectInterfaceName}");
+        str.AppendLine($"public interface {GenerateTypeName(type, options)} : {nameof(IGraphQLObject)}");
 
         str.AppendLine("{");
 
@@ -205,7 +204,7 @@ public class GraphQLTypeGenerator
             str.AppendLine($"[JsonDerivedType(typeof({GenerateTypeName(t, options)}), typeDiscriminator: \"{t.name}\")]");
         }
 
-        str.AppendLine($"public interface {GenerateTypeName(type, options)} : {IGraphQLObjectInterfaceName}");
+        str.AppendLine($"public interface {GenerateTypeName(type, options)} : {nameof(IGraphQLObject)}");
 
         var interfaces = type.interfaces;
         if (interfaces.Any())
