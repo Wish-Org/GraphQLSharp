@@ -291,12 +291,12 @@ namespace shopify
 
     public static class AbandonedCheckoutSortKeysStringValues
     {
-        public const string CHECKOUT_ID = "CHECKOUT_ID";
-        public const string CREATED_AT = "CREATED_AT";
-        public const string CUSTOMER_NAME = "CUSTOMER_NAME";
-        public const string TOTAL_PRICE = "TOTAL_PRICE";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CHECKOUT_ID = @"CHECKOUT_ID";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string CUSTOMER_NAME = @"CUSTOMER_NAME";
+        public const string TOTAL_PRICE = @"TOTAL_PRICE";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -431,9 +431,9 @@ namespace shopify
 
     public static class AbandonmentAbandonmentTypeStringValues
     {
-        public const string BROWSE = "BROWSE";
-        public const string CART = "CART";
-        public const string CHECKOUT = "CHECKOUT";
+        public const string BROWSE = @"BROWSE";
+        public const string CART = @"CART";
+        public const string CHECKOUT = @"CHECKOUT";
     }
 
     ///<summary>
@@ -457,9 +457,9 @@ namespace shopify
 
     public static class AbandonmentDeliveryStateStringValues
     {
-        public const string NOT_SENT = "NOT_SENT";
-        public const string SENT = "SENT";
-        public const string SCHEDULED = "SCHEDULED";
+        public const string NOT_SENT = @"NOT_SENT";
+        public const string SENT = @"SENT";
+        public const string SCHEDULED = @"SCHEDULED";
     }
 
     ///<summary>
@@ -483,9 +483,9 @@ namespace shopify
 
     public static class AbandonmentEmailStateStringValues
     {
-        public const string NOT_SENT = "NOT_SENT";
-        public const string SENT = "SENT";
-        public const string SCHEDULED = "SCHEDULED";
+        public const string NOT_SENT = @"NOT_SENT";
+        public const string SENT = @"SENT";
+        public const string SCHEDULED = @"SCHEDULED";
     }
 
     ///<summary>
@@ -535,7 +535,7 @@ namespace shopify
 
     public static class AbandonmentEmailStateUpdateUserErrorCodeStringValues
     {
-        public const string ABANDONMENT_NOT_FOUND = "ABANDONMENT_NOT_FOUND";
+        public const string ABANDONMENT_NOT_FOUND = @"ABANDONMENT_NOT_FOUND";
     }
 
     ///<summary>
@@ -593,9 +593,9 @@ namespace shopify
 
     public static class AbandonmentUpdateActivitiesDeliveryStatusesUserErrorCodeStringValues
     {
-        public const string ABANDONMENT_NOT_FOUND = "ABANDONMENT_NOT_FOUND";
-        public const string MARKETING_ACTIVITY_NOT_FOUND = "MARKETING_ACTIVITY_NOT_FOUND";
-        public const string DELIVERY_STATUS_INFO_NOT_FOUND = "DELIVERY_STATUS_INFO_NOT_FOUND";
+        public const string ABANDONMENT_NOT_FOUND = @"ABANDONMENT_NOT_FOUND";
+        public const string MARKETING_ACTIVITY_NOT_FOUND = @"MARKETING_ACTIVITY_NOT_FOUND";
+        public const string DELIVERY_STATUS_INFO_NOT_FOUND = @"DELIVERY_STATUS_INFO_NOT_FOUND";
     }
 
     ///<summary>
@@ -654,14 +654,14 @@ namespace shopify
 
     public static class AccountTypeStringValues
     {
-        public const string REGULAR = "REGULAR";
-        public const string RESTRICTED = "RESTRICTED";
-        public const string INVITED = "INVITED";
-        public const string REQUESTED = "REQUESTED";
-        public const string COLLABORATOR = "COLLABORATOR";
-        public const string COLLABORATOR_TEAM_MEMBER = "COLLABORATOR_TEAM_MEMBER";
-        public const string SAML = "SAML";
-        public const string INVITED_STORE_OWNER = "INVITED_STORE_OWNER";
+        public const string REGULAR = @"REGULAR";
+        public const string RESTRICTED = @"RESTRICTED";
+        public const string INVITED = @"INVITED";
+        public const string REQUESTED = @"REQUESTED";
+        public const string COLLABORATOR = @"COLLABORATOR";
+        public const string COLLABORATOR_TEAM_MEMBER = @"COLLABORATOR_TEAM_MEMBER";
+        public const string SAML = @"SAML";
+        public const string INVITED_STORE_OWNER = @"INVITED_STORE_OWNER";
     }
 
     ///<summary>
@@ -822,9 +822,9 @@ namespace shopify
 
     public static class AdjustmentsSortKeysStringValues
     {
-        public const string TIME = "TIME";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string TIME = @"TIME";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -1178,10 +1178,10 @@ namespace shopify
 
     public static class AppDeveloperTypeStringValues
     {
-        public const string SHOPIFY = "SHOPIFY";
-        public const string PARTNER = "PARTNER";
-        public const string MERCHANT = "MERCHANT";
-        public const string UNKNOWN = "UNKNOWN";
+        public const string SHOPIFY = @"SHOPIFY";
+        public const string PARTNER = @"PARTNER";
+        public const string MERCHANT = @"MERCHANT";
+        public const string UNKNOWN = @"UNKNOWN";
     }
 
     ///<summary>
@@ -1371,8 +1371,8 @@ namespace shopify
 
     public static class AppInstallationCategoryStringValues
     {
-        public const string CHANNEL = "CHANNEL";
-        public const string POS_EMBEDDED = "POS_EMBEDDED";
+        public const string CHANNEL = @"CHANNEL";
+        public const string POS_EMBEDDED = @"POS_EMBEDDED";
     }
 
     ///<summary>
@@ -1420,8 +1420,8 @@ namespace shopify
 
     public static class AppInstallationPrivacyStringValues
     {
-        public const string PUBLIC = "PUBLIC";
-        public const string PRIVATE = "PRIVATE";
+        public const string PUBLIC = @"PUBLIC";
+        public const string PRIVATE = @"PRIVATE";
     }
 
     ///<summary>
@@ -1450,10 +1450,10 @@ namespace shopify
 
     public static class AppInstallationSortKeysStringValues
     {
-        public const string INSTALLED_AT = "INSTALLED_AT";
-        public const string APP_TITLE = "APP_TITLE";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string INSTALLED_AT = @"INSTALLED_AT";
+        public const string APP_TITLE = @"APP_TITLE";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -1501,8 +1501,8 @@ namespace shopify
 
     public static class AppPricingIntervalStringValues
     {
-        public const string ANNUAL = "ANNUAL";
-        public const string EVERY_30_DAYS = "EVERY_30_DAYS";
+        public const string ANNUAL = @"ANNUAL";
+        public const string EVERY_30_DAYS = @"EVERY_30_DAYS";
     }
 
     ///<summary>
@@ -1530,10 +1530,10 @@ namespace shopify
 
     public static class AppPublicCategoryStringValues
     {
-        public const string PRIVATE = "PRIVATE";
-        public const string PUBLIC = "PUBLIC";
-        public const string CUSTOM = "CUSTOM";
-        public const string OTHER = "OTHER";
+        public const string PRIVATE = @"PRIVATE";
+        public const string PUBLIC = @"PUBLIC";
+        public const string CUSTOM = @"CUSTOM";
+        public const string OTHER = @"OTHER";
     }
 
     ///<summary>
@@ -1692,11 +1692,11 @@ namespace shopify
     public static class AppPurchaseStatusStringValues
     {
         [Obsolete("As of API version 2021-01, when a merchant accepts an app purchase, the status immediately changes from `pending` to `active`.")]
-        public const string ACCEPTED = "ACCEPTED";
-        public const string ACTIVE = "ACTIVE";
-        public const string DECLINED = "DECLINED";
-        public const string EXPIRED = "EXPIRED";
-        public const string PENDING = "PENDING";
+        public const string ACCEPTED = @"ACCEPTED";
+        public const string ACTIVE = @"ACTIVE";
+        public const string DECLINED = @"DECLINED";
+        public const string EXPIRED = @"EXPIRED";
+        public const string PENDING = @"PENDING";
     }
 
     ///<summary>
@@ -1813,9 +1813,9 @@ namespace shopify
 
     public static class AppRevenueAttributionRecordSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -1843,10 +1843,10 @@ namespace shopify
 
     public static class AppRevenueAttributionTypeStringValues
     {
-        public const string APPLICATION_PURCHASE = "APPLICATION_PURCHASE";
-        public const string APPLICATION_SUBSCRIPTION = "APPLICATION_SUBSCRIPTION";
-        public const string APPLICATION_USAGE = "APPLICATION_USAGE";
-        public const string OTHER = "OTHER";
+        public const string APPLICATION_PURCHASE = @"APPLICATION_PURCHASE";
+        public const string APPLICATION_SUBSCRIPTION = @"APPLICATION_SUBSCRIPTION";
+        public const string APPLICATION_USAGE = @"APPLICATION_USAGE";
+        public const string OTHER = @"OTHER";
     }
 
     ///<summary>
@@ -1905,13 +1905,13 @@ namespace shopify
 
     public static class AppRevokeAccessScopesAppRevokeScopeErrorCodeStringValues
     {
-        public const string MISSING_SOURCE_APP = "MISSING_SOURCE_APP";
-        public const string APPLICATION_CANNOT_BE_FOUND = "APPLICATION_CANNOT_BE_FOUND";
-        public const string UNKNOWN_SCOPES = "UNKNOWN_SCOPES";
-        public const string CANNOT_REVOKE_REQUIRED_SCOPES = "CANNOT_REVOKE_REQUIRED_SCOPES";
-        public const string CANNOT_REVOKE_IMPLIED_SCOPES = "CANNOT_REVOKE_IMPLIED_SCOPES";
-        public const string CANNOT_REVOKE_UNDECLARED_SCOPES = "CANNOT_REVOKE_UNDECLARED_SCOPES";
-        public const string APP_NOT_INSTALLED = "APP_NOT_INSTALLED";
+        public const string MISSING_SOURCE_APP = @"MISSING_SOURCE_APP";
+        public const string APPLICATION_CANNOT_BE_FOUND = @"APPLICATION_CANNOT_BE_FOUND";
+        public const string UNKNOWN_SCOPES = @"UNKNOWN_SCOPES";
+        public const string CANNOT_REVOKE_REQUIRED_SCOPES = @"CANNOT_REVOKE_REQUIRED_SCOPES";
+        public const string CANNOT_REVOKE_IMPLIED_SCOPES = @"CANNOT_REVOKE_IMPLIED_SCOPES";
+        public const string CANNOT_REVOKE_UNDECLARED_SCOPES = @"CANNOT_REVOKE_UNDECLARED_SCOPES";
+        public const string APP_NOT_INSTALLED = @"APP_NOT_INSTALLED";
     }
 
     ///<summary>
@@ -2161,9 +2161,9 @@ namespace shopify
 
     public static class AppSubscriptionReplacementBehaviorStringValues
     {
-        public const string APPLY_IMMEDIATELY = "APPLY_IMMEDIATELY";
-        public const string APPLY_ON_NEXT_BILLING_CYCLE = "APPLY_ON_NEXT_BILLING_CYCLE";
-        public const string STANDARD = "STANDARD";
+        public const string APPLY_IMMEDIATELY = @"APPLY_IMMEDIATELY";
+        public const string APPLY_ON_NEXT_BILLING_CYCLE = @"APPLY_ON_NEXT_BILLING_CYCLE";
+        public const string STANDARD = @"STANDARD";
     }
 
     ///<summary>
@@ -2188,9 +2188,9 @@ namespace shopify
 
     public static class AppSubscriptionSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -2231,14 +2231,14 @@ namespace shopify
 
     public static class AppSubscriptionStatusStringValues
     {
-        public const string PENDING = "PENDING";
+        public const string PENDING = @"PENDING";
         [Obsolete("As of API version 2021-01, when a merchant approves an app subscription, the status immediately transitions from `pending` to `active`.")]
-        public const string ACCEPTED = "ACCEPTED";
-        public const string ACTIVE = "ACTIVE";
-        public const string DECLINED = "DECLINED";
-        public const string EXPIRED = "EXPIRED";
-        public const string FROZEN = "FROZEN";
-        public const string CANCELLED = "CANCELLED";
+        public const string ACCEPTED = @"ACCEPTED";
+        public const string ACTIVE = @"ACTIVE";
+        public const string DECLINED = @"DECLINED";
+        public const string EXPIRED = @"EXPIRED";
+        public const string FROZEN = @"FROZEN";
+        public const string CANCELLED = @"CANCELLED";
     }
 
     ///<summary>
@@ -2296,9 +2296,9 @@ namespace shopify
 
     public static class AppSubscriptionTrialExtendUserErrorCodeStringValues
     {
-        public const string SUBSCRIPTION_NOT_FOUND = "SUBSCRIPTION_NOT_FOUND";
-        public const string TRIAL_NOT_ACTIVE = "TRIAL_NOT_ACTIVE";
-        public const string SUBSCRIPTION_NOT_ACTIVE = "SUBSCRIPTION_NOT_ACTIVE";
+        public const string SUBSCRIPTION_NOT_FOUND = @"SUBSCRIPTION_NOT_FOUND";
+        public const string TRIAL_NOT_ACTIVE = @"TRIAL_NOT_ACTIVE";
+        public const string SUBSCRIPTION_NOT_ACTIVE = @"SUBSCRIPTION_NOT_ACTIVE";
     }
 
     ///<summary>
@@ -2323,9 +2323,9 @@ namespace shopify
 
     public static class AppTransactionSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -2458,9 +2458,9 @@ namespace shopify
 
     public static class AppUsageRecordSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -2732,18 +2732,18 @@ namespace shopify
 
     public static class ArticleCreateUserErrorCodeStringValues
     {
-        public const string AMBIGUOUS_AUTHOR = "AMBIGUOUS_AUTHOR";
-        public const string AMBIGUOUS_BLOG = "AMBIGUOUS_BLOG";
-        public const string AUTHOR_FIELD_REQUIRED = "AUTHOR_FIELD_REQUIRED";
-        public const string AUTHOR_MUST_EXIST = "AUTHOR_MUST_EXIST";
-        public const string INVALID_PUBLISH_DATE = "INVALID_PUBLISH_DATE";
-        public const string BLOG_REFERENCE_REQUIRED = "BLOG_REFERENCE_REQUIRED";
-        public const string UPLOAD_FAILED = "UPLOAD_FAILED";
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string TAKEN = "TAKEN";
-        public const string INVALID_VALUE = "INVALID_VALUE";
-        public const string INVALID_TYPE = "INVALID_TYPE";
+        public const string AMBIGUOUS_AUTHOR = @"AMBIGUOUS_AUTHOR";
+        public const string AMBIGUOUS_BLOG = @"AMBIGUOUS_BLOG";
+        public const string AUTHOR_FIELD_REQUIRED = @"AUTHOR_FIELD_REQUIRED";
+        public const string AUTHOR_MUST_EXIST = @"AUTHOR_MUST_EXIST";
+        public const string INVALID_PUBLISH_DATE = @"INVALID_PUBLISH_DATE";
+        public const string BLOG_REFERENCE_REQUIRED = @"BLOG_REFERENCE_REQUIRED";
+        public const string UPLOAD_FAILED = @"UPLOAD_FAILED";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string TAKEN = @"TAKEN";
+        public const string INVALID_VALUE = @"INVALID_VALUE";
+        public const string INVALID_TYPE = @"INVALID_TYPE";
     }
 
     ///<summary>
@@ -2793,7 +2793,7 @@ namespace shopify
 
     public static class ArticleDeleteUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
+        public const string NOT_FOUND = @"NOT_FOUND";
     }
 
     ///<summary>
@@ -2849,13 +2849,13 @@ namespace shopify
 
     public static class ArticleSortKeysStringValues
     {
-        public const string TITLE = "TITLE";
-        public const string BLOG_TITLE = "BLOG_TITLE";
-        public const string AUTHOR = "AUTHOR";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string PUBLISHED_AT = "PUBLISHED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string TITLE = @"TITLE";
+        public const string BLOG_TITLE = @"BLOG_TITLE";
+        public const string AUTHOR = @"AUTHOR";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string PUBLISHED_AT = @"PUBLISHED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -2875,8 +2875,8 @@ namespace shopify
 
     public static class ArticleTagSortStringValues
     {
-        public const string ALPHABETICAL = "ALPHABETICAL";
-        public const string POPULAR = "POPULAR";
+        public const string ALPHABETICAL = @"ALPHABETICAL";
+        public const string POPULAR = @"POPULAR";
     }
 
     ///<summary>
@@ -2958,15 +2958,15 @@ namespace shopify
 
     public static class ArticleUpdateUserErrorCodeStringValues
     {
-        public const string AMBIGUOUS_AUTHOR = "AMBIGUOUS_AUTHOR";
-        public const string AMBIGUOUS_BLOG = "AMBIGUOUS_BLOG";
-        public const string AUTHOR_MUST_EXIST = "AUTHOR_MUST_EXIST";
-        public const string INVALID_PUBLISH_DATE = "INVALID_PUBLISH_DATE";
-        public const string UPLOAD_FAILED = "UPLOAD_FAILED";
-        public const string BLANK = "BLANK";
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string TAKEN = "TAKEN";
+        public const string AMBIGUOUS_AUTHOR = @"AMBIGUOUS_AUTHOR";
+        public const string AMBIGUOUS_BLOG = @"AMBIGUOUS_BLOG";
+        public const string AUTHOR_MUST_EXIST = @"AUTHOR_MUST_EXIST";
+        public const string INVALID_PUBLISH_DATE = @"INVALID_PUBLISH_DATE";
+        public const string UPLOAD_FAILED = @"UPLOAD_FAILED";
+        public const string BLANK = @"BLANK";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string TAKEN = @"TAKEN";
     }
 
     ///<summary>
@@ -3038,9 +3038,9 @@ namespace shopify
 
     public static class AutomaticDiscountSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -3087,11 +3087,11 @@ namespace shopify
 
     public static class BadgeTypeStringValues
     {
-        public const string DEFAULT = "DEFAULT";
-        public const string SUCCESS = "SUCCESS";
-        public const string ATTENTION = "ATTENTION";
-        public const string WARNING = "WARNING";
-        public const string INFO = "INFO";
+        public const string DEFAULT = @"DEFAULT";
+        public const string SUCCESS = @"SUCCESS";
+        public const string ATTENTION = @"ATTENTION";
+        public const string WARNING = @"WARNING";
+        public const string INFO = @"INFO";
     }
 
     ///<summary>
@@ -3148,17 +3148,17 @@ namespace shopify
 
     public static class BalanceTransactionSortKeysStringValues
     {
-        public const string PAYOUT_DATE = "PAYOUT_DATE";
-        public const string PAYOUT_STATUS = "PAYOUT_STATUS";
-        public const string PROCESSED_AT = "PROCESSED_AT";
-        public const string AMOUNT = "AMOUNT";
-        public const string FEE = "FEE";
-        public const string NET = "NET";
-        public const string TRANSACTION_TYPE = "TRANSACTION_TYPE";
-        public const string ORDER_NAME = "ORDER_NAME";
-        public const string PAYMENT_METHOD_NAME = "PAYMENT_METHOD_NAME";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string PAYOUT_DATE = @"PAYOUT_DATE";
+        public const string PAYOUT_STATUS = @"PAYOUT_STATUS";
+        public const string PROCESSED_AT = @"PROCESSED_AT";
+        public const string AMOUNT = @"AMOUNT";
+        public const string FEE = @"FEE";
+        public const string NET = @"NET";
+        public const string TRANSACTION_TYPE = @"TRANSACTION_TYPE";
+        public const string ORDER_NAME = @"ORDER_NAME";
+        public const string PAYMENT_METHOD_NAME = @"PAYMENT_METHOD_NAME";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -3316,19 +3316,19 @@ namespace shopify
 
     public static class BillingAttemptUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string BLANK = "BLANK";
-        public const string CONTRACT_NOT_FOUND = "CONTRACT_NOT_FOUND";
-        public const string ORIGIN_TIME_BEFORE_CONTRACT_CREATION = "ORIGIN_TIME_BEFORE_CONTRACT_CREATION";
-        public const string UPCOMING_CYCLE_LIMIT_EXCEEDED = "UPCOMING_CYCLE_LIMIT_EXCEEDED";
-        public const string CYCLE_INDEX_OUT_OF_RANGE = "CYCLE_INDEX_OUT_OF_RANGE";
-        public const string CYCLE_START_DATE_OUT_OF_RANGE = "CYCLE_START_DATE_OUT_OF_RANGE";
-        public const string ORIGIN_TIME_OUT_OF_RANGE = "ORIGIN_TIME_OUT_OF_RANGE";
-        public const string BILLING_CYCLE_CHARGE_BEFORE_EXPECTED_DATE = "BILLING_CYCLE_CHARGE_BEFORE_EXPECTED_DATE";
-        public const string BILLING_CYCLE_SKIPPED = "BILLING_CYCLE_SKIPPED";
-        public const string CONTRACT_UNDER_REVIEW = "CONTRACT_UNDER_REVIEW";
-        public const string CONTRACT_TERMINATED = "CONTRACT_TERMINATED";
-        public const string CONTRACT_PAUSED = "CONTRACT_PAUSED";
+        public const string INVALID = @"INVALID";
+        public const string BLANK = @"BLANK";
+        public const string CONTRACT_NOT_FOUND = @"CONTRACT_NOT_FOUND";
+        public const string ORIGIN_TIME_BEFORE_CONTRACT_CREATION = @"ORIGIN_TIME_BEFORE_CONTRACT_CREATION";
+        public const string UPCOMING_CYCLE_LIMIT_EXCEEDED = @"UPCOMING_CYCLE_LIMIT_EXCEEDED";
+        public const string CYCLE_INDEX_OUT_OF_RANGE = @"CYCLE_INDEX_OUT_OF_RANGE";
+        public const string CYCLE_START_DATE_OUT_OF_RANGE = @"CYCLE_START_DATE_OUT_OF_RANGE";
+        public const string ORIGIN_TIME_OUT_OF_RANGE = @"ORIGIN_TIME_OUT_OF_RANGE";
+        public const string BILLING_CYCLE_CHARGE_BEFORE_EXPECTED_DATE = @"BILLING_CYCLE_CHARGE_BEFORE_EXPECTED_DATE";
+        public const string BILLING_CYCLE_SKIPPED = @"BILLING_CYCLE_SKIPPED";
+        public const string CONTRACT_UNDER_REVIEW = @"CONTRACT_UNDER_REVIEW";
+        public const string CONTRACT_TERMINATED = @"CONTRACT_TERMINATED";
+        public const string CONTRACT_PAUSED = @"CONTRACT_PAUSED";
     }
 
     ///<summary>
@@ -3504,11 +3504,11 @@ namespace shopify
 
     public static class BlogCreateUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string INCLUSION = "INCLUSION";
-        public const string INVALID_VALUE = "INVALID_VALUE";
-        public const string INVALID_TYPE = "INVALID_TYPE";
+        public const string INVALID = @"INVALID";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string INCLUSION = @"INCLUSION";
+        public const string INVALID_VALUE = @"INVALID_VALUE";
+        public const string INVALID_TYPE = @"INVALID_TYPE";
     }
 
     ///<summary>
@@ -3558,7 +3558,7 @@ namespace shopify
 
     public static class BlogDeleteUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
+        public const string NOT_FOUND = @"NOT_FOUND";
     }
 
     ///<summary>
@@ -3617,10 +3617,10 @@ namespace shopify
 
     public static class BlogSortKeysStringValues
     {
-        public const string HANDLE = "HANDLE";
-        public const string TITLE = "TITLE";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string HANDLE = @"HANDLE";
+        public const string TITLE = @"TITLE";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -3686,11 +3686,11 @@ namespace shopify
 
     public static class BlogUpdateUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string INVALID = "INVALID";
-        public const string BLANK = "BLANK";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string INCLUSION = "INCLUSION";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string INVALID = @"INVALID";
+        public const string BLANK = @"BLANK";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string INCLUSION = @"INCLUSION";
     }
 
     ///<summary>
@@ -3722,11 +3722,11 @@ namespace shopify
 
     public static class BulkMutationErrorCodeStringValues
     {
-        public const string OPERATION_IN_PROGRESS = "OPERATION_IN_PROGRESS";
-        public const string INVALID_MUTATION = "INVALID_MUTATION";
-        public const string INVALID_STAGED_UPLOAD_FILE = "INVALID_STAGED_UPLOAD_FILE";
-        public const string NO_SUCH_FILE = "NO_SUCH_FILE";
-        public const string INTERNAL_FILE_SERVER_ERROR = "INTERNAL_FILE_SERVER_ERROR";
+        public const string OPERATION_IN_PROGRESS = @"OPERATION_IN_PROGRESS";
+        public const string INVALID_MUTATION = @"INVALID_MUTATION";
+        public const string INVALID_STAGED_UPLOAD_FILE = @"INVALID_STAGED_UPLOAD_FILE";
+        public const string NO_SUCH_FILE = @"NO_SUCH_FILE";
+        public const string INTERNAL_FILE_SERVER_ERROR = @"INTERNAL_FILE_SERVER_ERROR";
     }
 
     ///<summary>
@@ -3855,9 +3855,9 @@ namespace shopify
 
     public static class BulkOperationErrorCodeStringValues
     {
-        public const string ACCESS_DENIED = "ACCESS_DENIED";
-        public const string INTERNAL_SERVER_ERROR = "INTERNAL_SERVER_ERROR";
-        public const string TIMEOUT = "TIMEOUT";
+        public const string ACCESS_DENIED = @"ACCESS_DENIED";
+        public const string INTERNAL_SERVER_ERROR = @"INTERNAL_SERVER_ERROR";
+        public const string TIMEOUT = @"TIMEOUT";
     }
 
     ///<summary>
@@ -3929,13 +3929,13 @@ namespace shopify
 
     public static class BulkOperationStatusStringValues
     {
-        public const string CANCELED = "CANCELED";
-        public const string CANCELING = "CANCELING";
-        public const string COMPLETED = "COMPLETED";
-        public const string CREATED = "CREATED";
-        public const string EXPIRED = "EXPIRED";
-        public const string FAILED = "FAILED";
-        public const string RUNNING = "RUNNING";
+        public const string CANCELED = @"CANCELED";
+        public const string CANCELING = @"CANCELING";
+        public const string COMPLETED = @"COMPLETED";
+        public const string CREATED = @"CREATED";
+        public const string EXPIRED = @"EXPIRED";
+        public const string FAILED = @"FAILED";
+        public const string RUNNING = @"RUNNING";
     }
 
     ///<summary>
@@ -3955,8 +3955,8 @@ namespace shopify
 
     public static class BulkOperationTypeStringValues
     {
-        public const string QUERY = "QUERY";
-        public const string MUTATION = "MUTATION";
+        public const string QUERY = @"QUERY";
+        public const string MUTATION = @"MUTATION";
     }
 
     ///<summary>
@@ -4030,13 +4030,13 @@ namespace shopify
 
     public static class BulkProductResourceFeedbackCreateUserErrorCodeStringValues
     {
-        public const string MAXIMUM_FEEDBACK_LIMIT_EXCEEDED = "MAXIMUM_FEEDBACK_LIMIT_EXCEEDED";
-        public const string OUTDATED_FEEDBACK = "OUTDATED_FEEDBACK";
-        public const string PRODUCT_NOT_FOUND = "PRODUCT_NOT_FOUND";
-        public const string INVALID = "INVALID";
-        public const string BLANK = "BLANK";
-        public const string PRESENT = "PRESENT";
-        public const string LESS_THAN_OR_EQUAL_TO = "LESS_THAN_OR_EQUAL_TO";
+        public const string MAXIMUM_FEEDBACK_LIMIT_EXCEEDED = @"MAXIMUM_FEEDBACK_LIMIT_EXCEEDED";
+        public const string OUTDATED_FEEDBACK = @"OUTDATED_FEEDBACK";
+        public const string PRODUCT_NOT_FOUND = @"PRODUCT_NOT_FOUND";
+        public const string INVALID = @"INVALID";
+        public const string BLANK = @"BLANK";
+        public const string PRESENT = @"PRESENT";
+        public const string LESS_THAN_OR_EQUAL_TO = @"LESS_THAN_OR_EQUAL_TO";
     }
 
     ///<summary>
@@ -4115,18 +4115,18 @@ namespace shopify
 
     public static class BusinessCustomerErrorCodeStringValues
     {
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
-        public const string RESOURCE_NOT_FOUND = "RESOURCE_NOT_FOUND";
-        public const string FAILED_TO_DELETE = "FAILED_TO_DELETE";
-        public const string REQUIRED = "REQUIRED";
-        public const string NO_INPUT = "NO_INPUT";
-        public const string INVALID_INPUT = "INVALID_INPUT";
-        public const string UNEXPECTED_TYPE = "UNEXPECTED_TYPE";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string LIMIT_REACHED = "LIMIT_REACHED";
-        public const string INVALID = "INVALID";
-        public const string BLANK = "BLANK";
-        public const string TAKEN = "TAKEN";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
+        public const string RESOURCE_NOT_FOUND = @"RESOURCE_NOT_FOUND";
+        public const string FAILED_TO_DELETE = @"FAILED_TO_DELETE";
+        public const string REQUIRED = @"REQUIRED";
+        public const string NO_INPUT = @"NO_INPUT";
+        public const string INVALID_INPUT = @"INVALID_INPUT";
+        public const string UNEXPECTED_TYPE = @"UNEXPECTED_TYPE";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string LIMIT_REACHED = @"LIMIT_REACHED";
+        public const string INVALID = @"INVALID";
+        public const string BLANK = @"BLANK";
+        public const string TAKEN = @"TAKEN";
     }
 
     ///<summary>
@@ -5168,9 +5168,9 @@ namespace shopify
 
     public static class CalculatedShippingLineStagedStatusStringValues
     {
-        public const string NONE = "NONE";
-        public const string ADDED = "ADDED";
-        public const string REMOVED = "REMOVED";
+        public const string NONE = @"NONE";
+        public const string ADDED = @"ADDED";
+        public const string REMOVED = @"REMOVED";
     }
 
     ///<summary>
@@ -5267,7 +5267,7 @@ namespace shopify
 
     public static class CarrierServiceCreateUserErrorCodeStringValues
     {
-        public const string CARRIER_SERVICE_CREATE_FAILED = "CARRIER_SERVICE_CREATE_FAILED";
+        public const string CARRIER_SERVICE_CREATE_FAILED = @"CARRIER_SERVICE_CREATE_FAILED";
     }
 
     ///<summary>
@@ -5317,7 +5317,7 @@ namespace shopify
 
     public static class CarrierServiceDeleteUserErrorCodeStringValues
     {
-        public const string CARRIER_SERVICE_DELETE_FAILED = "CARRIER_SERVICE_DELETE_FAILED";
+        public const string CARRIER_SERVICE_DELETE_FAILED = @"CARRIER_SERVICE_DELETE_FAILED";
     }
 
     ///<summary>
@@ -5346,10 +5346,10 @@ namespace shopify
 
     public static class CarrierServiceSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -5399,7 +5399,7 @@ namespace shopify
 
     public static class CarrierServiceUpdateUserErrorCodeStringValues
     {
-        public const string CARRIER_SERVICE_UPDATE_FAILED = "CARRIER_SERVICE_UPDATE_FAILED";
+        public const string CARRIER_SERVICE_UPDATE_FAILED = @"CARRIER_SERVICE_UPDATE_FAILED";
     }
 
     ///<summary>
@@ -5526,11 +5526,11 @@ namespace shopify
 
     public static class CartTransformCreateUserErrorCodeStringValues
     {
-        public const string INPUT_INVALID = "INPUT_INVALID";
-        public const string FUNCTION_NOT_FOUND = "FUNCTION_NOT_FOUND";
-        public const string FUNCTION_ALREADY_REGISTERED = "FUNCTION_ALREADY_REGISTERED";
-        public const string FUNCTION_DOES_NOT_IMPLEMENT = "FUNCTION_DOES_NOT_IMPLEMENT";
-        public const string INVALID_METAFIELDS = "INVALID_METAFIELDS";
+        public const string INPUT_INVALID = @"INPUT_INVALID";
+        public const string FUNCTION_NOT_FOUND = @"FUNCTION_NOT_FOUND";
+        public const string FUNCTION_ALREADY_REGISTERED = @"FUNCTION_ALREADY_REGISTERED";
+        public const string FUNCTION_DOES_NOT_IMPLEMENT = @"FUNCTION_DOES_NOT_IMPLEMENT";
+        public const string INVALID_METAFIELDS = @"INVALID_METAFIELDS";
     }
 
     ///<summary>
@@ -5584,8 +5584,8 @@ namespace shopify
 
     public static class CartTransformDeleteUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string UNAUTHORIZED_APP_SCOPE = "UNAUTHORIZED_APP_SCOPE";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string UNAUTHORIZED_APP_SCOPE = @"UNAUTHORIZED_APP_SCOPE";
     }
 
     ///<summary>
@@ -5860,9 +5860,9 @@ namespace shopify
 
     public static class CashTrackingSessionTransactionsSortKeysStringValues
     {
-        public const string PROCESSED_AT = "PROCESSED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string PROCESSED_AT = @"PROCESSED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -5907,14 +5907,14 @@ namespace shopify
 
     public static class CashTrackingSessionsSortKeysStringValues
     {
-        public const string OPENING_TIME_DESC = "OPENING_TIME_DESC";
-        public const string OPENING_TIME_ASC = "OPENING_TIME_ASC";
-        public const string CLOSING_TIME_DESC = "CLOSING_TIME_DESC";
-        public const string CLOSING_TIME_ASC = "CLOSING_TIME_ASC";
-        public const string TOTAL_DISCREPANCY_DESC = "TOTAL_DISCREPANCY_DESC";
-        public const string TOTAL_DISCREPANCY_ASC = "TOTAL_DISCREPANCY_ASC";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string OPENING_TIME_DESC = @"OPENING_TIME_DESC";
+        public const string OPENING_TIME_ASC = @"OPENING_TIME_ASC";
+        public const string CLOSING_TIME_DESC = @"CLOSING_TIME_DESC";
+        public const string CLOSING_TIME_ASC = @"CLOSING_TIME_ASC";
+        public const string TOTAL_DISCREPANCY_DESC = @"TOTAL_DISCREPANCY_DESC";
+        public const string TOTAL_DISCREPANCY_ASC = @"TOTAL_DISCREPANCY_ASC";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -6073,9 +6073,9 @@ namespace shopify
 
     public static class CatalogSortKeysStringValues
     {
-        public const string TITLE = "TITLE";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string TITLE = @"TITLE";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -6099,9 +6099,9 @@ namespace shopify
 
     public static class CatalogStatusStringValues
     {
-        public const string ACTIVE = "ACTIVE";
-        public const string ARCHIVED = "ARCHIVED";
-        public const string DRAFT = "DRAFT";
+        public const string ACTIVE = @"ACTIVE";
+        public const string ARCHIVED = @"ARCHIVED";
+        public const string DRAFT = @"DRAFT";
     }
 
     ///<summary>
@@ -6129,10 +6129,10 @@ namespace shopify
 
     public static class CatalogTypeStringValues
     {
-        public const string NONE = "NONE";
-        public const string APP = "APP";
-        public const string COMPANY_LOCATION = "COMPANY_LOCATION";
-        public const string MARKET = "MARKET";
+        public const string NONE = @"NONE";
+        public const string APP = @"APP";
+        public const string COMPANY_LOCATION = @"COMPANY_LOCATION";
+        public const string MARKET = @"MARKET";
     }
 
     ///<summary>
@@ -6322,42 +6322,42 @@ namespace shopify
 
     public static class CatalogUserErrorCodeStringValues
     {
-        public const string APP_CATALOG_PRICE_LIST_ASSIGNMENT = "APP_CATALOG_PRICE_LIST_ASSIGNMENT";
-        public const string CATALOG_FAILED_TO_SAVE = "CATALOG_FAILED_TO_SAVE";
-        public const string CATALOG_NOT_FOUND = "CATALOG_NOT_FOUND";
-        public const string PRICE_LIST_NOT_ALLOWED_FOR_PRIMARY_MARKET = "PRICE_LIST_NOT_ALLOWED_FOR_PRIMARY_MARKET";
-        public const string CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_RULES = "CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_RULES";
-        public const string CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_PRICE_BREAKS = "CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_PRICE_BREAKS";
-        public const string CANNOT_ADD_MORE_THAN_ONE_MARKET = "CANNOT_ADD_MORE_THAN_ONE_MARKET";
-        public const string COMPANY_LOCATION_CATALOG_STATUS_PLAN = "COMPANY_LOCATION_CATALOG_STATUS_PLAN";
-        public const string CONTEXT_ALREADY_ASSIGNED_TO_CATALOG = "CONTEXT_ALREADY_ASSIGNED_TO_CATALOG";
-        public const string CONTEXT_CATALOG_LIMIT_REACHED = "CONTEXT_CATALOG_LIMIT_REACHED";
-        public const string COMPANY_LOCATION_NOT_FOUND = "COMPANY_LOCATION_NOT_FOUND";
-        public const string CONTEXT_DRIVER_MISMATCH = "CONTEXT_DRIVER_MISMATCH";
-        public const string COUNTRY_PRICE_LIST_ASSIGNMENT = "COUNTRY_PRICE_LIST_ASSIGNMENT";
-        public const string INVALID_CATALOG_CONTEXT_TYPE = "INVALID_CATALOG_CONTEXT_TYPE";
-        public const string MARKET_CATALOG_STATUS = "MARKET_CATALOG_STATUS";
-        public const string MARKET_NOT_FOUND = "MARKET_NOT_FOUND";
-        public const string MARKET_AND_PRICE_LIST_CURRENCY_MISMATCH = "MARKET_AND_PRICE_LIST_CURRENCY_MISMATCH";
-        public const string MARKET_TAKEN = "MARKET_TAKEN";
-        public const string MUST_PROVIDE_EXACTLY_ONE_CONTEXT_TYPE = "MUST_PROVIDE_EXACTLY_ONE_CONTEXT_TYPE";
-        public const string PRICE_LIST_FAILED_TO_SAVE = "PRICE_LIST_FAILED_TO_SAVE";
-        public const string PRICE_LIST_NOT_FOUND = "PRICE_LIST_NOT_FOUND";
-        public const string PRICE_LIST_LOCKED = "PRICE_LIST_LOCKED";
-        public const string PUBLICATION_NOT_FOUND = "PUBLICATION_NOT_FOUND";
-        public const string REQUIRES_CONTEXTS_TO_ADD_OR_REMOVE = "REQUIRES_CONTEXTS_TO_ADD_OR_REMOVE";
-        public const string UNSUPPORTED_CATALOG_ACTION = "UNSUPPORTED_CATALOG_ACTION";
-        public const string CANNOT_CREATE_APP_CATALOG = "CANNOT_CREATE_APP_CATALOG";
-        public const string CANNOT_MODIFY_APP_CATALOG = "CANNOT_MODIFY_APP_CATALOG";
-        public const string CANNOT_DELETE_APP_CATALOG = "CANNOT_DELETE_APP_CATALOG";
-        public const string CANNOT_CREATE_MARKET_CATALOG = "CANNOT_CREATE_MARKET_CATALOG";
-        public const string CANNOT_MODIFY_MARKET_CATALOG = "CANNOT_MODIFY_MARKET_CATALOG";
-        public const string CANNOT_DELETE_MARKET_CATALOG = "CANNOT_DELETE_MARKET_CATALOG";
-        public const string INVALID = "INVALID";
-        public const string TAKEN = "TAKEN";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string TOO_SHORT = "TOO_SHORT";
-        public const string BLANK = "BLANK";
+        public const string APP_CATALOG_PRICE_LIST_ASSIGNMENT = @"APP_CATALOG_PRICE_LIST_ASSIGNMENT";
+        public const string CATALOG_FAILED_TO_SAVE = @"CATALOG_FAILED_TO_SAVE";
+        public const string CATALOG_NOT_FOUND = @"CATALOG_NOT_FOUND";
+        public const string PRICE_LIST_NOT_ALLOWED_FOR_PRIMARY_MARKET = @"PRICE_LIST_NOT_ALLOWED_FOR_PRIMARY_MARKET";
+        public const string CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_RULES = @"CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_RULES";
+        public const string CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_PRICE_BREAKS = @"CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_PRICE_BREAKS";
+        public const string CANNOT_ADD_MORE_THAN_ONE_MARKET = @"CANNOT_ADD_MORE_THAN_ONE_MARKET";
+        public const string COMPANY_LOCATION_CATALOG_STATUS_PLAN = @"COMPANY_LOCATION_CATALOG_STATUS_PLAN";
+        public const string CONTEXT_ALREADY_ASSIGNED_TO_CATALOG = @"CONTEXT_ALREADY_ASSIGNED_TO_CATALOG";
+        public const string CONTEXT_CATALOG_LIMIT_REACHED = @"CONTEXT_CATALOG_LIMIT_REACHED";
+        public const string COMPANY_LOCATION_NOT_FOUND = @"COMPANY_LOCATION_NOT_FOUND";
+        public const string CONTEXT_DRIVER_MISMATCH = @"CONTEXT_DRIVER_MISMATCH";
+        public const string COUNTRY_PRICE_LIST_ASSIGNMENT = @"COUNTRY_PRICE_LIST_ASSIGNMENT";
+        public const string INVALID_CATALOG_CONTEXT_TYPE = @"INVALID_CATALOG_CONTEXT_TYPE";
+        public const string MARKET_CATALOG_STATUS = @"MARKET_CATALOG_STATUS";
+        public const string MARKET_NOT_FOUND = @"MARKET_NOT_FOUND";
+        public const string MARKET_AND_PRICE_LIST_CURRENCY_MISMATCH = @"MARKET_AND_PRICE_LIST_CURRENCY_MISMATCH";
+        public const string MARKET_TAKEN = @"MARKET_TAKEN";
+        public const string MUST_PROVIDE_EXACTLY_ONE_CONTEXT_TYPE = @"MUST_PROVIDE_EXACTLY_ONE_CONTEXT_TYPE";
+        public const string PRICE_LIST_FAILED_TO_SAVE = @"PRICE_LIST_FAILED_TO_SAVE";
+        public const string PRICE_LIST_NOT_FOUND = @"PRICE_LIST_NOT_FOUND";
+        public const string PRICE_LIST_LOCKED = @"PRICE_LIST_LOCKED";
+        public const string PUBLICATION_NOT_FOUND = @"PUBLICATION_NOT_FOUND";
+        public const string REQUIRES_CONTEXTS_TO_ADD_OR_REMOVE = @"REQUIRES_CONTEXTS_TO_ADD_OR_REMOVE";
+        public const string UNSUPPORTED_CATALOG_ACTION = @"UNSUPPORTED_CATALOG_ACTION";
+        public const string CANNOT_CREATE_APP_CATALOG = @"CANNOT_CREATE_APP_CATALOG";
+        public const string CANNOT_MODIFY_APP_CATALOG = @"CANNOT_MODIFY_APP_CATALOG";
+        public const string CANNOT_DELETE_APP_CATALOG = @"CANNOT_DELETE_APP_CATALOG";
+        public const string CANNOT_CREATE_MARKET_CATALOG = @"CANNOT_CREATE_MARKET_CATALOG";
+        public const string CANNOT_MODIFY_MARKET_CATALOG = @"CANNOT_MODIFY_MARKET_CATALOG";
+        public const string CANNOT_DELETE_MARKET_CATALOG = @"CANNOT_DELETE_MARKET_CATALOG";
+        public const string INVALID = @"INVALID";
+        public const string TAKEN = @"TAKEN";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string TOO_SHORT = @"TOO_SHORT";
+        public const string BLANK = @"BLANK";
     }
 
     ///<summary>
@@ -6562,9 +6562,9 @@ namespace shopify
 
     public static class CheckoutBrandingBackgroundStringValues
     {
-        public const string BASE = "BASE";
-        public const string SUBDUED = "SUBDUED";
-        public const string TRANSPARENT = "TRANSPARENT";
+        public const string BASE = @"BASE";
+        public const string SUBDUED = @"SUBDUED";
+        public const string TRANSPARENT = @"TRANSPARENT";
     }
 
     ///<summary>
@@ -6584,8 +6584,8 @@ namespace shopify
 
     public static class CheckoutBrandingBackgroundStyleStringValues
     {
-        public const string SOLID = "SOLID";
-        public const string NONE = "NONE";
+        public const string SOLID = @"SOLID";
+        public const string NONE = @"NONE";
     }
 
     ///<summary>
@@ -6609,9 +6609,9 @@ namespace shopify
 
     public static class CheckoutBrandingBorderStringValues
     {
-        public const string NONE = "NONE";
-        public const string BLOCK_END = "BLOCK_END";
-        public const string FULL = "FULL";
+        public const string NONE = @"NONE";
+        public const string BLOCK_END = @"BLOCK_END";
+        public const string FULL = @"FULL";
     }
 
     ///<summary>
@@ -6635,9 +6635,9 @@ namespace shopify
 
     public static class CheckoutBrandingBorderStyleStringValues
     {
-        public const string BASE = "BASE";
-        public const string DASHED = "DASHED";
-        public const string DOTTED = "DOTTED";
+        public const string BASE = @"BASE";
+        public const string DASHED = @"DASHED";
+        public const string DOTTED = @"DOTTED";
     }
 
     ///<summary>
@@ -6665,10 +6665,10 @@ namespace shopify
 
     public static class CheckoutBrandingBorderWidthStringValues
     {
-        public const string BASE = "BASE";
-        public const string LARGE_100 = "LARGE_100";
-        public const string LARGE_200 = "LARGE_200";
-        public const string LARGE = "LARGE";
+        public const string BASE = @"BASE";
+        public const string LARGE_100 = @"LARGE_100";
+        public const string LARGE_200 = @"LARGE_200";
+        public const string LARGE = @"LARGE";
     }
 
     ///<summary>
@@ -6780,9 +6780,9 @@ namespace shopify
 
     public static class CheckoutBrandingCartLinkContentTypeStringValues
     {
-        public const string ICON = "ICON";
-        public const string IMAGE = "IMAGE";
-        public const string TEXT = "TEXT";
+        public const string ICON = @"ICON";
+        public const string IMAGE = @"IMAGE";
+        public const string TEXT = @"TEXT";
     }
 
     ///<summary>
@@ -6938,11 +6938,11 @@ namespace shopify
 
     public static class CheckoutBrandingColorSchemeSelectionStringValues
     {
-        public const string TRANSPARENT = "TRANSPARENT";
-        public const string COLOR_SCHEME1 = "COLOR_SCHEME1";
-        public const string COLOR_SCHEME2 = "COLOR_SCHEME2";
-        public const string COLOR_SCHEME3 = "COLOR_SCHEME3";
-        public const string COLOR_SCHEME4 = "COLOR_SCHEME4";
+        public const string TRANSPARENT = @"TRANSPARENT";
+        public const string COLOR_SCHEME1 = @"COLOR_SCHEME1";
+        public const string COLOR_SCHEME2 = @"COLOR_SCHEME2";
+        public const string COLOR_SCHEME3 = @"COLOR_SCHEME3";
+        public const string COLOR_SCHEME4 = @"COLOR_SCHEME4";
     }
 
     ///<summary>
@@ -6981,7 +6981,7 @@ namespace shopify
 
     public static class CheckoutBrandingColorSelectionStringValues
     {
-        public const string TRANSPARENT = "TRANSPARENT";
+        public const string TRANSPARENT = @"TRANSPARENT";
     }
 
     ///<summary>
@@ -7119,10 +7119,10 @@ namespace shopify
 
     public static class CheckoutBrandingCornerRadiusStringValues
     {
-        public const string NONE = "NONE";
-        public const string SMALL = "SMALL";
-        public const string BASE = "BASE";
-        public const string LARGE = "LARGE";
+        public const string NONE = @"NONE";
+        public const string SMALL = @"SMALL";
+        public const string BASE = @"BASE";
+        public const string LARGE = @"LARGE";
     }
 
     ///<summary>
@@ -7391,11 +7391,11 @@ namespace shopify
 
     public static class CheckoutBrandingFontLoadingStrategyStringValues
     {
-        public const string AUTO = "AUTO";
-        public const string BLOCK = "BLOCK";
-        public const string SWAP = "SWAP";
-        public const string FALLBACK = "FALLBACK";
-        public const string OPTIONAL = "OPTIONAL";
+        public const string AUTO = @"AUTO";
+        public const string BLOCK = @"BLOCK";
+        public const string SWAP = @"SWAP";
+        public const string FALLBACK = @"FALLBACK";
+        public const string OPTIONAL = @"OPTIONAL";
     }
 
     ///<summary>
@@ -7465,9 +7465,9 @@ namespace shopify
 
     public static class CheckoutBrandingFooterAlignmentStringValues
     {
-        public const string START = "START";
-        public const string CENTER = "CENTER";
-        public const string END = "END";
+        public const string START = @"START";
+        public const string CENTER = @"CENTER";
+        public const string END = @"END";
     }
 
     ///<summary>
@@ -7498,8 +7498,8 @@ namespace shopify
 
     public static class CheckoutBrandingFooterPositionStringValues
     {
-        public const string END = "END";
-        public const string INLINE = "INLINE";
+        public const string END = @"END";
+        public const string INLINE = @"INLINE";
     }
 
     ///<summary>
@@ -7535,7 +7535,7 @@ namespace shopify
 
     public static class CheckoutBrandingGlobalCornerRadiusStringValues
     {
-        public const string NONE = "NONE";
+        public const string NONE = @"NONE";
     }
 
     ///<summary>
@@ -7598,9 +7598,9 @@ namespace shopify
 
     public static class CheckoutBrandingHeaderAlignmentStringValues
     {
-        public const string START = "START";
-        public const string CENTER = "CENTER";
-        public const string END = "END";
+        public const string START = @"START";
+        public const string CENTER = @"CENTER";
+        public const string END = @"END";
     }
 
     ///<summary>
@@ -7639,9 +7639,9 @@ namespace shopify
 
     public static class CheckoutBrandingHeaderPositionStringValues
     {
-        public const string INLINE = "INLINE";
-        public const string INLINE_SECONDARY = "INLINE_SECONDARY";
-        public const string START = "START";
+        public const string INLINE = @"INLINE";
+        public const string INLINE_SECONDARY = @"INLINE_SECONDARY";
+        public const string START = @"START";
     }
 
     ///<summary>
@@ -7683,8 +7683,8 @@ namespace shopify
 
     public static class CheckoutBrandingLabelPositionStringValues
     {
-        public const string INSIDE = "INSIDE";
-        public const string OUTSIDE = "OUTSIDE";
+        public const string INSIDE = @"INSIDE";
+        public const string OUTSIDE = @"OUTSIDE";
     }
 
     ///<summary>
@@ -7889,11 +7889,11 @@ namespace shopify
 
     public static class CheckoutBrandingShadowStringValues
     {
-        public const string SMALL_200 = "SMALL_200";
-        public const string SMALL_100 = "SMALL_100";
-        public const string BASE = "BASE";
-        public const string LARGE_100 = "LARGE_100";
-        public const string LARGE_200 = "LARGE_200";
+        public const string SMALL_200 = @"SMALL_200";
+        public const string SMALL_100 = @"SMALL_100";
+        public const string BASE = @"BASE";
+        public const string LARGE_100 = @"LARGE_100";
+        public const string LARGE_200 = @"LARGE_200";
     }
 
     ///<summary>
@@ -7928,8 +7928,8 @@ namespace shopify
 
     public static class CheckoutBrandingSimpleBorderStringValues
     {
-        public const string NONE = "NONE";
-        public const string FULL = "FULL";
+        public const string NONE = @"NONE";
+        public const string FULL = @"FULL";
     }
 
     ///<summary>
@@ -7965,12 +7965,12 @@ namespace shopify
 
     public static class CheckoutBrandingSpacingStringValues
     {
-        public const string NONE = "NONE";
-        public const string EXTRA_TIGHT = "EXTRA_TIGHT";
-        public const string TIGHT = "TIGHT";
-        public const string BASE = "BASE";
-        public const string LOOSE = "LOOSE";
-        public const string EXTRA_LOOSE = "EXTRA_LOOSE";
+        public const string NONE = @"NONE";
+        public const string EXTRA_TIGHT = @"EXTRA_TIGHT";
+        public const string TIGHT = @"TIGHT";
+        public const string BASE = @"BASE";
+        public const string LOOSE = @"LOOSE";
+        public const string EXTRA_LOOSE = @"EXTRA_LOOSE";
     }
 
     ///<summary>
@@ -8038,20 +8038,20 @@ namespace shopify
 
     public static class CheckoutBrandingSpacingKeywordStringValues
     {
-        public const string NONE = "NONE";
-        public const string BASE = "BASE";
-        public const string SMALL = "SMALL";
-        public const string SMALL_100 = "SMALL_100";
-        public const string SMALL_200 = "SMALL_200";
-        public const string SMALL_300 = "SMALL_300";
-        public const string SMALL_400 = "SMALL_400";
-        public const string SMALL_500 = "SMALL_500";
-        public const string LARGE = "LARGE";
-        public const string LARGE_100 = "LARGE_100";
-        public const string LARGE_200 = "LARGE_200";
-        public const string LARGE_300 = "LARGE_300";
-        public const string LARGE_400 = "LARGE_400";
-        public const string LARGE_500 = "LARGE_500";
+        public const string NONE = @"NONE";
+        public const string BASE = @"BASE";
+        public const string SMALL = @"SMALL";
+        public const string SMALL_100 = @"SMALL_100";
+        public const string SMALL_200 = @"SMALL_200";
+        public const string SMALL_300 = @"SMALL_300";
+        public const string SMALL_400 = @"SMALL_400";
+        public const string SMALL_500 = @"SMALL_500";
+        public const string LARGE = @"LARGE";
+        public const string LARGE_100 = @"LARGE_100";
+        public const string LARGE_200 = @"LARGE_200";
+        public const string LARGE_300 = @"LARGE_300";
+        public const string LARGE_400 = @"LARGE_400";
+        public const string LARGE_500 = @"LARGE_500";
     }
 
     ///<summary>
@@ -8109,8 +8109,8 @@ namespace shopify
 
     public static class CheckoutBrandingTypographyFontStringValues
     {
-        public const string PRIMARY = "PRIMARY";
-        public const string SECONDARY = "SECONDARY";
+        public const string PRIMARY = @"PRIMARY";
+        public const string SECONDARY = @"SECONDARY";
     }
 
     ///<summary>
@@ -8134,9 +8134,9 @@ namespace shopify
 
     public static class CheckoutBrandingTypographyKerningStringValues
     {
-        public const string BASE = "BASE";
-        public const string LOOSE = "LOOSE";
-        public const string EXTRA_LOOSE = "EXTRA_LOOSE";
+        public const string BASE = @"BASE";
+        public const string LOOSE = @"LOOSE";
+        public const string EXTRA_LOOSE = @"EXTRA_LOOSE";
     }
 
     ///<summary>
@@ -8164,10 +8164,10 @@ namespace shopify
 
     public static class CheckoutBrandingTypographyLetterCaseStringValues
     {
-        public const string LOWER = "LOWER";
-        public const string NONE = "NONE";
-        public const string TITLE = "TITLE";
-        public const string UPPER = "UPPER";
+        public const string LOWER = @"LOWER";
+        public const string NONE = @"NONE";
+        public const string TITLE = @"TITLE";
+        public const string UPPER = @"UPPER";
     }
 
     ///<summary>
@@ -8212,13 +8212,13 @@ namespace shopify
 
     public static class CheckoutBrandingTypographySizeStringValues
     {
-        public const string EXTRA_SMALL = "EXTRA_SMALL";
-        public const string SMALL = "SMALL";
-        public const string BASE = "BASE";
-        public const string MEDIUM = "MEDIUM";
-        public const string LARGE = "LARGE";
-        public const string EXTRA_LARGE = "EXTRA_LARGE";
-        public const string EXTRA_EXTRA_LARGE = "EXTRA_EXTRA_LARGE";
+        public const string EXTRA_SMALL = @"EXTRA_SMALL";
+        public const string SMALL = @"SMALL";
+        public const string BASE = @"BASE";
+        public const string MEDIUM = @"MEDIUM";
+        public const string LARGE = @"LARGE";
+        public const string EXTRA_LARGE = @"EXTRA_LARGE";
+        public const string EXTRA_EXTRA_LARGE = @"EXTRA_EXTRA_LARGE";
     }
 
     ///<summary>
@@ -8280,8 +8280,8 @@ namespace shopify
 
     public static class CheckoutBrandingTypographyWeightStringValues
     {
-        public const string BASE = "BASE";
-        public const string BOLD = "BOLD";
+        public const string BASE = @"BASE";
+        public const string BOLD = @"BOLD";
     }
 
     ///<summary>
@@ -8331,7 +8331,7 @@ namespace shopify
 
     public static class CheckoutBrandingUpsertUserErrorCodeStringValues
     {
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
     }
 
     ///<summary>
@@ -8351,8 +8351,8 @@ namespace shopify
 
     public static class CheckoutBrandingVisibilityStringValues
     {
-        public const string HIDDEN = "HIDDEN";
-        public const string VISIBLE = "VISIBLE";
+        public const string HIDDEN = @"HIDDEN";
+        public const string VISIBLE = @"VISIBLE";
     }
 
     ///<summary>
@@ -8458,12 +8458,12 @@ namespace shopify
 
     public static class CheckoutProfileSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string EDITED_AT = "EDITED_AT";
-        public const string IS_PUBLISHED = "IS_PUBLISHED";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string EDITED_AT = @"EDITED_AT";
+        public const string IS_PUBLISHED = @"IS_PUBLISHED";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -8504,13 +8504,13 @@ namespace shopify
 
     public static class CodeDiscountSortKeysStringValues
     {
-        public const string STARTS_AT = "STARTS_AT";
-        public const string ENDS_AT = "ENDS_AT";
-        public const string TITLE = "TITLE";
-        public const string CREATED_AT = "CREATED_AT";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string STARTS_AT = @"STARTS_AT";
+        public const string ENDS_AT = @"ENDS_AT";
+        public const string TITLE = @"TITLE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -8778,8 +8778,8 @@ namespace shopify
 
     public static class CollectionAddProductsV2UserErrorCodeStringValues
     {
-        public const string CANT_ADD_TO_SMART_COLLECTION = "CANT_ADD_TO_SMART_COLLECTION";
-        public const string COLLECTION_DOES_NOT_EXIST = "COLLECTION_DOES_NOT_EXIST";
+        public const string CANT_ADD_TO_SMART_COLLECTION = @"CANT_ADD_TO_SMART_COLLECTION";
+        public const string COLLECTION_DOES_NOT_EXIST = @"COLLECTION_DOES_NOT_EXIST";
     }
 
     ///<summary>
@@ -9066,20 +9066,20 @@ namespace shopify
 
     public static class CollectionRuleColumnStringValues
     {
-        public const string TAG = "TAG";
-        public const string TITLE = "TITLE";
-        public const string TYPE = "TYPE";
-        public const string PRODUCT_TAXONOMY_NODE_ID = "PRODUCT_TAXONOMY_NODE_ID";
-        public const string PRODUCT_CATEGORY_ID = "PRODUCT_CATEGORY_ID";
-        public const string VENDOR = "VENDOR";
-        public const string VARIANT_PRICE = "VARIANT_PRICE";
-        public const string IS_PRICE_REDUCED = "IS_PRICE_REDUCED";
-        public const string VARIANT_COMPARE_AT_PRICE = "VARIANT_COMPARE_AT_PRICE";
-        public const string VARIANT_WEIGHT = "VARIANT_WEIGHT";
-        public const string VARIANT_INVENTORY = "VARIANT_INVENTORY";
-        public const string VARIANT_TITLE = "VARIANT_TITLE";
-        public const string PRODUCT_METAFIELD_DEFINITION = "PRODUCT_METAFIELD_DEFINITION";
-        public const string VARIANT_METAFIELD_DEFINITION = "VARIANT_METAFIELD_DEFINITION";
+        public const string TAG = @"TAG";
+        public const string TITLE = @"TITLE";
+        public const string TYPE = @"TYPE";
+        public const string PRODUCT_TAXONOMY_NODE_ID = @"PRODUCT_TAXONOMY_NODE_ID";
+        public const string PRODUCT_CATEGORY_ID = @"PRODUCT_CATEGORY_ID";
+        public const string VENDOR = @"VENDOR";
+        public const string VARIANT_PRICE = @"VARIANT_PRICE";
+        public const string IS_PRICE_REDUCED = @"IS_PRICE_REDUCED";
+        public const string VARIANT_COMPARE_AT_PRICE = @"VARIANT_COMPARE_AT_PRICE";
+        public const string VARIANT_WEIGHT = @"VARIANT_WEIGHT";
+        public const string VARIANT_INVENTORY = @"VARIANT_INVENTORY";
+        public const string VARIANT_TITLE = @"VARIANT_TITLE";
+        public const string PRODUCT_METAFIELD_DEFINITION = @"PRODUCT_METAFIELD_DEFINITION";
+        public const string VARIANT_METAFIELD_DEFINITION = @"VARIANT_METAFIELD_DEFINITION";
     }
 
     ///<summary>
@@ -9206,16 +9206,16 @@ namespace shopify
 
     public static class CollectionRuleRelationStringValues
     {
-        public const string CONTAINS = "CONTAINS";
-        public const string ENDS_WITH = "ENDS_WITH";
-        public const string EQUALS = "EQUALS";
-        public const string GREATER_THAN = "GREATER_THAN";
-        public const string IS_NOT_SET = "IS_NOT_SET";
-        public const string IS_SET = "IS_SET";
-        public const string LESS_THAN = "LESS_THAN";
-        public const string NOT_CONTAINS = "NOT_CONTAINS";
-        public const string NOT_EQUALS = "NOT_EQUALS";
-        public const string STARTS_WITH = "STARTS_WITH";
+        public const string CONTAINS = @"CONTAINS";
+        public const string ENDS_WITH = @"ENDS_WITH";
+        public const string EQUALS = @"EQUALS";
+        public const string GREATER_THAN = @"GREATER_THAN";
+        public const string IS_NOT_SET = @"IS_NOT_SET";
+        public const string IS_SET = @"IS_SET";
+        public const string LESS_THAN = @"LESS_THAN";
+        public const string NOT_CONTAINS = @"NOT_CONTAINS";
+        public const string NOT_EQUALS = @"NOT_EQUALS";
+        public const string STARTS_WITH = @"STARTS_WITH";
     }
 
     ///<summary>
@@ -9272,10 +9272,10 @@ namespace shopify
 
     public static class CollectionSortKeysStringValues
     {
-        public const string TITLE = "TITLE";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string TITLE = @"TITLE";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -9319,14 +9319,14 @@ namespace shopify
 
     public static class CollectionSortOrderStringValues
     {
-        public const string ALPHA_ASC = "ALPHA_ASC";
-        public const string ALPHA_DESC = "ALPHA_DESC";
-        public const string BEST_SELLING = "BEST_SELLING";
-        public const string CREATED = "CREATED";
-        public const string CREATED_DESC = "CREATED_DESC";
-        public const string MANUAL = "MANUAL";
-        public const string PRICE_ASC = "PRICE_ASC";
-        public const string PRICE_DESC = "PRICE_DESC";
+        public const string ALPHA_ASC = @"ALPHA_ASC";
+        public const string ALPHA_DESC = @"ALPHA_DESC";
+        public const string BEST_SELLING = @"BEST_SELLING";
+        public const string CREATED = @"CREATED";
+        public const string CREATED_DESC = @"CREATED_DESC";
+        public const string MANUAL = @"MANUAL";
+        public const string PRICE_ASC = @"PRICE_ASC";
+        public const string PRICE_DESC = @"PRICE_DESC";
     }
 
     ///<summary>
@@ -9586,34 +9586,34 @@ namespace shopify
 
     public static class CombinedListingUpdateUserErrorCodeStringValues
     {
-        public const string CANNOT_HAVE_DUPLICATED_PRODUCTS = "CANNOT_HAVE_DUPLICATED_PRODUCTS";
-        public const string CANNOT_HAVE_PARENT_AS_CHILD = "CANNOT_HAVE_PARENT_AS_CHILD";
-        public const string CANNOT_HAVE_REPEATED_OPTION_VALUES = "CANNOT_HAVE_REPEATED_OPTION_VALUES";
-        public const string CANNOT_HAVE_REPEATED_OPTIONS = "CANNOT_HAVE_REPEATED_OPTIONS";
-        public const string CANT_ADD_OPTIONS_VALUES_IF_ALREADY_EXISTS = "CANT_ADD_OPTIONS_VALUES_IF_ALREADY_EXISTS";
-        public const string COMBINED_LISTINGS_NOT_ENABLED = "COMBINED_LISTINGS_NOT_ENABLED";
-        public const string EDIT_AND_REMOVE_ON_SAME_PRODUCTS = "EDIT_AND_REMOVE_ON_SAME_PRODUCTS";
-        public const string FAILED_TO_ADD_PRODUCTS = "FAILED_TO_ADD_PRODUCTS";
-        public const string FAILED_TO_REMOVE_PRODUCTS = "FAILED_TO_REMOVE_PRODUCTS";
-        public const string FAILED_TO_UPDATE_PRODUCTS = "FAILED_TO_UPDATE_PRODUCTS";
-        public const string LINKED_METAFIELD_CANNOT_BE_CHANGED = "LINKED_METAFIELD_CANNOT_BE_CHANGED";
-        public const string LINKED_METAFIELD_VALUE_MISSING = "LINKED_METAFIELD_VALUE_MISSING";
-        public const string LINKED_METAFIELDS_CANNOT_BE_REPEATED = "LINKED_METAFIELDS_CANNOT_BE_REPEATED";
-        public const string LINKED_OPTIONS_NOT_SUPPORTED_FOR_SHOP = "LINKED_OPTIONS_NOT_SUPPORTED_FOR_SHOP";
-        public const string MUST_HAVE_SELECTED_OPTION_VALUES = "MUST_HAVE_SELECTED_OPTION_VALUES";
-        public const string OPTION_NAME_CANNOT_BE_BLANK = "OPTION_NAME_CANNOT_BE_BLANK";
-        public const string OPTION_NOT_FOUND = "OPTION_NOT_FOUND";
-        public const string OPTIONS_MUST_BE_EQUAL_TO_THE_OTHER_COMPONENTS = "OPTIONS_MUST_BE_EQUAL_TO_THE_OTHER_COMPONENTS";
-        public const string OPTION_VALUES_CANNOT_BE_BLANK = "OPTION_VALUES_CANNOT_BE_BLANK";
-        public const string OPTION_VALUES_CANNOT_BE_EMPTY = "OPTION_VALUES_CANNOT_BE_EMPTY";
-        public const string PARENT_PRODUCT_MUST_BE_A_COMBINED_LISTING = "PARENT_PRODUCT_MUST_BE_A_COMBINED_LISTING";
-        public const string PRODUCT_IS_ALREADY_A_CHILD = "PRODUCT_IS_ALREADY_A_CHILD";
-        public const string PRODUCT_MEMBERSHIP_NOT_FOUND = "PRODUCT_MEMBERSHIP_NOT_FOUND";
-        public const string PRODUCT_NOT_FOUND = "PRODUCT_NOT_FOUND";
-        public const string TITLE_TOO_LONG = "TITLE_TOO_LONG";
-        public const string TOO_MANY_VARIANTS = "TOO_MANY_VARIANTS";
-        public const string TOO_MANY_PRODUCTS = "TOO_MANY_PRODUCTS";
-        public const string UNEXPECTED_ERROR = "UNEXPECTED_ERROR";
+        public const string CANNOT_HAVE_DUPLICATED_PRODUCTS = @"CANNOT_HAVE_DUPLICATED_PRODUCTS";
+        public const string CANNOT_HAVE_PARENT_AS_CHILD = @"CANNOT_HAVE_PARENT_AS_CHILD";
+        public const string CANNOT_HAVE_REPEATED_OPTION_VALUES = @"CANNOT_HAVE_REPEATED_OPTION_VALUES";
+        public const string CANNOT_HAVE_REPEATED_OPTIONS = @"CANNOT_HAVE_REPEATED_OPTIONS";
+        public const string CANT_ADD_OPTIONS_VALUES_IF_ALREADY_EXISTS = @"CANT_ADD_OPTIONS_VALUES_IF_ALREADY_EXISTS";
+        public const string COMBINED_LISTINGS_NOT_ENABLED = @"COMBINED_LISTINGS_NOT_ENABLED";
+        public const string EDIT_AND_REMOVE_ON_SAME_PRODUCTS = @"EDIT_AND_REMOVE_ON_SAME_PRODUCTS";
+        public const string FAILED_TO_ADD_PRODUCTS = @"FAILED_TO_ADD_PRODUCTS";
+        public const string FAILED_TO_REMOVE_PRODUCTS = @"FAILED_TO_REMOVE_PRODUCTS";
+        public const string FAILED_TO_UPDATE_PRODUCTS = @"FAILED_TO_UPDATE_PRODUCTS";
+        public const string LINKED_METAFIELD_CANNOT_BE_CHANGED = @"LINKED_METAFIELD_CANNOT_BE_CHANGED";
+        public const string LINKED_METAFIELD_VALUE_MISSING = @"LINKED_METAFIELD_VALUE_MISSING";
+        public const string LINKED_METAFIELDS_CANNOT_BE_REPEATED = @"LINKED_METAFIELDS_CANNOT_BE_REPEATED";
+        public const string LINKED_OPTIONS_NOT_SUPPORTED_FOR_SHOP = @"LINKED_OPTIONS_NOT_SUPPORTED_FOR_SHOP";
+        public const string MUST_HAVE_SELECTED_OPTION_VALUES = @"MUST_HAVE_SELECTED_OPTION_VALUES";
+        public const string OPTION_NAME_CANNOT_BE_BLANK = @"OPTION_NAME_CANNOT_BE_BLANK";
+        public const string OPTION_NOT_FOUND = @"OPTION_NOT_FOUND";
+        public const string OPTIONS_MUST_BE_EQUAL_TO_THE_OTHER_COMPONENTS = @"OPTIONS_MUST_BE_EQUAL_TO_THE_OTHER_COMPONENTS";
+        public const string OPTION_VALUES_CANNOT_BE_BLANK = @"OPTION_VALUES_CANNOT_BE_BLANK";
+        public const string OPTION_VALUES_CANNOT_BE_EMPTY = @"OPTION_VALUES_CANNOT_BE_EMPTY";
+        public const string PARENT_PRODUCT_MUST_BE_A_COMBINED_LISTING = @"PARENT_PRODUCT_MUST_BE_A_COMBINED_LISTING";
+        public const string PRODUCT_IS_ALREADY_A_CHILD = @"PRODUCT_IS_ALREADY_A_CHILD";
+        public const string PRODUCT_MEMBERSHIP_NOT_FOUND = @"PRODUCT_MEMBERSHIP_NOT_FOUND";
+        public const string PRODUCT_NOT_FOUND = @"PRODUCT_NOT_FOUND";
+        public const string TITLE_TOO_LONG = @"TITLE_TOO_LONG";
+        public const string TOO_MANY_VARIANTS = @"TOO_MANY_VARIANTS";
+        public const string TOO_MANY_PRODUCTS = @"TOO_MANY_PRODUCTS";
+        public const string UNEXPECTED_ERROR = @"UNEXPECTED_ERROR";
     }
 
     ///<summary>
@@ -9633,8 +9633,8 @@ namespace shopify
 
     public static class CombinedListingsRoleStringValues
     {
-        public const string PARENT = "PARENT";
-        public const string CHILD = "CHILD";
+        public const string PARENT = @"PARENT";
+        public const string CHILD = @"CHILD";
     }
 
     ///<summary>
@@ -9743,7 +9743,7 @@ namespace shopify
 
     public static class CommentApproveUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
+        public const string NOT_FOUND = @"NOT_FOUND";
     }
 
     ///<summary>
@@ -9827,7 +9827,7 @@ namespace shopify
 
     public static class CommentDeleteUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
+        public const string NOT_FOUND = @"NOT_FOUND";
     }
 
     ///<summary>
@@ -10084,7 +10084,7 @@ namespace shopify
 
     public static class CommentNotSpamUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
+        public const string NOT_FOUND = @"NOT_FOUND";
     }
 
     ///<summary>
@@ -10108,9 +10108,9 @@ namespace shopify
 
     public static class CommentPolicyStringValues
     {
-        public const string AUTO_PUBLISHED = "AUTO_PUBLISHED";
-        public const string CLOSED = "CLOSED";
-        public const string MODERATED = "MODERATED";
+        public const string AUTO_PUBLISHED = @"AUTO_PUBLISHED";
+        public const string CLOSED = @"CLOSED";
+        public const string MODERATED = @"MODERATED";
     }
 
     ///<summary>
@@ -10135,9 +10135,9 @@ namespace shopify
 
     public static class CommentSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -10187,7 +10187,7 @@ namespace shopify
 
     public static class CommentSpamUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
+        public const string NOT_FOUND = @"NOT_FOUND";
     }
 
     ///<summary>
@@ -10219,11 +10219,11 @@ namespace shopify
 
     public static class CommentStatusStringValues
     {
-        public const string SPAM = "SPAM";
-        public const string REMOVED = "REMOVED";
-        public const string PUBLISHED = "PUBLISHED";
-        public const string UNAPPROVED = "UNAPPROVED";
-        public const string PENDING = "PENDING";
+        public const string SPAM = @"SPAM";
+        public const string REMOVED = @"REMOVED";
+        public const string PUBLISHED = @"PUBLISHED";
+        public const string UNAPPROVED = @"UNAPPROVED";
+        public const string PENDING = @"PENDING";
     }
 
     ///<summary>
@@ -10484,8 +10484,8 @@ namespace shopify
 
     public static class CompanyAddressTypeStringValues
     {
-        public const string BILLING = "BILLING";
-        public const string SHIPPING = "SHIPPING";
+        public const string BILLING = @"BILLING";
+        public const string SHIPPING = @"SHIPPING";
     }
 
     ///<summary>
@@ -10850,11 +10850,11 @@ namespace shopify
 
     public static class CompanyContactRoleAssignmentSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string LOCATION_NAME = "LOCATION_NAME";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string LOCATION_NAME = @"LOCATION_NAME";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -10917,10 +10917,10 @@ namespace shopify
 
     public static class CompanyContactRoleSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -10984,15 +10984,15 @@ namespace shopify
 
     public static class CompanyContactSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string TITLE = "TITLE";
-        public const string COMPANY_ID = "COMPANY_ID";
-        public const string NAME = "NAME";
-        public const string EMAIL = "EMAIL";
-        public const string NAME_EMAIL = "NAME_EMAIL";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string TITLE = @"TITLE";
+        public const string COMPANY_ID = @"COMPANY_ID";
+        public const string NAME = @"NAME";
+        public const string EMAIL = @"EMAIL";
+        public const string NAME_EMAIL = @"NAME_EMAIL";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -11500,13 +11500,13 @@ namespace shopify
 
     public static class CompanyLocationSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string NAME = "NAME";
-        public const string COMPANY_ID = "COMPANY_ID";
-        public const string COMPANY_AND_LOCATION_NAME = "COMPANY_AND_LOCATION_NAME";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string NAME = @"NAME";
+        public const string COMPANY_ID = @"COMPANY_ID";
+        public const string COMPANY_AND_LOCATION_NAME = @"COMPANY_AND_LOCATION_NAME";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -11588,10 +11588,10 @@ namespace shopify
 
     public static class CompanyLocationStaffMemberAssignmentSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -11681,14 +11681,14 @@ namespace shopify
 
     public static class CompanySortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string SINCE_DATE = "SINCE_DATE";
-        public const string NAME = "NAME";
-        public const string ORDER_COUNT = "ORDER_COUNT";
-        public const string TOTAL_SPENT = "TOTAL_SPENT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string SINCE_DATE = @"SINCE_DATE";
+        public const string NAME = @"NAME";
+        public const string ORDER_COUNT = @"ORDER_COUNT";
+        public const string TOTAL_SPENT = @"TOTAL_SPENT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -11738,8 +11738,8 @@ namespace shopify
 
     public static class CountPrecisionStringValues
     {
-        public const string EXACT = "EXACT";
-        public const string AT_LEAST = "AT_LEAST";
+        public const string EXACT = @"EXACT";
+        public const string AT_LEAST = @"AT_LEAST";
     }
 
     ///<summary>
@@ -12749,251 +12749,251 @@ namespace shopify
 
     public static class CountryCodeStringValues
     {
-        public const string AF = "AF";
-        public const string AX = "AX";
-        public const string AL = "AL";
-        public const string DZ = "DZ";
-        public const string AD = "AD";
-        public const string AO = "AO";
-        public const string AI = "AI";
-        public const string AG = "AG";
-        public const string AR = "AR";
-        public const string AM = "AM";
-        public const string AW = "AW";
-        public const string AC = "AC";
-        public const string AU = "AU";
-        public const string AT = "AT";
-        public const string AZ = "AZ";
-        public const string BS = "BS";
-        public const string BH = "BH";
-        public const string BD = "BD";
-        public const string BB = "BB";
-        public const string BY = "BY";
-        public const string BE = "BE";
-        public const string BZ = "BZ";
-        public const string BJ = "BJ";
-        public const string BM = "BM";
-        public const string BT = "BT";
-        public const string BO = "BO";
-        public const string BA = "BA";
-        public const string BW = "BW";
-        public const string BV = "BV";
-        public const string BR = "BR";
-        public const string IO = "IO";
-        public const string BN = "BN";
-        public const string BG = "BG";
-        public const string BF = "BF";
-        public const string BI = "BI";
-        public const string KH = "KH";
-        public const string CA = "CA";
-        public const string CV = "CV";
-        public const string BQ = "BQ";
-        public const string KY = "KY";
-        public const string CF = "CF";
-        public const string TD = "TD";
-        public const string CL = "CL";
-        public const string CN = "CN";
-        public const string CX = "CX";
-        public const string CC = "CC";
-        public const string CO = "CO";
-        public const string KM = "KM";
-        public const string CG = "CG";
-        public const string CD = "CD";
-        public const string CK = "CK";
-        public const string CR = "CR";
-        public const string HR = "HR";
-        public const string CU = "CU";
-        public const string CW = "CW";
-        public const string CY = "CY";
-        public const string CZ = "CZ";
-        public const string CI = "CI";
-        public const string DK = "DK";
-        public const string DJ = "DJ";
-        public const string DM = "DM";
-        public const string DO = "DO";
-        public const string EC = "EC";
-        public const string EG = "EG";
-        public const string SV = "SV";
-        public const string GQ = "GQ";
-        public const string ER = "ER";
-        public const string EE = "EE";
-        public const string SZ = "SZ";
-        public const string ET = "ET";
-        public const string FK = "FK";
-        public const string FO = "FO";
-        public const string FJ = "FJ";
-        public const string FI = "FI";
-        public const string FR = "FR";
-        public const string GF = "GF";
-        public const string PF = "PF";
-        public const string TF = "TF";
-        public const string GA = "GA";
-        public const string GM = "GM";
-        public const string GE = "GE";
-        public const string DE = "DE";
-        public const string GH = "GH";
-        public const string GI = "GI";
-        public const string GR = "GR";
-        public const string GL = "GL";
-        public const string GD = "GD";
-        public const string GP = "GP";
-        public const string GT = "GT";
-        public const string GG = "GG";
-        public const string GN = "GN";
-        public const string GW = "GW";
-        public const string GY = "GY";
-        public const string HT = "HT";
-        public const string HM = "HM";
-        public const string VA = "VA";
-        public const string HN = "HN";
-        public const string HK = "HK";
-        public const string HU = "HU";
-        public const string IS = "IS";
-        public const string IN = "IN";
-        public const string ID = "ID";
-        public const string IR = "IR";
-        public const string IQ = "IQ";
-        public const string IE = "IE";
-        public const string IM = "IM";
-        public const string IL = "IL";
-        public const string IT = "IT";
-        public const string JM = "JM";
-        public const string JP = "JP";
-        public const string JE = "JE";
-        public const string JO = "JO";
-        public const string KZ = "KZ";
-        public const string KE = "KE";
-        public const string KI = "KI";
-        public const string KP = "KP";
-        public const string XK = "XK";
-        public const string KW = "KW";
-        public const string KG = "KG";
-        public const string LA = "LA";
-        public const string LV = "LV";
-        public const string LB = "LB";
-        public const string LS = "LS";
-        public const string LR = "LR";
-        public const string LY = "LY";
-        public const string LI = "LI";
-        public const string LT = "LT";
-        public const string LU = "LU";
-        public const string MO = "MO";
-        public const string MG = "MG";
-        public const string MW = "MW";
-        public const string MY = "MY";
-        public const string MV = "MV";
-        public const string ML = "ML";
-        public const string MT = "MT";
-        public const string MQ = "MQ";
-        public const string MR = "MR";
-        public const string MU = "MU";
-        public const string YT = "YT";
-        public const string MX = "MX";
-        public const string MD = "MD";
-        public const string MC = "MC";
-        public const string MN = "MN";
-        public const string ME = "ME";
-        public const string MS = "MS";
-        public const string MA = "MA";
-        public const string MZ = "MZ";
-        public const string MM = "MM";
-        public const string NA = "NA";
-        public const string NR = "NR";
-        public const string NP = "NP";
-        public const string NL = "NL";
-        public const string AN = "AN";
-        public const string NC = "NC";
-        public const string NZ = "NZ";
-        public const string NI = "NI";
-        public const string NE = "NE";
-        public const string NG = "NG";
-        public const string NU = "NU";
-        public const string NF = "NF";
-        public const string MK = "MK";
-        public const string NO = "NO";
-        public const string OM = "OM";
-        public const string PK = "PK";
-        public const string PS = "PS";
-        public const string PA = "PA";
-        public const string PG = "PG";
-        public const string PY = "PY";
-        public const string PE = "PE";
-        public const string PH = "PH";
-        public const string PN = "PN";
-        public const string PL = "PL";
-        public const string PT = "PT";
-        public const string QA = "QA";
-        public const string CM = "CM";
-        public const string RE = "RE";
-        public const string RO = "RO";
-        public const string RU = "RU";
-        public const string RW = "RW";
-        public const string BL = "BL";
-        public const string SH = "SH";
-        public const string KN = "KN";
-        public const string LC = "LC";
-        public const string MF = "MF";
-        public const string PM = "PM";
-        public const string WS = "WS";
-        public const string SM = "SM";
-        public const string ST = "ST";
-        public const string SA = "SA";
-        public const string SN = "SN";
-        public const string RS = "RS";
-        public const string SC = "SC";
-        public const string SL = "SL";
-        public const string SG = "SG";
-        public const string SX = "SX";
-        public const string SK = "SK";
-        public const string SI = "SI";
-        public const string SB = "SB";
-        public const string SO = "SO";
-        public const string ZA = "ZA";
-        public const string GS = "GS";
-        public const string KR = "KR";
-        public const string SS = "SS";
-        public const string ES = "ES";
-        public const string LK = "LK";
-        public const string VC = "VC";
-        public const string SD = "SD";
-        public const string SR = "SR";
-        public const string SJ = "SJ";
-        public const string SE = "SE";
-        public const string CH = "CH";
-        public const string SY = "SY";
-        public const string TW = "TW";
-        public const string TJ = "TJ";
-        public const string TZ = "TZ";
-        public const string TH = "TH";
-        public const string TL = "TL";
-        public const string TG = "TG";
-        public const string TK = "TK";
-        public const string TO = "TO";
-        public const string TT = "TT";
-        public const string TA = "TA";
-        public const string TN = "TN";
-        public const string TR = "TR";
-        public const string TM = "TM";
-        public const string TC = "TC";
-        public const string TV = "TV";
-        public const string UG = "UG";
-        public const string UA = "UA";
-        public const string AE = "AE";
-        public const string GB = "GB";
-        public const string US = "US";
-        public const string UM = "UM";
-        public const string UY = "UY";
-        public const string UZ = "UZ";
-        public const string VU = "VU";
-        public const string VE = "VE";
-        public const string VN = "VN";
-        public const string VG = "VG";
-        public const string WF = "WF";
-        public const string EH = "EH";
-        public const string YE = "YE";
-        public const string ZM = "ZM";
-        public const string ZW = "ZW";
-        public const string ZZ = "ZZ";
+        public const string AF = @"AF";
+        public const string AX = @"AX";
+        public const string AL = @"AL";
+        public const string DZ = @"DZ";
+        public const string AD = @"AD";
+        public const string AO = @"AO";
+        public const string AI = @"AI";
+        public const string AG = @"AG";
+        public const string AR = @"AR";
+        public const string AM = @"AM";
+        public const string AW = @"AW";
+        public const string AC = @"AC";
+        public const string AU = @"AU";
+        public const string AT = @"AT";
+        public const string AZ = @"AZ";
+        public const string BS = @"BS";
+        public const string BH = @"BH";
+        public const string BD = @"BD";
+        public const string BB = @"BB";
+        public const string BY = @"BY";
+        public const string BE = @"BE";
+        public const string BZ = @"BZ";
+        public const string BJ = @"BJ";
+        public const string BM = @"BM";
+        public const string BT = @"BT";
+        public const string BO = @"BO";
+        public const string BA = @"BA";
+        public const string BW = @"BW";
+        public const string BV = @"BV";
+        public const string BR = @"BR";
+        public const string IO = @"IO";
+        public const string BN = @"BN";
+        public const string BG = @"BG";
+        public const string BF = @"BF";
+        public const string BI = @"BI";
+        public const string KH = @"KH";
+        public const string CA = @"CA";
+        public const string CV = @"CV";
+        public const string BQ = @"BQ";
+        public const string KY = @"KY";
+        public const string CF = @"CF";
+        public const string TD = @"TD";
+        public const string CL = @"CL";
+        public const string CN = @"CN";
+        public const string CX = @"CX";
+        public const string CC = @"CC";
+        public const string CO = @"CO";
+        public const string KM = @"KM";
+        public const string CG = @"CG";
+        public const string CD = @"CD";
+        public const string CK = @"CK";
+        public const string CR = @"CR";
+        public const string HR = @"HR";
+        public const string CU = @"CU";
+        public const string CW = @"CW";
+        public const string CY = @"CY";
+        public const string CZ = @"CZ";
+        public const string CI = @"CI";
+        public const string DK = @"DK";
+        public const string DJ = @"DJ";
+        public const string DM = @"DM";
+        public const string DO = @"DO";
+        public const string EC = @"EC";
+        public const string EG = @"EG";
+        public const string SV = @"SV";
+        public const string GQ = @"GQ";
+        public const string ER = @"ER";
+        public const string EE = @"EE";
+        public const string SZ = @"SZ";
+        public const string ET = @"ET";
+        public const string FK = @"FK";
+        public const string FO = @"FO";
+        public const string FJ = @"FJ";
+        public const string FI = @"FI";
+        public const string FR = @"FR";
+        public const string GF = @"GF";
+        public const string PF = @"PF";
+        public const string TF = @"TF";
+        public const string GA = @"GA";
+        public const string GM = @"GM";
+        public const string GE = @"GE";
+        public const string DE = @"DE";
+        public const string GH = @"GH";
+        public const string GI = @"GI";
+        public const string GR = @"GR";
+        public const string GL = @"GL";
+        public const string GD = @"GD";
+        public const string GP = @"GP";
+        public const string GT = @"GT";
+        public const string GG = @"GG";
+        public const string GN = @"GN";
+        public const string GW = @"GW";
+        public const string GY = @"GY";
+        public const string HT = @"HT";
+        public const string HM = @"HM";
+        public const string VA = @"VA";
+        public const string HN = @"HN";
+        public const string HK = @"HK";
+        public const string HU = @"HU";
+        public const string IS = @"IS";
+        public const string IN = @"IN";
+        public const string ID = @"ID";
+        public const string IR = @"IR";
+        public const string IQ = @"IQ";
+        public const string IE = @"IE";
+        public const string IM = @"IM";
+        public const string IL = @"IL";
+        public const string IT = @"IT";
+        public const string JM = @"JM";
+        public const string JP = @"JP";
+        public const string JE = @"JE";
+        public const string JO = @"JO";
+        public const string KZ = @"KZ";
+        public const string KE = @"KE";
+        public const string KI = @"KI";
+        public const string KP = @"KP";
+        public const string XK = @"XK";
+        public const string KW = @"KW";
+        public const string KG = @"KG";
+        public const string LA = @"LA";
+        public const string LV = @"LV";
+        public const string LB = @"LB";
+        public const string LS = @"LS";
+        public const string LR = @"LR";
+        public const string LY = @"LY";
+        public const string LI = @"LI";
+        public const string LT = @"LT";
+        public const string LU = @"LU";
+        public const string MO = @"MO";
+        public const string MG = @"MG";
+        public const string MW = @"MW";
+        public const string MY = @"MY";
+        public const string MV = @"MV";
+        public const string ML = @"ML";
+        public const string MT = @"MT";
+        public const string MQ = @"MQ";
+        public const string MR = @"MR";
+        public const string MU = @"MU";
+        public const string YT = @"YT";
+        public const string MX = @"MX";
+        public const string MD = @"MD";
+        public const string MC = @"MC";
+        public const string MN = @"MN";
+        public const string ME = @"ME";
+        public const string MS = @"MS";
+        public const string MA = @"MA";
+        public const string MZ = @"MZ";
+        public const string MM = @"MM";
+        public const string NA = @"NA";
+        public const string NR = @"NR";
+        public const string NP = @"NP";
+        public const string NL = @"NL";
+        public const string AN = @"AN";
+        public const string NC = @"NC";
+        public const string NZ = @"NZ";
+        public const string NI = @"NI";
+        public const string NE = @"NE";
+        public const string NG = @"NG";
+        public const string NU = @"NU";
+        public const string NF = @"NF";
+        public const string MK = @"MK";
+        public const string NO = @"NO";
+        public const string OM = @"OM";
+        public const string PK = @"PK";
+        public const string PS = @"PS";
+        public const string PA = @"PA";
+        public const string PG = @"PG";
+        public const string PY = @"PY";
+        public const string PE = @"PE";
+        public const string PH = @"PH";
+        public const string PN = @"PN";
+        public const string PL = @"PL";
+        public const string PT = @"PT";
+        public const string QA = @"QA";
+        public const string CM = @"CM";
+        public const string RE = @"RE";
+        public const string RO = @"RO";
+        public const string RU = @"RU";
+        public const string RW = @"RW";
+        public const string BL = @"BL";
+        public const string SH = @"SH";
+        public const string KN = @"KN";
+        public const string LC = @"LC";
+        public const string MF = @"MF";
+        public const string PM = @"PM";
+        public const string WS = @"WS";
+        public const string SM = @"SM";
+        public const string ST = @"ST";
+        public const string SA = @"SA";
+        public const string SN = @"SN";
+        public const string RS = @"RS";
+        public const string SC = @"SC";
+        public const string SL = @"SL";
+        public const string SG = @"SG";
+        public const string SX = @"SX";
+        public const string SK = @"SK";
+        public const string SI = @"SI";
+        public const string SB = @"SB";
+        public const string SO = @"SO";
+        public const string ZA = @"ZA";
+        public const string GS = @"GS";
+        public const string KR = @"KR";
+        public const string SS = @"SS";
+        public const string ES = @"ES";
+        public const string LK = @"LK";
+        public const string VC = @"VC";
+        public const string SD = @"SD";
+        public const string SR = @"SR";
+        public const string SJ = @"SJ";
+        public const string SE = @"SE";
+        public const string CH = @"CH";
+        public const string SY = @"SY";
+        public const string TW = @"TW";
+        public const string TJ = @"TJ";
+        public const string TZ = @"TZ";
+        public const string TH = @"TH";
+        public const string TL = @"TL";
+        public const string TG = @"TG";
+        public const string TK = @"TK";
+        public const string TO = @"TO";
+        public const string TT = @"TT";
+        public const string TA = @"TA";
+        public const string TN = @"TN";
+        public const string TR = @"TR";
+        public const string TM = @"TM";
+        public const string TC = @"TC";
+        public const string TV = @"TV";
+        public const string UG = @"UG";
+        public const string UA = @"UA";
+        public const string AE = @"AE";
+        public const string GB = @"GB";
+        public const string US = @"US";
+        public const string UM = @"UM";
+        public const string UY = @"UY";
+        public const string UZ = @"UZ";
+        public const string VU = @"VU";
+        public const string VE = @"VE";
+        public const string VN = @"VN";
+        public const string VG = @"VG";
+        public const string WF = @"WF";
+        public const string EH = @"EH";
+        public const string YE = @"YE";
+        public const string ZM = @"ZM";
+        public const string ZW = @"ZW";
+        public const string ZZ = @"ZZ";
     }
 
     ///<summary>
@@ -13074,11 +13074,11 @@ namespace shopify
 
     public static class CropRegionStringValues
     {
-        public const string CENTER = "CENTER";
-        public const string TOP = "TOP";
-        public const string BOTTOM = "BOTTOM";
-        public const string LEFT = "LEFT";
-        public const string RIGHT = "RIGHT";
+        public const string CENTER = @"CENTER";
+        public const string TOP = @"TOP";
+        public const string BOTTOM = @"BOTTOM";
+        public const string LEFT = @"LEFT";
+        public const string RIGHT = @"RIGHT";
     }
 
     ///<summary>
@@ -13738,170 +13738,170 @@ namespace shopify
 
     public static class CurrencyCodeStringValues
     {
-        public const string USD = "USD";
-        public const string EUR = "EUR";
-        public const string GBP = "GBP";
-        public const string CAD = "CAD";
-        public const string AFN = "AFN";
-        public const string ALL = "ALL";
-        public const string DZD = "DZD";
-        public const string AOA = "AOA";
-        public const string ARS = "ARS";
-        public const string AMD = "AMD";
-        public const string AWG = "AWG";
-        public const string AUD = "AUD";
-        public const string BBD = "BBD";
-        public const string AZN = "AZN";
-        public const string BDT = "BDT";
-        public const string BSD = "BSD";
-        public const string BHD = "BHD";
-        public const string BIF = "BIF";
-        public const string BYN = "BYN";
-        public const string BZD = "BZD";
-        public const string BMD = "BMD";
-        public const string BTN = "BTN";
-        public const string BAM = "BAM";
-        public const string BRL = "BRL";
-        public const string BOB = "BOB";
-        public const string BWP = "BWP";
-        public const string BND = "BND";
-        public const string BGN = "BGN";
-        public const string MMK = "MMK";
-        public const string KHR = "KHR";
-        public const string CVE = "CVE";
-        public const string KYD = "KYD";
-        public const string XAF = "XAF";
-        public const string CLP = "CLP";
-        public const string CNY = "CNY";
-        public const string COP = "COP";
-        public const string KMF = "KMF";
-        public const string CDF = "CDF";
-        public const string CRC = "CRC";
-        public const string HRK = "HRK";
-        public const string CZK = "CZK";
-        public const string DKK = "DKK";
-        public const string DJF = "DJF";
-        public const string DOP = "DOP";
-        public const string XCD = "XCD";
-        public const string EGP = "EGP";
-        public const string ERN = "ERN";
-        public const string ETB = "ETB";
-        public const string FKP = "FKP";
-        public const string XPF = "XPF";
-        public const string FJD = "FJD";
-        public const string GIP = "GIP";
-        public const string GMD = "GMD";
-        public const string GHS = "GHS";
-        public const string GTQ = "GTQ";
-        public const string GYD = "GYD";
-        public const string GEL = "GEL";
-        public const string GNF = "GNF";
-        public const string HTG = "HTG";
-        public const string HNL = "HNL";
-        public const string HKD = "HKD";
-        public const string HUF = "HUF";
-        public const string ISK = "ISK";
-        public const string INR = "INR";
-        public const string IDR = "IDR";
-        public const string ILS = "ILS";
-        public const string IRR = "IRR";
-        public const string IQD = "IQD";
-        public const string JMD = "JMD";
-        public const string JPY = "JPY";
-        public const string JEP = "JEP";
-        public const string JOD = "JOD";
-        public const string KZT = "KZT";
-        public const string KES = "KES";
-        public const string KID = "KID";
-        public const string KWD = "KWD";
-        public const string KGS = "KGS";
-        public const string LAK = "LAK";
-        public const string LVL = "LVL";
-        public const string LBP = "LBP";
-        public const string LSL = "LSL";
-        public const string LRD = "LRD";
-        public const string LYD = "LYD";
-        public const string LTL = "LTL";
-        public const string MGA = "MGA";
-        public const string MKD = "MKD";
-        public const string MOP = "MOP";
-        public const string MWK = "MWK";
-        public const string MVR = "MVR";
-        public const string MRU = "MRU";
-        public const string MXN = "MXN";
-        public const string MYR = "MYR";
-        public const string MUR = "MUR";
-        public const string MDL = "MDL";
-        public const string MAD = "MAD";
-        public const string MNT = "MNT";
-        public const string MZN = "MZN";
-        public const string NAD = "NAD";
-        public const string NPR = "NPR";
-        public const string ANG = "ANG";
-        public const string NZD = "NZD";
-        public const string NIO = "NIO";
-        public const string NGN = "NGN";
-        public const string NOK = "NOK";
-        public const string OMR = "OMR";
-        public const string PAB = "PAB";
-        public const string PKR = "PKR";
-        public const string PGK = "PGK";
-        public const string PYG = "PYG";
-        public const string PEN = "PEN";
-        public const string PHP = "PHP";
-        public const string PLN = "PLN";
-        public const string QAR = "QAR";
-        public const string RON = "RON";
-        public const string RUB = "RUB";
-        public const string RWF = "RWF";
-        public const string WST = "WST";
-        public const string SHP = "SHP";
-        public const string SAR = "SAR";
-        public const string RSD = "RSD";
-        public const string SCR = "SCR";
-        public const string SLL = "SLL";
-        public const string SGD = "SGD";
-        public const string SDG = "SDG";
-        public const string SOS = "SOS";
-        public const string SYP = "SYP";
-        public const string ZAR = "ZAR";
-        public const string KRW = "KRW";
-        public const string SSP = "SSP";
-        public const string SBD = "SBD";
-        public const string LKR = "LKR";
-        public const string SRD = "SRD";
-        public const string SZL = "SZL";
-        public const string SEK = "SEK";
-        public const string CHF = "CHF";
-        public const string TWD = "TWD";
-        public const string THB = "THB";
-        public const string TJS = "TJS";
-        public const string TZS = "TZS";
-        public const string TOP = "TOP";
-        public const string TTD = "TTD";
-        public const string TND = "TND";
-        public const string TRY = "TRY";
-        public const string TMT = "TMT";
-        public const string UGX = "UGX";
-        public const string UAH = "UAH";
-        public const string AED = "AED";
-        public const string UYU = "UYU";
-        public const string UZS = "UZS";
-        public const string VUV = "VUV";
-        public const string VES = "VES";
-        public const string VND = "VND";
-        public const string XOF = "XOF";
-        public const string YER = "YER";
-        public const string ZMW = "ZMW";
+        public const string USD = @"USD";
+        public const string EUR = @"EUR";
+        public const string GBP = @"GBP";
+        public const string CAD = @"CAD";
+        public const string AFN = @"AFN";
+        public const string ALL = @"ALL";
+        public const string DZD = @"DZD";
+        public const string AOA = @"AOA";
+        public const string ARS = @"ARS";
+        public const string AMD = @"AMD";
+        public const string AWG = @"AWG";
+        public const string AUD = @"AUD";
+        public const string BBD = @"BBD";
+        public const string AZN = @"AZN";
+        public const string BDT = @"BDT";
+        public const string BSD = @"BSD";
+        public const string BHD = @"BHD";
+        public const string BIF = @"BIF";
+        public const string BYN = @"BYN";
+        public const string BZD = @"BZD";
+        public const string BMD = @"BMD";
+        public const string BTN = @"BTN";
+        public const string BAM = @"BAM";
+        public const string BRL = @"BRL";
+        public const string BOB = @"BOB";
+        public const string BWP = @"BWP";
+        public const string BND = @"BND";
+        public const string BGN = @"BGN";
+        public const string MMK = @"MMK";
+        public const string KHR = @"KHR";
+        public const string CVE = @"CVE";
+        public const string KYD = @"KYD";
+        public const string XAF = @"XAF";
+        public const string CLP = @"CLP";
+        public const string CNY = @"CNY";
+        public const string COP = @"COP";
+        public const string KMF = @"KMF";
+        public const string CDF = @"CDF";
+        public const string CRC = @"CRC";
+        public const string HRK = @"HRK";
+        public const string CZK = @"CZK";
+        public const string DKK = @"DKK";
+        public const string DJF = @"DJF";
+        public const string DOP = @"DOP";
+        public const string XCD = @"XCD";
+        public const string EGP = @"EGP";
+        public const string ERN = @"ERN";
+        public const string ETB = @"ETB";
+        public const string FKP = @"FKP";
+        public const string XPF = @"XPF";
+        public const string FJD = @"FJD";
+        public const string GIP = @"GIP";
+        public const string GMD = @"GMD";
+        public const string GHS = @"GHS";
+        public const string GTQ = @"GTQ";
+        public const string GYD = @"GYD";
+        public const string GEL = @"GEL";
+        public const string GNF = @"GNF";
+        public const string HTG = @"HTG";
+        public const string HNL = @"HNL";
+        public const string HKD = @"HKD";
+        public const string HUF = @"HUF";
+        public const string ISK = @"ISK";
+        public const string INR = @"INR";
+        public const string IDR = @"IDR";
+        public const string ILS = @"ILS";
+        public const string IRR = @"IRR";
+        public const string IQD = @"IQD";
+        public const string JMD = @"JMD";
+        public const string JPY = @"JPY";
+        public const string JEP = @"JEP";
+        public const string JOD = @"JOD";
+        public const string KZT = @"KZT";
+        public const string KES = @"KES";
+        public const string KID = @"KID";
+        public const string KWD = @"KWD";
+        public const string KGS = @"KGS";
+        public const string LAK = @"LAK";
+        public const string LVL = @"LVL";
+        public const string LBP = @"LBP";
+        public const string LSL = @"LSL";
+        public const string LRD = @"LRD";
+        public const string LYD = @"LYD";
+        public const string LTL = @"LTL";
+        public const string MGA = @"MGA";
+        public const string MKD = @"MKD";
+        public const string MOP = @"MOP";
+        public const string MWK = @"MWK";
+        public const string MVR = @"MVR";
+        public const string MRU = @"MRU";
+        public const string MXN = @"MXN";
+        public const string MYR = @"MYR";
+        public const string MUR = @"MUR";
+        public const string MDL = @"MDL";
+        public const string MAD = @"MAD";
+        public const string MNT = @"MNT";
+        public const string MZN = @"MZN";
+        public const string NAD = @"NAD";
+        public const string NPR = @"NPR";
+        public const string ANG = @"ANG";
+        public const string NZD = @"NZD";
+        public const string NIO = @"NIO";
+        public const string NGN = @"NGN";
+        public const string NOK = @"NOK";
+        public const string OMR = @"OMR";
+        public const string PAB = @"PAB";
+        public const string PKR = @"PKR";
+        public const string PGK = @"PGK";
+        public const string PYG = @"PYG";
+        public const string PEN = @"PEN";
+        public const string PHP = @"PHP";
+        public const string PLN = @"PLN";
+        public const string QAR = @"QAR";
+        public const string RON = @"RON";
+        public const string RUB = @"RUB";
+        public const string RWF = @"RWF";
+        public const string WST = @"WST";
+        public const string SHP = @"SHP";
+        public const string SAR = @"SAR";
+        public const string RSD = @"RSD";
+        public const string SCR = @"SCR";
+        public const string SLL = @"SLL";
+        public const string SGD = @"SGD";
+        public const string SDG = @"SDG";
+        public const string SOS = @"SOS";
+        public const string SYP = @"SYP";
+        public const string ZAR = @"ZAR";
+        public const string KRW = @"KRW";
+        public const string SSP = @"SSP";
+        public const string SBD = @"SBD";
+        public const string LKR = @"LKR";
+        public const string SRD = @"SRD";
+        public const string SZL = @"SZL";
+        public const string SEK = @"SEK";
+        public const string CHF = @"CHF";
+        public const string TWD = @"TWD";
+        public const string THB = @"THB";
+        public const string TJS = @"TJS";
+        public const string TZS = @"TZS";
+        public const string TOP = @"TOP";
+        public const string TTD = @"TTD";
+        public const string TND = @"TND";
+        public const string TRY = @"TRY";
+        public const string TMT = @"TMT";
+        public const string UGX = @"UGX";
+        public const string UAH = @"UAH";
+        public const string AED = @"AED";
+        public const string UYU = @"UYU";
+        public const string UZS = @"UZS";
+        public const string VUV = @"VUV";
+        public const string VES = @"VES";
+        public const string VND = @"VND";
+        public const string XOF = @"XOF";
+        public const string YER = @"YER";
+        public const string ZMW = @"ZMW";
         [Obsolete("`BYR` is deprecated. Use `BYN` available from version `2021-01` onwards instead.")]
-        public const string BYR = "BYR";
+        public const string BYR = @"BYR";
         [Obsolete("`STD` is deprecated. Use `STN` available from version `2022-07` onwards instead.")]
-        public const string STD = "STD";
-        public const string STN = "STN";
-        public const string VED = "VED";
+        public const string STD = @"STD";
+        public const string STN = @"STN";
+        public const string VED = @"VED";
         [Obsolete("`VEF` is deprecated. Use `VES` available from version `2020-10` onwards instead.")]
-        public const string VEF = "VEF";
-        public const string XXX = "XXX";
+        public const string VEF = @"VEF";
+        public const string XXX = @"XXX";
     }
 
     ///<summary>
@@ -14287,10 +14287,10 @@ namespace shopify
 
     public static class CustomerAccountNativePagePageTypeStringValues
     {
-        public const string NATIVE_ORDERS = "NATIVE_ORDERS";
-        public const string NATIVE_SETTINGS = "NATIVE_SETTINGS";
-        public const string NATIVE_PROFILE = "NATIVE_PROFILE";
-        public const string UNKNOWN = "UNKNOWN";
+        public const string NATIVE_ORDERS = @"NATIVE_ORDERS";
+        public const string NATIVE_SETTINGS = @"NATIVE_SETTINGS";
+        public const string NATIVE_PROFILE = @"NATIVE_PROFILE";
+        public const string UNKNOWN = @"UNKNOWN";
     }
 
     ///<summary>
@@ -14385,8 +14385,8 @@ namespace shopify
 
     public static class CustomerAccountsVersionStringValues
     {
-        public const string CLASSIC = "CLASSIC";
-        public const string NEW_CUSTOMER_ACCOUNTS = "NEW_CUSTOMER_ACCOUNTS";
+        public const string CLASSIC = @"CLASSIC";
+        public const string NEW_CUSTOMER_ACCOUNTS = @"NEW_CUSTOMER_ACCOUNTS";
     }
 
     ///<summary>
@@ -14425,9 +14425,9 @@ namespace shopify
 
     public static class CustomerCancelDataErasureErrorCodeStringValues
     {
-        public const string DOES_NOT_EXIST = "DOES_NOT_EXIST";
-        public const string FAILED_TO_CANCEL = "FAILED_TO_CANCEL";
-        public const string NOT_BEING_ERASED = "NOT_BEING_ERASED";
+        public const string DOES_NOT_EXIST = @"DOES_NOT_EXIST";
+        public const string FAILED_TO_CANCEL = @"FAILED_TO_CANCEL";
+        public const string NOT_BEING_ERASED = @"NOT_BEING_ERASED";
     }
 
     ///<summary>
@@ -14500,8 +14500,8 @@ namespace shopify
 
     public static class CustomerConsentCollectedFromStringValues
     {
-        public const string SHOPIFY = "SHOPIFY";
-        public const string OTHER = "OTHER";
+        public const string SHOPIFY = @"SHOPIFY";
+        public const string OTHER = @"OTHER";
     }
 
     ///<summary>
@@ -14709,11 +14709,11 @@ namespace shopify
 
     public static class CustomerEmailAddressMarketingStateStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string NOT_SUBSCRIBED = "NOT_SUBSCRIBED";
-        public const string PENDING = "PENDING";
-        public const string SUBSCRIBED = "SUBSCRIBED";
-        public const string UNSUBSCRIBED = "UNSUBSCRIBED";
+        public const string INVALID = @"INVALID";
+        public const string NOT_SUBSCRIBED = @"NOT_SUBSCRIBED";
+        public const string PENDING = @"PENDING";
+        public const string SUBSCRIBED = @"SUBSCRIBED";
+        public const string UNSUBSCRIBED = @"UNSUBSCRIBED";
     }
 
     ///<summary>
@@ -14737,9 +14737,9 @@ namespace shopify
 
     public static class CustomerEmailAddressOpenTrackingLevelStringValues
     {
-        public const string UNKNOWN = "UNKNOWN";
-        public const string OPTED_IN = "OPTED_IN";
-        public const string OPTED_OUT = "OPTED_OUT";
+        public const string UNKNOWN = @"UNKNOWN";
+        public const string OPTED_IN = @"OPTED_IN";
+        public const string OPTED_OUT = @"OPTED_OUT";
     }
 
     ///<summary>
@@ -14823,10 +14823,10 @@ namespace shopify
 
     public static class CustomerEmailMarketingConsentUpdateUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string INCLUSION = "INCLUSION";
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
-        public const string MISSING_ARGUMENT = "MISSING_ARGUMENT";
+        public const string INVALID = @"INVALID";
+        public const string INCLUSION = @"INCLUSION";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
+        public const string MISSING_ARGUMENT = @"MISSING_ARGUMENT";
     }
 
     ///<summary>
@@ -14862,12 +14862,12 @@ namespace shopify
 
     public static class CustomerEmailMarketingStateStringValues
     {
-        public const string NOT_SUBSCRIBED = "NOT_SUBSCRIBED";
-        public const string PENDING = "PENDING";
-        public const string SUBSCRIBED = "SUBSCRIBED";
-        public const string UNSUBSCRIBED = "UNSUBSCRIBED";
-        public const string REDACTED = "REDACTED";
-        public const string INVALID = "INVALID";
+        public const string NOT_SUBSCRIBED = @"NOT_SUBSCRIBED";
+        public const string PENDING = @"PENDING";
+        public const string SUBSCRIBED = @"SUBSCRIBED";
+        public const string UNSUBSCRIBED = @"UNSUBSCRIBED";
+        public const string REDACTED = @"REDACTED";
+        public const string INVALID = @"INVALID";
     }
 
     ///<summary>
@@ -14973,9 +14973,9 @@ namespace shopify
 
     public static class CustomerMarketingOptInLevelStringValues
     {
-        public const string SINGLE_OPT_IN = "SINGLE_OPT_IN";
-        public const string CONFIRMED_OPT_IN = "CONFIRMED_OPT_IN";
-        public const string UNKNOWN = "UNKNOWN";
+        public const string SINGLE_OPT_IN = @"SINGLE_OPT_IN";
+        public const string CONFIRMED_OPT_IN = @"CONFIRMED_OPT_IN";
+        public const string UNKNOWN = @"UNKNOWN";
     }
 
     ///<summary>
@@ -15026,12 +15026,12 @@ namespace shopify
 
     public static class CustomerMergeErrorCodeStringValues
     {
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
-        public const string INVALID_CUSTOMER = "INVALID_CUSTOMER";
-        public const string INVALID_CUSTOMER_ID = "INVALID_CUSTOMER_ID";
-        public const string CUSTOMER_HAS_GIFT_CARDS = "CUSTOMER_HAS_GIFT_CARDS";
-        public const string MISSING_OVERRIDE_ATTRIBUTE = "MISSING_OVERRIDE_ATTRIBUTE";
-        public const string OVERRIDE_ATTRIBUTE_INVALID = "OVERRIDE_ATTRIBUTE_INVALID";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
+        public const string INVALID_CUSTOMER = @"INVALID_CUSTOMER";
+        public const string INVALID_CUSTOMER_ID = @"INVALID_CUSTOMER_ID";
+        public const string CUSTOMER_HAS_GIFT_CARDS = @"CUSTOMER_HAS_GIFT_CARDS";
+        public const string MISSING_OVERRIDE_ATTRIBUTE = @"MISSING_OVERRIDE_ATTRIBUTE";
+        public const string OVERRIDE_ATTRIBUTE_INVALID = @"OVERRIDE_ATTRIBUTE_INVALID";
     }
 
     ///<summary>
@@ -15083,16 +15083,16 @@ namespace shopify
 
     public static class CustomerMergeErrorFieldTypeStringValues
     {
-        public const string DELETED_AT = "DELETED_AT";
-        public const string REDACTED_AT = "REDACTED_AT";
-        public const string SUBSCRIPTIONS = "SUBSCRIPTIONS";
-        public const string MERGE_IN_PROGRESS = "MERGE_IN_PROGRESS";
-        public const string GIFT_CARDS = "GIFT_CARDS";
-        public const string STORE_CREDIT = "STORE_CREDIT";
-        public const string COMPANY_CONTACT = "COMPANY_CONTACT";
-        public const string CUSTOMER_PAYMENT_METHODS = "CUSTOMER_PAYMENT_METHODS";
-        public const string PENDING_DATA_REQUEST = "PENDING_DATA_REQUEST";
-        public const string MULTIPASS_IDENTIFIER = "MULTIPASS_IDENTIFIER";
+        public const string DELETED_AT = @"DELETED_AT";
+        public const string REDACTED_AT = @"REDACTED_AT";
+        public const string SUBSCRIPTIONS = @"SUBSCRIPTIONS";
+        public const string MERGE_IN_PROGRESS = @"MERGE_IN_PROGRESS";
+        public const string GIFT_CARDS = @"GIFT_CARDS";
+        public const string STORE_CREDIT = @"STORE_CREDIT";
+        public const string COMPANY_CONTACT = @"COMPANY_CONTACT";
+        public const string CUSTOMER_PAYMENT_METHODS = @"CUSTOMER_PAYMENT_METHODS";
+        public const string PENDING_DATA_REQUEST = @"PENDING_DATA_REQUEST";
+        public const string MULTIPASS_IDENTIFIER = @"MULTIPASS_IDENTIFIER";
     }
 
     ///<summary>
@@ -15310,10 +15310,10 @@ namespace shopify
 
     public static class CustomerMergeRequestStatusStringValues
     {
-        public const string REQUESTED = "REQUESTED";
-        public const string IN_PROGRESS = "IN_PROGRESS";
-        public const string COMPLETED = "COMPLETED";
-        public const string FAILED = "FAILED";
+        public const string REQUESTED = @"REQUESTED";
+        public const string IN_PROGRESS = @"IN_PROGRESS";
+        public const string COMPLETED = @"COMPLETED";
+        public const string FAILED = @"FAILED";
     }
 
     ///<summary>
@@ -15570,9 +15570,9 @@ namespace shopify
 
     public static class CustomerPaymentMethodCreateFromDuplicationDataUserErrorCodeStringValues
     {
-        public const string TOO_MANY_REQUESTS = "TOO_MANY_REQUESTS";
-        public const string CUSTOMER_DOES_NOT_EXIST = "CUSTOMER_DOES_NOT_EXIST";
-        public const string INVALID_ENCRYPTED_DUPLICATION_DATA = "INVALID_ENCRYPTED_DUPLICATION_DATA";
+        public const string TOO_MANY_REQUESTS = @"TOO_MANY_REQUESTS";
+        public const string CUSTOMER_DOES_NOT_EXIST = @"CUSTOMER_DOES_NOT_EXIST";
+        public const string INVALID_ENCRYPTED_DUPLICATION_DATA = @"INVALID_ENCRYPTED_DUPLICATION_DATA";
     }
 
     ///<summary>
@@ -15695,12 +15695,12 @@ namespace shopify
 
     public static class CustomerPaymentMethodGetDuplicationDataUserErrorCodeStringValues
     {
-        public const string PAYMENT_METHOD_DOES_NOT_EXIST = "PAYMENT_METHOD_DOES_NOT_EXIST";
-        public const string INVALID_INSTRUMENT = "INVALID_INSTRUMENT";
-        public const string TOO_MANY_REQUESTS = "TOO_MANY_REQUESTS";
-        public const string CUSTOMER_DOES_NOT_EXIST = "CUSTOMER_DOES_NOT_EXIST";
-        public const string SAME_SHOP = "SAME_SHOP";
-        public const string INVALID_ORGANIZATION_SHOP = "INVALID_ORGANIZATION_SHOP";
+        public const string PAYMENT_METHOD_DOES_NOT_EXIST = @"PAYMENT_METHOD_DOES_NOT_EXIST";
+        public const string INVALID_INSTRUMENT = @"INVALID_INSTRUMENT";
+        public const string TOO_MANY_REQUESTS = @"TOO_MANY_REQUESTS";
+        public const string CUSTOMER_DOES_NOT_EXIST = @"CUSTOMER_DOES_NOT_EXIST";
+        public const string SAME_SHOP = @"SAME_SHOP";
+        public const string INVALID_ORGANIZATION_SHOP = @"INVALID_ORGANIZATION_SHOP";
     }
 
     ///<summary>
@@ -15762,10 +15762,10 @@ namespace shopify
 
     public static class CustomerPaymentMethodGetUpdateUrlUserErrorCodeStringValues
     {
-        public const string PAYMENT_METHOD_DOES_NOT_EXIST = "PAYMENT_METHOD_DOES_NOT_EXIST";
-        public const string INVALID_INSTRUMENT = "INVALID_INSTRUMENT";
-        public const string TOO_MANY_REQUESTS = "TOO_MANY_REQUESTS";
-        public const string CUSTOMER_DOES_NOT_EXIST = "CUSTOMER_DOES_NOT_EXIST";
+        public const string PAYMENT_METHOD_DOES_NOT_EXIST = @"PAYMENT_METHOD_DOES_NOT_EXIST";
+        public const string INVALID_INSTRUMENT = @"INVALID_INSTRUMENT";
+        public const string TOO_MANY_REQUESTS = @"TOO_MANY_REQUESTS";
+        public const string CUSTOMER_DOES_NOT_EXIST = @"CUSTOMER_DOES_NOT_EXIST";
     }
 
     ///<summary>
@@ -15880,12 +15880,12 @@ namespace shopify
 
     public static class CustomerPaymentMethodRemoteUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string PRESENT = "PRESENT";
-        public const string TAKEN = "TAKEN";
-        public const string EXACTLY_ONE_REMOTE_REFERENCE_REQUIRED = "EXACTLY_ONE_REMOTE_REFERENCE_REQUIRED";
-        public const string AUTHORIZE_NET_NOT_ENABLED_FOR_SUBSCRIPTIONS = "AUTHORIZE_NET_NOT_ENABLED_FOR_SUBSCRIPTIONS";
-        public const string BRAINTREE_NOT_ENABLED_FOR_SUBSCRIPTIONS = "BRAINTREE_NOT_ENABLED_FOR_SUBSCRIPTIONS";
+        public const string INVALID = @"INVALID";
+        public const string PRESENT = @"PRESENT";
+        public const string TAKEN = @"TAKEN";
+        public const string EXACTLY_ONE_REMOTE_REFERENCE_REQUIRED = @"EXACTLY_ONE_REMOTE_REFERENCE_REQUIRED";
+        public const string AUTHORIZE_NET_NOT_ENABLED_FOR_SUBSCRIPTIONS = @"AUTHORIZE_NET_NOT_ENABLED_FOR_SUBSCRIPTIONS";
+        public const string BRAINTREE_NOT_ENABLED_FOR_SUBSCRIPTIONS = @"BRAINTREE_NOT_ENABLED_FOR_SUBSCRIPTIONS";
     }
 
     ///<summary>
@@ -15957,21 +15957,21 @@ namespace shopify
 
     public static class CustomerPaymentMethodRevocationReasonStringValues
     {
-        public const string AUTHORIZE_NET_GATEWAY_NOT_ENABLED = "AUTHORIZE_NET_GATEWAY_NOT_ENABLED";
-        public const string AUTHORIZE_NET_RETURNED_NO_PAYMENT_METHOD = "AUTHORIZE_NET_RETURNED_NO_PAYMENT_METHOD";
-        public const string FAILED_TO_UPDATE_CREDIT_CARD = "FAILED_TO_UPDATE_CREDIT_CARD";
-        public const string STRIPE_API_AUTHENTICATION_ERROR = "STRIPE_API_AUTHENTICATION_ERROR";
-        public const string STRIPE_API_INVALID_REQUEST_ERROR = "STRIPE_API_INVALID_REQUEST_ERROR";
-        public const string STRIPE_GATEWAY_NOT_ENABLED = "STRIPE_GATEWAY_NOT_ENABLED";
-        public const string STRIPE_RETURNED_NO_PAYMENT_METHOD = "STRIPE_RETURNED_NO_PAYMENT_METHOD";
-        public const string STRIPE_PAYMENT_METHOD_NOT_CARD = "STRIPE_PAYMENT_METHOD_NOT_CARD";
-        public const string BRAINTREE_API_AUTHENTICATION_ERROR = "BRAINTREE_API_AUTHENTICATION_ERROR";
-        public const string BRAINTREE_GATEWAY_NOT_ENABLED = "BRAINTREE_GATEWAY_NOT_ENABLED";
-        public const string BRAINTREE_RETURNED_NO_PAYMENT_METHOD = "BRAINTREE_RETURNED_NO_PAYMENT_METHOD";
-        public const string BRAINTREE_PAYMENT_METHOD_NOT_CARD = "BRAINTREE_PAYMENT_METHOD_NOT_CARD";
-        public const string MANUALLY_REVOKED = "MANUALLY_REVOKED";
-        public const string FAILED_TO_RETRIEVE_BILLING_ADDRESS = "FAILED_TO_RETRIEVE_BILLING_ADDRESS";
-        public const string MERGED = "MERGED";
+        public const string AUTHORIZE_NET_GATEWAY_NOT_ENABLED = @"AUTHORIZE_NET_GATEWAY_NOT_ENABLED";
+        public const string AUTHORIZE_NET_RETURNED_NO_PAYMENT_METHOD = @"AUTHORIZE_NET_RETURNED_NO_PAYMENT_METHOD";
+        public const string FAILED_TO_UPDATE_CREDIT_CARD = @"FAILED_TO_UPDATE_CREDIT_CARD";
+        public const string STRIPE_API_AUTHENTICATION_ERROR = @"STRIPE_API_AUTHENTICATION_ERROR";
+        public const string STRIPE_API_INVALID_REQUEST_ERROR = @"STRIPE_API_INVALID_REQUEST_ERROR";
+        public const string STRIPE_GATEWAY_NOT_ENABLED = @"STRIPE_GATEWAY_NOT_ENABLED";
+        public const string STRIPE_RETURNED_NO_PAYMENT_METHOD = @"STRIPE_RETURNED_NO_PAYMENT_METHOD";
+        public const string STRIPE_PAYMENT_METHOD_NOT_CARD = @"STRIPE_PAYMENT_METHOD_NOT_CARD";
+        public const string BRAINTREE_API_AUTHENTICATION_ERROR = @"BRAINTREE_API_AUTHENTICATION_ERROR";
+        public const string BRAINTREE_GATEWAY_NOT_ENABLED = @"BRAINTREE_GATEWAY_NOT_ENABLED";
+        public const string BRAINTREE_RETURNED_NO_PAYMENT_METHOD = @"BRAINTREE_RETURNED_NO_PAYMENT_METHOD";
+        public const string BRAINTREE_PAYMENT_METHOD_NOT_CARD = @"BRAINTREE_PAYMENT_METHOD_NOT_CARD";
+        public const string MANUALLY_REVOKED = @"MANUALLY_REVOKED";
+        public const string FAILED_TO_RETRIEVE_BILLING_ADDRESS = @"FAILED_TO_RETRIEVE_BILLING_ADDRESS";
+        public const string MERGED = @"MERGED";
     }
 
     ///<summary>
@@ -16044,9 +16044,9 @@ namespace shopify
 
     public static class CustomerPaymentMethodUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string PRESENT = "PRESENT";
-        public const string TAKEN = "TAKEN";
+        public const string INVALID = @"INVALID";
+        public const string PRESENT = @"PRESENT";
+        public const string TAKEN = @"TAKEN";
     }
 
     ///<summary>
@@ -16108,9 +16108,9 @@ namespace shopify
 
     public static class CustomerPredictedSpendTierStringValues
     {
-        public const string HIGH = "HIGH";
-        public const string MEDIUM = "MEDIUM";
-        public const string LOW = "LOW";
+        public const string HIGH = @"HIGH";
+        public const string MEDIUM = @"MEDIUM";
+        public const string LOW = @"LOW";
     }
 
     ///<summary>
@@ -16150,12 +16150,12 @@ namespace shopify
 
     public static class CustomerProductSubscriberStatusStringValues
     {
-        public const string ACTIVE = "ACTIVE";
-        public const string CANCELLED = "CANCELLED";
-        public const string EXPIRED = "EXPIRED";
-        public const string FAILED = "FAILED";
-        public const string NEVER_SUBSCRIBED = "NEVER_SUBSCRIBED";
-        public const string PAUSED = "PAUSED";
+        public const string ACTIVE = @"ACTIVE";
+        public const string CANCELLED = @"CANCELLED";
+        public const string EXPIRED = @"EXPIRED";
+        public const string FAILED = @"FAILED";
+        public const string NEVER_SUBSCRIBED = @"NEVER_SUBSCRIBED";
+        public const string PAUSED = @"PAUSED";
     }
 
     ///<summary>
@@ -16205,8 +16205,8 @@ namespace shopify
 
     public static class CustomerRequestDataErasureErrorCodeStringValues
     {
-        public const string DOES_NOT_EXIST = "DOES_NOT_EXIST";
-        public const string FAILED_TO_REQUEST = "FAILED_TO_REQUEST";
+        public const string DOES_NOT_EXIST = @"DOES_NOT_EXIST";
+        public const string FAILED_TO_REQUEST = @"FAILED_TO_REQUEST";
     }
 
     ///<summary>
@@ -16265,9 +16265,9 @@ namespace shopify
 
     public static class CustomerSavedSearchSortKeysStringValues
     {
-        public const string NAME = "NAME";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string NAME = @"NAME";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -16452,7 +16452,7 @@ namespace shopify
 
     public static class CustomerSegmentMembersQueryUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
+        public const string INVALID = @"INVALID";
     }
 
     ///<summary>
@@ -16502,7 +16502,7 @@ namespace shopify
 
     public static class CustomerSendAccountInviteEmailUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
+        public const string INVALID = @"INVALID";
     }
 
     ///<summary>
@@ -16592,10 +16592,10 @@ namespace shopify
 
     public static class CustomerSmsMarketingConsentErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string INCLUSION = "INCLUSION";
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
-        public const string MISSING_ARGUMENT = "MISSING_ARGUMENT";
+        public const string INVALID = @"INVALID";
+        public const string INCLUSION = @"INCLUSION";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
+        public const string MISSING_ARGUMENT = @"MISSING_ARGUMENT";
     }
 
     ///<summary>
@@ -16668,11 +16668,11 @@ namespace shopify
 
     public static class CustomerSmsMarketingStateStringValues
     {
-        public const string NOT_SUBSCRIBED = "NOT_SUBSCRIBED";
-        public const string PENDING = "PENDING";
-        public const string SUBSCRIBED = "SUBSCRIBED";
-        public const string UNSUBSCRIBED = "UNSUBSCRIBED";
-        public const string REDACTED = "REDACTED";
+        public const string NOT_SUBSCRIBED = @"NOT_SUBSCRIBED";
+        public const string PENDING = @"PENDING";
+        public const string SUBSCRIBED = @"SUBSCRIBED";
+        public const string UNSUBSCRIBED = @"UNSUBSCRIBED";
+        public const string REDACTED = @"REDACTED";
     }
 
     ///<summary>
@@ -16709,12 +16709,12 @@ namespace shopify
 
     public static class CustomerSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string NAME = "NAME";
-        public const string LOCATION = "LOCATION";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string NAME = @"NAME";
+        public const string LOCATION = @"LOCATION";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -16742,10 +16742,10 @@ namespace shopify
 
     public static class CustomerStateStringValues
     {
-        public const string DECLINED = "DECLINED";
-        public const string DISABLED = "DISABLED";
-        public const string ENABLED = "ENABLED";
-        public const string INVITED = "INVITED";
+        public const string DECLINED = @"DECLINED";
+        public const string DISABLED = @"DISABLED";
+        public const string ENABLED = @"ENABLED";
+        public const string INVITED = @"INVITED";
     }
 
     ///<summary>
@@ -16949,7 +16949,7 @@ namespace shopify
 
     public static class DataSaleOptOutUserErrorCodeStringValues
     {
-        public const string FAILED = "FAILED";
+        public const string FAILED = @"FAILED";
     }
 
     ///<summary>
@@ -16989,13 +16989,13 @@ namespace shopify
 
     public static class DayOfTheWeekStringValues
     {
-        public const string MONDAY = "MONDAY";
-        public const string TUESDAY = "TUESDAY";
-        public const string WEDNESDAY = "WEDNESDAY";
-        public const string THURSDAY = "THURSDAY";
-        public const string FRIDAY = "FRIDAY";
-        public const string SATURDAY = "SATURDAY";
-        public const string SUNDAY = "SUNDAY";
+        public const string MONDAY = @"MONDAY";
+        public const string TUESDAY = @"TUESDAY";
+        public const string WEDNESDAY = @"WEDNESDAY";
+        public const string THURSDAY = @"THURSDAY";
+        public const string FRIDAY = @"FRIDAY";
+        public const string SATURDAY = @"SATURDAY";
+        public const string SUNDAY = @"SUNDAY";
     }
 
     ///<summary>
@@ -17095,13 +17095,13 @@ namespace shopify
 
     public static class DelegateAccessTokenCreateUserErrorCodeStringValues
     {
-        public const string EMPTY_ACCESS_SCOPE = "EMPTY_ACCESS_SCOPE";
-        public const string DELEGATE_ACCESS_TOKEN = "DELEGATE_ACCESS_TOKEN";
-        public const string NEGATIVE_EXPIRES_IN = "NEGATIVE_EXPIRES_IN";
-        public const string EXPIRES_AFTER_PARENT = "EXPIRES_AFTER_PARENT";
-        public const string REFRESH_TOKEN = "REFRESH_TOKEN";
-        public const string PERSISTENCE_FAILED = "PERSISTENCE_FAILED";
-        public const string UNKNOWN_SCOPES = "UNKNOWN_SCOPES";
+        public const string EMPTY_ACCESS_SCOPE = @"EMPTY_ACCESS_SCOPE";
+        public const string DELEGATE_ACCESS_TOKEN = @"DELEGATE_ACCESS_TOKEN";
+        public const string NEGATIVE_EXPIRES_IN = @"NEGATIVE_EXPIRES_IN";
+        public const string EXPIRES_AFTER_PARENT = @"EXPIRES_AFTER_PARENT";
+        public const string REFRESH_TOKEN = @"REFRESH_TOKEN";
+        public const string PERSISTENCE_FAILED = @"PERSISTENCE_FAILED";
+        public const string UNKNOWN_SCOPES = @"UNKNOWN_SCOPES";
     }
 
     ///<summary>
@@ -17167,10 +17167,10 @@ namespace shopify
 
     public static class DelegateAccessTokenDestroyUserErrorCodeStringValues
     {
-        public const string PERSISTENCE_FAILED = "PERSISTENCE_FAILED";
-        public const string ACCESS_TOKEN_NOT_FOUND = "ACCESS_TOKEN_NOT_FOUND";
-        public const string CAN_ONLY_DELETE_DELEGATE_TOKENS = "CAN_ONLY_DELETE_DELEGATE_TOKENS";
-        public const string ACCESS_DENIED = "ACCESS_DENIED";
+        public const string PERSISTENCE_FAILED = @"PERSISTENCE_FAILED";
+        public const string ACCESS_TOKEN_NOT_FOUND = @"ACCESS_TOKEN_NOT_FOUND";
+        public const string CAN_ONLY_DELETE_DELEGATE_TOKENS = @"CAN_ONLY_DELETE_DELEGATE_TOKENS";
+        public const string ACCESS_DENIED = @"ACCESS_DENIED";
     }
 
     ///<summary>
@@ -17250,9 +17250,9 @@ namespace shopify
 
     public static class DeletionEventSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -17266,8 +17266,8 @@ namespace shopify
 
     public static class DeletionEventSubjectTypeStringValues
     {
-        public const string COLLECTION = "COLLECTION";
-        public const string PRODUCT = "PRODUCT";
+        public const string COLLECTION = @"COLLECTION";
+        public const string PRODUCT = @"PRODUCT";
     }
 
     ///<summary>
@@ -17601,8 +17601,8 @@ namespace shopify
 
     public static class DeliveryConditionFieldStringValues
     {
-        public const string TOTAL_WEIGHT = "TOTAL_WEIGHT";
-        public const string TOTAL_PRICE = "TOTAL_PRICE";
+        public const string TOTAL_WEIGHT = @"TOTAL_WEIGHT";
+        public const string TOTAL_PRICE = @"TOTAL_PRICE";
     }
 
     ///<summary>
@@ -17622,8 +17622,8 @@ namespace shopify
 
     public static class DeliveryConditionOperatorStringValues
     {
-        public const string GREATER_THAN_OR_EQUAL_TO = "GREATER_THAN_OR_EQUAL_TO";
-        public const string LESS_THAN_OR_EQUAL_TO = "LESS_THAN_OR_EQUAL_TO";
+        public const string GREATER_THAN_OR_EQUAL_TO = @"GREATER_THAN_OR_EQUAL_TO";
+        public const string LESS_THAN_OR_EQUAL_TO = @"LESS_THAN_OR_EQUAL_TO";
     }
 
     ///<summary>
@@ -17916,18 +17916,18 @@ namespace shopify
 
     public static class DeliveryCustomizationErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string FUNCTION_NOT_FOUND = "FUNCTION_NOT_FOUND";
-        public const string DELIVERY_CUSTOMIZATION_NOT_FOUND = "DELIVERY_CUSTOMIZATION_NOT_FOUND";
-        public const string DELIVERY_CUSTOMIZATION_FUNCTION_NOT_ELIGIBLE = "DELIVERY_CUSTOMIZATION_FUNCTION_NOT_ELIGIBLE";
-        public const string UNAUTHORIZED_APP_SCOPE = "UNAUTHORIZED_APP_SCOPE";
-        public const string MAXIMUM_ACTIVE_DELIVERY_CUSTOMIZATIONS = "MAXIMUM_ACTIVE_DELIVERY_CUSTOMIZATIONS";
-        public const string CUSTOM_APP_FUNCTION_NOT_ELIGIBLE = "CUSTOM_APP_FUNCTION_NOT_ELIGIBLE";
-        public const string FUNCTION_DOES_NOT_IMPLEMENT = "FUNCTION_DOES_NOT_IMPLEMENT";
-        public const string FUNCTION_PENDING_DELETION = "FUNCTION_PENDING_DELETION";
-        public const string FUNCTION_ID_CANNOT_BE_CHANGED = "FUNCTION_ID_CANNOT_BE_CHANGED";
-        public const string REQUIRED_INPUT_FIELD = "REQUIRED_INPUT_FIELD";
-        public const string INVALID_METAFIELDS = "INVALID_METAFIELDS";
+        public const string INVALID = @"INVALID";
+        public const string FUNCTION_NOT_FOUND = @"FUNCTION_NOT_FOUND";
+        public const string DELIVERY_CUSTOMIZATION_NOT_FOUND = @"DELIVERY_CUSTOMIZATION_NOT_FOUND";
+        public const string DELIVERY_CUSTOMIZATION_FUNCTION_NOT_ELIGIBLE = @"DELIVERY_CUSTOMIZATION_FUNCTION_NOT_ELIGIBLE";
+        public const string UNAUTHORIZED_APP_SCOPE = @"UNAUTHORIZED_APP_SCOPE";
+        public const string MAXIMUM_ACTIVE_DELIVERY_CUSTOMIZATIONS = @"MAXIMUM_ACTIVE_DELIVERY_CUSTOMIZATIONS";
+        public const string CUSTOM_APP_FUNCTION_NOT_ELIGIBLE = @"CUSTOM_APP_FUNCTION_NOT_ELIGIBLE";
+        public const string FUNCTION_DOES_NOT_IMPLEMENT = @"FUNCTION_DOES_NOT_IMPLEMENT";
+        public const string FUNCTION_PENDING_DELETION = @"FUNCTION_PENDING_DELETION";
+        public const string FUNCTION_ID_CANNOT_BE_CHANGED = @"FUNCTION_ID_CANNOT_BE_CHANGED";
+        public const string REQUIRED_INPUT_FIELD = @"REQUIRED_INPUT_FIELD";
+        public const string INVALID_METAFIELDS = @"INVALID_METAFIELDS";
     }
 
     ///<summary>
@@ -17979,8 +17979,8 @@ namespace shopify
     public static class DeliveryLegacyModeBlockedReasonStringValues
     {
         [Obsolete("All shops are now using multi-location mode.")]
-        public const string MULTI_LOCATION_DISABLED = "MULTI_LOCATION_DISABLED";
-        public const string NO_LOCATIONS_FULFILLING_ONLINE_ORDERS = "NO_LOCATIONS_FULFILLING_ONLINE_ORDERS";
+        public const string MULTI_LOCATION_DISABLED = @"MULTI_LOCATION_DISABLED";
+        public const string NO_LOCATIONS_FULFILLING_ONLINE_ORDERS = @"NO_LOCATIONS_FULFILLING_ONLINE_ORDERS";
     }
 
     ///<summary>
@@ -18031,12 +18031,12 @@ namespace shopify
 
     public static class DeliveryLocalPickupTimeStringValues
     {
-        public const string ONE_HOUR = "ONE_HOUR";
-        public const string TWO_HOURS = "TWO_HOURS";
-        public const string FOUR_HOURS = "FOUR_HOURS";
-        public const string TWENTY_FOUR_HOURS = "TWENTY_FOUR_HOURS";
-        public const string TWO_TO_FOUR_DAYS = "TWO_TO_FOUR_DAYS";
-        public const string FIVE_OR_MORE_DAYS = "FIVE_OR_MORE_DAYS";
+        public const string ONE_HOUR = @"ONE_HOUR";
+        public const string TWO_HOURS = @"TWO_HOURS";
+        public const string FOUR_HOURS = @"FOUR_HOURS";
+        public const string TWENTY_FOUR_HOURS = @"TWENTY_FOUR_HOURS";
+        public const string TWO_TO_FOUR_DAYS = @"TWO_TO_FOUR_DAYS";
+        public const string FIVE_OR_MORE_DAYS = @"FIVE_OR_MORE_DAYS";
     }
 
     ///<summary>
@@ -18148,8 +18148,8 @@ namespace shopify
 
     public static class DeliveryLocationLocalPickupSettingsErrorCodeStringValues
     {
-        public const string ACTIVE_LOCATION_NOT_FOUND = "ACTIVE_LOCATION_NOT_FOUND";
-        public const string GENERIC_ERROR = "GENERIC_ERROR";
+        public const string ACTIVE_LOCATION_NOT_FOUND = @"ACTIVE_LOCATION_NOT_FOUND";
+        public const string GENERIC_ERROR = @"GENERIC_ERROR";
     }
 
     ///<summary>
@@ -18308,8 +18308,8 @@ namespace shopify
 
     public static class DeliveryMethodDefinitionTypeStringValues
     {
-        public const string MERCHANT = "MERCHANT";
-        public const string PARTICIPANT = "PARTICIPANT";
+        public const string MERCHANT = @"MERCHANT";
+        public const string PARTICIPANT = @"PARTICIPANT";
     }
 
     ///<summary>
@@ -18345,12 +18345,12 @@ namespace shopify
 
     public static class DeliveryMethodTypeStringValues
     {
-        public const string SHIPPING = "SHIPPING";
-        public const string PICK_UP = "PICK_UP";
-        public const string NONE = "NONE";
-        public const string RETAIL = "RETAIL";
-        public const string LOCAL = "LOCAL";
-        public const string PICKUP_POINT = "PICKUP_POINT";
+        public const string SHIPPING = @"SHIPPING";
+        public const string PICK_UP = @"PICK_UP";
+        public const string NONE = @"NONE";
+        public const string RETAIL = @"RETAIL";
+        public const string LOCAL = @"LOCAL";
+        public const string PICKUP_POINT = @"PICKUP_POINT";
     }
 
     ///<summary>
@@ -18721,10 +18721,10 @@ namespace shopify
 
     public static class DeliveryPromiseProviderUpsertUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string MUST_BELONG_TO_APP = "MUST_BELONG_TO_APP";
-        public const string INVALID_TIME_ZONE = "INVALID_TIME_ZONE";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string MUST_BELONG_TO_APP = @"MUST_BELONG_TO_APP";
+        public const string INVALID_TIME_ZONE = @"INVALID_TIME_ZONE";
     }
 
     ///<summary>
@@ -18893,10 +18893,10 @@ namespace shopify
 
     public static class DigitalWalletStringValues
     {
-        public const string APPLE_PAY = "APPLE_PAY";
-        public const string ANDROID_PAY = "ANDROID_PAY";
-        public const string GOOGLE_PAY = "GOOGLE_PAY";
-        public const string SHOPIFY_PAY = "SHOPIFY_PAY";
+        public const string APPLE_PAY = @"APPLE_PAY";
+        public const string ANDROID_PAY = @"ANDROID_PAY";
+        public const string GOOGLE_PAY = @"GOOGLE_PAY";
+        public const string SHOPIFY_PAY = @"SHOPIFY_PAY";
     }
 
     ///<summary>
@@ -19090,10 +19090,10 @@ namespace shopify
 
     public static class DiscountApplicationAllocationMethodStringValues
     {
-        public const string ACROSS = "ACROSS";
-        public const string EACH = "EACH";
+        public const string ACROSS = @"ACROSS";
+        public const string EACH = @"EACH";
         [Obsolete("Use ACROSS instead.")]
-        public const string ONE = "ONE";
+        public const string ONE = @"ONE";
     }
 
     ///<summary>
@@ -19149,8 +19149,8 @@ namespace shopify
 
     public static class DiscountApplicationLevelStringValues
     {
-        public const string ORDER = "ORDER";
-        public const string LINE = "LINE";
+        public const string ORDER = @"ORDER";
+        public const string LINE = @"LINE";
     }
 
     ///<summary>
@@ -19177,9 +19177,9 @@ namespace shopify
 
     public static class DiscountApplicationTargetSelectionStringValues
     {
-        public const string ALL = "ALL";
-        public const string ENTITLED = "ENTITLED";
-        public const string EXPLICIT = "EXPLICIT";
+        public const string ALL = @"ALL";
+        public const string ENTITLED = @"ENTITLED";
+        public const string EXPLICIT = @"EXPLICIT";
     }
 
     ///<summary>
@@ -19199,8 +19199,8 @@ namespace shopify
 
     public static class DiscountApplicationTargetTypeStringValues
     {
-        public const string LINE_ITEM = "LINE_ITEM";
-        public const string SHIPPING_LINE = "SHIPPING_LINE";
+        public const string LINE_ITEM = @"LINE_ITEM";
+        public const string SHIPPING_LINE = @"SHIPPING_LINE";
     }
 
     ///<summary>
@@ -19862,9 +19862,9 @@ namespace shopify
 
     public static class DiscountClassStringValues
     {
-        public const string PRODUCT = "PRODUCT";
-        public const string ORDER = "ORDER";
-        public const string SHIPPING = "SHIPPING";
+        public const string PRODUCT = @"PRODUCT";
+        public const string ORDER = @"ORDER";
+        public const string SHIPPING = @"SHIPPING";
     }
 
     ///<summary>
@@ -20703,10 +20703,10 @@ namespace shopify
 
     public static class DiscountCodeSortKeysStringValues
     {
-        public const string CODE = "CODE";
-        public const string CREATED_AT = "CREATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CODE = @"CODE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -20997,31 +20997,31 @@ namespace shopify
 
     public static class DiscountErrorCodeStringValues
     {
-        public const string BLANK = "BLANK";
-        public const string PRESENT = "PRESENT";
-        public const string EQUAL_TO = "EQUAL_TO";
-        public const string GREATER_THAN = "GREATER_THAN";
-        public const string GREATER_THAN_OR_EQUAL_TO = "GREATER_THAN_OR_EQUAL_TO";
-        public const string INVALID = "INVALID";
-        public const string LESS_THAN_OR_EQUAL_TO = "LESS_THAN_OR_EQUAL_TO";
-        public const string LESS_THAN = "LESS_THAN";
-        public const string TAKEN = "TAKEN";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string TOO_SHORT = "TOO_SHORT";
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
-        public const string TOO_MANY_ARGUMENTS = "TOO_MANY_ARGUMENTS";
-        public const string MISSING_ARGUMENT = "MISSING_ARGUMENT";
-        public const string ACTIVE_PERIOD_OVERLAP = "ACTIVE_PERIOD_OVERLAP";
-        public const string EXCEEDED_MAX = "EXCEEDED_MAX";
-        public const string MINIMUM_SUBTOTAL_AND_QUANTITY_RANGE_BOTH_PRESENT = "MINIMUM_SUBTOTAL_AND_QUANTITY_RANGE_BOTH_PRESENT";
-        public const string VALUE_OUTSIDE_RANGE = "VALUE_OUTSIDE_RANGE";
-        public const string CONFLICT = "CONFLICT";
-        public const string IMPLICIT_DUPLICATE = "IMPLICIT_DUPLICATE";
-        public const string DUPLICATE = "DUPLICATE";
-        public const string INCLUSION = "INCLUSION";
-        public const string INVALID_COMBINES_WITH_FOR_DISCOUNT_CLASS = "INVALID_COMBINES_WITH_FOR_DISCOUNT_CLASS";
-        public const string INVALID_DISCOUNT_CLASS_FOR_PRICE_RULE = "INVALID_DISCOUNT_CLASS_FOR_PRICE_RULE";
-        public const string MAX_APP_DISCOUNTS = "MAX_APP_DISCOUNTS";
+        public const string BLANK = @"BLANK";
+        public const string PRESENT = @"PRESENT";
+        public const string EQUAL_TO = @"EQUAL_TO";
+        public const string GREATER_THAN = @"GREATER_THAN";
+        public const string GREATER_THAN_OR_EQUAL_TO = @"GREATER_THAN_OR_EQUAL_TO";
+        public const string INVALID = @"INVALID";
+        public const string LESS_THAN_OR_EQUAL_TO = @"LESS_THAN_OR_EQUAL_TO";
+        public const string LESS_THAN = @"LESS_THAN";
+        public const string TAKEN = @"TAKEN";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string TOO_SHORT = @"TOO_SHORT";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
+        public const string TOO_MANY_ARGUMENTS = @"TOO_MANY_ARGUMENTS";
+        public const string MISSING_ARGUMENT = @"MISSING_ARGUMENT";
+        public const string ACTIVE_PERIOD_OVERLAP = @"ACTIVE_PERIOD_OVERLAP";
+        public const string EXCEEDED_MAX = @"EXCEEDED_MAX";
+        public const string MINIMUM_SUBTOTAL_AND_QUANTITY_RANGE_BOTH_PRESENT = @"MINIMUM_SUBTOTAL_AND_QUANTITY_RANGE_BOTH_PRESENT";
+        public const string VALUE_OUTSIDE_RANGE = @"VALUE_OUTSIDE_RANGE";
+        public const string CONFLICT = @"CONFLICT";
+        public const string IMPLICIT_DUPLICATE = @"IMPLICIT_DUPLICATE";
+        public const string DUPLICATE = @"DUPLICATE";
+        public const string INCLUSION = @"INCLUSION";
+        public const string INVALID_COMBINES_WITH_FOR_DISCOUNT_CLASS = @"INVALID_COMBINES_WITH_FOR_DISCOUNT_CLASS";
+        public const string INVALID_DISCOUNT_CLASS_FOR_PRICE_RULE = @"INVALID_DISCOUNT_CLASS_FOR_PRICE_RULE";
+        public const string MAX_APP_DISCOUNTS = @"MAX_APP_DISCOUNTS";
     }
 
     ///<summary>
@@ -21427,9 +21427,9 @@ namespace shopify
 
     public static class DiscountShareableUrlTargetTypeStringValues
     {
-        public const string HOME = "HOME";
-        public const string PRODUCT = "PRODUCT";
-        public const string COLLECTION = "COLLECTION";
+        public const string HOME = @"HOME";
+        public const string PRODUCT = @"PRODUCT";
+        public const string COLLECTION = @"COLLECTION";
     }
 
     ///<summary>
@@ -21482,13 +21482,13 @@ namespace shopify
 
     public static class DiscountSortKeysStringValues
     {
-        public const string STARTS_AT = "STARTS_AT";
-        public const string ENDS_AT = "ENDS_AT";
-        public const string TITLE = "TITLE";
-        public const string CREATED_AT = "CREATED_AT";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string STARTS_AT = @"STARTS_AT";
+        public const string ENDS_AT = @"ENDS_AT";
+        public const string TITLE = @"TITLE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -21512,9 +21512,9 @@ namespace shopify
 
     public static class DiscountStatusStringValues
     {
-        public const string ACTIVE = "ACTIVE";
-        public const string EXPIRED = "EXPIRED";
-        public const string SCHEDULED = "SCHEDULED";
+        public const string ACTIVE = @"ACTIVE";
+        public const string EXPIRED = @"EXPIRED";
+        public const string SCHEDULED = @"SCHEDULED";
     }
 
     ///<summary>
@@ -21534,8 +21534,8 @@ namespace shopify
 
     public static class DiscountTargetTypeStringValues
     {
-        public const string LINE_ITEM = "LINE_ITEM";
-        public const string SHIPPING_LINE = "SHIPPING_LINE";
+        public const string LINE_ITEM = @"LINE_ITEM";
+        public const string SHIPPING_LINE = @"SHIPPING_LINE";
     }
 
     ///<summary>
@@ -21559,9 +21559,9 @@ namespace shopify
 
     public static class DiscountTypeStringValues
     {
-        public const string MANUAL = "MANUAL";
-        public const string CODE_DISCOUNT = "CODE_DISCOUNT";
-        public const string AUTOMATIC_DISCOUNT = "AUTOMATIC_DISCOUNT";
+        public const string MANUAL = @"MANUAL";
+        public const string CODE_DISCOUNT = @"CODE_DISCOUNT";
+        public const string AUTOMATIC_DISCOUNT = @"AUTOMATIC_DISCOUNT";
     }
 
     ///<summary>
@@ -21994,12 +21994,12 @@ namespace shopify
 
     public static class DisputeEvidenceUpdateUserErrorCodeStringValues
     {
-        public const string DISPUTE_EVIDENCE_NOT_FOUND = "DISPUTE_EVIDENCE_NOT_FOUND";
-        public const string EVIDENCE_ALREADY_ACCEPTED = "EVIDENCE_ALREADY_ACCEPTED";
-        public const string EVIDENCE_PAST_DUE_DATE = "EVIDENCE_PAST_DUE_DATE";
-        public const string FILES_SIZE_EXCEEDED_LIMIT = "FILES_SIZE_EXCEEDED_LIMIT";
-        public const string TOO_LARGE = "TOO_LARGE";
-        public const string INVALID = "INVALID";
+        public const string DISPUTE_EVIDENCE_NOT_FOUND = @"DISPUTE_EVIDENCE_NOT_FOUND";
+        public const string EVIDENCE_ALREADY_ACCEPTED = @"EVIDENCE_ALREADY_ACCEPTED";
+        public const string EVIDENCE_PAST_DUE_DATE = @"EVIDENCE_PAST_DUE_DATE";
+        public const string FILES_SIZE_EXCEEDED_LIMIT = @"FILES_SIZE_EXCEEDED_LIMIT";
+        public const string TOO_LARGE = @"TOO_LARGE";
+        public const string INVALID = @"INVALID";
     }
 
     ///<summary>
@@ -22021,13 +22021,13 @@ namespace shopify
 
     public static class DisputeStatusStringValues
     {
-        public const string ACCEPTED = "ACCEPTED";
-        public const string LOST = "LOST";
-        public const string NEEDS_RESPONSE = "NEEDS_RESPONSE";
-        public const string UNDER_REVIEW = "UNDER_REVIEW";
-        public const string WON = "WON";
+        public const string ACCEPTED = @"ACCEPTED";
+        public const string LOST = @"LOST";
+        public const string NEEDS_RESPONSE = @"NEEDS_RESPONSE";
+        public const string UNDER_REVIEW = @"UNDER_REVIEW";
+        public const string WON = @"WON";
         [Obsolete("CHARGE_REFUNDED is no longer supported.")]
-        public const string CHARGE_REFUNDED = "CHARGE_REFUNDED";
+        public const string CHARGE_REFUNDED = @"CHARGE_REFUNDED";
     }
 
     ///<summary>
@@ -22047,8 +22047,8 @@ namespace shopify
 
     public static class DisputeTypeStringValues
     {
-        public const string CHARGEBACK = "CHARGEBACK";
-        public const string INQUIRY = "INQUIRY";
+        public const string CHARGEBACK = @"CHARGEBACK";
+        public const string INQUIRY = @"INQUIRY";
     }
 
     ///<summary>
@@ -22454,8 +22454,8 @@ namespace shopify
 
     public static class DraftOrderAppliedDiscountTypeStringValues
     {
-        public const string FIXED_AMOUNT = "FIXED_AMOUNT";
-        public const string PERCENTAGE = "PERCENTAGE";
+        public const string FIXED_AMOUNT = @"FIXED_AMOUNT";
+        public const string PERCENTAGE = @"PERCENTAGE";
     }
 
     ///<summary>
@@ -23072,13 +23072,13 @@ namespace shopify
 
     public static class DraftOrderSortKeysStringValues
     {
-        public const string NUMBER = "NUMBER";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string STATUS = "STATUS";
-        public const string TOTAL_PRICE = "TOTAL_PRICE";
-        public const string CUSTOMER_NAME = "CUSTOMER_NAME";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string NUMBER = @"NUMBER";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string STATUS = @"STATUS";
+        public const string TOTAL_PRICE = @"TOTAL_PRICE";
+        public const string CUSTOMER_NAME = @"CUSTOMER_NAME";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -23102,9 +23102,9 @@ namespace shopify
 
     public static class DraftOrderStatusStringValues
     {
-        public const string COMPLETED = "COMPLETED";
-        public const string INVOICE_SENT = "INVOICE_SENT";
-        public const string OPEN = "OPEN";
+        public const string COMPLETED = @"COMPLETED";
+        public const string INVOICE_SENT = @"INVOICE_SENT";
+        public const string OPEN = @"OPEN";
     }
 
     ///<summary>
@@ -23298,10 +23298,10 @@ namespace shopify
 
     public static class ErrorsServerPixelUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string ALREADY_EXISTS = "ALREADY_EXISTS";
-        public const string PUB_SUB_ERROR = "PUB_SUB_ERROR";
-        public const string NEEDS_CONFIGURATION_TO_CONNECT = "NEEDS_CONFIGURATION_TO_CONNECT";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string ALREADY_EXISTS = @"ALREADY_EXISTS";
+        public const string PUB_SUB_ERROR = @"PUB_SUB_ERROR";
+        public const string NEEDS_CONFIGURATION_TO_CONNECT = @"NEEDS_CONFIGURATION_TO_CONNECT";
     }
 
     ///<summary>
@@ -23353,12 +23353,12 @@ namespace shopify
 
     public static class ErrorsWebPixelUserErrorCodeStringValues
     {
-        public const string BLANK = "BLANK";
-        public const string TAKEN = "TAKEN";
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string INVALID_SETTINGS = "INVALID_SETTINGS";
+        public const string BLANK = @"BLANK";
+        public const string TAKEN = @"TAKEN";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string INVALID_SETTINGS = @"INVALID_SETTINGS";
         [Obsolete("`UNABLE_TO_DELETE` is deprecated. Use `UNEXPECTED_ERROR` instead.")]
-        public const string UNABLE_TO_DELETE = "UNABLE_TO_DELETE";
+        public const string UNABLE_TO_DELETE = @"UNABLE_TO_DELETE";
     }
 
     ///<summary>
@@ -23507,9 +23507,9 @@ namespace shopify
 
     public static class EventSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -23594,24 +23594,24 @@ namespace shopify
 
     public static class EventSubjectTypeStringValues
     {
-        public const string COMPANY_LOCATION = "COMPANY_LOCATION";
-        public const string COMPANY = "COMPANY";
-        public const string CUSTOMER = "CUSTOMER";
-        public const string DRAFT_ORDER = "DRAFT_ORDER";
-        public const string COLLECTION = "COLLECTION";
-        public const string PRODUCT = "PRODUCT";
-        public const string PRODUCT_VARIANT = "PRODUCT_VARIANT";
-        public const string ARTICLE = "ARTICLE";
-        public const string BLOG = "BLOG";
-        public const string COMMENT = "COMMENT";
-        public const string PAGE = "PAGE";
-        public const string DISCOUNT_AUTOMATIC_BXGY = "DISCOUNT_AUTOMATIC_BXGY";
-        public const string DISCOUNT_AUTOMATIC_NODE = "DISCOUNT_AUTOMATIC_NODE";
-        public const string DISCOUNT_CODE_NODE = "DISCOUNT_CODE_NODE";
-        public const string DISCOUNT_NODE = "DISCOUNT_NODE";
-        public const string PRICE_RULE = "PRICE_RULE";
-        public const string ORDER = "ORDER";
-        public const string UNKNOWN = "UNKNOWN";
+        public const string COMPANY_LOCATION = @"COMPANY_LOCATION";
+        public const string COMPANY = @"COMPANY";
+        public const string CUSTOMER = @"CUSTOMER";
+        public const string DRAFT_ORDER = @"DRAFT_ORDER";
+        public const string COLLECTION = @"COLLECTION";
+        public const string PRODUCT = @"PRODUCT";
+        public const string PRODUCT_VARIANT = @"PRODUCT_VARIANT";
+        public const string ARTICLE = @"ARTICLE";
+        public const string BLOG = @"BLOG";
+        public const string COMMENT = @"COMMENT";
+        public const string PAGE = @"PAGE";
+        public const string DISCOUNT_AUTOMATIC_BXGY = @"DISCOUNT_AUTOMATIC_BXGY";
+        public const string DISCOUNT_AUTOMATIC_NODE = @"DISCOUNT_AUTOMATIC_NODE";
+        public const string DISCOUNT_CODE_NODE = @"DISCOUNT_CODE_NODE";
+        public const string DISCOUNT_NODE = @"DISCOUNT_NODE";
+        public const string PRICE_RULE = @"PRICE_RULE";
+        public const string ORDER = @"ORDER";
+        public const string UNKNOWN = @"UNKNOWN";
     }
 
     ///<summary>
@@ -24161,11 +24161,11 @@ namespace shopify
 
     public static class FileContentTypeStringValues
     {
-        public const string IMAGE = "IMAGE";
-        public const string FILE = "FILE";
-        public const string VIDEO = "VIDEO";
-        public const string EXTERNAL_VIDEO = "EXTERNAL_VIDEO";
-        public const string MODEL_3D = "MODEL_3D";
+        public const string IMAGE = @"IMAGE";
+        public const string FILE = @"FILE";
+        public const string VIDEO = @"VIDEO";
+        public const string EXTERNAL_VIDEO = @"EXTERNAL_VIDEO";
+        public const string MODEL_3D = @"MODEL_3D";
     }
 
     ///<summary>
@@ -24189,9 +24189,9 @@ namespace shopify
 
     public static class FileCreateInputDuplicateResolutionModeStringValues
     {
-        public const string APPEND_UUID = "APPEND_UUID";
-        public const string RAISE_ERROR = "RAISE_ERROR";
-        public const string REPLACE = "REPLACE";
+        public const string APPEND_UUID = @"APPEND_UUID";
+        public const string RAISE_ERROR = @"RAISE_ERROR";
+        public const string REPLACE = @"REPLACE";
     }
 
     ///<summary>
@@ -24400,39 +24400,39 @@ namespace shopify
 
     public static class FileErrorCodeStringValues
     {
-        public const string UNKNOWN = "UNKNOWN";
-        public const string INVALID_SIGNED_URL = "INVALID_SIGNED_URL";
-        public const string IMAGE_DOWNLOAD_FAILURE = "IMAGE_DOWNLOAD_FAILURE";
-        public const string IMAGE_PROCESSING_FAILURE = "IMAGE_PROCESSING_FAILURE";
-        public const string MEDIA_TIMEOUT_ERROR = "MEDIA_TIMEOUT_ERROR";
-        public const string EXTERNAL_VIDEO_NOT_FOUND = "EXTERNAL_VIDEO_NOT_FOUND";
-        public const string EXTERNAL_VIDEO_UNLISTED = "EXTERNAL_VIDEO_UNLISTED";
-        public const string EXTERNAL_VIDEO_INVALID_ASPECT_RATIO = "EXTERNAL_VIDEO_INVALID_ASPECT_RATIO";
-        public const string EXTERNAL_VIDEO_EMBED_DISABLED = "EXTERNAL_VIDEO_EMBED_DISABLED";
-        public const string EXTERNAL_VIDEO_EMBED_NOT_FOUND_OR_TRANSCODING = "EXTERNAL_VIDEO_EMBED_NOT_FOUND_OR_TRANSCODING";
-        public const string GENERIC_FILE_DOWNLOAD_FAILURE = "GENERIC_FILE_DOWNLOAD_FAILURE";
-        public const string GENERIC_FILE_INVALID_SIZE = "GENERIC_FILE_INVALID_SIZE";
-        public const string VIDEO_METADATA_READ_ERROR = "VIDEO_METADATA_READ_ERROR";
-        public const string VIDEO_INVALID_FILETYPE_ERROR = "VIDEO_INVALID_FILETYPE_ERROR";
-        public const string VIDEO_MIN_WIDTH_ERROR = "VIDEO_MIN_WIDTH_ERROR";
-        public const string VIDEO_MAX_WIDTH_ERROR = "VIDEO_MAX_WIDTH_ERROR";
-        public const string VIDEO_MIN_HEIGHT_ERROR = "VIDEO_MIN_HEIGHT_ERROR";
-        public const string VIDEO_MAX_HEIGHT_ERROR = "VIDEO_MAX_HEIGHT_ERROR";
-        public const string VIDEO_MIN_DURATION_ERROR = "VIDEO_MIN_DURATION_ERROR";
-        public const string VIDEO_MAX_DURATION_ERROR = "VIDEO_MAX_DURATION_ERROR";
-        public const string VIDEO_VALIDATION_ERROR = "VIDEO_VALIDATION_ERROR";
-        public const string MODEL3D_VALIDATION_ERROR = "MODEL3D_VALIDATION_ERROR";
-        public const string MODEL3D_THUMBNAIL_GENERATION_ERROR = "MODEL3D_THUMBNAIL_GENERATION_ERROR";
-        public const string MODEL3D_THUMBNAIL_REGENERATION_ERROR = "MODEL3D_THUMBNAIL_REGENERATION_ERROR";
-        public const string MODEL3D_GLB_TO_USDZ_CONVERSION_ERROR = "MODEL3D_GLB_TO_USDZ_CONVERSION_ERROR";
-        public const string MODEL3D_GLB_OUTPUT_CREATION_ERROR = "MODEL3D_GLB_OUTPUT_CREATION_ERROR";
-        public const string MODEL3D_PROCESSING_FAILURE = "MODEL3D_PROCESSING_FAILURE";
-        public const string UNSUPPORTED_IMAGE_FILE_TYPE = "UNSUPPORTED_IMAGE_FILE_TYPE";
-        public const string INVALID_IMAGE_FILE_SIZE = "INVALID_IMAGE_FILE_SIZE";
-        public const string INVALID_IMAGE_ASPECT_RATIO = "INVALID_IMAGE_ASPECT_RATIO";
-        public const string INVALID_IMAGE_RESOLUTION = "INVALID_IMAGE_RESOLUTION";
-        public const string FILE_STORAGE_LIMIT_EXCEEDED = "FILE_STORAGE_LIMIT_EXCEEDED";
-        public const string DUPLICATE_FILENAME_ERROR = "DUPLICATE_FILENAME_ERROR";
+        public const string UNKNOWN = @"UNKNOWN";
+        public const string INVALID_SIGNED_URL = @"INVALID_SIGNED_URL";
+        public const string IMAGE_DOWNLOAD_FAILURE = @"IMAGE_DOWNLOAD_FAILURE";
+        public const string IMAGE_PROCESSING_FAILURE = @"IMAGE_PROCESSING_FAILURE";
+        public const string MEDIA_TIMEOUT_ERROR = @"MEDIA_TIMEOUT_ERROR";
+        public const string EXTERNAL_VIDEO_NOT_FOUND = @"EXTERNAL_VIDEO_NOT_FOUND";
+        public const string EXTERNAL_VIDEO_UNLISTED = @"EXTERNAL_VIDEO_UNLISTED";
+        public const string EXTERNAL_VIDEO_INVALID_ASPECT_RATIO = @"EXTERNAL_VIDEO_INVALID_ASPECT_RATIO";
+        public const string EXTERNAL_VIDEO_EMBED_DISABLED = @"EXTERNAL_VIDEO_EMBED_DISABLED";
+        public const string EXTERNAL_VIDEO_EMBED_NOT_FOUND_OR_TRANSCODING = @"EXTERNAL_VIDEO_EMBED_NOT_FOUND_OR_TRANSCODING";
+        public const string GENERIC_FILE_DOWNLOAD_FAILURE = @"GENERIC_FILE_DOWNLOAD_FAILURE";
+        public const string GENERIC_FILE_INVALID_SIZE = @"GENERIC_FILE_INVALID_SIZE";
+        public const string VIDEO_METADATA_READ_ERROR = @"VIDEO_METADATA_READ_ERROR";
+        public const string VIDEO_INVALID_FILETYPE_ERROR = @"VIDEO_INVALID_FILETYPE_ERROR";
+        public const string VIDEO_MIN_WIDTH_ERROR = @"VIDEO_MIN_WIDTH_ERROR";
+        public const string VIDEO_MAX_WIDTH_ERROR = @"VIDEO_MAX_WIDTH_ERROR";
+        public const string VIDEO_MIN_HEIGHT_ERROR = @"VIDEO_MIN_HEIGHT_ERROR";
+        public const string VIDEO_MAX_HEIGHT_ERROR = @"VIDEO_MAX_HEIGHT_ERROR";
+        public const string VIDEO_MIN_DURATION_ERROR = @"VIDEO_MIN_DURATION_ERROR";
+        public const string VIDEO_MAX_DURATION_ERROR = @"VIDEO_MAX_DURATION_ERROR";
+        public const string VIDEO_VALIDATION_ERROR = @"VIDEO_VALIDATION_ERROR";
+        public const string MODEL3D_VALIDATION_ERROR = @"MODEL3D_VALIDATION_ERROR";
+        public const string MODEL3D_THUMBNAIL_GENERATION_ERROR = @"MODEL3D_THUMBNAIL_GENERATION_ERROR";
+        public const string MODEL3D_THUMBNAIL_REGENERATION_ERROR = @"MODEL3D_THUMBNAIL_REGENERATION_ERROR";
+        public const string MODEL3D_GLB_TO_USDZ_CONVERSION_ERROR = @"MODEL3D_GLB_TO_USDZ_CONVERSION_ERROR";
+        public const string MODEL3D_GLB_OUTPUT_CREATION_ERROR = @"MODEL3D_GLB_OUTPUT_CREATION_ERROR";
+        public const string MODEL3D_PROCESSING_FAILURE = @"MODEL3D_PROCESSING_FAILURE";
+        public const string UNSUPPORTED_IMAGE_FILE_TYPE = @"UNSUPPORTED_IMAGE_FILE_TYPE";
+        public const string INVALID_IMAGE_FILE_SIZE = @"INVALID_IMAGE_FILE_SIZE";
+        public const string INVALID_IMAGE_ASPECT_RATIO = @"INVALID_IMAGE_ASPECT_RATIO";
+        public const string INVALID_IMAGE_RESOLUTION = @"INVALID_IMAGE_RESOLUTION";
+        public const string FILE_STORAGE_LIMIT_EXCEEDED = @"FILE_STORAGE_LIMIT_EXCEEDED";
+        public const string DUPLICATE_FILENAME_ERROR = @"DUPLICATE_FILENAME_ERROR";
     }
 
     ///<summary>
@@ -24469,12 +24469,12 @@ namespace shopify
 
     public static class FileSortKeysStringValues
     {
-        public const string FILENAME = "FILENAME";
-        public const string ORIGINAL_UPLOAD_SIZE = "ORIGINAL_UPLOAD_SIZE";
-        public const string CREATED_AT = "CREATED_AT";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string FILENAME = @"FILENAME";
+        public const string ORIGINAL_UPLOAD_SIZE = @"ORIGINAL_UPLOAD_SIZE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -24502,10 +24502,10 @@ namespace shopify
 
     public static class FileStatusStringValues
     {
-        public const string UPLOADED = "UPLOADED";
-        public const string PROCESSING = "PROCESSING";
-        public const string READY = "READY";
-        public const string FAILED = "FAILED";
+        public const string UPLOADED = @"UPLOADED";
+        public const string PROCESSING = @"PROCESSING";
+        public const string READY = @"READY";
+        public const string FAILED = @"FAILED";
     }
 
     ///<summary>
@@ -24632,31 +24632,31 @@ namespace shopify
 
     public static class FilesErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string FILE_DOES_NOT_EXIST = "FILE_DOES_NOT_EXIST";
-        public const string FILE_LOCKED = "FILE_LOCKED";
-        public const string UNSUPPORTED_MEDIA_TYPE_FOR_FILENAME_UPDATE = "UNSUPPORTED_MEDIA_TYPE_FOR_FILENAME_UPDATE";
-        public const string TOO_MANY_ARGUMENTS = "TOO_MANY_ARGUMENTS";
-        public const string BLANK_SEARCH = "BLANK_SEARCH";
-        public const string MISSING_ARGUMENTS = "MISSING_ARGUMENTS";
-        public const string INVALID_QUERY = "INVALID_QUERY";
-        public const string INVALID_FILENAME_EXTENSION = "INVALID_FILENAME_EXTENSION";
-        public const string INVALID_FILENAME = "INVALID_FILENAME";
-        public const string FILENAME_ALREADY_EXISTS = "FILENAME_ALREADY_EXISTS";
-        public const string UNACCEPTABLE_UNVERIFIED_TRIAL_ASSET = "UNACCEPTABLE_UNVERIFIED_TRIAL_ASSET";
-        public const string UNACCEPTABLE_ASSET = "UNACCEPTABLE_ASSET";
-        public const string UNACCEPTABLE_TRIAL_ASSET = "UNACCEPTABLE_TRIAL_ASSET";
-        public const string ALT_VALUE_LIMIT_EXCEEDED = "ALT_VALUE_LIMIT_EXCEEDED";
-        public const string NON_READY_STATE = "NON_READY_STATE";
-        public const string NON_IMAGE_MEDIA_PER_SHOP_LIMIT_EXCEEDED = "NON_IMAGE_MEDIA_PER_SHOP_LIMIT_EXCEEDED";
-        public const string MISMATCHED_FILENAME_AND_ORIGINAL_SOURCE = "MISMATCHED_FILENAME_AND_ORIGINAL_SOURCE";
-        public const string INVALID_DUPLICATE_MODE_FOR_TYPE = "INVALID_DUPLICATE_MODE_FOR_TYPE";
-        public const string INVALID_IMAGE_SOURCE_URL = "INVALID_IMAGE_SOURCE_URL";
-        public const string MISSING_FILENAME_FOR_DUPLICATE_MODE_REPLACE = "MISSING_FILENAME_FOR_DUPLICATE_MODE_REPLACE";
-        public const string PRODUCT_MEDIA_LIMIT_EXCEEDED = "PRODUCT_MEDIA_LIMIT_EXCEEDED";
-        public const string UNSUPPORTED_FILE_REFERENCE = "UNSUPPORTED_FILE_REFERENCE";
-        public const string REFERENCE_TARGET_DOES_NOT_EXIST = "REFERENCE_TARGET_DOES_NOT_EXIST";
-        public const string TOO_MANY_FILE_REFERENCE = "TOO_MANY_FILE_REFERENCE";
+        public const string INVALID = @"INVALID";
+        public const string FILE_DOES_NOT_EXIST = @"FILE_DOES_NOT_EXIST";
+        public const string FILE_LOCKED = @"FILE_LOCKED";
+        public const string UNSUPPORTED_MEDIA_TYPE_FOR_FILENAME_UPDATE = @"UNSUPPORTED_MEDIA_TYPE_FOR_FILENAME_UPDATE";
+        public const string TOO_MANY_ARGUMENTS = @"TOO_MANY_ARGUMENTS";
+        public const string BLANK_SEARCH = @"BLANK_SEARCH";
+        public const string MISSING_ARGUMENTS = @"MISSING_ARGUMENTS";
+        public const string INVALID_QUERY = @"INVALID_QUERY";
+        public const string INVALID_FILENAME_EXTENSION = @"INVALID_FILENAME_EXTENSION";
+        public const string INVALID_FILENAME = @"INVALID_FILENAME";
+        public const string FILENAME_ALREADY_EXISTS = @"FILENAME_ALREADY_EXISTS";
+        public const string UNACCEPTABLE_UNVERIFIED_TRIAL_ASSET = @"UNACCEPTABLE_UNVERIFIED_TRIAL_ASSET";
+        public const string UNACCEPTABLE_ASSET = @"UNACCEPTABLE_ASSET";
+        public const string UNACCEPTABLE_TRIAL_ASSET = @"UNACCEPTABLE_TRIAL_ASSET";
+        public const string ALT_VALUE_LIMIT_EXCEEDED = @"ALT_VALUE_LIMIT_EXCEEDED";
+        public const string NON_READY_STATE = @"NON_READY_STATE";
+        public const string NON_IMAGE_MEDIA_PER_SHOP_LIMIT_EXCEEDED = @"NON_IMAGE_MEDIA_PER_SHOP_LIMIT_EXCEEDED";
+        public const string MISMATCHED_FILENAME_AND_ORIGINAL_SOURCE = @"MISMATCHED_FILENAME_AND_ORIGINAL_SOURCE";
+        public const string INVALID_DUPLICATE_MODE_FOR_TYPE = @"INVALID_DUPLICATE_MODE_FOR_TYPE";
+        public const string INVALID_IMAGE_SOURCE_URL = @"INVALID_IMAGE_SOURCE_URL";
+        public const string MISSING_FILENAME_FOR_DUPLICATE_MODE_REPLACE = @"MISSING_FILENAME_FOR_DUPLICATE_MODE_REPLACE";
+        public const string PRODUCT_MEDIA_LIMIT_EXCEEDED = @"PRODUCT_MEDIA_LIMIT_EXCEEDED";
+        public const string UNSUPPORTED_FILE_REFERENCE = @"UNSUPPORTED_FILE_REFERENCE";
+        public const string REFERENCE_TARGET_DOES_NOT_EXIST = @"REFERENCE_TARGET_DOES_NOT_EXIST";
+        public const string TOO_MANY_FILE_REFERENCE = @"TOO_MANY_FILE_REFERENCE";
     }
 
     ///<summary>
@@ -24997,13 +24997,13 @@ namespace shopify
 
     public static class FulfillmentConstraintRuleCreateUserErrorCodeStringValues
     {
-        public const string INPUT_INVALID = "INPUT_INVALID";
-        public const string FUNCTION_NOT_FOUND = "FUNCTION_NOT_FOUND";
-        public const string FUNCTION_ALREADY_REGISTERED = "FUNCTION_ALREADY_REGISTERED";
-        public const string FUNCTION_DOES_NOT_IMPLEMENT = "FUNCTION_DOES_NOT_IMPLEMENT";
-        public const string CUSTOM_APP_FUNCTION_NOT_ELIGIBLE = "CUSTOM_APP_FUNCTION_NOT_ELIGIBLE";
-        public const string FUNCTION_PENDING_DELETION = "FUNCTION_PENDING_DELETION";
-        public const string MAXIMUM_FULFILLMENT_CONSTRAINT_RULES_REACHED = "MAXIMUM_FULFILLMENT_CONSTRAINT_RULES_REACHED";
+        public const string INPUT_INVALID = @"INPUT_INVALID";
+        public const string FUNCTION_NOT_FOUND = @"FUNCTION_NOT_FOUND";
+        public const string FUNCTION_ALREADY_REGISTERED = @"FUNCTION_ALREADY_REGISTERED";
+        public const string FUNCTION_DOES_NOT_IMPLEMENT = @"FUNCTION_DOES_NOT_IMPLEMENT";
+        public const string CUSTOM_APP_FUNCTION_NOT_ELIGIBLE = @"CUSTOM_APP_FUNCTION_NOT_ELIGIBLE";
+        public const string FUNCTION_PENDING_DELETION = @"FUNCTION_PENDING_DELETION";
+        public const string MAXIMUM_FULFILLMENT_CONSTRAINT_RULES_REACHED = @"MAXIMUM_FULFILLMENT_CONSTRAINT_RULES_REACHED";
     }
 
     ///<summary>
@@ -25057,8 +25057,8 @@ namespace shopify
 
     public static class FulfillmentConstraintRuleDeleteUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string UNAUTHORIZED_APP_SCOPE = "UNAUTHORIZED_APP_SCOPE";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string UNAUTHORIZED_APP_SCOPE = @"UNAUTHORIZED_APP_SCOPE";
     }
 
     ///<summary>
@@ -25112,8 +25112,8 @@ namespace shopify
 
     public static class FulfillmentConstraintRuleUpdateUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string UNAUTHORIZED_APP_SCOPE = "UNAUTHORIZED_APP_SCOPE";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string UNAUTHORIZED_APP_SCOPE = @"UNAUTHORIZED_APP_SCOPE";
     }
 
     ///<summary>
@@ -25219,22 +25219,22 @@ namespace shopify
 
     public static class FulfillmentDisplayStatusStringValues
     {
-        public const string ATTEMPTED_DELIVERY = "ATTEMPTED_DELIVERY";
-        public const string CANCELED = "CANCELED";
-        public const string CONFIRMED = "CONFIRMED";
-        public const string DELIVERED = "DELIVERED";
-        public const string FAILURE = "FAILURE";
-        public const string FULFILLED = "FULFILLED";
-        public const string IN_TRANSIT = "IN_TRANSIT";
-        public const string LABEL_PRINTED = "LABEL_PRINTED";
-        public const string LABEL_PURCHASED = "LABEL_PURCHASED";
-        public const string LABEL_VOIDED = "LABEL_VOIDED";
-        public const string MARKED_AS_FULFILLED = "MARKED_AS_FULFILLED";
-        public const string NOT_DELIVERED = "NOT_DELIVERED";
-        public const string OUT_FOR_DELIVERY = "OUT_FOR_DELIVERY";
-        public const string READY_FOR_PICKUP = "READY_FOR_PICKUP";
-        public const string PICKED_UP = "PICKED_UP";
-        public const string SUBMITTED = "SUBMITTED";
+        public const string ATTEMPTED_DELIVERY = @"ATTEMPTED_DELIVERY";
+        public const string CANCELED = @"CANCELED";
+        public const string CONFIRMED = @"CONFIRMED";
+        public const string DELIVERED = @"DELIVERED";
+        public const string FAILURE = @"FAILURE";
+        public const string FULFILLED = @"FULFILLED";
+        public const string IN_TRANSIT = @"IN_TRANSIT";
+        public const string LABEL_PRINTED = @"LABEL_PRINTED";
+        public const string LABEL_PURCHASED = @"LABEL_PURCHASED";
+        public const string LABEL_VOIDED = @"LABEL_VOIDED";
+        public const string MARKED_AS_FULFILLED = @"MARKED_AS_FULFILLED";
+        public const string NOT_DELIVERED = @"NOT_DELIVERED";
+        public const string OUT_FOR_DELIVERY = @"OUT_FOR_DELIVERY";
+        public const string READY_FOR_PICKUP = @"READY_FOR_PICKUP";
+        public const string PICKED_UP = @"PICKED_UP";
+        public const string SUBMITTED = @"SUBMITTED";
     }
 
     ///<summary>
@@ -25382,9 +25382,9 @@ namespace shopify
 
     public static class FulfillmentEventSortKeysStringValues
     {
-        public const string HAPPENED_AT = "HAPPENED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string HAPPENED_AT = @"HAPPENED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -25432,15 +25432,15 @@ namespace shopify
 
     public static class FulfillmentEventStatusStringValues
     {
-        public const string LABEL_PURCHASED = "LABEL_PURCHASED";
-        public const string LABEL_PRINTED = "LABEL_PRINTED";
-        public const string READY_FOR_PICKUP = "READY_FOR_PICKUP";
-        public const string CONFIRMED = "CONFIRMED";
-        public const string IN_TRANSIT = "IN_TRANSIT";
-        public const string OUT_FOR_DELIVERY = "OUT_FOR_DELIVERY";
-        public const string ATTEMPTED_DELIVERY = "ATTEMPTED_DELIVERY";
-        public const string DELIVERED = "DELIVERED";
-        public const string FAILURE = "FAILURE";
+        public const string LABEL_PURCHASED = @"LABEL_PURCHASED";
+        public const string LABEL_PRINTED = @"LABEL_PRINTED";
+        public const string READY_FOR_PICKUP = @"READY_FOR_PICKUP";
+        public const string CONFIRMED = @"CONFIRMED";
+        public const string IN_TRANSIT = @"IN_TRANSIT";
+        public const string OUT_FOR_DELIVERY = @"OUT_FOR_DELIVERY";
+        public const string ATTEMPTED_DELIVERY = @"ATTEMPTED_DELIVERY";
+        public const string DELIVERED = @"DELIVERED";
+        public const string FAILURE = @"FAILURE";
     }
 
     ///<summary>
@@ -25515,14 +25515,14 @@ namespace shopify
 
     public static class FulfillmentHoldReasonStringValues
     {
-        public const string AWAITING_PAYMENT = "AWAITING_PAYMENT";
-        public const string HIGH_RISK_OF_FRAUD = "HIGH_RISK_OF_FRAUD";
-        public const string INCORRECT_ADDRESS = "INCORRECT_ADDRESS";
-        public const string INVENTORY_OUT_OF_STOCK = "INVENTORY_OUT_OF_STOCK";
-        public const string UNKNOWN_DELIVERY_DATE = "UNKNOWN_DELIVERY_DATE";
-        public const string ONLINE_STORE_POST_PURCHASE_CROSS_SELL = "ONLINE_STORE_POST_PURCHASE_CROSS_SELL";
-        public const string AWAITING_RETURN_ITEMS = "AWAITING_RETURN_ITEMS";
-        public const string OTHER = "OTHER";
+        public const string AWAITING_PAYMENT = @"AWAITING_PAYMENT";
+        public const string HIGH_RISK_OF_FRAUD = @"HIGH_RISK_OF_FRAUD";
+        public const string INCORRECT_ADDRESS = @"INCORRECT_ADDRESS";
+        public const string INVENTORY_OUT_OF_STOCK = @"INVENTORY_OUT_OF_STOCK";
+        public const string UNKNOWN_DELIVERY_DATE = @"UNKNOWN_DELIVERY_DATE";
+        public const string ONLINE_STORE_POST_PURCHASE_CROSS_SELL = @"ONLINE_STORE_POST_PURCHASE_CROSS_SELL";
+        public const string AWAITING_RETURN_ITEMS = @"AWAITING_RETURN_ITEMS";
+        public const string OTHER = @"OTHER";
     }
 
     ///<summary>
@@ -25955,17 +25955,17 @@ namespace shopify
 
     public static class FulfillmentOrderActionStringValues
     {
-        public const string CREATE_FULFILLMENT = "CREATE_FULFILLMENT";
-        public const string REQUEST_FULFILLMENT = "REQUEST_FULFILLMENT";
-        public const string CANCEL_FULFILLMENT_ORDER = "CANCEL_FULFILLMENT_ORDER";
-        public const string MOVE = "MOVE";
-        public const string REQUEST_CANCELLATION = "REQUEST_CANCELLATION";
-        public const string MARK_AS_OPEN = "MARK_AS_OPEN";
-        public const string RELEASE_HOLD = "RELEASE_HOLD";
-        public const string HOLD = "HOLD";
-        public const string EXTERNAL = "EXTERNAL";
-        public const string SPLIT = "SPLIT";
-        public const string MERGE = "MERGE";
+        public const string CREATE_FULFILLMENT = @"CREATE_FULFILLMENT";
+        public const string REQUEST_FULFILLMENT = @"REQUEST_FULFILLMENT";
+        public const string CANCEL_FULFILLMENT_ORDER = @"CANCEL_FULFILLMENT_ORDER";
+        public const string MOVE = @"MOVE";
+        public const string REQUEST_CANCELLATION = @"REQUEST_CANCELLATION";
+        public const string MARK_AS_OPEN = @"MARK_AS_OPEN";
+        public const string RELEASE_HOLD = @"RELEASE_HOLD";
+        public const string HOLD = @"HOLD";
+        public const string EXTERNAL = @"EXTERNAL";
+        public const string SPLIT = @"SPLIT";
+        public const string MERGE = @"MERGE";
     }
 
     ///<summary>
@@ -26074,10 +26074,10 @@ namespace shopify
 
     public static class FulfillmentOrderAssignmentStatusStringValues
     {
-        public const string CANCELLATION_REQUESTED = "CANCELLATION_REQUESTED";
-        public const string FULFILLMENT_REQUESTED = "FULFILLMENT_REQUESTED";
-        public const string FULFILLMENT_ACCEPTED = "FULFILLMENT_ACCEPTED";
-        public const string FULFILLMENT_UNSUBMITTED = "FULFILLMENT_UNSUBMITTED";
+        public const string CANCELLATION_REQUESTED = @"CANCELLATION_REQUESTED";
+        public const string FULFILLMENT_REQUESTED = @"FULFILLMENT_REQUESTED";
+        public const string FULFILLMENT_ACCEPTED = @"FULFILLMENT_ACCEPTED";
+        public const string FULFILLMENT_UNSUBMITTED = @"FULFILLMENT_UNSUBMITTED";
     }
 
     ///<summary>
@@ -26275,10 +26275,10 @@ namespace shopify
 
     public static class FulfillmentOrderHoldUserErrorCodeStringValues
     {
-        public const string FULFILLMENT_ORDER_NOT_FOUND = "FULFILLMENT_ORDER_NOT_FOUND";
-        public const string TAKEN = "TAKEN";
-        public const string GREATER_THAN_ZERO = "GREATER_THAN_ZERO";
-        public const string INVALID_LINE_ITEM_QUANTITY = "INVALID_LINE_ITEM_QUANTITY";
+        public const string FULFILLMENT_ORDER_NOT_FOUND = @"FULFILLMENT_ORDER_NOT_FOUND";
+        public const string TAKEN = @"TAKEN";
+        public const string GREATER_THAN_ZERO = @"GREATER_THAN_ZERO";
+        public const string INVALID_LINE_ITEM_QUANTITY = @"INVALID_LINE_ITEM_QUANTITY";
     }
 
     ///<summary>
@@ -26488,9 +26488,9 @@ namespace shopify
 
     public static class FulfillmentOrderLineItemsPreparedForPickupUserErrorCodeStringValues
     {
-        public const string NO_LINE_ITEMS_TO_PREPARE_FOR_FULFILLMENT_ORDER = "NO_LINE_ITEMS_TO_PREPARE_FOR_FULFILLMENT_ORDER";
-        public const string FULFILLMENT_ORDER_INVALID = "FULFILLMENT_ORDER_INVALID";
-        public const string UNABLE_TO_PREPARE_QUANTITY = "UNABLE_TO_PREPARE_QUANTITY";
+        public const string NO_LINE_ITEMS_TO_PREPARE_FOR_FULFILLMENT_ORDER = @"NO_LINE_ITEMS_TO_PREPARE_FOR_FULFILLMENT_ORDER";
+        public const string FULFILLMENT_ORDER_INVALID = @"FULFILLMENT_ORDER_INVALID";
+        public const string UNABLE_TO_PREPARE_QUANTITY = @"UNABLE_TO_PREPARE_QUANTITY";
     }
 
     ///<summary>
@@ -26655,8 +26655,8 @@ namespace shopify
 
     public static class FulfillmentOrderMerchantRequestKindStringValues
     {
-        public const string FULFILLMENT_REQUEST = "FULFILLMENT_REQUEST";
-        public const string CANCELLATION_REQUEST = "CANCELLATION_REQUEST";
+        public const string FULFILLMENT_REQUEST = @"FULFILLMENT_REQUEST";
+        public const string CANCELLATION_REQUEST = @"CANCELLATION_REQUEST";
     }
 
     ///<summary>
@@ -26725,9 +26725,9 @@ namespace shopify
 
     public static class FulfillmentOrderMergeUserErrorCodeStringValues
     {
-        public const string FULFILLMENT_ORDER_NOT_FOUND = "FULFILLMENT_ORDER_NOT_FOUND";
-        public const string GREATER_THAN = "GREATER_THAN";
-        public const string INVALID_LINE_ITEM_QUANTITY = "INVALID_LINE_ITEM_QUANTITY";
+        public const string FULFILLMENT_ORDER_NOT_FOUND = @"FULFILLMENT_ORDER_NOT_FOUND";
+        public const string GREATER_THAN = @"GREATER_THAN";
+        public const string INVALID_LINE_ITEM_QUANTITY = @"INVALID_LINE_ITEM_QUANTITY";
     }
 
     ///<summary>
@@ -26833,11 +26833,11 @@ namespace shopify
 
     public static class FulfillmentOrderRejectionReasonStringValues
     {
-        public const string INCORRECT_ADDRESS = "INCORRECT_ADDRESS";
-        public const string INVENTORY_OUT_OF_STOCK = "INVENTORY_OUT_OF_STOCK";
-        public const string INELIGIBLE_PRODUCT = "INELIGIBLE_PRODUCT";
-        public const string UNDELIVERABLE_DESTINATION = "UNDELIVERABLE_DESTINATION";
-        public const string OTHER = "OTHER";
+        public const string INCORRECT_ADDRESS = @"INCORRECT_ADDRESS";
+        public const string INVENTORY_OUT_OF_STOCK = @"INVENTORY_OUT_OF_STOCK";
+        public const string INELIGIBLE_PRODUCT = @"INELIGIBLE_PRODUCT";
+        public const string UNDELIVERABLE_DESTINATION = @"UNDELIVERABLE_DESTINATION";
+        public const string OTHER = @"OTHER";
     }
 
     ///<summary>
@@ -26891,8 +26891,8 @@ namespace shopify
 
     public static class FulfillmentOrderReleaseHoldUserErrorCodeStringValues
     {
-        public const string FULFILLMENT_ORDER_NOT_FOUND = "FULFILLMENT_ORDER_NOT_FOUND";
-        public const string INVALID_ACCESS = "INVALID_ACCESS";
+        public const string FULFILLMENT_ORDER_NOT_FOUND = @"FULFILLMENT_ORDER_NOT_FOUND";
+        public const string INVALID_ACCESS = @"INVALID_ACCESS";
     }
 
     ///<summary>
@@ -26937,14 +26937,14 @@ namespace shopify
 
     public static class FulfillmentOrderRequestStatusStringValues
     {
-        public const string UNSUBMITTED = "UNSUBMITTED";
-        public const string SUBMITTED = "SUBMITTED";
-        public const string ACCEPTED = "ACCEPTED";
-        public const string REJECTED = "REJECTED";
-        public const string CANCELLATION_REQUESTED = "CANCELLATION_REQUESTED";
-        public const string CANCELLATION_ACCEPTED = "CANCELLATION_ACCEPTED";
-        public const string CANCELLATION_REJECTED = "CANCELLATION_REJECTED";
-        public const string CLOSED = "CLOSED";
+        public const string UNSUBMITTED = @"UNSUBMITTED";
+        public const string SUBMITTED = @"SUBMITTED";
+        public const string ACCEPTED = @"ACCEPTED";
+        public const string REJECTED = @"REJECTED";
+        public const string CANCELLATION_REQUESTED = @"CANCELLATION_REQUESTED";
+        public const string CANCELLATION_ACCEPTED = @"CANCELLATION_ACCEPTED";
+        public const string CANCELLATION_REJECTED = @"CANCELLATION_REJECTED";
+        public const string CLOSED = @"CLOSED";
     }
 
     ///<summary>
@@ -26999,7 +26999,7 @@ namespace shopify
 
     public static class FulfillmentOrderRescheduleUserErrorCodeStringValues
     {
-        public const string FULFILLMENT_ORDER_NOT_FOUND = "FULFILLMENT_ORDER_NOT_FOUND";
+        public const string FULFILLMENT_ORDER_NOT_FOUND = @"FULFILLMENT_ORDER_NOT_FOUND";
     }
 
     ///<summary>
@@ -27024,9 +27024,9 @@ namespace shopify
 
     public static class FulfillmentOrderSortKeysStringValues
     {
-        public const string ID = "ID";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string ID = @"ID";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -27107,10 +27107,10 @@ namespace shopify
 
     public static class FulfillmentOrderSplitUserErrorCodeStringValues
     {
-        public const string FULFILLMENT_ORDER_NOT_FOUND = "FULFILLMENT_ORDER_NOT_FOUND";
-        public const string GREATER_THAN = "GREATER_THAN";
-        public const string INVALID_LINE_ITEM_QUANTITY = "INVALID_LINE_ITEM_QUANTITY";
-        public const string NO_LINE_ITEMS_PROVIDED_TO_SPLIT = "NO_LINE_ITEMS_PROVIDED_TO_SPLIT";
+        public const string FULFILLMENT_ORDER_NOT_FOUND = @"FULFILLMENT_ORDER_NOT_FOUND";
+        public const string GREATER_THAN = @"GREATER_THAN";
+        public const string INVALID_LINE_ITEM_QUANTITY = @"INVALID_LINE_ITEM_QUANTITY";
+        public const string NO_LINE_ITEMS_PROVIDED_TO_SPLIT = @"NO_LINE_ITEMS_PROVIDED_TO_SPLIT";
     }
 
     ///<summary>
@@ -27150,13 +27150,13 @@ namespace shopify
 
     public static class FulfillmentOrderStatusStringValues
     {
-        public const string OPEN = "OPEN";
-        public const string IN_PROGRESS = "IN_PROGRESS";
-        public const string CANCELLED = "CANCELLED";
-        public const string INCOMPLETE = "INCOMPLETE";
-        public const string CLOSED = "CLOSED";
-        public const string SCHEDULED = "SCHEDULED";
-        public const string ON_HOLD = "ON_HOLD";
+        public const string OPEN = @"OPEN";
+        public const string IN_PROGRESS = @"IN_PROGRESS";
+        public const string CANCELLED = @"CANCELLED";
+        public const string INCOMPLETE = @"INCOMPLETE";
+        public const string CLOSED = @"CLOSED";
+        public const string SCHEDULED = @"SCHEDULED";
+        public const string ON_HOLD = @"ON_HOLD";
     }
 
     ///<summary>
@@ -27263,7 +27263,7 @@ namespace shopify
 
     public static class FulfillmentOrdersSetFulfillmentDeadlineUserErrorCodeStringValues
     {
-        public const string FULFILLMENT_ORDERS_NOT_FOUND = "FULFILLMENT_ORDERS_NOT_FOUND";
+        public const string FULFILLMENT_ORDERS_NOT_FOUND = @"FULFILLMENT_ORDERS_NOT_FOUND";
     }
 
     ///<summary>
@@ -27456,9 +27456,9 @@ namespace shopify
 
     public static class FulfillmentServiceDeleteInventoryActionStringValues
     {
-        public const string DELETE = "DELETE";
-        public const string KEEP = "KEEP";
-        public const string TRANSFER = "TRANSFER";
+        public const string DELETE = @"DELETE";
+        public const string KEEP = @"KEEP";
+        public const string TRANSFER = @"TRANSFER";
     }
 
     ///<summary>
@@ -27497,9 +27497,9 @@ namespace shopify
 
     public static class FulfillmentServiceTypeStringValues
     {
-        public const string GIFT_CARD = "GIFT_CARD";
-        public const string MANUAL = "MANUAL";
-        public const string THIRD_PARTY = "THIRD_PARTY";
+        public const string GIFT_CARD = @"GIFT_CARD";
+        public const string MANUAL = @"MANUAL";
+        public const string THIRD_PARTY = @"THIRD_PARTY";
     }
 
     ///<summary>
@@ -27553,13 +27553,13 @@ namespace shopify
     public static class FulfillmentStatusStringValues
     {
         [Obsolete("This is a legacy status and is due to be deprecated.")]
-        public const string PENDING = "PENDING";
+        public const string PENDING = @"PENDING";
         [Obsolete("This is a legacy status and is due to be deprecated.")]
-        public const string OPEN = "OPEN";
-        public const string SUCCESS = "SUCCESS";
-        public const string CANCELLED = "CANCELLED";
-        public const string ERROR = "ERROR";
-        public const string FAILURE = "FAILURE";
+        public const string OPEN = @"OPEN";
+        public const string SUCCESS = @"SUCCESS";
+        public const string CANCELLED = @"CANCELLED";
+        public const string ERROR = @"ERROR";
+        public const string FAILURE = @"FAILURE";
     }
 
     ///<summary>
@@ -28080,7 +28080,7 @@ namespace shopify
 
     public static class GiftCardDeactivateUserErrorCodeStringValues
     {
-        public const string GIFT_CARD_NOT_FOUND = "GIFT_CARD_NOT_FOUND";
+        public const string GIFT_CARD_NOT_FOUND = @"GIFT_CARD_NOT_FOUND";
     }
 
     ///<summary>
@@ -28208,15 +28208,15 @@ namespace shopify
 
     public static class GiftCardErrorCodeStringValues
     {
-        public const string TOO_LONG = "TOO_LONG";
-        public const string TOO_SHORT = "TOO_SHORT";
-        public const string TAKEN = "TAKEN";
-        public const string INVALID = "INVALID";
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
-        public const string MISSING_ARGUMENT = "MISSING_ARGUMENT";
-        public const string GREATER_THAN = "GREATER_THAN";
-        public const string CUSTOMER_NOT_FOUND = "CUSTOMER_NOT_FOUND";
-        public const string RECIPIENT_NOT_FOUND = "RECIPIENT_NOT_FOUND";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string TOO_SHORT = @"TOO_SHORT";
+        public const string TAKEN = @"TAKEN";
+        public const string INVALID = @"INVALID";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
+        public const string MISSING_ARGUMENT = @"MISSING_ARGUMENT";
+        public const string GREATER_THAN = @"GREATER_THAN";
+        public const string CUSTOMER_NOT_FOUND = @"CUSTOMER_NOT_FOUND";
+        public const string RECIPIENT_NOT_FOUND = @"RECIPIENT_NOT_FOUND";
     }
 
     ///<summary>
@@ -28344,9 +28344,9 @@ namespace shopify
 
     public static class GiftCardSendNotificationToCustomerUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string CUSTOMER_NOT_FOUND = "CUSTOMER_NOT_FOUND";
-        public const string GIFT_CARD_NOT_FOUND = "GIFT_CARD_NOT_FOUND";
+        public const string INVALID = @"INVALID";
+        public const string CUSTOMER_NOT_FOUND = @"CUSTOMER_NOT_FOUND";
+        public const string GIFT_CARD_NOT_FOUND = @"GIFT_CARD_NOT_FOUND";
     }
 
     ///<summary>
@@ -28404,9 +28404,9 @@ namespace shopify
 
     public static class GiftCardSendNotificationToRecipientUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string RECIPIENT_NOT_FOUND = "RECIPIENT_NOT_FOUND";
-        public const string GIFT_CARD_NOT_FOUND = "GIFT_CARD_NOT_FOUND";
+        public const string INVALID = @"INVALID";
+        public const string RECIPIENT_NOT_FOUND = @"RECIPIENT_NOT_FOUND";
+        public const string GIFT_CARD_NOT_FOUND = @"GIFT_CARD_NOT_FOUND";
     }
 
     ///<summary>
@@ -28463,17 +28463,17 @@ namespace shopify
 
     public static class GiftCardSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string CUSTOMER_NAME = "CUSTOMER_NAME";
-        public const string CODE = "CODE";
-        public const string BALANCE = "BALANCE";
-        public const string AMOUNT_SPENT = "AMOUNT_SPENT";
-        public const string INITIAL_VALUE = "INITIAL_VALUE";
-        public const string DISABLED_AT = "DISABLED_AT";
-        public const string EXPIRES_ON = "EXPIRES_ON";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string CUSTOMER_NAME = @"CUSTOMER_NAME";
+        public const string CODE = @"CODE";
+        public const string BALANCE = @"BALANCE";
+        public const string AMOUNT_SPENT = @"AMOUNT_SPENT";
+        public const string INITIAL_VALUE = @"INITIAL_VALUE";
+        public const string DISABLED_AT = @"DISABLED_AT";
+        public const string EXPIRES_ON = @"EXPIRES_ON";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -28596,13 +28596,13 @@ namespace shopify
 
     public static class GiftCardTransactionUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
-        public const string GIFT_CARD_LIMIT_EXCEEDED = "GIFT_CARD_LIMIT_EXCEEDED";
-        public const string GIFT_CARD_NOT_FOUND = "GIFT_CARD_NOT_FOUND";
-        public const string NEGATIVE_OR_ZERO_AMOUNT = "NEGATIVE_OR_ZERO_AMOUNT";
-        public const string INSUFFICIENT_FUNDS = "INSUFFICIENT_FUNDS";
-        public const string MISMATCHING_CURRENCY = "MISMATCHING_CURRENCY";
+        public const string INVALID = @"INVALID";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
+        public const string GIFT_CARD_LIMIT_EXCEEDED = @"GIFT_CARD_LIMIT_EXCEEDED";
+        public const string GIFT_CARD_NOT_FOUND = @"GIFT_CARD_NOT_FOUND";
+        public const string NEGATIVE_OR_ZERO_AMOUNT = @"NEGATIVE_OR_ZERO_AMOUNT";
+        public const string INSUFFICIENT_FUNDS = @"INSUFFICIENT_FUNDS";
+        public const string MISMATCHING_CURRENCY = @"MISMATCHING_CURRENCY";
     }
 
     ///<summary>
@@ -29032,9 +29032,9 @@ namespace shopify
 
     public static class ImageContentTypeStringValues
     {
-        public const string PNG = "PNG";
-        public const string JPG = "JPG";
-        public const string WEBP = "WEBP";
+        public const string PNG = @"PNG";
+        public const string JPG = @"JPG";
+        public const string WEBP = @"WEBP";
     }
 
     ///<summary>
@@ -29192,21 +29192,21 @@ namespace shopify
 
     public static class InventoryAdjustQuantitiesUserErrorCodeStringValues
     {
-        public const string INTERNAL_LEDGER_DOCUMENT = "INTERNAL_LEDGER_DOCUMENT";
-        public const string INVALID_AVAILABLE_DOCUMENT = "INVALID_AVAILABLE_DOCUMENT";
-        public const string INVALID_INVENTORY_ITEM = "INVALID_INVENTORY_ITEM";
-        public const string INVALID_LEDGER_DOCUMENT = "INVALID_LEDGER_DOCUMENT";
-        public const string INVALID_LOCATION = "INVALID_LOCATION";
-        public const string INVALID_QUANTITY_DOCUMENT = "INVALID_QUANTITY_DOCUMENT";
-        public const string INVALID_QUANTITY_NAME = "INVALID_QUANTITY_NAME";
-        public const string INVALID_QUANTITY_TOO_LOW = "INVALID_QUANTITY_TOO_LOW";
-        public const string INVALID_QUANTITY_TOO_HIGH = "INVALID_QUANTITY_TOO_HIGH";
-        public const string INVALID_REASON = "INVALID_REASON";
-        public const string INVALID_REFERENCE_DOCUMENT = "INVALID_REFERENCE_DOCUMENT";
-        public const string ADJUST_QUANTITIES_FAILED = "ADJUST_QUANTITIES_FAILED";
-        public const string MAX_ONE_LEDGER_DOCUMENT = "MAX_ONE_LEDGER_DOCUMENT";
-        public const string ITEM_NOT_STOCKED_AT_LOCATION = "ITEM_NOT_STOCKED_AT_LOCATION";
-        public const string NON_MUTABLE_INVENTORY_ITEM = "NON_MUTABLE_INVENTORY_ITEM";
+        public const string INTERNAL_LEDGER_DOCUMENT = @"INTERNAL_LEDGER_DOCUMENT";
+        public const string INVALID_AVAILABLE_DOCUMENT = @"INVALID_AVAILABLE_DOCUMENT";
+        public const string INVALID_INVENTORY_ITEM = @"INVALID_INVENTORY_ITEM";
+        public const string INVALID_LEDGER_DOCUMENT = @"INVALID_LEDGER_DOCUMENT";
+        public const string INVALID_LOCATION = @"INVALID_LOCATION";
+        public const string INVALID_QUANTITY_DOCUMENT = @"INVALID_QUANTITY_DOCUMENT";
+        public const string INVALID_QUANTITY_NAME = @"INVALID_QUANTITY_NAME";
+        public const string INVALID_QUANTITY_TOO_LOW = @"INVALID_QUANTITY_TOO_LOW";
+        public const string INVALID_QUANTITY_TOO_HIGH = @"INVALID_QUANTITY_TOO_HIGH";
+        public const string INVALID_REASON = @"INVALID_REASON";
+        public const string INVALID_REFERENCE_DOCUMENT = @"INVALID_REFERENCE_DOCUMENT";
+        public const string ADJUST_QUANTITIES_FAILED = @"ADJUST_QUANTITIES_FAILED";
+        public const string MAX_ONE_LEDGER_DOCUMENT = @"MAX_ONE_LEDGER_DOCUMENT";
+        public const string ITEM_NOT_STOCKED_AT_LOCATION = @"ITEM_NOT_STOCKED_AT_LOCATION";
+        public const string NON_MUTABLE_INVENTORY_ITEM = @"NON_MUTABLE_INVENTORY_ITEM";
     }
 
     ///<summary>
@@ -29347,20 +29347,20 @@ namespace shopify
 
     public static class InventoryBulkToggleActivationUserErrorCodeStringValues
     {
-        public const string GENERIC_ERROR = "GENERIC_ERROR";
-        public const string CANNOT_DEACTIVATE_FROM_ONLY_LOCATION = "CANNOT_DEACTIVATE_FROM_ONLY_LOCATION";
+        public const string GENERIC_ERROR = @"GENERIC_ERROR";
+        public const string CANNOT_DEACTIVATE_FROM_ONLY_LOCATION = @"CANNOT_DEACTIVATE_FROM_ONLY_LOCATION";
         [Obsolete("This error code is deprecated. Both INCOMING_INVENTORY_AT_LOCATION and COMMITTED_INVENTORY_AT_LOCATION codes will be returned as individual errors instead.")]
-        public const string COMMITTED_AND_INCOMING_INVENTORY_AT_LOCATION = "COMMITTED_AND_INCOMING_INVENTORY_AT_LOCATION";
-        public const string INCOMING_INVENTORY_AT_LOCATION = "INCOMING_INVENTORY_AT_LOCATION";
-        public const string COMMITTED_INVENTORY_AT_LOCATION = "COMMITTED_INVENTORY_AT_LOCATION";
-        public const string RESERVED_INVENTORY_AT_LOCATION = "RESERVED_INVENTORY_AT_LOCATION";
-        public const string FAILED_TO_UNSTOCK_FROM_LOCATION = "FAILED_TO_UNSTOCK_FROM_LOCATION";
-        public const string INVENTORY_MANAGED_BY_3RD_PARTY = "INVENTORY_MANAGED_BY_3RD_PARTY";
-        public const string INVENTORY_MANAGED_BY_SHOPIFY = "INVENTORY_MANAGED_BY_SHOPIFY";
-        public const string FAILED_TO_STOCK_AT_LOCATION = "FAILED_TO_STOCK_AT_LOCATION";
-        public const string MISSING_SKU = "MISSING_SKU";
-        public const string LOCATION_NOT_FOUND = "LOCATION_NOT_FOUND";
-        public const string INVENTORY_ITEM_NOT_FOUND = "INVENTORY_ITEM_NOT_FOUND";
+        public const string COMMITTED_AND_INCOMING_INVENTORY_AT_LOCATION = @"COMMITTED_AND_INCOMING_INVENTORY_AT_LOCATION";
+        public const string INCOMING_INVENTORY_AT_LOCATION = @"INCOMING_INVENTORY_AT_LOCATION";
+        public const string COMMITTED_INVENTORY_AT_LOCATION = @"COMMITTED_INVENTORY_AT_LOCATION";
+        public const string RESERVED_INVENTORY_AT_LOCATION = @"RESERVED_INVENTORY_AT_LOCATION";
+        public const string FAILED_TO_UNSTOCK_FROM_LOCATION = @"FAILED_TO_UNSTOCK_FROM_LOCATION";
+        public const string INVENTORY_MANAGED_BY_3RD_PARTY = @"INVENTORY_MANAGED_BY_3RD_PARTY";
+        public const string INVENTORY_MANAGED_BY_SHOPIFY = @"INVENTORY_MANAGED_BY_SHOPIFY";
+        public const string FAILED_TO_STOCK_AT_LOCATION = @"FAILED_TO_STOCK_AT_LOCATION";
+        public const string MISSING_SKU = @"MISSING_SKU";
+        public const string LOCATION_NOT_FOUND = @"LOCATION_NOT_FOUND";
+        public const string INVENTORY_ITEM_NOT_FOUND = @"INVENTORY_ITEM_NOT_FOUND";
     }
 
     ///<summary>
@@ -29748,23 +29748,23 @@ namespace shopify
 
     public static class InventoryMoveQuantitiesUserErrorCodeStringValues
     {
-        public const string INTERNAL_LEDGER_DOCUMENT = "INTERNAL_LEDGER_DOCUMENT";
-        public const string INVALID_AVAILABLE_DOCUMENT = "INVALID_AVAILABLE_DOCUMENT";
-        public const string INVALID_INVENTORY_ITEM = "INVALID_INVENTORY_ITEM";
-        public const string INVALID_LEDGER_DOCUMENT = "INVALID_LEDGER_DOCUMENT";
-        public const string INVALID_LOCATION = "INVALID_LOCATION";
-        public const string INVALID_QUANTITY_DOCUMENT = "INVALID_QUANTITY_DOCUMENT";
-        public const string INVALID_QUANTITY_NAME = "INVALID_QUANTITY_NAME";
-        public const string INVALID_QUANTITY_NEGATIVE = "INVALID_QUANTITY_NEGATIVE";
-        public const string INVALID_QUANTITY_TOO_HIGH = "INVALID_QUANTITY_TOO_HIGH";
-        public const string INVALID_REASON = "INVALID_REASON";
-        public const string INVALID_REFERENCE_DOCUMENT = "INVALID_REFERENCE_DOCUMENT";
-        public const string MOVE_QUANTITIES_FAILED = "MOVE_QUANTITIES_FAILED";
-        public const string DIFFERENT_LOCATIONS = "DIFFERENT_LOCATIONS";
-        public const string SAME_QUANTITY_NAME = "SAME_QUANTITY_NAME";
-        public const string MAXIMUM_LEDGER_DOCUMENT_URIS = "MAXIMUM_LEDGER_DOCUMENT_URIS";
-        public const string ITEM_NOT_STOCKED_AT_LOCATION = "ITEM_NOT_STOCKED_AT_LOCATION";
-        public const string NON_MUTABLE_INVENTORY_ITEM = "NON_MUTABLE_INVENTORY_ITEM";
+        public const string INTERNAL_LEDGER_DOCUMENT = @"INTERNAL_LEDGER_DOCUMENT";
+        public const string INVALID_AVAILABLE_DOCUMENT = @"INVALID_AVAILABLE_DOCUMENT";
+        public const string INVALID_INVENTORY_ITEM = @"INVALID_INVENTORY_ITEM";
+        public const string INVALID_LEDGER_DOCUMENT = @"INVALID_LEDGER_DOCUMENT";
+        public const string INVALID_LOCATION = @"INVALID_LOCATION";
+        public const string INVALID_QUANTITY_DOCUMENT = @"INVALID_QUANTITY_DOCUMENT";
+        public const string INVALID_QUANTITY_NAME = @"INVALID_QUANTITY_NAME";
+        public const string INVALID_QUANTITY_NEGATIVE = @"INVALID_QUANTITY_NEGATIVE";
+        public const string INVALID_QUANTITY_TOO_HIGH = @"INVALID_QUANTITY_TOO_HIGH";
+        public const string INVALID_REASON = @"INVALID_REASON";
+        public const string INVALID_REFERENCE_DOCUMENT = @"INVALID_REFERENCE_DOCUMENT";
+        public const string MOVE_QUANTITIES_FAILED = @"MOVE_QUANTITIES_FAILED";
+        public const string DIFFERENT_LOCATIONS = @"DIFFERENT_LOCATIONS";
+        public const string SAME_QUANTITY_NAME = @"SAME_QUANTITY_NAME";
+        public const string MAXIMUM_LEDGER_DOCUMENT_URIS = @"MAXIMUM_LEDGER_DOCUMENT_URIS";
+        public const string ITEM_NOT_STOCKED_AT_LOCATION = @"ITEM_NOT_STOCKED_AT_LOCATION";
+        public const string NON_MUTABLE_INVENTORY_ITEM = @"NON_MUTABLE_INVENTORY_ITEM";
     }
 
     ///<summary>
@@ -29979,15 +29979,15 @@ namespace shopify
 
     public static class InventorySetOnHandQuantitiesUserErrorCodeStringValues
     {
-        public const string INVALID_INVENTORY_ITEM = "INVALID_INVENTORY_ITEM";
-        public const string INVALID_LOCATION = "INVALID_LOCATION";
-        public const string INVALID_QUANTITY_NEGATIVE = "INVALID_QUANTITY_NEGATIVE";
-        public const string INVALID_REASON = "INVALID_REASON";
-        public const string INVALID_REFERENCE_DOCUMENT = "INVALID_REFERENCE_DOCUMENT";
-        public const string SET_ON_HAND_QUANTITIES_FAILED = "SET_ON_HAND_QUANTITIES_FAILED";
-        public const string ITEM_NOT_STOCKED_AT_LOCATION = "ITEM_NOT_STOCKED_AT_LOCATION";
-        public const string NON_MUTABLE_INVENTORY_ITEM = "NON_MUTABLE_INVENTORY_ITEM";
-        public const string INVALID_QUANTITY_TOO_HIGH = "INVALID_QUANTITY_TOO_HIGH";
+        public const string INVALID_INVENTORY_ITEM = @"INVALID_INVENTORY_ITEM";
+        public const string INVALID_LOCATION = @"INVALID_LOCATION";
+        public const string INVALID_QUANTITY_NEGATIVE = @"INVALID_QUANTITY_NEGATIVE";
+        public const string INVALID_REASON = @"INVALID_REASON";
+        public const string INVALID_REFERENCE_DOCUMENT = @"INVALID_REFERENCE_DOCUMENT";
+        public const string SET_ON_HAND_QUANTITIES_FAILED = @"SET_ON_HAND_QUANTITIES_FAILED";
+        public const string ITEM_NOT_STOCKED_AT_LOCATION = @"ITEM_NOT_STOCKED_AT_LOCATION";
+        public const string NON_MUTABLE_INVENTORY_ITEM = @"NON_MUTABLE_INVENTORY_ITEM";
+        public const string INVALID_QUANTITY_TOO_HIGH = @"INVALID_QUANTITY_TOO_HIGH";
     }
 
     ///<summary>
@@ -30081,18 +30081,18 @@ namespace shopify
 
     public static class InventorySetQuantitiesUserErrorCodeStringValues
     {
-        public const string INVALID_INVENTORY_ITEM = "INVALID_INVENTORY_ITEM";
-        public const string INVALID_LOCATION = "INVALID_LOCATION";
-        public const string INVALID_QUANTITY_NEGATIVE = "INVALID_QUANTITY_NEGATIVE";
-        public const string INVALID_REASON = "INVALID_REASON";
-        public const string INVALID_REFERENCE_DOCUMENT = "INVALID_REFERENCE_DOCUMENT";
-        public const string ITEM_NOT_STOCKED_AT_LOCATION = "ITEM_NOT_STOCKED_AT_LOCATION";
-        public const string INVALID_QUANTITY_TOO_HIGH = "INVALID_QUANTITY_TOO_HIGH";
-        public const string INVALID_QUANTITY_TOO_LOW = "INVALID_QUANTITY_TOO_LOW";
-        public const string COMPARE_QUANTITY_REQUIRED = "COMPARE_QUANTITY_REQUIRED";
-        public const string COMPARE_QUANTITY_STALE = "COMPARE_QUANTITY_STALE";
-        public const string INVALID_NAME = "INVALID_NAME";
-        public const string NO_DUPLICATE_INVENTORY_ITEM_ID_GROUP_ID_PAIR = "NO_DUPLICATE_INVENTORY_ITEM_ID_GROUP_ID_PAIR";
+        public const string INVALID_INVENTORY_ITEM = @"INVALID_INVENTORY_ITEM";
+        public const string INVALID_LOCATION = @"INVALID_LOCATION";
+        public const string INVALID_QUANTITY_NEGATIVE = @"INVALID_QUANTITY_NEGATIVE";
+        public const string INVALID_REASON = @"INVALID_REASON";
+        public const string INVALID_REFERENCE_DOCUMENT = @"INVALID_REFERENCE_DOCUMENT";
+        public const string ITEM_NOT_STOCKED_AT_LOCATION = @"ITEM_NOT_STOCKED_AT_LOCATION";
+        public const string INVALID_QUANTITY_TOO_HIGH = @"INVALID_QUANTITY_TOO_HIGH";
+        public const string INVALID_QUANTITY_TOO_LOW = @"INVALID_QUANTITY_TOO_LOW";
+        public const string COMPARE_QUANTITY_REQUIRED = @"COMPARE_QUANTITY_REQUIRED";
+        public const string COMPARE_QUANTITY_STALE = @"COMPARE_QUANTITY_STALE";
+        public const string INVALID_NAME = @"INVALID_NAME";
+        public const string NO_DUPLICATE_INVENTORY_ITEM_ID_GROUP_ID_PAIR = @"NO_DUPLICATE_INVENTORY_ITEM_ID_GROUP_ID_PAIR";
     }
 
     ///<summary>
@@ -30190,19 +30190,19 @@ namespace shopify
 
     public static class InventorySetScheduledChangesUserErrorCodeStringValues
     {
-        public const string ERROR_UPDATING_SCHEDULED = "ERROR_UPDATING_SCHEDULED";
-        public const string SAME_FROM_TO_NAMES = "SAME_FROM_TO_NAMES";
-        public const string INVALID_FROM_NAME = "INVALID_FROM_NAME";
-        public const string INVALID_TO_NAME = "INVALID_TO_NAME";
-        public const string DUPLICATE_TO_NAME = "DUPLICATE_TO_NAME";
-        public const string INVALID_REASON = "INVALID_REASON";
-        public const string DUPLICATE_FROM_NAME = "DUPLICATE_FROM_NAME";
-        public const string LOCATION_NOT_FOUND = "LOCATION_NOT_FOUND";
-        public const string INVENTORY_STATE_NOT_FOUND = "INVENTORY_STATE_NOT_FOUND";
-        public const string ITEMS_EMPTY = "ITEMS_EMPTY";
-        public const string INVENTORY_ITEM_NOT_FOUND = "INVENTORY_ITEM_NOT_FOUND";
-        public const string INCLUSION = "INCLUSION";
-        public const string LEDGER_DOCUMENT_INVALID = "LEDGER_DOCUMENT_INVALID";
+        public const string ERROR_UPDATING_SCHEDULED = @"ERROR_UPDATING_SCHEDULED";
+        public const string SAME_FROM_TO_NAMES = @"SAME_FROM_TO_NAMES";
+        public const string INVALID_FROM_NAME = @"INVALID_FROM_NAME";
+        public const string INVALID_TO_NAME = @"INVALID_TO_NAME";
+        public const string DUPLICATE_TO_NAME = @"DUPLICATE_TO_NAME";
+        public const string INVALID_REASON = @"INVALID_REASON";
+        public const string DUPLICATE_FROM_NAME = @"DUPLICATE_FROM_NAME";
+        public const string LOCATION_NOT_FOUND = @"LOCATION_NOT_FOUND";
+        public const string INVENTORY_STATE_NOT_FOUND = @"INVENTORY_STATE_NOT_FOUND";
+        public const string ITEMS_EMPTY = @"ITEMS_EMPTY";
+        public const string INVENTORY_ITEM_NOT_FOUND = @"INVENTORY_ITEM_NOT_FOUND";
+        public const string INCLUSION = @"INCLUSION";
+        public const string LEDGER_DOCUMENT_INVALID = @"LEDGER_DOCUMENT_INVALID";
     }
 
     ///<summary>
@@ -30815,147 +30815,147 @@ namespace shopify
 
     public static class LanguageCodeStringValues
     {
-        public const string AF = "AF";
-        public const string AK = "AK";
-        public const string AM = "AM";
-        public const string AR = "AR";
-        public const string AS = "AS";
-        public const string AZ = "AZ";
-        public const string BE = "BE";
-        public const string BG = "BG";
-        public const string BM = "BM";
-        public const string BN = "BN";
-        public const string BO = "BO";
-        public const string BR = "BR";
-        public const string BS = "BS";
-        public const string CA = "CA";
-        public const string CE = "CE";
-        public const string CKB = "CKB";
-        public const string CS = "CS";
-        public const string CY = "CY";
-        public const string DA = "DA";
-        public const string DE = "DE";
-        public const string DZ = "DZ";
-        public const string EE = "EE";
-        public const string EL = "EL";
-        public const string EN = "EN";
-        public const string EO = "EO";
-        public const string ES = "ES";
-        public const string ET = "ET";
-        public const string EU = "EU";
-        public const string FA = "FA";
-        public const string FF = "FF";
-        public const string FI = "FI";
-        public const string FIL = "FIL";
-        public const string FO = "FO";
-        public const string FR = "FR";
-        public const string FY = "FY";
-        public const string GA = "GA";
-        public const string GD = "GD";
-        public const string GL = "GL";
-        public const string GU = "GU";
-        public const string GV = "GV";
-        public const string HA = "HA";
-        public const string HE = "HE";
-        public const string HI = "HI";
-        public const string HR = "HR";
-        public const string HU = "HU";
-        public const string HY = "HY";
-        public const string IA = "IA";
-        public const string ID = "ID";
-        public const string IG = "IG";
-        public const string II = "II";
-        public const string IS = "IS";
-        public const string IT = "IT";
-        public const string JA = "JA";
-        public const string JV = "JV";
-        public const string KA = "KA";
-        public const string KI = "KI";
-        public const string KK = "KK";
-        public const string KL = "KL";
-        public const string KM = "KM";
-        public const string KN = "KN";
-        public const string KO = "KO";
-        public const string KS = "KS";
-        public const string KU = "KU";
-        public const string KW = "KW";
-        public const string KY = "KY";
-        public const string LB = "LB";
-        public const string LG = "LG";
-        public const string LN = "LN";
-        public const string LO = "LO";
-        public const string LT = "LT";
-        public const string LU = "LU";
-        public const string LV = "LV";
-        public const string MG = "MG";
-        public const string MI = "MI";
-        public const string MK = "MK";
-        public const string ML = "ML";
-        public const string MN = "MN";
-        public const string MR = "MR";
-        public const string MS = "MS";
-        public const string MT = "MT";
-        public const string MY = "MY";
-        public const string NB = "NB";
-        public const string ND = "ND";
-        public const string NE = "NE";
-        public const string NL = "NL";
-        public const string NN = "NN";
-        public const string NO = "NO";
-        public const string OM = "OM";
-        public const string OR = "OR";
-        public const string OS = "OS";
-        public const string PA = "PA";
-        public const string PL = "PL";
-        public const string PS = "PS";
-        public const string PT_BR = "PT_BR";
-        public const string PT_PT = "PT_PT";
-        public const string QU = "QU";
-        public const string RM = "RM";
-        public const string RN = "RN";
-        public const string RO = "RO";
-        public const string RU = "RU";
-        public const string RW = "RW";
-        public const string SA = "SA";
-        public const string SC = "SC";
-        public const string SD = "SD";
-        public const string SE = "SE";
-        public const string SG = "SG";
-        public const string SI = "SI";
-        public const string SK = "SK";
-        public const string SL = "SL";
-        public const string SN = "SN";
-        public const string SO = "SO";
-        public const string SQ = "SQ";
-        public const string SR = "SR";
-        public const string SU = "SU";
-        public const string SV = "SV";
-        public const string SW = "SW";
-        public const string TA = "TA";
-        public const string TE = "TE";
-        public const string TG = "TG";
-        public const string TH = "TH";
-        public const string TI = "TI";
-        public const string TK = "TK";
-        public const string TO = "TO";
-        public const string TR = "TR";
-        public const string TT = "TT";
-        public const string UG = "UG";
-        public const string UK = "UK";
-        public const string UR = "UR";
-        public const string UZ = "UZ";
-        public const string VI = "VI";
-        public const string WO = "WO";
-        public const string XH = "XH";
-        public const string YI = "YI";
-        public const string YO = "YO";
-        public const string ZH_CN = "ZH_CN";
-        public const string ZH_TW = "ZH_TW";
-        public const string ZU = "ZU";
-        public const string ZH = "ZH";
-        public const string PT = "PT";
-        public const string CU = "CU";
-        public const string VO = "VO";
+        public const string AF = @"AF";
+        public const string AK = @"AK";
+        public const string AM = @"AM";
+        public const string AR = @"AR";
+        public const string AS = @"AS";
+        public const string AZ = @"AZ";
+        public const string BE = @"BE";
+        public const string BG = @"BG";
+        public const string BM = @"BM";
+        public const string BN = @"BN";
+        public const string BO = @"BO";
+        public const string BR = @"BR";
+        public const string BS = @"BS";
+        public const string CA = @"CA";
+        public const string CE = @"CE";
+        public const string CKB = @"CKB";
+        public const string CS = @"CS";
+        public const string CY = @"CY";
+        public const string DA = @"DA";
+        public const string DE = @"DE";
+        public const string DZ = @"DZ";
+        public const string EE = @"EE";
+        public const string EL = @"EL";
+        public const string EN = @"EN";
+        public const string EO = @"EO";
+        public const string ES = @"ES";
+        public const string ET = @"ET";
+        public const string EU = @"EU";
+        public const string FA = @"FA";
+        public const string FF = @"FF";
+        public const string FI = @"FI";
+        public const string FIL = @"FIL";
+        public const string FO = @"FO";
+        public const string FR = @"FR";
+        public const string FY = @"FY";
+        public const string GA = @"GA";
+        public const string GD = @"GD";
+        public const string GL = @"GL";
+        public const string GU = @"GU";
+        public const string GV = @"GV";
+        public const string HA = @"HA";
+        public const string HE = @"HE";
+        public const string HI = @"HI";
+        public const string HR = @"HR";
+        public const string HU = @"HU";
+        public const string HY = @"HY";
+        public const string IA = @"IA";
+        public const string ID = @"ID";
+        public const string IG = @"IG";
+        public const string II = @"II";
+        public const string IS = @"IS";
+        public const string IT = @"IT";
+        public const string JA = @"JA";
+        public const string JV = @"JV";
+        public const string KA = @"KA";
+        public const string KI = @"KI";
+        public const string KK = @"KK";
+        public const string KL = @"KL";
+        public const string KM = @"KM";
+        public const string KN = @"KN";
+        public const string KO = @"KO";
+        public const string KS = @"KS";
+        public const string KU = @"KU";
+        public const string KW = @"KW";
+        public const string KY = @"KY";
+        public const string LB = @"LB";
+        public const string LG = @"LG";
+        public const string LN = @"LN";
+        public const string LO = @"LO";
+        public const string LT = @"LT";
+        public const string LU = @"LU";
+        public const string LV = @"LV";
+        public const string MG = @"MG";
+        public const string MI = @"MI";
+        public const string MK = @"MK";
+        public const string ML = @"ML";
+        public const string MN = @"MN";
+        public const string MR = @"MR";
+        public const string MS = @"MS";
+        public const string MT = @"MT";
+        public const string MY = @"MY";
+        public const string NB = @"NB";
+        public const string ND = @"ND";
+        public const string NE = @"NE";
+        public const string NL = @"NL";
+        public const string NN = @"NN";
+        public const string NO = @"NO";
+        public const string OM = @"OM";
+        public const string OR = @"OR";
+        public const string OS = @"OS";
+        public const string PA = @"PA";
+        public const string PL = @"PL";
+        public const string PS = @"PS";
+        public const string PT_BR = @"PT_BR";
+        public const string PT_PT = @"PT_PT";
+        public const string QU = @"QU";
+        public const string RM = @"RM";
+        public const string RN = @"RN";
+        public const string RO = @"RO";
+        public const string RU = @"RU";
+        public const string RW = @"RW";
+        public const string SA = @"SA";
+        public const string SC = @"SC";
+        public const string SD = @"SD";
+        public const string SE = @"SE";
+        public const string SG = @"SG";
+        public const string SI = @"SI";
+        public const string SK = @"SK";
+        public const string SL = @"SL";
+        public const string SN = @"SN";
+        public const string SO = @"SO";
+        public const string SQ = @"SQ";
+        public const string SR = @"SR";
+        public const string SU = @"SU";
+        public const string SV = @"SV";
+        public const string SW = @"SW";
+        public const string TA = @"TA";
+        public const string TE = @"TE";
+        public const string TG = @"TG";
+        public const string TH = @"TH";
+        public const string TI = @"TI";
+        public const string TK = @"TK";
+        public const string TO = @"TO";
+        public const string TR = @"TR";
+        public const string TT = @"TT";
+        public const string UG = @"UG";
+        public const string UK = @"UK";
+        public const string UR = @"UR";
+        public const string UZ = @"UZ";
+        public const string VI = @"VI";
+        public const string WO = @"WO";
+        public const string XH = @"XH";
+        public const string YI = @"YI";
+        public const string YO = @"YO";
+        public const string ZH_CN = @"ZH_CN";
+        public const string ZH_TW = @"ZH_TW";
+        public const string ZU = @"ZU";
+        public const string ZH = @"ZH";
+        public const string PT = @"PT";
+        public const string CU = @"CU";
+        public const string VO = @"VO";
     }
 
     ///<summary>
@@ -31040,12 +31040,12 @@ namespace shopify
 
     public static class LengthUnitStringValues
     {
-        public const string MILLIMETERS = "MILLIMETERS";
-        public const string CENTIMETERS = "CENTIMETERS";
-        public const string METERS = "METERS";
-        public const string INCHES = "INCHES";
-        public const string FEET = "FEET";
-        public const string YARDS = "YARDS";
+        public const string MILLIMETERS = @"MILLIMETERS";
+        public const string CENTIMETERS = @"CENTIMETERS";
+        public const string METERS = @"METERS";
+        public const string INCHES = @"INCHES";
+        public const string FEET = @"FEET";
+        public const string YARDS = @"YARDS";
     }
 
     ///<summary>
@@ -31515,23 +31515,23 @@ namespace shopify
 
     public static class LocalizableContentTypeStringValues
     {
-        public const string JSON_STRING = "JSON_STRING";
-        public const string JSON = "JSON";
-        public const string LIST_MULTI_LINE_TEXT_FIELD = "LIST_MULTI_LINE_TEXT_FIELD";
-        public const string LIST_SINGLE_LINE_TEXT_FIELD = "LIST_SINGLE_LINE_TEXT_FIELD";
-        public const string LIST_URL = "LIST_URL";
-        public const string MULTI_LINE_TEXT_FIELD = "MULTI_LINE_TEXT_FIELD";
-        public const string RICH_TEXT_FIELD = "RICH_TEXT_FIELD";
-        public const string SINGLE_LINE_TEXT_FIELD = "SINGLE_LINE_TEXT_FIELD";
-        public const string STRING = "STRING";
-        public const string URL = "URL";
-        public const string LINK = "LINK";
-        public const string LIST_LINK = "LIST_LINK";
-        public const string FILE_REFERENCE = "FILE_REFERENCE";
-        public const string LIST_FILE_REFERENCE = "LIST_FILE_REFERENCE";
-        public const string HTML = "HTML";
-        public const string URI = "URI";
-        public const string INLINE_RICH_TEXT = "INLINE_RICH_TEXT";
+        public const string JSON_STRING = @"JSON_STRING";
+        public const string JSON = @"JSON";
+        public const string LIST_MULTI_LINE_TEXT_FIELD = @"LIST_MULTI_LINE_TEXT_FIELD";
+        public const string LIST_SINGLE_LINE_TEXT_FIELD = @"LIST_SINGLE_LINE_TEXT_FIELD";
+        public const string LIST_URL = @"LIST_URL";
+        public const string MULTI_LINE_TEXT_FIELD = @"MULTI_LINE_TEXT_FIELD";
+        public const string RICH_TEXT_FIELD = @"RICH_TEXT_FIELD";
+        public const string SINGLE_LINE_TEXT_FIELD = @"SINGLE_LINE_TEXT_FIELD";
+        public const string STRING = @"STRING";
+        public const string URL = @"URL";
+        public const string LINK = @"LINK";
+        public const string LIST_LINK = @"LIST_LINK";
+        public const string FILE_REFERENCE = @"FILE_REFERENCE";
+        public const string LIST_FILE_REFERENCE = @"LIST_FILE_REFERENCE";
+        public const string HTML = @"HTML";
+        public const string URI = @"URI";
+        public const string INLINE_RICH_TEXT = @"INLINE_RICH_TEXT";
     }
 
     ///<summary>
@@ -31748,42 +31748,42 @@ namespace shopify
 
     public static class LocalizationExtensionKeyStringValues
     {
-        public const string TAX_CREDENTIAL_BR = "TAX_CREDENTIAL_BR";
-        public const string SHIPPING_CREDENTIAL_BR = "SHIPPING_CREDENTIAL_BR";
-        public const string TAX_CREDENTIAL_CL = "TAX_CREDENTIAL_CL";
-        public const string SHIPPING_CREDENTIAL_CL = "SHIPPING_CREDENTIAL_CL";
-        public const string SHIPPING_CREDENTIAL_CN = "SHIPPING_CREDENTIAL_CN";
-        public const string TAX_CREDENTIAL_CO = "TAX_CREDENTIAL_CO";
-        public const string TAX_CREDENTIAL_TYPE_CO = "TAX_CREDENTIAL_TYPE_CO";
-        public const string SHIPPING_CREDENTIAL_CO = "SHIPPING_CREDENTIAL_CO";
-        public const string SHIPPING_CREDENTIAL_TYPE_CO = "SHIPPING_CREDENTIAL_TYPE_CO";
-        public const string TAX_CREDENTIAL_CR = "TAX_CREDENTIAL_CR";
-        public const string SHIPPING_CREDENTIAL_CR = "SHIPPING_CREDENTIAL_CR";
-        public const string TAX_CREDENTIAL_EC = "TAX_CREDENTIAL_EC";
-        public const string SHIPPING_CREDENTIAL_EC = "SHIPPING_CREDENTIAL_EC";
-        public const string TAX_CREDENTIAL_GT = "TAX_CREDENTIAL_GT";
-        public const string SHIPPING_CREDENTIAL_GT = "SHIPPING_CREDENTIAL_GT";
-        public const string TAX_CREDENTIAL_ID = "TAX_CREDENTIAL_ID";
-        public const string SHIPPING_CREDENTIAL_ID = "SHIPPING_CREDENTIAL_ID";
-        public const string TAX_CREDENTIAL_IT = "TAX_CREDENTIAL_IT";
-        public const string TAX_EMAIL_IT = "TAX_EMAIL_IT";
-        public const string TAX_CREDENTIAL_MY = "TAX_CREDENTIAL_MY";
-        public const string SHIPPING_CREDENTIAL_MY = "SHIPPING_CREDENTIAL_MY";
-        public const string TAX_CREDENTIAL_MX = "TAX_CREDENTIAL_MX";
-        public const string TAX_CREDENTIAL_TYPE_MX = "TAX_CREDENTIAL_TYPE_MX";
-        public const string TAX_CREDENTIAL_USE_MX = "TAX_CREDENTIAL_USE_MX";
-        public const string TAX_CREDENTIAL_PY = "TAX_CREDENTIAL_PY";
-        public const string SHIPPING_CREDENTIAL_PY = "SHIPPING_CREDENTIAL_PY";
-        public const string TAX_CREDENTIAL_PE = "TAX_CREDENTIAL_PE";
-        public const string SHIPPING_CREDENTIAL_PE = "SHIPPING_CREDENTIAL_PE";
-        public const string TAX_CREDENTIAL_PT = "TAX_CREDENTIAL_PT";
-        public const string SHIPPING_CREDENTIAL_PT = "SHIPPING_CREDENTIAL_PT";
-        public const string SHIPPING_CREDENTIAL_KR = "SHIPPING_CREDENTIAL_KR";
-        public const string TAX_CREDENTIAL_ES = "TAX_CREDENTIAL_ES";
-        public const string SHIPPING_CREDENTIAL_ES = "SHIPPING_CREDENTIAL_ES";
-        public const string SHIPPING_CREDENTIAL_TW = "SHIPPING_CREDENTIAL_TW";
-        public const string TAX_CREDENTIAL_TR = "TAX_CREDENTIAL_TR";
-        public const string SHIPPING_CREDENTIAL_TR = "SHIPPING_CREDENTIAL_TR";
+        public const string TAX_CREDENTIAL_BR = @"TAX_CREDENTIAL_BR";
+        public const string SHIPPING_CREDENTIAL_BR = @"SHIPPING_CREDENTIAL_BR";
+        public const string TAX_CREDENTIAL_CL = @"TAX_CREDENTIAL_CL";
+        public const string SHIPPING_CREDENTIAL_CL = @"SHIPPING_CREDENTIAL_CL";
+        public const string SHIPPING_CREDENTIAL_CN = @"SHIPPING_CREDENTIAL_CN";
+        public const string TAX_CREDENTIAL_CO = @"TAX_CREDENTIAL_CO";
+        public const string TAX_CREDENTIAL_TYPE_CO = @"TAX_CREDENTIAL_TYPE_CO";
+        public const string SHIPPING_CREDENTIAL_CO = @"SHIPPING_CREDENTIAL_CO";
+        public const string SHIPPING_CREDENTIAL_TYPE_CO = @"SHIPPING_CREDENTIAL_TYPE_CO";
+        public const string TAX_CREDENTIAL_CR = @"TAX_CREDENTIAL_CR";
+        public const string SHIPPING_CREDENTIAL_CR = @"SHIPPING_CREDENTIAL_CR";
+        public const string TAX_CREDENTIAL_EC = @"TAX_CREDENTIAL_EC";
+        public const string SHIPPING_CREDENTIAL_EC = @"SHIPPING_CREDENTIAL_EC";
+        public const string TAX_CREDENTIAL_GT = @"TAX_CREDENTIAL_GT";
+        public const string SHIPPING_CREDENTIAL_GT = @"SHIPPING_CREDENTIAL_GT";
+        public const string TAX_CREDENTIAL_ID = @"TAX_CREDENTIAL_ID";
+        public const string SHIPPING_CREDENTIAL_ID = @"SHIPPING_CREDENTIAL_ID";
+        public const string TAX_CREDENTIAL_IT = @"TAX_CREDENTIAL_IT";
+        public const string TAX_EMAIL_IT = @"TAX_EMAIL_IT";
+        public const string TAX_CREDENTIAL_MY = @"TAX_CREDENTIAL_MY";
+        public const string SHIPPING_CREDENTIAL_MY = @"SHIPPING_CREDENTIAL_MY";
+        public const string TAX_CREDENTIAL_MX = @"TAX_CREDENTIAL_MX";
+        public const string TAX_CREDENTIAL_TYPE_MX = @"TAX_CREDENTIAL_TYPE_MX";
+        public const string TAX_CREDENTIAL_USE_MX = @"TAX_CREDENTIAL_USE_MX";
+        public const string TAX_CREDENTIAL_PY = @"TAX_CREDENTIAL_PY";
+        public const string SHIPPING_CREDENTIAL_PY = @"SHIPPING_CREDENTIAL_PY";
+        public const string TAX_CREDENTIAL_PE = @"TAX_CREDENTIAL_PE";
+        public const string SHIPPING_CREDENTIAL_PE = @"SHIPPING_CREDENTIAL_PE";
+        public const string TAX_CREDENTIAL_PT = @"TAX_CREDENTIAL_PT";
+        public const string SHIPPING_CREDENTIAL_PT = @"SHIPPING_CREDENTIAL_PT";
+        public const string SHIPPING_CREDENTIAL_KR = @"SHIPPING_CREDENTIAL_KR";
+        public const string TAX_CREDENTIAL_ES = @"TAX_CREDENTIAL_ES";
+        public const string SHIPPING_CREDENTIAL_ES = @"SHIPPING_CREDENTIAL_ES";
+        public const string SHIPPING_CREDENTIAL_TW = @"SHIPPING_CREDENTIAL_TW";
+        public const string TAX_CREDENTIAL_TR = @"TAX_CREDENTIAL_TR";
+        public const string SHIPPING_CREDENTIAL_TR = @"SHIPPING_CREDENTIAL_TR";
     }
 
     ///<summary>
@@ -31803,8 +31803,8 @@ namespace shopify
 
     public static class LocalizationExtensionPurposeStringValues
     {
-        public const string SHIPPING = "SHIPPING";
-        public const string TAX = "TAX";
+        public const string SHIPPING = @"SHIPPING";
+        public const string TAX = @"TAX";
     }
 
     ///<summary>
@@ -32000,11 +32000,11 @@ namespace shopify
 
     public static class LocationActivateUserErrorCodeStringValues
     {
-        public const string GENERIC_ERROR = "GENERIC_ERROR";
-        public const string LOCATION_LIMIT = "LOCATION_LIMIT";
-        public const string HAS_ONGOING_RELOCATION = "HAS_ONGOING_RELOCATION";
-        public const string LOCATION_NOT_FOUND = "LOCATION_NOT_FOUND";
-        public const string HAS_NON_UNIQUE_NAME = "HAS_NON_UNIQUE_NAME";
+        public const string GENERIC_ERROR = @"GENERIC_ERROR";
+        public const string LOCATION_LIMIT = @"LOCATION_LIMIT";
+        public const string HAS_ONGOING_RELOCATION = @"HAS_ONGOING_RELOCATION";
+        public const string LOCATION_NOT_FOUND = @"LOCATION_NOT_FOUND";
+        public const string HAS_NON_UNIQUE_NAME = @"HAS_NON_UNIQUE_NAME";
     }
 
     ///<summary>
@@ -32114,22 +32114,22 @@ namespace shopify
 
     public static class LocationAddUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string TAKEN = "TAKEN";
-        public const string BLANK = "BLANK";
-        public const string INVALID_US_ZIPCODE = "INVALID_US_ZIPCODE";
-        public const string GENERIC_ERROR = "GENERIC_ERROR";
-        public const string INVALID_TYPE = "INVALID_TYPE";
-        public const string INVALID_VALUE = "INVALID_VALUE";
-        public const string APP_NOT_AUTHORIZED = "APP_NOT_AUTHORIZED";
-        public const string UNSTRUCTURED_RESERVED_NAMESPACE = "UNSTRUCTURED_RESERVED_NAMESPACE";
-        public const string DISALLOWED_OWNER_TYPE = "DISALLOWED_OWNER_TYPE";
-        public const string INCLUSION = "INCLUSION";
-        public const string PRESENT = "PRESENT";
-        public const string TOO_SHORT = "TOO_SHORT";
-        public const string CAPABILITY_VIOLATION = "CAPABILITY_VIOLATION";
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
+        public const string INVALID = @"INVALID";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string TAKEN = @"TAKEN";
+        public const string BLANK = @"BLANK";
+        public const string INVALID_US_ZIPCODE = @"INVALID_US_ZIPCODE";
+        public const string GENERIC_ERROR = @"GENERIC_ERROR";
+        public const string INVALID_TYPE = @"INVALID_TYPE";
+        public const string INVALID_VALUE = @"INVALID_VALUE";
+        public const string APP_NOT_AUTHORIZED = @"APP_NOT_AUTHORIZED";
+        public const string UNSTRUCTURED_RESERVED_NAMESPACE = @"UNSTRUCTURED_RESERVED_NAMESPACE";
+        public const string DISALLOWED_OWNER_TYPE = @"DISALLOWED_OWNER_TYPE";
+        public const string INCLUSION = @"INCLUSION";
+        public const string PRESENT = @"PRESENT";
+        public const string TOO_SHORT = @"TOO_SHORT";
+        public const string CAPABILITY_VIOLATION = @"CAPABILITY_VIOLATION";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
     }
 
     ///<summary>
@@ -32305,20 +32305,20 @@ namespace shopify
 
     public static class LocationDeactivateUserErrorCodeStringValues
     {
-        public const string LOCATION_NOT_FOUND = "LOCATION_NOT_FOUND";
-        public const string PERMANENTLY_BLOCKED_FROM_DEACTIVATION_ERROR = "PERMANENTLY_BLOCKED_FROM_DEACTIVATION_ERROR";
-        public const string TEMPORARILY_BLOCKED_FROM_DEACTIVATION_ERROR = "TEMPORARILY_BLOCKED_FROM_DEACTIVATION_ERROR";
-        public const string HAS_ACTIVE_RETAIL_SUBSCRIPTIONS = "HAS_ACTIVE_RETAIL_SUBSCRIPTIONS";
-        public const string DESTINATION_LOCATION_IS_THE_SAME_LOCATION = "DESTINATION_LOCATION_IS_THE_SAME_LOCATION";
-        public const string DESTINATION_LOCATION_NOT_FOUND_OR_INACTIVE = "DESTINATION_LOCATION_NOT_FOUND_OR_INACTIVE";
-        public const string HAS_ACTIVE_INVENTORY_ERROR = "HAS_ACTIVE_INVENTORY_ERROR";
-        public const string HAS_FULFILLMENT_ORDERS_ERROR = "HAS_FULFILLMENT_ORDERS_ERROR";
-        public const string HAS_INCOMING_MOVEMENTS_ERROR = "HAS_INCOMING_MOVEMENTS_ERROR";
-        public const string HAS_OPEN_PURCHASE_ORDERS_ERROR = "HAS_OPEN_PURCHASE_ORDERS_ERROR";
-        public const string FAILED_TO_RELOCATE_ACTIVE_INVENTORIES = "FAILED_TO_RELOCATE_ACTIVE_INVENTORIES";
-        public const string FAILED_TO_RELOCATE_OPEN_PURCHASE_ORDERS = "FAILED_TO_RELOCATE_OPEN_PURCHASE_ORDERS";
-        public const string FAILED_TO_RELOCATE_INCOMING_MOVEMENTS = "FAILED_TO_RELOCATE_INCOMING_MOVEMENTS";
-        public const string CANNOT_DISABLE_ONLINE_ORDER_FULFILLMENT = "CANNOT_DISABLE_ONLINE_ORDER_FULFILLMENT";
+        public const string LOCATION_NOT_FOUND = @"LOCATION_NOT_FOUND";
+        public const string PERMANENTLY_BLOCKED_FROM_DEACTIVATION_ERROR = @"PERMANENTLY_BLOCKED_FROM_DEACTIVATION_ERROR";
+        public const string TEMPORARILY_BLOCKED_FROM_DEACTIVATION_ERROR = @"TEMPORARILY_BLOCKED_FROM_DEACTIVATION_ERROR";
+        public const string HAS_ACTIVE_RETAIL_SUBSCRIPTIONS = @"HAS_ACTIVE_RETAIL_SUBSCRIPTIONS";
+        public const string DESTINATION_LOCATION_IS_THE_SAME_LOCATION = @"DESTINATION_LOCATION_IS_THE_SAME_LOCATION";
+        public const string DESTINATION_LOCATION_NOT_FOUND_OR_INACTIVE = @"DESTINATION_LOCATION_NOT_FOUND_OR_INACTIVE";
+        public const string HAS_ACTIVE_INVENTORY_ERROR = @"HAS_ACTIVE_INVENTORY_ERROR";
+        public const string HAS_FULFILLMENT_ORDERS_ERROR = @"HAS_FULFILLMENT_ORDERS_ERROR";
+        public const string HAS_INCOMING_MOVEMENTS_ERROR = @"HAS_INCOMING_MOVEMENTS_ERROR";
+        public const string HAS_OPEN_PURCHASE_ORDERS_ERROR = @"HAS_OPEN_PURCHASE_ORDERS_ERROR";
+        public const string FAILED_TO_RELOCATE_ACTIVE_INVENTORIES = @"FAILED_TO_RELOCATE_ACTIVE_INVENTORIES";
+        public const string FAILED_TO_RELOCATE_OPEN_PURCHASE_ORDERS = @"FAILED_TO_RELOCATE_OPEN_PURCHASE_ORDERS";
+        public const string FAILED_TO_RELOCATE_INCOMING_MOVEMENTS = @"FAILED_TO_RELOCATE_INCOMING_MOVEMENTS";
+        public const string CANNOT_DISABLE_ONLINE_ORDER_FULFILLMENT = @"CANNOT_DISABLE_ONLINE_ORDER_FULFILLMENT";
     }
 
     ///<summary>
@@ -32388,12 +32388,12 @@ namespace shopify
 
     public static class LocationDeleteUserErrorCodeStringValues
     {
-        public const string LOCATION_NOT_FOUND = "LOCATION_NOT_FOUND";
-        public const string LOCATION_IS_ACTIVE = "LOCATION_IS_ACTIVE";
-        public const string GENERIC_ERROR = "GENERIC_ERROR";
-        public const string LOCATION_HAS_INVENTORY = "LOCATION_HAS_INVENTORY";
-        public const string LOCATION_HAS_PENDING_ORDERS = "LOCATION_HAS_PENDING_ORDERS";
-        public const string LOCATION_HAS_ACTIVE_RETAIL_SUBSCRIPTION = "LOCATION_HAS_ACTIVE_RETAIL_SUBSCRIPTION";
+        public const string LOCATION_NOT_FOUND = @"LOCATION_NOT_FOUND";
+        public const string LOCATION_IS_ACTIVE = @"LOCATION_IS_ACTIVE";
+        public const string GENERIC_ERROR = @"GENERIC_ERROR";
+        public const string LOCATION_HAS_INVENTORY = @"LOCATION_HAS_INVENTORY";
+        public const string LOCATION_HAS_PENDING_ORDERS = @"LOCATION_HAS_PENDING_ORDERS";
+        public const string LOCATION_HAS_ACTIVE_RETAIL_SUBSCRIPTION = @"LOCATION_HAS_ACTIVE_RETAIL_SUBSCRIPTION";
     }
 
     ///<summary>
@@ -32530,25 +32530,25 @@ namespace shopify
 
     public static class LocationEditUserErrorCodeStringValues
     {
-        public const string TOO_LONG = "TOO_LONG";
-        public const string BLANK = "BLANK";
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string INVALID = "INVALID";
-        public const string TAKEN = "TAKEN";
-        public const string INVALID_US_ZIPCODE = "INVALID_US_ZIPCODE";
-        public const string GENERIC_ERROR = "GENERIC_ERROR";
-        public const string CANNOT_DISABLE_ONLINE_ORDER_FULFILLMENT = "CANNOT_DISABLE_ONLINE_ORDER_FULFILLMENT";
-        public const string CANNOT_MODIFY_ONLINE_ORDER_FULFILLMENT_FOR_FS_LOCATION = "CANNOT_MODIFY_ONLINE_ORDER_FULFILLMENT_FOR_FS_LOCATION";
-        public const string INVALID_TYPE = "INVALID_TYPE";
-        public const string INVALID_VALUE = "INVALID_VALUE";
-        public const string APP_NOT_AUTHORIZED = "APP_NOT_AUTHORIZED";
-        public const string UNSTRUCTURED_RESERVED_NAMESPACE = "UNSTRUCTURED_RESERVED_NAMESPACE";
-        public const string DISALLOWED_OWNER_TYPE = "DISALLOWED_OWNER_TYPE";
-        public const string INCLUSION = "INCLUSION";
-        public const string PRESENT = "PRESENT";
-        public const string TOO_SHORT = "TOO_SHORT";
-        public const string CAPABILITY_VIOLATION = "CAPABILITY_VIOLATION";
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string BLANK = @"BLANK";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string INVALID = @"INVALID";
+        public const string TAKEN = @"TAKEN";
+        public const string INVALID_US_ZIPCODE = @"INVALID_US_ZIPCODE";
+        public const string GENERIC_ERROR = @"GENERIC_ERROR";
+        public const string CANNOT_DISABLE_ONLINE_ORDER_FULFILLMENT = @"CANNOT_DISABLE_ONLINE_ORDER_FULFILLMENT";
+        public const string CANNOT_MODIFY_ONLINE_ORDER_FULFILLMENT_FOR_FS_LOCATION = @"CANNOT_MODIFY_ONLINE_ORDER_FULFILLMENT_FOR_FS_LOCATION";
+        public const string INVALID_TYPE = @"INVALID_TYPE";
+        public const string INVALID_VALUE = @"INVALID_VALUE";
+        public const string APP_NOT_AUTHORIZED = @"APP_NOT_AUTHORIZED";
+        public const string UNSTRUCTURED_RESERVED_NAMESPACE = @"UNSTRUCTURED_RESERVED_NAMESPACE";
+        public const string DISALLOWED_OWNER_TYPE = @"DISALLOWED_OWNER_TYPE";
+        public const string INCLUSION = @"INCLUSION";
+        public const string PRESENT = @"PRESENT";
+        public const string TOO_SHORT = @"TOO_SHORT";
+        public const string CAPABILITY_VIOLATION = @"CAPABILITY_VIOLATION";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
     }
 
     ///<summary>
@@ -32603,9 +32603,9 @@ namespace shopify
 
     public static class LocationSortKeysStringValues
     {
-        public const string NAME = "NAME";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string NAME = @"NAME";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -32811,9 +32811,9 @@ namespace shopify
 
     public static class MailingAddressValidationResultStringValues
     {
-        public const string NO_ISSUES = "NO_ISSUES";
-        public const string ERROR = "ERROR";
-        public const string WARNING = "WARNING";
+        public const string NO_ISSUES = @"NO_ISSUES";
+        public const string ERROR = @"ERROR";
+        public const string WARNING = @"WARNING";
     }
 
     ///<summary>
@@ -33149,12 +33149,12 @@ namespace shopify
 
     public static class MarketCurrencySettingsUserErrorCodeStringValues
     {
-        public const string MARKET_NOT_FOUND = "MARKET_NOT_FOUND";
-        public const string MANAGED_MARKET = "MANAGED_MARKET";
-        public const string MULTIPLE_CURRENCIES_NOT_SUPPORTED = "MULTIPLE_CURRENCIES_NOT_SUPPORTED";
-        public const string NO_LOCAL_CURRENCIES_ON_SINGLE_COUNTRY_MARKET = "NO_LOCAL_CURRENCIES_ON_SINGLE_COUNTRY_MARKET";
-        public const string UNSUPPORTED_CURRENCY = "UNSUPPORTED_CURRENCY";
-        public const string PRIMARY_MARKET_USES_SHOP_CURRENCY = "PRIMARY_MARKET_USES_SHOP_CURRENCY";
+        public const string MARKET_NOT_FOUND = @"MARKET_NOT_FOUND";
+        public const string MANAGED_MARKET = @"MANAGED_MARKET";
+        public const string MULTIPLE_CURRENCIES_NOT_SUPPORTED = @"MULTIPLE_CURRENCIES_NOT_SUPPORTED";
+        public const string NO_LOCAL_CURRENCIES_ON_SINGLE_COUNTRY_MARKET = @"NO_LOCAL_CURRENCIES_ON_SINGLE_COUNTRY_MARKET";
+        public const string UNSUPPORTED_CURRENCY = @"UNSUPPORTED_CURRENCY";
+        public const string PRIMARY_MARKET_USES_SHOP_CURRENCY = @"PRIMARY_MARKET_USES_SHOP_CURRENCY";
     }
 
     ///<summary>
@@ -33276,8 +33276,8 @@ namespace shopify
 
     public static class MarketLocalizableResourceTypeStringValues
     {
-        public const string METAFIELD = "METAFIELD";
-        public const string METAOBJECT = "METAOBJECT";
+        public const string METAFIELD = @"METAFIELD";
+        public const string METAOBJECT = @"METAOBJECT";
     }
 
     ///<summary>
@@ -33636,39 +33636,39 @@ namespace shopify
 
     public static class MarketUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string TAKEN = "TAKEN";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string TOO_SHORT = "TOO_SHORT";
-        public const string BLANK = "BLANK";
-        public const string MARKET_NOT_FOUND = "MARKET_NOT_FOUND";
-        public const string REGION_NOT_FOUND = "REGION_NOT_FOUND";
-        public const string WEB_PRESENCE_NOT_FOUND = "WEB_PRESENCE_NOT_FOUND";
-        public const string CANNOT_ADD_REGIONS_TO_PRIMARY_MARKET = "CANNOT_ADD_REGIONS_TO_PRIMARY_MARKET";
-        public const string CANNOT_DELETE_ONLY_REGION = "CANNOT_DELETE_ONLY_REGION";
-        public const string REQUIRES_EXACTLY_ONE_OPTION = "REQUIRES_EXACTLY_ONE_OPTION";
-        public const string CANNOT_DELETE_PRIMARY_MARKET = "CANNOT_DELETE_PRIMARY_MARKET";
-        public const string DOMAIN_NOT_FOUND = "DOMAIN_NOT_FOUND";
-        public const string SUBFOLDER_SUFFIX_MUST_CONTAIN_ONLY_LETTERS = "SUBFOLDER_SUFFIX_MUST_CONTAIN_ONLY_LETTERS";
-        public const string SUBFOLDER_SUFFIX_CANNOT_BE_SCRIPT_CODE = "SUBFOLDER_SUFFIX_CANNOT_BE_SCRIPT_CODE";
-        public const string NO_LANGUAGES = "NO_LANGUAGES";
-        public const string DUPLICATE_LANGUAGES = "DUPLICATE_LANGUAGES";
-        public const string REGION_SPECIFIC_LANGUAGE = "REGION_SPECIFIC_LANGUAGE";
-        public const string CANNOT_HAVE_SUBFOLDER_AND_DOMAIN = "CANNOT_HAVE_SUBFOLDER_AND_DOMAIN";
-        public const string CANNOT_ADD_WEB_PRESENCE_TO_PRIMARY_MARKET = "CANNOT_ADD_WEB_PRESENCE_TO_PRIMARY_MARKET";
-        public const string MARKET_REACHED_WEB_PRESENCE_LIMIT = "MARKET_REACHED_WEB_PRESENCE_LIMIT";
-        public const string CANNOT_HAVE_MULTIPLE_SUBFOLDERS_PER_MARKET = "CANNOT_HAVE_MULTIPLE_SUBFOLDERS_PER_MARKET";
-        public const string CANNOT_HAVE_BOTH_SUBFOLDER_AND_DOMAIN_WEB_PRESENCES = "CANNOT_HAVE_BOTH_SUBFOLDER_AND_DOMAIN_WEB_PRESENCES";
-        public const string REQUIRES_DOMAIN_OR_SUBFOLDER = "REQUIRES_DOMAIN_OR_SUBFOLDER";
-        public const string PRIMARY_MARKET_MUST_USE_PRIMARY_DOMAIN = "PRIMARY_MARKET_MUST_USE_PRIMARY_DOMAIN";
-        public const string CANNOT_DELETE_PRIMARY_MARKET_WEB_PRESENCE = "CANNOT_DELETE_PRIMARY_MARKET_WEB_PRESENCE";
-        public const string SHOP_REACHED_MARKETS_LIMIT = "SHOP_REACHED_MARKETS_LIMIT";
-        public const string CANNOT_DISABLE_PRIMARY_MARKET = "CANNOT_DISABLE_PRIMARY_MARKET";
-        public const string UNPUBLISHED_LANGUAGE = "UNPUBLISHED_LANGUAGE";
-        public const string DISABLED_LANGUAGE = "DISABLED_LANGUAGE";
-        public const string CANNOT_SET_DEFAULT_LOCALE_TO_NULL = "CANNOT_SET_DEFAULT_LOCALE_TO_NULL";
-        public const string UNSUPPORTED_COUNTRY_REGION = "UNSUPPORTED_COUNTRY_REGION";
-        public const string CANNOT_ADD_CUSTOMER_DOMAIN = "CANNOT_ADD_CUSTOMER_DOMAIN";
+        public const string INVALID = @"INVALID";
+        public const string TAKEN = @"TAKEN";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string TOO_SHORT = @"TOO_SHORT";
+        public const string BLANK = @"BLANK";
+        public const string MARKET_NOT_FOUND = @"MARKET_NOT_FOUND";
+        public const string REGION_NOT_FOUND = @"REGION_NOT_FOUND";
+        public const string WEB_PRESENCE_NOT_FOUND = @"WEB_PRESENCE_NOT_FOUND";
+        public const string CANNOT_ADD_REGIONS_TO_PRIMARY_MARKET = @"CANNOT_ADD_REGIONS_TO_PRIMARY_MARKET";
+        public const string CANNOT_DELETE_ONLY_REGION = @"CANNOT_DELETE_ONLY_REGION";
+        public const string REQUIRES_EXACTLY_ONE_OPTION = @"REQUIRES_EXACTLY_ONE_OPTION";
+        public const string CANNOT_DELETE_PRIMARY_MARKET = @"CANNOT_DELETE_PRIMARY_MARKET";
+        public const string DOMAIN_NOT_FOUND = @"DOMAIN_NOT_FOUND";
+        public const string SUBFOLDER_SUFFIX_MUST_CONTAIN_ONLY_LETTERS = @"SUBFOLDER_SUFFIX_MUST_CONTAIN_ONLY_LETTERS";
+        public const string SUBFOLDER_SUFFIX_CANNOT_BE_SCRIPT_CODE = @"SUBFOLDER_SUFFIX_CANNOT_BE_SCRIPT_CODE";
+        public const string NO_LANGUAGES = @"NO_LANGUAGES";
+        public const string DUPLICATE_LANGUAGES = @"DUPLICATE_LANGUAGES";
+        public const string REGION_SPECIFIC_LANGUAGE = @"REGION_SPECIFIC_LANGUAGE";
+        public const string CANNOT_HAVE_SUBFOLDER_AND_DOMAIN = @"CANNOT_HAVE_SUBFOLDER_AND_DOMAIN";
+        public const string CANNOT_ADD_WEB_PRESENCE_TO_PRIMARY_MARKET = @"CANNOT_ADD_WEB_PRESENCE_TO_PRIMARY_MARKET";
+        public const string MARKET_REACHED_WEB_PRESENCE_LIMIT = @"MARKET_REACHED_WEB_PRESENCE_LIMIT";
+        public const string CANNOT_HAVE_MULTIPLE_SUBFOLDERS_PER_MARKET = @"CANNOT_HAVE_MULTIPLE_SUBFOLDERS_PER_MARKET";
+        public const string CANNOT_HAVE_BOTH_SUBFOLDER_AND_DOMAIN_WEB_PRESENCES = @"CANNOT_HAVE_BOTH_SUBFOLDER_AND_DOMAIN_WEB_PRESENCES";
+        public const string REQUIRES_DOMAIN_OR_SUBFOLDER = @"REQUIRES_DOMAIN_OR_SUBFOLDER";
+        public const string PRIMARY_MARKET_MUST_USE_PRIMARY_DOMAIN = @"PRIMARY_MARKET_MUST_USE_PRIMARY_DOMAIN";
+        public const string CANNOT_DELETE_PRIMARY_MARKET_WEB_PRESENCE = @"CANNOT_DELETE_PRIMARY_MARKET_WEB_PRESENCE";
+        public const string SHOP_REACHED_MARKETS_LIMIT = @"SHOP_REACHED_MARKETS_LIMIT";
+        public const string CANNOT_DISABLE_PRIMARY_MARKET = @"CANNOT_DISABLE_PRIMARY_MARKET";
+        public const string UNPUBLISHED_LANGUAGE = @"UNPUBLISHED_LANGUAGE";
+        public const string DISABLED_LANGUAGE = @"DISABLED_LANGUAGE";
+        public const string CANNOT_SET_DEFAULT_LOCALE_TO_NULL = @"CANNOT_SET_DEFAULT_LOCALE_TO_NULL";
+        public const string UNSUPPORTED_COUNTRY_REGION = @"UNSUPPORTED_COUNTRY_REGION";
+        public const string CANNOT_ADD_CUSTOMER_DOMAIN = @"CANNOT_ADD_CUSTOMER_DOMAIN";
     }
 
     ///<summary>
@@ -34077,11 +34077,11 @@ namespace shopify
 
     public static class MarketingActivityExtensionAppErrorCodeStringValues
     {
-        public const string NOT_ONBOARDED_ERROR = "NOT_ONBOARDED_ERROR";
-        public const string VALIDATION_ERROR = "VALIDATION_ERROR";
-        public const string API_ERROR = "API_ERROR";
-        public const string PLATFORM_ERROR = "PLATFORM_ERROR";
-        public const string INSTALL_REQUIRED_ERROR = "INSTALL_REQUIRED_ERROR";
+        public const string NOT_ONBOARDED_ERROR = @"NOT_ONBOARDED_ERROR";
+        public const string VALIDATION_ERROR = @"VALIDATION_ERROR";
+        public const string API_ERROR = @"API_ERROR";
+        public const string PLATFORM_ERROR = @"PLATFORM_ERROR";
+        public const string INSTALL_REQUIRED_ERROR = @"INSTALL_REQUIRED_ERROR";
     }
 
     ///<summary>
@@ -34132,12 +34132,12 @@ namespace shopify
 
     public static class MarketingActivityExternalStatusStringValues
     {
-        public const string ACTIVE = "ACTIVE";
-        public const string INACTIVE = "INACTIVE";
-        public const string PAUSED = "PAUSED";
-        public const string SCHEDULED = "SCHEDULED";
-        public const string DELETED_EXTERNALLY = "DELETED_EXTERNALLY";
-        public const string UNDEFINED = "UNDEFINED";
+        public const string ACTIVE = @"ACTIVE";
+        public const string INACTIVE = @"INACTIVE";
+        public const string PAUSED = @"PAUSED";
+        public const string SCHEDULED = @"SCHEDULED";
+        public const string DELETED_EXTERNALLY = @"DELETED_EXTERNALLY";
+        public const string UNDEFINED = @"UNDEFINED";
     }
 
     ///<summary>
@@ -34161,9 +34161,9 @@ namespace shopify
 
     public static class MarketingActivityHierarchyLevelStringValues
     {
-        public const string AD = "AD";
-        public const string AD_GROUP = "AD_GROUP";
-        public const string CAMPAIGN = "CAMPAIGN";
+        public const string AD = @"AD";
+        public const string AD_GROUP = @"AD_GROUP";
+        public const string CAMPAIGN = @"CAMPAIGN";
     }
 
     ///<summary>
@@ -34192,10 +34192,10 @@ namespace shopify
 
     public static class MarketingActivitySortKeysStringValues
     {
-        public const string TITLE = "TITLE";
-        public const string CREATED_AT = "CREATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string TITLE = @"TITLE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -34251,17 +34251,17 @@ namespace shopify
 
     public static class MarketingActivityStatusStringValues
     {
-        public const string ACTIVE = "ACTIVE";
-        public const string DELETED = "DELETED";
-        public const string DELETED_EXTERNALLY = "DELETED_EXTERNALLY";
-        public const string DISCONNECTED = "DISCONNECTED";
-        public const string DRAFT = "DRAFT";
-        public const string FAILED = "FAILED";
-        public const string INACTIVE = "INACTIVE";
-        public const string PAUSED = "PAUSED";
-        public const string PENDING = "PENDING";
-        public const string SCHEDULED = "SCHEDULED";
-        public const string UNDEFINED = "UNDEFINED";
+        public const string ACTIVE = @"ACTIVE";
+        public const string DELETED = @"DELETED";
+        public const string DELETED_EXTERNALLY = @"DELETED_EXTERNALLY";
+        public const string DISCONNECTED = @"DISCONNECTED";
+        public const string DRAFT = @"DRAFT";
+        public const string FAILED = @"FAILED";
+        public const string INACTIVE = @"INACTIVE";
+        public const string PAUSED = @"PAUSED";
+        public const string PENDING = @"PENDING";
+        public const string SCHEDULED = @"SCHEDULED";
+        public const string UNDEFINED = @"UNDEFINED";
     }
 
     ///<summary>
@@ -34293,11 +34293,11 @@ namespace shopify
 
     public static class MarketingActivityStatusBadgeTypeStringValues
     {
-        public const string DEFAULT = "DEFAULT";
-        public const string SUCCESS = "SUCCESS";
-        public const string ATTENTION = "ATTENTION";
-        public const string WARNING = "WARNING";
-        public const string INFO = "INFO";
+        public const string DEFAULT = @"DEFAULT";
+        public const string SUCCESS = @"SUCCESS";
+        public const string ATTENTION = @"ATTENTION";
+        public const string WARNING = @"WARNING";
+        public const string INFO = @"INFO";
     }
 
     ///<summary>
@@ -34477,31 +34477,31 @@ namespace shopify
 
     public static class MarketingActivityUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string TAKEN = "TAKEN";
-        public const string MARKETING_ACTIVITY_DOES_NOT_EXIST = "MARKETING_ACTIVITY_DOES_NOT_EXIST";
-        public const string MARKETING_EVENT_DOES_NOT_EXIST = "MARKETING_EVENT_DOES_NOT_EXIST";
-        public const string CURRENCY_CODE_MISMATCH_INPUT = "CURRENCY_CODE_MISMATCH_INPUT";
-        public const string MARKETING_ACTIVITY_CURRENCY_CODE_MISMATCH = "MARKETING_ACTIVITY_CURRENCY_CODE_MISMATCH";
-        public const string DELETE_JOB_FAILED_TO_ENQUEUE = "DELETE_JOB_FAILED_TO_ENQUEUE";
-        public const string NON_HIERARCHIAL_REQUIRES_UTM_URL_PARAMETER = "NON_HIERARCHIAL_REQUIRES_UTM_URL_PARAMETER";
-        public const string DELETE_JOB_ENQUEUED = "DELETE_JOB_ENQUEUED";
-        public const string ACTIVITY_NOT_EXTERNAL = "ACTIVITY_NOT_EXTERNAL";
-        public const string IMMUTABLE_CHANNEL_HANDLE = "IMMUTABLE_CHANNEL_HANDLE";
-        public const string IMMUTABLE_URL_PARAMETER = "IMMUTABLE_URL_PARAMETER";
-        public const string IMMUTABLE_UTM_PARAMETERS = "IMMUTABLE_UTM_PARAMETERS";
-        public const string IMMUTABLE_PARENT_ID = "IMMUTABLE_PARENT_ID";
-        public const string IMMUTABLE_HIERARCHY_LEVEL = "IMMUTABLE_HIERARCHY_LEVEL";
-        public const string INVALID_REMOTE_ID = "INVALID_REMOTE_ID";
-        public const string INVALID_CHANNEL_HANDLE = "INVALID_CHANNEL_HANDLE";
-        public const string INVALID_DELETE_ACTIVITY_EXTERNAL_ARGUMENTS = "INVALID_DELETE_ACTIVITY_EXTERNAL_ARGUMENTS";
-        public const string INVALID_DELETE_ENGAGEMENTS_ARGUMENTS = "INVALID_DELETE_ENGAGEMENTS_ARGUMENTS";
-        public const string INVALID_MARKETING_ACTIVITY_EXTERNAL_ARGUMENTS = "INVALID_MARKETING_ACTIVITY_EXTERNAL_ARGUMENTS";
-        public const string INVALID_MARKETING_ENGAGEMENT_ARGUMENTS = "INVALID_MARKETING_ENGAGEMENT_ARGUMENTS";
-        public const string INVALID_MARKETING_ENGAGEMENT_ARGUMENT_MISSING = "INVALID_MARKETING_ENGAGEMENT_ARGUMENT_MISSING";
-        public const string CANNOT_DELETE_ACTIVITY_WITH_CHILD_EVENTS = "CANNOT_DELETE_ACTIVITY_WITH_CHILD_EVENTS";
-        public const string CANNOT_UPDATE_TACTIC_TO_STOREFRONT_APP = "CANNOT_UPDATE_TACTIC_TO_STOREFRONT_APP";
-        public const string CANNOT_UPDATE_TACTIC_IF_ORIGINALLY_STOREFRONT_APP = "CANNOT_UPDATE_TACTIC_IF_ORIGINALLY_STOREFRONT_APP";
+        public const string INVALID = @"INVALID";
+        public const string TAKEN = @"TAKEN";
+        public const string MARKETING_ACTIVITY_DOES_NOT_EXIST = @"MARKETING_ACTIVITY_DOES_NOT_EXIST";
+        public const string MARKETING_EVENT_DOES_NOT_EXIST = @"MARKETING_EVENT_DOES_NOT_EXIST";
+        public const string CURRENCY_CODE_MISMATCH_INPUT = @"CURRENCY_CODE_MISMATCH_INPUT";
+        public const string MARKETING_ACTIVITY_CURRENCY_CODE_MISMATCH = @"MARKETING_ACTIVITY_CURRENCY_CODE_MISMATCH";
+        public const string DELETE_JOB_FAILED_TO_ENQUEUE = @"DELETE_JOB_FAILED_TO_ENQUEUE";
+        public const string NON_HIERARCHIAL_REQUIRES_UTM_URL_PARAMETER = @"NON_HIERARCHIAL_REQUIRES_UTM_URL_PARAMETER";
+        public const string DELETE_JOB_ENQUEUED = @"DELETE_JOB_ENQUEUED";
+        public const string ACTIVITY_NOT_EXTERNAL = @"ACTIVITY_NOT_EXTERNAL";
+        public const string IMMUTABLE_CHANNEL_HANDLE = @"IMMUTABLE_CHANNEL_HANDLE";
+        public const string IMMUTABLE_URL_PARAMETER = @"IMMUTABLE_URL_PARAMETER";
+        public const string IMMUTABLE_UTM_PARAMETERS = @"IMMUTABLE_UTM_PARAMETERS";
+        public const string IMMUTABLE_PARENT_ID = @"IMMUTABLE_PARENT_ID";
+        public const string IMMUTABLE_HIERARCHY_LEVEL = @"IMMUTABLE_HIERARCHY_LEVEL";
+        public const string INVALID_REMOTE_ID = @"INVALID_REMOTE_ID";
+        public const string INVALID_CHANNEL_HANDLE = @"INVALID_CHANNEL_HANDLE";
+        public const string INVALID_DELETE_ACTIVITY_EXTERNAL_ARGUMENTS = @"INVALID_DELETE_ACTIVITY_EXTERNAL_ARGUMENTS";
+        public const string INVALID_DELETE_ENGAGEMENTS_ARGUMENTS = @"INVALID_DELETE_ENGAGEMENTS_ARGUMENTS";
+        public const string INVALID_MARKETING_ACTIVITY_EXTERNAL_ARGUMENTS = @"INVALID_MARKETING_ACTIVITY_EXTERNAL_ARGUMENTS";
+        public const string INVALID_MARKETING_ENGAGEMENT_ARGUMENTS = @"INVALID_MARKETING_ENGAGEMENT_ARGUMENTS";
+        public const string INVALID_MARKETING_ENGAGEMENT_ARGUMENT_MISSING = @"INVALID_MARKETING_ENGAGEMENT_ARGUMENT_MISSING";
+        public const string CANNOT_DELETE_ACTIVITY_WITH_CHILD_EVENTS = @"CANNOT_DELETE_ACTIVITY_WITH_CHILD_EVENTS";
+        public const string CANNOT_UPDATE_TACTIC_TO_STOREFRONT_APP = @"CANNOT_UPDATE_TACTIC_TO_STOREFRONT_APP";
+        public const string CANNOT_UPDATE_TACTIC_IF_ORIGINALLY_STOREFRONT_APP = @"CANNOT_UPDATE_TACTIC_IF_ORIGINALLY_STOREFRONT_APP";
     }
 
     ///<summary>
@@ -34536,8 +34536,8 @@ namespace shopify
 
     public static class MarketingBudgetBudgetTypeStringValues
     {
-        public const string DAILY = "DAILY";
-        public const string LIFETIME = "LIFETIME";
+        public const string DAILY = @"DAILY";
+        public const string LIFETIME = @"LIFETIME";
     }
 
     ///<summary>
@@ -34569,11 +34569,11 @@ namespace shopify
 
     public static class MarketingChannelStringValues
     {
-        public const string SEARCH = "SEARCH";
-        public const string DISPLAY = "DISPLAY";
-        public const string SOCIAL = "SOCIAL";
-        public const string EMAIL = "EMAIL";
-        public const string REFERRAL = "REFERRAL";
+        public const string SEARCH = @"SEARCH";
+        public const string DISPLAY = @"DISPLAY";
+        public const string SOCIAL = @"SOCIAL";
+        public const string EMAIL = @"EMAIL";
+        public const string REFERRAL = @"REFERRAL";
     }
 
     ///<summary>
@@ -34852,9 +34852,9 @@ namespace shopify
 
     public static class MarketingEventSortKeysStringValues
     {
-        public const string STARTED_AT = "STARTED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string STARTED_AT = @"STARTED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -34918,19 +34918,19 @@ namespace shopify
 
     public static class MarketingTacticStringValues
     {
-        public const string ABANDONED_CART = "ABANDONED_CART";
-        public const string AD = "AD";
-        public const string AFFILIATE = "AFFILIATE";
-        public const string LINK = "LINK";
-        public const string LOYALTY = "LOYALTY";
-        public const string MESSAGE = "MESSAGE";
-        public const string NEWSLETTER = "NEWSLETTER";
-        public const string NOTIFICATION = "NOTIFICATION";
-        public const string POST = "POST";
-        public const string RETARGETING = "RETARGETING";
-        public const string TRANSACTIONAL = "TRANSACTIONAL";
-        public const string STOREFRONT_APP = "STOREFRONT_APP";
-        public const string SEO = "SEO";
+        public const string ABANDONED_CART = @"ABANDONED_CART";
+        public const string AD = @"AD";
+        public const string AFFILIATE = @"AFFILIATE";
+        public const string LINK = @"LINK";
+        public const string LOYALTY = @"LOYALTY";
+        public const string MESSAGE = @"MESSAGE";
+        public const string NEWSLETTER = @"NEWSLETTER";
+        public const string NOTIFICATION = @"NOTIFICATION";
+        public const string POST = @"POST";
+        public const string RETARGETING = @"RETARGETING";
+        public const string TRANSACTIONAL = @"TRANSACTIONAL";
+        public const string STOREFRONT_APP = @"STOREFRONT_APP";
+        public const string SEO = @"SEO";
     }
 
     ///<summary>
@@ -35021,10 +35021,10 @@ namespace shopify
 
     public static class MediaContentTypeStringValues
     {
-        public const string VIDEO = "VIDEO";
-        public const string EXTERNAL_VIDEO = "EXTERNAL_VIDEO";
-        public const string MODEL_3D = "MODEL_3D";
-        public const string IMAGE = "IMAGE";
+        public const string VIDEO = @"VIDEO";
+        public const string EXTERNAL_VIDEO = @"EXTERNAL_VIDEO";
+        public const string MODEL_3D = @"MODEL_3D";
+        public const string IMAGE = @"IMAGE";
     }
 
     ///<summary>
@@ -35203,39 +35203,39 @@ namespace shopify
 
     public static class MediaErrorCodeStringValues
     {
-        public const string UNKNOWN = "UNKNOWN";
-        public const string INVALID_SIGNED_URL = "INVALID_SIGNED_URL";
-        public const string IMAGE_DOWNLOAD_FAILURE = "IMAGE_DOWNLOAD_FAILURE";
-        public const string IMAGE_PROCESSING_FAILURE = "IMAGE_PROCESSING_FAILURE";
-        public const string MEDIA_TIMEOUT_ERROR = "MEDIA_TIMEOUT_ERROR";
-        public const string EXTERNAL_VIDEO_NOT_FOUND = "EXTERNAL_VIDEO_NOT_FOUND";
-        public const string EXTERNAL_VIDEO_UNLISTED = "EXTERNAL_VIDEO_UNLISTED";
-        public const string EXTERNAL_VIDEO_INVALID_ASPECT_RATIO = "EXTERNAL_VIDEO_INVALID_ASPECT_RATIO";
-        public const string EXTERNAL_VIDEO_EMBED_DISABLED = "EXTERNAL_VIDEO_EMBED_DISABLED";
-        public const string EXTERNAL_VIDEO_EMBED_NOT_FOUND_OR_TRANSCODING = "EXTERNAL_VIDEO_EMBED_NOT_FOUND_OR_TRANSCODING";
-        public const string GENERIC_FILE_DOWNLOAD_FAILURE = "GENERIC_FILE_DOWNLOAD_FAILURE";
-        public const string GENERIC_FILE_INVALID_SIZE = "GENERIC_FILE_INVALID_SIZE";
-        public const string VIDEO_METADATA_READ_ERROR = "VIDEO_METADATA_READ_ERROR";
-        public const string VIDEO_INVALID_FILETYPE_ERROR = "VIDEO_INVALID_FILETYPE_ERROR";
-        public const string VIDEO_MIN_WIDTH_ERROR = "VIDEO_MIN_WIDTH_ERROR";
-        public const string VIDEO_MAX_WIDTH_ERROR = "VIDEO_MAX_WIDTH_ERROR";
-        public const string VIDEO_MIN_HEIGHT_ERROR = "VIDEO_MIN_HEIGHT_ERROR";
-        public const string VIDEO_MAX_HEIGHT_ERROR = "VIDEO_MAX_HEIGHT_ERROR";
-        public const string VIDEO_MIN_DURATION_ERROR = "VIDEO_MIN_DURATION_ERROR";
-        public const string VIDEO_MAX_DURATION_ERROR = "VIDEO_MAX_DURATION_ERROR";
-        public const string VIDEO_VALIDATION_ERROR = "VIDEO_VALIDATION_ERROR";
-        public const string MODEL3D_VALIDATION_ERROR = "MODEL3D_VALIDATION_ERROR";
-        public const string MODEL3D_THUMBNAIL_GENERATION_ERROR = "MODEL3D_THUMBNAIL_GENERATION_ERROR";
-        public const string MODEL3D_THUMBNAIL_REGENERATION_ERROR = "MODEL3D_THUMBNAIL_REGENERATION_ERROR";
-        public const string MODEL3D_GLB_TO_USDZ_CONVERSION_ERROR = "MODEL3D_GLB_TO_USDZ_CONVERSION_ERROR";
-        public const string MODEL3D_GLB_OUTPUT_CREATION_ERROR = "MODEL3D_GLB_OUTPUT_CREATION_ERROR";
-        public const string MODEL3D_PROCESSING_FAILURE = "MODEL3D_PROCESSING_FAILURE";
-        public const string UNSUPPORTED_IMAGE_FILE_TYPE = "UNSUPPORTED_IMAGE_FILE_TYPE";
-        public const string INVALID_IMAGE_FILE_SIZE = "INVALID_IMAGE_FILE_SIZE";
-        public const string INVALID_IMAGE_ASPECT_RATIO = "INVALID_IMAGE_ASPECT_RATIO";
-        public const string INVALID_IMAGE_RESOLUTION = "INVALID_IMAGE_RESOLUTION";
-        public const string FILE_STORAGE_LIMIT_EXCEEDED = "FILE_STORAGE_LIMIT_EXCEEDED";
-        public const string DUPLICATE_FILENAME_ERROR = "DUPLICATE_FILENAME_ERROR";
+        public const string UNKNOWN = @"UNKNOWN";
+        public const string INVALID_SIGNED_URL = @"INVALID_SIGNED_URL";
+        public const string IMAGE_DOWNLOAD_FAILURE = @"IMAGE_DOWNLOAD_FAILURE";
+        public const string IMAGE_PROCESSING_FAILURE = @"IMAGE_PROCESSING_FAILURE";
+        public const string MEDIA_TIMEOUT_ERROR = @"MEDIA_TIMEOUT_ERROR";
+        public const string EXTERNAL_VIDEO_NOT_FOUND = @"EXTERNAL_VIDEO_NOT_FOUND";
+        public const string EXTERNAL_VIDEO_UNLISTED = @"EXTERNAL_VIDEO_UNLISTED";
+        public const string EXTERNAL_VIDEO_INVALID_ASPECT_RATIO = @"EXTERNAL_VIDEO_INVALID_ASPECT_RATIO";
+        public const string EXTERNAL_VIDEO_EMBED_DISABLED = @"EXTERNAL_VIDEO_EMBED_DISABLED";
+        public const string EXTERNAL_VIDEO_EMBED_NOT_FOUND_OR_TRANSCODING = @"EXTERNAL_VIDEO_EMBED_NOT_FOUND_OR_TRANSCODING";
+        public const string GENERIC_FILE_DOWNLOAD_FAILURE = @"GENERIC_FILE_DOWNLOAD_FAILURE";
+        public const string GENERIC_FILE_INVALID_SIZE = @"GENERIC_FILE_INVALID_SIZE";
+        public const string VIDEO_METADATA_READ_ERROR = @"VIDEO_METADATA_READ_ERROR";
+        public const string VIDEO_INVALID_FILETYPE_ERROR = @"VIDEO_INVALID_FILETYPE_ERROR";
+        public const string VIDEO_MIN_WIDTH_ERROR = @"VIDEO_MIN_WIDTH_ERROR";
+        public const string VIDEO_MAX_WIDTH_ERROR = @"VIDEO_MAX_WIDTH_ERROR";
+        public const string VIDEO_MIN_HEIGHT_ERROR = @"VIDEO_MIN_HEIGHT_ERROR";
+        public const string VIDEO_MAX_HEIGHT_ERROR = @"VIDEO_MAX_HEIGHT_ERROR";
+        public const string VIDEO_MIN_DURATION_ERROR = @"VIDEO_MIN_DURATION_ERROR";
+        public const string VIDEO_MAX_DURATION_ERROR = @"VIDEO_MAX_DURATION_ERROR";
+        public const string VIDEO_VALIDATION_ERROR = @"VIDEO_VALIDATION_ERROR";
+        public const string MODEL3D_VALIDATION_ERROR = @"MODEL3D_VALIDATION_ERROR";
+        public const string MODEL3D_THUMBNAIL_GENERATION_ERROR = @"MODEL3D_THUMBNAIL_GENERATION_ERROR";
+        public const string MODEL3D_THUMBNAIL_REGENERATION_ERROR = @"MODEL3D_THUMBNAIL_REGENERATION_ERROR";
+        public const string MODEL3D_GLB_TO_USDZ_CONVERSION_ERROR = @"MODEL3D_GLB_TO_USDZ_CONVERSION_ERROR";
+        public const string MODEL3D_GLB_OUTPUT_CREATION_ERROR = @"MODEL3D_GLB_OUTPUT_CREATION_ERROR";
+        public const string MODEL3D_PROCESSING_FAILURE = @"MODEL3D_PROCESSING_FAILURE";
+        public const string UNSUPPORTED_IMAGE_FILE_TYPE = @"UNSUPPORTED_IMAGE_FILE_TYPE";
+        public const string INVALID_IMAGE_FILE_SIZE = @"INVALID_IMAGE_FILE_SIZE";
+        public const string INVALID_IMAGE_ASPECT_RATIO = @"INVALID_IMAGE_ASPECT_RATIO";
+        public const string INVALID_IMAGE_RESOLUTION = @"INVALID_IMAGE_RESOLUTION";
+        public const string FILE_STORAGE_LIMIT_EXCEEDED = @"FILE_STORAGE_LIMIT_EXCEEDED";
+        public const string DUPLICATE_FILENAME_ERROR = @"DUPLICATE_FILENAME_ERROR";
     }
 
     ///<summary>
@@ -35255,8 +35255,8 @@ namespace shopify
 
     public static class MediaHostStringValues
     {
-        public const string YOUTUBE = "YOUTUBE";
-        public const string VIMEO = "VIMEO";
+        public const string YOUTUBE = @"YOUTUBE";
+        public const string VIMEO = @"VIMEO";
     }
 
     ///<summary>
@@ -35400,10 +35400,10 @@ namespace shopify
 
     public static class MediaPreviewImageStatusStringValues
     {
-        public const string UPLOADED = "UPLOADED";
-        public const string PROCESSING = "PROCESSING";
-        public const string READY = "READY";
-        public const string FAILED = "FAILED";
+        public const string UPLOADED = @"UPLOADED";
+        public const string PROCESSING = @"PROCESSING";
+        public const string READY = @"READY";
+        public const string FAILED = @"FAILED";
     }
 
     ///<summary>
@@ -35431,10 +35431,10 @@ namespace shopify
 
     public static class MediaStatusStringValues
     {
-        public const string UPLOADED = "UPLOADED";
-        public const string PROCESSING = "PROCESSING";
-        public const string READY = "READY";
-        public const string FAILED = "FAILED";
+        public const string UPLOADED = @"UPLOADED";
+        public const string PROCESSING = @"PROCESSING";
+        public const string READY = @"READY";
+        public const string FAILED = @"FAILED";
     }
 
     ///<summary>
@@ -35549,27 +35549,27 @@ namespace shopify
 
     public static class MediaUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string BLANK = "BLANK";
-        public const string VIDEO_VALIDATION_ERROR = "VIDEO_VALIDATION_ERROR";
-        public const string MODEL3D_VALIDATION_ERROR = "MODEL3D_VALIDATION_ERROR";
-        public const string VIDEO_THROTTLE_EXCEEDED = "VIDEO_THROTTLE_EXCEEDED";
-        public const string MODEL3D_THROTTLE_EXCEEDED = "MODEL3D_THROTTLE_EXCEEDED";
-        public const string PRODUCT_MEDIA_LIMIT_EXCEEDED = "PRODUCT_MEDIA_LIMIT_EXCEEDED";
-        public const string SHOP_MEDIA_LIMIT_EXCEEDED = "SHOP_MEDIA_LIMIT_EXCEEDED";
-        public const string PRODUCT_DOES_NOT_EXIST = "PRODUCT_DOES_NOT_EXIST";
-        public const string MEDIA_DOES_NOT_EXIST = "MEDIA_DOES_NOT_EXIST";
-        public const string MEDIA_DOES_NOT_EXIST_ON_PRODUCT = "MEDIA_DOES_NOT_EXIST_ON_PRODUCT";
-        public const string TOO_MANY_MEDIA_PER_INPUT_PAIR = "TOO_MANY_MEDIA_PER_INPUT_PAIR";
-        public const string MAXIMUM_VARIANT_MEDIA_PAIRS_EXCEEDED = "MAXIMUM_VARIANT_MEDIA_PAIRS_EXCEEDED";
-        public const string INVALID_MEDIA_TYPE = "INVALID_MEDIA_TYPE";
-        public const string PRODUCT_VARIANT_SPECIFIED_MULTIPLE_TIMES = "PRODUCT_VARIANT_SPECIFIED_MULTIPLE_TIMES";
-        public const string PRODUCT_VARIANT_DOES_NOT_EXIST_ON_PRODUCT = "PRODUCT_VARIANT_DOES_NOT_EXIST_ON_PRODUCT";
-        public const string NON_READY_MEDIA = "NON_READY_MEDIA";
-        public const string PRODUCT_VARIANT_ALREADY_HAS_MEDIA = "PRODUCT_VARIANT_ALREADY_HAS_MEDIA";
-        public const string MEDIA_IS_NOT_ATTACHED_TO_VARIANT = "MEDIA_IS_NOT_ATTACHED_TO_VARIANT";
-        public const string MEDIA_CANNOT_BE_MODIFIED = "MEDIA_CANNOT_BE_MODIFIED";
-        public const string MISSING_ARGUMENTS = "MISSING_ARGUMENTS";
+        public const string INVALID = @"INVALID";
+        public const string BLANK = @"BLANK";
+        public const string VIDEO_VALIDATION_ERROR = @"VIDEO_VALIDATION_ERROR";
+        public const string MODEL3D_VALIDATION_ERROR = @"MODEL3D_VALIDATION_ERROR";
+        public const string VIDEO_THROTTLE_EXCEEDED = @"VIDEO_THROTTLE_EXCEEDED";
+        public const string MODEL3D_THROTTLE_EXCEEDED = @"MODEL3D_THROTTLE_EXCEEDED";
+        public const string PRODUCT_MEDIA_LIMIT_EXCEEDED = @"PRODUCT_MEDIA_LIMIT_EXCEEDED";
+        public const string SHOP_MEDIA_LIMIT_EXCEEDED = @"SHOP_MEDIA_LIMIT_EXCEEDED";
+        public const string PRODUCT_DOES_NOT_EXIST = @"PRODUCT_DOES_NOT_EXIST";
+        public const string MEDIA_DOES_NOT_EXIST = @"MEDIA_DOES_NOT_EXIST";
+        public const string MEDIA_DOES_NOT_EXIST_ON_PRODUCT = @"MEDIA_DOES_NOT_EXIST_ON_PRODUCT";
+        public const string TOO_MANY_MEDIA_PER_INPUT_PAIR = @"TOO_MANY_MEDIA_PER_INPUT_PAIR";
+        public const string MAXIMUM_VARIANT_MEDIA_PAIRS_EXCEEDED = @"MAXIMUM_VARIANT_MEDIA_PAIRS_EXCEEDED";
+        public const string INVALID_MEDIA_TYPE = @"INVALID_MEDIA_TYPE";
+        public const string PRODUCT_VARIANT_SPECIFIED_MULTIPLE_TIMES = @"PRODUCT_VARIANT_SPECIFIED_MULTIPLE_TIMES";
+        public const string PRODUCT_VARIANT_DOES_NOT_EXIST_ON_PRODUCT = @"PRODUCT_VARIANT_DOES_NOT_EXIST_ON_PRODUCT";
+        public const string NON_READY_MEDIA = @"NON_READY_MEDIA";
+        public const string PRODUCT_VARIANT_ALREADY_HAS_MEDIA = @"PRODUCT_VARIANT_ALREADY_HAS_MEDIA";
+        public const string MEDIA_IS_NOT_ATTACHED_TO_VARIANT = @"MEDIA_IS_NOT_ATTACHED_TO_VARIANT";
+        public const string MEDIA_CANNOT_BE_MODIFIED = @"MEDIA_CANNOT_BE_MODIFIED";
+        public const string MISSING_ARGUMENTS = @"MISSING_ARGUMENTS";
     }
 
     ///<summary>
@@ -35605,8 +35605,8 @@ namespace shopify
 
     public static class MediaWarningCodeStringValues
     {
-        public const string MODEL_SMALL_PHYSICAL_SIZE = "MODEL_SMALL_PHYSICAL_SIZE";
-        public const string MODEL_LARGE_PHYSICAL_SIZE = "MODEL_LARGE_PHYSICAL_SIZE";
+        public const string MODEL_SMALL_PHYSICAL_SIZE = @"MODEL_SMALL_PHYSICAL_SIZE";
+        public const string MODEL_LARGE_PHYSICAL_SIZE = @"MODEL_LARGE_PHYSICAL_SIZE";
     }
 
     ///<summary>
@@ -35710,8 +35710,8 @@ namespace shopify
 
     public static class MenuCreateUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string NESTING_TOO_DEEP = "NESTING_TOO_DEEP";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string NESTING_TOO_DEEP = @"NESTING_TOO_DEEP";
     }
 
     ///<summary>
@@ -35765,8 +35765,8 @@ namespace shopify
 
     public static class MenuDeleteUserErrorCodeStringValues
     {
-        public const string MENU_DOES_NOT_EXIST = "MENU_DOES_NOT_EXIST";
-        public const string UNABLE_TO_DELETE_DEFAULT_MENU = "UNABLE_TO_DELETE_DEFAULT_MENU";
+        public const string MENU_DOES_NOT_EXIST = @"MENU_DOES_NOT_EXIST";
+        public const string UNABLE_TO_DELETE_DEFAULT_MENU = @"UNABLE_TO_DELETE_DEFAULT_MENU";
     }
 
     ///<summary>
@@ -35880,19 +35880,19 @@ namespace shopify
 
     public static class MenuItemTypeStringValues
     {
-        public const string FRONTPAGE = "FRONTPAGE";
-        public const string COLLECTION = "COLLECTION";
-        public const string COLLECTIONS = "COLLECTIONS";
-        public const string PRODUCT = "PRODUCT";
-        public const string CATALOG = "CATALOG";
-        public const string PAGE = "PAGE";
-        public const string BLOG = "BLOG";
-        public const string ARTICLE = "ARTICLE";
-        public const string SEARCH = "SEARCH";
-        public const string SHOP_POLICY = "SHOP_POLICY";
-        public const string HTTP = "HTTP";
-        public const string METAOBJECT = "METAOBJECT";
-        public const string CUSTOMER_ACCOUNT_PAGE = "CUSTOMER_ACCOUNT_PAGE";
+        public const string FRONTPAGE = @"FRONTPAGE";
+        public const string COLLECTION = @"COLLECTION";
+        public const string COLLECTIONS = @"COLLECTIONS";
+        public const string PRODUCT = @"PRODUCT";
+        public const string CATALOG = @"CATALOG";
+        public const string PAGE = @"PAGE";
+        public const string BLOG = @"BLOG";
+        public const string ARTICLE = @"ARTICLE";
+        public const string SEARCH = @"SEARCH";
+        public const string SHOP_POLICY = @"SHOP_POLICY";
+        public const string HTTP = @"HTTP";
+        public const string METAOBJECT = @"METAOBJECT";
+        public const string CUSTOMER_ACCOUNT_PAGE = @"CUSTOMER_ACCOUNT_PAGE";
     }
 
     ///<summary>
@@ -35921,10 +35921,10 @@ namespace shopify
 
     public static class MenuSortKeysStringValues
     {
-        public const string TITLE = "TITLE";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string TITLE = @"TITLE";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -35978,8 +35978,8 @@ namespace shopify
 
     public static class MenuUpdateUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string NESTING_TOO_DEEP = "NESTING_TOO_DEEP";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string NESTING_TOO_DEEP = @"NESTING_TOO_DEEP";
     }
 
     ///<summary>
@@ -35999,8 +35999,8 @@ namespace shopify
 
     public static class MerchandiseDiscountClassStringValues
     {
-        public const string PRODUCT = "PRODUCT";
-        public const string ORDER = "ORDER";
+        public const string PRODUCT = @"PRODUCT";
+        public const string ORDER = @"ORDER";
     }
 
     ///<summary>
@@ -36169,11 +36169,11 @@ namespace shopify
 
     public static class MetafieldAdminAccessStringValues
     {
-        public const string PRIVATE = "PRIVATE";
-        public const string PUBLIC_READ = "PUBLIC_READ";
-        public const string PUBLIC_READ_WRITE = "PUBLIC_READ_WRITE";
-        public const string MERCHANT_READ = "MERCHANT_READ";
-        public const string MERCHANT_READ_WRITE = "MERCHANT_READ_WRITE";
+        public const string PRIVATE = @"PRIVATE";
+        public const string PUBLIC_READ = @"PUBLIC_READ";
+        public const string PUBLIC_READ_WRITE = @"PUBLIC_READ_WRITE";
+        public const string MERCHANT_READ = @"MERCHANT_READ";
+        public const string MERCHANT_READ_WRITE = @"MERCHANT_READ_WRITE";
     }
 
     ///<summary>
@@ -36205,11 +36205,11 @@ namespace shopify
 
     public static class MetafieldAdminAccessInputStringValues
     {
-        public const string PRIVATE = "PRIVATE";
-        public const string PUBLIC_READ = "PUBLIC_READ";
-        public const string PUBLIC_READ_WRITE = "PUBLIC_READ_WRITE";
-        public const string MERCHANT_READ = "MERCHANT_READ";
-        public const string MERCHANT_READ_WRITE = "MERCHANT_READ_WRITE";
+        public const string PRIVATE = @"PRIVATE";
+        public const string PUBLIC_READ = @"PUBLIC_READ";
+        public const string PUBLIC_READ_WRITE = @"PUBLIC_READ_WRITE";
+        public const string MERCHANT_READ = @"MERCHANT_READ";
+        public const string MERCHANT_READ_WRITE = @"MERCHANT_READ_WRITE";
     }
 
     ///<summary>
@@ -36301,9 +36301,9 @@ namespace shopify
 
     public static class MetafieldCustomerAccountAccessStringValues
     {
-        public const string READ_WRITE = "READ_WRITE";
-        public const string READ = "READ";
-        public const string NONE = "NONE";
+        public const string READ_WRITE = @"READ_WRITE";
+        public const string READ = @"READ";
+        public const string NONE = @"NONE";
     }
 
     ///<summary>
@@ -36327,9 +36327,9 @@ namespace shopify
 
     public static class MetafieldCustomerAccountAccessInputStringValues
     {
-        public const string READ_WRITE = "READ_WRITE";
-        public const string READ = "READ";
-        public const string NONE = "NONE";
+        public const string READ_WRITE = @"READ_WRITE";
+        public const string READ = @"READ";
+        public const string NONE = @"NONE";
     }
 
     ///<summary>
@@ -36443,10 +36443,10 @@ namespace shopify
 
     public static class MetafieldDefinitionAdminFilterStatusStringValues
     {
-        public const string NOT_FILTERABLE = "NOT_FILTERABLE";
-        public const string IN_PROGRESS = "IN_PROGRESS";
-        public const string FILTERABLE = "FILTERABLE";
-        public const string FAILED = "FAILED";
+        public const string NOT_FILTERABLE = @"NOT_FILTERABLE";
+        public const string IN_PROGRESS = @"IN_PROGRESS";
+        public const string FILTERABLE = @"FILTERABLE";
+        public const string FAILED = @"FAILED";
     }
 
     ///<summary>
@@ -36489,9 +36489,9 @@ namespace shopify
 
     public static class MetafieldDefinitionConstraintStatusStringValues
     {
-        public const string CONSTRAINED_AND_UNCONSTRAINED = "CONSTRAINED_AND_UNCONSTRAINED";
-        public const string CONSTRAINED_ONLY = "CONSTRAINED_ONLY";
-        public const string UNCONSTRAINED_ONLY = "UNCONSTRAINED_ONLY";
+        public const string CONSTRAINED_AND_UNCONSTRAINED = @"CONSTRAINED_AND_UNCONSTRAINED";
+        public const string CONSTRAINED_ONLY = @"CONSTRAINED_ONLY";
+        public const string UNCONSTRAINED_ONLY = @"UNCONSTRAINED_ONLY";
     }
 
     ///<summary>
@@ -36677,25 +36677,25 @@ namespace shopify
 
     public static class MetafieldDefinitionCreateUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string INCLUSION = "INCLUSION";
-        public const string PRESENT = "PRESENT";
-        public const string TAKEN = "TAKEN";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string TOO_SHORT = "TOO_SHORT";
-        public const string RESOURCE_TYPE_LIMIT_EXCEEDED = "RESOURCE_TYPE_LIMIT_EXCEEDED";
-        public const string LIMIT_EXCEEDED = "LIMIT_EXCEEDED";
-        public const string INVALID_OPTION = "INVALID_OPTION";
-        public const string DUPLICATE_OPTION = "DUPLICATE_OPTION";
-        public const string RESERVED_NAMESPACE_KEY = "RESERVED_NAMESPACE_KEY";
-        public const string PINNED_LIMIT_REACHED = "PINNED_LIMIT_REACHED";
-        public const string UNSTRUCTURED_ALREADY_EXISTS = "UNSTRUCTURED_ALREADY_EXISTS";
-        public const string INVALID_CHARACTER = "INVALID_CHARACTER";
-        public const string TYPE_NOT_ALLOWED_FOR_CONDITIONS = "TYPE_NOT_ALLOWED_FOR_CONDITIONS";
-        public const string OWNER_TYPE_LIMIT_EXCEEDED_FOR_AUTOMATED_COLLECTIONS = "OWNER_TYPE_LIMIT_EXCEEDED_FOR_AUTOMATED_COLLECTIONS";
-        public const string GRANT_LIMIT_EXCEEDED = "GRANT_LIMIT_EXCEEDED";
-        public const string INVALID_INPUT_COMBINATION = "INVALID_INPUT_COMBINATION";
-        public const string INVALID_CAPABILITY = "INVALID_CAPABILITY";
+        public const string INVALID = @"INVALID";
+        public const string INCLUSION = @"INCLUSION";
+        public const string PRESENT = @"PRESENT";
+        public const string TAKEN = @"TAKEN";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string TOO_SHORT = @"TOO_SHORT";
+        public const string RESOURCE_TYPE_LIMIT_EXCEEDED = @"RESOURCE_TYPE_LIMIT_EXCEEDED";
+        public const string LIMIT_EXCEEDED = @"LIMIT_EXCEEDED";
+        public const string INVALID_OPTION = @"INVALID_OPTION";
+        public const string DUPLICATE_OPTION = @"DUPLICATE_OPTION";
+        public const string RESERVED_NAMESPACE_KEY = @"RESERVED_NAMESPACE_KEY";
+        public const string PINNED_LIMIT_REACHED = @"PINNED_LIMIT_REACHED";
+        public const string UNSTRUCTURED_ALREADY_EXISTS = @"UNSTRUCTURED_ALREADY_EXISTS";
+        public const string INVALID_CHARACTER = @"INVALID_CHARACTER";
+        public const string TYPE_NOT_ALLOWED_FOR_CONDITIONS = @"TYPE_NOT_ALLOWED_FOR_CONDITIONS";
+        public const string OWNER_TYPE_LIMIT_EXCEEDED_FOR_AUTOMATED_COLLECTIONS = @"OWNER_TYPE_LIMIT_EXCEEDED_FOR_AUTOMATED_COLLECTIONS";
+        public const string GRANT_LIMIT_EXCEEDED = @"GRANT_LIMIT_EXCEEDED";
+        public const string INVALID_INPUT_COMBINATION = @"INVALID_INPUT_COMBINATION";
+        public const string INVALID_CAPABILITY = @"INVALID_CAPABILITY";
     }
 
     ///<summary>
@@ -36769,13 +36769,13 @@ namespace shopify
 
     public static class MetafieldDefinitionDeleteUserErrorCodeStringValues
     {
-        public const string PRESENT = "PRESENT";
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
-        public const string REFERENCE_TYPE_DELETION_ERROR = "REFERENCE_TYPE_DELETION_ERROR";
-        public const string RESERVED_NAMESPACE_ORPHANED_METAFIELDS = "RESERVED_NAMESPACE_ORPHANED_METAFIELDS";
-        public const string METAFIELD_DEFINITION_IN_USE = "METAFIELD_DEFINITION_IN_USE";
-        public const string DISALLOWED_OWNER_TYPE = "DISALLOWED_OWNER_TYPE";
+        public const string PRESENT = @"PRESENT";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
+        public const string REFERENCE_TYPE_DELETION_ERROR = @"REFERENCE_TYPE_DELETION_ERROR";
+        public const string RESERVED_NAMESPACE_ORPHANED_METAFIELDS = @"RESERVED_NAMESPACE_ORPHANED_METAFIELDS";
+        public const string METAFIELD_DEFINITION_IN_USE = @"METAFIELD_DEFINITION_IN_USE";
+        public const string DISALLOWED_OWNER_TYPE = @"DISALLOWED_OWNER_TYPE";
     }
 
     ///<summary>
@@ -36856,11 +36856,11 @@ namespace shopify
 
     public static class MetafieldDefinitionPinUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string PINNED_LIMIT_REACHED = "PINNED_LIMIT_REACHED";
-        public const string ALREADY_PINNED = "ALREADY_PINNED";
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
-        public const string DISALLOWED_OWNER_TYPE = "DISALLOWED_OWNER_TYPE";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string PINNED_LIMIT_REACHED = @"PINNED_LIMIT_REACHED";
+        public const string ALREADY_PINNED = @"ALREADY_PINNED";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
+        public const string DISALLOWED_OWNER_TYPE = @"DISALLOWED_OWNER_TYPE";
     }
 
     ///<summary>
@@ -36884,9 +36884,9 @@ namespace shopify
 
     public static class MetafieldDefinitionPinnedStatusStringValues
     {
-        public const string ANY = "ANY";
-        public const string PINNED = "PINNED";
-        public const string UNPINNED = "UNPINNED";
+        public const string ANY = @"ANY";
+        public const string PINNED = @"PINNED";
+        public const string UNPINNED = @"UNPINNED";
     }
 
     ///<summary>
@@ -36915,10 +36915,10 @@ namespace shopify
 
     public static class MetafieldDefinitionSortKeysStringValues
     {
-        public const string ID = "ID";
-        public const string NAME = "NAME";
-        public const string PINNED_POSITION = "PINNED_POSITION";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string ID = @"ID";
+        public const string NAME = @"NAME";
+        public const string PINNED_POSITION = @"PINNED_POSITION";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -37028,10 +37028,10 @@ namespace shopify
 
     public static class MetafieldDefinitionUnpinUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string NOT_PINNED = "NOT_PINNED";
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
-        public const string DISALLOWED_OWNER_TYPE = "DISALLOWED_OWNER_TYPE";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string NOT_PINNED = @"NOT_PINNED";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
+        public const string DISALLOWED_OWNER_TYPE = @"DISALLOWED_OWNER_TYPE";
     }
 
     ///<summary>
@@ -37141,20 +37141,20 @@ namespace shopify
 
     public static class MetafieldDefinitionUpdateUserErrorCodeStringValues
     {
-        public const string PRESENT = "PRESENT";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string INVALID_INPUT = "INVALID_INPUT";
-        public const string PINNED_LIMIT_REACHED = "PINNED_LIMIT_REACHED";
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
-        public const string TYPE_NOT_ALLOWED_FOR_CONDITIONS = "TYPE_NOT_ALLOWED_FOR_CONDITIONS";
-        public const string METAFIELD_DEFINITION_IN_USE = "METAFIELD_DEFINITION_IN_USE";
-        public const string OWNER_TYPE_LIMIT_EXCEEDED_FOR_AUTOMATED_COLLECTIONS = "OWNER_TYPE_LIMIT_EXCEEDED_FOR_AUTOMATED_COLLECTIONS";
-        public const string METAOBJECT_DEFINITION_CHANGED = "METAOBJECT_DEFINITION_CHANGED";
-        public const string GRANT_LIMIT_EXCEEDED = "GRANT_LIMIT_EXCEEDED";
-        public const string INVALID_INPUT_COMBINATION = "INVALID_INPUT_COMBINATION";
-        public const string INVALID_CAPABILITY = "INVALID_CAPABILITY";
-        public const string CAPABILITY_CANNOT_BE_DISABLED = "CAPABILITY_CANNOT_BE_DISABLED";
+        public const string PRESENT = @"PRESENT";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string INVALID_INPUT = @"INVALID_INPUT";
+        public const string PINNED_LIMIT_REACHED = @"PINNED_LIMIT_REACHED";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
+        public const string TYPE_NOT_ALLOWED_FOR_CONDITIONS = @"TYPE_NOT_ALLOWED_FOR_CONDITIONS";
+        public const string METAFIELD_DEFINITION_IN_USE = @"METAFIELD_DEFINITION_IN_USE";
+        public const string OWNER_TYPE_LIMIT_EXCEEDED_FOR_AUTOMATED_COLLECTIONS = @"OWNER_TYPE_LIMIT_EXCEEDED_FOR_AUTOMATED_COLLECTIONS";
+        public const string METAOBJECT_DEFINITION_CHANGED = @"METAOBJECT_DEFINITION_CHANGED";
+        public const string GRANT_LIMIT_EXCEEDED = @"GRANT_LIMIT_EXCEEDED";
+        public const string INVALID_INPUT_COMBINATION = @"INVALID_INPUT_COMBINATION";
+        public const string INVALID_CAPABILITY = @"INVALID_CAPABILITY";
+        public const string CAPABILITY_CANNOT_BE_DISABLED = @"CAPABILITY_CANNOT_BE_DISABLED";
     }
 
     ///<summary>
@@ -37202,9 +37202,9 @@ namespace shopify
 
     public static class MetafieldDefinitionValidationStatusStringValues
     {
-        public const string ALL_VALID = "ALL_VALID";
-        public const string IN_PROGRESS = "IN_PROGRESS";
-        public const string SOME_INVALID = "SOME_INVALID";
+        public const string ALL_VALID = @"ALL_VALID";
+        public const string IN_PROGRESS = @"IN_PROGRESS";
+        public const string SOME_INVALID = @"SOME_INVALID";
     }
 
     ///<summary>
@@ -37254,8 +37254,8 @@ namespace shopify
 
     public static class MetafieldGrantAccessLevelStringValues
     {
-        public const string READ = "READ";
-        public const string READ_WRITE = "READ_WRITE";
+        public const string READ = @"READ";
+        public const string READ_WRITE = @"READ_WRITE";
     }
 
     ///<summary>
@@ -37387,32 +37387,32 @@ namespace shopify
 
     public static class MetafieldOwnerTypeStringValues
     {
-        public const string API_PERMISSION = "API_PERMISSION";
-        public const string COMPANY = "COMPANY";
-        public const string COMPANY_LOCATION = "COMPANY_LOCATION";
-        public const string PAYMENT_CUSTOMIZATION = "PAYMENT_CUSTOMIZATION";
-        public const string VALIDATION = "VALIDATION";
-        public const string CUSTOMER = "CUSTOMER";
-        public const string DELIVERY_CUSTOMIZATION = "DELIVERY_CUSTOMIZATION";
-        public const string DRAFTORDER = "DRAFTORDER";
-        public const string GIFT_CARD_TRANSACTION = "GIFT_CARD_TRANSACTION";
-        public const string MARKET = "MARKET";
-        public const string CARTTRANSFORM = "CARTTRANSFORM";
-        public const string COLLECTION = "COLLECTION";
+        public const string API_PERMISSION = @"API_PERMISSION";
+        public const string COMPANY = @"COMPANY";
+        public const string COMPANY_LOCATION = @"COMPANY_LOCATION";
+        public const string PAYMENT_CUSTOMIZATION = @"PAYMENT_CUSTOMIZATION";
+        public const string VALIDATION = @"VALIDATION";
+        public const string CUSTOMER = @"CUSTOMER";
+        public const string DELIVERY_CUSTOMIZATION = @"DELIVERY_CUSTOMIZATION";
+        public const string DRAFTORDER = @"DRAFTORDER";
+        public const string GIFT_CARD_TRANSACTION = @"GIFT_CARD_TRANSACTION";
+        public const string MARKET = @"MARKET";
+        public const string CARTTRANSFORM = @"CARTTRANSFORM";
+        public const string COLLECTION = @"COLLECTION";
         [Obsolete("`MEDIA_IMAGE` is deprecated.")]
-        public const string MEDIA_IMAGE = "MEDIA_IMAGE";
-        public const string PRODUCT = "PRODUCT";
-        public const string PRODUCTVARIANT = "PRODUCTVARIANT";
-        public const string SELLING_PLAN = "SELLING_PLAN";
-        public const string ARTICLE = "ARTICLE";
-        public const string BLOG = "BLOG";
-        public const string PAGE = "PAGE";
-        public const string FULFILLMENT_CONSTRAINT_RULE = "FULFILLMENT_CONSTRAINT_RULE";
-        public const string ORDER_ROUTING_LOCATION_RULE = "ORDER_ROUTING_LOCATION_RULE";
-        public const string DISCOUNT = "DISCOUNT";
-        public const string ORDER = "ORDER";
-        public const string LOCATION = "LOCATION";
-        public const string SHOP = "SHOP";
+        public const string MEDIA_IMAGE = @"MEDIA_IMAGE";
+        public const string PRODUCT = @"PRODUCT";
+        public const string PRODUCTVARIANT = @"PRODUCTVARIANT";
+        public const string SELLING_PLAN = @"SELLING_PLAN";
+        public const string ARTICLE = @"ARTICLE";
+        public const string BLOG = @"BLOG";
+        public const string PAGE = @"PAGE";
+        public const string FULFILLMENT_CONSTRAINT_RULE = @"FULFILLMENT_CONSTRAINT_RULE";
+        public const string ORDER_ROUTING_LOCATION_RULE = @"ORDER_ROUTING_LOCATION_RULE";
+        public const string DISCOUNT = @"DISCOUNT";
+        public const string ORDER = @"ORDER";
+        public const string LOCATION = @"LOCATION";
+        public const string SHOP = @"SHOP";
     }
 
     ///<summary>
@@ -37627,9 +37627,9 @@ namespace shopify
 
     public static class MetafieldStorefrontAccessStringValues
     {
-        public const string PUBLIC_READ = "PUBLIC_READ";
-        public const string NONE = "NONE";
-        public const string LEGACY_LIQUID_ONLY = "LEGACY_LIQUID_ONLY";
+        public const string PUBLIC_READ = @"PUBLIC_READ";
+        public const string NONE = @"NONE";
+        public const string LEGACY_LIQUID_ONLY = @"LEGACY_LIQUID_ONLY";
     }
 
     ///<summary>
@@ -37650,8 +37650,8 @@ namespace shopify
 
     public static class MetafieldStorefrontAccessInputStringValues
     {
-        public const string PUBLIC_READ = "PUBLIC_READ";
-        public const string NONE = "NONE";
+        public const string PUBLIC_READ = @"PUBLIC_READ";
+        public const string NONE = @"NONE";
     }
 
     ///<summary>
@@ -37780,9 +37780,9 @@ namespace shopify
 
     public static class MetafieldValidationStatusStringValues
     {
-        public const string ANY = "ANY";
-        public const string VALID = "VALID";
-        public const string INVALID = "INVALID";
+        public const string ANY = @"ANY";
+        public const string VALID = @"VALID";
+        public const string INVALID = @"INVALID";
     }
 
     ///<summary>
@@ -37811,10 +37811,10 @@ namespace shopify
 
     public static class MetafieldValueTypeStringValues
     {
-        public const string STRING = "STRING";
-        public const string INTEGER = "INTEGER";
-        public const string JSON_STRING = "JSON_STRING";
-        public const string BOOLEAN = "BOOLEAN";
+        public const string STRING = @"STRING";
+        public const string INTEGER = @"INTEGER";
+        public const string JSON_STRING = @"JSON_STRING";
+        public const string BOOLEAN = @"BOOLEAN";
     }
 
     ///<summary>
@@ -37931,19 +37931,19 @@ namespace shopify
 
     public static class MetafieldsSetUserErrorCodeStringValues
     {
-        public const string CAPABILITY_VIOLATION = "CAPABILITY_VIOLATION";
-        public const string STALE_OBJECT = "STALE_OBJECT";
-        public const string INVALID_COMPARE_DIGEST = "INVALID_COMPARE_DIGEST";
-        public const string INVALID_TYPE = "INVALID_TYPE";
-        public const string INVALID_VALUE = "INVALID_VALUE";
-        public const string APP_NOT_AUTHORIZED = "APP_NOT_AUTHORIZED";
-        public const string INCLUSION = "INCLUSION";
-        public const string PRESENT = "PRESENT";
-        public const string BLANK = "BLANK";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string TOO_SHORT = "TOO_SHORT";
-        public const string LESS_THAN_OR_EQUAL_TO = "LESS_THAN_OR_EQUAL_TO";
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
+        public const string CAPABILITY_VIOLATION = @"CAPABILITY_VIOLATION";
+        public const string STALE_OBJECT = @"STALE_OBJECT";
+        public const string INVALID_COMPARE_DIGEST = @"INVALID_COMPARE_DIGEST";
+        public const string INVALID_TYPE = @"INVALID_TYPE";
+        public const string INVALID_VALUE = @"INVALID_VALUE";
+        public const string APP_NOT_AUTHORIZED = @"APP_NOT_AUTHORIZED";
+        public const string INCLUSION = @"INCLUSION";
+        public const string PRESENT = @"PRESENT";
+        public const string BLANK = @"BLANK";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string TOO_SHORT = @"TOO_SHORT";
+        public const string LESS_THAN_OR_EQUAL_TO = @"LESS_THAN_OR_EQUAL_TO";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
     }
 
     ///<summary>
@@ -38062,11 +38062,11 @@ namespace shopify
 
     public static class MetaobjectAdminAccessStringValues
     {
-        public const string PRIVATE = "PRIVATE";
-        public const string MERCHANT_READ = "MERCHANT_READ";
-        public const string MERCHANT_READ_WRITE = "MERCHANT_READ_WRITE";
-        public const string PUBLIC_READ = "PUBLIC_READ";
-        public const string PUBLIC_READ_WRITE = "PUBLIC_READ_WRITE";
+        public const string PRIVATE = @"PRIVATE";
+        public const string MERCHANT_READ = @"MERCHANT_READ";
+        public const string MERCHANT_READ_WRITE = @"MERCHANT_READ_WRITE";
+        public const string PUBLIC_READ = @"PUBLIC_READ";
+        public const string PUBLIC_READ_WRITE = @"PUBLIC_READ_WRITE";
     }
 
     ///<summary>
@@ -38517,8 +38517,8 @@ namespace shopify
 
     public static class MetaobjectStatusStringValues
     {
-        public const string DRAFT = "DRAFT";
-        public const string ACTIVE = "ACTIVE";
+        public const string DRAFT = @"DRAFT";
+        public const string ACTIVE = @"ACTIVE";
     }
 
     ///<summary>
@@ -38539,8 +38539,8 @@ namespace shopify
 
     public static class MetaobjectStorefrontAccessStringValues
     {
-        public const string NONE = "NONE";
-        public const string PUBLIC_READ = "PUBLIC_READ";
+        public const string NONE = @"NONE";
+        public const string PUBLIC_READ = @"PUBLIC_READ";
     }
 
     ///<summary>
@@ -38740,35 +38740,35 @@ namespace shopify
 
     public static class MetaobjectUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string INCLUSION = "INCLUSION";
-        public const string TAKEN = "TAKEN";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string TOO_SHORT = "TOO_SHORT";
-        public const string PRESENT = "PRESENT";
-        public const string BLANK = "BLANK";
-        public const string INVALID_TYPE = "INVALID_TYPE";
-        public const string INVALID_VALUE = "INVALID_VALUE";
-        public const string INVALID_OPTION = "INVALID_OPTION";
-        public const string DUPLICATE_FIELD_INPUT = "DUPLICATE_FIELD_INPUT";
-        public const string UNDEFINED_OBJECT_TYPE = "UNDEFINED_OBJECT_TYPE";
-        public const string UNDEFINED_OBJECT_FIELD = "UNDEFINED_OBJECT_FIELD";
-        public const string OBJECT_FIELD_TAKEN = "OBJECT_FIELD_TAKEN";
-        public const string OBJECT_FIELD_REQUIRED = "OBJECT_FIELD_REQUIRED";
-        public const string RECORD_NOT_FOUND = "RECORD_NOT_FOUND";
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
-        public const string MAX_DEFINITIONS_EXCEEDED = "MAX_DEFINITIONS_EXCEEDED";
-        public const string MAX_OBJECTS_EXCEEDED = "MAX_OBJECTS_EXCEEDED";
-        public const string IMMUTABLE = "IMMUTABLE";
-        public const string NOT_AUTHORIZED = "NOT_AUTHORIZED";
-        public const string RESERVED_NAME = "RESERVED_NAME";
-        public const string DISPLAY_NAME_CONFLICT = "DISPLAY_NAME_CONFLICT";
-        public const string CAPABILITY_NOT_ENABLED = "CAPABILITY_NOT_ENABLED";
-        public const string URL_HANDLE_TAKEN = "URL_HANDLE_TAKEN";
-        public const string URL_HANDLE_INVALID = "URL_HANDLE_INVALID";
-        public const string URL_HANDLE_BLANK = "URL_HANDLE_BLANK";
-        public const string FIELD_TYPE_INVALID = "FIELD_TYPE_INVALID";
-        public const string MISSING_REQUIRED_KEYS = "MISSING_REQUIRED_KEYS";
+        public const string INVALID = @"INVALID";
+        public const string INCLUSION = @"INCLUSION";
+        public const string TAKEN = @"TAKEN";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string TOO_SHORT = @"TOO_SHORT";
+        public const string PRESENT = @"PRESENT";
+        public const string BLANK = @"BLANK";
+        public const string INVALID_TYPE = @"INVALID_TYPE";
+        public const string INVALID_VALUE = @"INVALID_VALUE";
+        public const string INVALID_OPTION = @"INVALID_OPTION";
+        public const string DUPLICATE_FIELD_INPUT = @"DUPLICATE_FIELD_INPUT";
+        public const string UNDEFINED_OBJECT_TYPE = @"UNDEFINED_OBJECT_TYPE";
+        public const string UNDEFINED_OBJECT_FIELD = @"UNDEFINED_OBJECT_FIELD";
+        public const string OBJECT_FIELD_TAKEN = @"OBJECT_FIELD_TAKEN";
+        public const string OBJECT_FIELD_REQUIRED = @"OBJECT_FIELD_REQUIRED";
+        public const string RECORD_NOT_FOUND = @"RECORD_NOT_FOUND";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
+        public const string MAX_DEFINITIONS_EXCEEDED = @"MAX_DEFINITIONS_EXCEEDED";
+        public const string MAX_OBJECTS_EXCEEDED = @"MAX_OBJECTS_EXCEEDED";
+        public const string IMMUTABLE = @"IMMUTABLE";
+        public const string NOT_AUTHORIZED = @"NOT_AUTHORIZED";
+        public const string RESERVED_NAME = @"RESERVED_NAME";
+        public const string DISPLAY_NAME_CONFLICT = @"DISPLAY_NAME_CONFLICT";
+        public const string CAPABILITY_NOT_ENABLED = @"CAPABILITY_NOT_ENABLED";
+        public const string URL_HANDLE_TAKEN = @"URL_HANDLE_TAKEN";
+        public const string URL_HANDLE_INVALID = @"URL_HANDLE_INVALID";
+        public const string URL_HANDLE_BLANK = @"URL_HANDLE_BLANK";
+        public const string FIELD_TYPE_INVALID = @"FIELD_TYPE_INVALID";
+        public const string MISSING_REQUIRED_KEYS = @"MISSING_REQUIRED_KEYS";
     }
 
     ///<summary>
@@ -38793,9 +38793,9 @@ namespace shopify
 
     public static class MethodDefinitionSortKeysStringValues
     {
-        public const string RATE_PROVIDER_TYPE = "RATE_PROVIDER_TYPE";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string RATE_PROVIDER_TYPE = @"RATE_PROVIDER_TYPE";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -38948,9 +38948,9 @@ namespace shopify
 
     public static class MobilePlatformApplicationUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string TOO_LONG = "TOO_LONG";
+        public const string INVALID = @"INVALID";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string TOO_LONG = @"TOO_LONG";
     }
 
     ///<summary>
@@ -42016,9 +42016,9 @@ namespace shopify
 
     public static class OnlineStoreThemeFileBodyInputTypeStringValues
     {
-        public const string TEXT = "TEXT";
-        public const string BASE64 = "BASE64";
-        public const string URL = "URL";
+        public const string TEXT = @"TEXT";
+        public const string BASE64 = @"BASE64";
+        public const string URL = @"URL";
     }
 
     ///<summary>
@@ -42144,13 +42144,13 @@ namespace shopify
 
     public static class OnlineStoreThemeFileResultTypeStringValues
     {
-        public const string SUCCESS = "SUCCESS";
-        public const string ERROR = "ERROR";
-        public const string CONFLICT = "CONFLICT";
-        public const string UNPROCESSABLE_ENTITY = "UNPROCESSABLE_ENTITY";
-        public const string BAD_REQUEST = "BAD_REQUEST";
-        public const string TIMEOUT = "TIMEOUT";
-        public const string NOT_FOUND = "NOT_FOUND";
+        public const string SUCCESS = @"SUCCESS";
+        public const string ERROR = @"ERROR";
+        public const string CONFLICT = @"CONFLICT";
+        public const string UNPROCESSABLE_ENTITY = @"UNPROCESSABLE_ENTITY";
+        public const string BAD_REQUEST = @"BAD_REQUEST";
+        public const string TIMEOUT = @"TIMEOUT";
+        public const string NOT_FOUND = @"NOT_FOUND";
     }
 
     ///<summary>
@@ -42217,14 +42217,14 @@ namespace shopify
 
     public static class OnlineStoreThemeFilesUserErrorsCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string LESS_THAN_OR_EQUAL_TO = "LESS_THAN_OR_EQUAL_TO";
-        public const string THEME_FILES_CONFLICT = "THEME_FILES_CONFLICT";
-        public const string DUPLICATE_FILE_INPUT = "DUPLICATE_FILE_INPUT";
-        public const string ACCESS_DENIED = "ACCESS_DENIED";
-        public const string THEME_LIMITED_PLAN = "THEME_LIMITED_PLAN";
-        public const string FILE_VALIDATION_ERROR = "FILE_VALIDATION_ERROR";
-        public const string ERROR = "ERROR";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string LESS_THAN_OR_EQUAL_TO = @"LESS_THAN_OR_EQUAL_TO";
+        public const string THEME_FILES_CONFLICT = @"THEME_FILES_CONFLICT";
+        public const string DUPLICATE_FILE_INPUT = @"DUPLICATE_FILE_INPUT";
+        public const string ACCESS_DENIED = @"ACCESS_DENIED";
+        public const string THEME_LIMITED_PLAN = @"THEME_LIMITED_PLAN";
+        public const string FILE_VALIDATION_ERROR = @"FILE_VALIDATION_ERROR";
+        public const string ERROR = @"ERROR";
     }
 
     ///<summary>
@@ -42970,11 +42970,11 @@ namespace shopify
 
     public static class OrderActionTypeStringValues
     {
-        public const string ORDER = "ORDER";
-        public const string ORDER_EDIT = "ORDER_EDIT";
-        public const string REFUND = "REFUND";
-        public const string RETURN = "RETURN";
-        public const string UNKNOWN = "UNKNOWN";
+        public const string ORDER = @"ORDER";
+        public const string ORDER_EDIT = @"ORDER_EDIT";
+        public const string REFUND = @"REFUND";
+        public const string RETURN = @"RETURN";
+        public const string UNKNOWN = @"UNKNOWN";
     }
 
     ///<summary>
@@ -43052,12 +43052,12 @@ namespace shopify
 
     public static class OrderAdjustmentDiscrepancyReasonStringValues
     {
-        public const string RESTOCK = "RESTOCK";
-        public const string DAMAGE = "DAMAGE";
-        public const string CUSTOMER = "CUSTOMER";
-        public const string REFUND_DISCREPANCY = "REFUND_DISCREPANCY";
-        public const string FULL_RETURN_BALANCING_ADJUSTMENT = "FULL_RETURN_BALANCING_ADJUSTMENT";
-        public const string PENDING_REFUND_DISCREPANCY = "PENDING_REFUND_DISCREPANCY";
+        public const string RESTOCK = @"RESTOCK";
+        public const string DAMAGE = @"DAMAGE";
+        public const string CUSTOMER = @"CUSTOMER";
+        public const string REFUND_DISCREPANCY = @"REFUND_DISCREPANCY";
+        public const string FULL_RETURN_BALANCING_ADJUSTMENT = @"FULL_RETURN_BALANCING_ADJUSTMENT";
+        public const string PENDING_REFUND_DISCREPANCY = @"PENDING_REFUND_DISCREPANCY";
     }
 
     ///<summary>
@@ -43100,10 +43100,10 @@ namespace shopify
 
     public static class OrderAdjustmentInputDiscrepancyReasonStringValues
     {
-        public const string RESTOCK = "RESTOCK";
-        public const string DAMAGE = "DAMAGE";
-        public const string CUSTOMER = "CUSTOMER";
-        public const string OTHER = "OTHER";
+        public const string RESTOCK = @"RESTOCK";
+        public const string DAMAGE = @"DAMAGE";
+        public const string CUSTOMER = @"CUSTOMER";
+        public const string OTHER = @"OTHER";
     }
 
     ///<summary>
@@ -43214,12 +43214,12 @@ namespace shopify
 
     public static class OrderCancelReasonStringValues
     {
-        public const string CUSTOMER = "CUSTOMER";
-        public const string DECLINED = "DECLINED";
-        public const string FRAUD = "FRAUD";
-        public const string INVENTORY = "INVENTORY";
-        public const string STAFF = "STAFF";
-        public const string OTHER = "OTHER";
+        public const string CUSTOMER = @"CUSTOMER";
+        public const string DECLINED = @"DECLINED";
+        public const string FRAUD = @"FRAUD";
+        public const string INVENTORY = @"INVENTORY";
+        public const string STAFF = @"STAFF";
+        public const string OTHER = @"OTHER";
     }
 
     ///<summary>
@@ -43262,9 +43262,9 @@ namespace shopify
 
     public static class OrderCancelUserErrorCodeStringValues
     {
-        public const string NO_REFUND_PERMISSION = "NO_REFUND_PERMISSION";
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string INVALID = "INVALID";
+        public const string NO_REFUND_PERMISSION = @"NO_REFUND_PERMISSION";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string INVALID = @"INVALID";
     }
 
     ///<summary>
@@ -43368,14 +43368,14 @@ namespace shopify
 
     public static class OrderCreateFinancialStatusStringValues
     {
-        public const string PENDING = "PENDING";
-        public const string AUTHORIZED = "AUTHORIZED";
-        public const string PARTIALLY_PAID = "PARTIALLY_PAID";
-        public const string PAID = "PAID";
-        public const string PARTIALLY_REFUNDED = "PARTIALLY_REFUNDED";
-        public const string REFUNDED = "REFUNDED";
-        public const string VOIDED = "VOIDED";
-        public const string EXPIRED = "EXPIRED";
+        public const string PENDING = @"PENDING";
+        public const string AUTHORIZED = @"AUTHORIZED";
+        public const string PARTIALLY_PAID = @"PARTIALLY_PAID";
+        public const string PAID = @"PAID";
+        public const string PARTIALLY_REFUNDED = @"PARTIALLY_REFUNDED";
+        public const string REFUNDED = @"REFUNDED";
+        public const string VOIDED = @"VOIDED";
+        public const string EXPIRED = @"EXPIRED";
     }
 
     ///<summary>
@@ -43399,9 +43399,9 @@ namespace shopify
 
     public static class OrderCreateFulfillmentStatusStringValues
     {
-        public const string FULFILLED = "FULFILLED";
-        public const string PARTIAL = "PARTIAL";
-        public const string RESTOCKED = "RESTOCKED";
+        public const string FULFILLED = @"FULFILLED";
+        public const string PARTIAL = @"PARTIAL";
+        public const string RESTOCKED = @"RESTOCKED";
     }
 
     ///<summary>
@@ -43425,9 +43425,9 @@ namespace shopify
 
     public static class OrderCreateInputsInventoryBehaviorStringValues
     {
-        public const string BYPASS = "BYPASS";
-        public const string DECREMENT_IGNORING_POLICY = "DECREMENT_IGNORING_POLICY";
-        public const string DECREMENT_OBEYING_POLICY = "DECREMENT_OBEYING_POLICY";
+        public const string BYPASS = @"BYPASS";
+        public const string DECREMENT_IGNORING_POLICY = @"DECREMENT_IGNORING_POLICY";
+        public const string DECREMENT_OBEYING_POLICY = @"DECREMENT_OBEYING_POLICY";
     }
 
     ///<summary>
@@ -43481,7 +43481,7 @@ namespace shopify
 
     public static class OrderCreateMandatePaymentUserErrorCodeStringValues
     {
-        public const string ORDER_MANDATE_PAYMENT_ERROR_CODE = "ORDER_MANDATE_PAYMENT_ERROR_CODE";
+        public const string ORDER_MANDATE_PAYMENT_ERROR_CODE = @"ORDER_MANDATE_PAYMENT_ERROR_CODE";
     }
 
     ///<summary>
@@ -43547,11 +43547,11 @@ namespace shopify
 
     public static class OrderCreateUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string FULFILLMENT_SERVICE_INVALID = "FULFILLMENT_SERVICE_INVALID";
-        public const string INVENTORY_CLAIM_FAILED = "INVENTORY_CLAIM_FAILED";
-        public const string PROCESSED_AT_INVALID = "PROCESSED_AT_INVALID";
-        public const string TAX_LINE_RATE_MISSING = "TAX_LINE_RATE_MISSING";
+        public const string INVALID = @"INVALID";
+        public const string FULFILLMENT_SERVICE_INVALID = @"FULFILLMENT_SERVICE_INVALID";
+        public const string INVENTORY_CLAIM_FAILED = @"INVENTORY_CLAIM_FAILED";
+        public const string PROCESSED_AT_INVALID = @"PROCESSED_AT_INVALID";
+        public const string TAX_LINE_RATE_MISSING = @"TAX_LINE_RATE_MISSING";
     }
 
     ///<summary>
@@ -43605,8 +43605,8 @@ namespace shopify
 
     public static class OrderDeleteUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string INVALID = "INVALID";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string INVALID = @"INVALID";
     }
 
     ///<summary>
@@ -43650,14 +43650,14 @@ namespace shopify
 
     public static class OrderDisplayFinancialStatusStringValues
     {
-        public const string PENDING = "PENDING";
-        public const string AUTHORIZED = "AUTHORIZED";
-        public const string PARTIALLY_PAID = "PARTIALLY_PAID";
-        public const string PARTIALLY_REFUNDED = "PARTIALLY_REFUNDED";
-        public const string VOIDED = "VOIDED";
-        public const string PAID = "PAID";
-        public const string REFUNDED = "REFUNDED";
-        public const string EXPIRED = "EXPIRED";
+        public const string PENDING = @"PENDING";
+        public const string AUTHORIZED = @"AUTHORIZED";
+        public const string PARTIALLY_PAID = @"PARTIALLY_PAID";
+        public const string PARTIALLY_REFUNDED = @"PARTIALLY_REFUNDED";
+        public const string VOIDED = @"VOIDED";
+        public const string PAID = @"PAID";
+        public const string REFUNDED = @"REFUNDED";
+        public const string EXPIRED = @"EXPIRED";
     }
 
     ///<summary>
@@ -43709,16 +43709,16 @@ namespace shopify
 
     public static class OrderDisplayFulfillmentStatusStringValues
     {
-        public const string UNFULFILLED = "UNFULFILLED";
-        public const string PARTIALLY_FULFILLED = "PARTIALLY_FULFILLED";
-        public const string FULFILLED = "FULFILLED";
-        public const string RESTOCKED = "RESTOCKED";
-        public const string PENDING_FULFILLMENT = "PENDING_FULFILLMENT";
-        public const string OPEN = "OPEN";
-        public const string IN_PROGRESS = "IN_PROGRESS";
-        public const string ON_HOLD = "ON_HOLD";
-        public const string SCHEDULED = "SCHEDULED";
-        public const string REQUEST_DECLINED = "REQUEST_DECLINED";
+        public const string UNFULFILLED = @"UNFULFILLED";
+        public const string PARTIALLY_FULFILLED = @"PARTIALLY_FULFILLED";
+        public const string FULFILLED = @"FULFILLED";
+        public const string RESTOCKED = @"RESTOCKED";
+        public const string PENDING_FULFILLMENT = @"PENDING_FULFILLMENT";
+        public const string OPEN = @"OPEN";
+        public const string IN_PROGRESS = @"IN_PROGRESS";
+        public const string ON_HOLD = @"ON_HOLD";
+        public const string SCHEDULED = @"SCHEDULED";
+        public const string REQUEST_DECLINED = @"REQUEST_DECLINED";
     }
 
     ///<summary>
@@ -43850,7 +43850,7 @@ namespace shopify
 
     public static class OrderEditAddShippingLineUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
+        public const string INVALID = @"INVALID";
     }
 
     ///<summary>
@@ -43982,7 +43982,7 @@ namespace shopify
 
     public static class OrderEditRemoveDiscountUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
+        public const string INVALID = @"INVALID";
     }
 
     ///<summary>
@@ -44052,7 +44052,7 @@ namespace shopify
 
     public static class OrderEditRemoveShippingLineUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
+        public const string INVALID = @"INVALID";
     }
 
     ///<summary>
@@ -44121,7 +44121,7 @@ namespace shopify
 
     public static class OrderEditUpdateDiscountUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
+        public const string INVALID = @"INVALID";
     }
 
     ///<summary>
@@ -44171,7 +44171,7 @@ namespace shopify
 
     public static class OrderEditUpdateShippingLineUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
+        public const string INVALID = @"INVALID";
     }
 
     ///<summary>
@@ -44221,7 +44221,7 @@ namespace shopify
 
     public static class OrderInvoiceSendUserErrorCodeStringValues
     {
-        public const string ORDER_INVOICE_SEND_UNSUCCESSFUL = "ORDER_INVOICE_SEND_UNSUCCESSFUL";
+        public const string ORDER_INVOICE_SEND_UNSUCCESSFUL = @"ORDER_INVOICE_SEND_UNSUCCESSFUL";
     }
 
     ///<summary>
@@ -44357,19 +44357,19 @@ namespace shopify
 
     public static class OrderPaymentStatusResultStringValues
     {
-        public const string SUCCESS = "SUCCESS";
-        public const string AUTHORIZED = "AUTHORIZED";
-        public const string VOIDED = "VOIDED";
-        public const string REFUNDED = "REFUNDED";
-        public const string CAPTURED = "CAPTURED";
-        public const string PURCHASED = "PURCHASED";
-        public const string ERROR = "ERROR";
-        public const string PROCESSING = "PROCESSING";
-        public const string REDIRECT_REQUIRED = "REDIRECT_REQUIRED";
-        public const string RETRYABLE = "RETRYABLE";
-        public const string UNKNOWN = "UNKNOWN";
-        public const string INITIATED = "INITIATED";
-        public const string PENDING = "PENDING";
+        public const string SUCCESS = @"SUCCESS";
+        public const string AUTHORIZED = @"AUTHORIZED";
+        public const string VOIDED = @"VOIDED";
+        public const string REFUNDED = @"REFUNDED";
+        public const string CAPTURED = @"CAPTURED";
+        public const string PURCHASED = @"PURCHASED";
+        public const string ERROR = @"ERROR";
+        public const string PROCESSING = @"PROCESSING";
+        public const string REDIRECT_REQUIRED = @"REDIRECT_REQUIRED";
+        public const string RETRYABLE = @"RETRYABLE";
+        public const string UNKNOWN = @"UNKNOWN";
+        public const string INITIATED = @"INITIATED";
+        public const string PENDING = @"PENDING";
     }
 
     ///<summary>
@@ -44407,12 +44407,12 @@ namespace shopify
 
     public static class OrderReturnStatusStringValues
     {
-        public const string IN_PROGRESS = "IN_PROGRESS";
-        public const string INSPECTION_COMPLETE = "INSPECTION_COMPLETE";
-        public const string NO_RETURN = "NO_RETURN";
-        public const string RETURNED = "RETURNED";
-        public const string RETURN_FAILED = "RETURN_FAILED";
-        public const string RETURN_REQUESTED = "RETURN_REQUESTED";
+        public const string IN_PROGRESS = @"IN_PROGRESS";
+        public const string INSPECTION_COMPLETE = @"INSPECTION_COMPLETE";
+        public const string NO_RETURN = @"NO_RETURN";
+        public const string RETURNED = @"RETURNED";
+        public const string RETURN_FAILED = @"RETURN_FAILED";
+        public const string RETURN_REQUESTED = @"RETURN_REQUESTED";
     }
 
     ///<summary>
@@ -44522,10 +44522,10 @@ namespace shopify
 
     public static class OrderRiskAssessmentCreateUserErrorCodeStringValues
     {
-        public const string TOO_MANY_FACTS = "TOO_MANY_FACTS";
-        public const string ORDER_ALREADY_FULFILLED = "ORDER_ALREADY_FULFILLED";
-        public const string INVALID = "INVALID";
-        public const string NOT_FOUND = "NOT_FOUND";
+        public const string TOO_MANY_FACTS = @"TOO_MANY_FACTS";
+        public const string ORDER_ALREADY_FULFILLED = @"ORDER_ALREADY_FULFILLED";
+        public const string INVALID = @"INVALID";
+        public const string NOT_FOUND = @"NOT_FOUND";
     }
 
     ///<summary>
@@ -44549,9 +44549,9 @@ namespace shopify
 
     public static class OrderRiskLevelStringValues
     {
-        public const string LOW = "LOW";
-        public const string MEDIUM = "MEDIUM";
-        public const string HIGH = "HIGH";
+        public const string LOW = @"LOW";
+        public const string MEDIUM = @"MEDIUM";
+        public const string HIGH = @"HIGH";
     }
 
     ///<summary>
@@ -44579,10 +44579,10 @@ namespace shopify
 
     public static class OrderRiskRecommendationResultStringValues
     {
-        public const string CANCEL = "CANCEL";
-        public const string INVESTIGATE = "INVESTIGATE";
-        public const string ACCEPT = "ACCEPT";
-        public const string NONE = "NONE";
+        public const string CANCEL = @"CANCEL";
+        public const string INVESTIGATE = @"INVESTIGATE";
+        public const string ACCEPT = @"ACCEPT";
+        public const string NONE = @"NONE";
     }
 
     ///<summary>
@@ -44662,19 +44662,19 @@ namespace shopify
 
     public static class OrderSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string CUSTOMER_NAME = "CUSTOMER_NAME";
-        public const string DESTINATION = "DESTINATION";
-        public const string FINANCIAL_STATUS = "FINANCIAL_STATUS";
-        public const string FULFILLMENT_STATUS = "FULFILLMENT_STATUS";
-        public const string ORDER_NUMBER = "ORDER_NUMBER";
-        public const string PROCESSED_AT = "PROCESSED_AT";
-        public const string TOTAL_ITEMS_QUANTITY = "TOTAL_ITEMS_QUANTITY";
-        public const string TOTAL_PRICE = "TOTAL_PRICE";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string PO_NUMBER = "PO_NUMBER";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string CUSTOMER_NAME = @"CUSTOMER_NAME";
+        public const string DESTINATION = @"DESTINATION";
+        public const string FINANCIAL_STATUS = @"FINANCIAL_STATUS";
+        public const string FULFILLMENT_STATUS = @"FULFILLMENT_STATUS";
+        public const string ORDER_NUMBER = @"ORDER_NUMBER";
+        public const string PROCESSED_AT = @"PROCESSED_AT";
+        public const string TOTAL_ITEMS_QUANTITY = @"TOTAL_ITEMS_QUANTITY";
+        public const string TOTAL_PRICE = @"TOTAL_PRICE";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string PO_NUMBER = @"PO_NUMBER";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -45173,33 +45173,33 @@ namespace shopify
 
     public static class OrderTransactionErrorCodeStringValues
     {
-        public const string INCORRECT_NUMBER = "INCORRECT_NUMBER";
-        public const string INVALID_NUMBER = "INVALID_NUMBER";
-        public const string INVALID_EXPIRY_DATE = "INVALID_EXPIRY_DATE";
-        public const string INVALID_CVC = "INVALID_CVC";
-        public const string EXPIRED_CARD = "EXPIRED_CARD";
-        public const string INCORRECT_CVC = "INCORRECT_CVC";
-        public const string INCORRECT_ZIP = "INCORRECT_ZIP";
-        public const string INCORRECT_ADDRESS = "INCORRECT_ADDRESS";
-        public const string INCORRECT_PIN = "INCORRECT_PIN";
-        public const string CARD_DECLINED = "CARD_DECLINED";
-        public const string PROCESSING_ERROR = "PROCESSING_ERROR";
-        public const string CALL_ISSUER = "CALL_ISSUER";
-        public const string PICK_UP_CARD = "PICK_UP_CARD";
-        public const string CONFIG_ERROR = "CONFIG_ERROR";
-        public const string TEST_MODE_LIVE_CARD = "TEST_MODE_LIVE_CARD";
-        public const string UNSUPPORTED_FEATURE = "UNSUPPORTED_FEATURE";
-        public const string GENERIC_ERROR = "GENERIC_ERROR";
-        public const string INVALID_COUNTRY = "INVALID_COUNTRY";
-        public const string INVALID_AMOUNT = "INVALID_AMOUNT";
-        public const string PAYMENT_METHOD_UNAVAILABLE = "PAYMENT_METHOD_UNAVAILABLE";
-        public const string AMAZON_PAYMENTS_INVALID_PAYMENT_METHOD = "AMAZON_PAYMENTS_INVALID_PAYMENT_METHOD";
-        public const string AMAZON_PAYMENTS_MAX_AMOUNT_CHARGED = "AMAZON_PAYMENTS_MAX_AMOUNT_CHARGED";
-        public const string AMAZON_PAYMENTS_MAX_AMOUNT_REFUNDED = "AMAZON_PAYMENTS_MAX_AMOUNT_REFUNDED";
-        public const string AMAZON_PAYMENTS_MAX_AUTHORIZATIONS_CAPTURED = "AMAZON_PAYMENTS_MAX_AUTHORIZATIONS_CAPTURED";
-        public const string AMAZON_PAYMENTS_MAX_REFUNDS_PROCESSED = "AMAZON_PAYMENTS_MAX_REFUNDS_PROCESSED";
-        public const string AMAZON_PAYMENTS_ORDER_REFERENCE_CANCELED = "AMAZON_PAYMENTS_ORDER_REFERENCE_CANCELED";
-        public const string AMAZON_PAYMENTS_STALE = "AMAZON_PAYMENTS_STALE";
+        public const string INCORRECT_NUMBER = @"INCORRECT_NUMBER";
+        public const string INVALID_NUMBER = @"INVALID_NUMBER";
+        public const string INVALID_EXPIRY_DATE = @"INVALID_EXPIRY_DATE";
+        public const string INVALID_CVC = @"INVALID_CVC";
+        public const string EXPIRED_CARD = @"EXPIRED_CARD";
+        public const string INCORRECT_CVC = @"INCORRECT_CVC";
+        public const string INCORRECT_ZIP = @"INCORRECT_ZIP";
+        public const string INCORRECT_ADDRESS = @"INCORRECT_ADDRESS";
+        public const string INCORRECT_PIN = @"INCORRECT_PIN";
+        public const string CARD_DECLINED = @"CARD_DECLINED";
+        public const string PROCESSING_ERROR = @"PROCESSING_ERROR";
+        public const string CALL_ISSUER = @"CALL_ISSUER";
+        public const string PICK_UP_CARD = @"PICK_UP_CARD";
+        public const string CONFIG_ERROR = @"CONFIG_ERROR";
+        public const string TEST_MODE_LIVE_CARD = @"TEST_MODE_LIVE_CARD";
+        public const string UNSUPPORTED_FEATURE = @"UNSUPPORTED_FEATURE";
+        public const string GENERIC_ERROR = @"GENERIC_ERROR";
+        public const string INVALID_COUNTRY = @"INVALID_COUNTRY";
+        public const string INVALID_AMOUNT = @"INVALID_AMOUNT";
+        public const string PAYMENT_METHOD_UNAVAILABLE = @"PAYMENT_METHOD_UNAVAILABLE";
+        public const string AMAZON_PAYMENTS_INVALID_PAYMENT_METHOD = @"AMAZON_PAYMENTS_INVALID_PAYMENT_METHOD";
+        public const string AMAZON_PAYMENTS_MAX_AMOUNT_CHARGED = @"AMAZON_PAYMENTS_MAX_AMOUNT_CHARGED";
+        public const string AMAZON_PAYMENTS_MAX_AMOUNT_REFUNDED = @"AMAZON_PAYMENTS_MAX_AMOUNT_REFUNDED";
+        public const string AMAZON_PAYMENTS_MAX_AUTHORIZATIONS_CAPTURED = @"AMAZON_PAYMENTS_MAX_AUTHORIZATIONS_CAPTURED";
+        public const string AMAZON_PAYMENTS_MAX_REFUNDS_PROCESSED = @"AMAZON_PAYMENTS_MAX_REFUNDS_PROCESSED";
+        public const string AMAZON_PAYMENTS_ORDER_REFERENCE_CANCELED = @"AMAZON_PAYMENTS_ORDER_REFERENCE_CANCELED";
+        public const string AMAZON_PAYMENTS_STALE = @"AMAZON_PAYMENTS_STALE";
     }
 
     ///<summary>
@@ -45245,14 +45245,14 @@ namespace shopify
 
     public static class OrderTransactionKindStringValues
     {
-        public const string SALE = "SALE";
-        public const string CAPTURE = "CAPTURE";
-        public const string AUTHORIZATION = "AUTHORIZATION";
-        public const string VOID = "VOID";
-        public const string REFUND = "REFUND";
-        public const string CHANGE = "CHANGE";
-        public const string EMV_AUTHORIZATION = "EMV_AUTHORIZATION";
-        public const string SUGGESTED_REFUND = "SUGGESTED_REFUND";
+        public const string SALE = @"SALE";
+        public const string CAPTURE = @"CAPTURE";
+        public const string AUTHORIZATION = @"AUTHORIZATION";
+        public const string VOID = @"VOID";
+        public const string REFUND = @"REFUND";
+        public const string CHANGE = @"CHANGE";
+        public const string EMV_AUTHORIZATION = @"EMV_AUTHORIZATION";
+        public const string SUGGESTED_REFUND = @"SUGGESTED_REFUND";
     }
 
     ///<summary>
@@ -45288,12 +45288,12 @@ namespace shopify
 
     public static class OrderTransactionStatusStringValues
     {
-        public const string SUCCESS = "SUCCESS";
-        public const string FAILURE = "FAILURE";
-        public const string PENDING = "PENDING";
-        public const string ERROR = "ERROR";
-        public const string AWAITING_RESPONSE = "AWAITING_RESPONSE";
-        public const string UNKNOWN = "UNKNOWN";
+        public const string SUCCESS = @"SUCCESS";
+        public const string FAILURE = @"FAILURE";
+        public const string PENDING = @"PENDING";
+        public const string ERROR = @"ERROR";
+        public const string AWAITING_RESPONSE = @"AWAITING_RESPONSE";
+        public const string UNKNOWN = @"UNKNOWN";
     }
 
     ///<summary>
@@ -45483,11 +45483,11 @@ namespace shopify
 
     public static class PageCreateUserErrorCodeStringValues
     {
-        public const string INVALID_PUBLISH_DATE = "INVALID_PUBLISH_DATE";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string TAKEN = "TAKEN";
-        public const string INVALID_VALUE = "INVALID_VALUE";
-        public const string INVALID_TYPE = "INVALID_TYPE";
+        public const string INVALID_PUBLISH_DATE = @"INVALID_PUBLISH_DATE";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string TAKEN = @"TAKEN";
+        public const string INVALID_VALUE = @"INVALID_VALUE";
+        public const string INVALID_TYPE = @"INVALID_TYPE";
     }
 
     ///<summary>
@@ -45537,7 +45537,7 @@ namespace shopify
 
     public static class PageDeleteUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
+        public const string NOT_FOUND = @"NOT_FOUND";
     }
 
     ///<summary>
@@ -45618,11 +45618,11 @@ namespace shopify
 
     public static class PageUpdateUserErrorCodeStringValues
     {
-        public const string INVALID_PUBLISH_DATE = "INVALID_PUBLISH_DATE";
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string BLANK = "BLANK";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string TAKEN = "TAKEN";
+        public const string INVALID_PUBLISH_DATE = @"INVALID_PUBLISH_DATE";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string BLANK = @"BLANK";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string TAKEN = @"TAKEN";
     }
 
     ///<summary>
@@ -45836,17 +45836,17 @@ namespace shopify
 
     public static class PaymentCustomizationErrorCodeStringValues
     {
-        public const string CUSTOM_APP_FUNCTION_NOT_ELIGIBLE = "CUSTOM_APP_FUNCTION_NOT_ELIGIBLE";
-        public const string FUNCTION_DOES_NOT_IMPLEMENT = "FUNCTION_DOES_NOT_IMPLEMENT";
-        public const string FUNCTION_NOT_FOUND = "FUNCTION_NOT_FOUND";
-        public const string FUNCTION_PENDING_DELETION = "FUNCTION_PENDING_DELETION";
-        public const string INVALID = "INVALID";
-        public const string PAYMENT_CUSTOMIZATION_NOT_FOUND = "PAYMENT_CUSTOMIZATION_NOT_FOUND";
-        public const string PAYMENT_CUSTOMIZATION_FUNCTION_NOT_ELIGIBLE = "PAYMENT_CUSTOMIZATION_FUNCTION_NOT_ELIGIBLE";
-        public const string MAXIMUM_ACTIVE_PAYMENT_CUSTOMIZATIONS = "MAXIMUM_ACTIVE_PAYMENT_CUSTOMIZATIONS";
-        public const string REQUIRED_INPUT_FIELD = "REQUIRED_INPUT_FIELD";
-        public const string INVALID_METAFIELDS = "INVALID_METAFIELDS";
-        public const string FUNCTION_ID_CANNOT_BE_CHANGED = "FUNCTION_ID_CANNOT_BE_CHANGED";
+        public const string CUSTOM_APP_FUNCTION_NOT_ELIGIBLE = @"CUSTOM_APP_FUNCTION_NOT_ELIGIBLE";
+        public const string FUNCTION_DOES_NOT_IMPLEMENT = @"FUNCTION_DOES_NOT_IMPLEMENT";
+        public const string FUNCTION_NOT_FOUND = @"FUNCTION_NOT_FOUND";
+        public const string FUNCTION_PENDING_DELETION = @"FUNCTION_PENDING_DELETION";
+        public const string INVALID = @"INVALID";
+        public const string PAYMENT_CUSTOMIZATION_NOT_FOUND = @"PAYMENT_CUSTOMIZATION_NOT_FOUND";
+        public const string PAYMENT_CUSTOMIZATION_FUNCTION_NOT_ELIGIBLE = @"PAYMENT_CUSTOMIZATION_FUNCTION_NOT_ELIGIBLE";
+        public const string MAXIMUM_ACTIVE_PAYMENT_CUSTOMIZATIONS = @"MAXIMUM_ACTIVE_PAYMENT_CUSTOMIZATIONS";
+        public const string REQUIRED_INPUT_FIELD = @"REQUIRED_INPUT_FIELD";
+        public const string INVALID_METAFIELDS = @"INVALID_METAFIELDS";
+        public const string FUNCTION_ID_CANNOT_BE_CHANGED = @"FUNCTION_ID_CANNOT_BE_CHANGED";
     }
 
     ///<summary>
@@ -45953,24 +45953,24 @@ namespace shopify
 
     public static class PaymentMethodsStringValues
     {
-        public const string VISA = "VISA";
-        public const string MASTERCARD = "MASTERCARD";
-        public const string DISCOVER = "DISCOVER";
-        public const string AMERICAN_EXPRESS = "AMERICAN_EXPRESS";
-        public const string DINERS_CLUB = "DINERS_CLUB";
-        public const string JCB = "JCB";
-        public const string UNIONPAY = "UNIONPAY";
-        public const string ELO = "ELO";
-        public const string DANKORT = "DANKORT";
-        public const string MAESTRO = "MAESTRO";
-        public const string FORBRUGSFORENINGEN = "FORBRUGSFORENINGEN";
-        public const string PAYPAL = "PAYPAL";
-        public const string BOGUS = "BOGUS";
-        public const string BITCOIN = "BITCOIN";
-        public const string LITECOIN = "LITECOIN";
-        public const string DOGECOIN = "DOGECOIN";
-        public const string INTERAC = "INTERAC";
-        public const string EFTPOS = "EFTPOS";
+        public const string VISA = @"VISA";
+        public const string MASTERCARD = @"MASTERCARD";
+        public const string DISCOVER = @"DISCOVER";
+        public const string AMERICAN_EXPRESS = @"AMERICAN_EXPRESS";
+        public const string DINERS_CLUB = @"DINERS_CLUB";
+        public const string JCB = @"JCB";
+        public const string UNIONPAY = @"UNIONPAY";
+        public const string ELO = @"ELO";
+        public const string DANKORT = @"DANKORT";
+        public const string MAESTRO = @"MAESTRO";
+        public const string FORBRUGSFORENINGEN = @"FORBRUGSFORENINGEN";
+        public const string PAYPAL = @"PAYPAL";
+        public const string BOGUS = @"BOGUS";
+        public const string BITCOIN = @"BITCOIN";
+        public const string LITECOIN = @"LITECOIN";
+        public const string DOGECOIN = @"DOGECOIN";
+        public const string INTERAC = @"INTERAC";
+        public const string EFTPOS = @"EFTPOS";
     }
 
     ///<summary>
@@ -46020,7 +46020,7 @@ namespace shopify
 
     public static class PaymentReminderSendUserErrorCodeStringValues
     {
-        public const string PAYMENT_REMINDER_SEND_UNSUCCESSFUL = "PAYMENT_REMINDER_SEND_UNSUCCESSFUL";
+        public const string PAYMENT_REMINDER_SEND_UNSUCCESSFUL = @"PAYMENT_REMINDER_SEND_UNSUCCESSFUL";
     }
 
     ///<summary>
@@ -46189,7 +46189,7 @@ namespace shopify
 
     public static class PaymentTermsCreateUserErrorCodeStringValues
     {
-        public const string PAYMENT_TERMS_CREATION_UNSUCCESSFUL = "PAYMENT_TERMS_CREATION_UNSUCCESSFUL";
+        public const string PAYMENT_TERMS_CREATION_UNSUCCESSFUL = @"PAYMENT_TERMS_CREATION_UNSUCCESSFUL";
     }
 
     ///<summary>
@@ -46239,7 +46239,7 @@ namespace shopify
 
     public static class PaymentTermsDeleteUserErrorCodeStringValues
     {
-        public const string PAYMENT_TERMS_DELETE_UNSUCCESSFUL = "PAYMENT_TERMS_DELETE_UNSUCCESSFUL";
+        public const string PAYMENT_TERMS_DELETE_UNSUCCESSFUL = @"PAYMENT_TERMS_DELETE_UNSUCCESSFUL";
     }
 
     ///<summary>
@@ -46302,11 +46302,11 @@ namespace shopify
 
     public static class PaymentTermsTypeStringValues
     {
-        public const string RECEIPT = "RECEIPT";
-        public const string NET = "NET";
-        public const string FIXED = "FIXED";
-        public const string FULFILLMENT = "FULFILLMENT";
-        public const string UNKNOWN = "UNKNOWN";
+        public const string RECEIPT = @"RECEIPT";
+        public const string NET = @"NET";
+        public const string FIXED = @"FIXED";
+        public const string FULFILLMENT = @"FULFILLMENT";
+        public const string UNKNOWN = @"UNKNOWN";
     }
 
     ///<summary>
@@ -46356,7 +46356,7 @@ namespace shopify
 
     public static class PaymentTermsUpdateUserErrorCodeStringValues
     {
-        public const string PAYMENT_TERMS_UPDATE_UNSUCCESSFUL = "PAYMENT_TERMS_UPDATE_UNSUCCESSFUL";
+        public const string PAYMENT_TERMS_UPDATE_UNSUCCESSFUL = @"PAYMENT_TERMS_UPDATE_UNSUCCESSFUL";
     }
 
     ///<summary>
@@ -46417,18 +46417,18 @@ namespace shopify
 
     public static class PayoutSortKeysStringValues
     {
-        public const string ISSUED_AT = "ISSUED_AT";
-        public const string STATUS = "STATUS";
-        public const string CHARGE_GROSS = "CHARGE_GROSS";
-        public const string REFUND_GROSS = "REFUND_GROSS";
-        public const string ADJUSTMENT_GROSS = "ADJUSTMENT_GROSS";
-        public const string DUTIES_GROSS = "DUTIES_GROSS";
-        public const string ADVANCE_GROSS = "ADVANCE_GROSS";
-        public const string SHIPPING_LABEL_GROSS = "SHIPPING_LABEL_GROSS";
-        public const string FEE_AMOUNT = "FEE_AMOUNT";
-        public const string AMOUNT = "AMOUNT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string ISSUED_AT = @"ISSUED_AT";
+        public const string STATUS = @"STATUS";
+        public const string CHARGE_GROSS = @"CHARGE_GROSS";
+        public const string REFUND_GROSS = @"REFUND_GROSS";
+        public const string ADJUSTMENT_GROSS = @"ADJUSTMENT_GROSS";
+        public const string DUTIES_GROSS = @"DUTIES_GROSS";
+        public const string ADVANCE_GROSS = @"ADVANCE_GROSS";
+        public const string SHIPPING_LABEL_GROSS = @"SHIPPING_LABEL_GROSS";
+        public const string FEE_AMOUNT = @"FEE_AMOUNT";
+        public const string AMOUNT = @"AMOUNT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -46452,9 +46452,9 @@ namespace shopify
 
     public static class PaypalExpressSubscriptionsGatewayStatusStringValues
     {
-        public const string ENABLED = "ENABLED";
-        public const string DISABLED = "DISABLED";
-        public const string PENDING = "PENDING";
+        public const string ENABLED = @"ENABLED";
+        public const string DISABLED = @"DISABLED";
+        public const string PENDING = @"PENDING";
     }
 
     ///<summary>
@@ -46478,9 +46478,9 @@ namespace shopify
 
     public static class PriceCalculationTypeStringValues
     {
-        public const string COMPONENTS_SUM = "COMPONENTS_SUM";
-        public const string FIXED = "FIXED";
-        public const string NONE = "NONE";
+        public const string COMPONENTS_SUM = @"COMPONENTS_SUM";
+        public const string FIXED = @"FIXED";
+        public const string NONE = @"NONE";
     }
 
     ///<summary>
@@ -46575,8 +46575,8 @@ namespace shopify
 
     public static class PriceListAdjustmentTypeStringValues
     {
-        public const string PERCENTAGE_DECREASE = "PERCENTAGE_DECREASE";
-        public const string PERCENTAGE_INCREASE = "PERCENTAGE_INCREASE";
+        public const string PERCENTAGE_DECREASE = @"PERCENTAGE_DECREASE";
+        public const string PERCENTAGE_INCREASE = @"PERCENTAGE_INCREASE";
     }
 
     ///<summary>
@@ -46596,8 +46596,8 @@ namespace shopify
 
     public static class PriceListCompareAtModeStringValues
     {
-        public const string ADJUSTED = "ADJUSTED";
-        public const string NULLIFY = "NULLIFY";
+        public const string ADJUSTED = @"ADJUSTED";
+        public const string NULLIFY = @"NULLIFY";
     }
 
     ///<summary>
@@ -46735,13 +46735,13 @@ namespace shopify
 
     public static class PriceListFixedPricesByProductBulkUpdateUserErrorCodeStringValues
     {
-        public const string NO_UPDATE_OPERATIONS_SPECIFIED = "NO_UPDATE_OPERATIONS_SPECIFIED";
-        public const string PRICES_TO_ADD_CURRENCY_MISMATCH = "PRICES_TO_ADD_CURRENCY_MISMATCH";
-        public const string PRICE_LIST_DOES_NOT_EXIST = "PRICE_LIST_DOES_NOT_EXIST";
-        public const string DUPLICATE_ID_IN_INPUT = "DUPLICATE_ID_IN_INPUT";
-        public const string ID_MUST_BE_MUTUALLY_EXCLUSIVE = "ID_MUST_BE_MUTUALLY_EXCLUSIVE";
-        public const string PRODUCT_DOES_NOT_EXIST = "PRODUCT_DOES_NOT_EXIST";
-        public const string PRICE_LIMIT_EXCEEDED = "PRICE_LIMIT_EXCEEDED";
+        public const string NO_UPDATE_OPERATIONS_SPECIFIED = @"NO_UPDATE_OPERATIONS_SPECIFIED";
+        public const string PRICES_TO_ADD_CURRENCY_MISMATCH = @"PRICES_TO_ADD_CURRENCY_MISMATCH";
+        public const string PRICE_LIST_DOES_NOT_EXIST = @"PRICE_LIST_DOES_NOT_EXIST";
+        public const string DUPLICATE_ID_IN_INPUT = @"DUPLICATE_ID_IN_INPUT";
+        public const string ID_MUST_BE_MUTUALLY_EXCLUSIVE = @"ID_MUST_BE_MUTUALLY_EXCLUSIVE";
+        public const string PRODUCT_DOES_NOT_EXIST = @"PRODUCT_DOES_NOT_EXIST";
+        public const string PRICE_LIMIT_EXCEEDED = @"PRICE_LIMIT_EXCEEDED";
     }
 
     ///<summary>
@@ -46904,8 +46904,8 @@ namespace shopify
 
     public static class PriceListPriceOriginTypeStringValues
     {
-        public const string FIXED = "FIXED";
-        public const string RELATIVE = "RELATIVE";
+        public const string FIXED = @"FIXED";
+        public const string RELATIVE = @"RELATIVE";
     }
 
     ///<summary>
@@ -46956,11 +46956,11 @@ namespace shopify
 
     public static class PriceListPriceUserErrorCodeStringValues
     {
-        public const string BLANK = "BLANK";
-        public const string PRICE_LIST_NOT_FOUND = "PRICE_LIST_NOT_FOUND";
-        public const string PRICE_LIST_CURRENCY_MISMATCH = "PRICE_LIST_CURRENCY_MISMATCH";
-        public const string VARIANT_NOT_FOUND = "VARIANT_NOT_FOUND";
-        public const string PRICE_NOT_FIXED = "PRICE_NOT_FIXED";
+        public const string BLANK = @"BLANK";
+        public const string PRICE_LIST_NOT_FOUND = @"PRICE_LIST_NOT_FOUND";
+        public const string PRICE_LIST_CURRENCY_MISMATCH = @"PRICE_LIST_CURRENCY_MISMATCH";
+        public const string VARIANT_NOT_FOUND = @"VARIANT_NOT_FOUND";
+        public const string PRICE_NOT_FIXED = @"PRICE_NOT_FIXED";
     }
 
     ///<summary>
@@ -46985,9 +46985,9 @@ namespace shopify
 
     public static class PriceListSortKeysStringValues
     {
-        public const string NAME = "NAME";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string NAME = @"NAME";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -47158,38 +47158,38 @@ namespace shopify
 
     public static class PriceListUserErrorCodeStringValues
     {
-        public const string TAKEN = "TAKEN";
-        public const string BLANK = "BLANK";
-        public const string INCLUSION = "INCLUSION";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string PRICE_LIST_NOT_FOUND = "PRICE_LIST_NOT_FOUND";
-        public const string PRICE_LIST_LOCKED = "PRICE_LIST_LOCKED";
+        public const string TAKEN = @"TAKEN";
+        public const string BLANK = @"BLANK";
+        public const string INCLUSION = @"INCLUSION";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string PRICE_LIST_NOT_FOUND = @"PRICE_LIST_NOT_FOUND";
+        public const string PRICE_LIST_LOCKED = @"PRICE_LIST_LOCKED";
         [Obsolete("The limit is removed.")]
-        public const string CONTEXT_RULE_LIMIT_REACHED = "CONTEXT_RULE_LIMIT_REACHED";
-        public const string CONTEXT_RULE_COUNTRIES_LIMIT = "CONTEXT_RULE_COUNTRIES_LIMIT";
-        public const string CURRENCY_COUNTRY_MISMATCH = "CURRENCY_COUNTRY_MISMATCH";
-        public const string COUNTRY_CURRENCY_MISMATCH = "COUNTRY_CURRENCY_MISMATCH";
-        public const string CURRENCY_MARKET_MISMATCH = "CURRENCY_MARKET_MISMATCH";
-        public const string MARKET_CURRENCY_MISMATCH = "MARKET_CURRENCY_MISMATCH";
-        public const string INVALID_ADJUSTMENT_VALUE = "INVALID_ADJUSTMENT_VALUE";
-        public const string INVALID_ADJUSTMENT_MIN_VALUE = "INVALID_ADJUSTMENT_MIN_VALUE";
-        public const string INVALID_ADJUSTMENT_MAX_VALUE = "INVALID_ADJUSTMENT_MAX_VALUE";
-        public const string CONTEXT_RULE_COUNTRY_TAKEN = "CONTEXT_RULE_COUNTRY_TAKEN";
-        public const string CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_RULES = "CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_RULES";
-        public const string CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_PRICE_BREAKS = "CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_PRICE_BREAKS";
-        public const string CONTEXT_RULE_LIMIT_ONE_OPTION = "CONTEXT_RULE_LIMIT_ONE_OPTION";
-        public const string CONTEXT_RULE_MARKET_NOT_FOUND = "CONTEXT_RULE_MARKET_NOT_FOUND";
-        public const string CONTEXT_RULE_MARKET_TAKEN = "CONTEXT_RULE_MARKET_TAKEN";
-        public const string CURRENCY_NOT_SUPPORTED = "CURRENCY_NOT_SUPPORTED";
-        public const string PRICE_LIST_NOT_ALLOWED_FOR_PRIMARY_MARKET = "PRICE_LIST_NOT_ALLOWED_FOR_PRIMARY_MARKET";
-        public const string CATALOG_ASSIGNMENT_NOT_ALLOWED = "CATALOG_ASSIGNMENT_NOT_ALLOWED";
-        public const string CATALOG_DOES_NOT_EXIST = "CATALOG_DOES_NOT_EXIST";
-        public const string CATALOG_CANNOT_CHANGE_CONTEXT_TYPE = "CATALOG_CANNOT_CHANGE_CONTEXT_TYPE";
-        public const string CATALOG_MARKET_AND_PRICE_LIST_CURRENCY_MISMATCH = "CATALOG_MARKET_AND_PRICE_LIST_CURRENCY_MISMATCH";
-        public const string CATALOG_TAKEN = "CATALOG_TAKEN";
-        public const string COUNTRY_PRICE_LIST_ASSIGNMENT = "COUNTRY_PRICE_LIST_ASSIGNMENT";
-        public const string APP_CATALOG_PRICE_LIST_ASSIGNMENT = "APP_CATALOG_PRICE_LIST_ASSIGNMENT";
-        public const string GENERIC_ERROR = "GENERIC_ERROR";
+        public const string CONTEXT_RULE_LIMIT_REACHED = @"CONTEXT_RULE_LIMIT_REACHED";
+        public const string CONTEXT_RULE_COUNTRIES_LIMIT = @"CONTEXT_RULE_COUNTRIES_LIMIT";
+        public const string CURRENCY_COUNTRY_MISMATCH = @"CURRENCY_COUNTRY_MISMATCH";
+        public const string COUNTRY_CURRENCY_MISMATCH = @"COUNTRY_CURRENCY_MISMATCH";
+        public const string CURRENCY_MARKET_MISMATCH = @"CURRENCY_MARKET_MISMATCH";
+        public const string MARKET_CURRENCY_MISMATCH = @"MARKET_CURRENCY_MISMATCH";
+        public const string INVALID_ADJUSTMENT_VALUE = @"INVALID_ADJUSTMENT_VALUE";
+        public const string INVALID_ADJUSTMENT_MIN_VALUE = @"INVALID_ADJUSTMENT_MIN_VALUE";
+        public const string INVALID_ADJUSTMENT_MAX_VALUE = @"INVALID_ADJUSTMENT_MAX_VALUE";
+        public const string CONTEXT_RULE_COUNTRY_TAKEN = @"CONTEXT_RULE_COUNTRY_TAKEN";
+        public const string CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_RULES = @"CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_RULES";
+        public const string CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_PRICE_BREAKS = @"CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_PRICE_BREAKS";
+        public const string CONTEXT_RULE_LIMIT_ONE_OPTION = @"CONTEXT_RULE_LIMIT_ONE_OPTION";
+        public const string CONTEXT_RULE_MARKET_NOT_FOUND = @"CONTEXT_RULE_MARKET_NOT_FOUND";
+        public const string CONTEXT_RULE_MARKET_TAKEN = @"CONTEXT_RULE_MARKET_TAKEN";
+        public const string CURRENCY_NOT_SUPPORTED = @"CURRENCY_NOT_SUPPORTED";
+        public const string PRICE_LIST_NOT_ALLOWED_FOR_PRIMARY_MARKET = @"PRICE_LIST_NOT_ALLOWED_FOR_PRIMARY_MARKET";
+        public const string CATALOG_ASSIGNMENT_NOT_ALLOWED = @"CATALOG_ASSIGNMENT_NOT_ALLOWED";
+        public const string CATALOG_DOES_NOT_EXIST = @"CATALOG_DOES_NOT_EXIST";
+        public const string CATALOG_CANNOT_CHANGE_CONTEXT_TYPE = @"CATALOG_CANNOT_CHANGE_CONTEXT_TYPE";
+        public const string CATALOG_MARKET_AND_PRICE_LIST_CURRENCY_MISMATCH = @"CATALOG_MARKET_AND_PRICE_LIST_CURRENCY_MISMATCH";
+        public const string CATALOG_TAKEN = @"CATALOG_TAKEN";
+        public const string COUNTRY_PRICE_LIST_ASSIGNMENT = @"COUNTRY_PRICE_LIST_ASSIGNMENT";
+        public const string APP_CATALOG_PRICE_LIST_ASSIGNMENT = @"APP_CATALOG_PRICE_LIST_ASSIGNMENT";
+        public const string GENERIC_ERROR = @"GENERIC_ERROR";
     }
 
     ///<summary>
@@ -47372,8 +47372,8 @@ namespace shopify
 
     public static class PriceRuleAllocationMethodStringValues
     {
-        public const string EACH = "EACH";
-        public const string ACROSS = "ACROSS";
+        public const string EACH = @"EACH";
+        public const string ACROSS = @"ACROSS";
     }
 
     ///<summary>
@@ -47496,11 +47496,11 @@ namespace shopify
 
     public static class PriceRuleFeatureStringValues
     {
-        public const string BUY_ONE_GET_ONE = "BUY_ONE_GET_ONE";
-        public const string BUY_ONE_GET_ONE_WITH_ALLOCATION_LIMIT = "BUY_ONE_GET_ONE_WITH_ALLOCATION_LIMIT";
-        public const string BULK = "BULK";
-        public const string SPECIFIC_CUSTOMERS = "SPECIFIC_CUSTOMERS";
-        public const string QUANTITY_DISCOUNTS = "QUANTITY_DISCOUNTS";
+        public const string BUY_ONE_GET_ONE = @"BUY_ONE_GET_ONE";
+        public const string BUY_ONE_GET_ONE_WITH_ALLOCATION_LIMIT = @"BUY_ONE_GET_ONE_WITH_ALLOCATION_LIMIT";
+        public const string BULK = @"BULK";
+        public const string SPECIFIC_CUSTOMERS = @"SPECIFIC_CUSTOMERS";
+        public const string QUANTITY_DISCOUNTS = @"QUANTITY_DISCOUNTS";
     }
 
     ///<summary>
@@ -47672,9 +47672,9 @@ namespace shopify
 
     public static class PriceRuleShareableUrlTargetTypeStringValues
     {
-        public const string HOME = "HOME";
-        public const string PRODUCT = "PRODUCT";
-        public const string COLLECTION = "COLLECTION";
+        public const string HOME = @"HOME";
+        public const string PRODUCT = @"PRODUCT";
+        public const string COLLECTION = @"COLLECTION";
     }
 
     ///<summary>
@@ -47717,9 +47717,9 @@ namespace shopify
 
     public static class PriceRuleStatusStringValues
     {
-        public const string ACTIVE = "ACTIVE";
-        public const string EXPIRED = "EXPIRED";
-        public const string SCHEDULED = "SCHEDULED";
+        public const string ACTIVE = @"ACTIVE";
+        public const string EXPIRED = @"EXPIRED";
+        public const string SCHEDULED = @"SCHEDULED";
     }
 
     ///<summary>
@@ -47739,8 +47739,8 @@ namespace shopify
 
     public static class PriceRuleTargetStringValues
     {
-        public const string LINE_ITEM = "LINE_ITEM";
-        public const string SHIPPING_LINE = "SHIPPING_LINE";
+        public const string LINE_ITEM = @"LINE_ITEM";
+        public const string SHIPPING_LINE = @"SHIPPING_LINE";
     }
 
     ///<summary>
@@ -47772,11 +47772,11 @@ namespace shopify
 
     public static class PriceRuleTraitStringValues
     {
-        public const string BUY_ONE_GET_ONE = "BUY_ONE_GET_ONE";
-        public const string BUY_ONE_GET_ONE_WITH_ALLOCATION_LIMIT = "BUY_ONE_GET_ONE_WITH_ALLOCATION_LIMIT";
-        public const string BULK = "BULK";
-        public const string SPECIFIC_CUSTOMERS = "SPECIFIC_CUSTOMERS";
-        public const string QUANTITY_DISCOUNTS = "QUANTITY_DISCOUNTS";
+        public const string BUY_ONE_GET_ONE = @"BUY_ONE_GET_ONE";
+        public const string BUY_ONE_GET_ONE_WITH_ALLOCATION_LIMIT = @"BUY_ONE_GET_ONE_WITH_ALLOCATION_LIMIT";
+        public const string BULK = @"BULK";
+        public const string SPECIFIC_CUSTOMERS = @"SPECIFIC_CUSTOMERS";
+        public const string QUANTITY_DISCOUNTS = @"QUANTITY_DISCOUNTS";
     }
 
     ///<summary>
@@ -47956,9 +47956,9 @@ namespace shopify
 
     public static class PrivateMetafieldValueTypeStringValues
     {
-        public const string STRING = "STRING";
-        public const string INTEGER = "INTEGER";
-        public const string JSON_STRING = "JSON_STRING";
+        public const string STRING = @"STRING";
+        public const string INTEGER = @"INTEGER";
+        public const string JSON_STRING = @"JSON_STRING";
     }
 
     ///<summary>
@@ -48521,10 +48521,10 @@ namespace shopify
 
     public static class ProductBundleComponentOptionSelectionStatusStringValues
     {
-        public const string SELECTED = "SELECTED";
-        public const string DESELECTED = "DESELECTED";
-        public const string NEW = "NEW";
-        public const string UNAVAILABLE = "UNAVAILABLE";
+        public const string SELECTED = @"SELECTED";
+        public const string DESELECTED = @"DESELECTED";
+        public const string NEW = @"NEW";
+        public const string UNAVAILABLE = @"UNAVAILABLE";
     }
 
     ///<summary>
@@ -48635,10 +48635,10 @@ namespace shopify
 
     public static class ProductBundleMutationUserErrorCodeStringValues
     {
-        public const string GENERIC_ERROR = "GENERIC_ERROR";
-        public const string PRODUCT_DOES_NOT_EXIST = "PRODUCT_DOES_NOT_EXIST";
-        public const string INVALID_INPUT = "INVALID_INPUT";
-        public const string JOB_ERROR = "JOB_ERROR";
+        public const string GENERIC_ERROR = @"GENERIC_ERROR";
+        public const string PRODUCT_DOES_NOT_EXIST = @"PRODUCT_DOES_NOT_EXIST";
+        public const string INVALID_INPUT = @"INVALID_INPUT";
+        public const string JOB_ERROR = @"JOB_ERROR";
     }
 
     ///<summary>
@@ -48753,8 +48753,8 @@ namespace shopify
 
     public static class ProductChangeStatusUserErrorCodeStringValues
     {
-        public const string PRODUCT_NOT_FOUND = "PRODUCT_NOT_FOUND";
-        public const string COMBINED_LISTINGS_NOT_COMPATIBLE_WITH_SHOP = "COMBINED_LISTINGS_NOT_COMPATIBLE_WITH_SHOP";
+        public const string PRODUCT_NOT_FOUND = @"PRODUCT_NOT_FOUND";
+        public const string COMBINED_LISTINGS_NOT_COMPATIBLE_WITH_SHOP = @"COMBINED_LISTINGS_NOT_COMPATIBLE_WITH_SHOP";
     }
 
     ///<summary>
@@ -48799,14 +48799,14 @@ namespace shopify
 
     public static class ProductCollectionSortKeysStringValues
     {
-        public const string TITLE = "TITLE";
-        public const string PRICE = "PRICE";
-        public const string BEST_SELLING = "BEST_SELLING";
-        public const string CREATED = "CREATED";
-        public const string ID = "ID";
-        public const string MANUAL = "MANUAL";
-        public const string COLLECTION_DEFAULT = "COLLECTION_DEFAULT";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string TITLE = @"TITLE";
+        public const string PRICE = @"PRICE";
+        public const string BEST_SELLING = @"BEST_SELLING";
+        public const string CREATED = @"CREATED";
+        public const string ID = @"ID";
+        public const string MANUAL = @"MANUAL";
+        public const string COLLECTION_DEFAULT = @"COLLECTION_DEFAULT";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -49197,8 +49197,8 @@ namespace shopify
 
     public static class ProductFeedCreateUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string TAKEN = "TAKEN";
+        public const string INVALID = @"INVALID";
+        public const string TAKEN = @"TAKEN";
     }
 
     ///<summary>
@@ -49248,7 +49248,7 @@ namespace shopify
 
     public static class ProductFeedDeleteUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
+        public const string INVALID = @"INVALID";
     }
 
     ///<summary>
@@ -49283,8 +49283,8 @@ namespace shopify
 
     public static class ProductFeedStatusStringValues
     {
-        public const string ACTIVE = "ACTIVE";
-        public const string INACTIVE = "INACTIVE";
+        public const string ACTIVE = @"ACTIVE";
+        public const string INACTIVE = @"INACTIVE";
     }
 
     ///<summary>
@@ -49330,7 +49330,7 @@ namespace shopify
 
     public static class ProductFullSyncUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
+        public const string INVALID = @"INVALID";
     }
 
     ///<summary>
@@ -49359,10 +49359,10 @@ namespace shopify
 
     public static class ProductImageSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string POSITION = "POSITION";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string POSITION = @"POSITION";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -49417,9 +49417,9 @@ namespace shopify
 
     public static class ProductMediaSortKeysStringValues
     {
-        public const string POSITION = "POSITION";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string POSITION = @"POSITION";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -49467,9 +49467,9 @@ namespace shopify
 
     public static class ProductOperationStatusStringValues
     {
-        public const string CREATED = "CREATED";
-        public const string ACTIVE = "ACTIVE";
-        public const string COMPLETE = "COMPLETE";
+        public const string CREATED = @"CREATED";
+        public const string ACTIVE = @"ACTIVE";
+        public const string COMPLETE = @"COMPLETE";
     }
 
     ///<summary>
@@ -49528,8 +49528,8 @@ namespace shopify
 
     public static class ProductOptionCreateVariantStrategyStringValues
     {
-        public const string LEAVE_AS_IS = "LEAVE_AS_IS";
-        public const string CREATE = "CREATE";
+        public const string LEAVE_AS_IS = @"LEAVE_AS_IS";
+        public const string CREATE = @"CREATE";
     }
 
     ///<summary>
@@ -49553,9 +49553,9 @@ namespace shopify
 
     public static class ProductOptionDeleteStrategyStringValues
     {
-        public const string DEFAULT = "DEFAULT";
-        public const string POSITION = "POSITION";
-        public const string NON_DESTRUCTIVE = "NON_DESTRUCTIVE";
+        public const string DEFAULT = @"DEFAULT";
+        public const string POSITION = @"POSITION";
+        public const string NON_DESTRUCTIVE = @"NON_DESTRUCTIVE";
     }
 
     ///<summary>
@@ -49721,36 +49721,36 @@ namespace shopify
 
     public static class ProductOptionUpdateUserErrorCodeStringValues
     {
-        public const string PRODUCT_DOES_NOT_EXIST = "PRODUCT_DOES_NOT_EXIST";
-        public const string PRODUCT_SUSPENDED = "PRODUCT_SUSPENDED";
-        public const string OPTION_DOES_NOT_EXIST = "OPTION_DOES_NOT_EXIST";
-        public const string OPTION_ALREADY_EXISTS = "OPTION_ALREADY_EXISTS";
-        public const string INVALID_POSITION = "INVALID_POSITION";
-        public const string INVALID_NAME = "INVALID_NAME";
-        public const string OPTION_VALUES_OVER_LIMIT = "OPTION_VALUES_OVER_LIMIT";
-        public const string OPTION_VALUE_DOES_NOT_EXIST = "OPTION_VALUE_DOES_NOT_EXIST";
-        public const string OPTION_VALUE_ALREADY_EXISTS = "OPTION_VALUE_ALREADY_EXISTS";
-        public const string OPTION_VALUE_HAS_VARIANTS = "OPTION_VALUE_HAS_VARIANTS";
-        public const string CANNOT_DELETE_ALL_OPTION_VALUES_IN_OPTION = "CANNOT_DELETE_ALL_OPTION_VALUES_IN_OPTION";
-        public const string CANNOT_LEAVE_OPTIONS_WITHOUT_VARIANTS = "CANNOT_LEAVE_OPTIONS_WITHOUT_VARIANTS";
-        public const string NO_KEY_ON_CREATE = "NO_KEY_ON_CREATE";
-        public const string KEY_MISSING_IN_INPUT = "KEY_MISSING_IN_INPUT";
-        public const string DUPLICATED_OPTION_VALUE = "DUPLICATED_OPTION_VALUE";
-        public const string OPTION_NAME_TOO_LONG = "OPTION_NAME_TOO_LONG";
-        public const string OPTION_VALUE_NAME_TOO_LONG = "OPTION_VALUE_NAME_TOO_LONG";
-        public const string OPTION_VALUE_CONFLICTING_OPERATION = "OPTION_VALUE_CONFLICTING_OPERATION";
-        public const string CANNOT_CREATE_VARIANTS_ABOVE_LIMIT = "CANNOT_CREATE_VARIANTS_ABOVE_LIMIT";
-        public const string CANNOT_COMBINE_LINKED_AND_NONLINKED_OPTION_VALUES = "CANNOT_COMBINE_LINKED_AND_NONLINKED_OPTION_VALUES";
-        public const string INVALID_METAFIELD_VALUE_FOR_LINKED_OPTION = "INVALID_METAFIELD_VALUE_FOR_LINKED_OPTION";
-        public const string DUPLICATE_LINKED_OPTION = "DUPLICATE_LINKED_OPTION";
-        public const string OPTION_LINKED_METAFIELD_ALREADY_TAKEN = "OPTION_LINKED_METAFIELD_ALREADY_TAKEN";
-        public const string LINKED_OPTION_UPDATE_MISSING_VALUES = "LINKED_OPTION_UPDATE_MISSING_VALUES";
-        public const string LINKED_OPTIONS_NOT_SUPPORTED_FOR_SHOP = "LINKED_OPTIONS_NOT_SUPPORTED_FOR_SHOP";
-        public const string LINKED_METAFIELD_DEFINITION_NOT_FOUND = "LINKED_METAFIELD_DEFINITION_NOT_FOUND";
-        public const string CANNOT_MAKE_CHANGES_IF_VARIANT_IS_MISSING_REQUIRED_SKU = "CANNOT_MAKE_CHANGES_IF_VARIANT_IS_MISSING_REQUIRED_SKU";
-        public const string UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION = "UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION";
-        public const string CANNOT_DELETE_VARIANT_WITHOUT_PERMISSION = "CANNOT_DELETE_VARIANT_WITHOUT_PERMISSION";
-        public const string TOO_MANY_VARIANTS_CREATED = "TOO_MANY_VARIANTS_CREATED";
+        public const string PRODUCT_DOES_NOT_EXIST = @"PRODUCT_DOES_NOT_EXIST";
+        public const string PRODUCT_SUSPENDED = @"PRODUCT_SUSPENDED";
+        public const string OPTION_DOES_NOT_EXIST = @"OPTION_DOES_NOT_EXIST";
+        public const string OPTION_ALREADY_EXISTS = @"OPTION_ALREADY_EXISTS";
+        public const string INVALID_POSITION = @"INVALID_POSITION";
+        public const string INVALID_NAME = @"INVALID_NAME";
+        public const string OPTION_VALUES_OVER_LIMIT = @"OPTION_VALUES_OVER_LIMIT";
+        public const string OPTION_VALUE_DOES_NOT_EXIST = @"OPTION_VALUE_DOES_NOT_EXIST";
+        public const string OPTION_VALUE_ALREADY_EXISTS = @"OPTION_VALUE_ALREADY_EXISTS";
+        public const string OPTION_VALUE_HAS_VARIANTS = @"OPTION_VALUE_HAS_VARIANTS";
+        public const string CANNOT_DELETE_ALL_OPTION_VALUES_IN_OPTION = @"CANNOT_DELETE_ALL_OPTION_VALUES_IN_OPTION";
+        public const string CANNOT_LEAVE_OPTIONS_WITHOUT_VARIANTS = @"CANNOT_LEAVE_OPTIONS_WITHOUT_VARIANTS";
+        public const string NO_KEY_ON_CREATE = @"NO_KEY_ON_CREATE";
+        public const string KEY_MISSING_IN_INPUT = @"KEY_MISSING_IN_INPUT";
+        public const string DUPLICATED_OPTION_VALUE = @"DUPLICATED_OPTION_VALUE";
+        public const string OPTION_NAME_TOO_LONG = @"OPTION_NAME_TOO_LONG";
+        public const string OPTION_VALUE_NAME_TOO_LONG = @"OPTION_VALUE_NAME_TOO_LONG";
+        public const string OPTION_VALUE_CONFLICTING_OPERATION = @"OPTION_VALUE_CONFLICTING_OPERATION";
+        public const string CANNOT_CREATE_VARIANTS_ABOVE_LIMIT = @"CANNOT_CREATE_VARIANTS_ABOVE_LIMIT";
+        public const string CANNOT_COMBINE_LINKED_AND_NONLINKED_OPTION_VALUES = @"CANNOT_COMBINE_LINKED_AND_NONLINKED_OPTION_VALUES";
+        public const string INVALID_METAFIELD_VALUE_FOR_LINKED_OPTION = @"INVALID_METAFIELD_VALUE_FOR_LINKED_OPTION";
+        public const string DUPLICATE_LINKED_OPTION = @"DUPLICATE_LINKED_OPTION";
+        public const string OPTION_LINKED_METAFIELD_ALREADY_TAKEN = @"OPTION_LINKED_METAFIELD_ALREADY_TAKEN";
+        public const string LINKED_OPTION_UPDATE_MISSING_VALUES = @"LINKED_OPTION_UPDATE_MISSING_VALUES";
+        public const string LINKED_OPTIONS_NOT_SUPPORTED_FOR_SHOP = @"LINKED_OPTIONS_NOT_SUPPORTED_FOR_SHOP";
+        public const string LINKED_METAFIELD_DEFINITION_NOT_FOUND = @"LINKED_METAFIELD_DEFINITION_NOT_FOUND";
+        public const string CANNOT_MAKE_CHANGES_IF_VARIANT_IS_MISSING_REQUIRED_SKU = @"CANNOT_MAKE_CHANGES_IF_VARIANT_IS_MISSING_REQUIRED_SKU";
+        public const string UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION = @"UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION";
+        public const string CANNOT_DELETE_VARIANT_WITHOUT_PERMISSION = @"CANNOT_DELETE_VARIANT_WITHOUT_PERMISSION";
+        public const string TOO_MANY_VARIANTS_CREATED = @"TOO_MANY_VARIANTS_CREATED";
     }
 
     ///<summary>
@@ -49778,8 +49778,8 @@ namespace shopify
 
     public static class ProductOptionUpdateVariantStrategyStringValues
     {
-        public const string LEAVE_AS_IS = "LEAVE_AS_IS";
-        public const string MANAGE = "MANAGE";
+        public const string LEAVE_AS_IS = @"LEAVE_AS_IS";
+        public const string MANAGE = @"MANAGE";
     }
 
     ///<summary>
@@ -49967,30 +49967,30 @@ namespace shopify
 
     public static class ProductOptionsCreateUserErrorCodeStringValues
     {
-        public const string OPTION_ALREADY_EXISTS = "OPTION_ALREADY_EXISTS";
-        public const string OPTIONS_OVER_LIMIT = "OPTIONS_OVER_LIMIT";
-        public const string OPTION_VALUES_OVER_LIMIT = "OPTION_VALUES_OVER_LIMIT";
-        public const string INVALID_NAME = "INVALID_NAME";
-        public const string PRODUCT_SUSPENDED = "PRODUCT_SUSPENDED";
-        public const string NEW_OPTION_WITHOUT_VALUE_FOR_EXISTING_VARIANTS = "NEW_OPTION_WITHOUT_VALUE_FOR_EXISTING_VARIANTS";
-        public const string DUPLICATED_OPTION_NAME = "DUPLICATED_OPTION_NAME";
-        public const string DUPLICATED_OPTION_VALUE = "DUPLICATED_OPTION_VALUE";
-        public const string OPTION_NAME_MISSING = "OPTION_NAME_MISSING";
-        public const string OPTION_VALUES_MISSING = "OPTION_VALUES_MISSING";
-        public const string POSITION_OUT_OF_BOUNDS = "POSITION_OUT_OF_BOUNDS";
-        public const string OPTION_POSITION_MISSING = "OPTION_POSITION_MISSING";
-        public const string PRODUCT_DOES_NOT_EXIST = "PRODUCT_DOES_NOT_EXIST";
-        public const string LINKED_METAFIELD_DEFINITION_NOT_FOUND = "LINKED_METAFIELD_DEFINITION_NOT_FOUND";
-        public const string INVALID_METAFIELD_VALUE_FOR_LINKED_OPTION = "INVALID_METAFIELD_VALUE_FOR_LINKED_OPTION";
-        public const string MISSING_METAFIELD_VALUES_FOR_LINKED_OPTION = "MISSING_METAFIELD_VALUES_FOR_LINKED_OPTION";
-        public const string CANNOT_COMBINE_LINKED_METAFIELD_AND_OPTION_VALUES = "CANNOT_COMBINE_LINKED_METAFIELD_AND_OPTION_VALUES";
-        public const string DUPLICATE_LINKED_OPTION = "DUPLICATE_LINKED_OPTION";
-        public const string OPTION_LINKED_METAFIELD_ALREADY_TAKEN = "OPTION_LINKED_METAFIELD_ALREADY_TAKEN";
-        public const string LINKED_OPTIONS_NOT_SUPPORTED_FOR_SHOP = "LINKED_OPTIONS_NOT_SUPPORTED_FOR_SHOP";
-        public const string CANNOT_MAKE_CHANGES_IF_VARIANT_IS_MISSING_REQUIRED_SKU = "CANNOT_MAKE_CHANGES_IF_VARIANT_IS_MISSING_REQUIRED_SKU";
-        public const string UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION = "UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION";
-        public const string LINKED_METAFIELD_VALUE_WITHOUT_LINKED_OPTION = "LINKED_METAFIELD_VALUE_WITHOUT_LINKED_OPTION";
-        public const string TOO_MANY_VARIANTS_CREATED = "TOO_MANY_VARIANTS_CREATED";
+        public const string OPTION_ALREADY_EXISTS = @"OPTION_ALREADY_EXISTS";
+        public const string OPTIONS_OVER_LIMIT = @"OPTIONS_OVER_LIMIT";
+        public const string OPTION_VALUES_OVER_LIMIT = @"OPTION_VALUES_OVER_LIMIT";
+        public const string INVALID_NAME = @"INVALID_NAME";
+        public const string PRODUCT_SUSPENDED = @"PRODUCT_SUSPENDED";
+        public const string NEW_OPTION_WITHOUT_VALUE_FOR_EXISTING_VARIANTS = @"NEW_OPTION_WITHOUT_VALUE_FOR_EXISTING_VARIANTS";
+        public const string DUPLICATED_OPTION_NAME = @"DUPLICATED_OPTION_NAME";
+        public const string DUPLICATED_OPTION_VALUE = @"DUPLICATED_OPTION_VALUE";
+        public const string OPTION_NAME_MISSING = @"OPTION_NAME_MISSING";
+        public const string OPTION_VALUES_MISSING = @"OPTION_VALUES_MISSING";
+        public const string POSITION_OUT_OF_BOUNDS = @"POSITION_OUT_OF_BOUNDS";
+        public const string OPTION_POSITION_MISSING = @"OPTION_POSITION_MISSING";
+        public const string PRODUCT_DOES_NOT_EXIST = @"PRODUCT_DOES_NOT_EXIST";
+        public const string LINKED_METAFIELD_DEFINITION_NOT_FOUND = @"LINKED_METAFIELD_DEFINITION_NOT_FOUND";
+        public const string INVALID_METAFIELD_VALUE_FOR_LINKED_OPTION = @"INVALID_METAFIELD_VALUE_FOR_LINKED_OPTION";
+        public const string MISSING_METAFIELD_VALUES_FOR_LINKED_OPTION = @"MISSING_METAFIELD_VALUES_FOR_LINKED_OPTION";
+        public const string CANNOT_COMBINE_LINKED_METAFIELD_AND_OPTION_VALUES = @"CANNOT_COMBINE_LINKED_METAFIELD_AND_OPTION_VALUES";
+        public const string DUPLICATE_LINKED_OPTION = @"DUPLICATE_LINKED_OPTION";
+        public const string OPTION_LINKED_METAFIELD_ALREADY_TAKEN = @"OPTION_LINKED_METAFIELD_ALREADY_TAKEN";
+        public const string LINKED_OPTIONS_NOT_SUPPORTED_FOR_SHOP = @"LINKED_OPTIONS_NOT_SUPPORTED_FOR_SHOP";
+        public const string CANNOT_MAKE_CHANGES_IF_VARIANT_IS_MISSING_REQUIRED_SKU = @"CANNOT_MAKE_CHANGES_IF_VARIANT_IS_MISSING_REQUIRED_SKU";
+        public const string UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION = @"UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION";
+        public const string LINKED_METAFIELD_VALUE_WITHOUT_LINKED_OPTION = @"LINKED_METAFIELD_VALUE_WITHOUT_LINKED_OPTION";
+        public const string TOO_MANY_VARIANTS_CREATED = @"TOO_MANY_VARIANTS_CREATED";
     }
 
     ///<summary>
@@ -50072,14 +50072,14 @@ namespace shopify
 
     public static class ProductOptionsDeleteUserErrorCodeStringValues
     {
-        public const string PRODUCT_DOES_NOT_EXIST = "PRODUCT_DOES_NOT_EXIST";
-        public const string PRODUCT_SUSPENDED = "PRODUCT_SUSPENDED";
-        public const string OPTION_DOES_NOT_EXIST = "OPTION_DOES_NOT_EXIST";
-        public const string OPTIONS_DO_NOT_BELONG_TO_THE_SAME_PRODUCT = "OPTIONS_DO_NOT_BELONG_TO_THE_SAME_PRODUCT";
-        public const string CANNOT_DELETE_OPTION_WITH_MULTIPLE_VALUES = "CANNOT_DELETE_OPTION_WITH_MULTIPLE_VALUES";
-        public const string CANNOT_USE_NON_DESTRUCTIVE_STRATEGY = "CANNOT_USE_NON_DESTRUCTIVE_STRATEGY";
-        public const string CANNOT_MAKE_CHANGES_IF_VARIANT_IS_MISSING_REQUIRED_SKU = "CANNOT_MAKE_CHANGES_IF_VARIANT_IS_MISSING_REQUIRED_SKU";
-        public const string UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION = "UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION";
+        public const string PRODUCT_DOES_NOT_EXIST = @"PRODUCT_DOES_NOT_EXIST";
+        public const string PRODUCT_SUSPENDED = @"PRODUCT_SUSPENDED";
+        public const string OPTION_DOES_NOT_EXIST = @"OPTION_DOES_NOT_EXIST";
+        public const string OPTIONS_DO_NOT_BELONG_TO_THE_SAME_PRODUCT = @"OPTIONS_DO_NOT_BELONG_TO_THE_SAME_PRODUCT";
+        public const string CANNOT_DELETE_OPTION_WITH_MULTIPLE_VALUES = @"CANNOT_DELETE_OPTION_WITH_MULTIPLE_VALUES";
+        public const string CANNOT_USE_NON_DESTRUCTIVE_STRATEGY = @"CANNOT_USE_NON_DESTRUCTIVE_STRATEGY";
+        public const string CANNOT_MAKE_CHANGES_IF_VARIANT_IS_MISSING_REQUIRED_SKU = @"CANNOT_MAKE_CHANGES_IF_VARIANT_IS_MISSING_REQUIRED_SKU";
+        public const string UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION = @"UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION";
     }
 
     ///<summary>
@@ -50173,18 +50173,18 @@ namespace shopify
 
     public static class ProductOptionsReorderUserErrorCodeStringValues
     {
-        public const string OPTION_NAME_DOES_NOT_EXIST = "OPTION_NAME_DOES_NOT_EXIST";
-        public const string OPTION_VALUE_DOES_NOT_EXIST = "OPTION_VALUE_DOES_NOT_EXIST";
-        public const string OPTION_ID_DOES_NOT_EXIST = "OPTION_ID_DOES_NOT_EXIST";
-        public const string OPTION_VALUE_ID_DOES_NOT_EXIST = "OPTION_VALUE_ID_DOES_NOT_EXIST";
-        public const string DUPLICATED_OPTION_NAME = "DUPLICATED_OPTION_NAME";
-        public const string DUPLICATED_OPTION_VALUE = "DUPLICATED_OPTION_VALUE";
-        public const string MISSING_OPTION_NAME = "MISSING_OPTION_NAME";
-        public const string MISSING_OPTION_VALUE = "MISSING_OPTION_VALUE";
-        public const string PRODUCT_DOES_NOT_EXIST = "PRODUCT_DOES_NOT_EXIST";
-        public const string NO_KEY_ON_REORDER = "NO_KEY_ON_REORDER";
-        public const string MIXING_ID_AND_NAME_KEYS_IS_NOT_ALLOWED = "MIXING_ID_AND_NAME_KEYS_IS_NOT_ALLOWED";
-        public const string CANNOT_MAKE_CHANGES_IF_VARIANT_IS_MISSING_REQUIRED_SKU = "CANNOT_MAKE_CHANGES_IF_VARIANT_IS_MISSING_REQUIRED_SKU";
+        public const string OPTION_NAME_DOES_NOT_EXIST = @"OPTION_NAME_DOES_NOT_EXIST";
+        public const string OPTION_VALUE_DOES_NOT_EXIST = @"OPTION_VALUE_DOES_NOT_EXIST";
+        public const string OPTION_ID_DOES_NOT_EXIST = @"OPTION_ID_DOES_NOT_EXIST";
+        public const string OPTION_VALUE_ID_DOES_NOT_EXIST = @"OPTION_VALUE_ID_DOES_NOT_EXIST";
+        public const string DUPLICATED_OPTION_NAME = @"DUPLICATED_OPTION_NAME";
+        public const string DUPLICATED_OPTION_VALUE = @"DUPLICATED_OPTION_VALUE";
+        public const string MISSING_OPTION_NAME = @"MISSING_OPTION_NAME";
+        public const string MISSING_OPTION_VALUE = @"MISSING_OPTION_VALUE";
+        public const string PRODUCT_DOES_NOT_EXIST = @"PRODUCT_DOES_NOT_EXIST";
+        public const string NO_KEY_ON_REORDER = @"NO_KEY_ON_REORDER";
+        public const string MIXING_ID_AND_NAME_KEYS_IS_NOT_ALLOWED = @"MIXING_ID_AND_NAME_KEYS_IS_NOT_ALLOWED";
+        public const string CANNOT_MAKE_CHANGES_IF_VARIANT_IS_MISSING_REQUIRED_SKU = @"CANNOT_MAKE_CHANGES_IF_VARIANT_IS_MISSING_REQUIRED_SKU";
     }
 
     ///<summary>
@@ -50588,33 +50588,33 @@ namespace shopify
 
     public static class ProductSetUserErrorCodeStringValues
     {
-        public const string GENERIC_ERROR = "GENERIC_ERROR";
-        public const string INVALID_METAFIELD = "INVALID_METAFIELD";
-        public const string INVALID_VARIANT = "INVALID_VARIANT";
-        public const string PRODUCT_DOES_NOT_EXIST = "PRODUCT_DOES_NOT_EXIST";
-        public const string PRODUCT_VARIANT_DOES_NOT_EXIST = "PRODUCT_VARIANT_DOES_NOT_EXIST";
-        public const string OPTION_DOES_NOT_EXIST = "OPTION_DOES_NOT_EXIST";
-        public const string OPTION_VALUE_DOES_NOT_EXIST = "OPTION_VALUE_DOES_NOT_EXIST";
-        public const string OPTIONS_OVER_LIMIT = "OPTIONS_OVER_LIMIT";
-        public const string OPTION_VALUES_OVER_LIMIT = "OPTION_VALUES_OVER_LIMIT";
-        public const string OPTION_VALUES_MISSING = "OPTION_VALUES_MISSING";
-        public const string DUPLICATED_OPTION_NAME = "DUPLICATED_OPTION_NAME";
-        public const string DUPLICATED_OPTION_VALUE = "DUPLICATED_OPTION_VALUE";
-        public const string VARIANTS_OVER_LIMIT = "VARIANTS_OVER_LIMIT";
-        public const string PRODUCT_OPTIONS_INPUT_MISSING = "PRODUCT_OPTIONS_INPUT_MISSING";
-        public const string VARIANTS_INPUT_MISSING = "VARIANTS_INPUT_MISSING";
-        public const string GIFT_CARDS_NOT_ACTIVATED = "GIFT_CARDS_NOT_ACTIVATED";
-        public const string GIFT_CARD_ATTRIBUTE_CANNOT_BE_CHANGED = "GIFT_CARD_ATTRIBUTE_CANNOT_BE_CHANGED";
-        public const string INVALID_PRODUCT = "INVALID_PRODUCT";
-        public const string INVALID_INPUT = "INVALID_INPUT";
-        public const string JOB_ERROR = "JOB_ERROR";
-        public const string CAPABILITY_VIOLATION = "CAPABILITY_VIOLATION";
-        public const string CANNOT_COMBINE_LINKED_AND_NONLINKED_OPTION_VALUES = "CANNOT_COMBINE_LINKED_AND_NONLINKED_OPTION_VALUES";
-        public const string INVALID_METAFIELD_VALUE_FOR_LINKED_OPTION = "INVALID_METAFIELD_VALUE_FOR_LINKED_OPTION";
-        public const string DUPLICATE_LINKED_OPTION = "DUPLICATE_LINKED_OPTION";
-        public const string LINKED_OPTIONS_NOT_SUPPORTED_FOR_SHOP = "LINKED_OPTIONS_NOT_SUPPORTED_FOR_SHOP";
-        public const string LINKED_METAFIELD_DEFINITION_NOT_FOUND = "LINKED_METAFIELD_DEFINITION_NOT_FOUND";
-        public const string DUPLICATED_VALUE = "DUPLICATED_VALUE";
+        public const string GENERIC_ERROR = @"GENERIC_ERROR";
+        public const string INVALID_METAFIELD = @"INVALID_METAFIELD";
+        public const string INVALID_VARIANT = @"INVALID_VARIANT";
+        public const string PRODUCT_DOES_NOT_EXIST = @"PRODUCT_DOES_NOT_EXIST";
+        public const string PRODUCT_VARIANT_DOES_NOT_EXIST = @"PRODUCT_VARIANT_DOES_NOT_EXIST";
+        public const string OPTION_DOES_NOT_EXIST = @"OPTION_DOES_NOT_EXIST";
+        public const string OPTION_VALUE_DOES_NOT_EXIST = @"OPTION_VALUE_DOES_NOT_EXIST";
+        public const string OPTIONS_OVER_LIMIT = @"OPTIONS_OVER_LIMIT";
+        public const string OPTION_VALUES_OVER_LIMIT = @"OPTION_VALUES_OVER_LIMIT";
+        public const string OPTION_VALUES_MISSING = @"OPTION_VALUES_MISSING";
+        public const string DUPLICATED_OPTION_NAME = @"DUPLICATED_OPTION_NAME";
+        public const string DUPLICATED_OPTION_VALUE = @"DUPLICATED_OPTION_VALUE";
+        public const string VARIANTS_OVER_LIMIT = @"VARIANTS_OVER_LIMIT";
+        public const string PRODUCT_OPTIONS_INPUT_MISSING = @"PRODUCT_OPTIONS_INPUT_MISSING";
+        public const string VARIANTS_INPUT_MISSING = @"VARIANTS_INPUT_MISSING";
+        public const string GIFT_CARDS_NOT_ACTIVATED = @"GIFT_CARDS_NOT_ACTIVATED";
+        public const string GIFT_CARD_ATTRIBUTE_CANNOT_BE_CHANGED = @"GIFT_CARD_ATTRIBUTE_CANNOT_BE_CHANGED";
+        public const string INVALID_PRODUCT = @"INVALID_PRODUCT";
+        public const string INVALID_INPUT = @"INVALID_INPUT";
+        public const string JOB_ERROR = @"JOB_ERROR";
+        public const string CAPABILITY_VIOLATION = @"CAPABILITY_VIOLATION";
+        public const string CANNOT_COMBINE_LINKED_AND_NONLINKED_OPTION_VALUES = @"CANNOT_COMBINE_LINKED_AND_NONLINKED_OPTION_VALUES";
+        public const string INVALID_METAFIELD_VALUE_FOR_LINKED_OPTION = @"INVALID_METAFIELD_VALUE_FOR_LINKED_OPTION";
+        public const string DUPLICATE_LINKED_OPTION = @"DUPLICATE_LINKED_OPTION";
+        public const string LINKED_OPTIONS_NOT_SUPPORTED_FOR_SHOP = @"LINKED_OPTIONS_NOT_SUPPORTED_FOR_SHOP";
+        public const string LINKED_METAFIELD_DEFINITION_NOT_FOUND = @"LINKED_METAFIELD_DEFINITION_NOT_FOUND";
+        public const string DUPLICATED_VALUE = @"DUPLICATED_VALUE";
     }
 
     ///<summary>
@@ -50664,15 +50664,15 @@ namespace shopify
 
     public static class ProductSortKeysStringValues
     {
-        public const string TITLE = "TITLE";
-        public const string PRODUCT_TYPE = "PRODUCT_TYPE";
-        public const string VENDOR = "VENDOR";
-        public const string INVENTORY_TOTAL = "INVENTORY_TOTAL";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string CREATED_AT = "CREATED_AT";
-        public const string PUBLISHED_AT = "PUBLISHED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string TITLE = @"TITLE";
+        public const string PRODUCT_TYPE = @"PRODUCT_TYPE";
+        public const string VENDOR = @"VENDOR";
+        public const string INVENTORY_TOTAL = @"INVENTORY_TOTAL";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string PUBLISHED_AT = @"PUBLISHED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -50696,9 +50696,9 @@ namespace shopify
 
     public static class ProductStatusStringValues
     {
-        public const string ACTIVE = "ACTIVE";
-        public const string ARCHIVED = "ARCHIVED";
-        public const string DRAFT = "DRAFT";
+        public const string ACTIVE = @"ACTIVE";
+        public const string ARCHIVED = @"ARCHIVED";
+        public const string DRAFT = @"DRAFT";
     }
 
     ///<summary>
@@ -51142,8 +51142,8 @@ namespace shopify
 
     public static class ProductVariantInventoryPolicyStringValues
     {
-        public const string DENY = "DENY";
-        public const string CONTINUE = "CONTINUE";
+        public const string DENY = @"DENY";
+        public const string CONTINUE = @"CONTINUE";
     }
 
     ///<summary>
@@ -51356,28 +51356,28 @@ namespace shopify
 
     public static class ProductVariantRelationshipBulkUpdateUserErrorCodeStringValues
     {
-        public const string PARENT_REQUIRED = "PARENT_REQUIRED";
-        public const string FAILED_TO_CREATE = "FAILED_TO_CREATE";
-        public const string PRODUCT_VARIANTS_NOT_FOUND = "PRODUCT_VARIANTS_NOT_FOUND";
-        public const string CIRCULAR_REFERENCE = "CIRCULAR_REFERENCE";
-        public const string NESTED_PARENT_PRODUCT_VARIANT = "NESTED_PARENT_PRODUCT_VARIANT";
-        public const string INVALID_QUANTITY = "INVALID_QUANTITY";
-        public const string DUPLICATE_PRODUCT_VARIANT_RELATIONSHIP = "DUPLICATE_PRODUCT_VARIANT_RELATIONSHIP";
-        public const string EXCEEDED_PRODUCT_VARIANT_RELATIONSHIP_LIMIT = "EXCEEDED_PRODUCT_VARIANT_RELATIONSHIP_LIMIT";
-        public const string PRODUCT_VARIANT_RELATIONSHIP_TYPE_CONFLICT = "PRODUCT_VARIANT_RELATIONSHIP_TYPE_CONFLICT";
-        public const string UNEXPECTED_ERROR = "UNEXPECTED_ERROR";
-        public const string FAILED_TO_REMOVE = "FAILED_TO_REMOVE";
-        public const string MUST_SPECIFY_COMPONENTS = "MUST_SPECIFY_COMPONENTS";
-        public const string FAILED_TO_UPDATE = "FAILED_TO_UPDATE";
-        public const string FAILED_TO_UPDATE_PARENT_PRODUCT_VARIANT_PRICE = "FAILED_TO_UPDATE_PARENT_PRODUCT_VARIANT_PRICE";
-        public const string UPDATE_PARENT_VARIANT_PRICE_REQUIRED = "UPDATE_PARENT_VARIANT_PRICE_REQUIRED";
-        public const string PRODUCT_VARIANTS_NOT_COMPONENTS = "PRODUCT_VARIANTS_NOT_COMPONENTS";
-        public const string PRODUCT_EXPANDER_APP_OWNERSHIP_ALREADY_EXISTS = "PRODUCT_EXPANDER_APP_OWNERSHIP_ALREADY_EXISTS";
-        public const string UNSUPPORTED_MULTIPACK_RELATIONSHIP = "UNSUPPORTED_MULTIPACK_RELATIONSHIP";
-        public const string PARENT_PRODUCT_VARIANT_CANNOT_BE_GIFT_CARD = "PARENT_PRODUCT_VARIANT_CANNOT_BE_GIFT_CARD";
-        public const string PARENT_PRODUCT_VARIANT_CANNOT_REQUIRE_SELLING_PLAN = "PARENT_PRODUCT_VARIANT_CANNOT_REQUIRE_SELLING_PLAN";
-        public const string PARENT_PRODUCT_VARIANT_CANNOT_BE_COMBINED_LISTING = "PARENT_PRODUCT_VARIANT_CANNOT_BE_COMBINED_LISTING";
-        public const string CHILD_PRODUCT_VARIANT_CANNOT_BE_COMBINED_LISTING = "CHILD_PRODUCT_VARIANT_CANNOT_BE_COMBINED_LISTING";
+        public const string PARENT_REQUIRED = @"PARENT_REQUIRED";
+        public const string FAILED_TO_CREATE = @"FAILED_TO_CREATE";
+        public const string PRODUCT_VARIANTS_NOT_FOUND = @"PRODUCT_VARIANTS_NOT_FOUND";
+        public const string CIRCULAR_REFERENCE = @"CIRCULAR_REFERENCE";
+        public const string NESTED_PARENT_PRODUCT_VARIANT = @"NESTED_PARENT_PRODUCT_VARIANT";
+        public const string INVALID_QUANTITY = @"INVALID_QUANTITY";
+        public const string DUPLICATE_PRODUCT_VARIANT_RELATIONSHIP = @"DUPLICATE_PRODUCT_VARIANT_RELATIONSHIP";
+        public const string EXCEEDED_PRODUCT_VARIANT_RELATIONSHIP_LIMIT = @"EXCEEDED_PRODUCT_VARIANT_RELATIONSHIP_LIMIT";
+        public const string PRODUCT_VARIANT_RELATIONSHIP_TYPE_CONFLICT = @"PRODUCT_VARIANT_RELATIONSHIP_TYPE_CONFLICT";
+        public const string UNEXPECTED_ERROR = @"UNEXPECTED_ERROR";
+        public const string FAILED_TO_REMOVE = @"FAILED_TO_REMOVE";
+        public const string MUST_SPECIFY_COMPONENTS = @"MUST_SPECIFY_COMPONENTS";
+        public const string FAILED_TO_UPDATE = @"FAILED_TO_UPDATE";
+        public const string FAILED_TO_UPDATE_PARENT_PRODUCT_VARIANT_PRICE = @"FAILED_TO_UPDATE_PARENT_PRODUCT_VARIANT_PRICE";
+        public const string UPDATE_PARENT_VARIANT_PRICE_REQUIRED = @"UPDATE_PARENT_VARIANT_PRICE_REQUIRED";
+        public const string PRODUCT_VARIANTS_NOT_COMPONENTS = @"PRODUCT_VARIANTS_NOT_COMPONENTS";
+        public const string PRODUCT_EXPANDER_APP_OWNERSHIP_ALREADY_EXISTS = @"PRODUCT_EXPANDER_APP_OWNERSHIP_ALREADY_EXISTS";
+        public const string UNSUPPORTED_MULTIPACK_RELATIONSHIP = @"UNSUPPORTED_MULTIPACK_RELATIONSHIP";
+        public const string PARENT_PRODUCT_VARIANT_CANNOT_BE_GIFT_CARD = @"PARENT_PRODUCT_VARIANT_CANNOT_BE_GIFT_CARD";
+        public const string PARENT_PRODUCT_VARIANT_CANNOT_REQUIRE_SELLING_PLAN = @"PARENT_PRODUCT_VARIANT_CANNOT_REQUIRE_SELLING_PLAN";
+        public const string PARENT_PRODUCT_VARIANT_CANNOT_BE_COMBINED_LISTING = @"PARENT_PRODUCT_VARIANT_CANNOT_BE_COMBINED_LISTING";
+        public const string CHILD_PRODUCT_VARIANT_CANNOT_BE_COMBINED_LISTING = @"CHILD_PRODUCT_VARIANT_CANNOT_BE_COMBINED_LISTING";
     }
 
     ///<summary>
@@ -51439,18 +51439,18 @@ namespace shopify
 
     public static class ProductVariantSortKeysStringValues
     {
-        public const string TITLE = "TITLE";
-        public const string NAME = "NAME";
-        public const string SKU = "SKU";
-        public const string INVENTORY_QUANTITY = "INVENTORY_QUANTITY";
-        public const string INVENTORY_MANAGEMENT = "INVENTORY_MANAGEMENT";
-        public const string INVENTORY_LEVELS_AVAILABLE = "INVENTORY_LEVELS_AVAILABLE";
-        public const string INVENTORY_POLICY = "INVENTORY_POLICY";
-        public const string FULL_TITLE = "FULL_TITLE";
-        public const string POPULAR = "POPULAR";
-        public const string POSITION = "POSITION";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string TITLE = @"TITLE";
+        public const string NAME = @"NAME";
+        public const string SKU = @"SKU";
+        public const string INVENTORY_QUANTITY = @"INVENTORY_QUANTITY";
+        public const string INVENTORY_MANAGEMENT = @"INVENTORY_MANAGEMENT";
+        public const string INVENTORY_LEVELS_AVAILABLE = @"INVENTORY_LEVELS_AVAILABLE";
+        public const string INVENTORY_POLICY = @"INVENTORY_POLICY";
+        public const string FULL_TITLE = @"FULL_TITLE";
+        public const string POPULAR = @"POPULAR";
+        public const string POSITION = @"POSITION";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -51489,8 +51489,8 @@ namespace shopify
 
     public static class ProductVariantsBulkCreateStrategyStringValues
     {
-        public const string DEFAULT = "DEFAULT";
-        public const string REMOVE_STANDALONE_VARIANT = "REMOVE_STANDALONE_VARIANT";
+        public const string DEFAULT = @"DEFAULT";
+        public const string REMOVE_STANDALONE_VARIANT = @"REMOVE_STANDALONE_VARIANT";
     }
 
     ///<summary>
@@ -51589,23 +51589,23 @@ namespace shopify
 
     public static class ProductVariantsBulkCreateUserErrorCodeStringValues
     {
-        public const string INVALID_INPUT = "INVALID_INPUT";
-        public const string PRODUCT_DOES_NOT_EXIST = "PRODUCT_DOES_NOT_EXIST";
-        public const string NO_KEY_ON_CREATE = "NO_KEY_ON_CREATE";
-        public const string VARIANT_ALREADY_EXISTS = "VARIANT_ALREADY_EXISTS";
-        public const string GREATER_THAN_OR_EQUAL_TO = "GREATER_THAN_OR_EQUAL_TO";
-        public const string NEED_TO_ADD_OPTION_VALUES = "NEED_TO_ADD_OPTION_VALUES";
-        public const string OPTION_VALUES_FOR_NUMBER_OF_UNKNOWN_OPTIONS = "OPTION_VALUES_FOR_NUMBER_OF_UNKNOWN_OPTIONS";
-        public const string TOO_MANY_INVENTORY_LOCATIONS = "TOO_MANY_INVENTORY_LOCATIONS";
-        public const string SUBSCRIPTION_VIOLATION = "SUBSCRIPTION_VIOLATION";
-        public const string VARIANT_ALREADY_EXISTS_CHANGE_OPTION_VALUE = "VARIANT_ALREADY_EXISTS_CHANGE_OPTION_VALUE";
-        public const string TRACKED_VARIANT_LOCATION_NOT_FOUND = "TRACKED_VARIANT_LOCATION_NOT_FOUND";
-        public const string MUST_BE_FOR_THIS_PRODUCT = "MUST_BE_FOR_THIS_PRODUCT";
-        public const string NOT_DEFINED_FOR_SHOP = "NOT_DEFINED_FOR_SHOP";
-        public const string INVALID = "INVALID";
-        public const string NEGATIVE_PRICE_VALUE = "NEGATIVE_PRICE_VALUE";
-        public const string UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION = "UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION";
-        public const string CANNOT_SET_NAME_FOR_LINKED_OPTION_VALUE = "CANNOT_SET_NAME_FOR_LINKED_OPTION_VALUE";
+        public const string INVALID_INPUT = @"INVALID_INPUT";
+        public const string PRODUCT_DOES_NOT_EXIST = @"PRODUCT_DOES_NOT_EXIST";
+        public const string NO_KEY_ON_CREATE = @"NO_KEY_ON_CREATE";
+        public const string VARIANT_ALREADY_EXISTS = @"VARIANT_ALREADY_EXISTS";
+        public const string GREATER_THAN_OR_EQUAL_TO = @"GREATER_THAN_OR_EQUAL_TO";
+        public const string NEED_TO_ADD_OPTION_VALUES = @"NEED_TO_ADD_OPTION_VALUES";
+        public const string OPTION_VALUES_FOR_NUMBER_OF_UNKNOWN_OPTIONS = @"OPTION_VALUES_FOR_NUMBER_OF_UNKNOWN_OPTIONS";
+        public const string TOO_MANY_INVENTORY_LOCATIONS = @"TOO_MANY_INVENTORY_LOCATIONS";
+        public const string SUBSCRIPTION_VIOLATION = @"SUBSCRIPTION_VIOLATION";
+        public const string VARIANT_ALREADY_EXISTS_CHANGE_OPTION_VALUE = @"VARIANT_ALREADY_EXISTS_CHANGE_OPTION_VALUE";
+        public const string TRACKED_VARIANT_LOCATION_NOT_FOUND = @"TRACKED_VARIANT_LOCATION_NOT_FOUND";
+        public const string MUST_BE_FOR_THIS_PRODUCT = @"MUST_BE_FOR_THIS_PRODUCT";
+        public const string NOT_DEFINED_FOR_SHOP = @"NOT_DEFINED_FOR_SHOP";
+        public const string INVALID = @"INVALID";
+        public const string NEGATIVE_PRICE_VALUE = @"NEGATIVE_PRICE_VALUE";
+        public const string UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION = @"UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION";
+        public const string CANNOT_SET_NAME_FOR_LINKED_OPTION_VALUE = @"CANNOT_SET_NAME_FOR_LINKED_OPTION_VALUE";
     }
 
     ///<summary>
@@ -51667,10 +51667,10 @@ namespace shopify
 
     public static class ProductVariantsBulkDeleteUserErrorCodeStringValues
     {
-        public const string PRODUCT_DOES_NOT_EXIST = "PRODUCT_DOES_NOT_EXIST";
-        public const string CANNOT_DELETE_LAST_VARIANT = "CANNOT_DELETE_LAST_VARIANT";
-        public const string AT_LEAST_ONE_VARIANT_DOES_NOT_BELONG_TO_THE_PRODUCT = "AT_LEAST_ONE_VARIANT_DOES_NOT_BELONG_TO_THE_PRODUCT";
-        public const string UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION = "UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION";
+        public const string PRODUCT_DOES_NOT_EXIST = @"PRODUCT_DOES_NOT_EXIST";
+        public const string CANNOT_DELETE_LAST_VARIANT = @"CANNOT_DELETE_LAST_VARIANT";
+        public const string AT_LEAST_ONE_VARIANT_DOES_NOT_BELONG_TO_THE_PRODUCT = @"AT_LEAST_ONE_VARIANT_DOES_NOT_BELONG_TO_THE_PRODUCT";
+        public const string UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION = @"UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION";
     }
 
     ///<summary>
@@ -51732,10 +51732,10 @@ namespace shopify
 
     public static class ProductVariantsBulkReorderUserErrorCodeStringValues
     {
-        public const string PRODUCT_DOES_NOT_EXIST = "PRODUCT_DOES_NOT_EXIST";
-        public const string MISSING_VARIANT = "MISSING_VARIANT";
-        public const string INVALID_POSITION = "INVALID_POSITION";
-        public const string DUPLICATED_VARIANT_ID = "DUPLICATED_VARIANT_ID";
+        public const string PRODUCT_DOES_NOT_EXIST = @"PRODUCT_DOES_NOT_EXIST";
+        public const string MISSING_VARIANT = @"MISSING_VARIANT";
+        public const string INVALID_POSITION = @"INVALID_POSITION";
+        public const string DUPLICATED_VARIANT_ID = @"DUPLICATED_VARIANT_ID";
     }
 
     ///<summary>
@@ -51861,25 +51861,25 @@ namespace shopify
 
     public static class ProductVariantsBulkUpdateUserErrorCodeStringValues
     {
-        public const string INVALID_INPUT = "INVALID_INPUT";
-        public const string CANNOT_SPECIFY_BOTH = "CANNOT_SPECIFY_BOTH";
-        public const string MUST_SPECIFY_ONE_OF_PAIR = "MUST_SPECIFY_ONE_OF_PAIR";
-        public const string PRODUCT_DOES_NOT_EXIST = "PRODUCT_DOES_NOT_EXIST";
-        public const string PRODUCT_VARIANT_ID_MISSING = "PRODUCT_VARIANT_ID_MISSING";
-        public const string PRODUCT_VARIANT_DOES_NOT_EXIST = "PRODUCT_VARIANT_DOES_NOT_EXIST";
-        public const string OPTION_DOES_NOT_EXIST = "OPTION_DOES_NOT_EXIST";
-        public const string OPTION_VALUE_DOES_NOT_EXIST = "OPTION_VALUE_DOES_NOT_EXIST";
-        public const string MUST_BE_FOR_THIS_PRODUCT = "MUST_BE_FOR_THIS_PRODUCT";
-        public const string NO_INVENTORY_QUANTITIES_ON_VARIANTS_UPDATE = "NO_INVENTORY_QUANTITIES_ON_VARIANTS_UPDATE";
-        public const string VARIANT_ALREADY_EXISTS = "VARIANT_ALREADY_EXISTS";
-        public const string GREATER_THAN_OR_EQUAL_TO = "GREATER_THAN_OR_EQUAL_TO";
-        public const string NEED_TO_ADD_OPTION_VALUES = "NEED_TO_ADD_OPTION_VALUES";
-        public const string OPTION_VALUES_FOR_NUMBER_OF_UNKNOWN_OPTIONS = "OPTION_VALUES_FOR_NUMBER_OF_UNKNOWN_OPTIONS";
-        public const string SUBSCRIPTION_VIOLATION = "SUBSCRIPTION_VIOLATION";
-        public const string NO_INVENTORY_QUANTITES_DURING_UPDATE = "NO_INVENTORY_QUANTITES_DURING_UPDATE";
-        public const string NEGATIVE_PRICE_VALUE = "NEGATIVE_PRICE_VALUE";
-        public const string CANNOT_SET_NAME_FOR_LINKED_OPTION_VALUE = "CANNOT_SET_NAME_FOR_LINKED_OPTION_VALUE";
-        public const string UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION = "UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION";
+        public const string INVALID_INPUT = @"INVALID_INPUT";
+        public const string CANNOT_SPECIFY_BOTH = @"CANNOT_SPECIFY_BOTH";
+        public const string MUST_SPECIFY_ONE_OF_PAIR = @"MUST_SPECIFY_ONE_OF_PAIR";
+        public const string PRODUCT_DOES_NOT_EXIST = @"PRODUCT_DOES_NOT_EXIST";
+        public const string PRODUCT_VARIANT_ID_MISSING = @"PRODUCT_VARIANT_ID_MISSING";
+        public const string PRODUCT_VARIANT_DOES_NOT_EXIST = @"PRODUCT_VARIANT_DOES_NOT_EXIST";
+        public const string OPTION_DOES_NOT_EXIST = @"OPTION_DOES_NOT_EXIST";
+        public const string OPTION_VALUE_DOES_NOT_EXIST = @"OPTION_VALUE_DOES_NOT_EXIST";
+        public const string MUST_BE_FOR_THIS_PRODUCT = @"MUST_BE_FOR_THIS_PRODUCT";
+        public const string NO_INVENTORY_QUANTITIES_ON_VARIANTS_UPDATE = @"NO_INVENTORY_QUANTITIES_ON_VARIANTS_UPDATE";
+        public const string VARIANT_ALREADY_EXISTS = @"VARIANT_ALREADY_EXISTS";
+        public const string GREATER_THAN_OR_EQUAL_TO = @"GREATER_THAN_OR_EQUAL_TO";
+        public const string NEED_TO_ADD_OPTION_VALUES = @"NEED_TO_ADD_OPTION_VALUES";
+        public const string OPTION_VALUES_FOR_NUMBER_OF_UNKNOWN_OPTIONS = @"OPTION_VALUES_FOR_NUMBER_OF_UNKNOWN_OPTIONS";
+        public const string SUBSCRIPTION_VIOLATION = @"SUBSCRIPTION_VIOLATION";
+        public const string NO_INVENTORY_QUANTITES_DURING_UPDATE = @"NO_INVENTORY_QUANTITES_DURING_UPDATE";
+        public const string NEGATIVE_PRICE_VALUE = @"NEGATIVE_PRICE_VALUE";
+        public const string CANNOT_SET_NAME_FOR_LINKED_OPTION_VALUE = @"CANNOT_SET_NAME_FOR_LINKED_OPTION_VALUE";
+        public const string UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION = @"UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION";
     }
 
     ///<summary>
@@ -51928,15 +51928,15 @@ namespace shopify
 
     public static class ProfileItemSortKeysStringValues
     {
-        public const string TITLE = "TITLE";
-        public const string PRODUCT_TYPE = "PRODUCT_TYPE";
-        public const string VENDOR = "VENDOR";
-        public const string INVENTORY_TOTAL = "INVENTORY_TOTAL";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string CREATED_AT = "CREATED_AT";
-        public const string PUBLISHED_AT = "PUBLISHED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string TITLE = @"TITLE";
+        public const string PRODUCT_TYPE = @"PRODUCT_TYPE";
+        public const string VENDOR = @"VENDOR";
+        public const string INVENTORY_TOTAL = @"INVENTORY_TOTAL";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string PUBLISHED_AT = @"PUBLISHED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -52005,8 +52005,8 @@ namespace shopify
 
     public static class PubSubWebhookSubscriptionCreateUserErrorCodeStringValues
     {
-        public const string INVALID_PARAMETERS = "INVALID_PARAMETERS";
-        public const string TAKEN = "TAKEN";
+        public const string INVALID_PARAMETERS = @"INVALID_PARAMETERS";
+        public const string TAKEN = @"TAKEN";
     }
 
     ///<summary>
@@ -52056,7 +52056,7 @@ namespace shopify
 
     public static class PubSubWebhookSubscriptionUpdateUserErrorCodeStringValues
     {
-        public const string INVALID_PARAMETERS = "INVALID_PARAMETERS";
+        public const string INVALID_PARAMETERS = @"INVALID_PARAMETERS";
     }
 
     ///<summary>
@@ -52153,8 +52153,8 @@ namespace shopify
 
     public static class PublicationCreateInputPublicationDefaultStateStringValues
     {
-        public const string EMPTY = "EMPTY";
-        public const string ALL_PRODUCTS = "ALL_PRODUCTS";
+        public const string EMPTY = @"EMPTY";
+        public const string ALL_PRODUCTS = @"ALL_PRODUCTS";
     }
 
     ///<summary>
@@ -52370,24 +52370,24 @@ namespace shopify
 
     public static class PublicationUserErrorCodeStringValues
     {
-        public const string UNSUPPORTED_PUBLICATION_ACTION = "UNSUPPORTED_PUBLICATION_ACTION";
-        public const string PUBLICATION_NOT_FOUND = "PUBLICATION_NOT_FOUND";
-        public const string PUBLICATION_LOCKED = "PUBLICATION_LOCKED";
-        public const string UNSUPPORTED_PUBLISHABLE_TYPE = "UNSUPPORTED_PUBLISHABLE_TYPE";
-        public const string INVALID_PUBLISHABLE_ID = "INVALID_PUBLISHABLE_ID";
-        public const string MARKET_NOT_FOUND = "MARKET_NOT_FOUND";
-        public const string CATALOG_NOT_FOUND = "CATALOG_NOT_FOUND";
-        public const string CANNOT_MODIFY_APP_CATALOG_PUBLICATION = "CANNOT_MODIFY_APP_CATALOG_PUBLICATION";
-        public const string CANNOT_MODIFY_MARKET_CATALOG_PUBLICATION = "CANNOT_MODIFY_MARKET_CATALOG_PUBLICATION";
-        public const string CANNOT_MODIFY_APP_CATALOG = "CANNOT_MODIFY_APP_CATALOG";
-        public const string CANNOT_MODIFY_MARKET_CATALOG = "CANNOT_MODIFY_MARKET_CATALOG";
-        public const string INVALID = "INVALID";
-        public const string TAKEN = "TAKEN";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string TOO_SHORT = "TOO_SHORT";
-        public const string BLANK = "BLANK";
-        public const string PRODUCT_TYPE_INCOMPATIBLE_WITH_CATALOG_TYPE = "PRODUCT_TYPE_INCOMPATIBLE_WITH_CATALOG_TYPE";
-        public const string PUBLICATION_UPDATE_LIMIT_EXCEEDED = "PUBLICATION_UPDATE_LIMIT_EXCEEDED";
+        public const string UNSUPPORTED_PUBLICATION_ACTION = @"UNSUPPORTED_PUBLICATION_ACTION";
+        public const string PUBLICATION_NOT_FOUND = @"PUBLICATION_NOT_FOUND";
+        public const string PUBLICATION_LOCKED = @"PUBLICATION_LOCKED";
+        public const string UNSUPPORTED_PUBLISHABLE_TYPE = @"UNSUPPORTED_PUBLISHABLE_TYPE";
+        public const string INVALID_PUBLISHABLE_ID = @"INVALID_PUBLISHABLE_ID";
+        public const string MARKET_NOT_FOUND = @"MARKET_NOT_FOUND";
+        public const string CATALOG_NOT_FOUND = @"CATALOG_NOT_FOUND";
+        public const string CANNOT_MODIFY_APP_CATALOG_PUBLICATION = @"CANNOT_MODIFY_APP_CATALOG_PUBLICATION";
+        public const string CANNOT_MODIFY_MARKET_CATALOG_PUBLICATION = @"CANNOT_MODIFY_MARKET_CATALOG_PUBLICATION";
+        public const string CANNOT_MODIFY_APP_CATALOG = @"CANNOT_MODIFY_APP_CATALOG";
+        public const string CANNOT_MODIFY_MARKET_CATALOG = @"CANNOT_MODIFY_MARKET_CATALOG";
+        public const string INVALID = @"INVALID";
+        public const string TAKEN = @"TAKEN";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string TOO_SHORT = @"TOO_SHORT";
+        public const string BLANK = @"BLANK";
+        public const string PRODUCT_TYPE_INCOMPATIBLE_WITH_CATALOG_TYPE = @"PRODUCT_TYPE_INCOMPATIBLE_WITH_CATALOG_TYPE";
+        public const string PUBLICATION_UPDATE_LIMIT_EXCEEDED = @"PUBLICATION_UPDATE_LIMIT_EXCEEDED";
     }
 
     ///<summary>
@@ -52663,9 +52663,9 @@ namespace shopify
 
     public static class QuantityPriceBreakSortKeysStringValues
     {
-        public const string MINIMUM_QUANTITY = "MINIMUM_QUANTITY";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string MINIMUM_QUANTITY = @"MINIMUM_QUANTITY";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -52851,41 +52851,41 @@ namespace shopify
 
     public static class QuantityPricingByVariantUserErrorCodeStringValues
     {
-        public const string BLANK = "BLANK";
-        public const string PRICE_LIST_NOT_FOUND = "PRICE_LIST_NOT_FOUND";
-        public const string GENERIC_ERROR = "GENERIC_ERROR";
-        public const string QUANTITY_PRICE_BREAK_ADD_INVALID = "QUANTITY_PRICE_BREAK_ADD_INVALID";
-        public const string QUANTITY_PRICE_BREAK_ADD_PRICE_LIST_PRICE_NOT_FOUND = "QUANTITY_PRICE_BREAK_ADD_PRICE_LIST_PRICE_NOT_FOUND";
-        public const string QUANTITY_PRICE_BREAK_ADD_LIMIT_EXCEEDED = "QUANTITY_PRICE_BREAK_ADD_LIMIT_EXCEEDED";
-        public const string QUANTITY_PRICE_BREAK_ADD_CURRENCY_MISMATCH = "QUANTITY_PRICE_BREAK_ADD_CURRENCY_MISMATCH";
-        public const string QUANTITY_PRICE_BREAK_ADD_FAILED_TO_SAVE = "QUANTITY_PRICE_BREAK_ADD_FAILED_TO_SAVE";
-        public const string QUANTITY_PRICE_BREAK_ADD_MIN_LOWER_THAN_QUANTITY_RULES_MIN = "QUANTITY_PRICE_BREAK_ADD_MIN_LOWER_THAN_QUANTITY_RULES_MIN";
-        public const string QUANTITY_PRICE_BREAK_ADD_MIN_HIGHER_THAN_QUANTITY_RULES_MAX = "QUANTITY_PRICE_BREAK_ADD_MIN_HIGHER_THAN_QUANTITY_RULES_MAX";
-        public const string QUANTITY_PRICE_BREAK_ADD_MIN_NOT_A_MULTIPLE_OF_QUANTITY_RULES_INCREMENT = "QUANTITY_PRICE_BREAK_ADD_MIN_NOT_A_MULTIPLE_OF_QUANTITY_RULES_INCREMENT";
-        public const string QUANTITY_PRICE_BREAK_ADD_VARIANT_NOT_FOUND = "QUANTITY_PRICE_BREAK_ADD_VARIANT_NOT_FOUND";
-        public const string QUANTITY_PRICE_BREAK_ADD_DUPLICATE_INPUT_FOR_VARIANT_AND_MIN = "QUANTITY_PRICE_BREAK_ADD_DUPLICATE_INPUT_FOR_VARIANT_AND_MIN";
-        public const string QUANTITY_PRICE_BREAK_DELETE_NOT_FOUND = "QUANTITY_PRICE_BREAK_DELETE_NOT_FOUND";
-        public const string QUANTITY_PRICE_BREAK_DELETE_FAILED = "QUANTITY_PRICE_BREAK_DELETE_FAILED";
-        public const string QUANTITY_RULE_ADD_VARIANT_NOT_FOUND = "QUANTITY_RULE_ADD_VARIANT_NOT_FOUND";
-        public const string QUANTITY_RULE_ADD_MIN_HIGHER_THAN_QUANTITY_PRICE_BREAK_MIN = "QUANTITY_RULE_ADD_MIN_HIGHER_THAN_QUANTITY_PRICE_BREAK_MIN";
-        public const string QUANTITY_RULE_ADD_MAX_LOWER_THAN_QUANTITY_PRICE_BREAK_MIN = "QUANTITY_RULE_ADD_MAX_LOWER_THAN_QUANTITY_PRICE_BREAK_MIN";
-        public const string QUANTITY_RULE_ADD_INCREMENT_NOT_A_MULTIPLE_OF_QUANTITY_PRICE_BREAK_MIN = "QUANTITY_RULE_ADD_INCREMENT_NOT_A_MULTIPLE_OF_QUANTITY_PRICE_BREAK_MIN";
-        public const string QUANTITY_RULE_ADD_CATALOG_CONTEXT_NOT_SUPPORTED = "QUANTITY_RULE_ADD_CATALOG_CONTEXT_NOT_SUPPORTED";
-        public const string QUANTITY_RULE_ADD_INCREMENT_IS_GREATER_THAN_MINIMUM = "QUANTITY_RULE_ADD_INCREMENT_IS_GREATER_THAN_MINIMUM";
-        public const string QUANTITY_RULE_ADD_MINIMUM_NOT_A_MULTIPLE_OF_INCREMENT = "QUANTITY_RULE_ADD_MINIMUM_NOT_A_MULTIPLE_OF_INCREMENT";
-        public const string QUANTITY_RULE_ADD_MAXIMUM_NOT_A_MULTIPLE_OF_INCREMENT = "QUANTITY_RULE_ADD_MAXIMUM_NOT_A_MULTIPLE_OF_INCREMENT";
-        public const string QUANTITY_RULE_ADD_MINIMUM_GREATER_THAN_MAXIMUM = "QUANTITY_RULE_ADD_MINIMUM_GREATER_THAN_MAXIMUM";
-        public const string QUANTITY_RULE_ADD_INCREMENT_IS_LESS_THAN_ONE = "QUANTITY_RULE_ADD_INCREMENT_IS_LESS_THAN_ONE";
-        public const string QUANTITY_RULE_ADD_MINIMUM_IS_LESS_THAN_ONE = "QUANTITY_RULE_ADD_MINIMUM_IS_LESS_THAN_ONE";
-        public const string QUANTITY_RULE_ADD_MAXIMUM_IS_LESS_THAN_ONE = "QUANTITY_RULE_ADD_MAXIMUM_IS_LESS_THAN_ONE";
-        public const string QUANTITY_RULE_ADD_DUPLICATE_INPUT_FOR_VARIANT = "QUANTITY_RULE_ADD_DUPLICATE_INPUT_FOR_VARIANT";
-        public const string QUANTITY_RULE_DELETE_RULE_NOT_FOUND = "QUANTITY_RULE_DELETE_RULE_NOT_FOUND";
-        public const string QUANTITY_RULE_DELETE_VARIANT_NOT_FOUND = "QUANTITY_RULE_DELETE_VARIANT_NOT_FOUND";
-        public const string PRICE_ADD_CURRENCY_MISMATCH = "PRICE_ADD_CURRENCY_MISMATCH";
-        public const string PRICE_ADD_VARIANT_NOT_FOUND = "PRICE_ADD_VARIANT_NOT_FOUND";
-        public const string PRICE_ADD_DUPLICATE_INPUT_FOR_VARIANT = "PRICE_ADD_DUPLICATE_INPUT_FOR_VARIANT";
-        public const string PRICE_DELETE_PRICE_NOT_FIXED = "PRICE_DELETE_PRICE_NOT_FIXED";
-        public const string PRICE_DELETE_VARIANT_NOT_FOUND = "PRICE_DELETE_VARIANT_NOT_FOUND";
+        public const string BLANK = @"BLANK";
+        public const string PRICE_LIST_NOT_FOUND = @"PRICE_LIST_NOT_FOUND";
+        public const string GENERIC_ERROR = @"GENERIC_ERROR";
+        public const string QUANTITY_PRICE_BREAK_ADD_INVALID = @"QUANTITY_PRICE_BREAK_ADD_INVALID";
+        public const string QUANTITY_PRICE_BREAK_ADD_PRICE_LIST_PRICE_NOT_FOUND = @"QUANTITY_PRICE_BREAK_ADD_PRICE_LIST_PRICE_NOT_FOUND";
+        public const string QUANTITY_PRICE_BREAK_ADD_LIMIT_EXCEEDED = @"QUANTITY_PRICE_BREAK_ADD_LIMIT_EXCEEDED";
+        public const string QUANTITY_PRICE_BREAK_ADD_CURRENCY_MISMATCH = @"QUANTITY_PRICE_BREAK_ADD_CURRENCY_MISMATCH";
+        public const string QUANTITY_PRICE_BREAK_ADD_FAILED_TO_SAVE = @"QUANTITY_PRICE_BREAK_ADD_FAILED_TO_SAVE";
+        public const string QUANTITY_PRICE_BREAK_ADD_MIN_LOWER_THAN_QUANTITY_RULES_MIN = @"QUANTITY_PRICE_BREAK_ADD_MIN_LOWER_THAN_QUANTITY_RULES_MIN";
+        public const string QUANTITY_PRICE_BREAK_ADD_MIN_HIGHER_THAN_QUANTITY_RULES_MAX = @"QUANTITY_PRICE_BREAK_ADD_MIN_HIGHER_THAN_QUANTITY_RULES_MAX";
+        public const string QUANTITY_PRICE_BREAK_ADD_MIN_NOT_A_MULTIPLE_OF_QUANTITY_RULES_INCREMENT = @"QUANTITY_PRICE_BREAK_ADD_MIN_NOT_A_MULTIPLE_OF_QUANTITY_RULES_INCREMENT";
+        public const string QUANTITY_PRICE_BREAK_ADD_VARIANT_NOT_FOUND = @"QUANTITY_PRICE_BREAK_ADD_VARIANT_NOT_FOUND";
+        public const string QUANTITY_PRICE_BREAK_ADD_DUPLICATE_INPUT_FOR_VARIANT_AND_MIN = @"QUANTITY_PRICE_BREAK_ADD_DUPLICATE_INPUT_FOR_VARIANT_AND_MIN";
+        public const string QUANTITY_PRICE_BREAK_DELETE_NOT_FOUND = @"QUANTITY_PRICE_BREAK_DELETE_NOT_FOUND";
+        public const string QUANTITY_PRICE_BREAK_DELETE_FAILED = @"QUANTITY_PRICE_BREAK_DELETE_FAILED";
+        public const string QUANTITY_RULE_ADD_VARIANT_NOT_FOUND = @"QUANTITY_RULE_ADD_VARIANT_NOT_FOUND";
+        public const string QUANTITY_RULE_ADD_MIN_HIGHER_THAN_QUANTITY_PRICE_BREAK_MIN = @"QUANTITY_RULE_ADD_MIN_HIGHER_THAN_QUANTITY_PRICE_BREAK_MIN";
+        public const string QUANTITY_RULE_ADD_MAX_LOWER_THAN_QUANTITY_PRICE_BREAK_MIN = @"QUANTITY_RULE_ADD_MAX_LOWER_THAN_QUANTITY_PRICE_BREAK_MIN";
+        public const string QUANTITY_RULE_ADD_INCREMENT_NOT_A_MULTIPLE_OF_QUANTITY_PRICE_BREAK_MIN = @"QUANTITY_RULE_ADD_INCREMENT_NOT_A_MULTIPLE_OF_QUANTITY_PRICE_BREAK_MIN";
+        public const string QUANTITY_RULE_ADD_CATALOG_CONTEXT_NOT_SUPPORTED = @"QUANTITY_RULE_ADD_CATALOG_CONTEXT_NOT_SUPPORTED";
+        public const string QUANTITY_RULE_ADD_INCREMENT_IS_GREATER_THAN_MINIMUM = @"QUANTITY_RULE_ADD_INCREMENT_IS_GREATER_THAN_MINIMUM";
+        public const string QUANTITY_RULE_ADD_MINIMUM_NOT_A_MULTIPLE_OF_INCREMENT = @"QUANTITY_RULE_ADD_MINIMUM_NOT_A_MULTIPLE_OF_INCREMENT";
+        public const string QUANTITY_RULE_ADD_MAXIMUM_NOT_A_MULTIPLE_OF_INCREMENT = @"QUANTITY_RULE_ADD_MAXIMUM_NOT_A_MULTIPLE_OF_INCREMENT";
+        public const string QUANTITY_RULE_ADD_MINIMUM_GREATER_THAN_MAXIMUM = @"QUANTITY_RULE_ADD_MINIMUM_GREATER_THAN_MAXIMUM";
+        public const string QUANTITY_RULE_ADD_INCREMENT_IS_LESS_THAN_ONE = @"QUANTITY_RULE_ADD_INCREMENT_IS_LESS_THAN_ONE";
+        public const string QUANTITY_RULE_ADD_MINIMUM_IS_LESS_THAN_ONE = @"QUANTITY_RULE_ADD_MINIMUM_IS_LESS_THAN_ONE";
+        public const string QUANTITY_RULE_ADD_MAXIMUM_IS_LESS_THAN_ONE = @"QUANTITY_RULE_ADD_MAXIMUM_IS_LESS_THAN_ONE";
+        public const string QUANTITY_RULE_ADD_DUPLICATE_INPUT_FOR_VARIANT = @"QUANTITY_RULE_ADD_DUPLICATE_INPUT_FOR_VARIANT";
+        public const string QUANTITY_RULE_DELETE_RULE_NOT_FOUND = @"QUANTITY_RULE_DELETE_RULE_NOT_FOUND";
+        public const string QUANTITY_RULE_DELETE_VARIANT_NOT_FOUND = @"QUANTITY_RULE_DELETE_VARIANT_NOT_FOUND";
+        public const string PRICE_ADD_CURRENCY_MISMATCH = @"PRICE_ADD_CURRENCY_MISMATCH";
+        public const string PRICE_ADD_VARIANT_NOT_FOUND = @"PRICE_ADD_VARIANT_NOT_FOUND";
+        public const string PRICE_ADD_DUPLICATE_INPUT_FOR_VARIANT = @"PRICE_ADD_DUPLICATE_INPUT_FOR_VARIANT";
+        public const string PRICE_DELETE_PRICE_NOT_FIXED = @"PRICE_DELETE_PRICE_NOT_FIXED";
+        public const string PRICE_DELETE_VARIANT_NOT_FOUND = @"PRICE_DELETE_VARIANT_NOT_FOUND";
     }
 
     ///<summary>
@@ -52976,8 +52976,8 @@ namespace shopify
 
     public static class QuantityRuleOriginTypeStringValues
     {
-        public const string FIXED = "FIXED";
-        public const string RELATIVE = "RELATIVE";
+        public const string FIXED = @"FIXED";
+        public const string RELATIVE = @"RELATIVE";
     }
 
     ///<summary>
@@ -53068,21 +53068,21 @@ namespace shopify
 
     public static class QuantityRuleUserErrorCodeStringValues
     {
-        public const string BLANK = "BLANK";
-        public const string PRODUCT_VARIANT_DOES_NOT_EXIST = "PRODUCT_VARIANT_DOES_NOT_EXIST";
-        public const string PRICE_LIST_DOES_NOT_EXIST = "PRICE_LIST_DOES_NOT_EXIST";
-        public const string VARIANT_QUANTITY_RULE_DOES_NOT_EXIST = "VARIANT_QUANTITY_RULE_DOES_NOT_EXIST";
-        public const string MINIMUM_IS_GREATER_THAN_MAXIMUM = "MINIMUM_IS_GREATER_THAN_MAXIMUM";
-        public const string MINIMUM_IS_HIGHER_THAN_QUANTITY_PRICE_BREAK_MINIMUM = "MINIMUM_IS_HIGHER_THAN_QUANTITY_PRICE_BREAK_MINIMUM";
-        public const string MAXIMUM_IS_LOWER_THAN_QUANTITY_PRICE_BREAK_MINIMUM = "MAXIMUM_IS_LOWER_THAN_QUANTITY_PRICE_BREAK_MINIMUM";
-        public const string INCREMENT_NOT_A_MULTIPLE_OF_QUANTITY_PRICE_BREAK_MINIMUM = "INCREMENT_NOT_A_MULTIPLE_OF_QUANTITY_PRICE_BREAK_MINIMUM";
-        public const string INCREMENT_IS_GREATER_THAN_MINIMUM = "INCREMENT_IS_GREATER_THAN_MINIMUM";
-        public const string GREATER_THAN_OR_EQUAL_TO = "GREATER_THAN_OR_EQUAL_TO";
-        public const string MAXIMUM_NOT_MULTIPLE_OF_INCREMENT = "MAXIMUM_NOT_MULTIPLE_OF_INCREMENT";
-        public const string MINIMUM_NOT_MULTIPLE_OF_INCREMENT = "MINIMUM_NOT_MULTIPLE_OF_INCREMENT";
-        public const string CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_RULES = "CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_RULES";
-        public const string DUPLICATE_INPUT_FOR_VARIANT = "DUPLICATE_INPUT_FOR_VARIANT";
-        public const string GENERIC_ERROR = "GENERIC_ERROR";
+        public const string BLANK = @"BLANK";
+        public const string PRODUCT_VARIANT_DOES_NOT_EXIST = @"PRODUCT_VARIANT_DOES_NOT_EXIST";
+        public const string PRICE_LIST_DOES_NOT_EXIST = @"PRICE_LIST_DOES_NOT_EXIST";
+        public const string VARIANT_QUANTITY_RULE_DOES_NOT_EXIST = @"VARIANT_QUANTITY_RULE_DOES_NOT_EXIST";
+        public const string MINIMUM_IS_GREATER_THAN_MAXIMUM = @"MINIMUM_IS_GREATER_THAN_MAXIMUM";
+        public const string MINIMUM_IS_HIGHER_THAN_QUANTITY_PRICE_BREAK_MINIMUM = @"MINIMUM_IS_HIGHER_THAN_QUANTITY_PRICE_BREAK_MINIMUM";
+        public const string MAXIMUM_IS_LOWER_THAN_QUANTITY_PRICE_BREAK_MINIMUM = @"MAXIMUM_IS_LOWER_THAN_QUANTITY_PRICE_BREAK_MINIMUM";
+        public const string INCREMENT_NOT_A_MULTIPLE_OF_QUANTITY_PRICE_BREAK_MINIMUM = @"INCREMENT_NOT_A_MULTIPLE_OF_QUANTITY_PRICE_BREAK_MINIMUM";
+        public const string INCREMENT_IS_GREATER_THAN_MINIMUM = @"INCREMENT_IS_GREATER_THAN_MINIMUM";
+        public const string GREATER_THAN_OR_EQUAL_TO = @"GREATER_THAN_OR_EQUAL_TO";
+        public const string MAXIMUM_NOT_MULTIPLE_OF_INCREMENT = @"MAXIMUM_NOT_MULTIPLE_OF_INCREMENT";
+        public const string MINIMUM_NOT_MULTIPLE_OF_INCREMENT = @"MINIMUM_NOT_MULTIPLE_OF_INCREMENT";
+        public const string CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_RULES = @"CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_RULES";
+        public const string DUPLICATE_INPUT_FOR_VARIANT = @"DUPLICATE_INPUT_FOR_VARIANT";
+        public const string GENERIC_ERROR = @"GENERIC_ERROR";
     }
 
     ///<summary>
@@ -54359,8 +54359,8 @@ namespace shopify
 
     public static class RefundDutyRefundTypeStringValues
     {
-        public const string PROPORTIONAL = "PROPORTIONAL";
-        public const string FULL = "FULL";
+        public const string PROPORTIONAL = @"PROPORTIONAL";
+        public const string FULL = @"FULL";
     }
 
     ///<summary>
@@ -54498,10 +54498,10 @@ namespace shopify
 
     public static class RefundLineItemRestockTypeStringValues
     {
-        public const string RETURN = "RETURN";
-        public const string CANCEL = "CANCEL";
-        public const string LEGACY_RESTOCK = "LEGACY_RESTOCK";
-        public const string NO_RESTOCK = "NO_RESTOCK";
+        public const string RETURN = @"RETURN";
+        public const string CANCEL = @"CANCEL";
+        public const string LEGACY_RESTOCK = @"LEGACY_RESTOCK";
+        public const string NO_RESTOCK = @"NO_RESTOCK";
     }
 
     ///<summary>
@@ -54627,8 +54627,8 @@ namespace shopify
 
     public static class ResourceAlertIconStringValues
     {
-        public const string CHECKMARK_CIRCLE = "CHECKMARK_CIRCLE";
-        public const string INFORMATION_CIRCLE = "INFORMATION_CIRCLE";
+        public const string CHECKMARK_CIRCLE = @"CHECKMARK_CIRCLE";
+        public const string INFORMATION_CIRCLE = @"INFORMATION_CIRCLE";
     }
 
     ///<summary>
@@ -54662,13 +54662,13 @@ namespace shopify
 
     public static class ResourceAlertSeverityStringValues
     {
-        public const string DEFAULT = "DEFAULT";
-        public const string INFO = "INFO";
-        public const string WARNING = "WARNING";
-        public const string SUCCESS = "SUCCESS";
-        public const string CRITICAL = "CRITICAL";
+        public const string DEFAULT = @"DEFAULT";
+        public const string INFO = @"INFO";
+        public const string WARNING = @"WARNING";
+        public const string SUCCESS = @"SUCCESS";
+        public const string CRITICAL = @"CRITICAL";
         [Obsolete("`ERROR` severity is being deprecated in favour of `WARNING` or `CRITICAL` instead.")]
-        public const string ERROR = "ERROR";
+        public const string ERROR = @"ERROR";
     }
 
     ///<summary>
@@ -54708,8 +54708,8 @@ namespace shopify
 
     public static class ResourceFeedbackStateStringValues
     {
-        public const string ACCEPTED = "ACCEPTED";
-        public const string REQUIRES_ACTION = "REQUIRES_ACTION";
+        public const string ACCEPTED = @"ACCEPTED";
+        public const string REQUIRES_ACTION = @"REQUIRES_ACTION";
     }
 
     ///<summary>
@@ -54763,9 +54763,9 @@ namespace shopify
 
     public static class ResourceOperationStatusStringValues
     {
-        public const string CREATED = "CREATED";
-        public const string ACTIVE = "ACTIVE";
-        public const string COMPLETE = "COMPLETE";
+        public const string CREATED = @"CREATED";
+        public const string ACTIVE = @"ACTIVE";
+        public const string COMPLETE = @"COMPLETE";
     }
 
     ///<summary>
@@ -55137,9 +55137,9 @@ namespace shopify
 
     public static class ReturnDeclineReasonStringValues
     {
-        public const string RETURN_PERIOD_ENDED = "RETURN_PERIOD_ENDED";
-        public const string FINAL_SALE = "FINAL_SALE";
-        public const string OTHER = "OTHER";
+        public const string RETURN_PERIOD_ENDED = @"RETURN_PERIOD_ENDED";
+        public const string FINAL_SALE = @"FINAL_SALE";
+        public const string OTHER = @"OTHER";
     }
 
     ///<summary>
@@ -55277,30 +55277,30 @@ namespace shopify
 
     public static class ReturnErrorCodeStringValues
     {
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
-        public const string TOO_MANY_ARGUMENTS = "TOO_MANY_ARGUMENTS";
-        public const string BLANK = "BLANK";
-        public const string EQUAL_TO = "EQUAL_TO";
-        public const string GREATER_THAN = "GREATER_THAN";
-        public const string GREATER_THAN_OR_EQUAL_TO = "GREATER_THAN_OR_EQUAL_TO";
-        public const string INCLUSION = "INCLUSION";
-        public const string INVALID = "INVALID";
-        public const string LESS_THAN = "LESS_THAN";
-        public const string LESS_THAN_OR_EQUAL_TO = "LESS_THAN_OR_EQUAL_TO";
-        public const string NOT_A_NUMBER = "NOT_A_NUMBER";
-        public const string PRESENT = "PRESENT";
-        public const string TAKEN = "TAKEN";
-        public const string TOO_BIG = "TOO_BIG";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string TOO_SHORT = "TOO_SHORT";
-        public const string WRONG_LENGTH = "WRONG_LENGTH";
-        public const string ALREADY_EXISTS = "ALREADY_EXISTS";
-        public const string CREATION_FAILED = "CREATION_FAILED";
-        public const string FEATURE_NOT_ENABLED = "FEATURE_NOT_ENABLED";
-        public const string INVALID_STATE = "INVALID_STATE";
-        public const string NOTIFICATION_FAILED = "NOTIFICATION_FAILED";
-        public const string NOT_EDITABLE = "NOT_EDITABLE";
-        public const string NOT_FOUND = "NOT_FOUND";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
+        public const string TOO_MANY_ARGUMENTS = @"TOO_MANY_ARGUMENTS";
+        public const string BLANK = @"BLANK";
+        public const string EQUAL_TO = @"EQUAL_TO";
+        public const string GREATER_THAN = @"GREATER_THAN";
+        public const string GREATER_THAN_OR_EQUAL_TO = @"GREATER_THAN_OR_EQUAL_TO";
+        public const string INCLUSION = @"INCLUSION";
+        public const string INVALID = @"INVALID";
+        public const string LESS_THAN = @"LESS_THAN";
+        public const string LESS_THAN_OR_EQUAL_TO = @"LESS_THAN_OR_EQUAL_TO";
+        public const string NOT_A_NUMBER = @"NOT_A_NUMBER";
+        public const string PRESENT = @"PRESENT";
+        public const string TAKEN = @"TAKEN";
+        public const string TOO_BIG = @"TOO_BIG";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string TOO_SHORT = @"TOO_SHORT";
+        public const string WRONG_LENGTH = @"WRONG_LENGTH";
+        public const string ALREADY_EXISTS = @"ALREADY_EXISTS";
+        public const string CREATION_FAILED = @"CREATION_FAILED";
+        public const string FEATURE_NOT_ENABLED = @"FEATURE_NOT_ENABLED";
+        public const string INVALID_STATE = @"INVALID_STATE";
+        public const string NOTIFICATION_FAILED = @"NOTIFICATION_FAILED";
+        public const string NOT_EDITABLE = @"NOT_EDITABLE";
+        public const string NOT_FOUND = @"NOT_FOUND";
     }
 
     ///<summary>
@@ -55486,16 +55486,16 @@ namespace shopify
 
     public static class ReturnReasonStringValues
     {
-        public const string SIZE_TOO_SMALL = "SIZE_TOO_SMALL";
-        public const string SIZE_TOO_LARGE = "SIZE_TOO_LARGE";
-        public const string UNWANTED = "UNWANTED";
-        public const string NOT_AS_DESCRIBED = "NOT_AS_DESCRIBED";
-        public const string WRONG_ITEM = "WRONG_ITEM";
-        public const string DEFECTIVE = "DEFECTIVE";
-        public const string STYLE = "STYLE";
-        public const string COLOR = "COLOR";
-        public const string OTHER = "OTHER";
-        public const string UNKNOWN = "UNKNOWN";
+        public const string SIZE_TOO_SMALL = @"SIZE_TOO_SMALL";
+        public const string SIZE_TOO_LARGE = @"SIZE_TOO_LARGE";
+        public const string UNWANTED = @"UNWANTED";
+        public const string NOT_AS_DESCRIBED = @"NOT_AS_DESCRIBED";
+        public const string WRONG_ITEM = @"WRONG_ITEM";
+        public const string DEFECTIVE = @"DEFECTIVE";
+        public const string STYLE = @"STYLE";
+        public const string COLOR = @"COLOR";
+        public const string OTHER = @"OTHER";
+        public const string UNKNOWN = @"UNKNOWN";
     }
 
     ///<summary>
@@ -55587,11 +55587,11 @@ namespace shopify
 
     public static class ReturnStatusStringValues
     {
-        public const string CANCELED = "CANCELED";
-        public const string CLOSED = "CLOSED";
-        public const string OPEN = "OPEN";
-        public const string REQUESTED = "REQUESTED";
-        public const string DECLINED = "DECLINED";
+        public const string CANCELED = @"CANCELED";
+        public const string CLOSED = @"CLOSED";
+        public const string OPEN = @"OPEN";
+        public const string REQUESTED = @"REQUESTED";
+        public const string DECLINED = @"DECLINED";
     }
 
     ///<summary>
@@ -56049,10 +56049,10 @@ namespace shopify
 
     public static class ReverseFulfillmentOrderDispositionTypeStringValues
     {
-        public const string RESTOCKED = "RESTOCKED";
-        public const string PROCESSING_REQUIRED = "PROCESSING_REQUIRED";
-        public const string NOT_RESTOCKED = "NOT_RESTOCKED";
-        public const string MISSING = "MISSING";
+        public const string RESTOCKED = @"RESTOCKED";
+        public const string PROCESSING_REQUIRED = @"PROCESSING_REQUIRED";
+        public const string NOT_RESTOCKED = @"NOT_RESTOCKED";
+        public const string MISSING = @"MISSING";
     }
 
     ///<summary>
@@ -56148,9 +56148,9 @@ namespace shopify
 
     public static class ReverseFulfillmentOrderStatusStringValues
     {
-        public const string CANCELED = "CANCELED";
-        public const string CLOSED = "CLOSED";
-        public const string OPEN = "OPEN";
+        public const string CANCELED = @"CANCELED";
+        public const string CLOSED = @"CLOSED";
+        public const string OPEN = @"OPEN";
     }
 
     ///<summary>
@@ -56197,12 +56197,12 @@ namespace shopify
 
     public static class ReverseFulfillmentOrderThirdPartyConfirmationStatusStringValues
     {
-        public const string ACCEPTED = "ACCEPTED";
-        public const string CANCEL_ACCEPTED = "CANCEL_ACCEPTED";
-        public const string CANCEL_REJECTED = "CANCEL_REJECTED";
-        public const string PENDING_ACCEPTANCE = "PENDING_ACCEPTANCE";
-        public const string PENDING_CANCELATION = "PENDING_CANCELATION";
-        public const string REJECTED = "REJECTED";
+        public const string ACCEPTED = @"ACCEPTED";
+        public const string CANCEL_ACCEPTED = @"CANCEL_ACCEPTED";
+        public const string CANCEL_REJECTED = @"CANCEL_REJECTED";
+        public const string PENDING_ACCEPTANCE = @"PENDING_ACCEPTANCE";
+        public const string PENDING_CANCELATION = @"PENDING_CANCELATION";
+        public const string REJECTED = @"REJECTED";
     }
 
     ///<summary>
@@ -56234,11 +56234,11 @@ namespace shopify
 
     public static class RiskAssessmentResultStringValues
     {
-        public const string HIGH = "HIGH";
-        public const string MEDIUM = "MEDIUM";
-        public const string LOW = "LOW";
-        public const string NONE = "NONE";
-        public const string PENDING = "PENDING";
+        public const string HIGH = @"HIGH";
+        public const string MEDIUM = @"MEDIUM";
+        public const string LOW = @"LOW";
+        public const string NONE = @"NONE";
+        public const string PENDING = @"PENDING";
     }
 
     ///<summary>
@@ -56277,9 +56277,9 @@ namespace shopify
 
     public static class RiskFactSentimentStringValues
     {
-        public const string POSITIVE = "POSITIVE";
-        public const string NEUTRAL = "NEUTRAL";
-        public const string NEGATIVE = "NEGATIVE";
+        public const string POSITIVE = @"POSITIVE";
+        public const string NEUTRAL = @"NEUTRAL";
+        public const string NEGATIVE = @"NEGATIVE";
     }
 
     ///<summary>
@@ -56399,10 +56399,10 @@ namespace shopify
 
     public static class SaleActionTypeStringValues
     {
-        public const string ORDER = "ORDER";
-        public const string RETURN = "RETURN";
-        public const string UPDATE = "UPDATE";
-        public const string UNKNOWN = "UNKNOWN";
+        public const string ORDER = @"ORDER";
+        public const string RETURN = @"RETURN";
+        public const string UPDATE = @"UPDATE";
+        public const string UNKNOWN = @"UNKNOWN";
     }
 
     ///<summary>
@@ -56507,15 +56507,15 @@ namespace shopify
 
     public static class SaleLineTypeStringValues
     {
-        public const string PRODUCT = "PRODUCT";
-        public const string TIP = "TIP";
-        public const string GIFT_CARD = "GIFT_CARD";
-        public const string SHIPPING = "SHIPPING";
-        public const string DUTY = "DUTY";
-        public const string ADDITIONAL_FEE = "ADDITIONAL_FEE";
-        public const string FEE = "FEE";
-        public const string UNKNOWN = "UNKNOWN";
-        public const string ADJUSTMENT = "ADJUSTMENT";
+        public const string PRODUCT = @"PRODUCT";
+        public const string TIP = @"TIP";
+        public const string GIFT_CARD = @"GIFT_CARD";
+        public const string SHIPPING = @"SHIPPING";
+        public const string DUTY = @"DUTY";
+        public const string ADDITIONAL_FEE = @"ADDITIONAL_FEE";
+        public const string FEE = @"FEE";
+        public const string UNKNOWN = @"UNKNOWN";
+        public const string ADJUSTMENT = @"ADJUSTMENT";
     }
 
     ///<summary>
@@ -56751,9 +56751,9 @@ namespace shopify
 
     public static class ScheduledChangeSortKeysStringValues
     {
-        public const string EXPECTED_AT = "EXPECTED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string EXPECTED_AT = @"EXPECTED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -56912,9 +56912,9 @@ namespace shopify
 
     public static class ScriptTagDisplayScopeStringValues
     {
-        public const string ALL = "ALL";
-        public const string ORDER_STATUS = "ORDER_STATUS";
-        public const string ONLINE_STORE = "ONLINE_STORE";
+        public const string ALL = @"ALL";
+        public const string ORDER_STATUS = @"ORDER_STATUS";
+        public const string ONLINE_STORE = @"ONLINE_STORE";
     }
 
     ///<summary>
@@ -57079,19 +57079,19 @@ namespace shopify
 
     public static class SearchResultTypeStringValues
     {
-        public const string CUSTOMER = "CUSTOMER";
-        public const string DRAFT_ORDER = "DRAFT_ORDER";
-        public const string PRODUCT = "PRODUCT";
-        public const string COLLECTION = "COLLECTION";
-        public const string FILE = "FILE";
-        public const string PAGE = "PAGE";
-        public const string BLOG = "BLOG";
-        public const string ARTICLE = "ARTICLE";
-        public const string URL_REDIRECT = "URL_REDIRECT";
-        public const string PRICE_RULE = "PRICE_RULE";
-        public const string DISCOUNT_REDEEM_CODE = "DISCOUNT_REDEEM_CODE";
-        public const string ORDER = "ORDER";
-        public const string BALANCE_TRANSACTION = "BALANCE_TRANSACTION";
+        public const string CUSTOMER = @"CUSTOMER";
+        public const string DRAFT_ORDER = @"DRAFT_ORDER";
+        public const string PRODUCT = @"PRODUCT";
+        public const string COLLECTION = @"COLLECTION";
+        public const string FILE = @"FILE";
+        public const string PAGE = @"PAGE";
+        public const string BLOG = @"BLOG";
+        public const string ARTICLE = @"ARTICLE";
+        public const string URL_REDIRECT = @"URL_REDIRECT";
+        public const string PRICE_RULE = @"PRICE_RULE";
+        public const string DISCOUNT_REDEEM_CODE = @"DISCOUNT_REDEEM_CODE";
+        public const string ORDER = @"ORDER";
+        public const string BALANCE_TRANSACTION = @"BALANCE_TRANSACTION";
     }
 
     ///<summary>
@@ -57548,10 +57548,10 @@ namespace shopify
 
     public static class SegmentSortKeysStringValues
     {
-        public const string CREATION_DATE = "CREATION_DATE";
-        public const string LAST_EDIT_DATE = "LAST_EDIT_DATE";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATION_DATE = @"CREATION_DATE";
+        public const string LAST_EDIT_DATE = @"LAST_EDIT_DATE";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -57828,9 +57828,9 @@ namespace shopify
 
     public static class SellingPlanAnchorTypeStringValues
     {
-        public const string WEEKDAY = "WEEKDAY";
-        public const string MONTHDAY = "MONTHDAY";
-        public const string YEARDAY = "YEARDAY";
+        public const string WEEKDAY = @"WEEKDAY";
+        public const string MONTHDAY = @"MONTHDAY";
+        public const string YEARDAY = @"YEARDAY";
     }
 
     ///<summary>
@@ -57875,10 +57875,10 @@ namespace shopify
 
     public static class SellingPlanCategoryStringValues
     {
-        public const string OTHER = "OTHER";
-        public const string PRE_ORDER = "PRE_ORDER";
-        public const string SUBSCRIPTION = "SUBSCRIPTION";
-        public const string TRY_BEFORE_YOU_BUY = "TRY_BEFORE_YOU_BUY";
+        public const string OTHER = @"OTHER";
+        public const string PRE_ORDER = @"PRE_ORDER";
+        public const string SUBSCRIPTION = @"SUBSCRIPTION";
+        public const string TRY_BEFORE_YOU_BUY = @"TRY_BEFORE_YOU_BUY";
     }
 
     ///<summary>
@@ -57924,8 +57924,8 @@ namespace shopify
 
     public static class SellingPlanCheckoutChargeTypeStringValues
     {
-        public const string PERCENTAGE = "PERCENTAGE";
-        public const string PRICE = "PRICE";
+        public const string PERCENTAGE = @"PERCENTAGE";
+        public const string PRICE = @"PRICE";
     }
 
     ///<summary>
@@ -58079,7 +58079,7 @@ namespace shopify
 
     public static class SellingPlanFixedDeliveryPolicyIntentStringValues
     {
-        public const string FULFILLMENT_BEGIN = "FULFILLMENT_BEGIN";
+        public const string FULFILLMENT_BEGIN = @"FULFILLMENT_BEGIN";
     }
 
     ///<summary>
@@ -58101,8 +58101,8 @@ namespace shopify
 
     public static class SellingPlanFixedDeliveryPolicyPreAnchorBehaviorStringValues
     {
-        public const string ASAP = "ASAP";
-        public const string NEXT = "NEXT";
+        public const string ASAP = @"ASAP";
+        public const string NEXT = @"NEXT";
     }
 
     ///<summary>
@@ -58153,10 +58153,10 @@ namespace shopify
 
     public static class SellingPlanFulfillmentTriggerStringValues
     {
-        public const string ANCHOR = "ANCHOR";
-        public const string ASAP = "ASAP";
-        public const string EXACT_TIME = "EXACT_TIME";
-        public const string UNKNOWN = "UNKNOWN";
+        public const string ANCHOR = @"ANCHOR";
+        public const string ASAP = @"ASAP";
+        public const string EXACT_TIME = @"EXACT_TIME";
+        public const string UNKNOWN = @"UNKNOWN";
     }
 
     ///<summary>
@@ -58394,11 +58394,11 @@ namespace shopify
 
     public static class SellingPlanGroupSortKeysStringValues
     {
-        public const string NAME = "NAME";
-        public const string UPDATED_AT = "UPDATED_AT";
-        public const string CREATED_AT = "CREATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string NAME = @"NAME";
+        public const string UPDATED_AT = @"UPDATED_AT";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -58700,69 +58700,69 @@ namespace shopify
 
     public static class SellingPlanGroupUserErrorCodeStringValues
     {
-        public const string BLANK = "BLANK";
-        public const string EQUAL_TO = "EQUAL_TO";
-        public const string GREATER_THAN = "GREATER_THAN";
-        public const string GREATER_THAN_OR_EQUAL_TO = "GREATER_THAN_OR_EQUAL_TO";
-        public const string INCLUSION = "INCLUSION";
-        public const string INVALID = "INVALID";
-        public const string LESS_THAN = "LESS_THAN";
-        public const string LESS_THAN_OR_EQUAL_TO = "LESS_THAN_OR_EQUAL_TO";
-        public const string NOT_A_NUMBER = "NOT_A_NUMBER";
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string PRESENT = "PRESENT";
-        public const string TAKEN = "TAKEN";
-        public const string TOO_BIG = "TOO_BIG";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string TOO_SHORT = "TOO_SHORT";
-        public const string WRONG_LENGTH = "WRONG_LENGTH";
-        public const string SELLING_PLAN_COUNT_UPPER_BOUND = "SELLING_PLAN_COUNT_UPPER_BOUND";
-        public const string SELLING_PLAN_COUNT_LOWER_BOUND = "SELLING_PLAN_COUNT_LOWER_BOUND";
-        public const string SELLING_PLAN_MAX_CYCLES_MUST_BE_GREATER_THAN_MIN_CYCLES = "SELLING_PLAN_MAX_CYCLES_MUST_BE_GREATER_THAN_MIN_CYCLES";
-        public const string SELLING_PLAN_BILLING_AND_DELIVERY_POLICY_ANCHORS_MUST_BE_EQUAL = "SELLING_PLAN_BILLING_AND_DELIVERY_POLICY_ANCHORS_MUST_BE_EQUAL";
-        public const string SELLING_PLAN_BILLING_CYCLE_MUST_BE_A_MULTIPLE_OF_DELIVERY_CYCLE = "SELLING_PLAN_BILLING_CYCLE_MUST_BE_A_MULTIPLE_OF_DELIVERY_CYCLE";
-        public const string SELLING_PLAN_PRICING_POLICIES_MUST_CONTAIN_A_FIXED_PRICING_POLICY = "SELLING_PLAN_PRICING_POLICIES_MUST_CONTAIN_A_FIXED_PRICING_POLICY";
-        public const string SELLING_PLAN_MISSING_OPTION2_LABEL_ON_PARENT_GROUP = "SELLING_PLAN_MISSING_OPTION2_LABEL_ON_PARENT_GROUP";
-        public const string SELLING_PLAN_MISSING_OPTION3_LABEL_ON_PARENT_GROUP = "SELLING_PLAN_MISSING_OPTION3_LABEL_ON_PARENT_GROUP";
-        public const string SELLING_PLAN_OPTION2_REQUIRED_AS_DEFINED_ON_PARENT_GROUP = "SELLING_PLAN_OPTION2_REQUIRED_AS_DEFINED_ON_PARENT_GROUP";
-        public const string SELLING_PLAN_OPTION3_REQUIRED_AS_DEFINED_ON_PARENT_GROUP = "SELLING_PLAN_OPTION3_REQUIRED_AS_DEFINED_ON_PARENT_GROUP";
-        public const string SELLING_PLAN_PRICING_POLICIES_LIMIT = "SELLING_PLAN_PRICING_POLICIES_LIMIT";
-        public const string RESOURCE_LIST_CONTAINS_INVALID_IDS = "RESOURCE_LIST_CONTAINS_INVALID_IDS";
-        public const string PRODUCT_VARIANT_DOES_NOT_EXIST = "PRODUCT_VARIANT_DOES_NOT_EXIST";
-        public const string PRODUCT_DOES_NOT_EXIST = "PRODUCT_DOES_NOT_EXIST";
-        public const string GROUP_DOES_NOT_EXIST = "GROUP_DOES_NOT_EXIST";
-        public const string GROUP_COULD_NOT_BE_DELETED = "GROUP_COULD_NOT_BE_DELETED";
-        public const string ERROR_ADDING_RESOURCE_TO_GROUP = "ERROR_ADDING_RESOURCE_TO_GROUP";
-        public const string SELLING_PLAN_DELIVERY_POLICY_MISSING = "SELLING_PLAN_DELIVERY_POLICY_MISSING";
-        public const string SELLING_PLAN_BILLING_POLICY_MISSING = "SELLING_PLAN_BILLING_POLICY_MISSING";
-        public const string PLAN_DOES_NOT_EXIST = "PLAN_DOES_NOT_EXIST";
-        public const string PLAN_ID_MUST_BE_SPECIFIED_TO_UPDATE = "PLAN_ID_MUST_BE_SPECIFIED_TO_UPDATE";
-        public const string ONLY_NEED_ONE_BILLING_POLICY_TYPE = "ONLY_NEED_ONE_BILLING_POLICY_TYPE";
-        public const string ONLY_NEED_ONE_DELIVERY_POLICY_TYPE = "ONLY_NEED_ONE_DELIVERY_POLICY_TYPE";
-        public const string ONLY_NEED_ONE_PRICING_POLICY_TYPE = "ONLY_NEED_ONE_PRICING_POLICY_TYPE";
-        public const string BILLING_AND_DELIVERY_POLICY_TYPES_MUST_BE_THE_SAME = "BILLING_AND_DELIVERY_POLICY_TYPES_MUST_BE_THE_SAME";
-        public const string ONLY_NEED_ONE_PRICING_POLICY_VALUE = "ONLY_NEED_ONE_PRICING_POLICY_VALUE";
-        public const string PRICING_POLICY_ADJUSTMENT_VALUE_AND_TYPE_MUST_MATCH = "PRICING_POLICY_ADJUSTMENT_VALUE_AND_TYPE_MUST_MATCH";
-        public const string SELLING_PLAN_DUPLICATE_NAME = "SELLING_PLAN_DUPLICATE_NAME";
-        public const string SELLING_PLAN_DUPLICATE_OPTIONS = "SELLING_PLAN_DUPLICATE_OPTIONS";
-        public const string SELLING_PLAN_FIXED_PRICING_POLICIES_LIMIT = "SELLING_PLAN_FIXED_PRICING_POLICIES_LIMIT";
-        public const string REMAINING_BALANCE_CHARGE_EXACT_TIME_REQUIRED = "REMAINING_BALANCE_CHARGE_EXACT_TIME_REQUIRED";
-        public const string CHECKOUT_CHARGE_VALUE_AND_TYPE_MUST_MATCH = "CHECKOUT_CHARGE_VALUE_AND_TYPE_MUST_MATCH";
-        public const string ONLY_NEED_ONE_CHECKOUT_CHARGE_VALUE = "ONLY_NEED_ONE_CHECKOUT_CHARGE_VALUE";
-        public const string REMAINING_BALANCE_CHARGE_EXACT_TIME_NOT_ALLOWED = "REMAINING_BALANCE_CHARGE_EXACT_TIME_NOT_ALLOWED";
-        public const string REMAINING_BALANCE_CHARGE_TIME_AFTER_CHECKOUT_MUST_BE_GREATER_THAN_ZERO = "REMAINING_BALANCE_CHARGE_TIME_AFTER_CHECKOUT_MUST_BE_GREATER_THAN_ZERO";
-        public const string REMAINING_BALANCE_CHARGE_TRIGGER_ON_FULL_CHECKOUT = "REMAINING_BALANCE_CHARGE_TRIGGER_ON_FULL_CHECKOUT";
-        public const string REMAINING_BALANCE_CHARGE_TRIGGER_NO_REMAINING_BALANCE_ON_PARTIAL_PERCENTAGE_CHECKOUT_CHARGE = "REMAINING_BALANCE_CHARGE_TRIGGER_NO_REMAINING_BALANCE_ON_PARTIAL_PERCENTAGE_CHECKOUT_CHARGE";
-        public const string REMAINING_BALANCE_CHARGE_TRIGGER_NO_REMAINING_BALANCE_ON_PRICE_CHECKOUT_CHARGE = "REMAINING_BALANCE_CHARGE_TRIGGER_NO_REMAINING_BALANCE_ON_PRICE_CHECKOUT_CHARGE";
-        public const string FULFILLMENT_EXACT_TIME_REQUIRED = "FULFILLMENT_EXACT_TIME_REQUIRED";
-        public const string FULFILLMENT_EXACT_TIME_NOT_ALLOWED = "FULFILLMENT_EXACT_TIME_NOT_ALLOWED";
-        public const string SELLING_PLAN_ANCHORS_NOT_ALLOWED = "SELLING_PLAN_ANCHORS_NOT_ALLOWED";
-        public const string SELLING_PLAN_ANCHORS_REQUIRED = "SELLING_PLAN_ANCHORS_REQUIRED";
-        public const string ONLY_ONE_OF_FIXED_OR_RECURRING_BILLING = "ONLY_ONE_OF_FIXED_OR_RECURRING_BILLING";
-        public const string ONLY_ONE_OF_FIXED_OR_RECURRING_DELIVERY = "ONLY_ONE_OF_FIXED_OR_RECURRING_DELIVERY";
-        public const string BILLING_POLICY_INTERVAL_TOO_LARGE = "BILLING_POLICY_INTERVAL_TOO_LARGE";
-        public const string DELIVERY_POLICY_INTERVAL_TOO_LARGE = "DELIVERY_POLICY_INTERVAL_TOO_LARGE";
-        public const string INVALID_INPUT = "INVALID_INPUT";
+        public const string BLANK = @"BLANK";
+        public const string EQUAL_TO = @"EQUAL_TO";
+        public const string GREATER_THAN = @"GREATER_THAN";
+        public const string GREATER_THAN_OR_EQUAL_TO = @"GREATER_THAN_OR_EQUAL_TO";
+        public const string INCLUSION = @"INCLUSION";
+        public const string INVALID = @"INVALID";
+        public const string LESS_THAN = @"LESS_THAN";
+        public const string LESS_THAN_OR_EQUAL_TO = @"LESS_THAN_OR_EQUAL_TO";
+        public const string NOT_A_NUMBER = @"NOT_A_NUMBER";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string PRESENT = @"PRESENT";
+        public const string TAKEN = @"TAKEN";
+        public const string TOO_BIG = @"TOO_BIG";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string TOO_SHORT = @"TOO_SHORT";
+        public const string WRONG_LENGTH = @"WRONG_LENGTH";
+        public const string SELLING_PLAN_COUNT_UPPER_BOUND = @"SELLING_PLAN_COUNT_UPPER_BOUND";
+        public const string SELLING_PLAN_COUNT_LOWER_BOUND = @"SELLING_PLAN_COUNT_LOWER_BOUND";
+        public const string SELLING_PLAN_MAX_CYCLES_MUST_BE_GREATER_THAN_MIN_CYCLES = @"SELLING_PLAN_MAX_CYCLES_MUST_BE_GREATER_THAN_MIN_CYCLES";
+        public const string SELLING_PLAN_BILLING_AND_DELIVERY_POLICY_ANCHORS_MUST_BE_EQUAL = @"SELLING_PLAN_BILLING_AND_DELIVERY_POLICY_ANCHORS_MUST_BE_EQUAL";
+        public const string SELLING_PLAN_BILLING_CYCLE_MUST_BE_A_MULTIPLE_OF_DELIVERY_CYCLE = @"SELLING_PLAN_BILLING_CYCLE_MUST_BE_A_MULTIPLE_OF_DELIVERY_CYCLE";
+        public const string SELLING_PLAN_PRICING_POLICIES_MUST_CONTAIN_A_FIXED_PRICING_POLICY = @"SELLING_PLAN_PRICING_POLICIES_MUST_CONTAIN_A_FIXED_PRICING_POLICY";
+        public const string SELLING_PLAN_MISSING_OPTION2_LABEL_ON_PARENT_GROUP = @"SELLING_PLAN_MISSING_OPTION2_LABEL_ON_PARENT_GROUP";
+        public const string SELLING_PLAN_MISSING_OPTION3_LABEL_ON_PARENT_GROUP = @"SELLING_PLAN_MISSING_OPTION3_LABEL_ON_PARENT_GROUP";
+        public const string SELLING_PLAN_OPTION2_REQUIRED_AS_DEFINED_ON_PARENT_GROUP = @"SELLING_PLAN_OPTION2_REQUIRED_AS_DEFINED_ON_PARENT_GROUP";
+        public const string SELLING_PLAN_OPTION3_REQUIRED_AS_DEFINED_ON_PARENT_GROUP = @"SELLING_PLAN_OPTION3_REQUIRED_AS_DEFINED_ON_PARENT_GROUP";
+        public const string SELLING_PLAN_PRICING_POLICIES_LIMIT = @"SELLING_PLAN_PRICING_POLICIES_LIMIT";
+        public const string RESOURCE_LIST_CONTAINS_INVALID_IDS = @"RESOURCE_LIST_CONTAINS_INVALID_IDS";
+        public const string PRODUCT_VARIANT_DOES_NOT_EXIST = @"PRODUCT_VARIANT_DOES_NOT_EXIST";
+        public const string PRODUCT_DOES_NOT_EXIST = @"PRODUCT_DOES_NOT_EXIST";
+        public const string GROUP_DOES_NOT_EXIST = @"GROUP_DOES_NOT_EXIST";
+        public const string GROUP_COULD_NOT_BE_DELETED = @"GROUP_COULD_NOT_BE_DELETED";
+        public const string ERROR_ADDING_RESOURCE_TO_GROUP = @"ERROR_ADDING_RESOURCE_TO_GROUP";
+        public const string SELLING_PLAN_DELIVERY_POLICY_MISSING = @"SELLING_PLAN_DELIVERY_POLICY_MISSING";
+        public const string SELLING_PLAN_BILLING_POLICY_MISSING = @"SELLING_PLAN_BILLING_POLICY_MISSING";
+        public const string PLAN_DOES_NOT_EXIST = @"PLAN_DOES_NOT_EXIST";
+        public const string PLAN_ID_MUST_BE_SPECIFIED_TO_UPDATE = @"PLAN_ID_MUST_BE_SPECIFIED_TO_UPDATE";
+        public const string ONLY_NEED_ONE_BILLING_POLICY_TYPE = @"ONLY_NEED_ONE_BILLING_POLICY_TYPE";
+        public const string ONLY_NEED_ONE_DELIVERY_POLICY_TYPE = @"ONLY_NEED_ONE_DELIVERY_POLICY_TYPE";
+        public const string ONLY_NEED_ONE_PRICING_POLICY_TYPE = @"ONLY_NEED_ONE_PRICING_POLICY_TYPE";
+        public const string BILLING_AND_DELIVERY_POLICY_TYPES_MUST_BE_THE_SAME = @"BILLING_AND_DELIVERY_POLICY_TYPES_MUST_BE_THE_SAME";
+        public const string ONLY_NEED_ONE_PRICING_POLICY_VALUE = @"ONLY_NEED_ONE_PRICING_POLICY_VALUE";
+        public const string PRICING_POLICY_ADJUSTMENT_VALUE_AND_TYPE_MUST_MATCH = @"PRICING_POLICY_ADJUSTMENT_VALUE_AND_TYPE_MUST_MATCH";
+        public const string SELLING_PLAN_DUPLICATE_NAME = @"SELLING_PLAN_DUPLICATE_NAME";
+        public const string SELLING_PLAN_DUPLICATE_OPTIONS = @"SELLING_PLAN_DUPLICATE_OPTIONS";
+        public const string SELLING_PLAN_FIXED_PRICING_POLICIES_LIMIT = @"SELLING_PLAN_FIXED_PRICING_POLICIES_LIMIT";
+        public const string REMAINING_BALANCE_CHARGE_EXACT_TIME_REQUIRED = @"REMAINING_BALANCE_CHARGE_EXACT_TIME_REQUIRED";
+        public const string CHECKOUT_CHARGE_VALUE_AND_TYPE_MUST_MATCH = @"CHECKOUT_CHARGE_VALUE_AND_TYPE_MUST_MATCH";
+        public const string ONLY_NEED_ONE_CHECKOUT_CHARGE_VALUE = @"ONLY_NEED_ONE_CHECKOUT_CHARGE_VALUE";
+        public const string REMAINING_BALANCE_CHARGE_EXACT_TIME_NOT_ALLOWED = @"REMAINING_BALANCE_CHARGE_EXACT_TIME_NOT_ALLOWED";
+        public const string REMAINING_BALANCE_CHARGE_TIME_AFTER_CHECKOUT_MUST_BE_GREATER_THAN_ZERO = @"REMAINING_BALANCE_CHARGE_TIME_AFTER_CHECKOUT_MUST_BE_GREATER_THAN_ZERO";
+        public const string REMAINING_BALANCE_CHARGE_TRIGGER_ON_FULL_CHECKOUT = @"REMAINING_BALANCE_CHARGE_TRIGGER_ON_FULL_CHECKOUT";
+        public const string REMAINING_BALANCE_CHARGE_TRIGGER_NO_REMAINING_BALANCE_ON_PARTIAL_PERCENTAGE_CHECKOUT_CHARGE = @"REMAINING_BALANCE_CHARGE_TRIGGER_NO_REMAINING_BALANCE_ON_PARTIAL_PERCENTAGE_CHECKOUT_CHARGE";
+        public const string REMAINING_BALANCE_CHARGE_TRIGGER_NO_REMAINING_BALANCE_ON_PRICE_CHECKOUT_CHARGE = @"REMAINING_BALANCE_CHARGE_TRIGGER_NO_REMAINING_BALANCE_ON_PRICE_CHECKOUT_CHARGE";
+        public const string FULFILLMENT_EXACT_TIME_REQUIRED = @"FULFILLMENT_EXACT_TIME_REQUIRED";
+        public const string FULFILLMENT_EXACT_TIME_NOT_ALLOWED = @"FULFILLMENT_EXACT_TIME_NOT_ALLOWED";
+        public const string SELLING_PLAN_ANCHORS_NOT_ALLOWED = @"SELLING_PLAN_ANCHORS_NOT_ALLOWED";
+        public const string SELLING_PLAN_ANCHORS_REQUIRED = @"SELLING_PLAN_ANCHORS_REQUIRED";
+        public const string ONLY_ONE_OF_FIXED_OR_RECURRING_BILLING = @"ONLY_ONE_OF_FIXED_OR_RECURRING_BILLING";
+        public const string ONLY_ONE_OF_FIXED_OR_RECURRING_DELIVERY = @"ONLY_ONE_OF_FIXED_OR_RECURRING_DELIVERY";
+        public const string BILLING_POLICY_INTERVAL_TOO_LARGE = @"BILLING_POLICY_INTERVAL_TOO_LARGE";
+        public const string DELIVERY_POLICY_INTERVAL_TOO_LARGE = @"DELIVERY_POLICY_INTERVAL_TOO_LARGE";
+        public const string INVALID_INPUT = @"INVALID_INPUT";
     }
 
     ///<summary>
@@ -58790,10 +58790,10 @@ namespace shopify
 
     public static class SellingPlanIntervalStringValues
     {
-        public const string DAY = "DAY";
-        public const string WEEK = "WEEK";
-        public const string MONTH = "MONTH";
-        public const string YEAR = "YEAR";
+        public const string DAY = @"DAY";
+        public const string WEEK = @"WEEK";
+        public const string MONTH = @"MONTH";
+        public const string YEAR = @"YEAR";
     }
 
     ///<summary>
@@ -58856,9 +58856,9 @@ namespace shopify
 
     public static class SellingPlanPricingPolicyAdjustmentTypeStringValues
     {
-        public const string PERCENTAGE = "PERCENTAGE";
-        public const string FIXED_AMOUNT = "FIXED_AMOUNT";
-        public const string PRICE = "PRICE";
+        public const string PERCENTAGE = @"PERCENTAGE";
+        public const string FIXED_AMOUNT = @"FIXED_AMOUNT";
+        public const string PRICE = @"PRICE";
     }
 
     ///<summary>
@@ -58986,7 +58986,7 @@ namespace shopify
 
     public static class SellingPlanRecurringDeliveryPolicyIntentStringValues
     {
-        public const string FULFILLMENT_BEGIN = "FULFILLMENT_BEGIN";
+        public const string FULFILLMENT_BEGIN = @"FULFILLMENT_BEGIN";
     }
 
     ///<summary>
@@ -59008,8 +59008,8 @@ namespace shopify
 
     public static class SellingPlanRecurringDeliveryPolicyPreAnchorBehaviorStringValues
     {
-        public const string ASAP = "ASAP";
-        public const string NEXT = "NEXT";
+        public const string ASAP = @"ASAP";
+        public const string NEXT = @"NEXT";
     }
 
     ///<summary>
@@ -59056,9 +59056,9 @@ namespace shopify
 
     public static class SellingPlanRemainingBalanceChargeTriggerStringValues
     {
-        public const string NO_REMAINING_BALANCE = "NO_REMAINING_BALANCE";
-        public const string EXACT_TIME = "EXACT_TIME";
-        public const string TIME_AFTER_CHECKOUT = "TIME_AFTER_CHECKOUT";
+        public const string NO_REMAINING_BALANCE = @"NO_REMAINING_BALANCE";
+        public const string EXACT_TIME = @"EXACT_TIME";
+        public const string TIME_AFTER_CHECKOUT = @"TIME_AFTER_CHECKOUT";
     }
 
     ///<summary>
@@ -59078,8 +59078,8 @@ namespace shopify
 
     public static class SellingPlanReserveStringValues
     {
-        public const string ON_FULFILLMENT = "ON_FULFILLMENT";
-        public const string ON_SALE = "ON_SALE";
+        public const string ON_FULFILLMENT = @"ON_FULFILLMENT";
+        public const string ON_SALE = @"ON_SALE";
     }
 
     ///<summary>
@@ -59152,9 +59152,9 @@ namespace shopify
 
     public static class ServerPixelStatusStringValues
     {
-        public const string CONNECTED = "CONNECTED";
-        public const string DISCONNECTED_UNCONFIGURED = "DISCONNECTED_UNCONFIGURED";
-        public const string DISCONNECTED_CONFIGURED = "DISCONNECTED_CONFIGURED";
+        public const string CONNECTED = @"CONNECTED";
+        public const string DISCONNECTED_UNCONFIGURED = @"DISCONNECTED_UNCONFIGURED";
+        public const string DISCONNECTED_CONFIGURED = @"DISCONNECTED_CONFIGURED";
     }
 
     ///<summary>
@@ -59170,7 +59170,7 @@ namespace shopify
 
     public static class ShippingDiscountClassStringValues
     {
-        public const string SHIPPING = "SHIPPING";
+        public const string SHIPPING = @"SHIPPING";
     }
 
     ///<summary>
@@ -59398,10 +59398,10 @@ namespace shopify
 
     public static class ShippingPackageTypeStringValues
     {
-        public const string BOX = "BOX";
-        public const string FLAT_RATE = "FLAT_RATE";
-        public const string ENVELOPE = "ENVELOPE";
-        public const string SOFT_PACK = "SOFT_PACK";
+        public const string BOX = @"BOX";
+        public const string FLAT_RATE = @"FLAT_RATE";
+        public const string ENVELOPE = @"ENVELOPE";
+        public const string SOFT_PACK = @"SOFT_PACK";
     }
 
     ///<summary>
@@ -60091,10 +60091,10 @@ namespace shopify
 
     public static class ShopBrandingStringValues
     {
-        public const string SHOPIFY_GOLD = "SHOPIFY_GOLD";
-        public const string SHOPIFY_PLUS = "SHOPIFY_PLUS";
-        public const string ROGERS = "ROGERS";
-        public const string SHOPIFY = "SHOPIFY";
+        public const string SHOPIFY_GOLD = @"SHOPIFY_GOLD";
+        public const string SHOPIFY_PLUS = @"SHOPIFY_PLUS";
+        public const string ROGERS = @"ROGERS";
+        public const string SHOPIFY = @"SHOPIFY";
     }
 
     ///<summary>
@@ -60109,9 +60109,9 @@ namespace shopify
 
     public static class ShopCustomerAccountsSettingStringValues
     {
-        public const string REQUIRED = "REQUIRED";
-        public const string OPTIONAL = "OPTIONAL";
-        public const string DISABLED = "DISABLED";
+        public const string REQUIRED = @"REQUIRED";
+        public const string OPTIONAL = @"OPTIONAL";
+        public const string DISABLED = @"DISABLED";
     }
 
     ///<summary>
@@ -60393,7 +60393,7 @@ namespace shopify
 
     public static class ShopPolicyErrorCodeStringValues
     {
-        public const string TOO_BIG = "TOO_BIG";
+        public const string TOO_BIG = @"TOO_BIG";
     }
 
     ///<summary>
@@ -60437,14 +60437,14 @@ namespace shopify
 
     public static class ShopPolicyTypeStringValues
     {
-        public const string REFUND_POLICY = "REFUND_POLICY";
-        public const string SHIPPING_POLICY = "SHIPPING_POLICY";
-        public const string PRIVACY_POLICY = "PRIVACY_POLICY";
-        public const string TERMS_OF_SERVICE = "TERMS_OF_SERVICE";
-        public const string TERMS_OF_SALE = "TERMS_OF_SALE";
-        public const string LEGAL_NOTICE = "LEGAL_NOTICE";
-        public const string SUBSCRIPTION_POLICY = "SUBSCRIPTION_POLICY";
-        public const string CONTACT_INFORMATION = "CONTACT_INFORMATION";
+        public const string REFUND_POLICY = @"REFUND_POLICY";
+        public const string SHIPPING_POLICY = @"SHIPPING_POLICY";
+        public const string PRIVACY_POLICY = @"PRIVACY_POLICY";
+        public const string TERMS_OF_SERVICE = @"TERMS_OF_SERVICE";
+        public const string TERMS_OF_SALE = @"TERMS_OF_SALE";
+        public const string LEGAL_NOTICE = @"LEGAL_NOTICE";
+        public const string SUBSCRIPTION_POLICY = @"SUBSCRIPTION_POLICY";
+        public const string CONTACT_INFORMATION = @"CONTACT_INFORMATION";
     }
 
     ///<summary>
@@ -60540,10 +60540,10 @@ namespace shopify
 
     public static class ShopResourceFeedbackCreateUserErrorCodeStringValues
     {
-        public const string OUTDATED_FEEDBACK = "OUTDATED_FEEDBACK";
-        public const string INVALID = "INVALID";
-        public const string BLANK = "BLANK";
-        public const string PRESENT = "PRESENT";
+        public const string OUTDATED_FEEDBACK = @"OUTDATED_FEEDBACK";
+        public const string INVALID = @"INVALID";
+        public const string BLANK = @"BLANK";
+        public const string PRESENT = @"PRESENT";
     }
 
     ///<summary>
@@ -60586,8 +60586,8 @@ namespace shopify
 
     public static class ShopTagSortStringValues
     {
-        public const string ALPHABETICAL = "ALPHABETICAL";
-        public const string POPULAR = "POPULAR";
+        public const string ALPHABETICAL = @"ALPHABETICAL";
+        public const string POPULAR = @"POPULAR";
     }
 
     ///<summary>
@@ -60937,13 +60937,13 @@ namespace shopify
 
     public static class ShopifyPaymentsBalanceTransactionPayoutStatusStringValues
     {
-        public const string SCHEDULED = "SCHEDULED";
-        public const string IN_TRANSIT = "IN_TRANSIT";
-        public const string PAID = "PAID";
-        public const string FAILED = "FAILED";
-        public const string CANCELED = "CANCELED";
-        public const string PENDING = "PENDING";
-        public const string ACTION_REQUIRED = "ACTION_REQUIRED";
+        public const string SCHEDULED = @"SCHEDULED";
+        public const string IN_TRANSIT = @"IN_TRANSIT";
+        public const string PAID = @"PAID";
+        public const string FAILED = @"FAILED";
+        public const string CANCELED = @"CANCELED";
+        public const string PENDING = @"PENDING";
+        public const string ACTION_REQUIRED = @"ACTION_REQUIRED";
     }
 
     ///<summary>
@@ -61052,10 +61052,10 @@ namespace shopify
 
     public static class ShopifyPaymentsBankAccountStatusStringValues
     {
-        public const string NEW = "NEW";
-        public const string VALIDATED = "VALIDATED";
-        public const string VERIFIED = "VERIFIED";
-        public const string ERRORED = "ERRORED";
+        public const string NEW = @"NEW";
+        public const string VALIDATED = @"VALIDATED";
+        public const string VERIFIED = @"VERIFIED";
+        public const string ERRORED = @"ERRORED";
     }
 
     ///<summary>
@@ -61314,12 +61314,12 @@ namespace shopify
 
     public static class ShopifyPaymentsDisputeEvidenceFileTypeStringValues
     {
-        public const string CUSTOMER_COMMUNICATION_FILE = "CUSTOMER_COMMUNICATION_FILE";
-        public const string REFUND_POLICY_FILE = "REFUND_POLICY_FILE";
-        public const string CANCELLATION_POLICY_FILE = "CANCELLATION_POLICY_FILE";
-        public const string UNCATEGORIZED_FILE = "UNCATEGORIZED_FILE";
-        public const string SHIPPING_DOCUMENTATION_FILE = "SHIPPING_DOCUMENTATION_FILE";
-        public const string SERVICE_DOCUMENTATION_FILE = "SERVICE_DOCUMENTATION_FILE";
+        public const string CUSTOMER_COMMUNICATION_FILE = @"CUSTOMER_COMMUNICATION_FILE";
+        public const string REFUND_POLICY_FILE = @"REFUND_POLICY_FILE";
+        public const string CANCELLATION_POLICY_FILE = @"CANCELLATION_POLICY_FILE";
+        public const string UNCATEGORIZED_FILE = @"UNCATEGORIZED_FILE";
+        public const string SHIPPING_DOCUMENTATION_FILE = @"SHIPPING_DOCUMENTATION_FILE";
+        public const string SERVICE_DOCUMENTATION_FILE = @"SERVICE_DOCUMENTATION_FILE";
     }
 
     ///<summary>
@@ -61437,19 +61437,19 @@ namespace shopify
 
     public static class ShopifyPaymentsDisputeReasonStringValues
     {
-        public const string FRAUDULENT = "FRAUDULENT";
-        public const string GENERAL = "GENERAL";
-        public const string UNRECOGNIZED = "UNRECOGNIZED";
-        public const string DUPLICATE = "DUPLICATE";
-        public const string SUBSCRIPTION_CANCELLED = "SUBSCRIPTION_CANCELLED";
-        public const string PRODUCT_UNACCEPTABLE = "PRODUCT_UNACCEPTABLE";
-        public const string PRODUCT_NOT_RECEIVED = "PRODUCT_NOT_RECEIVED";
-        public const string CREDIT_NOT_PROCESSED = "CREDIT_NOT_PROCESSED";
-        public const string INCORRECT_ACCOUNT_DETAILS = "INCORRECT_ACCOUNT_DETAILS";
-        public const string INSUFFICIENT_FUNDS = "INSUFFICIENT_FUNDS";
-        public const string BANK_CANNOT_PROCESS = "BANK_CANNOT_PROCESS";
-        public const string DEBIT_NOT_AUTHORIZED = "DEBIT_NOT_AUTHORIZED";
-        public const string CUSTOMER_INITIATED = "CUSTOMER_INITIATED";
+        public const string FRAUDULENT = @"FRAUDULENT";
+        public const string GENERAL = @"GENERAL";
+        public const string UNRECOGNIZED = @"UNRECOGNIZED";
+        public const string DUPLICATE = @"DUPLICATE";
+        public const string SUBSCRIPTION_CANCELLED = @"SUBSCRIPTION_CANCELLED";
+        public const string PRODUCT_UNACCEPTABLE = @"PRODUCT_UNACCEPTABLE";
+        public const string PRODUCT_NOT_RECEIVED = @"PRODUCT_NOT_RECEIVED";
+        public const string CREDIT_NOT_PROCESSED = @"CREDIT_NOT_PROCESSED";
+        public const string INCORRECT_ACCOUNT_DETAILS = @"INCORRECT_ACCOUNT_DETAILS";
+        public const string INSUFFICIENT_FUNDS = @"INSUFFICIENT_FUNDS";
+        public const string BANK_CANNOT_PROCESS = @"BANK_CANNOT_PROCESS";
+        public const string DEBIT_NOT_AUTHORIZED = @"DEBIT_NOT_AUTHORIZED";
+        public const string CUSTOMER_INITIATED = @"CUSTOMER_INITIATED";
     }
 
     ///<summary>
@@ -61615,10 +61615,10 @@ namespace shopify
 
     public static class ShopifyPaymentsPayoutIntervalStringValues
     {
-        public const string DAILY = "DAILY";
-        public const string WEEKLY = "WEEKLY";
-        public const string MONTHLY = "MONTHLY";
-        public const string MANUAL = "MANUAL";
+        public const string DAILY = @"DAILY";
+        public const string WEEKLY = @"WEEKLY";
+        public const string MONTHLY = @"MONTHLY";
+        public const string MANUAL = @"MANUAL";
     }
 
     ///<summary>
@@ -61677,11 +61677,11 @@ namespace shopify
 
     public static class ShopifyPaymentsPayoutStatusStringValues
     {
-        public const string SCHEDULED = "SCHEDULED";
-        public const string IN_TRANSIT = "IN_TRANSIT";
-        public const string PAID = "PAID";
-        public const string FAILED = "FAILED";
-        public const string CANCELED = "CANCELED";
+        public const string SCHEDULED = @"SCHEDULED";
+        public const string IN_TRANSIT = @"IN_TRANSIT";
+        public const string PAID = @"PAID";
+        public const string FAILED = @"FAILED";
+        public const string CANCELED = @"CANCELED";
     }
 
     ///<summary>
@@ -61757,8 +61757,8 @@ namespace shopify
 
     public static class ShopifyPaymentsPayoutTransactionTypeStringValues
     {
-        public const string DEPOSIT = "DEPOSIT";
-        public const string WITHDRAWAL = "WITHDRAWAL";
+        public const string DEPOSIT = @"DEPOSIT";
+        public const string WITHDRAWAL = @"WITHDRAWAL";
     }
 
     ///<summary>
@@ -61809,13 +61809,13 @@ namespace shopify
 
     public static class ShopifyPaymentsSourceTypeStringValues
     {
-        public const string ADJUSTMENT_REVERSAL = "ADJUSTMENT_REVERSAL";
-        public const string CHARGE = "CHARGE";
-        public const string REFUND = "REFUND";
-        public const string SYSTEM_ADJUSTMENT = "SYSTEM_ADJUSTMENT";
-        public const string DISPUTE = "DISPUTE";
-        public const string ADJUSTMENT = "ADJUSTMENT";
-        public const string TRANSFER = "TRANSFER";
+        public const string ADJUSTMENT_REVERSAL = @"ADJUSTMENT_REVERSAL";
+        public const string CHARGE = @"CHARGE";
+        public const string REFUND = @"REFUND";
+        public const string SYSTEM_ADJUSTMENT = @"SYSTEM_ADJUSTMENT";
+        public const string DISPUTE = @"DISPUTE";
+        public const string ADJUSTMENT = @"ADJUSTMENT";
+        public const string TRANSFER = @"TRANSFER";
     }
 
     ///<summary>
@@ -62214,99 +62214,99 @@ namespace shopify
 
     public static class ShopifyPaymentsTransactionTypeStringValues
     {
-        public const string CHARGEBACK_PROTECTION_CREDIT = "CHARGEBACK_PROTECTION_CREDIT";
-        public const string CHARGEBACK_PROTECTION_CREDIT_REVERSAL = "CHARGEBACK_PROTECTION_CREDIT_REVERSAL";
-        public const string CHARGEBACK_PROTECTION_DEBIT = "CHARGEBACK_PROTECTION_DEBIT";
-        public const string CHARGEBACK_PROTECTION_DEBIT_REVERSAL = "CHARGEBACK_PROTECTION_DEBIT_REVERSAL";
-        public const string COLLECTIONS_CREDIT = "COLLECTIONS_CREDIT";
-        public const string COLLECTIONS_CREDIT_REVERSAL = "COLLECTIONS_CREDIT_REVERSAL";
-        public const string PROMOTION_CREDIT = "PROMOTION_CREDIT";
-        public const string PROMOTION_CREDIT_REVERSAL = "PROMOTION_CREDIT_REVERSAL";
-        public const string ANOMALY_CREDIT = "ANOMALY_CREDIT";
-        public const string ANOMALY_CREDIT_REVERSAL = "ANOMALY_CREDIT_REVERSAL";
-        public const string ANOMALY_DEBIT = "ANOMALY_DEBIT";
-        public const string ANOMALY_DEBIT_REVERSAL = "ANOMALY_DEBIT_REVERSAL";
-        public const string VAT_REFUND_CREDIT = "VAT_REFUND_CREDIT";
-        public const string VAT_REFUND_CREDIT_REVERSAL = "VAT_REFUND_CREDIT_REVERSAL";
-        public const string CHANNEL_CREDIT = "CHANNEL_CREDIT";
-        public const string CHANNEL_CREDIT_REVERSAL = "CHANNEL_CREDIT_REVERSAL";
-        public const string CHANNEL_TRANSFER_CREDIT = "CHANNEL_TRANSFER_CREDIT";
-        public const string CHANNEL_TRANSFER_CREDIT_REVERSAL = "CHANNEL_TRANSFER_CREDIT_REVERSAL";
-        public const string CHANNEL_TRANSFER_DEBIT = "CHANNEL_TRANSFER_DEBIT";
-        public const string CHANNEL_TRANSFER_DEBIT_REVERSAL = "CHANNEL_TRANSFER_DEBIT_REVERSAL";
-        public const string CHANNEL_PROMOTION_CREDIT = "CHANNEL_PROMOTION_CREDIT";
-        public const string CHANNEL_PROMOTION_CREDIT_REVERSAL = "CHANNEL_PROMOTION_CREDIT_REVERSAL";
-        public const string MARKETPLACE_FEE_CREDIT = "MARKETPLACE_FEE_CREDIT";
-        public const string MARKETPLACE_FEE_CREDIT_REVERSAL = "MARKETPLACE_FEE_CREDIT_REVERSAL";
-        public const string MERCHANT_GOODWILL_CREDIT = "MERCHANT_GOODWILL_CREDIT";
-        public const string MERCHANT_GOODWILL_CREDIT_REVERSAL = "MERCHANT_GOODWILL_CREDIT_REVERSAL";
-        public const string TAX_ADJUSTMENT_DEBIT = "TAX_ADJUSTMENT_DEBIT";
-        public const string TAX_ADJUSTMENT_DEBIT_REVERSAL = "TAX_ADJUSTMENT_DEBIT_REVERSAL";
-        public const string TAX_ADJUSTMENT_CREDIT = "TAX_ADJUSTMENT_CREDIT";
-        public const string TAX_ADJUSTMENT_CREDIT_REVERSAL = "TAX_ADJUSTMENT_CREDIT_REVERSAL";
-        public const string BILLING_DEBIT = "BILLING_DEBIT";
-        public const string BILLING_DEBIT_REVERSAL = "BILLING_DEBIT_REVERSAL";
-        public const string SHOP_CASH_CREDIT = "SHOP_CASH_CREDIT";
-        public const string SHOP_CASH_CREDIT_REVERSAL = "SHOP_CASH_CREDIT_REVERSAL";
-        public const string SHOP_CASH_BILLING_DEBIT = "SHOP_CASH_BILLING_DEBIT";
-        public const string SHOP_CASH_BILLING_DEBIT_REVERSAL = "SHOP_CASH_BILLING_DEBIT_REVERSAL";
-        public const string SHOP_CASH_REFUND_DEBIT = "SHOP_CASH_REFUND_DEBIT";
-        public const string SHOP_CASH_REFUND_DEBIT_REVERSAL = "SHOP_CASH_REFUND_DEBIT_REVERSAL";
-        public const string SHOP_CASH_CAMPAIGN_BILLING_DEBIT = "SHOP_CASH_CAMPAIGN_BILLING_DEBIT";
-        public const string SHOP_CASH_CAMPAIGN_BILLING_DEBIT_REVERSAL = "SHOP_CASH_CAMPAIGN_BILLING_DEBIT_REVERSAL";
-        public const string SHOP_CASH_CAMPAIGN_BILLING_CREDIT = "SHOP_CASH_CAMPAIGN_BILLING_CREDIT";
-        public const string SHOP_CASH_CAMPAIGN_BILLING_CREDIT_REVERSAL = "SHOP_CASH_CAMPAIGN_BILLING_CREDIT_REVERSAL";
-        public const string SELLER_PROTECTION_CREDIT = "SELLER_PROTECTION_CREDIT";
-        public const string SELLER_PROTECTION_CREDIT_REVERSAL = "SELLER_PROTECTION_CREDIT_REVERSAL";
-        public const string SHOPIFY_COLLECTIVE_DEBIT = "SHOPIFY_COLLECTIVE_DEBIT";
-        public const string SHOPIFY_COLLECTIVE_DEBIT_REVERSAL = "SHOPIFY_COLLECTIVE_DEBIT_REVERSAL";
-        public const string SHOPIFY_COLLECTIVE_CREDIT = "SHOPIFY_COLLECTIVE_CREDIT";
-        public const string SHOPIFY_COLLECTIVE_CREDIT_REVERSAL = "SHOPIFY_COLLECTIVE_CREDIT_REVERSAL";
-        public const string BALANCE_TRANSFER_INBOUND = "BALANCE_TRANSFER_INBOUND";
-        public const string MARKETS_PRO_CREDIT = "MARKETS_PRO_CREDIT";
-        public const string CUSTOMS_DUTY_ADJUSTMENT = "CUSTOMS_DUTY_ADJUSTMENT";
-        public const string IMPORT_TAX_ADJUSTMENT = "IMPORT_TAX_ADJUSTMENT";
-        public const string SHIPPING_LABEL_ADJUSTMENT = "SHIPPING_LABEL_ADJUSTMENT";
-        public const string SHIPPING_LABEL_ADJUSTMENT_BASE = "SHIPPING_LABEL_ADJUSTMENT_BASE";
-        public const string SHIPPING_LABEL_ADJUSTMENT_SURCHARGE = "SHIPPING_LABEL_ADJUSTMENT_SURCHARGE";
-        public const string SHIPPING_RETURN_TO_ORIGIN_ADJUSTMENT = "SHIPPING_RETURN_TO_ORIGIN_ADJUSTMENT";
-        public const string SHIPPING_OTHER_CARRIER_CHARGE_ADJUSTMENT = "SHIPPING_OTHER_CARRIER_CHARGE_ADJUSTMENT";
-        public const string CHARGE_ADJUSTMENT = "CHARGE_ADJUSTMENT";
-        public const string REFUND_ADJUSTMENT = "REFUND_ADJUSTMENT";
-        public const string CHARGEBACK_FEE = "CHARGEBACK_FEE";
-        public const string CHARGEBACK_FEE_REFUND = "CHARGEBACK_FEE_REFUND";
-        public const string TRANSFER = "TRANSFER";
-        public const string TRANSFER_FAILURE = "TRANSFER_FAILURE";
-        public const string TRANSFER_CANCEL = "TRANSFER_CANCEL";
-        public const string RESERVED_FUNDS_WITHDRAWAL = "RESERVED_FUNDS_WITHDRAWAL";
-        public const string RESERVED_FUNDS_REVERSAL = "RESERVED_FUNDS_REVERSAL";
-        public const string RISK_REVERSAL = "RISK_REVERSAL";
-        public const string RISK_WITHDRAWAL = "RISK_WITHDRAWAL";
-        public const string MERCHANT_TO_MERCHANT_DEBIT = "MERCHANT_TO_MERCHANT_DEBIT";
-        public const string MERCHANT_TO_MERCHANT_DEBIT_REVERSAL = "MERCHANT_TO_MERCHANT_DEBIT_REVERSAL";
-        public const string MERCHANT_TO_MERCHANT_CREDIT = "MERCHANT_TO_MERCHANT_CREDIT";
-        public const string MERCHANT_TO_MERCHANT_CREDIT_REVERSAL = "MERCHANT_TO_MERCHANT_CREDIT_REVERSAL";
-        public const string SHOPIFY_SOURCE_DEBIT = "SHOPIFY_SOURCE_DEBIT";
-        public const string SHOPIFY_SOURCE_DEBIT_REVERSAL = "SHOPIFY_SOURCE_DEBIT_REVERSAL";
-        public const string SHOPIFY_SOURCE_CREDIT = "SHOPIFY_SOURCE_CREDIT";
-        public const string SHOPIFY_SOURCE_CREDIT_REVERSAL = "SHOPIFY_SOURCE_CREDIT_REVERSAL";
-        public const string CHARGE = "CHARGE";
-        public const string REFUND = "REFUND";
-        public const string REFUND_FAILURE = "REFUND_FAILURE";
-        public const string APPLICATION_FEE_REFUND = "APPLICATION_FEE_REFUND";
-        public const string ADJUSTMENT = "ADJUSTMENT";
-        public const string DISPUTE_WITHDRAWAL = "DISPUTE_WITHDRAWAL";
-        public const string DISPUTE_REVERSAL = "DISPUTE_REVERSAL";
-        public const string SHIPPING_LABEL = "SHIPPING_LABEL";
-        public const string CUSTOMS_DUTY = "CUSTOMS_DUTY";
-        public const string IMPORT_TAX = "IMPORT_TAX";
-        public const string CHARGEBACK_HOLD = "CHARGEBACK_HOLD";
-        public const string CHARGEBACK_HOLD_RELEASE = "CHARGEBACK_HOLD_RELEASE";
-        public const string RESERVED_FUNDS = "RESERVED_FUNDS";
-        public const string STRIPE_FEE = "STRIPE_FEE";
-        public const string TRANSFER_REFUND = "TRANSFER_REFUND";
-        public const string ADVANCE = "ADVANCE";
-        public const string ADVANCE_FUNDING = "ADVANCE_FUNDING";
+        public const string CHARGEBACK_PROTECTION_CREDIT = @"CHARGEBACK_PROTECTION_CREDIT";
+        public const string CHARGEBACK_PROTECTION_CREDIT_REVERSAL = @"CHARGEBACK_PROTECTION_CREDIT_REVERSAL";
+        public const string CHARGEBACK_PROTECTION_DEBIT = @"CHARGEBACK_PROTECTION_DEBIT";
+        public const string CHARGEBACK_PROTECTION_DEBIT_REVERSAL = @"CHARGEBACK_PROTECTION_DEBIT_REVERSAL";
+        public const string COLLECTIONS_CREDIT = @"COLLECTIONS_CREDIT";
+        public const string COLLECTIONS_CREDIT_REVERSAL = @"COLLECTIONS_CREDIT_REVERSAL";
+        public const string PROMOTION_CREDIT = @"PROMOTION_CREDIT";
+        public const string PROMOTION_CREDIT_REVERSAL = @"PROMOTION_CREDIT_REVERSAL";
+        public const string ANOMALY_CREDIT = @"ANOMALY_CREDIT";
+        public const string ANOMALY_CREDIT_REVERSAL = @"ANOMALY_CREDIT_REVERSAL";
+        public const string ANOMALY_DEBIT = @"ANOMALY_DEBIT";
+        public const string ANOMALY_DEBIT_REVERSAL = @"ANOMALY_DEBIT_REVERSAL";
+        public const string VAT_REFUND_CREDIT = @"VAT_REFUND_CREDIT";
+        public const string VAT_REFUND_CREDIT_REVERSAL = @"VAT_REFUND_CREDIT_REVERSAL";
+        public const string CHANNEL_CREDIT = @"CHANNEL_CREDIT";
+        public const string CHANNEL_CREDIT_REVERSAL = @"CHANNEL_CREDIT_REVERSAL";
+        public const string CHANNEL_TRANSFER_CREDIT = @"CHANNEL_TRANSFER_CREDIT";
+        public const string CHANNEL_TRANSFER_CREDIT_REVERSAL = @"CHANNEL_TRANSFER_CREDIT_REVERSAL";
+        public const string CHANNEL_TRANSFER_DEBIT = @"CHANNEL_TRANSFER_DEBIT";
+        public const string CHANNEL_TRANSFER_DEBIT_REVERSAL = @"CHANNEL_TRANSFER_DEBIT_REVERSAL";
+        public const string CHANNEL_PROMOTION_CREDIT = @"CHANNEL_PROMOTION_CREDIT";
+        public const string CHANNEL_PROMOTION_CREDIT_REVERSAL = @"CHANNEL_PROMOTION_CREDIT_REVERSAL";
+        public const string MARKETPLACE_FEE_CREDIT = @"MARKETPLACE_FEE_CREDIT";
+        public const string MARKETPLACE_FEE_CREDIT_REVERSAL = @"MARKETPLACE_FEE_CREDIT_REVERSAL";
+        public const string MERCHANT_GOODWILL_CREDIT = @"MERCHANT_GOODWILL_CREDIT";
+        public const string MERCHANT_GOODWILL_CREDIT_REVERSAL = @"MERCHANT_GOODWILL_CREDIT_REVERSAL";
+        public const string TAX_ADJUSTMENT_DEBIT = @"TAX_ADJUSTMENT_DEBIT";
+        public const string TAX_ADJUSTMENT_DEBIT_REVERSAL = @"TAX_ADJUSTMENT_DEBIT_REVERSAL";
+        public const string TAX_ADJUSTMENT_CREDIT = @"TAX_ADJUSTMENT_CREDIT";
+        public const string TAX_ADJUSTMENT_CREDIT_REVERSAL = @"TAX_ADJUSTMENT_CREDIT_REVERSAL";
+        public const string BILLING_DEBIT = @"BILLING_DEBIT";
+        public const string BILLING_DEBIT_REVERSAL = @"BILLING_DEBIT_REVERSAL";
+        public const string SHOP_CASH_CREDIT = @"SHOP_CASH_CREDIT";
+        public const string SHOP_CASH_CREDIT_REVERSAL = @"SHOP_CASH_CREDIT_REVERSAL";
+        public const string SHOP_CASH_BILLING_DEBIT = @"SHOP_CASH_BILLING_DEBIT";
+        public const string SHOP_CASH_BILLING_DEBIT_REVERSAL = @"SHOP_CASH_BILLING_DEBIT_REVERSAL";
+        public const string SHOP_CASH_REFUND_DEBIT = @"SHOP_CASH_REFUND_DEBIT";
+        public const string SHOP_CASH_REFUND_DEBIT_REVERSAL = @"SHOP_CASH_REFUND_DEBIT_REVERSAL";
+        public const string SHOP_CASH_CAMPAIGN_BILLING_DEBIT = @"SHOP_CASH_CAMPAIGN_BILLING_DEBIT";
+        public const string SHOP_CASH_CAMPAIGN_BILLING_DEBIT_REVERSAL = @"SHOP_CASH_CAMPAIGN_BILLING_DEBIT_REVERSAL";
+        public const string SHOP_CASH_CAMPAIGN_BILLING_CREDIT = @"SHOP_CASH_CAMPAIGN_BILLING_CREDIT";
+        public const string SHOP_CASH_CAMPAIGN_BILLING_CREDIT_REVERSAL = @"SHOP_CASH_CAMPAIGN_BILLING_CREDIT_REVERSAL";
+        public const string SELLER_PROTECTION_CREDIT = @"SELLER_PROTECTION_CREDIT";
+        public const string SELLER_PROTECTION_CREDIT_REVERSAL = @"SELLER_PROTECTION_CREDIT_REVERSAL";
+        public const string SHOPIFY_COLLECTIVE_DEBIT = @"SHOPIFY_COLLECTIVE_DEBIT";
+        public const string SHOPIFY_COLLECTIVE_DEBIT_REVERSAL = @"SHOPIFY_COLLECTIVE_DEBIT_REVERSAL";
+        public const string SHOPIFY_COLLECTIVE_CREDIT = @"SHOPIFY_COLLECTIVE_CREDIT";
+        public const string SHOPIFY_COLLECTIVE_CREDIT_REVERSAL = @"SHOPIFY_COLLECTIVE_CREDIT_REVERSAL";
+        public const string BALANCE_TRANSFER_INBOUND = @"BALANCE_TRANSFER_INBOUND";
+        public const string MARKETS_PRO_CREDIT = @"MARKETS_PRO_CREDIT";
+        public const string CUSTOMS_DUTY_ADJUSTMENT = @"CUSTOMS_DUTY_ADJUSTMENT";
+        public const string IMPORT_TAX_ADJUSTMENT = @"IMPORT_TAX_ADJUSTMENT";
+        public const string SHIPPING_LABEL_ADJUSTMENT = @"SHIPPING_LABEL_ADJUSTMENT";
+        public const string SHIPPING_LABEL_ADJUSTMENT_BASE = @"SHIPPING_LABEL_ADJUSTMENT_BASE";
+        public const string SHIPPING_LABEL_ADJUSTMENT_SURCHARGE = @"SHIPPING_LABEL_ADJUSTMENT_SURCHARGE";
+        public const string SHIPPING_RETURN_TO_ORIGIN_ADJUSTMENT = @"SHIPPING_RETURN_TO_ORIGIN_ADJUSTMENT";
+        public const string SHIPPING_OTHER_CARRIER_CHARGE_ADJUSTMENT = @"SHIPPING_OTHER_CARRIER_CHARGE_ADJUSTMENT";
+        public const string CHARGE_ADJUSTMENT = @"CHARGE_ADJUSTMENT";
+        public const string REFUND_ADJUSTMENT = @"REFUND_ADJUSTMENT";
+        public const string CHARGEBACK_FEE = @"CHARGEBACK_FEE";
+        public const string CHARGEBACK_FEE_REFUND = @"CHARGEBACK_FEE_REFUND";
+        public const string TRANSFER = @"TRANSFER";
+        public const string TRANSFER_FAILURE = @"TRANSFER_FAILURE";
+        public const string TRANSFER_CANCEL = @"TRANSFER_CANCEL";
+        public const string RESERVED_FUNDS_WITHDRAWAL = @"RESERVED_FUNDS_WITHDRAWAL";
+        public const string RESERVED_FUNDS_REVERSAL = @"RESERVED_FUNDS_REVERSAL";
+        public const string RISK_REVERSAL = @"RISK_REVERSAL";
+        public const string RISK_WITHDRAWAL = @"RISK_WITHDRAWAL";
+        public const string MERCHANT_TO_MERCHANT_DEBIT = @"MERCHANT_TO_MERCHANT_DEBIT";
+        public const string MERCHANT_TO_MERCHANT_DEBIT_REVERSAL = @"MERCHANT_TO_MERCHANT_DEBIT_REVERSAL";
+        public const string MERCHANT_TO_MERCHANT_CREDIT = @"MERCHANT_TO_MERCHANT_CREDIT";
+        public const string MERCHANT_TO_MERCHANT_CREDIT_REVERSAL = @"MERCHANT_TO_MERCHANT_CREDIT_REVERSAL";
+        public const string SHOPIFY_SOURCE_DEBIT = @"SHOPIFY_SOURCE_DEBIT";
+        public const string SHOPIFY_SOURCE_DEBIT_REVERSAL = @"SHOPIFY_SOURCE_DEBIT_REVERSAL";
+        public const string SHOPIFY_SOURCE_CREDIT = @"SHOPIFY_SOURCE_CREDIT";
+        public const string SHOPIFY_SOURCE_CREDIT_REVERSAL = @"SHOPIFY_SOURCE_CREDIT_REVERSAL";
+        public const string CHARGE = @"CHARGE";
+        public const string REFUND = @"REFUND";
+        public const string REFUND_FAILURE = @"REFUND_FAILURE";
+        public const string APPLICATION_FEE_REFUND = @"APPLICATION_FEE_REFUND";
+        public const string ADJUSTMENT = @"ADJUSTMENT";
+        public const string DISPUTE_WITHDRAWAL = @"DISPUTE_WITHDRAWAL";
+        public const string DISPUTE_REVERSAL = @"DISPUTE_REVERSAL";
+        public const string SHIPPING_LABEL = @"SHIPPING_LABEL";
+        public const string CUSTOMS_DUTY = @"CUSTOMS_DUTY";
+        public const string IMPORT_TAX = @"IMPORT_TAX";
+        public const string CHARGEBACK_HOLD = @"CHARGEBACK_HOLD";
+        public const string CHARGEBACK_HOLD_RELEASE = @"CHARGEBACK_HOLD_RELEASE";
+        public const string RESERVED_FUNDS = @"RESERVED_FUNDS";
+        public const string STRIPE_FEE = @"STRIPE_FEE";
+        public const string TRANSFER_REFUND = @"TRANSFER_REFUND";
+        public const string ADVANCE = @"ADVANCE";
+        public const string ADVANCE_FUNDING = @"ADVANCE_FUNDING";
     }
 
     ///<summary>
@@ -62350,9 +62350,9 @@ namespace shopify
 
     public static class ShopifyPaymentsVerificationStatusStringValues
     {
-        public const string VERIFIED = "VERIFIED";
-        public const string UNVERIFIED = "UNVERIFIED";
-        public const string PENDING = "PENDING";
+        public const string VERIFIED = @"VERIFIED";
+        public const string UNVERIFIED = @"UNVERIFIED";
+        public const string PENDING = @"PENDING";
     }
 
     ///<summary>
@@ -62392,9 +62392,9 @@ namespace shopify
 
     public static class ShopifyProtectEligibilityStatusStringValues
     {
-        public const string PENDING = "PENDING";
-        public const string ELIGIBLE = "ELIGIBLE";
-        public const string NOT_ELIGIBLE = "NOT_ELIGIBLE";
+        public const string PENDING = @"PENDING";
+        public const string ELIGIBLE = @"ELIGIBLE";
+        public const string NOT_ELIGIBLE = @"NOT_ELIGIBLE";
     }
 
     ///<summary>
@@ -62453,11 +62453,11 @@ namespace shopify
 
     public static class ShopifyProtectStatusStringValues
     {
-        public const string PENDING = "PENDING";
-        public const string ACTIVE = "ACTIVE";
-        public const string INACTIVE = "INACTIVE";
-        public const string PROTECTED = "PROTECTED";
-        public const string NOT_PROTECTED = "NOT_PROTECTED";
+        public const string PENDING = @"PENDING";
+        public const string ACTIVE = @"ACTIVE";
+        public const string INACTIVE = @"INACTIVE";
+        public const string PROTECTED = @"PROTECTED";
+        public const string NOT_PROTECTED = @"NOT_PROTECTED";
     }
 
     ///<summary>
@@ -62563,9 +62563,9 @@ namespace shopify
 
     public static class StaffMemberDefaultImageStringValues
     {
-        public const string DEFAULT = "DEFAULT";
-        public const string TRANSPARENT = "TRANSPARENT";
-        public const string NOT_FOUND = "NOT_FOUND";
+        public const string DEFAULT = @"DEFAULT";
+        public const string TRANSPARENT = @"TRANSPARENT";
+        public const string NOT_FOUND = @"NOT_FOUND";
     }
 
     ///<summary>
@@ -62706,36 +62706,36 @@ namespace shopify
 
     public static class StaffMemberPermissionStringValues
     {
-        public const string APPLICATIONS = "APPLICATIONS";
-        public const string CHANNELS = "CHANNELS";
-        public const string CREATE_AND_EDIT_CUSTOMERS = "CREATE_AND_EDIT_CUSTOMERS";
-        public const string CUSTOMERS = "CUSTOMERS";
-        public const string DASHBOARD = "DASHBOARD";
-        public const string DELETE_CUSTOMERS = "DELETE_CUSTOMERS";
-        public const string DOMAINS = "DOMAINS";
-        public const string DRAFT_ORDERS = "DRAFT_ORDERS";
-        public const string EDIT_ORDERS = "EDIT_ORDERS";
-        public const string ERASE_CUSTOMER_DATA = "ERASE_CUSTOMER_DATA";
-        public const string EXPORT_CUSTOMERS = "EXPORT_CUSTOMERS";
+        public const string APPLICATIONS = @"APPLICATIONS";
+        public const string CHANNELS = @"CHANNELS";
+        public const string CREATE_AND_EDIT_CUSTOMERS = @"CREATE_AND_EDIT_CUSTOMERS";
+        public const string CUSTOMERS = @"CUSTOMERS";
+        public const string DASHBOARD = @"DASHBOARD";
+        public const string DELETE_CUSTOMERS = @"DELETE_CUSTOMERS";
+        public const string DOMAINS = @"DOMAINS";
+        public const string DRAFT_ORDERS = @"DRAFT_ORDERS";
+        public const string EDIT_ORDERS = @"EDIT_ORDERS";
+        public const string ERASE_CUSTOMER_DATA = @"ERASE_CUSTOMER_DATA";
+        public const string EXPORT_CUSTOMERS = @"EXPORT_CUSTOMERS";
         [Obsolete("Use the list of the staff member's explicit permissions returned in the `StaffMember.permissions.userPermissions` field instead of `full` permission.")]
-        public const string FULL = "FULL";
-        public const string GIFT_CARDS = "GIFT_CARDS";
-        public const string LINKS = "LINKS";
-        public const string LOCATIONS = "LOCATIONS";
-        public const string MARKETING = "MARKETING";
-        public const string MARKETING_SECTION = "MARKETING_SECTION";
-        public const string MERGE_CUSTOMERS = "MERGE_CUSTOMERS";
-        public const string ORDERS = "ORDERS";
-        public const string OVERVIEWS = "OVERVIEWS";
-        public const string PAGES = "PAGES";
-        public const string PAY_ORDERS_BY_VAULTED_CARD = "PAY_ORDERS_BY_VAULTED_CARD";
-        public const string PREFERENCES = "PREFERENCES";
-        public const string PRODUCTS = "PRODUCTS";
-        public const string REPORTS = "REPORTS";
-        public const string REQUEST_CUSTOMER_DATA = "REQUEST_CUSTOMER_DATA";
-        public const string THEMES = "THEMES";
+        public const string FULL = @"FULL";
+        public const string GIFT_CARDS = @"GIFT_CARDS";
+        public const string LINKS = @"LINKS";
+        public const string LOCATIONS = @"LOCATIONS";
+        public const string MARKETING = @"MARKETING";
+        public const string MARKETING_SECTION = @"MARKETING_SECTION";
+        public const string MERGE_CUSTOMERS = @"MERGE_CUSTOMERS";
+        public const string ORDERS = @"ORDERS";
+        public const string OVERVIEWS = @"OVERVIEWS";
+        public const string PAGES = @"PAGES";
+        public const string PAY_ORDERS_BY_VAULTED_CARD = @"PAY_ORDERS_BY_VAULTED_CARD";
+        public const string PREFERENCES = @"PREFERENCES";
+        public const string PRODUCTS = @"PRODUCTS";
+        public const string REPORTS = @"REPORTS";
+        public const string REQUEST_CUSTOMER_DATA = @"REQUEST_CUSTOMER_DATA";
+        public const string THEMES = @"THEMES";
         [Obsolete("Unused.")]
-        public const string TRANSLATIONS = "TRANSLATIONS";
+        public const string TRANSLATIONS = @"TRANSLATIONS";
     }
 
     ///<summary>
@@ -62784,10 +62784,10 @@ namespace shopify
 
     public static class StaffMembersSortKeysStringValues
     {
-        public const string FIRST_NAME = "FIRST_NAME";
-        public const string LAST_NAME = "LAST_NAME";
-        public const string EMAIL = "EMAIL";
-        public const string ID = "ID";
+        public const string FIRST_NAME = @"FIRST_NAME";
+        public const string LAST_NAME = @"LAST_NAME";
+        public const string EMAIL = @"EMAIL";
+        public const string ID = @"ID";
     }
 
     ///<summary>
@@ -62837,8 +62837,8 @@ namespace shopify
 
     public static class StagedUploadHttpMethodTypeStringValues
     {
-        public const string POST = "POST";
-        public const string PUT = "PUT";
+        public const string POST = @"POST";
+        public const string PUT = @"PUT";
     }
 
     ///<summary>
@@ -62987,16 +62987,16 @@ namespace shopify
 
     public static class StagedUploadTargetGenerateUploadResourceStringValues
     {
-        public const string COLLECTION_IMAGE = "COLLECTION_IMAGE";
-        public const string FILE = "FILE";
-        public const string IMAGE = "IMAGE";
-        public const string MODEL_3D = "MODEL_3D";
-        public const string PRODUCT_IMAGE = "PRODUCT_IMAGE";
-        public const string SHOP_IMAGE = "SHOP_IMAGE";
-        public const string VIDEO = "VIDEO";
-        public const string BULK_MUTATION_VARIABLES = "BULK_MUTATION_VARIABLES";
-        public const string RETURN_LABEL = "RETURN_LABEL";
-        public const string URL_REDIRECT_IMPORT = "URL_REDIRECT_IMPORT";
+        public const string COLLECTION_IMAGE = @"COLLECTION_IMAGE";
+        public const string FILE = @"FILE";
+        public const string IMAGE = @"IMAGE";
+        public const string MODEL_3D = @"MODEL_3D";
+        public const string PRODUCT_IMAGE = @"PRODUCT_IMAGE";
+        public const string SHOP_IMAGE = @"SHOP_IMAGE";
+        public const string VIDEO = @"VIDEO";
+        public const string BULK_MUTATION_VARIABLES = @"BULK_MUTATION_VARIABLES";
+        public const string RETURN_LABEL = @"RETURN_LABEL";
+        public const string URL_REDIRECT_IMPORT = @"URL_REDIRECT_IMPORT";
     }
 
     ///<summary>
@@ -63100,13 +63100,13 @@ namespace shopify
 
     public static class StandardMetafieldDefinitionEnableUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string TAKEN = "TAKEN";
-        public const string TEMPLATE_NOT_FOUND = "TEMPLATE_NOT_FOUND";
-        public const string LIMIT_EXCEEDED = "LIMIT_EXCEEDED";
-        public const string UNSTRUCTURED_ALREADY_EXISTS = "UNSTRUCTURED_ALREADY_EXISTS";
-        public const string TYPE_NOT_ALLOWED_FOR_CONDITIONS = "TYPE_NOT_ALLOWED_FOR_CONDITIONS";
-        public const string INVALID_INPUT_COMBINATION = "INVALID_INPUT_COMBINATION";
+        public const string INVALID = @"INVALID";
+        public const string TAKEN = @"TAKEN";
+        public const string TEMPLATE_NOT_FOUND = @"TEMPLATE_NOT_FOUND";
+        public const string LIMIT_EXCEEDED = @"LIMIT_EXCEEDED";
+        public const string UNSTRUCTURED_ALREADY_EXISTS = @"UNSTRUCTURED_ALREADY_EXISTS";
+        public const string TYPE_NOT_ALLOWED_FOR_CONDITIONS = @"TYPE_NOT_ALLOWED_FOR_CONDITIONS";
+        public const string INVALID_INPUT_COMBINATION = @"INVALID_INPUT_COMBINATION";
     }
 
     ///<summary>
@@ -63365,12 +63365,12 @@ namespace shopify
 
     public static class StoreCreditAccountCreditUserErrorCodeStringValues
     {
-        public const string ACCOUNT_NOT_FOUND = "ACCOUNT_NOT_FOUND";
-        public const string OWNER_NOT_FOUND = "OWNER_NOT_FOUND";
-        public const string NEGATIVE_OR_ZERO_AMOUNT = "NEGATIVE_OR_ZERO_AMOUNT";
-        public const string MISMATCHING_CURRENCY = "MISMATCHING_CURRENCY";
-        public const string EXPIRES_AT_IN_PAST = "EXPIRES_AT_IN_PAST";
-        public const string CREDIT_LIMIT_EXCEEDED = "CREDIT_LIMIT_EXCEEDED";
+        public const string ACCOUNT_NOT_FOUND = @"ACCOUNT_NOT_FOUND";
+        public const string OWNER_NOT_FOUND = @"OWNER_NOT_FOUND";
+        public const string NEGATIVE_OR_ZERO_AMOUNT = @"NEGATIVE_OR_ZERO_AMOUNT";
+        public const string MISMATCHING_CURRENCY = @"MISMATCHING_CURRENCY";
+        public const string EXPIRES_AT_IN_PAST = @"EXPIRES_AT_IN_PAST";
+        public const string CREDIT_LIMIT_EXCEEDED = @"CREDIT_LIMIT_EXCEEDED";
     }
 
     ///<summary>
@@ -63494,10 +63494,10 @@ namespace shopify
 
     public static class StoreCreditAccountDebitUserErrorCodeStringValues
     {
-        public const string ACCOUNT_NOT_FOUND = "ACCOUNT_NOT_FOUND";
-        public const string NEGATIVE_OR_ZERO_AMOUNT = "NEGATIVE_OR_ZERO_AMOUNT";
-        public const string INSUFFICIENT_FUNDS = "INSUFFICIENT_FUNDS";
-        public const string MISMATCHING_CURRENCY = "MISMATCHING_CURRENCY";
+        public const string ACCOUNT_NOT_FOUND = @"ACCOUNT_NOT_FOUND";
+        public const string NEGATIVE_OR_ZERO_AMOUNT = @"NEGATIVE_OR_ZERO_AMOUNT";
+        public const string INSUFFICIENT_FUNDS = @"INSUFFICIENT_FUNDS";
+        public const string MISMATCHING_CURRENCY = @"MISMATCHING_CURRENCY";
     }
 
     ///<summary>
@@ -63987,30 +63987,30 @@ namespace shopify
 
     public static class SubscriptionBillingAttemptErrorCodeStringValues
     {
-        public const string PAYMENT_METHOD_NOT_FOUND = "PAYMENT_METHOD_NOT_FOUND";
-        public const string PAYMENT_PROVIDER_IS_NOT_ENABLED = "PAYMENT_PROVIDER_IS_NOT_ENABLED";
-        public const string INVALID_PAYMENT_METHOD = "INVALID_PAYMENT_METHOD";
-        public const string UNEXPECTED_ERROR = "UNEXPECTED_ERROR";
-        public const string EXPIRED_PAYMENT_METHOD = "EXPIRED_PAYMENT_METHOD";
-        public const string PAYMENT_METHOD_DECLINED = "PAYMENT_METHOD_DECLINED";
-        public const string AUTHENTICATION_ERROR = "AUTHENTICATION_ERROR";
-        public const string TEST_MODE = "TEST_MODE";
-        public const string BUYER_CANCELED_PAYMENT_METHOD = "BUYER_CANCELED_PAYMENT_METHOD";
-        public const string CUSTOMER_NOT_FOUND = "CUSTOMER_NOT_FOUND";
-        public const string CUSTOMER_INVALID = "CUSTOMER_INVALID";
-        public const string INVALID_SHIPPING_ADDRESS = "INVALID_SHIPPING_ADDRESS";
-        public const string INVALID_CUSTOMER_BILLING_AGREEMENT = "INVALID_CUSTOMER_BILLING_AGREEMENT";
-        public const string INVOICE_ALREADY_PAID = "INVOICE_ALREADY_PAID";
-        public const string PAYMENT_METHOD_INCOMPATIBLE_WITH_GATEWAY_CONFIG = "PAYMENT_METHOD_INCOMPATIBLE_WITH_GATEWAY_CONFIG";
-        public const string AMOUNT_TOO_SMALL = "AMOUNT_TOO_SMALL";
-        public const string INVENTORY_ALLOCATIONS_NOT_FOUND = "INVENTORY_ALLOCATIONS_NOT_FOUND";
-        public const string INSUFFICIENT_INVENTORY = "INSUFFICIENT_INVENTORY";
-        public const string TRANSIENT_ERROR = "TRANSIENT_ERROR";
-        public const string INSUFFICIENT_FUNDS = "INSUFFICIENT_FUNDS";
-        public const string PURCHASE_TYPE_NOT_SUPPORTED = "PURCHASE_TYPE_NOT_SUPPORTED";
-        public const string PAYPAL_ERROR_GENERAL = "PAYPAL_ERROR_GENERAL";
-        public const string CARD_NUMBER_INCORRECT = "CARD_NUMBER_INCORRECT";
-        public const string FRAUD_SUSPECTED = "FRAUD_SUSPECTED";
+        public const string PAYMENT_METHOD_NOT_FOUND = @"PAYMENT_METHOD_NOT_FOUND";
+        public const string PAYMENT_PROVIDER_IS_NOT_ENABLED = @"PAYMENT_PROVIDER_IS_NOT_ENABLED";
+        public const string INVALID_PAYMENT_METHOD = @"INVALID_PAYMENT_METHOD";
+        public const string UNEXPECTED_ERROR = @"UNEXPECTED_ERROR";
+        public const string EXPIRED_PAYMENT_METHOD = @"EXPIRED_PAYMENT_METHOD";
+        public const string PAYMENT_METHOD_DECLINED = @"PAYMENT_METHOD_DECLINED";
+        public const string AUTHENTICATION_ERROR = @"AUTHENTICATION_ERROR";
+        public const string TEST_MODE = @"TEST_MODE";
+        public const string BUYER_CANCELED_PAYMENT_METHOD = @"BUYER_CANCELED_PAYMENT_METHOD";
+        public const string CUSTOMER_NOT_FOUND = @"CUSTOMER_NOT_FOUND";
+        public const string CUSTOMER_INVALID = @"CUSTOMER_INVALID";
+        public const string INVALID_SHIPPING_ADDRESS = @"INVALID_SHIPPING_ADDRESS";
+        public const string INVALID_CUSTOMER_BILLING_AGREEMENT = @"INVALID_CUSTOMER_BILLING_AGREEMENT";
+        public const string INVOICE_ALREADY_PAID = @"INVOICE_ALREADY_PAID";
+        public const string PAYMENT_METHOD_INCOMPATIBLE_WITH_GATEWAY_CONFIG = @"PAYMENT_METHOD_INCOMPATIBLE_WITH_GATEWAY_CONFIG";
+        public const string AMOUNT_TOO_SMALL = @"AMOUNT_TOO_SMALL";
+        public const string INVENTORY_ALLOCATIONS_NOT_FOUND = @"INVENTORY_ALLOCATIONS_NOT_FOUND";
+        public const string INSUFFICIENT_INVENTORY = @"INSUFFICIENT_INVENTORY";
+        public const string TRANSIENT_ERROR = @"TRANSIENT_ERROR";
+        public const string INSUFFICIENT_FUNDS = @"INSUFFICIENT_FUNDS";
+        public const string PURCHASE_TYPE_NOT_SUPPORTED = @"PURCHASE_TYPE_NOT_SUPPORTED";
+        public const string PAYPAL_ERROR_GENERAL = @"PAYPAL_ERROR_GENERAL";
+        public const string CARD_NUMBER_INCORRECT = @"CARD_NUMBER_INCORRECT";
+        public const string FRAUD_SUSPECTED = @"FRAUD_SUSPECTED";
     }
 
     ///<summary>
@@ -64035,9 +64035,9 @@ namespace shopify
 
     public static class SubscriptionBillingAttemptsSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -64108,9 +64108,9 @@ namespace shopify
 
     public static class SubscriptionBillingCycleBillingAttemptStatusStringValues
     {
-        public const string HAS_ATTEMPT = "HAS_ATTEMPT";
-        public const string NO_ATTEMPT = "NO_ATTEMPT";
-        public const string ANY = "ANY";
+        public const string HAS_ATTEMPT = @"HAS_ATTEMPT";
+        public const string NO_ATTEMPT = @"NO_ATTEMPT";
+        public const string ANY = @"ANY";
     }
 
     ///<summary>
@@ -64130,8 +64130,8 @@ namespace shopify
 
     public static class SubscriptionBillingCycleBillingCycleStatusStringValues
     {
-        public const string BILLED = "BILLED";
-        public const string UNBILLED = "UNBILLED";
+        public const string BILLED = @"BILLED";
+        public const string UNBILLED = @"UNBILLED";
     }
 
     ///<summary>
@@ -64212,11 +64212,11 @@ namespace shopify
 
     public static class SubscriptionBillingCycleBulkUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string BLANK = "BLANK";
-        public const string END_DATE_IN_THE_FUTURE = "END_DATE_IN_THE_FUTURE";
-        public const string INVALID_DATE_RANGE = "INVALID_DATE_RANGE";
-        public const string START_DATE_BEFORE_END_DATE = "START_DATE_BEFORE_END_DATE";
+        public const string INVALID = @"INVALID";
+        public const string BLANK = @"BLANK";
+        public const string END_DATE_IN_THE_FUTURE = @"END_DATE_IN_THE_FUTURE";
+        public const string INVALID_DATE_RANGE = @"INVALID_DATE_RANGE";
+        public const string START_DATE_BEFORE_END_DATE = @"START_DATE_BEFORE_END_DATE";
     }
 
     ///<summary>
@@ -64477,18 +64477,18 @@ namespace shopify
 
     public static class SubscriptionBillingCycleErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string CYCLE_NOT_FOUND = "CYCLE_NOT_FOUND";
-        public const string NO_CYCLE_EDITS = "NO_CYCLE_EDITS";
-        public const string INVALID_CYCLE_INDEX = "INVALID_CYCLE_INDEX";
-        public const string INVALID_DATE = "INVALID_DATE";
-        public const string EMPTY_BILLING_CYCLE_EDIT_SCHEDULE_INPUT = "EMPTY_BILLING_CYCLE_EDIT_SCHEDULE_INPUT";
-        public const string BILLING_DATE_SET_ON_SKIPPED = "BILLING_DATE_SET_ON_SKIPPED";
-        public const string OUT_OF_BOUNDS = "OUT_OF_BOUNDS";
-        public const string UPCOMING_CYCLE_LIMIT_EXCEEDED = "UPCOMING_CYCLE_LIMIT_EXCEEDED";
-        public const string CYCLE_INDEX_OUT_OF_RANGE = "CYCLE_INDEX_OUT_OF_RANGE";
-        public const string CYCLE_START_DATE_OUT_OF_RANGE = "CYCLE_START_DATE_OUT_OF_RANGE";
-        public const string INCOMPLETE_BILLING_ATTEMPTS = "INCOMPLETE_BILLING_ATTEMPTS";
+        public const string INVALID = @"INVALID";
+        public const string CYCLE_NOT_FOUND = @"CYCLE_NOT_FOUND";
+        public const string NO_CYCLE_EDITS = @"NO_CYCLE_EDITS";
+        public const string INVALID_CYCLE_INDEX = @"INVALID_CYCLE_INDEX";
+        public const string INVALID_DATE = @"INVALID_DATE";
+        public const string EMPTY_BILLING_CYCLE_EDIT_SCHEDULE_INPUT = @"EMPTY_BILLING_CYCLE_EDIT_SCHEDULE_INPUT";
+        public const string BILLING_DATE_SET_ON_SKIPPED = @"BILLING_DATE_SET_ON_SKIPPED";
+        public const string OUT_OF_BOUNDS = @"OUT_OF_BOUNDS";
+        public const string UPCOMING_CYCLE_LIMIT_EXCEEDED = @"UPCOMING_CYCLE_LIMIT_EXCEEDED";
+        public const string CYCLE_INDEX_OUT_OF_RANGE = @"CYCLE_INDEX_OUT_OF_RANGE";
+        public const string CYCLE_START_DATE_OUT_OF_RANGE = @"CYCLE_START_DATE_OUT_OF_RANGE";
+        public const string INCOMPLETE_BILLING_ATTEMPTS = @"INCOMPLETE_BILLING_ATTEMPTS";
     }
 
     ///<summary>
@@ -64512,9 +64512,9 @@ namespace shopify
 
     public static class SubscriptionBillingCycleScheduleEditInputScheduleEditReasonStringValues
     {
-        public const string BUYER_INITIATED = "BUYER_INITIATED";
-        public const string MERCHANT_INITIATED = "MERCHANT_INITIATED";
-        public const string DEV_INITIATED = "DEV_INITIATED";
+        public const string BUYER_INITIATED = @"BUYER_INITIATED";
+        public const string MERCHANT_INITIATED = @"MERCHANT_INITIATED";
+        public const string DEV_INITIATED = @"DEV_INITIATED";
     }
 
     ///<summary>
@@ -64579,7 +64579,7 @@ namespace shopify
 
     public static class SubscriptionBillingCycleSkipUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
+        public const string INVALID = @"INVALID";
     }
 
     ///<summary>
@@ -64629,7 +64629,7 @@ namespace shopify
 
     public static class SubscriptionBillingCycleUnskipUserErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
+        public const string INVALID = @"INVALID";
     }
 
     ///<summary>
@@ -64673,9 +64673,9 @@ namespace shopify
 
     public static class SubscriptionBillingCyclesSortKeysStringValues
     {
-        public const string CYCLE_INDEX = "CYCLE_INDEX";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CYCLE_INDEX = @"CYCLE_INDEX";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -64691,7 +64691,7 @@ namespace shopify
 
     public static class SubscriptionBillingCyclesTargetSelectionStringValues
     {
-        public const string ALL = "ALL";
+        public const string ALL = @"ALL";
     }
 
     ///<summary>
@@ -65018,7 +65018,7 @@ namespace shopify
 
     public static class SubscriptionContractErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
+        public const string INVALID = @"INVALID";
     }
 
     ///<summary>
@@ -65076,10 +65076,10 @@ namespace shopify
 
     public static class SubscriptionContractLastBillingErrorTypeStringValues
     {
-        public const string PAYMENT_ERROR = "PAYMENT_ERROR";
-        public const string CUSTOMER_ERROR = "CUSTOMER_ERROR";
-        public const string INVENTORY_ERROR = "INVENTORY_ERROR";
-        public const string OTHER = "OTHER";
+        public const string PAYMENT_ERROR = @"PAYMENT_ERROR";
+        public const string CUSTOMER_ERROR = @"CUSTOMER_ERROR";
+        public const string INVENTORY_ERROR = @"INVENTORY_ERROR";
+        public const string OTHER = @"OTHER";
     }
 
     ///<summary>
@@ -65099,8 +65099,8 @@ namespace shopify
 
     public static class SubscriptionContractLastPaymentStatusStringValues
     {
-        public const string SUCCEEDED = "SUCCEEDED";
-        public const string FAILED = "FAILED";
+        public const string SUCCEEDED = @"SUCCEEDED";
+        public const string FAILED = @"FAILED";
     }
 
     ///<summary>
@@ -65169,8 +65169,8 @@ namespace shopify
 
     public static class SubscriptionContractStatusUpdateErrorCodeStringValues
     {
-        public const string INVALID = "INVALID";
-        public const string CONTRACT_TERMINATED = "CONTRACT_TERMINATED";
+        public const string INVALID = @"INVALID";
+        public const string CONTRACT_TERMINATED = @"CONTRACT_TERMINATED";
     }
 
     ///<summary>
@@ -65221,11 +65221,11 @@ namespace shopify
 
     public static class SubscriptionContractSubscriptionStatusStringValues
     {
-        public const string ACTIVE = "ACTIVE";
-        public const string PAUSED = "PAUSED";
-        public const string CANCELLED = "CANCELLED";
-        public const string EXPIRED = "EXPIRED";
-        public const string FAILED = "FAILED";
+        public const string ACTIVE = @"ACTIVE";
+        public const string PAUSED = @"PAUSED";
+        public const string CANCELLED = @"CANCELLED";
+        public const string EXPIRED = @"EXPIRED";
+        public const string FAILED = @"FAILED";
     }
 
     ///<summary>
@@ -65683,17 +65683,17 @@ namespace shopify
 
     public static class SubscriptionDiscountRejectionReasonStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string NO_ENTITLED_LINE_ITEMS = "NO_ENTITLED_LINE_ITEMS";
-        public const string QUANTITY_NOT_IN_RANGE = "QUANTITY_NOT_IN_RANGE";
-        public const string PURCHASE_NOT_IN_RANGE = "PURCHASE_NOT_IN_RANGE";
-        public const string CUSTOMER_NOT_ELIGIBLE = "CUSTOMER_NOT_ELIGIBLE";
-        public const string USAGE_LIMIT_REACHED = "USAGE_LIMIT_REACHED";
-        public const string CUSTOMER_USAGE_LIMIT_REACHED = "CUSTOMER_USAGE_LIMIT_REACHED";
-        public const string CURRENTLY_INACTIVE = "CURRENTLY_INACTIVE";
-        public const string NO_ENTITLED_SHIPPING_LINES = "NO_ENTITLED_SHIPPING_LINES";
-        public const string INCOMPATIBLE_PURCHASE_TYPE = "INCOMPATIBLE_PURCHASE_TYPE";
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string NO_ENTITLED_LINE_ITEMS = @"NO_ENTITLED_LINE_ITEMS";
+        public const string QUANTITY_NOT_IN_RANGE = @"QUANTITY_NOT_IN_RANGE";
+        public const string PURCHASE_NOT_IN_RANGE = @"PURCHASE_NOT_IN_RANGE";
+        public const string CUSTOMER_NOT_ELIGIBLE = @"CUSTOMER_NOT_ELIGIBLE";
+        public const string USAGE_LIMIT_REACHED = @"USAGE_LIMIT_REACHED";
+        public const string CUSTOMER_USAGE_LIMIT_REACHED = @"CUSTOMER_USAGE_LIMIT_REACHED";
+        public const string CURRENTLY_INACTIVE = @"CURRENTLY_INACTIVE";
+        public const string NO_ENTITLED_SHIPPING_LINES = @"NO_ENTITLED_SHIPPING_LINES";
+        public const string INCOMPATIBLE_PURCHASE_TYPE = @"INCOMPATIBLE_PURCHASE_TYPE";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
     }
 
     ///<summary>
@@ -66081,48 +66081,48 @@ namespace shopify
 
     public static class SubscriptionDraftErrorCodeStringValues
     {
-        public const string ALREADY_REMOVED = "ALREADY_REMOVED";
-        public const string PRESENCE = "PRESENCE";
-        public const string COMMITTED = "COMMITTED";
-        public const string NOT_IN_RANGE = "NOT_IN_RANGE";
-        public const string NOT_AN_INTEGER = "NOT_AN_INTEGER";
-        public const string SELLING_PLAN_MAX_CYCLES_MUST_BE_GREATER_THAN_MIN_CYCLES = "SELLING_PLAN_MAX_CYCLES_MUST_BE_GREATER_THAN_MIN_CYCLES";
-        public const string DELIVERY_MUST_BE_MULTIPLE_OF_BILLING = "DELIVERY_MUST_BE_MULTIPLE_OF_BILLING";
-        public const string INVALID_BILLING_DATE = "INVALID_BILLING_DATE";
-        public const string INVALID_NOTE_LENGTH = "INVALID_NOTE_LENGTH";
-        public const string INVALID_LINES = "INVALID_LINES";
-        public const string NO_ENTITLED_LINES = "NO_ENTITLED_LINES";
-        public const string CUSTOMER_DOES_NOT_EXIST = "CUSTOMER_DOES_NOT_EXIST";
-        public const string CUSTOMER_MISMATCH = "CUSTOMER_MISMATCH";
-        public const string DELIVERY_METHOD_REQUIRED = "DELIVERY_METHOD_REQUIRED";
-        public const string MISSING_LOCAL_DELIVERY_OPTIONS = "MISSING_LOCAL_DELIVERY_OPTIONS";
-        public const string CYCLE_DISCOUNTS_UNIQUE_AFTER_CYCLE = "CYCLE_DISCOUNTS_UNIQUE_AFTER_CYCLE";
-        public const string INVALID_ADJUSTMENT_TYPE = "INVALID_ADJUSTMENT_TYPE";
-        public const string INVALID_ADJUSTMENT_VALUE = "INVALID_ADJUSTMENT_VALUE";
-        public const string STALE_CONTRACT = "STALE_CONTRACT";
-        public const string CURRENCY_NOT_ENABLED = "CURRENCY_NOT_ENABLED";
-        public const string HAS_FUTURE_EDITS = "HAS_FUTURE_EDITS";
-        public const string BILLING_CYCLE_PRESENT = "BILLING_CYCLE_PRESENT";
-        public const string BILLING_CYCLE_ABSENT = "BILLING_CYCLE_ABSENT";
-        public const string BILLING_CYCLE_CONTRACT_DRAFT_DELIVERY_POLICY_INVALID = "BILLING_CYCLE_CONTRACT_DRAFT_DELIVERY_POLICY_INVALID";
-        public const string BILLING_CYCLE_CONTRACT_DRAFT_BILLING_POLICY_INVALID = "BILLING_CYCLE_CONTRACT_DRAFT_BILLING_POLICY_INVALID";
-        public const string CONCATENATION_BILLING_CYCLE_CONTRACT_DRAFT_REQUIRED = "CONCATENATION_BILLING_CYCLE_CONTRACT_DRAFT_REQUIRED";
-        public const string DUPLICATE_CONCATENATED_CONTRACTS = "DUPLICATE_CONCATENATED_CONTRACTS";
-        public const string UPCOMING_CYCLE_LIMIT_EXCEEDED = "UPCOMING_CYCLE_LIMIT_EXCEEDED";
-        public const string CYCLE_INDEX_OUT_OF_RANGE = "CYCLE_INDEX_OUT_OF_RANGE";
-        public const string CYCLE_START_DATE_OUT_OF_RANGE = "CYCLE_START_DATE_OUT_OF_RANGE";
-        public const string CYCLE_SELECTOR_VALIDATE_ONE_OF = "CYCLE_SELECTOR_VALIDATE_ONE_OF";
-        public const string EXCEEDED_MAX_CONCATENATED_CONTRACTS = "EXCEEDED_MAX_CONCATENATED_CONTRACTS";
-        public const string CUSTOMER_REDACTED = "CUSTOMER_REDACTED";
-        public const string MISSING_CUSTOMER_PAYMENT_METHOD = "MISSING_CUSTOMER_PAYMENT_METHOD";
-        public const string INVALID = "INVALID";
-        public const string BLANK = "BLANK";
-        public const string GREATER_THAN = "GREATER_THAN";
-        public const string GREATER_THAN_OR_EQUAL_TO = "GREATER_THAN_OR_EQUAL_TO";
-        public const string LESS_THAN = "LESS_THAN";
-        public const string LESS_THAN_OR_EQUAL_TO = "LESS_THAN_OR_EQUAL_TO";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string TOO_SHORT = "TOO_SHORT";
+        public const string ALREADY_REMOVED = @"ALREADY_REMOVED";
+        public const string PRESENCE = @"PRESENCE";
+        public const string COMMITTED = @"COMMITTED";
+        public const string NOT_IN_RANGE = @"NOT_IN_RANGE";
+        public const string NOT_AN_INTEGER = @"NOT_AN_INTEGER";
+        public const string SELLING_PLAN_MAX_CYCLES_MUST_BE_GREATER_THAN_MIN_CYCLES = @"SELLING_PLAN_MAX_CYCLES_MUST_BE_GREATER_THAN_MIN_CYCLES";
+        public const string DELIVERY_MUST_BE_MULTIPLE_OF_BILLING = @"DELIVERY_MUST_BE_MULTIPLE_OF_BILLING";
+        public const string INVALID_BILLING_DATE = @"INVALID_BILLING_DATE";
+        public const string INVALID_NOTE_LENGTH = @"INVALID_NOTE_LENGTH";
+        public const string INVALID_LINES = @"INVALID_LINES";
+        public const string NO_ENTITLED_LINES = @"NO_ENTITLED_LINES";
+        public const string CUSTOMER_DOES_NOT_EXIST = @"CUSTOMER_DOES_NOT_EXIST";
+        public const string CUSTOMER_MISMATCH = @"CUSTOMER_MISMATCH";
+        public const string DELIVERY_METHOD_REQUIRED = @"DELIVERY_METHOD_REQUIRED";
+        public const string MISSING_LOCAL_DELIVERY_OPTIONS = @"MISSING_LOCAL_DELIVERY_OPTIONS";
+        public const string CYCLE_DISCOUNTS_UNIQUE_AFTER_CYCLE = @"CYCLE_DISCOUNTS_UNIQUE_AFTER_CYCLE";
+        public const string INVALID_ADJUSTMENT_TYPE = @"INVALID_ADJUSTMENT_TYPE";
+        public const string INVALID_ADJUSTMENT_VALUE = @"INVALID_ADJUSTMENT_VALUE";
+        public const string STALE_CONTRACT = @"STALE_CONTRACT";
+        public const string CURRENCY_NOT_ENABLED = @"CURRENCY_NOT_ENABLED";
+        public const string HAS_FUTURE_EDITS = @"HAS_FUTURE_EDITS";
+        public const string BILLING_CYCLE_PRESENT = @"BILLING_CYCLE_PRESENT";
+        public const string BILLING_CYCLE_ABSENT = @"BILLING_CYCLE_ABSENT";
+        public const string BILLING_CYCLE_CONTRACT_DRAFT_DELIVERY_POLICY_INVALID = @"BILLING_CYCLE_CONTRACT_DRAFT_DELIVERY_POLICY_INVALID";
+        public const string BILLING_CYCLE_CONTRACT_DRAFT_BILLING_POLICY_INVALID = @"BILLING_CYCLE_CONTRACT_DRAFT_BILLING_POLICY_INVALID";
+        public const string CONCATENATION_BILLING_CYCLE_CONTRACT_DRAFT_REQUIRED = @"CONCATENATION_BILLING_CYCLE_CONTRACT_DRAFT_REQUIRED";
+        public const string DUPLICATE_CONCATENATED_CONTRACTS = @"DUPLICATE_CONCATENATED_CONTRACTS";
+        public const string UPCOMING_CYCLE_LIMIT_EXCEEDED = @"UPCOMING_CYCLE_LIMIT_EXCEEDED";
+        public const string CYCLE_INDEX_OUT_OF_RANGE = @"CYCLE_INDEX_OUT_OF_RANGE";
+        public const string CYCLE_START_DATE_OUT_OF_RANGE = @"CYCLE_START_DATE_OUT_OF_RANGE";
+        public const string CYCLE_SELECTOR_VALIDATE_ONE_OF = @"CYCLE_SELECTOR_VALIDATE_ONE_OF";
+        public const string EXCEEDED_MAX_CONCATENATED_CONTRACTS = @"EXCEEDED_MAX_CONCATENATED_CONTRACTS";
+        public const string CUSTOMER_REDACTED = @"CUSTOMER_REDACTED";
+        public const string MISSING_CUSTOMER_PAYMENT_METHOD = @"MISSING_CUSTOMER_PAYMENT_METHOD";
+        public const string INVALID = @"INVALID";
+        public const string BLANK = @"BLANK";
+        public const string GREATER_THAN = @"GREATER_THAN";
+        public const string GREATER_THAN_OR_EQUAL_TO = @"GREATER_THAN_OR_EQUAL_TO";
+        public const string LESS_THAN = @"LESS_THAN";
+        public const string LESS_THAN_OR_EQUAL_TO = @"LESS_THAN_OR_EQUAL_TO";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string TOO_SHORT = @"TOO_SHORT";
     }
 
     ///<summary>
@@ -66742,7 +66742,7 @@ namespace shopify
 
     public static class SuggestedOrderTransactionKindStringValues
     {
-        public const string SUGGESTED_REFUND = "SUGGESTED_REFUND";
+        public const string SUGGESTED_REFUND = @"SUGGESTED_REFUND";
     }
 
     ///<summary>
@@ -66962,9 +66962,9 @@ namespace shopify
 
     public static class TaxAppConfigureUserErrorCodeStringValues
     {
-        public const string TAX_PARTNER_NOT_FOUND = "TAX_PARTNER_NOT_FOUND";
-        public const string TAX_PARTNER_STATE_UPDATE_FAILED = "TAX_PARTNER_STATE_UPDATE_FAILED";
-        public const string TAX_PARTNER_ALREADY_ACTIVE = "TAX_PARTNER_ALREADY_ACTIVE";
+        public const string TAX_PARTNER_NOT_FOUND = @"TAX_PARTNER_NOT_FOUND";
+        public const string TAX_PARTNER_STATE_UPDATE_FAILED = @"TAX_PARTNER_STATE_UPDATE_FAILED";
+        public const string TAX_PARTNER_ALREADY_ACTIVE = @"TAX_PARTNER_ALREADY_ACTIVE";
     }
 
     ///<summary>
@@ -67264,78 +67264,78 @@ namespace shopify
 
     public static class TaxExemptionStringValues
     {
-        public const string CA_STATUS_CARD_EXEMPTION = "CA_STATUS_CARD_EXEMPTION";
-        public const string CA_BC_RESELLER_EXEMPTION = "CA_BC_RESELLER_EXEMPTION";
-        public const string CA_MB_RESELLER_EXEMPTION = "CA_MB_RESELLER_EXEMPTION";
-        public const string CA_SK_RESELLER_EXEMPTION = "CA_SK_RESELLER_EXEMPTION";
-        public const string CA_DIPLOMAT_EXEMPTION = "CA_DIPLOMAT_EXEMPTION";
-        public const string CA_BC_COMMERCIAL_FISHERY_EXEMPTION = "CA_BC_COMMERCIAL_FISHERY_EXEMPTION";
-        public const string CA_MB_COMMERCIAL_FISHERY_EXEMPTION = "CA_MB_COMMERCIAL_FISHERY_EXEMPTION";
-        public const string CA_NS_COMMERCIAL_FISHERY_EXEMPTION = "CA_NS_COMMERCIAL_FISHERY_EXEMPTION";
-        public const string CA_PE_COMMERCIAL_FISHERY_EXEMPTION = "CA_PE_COMMERCIAL_FISHERY_EXEMPTION";
-        public const string CA_SK_COMMERCIAL_FISHERY_EXEMPTION = "CA_SK_COMMERCIAL_FISHERY_EXEMPTION";
-        public const string CA_BC_PRODUCTION_AND_MACHINERY_EXEMPTION = "CA_BC_PRODUCTION_AND_MACHINERY_EXEMPTION";
-        public const string CA_SK_PRODUCTION_AND_MACHINERY_EXEMPTION = "CA_SK_PRODUCTION_AND_MACHINERY_EXEMPTION";
-        public const string CA_BC_SUB_CONTRACTOR_EXEMPTION = "CA_BC_SUB_CONTRACTOR_EXEMPTION";
-        public const string CA_SK_SUB_CONTRACTOR_EXEMPTION = "CA_SK_SUB_CONTRACTOR_EXEMPTION";
-        public const string CA_BC_CONTRACTOR_EXEMPTION = "CA_BC_CONTRACTOR_EXEMPTION";
-        public const string CA_SK_CONTRACTOR_EXEMPTION = "CA_SK_CONTRACTOR_EXEMPTION";
-        public const string CA_ON_PURCHASE_EXEMPTION = "CA_ON_PURCHASE_EXEMPTION";
-        public const string CA_MB_FARMER_EXEMPTION = "CA_MB_FARMER_EXEMPTION";
-        public const string CA_NS_FARMER_EXEMPTION = "CA_NS_FARMER_EXEMPTION";
-        public const string CA_SK_FARMER_EXEMPTION = "CA_SK_FARMER_EXEMPTION";
-        public const string EU_REVERSE_CHARGE_EXEMPTION_RULE = "EU_REVERSE_CHARGE_EXEMPTION_RULE";
-        public const string US_AL_RESELLER_EXEMPTION = "US_AL_RESELLER_EXEMPTION";
-        public const string US_AK_RESELLER_EXEMPTION = "US_AK_RESELLER_EXEMPTION";
-        public const string US_AZ_RESELLER_EXEMPTION = "US_AZ_RESELLER_EXEMPTION";
-        public const string US_AR_RESELLER_EXEMPTION = "US_AR_RESELLER_EXEMPTION";
-        public const string US_CA_RESELLER_EXEMPTION = "US_CA_RESELLER_EXEMPTION";
-        public const string US_CO_RESELLER_EXEMPTION = "US_CO_RESELLER_EXEMPTION";
-        public const string US_CT_RESELLER_EXEMPTION = "US_CT_RESELLER_EXEMPTION";
-        public const string US_DE_RESELLER_EXEMPTION = "US_DE_RESELLER_EXEMPTION";
-        public const string US_FL_RESELLER_EXEMPTION = "US_FL_RESELLER_EXEMPTION";
-        public const string US_GA_RESELLER_EXEMPTION = "US_GA_RESELLER_EXEMPTION";
-        public const string US_HI_RESELLER_EXEMPTION = "US_HI_RESELLER_EXEMPTION";
-        public const string US_ID_RESELLER_EXEMPTION = "US_ID_RESELLER_EXEMPTION";
-        public const string US_IL_RESELLER_EXEMPTION = "US_IL_RESELLER_EXEMPTION";
-        public const string US_IN_RESELLER_EXEMPTION = "US_IN_RESELLER_EXEMPTION";
-        public const string US_IA_RESELLER_EXEMPTION = "US_IA_RESELLER_EXEMPTION";
-        public const string US_KS_RESELLER_EXEMPTION = "US_KS_RESELLER_EXEMPTION";
-        public const string US_KY_RESELLER_EXEMPTION = "US_KY_RESELLER_EXEMPTION";
-        public const string US_LA_RESELLER_EXEMPTION = "US_LA_RESELLER_EXEMPTION";
-        public const string US_ME_RESELLER_EXEMPTION = "US_ME_RESELLER_EXEMPTION";
-        public const string US_MD_RESELLER_EXEMPTION = "US_MD_RESELLER_EXEMPTION";
-        public const string US_MA_RESELLER_EXEMPTION = "US_MA_RESELLER_EXEMPTION";
-        public const string US_MI_RESELLER_EXEMPTION = "US_MI_RESELLER_EXEMPTION";
-        public const string US_MN_RESELLER_EXEMPTION = "US_MN_RESELLER_EXEMPTION";
-        public const string US_MS_RESELLER_EXEMPTION = "US_MS_RESELLER_EXEMPTION";
-        public const string US_MO_RESELLER_EXEMPTION = "US_MO_RESELLER_EXEMPTION";
-        public const string US_MT_RESELLER_EXEMPTION = "US_MT_RESELLER_EXEMPTION";
-        public const string US_NE_RESELLER_EXEMPTION = "US_NE_RESELLER_EXEMPTION";
-        public const string US_NV_RESELLER_EXEMPTION = "US_NV_RESELLER_EXEMPTION";
-        public const string US_NH_RESELLER_EXEMPTION = "US_NH_RESELLER_EXEMPTION";
-        public const string US_NJ_RESELLER_EXEMPTION = "US_NJ_RESELLER_EXEMPTION";
-        public const string US_NM_RESELLER_EXEMPTION = "US_NM_RESELLER_EXEMPTION";
-        public const string US_NY_RESELLER_EXEMPTION = "US_NY_RESELLER_EXEMPTION";
-        public const string US_NC_RESELLER_EXEMPTION = "US_NC_RESELLER_EXEMPTION";
-        public const string US_ND_RESELLER_EXEMPTION = "US_ND_RESELLER_EXEMPTION";
-        public const string US_OH_RESELLER_EXEMPTION = "US_OH_RESELLER_EXEMPTION";
-        public const string US_OK_RESELLER_EXEMPTION = "US_OK_RESELLER_EXEMPTION";
-        public const string US_OR_RESELLER_EXEMPTION = "US_OR_RESELLER_EXEMPTION";
-        public const string US_PA_RESELLER_EXEMPTION = "US_PA_RESELLER_EXEMPTION";
-        public const string US_RI_RESELLER_EXEMPTION = "US_RI_RESELLER_EXEMPTION";
-        public const string US_SC_RESELLER_EXEMPTION = "US_SC_RESELLER_EXEMPTION";
-        public const string US_SD_RESELLER_EXEMPTION = "US_SD_RESELLER_EXEMPTION";
-        public const string US_TN_RESELLER_EXEMPTION = "US_TN_RESELLER_EXEMPTION";
-        public const string US_TX_RESELLER_EXEMPTION = "US_TX_RESELLER_EXEMPTION";
-        public const string US_UT_RESELLER_EXEMPTION = "US_UT_RESELLER_EXEMPTION";
-        public const string US_VT_RESELLER_EXEMPTION = "US_VT_RESELLER_EXEMPTION";
-        public const string US_VA_RESELLER_EXEMPTION = "US_VA_RESELLER_EXEMPTION";
-        public const string US_WA_RESELLER_EXEMPTION = "US_WA_RESELLER_EXEMPTION";
-        public const string US_WV_RESELLER_EXEMPTION = "US_WV_RESELLER_EXEMPTION";
-        public const string US_WI_RESELLER_EXEMPTION = "US_WI_RESELLER_EXEMPTION";
-        public const string US_WY_RESELLER_EXEMPTION = "US_WY_RESELLER_EXEMPTION";
-        public const string US_DC_RESELLER_EXEMPTION = "US_DC_RESELLER_EXEMPTION";
+        public const string CA_STATUS_CARD_EXEMPTION = @"CA_STATUS_CARD_EXEMPTION";
+        public const string CA_BC_RESELLER_EXEMPTION = @"CA_BC_RESELLER_EXEMPTION";
+        public const string CA_MB_RESELLER_EXEMPTION = @"CA_MB_RESELLER_EXEMPTION";
+        public const string CA_SK_RESELLER_EXEMPTION = @"CA_SK_RESELLER_EXEMPTION";
+        public const string CA_DIPLOMAT_EXEMPTION = @"CA_DIPLOMAT_EXEMPTION";
+        public const string CA_BC_COMMERCIAL_FISHERY_EXEMPTION = @"CA_BC_COMMERCIAL_FISHERY_EXEMPTION";
+        public const string CA_MB_COMMERCIAL_FISHERY_EXEMPTION = @"CA_MB_COMMERCIAL_FISHERY_EXEMPTION";
+        public const string CA_NS_COMMERCIAL_FISHERY_EXEMPTION = @"CA_NS_COMMERCIAL_FISHERY_EXEMPTION";
+        public const string CA_PE_COMMERCIAL_FISHERY_EXEMPTION = @"CA_PE_COMMERCIAL_FISHERY_EXEMPTION";
+        public const string CA_SK_COMMERCIAL_FISHERY_EXEMPTION = @"CA_SK_COMMERCIAL_FISHERY_EXEMPTION";
+        public const string CA_BC_PRODUCTION_AND_MACHINERY_EXEMPTION = @"CA_BC_PRODUCTION_AND_MACHINERY_EXEMPTION";
+        public const string CA_SK_PRODUCTION_AND_MACHINERY_EXEMPTION = @"CA_SK_PRODUCTION_AND_MACHINERY_EXEMPTION";
+        public const string CA_BC_SUB_CONTRACTOR_EXEMPTION = @"CA_BC_SUB_CONTRACTOR_EXEMPTION";
+        public const string CA_SK_SUB_CONTRACTOR_EXEMPTION = @"CA_SK_SUB_CONTRACTOR_EXEMPTION";
+        public const string CA_BC_CONTRACTOR_EXEMPTION = @"CA_BC_CONTRACTOR_EXEMPTION";
+        public const string CA_SK_CONTRACTOR_EXEMPTION = @"CA_SK_CONTRACTOR_EXEMPTION";
+        public const string CA_ON_PURCHASE_EXEMPTION = @"CA_ON_PURCHASE_EXEMPTION";
+        public const string CA_MB_FARMER_EXEMPTION = @"CA_MB_FARMER_EXEMPTION";
+        public const string CA_NS_FARMER_EXEMPTION = @"CA_NS_FARMER_EXEMPTION";
+        public const string CA_SK_FARMER_EXEMPTION = @"CA_SK_FARMER_EXEMPTION";
+        public const string EU_REVERSE_CHARGE_EXEMPTION_RULE = @"EU_REVERSE_CHARGE_EXEMPTION_RULE";
+        public const string US_AL_RESELLER_EXEMPTION = @"US_AL_RESELLER_EXEMPTION";
+        public const string US_AK_RESELLER_EXEMPTION = @"US_AK_RESELLER_EXEMPTION";
+        public const string US_AZ_RESELLER_EXEMPTION = @"US_AZ_RESELLER_EXEMPTION";
+        public const string US_AR_RESELLER_EXEMPTION = @"US_AR_RESELLER_EXEMPTION";
+        public const string US_CA_RESELLER_EXEMPTION = @"US_CA_RESELLER_EXEMPTION";
+        public const string US_CO_RESELLER_EXEMPTION = @"US_CO_RESELLER_EXEMPTION";
+        public const string US_CT_RESELLER_EXEMPTION = @"US_CT_RESELLER_EXEMPTION";
+        public const string US_DE_RESELLER_EXEMPTION = @"US_DE_RESELLER_EXEMPTION";
+        public const string US_FL_RESELLER_EXEMPTION = @"US_FL_RESELLER_EXEMPTION";
+        public const string US_GA_RESELLER_EXEMPTION = @"US_GA_RESELLER_EXEMPTION";
+        public const string US_HI_RESELLER_EXEMPTION = @"US_HI_RESELLER_EXEMPTION";
+        public const string US_ID_RESELLER_EXEMPTION = @"US_ID_RESELLER_EXEMPTION";
+        public const string US_IL_RESELLER_EXEMPTION = @"US_IL_RESELLER_EXEMPTION";
+        public const string US_IN_RESELLER_EXEMPTION = @"US_IN_RESELLER_EXEMPTION";
+        public const string US_IA_RESELLER_EXEMPTION = @"US_IA_RESELLER_EXEMPTION";
+        public const string US_KS_RESELLER_EXEMPTION = @"US_KS_RESELLER_EXEMPTION";
+        public const string US_KY_RESELLER_EXEMPTION = @"US_KY_RESELLER_EXEMPTION";
+        public const string US_LA_RESELLER_EXEMPTION = @"US_LA_RESELLER_EXEMPTION";
+        public const string US_ME_RESELLER_EXEMPTION = @"US_ME_RESELLER_EXEMPTION";
+        public const string US_MD_RESELLER_EXEMPTION = @"US_MD_RESELLER_EXEMPTION";
+        public const string US_MA_RESELLER_EXEMPTION = @"US_MA_RESELLER_EXEMPTION";
+        public const string US_MI_RESELLER_EXEMPTION = @"US_MI_RESELLER_EXEMPTION";
+        public const string US_MN_RESELLER_EXEMPTION = @"US_MN_RESELLER_EXEMPTION";
+        public const string US_MS_RESELLER_EXEMPTION = @"US_MS_RESELLER_EXEMPTION";
+        public const string US_MO_RESELLER_EXEMPTION = @"US_MO_RESELLER_EXEMPTION";
+        public const string US_MT_RESELLER_EXEMPTION = @"US_MT_RESELLER_EXEMPTION";
+        public const string US_NE_RESELLER_EXEMPTION = @"US_NE_RESELLER_EXEMPTION";
+        public const string US_NV_RESELLER_EXEMPTION = @"US_NV_RESELLER_EXEMPTION";
+        public const string US_NH_RESELLER_EXEMPTION = @"US_NH_RESELLER_EXEMPTION";
+        public const string US_NJ_RESELLER_EXEMPTION = @"US_NJ_RESELLER_EXEMPTION";
+        public const string US_NM_RESELLER_EXEMPTION = @"US_NM_RESELLER_EXEMPTION";
+        public const string US_NY_RESELLER_EXEMPTION = @"US_NY_RESELLER_EXEMPTION";
+        public const string US_NC_RESELLER_EXEMPTION = @"US_NC_RESELLER_EXEMPTION";
+        public const string US_ND_RESELLER_EXEMPTION = @"US_ND_RESELLER_EXEMPTION";
+        public const string US_OH_RESELLER_EXEMPTION = @"US_OH_RESELLER_EXEMPTION";
+        public const string US_OK_RESELLER_EXEMPTION = @"US_OK_RESELLER_EXEMPTION";
+        public const string US_OR_RESELLER_EXEMPTION = @"US_OR_RESELLER_EXEMPTION";
+        public const string US_PA_RESELLER_EXEMPTION = @"US_PA_RESELLER_EXEMPTION";
+        public const string US_RI_RESELLER_EXEMPTION = @"US_RI_RESELLER_EXEMPTION";
+        public const string US_SC_RESELLER_EXEMPTION = @"US_SC_RESELLER_EXEMPTION";
+        public const string US_SD_RESELLER_EXEMPTION = @"US_SD_RESELLER_EXEMPTION";
+        public const string US_TN_RESELLER_EXEMPTION = @"US_TN_RESELLER_EXEMPTION";
+        public const string US_TX_RESELLER_EXEMPTION = @"US_TX_RESELLER_EXEMPTION";
+        public const string US_UT_RESELLER_EXEMPTION = @"US_UT_RESELLER_EXEMPTION";
+        public const string US_VT_RESELLER_EXEMPTION = @"US_VT_RESELLER_EXEMPTION";
+        public const string US_VA_RESELLER_EXEMPTION = @"US_VA_RESELLER_EXEMPTION";
+        public const string US_WA_RESELLER_EXEMPTION = @"US_WA_RESELLER_EXEMPTION";
+        public const string US_WV_RESELLER_EXEMPTION = @"US_WV_RESELLER_EXEMPTION";
+        public const string US_WI_RESELLER_EXEMPTION = @"US_WI_RESELLER_EXEMPTION";
+        public const string US_WY_RESELLER_EXEMPTION = @"US_WY_RESELLER_EXEMPTION";
+        public const string US_DC_RESELLER_EXEMPTION = @"US_DC_RESELLER_EXEMPTION";
     }
 
     ///<summary>
@@ -67396,9 +67396,9 @@ namespace shopify
 
     public static class TaxPartnerStateStringValues
     {
-        public const string PENDING = "PENDING";
-        public const string READY = "READY";
-        public const string ACTIVE = "ACTIVE";
+        public const string PENDING = @"PENDING";
+        public const string READY = @"READY";
+        public const string ACTIVE = @"ACTIVE";
     }
 
     ///<summary>
@@ -67820,9 +67820,9 @@ namespace shopify
 
     public static class ThemeCreateUserErrorCodeStringValues
     {
-        public const string INVALID_ZIP = "INVALID_ZIP";
-        public const string ZIP_IS_EMPTY = "ZIP_IS_EMPTY";
-        public const string ZIP_TOO_LARGE = "ZIP_TOO_LARGE";
+        public const string INVALID_ZIP = @"INVALID_ZIP";
+        public const string ZIP_IS_EMPTY = @"ZIP_IS_EMPTY";
+        public const string ZIP_TOO_LARGE = @"ZIP_TOO_LARGE";
     }
 
     ///<summary>
@@ -67872,7 +67872,7 @@ namespace shopify
 
     public static class ThemeDeleteUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
+        public const string NOT_FOUND = @"NOT_FOUND";
     }
 
     ///<summary>
@@ -67979,9 +67979,9 @@ namespace shopify
 
     public static class ThemePublishUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string CANNOT_PUBLISH_THEME_DURING_INSTALL = "CANNOT_PUBLISH_THEME_DURING_INSTALL";
-        public const string THEME_PUBLISH_NOT_AVAILABLE_FOR_THEME_LIMITED_PLAN = "THEME_PUBLISH_NOT_AVAILABLE_FOR_THEME_LIMITED_PLAN";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string CANNOT_PUBLISH_THEME_DURING_INSTALL = @"CANNOT_PUBLISH_THEME_DURING_INSTALL";
+        public const string THEME_PUBLISH_NOT_AVAILABLE_FOR_THEME_LIMITED_PLAN = @"THEME_PUBLISH_NOT_AVAILABLE_FOR_THEME_LIMITED_PLAN";
     }
 
     ///<summary>
@@ -68021,13 +68021,13 @@ namespace shopify
 
     public static class ThemeRoleStringValues
     {
-        public const string MAIN = "MAIN";
-        public const string MOBILE = "MOBILE";
-        public const string UNPUBLISHED = "UNPUBLISHED";
-        public const string DEMO = "DEMO";
-        public const string DEVELOPMENT = "DEVELOPMENT";
-        public const string ARCHIVED = "ARCHIVED";
-        public const string LOCKED = "LOCKED";
+        public const string MAIN = @"MAIN";
+        public const string MOBILE = @"MOBILE";
+        public const string UNPUBLISHED = @"UNPUBLISHED";
+        public const string DEMO = @"DEMO";
+        public const string DEVELOPMENT = @"DEVELOPMENT";
+        public const string ARCHIVED = @"ARCHIVED";
+        public const string LOCKED = @"LOCKED";
     }
 
     ///<summary>
@@ -68085,9 +68085,9 @@ namespace shopify
 
     public static class ThemeUpdateUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string INVALID = "INVALID";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string INVALID = @"INVALID";
     }
 
     ///<summary>
@@ -68193,8 +68193,8 @@ namespace shopify
 
     public static class TransactionSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string EXPIRES_AT = "EXPIRES_AT";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string EXPIRES_AT = @"EXPIRES_AT";
     }
 
     ///<summary>
@@ -68256,10 +68256,10 @@ namespace shopify
 
     public static class TransactionVoidUserErrorCodeStringValues
     {
-        public const string TRANSACTION_NOT_FOUND = "TRANSACTION_NOT_FOUND";
-        public const string AUTH_NOT_SUCCESSFUL = "AUTH_NOT_SUCCESSFUL";
-        public const string AUTH_NOT_VOIDABLE = "AUTH_NOT_VOIDABLE";
-        public const string GENERIC_ERROR = "GENERIC_ERROR";
+        public const string TRANSACTION_NOT_FOUND = @"TRANSACTION_NOT_FOUND";
+        public const string AUTH_NOT_SUCCESSFUL = @"AUTH_NOT_SUCCESSFUL";
+        public const string AUTH_NOT_VOIDABLE = @"AUTH_NOT_VOIDABLE";
+        public const string GENERIC_ERROR = @"GENERIC_ERROR";
     }
 
     ///<summary>
@@ -68464,33 +68464,33 @@ namespace shopify
 
     public static class TranslatableResourceTypeStringValues
     {
-        public const string ARTICLE = "ARTICLE";
-        public const string BLOG = "BLOG";
-        public const string COLLECTION = "COLLECTION";
-        public const string DELIVERY_METHOD_DEFINITION = "DELIVERY_METHOD_DEFINITION";
-        public const string EMAIL_TEMPLATE = "EMAIL_TEMPLATE";
-        public const string FILTER = "FILTER";
-        public const string LINK = "LINK";
-        public const string MENU = "MENU";
-        public const string METAFIELD = "METAFIELD";
-        public const string METAOBJECT = "METAOBJECT";
-        public const string ONLINE_STORE_THEME = "ONLINE_STORE_THEME";
-        public const string ONLINE_STORE_THEME_APP_EMBED = "ONLINE_STORE_THEME_APP_EMBED";
-        public const string ONLINE_STORE_THEME_JSON_TEMPLATE = "ONLINE_STORE_THEME_JSON_TEMPLATE";
-        public const string ONLINE_STORE_THEME_LOCALE_CONTENT = "ONLINE_STORE_THEME_LOCALE_CONTENT";
-        public const string ONLINE_STORE_THEME_SECTION_GROUP = "ONLINE_STORE_THEME_SECTION_GROUP";
-        public const string ONLINE_STORE_THEME_SETTINGS_CATEGORY = "ONLINE_STORE_THEME_SETTINGS_CATEGORY";
-        public const string ONLINE_STORE_THEME_SETTINGS_DATA_SECTIONS = "ONLINE_STORE_THEME_SETTINGS_DATA_SECTIONS";
-        public const string PACKING_SLIP_TEMPLATE = "PACKING_SLIP_TEMPLATE";
-        public const string PAGE = "PAGE";
-        public const string PAYMENT_GATEWAY = "PAYMENT_GATEWAY";
-        public const string PRODUCT = "PRODUCT";
-        public const string PRODUCT_OPTION = "PRODUCT_OPTION";
-        public const string PRODUCT_OPTION_VALUE = "PRODUCT_OPTION_VALUE";
-        public const string SELLING_PLAN = "SELLING_PLAN";
-        public const string SELLING_PLAN_GROUP = "SELLING_PLAN_GROUP";
-        public const string SHOP = "SHOP";
-        public const string SHOP_POLICY = "SHOP_POLICY";
+        public const string ARTICLE = @"ARTICLE";
+        public const string BLOG = @"BLOG";
+        public const string COLLECTION = @"COLLECTION";
+        public const string DELIVERY_METHOD_DEFINITION = @"DELIVERY_METHOD_DEFINITION";
+        public const string EMAIL_TEMPLATE = @"EMAIL_TEMPLATE";
+        public const string FILTER = @"FILTER";
+        public const string LINK = @"LINK";
+        public const string MENU = @"MENU";
+        public const string METAFIELD = @"METAFIELD";
+        public const string METAOBJECT = @"METAOBJECT";
+        public const string ONLINE_STORE_THEME = @"ONLINE_STORE_THEME";
+        public const string ONLINE_STORE_THEME_APP_EMBED = @"ONLINE_STORE_THEME_APP_EMBED";
+        public const string ONLINE_STORE_THEME_JSON_TEMPLATE = @"ONLINE_STORE_THEME_JSON_TEMPLATE";
+        public const string ONLINE_STORE_THEME_LOCALE_CONTENT = @"ONLINE_STORE_THEME_LOCALE_CONTENT";
+        public const string ONLINE_STORE_THEME_SECTION_GROUP = @"ONLINE_STORE_THEME_SECTION_GROUP";
+        public const string ONLINE_STORE_THEME_SETTINGS_CATEGORY = @"ONLINE_STORE_THEME_SETTINGS_CATEGORY";
+        public const string ONLINE_STORE_THEME_SETTINGS_DATA_SECTIONS = @"ONLINE_STORE_THEME_SETTINGS_DATA_SECTIONS";
+        public const string PACKING_SLIP_TEMPLATE = @"PACKING_SLIP_TEMPLATE";
+        public const string PAGE = @"PAGE";
+        public const string PAYMENT_GATEWAY = @"PAYMENT_GATEWAY";
+        public const string PRODUCT = @"PRODUCT";
+        public const string PRODUCT_OPTION = @"PRODUCT_OPTION";
+        public const string PRODUCT_OPTION_VALUE = @"PRODUCT_OPTION_VALUE";
+        public const string SELLING_PLAN = @"SELLING_PLAN";
+        public const string SELLING_PLAN_GROUP = @"SELLING_PLAN_GROUP";
+        public const string SHOP = @"SHOP";
+        public const string SHOP_POLICY = @"SHOP_POLICY";
     }
 
     ///<summary>
@@ -68606,25 +68606,25 @@ namespace shopify
 
     public static class TranslationErrorCodeStringValues
     {
-        public const string BLANK = "BLANK";
-        public const string INVALID = "INVALID";
-        public const string RESOURCE_NOT_FOUND = "RESOURCE_NOT_FOUND";
-        public const string RESOURCE_NOT_TRANSLATABLE = "RESOURCE_NOT_TRANSLATABLE";
-        public const string TOO_MANY_KEYS_FOR_RESOURCE = "TOO_MANY_KEYS_FOR_RESOURCE";
-        public const string INVALID_KEY_FOR_MODEL = "INVALID_KEY_FOR_MODEL";
-        public const string FAILS_RESOURCE_VALIDATION = "FAILS_RESOURCE_VALIDATION";
-        public const string INVALID_TRANSLATABLE_CONTENT = "INVALID_TRANSLATABLE_CONTENT";
-        public const string INVALID_MARKET_LOCALIZABLE_CONTENT = "INVALID_MARKET_LOCALIZABLE_CONTENT";
-        public const string INVALID_LOCALE_FOR_SHOP = "INVALID_LOCALE_FOR_SHOP";
-        public const string INVALID_CODE = "INVALID_CODE";
-        public const string INVALID_FORMAT = "INVALID_FORMAT";
-        public const string MARKET_CUSTOM_CONTENT_NOT_ALLOWED = "MARKET_CUSTOM_CONTENT_NOT_ALLOWED";
-        public const string MARKET_DOES_NOT_EXIST = "MARKET_DOES_NOT_EXIST";
-        public const string MARKET_LOCALE_CREATION_FAILED = "MARKET_LOCALE_CREATION_FAILED";
-        public const string RESOURCE_NOT_MARKET_CUSTOMIZABLE = "RESOURCE_NOT_MARKET_CUSTOMIZABLE";
+        public const string BLANK = @"BLANK";
+        public const string INVALID = @"INVALID";
+        public const string RESOURCE_NOT_FOUND = @"RESOURCE_NOT_FOUND";
+        public const string RESOURCE_NOT_TRANSLATABLE = @"RESOURCE_NOT_TRANSLATABLE";
+        public const string TOO_MANY_KEYS_FOR_RESOURCE = @"TOO_MANY_KEYS_FOR_RESOURCE";
+        public const string INVALID_KEY_FOR_MODEL = @"INVALID_KEY_FOR_MODEL";
+        public const string FAILS_RESOURCE_VALIDATION = @"FAILS_RESOURCE_VALIDATION";
+        public const string INVALID_TRANSLATABLE_CONTENT = @"INVALID_TRANSLATABLE_CONTENT";
+        public const string INVALID_MARKET_LOCALIZABLE_CONTENT = @"INVALID_MARKET_LOCALIZABLE_CONTENT";
+        public const string INVALID_LOCALE_FOR_SHOP = @"INVALID_LOCALE_FOR_SHOP";
+        public const string INVALID_CODE = @"INVALID_CODE";
+        public const string INVALID_FORMAT = @"INVALID_FORMAT";
+        public const string MARKET_CUSTOM_CONTENT_NOT_ALLOWED = @"MARKET_CUSTOM_CONTENT_NOT_ALLOWED";
+        public const string MARKET_DOES_NOT_EXIST = @"MARKET_DOES_NOT_EXIST";
+        public const string MARKET_LOCALE_CREATION_FAILED = @"MARKET_LOCALE_CREATION_FAILED";
+        public const string RESOURCE_NOT_MARKET_CUSTOMIZABLE = @"RESOURCE_NOT_MARKET_CUSTOMIZABLE";
         [Obsolete("`invalid_locale_for_market` is deprecated because the creation of a locale that's specific to a market no longer needs to be tied to that market's URL.")]
-        public const string INVALID_LOCALE_FOR_MARKET = "INVALID_LOCALE_FOR_MARKET";
-        public const string INVALID_VALUE_FOR_HANDLE_TRANSLATION = "INVALID_VALUE_FOR_HANDLE_TRANSLATION";
+        public const string INVALID_LOCALE_FOR_MARKET = @"INVALID_LOCALE_FOR_MARKET";
+        public const string INVALID_VALUE_FOR_HANDLE_TRANSLATION = @"INVALID_VALUE_FOR_HANDLE_TRANSLATION";
     }
 
     ///<summary>
@@ -68770,10 +68770,10 @@ namespace shopify
 
     public static class UnitPriceMeasurementMeasuredTypeStringValues
     {
-        public const string VOLUME = "VOLUME";
-        public const string WEIGHT = "WEIGHT";
-        public const string LENGTH = "LENGTH";
-        public const string AREA = "AREA";
+        public const string VOLUME = @"VOLUME";
+        public const string WEIGHT = @"WEIGHT";
+        public const string LENGTH = @"LENGTH";
+        public const string AREA = @"AREA";
     }
 
     ///<summary>
@@ -68829,17 +68829,17 @@ namespace shopify
 
     public static class UnitPriceMeasurementMeasuredUnitStringValues
     {
-        public const string ML = "ML";
-        public const string CL = "CL";
-        public const string L = "L";
-        public const string M3 = "M3";
-        public const string MG = "MG";
-        public const string G = "G";
-        public const string KG = "KG";
-        public const string MM = "MM";
-        public const string CM = "CM";
-        public const string M = "M";
-        public const string M2 = "M2";
+        public const string ML = @"ML";
+        public const string CL = @"CL";
+        public const string L = @"L";
+        public const string M3 = @"M3";
+        public const string MG = @"MG";
+        public const string G = @"G";
+        public const string KG = @"KG";
+        public const string MM = @"MM";
+        public const string CM = @"CM";
+        public const string M = @"M";
+        public const string M2 = @"M2";
     }
 
     ///<summary>
@@ -68859,8 +68859,8 @@ namespace shopify
 
     public static class UnitSystemStringValues
     {
-        public const string IMPERIAL_SYSTEM = "IMPERIAL_SYSTEM";
-        public const string METRIC_SYSTEM = "METRIC_SYSTEM";
+        public const string IMPERIAL_SYSTEM = @"IMPERIAL_SYSTEM";
+        public const string METRIC_SYSTEM = @"METRIC_SYSTEM";
     }
 
     ///<summary>
@@ -69028,7 +69028,7 @@ namespace shopify
 
     public static class UrlRedirectBulkDeleteByIdsUserErrorCodeStringValues
     {
-        public const string IDS_EMPTY = "IDS_EMPTY";
+        public const string IDS_EMPTY = @"IDS_EMPTY";
     }
 
     ///<summary>
@@ -69082,8 +69082,8 @@ namespace shopify
 
     public static class UrlRedirectBulkDeleteBySavedSearchUserErrorCodeStringValues
     {
-        public const string SAVED_SEARCH_NOT_FOUND = "SAVED_SEARCH_NOT_FOUND";
-        public const string INVALID_SAVED_SEARCH_QUERY = "INVALID_SAVED_SEARCH_QUERY";
+        public const string SAVED_SEARCH_NOT_FOUND = @"SAVED_SEARCH_NOT_FOUND";
+        public const string INVALID_SAVED_SEARCH_QUERY = @"INVALID_SAVED_SEARCH_QUERY";
     }
 
     ///<summary>
@@ -69133,7 +69133,7 @@ namespace shopify
 
     public static class UrlRedirectBulkDeleteBySearchUserErrorCodeStringValues
     {
-        public const string INVALID_SEARCH_ARGUMENT = "INVALID_SEARCH_ARGUMENT";
+        public const string INVALID_SEARCH_ARGUMENT = @"INVALID_SEARCH_ARGUMENT";
     }
 
     ///<summary>
@@ -69225,10 +69225,10 @@ namespace shopify
 
     public static class UrlRedirectErrorCodeStringValues
     {
-        public const string DOES_NOT_EXIST = "DOES_NOT_EXIST";
-        public const string CREATE_FAILED = "CREATE_FAILED";
-        public const string UPDATE_FAILED = "UPDATE_FAILED";
-        public const string DELETE_FAILED = "DELETE_FAILED";
+        public const string DOES_NOT_EXIST = @"DOES_NOT_EXIST";
+        public const string CREATE_FAILED = @"CREATE_FAILED";
+        public const string UPDATE_FAILED = @"UPDATE_FAILED";
+        public const string DELETE_FAILED = @"DELETE_FAILED";
     }
 
     ///<summary>
@@ -69315,10 +69315,10 @@ namespace shopify
     public static class UrlRedirectImportErrorCodeStringValues
     {
         [Obsolete("This error code is never returned")]
-        public const string FILE_DOES_NOT_EXIST = "FILE_DOES_NOT_EXIST";
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string ALREADY_IMPORTED = "ALREADY_IMPORTED";
-        public const string IN_PROGRESS = "IN_PROGRESS";
+        public const string FILE_DOES_NOT_EXIST = @"FILE_DOES_NOT_EXIST";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string ALREADY_IMPORTED = @"ALREADY_IMPORTED";
+        public const string IN_PROGRESS = @"IN_PROGRESS";
     }
 
     ///<summary>
@@ -69392,9 +69392,9 @@ namespace shopify
 
     public static class UrlRedirectSortKeysStringValues
     {
-        public const string RELEVANCE = "RELEVANCE";
-        public const string PATH = "PATH";
-        public const string ID = "ID";
+        public const string RELEVANCE = @"RELEVANCE";
+        public const string PATH = @"PATH";
+        public const string ID = @"ID";
     }
 
     ///<summary>
@@ -69588,8 +69588,8 @@ namespace shopify
 
     public static class ValidationSortKeysStringValues
     {
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -69715,26 +69715,26 @@ namespace shopify
 
     public static class ValidationUserErrorCodeStringValues
     {
-        public const string NOT_FOUND = "NOT_FOUND";
-        public const string FUNCTION_NOT_FOUND = "FUNCTION_NOT_FOUND";
-        public const string CUSTOM_APP_FUNCTION_NOT_ELIGIBLE = "CUSTOM_APP_FUNCTION_NOT_ELIGIBLE";
-        public const string FUNCTION_DOES_NOT_IMPLEMENT = "FUNCTION_DOES_NOT_IMPLEMENT";
-        public const string PUBLIC_APP_NOT_ALLOWED = "PUBLIC_APP_NOT_ALLOWED";
-        public const string FUNCTION_PENDING_DELETION = "FUNCTION_PENDING_DELETION";
-        public const string MAX_VALIDATIONS_ACTIVATED = "MAX_VALIDATIONS_ACTIVATED";
-        public const string INVALID_TYPE = "INVALID_TYPE";
-        public const string INVALID_VALUE = "INVALID_VALUE";
-        public const string APP_NOT_AUTHORIZED = "APP_NOT_AUTHORIZED";
-        public const string UNSTRUCTURED_RESERVED_NAMESPACE = "UNSTRUCTURED_RESERVED_NAMESPACE";
-        public const string DISALLOWED_OWNER_TYPE = "DISALLOWED_OWNER_TYPE";
-        public const string INCLUSION = "INCLUSION";
-        public const string TAKEN = "TAKEN";
-        public const string PRESENT = "PRESENT";
-        public const string BLANK = "BLANK";
-        public const string TOO_LONG = "TOO_LONG";
-        public const string TOO_SHORT = "TOO_SHORT";
-        public const string CAPABILITY_VIOLATION = "CAPABILITY_VIOLATION";
-        public const string INTERNAL_ERROR = "INTERNAL_ERROR";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string FUNCTION_NOT_FOUND = @"FUNCTION_NOT_FOUND";
+        public const string CUSTOM_APP_FUNCTION_NOT_ELIGIBLE = @"CUSTOM_APP_FUNCTION_NOT_ELIGIBLE";
+        public const string FUNCTION_DOES_NOT_IMPLEMENT = @"FUNCTION_DOES_NOT_IMPLEMENT";
+        public const string PUBLIC_APP_NOT_ALLOWED = @"PUBLIC_APP_NOT_ALLOWED";
+        public const string FUNCTION_PENDING_DELETION = @"FUNCTION_PENDING_DELETION";
+        public const string MAX_VALIDATIONS_ACTIVATED = @"MAX_VALIDATIONS_ACTIVATED";
+        public const string INVALID_TYPE = @"INVALID_TYPE";
+        public const string INVALID_VALUE = @"INVALID_VALUE";
+        public const string APP_NOT_AUTHORIZED = @"APP_NOT_AUTHORIZED";
+        public const string UNSTRUCTURED_RESERVED_NAMESPACE = @"UNSTRUCTURED_RESERVED_NAMESPACE";
+        public const string DISALLOWED_OWNER_TYPE = @"DISALLOWED_OWNER_TYPE";
+        public const string INCLUSION = @"INCLUSION";
+        public const string TAKEN = @"TAKEN";
+        public const string PRESENT = @"PRESENT";
+        public const string BLANK = @"BLANK";
+        public const string TOO_LONG = @"TOO_LONG";
+        public const string TOO_SHORT = @"TOO_SHORT";
+        public const string CAPABILITY_VIOLATION = @"CAPABILITY_VIOLATION";
+        public const string INTERNAL_ERROR = @"INTERNAL_ERROR";
     }
 
     ///<summary>
@@ -70171,8 +70171,8 @@ namespace shopify
 
     public static class WebhookSubscriptionFormatStringValues
     {
-        public const string JSON = "JSON";
-        public const string XML = "XML";
+        public const string JSON = @"JSON";
+        public const string XML = @"XML";
     }
 
     ///<summary>
@@ -70197,9 +70197,9 @@ namespace shopify
 
     public static class WebhookSubscriptionSortKeysStringValues
     {
-        public const string CREATED_AT = "CREATED_AT";
-        public const string ID = "ID";
-        public const string RELEVANCE = "RELEVANCE";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string ID = @"ID";
+        public const string RELEVANCE = @"RELEVANCE";
     }
 
     ///<summary>
@@ -71002,195 +71002,195 @@ namespace shopify
 
     public static class WebhookSubscriptionTopicStringValues
     {
-        public const string APP_UNINSTALLED = "APP_UNINSTALLED";
-        public const string APP_SCOPES_UPDATE = "APP_SCOPES_UPDATE";
-        public const string CARTS_CREATE = "CARTS_CREATE";
-        public const string CARTS_UPDATE = "CARTS_UPDATE";
-        public const string CHANNELS_DELETE = "CHANNELS_DELETE";
-        public const string CHECKOUTS_CREATE = "CHECKOUTS_CREATE";
-        public const string CHECKOUTS_DELETE = "CHECKOUTS_DELETE";
-        public const string CHECKOUTS_UPDATE = "CHECKOUTS_UPDATE";
-        public const string CUSTOMER_PAYMENT_METHODS_CREATE = "CUSTOMER_PAYMENT_METHODS_CREATE";
-        public const string CUSTOMER_PAYMENT_METHODS_UPDATE = "CUSTOMER_PAYMENT_METHODS_UPDATE";
-        public const string CUSTOMER_PAYMENT_METHODS_REVOKE = "CUSTOMER_PAYMENT_METHODS_REVOKE";
-        public const string COLLECTION_LISTINGS_ADD = "COLLECTION_LISTINGS_ADD";
-        public const string COLLECTION_LISTINGS_REMOVE = "COLLECTION_LISTINGS_REMOVE";
-        public const string COLLECTION_LISTINGS_UPDATE = "COLLECTION_LISTINGS_UPDATE";
-        public const string COLLECTION_PUBLICATIONS_CREATE = "COLLECTION_PUBLICATIONS_CREATE";
-        public const string COLLECTION_PUBLICATIONS_DELETE = "COLLECTION_PUBLICATIONS_DELETE";
-        public const string COLLECTION_PUBLICATIONS_UPDATE = "COLLECTION_PUBLICATIONS_UPDATE";
-        public const string COLLECTIONS_CREATE = "COLLECTIONS_CREATE";
-        public const string COLLECTIONS_DELETE = "COLLECTIONS_DELETE";
-        public const string COLLECTIONS_UPDATE = "COLLECTIONS_UPDATE";
-        public const string CUSTOMER_GROUPS_CREATE = "CUSTOMER_GROUPS_CREATE";
-        public const string CUSTOMER_GROUPS_DELETE = "CUSTOMER_GROUPS_DELETE";
-        public const string CUSTOMER_GROUPS_UPDATE = "CUSTOMER_GROUPS_UPDATE";
-        public const string CUSTOMERS_CREATE = "CUSTOMERS_CREATE";
-        public const string CUSTOMERS_DELETE = "CUSTOMERS_DELETE";
-        public const string CUSTOMERS_DISABLE = "CUSTOMERS_DISABLE";
-        public const string CUSTOMERS_ENABLE = "CUSTOMERS_ENABLE";
-        public const string CUSTOMERS_UPDATE = "CUSTOMERS_UPDATE";
-        public const string CUSTOMERS_MARKETING_CONSENT_UPDATE = "CUSTOMERS_MARKETING_CONSENT_UPDATE";
-        public const string CUSTOMER_TAGS_ADDED = "CUSTOMER_TAGS_ADDED";
-        public const string CUSTOMER_TAGS_REMOVED = "CUSTOMER_TAGS_REMOVED";
-        public const string CUSTOMERS_EMAIL_MARKETING_CONSENT_UPDATE = "CUSTOMERS_EMAIL_MARKETING_CONSENT_UPDATE";
-        public const string DISPUTES_CREATE = "DISPUTES_CREATE";
-        public const string DISPUTES_UPDATE = "DISPUTES_UPDATE";
-        public const string DRAFT_ORDERS_CREATE = "DRAFT_ORDERS_CREATE";
-        public const string DRAFT_ORDERS_DELETE = "DRAFT_ORDERS_DELETE";
-        public const string DRAFT_ORDERS_UPDATE = "DRAFT_ORDERS_UPDATE";
-        public const string FULFILLMENT_EVENTS_CREATE = "FULFILLMENT_EVENTS_CREATE";
-        public const string FULFILLMENT_EVENTS_DELETE = "FULFILLMENT_EVENTS_DELETE";
-        public const string FULFILLMENTS_CREATE = "FULFILLMENTS_CREATE";
-        public const string FULFILLMENTS_UPDATE = "FULFILLMENTS_UPDATE";
-        public const string ATTRIBUTED_SESSIONS_FIRST = "ATTRIBUTED_SESSIONS_FIRST";
-        public const string ATTRIBUTED_SESSIONS_LAST = "ATTRIBUTED_SESSIONS_LAST";
-        public const string ORDER_TRANSACTIONS_CREATE = "ORDER_TRANSACTIONS_CREATE";
-        public const string ORDERS_CANCELLED = "ORDERS_CANCELLED";
-        public const string ORDERS_CREATE = "ORDERS_CREATE";
-        public const string ORDERS_DELETE = "ORDERS_DELETE";
-        public const string ORDERS_EDITED = "ORDERS_EDITED";
-        public const string ORDERS_FULFILLED = "ORDERS_FULFILLED";
-        public const string ORDERS_PAID = "ORDERS_PAID";
-        public const string ORDERS_PARTIALLY_FULFILLED = "ORDERS_PARTIALLY_FULFILLED";
-        public const string ORDERS_UPDATED = "ORDERS_UPDATED";
-        public const string FULFILLMENT_ORDERS_MOVED = "FULFILLMENT_ORDERS_MOVED";
-        public const string FULFILLMENT_ORDERS_HOLD_RELEASED = "FULFILLMENT_ORDERS_HOLD_RELEASED";
-        public const string FULFILLMENT_ORDERS_SCHEDULED_FULFILLMENT_ORDER_READY = "FULFILLMENT_ORDERS_SCHEDULED_FULFILLMENT_ORDER_READY";
-        public const string FULFILLMENT_ORDERS_ORDER_ROUTING_COMPLETE = "FULFILLMENT_ORDERS_ORDER_ROUTING_COMPLETE";
-        public const string FULFILLMENT_ORDERS_CANCELLED = "FULFILLMENT_ORDERS_CANCELLED";
-        public const string FULFILLMENT_ORDERS_FULFILLMENT_SERVICE_FAILED_TO_COMPLETE = "FULFILLMENT_ORDERS_FULFILLMENT_SERVICE_FAILED_TO_COMPLETE";
-        public const string FULFILLMENT_ORDERS_FULFILLMENT_REQUEST_REJECTED = "FULFILLMENT_ORDERS_FULFILLMENT_REQUEST_REJECTED";
-        public const string FULFILLMENT_ORDERS_CANCELLATION_REQUEST_SUBMITTED = "FULFILLMENT_ORDERS_CANCELLATION_REQUEST_SUBMITTED";
-        public const string FULFILLMENT_ORDERS_CANCELLATION_REQUEST_ACCEPTED = "FULFILLMENT_ORDERS_CANCELLATION_REQUEST_ACCEPTED";
-        public const string FULFILLMENT_ORDERS_CANCELLATION_REQUEST_REJECTED = "FULFILLMENT_ORDERS_CANCELLATION_REQUEST_REJECTED";
-        public const string FULFILLMENT_ORDERS_FULFILLMENT_REQUEST_SUBMITTED = "FULFILLMENT_ORDERS_FULFILLMENT_REQUEST_SUBMITTED";
-        public const string FULFILLMENT_ORDERS_FULFILLMENT_REQUEST_ACCEPTED = "FULFILLMENT_ORDERS_FULFILLMENT_REQUEST_ACCEPTED";
-        public const string FULFILLMENT_ORDERS_LINE_ITEMS_PREPARED_FOR_LOCAL_DELIVERY = "FULFILLMENT_ORDERS_LINE_ITEMS_PREPARED_FOR_LOCAL_DELIVERY";
-        public const string FULFILLMENT_ORDERS_PLACED_ON_HOLD = "FULFILLMENT_ORDERS_PLACED_ON_HOLD";
-        public const string FULFILLMENT_ORDERS_MERGED = "FULFILLMENT_ORDERS_MERGED";
-        public const string FULFILLMENT_ORDERS_SPLIT = "FULFILLMENT_ORDERS_SPLIT";
-        public const string PRODUCT_LISTINGS_ADD = "PRODUCT_LISTINGS_ADD";
-        public const string PRODUCT_LISTINGS_REMOVE = "PRODUCT_LISTINGS_REMOVE";
-        public const string PRODUCT_LISTINGS_UPDATE = "PRODUCT_LISTINGS_UPDATE";
-        public const string SCHEDULED_PRODUCT_LISTINGS_ADD = "SCHEDULED_PRODUCT_LISTINGS_ADD";
-        public const string SCHEDULED_PRODUCT_LISTINGS_UPDATE = "SCHEDULED_PRODUCT_LISTINGS_UPDATE";
-        public const string SCHEDULED_PRODUCT_LISTINGS_REMOVE = "SCHEDULED_PRODUCT_LISTINGS_REMOVE";
-        public const string PRODUCT_PUBLICATIONS_CREATE = "PRODUCT_PUBLICATIONS_CREATE";
-        public const string PRODUCT_PUBLICATIONS_DELETE = "PRODUCT_PUBLICATIONS_DELETE";
-        public const string PRODUCT_PUBLICATIONS_UPDATE = "PRODUCT_PUBLICATIONS_UPDATE";
-        public const string PRODUCTS_CREATE = "PRODUCTS_CREATE";
-        public const string PRODUCTS_DELETE = "PRODUCTS_DELETE";
-        public const string PRODUCTS_UPDATE = "PRODUCTS_UPDATE";
-        public const string REFUNDS_CREATE = "REFUNDS_CREATE";
-        public const string SEGMENTS_CREATE = "SEGMENTS_CREATE";
-        public const string SEGMENTS_DELETE = "SEGMENTS_DELETE";
-        public const string SEGMENTS_UPDATE = "SEGMENTS_UPDATE";
-        public const string SHIPPING_ADDRESSES_CREATE = "SHIPPING_ADDRESSES_CREATE";
-        public const string SHIPPING_ADDRESSES_UPDATE = "SHIPPING_ADDRESSES_UPDATE";
-        public const string SHOP_UPDATE = "SHOP_UPDATE";
-        public const string TAX_PARTNERS_UPDATE = "TAX_PARTNERS_UPDATE";
-        public const string TAX_SERVICES_CREATE = "TAX_SERVICES_CREATE";
-        public const string TAX_SERVICES_UPDATE = "TAX_SERVICES_UPDATE";
-        public const string THEMES_CREATE = "THEMES_CREATE";
-        public const string THEMES_DELETE = "THEMES_DELETE";
-        public const string THEMES_PUBLISH = "THEMES_PUBLISH";
-        public const string THEMES_UPDATE = "THEMES_UPDATE";
-        public const string VARIANTS_IN_STOCK = "VARIANTS_IN_STOCK";
-        public const string VARIANTS_OUT_OF_STOCK = "VARIANTS_OUT_OF_STOCK";
-        public const string INVENTORY_LEVELS_CONNECT = "INVENTORY_LEVELS_CONNECT";
-        public const string INVENTORY_LEVELS_UPDATE = "INVENTORY_LEVELS_UPDATE";
-        public const string INVENTORY_LEVELS_DISCONNECT = "INVENTORY_LEVELS_DISCONNECT";
-        public const string INVENTORY_ITEMS_CREATE = "INVENTORY_ITEMS_CREATE";
-        public const string INVENTORY_ITEMS_UPDATE = "INVENTORY_ITEMS_UPDATE";
-        public const string INVENTORY_ITEMS_DELETE = "INVENTORY_ITEMS_DELETE";
-        public const string LOCATIONS_ACTIVATE = "LOCATIONS_ACTIVATE";
-        public const string LOCATIONS_DEACTIVATE = "LOCATIONS_DEACTIVATE";
-        public const string LOCATIONS_CREATE = "LOCATIONS_CREATE";
-        public const string LOCATIONS_UPDATE = "LOCATIONS_UPDATE";
-        public const string LOCATIONS_DELETE = "LOCATIONS_DELETE";
-        public const string TENDER_TRANSACTIONS_CREATE = "TENDER_TRANSACTIONS_CREATE";
-        public const string APP_PURCHASES_ONE_TIME_UPDATE = "APP_PURCHASES_ONE_TIME_UPDATE";
-        public const string APP_SUBSCRIPTIONS_APPROACHING_CAPPED_AMOUNT = "APP_SUBSCRIPTIONS_APPROACHING_CAPPED_AMOUNT";
-        public const string APP_SUBSCRIPTIONS_UPDATE = "APP_SUBSCRIPTIONS_UPDATE";
-        public const string LOCALES_CREATE = "LOCALES_CREATE";
-        public const string LOCALES_UPDATE = "LOCALES_UPDATE";
-        public const string DOMAINS_CREATE = "DOMAINS_CREATE";
-        public const string DOMAINS_UPDATE = "DOMAINS_UPDATE";
-        public const string DOMAINS_DESTROY = "DOMAINS_DESTROY";
-        public const string SUBSCRIPTION_CONTRACTS_CREATE = "SUBSCRIPTION_CONTRACTS_CREATE";
-        public const string SUBSCRIPTION_CONTRACTS_UPDATE = "SUBSCRIPTION_CONTRACTS_UPDATE";
-        public const string SUBSCRIPTION_BILLING_CYCLE_EDITS_CREATE = "SUBSCRIPTION_BILLING_CYCLE_EDITS_CREATE";
-        public const string SUBSCRIPTION_BILLING_CYCLE_EDITS_UPDATE = "SUBSCRIPTION_BILLING_CYCLE_EDITS_UPDATE";
-        public const string SUBSCRIPTION_BILLING_CYCLE_EDITS_DELETE = "SUBSCRIPTION_BILLING_CYCLE_EDITS_DELETE";
-        public const string PROFILES_CREATE = "PROFILES_CREATE";
-        public const string PROFILES_UPDATE = "PROFILES_UPDATE";
-        public const string PROFILES_DELETE = "PROFILES_DELETE";
-        public const string SUBSCRIPTION_BILLING_ATTEMPTS_SUCCESS = "SUBSCRIPTION_BILLING_ATTEMPTS_SUCCESS";
-        public const string SUBSCRIPTION_BILLING_ATTEMPTS_FAILURE = "SUBSCRIPTION_BILLING_ATTEMPTS_FAILURE";
-        public const string SUBSCRIPTION_BILLING_ATTEMPTS_CHALLENGED = "SUBSCRIPTION_BILLING_ATTEMPTS_CHALLENGED";
-        public const string RETURNS_CANCEL = "RETURNS_CANCEL";
-        public const string RETURNS_CLOSE = "RETURNS_CLOSE";
-        public const string RETURNS_REOPEN = "RETURNS_REOPEN";
-        public const string RETURNS_REQUEST = "RETURNS_REQUEST";
-        public const string RETURNS_APPROVE = "RETURNS_APPROVE";
-        public const string RETURNS_UPDATE = "RETURNS_UPDATE";
-        public const string RETURNS_DECLINE = "RETURNS_DECLINE";
-        public const string REVERSE_DELIVERIES_ATTACH_DELIVERABLE = "REVERSE_DELIVERIES_ATTACH_DELIVERABLE";
-        public const string REVERSE_FULFILLMENT_ORDERS_DISPOSE = "REVERSE_FULFILLMENT_ORDERS_DISPOSE";
-        public const string PAYMENT_TERMS_CREATE = "PAYMENT_TERMS_CREATE";
-        public const string PAYMENT_TERMS_DELETE = "PAYMENT_TERMS_DELETE";
-        public const string PAYMENT_TERMS_UPDATE = "PAYMENT_TERMS_UPDATE";
-        public const string PAYMENT_SCHEDULES_DUE = "PAYMENT_SCHEDULES_DUE";
-        public const string SELLING_PLAN_GROUPS_CREATE = "SELLING_PLAN_GROUPS_CREATE";
-        public const string SELLING_PLAN_GROUPS_UPDATE = "SELLING_PLAN_GROUPS_UPDATE";
-        public const string SELLING_PLAN_GROUPS_DELETE = "SELLING_PLAN_GROUPS_DELETE";
-        public const string BULK_OPERATIONS_FINISH = "BULK_OPERATIONS_FINISH";
-        public const string PRODUCT_FEEDS_CREATE = "PRODUCT_FEEDS_CREATE";
-        public const string PRODUCT_FEEDS_UPDATE = "PRODUCT_FEEDS_UPDATE";
-        public const string PRODUCT_FEEDS_INCREMENTAL_SYNC = "PRODUCT_FEEDS_INCREMENTAL_SYNC";
-        public const string PRODUCT_FEEDS_FULL_SYNC = "PRODUCT_FEEDS_FULL_SYNC";
-        public const string PRODUCT_FEEDS_FULL_SYNC_FINISH = "PRODUCT_FEEDS_FULL_SYNC_FINISH";
-        public const string MARKETS_CREATE = "MARKETS_CREATE";
-        public const string MARKETS_UPDATE = "MARKETS_UPDATE";
-        public const string MARKETS_DELETE = "MARKETS_DELETE";
-        public const string ORDERS_RISK_ASSESSMENT_CHANGED = "ORDERS_RISK_ASSESSMENT_CHANGED";
-        public const string ORDERS_SHOPIFY_PROTECT_ELIGIBILITY_CHANGED = "ORDERS_SHOPIFY_PROTECT_ELIGIBILITY_CHANGED";
-        public const string FULFILLMENT_ORDERS_RESCHEDULED = "FULFILLMENT_ORDERS_RESCHEDULED";
-        public const string PUBLICATIONS_DELETE = "PUBLICATIONS_DELETE";
-        public const string AUDIT_EVENTS_ADMIN_API_ACTIVITY = "AUDIT_EVENTS_ADMIN_API_ACTIVITY";
-        public const string FULFILLMENT_ORDERS_LINE_ITEMS_PREPARED_FOR_PICKUP = "FULFILLMENT_ORDERS_LINE_ITEMS_PREPARED_FOR_PICKUP";
-        public const string COMPANIES_CREATE = "COMPANIES_CREATE";
-        public const string COMPANIES_UPDATE = "COMPANIES_UPDATE";
-        public const string COMPANIES_DELETE = "COMPANIES_DELETE";
-        public const string COMPANY_LOCATIONS_CREATE = "COMPANY_LOCATIONS_CREATE";
-        public const string COMPANY_LOCATIONS_UPDATE = "COMPANY_LOCATIONS_UPDATE";
-        public const string COMPANY_LOCATIONS_DELETE = "COMPANY_LOCATIONS_DELETE";
-        public const string COMPANY_CONTACTS_CREATE = "COMPANY_CONTACTS_CREATE";
-        public const string COMPANY_CONTACTS_UPDATE = "COMPANY_CONTACTS_UPDATE";
-        public const string COMPANY_CONTACTS_DELETE = "COMPANY_CONTACTS_DELETE";
-        public const string CUSTOMERS_MERGE = "CUSTOMERS_MERGE";
-        public const string CUSTOMER_ACCOUNT_SETTINGS_UPDATE = "CUSTOMER_ACCOUNT_SETTINGS_UPDATE";
-        public const string COMPANY_CONTACT_ROLES_ASSIGN = "COMPANY_CONTACT_ROLES_ASSIGN";
-        public const string COMPANY_CONTACT_ROLES_REVOKE = "COMPANY_CONTACT_ROLES_REVOKE";
-        public const string SUBSCRIPTION_CONTRACTS_ACTIVATE = "SUBSCRIPTION_CONTRACTS_ACTIVATE";
-        public const string SUBSCRIPTION_CONTRACTS_PAUSE = "SUBSCRIPTION_CONTRACTS_PAUSE";
-        public const string SUBSCRIPTION_CONTRACTS_CANCEL = "SUBSCRIPTION_CONTRACTS_CANCEL";
-        public const string SUBSCRIPTION_CONTRACTS_FAIL = "SUBSCRIPTION_CONTRACTS_FAIL";
-        public const string SUBSCRIPTION_CONTRACTS_EXPIRE = "SUBSCRIPTION_CONTRACTS_EXPIRE";
-        public const string SUBSCRIPTION_BILLING_CYCLES_SKIP = "SUBSCRIPTION_BILLING_CYCLES_SKIP";
-        public const string SUBSCRIPTION_BILLING_CYCLES_UNSKIP = "SUBSCRIPTION_BILLING_CYCLES_UNSKIP";
-        public const string METAOBJECTS_CREATE = "METAOBJECTS_CREATE";
-        public const string METAOBJECTS_UPDATE = "METAOBJECTS_UPDATE";
-        public const string METAOBJECTS_DELETE = "METAOBJECTS_DELETE";
-        public const string DISCOUNTS_CREATE = "DISCOUNTS_CREATE";
-        public const string DISCOUNTS_UPDATE = "DISCOUNTS_UPDATE";
-        public const string DISCOUNTS_DELETE = "DISCOUNTS_DELETE";
-        public const string DISCOUNTS_REDEEMCODE_ADDED = "DISCOUNTS_REDEEMCODE_ADDED";
-        public const string DISCOUNTS_REDEEMCODE_REMOVED = "DISCOUNTS_REDEEMCODE_REMOVED";
-        public const string METAFIELD_DEFINITIONS_CREATE = "METAFIELD_DEFINITIONS_CREATE";
-        public const string METAFIELD_DEFINITIONS_UPDATE = "METAFIELD_DEFINITIONS_UPDATE";
-        public const string METAFIELD_DEFINITIONS_DELETE = "METAFIELD_DEFINITIONS_DELETE";
+        public const string APP_UNINSTALLED = @"APP_UNINSTALLED";
+        public const string APP_SCOPES_UPDATE = @"APP_SCOPES_UPDATE";
+        public const string CARTS_CREATE = @"CARTS_CREATE";
+        public const string CARTS_UPDATE = @"CARTS_UPDATE";
+        public const string CHANNELS_DELETE = @"CHANNELS_DELETE";
+        public const string CHECKOUTS_CREATE = @"CHECKOUTS_CREATE";
+        public const string CHECKOUTS_DELETE = @"CHECKOUTS_DELETE";
+        public const string CHECKOUTS_UPDATE = @"CHECKOUTS_UPDATE";
+        public const string CUSTOMER_PAYMENT_METHODS_CREATE = @"CUSTOMER_PAYMENT_METHODS_CREATE";
+        public const string CUSTOMER_PAYMENT_METHODS_UPDATE = @"CUSTOMER_PAYMENT_METHODS_UPDATE";
+        public const string CUSTOMER_PAYMENT_METHODS_REVOKE = @"CUSTOMER_PAYMENT_METHODS_REVOKE";
+        public const string COLLECTION_LISTINGS_ADD = @"COLLECTION_LISTINGS_ADD";
+        public const string COLLECTION_LISTINGS_REMOVE = @"COLLECTION_LISTINGS_REMOVE";
+        public const string COLLECTION_LISTINGS_UPDATE = @"COLLECTION_LISTINGS_UPDATE";
+        public const string COLLECTION_PUBLICATIONS_CREATE = @"COLLECTION_PUBLICATIONS_CREATE";
+        public const string COLLECTION_PUBLICATIONS_DELETE = @"COLLECTION_PUBLICATIONS_DELETE";
+        public const string COLLECTION_PUBLICATIONS_UPDATE = @"COLLECTION_PUBLICATIONS_UPDATE";
+        public const string COLLECTIONS_CREATE = @"COLLECTIONS_CREATE";
+        public const string COLLECTIONS_DELETE = @"COLLECTIONS_DELETE";
+        public const string COLLECTIONS_UPDATE = @"COLLECTIONS_UPDATE";
+        public const string CUSTOMER_GROUPS_CREATE = @"CUSTOMER_GROUPS_CREATE";
+        public const string CUSTOMER_GROUPS_DELETE = @"CUSTOMER_GROUPS_DELETE";
+        public const string CUSTOMER_GROUPS_UPDATE = @"CUSTOMER_GROUPS_UPDATE";
+        public const string CUSTOMERS_CREATE = @"CUSTOMERS_CREATE";
+        public const string CUSTOMERS_DELETE = @"CUSTOMERS_DELETE";
+        public const string CUSTOMERS_DISABLE = @"CUSTOMERS_DISABLE";
+        public const string CUSTOMERS_ENABLE = @"CUSTOMERS_ENABLE";
+        public const string CUSTOMERS_UPDATE = @"CUSTOMERS_UPDATE";
+        public const string CUSTOMERS_MARKETING_CONSENT_UPDATE = @"CUSTOMERS_MARKETING_CONSENT_UPDATE";
+        public const string CUSTOMER_TAGS_ADDED = @"CUSTOMER_TAGS_ADDED";
+        public const string CUSTOMER_TAGS_REMOVED = @"CUSTOMER_TAGS_REMOVED";
+        public const string CUSTOMERS_EMAIL_MARKETING_CONSENT_UPDATE = @"CUSTOMERS_EMAIL_MARKETING_CONSENT_UPDATE";
+        public const string DISPUTES_CREATE = @"DISPUTES_CREATE";
+        public const string DISPUTES_UPDATE = @"DISPUTES_UPDATE";
+        public const string DRAFT_ORDERS_CREATE = @"DRAFT_ORDERS_CREATE";
+        public const string DRAFT_ORDERS_DELETE = @"DRAFT_ORDERS_DELETE";
+        public const string DRAFT_ORDERS_UPDATE = @"DRAFT_ORDERS_UPDATE";
+        public const string FULFILLMENT_EVENTS_CREATE = @"FULFILLMENT_EVENTS_CREATE";
+        public const string FULFILLMENT_EVENTS_DELETE = @"FULFILLMENT_EVENTS_DELETE";
+        public const string FULFILLMENTS_CREATE = @"FULFILLMENTS_CREATE";
+        public const string FULFILLMENTS_UPDATE = @"FULFILLMENTS_UPDATE";
+        public const string ATTRIBUTED_SESSIONS_FIRST = @"ATTRIBUTED_SESSIONS_FIRST";
+        public const string ATTRIBUTED_SESSIONS_LAST = @"ATTRIBUTED_SESSIONS_LAST";
+        public const string ORDER_TRANSACTIONS_CREATE = @"ORDER_TRANSACTIONS_CREATE";
+        public const string ORDERS_CANCELLED = @"ORDERS_CANCELLED";
+        public const string ORDERS_CREATE = @"ORDERS_CREATE";
+        public const string ORDERS_DELETE = @"ORDERS_DELETE";
+        public const string ORDERS_EDITED = @"ORDERS_EDITED";
+        public const string ORDERS_FULFILLED = @"ORDERS_FULFILLED";
+        public const string ORDERS_PAID = @"ORDERS_PAID";
+        public const string ORDERS_PARTIALLY_FULFILLED = @"ORDERS_PARTIALLY_FULFILLED";
+        public const string ORDERS_UPDATED = @"ORDERS_UPDATED";
+        public const string FULFILLMENT_ORDERS_MOVED = @"FULFILLMENT_ORDERS_MOVED";
+        public const string FULFILLMENT_ORDERS_HOLD_RELEASED = @"FULFILLMENT_ORDERS_HOLD_RELEASED";
+        public const string FULFILLMENT_ORDERS_SCHEDULED_FULFILLMENT_ORDER_READY = @"FULFILLMENT_ORDERS_SCHEDULED_FULFILLMENT_ORDER_READY";
+        public const string FULFILLMENT_ORDERS_ORDER_ROUTING_COMPLETE = @"FULFILLMENT_ORDERS_ORDER_ROUTING_COMPLETE";
+        public const string FULFILLMENT_ORDERS_CANCELLED = @"FULFILLMENT_ORDERS_CANCELLED";
+        public const string FULFILLMENT_ORDERS_FULFILLMENT_SERVICE_FAILED_TO_COMPLETE = @"FULFILLMENT_ORDERS_FULFILLMENT_SERVICE_FAILED_TO_COMPLETE";
+        public const string FULFILLMENT_ORDERS_FULFILLMENT_REQUEST_REJECTED = @"FULFILLMENT_ORDERS_FULFILLMENT_REQUEST_REJECTED";
+        public const string FULFILLMENT_ORDERS_CANCELLATION_REQUEST_SUBMITTED = @"FULFILLMENT_ORDERS_CANCELLATION_REQUEST_SUBMITTED";
+        public const string FULFILLMENT_ORDERS_CANCELLATION_REQUEST_ACCEPTED = @"FULFILLMENT_ORDERS_CANCELLATION_REQUEST_ACCEPTED";
+        public const string FULFILLMENT_ORDERS_CANCELLATION_REQUEST_REJECTED = @"FULFILLMENT_ORDERS_CANCELLATION_REQUEST_REJECTED";
+        public const string FULFILLMENT_ORDERS_FULFILLMENT_REQUEST_SUBMITTED = @"FULFILLMENT_ORDERS_FULFILLMENT_REQUEST_SUBMITTED";
+        public const string FULFILLMENT_ORDERS_FULFILLMENT_REQUEST_ACCEPTED = @"FULFILLMENT_ORDERS_FULFILLMENT_REQUEST_ACCEPTED";
+        public const string FULFILLMENT_ORDERS_LINE_ITEMS_PREPARED_FOR_LOCAL_DELIVERY = @"FULFILLMENT_ORDERS_LINE_ITEMS_PREPARED_FOR_LOCAL_DELIVERY";
+        public const string FULFILLMENT_ORDERS_PLACED_ON_HOLD = @"FULFILLMENT_ORDERS_PLACED_ON_HOLD";
+        public const string FULFILLMENT_ORDERS_MERGED = @"FULFILLMENT_ORDERS_MERGED";
+        public const string FULFILLMENT_ORDERS_SPLIT = @"FULFILLMENT_ORDERS_SPLIT";
+        public const string PRODUCT_LISTINGS_ADD = @"PRODUCT_LISTINGS_ADD";
+        public const string PRODUCT_LISTINGS_REMOVE = @"PRODUCT_LISTINGS_REMOVE";
+        public const string PRODUCT_LISTINGS_UPDATE = @"PRODUCT_LISTINGS_UPDATE";
+        public const string SCHEDULED_PRODUCT_LISTINGS_ADD = @"SCHEDULED_PRODUCT_LISTINGS_ADD";
+        public const string SCHEDULED_PRODUCT_LISTINGS_UPDATE = @"SCHEDULED_PRODUCT_LISTINGS_UPDATE";
+        public const string SCHEDULED_PRODUCT_LISTINGS_REMOVE = @"SCHEDULED_PRODUCT_LISTINGS_REMOVE";
+        public const string PRODUCT_PUBLICATIONS_CREATE = @"PRODUCT_PUBLICATIONS_CREATE";
+        public const string PRODUCT_PUBLICATIONS_DELETE = @"PRODUCT_PUBLICATIONS_DELETE";
+        public const string PRODUCT_PUBLICATIONS_UPDATE = @"PRODUCT_PUBLICATIONS_UPDATE";
+        public const string PRODUCTS_CREATE = @"PRODUCTS_CREATE";
+        public const string PRODUCTS_DELETE = @"PRODUCTS_DELETE";
+        public const string PRODUCTS_UPDATE = @"PRODUCTS_UPDATE";
+        public const string REFUNDS_CREATE = @"REFUNDS_CREATE";
+        public const string SEGMENTS_CREATE = @"SEGMENTS_CREATE";
+        public const string SEGMENTS_DELETE = @"SEGMENTS_DELETE";
+        public const string SEGMENTS_UPDATE = @"SEGMENTS_UPDATE";
+        public const string SHIPPING_ADDRESSES_CREATE = @"SHIPPING_ADDRESSES_CREATE";
+        public const string SHIPPING_ADDRESSES_UPDATE = @"SHIPPING_ADDRESSES_UPDATE";
+        public const string SHOP_UPDATE = @"SHOP_UPDATE";
+        public const string TAX_PARTNERS_UPDATE = @"TAX_PARTNERS_UPDATE";
+        public const string TAX_SERVICES_CREATE = @"TAX_SERVICES_CREATE";
+        public const string TAX_SERVICES_UPDATE = @"TAX_SERVICES_UPDATE";
+        public const string THEMES_CREATE = @"THEMES_CREATE";
+        public const string THEMES_DELETE = @"THEMES_DELETE";
+        public const string THEMES_PUBLISH = @"THEMES_PUBLISH";
+        public const string THEMES_UPDATE = @"THEMES_UPDATE";
+        public const string VARIANTS_IN_STOCK = @"VARIANTS_IN_STOCK";
+        public const string VARIANTS_OUT_OF_STOCK = @"VARIANTS_OUT_OF_STOCK";
+        public const string INVENTORY_LEVELS_CONNECT = @"INVENTORY_LEVELS_CONNECT";
+        public const string INVENTORY_LEVELS_UPDATE = @"INVENTORY_LEVELS_UPDATE";
+        public const string INVENTORY_LEVELS_DISCONNECT = @"INVENTORY_LEVELS_DISCONNECT";
+        public const string INVENTORY_ITEMS_CREATE = @"INVENTORY_ITEMS_CREATE";
+        public const string INVENTORY_ITEMS_UPDATE = @"INVENTORY_ITEMS_UPDATE";
+        public const string INVENTORY_ITEMS_DELETE = @"INVENTORY_ITEMS_DELETE";
+        public const string LOCATIONS_ACTIVATE = @"LOCATIONS_ACTIVATE";
+        public const string LOCATIONS_DEACTIVATE = @"LOCATIONS_DEACTIVATE";
+        public const string LOCATIONS_CREATE = @"LOCATIONS_CREATE";
+        public const string LOCATIONS_UPDATE = @"LOCATIONS_UPDATE";
+        public const string LOCATIONS_DELETE = @"LOCATIONS_DELETE";
+        public const string TENDER_TRANSACTIONS_CREATE = @"TENDER_TRANSACTIONS_CREATE";
+        public const string APP_PURCHASES_ONE_TIME_UPDATE = @"APP_PURCHASES_ONE_TIME_UPDATE";
+        public const string APP_SUBSCRIPTIONS_APPROACHING_CAPPED_AMOUNT = @"APP_SUBSCRIPTIONS_APPROACHING_CAPPED_AMOUNT";
+        public const string APP_SUBSCRIPTIONS_UPDATE = @"APP_SUBSCRIPTIONS_UPDATE";
+        public const string LOCALES_CREATE = @"LOCALES_CREATE";
+        public const string LOCALES_UPDATE = @"LOCALES_UPDATE";
+        public const string DOMAINS_CREATE = @"DOMAINS_CREATE";
+        public const string DOMAINS_UPDATE = @"DOMAINS_UPDATE";
+        public const string DOMAINS_DESTROY = @"DOMAINS_DESTROY";
+        public const string SUBSCRIPTION_CONTRACTS_CREATE = @"SUBSCRIPTION_CONTRACTS_CREATE";
+        public const string SUBSCRIPTION_CONTRACTS_UPDATE = @"SUBSCRIPTION_CONTRACTS_UPDATE";
+        public const string SUBSCRIPTION_BILLING_CYCLE_EDITS_CREATE = @"SUBSCRIPTION_BILLING_CYCLE_EDITS_CREATE";
+        public const string SUBSCRIPTION_BILLING_CYCLE_EDITS_UPDATE = @"SUBSCRIPTION_BILLING_CYCLE_EDITS_UPDATE";
+        public const string SUBSCRIPTION_BILLING_CYCLE_EDITS_DELETE = @"SUBSCRIPTION_BILLING_CYCLE_EDITS_DELETE";
+        public const string PROFILES_CREATE = @"PROFILES_CREATE";
+        public const string PROFILES_UPDATE = @"PROFILES_UPDATE";
+        public const string PROFILES_DELETE = @"PROFILES_DELETE";
+        public const string SUBSCRIPTION_BILLING_ATTEMPTS_SUCCESS = @"SUBSCRIPTION_BILLING_ATTEMPTS_SUCCESS";
+        public const string SUBSCRIPTION_BILLING_ATTEMPTS_FAILURE = @"SUBSCRIPTION_BILLING_ATTEMPTS_FAILURE";
+        public const string SUBSCRIPTION_BILLING_ATTEMPTS_CHALLENGED = @"SUBSCRIPTION_BILLING_ATTEMPTS_CHALLENGED";
+        public const string RETURNS_CANCEL = @"RETURNS_CANCEL";
+        public const string RETURNS_CLOSE = @"RETURNS_CLOSE";
+        public const string RETURNS_REOPEN = @"RETURNS_REOPEN";
+        public const string RETURNS_REQUEST = @"RETURNS_REQUEST";
+        public const string RETURNS_APPROVE = @"RETURNS_APPROVE";
+        public const string RETURNS_UPDATE = @"RETURNS_UPDATE";
+        public const string RETURNS_DECLINE = @"RETURNS_DECLINE";
+        public const string REVERSE_DELIVERIES_ATTACH_DELIVERABLE = @"REVERSE_DELIVERIES_ATTACH_DELIVERABLE";
+        public const string REVERSE_FULFILLMENT_ORDERS_DISPOSE = @"REVERSE_FULFILLMENT_ORDERS_DISPOSE";
+        public const string PAYMENT_TERMS_CREATE = @"PAYMENT_TERMS_CREATE";
+        public const string PAYMENT_TERMS_DELETE = @"PAYMENT_TERMS_DELETE";
+        public const string PAYMENT_TERMS_UPDATE = @"PAYMENT_TERMS_UPDATE";
+        public const string PAYMENT_SCHEDULES_DUE = @"PAYMENT_SCHEDULES_DUE";
+        public const string SELLING_PLAN_GROUPS_CREATE = @"SELLING_PLAN_GROUPS_CREATE";
+        public const string SELLING_PLAN_GROUPS_UPDATE = @"SELLING_PLAN_GROUPS_UPDATE";
+        public const string SELLING_PLAN_GROUPS_DELETE = @"SELLING_PLAN_GROUPS_DELETE";
+        public const string BULK_OPERATIONS_FINISH = @"BULK_OPERATIONS_FINISH";
+        public const string PRODUCT_FEEDS_CREATE = @"PRODUCT_FEEDS_CREATE";
+        public const string PRODUCT_FEEDS_UPDATE = @"PRODUCT_FEEDS_UPDATE";
+        public const string PRODUCT_FEEDS_INCREMENTAL_SYNC = @"PRODUCT_FEEDS_INCREMENTAL_SYNC";
+        public const string PRODUCT_FEEDS_FULL_SYNC = @"PRODUCT_FEEDS_FULL_SYNC";
+        public const string PRODUCT_FEEDS_FULL_SYNC_FINISH = @"PRODUCT_FEEDS_FULL_SYNC_FINISH";
+        public const string MARKETS_CREATE = @"MARKETS_CREATE";
+        public const string MARKETS_UPDATE = @"MARKETS_UPDATE";
+        public const string MARKETS_DELETE = @"MARKETS_DELETE";
+        public const string ORDERS_RISK_ASSESSMENT_CHANGED = @"ORDERS_RISK_ASSESSMENT_CHANGED";
+        public const string ORDERS_SHOPIFY_PROTECT_ELIGIBILITY_CHANGED = @"ORDERS_SHOPIFY_PROTECT_ELIGIBILITY_CHANGED";
+        public const string FULFILLMENT_ORDERS_RESCHEDULED = @"FULFILLMENT_ORDERS_RESCHEDULED";
+        public const string PUBLICATIONS_DELETE = @"PUBLICATIONS_DELETE";
+        public const string AUDIT_EVENTS_ADMIN_API_ACTIVITY = @"AUDIT_EVENTS_ADMIN_API_ACTIVITY";
+        public const string FULFILLMENT_ORDERS_LINE_ITEMS_PREPARED_FOR_PICKUP = @"FULFILLMENT_ORDERS_LINE_ITEMS_PREPARED_FOR_PICKUP";
+        public const string COMPANIES_CREATE = @"COMPANIES_CREATE";
+        public const string COMPANIES_UPDATE = @"COMPANIES_UPDATE";
+        public const string COMPANIES_DELETE = @"COMPANIES_DELETE";
+        public const string COMPANY_LOCATIONS_CREATE = @"COMPANY_LOCATIONS_CREATE";
+        public const string COMPANY_LOCATIONS_UPDATE = @"COMPANY_LOCATIONS_UPDATE";
+        public const string COMPANY_LOCATIONS_DELETE = @"COMPANY_LOCATIONS_DELETE";
+        public const string COMPANY_CONTACTS_CREATE = @"COMPANY_CONTACTS_CREATE";
+        public const string COMPANY_CONTACTS_UPDATE = @"COMPANY_CONTACTS_UPDATE";
+        public const string COMPANY_CONTACTS_DELETE = @"COMPANY_CONTACTS_DELETE";
+        public const string CUSTOMERS_MERGE = @"CUSTOMERS_MERGE";
+        public const string CUSTOMER_ACCOUNT_SETTINGS_UPDATE = @"CUSTOMER_ACCOUNT_SETTINGS_UPDATE";
+        public const string COMPANY_CONTACT_ROLES_ASSIGN = @"COMPANY_CONTACT_ROLES_ASSIGN";
+        public const string COMPANY_CONTACT_ROLES_REVOKE = @"COMPANY_CONTACT_ROLES_REVOKE";
+        public const string SUBSCRIPTION_CONTRACTS_ACTIVATE = @"SUBSCRIPTION_CONTRACTS_ACTIVATE";
+        public const string SUBSCRIPTION_CONTRACTS_PAUSE = @"SUBSCRIPTION_CONTRACTS_PAUSE";
+        public const string SUBSCRIPTION_CONTRACTS_CANCEL = @"SUBSCRIPTION_CONTRACTS_CANCEL";
+        public const string SUBSCRIPTION_CONTRACTS_FAIL = @"SUBSCRIPTION_CONTRACTS_FAIL";
+        public const string SUBSCRIPTION_CONTRACTS_EXPIRE = @"SUBSCRIPTION_CONTRACTS_EXPIRE";
+        public const string SUBSCRIPTION_BILLING_CYCLES_SKIP = @"SUBSCRIPTION_BILLING_CYCLES_SKIP";
+        public const string SUBSCRIPTION_BILLING_CYCLES_UNSKIP = @"SUBSCRIPTION_BILLING_CYCLES_UNSKIP";
+        public const string METAOBJECTS_CREATE = @"METAOBJECTS_CREATE";
+        public const string METAOBJECTS_UPDATE = @"METAOBJECTS_UPDATE";
+        public const string METAOBJECTS_DELETE = @"METAOBJECTS_DELETE";
+        public const string DISCOUNTS_CREATE = @"DISCOUNTS_CREATE";
+        public const string DISCOUNTS_UPDATE = @"DISCOUNTS_UPDATE";
+        public const string DISCOUNTS_DELETE = @"DISCOUNTS_DELETE";
+        public const string DISCOUNTS_REDEEMCODE_ADDED = @"DISCOUNTS_REDEEMCODE_ADDED";
+        public const string DISCOUNTS_REDEEMCODE_REMOVED = @"DISCOUNTS_REDEEMCODE_REMOVED";
+        public const string METAFIELD_DEFINITIONS_CREATE = @"METAFIELD_DEFINITIONS_CREATE";
+        public const string METAFIELD_DEFINITIONS_UPDATE = @"METAFIELD_DEFINITIONS_UPDATE";
+        public const string METAFIELD_DEFINITIONS_DELETE = @"METAFIELD_DEFINITIONS_DELETE";
     }
 
     ///<summary>
@@ -71248,10 +71248,10 @@ namespace shopify
 
     public static class WeightUnitStringValues
     {
-        public const string KILOGRAMS = "KILOGRAMS";
-        public const string GRAMS = "GRAMS";
-        public const string POUNDS = "POUNDS";
-        public const string OUNCES = "OUNCES";
+        public const string KILOGRAMS = @"KILOGRAMS";
+        public const string GRAMS = @"GRAMS";
+        public const string POUNDS = @"POUNDS";
+        public const string OUNCES = @"OUNCES";
     }
 
     ///<summary>
@@ -71362,25 +71362,25 @@ namespace shopify
 
     public static class __DirectiveLocationStringValues
     {
-        public const string QUERY = "QUERY";
-        public const string MUTATION = "MUTATION";
-        public const string SUBSCRIPTION = "SUBSCRIPTION";
-        public const string FIELD = "FIELD";
-        public const string FRAGMENT_DEFINITION = "FRAGMENT_DEFINITION";
-        public const string FRAGMENT_SPREAD = "FRAGMENT_SPREAD";
-        public const string INLINE_FRAGMENT = "INLINE_FRAGMENT";
-        public const string SCHEMA = "SCHEMA";
-        public const string SCALAR = "SCALAR";
-        public const string OBJECT = "OBJECT";
-        public const string FIELD_DEFINITION = "FIELD_DEFINITION";
-        public const string ARGUMENT_DEFINITION = "ARGUMENT_DEFINITION";
-        public const string INTERFACE = "INTERFACE";
-        public const string UNION = "UNION";
-        public const string ENUM = "ENUM";
-        public const string ENUM_VALUE = "ENUM_VALUE";
-        public const string INPUT_OBJECT = "INPUT_OBJECT";
-        public const string INPUT_FIELD_DEFINITION = "INPUT_FIELD_DEFINITION";
-        public const string VARIABLE_DEFINITION = "VARIABLE_DEFINITION";
+        public const string QUERY = @"QUERY";
+        public const string MUTATION = @"MUTATION";
+        public const string SUBSCRIPTION = @"SUBSCRIPTION";
+        public const string FIELD = @"FIELD";
+        public const string FRAGMENT_DEFINITION = @"FRAGMENT_DEFINITION";
+        public const string FRAGMENT_SPREAD = @"FRAGMENT_SPREAD";
+        public const string INLINE_FRAGMENT = @"INLINE_FRAGMENT";
+        public const string SCHEMA = @"SCHEMA";
+        public const string SCALAR = @"SCALAR";
+        public const string OBJECT = @"OBJECT";
+        public const string FIELD_DEFINITION = @"FIELD_DEFINITION";
+        public const string ARGUMENT_DEFINITION = @"ARGUMENT_DEFINITION";
+        public const string INTERFACE = @"INTERFACE";
+        public const string UNION = @"UNION";
+        public const string ENUM = @"ENUM";
+        public const string ENUM_VALUE = @"ENUM_VALUE";
+        public const string INPUT_OBJECT = @"INPUT_OBJECT";
+        public const string INPUT_FIELD_DEFINITION = @"INPUT_FIELD_DEFINITION";
+        public const string VARIABLE_DEFINITION = @"VARIABLE_DEFINITION";
     }
 
     ///<summary>
@@ -71528,13 +71528,13 @@ namespace shopify
 
     public static class __TypeKindStringValues
     {
-        public const string SCALAR = "SCALAR";
-        public const string OBJECT = "OBJECT";
-        public const string INTERFACE = "INTERFACE";
-        public const string UNION = "UNION";
-        public const string ENUM = "ENUM";
-        public const string INPUT_OBJECT = "INPUT_OBJECT";
-        public const string LIST = "LIST";
-        public const string NON_NULL = "NON_NULL";
+        public const string SCALAR = @"SCALAR";
+        public const string OBJECT = @"OBJECT";
+        public const string INTERFACE = @"INTERFACE";
+        public const string UNION = @"UNION";
+        public const string ENUM = @"ENUM";
+        public const string INPUT_OBJECT = @"INPUT_OBJECT";
+        public const string LIST = @"LIST";
+        public const string NON_NULL = @"NON_NULL";
     }
 }

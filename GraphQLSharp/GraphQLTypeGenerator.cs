@@ -235,7 +235,7 @@ public class GraphQLTypeGenerator
     {
         string className = GenerateTypeName(type, options);
 
-        if (className == "ShopInfo")
+        if (className == nameof(PageInfo))
             return new StringBuilder();
 
         var str = new StringBuilder()
@@ -372,7 +372,7 @@ public class GraphQLTypeGenerator
             {
                 if (v.isDeprecated)
                     str.AppendLine($"[Obsolete({SymbolDisplay.FormatLiteral(v.deprecationReason.TrimEnd(), true)})]");
-                str.AppendLine($"public const string {EscapeCSharpKeyword(v.name)} = \"{EscapeCSharpKeyword(v.name)}\";");
+                str.AppendLine($"public const string {EscapeCSharpKeyword(v.name)} = @\"{v.name.Replace("\"", "\"\"")}\";");
             });
         str.AppendLine("}");
 

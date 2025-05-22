@@ -5,117 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using GraphQLSharp;
 
 namespace square
 {
-    public static class Serializer
-    {
-        public static readonly JsonSerializerOptions Options = new JsonSerializerOptions
-        {
-            NumberHandling = JsonNumberHandling.AllowReadingFromString,
-            Converters =
-            {
-                new JsonStringEnumConverter()
-            },
-            DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
-        };
-        public static string Serialize(object obj)
-        {
-            return JsonSerializer.Serialize(obj, obj.GetType(), Options);
-        }
-
-        public static object? Deserialize(string json, Type type)
-        {
-            return JsonSerializer.Deserialize(json, type, Options);
-        }
-
-        public static T? Deserialize<T>(string json)
-            where T : class
-        {
-            return JsonSerializer.Deserialize<T>(json, Options);
-        }
-    }
-
-    public interface IGraphQLObject
-    {
-    }
-
-    public abstract class GraphQLObject<TSelf> : IGraphQLObject where TSelf : GraphQLObject<TSelf>
-    {
-        public static TSelf? FromJson(string json) => Serializer.Deserialize<TSelf>(json);
-    }
-
-    public static class GraphQLObjectExtensions
-    {
-        public static string ToJson(this IGraphQLObject o) => Serializer.Serialize(o);
-    }
-
-    public interface IEdge
-    {
-        string? cursor { get; set; }
-
-        object? node { get; set; }
-    }
-
-    public interface IEdge<TNode> : IEdge
-    {
-        object? IEdge.node { get => this.node; set => this.node = (TNode? )value; }
-        new TNode? node { get; set; }
-    }
-
-    public interface IConnection
-    {
-        PageInfo? pageInfo { get; set; }
-
-        Type GetNodeType();
-        IEnumerable? GetNodes();
-    }
-
-    public interface IConnectionWithNodes : IConnection
-    {
-        IEnumerable? nodes { get; set; }
-
-        IEnumerable? IConnection.GetNodes() => this.nodes;
-    }
-
-    public interface IConnectionWithNodes<TNode> : IConnectionWithNodes
-    {
-        IEnumerable? IConnectionWithNodes.nodes { get => this.nodes; set => this.nodes = (IEnumerable<TNode>? )value; }
-        new IEnumerable<TNode>? nodes { get; set; }
-
-        Type IConnection.GetNodeType() => typeof(TNode);
-    }
-
-    public interface IConnectionWithEdges : IConnection
-    {
-        IEnumerable<IEdge>? edges { get; set; }
-
-        Type GetEdgeType();
-        IEnumerable? IConnection.GetNodes() => this.edges?.Select(e => e.node);
-    }
-
-    public interface IConnectionWithEdges<TNode> : IConnectionWithEdges
-    {
-        IEnumerable<IEdge>? IConnectionWithEdges.edges { get => this.edges; set => this.edges = (IEnumerable<IEdge<TNode>>? )value; }
-        new IEnumerable<IEdge<TNode>>? edges { get; set; }
-
-        Type IConnection.GetNodeType() => typeof(TNode);
-    }
-
-    public interface IConnectionWithEdges<TEdge, TNode> : IConnectionWithEdges<TNode> where TEdge : IEdge<TNode>
-    {
-        IEnumerable<IEdge<TNode>>? IConnectionWithEdges<TNode>.edges { get => this.edges?.Cast<IEdge<TNode>>(); set => this.edges = value?.Cast<TEdge>(); }
-        new IEnumerable<TEdge>? edges { get; set; }
-
-        Type IConnectionWithEdges.GetEdgeType() => typeof(TEdge);
-    }
-
-    public interface IConnectionWithNodesAndEdges<TEdge, TNode> : IConnectionWithEdges<TEdge, TNode>, IConnectionWithNodes<TNode> where TEdge : IEdge<TNode>
-    {
-        Type IConnection.GetNodeType() => typeof(TNode);
-        IEnumerable? IConnection.GetNodes() => this.nodes ?? this.edges?.Select(e => e.node);
-    }
-
     ///<summary>
     ///Represents a postal address in a country.
     ///For more information, see [Working with Addresses](https://developer.squareup.com/docs/build-basics/working-with-addresses).
@@ -202,12 +95,24 @@ namespace square
         ARCHIVED_STATE_ALL,
     }
 
+    public static class ArchivedStateStringValues
+    {
+        public const string ARCHIVED_STATE_NOT_ARCHIVED = @"ARCHIVED_STATE_NOT_ARCHIVED";
+        public const string ARCHIVED_STATE_ARCHIVED = @"ARCHIVED_STATE_ARCHIVED";
+        public const string ARCHIVED_STATE_ALL = @"ARCHIVED_STATE_ALL";
+    }
+
     public enum AUTH_TARGET_TYPE
     {
         ///<summary>
         ///The annotated element must be an ID corresponding to a Merchant.
         ///</summary>
         MERCHANT,
+    }
+
+    public static class AUTH_TARGET_TYPEStringValues
+    {
+        public const string MERCHANT = @"MERCHANT";
     }
 
     ///<summary>
@@ -221,6 +126,11 @@ namespace square
         MERCHANT,
     }
 
+    public static class AuthTargetStringValues
+    {
+        public const string MERCHANT = @"MERCHANT";
+    }
+
     ///<summary>
     ///The ownership type of the bank account performing the transfer.
     ///</summary>
@@ -229,6 +139,13 @@ namespace square
         ACCOUNT_TYPE_UNKNOWN,
         COMPANY,
         INDIVIDUAL,
+    }
+
+    public static class BankAccountPaymentAccountOwnershipTypeStringValues
+    {
+        public const string ACCOUNT_TYPE_UNKNOWN = @"ACCOUNT_TYPE_UNKNOWN";
+        public const string COMPANY = @"COMPANY";
+        public const string INDIVIDUAL = @"INDIVIDUAL";
     }
 
     ///<summary>
@@ -304,6 +221,13 @@ namespace square
         UNKNOWN,
     }
 
+    public static class BankAccountPaymentTransferTypeStringValues
+    {
+        public const string ACH = @"ACH";
+        public const string OPEN_BANKING = @"OPEN_BANKING";
+        public const string UNKNOWN = @"UNKNOWN";
+    }
+
     ///<summary>
     ///Indicates the financial purpose of the bank account.
     ///</summary>
@@ -338,6 +262,16 @@ namespace square
         ///Reserved value for unknown.
         ///</summary>
         UNKNOWN,
+    }
+
+    public static class BankAccountTypeStringValues
+    {
+        public const string BUSINESS_CHECKING = @"BUSINESS_CHECKING";
+        public const string CHECKING = @"CHECKING";
+        public const string INVESTMENT = @"INVESTMENT";
+        public const string OTHER = @"OTHER";
+        public const string SAVINGS = @"SAVINGS";
+        public const string UNKNOWN = @"UNKNOWN";
     }
 
     ///<summary>
@@ -380,6 +314,13 @@ namespace square
         AFTERPAY,
         CLEARPAY,
         UNKNOWN,
+    }
+
+    public static class BuyNowPayLaterPaymentBrandStringValues
+    {
+        public const string AFTERPAY = @"AFTERPAY";
+        public const string CLEARPAY = @"CLEARPAY";
+        public const string UNKNOWN = @"UNKNOWN";
     }
 
     ///<summary>
@@ -671,6 +612,35 @@ namespace square
         WECHAT_PAY,
     }
 
+    public static class CardBrandStringValues
+    {
+        public const string AFTERPAY = @"AFTERPAY";
+        public const string ALIPAY = @"ALIPAY";
+        public const string AMERICAN_EXPRESS = @"AMERICAN_EXPRESS";
+        public const string AU_PAY = @"AU_PAY";
+        public const string BALANCE = @"BALANCE";
+        public const string CASH_APP = @"CASH_APP";
+        public const string CHINA_UNIONPAY = @"CHINA_UNIONPAY";
+        public const string DISCOVER = @"DISCOVER";
+        public const string DISCOVER_DINERS = @"DISCOVER_DINERS";
+        public const string D_BARAI = @"D_BARAI";
+        public const string EBT = @"EBT";
+        public const string EFTPOS = @"EFTPOS";
+        public const string FELICA = @"FELICA";
+        public const string INTERAC = @"INTERAC";
+        public const string JCB = @"JCB";
+        public const string MASTERCARD = @"MASTERCARD";
+        public const string MERPAY = @"MERPAY";
+        public const string OTHER_BRAND = @"OTHER_BRAND";
+        public const string PAYPAY = @"PAYPAY";
+        public const string RAKUTEN_PAY = @"RAKUTEN_PAY";
+        public const string SQUARE_ACCOUNT_BALANCE = @"SQUARE_ACCOUNT_BALANCE";
+        public const string SQUARE_CAPITAL_CARD = @"SQUARE_CAPITAL_CARD";
+        public const string SQUARE_GIFT_CARD = @"SQUARE_GIFT_CARD";
+        public const string VISA = @"VISA";
+        public const string WECHAT_PAY = @"WECHAT_PAY";
+    }
+
     ///<summary>
     ///Indicates the brand for a co-branded card.
     ///</summary>
@@ -679,6 +649,13 @@ namespace square
         UNKNOWN,
         AFTERPAY,
         CLEARPAY,
+    }
+
+    public static class CardCoBrandStringValues
+    {
+        public const string UNKNOWN = @"UNKNOWN";
+        public const string AFTERPAY = @"AFTERPAY";
+        public const string CLEARPAY = @"CLEARPAY";
     }
 
     ///<summary>
@@ -869,6 +846,13 @@ namespace square
         AVS_REJECTED,
     }
 
+    public static class CardPaymentDetailsAvsStatusStringValues
+    {
+        public const string AVS_ACCEPTED = @"AVS_ACCEPTED";
+        public const string AVS_NOT_CHECKED = @"AVS_NOT_CHECKED";
+        public const string AVS_REJECTED = @"AVS_REJECTED";
+    }
+
     ///<summary>
     ///Enumeration of possible status codes returned from a Card Verification Value (CVV) check.
     ///</summary>
@@ -877,6 +861,13 @@ namespace square
         CVV_ACCEPTED,
         CVV_NOT_CHECKED,
         CVV_REJECTED,
+    }
+
+    public static class CardPaymentDetailsCvvStatusStringValues
+    {
+        public const string CVV_ACCEPTED = @"CVV_ACCEPTED";
+        public const string CVV_NOT_CHECKED = @"CVV_NOT_CHECKED";
+        public const string CVV_REJECTED = @"CVV_REJECTED";
     }
 
     ///<summary>
@@ -906,6 +897,15 @@ namespace square
         SWIPED,
     }
 
+    public static class CardPaymentDetailsEntryMethodStringValues
+    {
+        public const string CONTACTLESS = @"CONTACTLESS";
+        public const string EMV = @"EMV";
+        public const string KEYED = @"KEYED";
+        public const string ON_FILE = @"ON_FILE";
+        public const string SWIPED = @"SWIPED";
+    }
+
     ///<summary>
     ///A card payment's current state.
     ///</summary>
@@ -915,6 +915,14 @@ namespace square
         CAPTURED,
         FAILED,
         VOIDED,
+    }
+
+    public static class CardPaymentDetailsStatusStringValues
+    {
+        public const string AUTHORIZED = @"AUTHORIZED";
+        public const string CAPTURED = @"CAPTURED";
+        public const string FAILED = @"FAILED";
+        public const string VOIDED = @"VOIDED";
     }
 
     ///<summary>
@@ -929,6 +937,15 @@ namespace square
         SIGNATURE,
     }
 
+    public static class CardPaymentDetailsVerificationMethodStringValues
+    {
+        public const string NONE = @"NONE";
+        public const string ON_DEVICE = @"ON_DEVICE";
+        public const string PIN = @"PIN";
+        public const string PIN_AND_SIGNATURE = @"PIN_AND_SIGNATURE";
+        public const string SIGNATURE = @"SIGNATURE";
+    }
+
     ///<summary>
     ///Enumeration of possible card verification results for EMV payments.
     ///</summary>
@@ -937,6 +954,13 @@ namespace square
         FAILURE,
         SUCCESS,
         UNKNOWN,
+    }
+
+    public static class CardPaymentDetailsVerificationResultStringValues
+    {
+        public const string FAILURE = @"FAILURE";
+        public const string SUCCESS = @"SUCCESS";
+        public const string UNKNOWN = @"UNKNOWN";
     }
 
     ///<summary>
@@ -970,6 +994,13 @@ namespace square
         UNKNOWN_PREPAID_TYPE,
     }
 
+    public static class CardPrepaidTypeStringValues
+    {
+        public const string NOT_PREPAID = @"NOT_PREPAID";
+        public const string PREPAID = @"PREPAID";
+        public const string UNKNOWN_PREPAID_TYPE = @"UNKNOWN_PREPAID_TYPE";
+    }
+
     ///<summary>
     ///Indicates a card's type, such as `CREDIT` or `DEBIT`.
     ///</summary>
@@ -978,6 +1009,13 @@ namespace square
         CREDIT,
         DEBIT,
         UNKNOWN_CARD_TYPE,
+    }
+
+    public static class CardTypeStringValues
+    {
+        public const string CREDIT = @"CREDIT";
+        public const string DEBIT = @"DEBIT";
+        public const string UNKNOWN_CARD_TYPE = @"UNKNOWN_CARD_TYPE";
     }
 
     ///<summary>
@@ -1218,6 +1256,13 @@ namespace square
         APP_VISIBILITY_READ_WRITE_VALUES,
     }
 
+    public static class CatalogCustomAttributeDefinitionAppVisibilityStringValues
+    {
+        public const string APP_VISIBILITY_HIDDEN = @"APP_VISIBILITY_HIDDEN";
+        public const string APP_VISIBILITY_READ_ONLY = @"APP_VISIBILITY_READ_ONLY";
+        public const string APP_VISIBILITY_READ_WRITE_VALUES = @"APP_VISIBILITY_READ_WRITE_VALUES";
+    }
+
     ///<summary>
     ///Defines the config for CatalogCustomAttributeDefinition.
     ///</summary>
@@ -1249,6 +1294,12 @@ namespace square
         ///but cannot edit the custom attribute definition.
         ///</summary>
         SELLER_VISIBILITY_READ_WRITE_VALUES,
+    }
+
+    public static class CatalogCustomAttributeDefinitionSellerVisibilityStringValues
+    {
+        public const string SELLER_VISIBILITY_HIDDEN = @"SELLER_VISIBILITY_HIDDEN";
+        public const string SELLER_VISIBILITY_READ_WRITE_VALUES = @"SELLER_VISIBILITY_READ_WRITE_VALUES";
     }
 
     ///<summary>
@@ -1382,6 +1433,14 @@ namespace square
         ///One or more choices from `allowed_selections`.
         ///</summary>
         SELECTION,
+    }
+
+    public static class CatalogCustomAttributeTypeStringValues
+    {
+        public const string STRING = @"STRING";
+        public const string BOOLEAN = @"BOOLEAN";
+        public const string NUMBER = @"NUMBER";
+        public const string SELECTION = @"SELECTION";
     }
 
     ///<summary>
@@ -1528,6 +1587,12 @@ namespace square
         DO_NOT_MODIFY_TAX_BASIS,
     }
 
+    public static class CatalogDiscountModifyTaxBasisStringValues
+    {
+        public const string MODIFY_TAX_BASIS = @"MODIFY_TAX_BASIS";
+        public const string DO_NOT_MODIFY_TAX_BASIS = @"DO_NOT_MODIFY_TAX_BASIS";
+    }
+
     ///<summary>
     ///How to apply a CatalogDiscount to a CatalogItem.
     ///</summary>
@@ -1549,6 +1614,14 @@ namespace square
         ///Apply the discount as a variable amount off the item price. The amount will be specified at the time of sale.
         ///</summary>
         VARIABLE_AMOUNT,
+    }
+
+    public static class CatalogDiscountTypeStringValues
+    {
+        public const string FIXED_PERCENTAGE = @"FIXED_PERCENTAGE";
+        public const string FIXED_AMOUNT = @"FIXED_AMOUNT";
+        public const string VARIABLE_PERCENTAGE = @"VARIABLE_PERCENTAGE";
+        public const string VARIABLE_AMOUNT = @"VARIABLE_AMOUNT";
     }
 
     ///<summary>
@@ -2016,6 +2089,13 @@ namespace square
         APPOINTMENTS_SERVICE,
     }
 
+    public static class CatalogItemProductTypeStringValues
+    {
+        public const string REGULAR = @"REGULAR";
+        public const string GIFT_CARD = @"GIFT_CARD";
+        public const string APPOINTMENTS_SERVICE = @"APPOINTMENTS_SERVICE";
+    }
+
     ///<summary>
     ///An item variation, representing a product for sale, in the Catalog object model.Each item must have at least one
     ///item variation and can have at most 250 item variations.
@@ -2462,6 +2542,12 @@ namespace square
         MULTIPLE,
     }
 
+    public static class CatalogModifierListSelectionTypeStringValues
+    {
+        public const string SINGLE = @"SINGLE";
+        public const string MULTIPLE = @"MULTIPLE";
+    }
+
     ///<summary>
     ///Options to control how to override the default behavior of the specified modifier.
     ///Permissions: ITEMS_READ
@@ -2681,6 +2767,28 @@ namespace square
         SUBSCRIPTION_PLAN,
     }
 
+    public static class CatalogObjectTypeStringValues
+    {
+        public const string ITEM = @"ITEM";
+        public const string IMAGE = @"IMAGE";
+        public const string CATEGORY = @"CATEGORY";
+        public const string ITEM_VARIATION = @"ITEM_VARIATION";
+        public const string TAX = @"TAX";
+        public const string DISCOUNT = @"DISCOUNT";
+        public const string MODIFIER_LIST = @"MODIFIER_LIST";
+        public const string MODIFIER = @"MODIFIER";
+        public const string PRICING_RULE = @"PRICING_RULE";
+        public const string PRODUCT_SET = @"PRODUCT_SET";
+        public const string TIME_PERIOD = @"TIME_PERIOD";
+        public const string MEASUREMENT_UNIT = @"MEASUREMENT_UNIT";
+        public const string SUBSCRIPTION_PLAN_VARIATION = @"SUBSCRIPTION_PLAN_VARIATION";
+        public const string ITEM_OPTION = @"ITEM_OPTION";
+        public const string ITEM_OPTION_VAL = @"ITEM_OPTION_VAL";
+        public const string CUSTOM_ATTRIBUTE_DEFINITION = @"CUSTOM_ATTRIBUTE_DEFINITION";
+        public const string QUICK_AMOUNTS_SETTINGS = @"QUICK_AMOUNTS_SETTINGS";
+        public const string SUBSCRIPTION_PLAN = @"SUBSCRIPTION_PLAN";
+    }
+
     ///<summary>
     ///Defines how discounts are automatically applied to a set of items that match the pricing rule
     ///during the active time period.
@@ -2822,6 +2930,12 @@ namespace square
         ///The catalog item variation's price is entered at the time of sale.
         ///</summary>
         VARIABLE_PRICING,
+    }
+
+    public static class CatalogPricingTypeStringValues
+    {
+        public const string FIXED_PRICING = @"FIXED_PRICING";
+        public const string VARIABLE_PRICING = @"VARIABLE_PRICING";
     }
 
     ///<summary>
@@ -3031,6 +3145,13 @@ namespace square
         AUTO,
     }
 
+    public static class CatalogQuickAmountsSettingsOptionStringValues
+    {
+        public const string DISABLED = @"DISABLED";
+        public const string MANUAL = @"MANUAL";
+        public const string AUTO = @"AUTO";
+    }
+
     ///<summary>
     ///Determines the type of a specific Quick Amount.
     ///</summary>
@@ -3044,6 +3165,12 @@ namespace square
         ///Quick Amount is generated automatically by machine learning algorithms.
         ///</summary>
         QUICK_AMOUNT_TYPE_AUTO,
+    }
+
+    public static class CatalogQuickAmountTypeStringValues
+    {
+        public const string QUICK_AMOUNT_TYPE_MANUAL = @"QUICK_AMOUNT_TYPE_MANUAL";
+        public const string QUICK_AMOUNT_TYPE_AUTO = @"QUICK_AMOUNT_TYPE_AUTO";
     }
 
     ///<summary>
@@ -3066,6 +3193,12 @@ namespace square
     {
         name_DESC,
         name_ASC,
+    }
+
+    public static class CatalogSortStringValues
+    {
+        public const string name_DESC = @"name_DESC";
+        public const string name_ASC = @"name_ASC";
     }
 
     ///<summary>
@@ -3114,6 +3247,12 @@ namespace square
         ///The item inventory is low.
         ///</summary>
         LOW,
+    }
+
+    public static class CatalogStockLevelStringValues
+    {
+        public const string OUT = @"OUT";
+        public const string LOW = @"LOW";
     }
 
     ///<summary>
@@ -4416,6 +4555,260 @@ namespace square
         ZZ,
     }
 
+    public static class CountryStringValues
+    {
+        public const string AD = @"AD";
+        public const string AE = @"AE";
+        public const string AF = @"AF";
+        public const string AG = @"AG";
+        public const string AI = @"AI";
+        public const string AL = @"AL";
+        public const string AM = @"AM";
+        public const string AO = @"AO";
+        public const string AQ = @"AQ";
+        public const string AR = @"AR";
+        public const string AS = @"AS";
+        public const string AT = @"AT";
+        public const string AU = @"AU";
+        public const string AW = @"AW";
+        public const string AX = @"AX";
+        public const string AZ = @"AZ";
+        public const string BA = @"BA";
+        public const string BB = @"BB";
+        public const string BD = @"BD";
+        public const string BE = @"BE";
+        public const string BF = @"BF";
+        public const string BG = @"BG";
+        public const string BH = @"BH";
+        public const string BI = @"BI";
+        public const string BJ = @"BJ";
+        public const string BL = @"BL";
+        public const string BM = @"BM";
+        public const string BN = @"BN";
+        public const string BO = @"BO";
+        public const string BQ = @"BQ";
+        public const string BR = @"BR";
+        public const string BS = @"BS";
+        public const string BT = @"BT";
+        public const string BV = @"BV";
+        public const string BW = @"BW";
+        public const string BY = @"BY";
+        public const string BZ = @"BZ";
+        public const string CA = @"CA";
+        public const string CC = @"CC";
+        public const string CD = @"CD";
+        public const string CF = @"CF";
+        public const string CG = @"CG";
+        public const string CH = @"CH";
+        public const string CI = @"CI";
+        public const string CK = @"CK";
+        public const string CL = @"CL";
+        public const string CM = @"CM";
+        public const string CN = @"CN";
+        public const string CO = @"CO";
+        public const string CR = @"CR";
+        public const string CU = @"CU";
+        public const string CV = @"CV";
+        public const string CW = @"CW";
+        public const string CX = @"CX";
+        public const string CY = @"CY";
+        public const string CZ = @"CZ";
+        public const string DE = @"DE";
+        public const string DJ = @"DJ";
+        public const string DK = @"DK";
+        public const string DM = @"DM";
+        public const string DO = @"DO";
+        public const string DZ = @"DZ";
+        public const string EC = @"EC";
+        public const string EE = @"EE";
+        public const string EG = @"EG";
+        public const string EH = @"EH";
+        public const string ER = @"ER";
+        public const string ES = @"ES";
+        public const string ET = @"ET";
+        public const string FI = @"FI";
+        public const string FJ = @"FJ";
+        public const string FK = @"FK";
+        public const string FM = @"FM";
+        public const string FO = @"FO";
+        public const string FR = @"FR";
+        public const string GA = @"GA";
+        public const string GB = @"GB";
+        public const string GD = @"GD";
+        public const string GE = @"GE";
+        public const string GF = @"GF";
+        public const string GG = @"GG";
+        public const string GH = @"GH";
+        public const string GI = @"GI";
+        public const string GL = @"GL";
+        public const string GM = @"GM";
+        public const string GN = @"GN";
+        public const string GP = @"GP";
+        public const string GQ = @"GQ";
+        public const string GR = @"GR";
+        public const string GS = @"GS";
+        public const string GT = @"GT";
+        public const string GU = @"GU";
+        public const string GW = @"GW";
+        public const string GY = @"GY";
+        public const string HK = @"HK";
+        public const string HM = @"HM";
+        public const string HN = @"HN";
+        public const string HR = @"HR";
+        public const string HT = @"HT";
+        public const string HU = @"HU";
+        public const string ID = @"ID";
+        public const string IE = @"IE";
+        public const string IL = @"IL";
+        public const string IM = @"IM";
+        public const string IN = @"IN";
+        public const string IO = @"IO";
+        public const string IQ = @"IQ";
+        public const string IR = @"IR";
+        public const string IS = @"IS";
+        public const string IT = @"IT";
+        public const string JE = @"JE";
+        public const string JM = @"JM";
+        public const string JO = @"JO";
+        public const string JP = @"JP";
+        public const string KE = @"KE";
+        public const string KG = @"KG";
+        public const string KH = @"KH";
+        public const string KI = @"KI";
+        public const string KM = @"KM";
+        public const string KN = @"KN";
+        public const string KP = @"KP";
+        public const string KR = @"KR";
+        public const string KW = @"KW";
+        public const string KY = @"KY";
+        public const string KZ = @"KZ";
+        public const string LA = @"LA";
+        public const string LB = @"LB";
+        public const string LC = @"LC";
+        public const string LI = @"LI";
+        public const string LK = @"LK";
+        public const string LR = @"LR";
+        public const string LS = @"LS";
+        public const string LT = @"LT";
+        public const string LU = @"LU";
+        public const string LV = @"LV";
+        public const string LY = @"LY";
+        public const string MA = @"MA";
+        public const string MC = @"MC";
+        public const string MD = @"MD";
+        public const string ME = @"ME";
+        public const string MF = @"MF";
+        public const string MG = @"MG";
+        public const string MH = @"MH";
+        public const string MK = @"MK";
+        public const string ML = @"ML";
+        public const string MM = @"MM";
+        public const string MN = @"MN";
+        public const string MO = @"MO";
+        public const string MP = @"MP";
+        public const string MQ = @"MQ";
+        public const string MR = @"MR";
+        public const string MS = @"MS";
+        public const string MT = @"MT";
+        public const string MU = @"MU";
+        public const string MV = @"MV";
+        public const string MW = @"MW";
+        public const string MX = @"MX";
+        public const string MY = @"MY";
+        public const string MZ = @"MZ";
+        public const string NA = @"NA";
+        public const string NC = @"NC";
+        public const string NE = @"NE";
+        public const string NF = @"NF";
+        public const string NG = @"NG";
+        public const string NI = @"NI";
+        public const string NL = @"NL";
+        public const string NO = @"NO";
+        public const string NP = @"NP";
+        public const string NR = @"NR";
+        public const string NU = @"NU";
+        public const string NZ = @"NZ";
+        public const string OM = @"OM";
+        public const string PA = @"PA";
+        public const string PE = @"PE";
+        public const string PF = @"PF";
+        public const string PG = @"PG";
+        public const string PH = @"PH";
+        public const string PK = @"PK";
+        public const string PL = @"PL";
+        public const string PM = @"PM";
+        public const string PN = @"PN";
+        public const string PR = @"PR";
+        public const string PS = @"PS";
+        public const string PT = @"PT";
+        public const string PW = @"PW";
+        public const string PY = @"PY";
+        public const string QA = @"QA";
+        public const string RE = @"RE";
+        public const string RO = @"RO";
+        public const string RS = @"RS";
+        public const string RU = @"RU";
+        public const string RW = @"RW";
+        public const string SA = @"SA";
+        public const string SB = @"SB";
+        public const string SC = @"SC";
+        public const string SD = @"SD";
+        public const string SE = @"SE";
+        public const string SG = @"SG";
+        public const string SH = @"SH";
+        public const string SI = @"SI";
+        public const string SJ = @"SJ";
+        public const string SK = @"SK";
+        public const string SL = @"SL";
+        public const string SM = @"SM";
+        public const string SN = @"SN";
+        public const string SO = @"SO";
+        public const string SR = @"SR";
+        public const string SS = @"SS";
+        public const string ST = @"ST";
+        public const string SV = @"SV";
+        public const string SX = @"SX";
+        public const string SY = @"SY";
+        public const string SZ = @"SZ";
+        public const string TC = @"TC";
+        public const string TD = @"TD";
+        public const string TF = @"TF";
+        public const string TG = @"TG";
+        public const string TH = @"TH";
+        public const string TJ = @"TJ";
+        public const string TK = @"TK";
+        public const string TL = @"TL";
+        public const string TM = @"TM";
+        public const string TN = @"TN";
+        public const string TO = @"TO";
+        public const string TR = @"TR";
+        public const string TT = @"TT";
+        public const string TV = @"TV";
+        public const string TW = @"TW";
+        public const string TZ = @"TZ";
+        public const string UA = @"UA";
+        public const string UG = @"UG";
+        public const string UM = @"UM";
+        public const string US = @"US";
+        public const string UY = @"UY";
+        public const string UZ = @"UZ";
+        public const string VA = @"VA";
+        public const string VC = @"VC";
+        public const string VE = @"VE";
+        public const string VG = @"VG";
+        public const string VI = @"VI";
+        public const string VN = @"VN";
+        public const string VU = @"VU";
+        public const string WF = @"WF";
+        public const string WS = @"WS";
+        public const string YE = @"YE";
+        public const string YT = @"YT";
+        public const string ZA = @"ZA";
+        public const string ZM = @"ZM";
+        public const string ZW = @"ZW";
+        public const string ZZ = @"ZZ";
+    }
+
     ///<summary>
     ///Indicates the country associated with another entity, such as a business.
     ///Values are in [ISO 3166-1-alpha-2 format](http://www.iso.org/iso/home/standards/country_codes.htm).
@@ -5428,6 +5821,261 @@ namespace square
         ZZ,
     }
 
+    public static class CountryCodeStringValues
+    {
+        public const string AD = @"AD";
+        public const string AE = @"AE";
+        public const string AF = @"AF";
+        public const string AG = @"AG";
+        public const string AI = @"AI";
+        public const string AL = @"AL";
+        public const string AM = @"AM";
+        public const string AO = @"AO";
+        public const string AQ = @"AQ";
+        public const string AR = @"AR";
+        public const string AS = @"AS";
+        public const string AT = @"AT";
+        public const string AU = @"AU";
+        public const string AW = @"AW";
+        public const string AX = @"AX";
+        public const string AZ = @"AZ";
+        public const string BA = @"BA";
+        public const string BB = @"BB";
+        public const string BD = @"BD";
+        public const string BE = @"BE";
+        public const string BF = @"BF";
+        public const string BG = @"BG";
+        public const string BH = @"BH";
+        public const string BI = @"BI";
+        public const string BJ = @"BJ";
+        public const string BL = @"BL";
+        public const string BM = @"BM";
+        public const string BN = @"BN";
+        public const string BO = @"BO";
+        public const string BQ = @"BQ";
+        public const string BR = @"BR";
+        public const string BS = @"BS";
+        public const string BT = @"BT";
+        public const string BV = @"BV";
+        public const string BW = @"BW";
+        public const string BY = @"BY";
+        public const string BZ = @"BZ";
+        public const string CA = @"CA";
+        public const string CC = @"CC";
+        public const string CD = @"CD";
+        public const string CF = @"CF";
+        public const string CG = @"CG";
+        public const string CH = @"CH";
+        public const string CI = @"CI";
+        public const string CK = @"CK";
+        public const string CL = @"CL";
+        public const string CM = @"CM";
+        public const string CN = @"CN";
+        public const string CO = @"CO";
+        public const string CR = @"CR";
+        public const string CU = @"CU";
+        public const string CV = @"CV";
+        public const string CW = @"CW";
+        public const string CX = @"CX";
+        public const string CY = @"CY";
+        public const string CZ = @"CZ";
+        public const string DE = @"DE";
+        public const string DJ = @"DJ";
+        public const string DK = @"DK";
+        public const string DM = @"DM";
+        public const string DO = @"DO";
+        public const string DZ = @"DZ";
+        public const string EC = @"EC";
+        public const string EE = @"EE";
+        public const string EG = @"EG";
+        public const string EH = @"EH";
+        public const string ER = @"ER";
+        public const string ES = @"ES";
+        public const string ET = @"ET";
+        public const string FI = @"FI";
+        public const string FJ = @"FJ";
+        public const string FK = @"FK";
+        public const string FM = @"FM";
+        public const string FO = @"FO";
+        public const string FR = @"FR";
+        public const string GA = @"GA";
+        public const string GB = @"GB";
+        public const string GD = @"GD";
+        public const string GE = @"GE";
+        public const string GF = @"GF";
+        public const string GG = @"GG";
+        public const string GH = @"GH";
+        public const string GI = @"GI";
+        public const string GL = @"GL";
+        public const string GM = @"GM";
+        public const string GN = @"GN";
+        public const string GP = @"GP";
+        public const string GQ = @"GQ";
+        public const string GR = @"GR";
+        public const string GS = @"GS";
+        public const string GT = @"GT";
+        public const string GU = @"GU";
+        public const string GW = @"GW";
+        public const string GY = @"GY";
+        public const string HK = @"HK";
+        public const string HM = @"HM";
+        public const string HN = @"HN";
+        public const string HR = @"HR";
+        public const string HT = @"HT";
+        public const string HU = @"HU";
+        public const string ID = @"ID";
+        public const string IE = @"IE";
+        public const string IL = @"IL";
+        public const string IM = @"IM";
+        public const string IN = @"IN";
+        public const string IO = @"IO";
+        public const string IQ = @"IQ";
+        public const string IR = @"IR";
+        public const string IS = @"IS";
+        public const string IT = @"IT";
+        public const string JE = @"JE";
+        public const string JM = @"JM";
+        public const string JO = @"JO";
+        public const string JP = @"JP";
+        public const string KE = @"KE";
+        public const string KG = @"KG";
+        public const string KH = @"KH";
+        public const string KI = @"KI";
+        public const string KM = @"KM";
+        public const string KN = @"KN";
+        public const string KP = @"KP";
+        public const string KR = @"KR";
+        public const string KW = @"KW";
+        public const string KY = @"KY";
+        public const string KZ = @"KZ";
+        public const string LA = @"LA";
+        public const string LB = @"LB";
+        public const string LC = @"LC";
+        public const string LI = @"LI";
+        public const string LK = @"LK";
+        public const string LR = @"LR";
+        public const string LS = @"LS";
+        public const string LT = @"LT";
+        public const string LU = @"LU";
+        public const string LV = @"LV";
+        public const string LY = @"LY";
+        public const string MA = @"MA";
+        public const string MC = @"MC";
+        public const string MD = @"MD";
+        public const string ME = @"ME";
+        public const string MF = @"MF";
+        public const string MG = @"MG";
+        public const string MH = @"MH";
+        public const string MK = @"MK";
+        public const string ML = @"ML";
+        public const string MM = @"MM";
+        public const string MN = @"MN";
+        public const string MO = @"MO";
+        public const string MP = @"MP";
+        public const string MQ = @"MQ";
+        public const string MR = @"MR";
+        public const string MS = @"MS";
+        public const string MT = @"MT";
+        public const string MU = @"MU";
+        public const string MV = @"MV";
+        public const string MW = @"MW";
+        public const string MX = @"MX";
+        public const string MY = @"MY";
+        public const string MZ = @"MZ";
+        public const string NA = @"NA";
+        public const string NC = @"NC";
+        public const string NE = @"NE";
+        public const string NF = @"NF";
+        public const string NG = @"NG";
+        public const string NI = @"NI";
+        public const string NL = @"NL";
+        public const string NO = @"NO";
+        public const string NP = @"NP";
+        public const string NR = @"NR";
+        public const string NU = @"NU";
+        public const string NZ = @"NZ";
+        public const string OM = @"OM";
+        public const string PA = @"PA";
+        public const string PE = @"PE";
+        public const string PF = @"PF";
+        public const string PG = @"PG";
+        public const string PH = @"PH";
+        public const string PK = @"PK";
+        public const string PL = @"PL";
+        public const string PM = @"PM";
+        public const string PN = @"PN";
+        public const string PR = @"PR";
+        public const string PS = @"PS";
+        public const string PT = @"PT";
+        public const string PW = @"PW";
+        public const string PY = @"PY";
+        public const string QA = @"QA";
+        public const string RE = @"RE";
+        public const string RO = @"RO";
+        public const string RS = @"RS";
+        public const string RU = @"RU";
+        public const string RW = @"RW";
+        public const string SA = @"SA";
+        public const string SB = @"SB";
+        public const string SC = @"SC";
+        public const string SD = @"SD";
+        public const string SE = @"SE";
+        public const string SG = @"SG";
+        public const string SH = @"SH";
+        public const string SI = @"SI";
+        public const string SJ = @"SJ";
+        public const string SK = @"SK";
+        public const string SL = @"SL";
+        public const string SM = @"SM";
+        public const string SN = @"SN";
+        public const string SO = @"SO";
+        public const string SR = @"SR";
+        public const string SS = @"SS";
+        public const string ST = @"ST";
+        public const string SV = @"SV";
+        public const string SX = @"SX";
+        public const string SY = @"SY";
+        public const string SZ = @"SZ";
+        public const string TC = @"TC";
+        public const string TD = @"TD";
+        public const string TF = @"TF";
+        public const string TG = @"TG";
+        public const string TH = @"TH";
+        public const string TJ = @"TJ";
+        public const string TK = @"TK";
+        public const string TL = @"TL";
+        public const string TM = @"TM";
+        public const string TN = @"TN";
+        public const string TO = @"TO";
+        public const string TR = @"TR";
+        public const string TT = @"TT";
+        public const string TV = @"TV";
+        public const string TW = @"TW";
+        public const string TZ = @"TZ";
+        public const string UA = @"UA";
+        public const string UG = @"UG";
+        public const string UM = @"UM";
+        public const string US = @"US";
+        public const string UY = @"UY";
+        public const string UZ = @"UZ";
+        public const string VA = @"VA";
+        public const string VC = @"VC";
+        public const string VE = @"VE";
+        public const string VG = @"VG";
+        public const string VI = @"VI";
+        public const string VN = @"VN";
+        public const string VU = @"VU";
+        public const string WF = @"WF";
+        public const string WS = @"WS";
+        public const string XT = @"XT";
+        public const string YE = @"YE";
+        public const string YT = @"YT";
+        public const string ZA = @"ZA";
+        public const string ZM = @"ZM";
+        public const string ZW = @"ZW";
+        public const string ZZ = @"ZZ";
+    }
+
     ///<summary>
     ///Indicates the associated currency for an amount of money.
     ///
@@ -6165,6 +6813,192 @@ namespace square
         ZMW,
     }
 
+    public static class CurrencyStringValues
+    {
+        public const string AED = @"AED";
+        public const string AFN = @"AFN";
+        public const string ALL = @"ALL";
+        public const string AMD = @"AMD";
+        public const string ANG = @"ANG";
+        public const string AOA = @"AOA";
+        public const string ARS = @"ARS";
+        public const string AUD = @"AUD";
+        public const string AWG = @"AWG";
+        public const string AZN = @"AZN";
+        public const string BAM = @"BAM";
+        public const string BBD = @"BBD";
+        public const string BDT = @"BDT";
+        public const string BGN = @"BGN";
+        public const string BHD = @"BHD";
+        public const string BIF = @"BIF";
+        public const string BMD = @"BMD";
+        public const string BND = @"BND";
+        public const string BOB = @"BOB";
+        public const string BOV = @"BOV";
+        public const string BRL = @"BRL";
+        public const string BSD = @"BSD";
+        public const string BTC = @"BTC";
+        public const string BTN = @"BTN";
+        public const string BWP = @"BWP";
+        public const string BYR = @"BYR";
+        public const string BZD = @"BZD";
+        public const string CAD = @"CAD";
+        public const string CDF = @"CDF";
+        public const string CHE = @"CHE";
+        public const string CHF = @"CHF";
+        public const string CHW = @"CHW";
+        public const string CLF = @"CLF";
+        public const string CLP = @"CLP";
+        public const string CNY = @"CNY";
+        public const string COP = @"COP";
+        public const string COU = @"COU";
+        public const string CRC = @"CRC";
+        public const string CUC = @"CUC";
+        public const string CUP = @"CUP";
+        public const string CVE = @"CVE";
+        public const string CZK = @"CZK";
+        public const string DJF = @"DJF";
+        public const string DKK = @"DKK";
+        public const string DOP = @"DOP";
+        public const string DZD = @"DZD";
+        public const string EGP = @"EGP";
+        public const string ERN = @"ERN";
+        public const string ETB = @"ETB";
+        public const string EUR = @"EUR";
+        public const string FJD = @"FJD";
+        public const string FKP = @"FKP";
+        public const string GBP = @"GBP";
+        public const string GEL = @"GEL";
+        public const string GHS = @"GHS";
+        public const string GIP = @"GIP";
+        public const string GMD = @"GMD";
+        public const string GNF = @"GNF";
+        public const string GTQ = @"GTQ";
+        public const string GYD = @"GYD";
+        public const string HKD = @"HKD";
+        public const string HNL = @"HNL";
+        public const string HRK = @"HRK";
+        public const string HTG = @"HTG";
+        public const string HUF = @"HUF";
+        public const string IDR = @"IDR";
+        public const string ILS = @"ILS";
+        public const string INR = @"INR";
+        public const string IQD = @"IQD";
+        public const string IRR = @"IRR";
+        public const string ISK = @"ISK";
+        public const string JMD = @"JMD";
+        public const string JOD = @"JOD";
+        public const string JPY = @"JPY";
+        public const string KES = @"KES";
+        public const string KGS = @"KGS";
+        public const string KHR = @"KHR";
+        public const string KMF = @"KMF";
+        public const string KPW = @"KPW";
+        public const string KRW = @"KRW";
+        public const string KWD = @"KWD";
+        public const string KYD = @"KYD";
+        public const string KZT = @"KZT";
+        public const string LAK = @"LAK";
+        public const string LBP = @"LBP";
+        public const string LKR = @"LKR";
+        public const string LRD = @"LRD";
+        public const string LSL = @"LSL";
+        public const string LTL = @"LTL";
+        public const string LVL = @"LVL";
+        public const string LYD = @"LYD";
+        public const string MAD = @"MAD";
+        public const string MDL = @"MDL";
+        public const string MGA = @"MGA";
+        public const string MKD = @"MKD";
+        public const string MMK = @"MMK";
+        public const string MNT = @"MNT";
+        public const string MOP = @"MOP";
+        public const string MRO = @"MRO";
+        public const string MUR = @"MUR";
+        public const string MVR = @"MVR";
+        public const string MWK = @"MWK";
+        public const string MXN = @"MXN";
+        public const string MXV = @"MXV";
+        public const string MYR = @"MYR";
+        public const string MZN = @"MZN";
+        public const string NAD = @"NAD";
+        public const string NGN = @"NGN";
+        public const string NIO = @"NIO";
+        public const string NOK = @"NOK";
+        public const string NPR = @"NPR";
+        public const string NZD = @"NZD";
+        public const string OMR = @"OMR";
+        public const string PAB = @"PAB";
+        public const string PEN = @"PEN";
+        public const string PGK = @"PGK";
+        public const string PHP = @"PHP";
+        public const string PKR = @"PKR";
+        public const string PLN = @"PLN";
+        public const string PYG = @"PYG";
+        public const string QAR = @"QAR";
+        public const string RON = @"RON";
+        public const string RSD = @"RSD";
+        public const string RUB = @"RUB";
+        public const string RWF = @"RWF";
+        public const string SAR = @"SAR";
+        public const string SBD = @"SBD";
+        public const string SCR = @"SCR";
+        public const string SDG = @"SDG";
+        public const string SEK = @"SEK";
+        public const string SGD = @"SGD";
+        public const string SHP = @"SHP";
+        public const string SLL = @"SLL";
+        public const string SOS = @"SOS";
+        public const string SRD = @"SRD";
+        public const string SSP = @"SSP";
+        public const string STD = @"STD";
+        public const string SVC = @"SVC";
+        public const string SYP = @"SYP";
+        public const string SZL = @"SZL";
+        public const string THB = @"THB";
+        public const string TJS = @"TJS";
+        public const string TMT = @"TMT";
+        public const string TND = @"TND";
+        public const string TOP = @"TOP";
+        public const string TRY = @"TRY";
+        public const string TTD = @"TTD";
+        public const string TWD = @"TWD";
+        public const string TZS = @"TZS";
+        public const string UAH = @"UAH";
+        public const string UGX = @"UGX";
+        public const string UNKNOWN_CURRENCY = @"UNKNOWN_CURRENCY";
+        public const string USD = @"USD";
+        public const string USN = @"USN";
+        public const string USS = @"USS";
+        public const string UYI = @"UYI";
+        public const string UYU = @"UYU";
+        public const string UZS = @"UZS";
+        public const string VEF = @"VEF";
+        public const string VND = @"VND";
+        public const string VUV = @"VUV";
+        public const string WST = @"WST";
+        public const string XAF = @"XAF";
+        public const string XAG = @"XAG";
+        public const string XAU = @"XAU";
+        public const string XBA = @"XBA";
+        public const string XBB = @"XBB";
+        public const string XBC = @"XBC";
+        public const string XBD = @"XBD";
+        public const string XCD = @"XCD";
+        public const string XDR = @"XDR";
+        public const string XOF = @"XOF";
+        public const string XPD = @"XPD";
+        public const string XPF = @"XPF";
+        public const string XPT = @"XPT";
+        public const string XTS = @"XTS";
+        public const string XUS = @"XUS";
+        public const string XXX = @"XXX";
+        public const string YER = @"YER";
+        public const string ZAR = @"ZAR";
+        public const string ZMK = @"ZMK";
+        public const string ZMW = @"ZMW";
+    }
+
     ///<summary>
     ///Indicates the associated currency for an amount of money. Values correspond to
     ///[ISO 4217](https://wikipedia.org/wiki/ISO_4217), with the exception of BTC (Bitcoin).
@@ -6897,6 +7731,191 @@ namespace square
         ZMW,
     }
 
+    public static class CurrencyCodeStringValues
+    {
+        public const string AED = @"AED";
+        public const string AFN = @"AFN";
+        public const string ALL = @"ALL";
+        public const string AMD = @"AMD";
+        public const string ANG = @"ANG";
+        public const string AOA = @"AOA";
+        public const string ARS = @"ARS";
+        public const string AUD = @"AUD";
+        public const string AWG = @"AWG";
+        public const string AZN = @"AZN";
+        public const string BAM = @"BAM";
+        public const string BBD = @"BBD";
+        public const string BDT = @"BDT";
+        public const string BGN = @"BGN";
+        public const string BHD = @"BHD";
+        public const string BIF = @"BIF";
+        public const string BMD = @"BMD";
+        public const string BND = @"BND";
+        public const string BOB = @"BOB";
+        public const string BOV = @"BOV";
+        public const string BRL = @"BRL";
+        public const string BSD = @"BSD";
+        public const string BTC = @"BTC";
+        public const string BTN = @"BTN";
+        public const string BWP = @"BWP";
+        public const string BYR = @"BYR";
+        public const string BZD = @"BZD";
+        public const string CAD = @"CAD";
+        public const string CDF = @"CDF";
+        public const string CHE = @"CHE";
+        public const string CHF = @"CHF";
+        public const string CHW = @"CHW";
+        public const string CLF = @"CLF";
+        public const string CLP = @"CLP";
+        public const string CNY = @"CNY";
+        public const string COP = @"COP";
+        public const string COU = @"COU";
+        public const string CRC = @"CRC";
+        public const string CUC = @"CUC";
+        public const string CUP = @"CUP";
+        public const string CVE = @"CVE";
+        public const string CZK = @"CZK";
+        public const string DJF = @"DJF";
+        public const string DKK = @"DKK";
+        public const string DOP = @"DOP";
+        public const string DZD = @"DZD";
+        public const string EGP = @"EGP";
+        public const string ERN = @"ERN";
+        public const string ETB = @"ETB";
+        public const string EUR = @"EUR";
+        public const string FJD = @"FJD";
+        public const string FKP = @"FKP";
+        public const string GBP = @"GBP";
+        public const string GEL = @"GEL";
+        public const string GHS = @"GHS";
+        public const string GIP = @"GIP";
+        public const string GMD = @"GMD";
+        public const string GNF = @"GNF";
+        public const string GTQ = @"GTQ";
+        public const string GYD = @"GYD";
+        public const string HKD = @"HKD";
+        public const string HNL = @"HNL";
+        public const string HRK = @"HRK";
+        public const string HTG = @"HTG";
+        public const string HUF = @"HUF";
+        public const string IDR = @"IDR";
+        public const string ILS = @"ILS";
+        public const string INR = @"INR";
+        public const string IQD = @"IQD";
+        public const string IRR = @"IRR";
+        public const string ISK = @"ISK";
+        public const string JMD = @"JMD";
+        public const string JOD = @"JOD";
+        public const string JPY = @"JPY";
+        public const string KES = @"KES";
+        public const string KGS = @"KGS";
+        public const string KHR = @"KHR";
+        public const string KMF = @"KMF";
+        public const string KPW = @"KPW";
+        public const string KRW = @"KRW";
+        public const string KWD = @"KWD";
+        public const string KYD = @"KYD";
+        public const string KZT = @"KZT";
+        public const string LAK = @"LAK";
+        public const string LBP = @"LBP";
+        public const string LKR = @"LKR";
+        public const string LRD = @"LRD";
+        public const string LSL = @"LSL";
+        public const string LTL = @"LTL";
+        public const string LVL = @"LVL";
+        public const string LYD = @"LYD";
+        public const string MAD = @"MAD";
+        public const string MDL = @"MDL";
+        public const string MGA = @"MGA";
+        public const string MKD = @"MKD";
+        public const string MMK = @"MMK";
+        public const string MNT = @"MNT";
+        public const string MOP = @"MOP";
+        public const string MRO = @"MRO";
+        public const string MUR = @"MUR";
+        public const string MVR = @"MVR";
+        public const string MWK = @"MWK";
+        public const string MXN = @"MXN";
+        public const string MXV = @"MXV";
+        public const string MYR = @"MYR";
+        public const string MZN = @"MZN";
+        public const string NAD = @"NAD";
+        public const string NGN = @"NGN";
+        public const string NIO = @"NIO";
+        public const string NOK = @"NOK";
+        public const string NPR = @"NPR";
+        public const string NZD = @"NZD";
+        public const string OMR = @"OMR";
+        public const string PAB = @"PAB";
+        public const string PEN = @"PEN";
+        public const string PGK = @"PGK";
+        public const string PHP = @"PHP";
+        public const string PKR = @"PKR";
+        public const string PLN = @"PLN";
+        public const string PYG = @"PYG";
+        public const string QAR = @"QAR";
+        public const string RON = @"RON";
+        public const string RSD = @"RSD";
+        public const string RUB = @"RUB";
+        public const string RWF = @"RWF";
+        public const string SAR = @"SAR";
+        public const string SBD = @"SBD";
+        public const string SCR = @"SCR";
+        public const string SDG = @"SDG";
+        public const string SEK = @"SEK";
+        public const string SGD = @"SGD";
+        public const string SHP = @"SHP";
+        public const string SLL = @"SLL";
+        public const string SOS = @"SOS";
+        public const string SRD = @"SRD";
+        public const string SSP = @"SSP";
+        public const string STD = @"STD";
+        public const string SVC = @"SVC";
+        public const string SYP = @"SYP";
+        public const string SZL = @"SZL";
+        public const string THB = @"THB";
+        public const string TJS = @"TJS";
+        public const string TMT = @"TMT";
+        public const string TND = @"TND";
+        public const string TOP = @"TOP";
+        public const string TRY = @"TRY";
+        public const string TTD = @"TTD";
+        public const string TWD = @"TWD";
+        public const string TZS = @"TZS";
+        public const string UAH = @"UAH";
+        public const string UGX = @"UGX";
+        public const string USD = @"USD";
+        public const string USN = @"USN";
+        public const string USS = @"USS";
+        public const string UYI = @"UYI";
+        public const string UYU = @"UYU";
+        public const string UZS = @"UZS";
+        public const string VEF = @"VEF";
+        public const string VND = @"VND";
+        public const string VUV = @"VUV";
+        public const string WST = @"WST";
+        public const string XAF = @"XAF";
+        public const string XAG = @"XAG";
+        public const string XAU = @"XAU";
+        public const string XBA = @"XBA";
+        public const string XBB = @"XBB";
+        public const string XBC = @"XBC";
+        public const string XBD = @"XBD";
+        public const string XCD = @"XCD";
+        public const string XDR = @"XDR";
+        public const string XOF = @"XOF";
+        public const string XPD = @"XPD";
+        public const string XPF = @"XPF";
+        public const string XPT = @"XPT";
+        public const string XTS = @"XTS";
+        public const string XUS = @"XUS";
+        public const string XXX = @"XXX";
+        public const string YER = @"YER";
+        public const string ZAR = @"ZAR";
+        public const string ZMK = @"ZMK";
+        public const string ZMW = @"ZMW";
+    }
+
     ///<summary>
     ///Indicates the associated currency for an amount of money.
     ///
@@ -7088,6 +8107,192 @@ namespace square
         ZMW,
     }
 
+    public static class CurrencyInputStringValues
+    {
+        public const string AED = @"AED";
+        public const string AFN = @"AFN";
+        public const string ALL = @"ALL";
+        public const string AMD = @"AMD";
+        public const string ANG = @"ANG";
+        public const string AOA = @"AOA";
+        public const string ARS = @"ARS";
+        public const string AUD = @"AUD";
+        public const string AWG = @"AWG";
+        public const string AZN = @"AZN";
+        public const string BAM = @"BAM";
+        public const string BBD = @"BBD";
+        public const string BDT = @"BDT";
+        public const string BGN = @"BGN";
+        public const string BHD = @"BHD";
+        public const string BIF = @"BIF";
+        public const string BMD = @"BMD";
+        public const string BND = @"BND";
+        public const string BOB = @"BOB";
+        public const string BOV = @"BOV";
+        public const string BRL = @"BRL";
+        public const string BSD = @"BSD";
+        public const string BTC = @"BTC";
+        public const string BTN = @"BTN";
+        public const string BWP = @"BWP";
+        public const string BYR = @"BYR";
+        public const string BZD = @"BZD";
+        public const string CAD = @"CAD";
+        public const string CDF = @"CDF";
+        public const string CHE = @"CHE";
+        public const string CHF = @"CHF";
+        public const string CHW = @"CHW";
+        public const string CLF = @"CLF";
+        public const string CLP = @"CLP";
+        public const string CNY = @"CNY";
+        public const string COP = @"COP";
+        public const string COU = @"COU";
+        public const string CRC = @"CRC";
+        public const string CUC = @"CUC";
+        public const string CUP = @"CUP";
+        public const string CVE = @"CVE";
+        public const string CZK = @"CZK";
+        public const string DJF = @"DJF";
+        public const string DKK = @"DKK";
+        public const string DOP = @"DOP";
+        public const string DZD = @"DZD";
+        public const string EGP = @"EGP";
+        public const string ERN = @"ERN";
+        public const string ETB = @"ETB";
+        public const string EUR = @"EUR";
+        public const string FJD = @"FJD";
+        public const string FKP = @"FKP";
+        public const string GBP = @"GBP";
+        public const string GEL = @"GEL";
+        public const string GHS = @"GHS";
+        public const string GIP = @"GIP";
+        public const string GMD = @"GMD";
+        public const string GNF = @"GNF";
+        public const string GTQ = @"GTQ";
+        public const string GYD = @"GYD";
+        public const string HKD = @"HKD";
+        public const string HNL = @"HNL";
+        public const string HRK = @"HRK";
+        public const string HTG = @"HTG";
+        public const string HUF = @"HUF";
+        public const string IDR = @"IDR";
+        public const string ILS = @"ILS";
+        public const string INR = @"INR";
+        public const string IQD = @"IQD";
+        public const string IRR = @"IRR";
+        public const string ISK = @"ISK";
+        public const string JMD = @"JMD";
+        public const string JOD = @"JOD";
+        public const string JPY = @"JPY";
+        public const string KES = @"KES";
+        public const string KGS = @"KGS";
+        public const string KHR = @"KHR";
+        public const string KMF = @"KMF";
+        public const string KPW = @"KPW";
+        public const string KRW = @"KRW";
+        public const string KWD = @"KWD";
+        public const string KYD = @"KYD";
+        public const string KZT = @"KZT";
+        public const string LAK = @"LAK";
+        public const string LBP = @"LBP";
+        public const string LKR = @"LKR";
+        public const string LRD = @"LRD";
+        public const string LSL = @"LSL";
+        public const string LTL = @"LTL";
+        public const string LVL = @"LVL";
+        public const string LYD = @"LYD";
+        public const string MAD = @"MAD";
+        public const string MDL = @"MDL";
+        public const string MGA = @"MGA";
+        public const string MKD = @"MKD";
+        public const string MMK = @"MMK";
+        public const string MNT = @"MNT";
+        public const string MOP = @"MOP";
+        public const string MRO = @"MRO";
+        public const string MUR = @"MUR";
+        public const string MVR = @"MVR";
+        public const string MWK = @"MWK";
+        public const string MXN = @"MXN";
+        public const string MXV = @"MXV";
+        public const string MYR = @"MYR";
+        public const string MZN = @"MZN";
+        public const string NAD = @"NAD";
+        public const string NGN = @"NGN";
+        public const string NIO = @"NIO";
+        public const string NOK = @"NOK";
+        public const string NPR = @"NPR";
+        public const string NZD = @"NZD";
+        public const string OMR = @"OMR";
+        public const string PAB = @"PAB";
+        public const string PEN = @"PEN";
+        public const string PGK = @"PGK";
+        public const string PHP = @"PHP";
+        public const string PKR = @"PKR";
+        public const string PLN = @"PLN";
+        public const string PYG = @"PYG";
+        public const string QAR = @"QAR";
+        public const string RON = @"RON";
+        public const string RSD = @"RSD";
+        public const string RUB = @"RUB";
+        public const string RWF = @"RWF";
+        public const string SAR = @"SAR";
+        public const string SBD = @"SBD";
+        public const string SCR = @"SCR";
+        public const string SDG = @"SDG";
+        public const string SEK = @"SEK";
+        public const string SGD = @"SGD";
+        public const string SHP = @"SHP";
+        public const string SLL = @"SLL";
+        public const string SOS = @"SOS";
+        public const string SRD = @"SRD";
+        public const string SSP = @"SSP";
+        public const string STD = @"STD";
+        public const string SVC = @"SVC";
+        public const string SYP = @"SYP";
+        public const string SZL = @"SZL";
+        public const string THB = @"THB";
+        public const string TJS = @"TJS";
+        public const string TMT = @"TMT";
+        public const string TND = @"TND";
+        public const string TOP = @"TOP";
+        public const string TRY = @"TRY";
+        public const string TTD = @"TTD";
+        public const string TWD = @"TWD";
+        public const string TZS = @"TZS";
+        public const string UAH = @"UAH";
+        public const string UGX = @"UGX";
+        public const string UNKNOWN_CURRENCY = @"UNKNOWN_CURRENCY";
+        public const string USD = @"USD";
+        public const string USN = @"USN";
+        public const string USS = @"USS";
+        public const string UYI = @"UYI";
+        public const string UYU = @"UYU";
+        public const string UZS = @"UZS";
+        public const string VEF = @"VEF";
+        public const string VND = @"VND";
+        public const string VUV = @"VUV";
+        public const string WST = @"WST";
+        public const string XAF = @"XAF";
+        public const string XAG = @"XAG";
+        public const string XAU = @"XAU";
+        public const string XBA = @"XBA";
+        public const string XBB = @"XBB";
+        public const string XBC = @"XBC";
+        public const string XBD = @"XBD";
+        public const string XCD = @"XCD";
+        public const string XDR = @"XDR";
+        public const string XOF = @"XOF";
+        public const string XPD = @"XPD";
+        public const string XPF = @"XPF";
+        public const string XPT = @"XPT";
+        public const string XTS = @"XTS";
+        public const string XUS = @"XUS";
+        public const string XXX = @"XXX";
+        public const string YER = @"YER";
+        public const string ZAR = @"ZAR";
+        public const string ZMK = @"ZMK";
+        public const string ZMW = @"ZMW";
+    }
+
     ///<summary>
     ///References to Customers subgraph entities
     ///
@@ -7232,6 +8437,15 @@ namespace square
         SECOND,
     }
 
+    public static class DateTimeUnitStringValues
+    {
+        public const string DAY = @"DAY";
+        public const string HOUR = @"HOUR";
+        public const string MILLISECOND = @"MILLISECOND";
+        public const string MINUTE = @"MINUTE";
+        public const string SECOND = @"SECOND";
+    }
+
     ///<summary>
     ///Indicates the specific day of the week.
     ///</summary>
@@ -7267,6 +8481,17 @@ namespace square
         WED,
     }
 
+    public static class DayOfWeekStringValues
+    {
+        public const string FRI = @"FRI";
+        public const string MON = @"MON";
+        public const string SAT = @"SAT";
+        public const string SUN = @"SUN";
+        public const string THU = @"THU";
+        public const string TUE = @"TUE";
+        public const string WED = @"WED";
+    }
+
     ///<summary>
     ///The brand used for a `WALLET` payment.
     ///</summary>
@@ -7276,6 +8501,14 @@ namespace square
         CASH_APP,
         PAYPAY,
         UNKNOWN,
+    }
+
+    public static class DigitalWalletPaymentBrandStringValues
+    {
+        public const string ALIPAY = @"ALIPAY";
+        public const string CASH_APP = @"CASH_APP";
+        public const string PAYPAY = @"PAYPAY";
+        public const string UNKNOWN = @"UNKNOWN";
     }
 
     ///<summary>
@@ -7308,6 +8541,14 @@ namespace square
         CAPTURED,
         FAILED,
         VOIDED,
+    }
+
+    public static class DigitalWalletPaymentStatusStringValues
+    {
+        public const string AUTHORIZED = @"AUTHORIZED";
+        public const string CAPTURED = @"CAPTURED";
+        public const string FAILED = @"FAILED";
+        public const string VOIDED = @"VOIDED";
     }
 
     ///<summary>
@@ -7372,6 +8613,19 @@ namespace square
         ///A United States customary unit of 3 feet.
         ///</summary>
         YARD,
+    }
+
+    public static class DistanceUnitStringValues
+    {
+        public const string CENTIMETER = @"CENTIMETER";
+        public const string FOOT = @"FOOT";
+        public const string INCH = @"INCH";
+        public const string KILOMETER = @"KILOMETER";
+        public const string METER = @"METER";
+        public const string MILE = @"MILE";
+        public const string MILLIMETER = @"MILLIMETER";
+        public const string NAUTICAL_MILE = @"NAUTICAL_MILE";
+        public const string YARD = @"YARD";
     }
 
     ///<summary>
@@ -7459,6 +8713,18 @@ namespace square
         ///An error occurred while attempting to process a refund.
         ///</summary>
         REFUND_ERROR,
+    }
+
+    public static class ErrorCategoryStringValues
+    {
+        public const string API_ERROR = @"API_ERROR";
+        public const string AUTHENTICATION_ERROR = @"AUTHENTICATION_ERROR";
+        public const string EXTERNAL_VENDOR_ERROR = @"EXTERNAL_VENDOR_ERROR";
+        public const string INVALID_REQUEST_ERROR = @"INVALID_REQUEST_ERROR";
+        public const string MERCHANT_SUBSCRIPTION_ERROR = @"MERCHANT_SUBSCRIPTION_ERROR";
+        public const string PAYMENT_METHOD_ERROR = @"PAYMENT_METHOD_ERROR";
+        public const string RATE_LIMIT_ERROR = @"RATE_LIMIT_ERROR";
+        public const string REFUND_ERROR = @"REFUND_ERROR";
     }
 
     ///<summary>
@@ -8226,6 +9492,193 @@ namespace square
         VOICE_FAILURE,
     }
 
+    public static class ErrorCodeStringValues
+    {
+        public const string ACCESS_TOKEN_EXPIRED = @"ACCESS_TOKEN_EXPIRED";
+        public const string ACCESS_TOKEN_REVOKED = @"ACCESS_TOKEN_REVOKED";
+        public const string ACCOUNT_UNUSABLE = @"ACCOUNT_UNUSABLE";
+        public const string ADDRESS_VERIFICATION_FAILURE = @"ADDRESS_VERIFICATION_FAILURE";
+        public const string ALLOWABLE_PIN_TRIES_EXCEEDED = @"ALLOWABLE_PIN_TRIES_EXCEEDED";
+        public const string AMOUNT_TOO_HIGH = @"AMOUNT_TOO_HIGH";
+        public const string API_VERSION_INCOMPATIBLE = @"API_VERSION_INCOMPATIBLE";
+        public const string APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND = @"APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND";
+        public const string APPLE_TTP_PIN_TOKEN = @"APPLE_TTP_PIN_TOKEN";
+        public const string APPLICATION_DISABLED = @"APPLICATION_DISABLED";
+        public const string ARRAY_EMPTY = @"ARRAY_EMPTY";
+        public const string ARRAY_LENGTH_TOO_LONG = @"ARRAY_LENGTH_TOO_LONG";
+        public const string ARRAY_LENGTH_TOO_SHORT = @"ARRAY_LENGTH_TOO_SHORT";
+        public const string BAD_CERTIFICATE = @"BAD_CERTIFICATE";
+        public const string BAD_EXPIRATION = @"BAD_EXPIRATION";
+        public const string BAD_GATEWAY = @"BAD_GATEWAY";
+        public const string BAD_REQUEST = @"BAD_REQUEST";
+        public const string BLOCKED_BY_BLOCKLIST = @"BLOCKED_BY_BLOCKLIST";
+        public const string BUYER_NOT_FOUND = @"BUYER_NOT_FOUND";
+        public const string BUYER_REFUSED_PAYMENT = @"BUYER_REFUSED_PAYMENT";
+        public const string CALCULATE_FULFILLMENT_RATES_FULFILLMENT_TYPE_NOT_SUPPORTED = @"CALCULATE_FULFILLMENT_RATES_FULFILLMENT_TYPE_NOT_SUPPORTED";
+        public const string CALCULATE_FULFILLMENT_RATES_INVALID_RECIPIENT_ADDRESS = @"CALCULATE_FULFILLMENT_RATES_INVALID_RECIPIENT_ADDRESS";
+        public const string CALCULATE_FULFILLMENT_RATES_NO_PROFILES_CONFIGURED = @"CALCULATE_FULFILLMENT_RATES_NO_PROFILES_CONFIGURED";
+        public const string CALCULATE_FULFILLMENT_RATES_SHIPMENT_DESTINATION_NOT_CONFIGURED = @"CALCULATE_FULFILLMENT_RATES_SHIPMENT_DESTINATION_NOT_CONFIGURED";
+        public const string CARDHOLDER_INSUFFICIENT_PERMISSIONS = @"CARDHOLDER_INSUFFICIENT_PERMISSIONS";
+        public const string CARD_DECLINED = @"CARD_DECLINED";
+        public const string CARD_DECLINED_CALL_ISSUER = @"CARD_DECLINED_CALL_ISSUER";
+        public const string CARD_DECLINED_VERIFICATION_REQUIRED = @"CARD_DECLINED_VERIFICATION_REQUIRED";
+        public const string CARD_EXPIRED = @"CARD_EXPIRED";
+        public const string CARD_MISMATCH = @"CARD_MISMATCH";
+        public const string CARD_NOT_SUPPORTED = @"CARD_NOT_SUPPORTED";
+        public const string CARD_PRESENCE_REQUIRED = @"CARD_PRESENCE_REQUIRED";
+        public const string CARD_PROCESSING_NOT_ENABLED = @"CARD_PROCESSING_NOT_ENABLED";
+        public const string CARD_TOKEN_EXPIRED = @"CARD_TOKEN_EXPIRED";
+        public const string CARD_TOKEN_USED = @"CARD_TOKEN_USED";
+        public const string CHECKOUT_EXPIRED = @"CHECKOUT_EXPIRED";
+        public const string CHIP_INSERTION_REQUIRED = @"CHIP_INSERTION_REQUIRED";
+        public const string CLIENT_CLOSED_REQUEST = @"CLIENT_CLOSED_REQUEST";
+        public const string CLIENT_DISABLED = @"CLIENT_DISABLED";
+        public const string CLIENT_NOT_SUPPORTED = @"CLIENT_NOT_SUPPORTED";
+        public const string CONFLICT = @"CONFLICT";
+        public const string CONFLICTING_PARAMETERS = @"CONFLICTING_PARAMETERS";
+        public const string CURRENCY_MISMATCH = @"CURRENCY_MISMATCH";
+        public const string CUSTOMER_MISSING_EMAIL = @"CUSTOMER_MISSING_EMAIL";
+        public const string CUSTOMER_MISSING_NAME = @"CUSTOMER_MISSING_NAME";
+        public const string CUSTOMER_NOT_FOUND = @"CUSTOMER_NOT_FOUND";
+        public const string CVV_FAILURE = @"CVV_FAILURE";
+        public const string DELAYED_TRANSACTION_CANCELED = @"DELAYED_TRANSACTION_CANCELED";
+        public const string DELAYED_TRANSACTION_CAPTURED = @"DELAYED_TRANSACTION_CAPTURED";
+        public const string DELAYED_TRANSACTION_EXPIRED = @"DELAYED_TRANSACTION_EXPIRED";
+        public const string DELAYED_TRANSACTION_FAILED = @"DELAYED_TRANSACTION_FAILED";
+        public const string DEPRECATED_FIELD_SET = @"DEPRECATED_FIELD_SET";
+        public const string EXPECTED_ARRAY = @"EXPECTED_ARRAY";
+        public const string EXPECTED_BASE64_ENCODED_BYTE_ARRAY = @"EXPECTED_BASE64_ENCODED_BYTE_ARRAY";
+        public const string EXPECTED_BOOLEAN = @"EXPECTED_BOOLEAN";
+        public const string EXPECTED_FLOAT = @"EXPECTED_FLOAT";
+        public const string EXPECTED_INTEGER = @"EXPECTED_INTEGER";
+        public const string EXPECTED_JSON_BODY = @"EXPECTED_JSON_BODY";
+        public const string EXPECTED_MAP = @"EXPECTED_MAP";
+        public const string EXPECTED_OBJECT = @"EXPECTED_OBJECT";
+        public const string EXPECTED_STRING = @"EXPECTED_STRING";
+        public const string EXPIRATION_FAILURE = @"EXPIRATION_FAILURE";
+        public const string FORBIDDEN = @"FORBIDDEN";
+        public const string FULFILLMENT_PREFERENCES_ASSIGNMENT_IS_IMMUTABLE = @"FULFILLMENT_PREFERENCES_ASSIGNMENT_IS_IMMUTABLE";
+        public const string FULFILLMENT_PREFERENCES_CONFLICTING_ASSIGNMENT_TYPE = @"FULFILLMENT_PREFERENCES_CONFLICTING_ASSIGNMENT_TYPE";
+        public const string FULFILLMENT_PREFERENCES_FULFILLMENT_SCHEDULE_NOT_ALLOWED = @"FULFILLMENT_PREFERENCES_FULFILLMENT_SCHEDULE_NOT_ALLOWED";
+        public const string FULFILLMENT_PREFERENCES_INVALID_FULFILLMENT_AVAILABILITY_WINDOW = @"FULFILLMENT_PREFERENCES_INVALID_FULFILLMENT_AVAILABILITY_WINDOW";
+        public const string FULFILLMENT_PREFERENCES_INVALID_SCHEDULING_DATETIME = @"FULFILLMENT_PREFERENCES_INVALID_SCHEDULING_DATETIME";
+        public const string FULFILLMENT_PREFERENCES_RESTRICTED_DATE_NOT_UNIQUE = @"FULFILLMENT_PREFERENCES_RESTRICTED_DATE_NOT_UNIQUE";
+        public const string GATEWAY_TIMEOUT = @"GATEWAY_TIMEOUT";
+        public const string GENERIC_DECLINE = @"GENERIC_DECLINE";
+        public const string GIFT_CARD_AVAILABLE_AMOUNT = @"GIFT_CARD_AVAILABLE_AMOUNT";
+        public const string GIFT_CARD_BUYER_DAILY_LIMIT_REACHED = @"GIFT_CARD_BUYER_DAILY_LIMIT_REACHED";
+        public const string GIFT_CARD_INVALID_AMOUNT = @"GIFT_CARD_INVALID_AMOUNT";
+        public const string GIFT_CARD_MAX_VALUE_REACHED = @"GIFT_CARD_MAX_VALUE_REACHED";
+        public const string GIFT_CARD_MERCHANT_MAX_OUTSTANDING_BALANCE_REACHED = @"GIFT_CARD_MERCHANT_MAX_OUTSTANDING_BALANCE_REACHED";
+        public const string GIFT_CARD_VALUE_ADDITION_LIMIT_REACHED = @"GIFT_CARD_VALUE_ADDITION_LIMIT_REACHED";
+        public const string GONE = @"GONE";
+        public const string HTTPS_ONLY = @"HTTPS_ONLY";
+        public const string IDEMPOTENCY_KEY_REUSED = @"IDEMPOTENCY_KEY_REUSED";
+        public const string INCORRECT_TYPE = @"INCORRECT_TYPE";
+        public const string INSUFFICIENT_FUNDS = @"INSUFFICIENT_FUNDS";
+        public const string INSUFFICIENT_INVENTORY = @"INSUFFICIENT_INVENTORY";
+        public const string INSUFFICIENT_PERMISSIONS = @"INSUFFICIENT_PERMISSIONS";
+        public const string INSUFFICIENT_PERMISSIONS_FOR_REFUND = @"INSUFFICIENT_PERMISSIONS_FOR_REFUND";
+        public const string INSUFFICIENT_SCOPES = @"INSUFFICIENT_SCOPES";
+        public const string INTERNAL_SERVER_ERROR = @"INTERNAL_SERVER_ERROR";
+        public const string INVALID_ACCOUNT = @"INVALID_ACCOUNT";
+        public const string INVALID_ARRAY_VALUE = @"INVALID_ARRAY_VALUE";
+        public const string INVALID_CARD = @"INVALID_CARD";
+        public const string INVALID_CARD_DATA = @"INVALID_CARD_DATA";
+        public const string INVALID_CONTENT_TYPE = @"INVALID_CONTENT_TYPE";
+        public const string INVALID_CURSOR = @"INVALID_CURSOR";
+        public const string INVALID_DATE = @"INVALID_DATE";
+        public const string INVALID_EMAIL_ADDRESS = @"INVALID_EMAIL_ADDRESS";
+        public const string INVALID_ENCRYPTED_CARD = @"INVALID_ENCRYPTED_CARD";
+        public const string INVALID_ENUM_VALUE = @"INVALID_ENUM_VALUE";
+        public const string INVALID_EXPIRATION = @"INVALID_EXPIRATION";
+        public const string INVALID_EXPIRATION_DATE = @"INVALID_EXPIRATION_DATE";
+        public const string INVALID_EXPIRATION_YEAR = @"INVALID_EXPIRATION_YEAR";
+        public const string INVALID_FEES = @"INVALID_FEES";
+        public const string INVALID_FORM_VALUE = @"INVALID_FORM_VALUE";
+        public const string INVALID_LOCATION = @"INVALID_LOCATION";
+        public const string INVALID_PAUSE_LENGTH = @"INVALID_PAUSE_LENGTH";
+        public const string INVALID_PHONE_NUMBER = @"INVALID_PHONE_NUMBER";
+        public const string INVALID_PIN = @"INVALID_PIN";
+        public const string INVALID_POSTAL_CODE = @"INVALID_POSTAL_CODE";
+        public const string INVALID_SORT_ORDER = @"INVALID_SORT_ORDER";
+        public const string INVALID_SQUARE_VERSION_FORMAT = @"INVALID_SQUARE_VERSION_FORMAT";
+        public const string INVALID_TIME = @"INVALID_TIME";
+        public const string INVALID_TIMEZONE = @"INVALID_TIMEZONE";
+        public const string INVALID_TIME_RANGE = @"INVALID_TIME_RANGE";
+        public const string INVALID_URL = @"INVALID_URL";
+        public const string INVALID_VALUE = @"INVALID_VALUE";
+        public const string INVALID_VERIFICATION_CODE = @"INVALID_VERIFICATION_CODE";
+        public const string JOB_TEMPLATE_NAME_TAKEN = @"JOB_TEMPLATE_NAME_TAKEN";
+        public const string LOCATION_MISMATCH = @"LOCATION_MISMATCH";
+        public const string MANUALLY_ENTERED_PAYMENT_NOT_SUPPORTED = @"MANUALLY_ENTERED_PAYMENT_NOT_SUPPORTED";
+        public const string MAP_KEY_LENGTH_TOO_LONG = @"MAP_KEY_LENGTH_TOO_LONG";
+        public const string MAP_KEY_LENGTH_TOO_SHORT = @"MAP_KEY_LENGTH_TOO_SHORT";
+        public const string MERCHANT_SUBSCRIPTION_NOT_FOUND = @"MERCHANT_SUBSCRIPTION_NOT_FOUND";
+        public const string METHOD_NOT_ALLOWED = @"METHOD_NOT_ALLOWED";
+        public const string MISSING_ACCOUNT_TYPE = @"MISSING_ACCOUNT_TYPE";
+        public const string MISSING_PIN = @"MISSING_PIN";
+        public const string MISSING_REQUIRED_PARAMETER = @"MISSING_REQUIRED_PARAMETER";
+        public const string NOT_ACCEPTABLE = @"NOT_ACCEPTABLE";
+        public const string NOT_FOUND = @"NOT_FOUND";
+        public const string NOT_IMPLEMENTED = @"NOT_IMPLEMENTED";
+        public const string NO_FIELDS_SET = @"NO_FIELDS_SET";
+        public const string ONE_INSTRUMENT_EXPECTED = @"ONE_INSTRUMENT_EXPECTED";
+        public const string ORDER_ALREADY_USED = @"ORDER_ALREADY_USED";
+        public const string ORDER_EXPIRED = @"ORDER_EXPIRED";
+        public const string ORDER_TOO_MANY_CATALOG_OBJECTS = @"ORDER_TOO_MANY_CATALOG_OBJECTS";
+        public const string PAN_FAILURE = @"PAN_FAILURE";
+        public const string PAYMENT_AMOUNT_MISMATCH = @"PAYMENT_AMOUNT_MISMATCH";
+        public const string PAYMENT_LIMIT_EXCEEDED = @"PAYMENT_LIMIT_EXCEEDED";
+        public const string PAYMENT_NOT_REFUNDABLE = @"PAYMENT_NOT_REFUNDABLE";
+        public const string PLAID_ERROR = @"PLAID_ERROR";
+        public const string PLAID_ERROR_ITEM_LOGIN_REQUIRED = @"PLAID_ERROR_ITEM_LOGIN_REQUIRED";
+        public const string PLAID_ERROR_RATE_LIMIT = @"PLAID_ERROR_RATE_LIMIT";
+        public const string PRICE_MISMATCH = @"PRICE_MISMATCH";
+        public const string RATE_LIMITED = @"RATE_LIMITED";
+        public const string REFUND_ALREADY_PENDING = @"REFUND_ALREADY_PENDING";
+        public const string REFUND_AMOUNT_INVALID = @"REFUND_AMOUNT_INVALID";
+        public const string REFUND_DECLINED = @"REFUND_DECLINED";
+        public const string REQUEST_ENTITY_TOO_LARGE = @"REQUEST_ENTITY_TOO_LARGE";
+        public const string REQUEST_TIMEOUT = @"REQUEST_TIMEOUT";
+        public const string RESERVATION_DECLINED = @"RESERVATION_DECLINED";
+        public const string RETIRED_FIELD_SET = @"RETIRED_FIELD_SET";
+        public const string SANDBOX_NOT_SUPPORTED = @"SANDBOX_NOT_SUPPORTED";
+        public const string SERVICE_UNAVAILABLE = @"SERVICE_UNAVAILABLE";
+        public const string SESSION_EXPIRED = @"SESSION_EXPIRED";
+        public const string SOURCE_EXPIRED = @"SOURCE_EXPIRED";
+        public const string SOURCE_USED = @"SOURCE_USED";
+        public const string TEMPORARY_ERROR = @"TEMPORARY_ERROR";
+        public const string TOO_MANY_MAP_ENTRIES = @"TOO_MANY_MAP_ENTRIES";
+        public const string TRANSACTION_LIMIT = @"TRANSACTION_LIMIT";
+        public const string UNAUTHORIZED = @"UNAUTHORIZED";
+        public const string UNEXPECTED_VALUE = @"UNEXPECTED_VALUE";
+        public const string UNKNOWN_BODY_PARAMETER = @"UNKNOWN_BODY_PARAMETER";
+        public const string UNKNOWN_QUERY_PARAMETER = @"UNKNOWN_QUERY_PARAMETER";
+        public const string UNPROCESSABLE_ENTITY = @"UNPROCESSABLE_ENTITY";
+        public const string UNREACHABLE_URL = @"UNREACHABLE_URL";
+        public const string UNSUPPORTED_CARD_BRAND = @"UNSUPPORTED_CARD_BRAND";
+        public const string UNSUPPORTED_COUNTRY = @"UNSUPPORTED_COUNTRY";
+        public const string UNSUPPORTED_CURRENCY = @"UNSUPPORTED_CURRENCY";
+        public const string UNSUPPORTED_ENTRY_METHOD = @"UNSUPPORTED_ENTRY_METHOD";
+        public const string UNSUPPORTED_INSTRUMENT_TYPE = @"UNSUPPORTED_INSTRUMENT_TYPE";
+        public const string UNSUPPORTED_LOYALTY_REWARD_TIER = @"UNSUPPORTED_LOYALTY_REWARD_TIER";
+        public const string UNSUPPORTED_MEDIA_TYPE = @"UNSUPPORTED_MEDIA_TYPE";
+        public const string UNSUPPORTED_SOURCE_TYPE = @"UNSUPPORTED_SOURCE_TYPE";
+        public const string V1_ACCESS_TOKEN = @"V1_ACCESS_TOKEN";
+        public const string V1_APPLICATION = @"V1_APPLICATION";
+        public const string VALUE_EMPTY = @"VALUE_EMPTY";
+        public const string VALUE_REGEX_MISMATCH = @"VALUE_REGEX_MISMATCH";
+        public const string VALUE_TOO_HIGH = @"VALUE_TOO_HIGH";
+        public const string VALUE_TOO_LONG = @"VALUE_TOO_LONG";
+        public const string VALUE_TOO_LOW = @"VALUE_TOO_LOW";
+        public const string VALUE_TOO_SHORT = @"VALUE_TOO_SHORT";
+        public const string VERIFY_AVS_FAILURE = @"VERIFY_AVS_FAILURE";
+        public const string VERIFY_CVV_FAILURE = @"VERIFY_CVV_FAILURE";
+        public const string VERSION_MISMATCH = @"VERSION_MISMATCH";
+        public const string VOICE_FAILURE = @"VOICE_FAILURE";
+    }
+
     ///<summary>
     ///Indicates which products matched by a CatalogPricingRule
     ///will be excluded if the pricing rule uses an exclude set.
@@ -8248,6 +9701,12 @@ namespace square
         ///This guarantees that the most expensive product is purchased at full price.
         ///</summary>
         MOST_EXPENSIVE,
+    }
+
+    public static class ExcludeStrategyStringValues
+    {
+        public const string LEAST_EXPENSIVE = @"LEAST_EXPENSIVE";
+        public const string MOST_EXPENSIVE = @"MOST_EXPENSIVE";
     }
 
     ///<summary>
@@ -8330,6 +9789,22 @@ namespace square
         ///Use for house accounts, store credit, and so forth.
         ///</summary>
         STORED_BALANCE,
+    }
+
+    public static class ExternalPaymentTypeStringValues
+    {
+        public const string BANK_TRANSFER = @"BANK_TRANSFER";
+        public const string CARD = @"CARD";
+        public const string CHECK = @"CHECK";
+        public const string CRYPTO = @"CRYPTO";
+        public const string EMONEY = @"EMONEY";
+        public const string EXTERNAL = @"EXTERNAL";
+        public const string FOOD_VOUCHER = @"FOOD_VOUCHER";
+        public const string OTHER = @"OTHER";
+        public const string OTHER_GIFT_CARD = @"OTHER_GIFT_CARD";
+        public const string SOCIAL = @"SOCIAL";
+        public const string SQUARE_CASH = @"SQUARE_CASH";
+        public const string STORED_BALANCE = @"STORED_BALANCE";
     }
 
     ///<summary>
@@ -8523,6 +9998,12 @@ namespace square
         LOW_QUANTITY,
     }
 
+    public static class InventoryAlertTypeStringValues
+    {
+        public const string NONE = @"NONE";
+        public const string LOW_QUANTITY = @"LOW_QUANTITY";
+    }
+
     ///<summary>
     ///Represents a single physical count, inventory, adjustment, or transfer
     ///that is part of the history of inventory changes for a particular
@@ -8616,6 +10097,13 @@ namespace square
         ///The change occurred as part of an inventory transfer.
         ///</summary>
         TRANSFER,
+    }
+
+    public static class InventoryChangeTypeStringValues
+    {
+        public const string PHYSICAL_COUNT = @"PHYSICAL_COUNT";
+        public const string ADJUSTMENT = @"ADJUSTMENT";
+        public const string TRANSFER = @"TRANSFER";
     }
 
     ///<summary>
@@ -8836,6 +10324,26 @@ namespace square
         IN_TRANSIT,
     }
 
+    public static class InventoryStateStringValues
+    {
+        public const string CUSTOM = @"CUSTOM";
+        public const string IN_STOCK = @"IN_STOCK";
+        public const string SOLD = @"SOLD";
+        public const string RETURNED_BY_CUSTOMER = @"RETURNED_BY_CUSTOMER";
+        public const string RESERVED_FOR_SALE = @"RESERVED_FOR_SALE";
+        public const string SOLD_ONLINE = @"SOLD_ONLINE";
+        public const string ORDERED_FROM_VENDOR = @"ORDERED_FROM_VENDOR";
+        public const string RECEIVED_FROM_VENDOR = @"RECEIVED_FROM_VENDOR";
+        public const string IN_TRANSIT_TO = @"IN_TRANSIT_TO";
+        public const string NONE = @"NONE";
+        public const string WASTE = @"WASTE";
+        public const string UNLINKED_RETURN = @"UNLINKED_RETURN";
+        public const string COMPOSED = @"COMPOSED";
+        public const string DECOMPOSED = @"DECOMPOSED";
+        public const string SUPPORTED_BY_NEWER_VERSION = @"SUPPORTED_BY_NEWER_VERSION";
+        public const string IN_TRANSIT = @"IN_TRANSIT";
+    }
+
     ///<summary>
     ///Represents the transfer of a quantity of product inventory at a
     ///particular time from one location to another.
@@ -9029,6 +10537,12 @@ namespace square
         CREDIT_CARD_PROCESSING,
     }
 
+    public static class LocationCapabilityStringValues
+    {
+        public const string AUTOMATIC_TRANSFERS = @"AUTOMATIC_TRANSFERS";
+        public const string CREDIT_CARD_PROCESSING = @"CREDIT_CARD_PROCESSING";
+    }
+
     ///<summary>
     ///A list of Location.
     ///
@@ -9062,6 +10576,12 @@ namespace square
         INACTIVE,
     }
 
+    public static class LocationStatusStringValues
+    {
+        public const string ACTIVE = @"ACTIVE";
+        public const string INACTIVE = @"INACTIVE";
+    }
+
     ///<summary>
     ///A location's type.
     ///</summary>
@@ -9075,6 +10595,12 @@ namespace square
         ///A place of business with a physical location.
         ///</summary>
         PHYSICAL,
+    }
+
+    public static class LocationTypeStringValues
+    {
+        public const string MOBILE = @"MOBILE";
+        public const string PHYSICAL = @"PHYSICAL";
     }
 
     ///<summary>
@@ -9138,6 +10664,18 @@ namespace square
         METRIC_SQUARE_KILOMETER,
     }
 
+    public static class MeasurementUnitAreaStringValues
+    {
+        public const string IMPERIAL_ACRE = @"IMPERIAL_ACRE";
+        public const string IMPERIAL_SQUARE_INCH = @"IMPERIAL_SQUARE_INCH";
+        public const string IMPERIAL_SQUARE_FOOT = @"IMPERIAL_SQUARE_FOOT";
+        public const string IMPERIAL_SQUARE_YARD = @"IMPERIAL_SQUARE_YARD";
+        public const string IMPERIAL_SQUARE_MILE = @"IMPERIAL_SQUARE_MILE";
+        public const string METRIC_SQUARE_CENTIMETER = @"METRIC_SQUARE_CENTIMETER";
+        public const string METRIC_SQUARE_METER = @"METRIC_SQUARE_METER";
+        public const string METRIC_SQUARE_KILOMETER = @"METRIC_SQUARE_KILOMETER";
+    }
+
     ///<summary>
     ///MeasurementUnitAreaValue
     ///
@@ -9174,6 +10712,11 @@ namespace square
         ///The generic unit.
         ///</summary>
         UNIT,
+    }
+
+    public static class MeasurementUnitGenericStringValues
+    {
+        public const string UNIT = @"UNIT";
     }
 
     ///<summary>
@@ -9228,6 +10771,18 @@ namespace square
         METRIC_KILOMETER,
     }
 
+    public static class MeasurementUnitLengthStringValues
+    {
+        public const string IMPERIAL_INCH = @"IMPERIAL_INCH";
+        public const string IMPERIAL_FOOT = @"IMPERIAL_FOOT";
+        public const string IMPERIAL_YARD = @"IMPERIAL_YARD";
+        public const string IMPERIAL_MILE = @"IMPERIAL_MILE";
+        public const string METRIC_MILLIMETER = @"METRIC_MILLIMETER";
+        public const string METRIC_CENTIMETER = @"METRIC_CENTIMETER";
+        public const string METRIC_METER = @"METRIC_METER";
+        public const string METRIC_KILOMETER = @"METRIC_KILOMETER";
+    }
+
     ///<summary>
     ///MeasurementUnitLengthValue
     ///
@@ -9266,6 +10821,15 @@ namespace square
         ///The time is measured in days.
         ///</summary>
         GENERIC_DAY,
+    }
+
+    public static class MeasurementUnitTimeStringValues
+    {
+        public const string GENERIC_MILLISECOND = @"GENERIC_MILLISECOND";
+        public const string GENERIC_SECOND = @"GENERIC_SECOND";
+        public const string GENERIC_MINUTE = @"GENERIC_MINUTE";
+        public const string GENERIC_HOUR = @"GENERIC_HOUR";
+        public const string GENERIC_DAY = @"GENERIC_DAY";
     }
 
     ///<summary>
@@ -9310,6 +10874,16 @@ namespace square
         ///The unit details are contained in the generic_unit field.
         ///</summary>
         TYPE_GENERIC,
+    }
+
+    public static class MeasurementUnitUnitTypeStringValues
+    {
+        public const string TYPE_CUSTOM = @"TYPE_CUSTOM";
+        public const string TYPE_AREA = @"TYPE_AREA";
+        public const string TYPE_LENGTH = @"TYPE_LENGTH";
+        public const string TYPE_VOLUME = @"TYPE_VOLUME";
+        public const string TYPE_WEIGHT = @"TYPE_WEIGHT";
+        public const string TYPE_GENERIC = @"TYPE_GENERIC";
     }
 
     ///<summary>
@@ -9363,6 +10937,21 @@ namespace square
         METRIC_LITER,
     }
 
+    public static class MeasurementUnitVolumeStringValues
+    {
+        public const string GENERIC_FLUID_OUNCE = @"GENERIC_FLUID_OUNCE";
+        public const string GENERIC_SHOT = @"GENERIC_SHOT";
+        public const string GENERIC_CUP = @"GENERIC_CUP";
+        public const string GENERIC_PINT = @"GENERIC_PINT";
+        public const string GENERIC_QUART = @"GENERIC_QUART";
+        public const string GENERIC_GALLON = @"GENERIC_GALLON";
+        public const string IMPERIAL_CUBIC_INCH = @"IMPERIAL_CUBIC_INCH";
+        public const string IMPERIAL_CUBIC_FOOT = @"IMPERIAL_CUBIC_FOOT";
+        public const string IMPERIAL_CUBIC_YARD = @"IMPERIAL_CUBIC_YARD";
+        public const string METRIC_MILLILITER = @"METRIC_MILLILITER";
+        public const string METRIC_LITER = @"METRIC_LITER";
+    }
+
     ///<summary>
     ///MeasurementUnitVolumeValue
     ///
@@ -9405,6 +10994,16 @@ namespace square
         ///The weight is measured in kilograms.
         ///</summary>
         METRIC_KILOGRAM,
+    }
+
+    public static class MeasurementUnitWeightStringValues
+    {
+        public const string IMPERIAL_WEIGHT_OUNCE = @"IMPERIAL_WEIGHT_OUNCE";
+        public const string IMPERIAL_POUND = @"IMPERIAL_POUND";
+        public const string IMPERIAL_STONE = @"IMPERIAL_STONE";
+        public const string METRIC_MILLIGRAM = @"METRIC_MILLIGRAM";
+        public const string METRIC_GRAM = @"METRIC_GRAM";
+        public const string METRIC_KILOGRAM = @"METRIC_KILOGRAM";
     }
 
     ///<summary>
@@ -9493,6 +11092,14 @@ namespace square
         UNKNOWN_CAPABILITY,
     }
 
+    public static class MerchantPublicCapabilityStringValues
+    {
+        public const string IS_SANDBOX = @"IS_SANDBOX";
+        public const string POINT_OF_SALE = @"POINT_OF_SALE";
+        public const string SELL_CANNABIS = @"SELL_CANNABIS";
+        public const string UNKNOWN_CAPABILITY = @"UNKNOWN_CAPABILITY";
+    }
+
     ///<summary>
     ///Merchant status.
     ///</summary>
@@ -9507,6 +11114,13 @@ namespace square
         ///A functionally limited merchant account. The merchant can only have limited interaction via Square APIs. The merchant cannot log in or access the seller dashboard.
         ///</summary>
         INACTIVE,
+    }
+
+    public static class MerchantStatusStringValues
+    {
+        public const string ACTIVE = @"ACTIVE";
+        public const string DELETED = @"DELETED";
+        public const string INACTIVE = @"INACTIVE";
     }
 
     ///<summary>
@@ -9618,6 +11232,33 @@ namespace square
         TIMECARDS_READ,
         TIMECARDS_SETTINGS_READ,
         VENDOR_READ,
+    }
+
+    public static class OAuthScopeStringValues
+    {
+        public const string APPOINTMENTS_ALL_READ = @"APPOINTMENTS_ALL_READ";
+        public const string APPOINTMENTS_READ = @"APPOINTMENTS_READ";
+        public const string BANK_ACCOUNTS_READ = @"BANK_ACCOUNTS_READ";
+        public const string CASH_DRAWER_READ = @"CASH_DRAWER_READ";
+        public const string CUSTOMERS_READ = @"CUSTOMERS_READ";
+        public const string DISPUTES_READ = @"DISPUTES_READ";
+        public const string EMPLOYEES_READ = @"EMPLOYEES_READ";
+        public const string GIFTCARDS_READ = @"GIFTCARDS_READ";
+        public const string INVENTORY_READ = @"INVENTORY_READ";
+        public const string INVOICES_READ = @"INVOICES_READ";
+        public const string ITEMS_READ = @"ITEMS_READ";
+        public const string LOYALTY_READ = @"LOYALTY_READ";
+        public const string MERCHANT_PROFILE_READ = @"MERCHANT_PROFILE_READ";
+        public const string NONE = @"NONE";
+        public const string ONLINE_STORE_SITE_READ = @"ONLINE_STORE_SITE_READ";
+        public const string ONLINE_STORE_SNIPPETS_READ = @"ONLINE_STORE_SNIPPETS_READ";
+        public const string ORDERS_READ = @"ORDERS_READ";
+        public const string PAYMENTS_READ = @"PAYMENTS_READ";
+        public const string SETTLEMENTS_READ = @"SETTLEMENTS_READ";
+        public const string SUBSCRIPTIONS_READ = @"SUBSCRIPTIONS_READ";
+        public const string TIMECARDS_READ = @"TIMECARDS_READ";
+        public const string TIMECARDS_SETTINGS_READ = @"TIMECARDS_SETTINGS_READ";
+        public const string VENDOR_READ = @"VENDOR_READ";
     }
 
     ///<summary>
@@ -9932,6 +11573,13 @@ namespace square
         PENDING,
     }
 
+    public static class OrderBankAccountTenderStatusStringValues
+    {
+        public const string COMPLETED = @"COMPLETED";
+        public const string FAILED = @"FAILED";
+        public const string PENDING = @"PENDING";
+    }
+
     ///<summary>
     ///Represents the details of a tender with `type` `BUY_NOW_PAY_LATER`.
     ///Permissions: ORDERS_READ
@@ -10017,6 +11665,12 @@ namespace square
         OTHER_BRAND,
     }
 
+    public static class OrderBuyNowPayLaterTenderBrandStringValues
+    {
+        public const string AFTERPAY = @"AFTERPAY";
+        public const string OTHER_BRAND = @"OTHER_BRAND";
+    }
+
     public enum OrderBuyNowPayLaterTenderStatus
     {
         ///<summary>
@@ -10035,6 +11689,14 @@ namespace square
         ///The buy now pay later payment was authorized and subsequently voided (i.e., canceled).
         ///</summary>
         VOIDED,
+    }
+
+    public static class OrderBuyNowPayLaterTenderStatusStringValues
+    {
+        public const string AUTHORIZED = @"AUTHORIZED";
+        public const string CAPTURED = @"CAPTURED";
+        public const string FAILED = @"FAILED";
+        public const string VOIDED = @"VOIDED";
     }
 
     ///<summary>
@@ -10149,6 +11811,15 @@ namespace square
         SWIPED,
     }
 
+    public static class OrderCardTenderEntryMethodStringValues
+    {
+        public const string CONTACTLESS = @"CONTACTLESS";
+        public const string EMV = @"EMV";
+        public const string KEYED = @"KEYED";
+        public const string ON_FILE = @"ON_FILE";
+        public const string SWIPED = @"SWIPED";
+    }
+
     ///<summary>
     ///Indicates the card transaction's current status.
     ///</summary>
@@ -10170,6 +11841,14 @@ namespace square
         ///The card transaction was authorized and subsequently voided (i.e., canceled).
         ///</summary>
         VOIDED,
+    }
+
+    public static class OrderCardTenderStatusStringValues
+    {
+        public const string AUTHORIZED = @"AUTHORIZED";
+        public const string CAPTURED = @"CAPTURED";
+        public const string FAILED = @"FAILED";
+        public const string VOIDED = @"VOIDED";
     }
 
     ///<summary>
@@ -10523,6 +12202,12 @@ namespace square
         SCHEDULED,
     }
 
+    public static class OrderDeliveryScheduleTypeStringValues
+    {
+        public const string ASAP = @"ASAP";
+        public const string SCHEDULED = @"SCHEDULED";
+    }
+
     ///<summary>
     ///Contains details about how to fulfill this order.Orders can only be created with at most one fulfillment using the API.
     ///However, orders returned by the Orders API might contain multiple fulfillments because sellers can create multiple fulfillments using Square products such as Square Online.
@@ -10666,6 +12351,12 @@ namespace square
         ENTRY_LIST,
     }
 
+    public static class OrderFulfillmentLineItemApplicationStringValues
+    {
+        public const string ALL = @"ALL";
+        public const string ENTRY_LIST = @"ENTRY_LIST";
+    }
+
     ///<summary>
     ///Information about the fulfillment recipient.
     ///Permissions: ORDERS_READ
@@ -10746,6 +12437,16 @@ namespace square
         RESERVED,
     }
 
+    public static class OrderFulfillmentStateStringValues
+    {
+        public const string CANCELED = @"CANCELED";
+        public const string COMPLETED = @"COMPLETED";
+        public const string FAILED = @"FAILED";
+        public const string PREPARED = @"PREPARED";
+        public const string PROPOSED = @"PROPOSED";
+        public const string RESERVED = @"RESERVED";
+    }
+
     ///<summary>
     ///The type of fulfillment.
     ///</summary>
@@ -10763,6 +12464,13 @@ namespace square
         ///A shipping carrier to ship the fulfillment.
         ///</summary>
         SHIPMENT,
+    }
+
+    public static class OrderFulfillmentTypeStringValues
+    {
+        public const string DELIVERY = @"DELIVERY";
+        public const string PICKUP = @"PICKUP";
+        public const string SHIPMENT = @"SHIPMENT";
     }
 
     ///<summary>
@@ -11109,6 +12817,13 @@ namespace square
         OTHER_DISCOUNT_SCOPE,
     }
 
+    public static class OrderLineItemDiscountScopeStringValues
+    {
+        public const string LINE_ITEM = @"LINE_ITEM";
+        public const string ORDER = @"ORDER";
+        public const string OTHER_DISCOUNT_SCOPE = @"OTHER_DISCOUNT_SCOPE";
+    }
+
     ///<summary>
     ///Indicates how the discount is applied to the associated line item or order.
     ///</summary>
@@ -11144,6 +12859,15 @@ namespace square
         VARIABLE_PERCENTAGE,
     }
 
+    public static class OrderLineItemDiscountTypeStringValues
+    {
+        public const string FIXED_AMOUNT = @"FIXED_AMOUNT";
+        public const string FIXED_PERCENTAGE = @"FIXED_PERCENTAGE";
+        public const string UNKNOWN_DISCOUNT = @"UNKNOWN_DISCOUNT";
+        public const string VARIABLE_AMOUNT = @"VARIABLE_AMOUNT";
+        public const string VARIABLE_PERCENTAGE = @"VARIABLE_PERCENTAGE";
+    }
+
     ///<summary>
     ///Represents the line item type.
     ///</summary>
@@ -11163,6 +12887,13 @@ namespace square
         ///Indicates that the line item is an itemized sale.
         ///</summary>
         ITEM,
+    }
+
+    public static class OrderLineItemItemTypeStringValues
+    {
+        public const string CUSTOM_AMOUNT = @"CUSTOM_AMOUNT";
+        public const string GIFT_CARD = @"GIFT_CARD";
+        public const string ITEM = @"ITEM";
     }
 
     ///<summary>
@@ -11393,6 +13124,13 @@ namespace square
         OTHER_TAX_SCOPE,
     }
 
+    public static class OrderLineItemTaxScopeStringValues
+    {
+        public const string LINE_ITEM = @"LINE_ITEM";
+        public const string ORDER = @"ORDER";
+        public const string OTHER_TAX_SCOPE = @"OTHER_TAX_SCOPE";
+    }
+
     ///<summary>
     ///Indicates how the tax is applied to the associated line item or order.
     ///</summary>
@@ -11417,6 +13155,13 @@ namespace square
         ///The original transaction tax type is currently not supported by the API.
         ///</summary>
         UNKNOWN_TAX,
+    }
+
+    public static class OrderLineItemTaxTypeStringValues
+    {
+        public const string ADDITIVE = @"ADDITIVE";
+        public const string INCLUSIVE = @"INCLUSIVE";
+        public const string UNKNOWN_TAX = @"UNKNOWN_TAX";
     }
 
     ///<summary>
@@ -11701,6 +13446,12 @@ namespace square
         ///Indicates that the fulfillment will be picked up at a scheduled pickup time.
         ///</summary>
         SCHEDULED,
+    }
+
+    public static class OrderPickupScheduleTypeStringValues
+    {
+        public const string ASAP = @"ASAP";
+        public const string SCHEDULED = @"SCHEDULED";
     }
 
     ///<summary>
@@ -12316,6 +14067,14 @@ namespace square
         TOTAL_PHASE,
     }
 
+    public static class OrderServiceChargeCalculationPhaseStringValues
+    {
+        public const string APPORTIONED_AMOUNT_PHASE = @"APPORTIONED_AMOUNT_PHASE";
+        public const string APPORTIONED_PERCENTAGE_PHASE = @"APPORTIONED_PERCENTAGE_PHASE";
+        public const string SUBTOTAL_PHASE = @"SUBTOTAL_PHASE";
+        public const string TOTAL_PHASE = @"TOTAL_PHASE";
+    }
+
     ///<summary>
     ///Indicates whether this is a line-item or order-level apportioned
     ///service charge.
@@ -12338,6 +14097,13 @@ namespace square
         OTHER_SERVICE_CHARGE_SCOPE,
     }
 
+    public static class OrderServiceChargeScopeStringValues
+    {
+        public const string LINE_ITEM = @"LINE_ITEM";
+        public const string ORDER = @"ORDER";
+        public const string OTHER_SERVICE_CHARGE_SCOPE = @"OTHER_SERVICE_CHARGE_SCOPE";
+    }
+
     ///<summary>
     ///Indicates whether the service charge will be treated as a value-holding line item or
     ///apportioned toward a line item.
@@ -12348,10 +14114,22 @@ namespace square
         LINE_ITEM_TREATMENT,
     }
 
+    public static class OrderServiceChargeTreatmentTypeStringValues
+    {
+        public const string APPORTIONED_TREATMENT = @"APPORTIONED_TREATMENT";
+        public const string LINE_ITEM_TREATMENT = @"LINE_ITEM_TREATMENT";
+    }
+
     public enum OrderServiceChargeType
     {
         AUTO_GRATUITY,
         CUSTOM,
+    }
+
+    public static class OrderServiceChargeTypeStringValues
+    {
+        public const string AUTO_GRATUITY = @"AUTO_GRATUITY";
+        public const string CUSTOM = @"CUSTOM";
     }
 
     ///<summary>
@@ -12496,6 +14274,16 @@ namespace square
         updatedAt_DESC,
     }
 
+    public static class OrderSortStringValues
+    {
+        public const string closedAt_ASC = @"closedAt_ASC";
+        public const string closedAt_DESC = @"closedAt_DESC";
+        public const string createdAt_ASC = @"createdAt_ASC";
+        public const string createdAt_DESC = @"createdAt_DESC";
+        public const string updatedAt_ASC = @"updatedAt_ASC";
+        public const string updatedAt_DESC = @"updatedAt_DESC";
+    }
+
     ///<summary>
     ///Represents the origination details of an order.
     ///Permissions: ORDERS_READ
@@ -12604,6 +14392,14 @@ namespace square
         VOIDED,
     }
 
+    public static class OrderSquareAccountTenderStatusStringValues
+    {
+        public const string AUTHORIZED = @"AUTHORIZED";
+        public const string CAPTURED = @"CAPTURED";
+        public const string FAILED = @"FAILED";
+        public const string VOIDED = @"VOIDED";
+    }
+
     ///<summary>
     ///The state of the order.
     ///</summary>
@@ -12627,6 +14423,14 @@ namespace square
         ///Indicates that the order is open. Open orders can be updated.
         ///</summary>
         OPEN,
+    }
+
+    public static class OrderStateStringValues
+    {
+        public const string CANCELED = @"CANCELED";
+        public const string COMPLETED = @"COMPLETED";
+        public const string DRAFT = @"DRAFT";
+        public const string OPEN = @"OPEN";
     }
 
     ///<summary>
@@ -12763,29 +14567,18 @@ namespace square
         WALLET,
     }
 
-    ///<summary>
-    ///Provides pagination-related information.
-    ///</summary>
-    public class PageInfo : GraphQLObject<PageInfo>
+    public static class OrderTenderTypeStringValues
     {
-        ///<summary>
-        ///The `Cursor` of the last edge of the current page. This can be passed in the next query as
-        ///a `after` argument to paginate forwards.
-        ///</summary>
-        public string? endCursor { get; set; }
-        ///<summary>
-        ///Indicates if there is another page of results available after the current one.
-        ///</summary>
-        public bool? hasNextPage { get; set; }
-        ///<summary>
-        ///Indicates if there is another page of results available before the current one.
-        ///</summary>
-        public bool? hasPreviousPage { get; set; }
-        ///<summary>
-        ///The `Cursor` of the first edge of the current page. This can be passed in the next query as
-        ///a `before` argument to paginate backwards.
-        ///</summary>
-        public string? startCursor { get; set; }
+        public const string BANK_ACCOUNT = @"BANK_ACCOUNT";
+        public const string BUY_NOW_PAY_LATER = @"BUY_NOW_PAY_LATER";
+        public const string CARD = @"CARD";
+        public const string CASH = @"CASH";
+        public const string NO_SALE = @"NO_SALE";
+        public const string OTHER = @"OTHER";
+        public const string SQUARE_ACCOUNT = @"SQUARE_ACCOUNT";
+        public const string SQUARE_GIFT_CARD = @"SQUARE_GIFT_CARD";
+        public const string THIRD_PARTY_CARD = @"THIRD_PARTY_CARD";
+        public const string WALLET = @"WALLET";
     }
 
     ///<summary>
@@ -13049,6 +14842,20 @@ namespace square
         VIRTUAL_TERMINAL,
     }
 
+    public static class PaymentApplicationDetailsExternalSquareProductStringValues
+    {
+        public const string APPOINTMENTS = @"APPOINTMENTS";
+        public const string ECOMMERCE_API = @"ECOMMERCE_API";
+        public const string INVOICES = @"INVOICES";
+        public const string ONLINE_STORE = @"ONLINE_STORE";
+        public const string OTHER = @"OTHER";
+        public const string RESTAURANTS = @"RESTAURANTS";
+        public const string RETAIL = @"RETAIL";
+        public const string SQUARE_POS = @"SQUARE_POS";
+        public const string TERMINAL_API = @"TERMINAL_API";
+        public const string VIRTUAL_TERMINAL = @"VIRTUAL_TERMINAL";
+    }
+
     ///<summary>
     ///Permissions: PAYMENTS_READ
     ///
@@ -13088,6 +14895,12 @@ namespace square
         THIRD_PARTY_REFUND_FEE,
     }
 
+    public static class PaymentAppProcessingFeeTypeStringValues
+    {
+        public const string THIRD_PARTY_PAYMENT_FEE = @"THIRD_PARTY_PAYMENT_FEE";
+        public const string THIRD_PARTY_REFUND_FEE = @"THIRD_PARTY_REFUND_FEE";
+    }
+
     ///<summary>
     ///Actions that can be performed on a payment.
     ///</summary>
@@ -13113,6 +14926,15 @@ namespace square
         ///The tip amount can be edited up.
         ///</summary>
         EDIT_TIP_AMOUNT_UP,
+    }
+
+    public static class PaymentCapabilityStringValues
+    {
+        public const string EDIT_AMOUNT_DOWN = @"EDIT_AMOUNT_DOWN";
+        public const string EDIT_AMOUNT_UP = @"EDIT_AMOUNT_UP";
+        public const string EDIT_DELAY_ACTION = @"EDIT_DELAY_ACTION";
+        public const string EDIT_TIP_AMOUNT_DOWN = @"EDIT_TIP_AMOUNT_DOWN";
+        public const string EDIT_TIP_AMOUNT_UP = @"EDIT_TIP_AMOUNT_UP";
     }
 
     ///<summary>
@@ -13146,6 +14968,12 @@ namespace square
     {
         CANCEL,
         COMPLETE,
+    }
+
+    public static class PaymentDelayActionStringValues
+    {
+        public const string CANCEL = @"CANCEL";
+        public const string COMPLETE = @"COMPLETE";
     }
 
     ///<summary>
@@ -13227,6 +15055,12 @@ namespace square
         ///Type used on the initial processing fee.
         ///</summary>
         INITIAL,
+    }
+
+    public static class PaymentProcessingFeeTypeStringValues
+    {
+        public const string ADJUSTMENT = @"ADJUSTMENT";
+        public const string INITIAL = @"INITIAL";
     }
 
     ///<summary>
@@ -13467,6 +15301,38 @@ namespace square
         updatedAt_DESC,
     }
 
+    public static class PaymentRefundSortOrderStringValues
+    {
+        public const string amountMoney_amount_ASC = @"amountMoney_amount_ASC";
+        public const string amountMoney_amount_DESC = @"amountMoney_amount_DESC";
+        public const string amountMoney_currency_ASC = @"amountMoney_currency_ASC";
+        public const string amountMoney_currency_DESC = @"amountMoney_currency_DESC";
+        public const string appFeeMoney_amount_ASC = @"appFeeMoney_amount_ASC";
+        public const string appFeeMoney_amount_DESC = @"appFeeMoney_amount_DESC";
+        public const string appFeeMoney_currency_ASC = @"appFeeMoney_currency_ASC";
+        public const string appFeeMoney_currency_DESC = @"appFeeMoney_currency_DESC";
+        public const string createdAt_ASC = @"createdAt_ASC";
+        public const string createdAt_DESC = @"createdAt_DESC";
+        public const string id_ASC = @"id_ASC";
+        public const string id_DESC = @"id_DESC";
+        public const string locationId_ASC = @"locationId_ASC";
+        public const string locationId_DESC = @"locationId_DESC";
+        public const string merchantId_ASC = @"merchantId_ASC";
+        public const string merchantId_DESC = @"merchantId_DESC";
+        public const string orderId_ASC = @"orderId_ASC";
+        public const string orderId_DESC = @"orderId_DESC";
+        public const string paymentId_ASC = @"paymentId_ASC";
+        public const string paymentId_DESC = @"paymentId_DESC";
+        public const string reason_ASC = @"reason_ASC";
+        public const string reason_DESC = @"reason_DESC";
+        public const string status_ASC = @"status_ASC";
+        public const string status_DESC = @"status_DESC";
+        public const string teamMemberId_ASC = @"teamMemberId_ASC";
+        public const string teamMemberId_DESC = @"teamMemberId_DESC";
+        public const string updatedAt_ASC = @"updatedAt_ASC";
+        public const string updatedAt_DESC = @"updatedAt_DESC";
+    }
+
     ///<summary>
     ///Indicates the current status of a `PaymentRefund` object.
     ///</summary>
@@ -13488,6 +15354,14 @@ namespace square
         ///The refund was rejected.
         ///</summary>
         REJECTED,
+    }
+
+    public static class PaymentRefundStatusStringValues
+    {
+        public const string COMPLETED = @"COMPLETED";
+        public const string FAILED = @"FAILED";
+        public const string PENDING = @"PENDING";
+        public const string REJECTED = @"REJECTED";
     }
 
     ///<summary>
@@ -13533,6 +15407,14 @@ namespace square
         ///Indicates Square is still evaluating the payment.
         ///</summary>
         PENDING,
+    }
+
+    public static class PaymentRiskEvaluationRiskLevelStringValues
+    {
+        public const string HIGH = @"HIGH";
+        public const string MODERATE = @"MODERATE";
+        public const string NORMAL = @"NORMAL";
+        public const string PENDING = @"PENDING";
     }
 
     ///<summary>
@@ -14222,6 +16104,180 @@ namespace square
         walletDetails_status_DESC,
     }
 
+    public static class PaymentSortOrderStringValues
+    {
+        public const string amountMoney_amount_ASC = @"amountMoney_amount_ASC";
+        public const string amountMoney_amount_DESC = @"amountMoney_amount_DESC";
+        public const string amountMoney_currency_ASC = @"amountMoney_currency_ASC";
+        public const string amountMoney_currency_DESC = @"amountMoney_currency_DESC";
+        public const string appFeeMoney_amount_ASC = @"appFeeMoney_amount_ASC";
+        public const string appFeeMoney_amount_DESC = @"appFeeMoney_amount_DESC";
+        public const string appFeeMoney_currency_ASC = @"appFeeMoney_currency_ASC";
+        public const string appFeeMoney_currency_DESC = @"appFeeMoney_currency_DESC";
+        public const string applicationDetails_applicationId_ASC = @"applicationDetails_applicationId_ASC";
+        public const string applicationDetails_applicationId_DESC = @"applicationDetails_applicationId_DESC";
+        public const string applicationDetails_squareProduct_ASC = @"applicationDetails_squareProduct_ASC";
+        public const string applicationDetails_squareProduct_DESC = @"applicationDetails_squareProduct_DESC";
+        public const string approvedMoney_amount_ASC = @"approvedMoney_amount_ASC";
+        public const string approvedMoney_amount_DESC = @"approvedMoney_amount_DESC";
+        public const string approvedMoney_currency_ASC = @"approvedMoney_currency_ASC";
+        public const string approvedMoney_currency_DESC = @"approvedMoney_currency_DESC";
+        public const string bankAccountDetails_accountOwnershipType_ASC = @"bankAccountDetails_accountOwnershipType_ASC";
+        public const string bankAccountDetails_accountOwnershipType_DESC = @"bankAccountDetails_accountOwnershipType_DESC";
+        public const string bankAccountDetails_bankName_ASC = @"bankAccountDetails_bankName_ASC";
+        public const string bankAccountDetails_bankName_DESC = @"bankAccountDetails_bankName_DESC";
+        public const string bankAccountDetails_country_ASC = @"bankAccountDetails_country_ASC";
+        public const string bankAccountDetails_country_DESC = @"bankAccountDetails_country_DESC";
+        public const string bankAccountDetails_fingerprint_ASC = @"bankAccountDetails_fingerprint_ASC";
+        public const string bankAccountDetails_fingerprint_DESC = @"bankAccountDetails_fingerprint_DESC";
+        public const string bankAccountDetails_statementDescription_ASC = @"bankAccountDetails_statementDescription_ASC";
+        public const string bankAccountDetails_statementDescription_DESC = @"bankAccountDetails_statementDescription_DESC";
+        public const string bankAccountDetails_transferType_ASC = @"bankAccountDetails_transferType_ASC";
+        public const string bankAccountDetails_transferType_DESC = @"bankAccountDetails_transferType_DESC";
+        public const string buyNowPayLaterDetails_afterpayDetails_emailAddress_ASC = @"buyNowPayLaterDetails_afterpayDetails_emailAddress_ASC";
+        public const string buyNowPayLaterDetails_afterpayDetails_emailAddress_DESC = @"buyNowPayLaterDetails_afterpayDetails_emailAddress_DESC";
+        public const string buyNowPayLaterDetails_brand_ASC = @"buyNowPayLaterDetails_brand_ASC";
+        public const string buyNowPayLaterDetails_brand_DESC = @"buyNowPayLaterDetails_brand_DESC";
+        public const string buyNowPayLaterDetails_clearpayDetails_emailAddress_ASC = @"buyNowPayLaterDetails_clearpayDetails_emailAddress_ASC";
+        public const string buyNowPayLaterDetails_clearpayDetails_emailAddress_DESC = @"buyNowPayLaterDetails_clearpayDetails_emailAddress_DESC";
+        public const string buyerEmailAddress_ASC = @"buyerEmailAddress_ASC";
+        public const string buyerEmailAddress_DESC = @"buyerEmailAddress_DESC";
+        public const string cardDetails_applicationCryptogram_ASC = @"cardDetails_applicationCryptogram_ASC";
+        public const string cardDetails_applicationCryptogram_DESC = @"cardDetails_applicationCryptogram_DESC";
+        public const string cardDetails_applicationIdentifier_ASC = @"cardDetails_applicationIdentifier_ASC";
+        public const string cardDetails_applicationIdentifier_DESC = @"cardDetails_applicationIdentifier_DESC";
+        public const string cardDetails_applicationName_ASC = @"cardDetails_applicationName_ASC";
+        public const string cardDetails_applicationName_DESC = @"cardDetails_applicationName_DESC";
+        public const string cardDetails_authResultCode_ASC = @"cardDetails_authResultCode_ASC";
+        public const string cardDetails_authResultCode_DESC = @"cardDetails_authResultCode_DESC";
+        public const string cardDetails_avsStatus_ASC = @"cardDetails_avsStatus_ASC";
+        public const string cardDetails_avsStatus_DESC = @"cardDetails_avsStatus_DESC";
+        public const string cardDetails_cardPaymentTimeline_authorizedAt_ASC = @"cardDetails_cardPaymentTimeline_authorizedAt_ASC";
+        public const string cardDetails_cardPaymentTimeline_authorizedAt_DESC = @"cardDetails_cardPaymentTimeline_authorizedAt_DESC";
+        public const string cardDetails_cardPaymentTimeline_capturedAt_ASC = @"cardDetails_cardPaymentTimeline_capturedAt_ASC";
+        public const string cardDetails_cardPaymentTimeline_capturedAt_DESC = @"cardDetails_cardPaymentTimeline_capturedAt_DESC";
+        public const string cardDetails_cardPaymentTimeline_voidedAt_ASC = @"cardDetails_cardPaymentTimeline_voidedAt_ASC";
+        public const string cardDetails_cardPaymentTimeline_voidedAt_DESC = @"cardDetails_cardPaymentTimeline_voidedAt_DESC";
+        public const string cardDetails_card_bin_ASC = @"cardDetails_card_bin_ASC";
+        public const string cardDetails_card_bin_DESC = @"cardDetails_card_bin_DESC";
+        public const string cardDetails_card_cardBrand_ASC = @"cardDetails_card_cardBrand_ASC";
+        public const string cardDetails_card_cardBrand_DESC = @"cardDetails_card_cardBrand_DESC";
+        public const string cardDetails_card_cardCoBrand_ASC = @"cardDetails_card_cardCoBrand_ASC";
+        public const string cardDetails_card_cardCoBrand_DESC = @"cardDetails_card_cardCoBrand_DESC";
+        public const string cardDetails_card_cardType_ASC = @"cardDetails_card_cardType_ASC";
+        public const string cardDetails_card_cardType_DESC = @"cardDetails_card_cardType_DESC";
+        public const string cardDetails_card_cardholderName_ASC = @"cardDetails_card_cardholderName_ASC";
+        public const string cardDetails_card_cardholderName_DESC = @"cardDetails_card_cardholderName_DESC";
+        public const string cardDetails_card_expMonth_ASC = @"cardDetails_card_expMonth_ASC";
+        public const string cardDetails_card_expMonth_DESC = @"cardDetails_card_expMonth_DESC";
+        public const string cardDetails_card_expYear_ASC = @"cardDetails_card_expYear_ASC";
+        public const string cardDetails_card_expYear_DESC = @"cardDetails_card_expYear_DESC";
+        public const string cardDetails_card_fingerprint_ASC = @"cardDetails_card_fingerprint_ASC";
+        public const string cardDetails_card_fingerprint_DESC = @"cardDetails_card_fingerprint_DESC";
+        public const string cardDetails_card_last4_ASC = @"cardDetails_card_last4_ASC";
+        public const string cardDetails_card_last4_DESC = @"cardDetails_card_last4_DESC";
+        public const string cardDetails_card_prepaidType_ASC = @"cardDetails_card_prepaidType_ASC";
+        public const string cardDetails_card_prepaidType_DESC = @"cardDetails_card_prepaidType_DESC";
+        public const string cardDetails_cvvStatus_ASC = @"cardDetails_cvvStatus_ASC";
+        public const string cardDetails_cvvStatus_DESC = @"cardDetails_cvvStatus_DESC";
+        public const string cardDetails_entryMethod_ASC = @"cardDetails_entryMethod_ASC";
+        public const string cardDetails_entryMethod_DESC = @"cardDetails_entryMethod_DESC";
+        public const string cardDetails_statementDescription_ASC = @"cardDetails_statementDescription_ASC";
+        public const string cardDetails_statementDescription_DESC = @"cardDetails_statementDescription_DESC";
+        public const string cardDetails_status_ASC = @"cardDetails_status_ASC";
+        public const string cardDetails_status_DESC = @"cardDetails_status_DESC";
+        public const string cardDetails_verificationMethod_ASC = @"cardDetails_verificationMethod_ASC";
+        public const string cardDetails_verificationMethod_DESC = @"cardDetails_verificationMethod_DESC";
+        public const string cardDetails_verificationResults_ASC = @"cardDetails_verificationResults_ASC";
+        public const string cardDetails_verificationResults_DESC = @"cardDetails_verificationResults_DESC";
+        public const string cashDetails_buyerSuppliedMoney_amount_ASC = @"cashDetails_buyerSuppliedMoney_amount_ASC";
+        public const string cashDetails_buyerSuppliedMoney_amount_DESC = @"cashDetails_buyerSuppliedMoney_amount_DESC";
+        public const string cashDetails_buyerSuppliedMoney_currency_ASC = @"cashDetails_buyerSuppliedMoney_currency_ASC";
+        public const string cashDetails_buyerSuppliedMoney_currency_DESC = @"cashDetails_buyerSuppliedMoney_currency_DESC";
+        public const string cashDetails_changeBackMoney_amount_ASC = @"cashDetails_changeBackMoney_amount_ASC";
+        public const string cashDetails_changeBackMoney_amount_DESC = @"cashDetails_changeBackMoney_amount_DESC";
+        public const string cashDetails_changeBackMoney_currency_ASC = @"cashDetails_changeBackMoney_currency_ASC";
+        public const string cashDetails_changeBackMoney_currency_DESC = @"cashDetails_changeBackMoney_currency_DESC";
+        public const string createdAt_ASC = @"createdAt_ASC";
+        public const string createdAt_DESC = @"createdAt_DESC";
+        public const string customerId_ASC = @"customerId_ASC";
+        public const string customerId_DESC = @"customerId_DESC";
+        public const string delayAction_ASC = @"delayAction_ASC";
+        public const string delayAction_DESC = @"delayAction_DESC";
+        public const string delayDuration_ASC = @"delayDuration_ASC";
+        public const string delayDuration_DESC = @"delayDuration_DESC";
+        public const string delayedUntil_ASC = @"delayedUntil_ASC";
+        public const string delayedUntil_DESC = @"delayedUntil_DESC";
+        public const string deviceDetails_deviceId_ASC = @"deviceDetails_deviceId_ASC";
+        public const string deviceDetails_deviceId_DESC = @"deviceDetails_deviceId_DESC";
+        public const string deviceDetails_deviceInstallationId_ASC = @"deviceDetails_deviceInstallationId_ASC";
+        public const string deviceDetails_deviceInstallationId_DESC = @"deviceDetails_deviceInstallationId_DESC";
+        public const string deviceDetails_deviceName_ASC = @"deviceDetails_deviceName_ASC";
+        public const string deviceDetails_deviceName_DESC = @"deviceDetails_deviceName_DESC";
+        public const string externalDetails_sourceFeeMoney_amount_ASC = @"externalDetails_sourceFeeMoney_amount_ASC";
+        public const string externalDetails_sourceFeeMoney_amount_DESC = @"externalDetails_sourceFeeMoney_amount_DESC";
+        public const string externalDetails_sourceFeeMoney_currency_ASC = @"externalDetails_sourceFeeMoney_currency_ASC";
+        public const string externalDetails_sourceFeeMoney_currency_DESC = @"externalDetails_sourceFeeMoney_currency_DESC";
+        public const string externalDetails_sourceId_ASC = @"externalDetails_sourceId_ASC";
+        public const string externalDetails_sourceId_DESC = @"externalDetails_sourceId_DESC";
+        public const string externalDetails_source_ASC = @"externalDetails_source_ASC";
+        public const string externalDetails_source_DESC = @"externalDetails_source_DESC";
+        public const string externalDetails_type_ASC = @"externalDetails_type_ASC";
+        public const string externalDetails_type_DESC = @"externalDetails_type_DESC";
+        public const string id_ASC = @"id_ASC";
+        public const string id_DESC = @"id_DESC";
+        public const string locationId_ASC = @"locationId_ASC";
+        public const string locationId_DESC = @"locationId_DESC";
+        public const string merchantId_ASC = @"merchantId_ASC";
+        public const string merchantId_DESC = @"merchantId_DESC";
+        public const string note_ASC = @"note_ASC";
+        public const string note_DESC = @"note_DESC";
+        public const string orderId_ASC = @"orderId_ASC";
+        public const string orderId_DESC = @"orderId_DESC";
+        public const string receiptNumber_ASC = @"receiptNumber_ASC";
+        public const string receiptNumber_DESC = @"receiptNumber_DESC";
+        public const string receiptUrl_ASC = @"receiptUrl_ASC";
+        public const string receiptUrl_DESC = @"receiptUrl_DESC";
+        public const string referenceId_ASC = @"referenceId_ASC";
+        public const string referenceId_DESC = @"referenceId_DESC";
+        public const string refundedMoney_amount_ASC = @"refundedMoney_amount_ASC";
+        public const string refundedMoney_amount_DESC = @"refundedMoney_amount_DESC";
+        public const string refundedMoney_currency_ASC = @"refundedMoney_currency_ASC";
+        public const string refundedMoney_currency_DESC = @"refundedMoney_currency_DESC";
+        public const string riskEvaluation_createdAt_ASC = @"riskEvaluation_createdAt_ASC";
+        public const string riskEvaluation_createdAt_DESC = @"riskEvaluation_createdAt_DESC";
+        public const string riskEvaluation_riskLevel_ASC = @"riskEvaluation_riskLevel_ASC";
+        public const string riskEvaluation_riskLevel_DESC = @"riskEvaluation_riskLevel_DESC";
+        public const string sourceType_ASC = @"sourceType_ASC";
+        public const string sourceType_DESC = @"sourceType_DESC";
+        public const string statementDescriptionIdentifier_ASC = @"statementDescriptionIdentifier_ASC";
+        public const string statementDescriptionIdentifier_DESC = @"statementDescriptionIdentifier_DESC";
+        public const string status_ASC = @"status_ASC";
+        public const string status_DESC = @"status_DESC";
+        public const string teamMemberId_ASC = @"teamMemberId_ASC";
+        public const string teamMemberId_DESC = @"teamMemberId_DESC";
+        public const string tipMoney_amount_ASC = @"tipMoney_amount_ASC";
+        public const string tipMoney_amount_DESC = @"tipMoney_amount_DESC";
+        public const string tipMoney_currency_ASC = @"tipMoney_currency_ASC";
+        public const string tipMoney_currency_DESC = @"tipMoney_currency_DESC";
+        public const string totalMoney_amount_ASC = @"totalMoney_amount_ASC";
+        public const string totalMoney_amount_DESC = @"totalMoney_amount_DESC";
+        public const string totalMoney_currency_ASC = @"totalMoney_currency_ASC";
+        public const string totalMoney_currency_DESC = @"totalMoney_currency_DESC";
+        public const string updatedAt_ASC = @"updatedAt_ASC";
+        public const string updatedAt_DESC = @"updatedAt_DESC";
+        public const string walletDetails_brand_ASC = @"walletDetails_brand_ASC";
+        public const string walletDetails_brand_DESC = @"walletDetails_brand_DESC";
+        public const string walletDetails_cashAppDetails_buyerCashtag_ASC = @"walletDetails_cashAppDetails_buyerCashtag_ASC";
+        public const string walletDetails_cashAppDetails_buyerCashtag_DESC = @"walletDetails_cashAppDetails_buyerCashtag_DESC";
+        public const string walletDetails_cashAppDetails_buyerCountryCode_ASC = @"walletDetails_cashAppDetails_buyerCountryCode_ASC";
+        public const string walletDetails_cashAppDetails_buyerCountryCode_DESC = @"walletDetails_cashAppDetails_buyerCountryCode_DESC";
+        public const string walletDetails_cashAppDetails_buyerFullName_ASC = @"walletDetails_cashAppDetails_buyerFullName_ASC";
+        public const string walletDetails_cashAppDetails_buyerFullName_DESC = @"walletDetails_cashAppDetails_buyerFullName_DESC";
+        public const string walletDetails_status_ASC = @"walletDetails_status_ASC";
+        public const string walletDetails_status_DESC = @"walletDetails_status_DESC";
+    }
+
     ///<summary>
     ///The source type for a payment.
     ///
@@ -14239,6 +16295,17 @@ namespace square
         WALLET,
     }
 
+    public static class PaymentSourceTypeStringValues
+    {
+        public const string BANK_ACCOUNT = @"BANK_ACCOUNT";
+        public const string BUY_NOW_PAY_LATER = @"BUY_NOW_PAY_LATER";
+        public const string CARD = @"CARD";
+        public const string CASH = @"CASH";
+        public const string EXTERNAL = @"EXTERNAL";
+        public const string SQUARE_ACCOUNT = @"SQUARE_ACCOUNT";
+        public const string WALLET = @"WALLET";
+    }
+
     ///<summary>
     ///Indicates the current status of a `Payment` object.
     ///</summary>
@@ -14249,6 +16316,15 @@ namespace square
         COMPLETED,
         FAILED,
         PENDING,
+    }
+
+    public static class PaymentStatusStringValues
+    {
+        public const string APPROVED = @"APPROVED";
+        public const string CANCELED = @"CANCELED";
+        public const string COMPLETED = @"COMPLETED";
+        public const string FAILED = @"FAILED";
+        public const string PENDING = @"PENDING";
     }
 
     ///<summary>
@@ -14296,6 +16372,20 @@ namespace square
         ///A Square product that does not match any other value.
         ///</summary>
         OTHER,
+    }
+
+    public static class ProductStringValues
+    {
+        public const string SQUARE_POS = @"SQUARE_POS";
+        public const string EXTERNAL_API = @"EXTERNAL_API";
+        public const string BILLING = @"BILLING";
+        public const string APPOINTMENTS = @"APPOINTMENTS";
+        public const string INVOICES = @"INVOICES";
+        public const string ONLINE_STORE = @"ONLINE_STORE";
+        public const string PAYROLL = @"PAYROLL";
+        public const string DASHBOARD = @"DASHBOARD";
+        public const string ITEM_LIBRARY_IMPORT = @"ITEM_LIBRARY_IMPORT";
+        public const string OTHER = @"OTHER";
     }
 
     ///<summary>
@@ -14439,6 +16529,14 @@ namespace square
         REJECTED,
     }
 
+    public static class RefundStatusStringValues
+    {
+        public const string APPROVED = @"APPROVED";
+        public const string FAILED = @"FAILED";
+        public const string PENDING = @"PENDING";
+        public const string REJECTED = @"REJECTED";
+    }
+
     ///<summary>
     ///A loyalty reward.
     ///
@@ -14501,10 +16599,23 @@ namespace square
         UPDATED_AT,
     }
 
+    public static class SearchOrdersSortFieldStringValues
+    {
+        public const string CLOSED_AT = @"CLOSED_AT";
+        public const string CREATED_AT = @"CREATED_AT";
+        public const string UPDATED_AT = @"UPDATED_AT";
+    }
+
     public enum SortOrder
     {
         ASC,
         DESC,
+    }
+
+    public static class SortOrderStringValues
+    {
+        public const string ASC = @"ASC";
+        public const string DESC = @"DESC";
     }
 
     ///<summary>
@@ -14565,6 +16676,22 @@ namespace square
         SQUARE_LOCAL,
     }
 
+    public static class SquareProductStringValues
+    {
+        public const string UNKNOWN_SQUARE_PRODUCT = @"UNKNOWN_SQUARE_PRODUCT";
+        public const string CONNECT_API = @"CONNECT_API";
+        public const string DASHBOARD = @"DASHBOARD";
+        public const string REGISTER_CLIENT = @"REGISTER_CLIENT";
+        public const string BUYER_DASHBOARD = @"BUYER_DASHBOARD";
+        public const string WEB = @"WEB";
+        public const string INVOICES = @"INVOICES";
+        public const string GIFT_CARD = @"GIFT_CARD";
+        public const string VIRTUAL_TERMINAL = @"VIRTUAL_TERMINAL";
+        public const string READER_SDK = @"READER_SDK";
+        public const string SQUARE_PROFILE = @"SQUARE_PROFILE";
+        public const string SQUARE_LOCAL = @"SQUARE_LOCAL";
+    }
+
     ///<summary>
     ///Determines the billing cadence of a Subscription
     ///</summary>
@@ -14622,6 +16749,23 @@ namespace square
         ///Once every two years
         ///</summary>
         EVERY_TWO_YEARS,
+    }
+
+    public static class SubscriptionCadenceStringValues
+    {
+        public const string DAILY = @"DAILY";
+        public const string WEEKLY = @"WEEKLY";
+        public const string EVERY_TWO_WEEKS = @"EVERY_TWO_WEEKS";
+        public const string THIRTY_DAYS = @"THIRTY_DAYS";
+        public const string SIXTY_DAYS = @"SIXTY_DAYS";
+        public const string NINETY_DAYS = @"NINETY_DAYS";
+        public const string MONTHLY = @"MONTHLY";
+        public const string EVERY_TWO_MONTHS = @"EVERY_TWO_MONTHS";
+        public const string QUARTERLY = @"QUARTERLY";
+        public const string EVERY_FOUR_MONTHS = @"EVERY_FOUR_MONTHS";
+        public const string EVERY_SIX_MONTHS = @"EVERY_SIX_MONTHS";
+        public const string ANNUAL = @"ANNUAL";
+        public const string EVERY_TWO_YEARS = @"EVERY_TWO_YEARS";
     }
 
     ///<summary>
@@ -14691,6 +16835,12 @@ namespace square
         RELATIVE,
     }
 
+    public static class SubscriptionPricingTypeStringValues
+    {
+        public const string STATIC = @"STATIC";
+        public const string RELATIVE = @"RELATIVE";
+    }
+
     ///<summary>
     ///When to calculate the taxes due on a cart.
     ///</summary>
@@ -14704,6 +16854,12 @@ namespace square
         ///The fee is calculated based on the payment's total.
         ///</summary>
         TAX_TOTAL_PHASE,
+    }
+
+    public static class TaxCalculationPhaseStringValues
+    {
+        public const string TAX_SUBTOTAL_PHASE = @"TAX_SUBTOTAL_PHASE";
+        public const string TAX_TOTAL_PHASE = @"TAX_TOTAL_PHASE";
     }
 
     ///<summary>
@@ -14737,6 +16893,12 @@ namespace square
         ///that total being the cost of the item and $0.09 (9 cents) being tax.
         ///</summary>
         INCLUSIVE,
+    }
+
+    public static class TaxInclusionTypeStringValues
+    {
+        public const string ADDITIVE = @"ADDITIVE";
+        public const string INCLUSIVE = @"INCLUSIVE";
     }
 
     ///<summary>
@@ -14836,6 +16998,18 @@ namespace square
         ///Indicates this type is a non-null. `ofType` is a valid field.
         ///</summary>
         NON_NULL,
+    }
+
+    public static class __TypeKindStringValues
+    {
+        public const string SCALAR = @"SCALAR";
+        public const string OBJECT = @"OBJECT";
+        public const string INTERFACE = @"INTERFACE";
+        public const string UNION = @"UNION";
+        public const string ENUM = @"ENUM";
+        public const string INPUT_OBJECT = @"INPUT_OBJECT";
+        public const string LIST = @"LIST";
+        public const string NON_NULL = @"NON_NULL";
     }
 
     ///<summary>
@@ -14973,5 +17147,28 @@ namespace square
         ///Location adjacent to an input object field definition.
         ///</summary>
         INPUT_FIELD_DEFINITION,
+    }
+
+    public static class __DirectiveLocationStringValues
+    {
+        public const string QUERY = @"QUERY";
+        public const string MUTATION = @"MUTATION";
+        public const string SUBSCRIPTION = @"SUBSCRIPTION";
+        public const string FIELD = @"FIELD";
+        public const string FRAGMENT_DEFINITION = @"FRAGMENT_DEFINITION";
+        public const string FRAGMENT_SPREAD = @"FRAGMENT_SPREAD";
+        public const string INLINE_FRAGMENT = @"INLINE_FRAGMENT";
+        public const string VARIABLE_DEFINITION = @"VARIABLE_DEFINITION";
+        public const string SCHEMA = @"SCHEMA";
+        public const string SCALAR = @"SCALAR";
+        public const string OBJECT = @"OBJECT";
+        public const string FIELD_DEFINITION = @"FIELD_DEFINITION";
+        public const string ARGUMENT_DEFINITION = @"ARGUMENT_DEFINITION";
+        public const string INTERFACE = @"INTERFACE";
+        public const string UNION = @"UNION";
+        public const string ENUM = @"ENUM";
+        public const string ENUM_VALUE = @"ENUM_VALUE";
+        public const string INPUT_OBJECT = @"INPUT_OBJECT";
+        public const string INPUT_FIELD_DEFINITION = @"INPUT_FIELD_DEFINITION";
     }
 }
