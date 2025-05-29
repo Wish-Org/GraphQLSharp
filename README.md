@@ -22,7 +22,7 @@ var options = new GraphQLTypeGeneratorOptions
         },
     EnumMembersAsString = true
 };
-var csharpCode = generator.GenerateTypesAsync(options, async introspectionQuery => await GetResponse(introspectionQuery));
+var csharpCode = generator.GenerateTypesAsync(options, async introspectionQuery => await SendGraphQLQueryAsync(introspectionQuery));
 File.WriteAllText("types.cs", csharpCode);
 ```
    
