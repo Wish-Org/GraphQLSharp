@@ -9,10 +9,6 @@ using GraphQLSharp;
 
 namespace shopify
 {
-    internal class NonNullAttribute : System.Attribute
-    {
-    }
-
     ///<summary>
     ///A checkout that was abandoned by the customer.
     ///</summary>

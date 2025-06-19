@@ -9,10 +9,6 @@ using GraphQLSharp;
 
 namespace square
 {
-    internal class NonNullAttribute : System.Attribute
-    {
-    }
-
     ///<summary>
     ///Represents a postal address in a country.
     ///For more information, see [Working with Addresses](https://developer.squareup.com/docs/build-basics/working-with-addresses).

@@ -118,9 +118,7 @@ public class GraphQLTypeGenerator
                     .AppendLine("using System.Text.Json;")
                     .AppendLine("using System.Text.Json.Serialization;")
                     .AppendLine("using GraphQLSharp;")
-                    .AppendLine($"namespace {options.Namespace} {{")
-                    .AppendLine()
-                    .AppendLine("internal class NonNullAttribute : System.Attribute {}");
+                    .AppendLine($"namespace {options.Namespace} {{");
 
         var objectTypeNameToUnionTypes = allTypes.Where(t => t.kind == GraphQLTypeKind.UNION)
                                                   .SelectMany(tUnion => tUnion.possibleTypes.Select(tObject => (tUnion, tObject)))
