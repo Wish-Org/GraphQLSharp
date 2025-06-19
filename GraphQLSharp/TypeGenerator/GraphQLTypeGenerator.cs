@@ -118,7 +118,9 @@ public class GraphQLTypeGenerator
                     .AppendLine("using System.Text.Json;")
                     .AppendLine("using System.Text.Json.Serialization;")
                     .AppendLine("using GraphQLSharp;")
-                    .AppendLine($"namespace {options.Namespace} {{");
+                    .AppendLine($"namespace {options.Namespace} {{")
+                    .AppendLine()
+                    .AppendLine("internal class NonNullAttribute : System.Attribute {}");
 
         var objectTypeNameToUnionTypes = allTypes.Where(t => t.kind == GraphQLTypeKind.UNION)
                                                   .SelectMany(tUnion => tUnion.possibleTypes.Select(tObject => (tUnion, tObject)))
@@ -298,6 +300,8 @@ public class GraphQLTypeGenerator
                         .AppendLine(GenerateDescriptionComment(f.description));
         if (f.isDeprecated)
             str.AppendLine($"[Obsolete({SymbolDisplay.FormatLiteral(f.deprecationReason.TrimEnd(), true)})]");
+        if (f.type.kind == GraphQLTypeKind.NON_NULL)
+            str.AppendLine($"[NonNull]");
         str.AppendLine($"public {this.GenerateTypeName(f.type, options, f.name, containingType)}? {EscapeCSharpKeyword(f.name)} {{ {(containingType.kind == GraphQLTypeKind.INTERFACE ? "get;" : "get;set;")} }}")
            .AppendLine();
         return str;
