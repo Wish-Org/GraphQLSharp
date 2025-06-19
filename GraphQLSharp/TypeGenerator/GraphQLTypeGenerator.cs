@@ -298,6 +298,8 @@ public class GraphQLTypeGenerator
                         .AppendLine(GenerateDescriptionComment(f.description));
         if (f.isDeprecated)
             str.AppendLine($"[Obsolete({SymbolDisplay.FormatLiteral(f.deprecationReason.TrimEnd(), true)})]");
+        if (f.type.kind == GraphQLTypeKind.NON_NULL)
+            str.AppendLine($"[NonNull]");
         str.AppendLine($"public {this.GenerateTypeName(f.type, options, f.name, containingType)}? {EscapeCSharpKeyword(f.name)} {{ {(containingType.kind == GraphQLTypeKind.INTERFACE ? "get;" : "get;set;")} }}")
            .AppendLine();
         return str;
