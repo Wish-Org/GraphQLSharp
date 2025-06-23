@@ -1,6 +1,6 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
-using System.Text.Json;
 
 namespace GraphQLSharp;
 
@@ -17,25 +17,61 @@ public class GraphQLClient
         _defaultOptions = defaultOptions;
     }
 
+    public Task<GraphQLResponse<T>> RequestAsync<T>([StringSyntax("GraphQL")] string query, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
+    {
+        return RequestAsync<T>(new GraphQLRequest { query = query }, options, cancellationToken);
+    }
+
     public async Task<GraphQLResponse<T>> RequestAsync<T>(GraphQLRequest request, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
     {
-        var httpClient = options?.HttpClient ?? _defaultOptions.HttpClient ?? _defaultHttpClient;
-        var uri = options?.Uri ?? _defaultOptions.Uri;
-        using var requestMessage = new HttpRequestMessage
+        try
         {
-            Method = HttpMethod.Post,
-            RequestUri = uri,
-            Content = JsonContent.Create(request, options: Serializer.Options),
-        };
+            var httpClient = options?.HttpClient ?? _defaultOptions.HttpClient ?? _defaultHttpClient;
+            var uri = options?.Uri ?? _defaultOptions.Uri;
+            using var requestMessage = new HttpRequestMessage
+            {
+                Method = HttpMethod.Post,
+                RequestUri = uri,
+                Content = JsonContent.Create(request, options: Serializer.Options),
+            };
 
-        requestMessage.Headers.UserAgent.Add(_defaultUserAgent);
-        _defaultOptions?.ConfigureHttpRequestHeaders?.Invoke(requestMessage.Headers);
-        options?.ConfigureHttpRequestHeaders?.Invoke(requestMessage.Headers);
+            requestMessage.Headers.UserAgent.Add(_defaultUserAgent);
+            _defaultOptions?.ConfigureHttpRequestHeaders?.Invoke(requestMessage.Headers);
+            options?.ConfigureHttpRequestHeaders?.Invoke(requestMessage.Headers);
 
-        var response = await httpClient.SendAsync(requestMessage, cancellationToken);
-        response.EnsureSuccessStatusCode();
+            var response = await httpClient.SendAsync(requestMessage, cancellationToken);
 
-        return await response.Content.ReadFromJsonAsync<GraphQLResponse<T>>(Serializer.Options, cancellationToken)
-            ?? throw new JsonException("Failed to deserialize GraphQL response");
+            try
+            {
+                response.EnsureSuccessStatusCode();
+            }
+            catch (Exception httpEx)
+            {
+                throw new GraphQLHttpException(request, httpEx);
+            }
+
+            GraphQLResponse<T> res;
+            try
+            {
+                res = await response.Content.ReadFromJsonAsync<GraphQLResponse<T>>(Serializer.Options, cancellationToken);
+                if (res == null)
+                    throw new GraphQLException(request, $"Failed to deserialize null GraphQL response. Request: {request}");
+            }
+            catch (Exception jsonEx)
+            {
+                throw new GraphQLException(request, $"Failed to deserialize GraphQL response. Request: {request}", jsonEx);
+            }
+
+            res.Request = request;
+            bool doNotThrowOnGraphQLErrors = options?.DoNotThrowOnGraphQLErrors ?? _defaultOptions?.DoNotThrowOnGraphQLErrors ?? false;
+            if (!doNotThrowOnGraphQLErrors)
+                res.ThrowIfAnyError();
+
+            return res;
+        }
+        catch (Exception ex) when (ex is not GraphQLException)
+        {
+            throw new GraphQLException(request, $"Unexpected GraphQL error: {request}", ex);
+        }
     }
 }

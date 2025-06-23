@@ -8,4 +8,12 @@ public class GraphQLError
     public List<GraphQLErrorLocation> locations { get; set; }
     public List<object> path { get; set; }
     public Dictionary<string, JsonElement> extensions { get; set; }
+
+    public override string ToString()
+    {
+        return $"""
+            Error: {message}
+            Locations: {string.Join(", ", locations.Select(l => $"{l.line}:{l.column}"))}
+            """;
+    }
 }
