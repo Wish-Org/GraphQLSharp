@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	  <PackageProjectUrl>https://github.com/Wish-Org/GraphQLSharp</PackageProjectUrl>
@@ -7,6 +6,7 @@
 	  <Description>.NET utilities for GraphQL</Description>
 	  <Version>2.3.0</Version>
 	  <PackageTags>graphql types classes schema generator strongly typed</PackageTags>
+	  <!-- <Nullable>enable</Nullable> -->
   </PropertyGroup>
 
   <ItemGroup>

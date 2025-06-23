@@ -4,9 +4,9 @@ namespace GraphQLSharp;
 
 public class GraphQLClientOptions
 {
-    public required Uri Uri { get; init; }
+    public Uri Uri { get; init; }
 
     public HttpClient HttpClient { get; init; }
 
-    public ProductInfoHeaderValue UserAgentRequestHeader { get; init; }
+    public Action<HttpRequestHeaders> ConfigureHttpRequestHeaders { get; init; }
 }

@@ -5,8 +5,6 @@ using System.Text.Json;
 
 namespace GraphQLSharp;
 
-public delegate Task<JsonDocument> SendGraphQLQueryAsync(string graphqlQuery);
-
 public class GraphQLTypeGenerator
 {
     //we go quite deep because ofType is used for non-nullable and list
@@ -95,9 +93,9 @@ public class GraphQLTypeGenerator
             };
 
 
-    public async Task<string> GenerateTypesAsync(GraphQLTypeGeneratorOptions options, SendGraphQLQueryAsync sendQuery)
+    public async Task<string> GenerateTypesAsync(GraphQLTypeGeneratorOptions options, Func<string, Task<JsonDocument>> executeQuery)
     {
-        var response = await sendQuery(INTROSPECTION_QUERY);
+        var response = await executeQuery(INTROSPECTION_QUERY);
         return GenerateTypes(options, response);
     }
 
@@ -207,12 +205,12 @@ public class GraphQLTypeGenerator
         str.AppendLine($"public interface {GenerateTypeName(type, options)} : {nameof(IGraphQLObject)}");
 
         var interfaces = type.interfaces;
-        if (interfaces.Any())
+        if (interfaces?.Any() == true)
             str.Append($", {string.Join(',', interfaces.Select(i => this.GenerateTypeName(i, options)))}");
         str.AppendLine();
         str.AppendLine("{");
 
-        if (type.interfaces.IsEmpty())
+        if ((type.interfaces ?? []).IsEmpty())
         {
             foreach (var t in possibleTypes.DistinctBy(i => i.name))//found case where same type included twice
             {
@@ -223,7 +221,7 @@ public class GraphQLTypeGenerator
 
         type.fields
             //interface shouldn't redeclare fields already declare in parent interfaces
-            .Where(f => type.interfaces.SelectMany(i => i.fields).Where(f2 => f2.name == f.name).IsEmpty())
+            .Where(f => (type.interfaces ?? []).SelectMany(i => i.fields).Where(f2 => f2.name == f.name).IsEmpty())
             .ForEach(f => str.Append(GenerateField(type, f, options)));
 
         str.AppendLine("}");

@@ -72,8 +72,8 @@ public class GraphQLSharp_Tests
         };
 
         var generator = new GraphQLTypeGenerator();
-        var shopifyDoc = JsonDocument.Parse(File.OpenRead(@"./square.json"));
-        var code = generator.GenerateTypes(options, shopifyDoc);
+        var squareDoc = JsonDocument.Parse(File.OpenRead(@"./square.json"));
+        var code = generator.GenerateTypes(options, squareDoc);
         File.WriteAllText("../../../square.cs", code);
     }
 
