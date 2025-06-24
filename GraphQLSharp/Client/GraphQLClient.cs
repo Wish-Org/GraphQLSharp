@@ -24,28 +24,18 @@ public class GraphQLClient
 
     public async Task<GraphQLResponse<T>> ExecuteAsync<T>(GraphQLRequest request, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
     {
-        HttpRequestMessage CreateHttpRequest(GraphQLRequest request, GraphQLClientOptions options)
-        {
-            var uri = options?.Uri ?? _defaultOptions.Uri;
-            var requestMessage = new HttpRequestMessage
-            {
-                Method = HttpMethod.Post,
-                RequestUri = uri,
-                Content = JsonContent.Create(request, options: Serializer.Options),
-            };
+        var interceptor = options?.Interceptor ?? _defaultOptions.Interceptor ?? NoOpInterceptor.Instance;
+        return await interceptor.InterceptRequestAsync(request, async req => await ExecuteCoreAsync<T>(req, options, cancellationToken), cancellationToken);
+    }
 
-            requestMessage.Headers.UserAgent.Add(_defaultUserAgent);
-            _defaultOptions?.ConfigureHttpRequestHeaders?.Invoke(requestMessage.Headers);
-            options?.ConfigureHttpRequestHeaders?.Invoke(requestMessage.Headers);
-            return requestMessage;
-        }
-
+    private async Task<GraphQLResponse<T>> ExecuteCoreAsync<T>(GraphQLRequest request, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
+    {
         HttpResponse httpResponse = null;
         try
         {
-            var httpClient = options?.HttpClient ?? _defaultOptions.HttpClient ?? _defaultHttpClient;
             using HttpRequestMessage requestMessage = CreateHttpRequest(request, options);
 
+            var httpClient = options?.HttpClient ?? _defaultOptions.HttpClient ?? _defaultHttpClient;
             using var httpResponseMsg = await httpClient.SendAsync(requestMessage, cancellationToken);
             //httpResponseMsg needs to disposed so we create a small copy of basic information
             httpResponse = new HttpResponse(httpResponseMsg);
@@ -83,5 +73,21 @@ public class GraphQLClient
         {
             throw new GraphQLException(request, httpResponse, $"Unexpected GraphQL error: {request}", ex);
         }
+    }
+
+    private HttpRequestMessage CreateHttpRequest(GraphQLRequest request, GraphQLClientOptions options)
+    {
+        var uri = options?.Uri ?? _defaultOptions.Uri;
+        var requestMessage = new HttpRequestMessage
+        {
+            Method = HttpMethod.Post,
+            RequestUri = uri,
+            Content = JsonContent.Create(request, options: Serializer.Options),
+        };
+
+        requestMessage.Headers.UserAgent.Add(_defaultUserAgent);
+        _defaultOptions?.ConfigureHttpRequestHeaders?.Invoke(requestMessage.Headers);
+        options?.ConfigureHttpRequestHeaders?.Invoke(requestMessage.Headers);
+        return requestMessage;
     }
 }

@@ -15,4 +15,6 @@ public class GraphQLClientOptions
     public HttpClient HttpClient { get; init; }
 
     public Action<HttpRequestHeaders> ConfigureHttpRequestHeaders { get; init; }
+
+    public IInterceptor Interceptor { get; init; }
 }
