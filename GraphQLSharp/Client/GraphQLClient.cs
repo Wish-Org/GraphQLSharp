@@ -24,12 +24,10 @@ public class GraphQLClient
 
     public async Task<GraphQLResponse<T>> ExecuteAsync<T>(GraphQLRequest request, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
     {
-        HttpResponse httpResponse = null;
-        try
+        HttpRequestMessage CreateHttpRequest(GraphQLRequest request, GraphQLClientOptions options)
         {
-            var httpClient = options?.HttpClient ?? _defaultOptions.HttpClient ?? _defaultHttpClient;
             var uri = options?.Uri ?? _defaultOptions.Uri;
-            using var requestMessage = new HttpRequestMessage
+            var requestMessage = new HttpRequestMessage
             {
                 Method = HttpMethod.Post,
                 RequestUri = uri,
@@ -39,6 +37,14 @@ public class GraphQLClient
             requestMessage.Headers.UserAgent.Add(_defaultUserAgent);
             _defaultOptions?.ConfigureHttpRequestHeaders?.Invoke(requestMessage.Headers);
             options?.ConfigureHttpRequestHeaders?.Invoke(requestMessage.Headers);
+            return requestMessage;
+        }
+
+        HttpResponse httpResponse = null;
+        try
+        {
+            var httpClient = options?.HttpClient ?? _defaultOptions.HttpClient ?? _defaultHttpClient;
+            using HttpRequestMessage requestMessage = CreateHttpRequest(request, options);
 
             using var httpResponseMsg = await httpClient.SendAsync(requestMessage, cancellationToken);
             //httpResponseMsg needs to disposed so we create a small copy of basic information
