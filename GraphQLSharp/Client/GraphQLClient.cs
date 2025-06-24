@@ -25,7 +25,7 @@ public class GraphQLClient
     public async Task<GraphQLResponse<T>> ExecuteAsync<T>(GraphQLRequest request, GraphQLRequestOptions options = null, CancellationToken cancellationToken = default)
     {
         var interceptor = options?.Interceptor ?? _defaultOptions.Interceptor ?? NoOpInterceptor.Instance;
-        return await interceptor.InterceptRequestAsync(request, async req => await ExecuteCoreAsync<T>(req, options, cancellationToken), cancellationToken);
+        return await interceptor.InterceptRequestAsync(request, options, async req => await ExecuteCoreAsync<T>(req, options, cancellationToken), cancellationToken);
     }
 
     private async Task<GraphQLResponse<T>> ExecuteCoreAsync<T>(GraphQLRequest request, GraphQLRequestOptions options = null, CancellationToken cancellationToken = default)
