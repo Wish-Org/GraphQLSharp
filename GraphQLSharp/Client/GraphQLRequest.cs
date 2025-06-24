@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using System.Text.Json;
 
 namespace GraphQLSharp;
 
@@ -16,7 +17,7 @@ public class GraphQLRequest
         return $"""
                 query: {query},
                 operationName: {operationName},
-                variables: {variables}
+                variables: {JsonSerializer.Serialize(variables, new JsonSerializerOptions { WriteIndented = true })},
             """;
     }
 }

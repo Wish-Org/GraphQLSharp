@@ -29,7 +29,17 @@ public class GraphQLClientTests
     public async Task RequestAsync_BasicQuery_ReturnsValidResponse()
     {
         var query = """
-            query {
+            query myQuery($first: Int!) {
+                products(first: $first)
+                {
+                    nodes
+                    {
+                        id
+                        title
+                    }
+                }
+            }
+            query myQuery2 {
                 products(first: 10)
                 {
                     nodes
@@ -43,7 +53,12 @@ public class GraphQLClientTests
 
         var request = new GraphQLRequest
         {
-            query = query
+            query = query,
+            operationName = "myQuery",
+            variables = new Dictionary<string, object>
+            {
+                { "first", 10 }
+            }
         };
 
         var response = await _client.ExecuteAsync<QueryRoot>(request);

@@ -13,7 +13,7 @@ public class GraphQLError
     {
         return $"""
             Error: {message}
-            Locations: {string.Join(", ", locations.Select(l => $"{l.line}:{l.column}"))}
+            Locations: {string.Join(", ", (locations ?? []).Select(l => $"{l.line}:{l.column}"))}
             """;
     }
 }
