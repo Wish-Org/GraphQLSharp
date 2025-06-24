@@ -8,7 +8,7 @@ public class GraphQLErrorsException : GraphQLException
 
     public Dictionary<string, JsonElement> extensions { get; set; }
 
-    public GraphQLErrorsException(GraphQLRequest request, HttpResponseMessage httpResponse, List<GraphQLError> errors, Dictionary<string, JsonElement> extensions)
+    public GraphQLErrorsException(GraphQLRequest request, HttpResponse httpResponse, List<GraphQLError> errors, Dictionary<string, JsonElement> extensions)
         : base(request, httpResponse, $"""
                         GraphQL request returned errors:
                         Request: {request}

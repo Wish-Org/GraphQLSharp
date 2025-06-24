@@ -9,7 +9,7 @@ public class GraphQLResponse<T>
     public GraphQLRequest Request { get; internal set; }
 
     [JsonIgnore]
-    public HttpResponseMessage HttpResponse { get; internal set; }
+    public HttpResponse HttpResponse { get; internal set; }
 
     public T data { get; set; }
 

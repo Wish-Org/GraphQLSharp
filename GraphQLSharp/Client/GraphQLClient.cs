@@ -24,7 +24,7 @@ public class GraphQLClient
 
     public async Task<GraphQLResponse<T>> ExecuteAsync<T>(GraphQLRequest request, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
     {
-        HttpResponseMessage httpResponse = null;
+        HttpResponse httpResponse = null;
         try
         {
             var httpClient = options?.HttpClient ?? _defaultOptions.HttpClient ?? _defaultHttpClient;
@@ -40,11 +40,12 @@ public class GraphQLClient
             _defaultOptions?.ConfigureHttpRequestHeaders?.Invoke(requestMessage.Headers);
             options?.ConfigureHttpRequestHeaders?.Invoke(requestMessage.Headers);
 
-            httpResponse = await httpClient.SendAsync(requestMessage, cancellationToken);
-
+            using var httpResponseMsg = await httpClient.SendAsync(requestMessage, cancellationToken);
+            //httpResponseMsg needs to disposed so we create a small copy of basic information
+            httpResponse = new HttpResponse(httpResponseMsg);
             try
             {
-                httpResponse.EnsureSuccessStatusCode();
+                httpResponseMsg.EnsureSuccessStatusCode();
             }
             catch (Exception httpEx)
             {
@@ -54,7 +55,7 @@ public class GraphQLClient
             GraphQLResponse<T> res;
             try
             {
-                res = await httpResponse.Content.ReadFromJsonAsync<GraphQLResponse<T>>(Serializer.Options, cancellationToken);
+                res = await httpResponseMsg.Content.ReadFromJsonAsync<GraphQLResponse<T>>(Serializer.Options, cancellationToken);
                 if (res == null)
                     throw new GraphQLException(request, httpResponse, $"Failed to deserialize null GraphQL response. Request: {request}");
             }
