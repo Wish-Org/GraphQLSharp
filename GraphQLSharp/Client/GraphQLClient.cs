@@ -17,12 +17,12 @@ public class GraphQLClient
         _defaultOptions = defaultOptions;
     }
 
-    public Task<GraphQLResponse<T>> RequestAsync<T>([StringSyntax("GraphQL")] string query, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
+    public Task<GraphQLResponse<T>> ExecuteAsync<T>([StringSyntax("GraphQL")] string query, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
     {
-        return RequestAsync<T>(new GraphQLRequest { query = query }, options, cancellationToken);
+        return ExecuteAsync<T>(new GraphQLRequest { query = query }, options, cancellationToken);
     }
 
-    public async Task<GraphQLResponse<T>> RequestAsync<T>(GraphQLRequest request, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
+    public async Task<GraphQLResponse<T>> ExecuteAsync<T>(GraphQLRequest request, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
     {
         try
         {

@@ -46,7 +46,7 @@ public class GraphQLClientTests
             query = query
         };
 
-        var response = await _client.RequestAsync<QueryRoot>(request);
+        var response = await _client.ExecuteAsync<QueryRoot>(request);
         Assert.IsNotNull(response.data.products.nodes.FirstOrDefault().id);
     }
 
@@ -72,7 +72,7 @@ public class GraphQLClientTests
             query = query
         };
 
-        var response = await _client.RequestAsync<QueryRoot>(request);
+        var response = await _client.ExecuteAsync<QueryRoot>(request);
     }
 
     [TestMethod]
@@ -96,7 +96,7 @@ public class GraphQLClientTests
             query = query
         };
 
-        var response = await _client.RequestAsync<QueryRoot>(request,
+        var response = await _client.ExecuteAsync<QueryRoot>(request,
                                             new GraphQLClientOptions
                                             {
                                                 ThrowOnGraphQLErrors = false
