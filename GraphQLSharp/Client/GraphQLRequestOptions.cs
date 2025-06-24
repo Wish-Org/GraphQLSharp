@@ -2,7 +2,7 @@ using System.Net.Http.Headers;
 
 namespace GraphQLSharp;
 
-public class GraphQLClientOptions
+public class GraphQLRequestOptions
 {
     /// <summary>
     /// Whether to throw an exception if the GraphQL response contains errors. Defaults to TRUE.

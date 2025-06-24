@@ -10,25 +10,25 @@ public class GraphQLClient
 
     private static readonly ProductInfoHeaderValue _defaultUserAgent = new(typeof(GraphQLClient).Assembly.GetName().Name!, typeof(GraphQLClient).Assembly.GetName().Version!.ToString());
 
-    private readonly GraphQLClientOptions _defaultOptions;
+    private readonly GraphQLRequestOptions _defaultOptions;
 
-    public GraphQLClient(GraphQLClientOptions defaultOptions = null)
+    public GraphQLClient(GraphQLRequestOptions defaultOptions = null)
     {
         _defaultOptions = defaultOptions;
     }
 
-    public Task<GraphQLResponse<T>> ExecuteAsync<T>([StringSyntax("GraphQL")] string query, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
+    public Task<GraphQLResponse<T>> ExecuteAsync<T>([StringSyntax("GraphQL")] string query, GraphQLRequestOptions options = null, CancellationToken cancellationToken = default)
     {
         return ExecuteAsync<T>(new GraphQLRequest { query = query }, options, cancellationToken);
     }
 
-    public async Task<GraphQLResponse<T>> ExecuteAsync<T>(GraphQLRequest request, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
+    public async Task<GraphQLResponse<T>> ExecuteAsync<T>(GraphQLRequest request, GraphQLRequestOptions options = null, CancellationToken cancellationToken = default)
     {
         var interceptor = options?.Interceptor ?? _defaultOptions.Interceptor ?? NoOpInterceptor.Instance;
         return await interceptor.InterceptRequestAsync(request, async req => await ExecuteCoreAsync<T>(req, options, cancellationToken), cancellationToken);
     }
 
-    private async Task<GraphQLResponse<T>> ExecuteCoreAsync<T>(GraphQLRequest request, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
+    private async Task<GraphQLResponse<T>> ExecuteCoreAsync<T>(GraphQLRequest request, GraphQLRequestOptions options = null, CancellationToken cancellationToken = default)
     {
         HttpResponse httpResponse = null;
         try
@@ -75,7 +75,7 @@ public class GraphQLClient
         }
     }
 
-    private HttpRequestMessage CreateHttpRequest(GraphQLRequest request, GraphQLClientOptions options)
+    private HttpRequestMessage CreateHttpRequest(GraphQLRequest request, GraphQLRequestOptions options)
     {
         var uri = options?.Uri ?? _defaultOptions.Uri;
         var requestMessage = new HttpRequestMessage
