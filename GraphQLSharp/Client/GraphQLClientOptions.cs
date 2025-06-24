@@ -4,7 +4,11 @@ namespace GraphQLSharp;
 
 public class GraphQLClientOptions
 {
-    public bool DoNotThrowOnGraphQLErrors { get; init; }
+    /// <summary>
+    /// Whether to throw an exception if the GraphQL response contains errors. Defaults to TRUE.
+    /// If set to false, the response will still contain the errors, but no exception will be thrown.
+    /// </summary>
+    public bool ThrowOnGraphQLErrors { get; init; } = true;
 
     public Uri Uri { get; init; }
 

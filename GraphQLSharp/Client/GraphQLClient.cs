@@ -63,8 +63,8 @@ public class GraphQLClient
             }
 
             res.Request = request;
-            bool doNotThrowOnGraphQLErrors = options?.DoNotThrowOnGraphQLErrors ?? _defaultOptions?.DoNotThrowOnGraphQLErrors ?? false;
-            if (!doNotThrowOnGraphQLErrors)
+            bool throwOnGraphQLErrors = options?.ThrowOnGraphQLErrors ?? _defaultOptions?.ThrowOnGraphQLErrors ?? true;
+            if (throwOnGraphQLErrors)
                 res.ThrowIfAnyError();
 
             return res;

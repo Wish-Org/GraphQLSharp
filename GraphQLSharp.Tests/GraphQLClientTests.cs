@@ -97,10 +97,10 @@ public class GraphQLClientTests
         };
 
         var response = await _client.RequestAsync<QueryRoot>(request,
-        new GraphQLClientOptions
-        {
-            DoNotThrowOnGraphQLErrors = true
-        });
+                                            new GraphQLClientOptions
+                                            {
+                                                ThrowOnGraphQLErrors = false
+                                            });
         Assert.IsNotNull(response.errors);
         Assert.IsTrue(response.errors.Count > 0);
     }
