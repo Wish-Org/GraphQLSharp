@@ -24,6 +24,7 @@ public class GraphQLClient
 
     public async Task<GraphQLResponse<T>> ExecuteAsync<T>(GraphQLRequest request, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
     {
+        HttpResponseMessage httpResponse = null;
         try
         {
             var httpClient = options?.HttpClient ?? _defaultOptions.HttpClient ?? _defaultHttpClient;
@@ -39,30 +40,32 @@ public class GraphQLClient
             _defaultOptions?.ConfigureHttpRequestHeaders?.Invoke(requestMessage.Headers);
             options?.ConfigureHttpRequestHeaders?.Invoke(requestMessage.Headers);
 
-            var response = await httpClient.SendAsync(requestMessage, cancellationToken);
+            httpResponse = await httpClient.SendAsync(requestMessage, cancellationToken);
 
             try
             {
-                response.EnsureSuccessStatusCode();
+                httpResponse.EnsureSuccessStatusCode();
             }
             catch (Exception httpEx)
             {
-                throw new GraphQLHttpException(request, httpEx);
+                throw new GraphQLHttpException(request, httpResponse, httpEx);
             }
 
             GraphQLResponse<T> res;
             try
             {
-                res = await response.Content.ReadFromJsonAsync<GraphQLResponse<T>>(Serializer.Options, cancellationToken);
+                res = await httpResponse.Content.ReadFromJsonAsync<GraphQLResponse<T>>(Serializer.Options, cancellationToken);
                 if (res == null)
-                    throw new GraphQLException(request, $"Failed to deserialize null GraphQL response. Request: {request}");
+                    throw new GraphQLException(request, httpResponse, $"Failed to deserialize null GraphQL response. Request: {request}");
             }
             catch (Exception jsonEx)
             {
-                throw new GraphQLException(request, $"Failed to deserialize GraphQL response. Request: {request}", jsonEx);
+                throw new GraphQLException(request, httpResponse, $"Failed to deserialize GraphQL response. Request: {request}", jsonEx);
             }
 
             res.Request = request;
+            res.HttpResponse = httpResponse;
+
             bool throwOnGraphQLErrors = options?.ThrowOnGraphQLErrors ?? _defaultOptions?.ThrowOnGraphQLErrors ?? true;
             if (throwOnGraphQLErrors)
                 res.ThrowIfAnyError();
@@ -71,7 +74,7 @@ public class GraphQLClient
         }
         catch (Exception ex) when (ex is not GraphQLException)
         {
-            throw new GraphQLException(request, $"Unexpected GraphQL error: {request}", ex);
+            throw new GraphQLException(request, httpResponse, $"Unexpected GraphQL error: {request}", ex);
         }
     }
 }
