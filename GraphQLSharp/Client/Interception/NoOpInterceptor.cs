@@ -6,8 +6,8 @@ public class NoOpInterceptor : IInterceptor
 
     private NoOpInterceptor() { }
 
-    public Task<GraphQLResponse<T>> InterceptRequestAsync<T>(GraphQLRequest request, GraphQLRequestOptions options, Func<GraphQLRequest, Task<GraphQLResponse<T>>> executeAsync, CancellationToken cancellationToken)
+    public Task<GraphQLResponse<T>> InterceptRequestAsync<T>(GraphQLRequest request, GraphQLRequestOptions options, Func<GraphQLRequest, GraphQLRequestOptions, Task<GraphQLResponse<T>>> executeAsync, CancellationToken cancellationToken)
     {
-        return executeAsync(request);
+        return executeAsync(request, options);
     }
 }
