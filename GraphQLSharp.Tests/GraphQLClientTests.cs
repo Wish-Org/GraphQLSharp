@@ -27,7 +27,59 @@ public class GraphQLClientTests
     }
 
     [TestMethod]
-    public async Task RequestAsync_BasicQuery_ReturnsValidResponse()
+    public async Task RequestSimple()
+    {
+        var query = """
+            query {
+                products(first: 10)
+                {
+                    nodes
+                    {
+                        id
+                        title
+                    }
+                }
+            }
+            """;
+
+        //response is strongly typed
+        var response = await _client.ExecuteAsync<QueryRoot>(query);
+        Assert.IsNotNull(response.data.products.nodes.FirstOrDefault()?.id);
+    }
+
+
+    [TestMethod]
+    public async Task RequestSimpleWithVariables()
+    {
+        var query = """
+            query ($first: Int!){
+                products(first: $first)
+                {
+                    nodes
+                    {
+                        id
+                        title
+                    }
+                }
+            }
+            """;
+
+        var request = new GraphQLRequest
+        {
+            query = query,
+            variables = new Dictionary<string, object>
+            {
+                { "first", 10 }
+            }
+        };
+
+        //response is strongly typed
+        var response = await _client.ExecuteAsync<QueryRoot>(request);
+        Assert.IsNotNull(response.data.products.nodes.FirstOrDefault()?.id);
+    }
+
+    [TestMethod]
+    public async Task RequestWithMultipleOperations()
     {
         var query = """
             query myQuery($first: Int!) {
@@ -67,7 +119,7 @@ public class GraphQLClientTests
     }
 
     [TestMethod]
-    public async Task RequestAsync_QueryWithAliases_ReturnsValidResponse()
+    public async Task RequestWithAliases()
     {
         var query = """
             query ($first: Int!) {
@@ -100,6 +152,7 @@ public class GraphQLClientTests
         };
 
         var response = await _client.ExecuteAsync(request);
+        //response.data is JsonElement
         var myProducts = response.data.GetProperty("myProducts")
                                      .Deserialize<ProductConnection>(Serializer.Options);
         var myOrders = response.data.GetProperty("myOrders")
@@ -110,7 +163,7 @@ public class GraphQLClientTests
 
     [TestMethod]
     [ExpectedException(typeof(GraphQLErrorsException))]
-    public async Task RequestAsync_BasicQuery_ReturnsError()
+    public async Task RequestWithSyntaxError()
     {
         var query = """
             query {
@@ -134,7 +187,7 @@ public class GraphQLClientTests
     }
 
     [TestMethod]
-    public async Task RequestAsync_BasicQuery_ReturnsErrorResponse()
+    public async Task RequestWithSyntaxErrorNoThrow()
     {
         var query = """
             query {
