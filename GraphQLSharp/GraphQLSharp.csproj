@@ -1,17 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	  <PackageProjectUrl>https://github.com/Wish-Org/GraphQLSharp</PackageProjectUrl>
-	  <RepositoryUrl>https://github.com/Wish-Org/GraphQLSharp</RepositoryUrl>
-	  <Description>.NET utilities for GraphQL</Description>
-	  <Version>2.4.0</Version>
-	  <PackageTags>graphql types classes schema generator strongly typed</PackageTags>
-	  <!-- <Nullable>enable</Nullable> -->
-  </PropertyGroup>
+	<PropertyGroup>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageProjectUrl>https://github.com/Wish-Org/GraphQLSharp</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Wish-Org/GraphQLSharp</RepositoryUrl>
+		<Description>.NET Client for GraphQL - Modern and fast</Description>
+		<Version>2.5.0</Version>
+		<PackageTags>graphql;client;graphql-client;graphql-generator</PackageTags>
+		<Authors>Wish-Org</Authors>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<!-- <Nullable>enable</Nullable> -->
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.7.0" />
-    <PackageReference Include="System.Interactive" Version="6.0.1" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.7.0" />
+		<PackageReference Include="System.Interactive" Version="6.0.1" />
+	</ItemGroup>
 
 </Project>
