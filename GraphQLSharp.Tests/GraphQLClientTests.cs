@@ -1,3 +1,4 @@
+using System.Text.Json;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using shopify;
 
@@ -62,7 +63,49 @@ public class GraphQLClientTests
         };
 
         var response = await _client.ExecuteAsync<QueryRoot>(request);
-        Assert.IsNotNull(response.data.products.nodes.FirstOrDefault().id);
+        Assert.IsNotNull(response.data.products.nodes.FirstOrDefault()?.id);
+    }
+
+    [TestMethod]
+    public async Task RequestAsync_QueryWithAliases_ReturnsValidResponse()
+    {
+        var query = """
+            query ($first: Int!) {
+                myProducts: products(first: $first)
+                {
+                    nodes
+                    {
+                        id
+                        title
+                    }
+                }
+                myOrders: orders(first: $first)
+                {
+                    nodes
+                    {
+                        id
+                        name
+                    }
+                }
+            }
+            """;
+
+        var request = new GraphQLRequest
+        {
+            query = query,
+            variables = new Dictionary<string, object>
+            {
+                { "first", 10 }
+            }
+        };
+
+        var response = await _client.ExecuteAsync(request);
+        var myProducts = response.data.GetProperty("myProducts")
+                                     .Deserialize<ProductConnection>(Serializer.Options);
+        var myOrders = response.data.GetProperty("myOrders")
+                                     .Deserialize<OrderConnection>(Serializer.Options);
+        Assert.IsNotNull(myProducts.nodes.FirstOrDefault()?.title);
+        Assert.IsNotNull(myOrders.nodes.FirstOrDefault()?.name);
     }
 
     [TestMethod]

@@ -1,6 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
+using System.Text.Json;
 
 namespace GraphQLSharp;
 
@@ -17,9 +18,19 @@ public class GraphQLClient
         _defaultOptions = defaultOptions;
     }
 
+    public Task<GraphQLResponse<JsonElement>> ExecuteAsync([StringSyntax("GraphQL")] string query, GraphQLRequestOptions options = null, CancellationToken cancellationToken = default)
+    {
+        return ExecuteAsync<JsonElement>(query, options, cancellationToken);
+    }
+
     public Task<GraphQLResponse<T>> ExecuteAsync<T>([StringSyntax("GraphQL")] string query, GraphQLRequestOptions options = null, CancellationToken cancellationToken = default)
     {
         return ExecuteAsync<T>(new GraphQLRequest { query = query }, options, cancellationToken);
+    }
+
+    public Task<GraphQLResponse<JsonElement>> ExecuteAsync(GraphQLRequest request, GraphQLRequestOptions options = null, CancellationToken cancellationToken = default)
+    {
+        return ExecuteAsync<JsonElement>(request, options, cancellationToken);
     }
 
     public async Task<GraphQLResponse<T>> ExecuteAsync<T>(GraphQLRequest request, GraphQLRequestOptions options = null, CancellationToken cancellationToken = default)
