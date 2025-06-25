@@ -19,6 +19,7 @@ public void Initialize()
         Uri = new Uri($"https://example.com/graphql.json"),
         ThrowOnGraphQLErrors = true,
         //HttpClient = myHttpClient, optionally provide your own HttpClient instance
+        //Interceptor = myInterceptor, optionally provide an interceptor for logging, automatic retires, etc...
         ConfigureHttpRequestHeaders = headers =>
         {
             headers.Add("X-Access-Token", "<INSERT_TOKEN>");
