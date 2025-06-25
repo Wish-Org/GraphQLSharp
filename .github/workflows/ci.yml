@@ -29,7 +29,10 @@ jobs:
               env:
                   GRAPHQLSHARP_SHOP_ID: ${{ secrets.GRAPHQLSHARP_SHOP_ID }}
                   GRAPHQLSHARP_SHOP_TOKEN: ${{ secrets.GRAPHQLSHARP_SHOP_TOKEN }}
-              run: dotnet test --no-restore --verbosity normal
+              run: |
+                  echo "GRAPHQLSHARP_SHOP_ID length: ${#GRAPHQLSHARP_SHOP_ID}"
+                  echo "GRAPHQLSHARP_SHOP_TOKEN length: ${#GRAPHQLSHARP_SHOP_TOKEN}"
+                  dotnet test --no-restore --verbosity normal
 
             - name: Publish to nuget
               if: github.event_name == 'workflow_dispatch' # Only runs when manually triggered for deployment
