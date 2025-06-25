@@ -12,8 +12,8 @@ public class GraphQLClientTests
     [TestInitialize]
     public void Initialize()
     {
-        string shopId = Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_ID", EnvironmentVariableTarget.User);
-        string token = Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_TOKEN", EnvironmentVariableTarget.User);
+        string shopId = Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_ID", EnvironmentVariableTarget.User) ?? Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_ID");
+        string token = Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_TOKEN", EnvironmentVariableTarget.User) ?? Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_TOKEN");
 
         _client = new GraphQLClient(new GraphQLRequestOptions
         {
