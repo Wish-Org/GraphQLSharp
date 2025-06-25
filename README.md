@@ -176,7 +176,7 @@ var generator = new GraphQLTypeGenerator();
 var options = new GraphQLTypeGeneratorOptions
 {
     Namespace = "MyNamespace",
-    ScalarNameTypeToTypeName = new Dictionary<string, string>
+    ScalarTypeNameToDotNetTypeName = new Dictionary<string, string>
         {
             { "UnsignedInt64", "ulong" },
             { "Money", "decimal" }

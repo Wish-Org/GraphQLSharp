@@ -13,7 +13,7 @@ public class GraphQLSharp_Tests
         var options = new GraphQLTypeGeneratorOptions
         {
             Namespace = "shopify",
-            ScalarNameTypeToTypeName = new Dictionary<string, string>
+            ScalarTypeNameToDotNetTypeName = new Dictionary<string, string>
                 {
                     { "UnsignedInt64", "ulong" },
                     { "Money", "decimal" },
@@ -52,7 +52,7 @@ public class GraphQLSharp_Tests
         var options = new GraphQLTypeGeneratorOptions
         {
             Namespace = "square",
-            ScalarNameTypeToTypeName = new Dictionary<string, string>
+            ScalarTypeNameToDotNetTypeName = new Dictionary<string, string>
                 {
                     { "Decimal", "decimal" },
                     { "DateTime", "DateTime" },

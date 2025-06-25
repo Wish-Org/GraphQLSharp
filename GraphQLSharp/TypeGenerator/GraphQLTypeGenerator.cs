@@ -338,7 +338,7 @@ public class GraphQLTypeGenerator
         if (TryGetTypeNameOverride(containingType, fieldName, options, out var overrideTypeName))
             return overrideTypeName;
 
-        if (options.ScalarNameTypeToTypeName?.TryGetValue(typeName, out var customTypeName) == true)
+        if (options.ScalarTypeNameToDotNetTypeName?.TryGetValue(typeName, out var customTypeName) == true)
             return customTypeName;
 
         if (_builtInScalarNameToTypeName.TryGetValue(typeName, out var builtInTypeName))

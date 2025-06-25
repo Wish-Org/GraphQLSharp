@@ -10,7 +10,7 @@ public class GraphQLTypeGeneratorOptions
     /// <summary>
     /// A mapping of scalar GraphQL type names to .NET type names.
     /// </summary>
-    public Dictionary<string, string> ScalarNameTypeToTypeName { get; set; }
+    public Dictionary<string, string> ScalarTypeNameToDotNetTypeName { get; set; }
 
     /// <summary>
     /// A mapping to override the default type of class members.
