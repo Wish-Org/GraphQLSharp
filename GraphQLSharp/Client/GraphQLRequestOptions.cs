@@ -1,4 +1,5 @@
 using System.Net.Http.Headers;
+using System.Text.Json;
 
 namespace GraphQLSharp;
 
@@ -18,20 +19,25 @@ public class GraphQLRequestOptions
     public Uri Uri { get; set; }
 
     /// <summary>
-    /// HttpClient to be used/
+    /// An (optional) custom HttpClient to be used for sending requests.
     /// If null, a default shared HttpClient is used
     /// If set, you control the lifetime of the HttpClient.
     /// </summary>
     public HttpClient HttpClient { get; set; }
 
     /// <summary>
-    /// A configuration callback to modify the HttpRequestHeaders before sending the request.
+    /// An (optional) configuration callback to modify the HttpRequestHeaders before sending the request.
     /// This can be used to set custom headers, authentication tokens, etc.
     /// </summary>
     public Action<HttpRequestHeaders> ConfigureHttpRequestHeaders { get; set; }
 
     /// <summary>
-    /// Interceptor to be used for this request.
+    /// An (optional) JSON serializer options to be used for serializing and deserializing GraphQL requests and responses.
+    /// </summary>
+    public JsonSerializerOptions JsonSerializerOptions { get; set; }
+
+    /// <summary>
+    /// An (optional) Interceptor to be used for this request.
     /// </summary>
     public IInterceptor Interceptor { get; set; }
 }
