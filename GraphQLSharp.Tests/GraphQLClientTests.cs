@@ -27,7 +27,7 @@ public class GraphQLClientTests
     }
 
     [TestMethod]
-    public async Task RequestSimple()
+    public async Task QuerySimple()
     {
         var query = """
             query {
@@ -47,9 +47,66 @@ public class GraphQLClientTests
         Assert.IsNotNull(response.data.products.nodes.FirstOrDefault()?.id);
     }
 
+    [TestMethod]
+    [ExpectedException(typeof(GraphQLErrorsException))]
+    public async Task QuerySimpleWithError()
+    {
+        //size parameter is not valid for products query
+        var query = """
+            query {
+                products(size: 10)
+                {
+                    nodes
+                    {
+                        id
+                        title
+                    }
+                }
+            }
+            """;
+
+        //response is strongly typed
+        var response = await _client.ExecuteQueryAsync(query);
+    }
 
     [TestMethod]
-    public async Task RequestSimpleWithVariables()
+    public async Task MutationSimple()
+    {
+        var query = """
+            mutation {
+                    appSubscriptionTrialExtend(id: "gid://shopify/AppSubscription/123", days: 10) {
+                        userErrors {
+                        message
+                        }
+                    }
+                }
+            """;
+
+        var response = await _client.ExecuteMutationAsync(query);
+        Assert.IsTrue(response.data.appSubscriptionTrialExtend.userErrors.Any());
+    }
+
+    [TestMethod]
+    [ExpectedException(typeof(GraphQLErrorsException))]
+    public async Task MutationSimpleWithError()
+    {
+        //price is not a valid field for productCreate
+        var query = """
+            mutation {
+                productCreate(input: { title: "New Product", price: 100 }) {
+                    product {
+                        id
+                        title
+                    }
+                }
+            }
+            """;
+
+        var response = await _client.ExecuteMutationAsync(query);
+    }
+
+    [TestMethod]
+    public async Task QuerySimpleWithVariables()
     {
         var query = """
             query ($first: Int!){
@@ -79,7 +136,7 @@ public class GraphQLClientTests
     }
 
     [TestMethod]
-    public async Task RequestWithMultipleOperations()
+    public async Task QueryWithMultipleOperations()
     {
         var query = """
             query myQuery($first: Int!) {
@@ -119,7 +176,7 @@ public class GraphQLClientTests
     }
 
     [TestMethod]
-    public async Task RequestWithAliases()
+    public async Task QueryWithAliases()
     {
         var query = """
             query ($first: Int!) {
@@ -163,7 +220,7 @@ public class GraphQLClientTests
 
     [TestMethod]
     [ExpectedException(typeof(GraphQLErrorsException))]
-    public async Task RequestWithSyntaxError()
+    public async Task QueryWithSyntaxError()
     {
         var query = """
             query {
@@ -187,7 +244,7 @@ public class GraphQLClientTests
     }
 
     [TestMethod]
-    public async Task RequestWithSyntaxErrorNoThrow()
+    public async Task QueryWithSyntaxErrorNoThrow()
     {
         var query = """
             query {
