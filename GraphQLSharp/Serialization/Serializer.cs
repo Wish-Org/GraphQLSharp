@@ -14,6 +14,12 @@ public static class Serializer
         DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
     };
 
+    static Serializer()
+    {
+        Options.Converters.Add(new SafeDateTimeConverter());
+        Options.Converters.Add(new SafeDateTimeOffsetConverter());
+    }
+
     public static string Serialize(object obj)
     {
         return JsonSerializer.Serialize(obj, obj.GetType(), Options);
