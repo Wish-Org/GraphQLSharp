@@ -133,7 +133,7 @@ public class GraphQLClient
 
     private HttpRequestMessage CreateHttpRequest(GraphQLRequest request, GraphQLRequestOptions options)
     {
-        var uri = options?.Uri ?? _defaultOptions?.Uri ?? throw new ArgumentNullException(nameof(options), "options.Uri must be set.");
+        var uri = options?.Uri ?? _defaultOptions?.Uri ?? throw new ArgumentNullException($"{nameof(options)}.{nameof(options.Uri)}");
         var requestMessage = new HttpRequestMessage
         {
             Method = HttpMethod.Post,
