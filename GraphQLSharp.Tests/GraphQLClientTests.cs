@@ -7,7 +7,7 @@ namespace GraphQLSharp.Tests;
 [TestClass]
 public class GraphQLClientTests
 {
-    private GraphQLClient _client;
+    private GraphQLClient<QueryRoot, Mutation> _client;
 
     [TestInitialize]
     public void Initialize()
@@ -15,7 +15,7 @@ public class GraphQLClientTests
         string shopId = Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_ID", EnvironmentVariableTarget.User) ?? Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_ID");
         string token = Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_TOKEN", EnvironmentVariableTarget.User) ?? Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_TOKEN");
 
-        _client = new GraphQLClient(new GraphQLRequestOptions
+        _client = new GraphQLClient<QueryRoot, Mutation>(new GraphQLRequestOptions
         {
             Uri = new Uri($"https://{shopId}/admin/api/2025-04/graphql.json"),
             ConfigureHttpRequestHeaders = headers =>
@@ -43,7 +43,7 @@ public class GraphQLClientTests
             """;
 
         //response is strongly typed
-        var response = await _client.ExecuteAsync<QueryRoot>(query);
+        var response = await _client.ExecuteQueryAsync(query);
         Assert.IsNotNull(response.data.products.nodes.FirstOrDefault()?.id);
     }
 
@@ -74,7 +74,7 @@ public class GraphQLClientTests
         };
 
         //response is strongly typed
-        var response = await _client.ExecuteAsync<QueryRoot>(request);
+        var response = await _client.ExecuteQueryAsync(request);
         Assert.IsNotNull(response.data.products.nodes.FirstOrDefault()?.id);
     }
 
@@ -114,7 +114,7 @@ public class GraphQLClientTests
             }
         };
 
-        var response = await _client.ExecuteAsync<QueryRoot>(request);
+        var response = await _client.ExecuteQueryAsync(request);
         Assert.IsNotNull(response.data.products.nodes.FirstOrDefault()?.id);
     }
 
@@ -183,7 +183,7 @@ public class GraphQLClientTests
             query = query
         };
 
-        var response = await _client.ExecuteAsync<QueryRoot>(request);
+        var response = await _client.ExecuteQueryAsync(request);
     }
 
     [TestMethod]
@@ -207,7 +207,7 @@ public class GraphQLClientTests
             query = query
         };
 
-        var response = await _client.ExecuteAsync<QueryRoot>(request,
+        var response = await _client.ExecuteQueryAsync(request,
                                             new GraphQLRequestOptions
                                             {
                                                 ThrowOnGraphQLErrors = false

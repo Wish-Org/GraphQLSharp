@@ -5,6 +5,43 @@ using System.Text.Json;
 
 namespace GraphQLSharp;
 
+public class GraphQLClient<TQueryRoot, TMutationRoot> : GraphQLClient<TQueryRoot>
+    where TQueryRoot : class
+    where TMutationRoot : class
+{
+    public GraphQLClient(GraphQLRequestOptions defaultOptions = null) : base(defaultOptions)
+    {
+    }
+
+    public Task<GraphQLResponse<TMutationRoot>> ExecuteMutationAsync([StringSyntax("GraphQL")] string query, GraphQLRequestOptions options = null, CancellationToken cancellationToken = default)
+    {
+        return ExecuteAsync<TMutationRoot>(query, options, cancellationToken);
+    }
+
+    public Task<GraphQLResponse<TMutationRoot>> ExecuteMutationAsync(GraphQLRequest request, GraphQLRequestOptions options = null, CancellationToken cancellationToken = default)
+    {
+        return ExecuteAsync<TMutationRoot>(request, options, cancellationToken);
+    }
+}
+
+public class GraphQLClient<TQueryRoot> : GraphQLClient
+    where TQueryRoot : class
+{
+    public GraphQLClient(GraphQLRequestOptions defaultOptions = null) : base(defaultOptions)
+    {
+    }
+
+    public Task<GraphQLResponse<TQueryRoot>> ExecuteQueryAsync([StringSyntax("GraphQL")] string query, GraphQLRequestOptions options = null, CancellationToken cancellationToken = default)
+    {
+        return ExecuteAsync<TQueryRoot>(query, options, cancellationToken);
+    }
+
+    public Task<GraphQLResponse<TQueryRoot>> ExecuteQueryAsync(GraphQLRequest request, GraphQLRequestOptions options = null, CancellationToken cancellationToken = default)
+    {
+        return ExecuteAsync<TQueryRoot>(request, options, cancellationToken);
+    }
+}
+
 public class GraphQLClient
 {
     private static readonly HttpClient _defaultHttpClient = new();
