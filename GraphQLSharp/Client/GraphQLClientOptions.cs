@@ -8,7 +8,7 @@ namespace GraphQLSharp;
 /// Can be set either globally on the GraphQLClient or per request.
 /// If both are set, the per request options will override the global options.
 /// </summary>
-public class GraphQLRequestOptions
+public class GraphQLClientOptions
 {
     /// <summary>
     /// Whether to throw an exception if the GraphQL response contains errors. Defaults to TRUE.
