@@ -29,4 +29,11 @@ public class GraphQLTypeGeneratorOptions
     /// The type must inherit from GraphQLClientOptions.
     /// </summary>
     public Type ClientOptionsType { get; set; }
+
+    /// <summary>
+    /// Indicates whether to generate member names for the GraphQL types.
+    /// Defaults to false
+    /// If true, the member names will be generated based on the .NET type names.
+    /// </summary>
+    public bool GenerateMemberNames { get; set; }
 }

@@ -107,6 +107,12 @@ public class GraphQLTypeGenerator
         return GenerateTypes(options, response);
     }
 
+    private class Context
+    {
+        public readonly StringBuilder StrBuilder = new();
+        public readonly StringBuilder StrBuilderMemberNames = new();
+    }
+
     public string GenerateTypes(GraphQLTypeGeneratorOptions options, JsonDocument introspectionQueryResponse)
     {
         // Get the "data.__schema" element or "__schema" element if the "data" property doesn't exist
@@ -119,25 +125,26 @@ public class GraphQLTypeGenerator
         var mutationType = schemaElt.TryGetProperty("mutationType", out var elt) && elt.ValueKind == JsonValueKind.Object ? elt.GetProperty("name").GetString() : null;
         var clientOptionsTypeName = options.ClientOptionsType == null ? typeof(GraphQLClientOptions).Name : options.ClientOptionsType.FullName;
 
-        var str = new StringBuilder()
-                    .AppendLine("using System;")
-                    .AppendLine("using System.Collections;")
-                    .AppendLine("using System.Collections.Generic;")
-                    .AppendLine("using System.ComponentModel;")
-                    .AppendLine("using System.Linq;")
-                    .AppendLine("using System.Text.Json;")
-                    .AppendLine("using System.Text.Json.Serialization;")
-                    .AppendLine("using GraphQLSharp;")
-                    .AppendLine($"namespace {options.Namespace} {{")
-                    .AppendLine("public class GraphQLClient : ")
-                    .AppendLine(mutationType == null ? $"GraphQLClient<{queryType}, {clientOptionsTypeName}>" : $"GraphQLClient<{queryType}, {mutationType}, {clientOptionsTypeName}>")
-                    .AppendLine($$"""
+        var context = new Context();
+        context.StrBuilder
+                .AppendLine("using System;")
+                .AppendLine("using System.Collections;")
+                .AppendLine("using System.Collections.Generic;")
+                .AppendLine("using System.ComponentModel;")
+                .AppendLine("using System.Linq;")
+                .AppendLine("using System.Text.Json;")
+                .AppendLine("using System.Text.Json.Serialization;")
+                .AppendLine("using GraphQLSharp;")
+                .AppendLine($"namespace {options.Namespace} {{")
+                .AppendLine("public class GraphQLClient : ")
+                .AppendLine(mutationType == null ? $"GraphQLClient<{queryType}, {clientOptionsTypeName}>" : $"GraphQLClient<{queryType}, {mutationType}, {clientOptionsTypeName}>")
+                .AppendLine($$"""
+                    {
+                        public GraphQLClient({{clientOptionsTypeName}}? defaultOptions = null) : base(defaultOptions!)
                         {
-                            public GraphQLClient({{clientOptionsTypeName}}? defaultOptions = null) : base(defaultOptions!)
-                            {
-                            }
                         }
-                        """);
+                    }
+                    """);
 
         var objectTypeNameToUnionTypes = allTypes.Where(t => t.kind == GraphQLTypeKind.UNION)
                                                   .SelectMany(tUnion => tUnion.possibleTypes.Select(tObject => (tUnion, tObject)))
@@ -145,33 +152,39 @@ public class GraphQLTypeGenerator
 
         var typeNameToType = allTypes.ToDictionary(t => t.name);
 
-        allTypes.Select(t => GenerateType(t, typeNameToType, options, objectTypeNameToUnionTypes, (queryType, mutationType)))
-                .ForEach(strType => str.Append(strType).AppendLine());
-        str.AppendLine("}");
+        allTypes.ForEach(t =>
+        {
+            GenerateType(context, t, typeNameToType, options, objectTypeNameToUnionTypes, (queryType, mutationType));
+            context.StrBuilder.AppendLine();
+        });
+        context.StrBuilder.AppendLine("}");
 
-        string code = str.ToString();
+        string code = context.StrBuilder.ToString();
         var tree = CSharpSyntaxTree.ParseText(code);
         var root = (CSharpSyntaxNode)tree.GetRoot();
         string formattedCode = root.NormalizeWhitespace().ToString();
         return "#nullable enable\r\n" + formattedCode;
     }
 
-    private StringBuilder GenerateType(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options, ILookup<string, GraphQLType> objectTypeNameToUnionTypes, (string queryType, string mutationType) rootTypes)
+    private void GenerateType(Context ctx, GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options, ILookup<string, GraphQLType> objectTypeNameToUnionTypes, (string queryType, string mutationType) rootTypes)
     {
-        return type.kind switch
-        {
-            GraphQLTypeKind.SCALAR or GraphQLTypeKind.INPUT_OBJECT => new StringBuilder(),
-            GraphQLTypeKind.ENUM => GenerateEnum(type),
-            GraphQLTypeKind.OBJECT => GenerateClass(type, typeNameToType, options, objectTypeNameToUnionTypes, rootTypes),
-            GraphQLTypeKind.INTERFACE => GenerateInterface(type, typeNameToType, options),
-            GraphQLTypeKind.UNION => GenerateUnion(type, typeNameToType, options),
-            _ => throw new Exception($"Unexpected type kind {type.kind}")
-        };
+        if (type.kind is GraphQLTypeKind.SCALAR or GraphQLTypeKind.INPUT_OBJECT)
+            return;
+        else if (type.kind is GraphQLTypeKind.ENUM)
+            GenerateEnum(ctx, type);
+        else if (type.kind is GraphQLTypeKind.OBJECT)
+            GenerateClass(ctx, type, typeNameToType, options, objectTypeNameToUnionTypes, rootTypes);
+        else if (type.kind is GraphQLTypeKind.INTERFACE)
+            GenerateInterface(ctx, type, typeNameToType, options);
+        else if (type.kind is GraphQLTypeKind.UNION)
+            GenerateUnion(ctx, type, typeNameToType, options);
+        else
+            throw new Exception($"Unexpected type kind {type.kind}");
     }
 
-    private StringBuilder GenerateUnion(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options)
+    private void GenerateUnion(Context ctx, GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options)
     {
-        var str = new StringBuilder()
+        var str = ctx.StrBuilder
                         .AppendLine(GenerateDescriptionCommentAndAttribute(type.description))
                         .AppendLine("[JsonPolymorphic(TypeDiscriminatorPropertyName = \"__typename\")]");
 
@@ -201,16 +214,14 @@ public class GraphQLTypeGenerator
         }
 
         commonFields
-            .ForEach(f => str.Append(GenerateField(type, f, options)));
+            .ForEach(f => GenerateField(ctx, type, f, options));
 
         str.AppendLine("}");
-
-        return str;
     }
 
-    private StringBuilder GenerateInterface(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options)
+    private void GenerateInterface(Context ctx, GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options)
     {
-        var str = new StringBuilder()
+        var str = ctx.StrBuilder
                         .AppendLine(GenerateDescriptionCommentAndAttribute(type.description))
                         .AppendLine("[JsonPolymorphic(TypeDiscriminatorPropertyName = \"__typename\")]");
 
@@ -242,21 +253,20 @@ public class GraphQLTypeGenerator
         type.fields
             //interface shouldn't redeclare fields already declare in parent interfaces
             .Where(f => (type.interfaces ?? []).SelectMany(i => i.fields).Where(f2 => f2.name == f.name).IsEmpty())
-            .ForEach(f => str.Append(GenerateField(type, f, options)));
+            .ForEach(f => GenerateField(ctx, type, f, options));
 
         str.AppendLine("}");
-        return str;
     }
 
 
-    private StringBuilder GenerateClass(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options, ILookup<string, GraphQLType> objectTypeNameToUnionTypes, (string queryType, string mutationType) rootTypes)
+    private void GenerateClass(Context ctx, GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options, ILookup<string, GraphQLType> objectTypeNameToUnionTypes, (string queryType, string mutationType) rootTypes)
     {
         string className = GenerateTypeName(type, options);
 
         if (className == nameof(PageInfo))
-            return new StringBuilder();
+            return;
 
-        var str = new StringBuilder()
+        var str = ctx.StrBuilder
                         .AppendLine(GenerateDescriptionCommentAndAttribute(type.description))
                         .Append($"public class {className} : GraphQLObject<{className}>");
 
@@ -311,15 +321,14 @@ public class GraphQLTypeGenerator
         str.AppendLine("{");
 
         type.fields
-            .ForEach(f => str.Append(GenerateField(type, f, options)));
+            .ForEach(f => GenerateField(ctx, type, f, options));
 
         str.AppendLine("}");
-        return str;
     }
 
-    private StringBuilder GenerateField(GraphQLType containingType, GraphQLField f, GraphQLTypeGeneratorOptions options)
+    private void GenerateField(Context ctx, GraphQLType containingType, GraphQLField f, GraphQLTypeGeneratorOptions options)
     {
-        var str = new StringBuilder()
+        var str = ctx.StrBuilder
                         .AppendLine(GenerateDescriptionCommentAndAttribute(f.description));
         if (f.isDeprecated)
             str.AppendLine($"[Obsolete({SymbolDisplay.FormatLiteral(f.deprecationReason.TrimEnd(), true)})]");
@@ -327,7 +336,6 @@ public class GraphQLTypeGenerator
             str.AppendLine($"[NonNull]");
         str.AppendLine($"public {this.GenerateTypeName(f.type, options, f.name, containingType)}? {EscapeCSharpKeyword(f.name)} {{ {(containingType.kind == GraphQLTypeKind.INTERFACE ? "get;" : "get;set;")} }}")
            .AppendLine();
-        return str;
     }
 
     private bool TryGetTypeNameOverride(GraphQLType containingType, string fieldName, GraphQLTypeGeneratorOptions options, out string typeName)
@@ -374,10 +382,10 @@ public class GraphQLTypeGenerator
         throw new Exception($"Unknown scalar type '{typeName}'. Please provide a target type for this type.");
     }
 
-    private StringBuilder GenerateEnum(GraphQLType type)
+    private void GenerateEnum(Context ctx, GraphQLType type)
     {
-        var str = new StringBuilder().AppendLine(GenerateDescriptionCommentAndAttribute(type.description))
-                        .AppendLine($"public enum {type.name} {{");
+        var str = ctx.StrBuilder.AppendLine(GenerateDescriptionCommentAndAttribute(type.description))
+                                .AppendLine($"public enum {type.name} {{");
 
         type.enumValues
             .ForEach(v =>
@@ -402,8 +410,6 @@ public class GraphQLTypeGenerator
                 str.AppendLine($"public const string {EscapeCSharpKeyword(v.name)} = @\"{v.name.Replace("\"", "\"\"")}\";");
             });
         str.AppendLine("}");
-
-        return str;
     }
 
     private string GenerateDescriptionCommentAndAttribute(string desc)
