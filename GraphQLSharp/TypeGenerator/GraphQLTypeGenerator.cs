@@ -109,8 +109,27 @@ public class GraphQLTypeGenerator
 
     private class Context
     {
+        public class DotNetTypeWithMembers
+        {
+            public string TypeName { get; init; }
+            private HashSet<string> MemberNames { get; } = new();
+            public void AddMember(string memberName)
+            {
+                MemberNames.Add(memberName);
+            }
+
+            public IEnumerable<string> GetMembers() => MemberNames;
+        }
+
         public readonly StringBuilder StrBuilder = new();
-        public readonly StringBuilder StrBuilderMemberNames = new();
+        private readonly List<DotNetTypeWithMembers> _dotNetTypesWithMembers = new();
+
+        public DotNetTypeWithMembers AddDotNetType(string typeName)
+        {
+            var dotNetType = new DotNetTypeWithMembers { TypeName = typeName };
+            _dotNetTypesWithMembers.Add(dotNetType);
+            return dotNetType;
+        }
     }
 
     public string GenerateTypes(GraphQLTypeGeneratorOptions options, JsonDocument introspectionQueryResponse)
@@ -196,7 +215,9 @@ public class GraphQLTypeGenerator
             str.AppendLine($"[JsonDerivedType(typeof({GenerateTypeName(t, options)}), typeDiscriminator: \"{t.name}\")]");
         }
 
-        str.AppendLine($"public interface {GenerateTypeName(type, options)} : {nameof(IGraphQLObject)}");
+
+        string interfaceName = GenerateTypeName(type, options);
+        str.AppendLine($"public interface {interfaceName} : {nameof(IGraphQLObject)}");
 
         str.AppendLine("{");
 
@@ -214,7 +235,7 @@ public class GraphQLTypeGenerator
         }
 
         commonFields
-            .ForEach(f => GenerateField(ctx, type, f, options));
+            .ForEach(f => GenerateField(ctx, ctx.AddDotNetType(interfaceName), type, f, options));
 
         str.AppendLine("}");
     }
@@ -233,7 +254,8 @@ public class GraphQLTypeGenerator
             str.AppendLine($"[JsonDerivedType(typeof({GenerateTypeName(t, options)}), typeDiscriminator: \"{t.name}\")]");
         }
 
-        str.AppendLine($"public interface {GenerateTypeName(type, options)} : {nameof(IGraphQLObject)}");
+        string interfaceName = GenerateTypeName(type, options);
+        str.AppendLine($"public interface {interfaceName} : {nameof(IGraphQLObject)}");
 
         var interfaces = type.interfaces;
         if (interfaces?.Any() == true)
@@ -253,7 +275,7 @@ public class GraphQLTypeGenerator
         type.fields
             //interface shouldn't redeclare fields already declare in parent interfaces
             .Where(f => (type.interfaces ?? []).SelectMany(i => i.fields).Where(f2 => f2.name == f.name).IsEmpty())
-            .ForEach(f => GenerateField(ctx, type, f, options));
+            .ForEach(f => GenerateField(ctx, ctx.AddDotNetType(interfaceName), type, f, options));
 
         str.AppendLine("}");
     }
@@ -321,12 +343,12 @@ public class GraphQLTypeGenerator
         str.AppendLine("{");
 
         type.fields
-            .ForEach(f => GenerateField(ctx, type, f, options));
+            .ForEach(f => GenerateField(ctx, ctx.AddDotNetType(className), type, f, options));
 
         str.AppendLine("}");
     }
 
-    private void GenerateField(Context ctx, GraphQLType containingType, GraphQLField f, GraphQLTypeGeneratorOptions options)
+    private void GenerateField(Context ctx, Context.DotNetTypeWithMembers containingDotNetType, GraphQLType containingType, GraphQLField f, GraphQLTypeGeneratorOptions options)
     {
         var str = ctx.StrBuilder
                         .AppendLine(GenerateDescriptionCommentAndAttribute(f.description));
@@ -334,8 +356,11 @@ public class GraphQLTypeGenerator
             str.AppendLine($"[Obsolete({SymbolDisplay.FormatLiteral(f.deprecationReason.TrimEnd(), true)})]");
         if (f.type.kind == GraphQLTypeKind.NON_NULL)
             str.AppendLine($"[NonNull]");
-        str.AppendLine($"public {this.GenerateTypeName(f.type, options, f.name, containingType)}? {EscapeCSharpKeyword(f.name)} {{ {(containingType.kind == GraphQLTypeKind.INTERFACE ? "get;" : "get;set;")} }}")
+
+        string typeName = GenerateTypeName(f.type, options, f.name, containingType);
+        str.AppendLine($"public {typeName}? {EscapeCSharpKeyword(f.name)} {{ {(containingType.kind == GraphQLTypeKind.INTERFACE ? "get;" : "get;set;")} }}")
            .AppendLine();
+        containingDotNetType.AddMember(f.name);
     }
 
     private bool TryGetTypeNameOverride(GraphQLType containingType, string fieldName, GraphQLTypeGeneratorOptions options, out string typeName)
