@@ -27,6 +27,16 @@ public class GraphQLClientTests
     }
 
     [TestMethod]
+    public async Task GenerateShopifyJsonSchema()
+    {
+        var res = await _client.ExecuteAsync(GraphQLTypeGenerator.INTROSPECTION_QUERY);
+        File.WriteAllText("../../../shopify.json", JsonSerializer.Serialize(res.data, new JsonSerializerOptions
+        {
+            WriteIndented = true,
+        }));
+    }
+
+    [TestMethod]
     public async Task QuerySimple()
     {
         var query = """
