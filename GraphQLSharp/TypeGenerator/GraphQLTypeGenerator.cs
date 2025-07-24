@@ -123,6 +123,7 @@ public class GraphQLTypeGenerator
                     .AppendLine("using System;")
                     .AppendLine("using System.Collections;")
                     .AppendLine("using System.Collections.Generic;")
+                    .AppendLine("using System.ComponentModel;")
                     .AppendLine("using System.Linq;")
                     .AppendLine("using System.Text.Json;")
                     .AppendLine("using System.Text.Json.Serialization;")
@@ -171,7 +172,7 @@ public class GraphQLTypeGenerator
     private StringBuilder GenerateUnion(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options)
     {
         var str = new StringBuilder()
-                        .AppendLine(GenerateDescriptionComment(type.description))
+                        .AppendLine(GenerateDescriptionCommentAndAttribute(type.description))
                         .AppendLine("[JsonPolymorphic(TypeDiscriminatorPropertyName = \"__typename\")]");
 
         var possibleTypes = type.possibleTypes
@@ -210,7 +211,7 @@ public class GraphQLTypeGenerator
     private StringBuilder GenerateInterface(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options)
     {
         var str = new StringBuilder()
-                        .AppendLine(GenerateDescriptionComment(type.description))
+                        .AppendLine(GenerateDescriptionCommentAndAttribute(type.description))
                         .AppendLine("[JsonPolymorphic(TypeDiscriminatorPropertyName = \"__typename\")]");
 
         var possibleTypes = type.possibleTypes
@@ -256,7 +257,7 @@ public class GraphQLTypeGenerator
             return new StringBuilder();
 
         var str = new StringBuilder()
-                        .AppendLine(GenerateDescriptionComment(type.description))
+                        .AppendLine(GenerateDescriptionCommentAndAttribute(type.description))
                         .Append($"public class {className} : GraphQLObject<{className}>");
 
         if (type.name == rootTypes.queryType)
@@ -319,7 +320,7 @@ public class GraphQLTypeGenerator
     private StringBuilder GenerateField(GraphQLType containingType, GraphQLField f, GraphQLTypeGeneratorOptions options)
     {
         var str = new StringBuilder()
-                        .AppendLine(GenerateDescriptionComment(f.description));
+                        .AppendLine(GenerateDescriptionCommentAndAttribute(f.description));
         if (f.isDeprecated)
             str.AppendLine($"[Obsolete({SymbolDisplay.FormatLiteral(f.deprecationReason.TrimEnd(), true)})]");
         if (f.type.kind == GraphQLTypeKind.NON_NULL)
@@ -375,13 +376,13 @@ public class GraphQLTypeGenerator
 
     private StringBuilder GenerateEnum(GraphQLType type)
     {
-        var str = new StringBuilder().AppendLine(GenerateDescriptionComment(type.description))
+        var str = new StringBuilder().AppendLine(GenerateDescriptionCommentAndAttribute(type.description))
                         .AppendLine($"public enum {type.name} {{");
 
         type.enumValues
             .ForEach(v =>
             {
-                str.AppendLine(GenerateDescriptionComment(v.description));
+                str.AppendLine(GenerateDescriptionCommentAndAttribute(v.description));
                 if (v.isDeprecated)
                     str.AppendLine($"[Obsolete({SymbolDisplay.FormatLiteral(v.deprecationReason.TrimEnd(), true)})]");
                 str.AppendLine($"{EscapeCSharpKeyword(v.name)},");
@@ -405,7 +406,7 @@ public class GraphQLTypeGenerator
         return str;
     }
 
-    private string GenerateDescriptionComment(string desc)
+    private string GenerateDescriptionCommentAndAttribute(string desc)
     {
         if (desc == null)
             return string.Empty;
@@ -414,6 +415,7 @@ public class GraphQLTypeGenerator
                         ///<summary>
                         ///{desc.TrimEnd('\n').Replace("\n", "\n///")}
                         ///</summary>
+                        [Description({SymbolDisplay.FormatLiteral(desc.TrimEnd('\n'), true)})]
                     """;
     }
 
