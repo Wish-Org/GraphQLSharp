@@ -27,6 +27,7 @@ public class GraphQLClientTests
     }
 
     [TestMethod]
+    [Ignore("Run this test only manually if need to regenerate the Shopify schema")]
     public async Task GenerateShopifyJsonSchema()
     {
         var res = await _client.ExecuteAsync(GraphQLTypeGenerator.INTROSPECTION_QUERY);
