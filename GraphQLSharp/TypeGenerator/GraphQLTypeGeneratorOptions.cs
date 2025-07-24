@@ -21,4 +21,10 @@ public class GraphQLTypeGeneratorOptions
     /// Indicates whether enum members are generated as enum or string. Enum types will still be generated regardless of this setting.
     /// </summary>
     public bool EnumMembersAsString { get; set; }
+
+    /// <summary>
+    /// An optional Type that represents the client options for the generated GraphQL client.
+    /// The type must inherit from GraphQLClientOptions.
+    /// </summary>
+    public Type ClientOptionsType { get; set; }
 }
