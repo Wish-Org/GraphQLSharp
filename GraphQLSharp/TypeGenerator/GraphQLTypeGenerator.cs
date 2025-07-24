@@ -47,6 +47,14 @@ public class GraphQLTypeGenerator
 
             {
               __schema {
+                queryType
+                {
+                    name
+                }
+                mutationType
+                {
+                    name
+                }
                 types {
                   kind
                   name
@@ -107,6 +115,9 @@ public class GraphQLTypeGenerator
                         introspectionQueryResponse.RootElement.GetProperty("__schema");
 
         var allTypes = schemaElt.GetProperty("types").Deserialize<GraphQLType[]>();
+        var queryType = schemaElt.GetProperty("queryType").GetProperty("name").GetString();
+        var mutationType = schemaElt.TryGetProperty("mutationType", out var elt) && elt.ValueKind == JsonValueKind.Object ? elt.GetProperty("name").GetString() : null;
+        var clientOptionsTypeName = options.ClientOptionsType == null ? typeof(GraphQLClientOptions).Name : options.ClientOptionsType.FullName;
 
         var str = new StringBuilder()
                     .AppendLine("using System;")
@@ -116,7 +127,16 @@ public class GraphQLTypeGenerator
                     .AppendLine("using System.Text.Json;")
                     .AppendLine("using System.Text.Json.Serialization;")
                     .AppendLine("using GraphQLSharp;")
-                    .AppendLine($"namespace {options.Namespace} {{");
+                    .AppendLine($"namespace {options.Namespace} {{")
+                    .AppendLine("public class GraphQLClient : ")
+                    .AppendLine(mutationType == null ? $"GraphQLClient<{queryType}, {clientOptionsTypeName}>" : $"GraphQLClient<{queryType}, {mutationType}, {clientOptionsTypeName}>")
+                    .AppendLine($$"""
+                        {
+                            public GraphQLClient({{clientOptionsTypeName}}? defaultOptions = null) : base(defaultOptions!)
+                            {
+                            }
+                        }
+                        """);
 
         var objectTypeNameToUnionTypes = allTypes.Where(t => t.kind == GraphQLTypeKind.UNION)
                                                   .SelectMany(tUnion => tUnion.possibleTypes.Select(tObject => (tUnion, tObject)))
@@ -126,7 +146,6 @@ public class GraphQLTypeGenerator
 
         allTypes.Select(t => GenerateType(t, typeNameToType, options, objectTypeNameToUnionTypes))
                 .ForEach(strType => str.Append(strType).AppendLine());
-
         str.AppendLine("}");
 
         string code = str.ToString();

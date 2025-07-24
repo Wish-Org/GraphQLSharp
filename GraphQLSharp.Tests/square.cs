@@ -9,6 +9,13 @@ using GraphQLSharp;
 
 namespace square
 {
+    public class GraphQLClient : GraphQLClient<Query, GraphQLClientOptions>
+    {
+        public GraphQLClient(GraphQLClientOptions? defaultOptions = null) : base(defaultOptions!)
+        {
+        }
+    }
+
     ///<summary>
     ///Represents a postal address in a country.
     ///For more information, see [Working with Addresses](https://developer.squareup.com/docs/build-basics/working-with-addresses).

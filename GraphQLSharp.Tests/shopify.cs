@@ -9,6 +9,13 @@ using GraphQLSharp;
 
 namespace shopify
 {
+    public class GraphQLClient : GraphQLClient<QueryRoot, Mutation, GraphQLClientOptions>
+    {
+        public GraphQLClient(GraphQLClientOptions? defaultOptions = null) : base(defaultOptions!)
+        {
+        }
+    }
+
     ///<summary>
     ///A checkout that was abandoned by the customer.
     ///</summary>

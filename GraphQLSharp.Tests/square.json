@@ -1,5 +1,9 @@
 {
     "__schema": {
+        "queryType": {
+            "name": "Query"
+        },
+        "mutationType": null,
         "types": [
             {
                 "kind": "OBJECT",
