@@ -144,7 +144,7 @@ public class GraphQLTypeGenerator
 
         var typeNameToType = allTypes.ToDictionary(t => t.name);
 
-        allTypes.Select(t => GenerateType(t, typeNameToType, options, objectTypeNameToUnionTypes))
+        allTypes.Select(t => GenerateType(t, typeNameToType, options, objectTypeNameToUnionTypes, (queryType, mutationType)))
                 .ForEach(strType => str.Append(strType).AppendLine());
         str.AppendLine("}");
 
@@ -155,13 +155,13 @@ public class GraphQLTypeGenerator
         return "#nullable enable\r\n" + formattedCode;
     }
 
-    private StringBuilder GenerateType(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options, ILookup<string, GraphQLType> objectTypeNameToUnionTypes)
+    private StringBuilder GenerateType(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options, ILookup<string, GraphQLType> objectTypeNameToUnionTypes, (string queryType, string mutationType) rootTypes)
     {
         return type.kind switch
         {
             GraphQLTypeKind.SCALAR or GraphQLTypeKind.INPUT_OBJECT => new StringBuilder(),
             GraphQLTypeKind.ENUM => GenerateEnum(type),
-            GraphQLTypeKind.OBJECT => GenerateClass(type, typeNameToType, options, objectTypeNameToUnionTypes),
+            GraphQLTypeKind.OBJECT => GenerateClass(type, typeNameToType, options, objectTypeNameToUnionTypes, rootTypes),
             GraphQLTypeKind.INTERFACE => GenerateInterface(type, typeNameToType, options),
             GraphQLTypeKind.UNION => GenerateUnion(type, typeNameToType, options),
             _ => throw new Exception($"Unexpected type kind {type.kind}")
@@ -248,7 +248,7 @@ public class GraphQLTypeGenerator
     }
 
 
-    private StringBuilder GenerateClass(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options, ILookup<string, GraphQLType> objectTypeNameToUnionTypes)
+    private StringBuilder GenerateClass(GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options, ILookup<string, GraphQLType> objectTypeNameToUnionTypes, (string queryType, string mutationType) rootTypes)
     {
         string className = GenerateTypeName(type, options);
 
