@@ -46550,7 +46550,7 @@ namespace shopify
     ///<summary>
     ///The schema's entry point for all mutation operations.
     ///</summary>
-    public class Mutation : GraphQLObject<Mutation>
+    public class Mutation : GraphQLObject<Mutation>, IMutationRoot
     {
         ///<summary>
         ///Updates the email state value for an abandonment.
@@ -64367,7 +64367,7 @@ namespace shopify
     ///<summary>
     ///The schema's entry-point for queries. This acts as the public, top-level API from which all queries must start.
     ///</summary>
-    public class QueryRoot : GraphQLObject<QueryRoot>
+    public class QueryRoot : GraphQLObject<QueryRoot>, IQueryRoot
     {
         ///<summary>
         ///List of abandoned checkouts. Includes checkouts that were recovered after being abandoned.

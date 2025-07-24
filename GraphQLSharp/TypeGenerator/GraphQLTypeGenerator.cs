@@ -259,7 +259,14 @@ public class GraphQLTypeGenerator
                         .AppendLine(GenerateDescriptionComment(type.description))
                         .Append($"public class {className} : GraphQLObject<{className}>");
 
+        if (type.name == rootTypes.queryType)
+            str.Append($", IQueryRoot");
+
+        if (type.name == rootTypes.mutationType)
+            str.Append($", IMutationRoot");
+
         var interfaces = type.interfaces.Concat(objectTypeNameToUnionTypes[type.name]);
+
         if (interfaces.Any())
             str.Append($", {string.Join(',', interfaces.Select(i => this.GenerateTypeName(i, options)))}");
         if (type.name.EndsWith("Connection"))

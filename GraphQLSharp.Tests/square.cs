@@ -16619,7 +16619,7 @@ namespace square
     ///<summary>
     ///The query entry point for the entire schema.
     ///</summary>
-    public class Query : GraphQLObject<Query>
+    public class Query : GraphQLObject<Query>, IQueryRoot
     {
         ///<summary>
         ///Retrieves a list of cards owned by the merchant. A max of 25 cards will be returned.
