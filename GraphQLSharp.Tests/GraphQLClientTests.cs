@@ -7,7 +7,7 @@ namespace GraphQLSharp.Tests;
 [TestClass]
 public class GraphQLClientTests
 {
-    private GraphQLClient<QueryRoot, Mutation> _client;
+    private GraphQLClient<QueryRoot, Mutation, GraphQLClientOptions> _client;
 
     [TestInitialize]
     public void Initialize()
@@ -15,7 +15,7 @@ public class GraphQLClientTests
         string shopId = Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_ID", EnvironmentVariableTarget.User) ?? Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_ID");
         string token = Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_TOKEN", EnvironmentVariableTarget.User) ?? Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_TOKEN");
 
-        _client = new GraphQLClient<QueryRoot, Mutation>(new GraphQLClientOptions
+        _client = new(new GraphQLClientOptions
         {
             Uri = new Uri($"https://{shopId}/admin/api/2025-04/graphql.json"),
             ConfigureHttpRequestHeaders = headers =>
