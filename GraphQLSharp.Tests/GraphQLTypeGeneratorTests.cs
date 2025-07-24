@@ -37,7 +37,8 @@ public class GraphQLSharp_Tests
                     { ("ShopifyPaymentsDispute", "evidenceSentOn"), "DateTime" },
                     { ("ShopifyPaymentsDispute", "finalizedOn"), "DateTime" },
                 },
-            EnumMembersAsString = true
+            EnumMembersAsString = true,
+            GenerateMemberNames = true
         };
 
         var generator = new GraphQLTypeGenerator();

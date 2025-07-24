@@ -122,12 +122,13 @@ public class GraphQLTypeGenerator
         }
 
         public readonly StringBuilder StrBuilder = new();
-        private readonly List<DotNetTypeWithMembers> _dotNetTypesWithMembers = new();
+        private readonly List<DotNetTypeWithMembers> _dotNetTypes = new();
+        public IEnumerable<DotNetTypeWithMembers> DotNetTypes => _dotNetTypes;
 
         public DotNetTypeWithMembers AddDotNetType(string typeName)
         {
             var dotNetType = new DotNetTypeWithMembers { TypeName = typeName };
-            _dotNetTypesWithMembers.Add(dotNetType);
+            _dotNetTypes.Add(dotNetType);
             return dotNetType;
         }
     }
@@ -145,8 +146,8 @@ public class GraphQLTypeGenerator
         var clientOptionsTypeName = options.ClientOptionsType == null ? typeof(GraphQLClientOptions).Name : options.ClientOptionsType.FullName;
 
         var context = new Context();
-        context.StrBuilder
-                .AppendLine("using System;")
+        var str = context.StrBuilder;
+        str.AppendLine("using System;")
                 .AppendLine("using System.Collections;")
                 .AppendLine("using System.Collections.Generic;")
                 .AppendLine("using System.ComponentModel;")
@@ -174,11 +175,32 @@ public class GraphQLTypeGenerator
         allTypes.ForEach(t =>
         {
             GenerateType(context, t, typeNameToType, options, objectTypeNameToUnionTypes, (queryType, mutationType));
-            context.StrBuilder.AppendLine();
+            str.AppendLine();
         });
-        context.StrBuilder.AppendLine("}");
 
-        string code = context.StrBuilder.ToString();
+        if (options.GenerateMemberNames)
+        {
+            str.AppendLine("namespace _MemberNames")
+               .AppendLine("{");
+
+            foreach (var dotNetType in context.DotNetTypes)
+            {
+                str.AppendLine($"public static class {dotNetType.TypeName}")
+                .AppendLine("{");
+                foreach (var memberName in dotNetType.GetMembers())
+                {
+                    string memberFullName = $"{options.Namespace}.{dotNetType.TypeName}.{memberName}";
+                    str.AppendLine($"public const string {EscapeCSharpKeyword(memberName)} = {SymbolDisplay.FormatLiteral(memberFullName, true)};");
+                }
+                str.AppendLine("}");
+            }
+
+            str.AppendLine("}");
+        }
+
+        str.AppendLine("}");
+
+        string code = str.ToString();
         var tree = CSharpSyntaxTree.ParseText(code);
         var root = (CSharpSyntaxNode)tree.GetRoot();
         string formattedCode = root.NormalizeWhitespace().ToString();
@@ -234,8 +256,9 @@ public class GraphQLTypeGenerator
                                                     f => (GenerateTypeName(f.type, options), f.name));
         }
 
+        var dotNetType = ctx.AddDotNetType(interfaceName);
         commonFields
-            .ForEach(f => GenerateField(ctx, ctx.AddDotNetType(interfaceName), type, f, options));
+            .ForEach(f => GenerateField(ctx, dotNetType, type, f, options));
 
         str.AppendLine("}");
     }
@@ -272,10 +295,11 @@ public class GraphQLTypeGenerator
             }
         }
 
+        var dotNetType = ctx.AddDotNetType(interfaceName);
         type.fields
             //interface shouldn't redeclare fields already declare in parent interfaces
             .Where(f => (type.interfaces ?? []).SelectMany(i => i.fields).Where(f2 => f2.name == f.name).IsEmpty())
-            .ForEach(f => GenerateField(ctx, ctx.AddDotNetType(interfaceName), type, f, options));
+            .ForEach(f => GenerateField(ctx, dotNetType, type, f, options));
 
         str.AppendLine("}");
     }
@@ -342,8 +366,9 @@ public class GraphQLTypeGenerator
         str.AppendLine();
         str.AppendLine("{");
 
+        var dotNetType = ctx.AddDotNetType(className);
         type.fields
-            .ForEach(f => GenerateField(ctx, ctx.AddDotNetType(className), type, f, options));
+            .ForEach(f => GenerateField(ctx, dotNetType, type, f, options));
 
         str.AppendLine("}");
     }

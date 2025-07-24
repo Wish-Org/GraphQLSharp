@@ -103297,4 +103297,14991 @@ namespace shopify
         public const string LIST = @"LIST";
         public const string NON_NULL = @"NON_NULL";
     }
+
+    namespace _MemberNames
+    {
+        public static class AbandonedCheckout
+        {
+            public const string abandonedCheckoutUrl = "shopify.AbandonedCheckout.abandonedCheckoutUrl";
+            public const string billingAddress = "shopify.AbandonedCheckout.billingAddress";
+            public const string completedAt = "shopify.AbandonedCheckout.completedAt";
+            public const string createdAt = "shopify.AbandonedCheckout.createdAt";
+            public const string customAttributes = "shopify.AbandonedCheckout.customAttributes";
+            public const string customer = "shopify.AbandonedCheckout.customer";
+            public const string defaultCursor = "shopify.AbandonedCheckout.defaultCursor";
+            public const string discountCodes = "shopify.AbandonedCheckout.discountCodes";
+            public const string id = "shopify.AbandonedCheckout.id";
+            public const string lineItems = "shopify.AbandonedCheckout.lineItems";
+            public const string lineItemsQuantity = "shopify.AbandonedCheckout.lineItemsQuantity";
+            public const string name = "shopify.AbandonedCheckout.name";
+            public const string note = "shopify.AbandonedCheckout.note";
+            public const string shippingAddress = "shopify.AbandonedCheckout.shippingAddress";
+            public const string subtotalPriceSet = "shopify.AbandonedCheckout.subtotalPriceSet";
+            public const string taxLines = "shopify.AbandonedCheckout.taxLines";
+            public const string taxesIncluded = "shopify.AbandonedCheckout.taxesIncluded";
+            public const string totalDiscountSet = "shopify.AbandonedCheckout.totalDiscountSet";
+            public const string totalDutiesSet = "shopify.AbandonedCheckout.totalDutiesSet";
+            public const string totalLineItemsPriceSet = "shopify.AbandonedCheckout.totalLineItemsPriceSet";
+            public const string totalPriceSet = "shopify.AbandonedCheckout.totalPriceSet";
+            public const string totalTaxSet = "shopify.AbandonedCheckout.totalTaxSet";
+            public const string updatedAt = "shopify.AbandonedCheckout.updatedAt";
+        }
+
+        public static class AbandonedCheckoutConnection
+        {
+            public const string edges = "shopify.AbandonedCheckoutConnection.edges";
+            public const string nodes = "shopify.AbandonedCheckoutConnection.nodes";
+            public const string pageInfo = "shopify.AbandonedCheckoutConnection.pageInfo";
+        }
+
+        public static class AbandonedCheckoutEdge
+        {
+            public const string cursor = "shopify.AbandonedCheckoutEdge.cursor";
+            public const string node = "shopify.AbandonedCheckoutEdge.node";
+        }
+
+        public static class AbandonedCheckoutLineItem
+        {
+            public const string components = "shopify.AbandonedCheckoutLineItem.components";
+            public const string customAttributes = "shopify.AbandonedCheckoutLineItem.customAttributes";
+            public const string discountAllocations = "shopify.AbandonedCheckoutLineItem.discountAllocations";
+            public const string discountedTotalPriceSet = "shopify.AbandonedCheckoutLineItem.discountedTotalPriceSet";
+            public const string discountedTotalPriceWithCodeDiscount = "shopify.AbandonedCheckoutLineItem.discountedTotalPriceWithCodeDiscount";
+            public const string discountedUnitPriceSet = "shopify.AbandonedCheckoutLineItem.discountedUnitPriceSet";
+            public const string discountedUnitPriceWithCodeDiscount = "shopify.AbandonedCheckoutLineItem.discountedUnitPriceWithCodeDiscount";
+            public const string id = "shopify.AbandonedCheckoutLineItem.id";
+            public const string image = "shopify.AbandonedCheckoutLineItem.image";
+            public const string originalTotalPriceSet = "shopify.AbandonedCheckoutLineItem.originalTotalPriceSet";
+            public const string originalUnitPriceSet = "shopify.AbandonedCheckoutLineItem.originalUnitPriceSet";
+            public const string product = "shopify.AbandonedCheckoutLineItem.product";
+            public const string quantity = "shopify.AbandonedCheckoutLineItem.quantity";
+            public const string sku = "shopify.AbandonedCheckoutLineItem.sku";
+            public const string title = "shopify.AbandonedCheckoutLineItem.title";
+            public const string variant = "shopify.AbandonedCheckoutLineItem.variant";
+            public const string variantTitle = "shopify.AbandonedCheckoutLineItem.variantTitle";
+        }
+
+        public static class AbandonedCheckoutLineItemComponent
+        {
+            public const string id = "shopify.AbandonedCheckoutLineItemComponent.id";
+            public const string image = "shopify.AbandonedCheckoutLineItemComponent.image";
+            public const string quantity = "shopify.AbandonedCheckoutLineItemComponent.quantity";
+            public const string title = "shopify.AbandonedCheckoutLineItemComponent.title";
+            public const string variantTitle = "shopify.AbandonedCheckoutLineItemComponent.variantTitle";
+        }
+
+        public static class AbandonedCheckoutLineItemConnection
+        {
+            public const string edges = "shopify.AbandonedCheckoutLineItemConnection.edges";
+            public const string nodes = "shopify.AbandonedCheckoutLineItemConnection.nodes";
+            public const string pageInfo = "shopify.AbandonedCheckoutLineItemConnection.pageInfo";
+        }
+
+        public static class AbandonedCheckoutLineItemEdge
+        {
+            public const string cursor = "shopify.AbandonedCheckoutLineItemEdge.cursor";
+            public const string node = "shopify.AbandonedCheckoutLineItemEdge.node";
+        }
+
+        public static class Abandonment
+        {
+            public const string abandonedCheckoutPayload = "shopify.Abandonment.abandonedCheckoutPayload";
+            public const string abandonmentType = "shopify.Abandonment.abandonmentType";
+            public const string app = "shopify.Abandonment.app";
+            public const string cartUrl = "shopify.Abandonment.cartUrl";
+            public const string createdAt = "shopify.Abandonment.createdAt";
+            public const string customer = "shopify.Abandonment.customer";
+            public const string customerHasNoDraftOrderSinceAbandonment = "shopify.Abandonment.customerHasNoDraftOrderSinceAbandonment";
+            public const string customerHasNoOrderSinceAbandonment = "shopify.Abandonment.customerHasNoOrderSinceAbandonment";
+            public const string daysSinceLastAbandonmentEmail = "shopify.Abandonment.daysSinceLastAbandonmentEmail";
+            public const string emailSentAt = "shopify.Abandonment.emailSentAt";
+            public const string emailState = "shopify.Abandonment.emailState";
+            public const string hoursSinceLastAbandonedCheckout = "shopify.Abandonment.hoursSinceLastAbandonedCheckout";
+            public const string id = "shopify.Abandonment.id";
+            public const string inventoryAvailable = "shopify.Abandonment.inventoryAvailable";
+            public const string isFromCustomStorefront = "shopify.Abandonment.isFromCustomStorefront";
+            public const string isFromOnlineStore = "shopify.Abandonment.isFromOnlineStore";
+            public const string isFromShopApp = "shopify.Abandonment.isFromShopApp";
+            public const string isFromShopPay = "shopify.Abandonment.isFromShopPay";
+            public const string isMostSignificantAbandonment = "shopify.Abandonment.isMostSignificantAbandonment";
+            public const string lastBrowseAbandonmentDate = "shopify.Abandonment.lastBrowseAbandonmentDate";
+            public const string lastCartAbandonmentDate = "shopify.Abandonment.lastCartAbandonmentDate";
+            public const string lastCheckoutAbandonmentDate = "shopify.Abandonment.lastCheckoutAbandonmentDate";
+            public const string mostRecentStep = "shopify.Abandonment.mostRecentStep";
+            public const string productsAddedToCart = "shopify.Abandonment.productsAddedToCart";
+            public const string productsViewed = "shopify.Abandonment.productsViewed";
+            public const string visitStartedAt = "shopify.Abandonment.visitStartedAt";
+        }
+
+        public static class AbandonmentEmailStateUpdatePayload
+        {
+            public const string abandonment = "shopify.AbandonmentEmailStateUpdatePayload.abandonment";
+            public const string userErrors = "shopify.AbandonmentEmailStateUpdatePayload.userErrors";
+        }
+
+        public static class AbandonmentEmailStateUpdateUserError
+        {
+            public const string code = "shopify.AbandonmentEmailStateUpdateUserError.code";
+            public const string field = "shopify.AbandonmentEmailStateUpdateUserError.field";
+            public const string message = "shopify.AbandonmentEmailStateUpdateUserError.message";
+        }
+
+        public static class AbandonmentUpdateActivitiesDeliveryStatusesPayload
+        {
+            public const string abandonment = "shopify.AbandonmentUpdateActivitiesDeliveryStatusesPayload.abandonment";
+            public const string userErrors = "shopify.AbandonmentUpdateActivitiesDeliveryStatusesPayload.userErrors";
+        }
+
+        public static class AbandonmentUpdateActivitiesDeliveryStatusesUserError
+        {
+            public const string code = "shopify.AbandonmentUpdateActivitiesDeliveryStatusesUserError.code";
+            public const string field = "shopify.AbandonmentUpdateActivitiesDeliveryStatusesUserError.field";
+            public const string message = "shopify.AbandonmentUpdateActivitiesDeliveryStatusesUserError.message";
+        }
+
+        public static class AccessScope
+        {
+            public const string description = "shopify.AccessScope.description";
+            public const string handle = "shopify.AccessScope.handle";
+        }
+
+        public static class AddAllProductsOperation
+        {
+            public const string id = "shopify.AddAllProductsOperation.id";
+            public const string processedRowCount = "shopify.AddAllProductsOperation.processedRowCount";
+            public const string rowCount = "shopify.AddAllProductsOperation.rowCount";
+            public const string status = "shopify.AddAllProductsOperation.status";
+        }
+
+        public static class AdditionalFee
+        {
+            public const string id = "shopify.AdditionalFee.id";
+            public const string name = "shopify.AdditionalFee.name";
+            public const string price = "shopify.AdditionalFee.price";
+            public const string taxLines = "shopify.AdditionalFee.taxLines";
+        }
+
+        public static class AdditionalFeeSale
+        {
+            public const string actionType = "shopify.AdditionalFeeSale.actionType";
+            public const string additionalFee = "shopify.AdditionalFeeSale.additionalFee";
+            public const string id = "shopify.AdditionalFeeSale.id";
+            public const string lineType = "shopify.AdditionalFeeSale.lineType";
+            public const string quantity = "shopify.AdditionalFeeSale.quantity";
+            public const string taxes = "shopify.AdditionalFeeSale.taxes";
+            public const string totalAmount = "shopify.AdditionalFeeSale.totalAmount";
+            public const string totalDiscountAmountAfterTaxes = "shopify.AdditionalFeeSale.totalDiscountAmountAfterTaxes";
+            public const string totalDiscountAmountBeforeTaxes = "shopify.AdditionalFeeSale.totalDiscountAmountBeforeTaxes";
+            public const string totalTaxAmount = "shopify.AdditionalFeeSale.totalTaxAmount";
+        }
+
+        public static class AdjustmentSale
+        {
+            public const string actionType = "shopify.AdjustmentSale.actionType";
+            public const string id = "shopify.AdjustmentSale.id";
+            public const string lineType = "shopify.AdjustmentSale.lineType";
+            public const string quantity = "shopify.AdjustmentSale.quantity";
+            public const string taxes = "shopify.AdjustmentSale.taxes";
+            public const string totalAmount = "shopify.AdjustmentSale.totalAmount";
+            public const string totalDiscountAmountAfterTaxes = "shopify.AdjustmentSale.totalDiscountAmountAfterTaxes";
+            public const string totalDiscountAmountBeforeTaxes = "shopify.AdjustmentSale.totalDiscountAmountBeforeTaxes";
+            public const string totalTaxAmount = "shopify.AdjustmentSale.totalTaxAmount";
+        }
+
+        public static class AllDiscountItems
+        {
+            public const string allItems = "shopify.AllDiscountItems.allItems";
+        }
+
+        public static class AndroidApplication
+        {
+            public const string appLinksEnabled = "shopify.AndroidApplication.appLinksEnabled";
+            public const string applicationId = "shopify.AndroidApplication.applicationId";
+            public const string id = "shopify.AndroidApplication.id";
+            public const string sha256CertFingerprints = "shopify.AndroidApplication.sha256CertFingerprints";
+        }
+
+        public static class ApiVersion
+        {
+            public const string displayName = "shopify.ApiVersion.displayName";
+            public const string handle = "shopify.ApiVersion.handle";
+            public const string supported = "shopify.ApiVersion.supported";
+        }
+
+        public static class App
+        {
+            public const string apiKey = "shopify.App.apiKey";
+            public const string appStoreAppUrl = "shopify.App.appStoreAppUrl";
+            public const string appStoreDeveloperUrl = "shopify.App.appStoreDeveloperUrl";
+            public const string availableAccessScopes = "shopify.App.availableAccessScopes";
+            public const string banner = "shopify.App.banner";
+            public const string description = "shopify.App.description";
+            public const string developerName = "shopify.App.developerName";
+            public const string developerType = "shopify.App.developerType";
+            public const string developerUrl = "shopify.App.developerUrl";
+            public const string embedded = "shopify.App.embedded";
+            public const string failedRequirements = "shopify.App.failedRequirements";
+            public const string features = "shopify.App.features";
+            public const string feedback = "shopify.App.feedback";
+            public const string handle = "shopify.App.handle";
+            public const string icon = "shopify.App.icon";
+            public const string id = "shopify.App.id";
+            public const string installUrl = "shopify.App.installUrl";
+            public const string installation = "shopify.App.installation";
+            public const string isPostPurchaseAppInUse = "shopify.App.isPostPurchaseAppInUse";
+            public const string launchUrl = "shopify.App.launchUrl";
+            public const string navigationItems = "shopify.App.navigationItems";
+            public const string optionalAccessScopes = "shopify.App.optionalAccessScopes";
+            public const string previouslyInstalled = "shopify.App.previouslyInstalled";
+            public const string pricingDetails = "shopify.App.pricingDetails";
+            public const string pricingDetailsSummary = "shopify.App.pricingDetailsSummary";
+            public const string privacyPolicyUrl = "shopify.App.privacyPolicyUrl";
+            public const string publicCategory = "shopify.App.publicCategory";
+            public const string published = "shopify.App.published";
+            public const string requestedAccessScopes = "shopify.App.requestedAccessScopes";
+            public const string screenshots = "shopify.App.screenshots";
+            public const string shopifyDeveloped = "shopify.App.shopifyDeveloped";
+            public const string title = "shopify.App.title";
+            public const string uninstallMessage = "shopify.App.uninstallMessage";
+            public const string uninstallUrl = "shopify.App.uninstallUrl";
+            public const string webhookApiVersion = "shopify.App.webhookApiVersion";
+        }
+
+        public static class AppCatalog
+        {
+            public const string apps = "shopify.AppCatalog.apps";
+            public const string id = "shopify.AppCatalog.id";
+            public const string operations = "shopify.AppCatalog.operations";
+            public const string priceList = "shopify.AppCatalog.priceList";
+            public const string publication = "shopify.AppCatalog.publication";
+            public const string status = "shopify.AppCatalog.status";
+            public const string title = "shopify.AppCatalog.title";
+        }
+
+        public static class AppConnection
+        {
+            public const string edges = "shopify.AppConnection.edges";
+            public const string nodes = "shopify.AppConnection.nodes";
+            public const string pageInfo = "shopify.AppConnection.pageInfo";
+        }
+
+        public static class AppCredit
+        {
+            public const string amount = "shopify.AppCredit.amount";
+            public const string createdAt = "shopify.AppCredit.createdAt";
+            public const string description = "shopify.AppCredit.description";
+            public const string id = "shopify.AppCredit.id";
+            public const string test = "shopify.AppCredit.test";
+        }
+
+        public static class AppCreditConnection
+        {
+            public const string edges = "shopify.AppCreditConnection.edges";
+            public const string nodes = "shopify.AppCreditConnection.nodes";
+            public const string pageInfo = "shopify.AppCreditConnection.pageInfo";
+        }
+
+        public static class AppCreditEdge
+        {
+            public const string cursor = "shopify.AppCreditEdge.cursor";
+            public const string node = "shopify.AppCreditEdge.node";
+        }
+
+        public static class AppDiscountType
+        {
+            public const string app = "shopify.AppDiscountType.app";
+            public const string appBridge = "shopify.AppDiscountType.appBridge";
+            public const string appKey = "shopify.AppDiscountType.appKey";
+            public const string description = "shopify.AppDiscountType.description";
+            public const string discountClass = "shopify.AppDiscountType.discountClass";
+            public const string discountClasses = "shopify.AppDiscountType.discountClasses";
+            public const string functionId = "shopify.AppDiscountType.functionId";
+            public const string targetType = "shopify.AppDiscountType.targetType";
+            public const string title = "shopify.AppDiscountType.title";
+        }
+
+        public static class AppDiscountTypeConnection
+        {
+            public const string edges = "shopify.AppDiscountTypeConnection.edges";
+            public const string nodes = "shopify.AppDiscountTypeConnection.nodes";
+            public const string pageInfo = "shopify.AppDiscountTypeConnection.pageInfo";
+        }
+
+        public static class AppDiscountTypeEdge
+        {
+            public const string cursor = "shopify.AppDiscountTypeEdge.cursor";
+            public const string node = "shopify.AppDiscountTypeEdge.node";
+        }
+
+        public static class AppEdge
+        {
+            public const string cursor = "shopify.AppEdge.cursor";
+            public const string node = "shopify.AppEdge.node";
+        }
+
+        public static class AppFeedback
+        {
+            public const string app = "shopify.AppFeedback.app";
+            public const string feedbackGeneratedAt = "shopify.AppFeedback.feedbackGeneratedAt";
+            public const string link = "shopify.AppFeedback.link";
+            public const string messages = "shopify.AppFeedback.messages";
+            public const string state = "shopify.AppFeedback.state";
+        }
+
+        public static class AppInstallation
+        {
+            public const string accessScopes = "shopify.AppInstallation.accessScopes";
+            public const string activeSubscriptions = "shopify.AppInstallation.activeSubscriptions";
+            public const string allSubscriptions = "shopify.AppInstallation.allSubscriptions";
+            public const string app = "shopify.AppInstallation.app";
+            public const string channel = "shopify.AppInstallation.channel";
+            public const string credits = "shopify.AppInstallation.credits";
+            public const string id = "shopify.AppInstallation.id";
+            public const string launchUrl = "shopify.AppInstallation.launchUrl";
+            public const string metafield = "shopify.AppInstallation.metafield";
+            public const string metafields = "shopify.AppInstallation.metafields";
+            public const string oneTimePurchases = "shopify.AppInstallation.oneTimePurchases";
+            public const string publication = "shopify.AppInstallation.publication";
+            public const string revenueAttributionRecords = "shopify.AppInstallation.revenueAttributionRecords";
+            public const string subscriptions = "shopify.AppInstallation.subscriptions";
+            public const string uninstallUrl = "shopify.AppInstallation.uninstallUrl";
+        }
+
+        public static class AppInstallationConnection
+        {
+            public const string edges = "shopify.AppInstallationConnection.edges";
+            public const string nodes = "shopify.AppInstallationConnection.nodes";
+            public const string pageInfo = "shopify.AppInstallationConnection.pageInfo";
+        }
+
+        public static class AppInstallationEdge
+        {
+            public const string cursor = "shopify.AppInstallationEdge.cursor";
+            public const string node = "shopify.AppInstallationEdge.node";
+        }
+
+        public static class AppPlanV2
+        {
+            public const string pricingDetails = "shopify.AppPlanV2.pricingDetails";
+        }
+
+        public static class IAppPricingDetails
+        {
+            public const string interval = "shopify.IAppPricingDetails.interval";
+        }
+
+        public static class IAppPurchase
+        {
+            public const string createdAt = "shopify.IAppPurchase.createdAt";
+            public const string name = "shopify.IAppPurchase.name";
+            public const string price = "shopify.IAppPurchase.price";
+            public const string status = "shopify.IAppPurchase.status";
+            public const string test = "shopify.IAppPurchase.test";
+        }
+
+        public static class AppPurchaseOneTime
+        {
+            public const string createdAt = "shopify.AppPurchaseOneTime.createdAt";
+            public const string id = "shopify.AppPurchaseOneTime.id";
+            public const string name = "shopify.AppPurchaseOneTime.name";
+            public const string price = "shopify.AppPurchaseOneTime.price";
+            public const string status = "shopify.AppPurchaseOneTime.status";
+            public const string test = "shopify.AppPurchaseOneTime.test";
+        }
+
+        public static class AppPurchaseOneTimeConnection
+        {
+            public const string edges = "shopify.AppPurchaseOneTimeConnection.edges";
+            public const string nodes = "shopify.AppPurchaseOneTimeConnection.nodes";
+            public const string pageInfo = "shopify.AppPurchaseOneTimeConnection.pageInfo";
+        }
+
+        public static class AppPurchaseOneTimeCreatePayload
+        {
+            public const string appPurchaseOneTime = "shopify.AppPurchaseOneTimeCreatePayload.appPurchaseOneTime";
+            public const string confirmationUrl = "shopify.AppPurchaseOneTimeCreatePayload.confirmationUrl";
+            public const string userErrors = "shopify.AppPurchaseOneTimeCreatePayload.userErrors";
+        }
+
+        public static class AppPurchaseOneTimeEdge
+        {
+            public const string cursor = "shopify.AppPurchaseOneTimeEdge.cursor";
+            public const string node = "shopify.AppPurchaseOneTimeEdge.node";
+        }
+
+        public static class AppRecurringPricing
+        {
+            public const string discount = "shopify.AppRecurringPricing.discount";
+            public const string interval = "shopify.AppRecurringPricing.interval";
+            public const string planHandle = "shopify.AppRecurringPricing.planHandle";
+            public const string price = "shopify.AppRecurringPricing.price";
+        }
+
+        public static class AppRevenueAttributionRecord
+        {
+            public const string amount = "shopify.AppRevenueAttributionRecord.amount";
+            public const string capturedAt = "shopify.AppRevenueAttributionRecord.capturedAt";
+            public const string createdAt = "shopify.AppRevenueAttributionRecord.createdAt";
+            public const string id = "shopify.AppRevenueAttributionRecord.id";
+            public const string idempotencyKey = "shopify.AppRevenueAttributionRecord.idempotencyKey";
+            public const string test = "shopify.AppRevenueAttributionRecord.test";
+            public const string type = "shopify.AppRevenueAttributionRecord.type";
+        }
+
+        public static class AppRevenueAttributionRecordConnection
+        {
+            public const string edges = "shopify.AppRevenueAttributionRecordConnection.edges";
+            public const string nodes = "shopify.AppRevenueAttributionRecordConnection.nodes";
+            public const string pageInfo = "shopify.AppRevenueAttributionRecordConnection.pageInfo";
+        }
+
+        public static class AppRevenueAttributionRecordEdge
+        {
+            public const string cursor = "shopify.AppRevenueAttributionRecordEdge.cursor";
+            public const string node = "shopify.AppRevenueAttributionRecordEdge.node";
+        }
+
+        public static class AppRevokeAccessScopesAppRevokeScopeError
+        {
+            public const string code = "shopify.AppRevokeAccessScopesAppRevokeScopeError.code";
+            public const string field = "shopify.AppRevokeAccessScopesAppRevokeScopeError.field";
+            public const string message = "shopify.AppRevokeAccessScopesAppRevokeScopeError.message";
+        }
+
+        public static class AppRevokeAccessScopesPayload
+        {
+            public const string revoked = "shopify.AppRevokeAccessScopesPayload.revoked";
+            public const string userErrors = "shopify.AppRevokeAccessScopesPayload.userErrors";
+        }
+
+        public static class AppSubscription
+        {
+            public const string createdAt = "shopify.AppSubscription.createdAt";
+            public const string currentPeriodEnd = "shopify.AppSubscription.currentPeriodEnd";
+            public const string id = "shopify.AppSubscription.id";
+            public const string lineItems = "shopify.AppSubscription.lineItems";
+            public const string name = "shopify.AppSubscription.name";
+            public const string returnUrl = "shopify.AppSubscription.returnUrl";
+            public const string status = "shopify.AppSubscription.status";
+            public const string test = "shopify.AppSubscription.test";
+            public const string trialDays = "shopify.AppSubscription.trialDays";
+        }
+
+        public static class AppSubscriptionCancelPayload
+        {
+            public const string appSubscription = "shopify.AppSubscriptionCancelPayload.appSubscription";
+            public const string userErrors = "shopify.AppSubscriptionCancelPayload.userErrors";
+        }
+
+        public static class AppSubscriptionConnection
+        {
+            public const string edges = "shopify.AppSubscriptionConnection.edges";
+            public const string nodes = "shopify.AppSubscriptionConnection.nodes";
+            public const string pageInfo = "shopify.AppSubscriptionConnection.pageInfo";
+        }
+
+        public static class AppSubscriptionCreatePayload
+        {
+            public const string appSubscription = "shopify.AppSubscriptionCreatePayload.appSubscription";
+            public const string confirmationUrl = "shopify.AppSubscriptionCreatePayload.confirmationUrl";
+            public const string userErrors = "shopify.AppSubscriptionCreatePayload.userErrors";
+        }
+
+        public static class AppSubscriptionDiscount
+        {
+            public const string durationLimitInIntervals = "shopify.AppSubscriptionDiscount.durationLimitInIntervals";
+            public const string priceAfterDiscount = "shopify.AppSubscriptionDiscount.priceAfterDiscount";
+            public const string remainingDurationInIntervals = "shopify.AppSubscriptionDiscount.remainingDurationInIntervals";
+            public const string value = "shopify.AppSubscriptionDiscount.value";
+        }
+
+        public static class AppSubscriptionDiscountAmount
+        {
+            public const string amount = "shopify.AppSubscriptionDiscountAmount.amount";
+        }
+
+        public static class AppSubscriptionDiscountPercentage
+        {
+            public const string percentage = "shopify.AppSubscriptionDiscountPercentage.percentage";
+        }
+
+        public static class IAppSubscriptionDiscountValue
+        {
+        }
+
+        public static class AppSubscriptionEdge
+        {
+            public const string cursor = "shopify.AppSubscriptionEdge.cursor";
+            public const string node = "shopify.AppSubscriptionEdge.node";
+        }
+
+        public static class AppSubscriptionLineItem
+        {
+            public const string id = "shopify.AppSubscriptionLineItem.id";
+            public const string plan = "shopify.AppSubscriptionLineItem.plan";
+            public const string usageRecords = "shopify.AppSubscriptionLineItem.usageRecords";
+        }
+
+        public static class AppSubscriptionLineItemUpdatePayload
+        {
+            public const string appSubscription = "shopify.AppSubscriptionLineItemUpdatePayload.appSubscription";
+            public const string confirmationUrl = "shopify.AppSubscriptionLineItemUpdatePayload.confirmationUrl";
+            public const string userErrors = "shopify.AppSubscriptionLineItemUpdatePayload.userErrors";
+        }
+
+        public static class AppSubscriptionTrialExtendPayload
+        {
+            public const string appSubscription = "shopify.AppSubscriptionTrialExtendPayload.appSubscription";
+            public const string userErrors = "shopify.AppSubscriptionTrialExtendPayload.userErrors";
+        }
+
+        public static class AppSubscriptionTrialExtendUserError
+        {
+            public const string code = "shopify.AppSubscriptionTrialExtendUserError.code";
+            public const string field = "shopify.AppSubscriptionTrialExtendUserError.field";
+            public const string message = "shopify.AppSubscriptionTrialExtendUserError.message";
+        }
+
+        public static class AppUsagePricing
+        {
+            public const string balanceUsed = "shopify.AppUsagePricing.balanceUsed";
+            public const string cappedAmount = "shopify.AppUsagePricing.cappedAmount";
+            public const string interval = "shopify.AppUsagePricing.interval";
+            public const string terms = "shopify.AppUsagePricing.terms";
+        }
+
+        public static class AppUsageRecord
+        {
+            public const string createdAt = "shopify.AppUsageRecord.createdAt";
+            public const string description = "shopify.AppUsageRecord.description";
+            public const string id = "shopify.AppUsageRecord.id";
+            public const string idempotencyKey = "shopify.AppUsageRecord.idempotencyKey";
+            public const string price = "shopify.AppUsageRecord.price";
+            public const string subscriptionLineItem = "shopify.AppUsageRecord.subscriptionLineItem";
+        }
+
+        public static class AppUsageRecordConnection
+        {
+            public const string edges = "shopify.AppUsageRecordConnection.edges";
+            public const string nodes = "shopify.AppUsageRecordConnection.nodes";
+            public const string pageInfo = "shopify.AppUsageRecordConnection.pageInfo";
+        }
+
+        public static class AppUsageRecordCreatePayload
+        {
+            public const string appUsageRecord = "shopify.AppUsageRecordCreatePayload.appUsageRecord";
+            public const string userErrors = "shopify.AppUsageRecordCreatePayload.userErrors";
+        }
+
+        public static class AppUsageRecordEdge
+        {
+            public const string cursor = "shopify.AppUsageRecordEdge.cursor";
+            public const string node = "shopify.AppUsageRecordEdge.node";
+        }
+
+        public static class AppleApplication
+        {
+            public const string appClipApplicationId = "shopify.AppleApplication.appClipApplicationId";
+            public const string appClipsEnabled = "shopify.AppleApplication.appClipsEnabled";
+            public const string appId = "shopify.AppleApplication.appId";
+            public const string id = "shopify.AppleApplication.id";
+            public const string sharedWebCredentialsEnabled = "shopify.AppleApplication.sharedWebCredentialsEnabled";
+            public const string universalLinksEnabled = "shopify.AppleApplication.universalLinksEnabled";
+        }
+
+        public static class Article
+        {
+            public const string author = "shopify.Article.author";
+            public const string blog = "shopify.Article.blog";
+            public const string body = "shopify.Article.body";
+            public const string comments = "shopify.Article.comments";
+            public const string commentsCount = "shopify.Article.commentsCount";
+            public const string createdAt = "shopify.Article.createdAt";
+            public const string defaultCursor = "shopify.Article.defaultCursor";
+            public const string events = "shopify.Article.events";
+            public const string handle = "shopify.Article.handle";
+            public const string id = "shopify.Article.id";
+            public const string image = "shopify.Article.image";
+            public const string isPublished = "shopify.Article.isPublished";
+            public const string metafield = "shopify.Article.metafield";
+            public const string metafieldDefinitions = "shopify.Article.metafieldDefinitions";
+            public const string metafields = "shopify.Article.metafields";
+            public const string publishedAt = "shopify.Article.publishedAt";
+            public const string summary = "shopify.Article.summary";
+            public const string tags = "shopify.Article.tags";
+            public const string templateSuffix = "shopify.Article.templateSuffix";
+            public const string title = "shopify.Article.title";
+            public const string translations = "shopify.Article.translations";
+            public const string updatedAt = "shopify.Article.updatedAt";
+        }
+
+        public static class ArticleAuthor
+        {
+            public const string name = "shopify.ArticleAuthor.name";
+        }
+
+        public static class ArticleAuthorConnection
+        {
+            public const string edges = "shopify.ArticleAuthorConnection.edges";
+            public const string nodes = "shopify.ArticleAuthorConnection.nodes";
+            public const string pageInfo = "shopify.ArticleAuthorConnection.pageInfo";
+        }
+
+        public static class ArticleAuthorEdge
+        {
+            public const string cursor = "shopify.ArticleAuthorEdge.cursor";
+            public const string node = "shopify.ArticleAuthorEdge.node";
+        }
+
+        public static class ArticleConnection
+        {
+            public const string edges = "shopify.ArticleConnection.edges";
+            public const string nodes = "shopify.ArticleConnection.nodes";
+            public const string pageInfo = "shopify.ArticleConnection.pageInfo";
+        }
+
+        public static class ArticleCreatePayload
+        {
+            public const string article = "shopify.ArticleCreatePayload.article";
+            public const string userErrors = "shopify.ArticleCreatePayload.userErrors";
+        }
+
+        public static class ArticleCreateUserError
+        {
+            public const string code = "shopify.ArticleCreateUserError.code";
+            public const string field = "shopify.ArticleCreateUserError.field";
+            public const string message = "shopify.ArticleCreateUserError.message";
+        }
+
+        public static class ArticleDeletePayload
+        {
+            public const string deletedArticleId = "shopify.ArticleDeletePayload.deletedArticleId";
+            public const string userErrors = "shopify.ArticleDeletePayload.userErrors";
+        }
+
+        public static class ArticleDeleteUserError
+        {
+            public const string code = "shopify.ArticleDeleteUserError.code";
+            public const string field = "shopify.ArticleDeleteUserError.field";
+            public const string message = "shopify.ArticleDeleteUserError.message";
+        }
+
+        public static class ArticleEdge
+        {
+            public const string cursor = "shopify.ArticleEdge.cursor";
+            public const string node = "shopify.ArticleEdge.node";
+        }
+
+        public static class ArticleUpdatePayload
+        {
+            public const string article = "shopify.ArticleUpdatePayload.article";
+            public const string userErrors = "shopify.ArticleUpdatePayload.userErrors";
+        }
+
+        public static class ArticleUpdateUserError
+        {
+            public const string code = "shopify.ArticleUpdateUserError.code";
+            public const string field = "shopify.ArticleUpdateUserError.field";
+            public const string message = "shopify.ArticleUpdateUserError.message";
+        }
+
+        public static class Attribute
+        {
+            public const string key = "shopify.Attribute.key";
+            public const string value = "shopify.Attribute.value";
+        }
+
+        public static class AutomaticDiscountApplication
+        {
+            public const string allocationMethod = "shopify.AutomaticDiscountApplication.allocationMethod";
+            public const string index = "shopify.AutomaticDiscountApplication.index";
+            public const string targetSelection = "shopify.AutomaticDiscountApplication.targetSelection";
+            public const string targetType = "shopify.AutomaticDiscountApplication.targetType";
+            public const string title = "shopify.AutomaticDiscountApplication.title";
+            public const string value = "shopify.AutomaticDiscountApplication.value";
+        }
+
+        public static class AvailableChannelDefinitionsByChannel
+        {
+            public const string channelDefinitions = "shopify.AvailableChannelDefinitionsByChannel.channelDefinitions";
+            public const string channelName = "shopify.AvailableChannelDefinitionsByChannel.channelName";
+        }
+
+        public static class BackupRegionUpdatePayload
+        {
+            public const string backupRegion = "shopify.BackupRegionUpdatePayload.backupRegion";
+            public const string userErrors = "shopify.BackupRegionUpdatePayload.userErrors";
+        }
+
+        public static class IBasePaymentDetails
+        {
+            public const string paymentMethodName = "shopify.IBasePaymentDetails.paymentMethodName";
+        }
+
+        public static class BasicEvent
+        {
+            public const string action = "shopify.BasicEvent.action";
+            public const string additionalContent = "shopify.BasicEvent.additionalContent";
+            public const string additionalData = "shopify.BasicEvent.additionalData";
+            public const string appTitle = "shopify.BasicEvent.appTitle";
+            public const string arguments = "shopify.BasicEvent.arguments";
+            public const string attributeToApp = "shopify.BasicEvent.attributeToApp";
+            public const string attributeToUser = "shopify.BasicEvent.attributeToUser";
+            public const string createdAt = "shopify.BasicEvent.createdAt";
+            public const string criticalAlert = "shopify.BasicEvent.criticalAlert";
+            public const string hasAdditionalContent = "shopify.BasicEvent.hasAdditionalContent";
+            public const string id = "shopify.BasicEvent.id";
+            public const string message = "shopify.BasicEvent.message";
+            public const string secondaryMessage = "shopify.BasicEvent.secondaryMessage";
+            public const string subject = "shopify.BasicEvent.subject";
+            public const string subjectId = "shopify.BasicEvent.subjectId";
+            public const string subjectType = "shopify.BasicEvent.subjectType";
+        }
+
+        public static class BillingAttemptUserError
+        {
+            public const string code = "shopify.BillingAttemptUserError.code";
+            public const string field = "shopify.BillingAttemptUserError.field";
+            public const string message = "shopify.BillingAttemptUserError.message";
+        }
+
+        public static class Blog
+        {
+            public const string articles = "shopify.Blog.articles";
+            public const string articlesCount = "shopify.Blog.articlesCount";
+            public const string commentPolicy = "shopify.Blog.commentPolicy";
+            public const string createdAt = "shopify.Blog.createdAt";
+            public const string events = "shopify.Blog.events";
+            public const string feed = "shopify.Blog.feed";
+            public const string handle = "shopify.Blog.handle";
+            public const string id = "shopify.Blog.id";
+            public const string metafield = "shopify.Blog.metafield";
+            public const string metafieldDefinitions = "shopify.Blog.metafieldDefinitions";
+            public const string metafields = "shopify.Blog.metafields";
+            public const string tags = "shopify.Blog.tags";
+            public const string templateSuffix = "shopify.Blog.templateSuffix";
+            public const string title = "shopify.Blog.title";
+            public const string translations = "shopify.Blog.translations";
+            public const string updatedAt = "shopify.Blog.updatedAt";
+        }
+
+        public static class BlogConnection
+        {
+            public const string edges = "shopify.BlogConnection.edges";
+            public const string nodes = "shopify.BlogConnection.nodes";
+            public const string pageInfo = "shopify.BlogConnection.pageInfo";
+        }
+
+        public static class BlogCreatePayload
+        {
+            public const string blog = "shopify.BlogCreatePayload.blog";
+            public const string userErrors = "shopify.BlogCreatePayload.userErrors";
+        }
+
+        public static class BlogCreateUserError
+        {
+            public const string code = "shopify.BlogCreateUserError.code";
+            public const string field = "shopify.BlogCreateUserError.field";
+            public const string message = "shopify.BlogCreateUserError.message";
+        }
+
+        public static class BlogDeletePayload
+        {
+            public const string deletedBlogId = "shopify.BlogDeletePayload.deletedBlogId";
+            public const string userErrors = "shopify.BlogDeletePayload.userErrors";
+        }
+
+        public static class BlogDeleteUserError
+        {
+            public const string code = "shopify.BlogDeleteUserError.code";
+            public const string field = "shopify.BlogDeleteUserError.field";
+            public const string message = "shopify.BlogDeleteUserError.message";
+        }
+
+        public static class BlogEdge
+        {
+            public const string cursor = "shopify.BlogEdge.cursor";
+            public const string node = "shopify.BlogEdge.node";
+        }
+
+        public static class BlogFeed
+        {
+            public const string location = "shopify.BlogFeed.location";
+            public const string path = "shopify.BlogFeed.path";
+        }
+
+        public static class BlogUpdatePayload
+        {
+            public const string blog = "shopify.BlogUpdatePayload.blog";
+            public const string userErrors = "shopify.BlogUpdatePayload.userErrors";
+        }
+
+        public static class BlogUpdateUserError
+        {
+            public const string code = "shopify.BlogUpdateUserError.code";
+            public const string field = "shopify.BlogUpdateUserError.field";
+            public const string message = "shopify.BlogUpdateUserError.message";
+        }
+
+        public static class BulkMutationUserError
+        {
+            public const string code = "shopify.BulkMutationUserError.code";
+            public const string field = "shopify.BulkMutationUserError.field";
+            public const string message = "shopify.BulkMutationUserError.message";
+        }
+
+        public static class BulkOperation
+        {
+            public const string completedAt = "shopify.BulkOperation.completedAt";
+            public const string createdAt = "shopify.BulkOperation.createdAt";
+            public const string errorCode = "shopify.BulkOperation.errorCode";
+            public const string fileSize = "shopify.BulkOperation.fileSize";
+            public const string id = "shopify.BulkOperation.id";
+            public const string objectCount = "shopify.BulkOperation.objectCount";
+            public const string partialDataUrl = "shopify.BulkOperation.partialDataUrl";
+            public const string query = "shopify.BulkOperation.query";
+            public const string rootObjectCount = "shopify.BulkOperation.rootObjectCount";
+            public const string status = "shopify.BulkOperation.status";
+            public const string type = "shopify.BulkOperation.type";
+            public const string url = "shopify.BulkOperation.url";
+        }
+
+        public static class BulkOperationCancelPayload
+        {
+            public const string bulkOperation = "shopify.BulkOperationCancelPayload.bulkOperation";
+            public const string userErrors = "shopify.BulkOperationCancelPayload.userErrors";
+        }
+
+        public static class BulkOperationRunMutationPayload
+        {
+            public const string bulkOperation = "shopify.BulkOperationRunMutationPayload.bulkOperation";
+            public const string userErrors = "shopify.BulkOperationRunMutationPayload.userErrors";
+        }
+
+        public static class BulkOperationRunQueryPayload
+        {
+            public const string bulkOperation = "shopify.BulkOperationRunQueryPayload.bulkOperation";
+            public const string userErrors = "shopify.BulkOperationRunQueryPayload.userErrors";
+        }
+
+        public static class BulkOperationUserError
+        {
+            public const string code = "shopify.BulkOperationUserError.code";
+            public const string field = "shopify.BulkOperationUserError.field";
+            public const string message = "shopify.BulkOperationUserError.message";
+        }
+
+        public static class BulkProductResourceFeedbackCreatePayload
+        {
+            public const string feedback = "shopify.BulkProductResourceFeedbackCreatePayload.feedback";
+            public const string userErrors = "shopify.BulkProductResourceFeedbackCreatePayload.userErrors";
+        }
+
+        public static class BulkProductResourceFeedbackCreateUserError
+        {
+            public const string code = "shopify.BulkProductResourceFeedbackCreateUserError.code";
+            public const string field = "shopify.BulkProductResourceFeedbackCreateUserError.field";
+            public const string message = "shopify.BulkProductResourceFeedbackCreateUserError.message";
+        }
+
+        public static class BundlesFeature
+        {
+            public const string eligibleForBundles = "shopify.BundlesFeature.eligibleForBundles";
+            public const string ineligibilityReason = "shopify.BundlesFeature.ineligibilityReason";
+            public const string sellsBundles = "shopify.BundlesFeature.sellsBundles";
+        }
+
+        public static class BusinessCustomerUserError
+        {
+            public const string code = "shopify.BusinessCustomerUserError.code";
+            public const string field = "shopify.BusinessCustomerUserError.field";
+            public const string message = "shopify.BusinessCustomerUserError.message";
+        }
+
+        public static class BusinessEntity
+        {
+            public const string address = "shopify.BusinessEntity.address";
+            public const string companyName = "shopify.BusinessEntity.companyName";
+            public const string displayName = "shopify.BusinessEntity.displayName";
+            public const string id = "shopify.BusinessEntity.id";
+            public const string primary = "shopify.BusinessEntity.primary";
+            public const string shopifyPaymentsAccount = "shopify.BusinessEntity.shopifyPaymentsAccount";
+        }
+
+        public static class BusinessEntityAddress
+        {
+            public const string address1 = "shopify.BusinessEntityAddress.address1";
+            public const string address2 = "shopify.BusinessEntityAddress.address2";
+            public const string city = "shopify.BusinessEntityAddress.city";
+            public const string countryCode = "shopify.BusinessEntityAddress.countryCode";
+            public const string province = "shopify.BusinessEntityAddress.province";
+            public const string zip = "shopify.BusinessEntityAddress.zip";
+        }
+
+        public static class BuyerExperienceConfiguration
+        {
+            public const string checkoutToDraft = "shopify.BuyerExperienceConfiguration.checkoutToDraft";
+            public const string deposit = "shopify.BuyerExperienceConfiguration.deposit";
+            public const string editableShippingAddress = "shopify.BuyerExperienceConfiguration.editableShippingAddress";
+            public const string payNowOnly = "shopify.BuyerExperienceConfiguration.payNowOnly";
+            public const string paymentTermsTemplate = "shopify.BuyerExperienceConfiguration.paymentTermsTemplate";
+        }
+
+        public static class CalculatedAutomaticDiscountApplication
+        {
+            public const string allocationMethod = "shopify.CalculatedAutomaticDiscountApplication.allocationMethod";
+            public const string appliedTo = "shopify.CalculatedAutomaticDiscountApplication.appliedTo";
+            public const string description = "shopify.CalculatedAutomaticDiscountApplication.description";
+            public const string id = "shopify.CalculatedAutomaticDiscountApplication.id";
+            public const string targetSelection = "shopify.CalculatedAutomaticDiscountApplication.targetSelection";
+            public const string targetType = "shopify.CalculatedAutomaticDiscountApplication.targetType";
+            public const string value = "shopify.CalculatedAutomaticDiscountApplication.value";
+        }
+
+        public static class CalculatedDiscountAllocation
+        {
+            public const string allocatedAmountSet = "shopify.CalculatedDiscountAllocation.allocatedAmountSet";
+            public const string discountApplication = "shopify.CalculatedDiscountAllocation.discountApplication";
+        }
+
+        public static class ICalculatedDiscountApplication
+        {
+            public const string allocationMethod = "shopify.ICalculatedDiscountApplication.allocationMethod";
+            public const string appliedTo = "shopify.ICalculatedDiscountApplication.appliedTo";
+            public const string description = "shopify.ICalculatedDiscountApplication.description";
+            public const string id = "shopify.ICalculatedDiscountApplication.id";
+            public const string targetSelection = "shopify.ICalculatedDiscountApplication.targetSelection";
+            public const string targetType = "shopify.ICalculatedDiscountApplication.targetType";
+            public const string value = "shopify.ICalculatedDiscountApplication.value";
+        }
+
+        public static class CalculatedDiscountApplicationConnection
+        {
+            public const string edges = "shopify.CalculatedDiscountApplicationConnection.edges";
+            public const string nodes = "shopify.CalculatedDiscountApplicationConnection.nodes";
+            public const string pageInfo = "shopify.CalculatedDiscountApplicationConnection.pageInfo";
+        }
+
+        public static class CalculatedDiscountApplicationEdge
+        {
+            public const string cursor = "shopify.CalculatedDiscountApplicationEdge.cursor";
+            public const string node = "shopify.CalculatedDiscountApplicationEdge.node";
+        }
+
+        public static class CalculatedDiscountCodeApplication
+        {
+            public const string allocationMethod = "shopify.CalculatedDiscountCodeApplication.allocationMethod";
+            public const string appliedTo = "shopify.CalculatedDiscountCodeApplication.appliedTo";
+            public const string code = "shopify.CalculatedDiscountCodeApplication.code";
+            public const string description = "shopify.CalculatedDiscountCodeApplication.description";
+            public const string id = "shopify.CalculatedDiscountCodeApplication.id";
+            public const string targetSelection = "shopify.CalculatedDiscountCodeApplication.targetSelection";
+            public const string targetType = "shopify.CalculatedDiscountCodeApplication.targetType";
+            public const string value = "shopify.CalculatedDiscountCodeApplication.value";
+        }
+
+        public static class CalculatedDraftOrder
+        {
+            public const string acceptAutomaticDiscounts = "shopify.CalculatedDraftOrder.acceptAutomaticDiscounts";
+            public const string alerts = "shopify.CalculatedDraftOrder.alerts";
+            public const string allVariantPricesOverridden = "shopify.CalculatedDraftOrder.allVariantPricesOverridden";
+            public const string anyVariantPricesOverridden = "shopify.CalculatedDraftOrder.anyVariantPricesOverridden";
+            public const string appliedDiscount = "shopify.CalculatedDraftOrder.appliedDiscount";
+            public const string availableShippingRates = "shopify.CalculatedDraftOrder.availableShippingRates";
+            public const string billingAddressMatchesShippingAddress = "shopify.CalculatedDraftOrder.billingAddressMatchesShippingAddress";
+            public const string currencyCode = "shopify.CalculatedDraftOrder.currencyCode";
+            public const string customer = "shopify.CalculatedDraftOrder.customer";
+            public const string discountCodes = "shopify.CalculatedDraftOrder.discountCodes";
+            public const string lineItems = "shopify.CalculatedDraftOrder.lineItems";
+            public const string lineItemsSubtotalPrice = "shopify.CalculatedDraftOrder.lineItemsSubtotalPrice";
+            public const string marketName = "shopify.CalculatedDraftOrder.marketName";
+            public const string marketRegionCountryCode = "shopify.CalculatedDraftOrder.marketRegionCountryCode";
+            public const string phone = "shopify.CalculatedDraftOrder.phone";
+            public const string platformDiscounts = "shopify.CalculatedDraftOrder.platformDiscounts";
+            public const string presentmentCurrencyCode = "shopify.CalculatedDraftOrder.presentmentCurrencyCode";
+            public const string purchasingEntity = "shopify.CalculatedDraftOrder.purchasingEntity";
+            public const string shippingLine = "shopify.CalculatedDraftOrder.shippingLine";
+            public const string subtotalPrice = "shopify.CalculatedDraftOrder.subtotalPrice";
+            public const string subtotalPriceSet = "shopify.CalculatedDraftOrder.subtotalPriceSet";
+            public const string taxLines = "shopify.CalculatedDraftOrder.taxLines";
+            public const string taxesIncluded = "shopify.CalculatedDraftOrder.taxesIncluded";
+            public const string totalDiscountsSet = "shopify.CalculatedDraftOrder.totalDiscountsSet";
+            public const string totalLineItemsPriceSet = "shopify.CalculatedDraftOrder.totalLineItemsPriceSet";
+            public const string totalPrice = "shopify.CalculatedDraftOrder.totalPrice";
+            public const string totalPriceSet = "shopify.CalculatedDraftOrder.totalPriceSet";
+            public const string totalQuantityOfLineItems = "shopify.CalculatedDraftOrder.totalQuantityOfLineItems";
+            public const string totalShippingPrice = "shopify.CalculatedDraftOrder.totalShippingPrice";
+            public const string totalShippingPriceSet = "shopify.CalculatedDraftOrder.totalShippingPriceSet";
+            public const string totalTax = "shopify.CalculatedDraftOrder.totalTax";
+            public const string totalTaxSet = "shopify.CalculatedDraftOrder.totalTaxSet";
+            public const string transformerFingerprint = "shopify.CalculatedDraftOrder.transformerFingerprint";
+            public const string warnings = "shopify.CalculatedDraftOrder.warnings";
+        }
+
+        public static class CalculatedDraftOrderLineItem
+        {
+            public const string appliedDiscount = "shopify.CalculatedDraftOrderLineItem.appliedDiscount";
+            public const string approximateDiscountedUnitPriceSet = "shopify.CalculatedDraftOrderLineItem.approximateDiscountedUnitPriceSet";
+            public const string bundleComponents = "shopify.CalculatedDraftOrderLineItem.bundleComponents";
+            public const string components = "shopify.CalculatedDraftOrderLineItem.components";
+            public const string custom = "shopify.CalculatedDraftOrderLineItem.custom";
+            public const string customAttributes = "shopify.CalculatedDraftOrderLineItem.customAttributes";
+            public const string customAttributesV2 = "shopify.CalculatedDraftOrderLineItem.customAttributesV2";
+            public const string discountedTotal = "shopify.CalculatedDraftOrderLineItem.discountedTotal";
+            public const string discountedTotalSet = "shopify.CalculatedDraftOrderLineItem.discountedTotalSet";
+            public const string discountedUnitPrice = "shopify.CalculatedDraftOrderLineItem.discountedUnitPrice";
+            public const string discountedUnitPriceSet = "shopify.CalculatedDraftOrderLineItem.discountedUnitPriceSet";
+            public const string fulfillmentService = "shopify.CalculatedDraftOrderLineItem.fulfillmentService";
+            public const string image = "shopify.CalculatedDraftOrderLineItem.image";
+            public const string isGiftCard = "shopify.CalculatedDraftOrderLineItem.isGiftCard";
+            public const string name = "shopify.CalculatedDraftOrderLineItem.name";
+            public const string originalTotal = "shopify.CalculatedDraftOrderLineItem.originalTotal";
+            public const string originalTotalSet = "shopify.CalculatedDraftOrderLineItem.originalTotalSet";
+            public const string originalUnitPrice = "shopify.CalculatedDraftOrderLineItem.originalUnitPrice";
+            public const string originalUnitPriceSet = "shopify.CalculatedDraftOrderLineItem.originalUnitPriceSet";
+            public const string originalUnitPriceWithCurrency = "shopify.CalculatedDraftOrderLineItem.originalUnitPriceWithCurrency";
+            public const string priceOverride = "shopify.CalculatedDraftOrderLineItem.priceOverride";
+            public const string product = "shopify.CalculatedDraftOrderLineItem.product";
+            public const string quantity = "shopify.CalculatedDraftOrderLineItem.quantity";
+            public const string requiresShipping = "shopify.CalculatedDraftOrderLineItem.requiresShipping";
+            public const string sku = "shopify.CalculatedDraftOrderLineItem.sku";
+            public const string taxable = "shopify.CalculatedDraftOrderLineItem.taxable";
+            public const string title = "shopify.CalculatedDraftOrderLineItem.title";
+            public const string totalDiscount = "shopify.CalculatedDraftOrderLineItem.totalDiscount";
+            public const string totalDiscountSet = "shopify.CalculatedDraftOrderLineItem.totalDiscountSet";
+            public const string uuid = "shopify.CalculatedDraftOrderLineItem.uuid";
+            public const string variant = "shopify.CalculatedDraftOrderLineItem.variant";
+            public const string variantTitle = "shopify.CalculatedDraftOrderLineItem.variantTitle";
+            public const string vendor = "shopify.CalculatedDraftOrderLineItem.vendor";
+            public const string weight = "shopify.CalculatedDraftOrderLineItem.weight";
+        }
+
+        public static class CalculatedExchangeLineItem
+        {
+            public const string calculatedDiscountAllocations = "shopify.CalculatedExchangeLineItem.calculatedDiscountAllocations";
+            public const string discountedUnitPriceSet = "shopify.CalculatedExchangeLineItem.discountedUnitPriceSet";
+            public const string id = "shopify.CalculatedExchangeLineItem.id";
+            public const string originalUnitPriceSet = "shopify.CalculatedExchangeLineItem.originalUnitPriceSet";
+            public const string quantity = "shopify.CalculatedExchangeLineItem.quantity";
+            public const string subtotalSet = "shopify.CalculatedExchangeLineItem.subtotalSet";
+            public const string totalTaxSet = "shopify.CalculatedExchangeLineItem.totalTaxSet";
+            public const string variant = "shopify.CalculatedExchangeLineItem.variant";
+        }
+
+        public static class CalculatedLineItem
+        {
+            public const string calculatedDiscountAllocations = "shopify.CalculatedLineItem.calculatedDiscountAllocations";
+            public const string customAttributes = "shopify.CalculatedLineItem.customAttributes";
+            public const string discountAllocations = "shopify.CalculatedLineItem.discountAllocations";
+            public const string discountedUnitPriceSet = "shopify.CalculatedLineItem.discountedUnitPriceSet";
+            public const string editableQuantity = "shopify.CalculatedLineItem.editableQuantity";
+            public const string editableQuantityBeforeChanges = "shopify.CalculatedLineItem.editableQuantityBeforeChanges";
+            public const string editableSubtotalSet = "shopify.CalculatedLineItem.editableSubtotalSet";
+            public const string hasStagedLineItemDiscount = "shopify.CalculatedLineItem.hasStagedLineItemDiscount";
+            public const string id = "shopify.CalculatedLineItem.id";
+            public const string image = "shopify.CalculatedLineItem.image";
+            public const string originalUnitPriceSet = "shopify.CalculatedLineItem.originalUnitPriceSet";
+            public const string quantity = "shopify.CalculatedLineItem.quantity";
+            public const string restockable = "shopify.CalculatedLineItem.restockable";
+            public const string restocking = "shopify.CalculatedLineItem.restocking";
+            public const string sku = "shopify.CalculatedLineItem.sku";
+            public const string stagedChanges = "shopify.CalculatedLineItem.stagedChanges";
+            public const string title = "shopify.CalculatedLineItem.title";
+            public const string uneditableSubtotalSet = "shopify.CalculatedLineItem.uneditableSubtotalSet";
+            public const string variant = "shopify.CalculatedLineItem.variant";
+            public const string variantTitle = "shopify.CalculatedLineItem.variantTitle";
+        }
+
+        public static class CalculatedLineItemConnection
+        {
+            public const string edges = "shopify.CalculatedLineItemConnection.edges";
+            public const string nodes = "shopify.CalculatedLineItemConnection.nodes";
+            public const string pageInfo = "shopify.CalculatedLineItemConnection.pageInfo";
+        }
+
+        public static class CalculatedLineItemEdge
+        {
+            public const string cursor = "shopify.CalculatedLineItemEdge.cursor";
+            public const string node = "shopify.CalculatedLineItemEdge.node";
+        }
+
+        public static class CalculatedManualDiscountApplication
+        {
+            public const string allocationMethod = "shopify.CalculatedManualDiscountApplication.allocationMethod";
+            public const string appliedTo = "shopify.CalculatedManualDiscountApplication.appliedTo";
+            public const string description = "shopify.CalculatedManualDiscountApplication.description";
+            public const string id = "shopify.CalculatedManualDiscountApplication.id";
+            public const string targetSelection = "shopify.CalculatedManualDiscountApplication.targetSelection";
+            public const string targetType = "shopify.CalculatedManualDiscountApplication.targetType";
+            public const string value = "shopify.CalculatedManualDiscountApplication.value";
+        }
+
+        public static class CalculatedOrder
+        {
+            public const string addedDiscountApplications = "shopify.CalculatedOrder.addedDiscountApplications";
+            public const string addedLineItems = "shopify.CalculatedOrder.addedLineItems";
+            public const string cartDiscountAmountSet = "shopify.CalculatedOrder.cartDiscountAmountSet";
+            public const string committed = "shopify.CalculatedOrder.committed";
+            public const string id = "shopify.CalculatedOrder.id";
+            public const string lineItems = "shopify.CalculatedOrder.lineItems";
+            public const string notificationPreviewHtml = "shopify.CalculatedOrder.notificationPreviewHtml";
+            public const string notificationPreviewTitle = "shopify.CalculatedOrder.notificationPreviewTitle";
+            public const string originalOrder = "shopify.CalculatedOrder.originalOrder";
+            public const string shippingLines = "shopify.CalculatedOrder.shippingLines";
+            public const string stagedChanges = "shopify.CalculatedOrder.stagedChanges";
+            public const string subtotalLineItemsQuantity = "shopify.CalculatedOrder.subtotalLineItemsQuantity";
+            public const string subtotalPriceSet = "shopify.CalculatedOrder.subtotalPriceSet";
+            public const string taxLines = "shopify.CalculatedOrder.taxLines";
+            public const string totalOutstandingSet = "shopify.CalculatedOrder.totalOutstandingSet";
+            public const string totalPriceSet = "shopify.CalculatedOrder.totalPriceSet";
+        }
+
+        public static class CalculatedRestockingFee
+        {
+            public const string amountSet = "shopify.CalculatedRestockingFee.amountSet";
+            public const string id = "shopify.CalculatedRestockingFee.id";
+            public const string percentage = "shopify.CalculatedRestockingFee.percentage";
+        }
+
+        public static class CalculatedReturn
+        {
+            public const string exchangeLineItems = "shopify.CalculatedReturn.exchangeLineItems";
+            public const string id = "shopify.CalculatedReturn.id";
+            public const string returnLineItems = "shopify.CalculatedReturn.returnLineItems";
+            public const string returnShippingFee = "shopify.CalculatedReturn.returnShippingFee";
+        }
+
+        public static class ICalculatedReturnFee
+        {
+            public const string amountSet = "shopify.ICalculatedReturnFee.amountSet";
+            public const string id = "shopify.ICalculatedReturnFee.id";
+        }
+
+        public static class CalculatedReturnLineItem
+        {
+            public const string fulfillmentLineItem = "shopify.CalculatedReturnLineItem.fulfillmentLineItem";
+            public const string id = "shopify.CalculatedReturnLineItem.id";
+            public const string quantity = "shopify.CalculatedReturnLineItem.quantity";
+            public const string restockingFee = "shopify.CalculatedReturnLineItem.restockingFee";
+            public const string subtotalBeforeOrderDiscountsSet = "shopify.CalculatedReturnLineItem.subtotalBeforeOrderDiscountsSet";
+            public const string subtotalSet = "shopify.CalculatedReturnLineItem.subtotalSet";
+            public const string totalTaxSet = "shopify.CalculatedReturnLineItem.totalTaxSet";
+        }
+
+        public static class CalculatedReturnShippingFee
+        {
+            public const string amountSet = "shopify.CalculatedReturnShippingFee.amountSet";
+            public const string id = "shopify.CalculatedReturnShippingFee.id";
+        }
+
+        public static class CalculatedScriptDiscountApplication
+        {
+            public const string allocationMethod = "shopify.CalculatedScriptDiscountApplication.allocationMethod";
+            public const string appliedTo = "shopify.CalculatedScriptDiscountApplication.appliedTo";
+            public const string description = "shopify.CalculatedScriptDiscountApplication.description";
+            public const string id = "shopify.CalculatedScriptDiscountApplication.id";
+            public const string targetSelection = "shopify.CalculatedScriptDiscountApplication.targetSelection";
+            public const string targetType = "shopify.CalculatedScriptDiscountApplication.targetType";
+            public const string value = "shopify.CalculatedScriptDiscountApplication.value";
+        }
+
+        public static class CalculatedShippingLine
+        {
+            public const string id = "shopify.CalculatedShippingLine.id";
+            public const string price = "shopify.CalculatedShippingLine.price";
+            public const string stagedStatus = "shopify.CalculatedShippingLine.stagedStatus";
+            public const string title = "shopify.CalculatedShippingLine.title";
+        }
+
+        public static class CardPaymentDetails
+        {
+            public const string avsResultCode = "shopify.CardPaymentDetails.avsResultCode";
+            public const string bin = "shopify.CardPaymentDetails.bin";
+            public const string company = "shopify.CardPaymentDetails.company";
+            public const string cvvResultCode = "shopify.CardPaymentDetails.cvvResultCode";
+            public const string expirationMonth = "shopify.CardPaymentDetails.expirationMonth";
+            public const string expirationYear = "shopify.CardPaymentDetails.expirationYear";
+            public const string name = "shopify.CardPaymentDetails.name";
+            public const string number = "shopify.CardPaymentDetails.number";
+            public const string paymentMethodName = "shopify.CardPaymentDetails.paymentMethodName";
+            public const string wallet = "shopify.CardPaymentDetails.wallet";
+        }
+
+        public static class CarrierServiceCreatePayload
+        {
+            public const string carrierService = "shopify.CarrierServiceCreatePayload.carrierService";
+            public const string userErrors = "shopify.CarrierServiceCreatePayload.userErrors";
+        }
+
+        public static class CarrierServiceCreateUserError
+        {
+            public const string code = "shopify.CarrierServiceCreateUserError.code";
+            public const string field = "shopify.CarrierServiceCreateUserError.field";
+            public const string message = "shopify.CarrierServiceCreateUserError.message";
+        }
+
+        public static class CarrierServiceDeletePayload
+        {
+            public const string deletedId = "shopify.CarrierServiceDeletePayload.deletedId";
+            public const string userErrors = "shopify.CarrierServiceDeletePayload.userErrors";
+        }
+
+        public static class CarrierServiceDeleteUserError
+        {
+            public const string code = "shopify.CarrierServiceDeleteUserError.code";
+            public const string field = "shopify.CarrierServiceDeleteUserError.field";
+            public const string message = "shopify.CarrierServiceDeleteUserError.message";
+        }
+
+        public static class CarrierServiceUpdatePayload
+        {
+            public const string carrierService = "shopify.CarrierServiceUpdatePayload.carrierService";
+            public const string userErrors = "shopify.CarrierServiceUpdatePayload.userErrors";
+        }
+
+        public static class CarrierServiceUpdateUserError
+        {
+            public const string code = "shopify.CarrierServiceUpdateUserError.code";
+            public const string field = "shopify.CarrierServiceUpdateUserError.field";
+            public const string message = "shopify.CarrierServiceUpdateUserError.message";
+        }
+
+        public static class CartTransform
+        {
+            public const string blockOnFailure = "shopify.CartTransform.blockOnFailure";
+            public const string functionId = "shopify.CartTransform.functionId";
+            public const string id = "shopify.CartTransform.id";
+            public const string metafield = "shopify.CartTransform.metafield";
+            public const string metafields = "shopify.CartTransform.metafields";
+        }
+
+        public static class CartTransformConnection
+        {
+            public const string edges = "shopify.CartTransformConnection.edges";
+            public const string nodes = "shopify.CartTransformConnection.nodes";
+            public const string pageInfo = "shopify.CartTransformConnection.pageInfo";
+        }
+
+        public static class CartTransformCreatePayload
+        {
+            public const string cartTransform = "shopify.CartTransformCreatePayload.cartTransform";
+            public const string userErrors = "shopify.CartTransformCreatePayload.userErrors";
+        }
+
+        public static class CartTransformCreateUserError
+        {
+            public const string code = "shopify.CartTransformCreateUserError.code";
+            public const string field = "shopify.CartTransformCreateUserError.field";
+            public const string message = "shopify.CartTransformCreateUserError.message";
+        }
+
+        public static class CartTransformDeletePayload
+        {
+            public const string deletedId = "shopify.CartTransformDeletePayload.deletedId";
+            public const string userErrors = "shopify.CartTransformDeletePayload.userErrors";
+        }
+
+        public static class CartTransformDeleteUserError
+        {
+            public const string code = "shopify.CartTransformDeleteUserError.code";
+            public const string field = "shopify.CartTransformDeleteUserError.field";
+            public const string message = "shopify.CartTransformDeleteUserError.message";
+        }
+
+        public static class CartTransformEdge
+        {
+            public const string cursor = "shopify.CartTransformEdge.cursor";
+            public const string node = "shopify.CartTransformEdge.node";
+        }
+
+        public static class CartTransformEligibleOperations
+        {
+            public const string expandOperation = "shopify.CartTransformEligibleOperations.expandOperation";
+            public const string mergeOperation = "shopify.CartTransformEligibleOperations.mergeOperation";
+            public const string updateOperation = "shopify.CartTransformEligibleOperations.updateOperation";
+        }
+
+        public static class CartTransformFeature
+        {
+            public const string eligibleOperations = "shopify.CartTransformFeature.eligibleOperations";
+        }
+
+        public static class CashRoundingAdjustment
+        {
+            public const string paymentSet = "shopify.CashRoundingAdjustment.paymentSet";
+            public const string refundSet = "shopify.CashRoundingAdjustment.refundSet";
+        }
+
+        public static class CashTrackingAdjustment
+        {
+            public const string cash = "shopify.CashTrackingAdjustment.cash";
+            public const string id = "shopify.CashTrackingAdjustment.id";
+            public const string note = "shopify.CashTrackingAdjustment.note";
+            public const string staffMember = "shopify.CashTrackingAdjustment.staffMember";
+            public const string time = "shopify.CashTrackingAdjustment.time";
+        }
+
+        public static class CashTrackingAdjustmentConnection
+        {
+            public const string edges = "shopify.CashTrackingAdjustmentConnection.edges";
+            public const string nodes = "shopify.CashTrackingAdjustmentConnection.nodes";
+            public const string pageInfo = "shopify.CashTrackingAdjustmentConnection.pageInfo";
+        }
+
+        public static class CashTrackingAdjustmentEdge
+        {
+            public const string cursor = "shopify.CashTrackingAdjustmentEdge.cursor";
+            public const string node = "shopify.CashTrackingAdjustmentEdge.node";
+        }
+
+        public static class CashTrackingSession
+        {
+            public const string adjustments = "shopify.CashTrackingSession.adjustments";
+            public const string cashTrackingEnabled = "shopify.CashTrackingSession.cashTrackingEnabled";
+            public const string cashTransactions = "shopify.CashTrackingSession.cashTransactions";
+            public const string closingBalance = "shopify.CashTrackingSession.closingBalance";
+            public const string closingNote = "shopify.CashTrackingSession.closingNote";
+            public const string closingStaffMember = "shopify.CashTrackingSession.closingStaffMember";
+            public const string closingTime = "shopify.CashTrackingSession.closingTime";
+            public const string expectedBalance = "shopify.CashTrackingSession.expectedBalance";
+            public const string expectedClosingBalance = "shopify.CashTrackingSession.expectedClosingBalance";
+            public const string expectedOpeningBalance = "shopify.CashTrackingSession.expectedOpeningBalance";
+            public const string id = "shopify.CashTrackingSession.id";
+            public const string location = "shopify.CashTrackingSession.location";
+            public const string netCashSales = "shopify.CashTrackingSession.netCashSales";
+            public const string openingBalance = "shopify.CashTrackingSession.openingBalance";
+            public const string openingNote = "shopify.CashTrackingSession.openingNote";
+            public const string openingStaffMember = "shopify.CashTrackingSession.openingStaffMember";
+            public const string openingTime = "shopify.CashTrackingSession.openingTime";
+            public const string registerName = "shopify.CashTrackingSession.registerName";
+            public const string totalAdjustments = "shopify.CashTrackingSession.totalAdjustments";
+            public const string totalCashRefunds = "shopify.CashTrackingSession.totalCashRefunds";
+            public const string totalCashSales = "shopify.CashTrackingSession.totalCashSales";
+            public const string totalDiscrepancy = "shopify.CashTrackingSession.totalDiscrepancy";
+        }
+
+        public static class CashTrackingSessionConnection
+        {
+            public const string edges = "shopify.CashTrackingSessionConnection.edges";
+            public const string nodes = "shopify.CashTrackingSessionConnection.nodes";
+            public const string pageInfo = "shopify.CashTrackingSessionConnection.pageInfo";
+        }
+
+        public static class CashTrackingSessionEdge
+        {
+            public const string cursor = "shopify.CashTrackingSessionEdge.cursor";
+            public const string node = "shopify.CashTrackingSessionEdge.node";
+        }
+
+        public static class ICatalog
+        {
+            public const string operations = "shopify.ICatalog.operations";
+            public const string priceList = "shopify.ICatalog.priceList";
+            public const string publication = "shopify.ICatalog.publication";
+            public const string status = "shopify.ICatalog.status";
+            public const string title = "shopify.ICatalog.title";
+        }
+
+        public static class CatalogConnection
+        {
+            public const string edges = "shopify.CatalogConnection.edges";
+            public const string nodes = "shopify.CatalogConnection.nodes";
+            public const string pageInfo = "shopify.CatalogConnection.pageInfo";
+        }
+
+        public static class CatalogContextUpdatePayload
+        {
+            public const string catalog = "shopify.CatalogContextUpdatePayload.catalog";
+            public const string userErrors = "shopify.CatalogContextUpdatePayload.userErrors";
+        }
+
+        public static class CatalogCreatePayload
+        {
+            public const string catalog = "shopify.CatalogCreatePayload.catalog";
+            public const string userErrors = "shopify.CatalogCreatePayload.userErrors";
+        }
+
+        public static class CatalogCsvOperation
+        {
+            public const string id = "shopify.CatalogCsvOperation.id";
+            public const string processedRowCount = "shopify.CatalogCsvOperation.processedRowCount";
+            public const string rowCount = "shopify.CatalogCsvOperation.rowCount";
+            public const string status = "shopify.CatalogCsvOperation.status";
+        }
+
+        public static class CatalogDeletePayload
+        {
+            public const string deletedId = "shopify.CatalogDeletePayload.deletedId";
+            public const string userErrors = "shopify.CatalogDeletePayload.userErrors";
+        }
+
+        public static class CatalogEdge
+        {
+            public const string cursor = "shopify.CatalogEdge.cursor";
+            public const string node = "shopify.CatalogEdge.node";
+        }
+
+        public static class CatalogUpdatePayload
+        {
+            public const string catalog = "shopify.CatalogUpdatePayload.catalog";
+            public const string userErrors = "shopify.CatalogUpdatePayload.userErrors";
+        }
+
+        public static class CatalogUserError
+        {
+            public const string code = "shopify.CatalogUserError.code";
+            public const string field = "shopify.CatalogUserError.field";
+            public const string message = "shopify.CatalogUserError.message";
+        }
+
+        public static class Channel
+        {
+            public const string app = "shopify.Channel.app";
+            public const string collectionPublicationsV3 = "shopify.Channel.collectionPublicationsV3";
+            public const string collections = "shopify.Channel.collections";
+            public const string handle = "shopify.Channel.handle";
+            public const string hasCollection = "shopify.Channel.hasCollection";
+            public const string id = "shopify.Channel.id";
+            public const string name = "shopify.Channel.name";
+            public const string navigationItems = "shopify.Channel.navigationItems";
+            public const string overviewPath = "shopify.Channel.overviewPath";
+            public const string productPublications = "shopify.Channel.productPublications";
+            public const string productPublicationsV3 = "shopify.Channel.productPublicationsV3";
+            public const string products = "shopify.Channel.products";
+            public const string productsCount = "shopify.Channel.productsCount";
+            public const string supportsFuturePublishing = "shopify.Channel.supportsFuturePublishing";
+        }
+
+        public static class ChannelConnection
+        {
+            public const string edges = "shopify.ChannelConnection.edges";
+            public const string nodes = "shopify.ChannelConnection.nodes";
+            public const string pageInfo = "shopify.ChannelConnection.pageInfo";
+        }
+
+        public static class ChannelDefinition
+        {
+            public const string channelName = "shopify.ChannelDefinition.channelName";
+            public const string handle = "shopify.ChannelDefinition.handle";
+            public const string id = "shopify.ChannelDefinition.id";
+            public const string isMarketplace = "shopify.ChannelDefinition.isMarketplace";
+            public const string subChannelName = "shopify.ChannelDefinition.subChannelName";
+            public const string svgIcon = "shopify.ChannelDefinition.svgIcon";
+        }
+
+        public static class ChannelEdge
+        {
+            public const string cursor = "shopify.ChannelEdge.cursor";
+            public const string node = "shopify.ChannelEdge.node";
+        }
+
+        public static class ChannelInformation
+        {
+            public const string app = "shopify.ChannelInformation.app";
+            public const string channelDefinition = "shopify.ChannelInformation.channelDefinition";
+            public const string channelId = "shopify.ChannelInformation.channelId";
+            public const string id = "shopify.ChannelInformation.id";
+        }
+
+        public static class CheckoutBranding
+        {
+            public const string customizations = "shopify.CheckoutBranding.customizations";
+            public const string designSystem = "shopify.CheckoutBranding.designSystem";
+        }
+
+        public static class CheckoutBrandingButton
+        {
+            public const string background = "shopify.CheckoutBrandingButton.background";
+            public const string blockPadding = "shopify.CheckoutBrandingButton.blockPadding";
+            public const string border = "shopify.CheckoutBrandingButton.border";
+            public const string cornerRadius = "shopify.CheckoutBrandingButton.cornerRadius";
+            public const string inlinePadding = "shopify.CheckoutBrandingButton.inlinePadding";
+            public const string typography = "shopify.CheckoutBrandingButton.typography";
+        }
+
+        public static class CheckoutBrandingButtonColorRoles
+        {
+            public const string accent = "shopify.CheckoutBrandingButtonColorRoles.accent";
+            public const string background = "shopify.CheckoutBrandingButtonColorRoles.background";
+            public const string border = "shopify.CheckoutBrandingButtonColorRoles.border";
+            public const string decorative = "shopify.CheckoutBrandingButtonColorRoles.decorative";
+            public const string hover = "shopify.CheckoutBrandingButtonColorRoles.hover";
+            public const string icon = "shopify.CheckoutBrandingButtonColorRoles.icon";
+            public const string text = "shopify.CheckoutBrandingButtonColorRoles.text";
+        }
+
+        public static class CheckoutBrandingBuyerJourney
+        {
+            public const string visibility = "shopify.CheckoutBrandingBuyerJourney.visibility";
+        }
+
+        public static class CheckoutBrandingCartLink
+        {
+            public const string visibility = "shopify.CheckoutBrandingCartLink.visibility";
+        }
+
+        public static class CheckoutBrandingCheckbox
+        {
+            public const string cornerRadius = "shopify.CheckoutBrandingCheckbox.cornerRadius";
+        }
+
+        public static class CheckoutBrandingChoiceList
+        {
+            public const string group = "shopify.CheckoutBrandingChoiceList.group";
+        }
+
+        public static class CheckoutBrandingChoiceListGroup
+        {
+            public const string spacing = "shopify.CheckoutBrandingChoiceListGroup.spacing";
+        }
+
+        public static class CheckoutBrandingColorGlobal
+        {
+            public const string accent = "shopify.CheckoutBrandingColorGlobal.accent";
+            public const string brand = "shopify.CheckoutBrandingColorGlobal.brand";
+            public const string critical = "shopify.CheckoutBrandingColorGlobal.critical";
+            public const string decorative = "shopify.CheckoutBrandingColorGlobal.decorative";
+            public const string info = "shopify.CheckoutBrandingColorGlobal.info";
+            public const string success = "shopify.CheckoutBrandingColorGlobal.success";
+            public const string warning = "shopify.CheckoutBrandingColorGlobal.warning";
+        }
+
+        public static class CheckoutBrandingColorRoles
+        {
+            public const string accent = "shopify.CheckoutBrandingColorRoles.accent";
+            public const string background = "shopify.CheckoutBrandingColorRoles.background";
+            public const string border = "shopify.CheckoutBrandingColorRoles.border";
+            public const string decorative = "shopify.CheckoutBrandingColorRoles.decorative";
+            public const string icon = "shopify.CheckoutBrandingColorRoles.icon";
+            public const string text = "shopify.CheckoutBrandingColorRoles.text";
+        }
+
+        public static class CheckoutBrandingColorScheme
+        {
+            public const string @base = "shopify.CheckoutBrandingColorScheme.base";
+            public const string control = "shopify.CheckoutBrandingColorScheme.control";
+            public const string primaryButton = "shopify.CheckoutBrandingColorScheme.primaryButton";
+            public const string secondaryButton = "shopify.CheckoutBrandingColorScheme.secondaryButton";
+        }
+
+        public static class CheckoutBrandingColorSchemes
+        {
+            public const string scheme1 = "shopify.CheckoutBrandingColorSchemes.scheme1";
+            public const string scheme2 = "shopify.CheckoutBrandingColorSchemes.scheme2";
+            public const string scheme3 = "shopify.CheckoutBrandingColorSchemes.scheme3";
+            public const string scheme4 = "shopify.CheckoutBrandingColorSchemes.scheme4";
+        }
+
+        public static class CheckoutBrandingColors
+        {
+            public const string global = "shopify.CheckoutBrandingColors.global";
+            public const string schemes = "shopify.CheckoutBrandingColors.schemes";
+        }
+
+        public static class CheckoutBrandingContainerDivider
+        {
+            public const string borderStyle = "shopify.CheckoutBrandingContainerDivider.borderStyle";
+            public const string borderWidth = "shopify.CheckoutBrandingContainerDivider.borderWidth";
+            public const string visibility = "shopify.CheckoutBrandingContainerDivider.visibility";
+        }
+
+        public static class CheckoutBrandingContent
+        {
+            public const string divider = "shopify.CheckoutBrandingContent.divider";
+        }
+
+        public static class CheckoutBrandingControl
+        {
+            public const string border = "shopify.CheckoutBrandingControl.border";
+            public const string color = "shopify.CheckoutBrandingControl.color";
+            public const string cornerRadius = "shopify.CheckoutBrandingControl.cornerRadius";
+            public const string labelPosition = "shopify.CheckoutBrandingControl.labelPosition";
+        }
+
+        public static class CheckoutBrandingControlColorRoles
+        {
+            public const string accent = "shopify.CheckoutBrandingControlColorRoles.accent";
+            public const string background = "shopify.CheckoutBrandingControlColorRoles.background";
+            public const string border = "shopify.CheckoutBrandingControlColorRoles.border";
+            public const string decorative = "shopify.CheckoutBrandingControlColorRoles.decorative";
+            public const string icon = "shopify.CheckoutBrandingControlColorRoles.icon";
+            public const string selected = "shopify.CheckoutBrandingControlColorRoles.selected";
+            public const string text = "shopify.CheckoutBrandingControlColorRoles.text";
+        }
+
+        public static class CheckoutBrandingCornerRadiusVariables
+        {
+            public const string @base = "shopify.CheckoutBrandingCornerRadiusVariables.base";
+            public const string large = "shopify.CheckoutBrandingCornerRadiusVariables.large";
+            public const string small = "shopify.CheckoutBrandingCornerRadiusVariables.small";
+        }
+
+        public static class CheckoutBrandingCustomFont
+        {
+            public const string genericFileId = "shopify.CheckoutBrandingCustomFont.genericFileId";
+            public const string sources = "shopify.CheckoutBrandingCustomFont.sources";
+            public const string weight = "shopify.CheckoutBrandingCustomFont.weight";
+        }
+
+        public static class CheckoutBrandingCustomizations
+        {
+            public const string buyerJourney = "shopify.CheckoutBrandingCustomizations.buyerJourney";
+            public const string cartLink = "shopify.CheckoutBrandingCustomizations.cartLink";
+            public const string checkbox = "shopify.CheckoutBrandingCustomizations.checkbox";
+            public const string choiceList = "shopify.CheckoutBrandingCustomizations.choiceList";
+            public const string content = "shopify.CheckoutBrandingCustomizations.content";
+            public const string control = "shopify.CheckoutBrandingCustomizations.control";
+            public const string divider = "shopify.CheckoutBrandingCustomizations.divider";
+            public const string expressCheckout = "shopify.CheckoutBrandingCustomizations.expressCheckout";
+            public const string favicon = "shopify.CheckoutBrandingCustomizations.favicon";
+            public const string footer = "shopify.CheckoutBrandingCustomizations.footer";
+            public const string global = "shopify.CheckoutBrandingCustomizations.global";
+            public const string header = "shopify.CheckoutBrandingCustomizations.header";
+            public const string headingLevel1 = "shopify.CheckoutBrandingCustomizations.headingLevel1";
+            public const string headingLevel2 = "shopify.CheckoutBrandingCustomizations.headingLevel2";
+            public const string headingLevel3 = "shopify.CheckoutBrandingCustomizations.headingLevel3";
+            public const string main = "shopify.CheckoutBrandingCustomizations.main";
+            public const string merchandiseThumbnail = "shopify.CheckoutBrandingCustomizations.merchandiseThumbnail";
+            public const string orderSummary = "shopify.CheckoutBrandingCustomizations.orderSummary";
+            public const string primaryButton = "shopify.CheckoutBrandingCustomizations.primaryButton";
+            public const string secondaryButton = "shopify.CheckoutBrandingCustomizations.secondaryButton";
+            public const string select = "shopify.CheckoutBrandingCustomizations.select";
+            public const string textField = "shopify.CheckoutBrandingCustomizations.textField";
+        }
+
+        public static class CheckoutBrandingDesignSystem
+        {
+            public const string colors = "shopify.CheckoutBrandingDesignSystem.colors";
+            public const string cornerRadius = "shopify.CheckoutBrandingDesignSystem.cornerRadius";
+            public const string typography = "shopify.CheckoutBrandingDesignSystem.typography";
+        }
+
+        public static class CheckoutBrandingDividerStyle
+        {
+            public const string borderStyle = "shopify.CheckoutBrandingDividerStyle.borderStyle";
+            public const string borderWidth = "shopify.CheckoutBrandingDividerStyle.borderWidth";
+        }
+
+        public static class CheckoutBrandingExpressCheckout
+        {
+            public const string button = "shopify.CheckoutBrandingExpressCheckout.button";
+        }
+
+        public static class CheckoutBrandingExpressCheckoutButton
+        {
+            public const string cornerRadius = "shopify.CheckoutBrandingExpressCheckoutButton.cornerRadius";
+        }
+
+        public static class ICheckoutBrandingFont
+        {
+            public const string sources = "shopify.ICheckoutBrandingFont.sources";
+            public const string weight = "shopify.ICheckoutBrandingFont.weight";
+        }
+
+        public static class CheckoutBrandingFontGroup
+        {
+            public const string @base = "shopify.CheckoutBrandingFontGroup.base";
+            public const string bold = "shopify.CheckoutBrandingFontGroup.bold";
+            public const string loadingStrategy = "shopify.CheckoutBrandingFontGroup.loadingStrategy";
+            public const string name = "shopify.CheckoutBrandingFontGroup.name";
+        }
+
+        public static class CheckoutBrandingFontSize
+        {
+            public const string @base = "shopify.CheckoutBrandingFontSize.base";
+            public const string ratio = "shopify.CheckoutBrandingFontSize.ratio";
+        }
+
+        public static class CheckoutBrandingFooter
+        {
+            public const string alignment = "shopify.CheckoutBrandingFooter.alignment";
+            public const string colorScheme = "shopify.CheckoutBrandingFooter.colorScheme";
+            public const string content = "shopify.CheckoutBrandingFooter.content";
+            public const string divided = "shopify.CheckoutBrandingFooter.divided";
+            public const string padding = "shopify.CheckoutBrandingFooter.padding";
+            public const string position = "shopify.CheckoutBrandingFooter.position";
+        }
+
+        public static class CheckoutBrandingFooterContent
+        {
+            public const string visibility = "shopify.CheckoutBrandingFooterContent.visibility";
+        }
+
+        public static class CheckoutBrandingGlobal
+        {
+            public const string cornerRadius = "shopify.CheckoutBrandingGlobal.cornerRadius";
+            public const string typography = "shopify.CheckoutBrandingGlobal.typography";
+        }
+
+        public static class CheckoutBrandingHeader
+        {
+            public const string alignment = "shopify.CheckoutBrandingHeader.alignment";
+            public const string banner = "shopify.CheckoutBrandingHeader.banner";
+            public const string cartLink = "shopify.CheckoutBrandingHeader.cartLink";
+            public const string colorScheme = "shopify.CheckoutBrandingHeader.colorScheme";
+            public const string divided = "shopify.CheckoutBrandingHeader.divided";
+            public const string logo = "shopify.CheckoutBrandingHeader.logo";
+            public const string padding = "shopify.CheckoutBrandingHeader.padding";
+            public const string position = "shopify.CheckoutBrandingHeader.position";
+        }
+
+        public static class CheckoutBrandingHeaderCartLink
+        {
+            public const string contentType = "shopify.CheckoutBrandingHeaderCartLink.contentType";
+            public const string image = "shopify.CheckoutBrandingHeaderCartLink.image";
+        }
+
+        public static class CheckoutBrandingHeadingLevel
+        {
+            public const string typography = "shopify.CheckoutBrandingHeadingLevel.typography";
+        }
+
+        public static class CheckoutBrandingImage
+        {
+            public const string image = "shopify.CheckoutBrandingImage.image";
+        }
+
+        public static class CheckoutBrandingLogo
+        {
+            public const string image = "shopify.CheckoutBrandingLogo.image";
+            public const string maxWidth = "shopify.CheckoutBrandingLogo.maxWidth";
+            public const string visibility = "shopify.CheckoutBrandingLogo.visibility";
+        }
+
+        public static class CheckoutBrandingMain
+        {
+            public const string backgroundImage = "shopify.CheckoutBrandingMain.backgroundImage";
+            public const string colorScheme = "shopify.CheckoutBrandingMain.colorScheme";
+            public const string divider = "shopify.CheckoutBrandingMain.divider";
+            public const string section = "shopify.CheckoutBrandingMain.section";
+        }
+
+        public static class CheckoutBrandingMainSection
+        {
+            public const string background = "shopify.CheckoutBrandingMainSection.background";
+            public const string border = "shopify.CheckoutBrandingMainSection.border";
+            public const string borderStyle = "shopify.CheckoutBrandingMainSection.borderStyle";
+            public const string borderWidth = "shopify.CheckoutBrandingMainSection.borderWidth";
+            public const string colorScheme = "shopify.CheckoutBrandingMainSection.colorScheme";
+            public const string cornerRadius = "shopify.CheckoutBrandingMainSection.cornerRadius";
+            public const string padding = "shopify.CheckoutBrandingMainSection.padding";
+            public const string shadow = "shopify.CheckoutBrandingMainSection.shadow";
+        }
+
+        public static class CheckoutBrandingMerchandiseThumbnail
+        {
+            public const string badge = "shopify.CheckoutBrandingMerchandiseThumbnail.badge";
+            public const string border = "shopify.CheckoutBrandingMerchandiseThumbnail.border";
+            public const string cornerRadius = "shopify.CheckoutBrandingMerchandiseThumbnail.cornerRadius";
+            public const string fit = "shopify.CheckoutBrandingMerchandiseThumbnail.fit";
+        }
+
+        public static class CheckoutBrandingMerchandiseThumbnailBadge
+        {
+            public const string background = "shopify.CheckoutBrandingMerchandiseThumbnailBadge.background";
+        }
+
+        public static class CheckoutBrandingOrderSummary
+        {
+            public const string backgroundImage = "shopify.CheckoutBrandingOrderSummary.backgroundImage";
+            public const string colorScheme = "shopify.CheckoutBrandingOrderSummary.colorScheme";
+            public const string divider = "shopify.CheckoutBrandingOrderSummary.divider";
+            public const string section = "shopify.CheckoutBrandingOrderSummary.section";
+        }
+
+        public static class CheckoutBrandingOrderSummarySection
+        {
+            public const string background = "shopify.CheckoutBrandingOrderSummarySection.background";
+            public const string border = "shopify.CheckoutBrandingOrderSummarySection.border";
+            public const string borderStyle = "shopify.CheckoutBrandingOrderSummarySection.borderStyle";
+            public const string borderWidth = "shopify.CheckoutBrandingOrderSummarySection.borderWidth";
+            public const string colorScheme = "shopify.CheckoutBrandingOrderSummarySection.colorScheme";
+            public const string cornerRadius = "shopify.CheckoutBrandingOrderSummarySection.cornerRadius";
+            public const string padding = "shopify.CheckoutBrandingOrderSummarySection.padding";
+            public const string shadow = "shopify.CheckoutBrandingOrderSummarySection.shadow";
+        }
+
+        public static class CheckoutBrandingSelect
+        {
+            public const string border = "shopify.CheckoutBrandingSelect.border";
+            public const string typography = "shopify.CheckoutBrandingSelect.typography";
+        }
+
+        public static class CheckoutBrandingShopifyFont
+        {
+            public const string sources = "shopify.CheckoutBrandingShopifyFont.sources";
+            public const string weight = "shopify.CheckoutBrandingShopifyFont.weight";
+        }
+
+        public static class CheckoutBrandingTextField
+        {
+            public const string border = "shopify.CheckoutBrandingTextField.border";
+            public const string typography = "shopify.CheckoutBrandingTextField.typography";
+        }
+
+        public static class CheckoutBrandingTypography
+        {
+            public const string primary = "shopify.CheckoutBrandingTypography.primary";
+            public const string secondary = "shopify.CheckoutBrandingTypography.secondary";
+            public const string size = "shopify.CheckoutBrandingTypography.size";
+        }
+
+        public static class CheckoutBrandingTypographyStyle
+        {
+            public const string font = "shopify.CheckoutBrandingTypographyStyle.font";
+            public const string kerning = "shopify.CheckoutBrandingTypographyStyle.kerning";
+            public const string letterCase = "shopify.CheckoutBrandingTypographyStyle.letterCase";
+            public const string size = "shopify.CheckoutBrandingTypographyStyle.size";
+            public const string weight = "shopify.CheckoutBrandingTypographyStyle.weight";
+        }
+
+        public static class CheckoutBrandingTypographyStyleGlobal
+        {
+            public const string kerning = "shopify.CheckoutBrandingTypographyStyleGlobal.kerning";
+            public const string letterCase = "shopify.CheckoutBrandingTypographyStyleGlobal.letterCase";
+        }
+
+        public static class CheckoutBrandingUpsertPayload
+        {
+            public const string checkoutBranding = "shopify.CheckoutBrandingUpsertPayload.checkoutBranding";
+            public const string userErrors = "shopify.CheckoutBrandingUpsertPayload.userErrors";
+        }
+
+        public static class CheckoutBrandingUpsertUserError
+        {
+            public const string code = "shopify.CheckoutBrandingUpsertUserError.code";
+            public const string field = "shopify.CheckoutBrandingUpsertUserError.field";
+            public const string message = "shopify.CheckoutBrandingUpsertUserError.message";
+        }
+
+        public static class CheckoutProfile
+        {
+            public const string createdAt = "shopify.CheckoutProfile.createdAt";
+            public const string editedAt = "shopify.CheckoutProfile.editedAt";
+            public const string id = "shopify.CheckoutProfile.id";
+            public const string isPublished = "shopify.CheckoutProfile.isPublished";
+            public const string name = "shopify.CheckoutProfile.name";
+            public const string typOspPagesActive = "shopify.CheckoutProfile.typOspPagesActive";
+            public const string updatedAt = "shopify.CheckoutProfile.updatedAt";
+        }
+
+        public static class CheckoutProfileConnection
+        {
+            public const string edges = "shopify.CheckoutProfileConnection.edges";
+            public const string nodes = "shopify.CheckoutProfileConnection.nodes";
+            public const string pageInfo = "shopify.CheckoutProfileConnection.pageInfo";
+        }
+
+        public static class CheckoutProfileEdge
+        {
+            public const string cursor = "shopify.CheckoutProfileEdge.cursor";
+            public const string node = "shopify.CheckoutProfileEdge.node";
+        }
+
+        public static class Collection
+        {
+            public const string availablePublicationsCount = "shopify.Collection.availablePublicationsCount";
+            public const string description = "shopify.Collection.description";
+            public const string descriptionHtml = "shopify.Collection.descriptionHtml";
+            public const string events = "shopify.Collection.events";
+            public const string feedback = "shopify.Collection.feedback";
+            public const string handle = "shopify.Collection.handle";
+            public const string hasProduct = "shopify.Collection.hasProduct";
+            public const string id = "shopify.Collection.id";
+            public const string image = "shopify.Collection.image";
+            public const string legacyResourceId = "shopify.Collection.legacyResourceId";
+            public const string metafield = "shopify.Collection.metafield";
+            public const string metafieldDefinitions = "shopify.Collection.metafieldDefinitions";
+            public const string metafields = "shopify.Collection.metafields";
+            public const string products = "shopify.Collection.products";
+            public const string productsCount = "shopify.Collection.productsCount";
+            public const string publicationCount = "shopify.Collection.publicationCount";
+            public const string publications = "shopify.Collection.publications";
+            public const string publishedOnChannel = "shopify.Collection.publishedOnChannel";
+            public const string publishedOnCurrentChannel = "shopify.Collection.publishedOnCurrentChannel";
+            public const string publishedOnCurrentPublication = "shopify.Collection.publishedOnCurrentPublication";
+            public const string publishedOnPublication = "shopify.Collection.publishedOnPublication";
+            public const string resourcePublications = "shopify.Collection.resourcePublications";
+            public const string resourcePublicationsCount = "shopify.Collection.resourcePublicationsCount";
+            public const string resourcePublicationsV2 = "shopify.Collection.resourcePublicationsV2";
+            public const string ruleSet = "shopify.Collection.ruleSet";
+            public const string seo = "shopify.Collection.seo";
+            public const string sortOrder = "shopify.Collection.sortOrder";
+            public const string storefrontId = "shopify.Collection.storefrontId";
+            public const string templateSuffix = "shopify.Collection.templateSuffix";
+            public const string title = "shopify.Collection.title";
+            public const string translations = "shopify.Collection.translations";
+            public const string unpublishedChannels = "shopify.Collection.unpublishedChannels";
+            public const string unpublishedPublications = "shopify.Collection.unpublishedPublications";
+            public const string updatedAt = "shopify.Collection.updatedAt";
+        }
+
+        public static class CollectionAddProductsPayload
+        {
+            public const string collection = "shopify.CollectionAddProductsPayload.collection";
+            public const string userErrors = "shopify.CollectionAddProductsPayload.userErrors";
+        }
+
+        public static class CollectionAddProductsV2Payload
+        {
+            public const string job = "shopify.CollectionAddProductsV2Payload.job";
+            public const string userErrors = "shopify.CollectionAddProductsV2Payload.userErrors";
+        }
+
+        public static class CollectionAddProductsV2UserError
+        {
+            public const string code = "shopify.CollectionAddProductsV2UserError.code";
+            public const string field = "shopify.CollectionAddProductsV2UserError.field";
+            public const string message = "shopify.CollectionAddProductsV2UserError.message";
+        }
+
+        public static class CollectionConnection
+        {
+            public const string edges = "shopify.CollectionConnection.edges";
+            public const string nodes = "shopify.CollectionConnection.nodes";
+            public const string pageInfo = "shopify.CollectionConnection.pageInfo";
+        }
+
+        public static class CollectionCreatePayload
+        {
+            public const string collection = "shopify.CollectionCreatePayload.collection";
+            public const string userErrors = "shopify.CollectionCreatePayload.userErrors";
+        }
+
+        public static class CollectionDeletePayload
+        {
+            public const string deletedCollectionId = "shopify.CollectionDeletePayload.deletedCollectionId";
+            public const string shop = "shopify.CollectionDeletePayload.shop";
+            public const string userErrors = "shopify.CollectionDeletePayload.userErrors";
+        }
+
+        public static class CollectionEdge
+        {
+            public const string cursor = "shopify.CollectionEdge.cursor";
+            public const string node = "shopify.CollectionEdge.node";
+        }
+
+        public static class CollectionPublication
+        {
+            public const string channel = "shopify.CollectionPublication.channel";
+            public const string collection = "shopify.CollectionPublication.collection";
+            public const string isPublished = "shopify.CollectionPublication.isPublished";
+            public const string publication = "shopify.CollectionPublication.publication";
+            public const string publishDate = "shopify.CollectionPublication.publishDate";
+        }
+
+        public static class CollectionPublicationConnection
+        {
+            public const string edges = "shopify.CollectionPublicationConnection.edges";
+            public const string nodes = "shopify.CollectionPublicationConnection.nodes";
+            public const string pageInfo = "shopify.CollectionPublicationConnection.pageInfo";
+        }
+
+        public static class CollectionPublicationEdge
+        {
+            public const string cursor = "shopify.CollectionPublicationEdge.cursor";
+            public const string node = "shopify.CollectionPublicationEdge.node";
+        }
+
+        public static class CollectionPublishPayload
+        {
+            public const string collection = "shopify.CollectionPublishPayload.collection";
+            public const string collectionPublications = "shopify.CollectionPublishPayload.collectionPublications";
+            public const string shop = "shopify.CollectionPublishPayload.shop";
+            public const string userErrors = "shopify.CollectionPublishPayload.userErrors";
+        }
+
+        public static class CollectionRemoveProductsPayload
+        {
+            public const string job = "shopify.CollectionRemoveProductsPayload.job";
+            public const string userErrors = "shopify.CollectionRemoveProductsPayload.userErrors";
+        }
+
+        public static class CollectionReorderProductsPayload
+        {
+            public const string job = "shopify.CollectionReorderProductsPayload.job";
+            public const string userErrors = "shopify.CollectionReorderProductsPayload.userErrors";
+        }
+
+        public static class CollectionRule
+        {
+            public const string column = "shopify.CollectionRule.column";
+            public const string condition = "shopify.CollectionRule.condition";
+            public const string conditionObject = "shopify.CollectionRule.conditionObject";
+            public const string relation = "shopify.CollectionRule.relation";
+        }
+
+        public static class CollectionRuleCategoryCondition
+        {
+            public const string value = "shopify.CollectionRuleCategoryCondition.value";
+        }
+
+        public static class ICollectionRuleConditionObject
+        {
+        }
+
+        public static class CollectionRuleConditions
+        {
+            public const string allowedRelations = "shopify.CollectionRuleConditions.allowedRelations";
+            public const string defaultRelation = "shopify.CollectionRuleConditions.defaultRelation";
+            public const string ruleObject = "shopify.CollectionRuleConditions.ruleObject";
+            public const string ruleType = "shopify.CollectionRuleConditions.ruleType";
+        }
+
+        public static class ICollectionRuleConditionsRuleObject
+        {
+            public const string metafieldDefinition = "shopify.ICollectionRuleConditionsRuleObject.metafieldDefinition";
+        }
+
+        public static class CollectionRuleMetafieldCondition
+        {
+            public const string metafieldDefinition = "shopify.CollectionRuleMetafieldCondition.metafieldDefinition";
+        }
+
+        public static class CollectionRuleProductCategoryCondition
+        {
+            public const string value = "shopify.CollectionRuleProductCategoryCondition.value";
+        }
+
+        public static class CollectionRuleSet
+        {
+            public const string appliedDisjunctively = "shopify.CollectionRuleSet.appliedDisjunctively";
+            public const string rules = "shopify.CollectionRuleSet.rules";
+        }
+
+        public static class CollectionRuleTextCondition
+        {
+            public const string value = "shopify.CollectionRuleTextCondition.value";
+        }
+
+        public static class CollectionUnpublishPayload
+        {
+            public const string collection = "shopify.CollectionUnpublishPayload.collection";
+            public const string shop = "shopify.CollectionUnpublishPayload.shop";
+            public const string userErrors = "shopify.CollectionUnpublishPayload.userErrors";
+        }
+
+        public static class CollectionUpdatePayload
+        {
+            public const string collection = "shopify.CollectionUpdatePayload.collection";
+            public const string job = "shopify.CollectionUpdatePayload.job";
+            public const string userErrors = "shopify.CollectionUpdatePayload.userErrors";
+        }
+
+        public static class CombinedListing
+        {
+            public const string combinedListingChildren = "shopify.CombinedListing.combinedListingChildren";
+            public const string parentProduct = "shopify.CombinedListing.parentProduct";
+        }
+
+        public static class CombinedListingChild
+        {
+            public const string parentVariant = "shopify.CombinedListingChild.parentVariant";
+            public const string product = "shopify.CombinedListingChild.product";
+        }
+
+        public static class CombinedListingChildConnection
+        {
+            public const string edges = "shopify.CombinedListingChildConnection.edges";
+            public const string nodes = "shopify.CombinedListingChildConnection.nodes";
+            public const string pageInfo = "shopify.CombinedListingChildConnection.pageInfo";
+        }
+
+        public static class CombinedListingChildEdge
+        {
+            public const string cursor = "shopify.CombinedListingChildEdge.cursor";
+            public const string node = "shopify.CombinedListingChildEdge.node";
+        }
+
+        public static class CombinedListingUpdatePayload
+        {
+            public const string product = "shopify.CombinedListingUpdatePayload.product";
+            public const string userErrors = "shopify.CombinedListingUpdatePayload.userErrors";
+        }
+
+        public static class CombinedListingUpdateUserError
+        {
+            public const string code = "shopify.CombinedListingUpdateUserError.code";
+            public const string field = "shopify.CombinedListingUpdateUserError.field";
+            public const string message = "shopify.CombinedListingUpdateUserError.message";
+        }
+
+        public static class Comment
+        {
+            public const string article = "shopify.Comment.article";
+            public const string author = "shopify.Comment.author";
+            public const string body = "shopify.Comment.body";
+            public const string bodyHtml = "shopify.Comment.bodyHtml";
+            public const string createdAt = "shopify.Comment.createdAt";
+            public const string events = "shopify.Comment.events";
+            public const string id = "shopify.Comment.id";
+            public const string ip = "shopify.Comment.ip";
+            public const string isPublished = "shopify.Comment.isPublished";
+            public const string publishedAt = "shopify.Comment.publishedAt";
+            public const string status = "shopify.Comment.status";
+            public const string updatedAt = "shopify.Comment.updatedAt";
+            public const string userAgent = "shopify.Comment.userAgent";
+        }
+
+        public static class CommentApprovePayload
+        {
+            public const string comment = "shopify.CommentApprovePayload.comment";
+            public const string userErrors = "shopify.CommentApprovePayload.userErrors";
+        }
+
+        public static class CommentApproveUserError
+        {
+            public const string code = "shopify.CommentApproveUserError.code";
+            public const string field = "shopify.CommentApproveUserError.field";
+            public const string message = "shopify.CommentApproveUserError.message";
+        }
+
+        public static class CommentAuthor
+        {
+            public const string email = "shopify.CommentAuthor.email";
+            public const string name = "shopify.CommentAuthor.name";
+        }
+
+        public static class CommentConnection
+        {
+            public const string edges = "shopify.CommentConnection.edges";
+            public const string nodes = "shopify.CommentConnection.nodes";
+            public const string pageInfo = "shopify.CommentConnection.pageInfo";
+        }
+
+        public static class CommentDeletePayload
+        {
+            public const string deletedCommentId = "shopify.CommentDeletePayload.deletedCommentId";
+            public const string userErrors = "shopify.CommentDeletePayload.userErrors";
+        }
+
+        public static class CommentDeleteUserError
+        {
+            public const string code = "shopify.CommentDeleteUserError.code";
+            public const string field = "shopify.CommentDeleteUserError.field";
+            public const string message = "shopify.CommentDeleteUserError.message";
+        }
+
+        public static class CommentEdge
+        {
+            public const string cursor = "shopify.CommentEdge.cursor";
+            public const string node = "shopify.CommentEdge.node";
+        }
+
+        public static class CommentEvent
+        {
+            public const string action = "shopify.CommentEvent.action";
+            public const string appTitle = "shopify.CommentEvent.appTitle";
+            public const string attachments = "shopify.CommentEvent.attachments";
+            public const string attributeToApp = "shopify.CommentEvent.attributeToApp";
+            public const string attributeToUser = "shopify.CommentEvent.attributeToUser";
+            public const string author = "shopify.CommentEvent.author";
+            public const string canDelete = "shopify.CommentEvent.canDelete";
+            public const string canEdit = "shopify.CommentEvent.canEdit";
+            public const string createdAt = "shopify.CommentEvent.createdAt";
+            public const string criticalAlert = "shopify.CommentEvent.criticalAlert";
+            public const string edited = "shopify.CommentEvent.edited";
+            public const string embed = "shopify.CommentEvent.embed";
+            public const string id = "shopify.CommentEvent.id";
+            public const string message = "shopify.CommentEvent.message";
+            public const string rawMessage = "shopify.CommentEvent.rawMessage";
+            public const string subject = "shopify.CommentEvent.subject";
+        }
+
+        public static class CommentEventAttachment
+        {
+            public const string fileExtension = "shopify.CommentEventAttachment.fileExtension";
+            public const string id = "shopify.CommentEventAttachment.id";
+            public const string image = "shopify.CommentEventAttachment.image";
+            public const string name = "shopify.CommentEventAttachment.name";
+            public const string size = "shopify.CommentEventAttachment.size";
+            public const string url = "shopify.CommentEventAttachment.url";
+        }
+
+        public static class ICommentEventEmbed
+        {
+            public const string createdAt = "shopify.ICommentEventEmbed.createdAt";
+            public const string events = "shopify.ICommentEventEmbed.events";
+            public const string id = "shopify.ICommentEventEmbed.id";
+            public const string legacyResourceId = "shopify.ICommentEventEmbed.legacyResourceId";
+            public const string metafield = "shopify.ICommentEventEmbed.metafield";
+            public const string metafields = "shopify.ICommentEventEmbed.metafields";
+            public const string updatedAt = "shopify.ICommentEventEmbed.updatedAt";
+        }
+
+        public static class ICommentEventSubject
+        {
+            public const string hasTimelineComment = "shopify.ICommentEventSubject.hasTimelineComment";
+            public const string id = "shopify.ICommentEventSubject.id";
+        }
+
+        public static class CommentNotSpamPayload
+        {
+            public const string comment = "shopify.CommentNotSpamPayload.comment";
+            public const string userErrors = "shopify.CommentNotSpamPayload.userErrors";
+        }
+
+        public static class CommentNotSpamUserError
+        {
+            public const string code = "shopify.CommentNotSpamUserError.code";
+            public const string field = "shopify.CommentNotSpamUserError.field";
+            public const string message = "shopify.CommentNotSpamUserError.message";
+        }
+
+        public static class CommentSpamPayload
+        {
+            public const string comment = "shopify.CommentSpamPayload.comment";
+            public const string userErrors = "shopify.CommentSpamPayload.userErrors";
+        }
+
+        public static class CommentSpamUserError
+        {
+            public const string code = "shopify.CommentSpamUserError.code";
+            public const string field = "shopify.CommentSpamUserError.field";
+            public const string message = "shopify.CommentSpamUserError.message";
+        }
+
+        public static class CompaniesDeletePayload
+        {
+            public const string deletedCompanyIds = "shopify.CompaniesDeletePayload.deletedCompanyIds";
+            public const string userErrors = "shopify.CompaniesDeletePayload.userErrors";
+        }
+
+        public static class Company
+        {
+            public const string contactCount = "shopify.Company.contactCount";
+            public const string contactRoles = "shopify.Company.contactRoles";
+            public const string contacts = "shopify.Company.contacts";
+            public const string contactsCount = "shopify.Company.contactsCount";
+            public const string createdAt = "shopify.Company.createdAt";
+            public const string customerSince = "shopify.Company.customerSince";
+            public const string defaultCursor = "shopify.Company.defaultCursor";
+            public const string defaultRole = "shopify.Company.defaultRole";
+            public const string draftOrders = "shopify.Company.draftOrders";
+            public const string events = "shopify.Company.events";
+            public const string externalId = "shopify.Company.externalId";
+            public const string hasTimelineComment = "shopify.Company.hasTimelineComment";
+            public const string id = "shopify.Company.id";
+            public const string lifetimeDuration = "shopify.Company.lifetimeDuration";
+            public const string locations = "shopify.Company.locations";
+            public const string locationsCount = "shopify.Company.locationsCount";
+            public const string mainContact = "shopify.Company.mainContact";
+            public const string metafield = "shopify.Company.metafield";
+            public const string metafieldDefinitions = "shopify.Company.metafieldDefinitions";
+            public const string metafields = "shopify.Company.metafields";
+            public const string name = "shopify.Company.name";
+            public const string note = "shopify.Company.note";
+            public const string orders = "shopify.Company.orders";
+            public const string ordersCount = "shopify.Company.ordersCount";
+            public const string totalSpent = "shopify.Company.totalSpent";
+            public const string updatedAt = "shopify.Company.updatedAt";
+        }
+
+        public static class CompanyAddress
+        {
+            public const string address1 = "shopify.CompanyAddress.address1";
+            public const string address2 = "shopify.CompanyAddress.address2";
+            public const string city = "shopify.CompanyAddress.city";
+            public const string companyName = "shopify.CompanyAddress.companyName";
+            public const string country = "shopify.CompanyAddress.country";
+            public const string countryCode = "shopify.CompanyAddress.countryCode";
+            public const string createdAt = "shopify.CompanyAddress.createdAt";
+            public const string firstName = "shopify.CompanyAddress.firstName";
+            public const string formattedAddress = "shopify.CompanyAddress.formattedAddress";
+            public const string formattedArea = "shopify.CompanyAddress.formattedArea";
+            public const string id = "shopify.CompanyAddress.id";
+            public const string lastName = "shopify.CompanyAddress.lastName";
+            public const string phone = "shopify.CompanyAddress.phone";
+            public const string province = "shopify.CompanyAddress.province";
+            public const string recipient = "shopify.CompanyAddress.recipient";
+            public const string updatedAt = "shopify.CompanyAddress.updatedAt";
+            public const string zip = "shopify.CompanyAddress.zip";
+            public const string zoneCode = "shopify.CompanyAddress.zoneCode";
+        }
+
+        public static class CompanyAddressDeletePayload
+        {
+            public const string deletedAddressId = "shopify.CompanyAddressDeletePayload.deletedAddressId";
+            public const string userErrors = "shopify.CompanyAddressDeletePayload.userErrors";
+        }
+
+        public static class CompanyAssignCustomerAsContactPayload
+        {
+            public const string companyContact = "shopify.CompanyAssignCustomerAsContactPayload.companyContact";
+            public const string userErrors = "shopify.CompanyAssignCustomerAsContactPayload.userErrors";
+        }
+
+        public static class CompanyAssignMainContactPayload
+        {
+            public const string company = "shopify.CompanyAssignMainContactPayload.company";
+            public const string userErrors = "shopify.CompanyAssignMainContactPayload.userErrors";
+        }
+
+        public static class CompanyConnection
+        {
+            public const string edges = "shopify.CompanyConnection.edges";
+            public const string nodes = "shopify.CompanyConnection.nodes";
+            public const string pageInfo = "shopify.CompanyConnection.pageInfo";
+        }
+
+        public static class CompanyContact
+        {
+            public const string company = "shopify.CompanyContact.company";
+            public const string createdAt = "shopify.CompanyContact.createdAt";
+            public const string customer = "shopify.CompanyContact.customer";
+            public const string draftOrders = "shopify.CompanyContact.draftOrders";
+            public const string id = "shopify.CompanyContact.id";
+            public const string isMainContact = "shopify.CompanyContact.isMainContact";
+            public const string lifetimeDuration = "shopify.CompanyContact.lifetimeDuration";
+            public const string locale = "shopify.CompanyContact.locale";
+            public const string orders = "shopify.CompanyContact.orders";
+            public const string roleAssignments = "shopify.CompanyContact.roleAssignments";
+            public const string title = "shopify.CompanyContact.title";
+            public const string updatedAt = "shopify.CompanyContact.updatedAt";
+        }
+
+        public static class CompanyContactAssignRolePayload
+        {
+            public const string companyContactRoleAssignment = "shopify.CompanyContactAssignRolePayload.companyContactRoleAssignment";
+            public const string userErrors = "shopify.CompanyContactAssignRolePayload.userErrors";
+        }
+
+        public static class CompanyContactAssignRolesPayload
+        {
+            public const string roleAssignments = "shopify.CompanyContactAssignRolesPayload.roleAssignments";
+            public const string userErrors = "shopify.CompanyContactAssignRolesPayload.userErrors";
+        }
+
+        public static class CompanyContactConnection
+        {
+            public const string edges = "shopify.CompanyContactConnection.edges";
+            public const string nodes = "shopify.CompanyContactConnection.nodes";
+            public const string pageInfo = "shopify.CompanyContactConnection.pageInfo";
+        }
+
+        public static class CompanyContactCreatePayload
+        {
+            public const string companyContact = "shopify.CompanyContactCreatePayload.companyContact";
+            public const string userErrors = "shopify.CompanyContactCreatePayload.userErrors";
+        }
+
+        public static class CompanyContactDeletePayload
+        {
+            public const string deletedCompanyContactId = "shopify.CompanyContactDeletePayload.deletedCompanyContactId";
+            public const string userErrors = "shopify.CompanyContactDeletePayload.userErrors";
+        }
+
+        public static class CompanyContactEdge
+        {
+            public const string cursor = "shopify.CompanyContactEdge.cursor";
+            public const string node = "shopify.CompanyContactEdge.node";
+        }
+
+        public static class CompanyContactRemoveFromCompanyPayload
+        {
+            public const string removedCompanyContactId = "shopify.CompanyContactRemoveFromCompanyPayload.removedCompanyContactId";
+            public const string userErrors = "shopify.CompanyContactRemoveFromCompanyPayload.userErrors";
+        }
+
+        public static class CompanyContactRevokeRolePayload
+        {
+            public const string revokedCompanyContactRoleAssignmentId = "shopify.CompanyContactRevokeRolePayload.revokedCompanyContactRoleAssignmentId";
+            public const string userErrors = "shopify.CompanyContactRevokeRolePayload.userErrors";
+        }
+
+        public static class CompanyContactRevokeRolesPayload
+        {
+            public const string revokedRoleAssignmentIds = "shopify.CompanyContactRevokeRolesPayload.revokedRoleAssignmentIds";
+            public const string userErrors = "shopify.CompanyContactRevokeRolesPayload.userErrors";
+        }
+
+        public static class CompanyContactRole
+        {
+            public const string id = "shopify.CompanyContactRole.id";
+            public const string name = "shopify.CompanyContactRole.name";
+            public const string note = "shopify.CompanyContactRole.note";
+        }
+
+        public static class CompanyContactRoleAssignment
+        {
+            public const string company = "shopify.CompanyContactRoleAssignment.company";
+            public const string companyContact = "shopify.CompanyContactRoleAssignment.companyContact";
+            public const string companyLocation = "shopify.CompanyContactRoleAssignment.companyLocation";
+            public const string createdAt = "shopify.CompanyContactRoleAssignment.createdAt";
+            public const string id = "shopify.CompanyContactRoleAssignment.id";
+            public const string role = "shopify.CompanyContactRoleAssignment.role";
+            public const string updatedAt = "shopify.CompanyContactRoleAssignment.updatedAt";
+        }
+
+        public static class CompanyContactRoleAssignmentConnection
+        {
+            public const string edges = "shopify.CompanyContactRoleAssignmentConnection.edges";
+            public const string nodes = "shopify.CompanyContactRoleAssignmentConnection.nodes";
+            public const string pageInfo = "shopify.CompanyContactRoleAssignmentConnection.pageInfo";
+        }
+
+        public static class CompanyContactRoleAssignmentEdge
+        {
+            public const string cursor = "shopify.CompanyContactRoleAssignmentEdge.cursor";
+            public const string node = "shopify.CompanyContactRoleAssignmentEdge.node";
+        }
+
+        public static class CompanyContactRoleConnection
+        {
+            public const string edges = "shopify.CompanyContactRoleConnection.edges";
+            public const string nodes = "shopify.CompanyContactRoleConnection.nodes";
+            public const string pageInfo = "shopify.CompanyContactRoleConnection.pageInfo";
+        }
+
+        public static class CompanyContactRoleEdge
+        {
+            public const string cursor = "shopify.CompanyContactRoleEdge.cursor";
+            public const string node = "shopify.CompanyContactRoleEdge.node";
+        }
+
+        public static class CompanyContactSendWelcomeEmailPayload
+        {
+            public const string companyContact = "shopify.CompanyContactSendWelcomeEmailPayload.companyContact";
+            public const string userErrors = "shopify.CompanyContactSendWelcomeEmailPayload.userErrors";
+        }
+
+        public static class CompanyContactUpdatePayload
+        {
+            public const string companyContact = "shopify.CompanyContactUpdatePayload.companyContact";
+            public const string userErrors = "shopify.CompanyContactUpdatePayload.userErrors";
+        }
+
+        public static class CompanyContactsDeletePayload
+        {
+            public const string deletedCompanyContactIds = "shopify.CompanyContactsDeletePayload.deletedCompanyContactIds";
+            public const string userErrors = "shopify.CompanyContactsDeletePayload.userErrors";
+        }
+
+        public static class CompanyCreatePayload
+        {
+            public const string company = "shopify.CompanyCreatePayload.company";
+            public const string userErrors = "shopify.CompanyCreatePayload.userErrors";
+        }
+
+        public static class CompanyDeletePayload
+        {
+            public const string deletedCompanyId = "shopify.CompanyDeletePayload.deletedCompanyId";
+            public const string userErrors = "shopify.CompanyDeletePayload.userErrors";
+        }
+
+        public static class CompanyEdge
+        {
+            public const string cursor = "shopify.CompanyEdge.cursor";
+            public const string node = "shopify.CompanyEdge.node";
+        }
+
+        public static class CompanyLocation
+        {
+            public const string billingAddress = "shopify.CompanyLocation.billingAddress";
+            public const string buyerExperienceConfiguration = "shopify.CompanyLocation.buyerExperienceConfiguration";
+            public const string catalogs = "shopify.CompanyLocation.catalogs";
+            public const string catalogsCount = "shopify.CompanyLocation.catalogsCount";
+            public const string company = "shopify.CompanyLocation.company";
+            public const string createdAt = "shopify.CompanyLocation.createdAt";
+            public const string currency = "shopify.CompanyLocation.currency";
+            public const string defaultCursor = "shopify.CompanyLocation.defaultCursor";
+            public const string draftOrders = "shopify.CompanyLocation.draftOrders";
+            public const string events = "shopify.CompanyLocation.events";
+            public const string externalId = "shopify.CompanyLocation.externalId";
+            public const string hasTimelineComment = "shopify.CompanyLocation.hasTimelineComment";
+            public const string id = "shopify.CompanyLocation.id";
+            public const string inCatalog = "shopify.CompanyLocation.inCatalog";
+            public const string locale = "shopify.CompanyLocation.locale";
+            public const string market = "shopify.CompanyLocation.market";
+            public const string metafield = "shopify.CompanyLocation.metafield";
+            public const string metafieldDefinitions = "shopify.CompanyLocation.metafieldDefinitions";
+            public const string metafields = "shopify.CompanyLocation.metafields";
+            public const string name = "shopify.CompanyLocation.name";
+            public const string note = "shopify.CompanyLocation.note";
+            public const string orderCount = "shopify.CompanyLocation.orderCount";
+            public const string orders = "shopify.CompanyLocation.orders";
+            public const string ordersCount = "shopify.CompanyLocation.ordersCount";
+            public const string phone = "shopify.CompanyLocation.phone";
+            public const string roleAssignments = "shopify.CompanyLocation.roleAssignments";
+            public const string shippingAddress = "shopify.CompanyLocation.shippingAddress";
+            public const string staffMemberAssignments = "shopify.CompanyLocation.staffMemberAssignments";
+            public const string taxExemptions = "shopify.CompanyLocation.taxExemptions";
+            public const string taxRegistrationId = "shopify.CompanyLocation.taxRegistrationId";
+            public const string taxSettings = "shopify.CompanyLocation.taxSettings";
+            public const string totalSpent = "shopify.CompanyLocation.totalSpent";
+            public const string updatedAt = "shopify.CompanyLocation.updatedAt";
+        }
+
+        public static class CompanyLocationAssignAddressPayload
+        {
+            public const string addresses = "shopify.CompanyLocationAssignAddressPayload.addresses";
+            public const string userErrors = "shopify.CompanyLocationAssignAddressPayload.userErrors";
+        }
+
+        public static class CompanyLocationAssignRolesPayload
+        {
+            public const string roleAssignments = "shopify.CompanyLocationAssignRolesPayload.roleAssignments";
+            public const string userErrors = "shopify.CompanyLocationAssignRolesPayload.userErrors";
+        }
+
+        public static class CompanyLocationAssignStaffMembersPayload
+        {
+            public const string companyLocationStaffMemberAssignments = "shopify.CompanyLocationAssignStaffMembersPayload.companyLocationStaffMemberAssignments";
+            public const string userErrors = "shopify.CompanyLocationAssignStaffMembersPayload.userErrors";
+        }
+
+        public static class CompanyLocationAssignTaxExemptionsPayload
+        {
+            public const string companyLocation = "shopify.CompanyLocationAssignTaxExemptionsPayload.companyLocation";
+            public const string userErrors = "shopify.CompanyLocationAssignTaxExemptionsPayload.userErrors";
+        }
+
+        public static class CompanyLocationCatalog
+        {
+            public const string companyLocations = "shopify.CompanyLocationCatalog.companyLocations";
+            public const string companyLocationsCount = "shopify.CompanyLocationCatalog.companyLocationsCount";
+            public const string id = "shopify.CompanyLocationCatalog.id";
+            public const string operations = "shopify.CompanyLocationCatalog.operations";
+            public const string priceList = "shopify.CompanyLocationCatalog.priceList";
+            public const string publication = "shopify.CompanyLocationCatalog.publication";
+            public const string status = "shopify.CompanyLocationCatalog.status";
+            public const string title = "shopify.CompanyLocationCatalog.title";
+        }
+
+        public static class CompanyLocationConnection
+        {
+            public const string edges = "shopify.CompanyLocationConnection.edges";
+            public const string nodes = "shopify.CompanyLocationConnection.nodes";
+            public const string pageInfo = "shopify.CompanyLocationConnection.pageInfo";
+        }
+
+        public static class CompanyLocationCreatePayload
+        {
+            public const string companyLocation = "shopify.CompanyLocationCreatePayload.companyLocation";
+            public const string userErrors = "shopify.CompanyLocationCreatePayload.userErrors";
+        }
+
+        public static class CompanyLocationCreateTaxRegistrationPayload
+        {
+            public const string companyLocation = "shopify.CompanyLocationCreateTaxRegistrationPayload.companyLocation";
+            public const string userErrors = "shopify.CompanyLocationCreateTaxRegistrationPayload.userErrors";
+        }
+
+        public static class CompanyLocationDeletePayload
+        {
+            public const string deletedCompanyLocationId = "shopify.CompanyLocationDeletePayload.deletedCompanyLocationId";
+            public const string userErrors = "shopify.CompanyLocationDeletePayload.userErrors";
+        }
+
+        public static class CompanyLocationEdge
+        {
+            public const string cursor = "shopify.CompanyLocationEdge.cursor";
+            public const string node = "shopify.CompanyLocationEdge.node";
+        }
+
+        public static class CompanyLocationRemoveStaffMembersPayload
+        {
+            public const string deletedCompanyLocationStaffMemberAssignmentIds = "shopify.CompanyLocationRemoveStaffMembersPayload.deletedCompanyLocationStaffMemberAssignmentIds";
+            public const string userErrors = "shopify.CompanyLocationRemoveStaffMembersPayload.userErrors";
+        }
+
+        public static class CompanyLocationRevokeRolesPayload
+        {
+            public const string revokedRoleAssignmentIds = "shopify.CompanyLocationRevokeRolesPayload.revokedRoleAssignmentIds";
+            public const string userErrors = "shopify.CompanyLocationRevokeRolesPayload.userErrors";
+        }
+
+        public static class CompanyLocationRevokeTaxExemptionsPayload
+        {
+            public const string companyLocation = "shopify.CompanyLocationRevokeTaxExemptionsPayload.companyLocation";
+            public const string userErrors = "shopify.CompanyLocationRevokeTaxExemptionsPayload.userErrors";
+        }
+
+        public static class CompanyLocationRevokeTaxRegistrationPayload
+        {
+            public const string companyLocation = "shopify.CompanyLocationRevokeTaxRegistrationPayload.companyLocation";
+            public const string userErrors = "shopify.CompanyLocationRevokeTaxRegistrationPayload.userErrors";
+        }
+
+        public static class CompanyLocationStaffMemberAssignment
+        {
+            public const string companyLocation = "shopify.CompanyLocationStaffMemberAssignment.companyLocation";
+            public const string id = "shopify.CompanyLocationStaffMemberAssignment.id";
+            public const string staffMember = "shopify.CompanyLocationStaffMemberAssignment.staffMember";
+        }
+
+        public static class CompanyLocationStaffMemberAssignmentConnection
+        {
+            public const string edges = "shopify.CompanyLocationStaffMemberAssignmentConnection.edges";
+            public const string nodes = "shopify.CompanyLocationStaffMemberAssignmentConnection.nodes";
+            public const string pageInfo = "shopify.CompanyLocationStaffMemberAssignmentConnection.pageInfo";
+        }
+
+        public static class CompanyLocationStaffMemberAssignmentEdge
+        {
+            public const string cursor = "shopify.CompanyLocationStaffMemberAssignmentEdge.cursor";
+            public const string node = "shopify.CompanyLocationStaffMemberAssignmentEdge.node";
+        }
+
+        public static class CompanyLocationTaxSettings
+        {
+            public const string taxExempt = "shopify.CompanyLocationTaxSettings.taxExempt";
+            public const string taxExemptions = "shopify.CompanyLocationTaxSettings.taxExemptions";
+            public const string taxRegistrationId = "shopify.CompanyLocationTaxSettings.taxRegistrationId";
+        }
+
+        public static class CompanyLocationTaxSettingsUpdatePayload
+        {
+            public const string companyLocation = "shopify.CompanyLocationTaxSettingsUpdatePayload.companyLocation";
+            public const string userErrors = "shopify.CompanyLocationTaxSettingsUpdatePayload.userErrors";
+        }
+
+        public static class CompanyLocationUpdatePayload
+        {
+            public const string companyLocation = "shopify.CompanyLocationUpdatePayload.companyLocation";
+            public const string userErrors = "shopify.CompanyLocationUpdatePayload.userErrors";
+        }
+
+        public static class CompanyLocationsCondition
+        {
+            public const string applicationLevel = "shopify.CompanyLocationsCondition.applicationLevel";
+            public const string companyLocations = "shopify.CompanyLocationsCondition.companyLocations";
+        }
+
+        public static class CompanyLocationsDeletePayload
+        {
+            public const string deletedCompanyLocationIds = "shopify.CompanyLocationsDeletePayload.deletedCompanyLocationIds";
+            public const string userErrors = "shopify.CompanyLocationsDeletePayload.userErrors";
+        }
+
+        public static class CompanyRevokeMainContactPayload
+        {
+            public const string company = "shopify.CompanyRevokeMainContactPayload.company";
+            public const string userErrors = "shopify.CompanyRevokeMainContactPayload.userErrors";
+        }
+
+        public static class CompanyUpdatePayload
+        {
+            public const string company = "shopify.CompanyUpdatePayload.company";
+            public const string userErrors = "shopify.CompanyUpdatePayload.userErrors";
+        }
+
+        public static class ConsentPolicy
+        {
+            public const string consentRequired = "shopify.ConsentPolicy.consentRequired";
+            public const string countryCode = "shopify.ConsentPolicy.countryCode";
+            public const string dataSaleOptOutRequired = "shopify.ConsentPolicy.dataSaleOptOutRequired";
+            public const string id = "shopify.ConsentPolicy.id";
+            public const string regionCode = "shopify.ConsentPolicy.regionCode";
+            public const string shopId = "shopify.ConsentPolicy.shopId";
+        }
+
+        public static class ConsentPolicyError
+        {
+            public const string code = "shopify.ConsentPolicyError.code";
+            public const string field = "shopify.ConsentPolicyError.field";
+            public const string message = "shopify.ConsentPolicyError.message";
+        }
+
+        public static class ConsentPolicyRegion
+        {
+            public const string countryCode = "shopify.ConsentPolicyRegion.countryCode";
+            public const string regionCode = "shopify.ConsentPolicyRegion.regionCode";
+        }
+
+        public static class ConsentPolicyUpdatePayload
+        {
+            public const string updatedPolicies = "shopify.ConsentPolicyUpdatePayload.updatedPolicies";
+            public const string userErrors = "shopify.ConsentPolicyUpdatePayload.userErrors";
+        }
+
+        public static class CookieBanner
+        {
+            public const string autoManaged = "shopify.CookieBanner.autoManaged";
+            public const string enabled = "shopify.CookieBanner.enabled";
+            public const string translations = "shopify.CookieBanner.translations";
+        }
+
+        public static class Count
+        {
+            public const string count = "shopify.Count.count";
+            public const string precision = "shopify.Count.precision";
+        }
+
+        public static class CountriesInShippingZones
+        {
+            public const string countryCodes = "shopify.CountriesInShippingZones.countryCodes";
+            public const string includeRestOfWorld = "shopify.CountriesInShippingZones.includeRestOfWorld";
+        }
+
+        public static class CountryHarmonizedSystemCode
+        {
+            public const string countryCode = "shopify.CountryHarmonizedSystemCode.countryCode";
+            public const string harmonizedSystemCode = "shopify.CountryHarmonizedSystemCode.harmonizedSystemCode";
+        }
+
+        public static class CountryHarmonizedSystemCodeConnection
+        {
+            public const string edges = "shopify.CountryHarmonizedSystemCodeConnection.edges";
+            public const string nodes = "shopify.CountryHarmonizedSystemCodeConnection.nodes";
+            public const string pageInfo = "shopify.CountryHarmonizedSystemCodeConnection.pageInfo";
+        }
+
+        public static class CountryHarmonizedSystemCodeEdge
+        {
+            public const string cursor = "shopify.CountryHarmonizedSystemCodeEdge.cursor";
+            public const string node = "shopify.CountryHarmonizedSystemCodeEdge.node";
+        }
+
+        public static class CurrencyFormats
+        {
+            public const string moneyFormat = "shopify.CurrencyFormats.moneyFormat";
+            public const string moneyInEmailsFormat = "shopify.CurrencyFormats.moneyInEmailsFormat";
+            public const string moneyWithCurrencyFormat = "shopify.CurrencyFormats.moneyWithCurrencyFormat";
+            public const string moneyWithCurrencyInEmailsFormat = "shopify.CurrencyFormats.moneyWithCurrencyInEmailsFormat";
+        }
+
+        public static class CurrencySetting
+        {
+            public const string currencyCode = "shopify.CurrencySetting.currencyCode";
+            public const string currencyName = "shopify.CurrencySetting.currencyName";
+            public const string enabled = "shopify.CurrencySetting.enabled";
+            public const string rateUpdatedAt = "shopify.CurrencySetting.rateUpdatedAt";
+        }
+
+        public static class CurrencySettingConnection
+        {
+            public const string edges = "shopify.CurrencySettingConnection.edges";
+            public const string nodes = "shopify.CurrencySettingConnection.nodes";
+            public const string pageInfo = "shopify.CurrencySettingConnection.pageInfo";
+        }
+
+        public static class CurrencySettingEdge
+        {
+            public const string cursor = "shopify.CurrencySettingEdge.cursor";
+            public const string node = "shopify.CurrencySettingEdge.node";
+        }
+
+        public static class Customer
+        {
+            public const string addresses = "shopify.Customer.addresses";
+            public const string addressesV2 = "shopify.Customer.addressesV2";
+            public const string amountSpent = "shopify.Customer.amountSpent";
+            public const string canDelete = "shopify.Customer.canDelete";
+            public const string companyContactProfiles = "shopify.Customer.companyContactProfiles";
+            public const string createdAt = "shopify.Customer.createdAt";
+            public const string dataSaleOptOut = "shopify.Customer.dataSaleOptOut";
+            public const string defaultAddress = "shopify.Customer.defaultAddress";
+            public const string defaultEmailAddress = "shopify.Customer.defaultEmailAddress";
+            public const string defaultPhoneNumber = "shopify.Customer.defaultPhoneNumber";
+            public const string displayName = "shopify.Customer.displayName";
+            public const string email = "shopify.Customer.email";
+            public const string emailMarketingConsent = "shopify.Customer.emailMarketingConsent";
+            public const string events = "shopify.Customer.events";
+            public const string firstName = "shopify.Customer.firstName";
+            public const string hasTimelineComment = "shopify.Customer.hasTimelineComment";
+            public const string id = "shopify.Customer.id";
+            public const string image = "shopify.Customer.image";
+            public const string lastName = "shopify.Customer.lastName";
+            public const string lastOrder = "shopify.Customer.lastOrder";
+            public const string legacyResourceId = "shopify.Customer.legacyResourceId";
+            public const string lifetimeDuration = "shopify.Customer.lifetimeDuration";
+            public const string locale = "shopify.Customer.locale";
+            public const string market = "shopify.Customer.market";
+            public const string mergeable = "shopify.Customer.mergeable";
+            public const string metafield = "shopify.Customer.metafield";
+            public const string metafieldDefinitions = "shopify.Customer.metafieldDefinitions";
+            public const string metafields = "shopify.Customer.metafields";
+            public const string multipassIdentifier = "shopify.Customer.multipassIdentifier";
+            public const string note = "shopify.Customer.note";
+            public const string numberOfOrders = "shopify.Customer.numberOfOrders";
+            public const string orders = "shopify.Customer.orders";
+            public const string paymentMethods = "shopify.Customer.paymentMethods";
+            public const string phone = "shopify.Customer.phone";
+            public const string productSubscriberStatus = "shopify.Customer.productSubscriberStatus";
+            public const string smsMarketingConsent = "shopify.Customer.smsMarketingConsent";
+            public const string state = "shopify.Customer.state";
+            public const string statistics = "shopify.Customer.statistics";
+            public const string storeCreditAccounts = "shopify.Customer.storeCreditAccounts";
+            public const string subscriptionContracts = "shopify.Customer.subscriptionContracts";
+            public const string tags = "shopify.Customer.tags";
+            public const string taxExempt = "shopify.Customer.taxExempt";
+            public const string taxExemptions = "shopify.Customer.taxExemptions";
+            public const string unsubscribeUrl = "shopify.Customer.unsubscribeUrl";
+            public const string updatedAt = "shopify.Customer.updatedAt";
+            public const string validEmailAddress = "shopify.Customer.validEmailAddress";
+            public const string verifiedEmail = "shopify.Customer.verifiedEmail";
+        }
+
+        public static class CustomerAccountAppExtensionPage
+        {
+            public const string appExtensionUuid = "shopify.CustomerAccountAppExtensionPage.appExtensionUuid";
+            public const string defaultCursor = "shopify.CustomerAccountAppExtensionPage.defaultCursor";
+            public const string handle = "shopify.CustomerAccountAppExtensionPage.handle";
+            public const string id = "shopify.CustomerAccountAppExtensionPage.id";
+            public const string title = "shopify.CustomerAccountAppExtensionPage.title";
+        }
+
+        public static class CustomerAccountNativePage
+        {
+            public const string defaultCursor = "shopify.CustomerAccountNativePage.defaultCursor";
+            public const string handle = "shopify.CustomerAccountNativePage.handle";
+            public const string id = "shopify.CustomerAccountNativePage.id";
+            public const string pageType = "shopify.CustomerAccountNativePage.pageType";
+            public const string title = "shopify.CustomerAccountNativePage.title";
+        }
+
+        public static class ICustomerAccountPage
+        {
+            public const string handle = "shopify.ICustomerAccountPage.handle";
+            public const string title = "shopify.ICustomerAccountPage.title";
+        }
+
+        public static class CustomerAccountPageConnection
+        {
+            public const string edges = "shopify.CustomerAccountPageConnection.edges";
+            public const string nodes = "shopify.CustomerAccountPageConnection.nodes";
+            public const string pageInfo = "shopify.CustomerAccountPageConnection.pageInfo";
+        }
+
+        public static class CustomerAccountPageEdge
+        {
+            public const string cursor = "shopify.CustomerAccountPageEdge.cursor";
+            public const string node = "shopify.CustomerAccountPageEdge.node";
+        }
+
+        public static class CustomerAccountsV2
+        {
+            public const string customerAccountsVersion = "shopify.CustomerAccountsV2.customerAccountsVersion";
+            public const string loginLinksVisibleOnStorefrontAndCheckout = "shopify.CustomerAccountsV2.loginLinksVisibleOnStorefrontAndCheckout";
+            public const string loginRequiredAtCheckout = "shopify.CustomerAccountsV2.loginRequiredAtCheckout";
+            public const string url = "shopify.CustomerAccountsV2.url";
+        }
+
+        public static class CustomerAddTaxExemptionsPayload
+        {
+            public const string customer = "shopify.CustomerAddTaxExemptionsPayload.customer";
+            public const string userErrors = "shopify.CustomerAddTaxExemptionsPayload.userErrors";
+        }
+
+        public static class CustomerAddressCreatePayload
+        {
+            public const string address = "shopify.CustomerAddressCreatePayload.address";
+            public const string userErrors = "shopify.CustomerAddressCreatePayload.userErrors";
+        }
+
+        public static class CustomerAddressDeletePayload
+        {
+            public const string deletedAddressId = "shopify.CustomerAddressDeletePayload.deletedAddressId";
+            public const string userErrors = "shopify.CustomerAddressDeletePayload.userErrors";
+        }
+
+        public static class CustomerAddressUpdatePayload
+        {
+            public const string address = "shopify.CustomerAddressUpdatePayload.address";
+            public const string userErrors = "shopify.CustomerAddressUpdatePayload.userErrors";
+        }
+
+        public static class CustomerCancelDataErasurePayload
+        {
+            public const string customerId = "shopify.CustomerCancelDataErasurePayload.customerId";
+            public const string userErrors = "shopify.CustomerCancelDataErasurePayload.userErrors";
+        }
+
+        public static class CustomerCancelDataErasureUserError
+        {
+            public const string code = "shopify.CustomerCancelDataErasureUserError.code";
+            public const string field = "shopify.CustomerCancelDataErasureUserError.field";
+            public const string message = "shopify.CustomerCancelDataErasureUserError.message";
+        }
+
+        public static class CustomerConnection
+        {
+            public const string edges = "shopify.CustomerConnection.edges";
+            public const string nodes = "shopify.CustomerConnection.nodes";
+            public const string pageInfo = "shopify.CustomerConnection.pageInfo";
+        }
+
+        public static class CustomerCreatePayload
+        {
+            public const string customer = "shopify.CustomerCreatePayload.customer";
+            public const string userErrors = "shopify.CustomerCreatePayload.userErrors";
+        }
+
+        public static class CustomerCreditCard
+        {
+            public const string billingAddress = "shopify.CustomerCreditCard.billingAddress";
+            public const string brand = "shopify.CustomerCreditCard.brand";
+            public const string expiresSoon = "shopify.CustomerCreditCard.expiresSoon";
+            public const string expiryMonth = "shopify.CustomerCreditCard.expiryMonth";
+            public const string expiryYear = "shopify.CustomerCreditCard.expiryYear";
+            public const string firstDigits = "shopify.CustomerCreditCard.firstDigits";
+            public const string isRevocable = "shopify.CustomerCreditCard.isRevocable";
+            public const string lastDigits = "shopify.CustomerCreditCard.lastDigits";
+            public const string maskedNumber = "shopify.CustomerCreditCard.maskedNumber";
+            public const string name = "shopify.CustomerCreditCard.name";
+            public const string source = "shopify.CustomerCreditCard.source";
+            public const string virtualLastDigits = "shopify.CustomerCreditCard.virtualLastDigits";
+        }
+
+        public static class CustomerCreditCardBillingAddress
+        {
+            public const string address1 = "shopify.CustomerCreditCardBillingAddress.address1";
+            public const string city = "shopify.CustomerCreditCardBillingAddress.city";
+            public const string country = "shopify.CustomerCreditCardBillingAddress.country";
+            public const string countryCode = "shopify.CustomerCreditCardBillingAddress.countryCode";
+            public const string firstName = "shopify.CustomerCreditCardBillingAddress.firstName";
+            public const string lastName = "shopify.CustomerCreditCardBillingAddress.lastName";
+            public const string province = "shopify.CustomerCreditCardBillingAddress.province";
+            public const string provinceCode = "shopify.CustomerCreditCardBillingAddress.provinceCode";
+            public const string zip = "shopify.CustomerCreditCardBillingAddress.zip";
+        }
+
+        public static class CustomerDeletePayload
+        {
+            public const string deletedCustomerId = "shopify.CustomerDeletePayload.deletedCustomerId";
+            public const string shop = "shopify.CustomerDeletePayload.shop";
+            public const string userErrors = "shopify.CustomerDeletePayload.userErrors";
+        }
+
+        public static class CustomerEdge
+        {
+            public const string cursor = "shopify.CustomerEdge.cursor";
+            public const string node = "shopify.CustomerEdge.node";
+        }
+
+        public static class CustomerEmailAddress
+        {
+            public const string emailAddress = "shopify.CustomerEmailAddress.emailAddress";
+            public const string marketingOptInLevel = "shopify.CustomerEmailAddress.marketingOptInLevel";
+            public const string marketingState = "shopify.CustomerEmailAddress.marketingState";
+            public const string marketingUnsubscribeUrl = "shopify.CustomerEmailAddress.marketingUnsubscribeUrl";
+            public const string marketingUpdatedAt = "shopify.CustomerEmailAddress.marketingUpdatedAt";
+            public const string openTrackingLevel = "shopify.CustomerEmailAddress.openTrackingLevel";
+            public const string openTrackingUrl = "shopify.CustomerEmailAddress.openTrackingUrl";
+            public const string sourceLocation = "shopify.CustomerEmailAddress.sourceLocation";
+            public const string validFormat = "shopify.CustomerEmailAddress.validFormat";
+        }
+
+        public static class CustomerEmailMarketingConsentState
+        {
+            public const string consentUpdatedAt = "shopify.CustomerEmailMarketingConsentState.consentUpdatedAt";
+            public const string marketingOptInLevel = "shopify.CustomerEmailMarketingConsentState.marketingOptInLevel";
+            public const string marketingState = "shopify.CustomerEmailMarketingConsentState.marketingState";
+            public const string sourceLocation = "shopify.CustomerEmailMarketingConsentState.sourceLocation";
+        }
+
+        public static class CustomerEmailMarketingConsentUpdatePayload
+        {
+            public const string customer = "shopify.CustomerEmailMarketingConsentUpdatePayload.customer";
+            public const string userErrors = "shopify.CustomerEmailMarketingConsentUpdatePayload.userErrors";
+        }
+
+        public static class CustomerEmailMarketingConsentUpdateUserError
+        {
+            public const string code = "shopify.CustomerEmailMarketingConsentUpdateUserError.code";
+            public const string field = "shopify.CustomerEmailMarketingConsentUpdateUserError.field";
+            public const string message = "shopify.CustomerEmailMarketingConsentUpdateUserError.message";
+        }
+
+        public static class CustomerGenerateAccountActivationUrlPayload
+        {
+            public const string accountActivationUrl = "shopify.CustomerGenerateAccountActivationUrlPayload.accountActivationUrl";
+            public const string userErrors = "shopify.CustomerGenerateAccountActivationUrlPayload.userErrors";
+        }
+
+        public static class CustomerJourney
+        {
+            public const string customerOrderIndex = "shopify.CustomerJourney.customerOrderIndex";
+            public const string daysToConversion = "shopify.CustomerJourney.daysToConversion";
+            public const string firstVisit = "shopify.CustomerJourney.firstVisit";
+            public const string lastVisit = "shopify.CustomerJourney.lastVisit";
+            public const string moments = "shopify.CustomerJourney.moments";
+        }
+
+        public static class CustomerJourneySummary
+        {
+            public const string customerOrderIndex = "shopify.CustomerJourneySummary.customerOrderIndex";
+            public const string daysToConversion = "shopify.CustomerJourneySummary.daysToConversion";
+            public const string firstVisit = "shopify.CustomerJourneySummary.firstVisit";
+            public const string lastVisit = "shopify.CustomerJourneySummary.lastVisit";
+            public const string moments = "shopify.CustomerJourneySummary.moments";
+            public const string momentsCount = "shopify.CustomerJourneySummary.momentsCount";
+            public const string ready = "shopify.CustomerJourneySummary.ready";
+        }
+
+        public static class CustomerMergeError
+        {
+            public const string errorFields = "shopify.CustomerMergeError.errorFields";
+            public const string message = "shopify.CustomerMergeError.message";
+        }
+
+        public static class CustomerMergePayload
+        {
+            public const string job = "shopify.CustomerMergePayload.job";
+            public const string resultingCustomerId = "shopify.CustomerMergePayload.resultingCustomerId";
+            public const string userErrors = "shopify.CustomerMergePayload.userErrors";
+        }
+
+        public static class CustomerMergePreview
+        {
+            public const string alternateFields = "shopify.CustomerMergePreview.alternateFields";
+            public const string blockingFields = "shopify.CustomerMergePreview.blockingFields";
+            public const string customerMergeErrors = "shopify.CustomerMergePreview.customerMergeErrors";
+            public const string defaultFields = "shopify.CustomerMergePreview.defaultFields";
+            public const string resultingCustomerId = "shopify.CustomerMergePreview.resultingCustomerId";
+        }
+
+        public static class CustomerMergePreviewAlternateFields
+        {
+            public const string defaultAddress = "shopify.CustomerMergePreviewAlternateFields.defaultAddress";
+            public const string email = "shopify.CustomerMergePreviewAlternateFields.email";
+            public const string firstName = "shopify.CustomerMergePreviewAlternateFields.firstName";
+            public const string lastName = "shopify.CustomerMergePreviewAlternateFields.lastName";
+            public const string phoneNumber = "shopify.CustomerMergePreviewAlternateFields.phoneNumber";
+        }
+
+        public static class CustomerMergePreviewBlockingFields
+        {
+            public const string note = "shopify.CustomerMergePreviewBlockingFields.note";
+            public const string tags = "shopify.CustomerMergePreviewBlockingFields.tags";
+        }
+
+        public static class CustomerMergePreviewDefaultFields
+        {
+            public const string addresses = "shopify.CustomerMergePreviewDefaultFields.addresses";
+            public const string defaultAddress = "shopify.CustomerMergePreviewDefaultFields.defaultAddress";
+            public const string discountNodeCount = "shopify.CustomerMergePreviewDefaultFields.discountNodeCount";
+            public const string discountNodes = "shopify.CustomerMergePreviewDefaultFields.discountNodes";
+            public const string displayName = "shopify.CustomerMergePreviewDefaultFields.displayName";
+            public const string draftOrderCount = "shopify.CustomerMergePreviewDefaultFields.draftOrderCount";
+            public const string draftOrders = "shopify.CustomerMergePreviewDefaultFields.draftOrders";
+            public const string email = "shopify.CustomerMergePreviewDefaultFields.email";
+            public const string firstName = "shopify.CustomerMergePreviewDefaultFields.firstName";
+            public const string giftCardCount = "shopify.CustomerMergePreviewDefaultFields.giftCardCount";
+            public const string giftCards = "shopify.CustomerMergePreviewDefaultFields.giftCards";
+            public const string lastName = "shopify.CustomerMergePreviewDefaultFields.lastName";
+            public const string metafieldCount = "shopify.CustomerMergePreviewDefaultFields.metafieldCount";
+            public const string note = "shopify.CustomerMergePreviewDefaultFields.note";
+            public const string orderCount = "shopify.CustomerMergePreviewDefaultFields.orderCount";
+            public const string orders = "shopify.CustomerMergePreviewDefaultFields.orders";
+            public const string phoneNumber = "shopify.CustomerMergePreviewDefaultFields.phoneNumber";
+            public const string tags = "shopify.CustomerMergePreviewDefaultFields.tags";
+        }
+
+        public static class CustomerMergeRequest
+        {
+            public const string customerMergeErrors = "shopify.CustomerMergeRequest.customerMergeErrors";
+            public const string jobId = "shopify.CustomerMergeRequest.jobId";
+            public const string resultingCustomerId = "shopify.CustomerMergeRequest.resultingCustomerId";
+            public const string status = "shopify.CustomerMergeRequest.status";
+        }
+
+        public static class CustomerMergeUserError
+        {
+            public const string code = "shopify.CustomerMergeUserError.code";
+            public const string field = "shopify.CustomerMergeUserError.field";
+            public const string message = "shopify.CustomerMergeUserError.message";
+        }
+
+        public static class CustomerMergeable
+        {
+            public const string errorFields = "shopify.CustomerMergeable.errorFields";
+            public const string isMergeable = "shopify.CustomerMergeable.isMergeable";
+            public const string mergeInProgress = "shopify.CustomerMergeable.mergeInProgress";
+            public const string reason = "shopify.CustomerMergeable.reason";
+        }
+
+        public static class ICustomerMoment
+        {
+            public const string occurredAt = "shopify.ICustomerMoment.occurredAt";
+        }
+
+        public static class CustomerMomentConnection
+        {
+            public const string edges = "shopify.CustomerMomentConnection.edges";
+            public const string nodes = "shopify.CustomerMomentConnection.nodes";
+            public const string pageInfo = "shopify.CustomerMomentConnection.pageInfo";
+        }
+
+        public static class CustomerMomentEdge
+        {
+            public const string cursor = "shopify.CustomerMomentEdge.cursor";
+            public const string node = "shopify.CustomerMomentEdge.node";
+        }
+
+        public static class ICustomerPaymentInstrument
+        {
+            public const string isRevocable = "shopify.ICustomerPaymentInstrument.isRevocable";
+        }
+
+        public static class CustomerPaymentInstrumentBillingAddress
+        {
+            public const string address1 = "shopify.CustomerPaymentInstrumentBillingAddress.address1";
+            public const string city = "shopify.CustomerPaymentInstrumentBillingAddress.city";
+            public const string country = "shopify.CustomerPaymentInstrumentBillingAddress.country";
+            public const string countryCode = "shopify.CustomerPaymentInstrumentBillingAddress.countryCode";
+            public const string name = "shopify.CustomerPaymentInstrumentBillingAddress.name";
+            public const string province = "shopify.CustomerPaymentInstrumentBillingAddress.province";
+            public const string provinceCode = "shopify.CustomerPaymentInstrumentBillingAddress.provinceCode";
+            public const string zip = "shopify.CustomerPaymentInstrumentBillingAddress.zip";
+        }
+
+        public static class CustomerPaymentMethod
+        {
+            public const string customer = "shopify.CustomerPaymentMethod.customer";
+            public const string id = "shopify.CustomerPaymentMethod.id";
+            public const string instrument = "shopify.CustomerPaymentMethod.instrument";
+            public const string revokedAt = "shopify.CustomerPaymentMethod.revokedAt";
+            public const string revokedReason = "shopify.CustomerPaymentMethod.revokedReason";
+            public const string subscriptionContracts = "shopify.CustomerPaymentMethod.subscriptionContracts";
+        }
+
+        public static class CustomerPaymentMethodConnection
+        {
+            public const string edges = "shopify.CustomerPaymentMethodConnection.edges";
+            public const string nodes = "shopify.CustomerPaymentMethodConnection.nodes";
+            public const string pageInfo = "shopify.CustomerPaymentMethodConnection.pageInfo";
+        }
+
+        public static class CustomerPaymentMethodCreateFromDuplicationDataPayload
+        {
+            public const string customerPaymentMethod = "shopify.CustomerPaymentMethodCreateFromDuplicationDataPayload.customerPaymentMethod";
+            public const string userErrors = "shopify.CustomerPaymentMethodCreateFromDuplicationDataPayload.userErrors";
+        }
+
+        public static class CustomerPaymentMethodCreateFromDuplicationDataUserError
+        {
+            public const string code = "shopify.CustomerPaymentMethodCreateFromDuplicationDataUserError.code";
+            public const string field = "shopify.CustomerPaymentMethodCreateFromDuplicationDataUserError.field";
+            public const string message = "shopify.CustomerPaymentMethodCreateFromDuplicationDataUserError.message";
+        }
+
+        public static class CustomerPaymentMethodCreditCardCreatePayload
+        {
+            public const string customerPaymentMethod = "shopify.CustomerPaymentMethodCreditCardCreatePayload.customerPaymentMethod";
+            public const string processing = "shopify.CustomerPaymentMethodCreditCardCreatePayload.processing";
+            public const string userErrors = "shopify.CustomerPaymentMethodCreditCardCreatePayload.userErrors";
+        }
+
+        public static class CustomerPaymentMethodCreditCardUpdatePayload
+        {
+            public const string customerPaymentMethod = "shopify.CustomerPaymentMethodCreditCardUpdatePayload.customerPaymentMethod";
+            public const string processing = "shopify.CustomerPaymentMethodCreditCardUpdatePayload.processing";
+            public const string userErrors = "shopify.CustomerPaymentMethodCreditCardUpdatePayload.userErrors";
+        }
+
+        public static class CustomerPaymentMethodEdge
+        {
+            public const string cursor = "shopify.CustomerPaymentMethodEdge.cursor";
+            public const string node = "shopify.CustomerPaymentMethodEdge.node";
+        }
+
+        public static class CustomerPaymentMethodGetDuplicationDataPayload
+        {
+            public const string encryptedDuplicationData = "shopify.CustomerPaymentMethodGetDuplicationDataPayload.encryptedDuplicationData";
+            public const string userErrors = "shopify.CustomerPaymentMethodGetDuplicationDataPayload.userErrors";
+        }
+
+        public static class CustomerPaymentMethodGetDuplicationDataUserError
+        {
+            public const string code = "shopify.CustomerPaymentMethodGetDuplicationDataUserError.code";
+            public const string field = "shopify.CustomerPaymentMethodGetDuplicationDataUserError.field";
+            public const string message = "shopify.CustomerPaymentMethodGetDuplicationDataUserError.message";
+        }
+
+        public static class CustomerPaymentMethodGetUpdateUrlPayload
+        {
+            public const string updatePaymentMethodUrl = "shopify.CustomerPaymentMethodGetUpdateUrlPayload.updatePaymentMethodUrl";
+            public const string userErrors = "shopify.CustomerPaymentMethodGetUpdateUrlPayload.userErrors";
+        }
+
+        public static class CustomerPaymentMethodGetUpdateUrlUserError
+        {
+            public const string code = "shopify.CustomerPaymentMethodGetUpdateUrlUserError.code";
+            public const string field = "shopify.CustomerPaymentMethodGetUpdateUrlUserError.field";
+            public const string message = "shopify.CustomerPaymentMethodGetUpdateUrlUserError.message";
+        }
+
+        public static class CustomerPaymentMethodPaypalBillingAgreementCreatePayload
+        {
+            public const string customerPaymentMethod = "shopify.CustomerPaymentMethodPaypalBillingAgreementCreatePayload.customerPaymentMethod";
+            public const string userErrors = "shopify.CustomerPaymentMethodPaypalBillingAgreementCreatePayload.userErrors";
+        }
+
+        public static class CustomerPaymentMethodPaypalBillingAgreementUpdatePayload
+        {
+            public const string customerPaymentMethod = "shopify.CustomerPaymentMethodPaypalBillingAgreementUpdatePayload.customerPaymentMethod";
+            public const string userErrors = "shopify.CustomerPaymentMethodPaypalBillingAgreementUpdatePayload.userErrors";
+        }
+
+        public static class CustomerPaymentMethodRemoteCreatePayload
+        {
+            public const string customerPaymentMethod = "shopify.CustomerPaymentMethodRemoteCreatePayload.customerPaymentMethod";
+            public const string userErrors = "shopify.CustomerPaymentMethodRemoteCreatePayload.userErrors";
+        }
+
+        public static class CustomerPaymentMethodRemoteUserError
+        {
+            public const string code = "shopify.CustomerPaymentMethodRemoteUserError.code";
+            public const string field = "shopify.CustomerPaymentMethodRemoteUserError.field";
+            public const string message = "shopify.CustomerPaymentMethodRemoteUserError.message";
+        }
+
+        public static class CustomerPaymentMethodRevokePayload
+        {
+            public const string revokedCustomerPaymentMethodId = "shopify.CustomerPaymentMethodRevokePayload.revokedCustomerPaymentMethodId";
+            public const string userErrors = "shopify.CustomerPaymentMethodRevokePayload.userErrors";
+        }
+
+        public static class CustomerPaymentMethodSendUpdateEmailPayload
+        {
+            public const string customer = "shopify.CustomerPaymentMethodSendUpdateEmailPayload.customer";
+            public const string userErrors = "shopify.CustomerPaymentMethodSendUpdateEmailPayload.userErrors";
+        }
+
+        public static class CustomerPaymentMethodUserError
+        {
+            public const string code = "shopify.CustomerPaymentMethodUserError.code";
+            public const string field = "shopify.CustomerPaymentMethodUserError.field";
+            public const string message = "shopify.CustomerPaymentMethodUserError.message";
+        }
+
+        public static class CustomerPaypalBillingAgreement
+        {
+            public const string billingAddress = "shopify.CustomerPaypalBillingAgreement.billingAddress";
+            public const string inactive = "shopify.CustomerPaypalBillingAgreement.inactive";
+            public const string isRevocable = "shopify.CustomerPaypalBillingAgreement.isRevocable";
+            public const string paypalAccountEmail = "shopify.CustomerPaypalBillingAgreement.paypalAccountEmail";
+        }
+
+        public static class CustomerPhoneNumber
+        {
+            public const string marketingCollectedFrom = "shopify.CustomerPhoneNumber.marketingCollectedFrom";
+            public const string marketingOptInLevel = "shopify.CustomerPhoneNumber.marketingOptInLevel";
+            public const string marketingState = "shopify.CustomerPhoneNumber.marketingState";
+            public const string marketingUpdatedAt = "shopify.CustomerPhoneNumber.marketingUpdatedAt";
+            public const string phoneNumber = "shopify.CustomerPhoneNumber.phoneNumber";
+            public const string sourceLocation = "shopify.CustomerPhoneNumber.sourceLocation";
+        }
+
+        public static class CustomerRemoveTaxExemptionsPayload
+        {
+            public const string customer = "shopify.CustomerRemoveTaxExemptionsPayload.customer";
+            public const string userErrors = "shopify.CustomerRemoveTaxExemptionsPayload.userErrors";
+        }
+
+        public static class CustomerReplaceTaxExemptionsPayload
+        {
+            public const string customer = "shopify.CustomerReplaceTaxExemptionsPayload.customer";
+            public const string userErrors = "shopify.CustomerReplaceTaxExemptionsPayload.userErrors";
+        }
+
+        public static class CustomerRequestDataErasurePayload
+        {
+            public const string customerId = "shopify.CustomerRequestDataErasurePayload.customerId";
+            public const string userErrors = "shopify.CustomerRequestDataErasurePayload.userErrors";
+        }
+
+        public static class CustomerRequestDataErasureUserError
+        {
+            public const string code = "shopify.CustomerRequestDataErasureUserError.code";
+            public const string field = "shopify.CustomerRequestDataErasureUserError.field";
+            public const string message = "shopify.CustomerRequestDataErasureUserError.message";
+        }
+
+        public static class CustomerSegmentMember
+        {
+            public const string amountSpent = "shopify.CustomerSegmentMember.amountSpent";
+            public const string defaultAddress = "shopify.CustomerSegmentMember.defaultAddress";
+            public const string defaultEmailAddress = "shopify.CustomerSegmentMember.defaultEmailAddress";
+            public const string defaultPhoneNumber = "shopify.CustomerSegmentMember.defaultPhoneNumber";
+            public const string displayName = "shopify.CustomerSegmentMember.displayName";
+            public const string firstName = "shopify.CustomerSegmentMember.firstName";
+            public const string id = "shopify.CustomerSegmentMember.id";
+            public const string lastName = "shopify.CustomerSegmentMember.lastName";
+            public const string lastOrderId = "shopify.CustomerSegmentMember.lastOrderId";
+            public const string mergeable = "shopify.CustomerSegmentMember.mergeable";
+            public const string metafield = "shopify.CustomerSegmentMember.metafield";
+            public const string metafields = "shopify.CustomerSegmentMember.metafields";
+            public const string note = "shopify.CustomerSegmentMember.note";
+            public const string numberOfOrders = "shopify.CustomerSegmentMember.numberOfOrders";
+        }
+
+        public static class CustomerSegmentMemberConnection
+        {
+            public const string edges = "shopify.CustomerSegmentMemberConnection.edges";
+            public const string pageInfo = "shopify.CustomerSegmentMemberConnection.pageInfo";
+            public const string statistics = "shopify.CustomerSegmentMemberConnection.statistics";
+            public const string totalCount = "shopify.CustomerSegmentMemberConnection.totalCount";
+        }
+
+        public static class CustomerSegmentMemberEdge
+        {
+            public const string cursor = "shopify.CustomerSegmentMemberEdge.cursor";
+            public const string node = "shopify.CustomerSegmentMemberEdge.node";
+        }
+
+        public static class CustomerSegmentMembersQuery
+        {
+            public const string currentCount = "shopify.CustomerSegmentMembersQuery.currentCount";
+            public const string done = "shopify.CustomerSegmentMembersQuery.done";
+            public const string id = "shopify.CustomerSegmentMembersQuery.id";
+        }
+
+        public static class CustomerSegmentMembersQueryCreatePayload
+        {
+            public const string customerSegmentMembersQuery = "shopify.CustomerSegmentMembersQueryCreatePayload.customerSegmentMembersQuery";
+            public const string userErrors = "shopify.CustomerSegmentMembersQueryCreatePayload.userErrors";
+        }
+
+        public static class CustomerSegmentMembersQueryUserError
+        {
+            public const string code = "shopify.CustomerSegmentMembersQueryUserError.code";
+            public const string field = "shopify.CustomerSegmentMembersQueryUserError.field";
+            public const string message = "shopify.CustomerSegmentMembersQueryUserError.message";
+        }
+
+        public static class CustomerSendAccountInviteEmailPayload
+        {
+            public const string customer = "shopify.CustomerSendAccountInviteEmailPayload.customer";
+            public const string userErrors = "shopify.CustomerSendAccountInviteEmailPayload.userErrors";
+        }
+
+        public static class CustomerSendAccountInviteEmailUserError
+        {
+            public const string code = "shopify.CustomerSendAccountInviteEmailUserError.code";
+            public const string field = "shopify.CustomerSendAccountInviteEmailUserError.field";
+            public const string message = "shopify.CustomerSendAccountInviteEmailUserError.message";
+        }
+
+        public static class CustomerSetPayload
+        {
+            public const string customer = "shopify.CustomerSetPayload.customer";
+            public const string userErrors = "shopify.CustomerSetPayload.userErrors";
+        }
+
+        public static class CustomerSetUserError
+        {
+            public const string code = "shopify.CustomerSetUserError.code";
+            public const string field = "shopify.CustomerSetUserError.field";
+            public const string message = "shopify.CustomerSetUserError.message";
+        }
+
+        public static class CustomerShopPayAgreement
+        {
+            public const string billingAddress = "shopify.CustomerShopPayAgreement.billingAddress";
+            public const string expiresSoon = "shopify.CustomerShopPayAgreement.expiresSoon";
+            public const string expiryMonth = "shopify.CustomerShopPayAgreement.expiryMonth";
+            public const string expiryYear = "shopify.CustomerShopPayAgreement.expiryYear";
+            public const string inactive = "shopify.CustomerShopPayAgreement.inactive";
+            public const string isRevocable = "shopify.CustomerShopPayAgreement.isRevocable";
+            public const string lastDigits = "shopify.CustomerShopPayAgreement.lastDigits";
+            public const string maskedNumber = "shopify.CustomerShopPayAgreement.maskedNumber";
+            public const string name = "shopify.CustomerShopPayAgreement.name";
+        }
+
+        public static class CustomerSmsMarketingConsentError
+        {
+            public const string code = "shopify.CustomerSmsMarketingConsentError.code";
+            public const string field = "shopify.CustomerSmsMarketingConsentError.field";
+            public const string message = "shopify.CustomerSmsMarketingConsentError.message";
+        }
+
+        public static class CustomerSmsMarketingConsentState
+        {
+            public const string consentCollectedFrom = "shopify.CustomerSmsMarketingConsentState.consentCollectedFrom";
+            public const string consentUpdatedAt = "shopify.CustomerSmsMarketingConsentState.consentUpdatedAt";
+            public const string marketingOptInLevel = "shopify.CustomerSmsMarketingConsentState.marketingOptInLevel";
+            public const string marketingState = "shopify.CustomerSmsMarketingConsentState.marketingState";
+            public const string sourceLocation = "shopify.CustomerSmsMarketingConsentState.sourceLocation";
+        }
+
+        public static class CustomerSmsMarketingConsentUpdatePayload
+        {
+            public const string customer = "shopify.CustomerSmsMarketingConsentUpdatePayload.customer";
+            public const string userErrors = "shopify.CustomerSmsMarketingConsentUpdatePayload.userErrors";
+        }
+
+        public static class CustomerStatistics
+        {
+            public const string predictedSpendTier = "shopify.CustomerStatistics.predictedSpendTier";
+            public const string rfmGroup = "shopify.CustomerStatistics.rfmGroup";
+        }
+
+        public static class CustomerUpdateDefaultAddressPayload
+        {
+            public const string customer = "shopify.CustomerUpdateDefaultAddressPayload.customer";
+            public const string userErrors = "shopify.CustomerUpdateDefaultAddressPayload.userErrors";
+        }
+
+        public static class CustomerUpdatePayload
+        {
+            public const string customer = "shopify.CustomerUpdatePayload.customer";
+            public const string userErrors = "shopify.CustomerUpdatePayload.userErrors";
+        }
+
+        public static class CustomerVisit
+        {
+            public const string id = "shopify.CustomerVisit.id";
+            public const string landingPage = "shopify.CustomerVisit.landingPage";
+            public const string landingPageHtml = "shopify.CustomerVisit.landingPageHtml";
+            public const string marketingEvent = "shopify.CustomerVisit.marketingEvent";
+            public const string occurredAt = "shopify.CustomerVisit.occurredAt";
+            public const string referralCode = "shopify.CustomerVisit.referralCode";
+            public const string referralInfoHtml = "shopify.CustomerVisit.referralInfoHtml";
+            public const string referrerUrl = "shopify.CustomerVisit.referrerUrl";
+            public const string source = "shopify.CustomerVisit.source";
+            public const string sourceDescription = "shopify.CustomerVisit.sourceDescription";
+            public const string sourceType = "shopify.CustomerVisit.sourceType";
+            public const string utmParameters = "shopify.CustomerVisit.utmParameters";
+        }
+
+        public static class CustomerVisitProductInfo
+        {
+            public const string product = "shopify.CustomerVisitProductInfo.product";
+            public const string quantity = "shopify.CustomerVisitProductInfo.quantity";
+            public const string variant = "shopify.CustomerVisitProductInfo.variant";
+        }
+
+        public static class CustomerVisitProductInfoConnection
+        {
+            public const string edges = "shopify.CustomerVisitProductInfoConnection.edges";
+            public const string nodes = "shopify.CustomerVisitProductInfoConnection.nodes";
+            public const string pageInfo = "shopify.CustomerVisitProductInfoConnection.pageInfo";
+        }
+
+        public static class CustomerVisitProductInfoEdge
+        {
+            public const string cursor = "shopify.CustomerVisitProductInfoEdge.cursor";
+            public const string node = "shopify.CustomerVisitProductInfoEdge.node";
+        }
+
+        public static class DataSaleOptOutPage
+        {
+            public const string autoManaged = "shopify.DataSaleOptOutPage.autoManaged";
+        }
+
+        public static class DataSaleOptOutPayload
+        {
+            public const string customerId = "shopify.DataSaleOptOutPayload.customerId";
+            public const string userErrors = "shopify.DataSaleOptOutPayload.userErrors";
+        }
+
+        public static class DataSaleOptOutUserError
+        {
+            public const string code = "shopify.DataSaleOptOutUserError.code";
+            public const string field = "shopify.DataSaleOptOutUserError.field";
+            public const string message = "shopify.DataSaleOptOutUserError.message";
+        }
+
+        public static class DelegateAccessToken
+        {
+            public const string accessScopes = "shopify.DelegateAccessToken.accessScopes";
+            public const string accessToken = "shopify.DelegateAccessToken.accessToken";
+            public const string createdAt = "shopify.DelegateAccessToken.createdAt";
+        }
+
+        public static class DelegateAccessTokenCreatePayload
+        {
+            public const string delegateAccessToken = "shopify.DelegateAccessTokenCreatePayload.delegateAccessToken";
+            public const string shop = "shopify.DelegateAccessTokenCreatePayload.shop";
+            public const string userErrors = "shopify.DelegateAccessTokenCreatePayload.userErrors";
+        }
+
+        public static class DelegateAccessTokenCreateUserError
+        {
+            public const string code = "shopify.DelegateAccessTokenCreateUserError.code";
+            public const string field = "shopify.DelegateAccessTokenCreateUserError.field";
+            public const string message = "shopify.DelegateAccessTokenCreateUserError.message";
+        }
+
+        public static class DelegateAccessTokenDestroyPayload
+        {
+            public const string shop = "shopify.DelegateAccessTokenDestroyPayload.shop";
+            public const string status = "shopify.DelegateAccessTokenDestroyPayload.status";
+            public const string userErrors = "shopify.DelegateAccessTokenDestroyPayload.userErrors";
+        }
+
+        public static class DelegateAccessTokenDestroyUserError
+        {
+            public const string code = "shopify.DelegateAccessTokenDestroyUserError.code";
+            public const string field = "shopify.DelegateAccessTokenDestroyUserError.field";
+            public const string message = "shopify.DelegateAccessTokenDestroyUserError.message";
+        }
+
+        public static class DeletionEvent
+        {
+            public const string occurredAt = "shopify.DeletionEvent.occurredAt";
+            public const string subjectId = "shopify.DeletionEvent.subjectId";
+            public const string subjectType = "shopify.DeletionEvent.subjectType";
+        }
+
+        public static class DeletionEventConnection
+        {
+            public const string edges = "shopify.DeletionEventConnection.edges";
+            public const string nodes = "shopify.DeletionEventConnection.nodes";
+            public const string pageInfo = "shopify.DeletionEventConnection.pageInfo";
+        }
+
+        public static class DeletionEventEdge
+        {
+            public const string cursor = "shopify.DeletionEventEdge.cursor";
+            public const string node = "shopify.DeletionEventEdge.node";
+        }
+
+        public static class DeliveryAvailableService
+        {
+            public const string countries = "shopify.DeliveryAvailableService.countries";
+            public const string name = "shopify.DeliveryAvailableService.name";
+        }
+
+        public static class DeliveryBrandedPromise
+        {
+            public const string handle = "shopify.DeliveryBrandedPromise.handle";
+            public const string name = "shopify.DeliveryBrandedPromise.name";
+        }
+
+        public static class DeliveryCarrierService
+        {
+            public const string active = "shopify.DeliveryCarrierService.active";
+            public const string availableServicesForCountries = "shopify.DeliveryCarrierService.availableServicesForCountries";
+            public const string callbackUrl = "shopify.DeliveryCarrierService.callbackUrl";
+            public const string formattedName = "shopify.DeliveryCarrierService.formattedName";
+            public const string icon = "shopify.DeliveryCarrierService.icon";
+            public const string id = "shopify.DeliveryCarrierService.id";
+            public const string name = "shopify.DeliveryCarrierService.name";
+            public const string supportsServiceDiscovery = "shopify.DeliveryCarrierService.supportsServiceDiscovery";
+        }
+
+        public static class DeliveryCarrierServiceAndLocations
+        {
+            public const string carrierService = "shopify.DeliveryCarrierServiceAndLocations.carrierService";
+            public const string locations = "shopify.DeliveryCarrierServiceAndLocations.locations";
+        }
+
+        public static class DeliveryCarrierServiceConnection
+        {
+            public const string edges = "shopify.DeliveryCarrierServiceConnection.edges";
+            public const string nodes = "shopify.DeliveryCarrierServiceConnection.nodes";
+            public const string pageInfo = "shopify.DeliveryCarrierServiceConnection.pageInfo";
+        }
+
+        public static class DeliveryCarrierServiceEdge
+        {
+            public const string cursor = "shopify.DeliveryCarrierServiceEdge.cursor";
+            public const string node = "shopify.DeliveryCarrierServiceEdge.node";
+        }
+
+        public static class DeliveryCondition
+        {
+            public const string conditionCriteria = "shopify.DeliveryCondition.conditionCriteria";
+            public const string field = "shopify.DeliveryCondition.field";
+            public const string id = "shopify.DeliveryCondition.id";
+            public const string @operator = "shopify.DeliveryCondition.operator";
+        }
+
+        public static class IDeliveryConditionCriteria
+        {
+        }
+
+        public static class DeliveryCountry
+        {
+            public const string code = "shopify.DeliveryCountry.code";
+            public const string id = "shopify.DeliveryCountry.id";
+            public const string name = "shopify.DeliveryCountry.name";
+            public const string provinces = "shopify.DeliveryCountry.provinces";
+            public const string translatedName = "shopify.DeliveryCountry.translatedName";
+        }
+
+        public static class DeliveryCountryAndZone
+        {
+            public const string country = "shopify.DeliveryCountryAndZone.country";
+            public const string zone = "shopify.DeliveryCountryAndZone.zone";
+        }
+
+        public static class DeliveryCountryCodeOrRestOfWorld
+        {
+            public const string countryCode = "shopify.DeliveryCountryCodeOrRestOfWorld.countryCode";
+            public const string restOfWorld = "shopify.DeliveryCountryCodeOrRestOfWorld.restOfWorld";
+        }
+
+        public static class DeliveryCountryCodesOrRestOfWorld
+        {
+            public const string countryCodes = "shopify.DeliveryCountryCodesOrRestOfWorld.countryCodes";
+            public const string restOfWorld = "shopify.DeliveryCountryCodesOrRestOfWorld.restOfWorld";
+        }
+
+        public static class DeliveryCustomization
+        {
+            public const string enabled = "shopify.DeliveryCustomization.enabled";
+            public const string errorHistory = "shopify.DeliveryCustomization.errorHistory";
+            public const string functionId = "shopify.DeliveryCustomization.functionId";
+            public const string id = "shopify.DeliveryCustomization.id";
+            public const string metafield = "shopify.DeliveryCustomization.metafield";
+            public const string metafieldDefinitions = "shopify.DeliveryCustomization.metafieldDefinitions";
+            public const string metafields = "shopify.DeliveryCustomization.metafields";
+            public const string shopifyFunction = "shopify.DeliveryCustomization.shopifyFunction";
+            public const string title = "shopify.DeliveryCustomization.title";
+        }
+
+        public static class DeliveryCustomizationActivationPayload
+        {
+            public const string ids = "shopify.DeliveryCustomizationActivationPayload.ids";
+            public const string userErrors = "shopify.DeliveryCustomizationActivationPayload.userErrors";
+        }
+
+        public static class DeliveryCustomizationConnection
+        {
+            public const string edges = "shopify.DeliveryCustomizationConnection.edges";
+            public const string nodes = "shopify.DeliveryCustomizationConnection.nodes";
+            public const string pageInfo = "shopify.DeliveryCustomizationConnection.pageInfo";
+        }
+
+        public static class DeliveryCustomizationCreatePayload
+        {
+            public const string deliveryCustomization = "shopify.DeliveryCustomizationCreatePayload.deliveryCustomization";
+            public const string userErrors = "shopify.DeliveryCustomizationCreatePayload.userErrors";
+        }
+
+        public static class DeliveryCustomizationDeletePayload
+        {
+            public const string deletedId = "shopify.DeliveryCustomizationDeletePayload.deletedId";
+            public const string userErrors = "shopify.DeliveryCustomizationDeletePayload.userErrors";
+        }
+
+        public static class DeliveryCustomizationEdge
+        {
+            public const string cursor = "shopify.DeliveryCustomizationEdge.cursor";
+            public const string node = "shopify.DeliveryCustomizationEdge.node";
+        }
+
+        public static class DeliveryCustomizationError
+        {
+            public const string code = "shopify.DeliveryCustomizationError.code";
+            public const string field = "shopify.DeliveryCustomizationError.field";
+            public const string message = "shopify.DeliveryCustomizationError.message";
+        }
+
+        public static class DeliveryCustomizationUpdatePayload
+        {
+            public const string deliveryCustomization = "shopify.DeliveryCustomizationUpdatePayload.deliveryCustomization";
+            public const string userErrors = "shopify.DeliveryCustomizationUpdatePayload.userErrors";
+        }
+
+        public static class DeliveryLegacyModeBlocked
+        {
+            public const string blocked = "shopify.DeliveryLegacyModeBlocked.blocked";
+            public const string reasons = "shopify.DeliveryLegacyModeBlocked.reasons";
+        }
+
+        public static class DeliveryLocalPickupSettings
+        {
+            public const string instructions = "shopify.DeliveryLocalPickupSettings.instructions";
+            public const string pickupTime = "shopify.DeliveryLocalPickupSettings.pickupTime";
+        }
+
+        public static class DeliveryLocationGroup
+        {
+            public const string id = "shopify.DeliveryLocationGroup.id";
+            public const string locations = "shopify.DeliveryLocationGroup.locations";
+            public const string locationsCount = "shopify.DeliveryLocationGroup.locationsCount";
+        }
+
+        public static class DeliveryLocationGroupZone
+        {
+            public const string methodDefinitionCounts = "shopify.DeliveryLocationGroupZone.methodDefinitionCounts";
+            public const string methodDefinitions = "shopify.DeliveryLocationGroupZone.methodDefinitions";
+            public const string zone = "shopify.DeliveryLocationGroupZone.zone";
+        }
+
+        public static class DeliveryLocationGroupZoneConnection
+        {
+            public const string edges = "shopify.DeliveryLocationGroupZoneConnection.edges";
+            public const string nodes = "shopify.DeliveryLocationGroupZoneConnection.nodes";
+            public const string pageInfo = "shopify.DeliveryLocationGroupZoneConnection.pageInfo";
+        }
+
+        public static class DeliveryLocationGroupZoneEdge
+        {
+            public const string cursor = "shopify.DeliveryLocationGroupZoneEdge.cursor";
+            public const string node = "shopify.DeliveryLocationGroupZoneEdge.node";
+        }
+
+        public static class DeliveryLocationLocalPickupSettingsError
+        {
+            public const string code = "shopify.DeliveryLocationLocalPickupSettingsError.code";
+            public const string field = "shopify.DeliveryLocationLocalPickupSettingsError.field";
+            public const string message = "shopify.DeliveryLocationLocalPickupSettingsError.message";
+        }
+
+        public static class DeliveryMethod
+        {
+            public const string additionalInformation = "shopify.DeliveryMethod.additionalInformation";
+            public const string brandedPromise = "shopify.DeliveryMethod.brandedPromise";
+            public const string id = "shopify.DeliveryMethod.id";
+            public const string maxDeliveryDateTime = "shopify.DeliveryMethod.maxDeliveryDateTime";
+            public const string methodType = "shopify.DeliveryMethod.methodType";
+            public const string minDeliveryDateTime = "shopify.DeliveryMethod.minDeliveryDateTime";
+            public const string presentedName = "shopify.DeliveryMethod.presentedName";
+            public const string serviceCode = "shopify.DeliveryMethod.serviceCode";
+            public const string sourceReference = "shopify.DeliveryMethod.sourceReference";
+        }
+
+        public static class DeliveryMethodAdditionalInformation
+        {
+            public const string instructions = "shopify.DeliveryMethodAdditionalInformation.instructions";
+            public const string phone = "shopify.DeliveryMethodAdditionalInformation.phone";
+        }
+
+        public static class DeliveryMethodDefinition
+        {
+            public const string active = "shopify.DeliveryMethodDefinition.active";
+            public const string description = "shopify.DeliveryMethodDefinition.description";
+            public const string id = "shopify.DeliveryMethodDefinition.id";
+            public const string methodConditions = "shopify.DeliveryMethodDefinition.methodConditions";
+            public const string name = "shopify.DeliveryMethodDefinition.name";
+            public const string rateProvider = "shopify.DeliveryMethodDefinition.rateProvider";
+        }
+
+        public static class DeliveryMethodDefinitionConnection
+        {
+            public const string edges = "shopify.DeliveryMethodDefinitionConnection.edges";
+            public const string nodes = "shopify.DeliveryMethodDefinitionConnection.nodes";
+            public const string pageInfo = "shopify.DeliveryMethodDefinitionConnection.pageInfo";
+        }
+
+        public static class DeliveryMethodDefinitionCounts
+        {
+            public const string participantDefinitionsCount = "shopify.DeliveryMethodDefinitionCounts.participantDefinitionsCount";
+            public const string rateDefinitionsCount = "shopify.DeliveryMethodDefinitionCounts.rateDefinitionsCount";
+        }
+
+        public static class DeliveryMethodDefinitionEdge
+        {
+            public const string cursor = "shopify.DeliveryMethodDefinitionEdge.cursor";
+            public const string node = "shopify.DeliveryMethodDefinitionEdge.node";
+        }
+
+        public static class DeliveryParticipant
+        {
+            public const string adaptToNewServicesFlag = "shopify.DeliveryParticipant.adaptToNewServicesFlag";
+            public const string carrierService = "shopify.DeliveryParticipant.carrierService";
+            public const string fixedFee = "shopify.DeliveryParticipant.fixedFee";
+            public const string id = "shopify.DeliveryParticipant.id";
+            public const string participantServices = "shopify.DeliveryParticipant.participantServices";
+            public const string percentageOfRateFee = "shopify.DeliveryParticipant.percentageOfRateFee";
+        }
+
+        public static class DeliveryParticipantService
+        {
+            public const string active = "shopify.DeliveryParticipantService.active";
+            public const string name = "shopify.DeliveryParticipantService.name";
+        }
+
+        public static class DeliveryProductVariantsCount
+        {
+            public const string capped = "shopify.DeliveryProductVariantsCount.capped";
+            public const string count = "shopify.DeliveryProductVariantsCount.count";
+        }
+
+        public static class DeliveryProfile
+        {
+            public const string activeMethodDefinitionsCount = "shopify.DeliveryProfile.activeMethodDefinitionsCount";
+            public const string @default = "shopify.DeliveryProfile.default";
+            public const string id = "shopify.DeliveryProfile.id";
+            public const string legacyMode = "shopify.DeliveryProfile.legacyMode";
+            public const string locationsWithoutRatesCount = "shopify.DeliveryProfile.locationsWithoutRatesCount";
+            public const string name = "shopify.DeliveryProfile.name";
+            public const string originLocationCount = "shopify.DeliveryProfile.originLocationCount";
+            public const string productVariantsCount = "shopify.DeliveryProfile.productVariantsCount";
+            public const string productVariantsCountV2 = "shopify.DeliveryProfile.productVariantsCountV2";
+            public const string profileItems = "shopify.DeliveryProfile.profileItems";
+            public const string profileLocationGroups = "shopify.DeliveryProfile.profileLocationGroups";
+            public const string sellingPlanGroups = "shopify.DeliveryProfile.sellingPlanGroups";
+            public const string unassignedLocations = "shopify.DeliveryProfile.unassignedLocations";
+            public const string unassignedLocationsPaginated = "shopify.DeliveryProfile.unassignedLocationsPaginated";
+            public const string zoneCountryCount = "shopify.DeliveryProfile.zoneCountryCount";
+        }
+
+        public static class DeliveryProfileConnection
+        {
+            public const string edges = "shopify.DeliveryProfileConnection.edges";
+            public const string nodes = "shopify.DeliveryProfileConnection.nodes";
+            public const string pageInfo = "shopify.DeliveryProfileConnection.pageInfo";
+        }
+
+        public static class DeliveryProfileCreatePayload
+        {
+            public const string profile = "shopify.DeliveryProfileCreatePayload.profile";
+            public const string userErrors = "shopify.DeliveryProfileCreatePayload.userErrors";
+        }
+
+        public static class DeliveryProfileEdge
+        {
+            public const string cursor = "shopify.DeliveryProfileEdge.cursor";
+            public const string node = "shopify.DeliveryProfileEdge.node";
+        }
+
+        public static class DeliveryProfileItem
+        {
+            public const string id = "shopify.DeliveryProfileItem.id";
+            public const string product = "shopify.DeliveryProfileItem.product";
+            public const string variants = "shopify.DeliveryProfileItem.variants";
+        }
+
+        public static class DeliveryProfileItemConnection
+        {
+            public const string edges = "shopify.DeliveryProfileItemConnection.edges";
+            public const string nodes = "shopify.DeliveryProfileItemConnection.nodes";
+            public const string pageInfo = "shopify.DeliveryProfileItemConnection.pageInfo";
+        }
+
+        public static class DeliveryProfileItemEdge
+        {
+            public const string cursor = "shopify.DeliveryProfileItemEdge.cursor";
+            public const string node = "shopify.DeliveryProfileItemEdge.node";
+        }
+
+        public static class DeliveryProfileLocationGroup
+        {
+            public const string countriesInAnyZone = "shopify.DeliveryProfileLocationGroup.countriesInAnyZone";
+            public const string locationGroup = "shopify.DeliveryProfileLocationGroup.locationGroup";
+            public const string locationGroupZones = "shopify.DeliveryProfileLocationGroup.locationGroupZones";
+        }
+
+        public static class DeliveryProfileRemovePayload
+        {
+            public const string job = "shopify.DeliveryProfileRemovePayload.job";
+            public const string userErrors = "shopify.DeliveryProfileRemovePayload.userErrors";
+        }
+
+        public static class DeliveryProfileUpdatePayload
+        {
+            public const string profile = "shopify.DeliveryProfileUpdatePayload.profile";
+            public const string userErrors = "shopify.DeliveryProfileUpdatePayload.userErrors";
+        }
+
+        public static class DeliveryPromiseParticipant
+        {
+            public const string id = "shopify.DeliveryPromiseParticipant.id";
+            public const string owner = "shopify.DeliveryPromiseParticipant.owner";
+            public const string ownerType = "shopify.DeliveryPromiseParticipant.ownerType";
+        }
+
+        public static class DeliveryPromiseParticipantConnection
+        {
+            public const string edges = "shopify.DeliveryPromiseParticipantConnection.edges";
+            public const string nodes = "shopify.DeliveryPromiseParticipantConnection.nodes";
+            public const string pageInfo = "shopify.DeliveryPromiseParticipantConnection.pageInfo";
+        }
+
+        public static class DeliveryPromiseParticipantEdge
+        {
+            public const string cursor = "shopify.DeliveryPromiseParticipantEdge.cursor";
+            public const string node = "shopify.DeliveryPromiseParticipantEdge.node";
+        }
+
+        public static class IDeliveryPromiseParticipantOwner
+        {
+            public const string availableForSale = "shopify.IDeliveryPromiseParticipantOwner.availableForSale";
+            public const string barcode = "shopify.IDeliveryPromiseParticipantOwner.barcode";
+            public const string compareAtPrice = "shopify.IDeliveryPromiseParticipantOwner.compareAtPrice";
+            public const string contextualPricing = "shopify.IDeliveryPromiseParticipantOwner.contextualPricing";
+            public const string createdAt = "shopify.IDeliveryPromiseParticipantOwner.createdAt";
+            public const string defaultCursor = "shopify.IDeliveryPromiseParticipantOwner.defaultCursor";
+            public const string deliveryProfile = "shopify.IDeliveryPromiseParticipantOwner.deliveryProfile";
+            public const string displayName = "shopify.IDeliveryPromiseParticipantOwner.displayName";
+            public const string events = "shopify.IDeliveryPromiseParticipantOwner.events";
+            public const string id = "shopify.IDeliveryPromiseParticipantOwner.id";
+            public const string image = "shopify.IDeliveryPromiseParticipantOwner.image";
+            public const string inventoryItem = "shopify.IDeliveryPromiseParticipantOwner.inventoryItem";
+            public const string inventoryPolicy = "shopify.IDeliveryPromiseParticipantOwner.inventoryPolicy";
+            public const string inventoryQuantity = "shopify.IDeliveryPromiseParticipantOwner.inventoryQuantity";
+            public const string legacyResourceId = "shopify.IDeliveryPromiseParticipantOwner.legacyResourceId";
+            public const string media = "shopify.IDeliveryPromiseParticipantOwner.media";
+            public const string metafield = "shopify.IDeliveryPromiseParticipantOwner.metafield";
+            public const string metafieldDefinitions = "shopify.IDeliveryPromiseParticipantOwner.metafieldDefinitions";
+            public const string metafields = "shopify.IDeliveryPromiseParticipantOwner.metafields";
+            public const string position = "shopify.IDeliveryPromiseParticipantOwner.position";
+            public const string presentmentPrices = "shopify.IDeliveryPromiseParticipantOwner.presentmentPrices";
+            public const string price = "shopify.IDeliveryPromiseParticipantOwner.price";
+            public const string product = "shopify.IDeliveryPromiseParticipantOwner.product";
+            public const string productVariantComponents = "shopify.IDeliveryPromiseParticipantOwner.productVariantComponents";
+            public const string requiresComponents = "shopify.IDeliveryPromiseParticipantOwner.requiresComponents";
+            public const string selectedOptions = "shopify.IDeliveryPromiseParticipantOwner.selectedOptions";
+            public const string sellableOnlineQuantity = "shopify.IDeliveryPromiseParticipantOwner.sellableOnlineQuantity";
+            public const string sellingPlanGroupCount = "shopify.IDeliveryPromiseParticipantOwner.sellingPlanGroupCount";
+            public const string sellingPlanGroups = "shopify.IDeliveryPromiseParticipantOwner.sellingPlanGroups";
+            public const string sellingPlanGroupsCount = "shopify.IDeliveryPromiseParticipantOwner.sellingPlanGroupsCount";
+            public const string sku = "shopify.IDeliveryPromiseParticipantOwner.sku";
+            public const string storefrontId = "shopify.IDeliveryPromiseParticipantOwner.storefrontId";
+            public const string taxCode = "shopify.IDeliveryPromiseParticipantOwner.taxCode";
+            public const string taxable = "shopify.IDeliveryPromiseParticipantOwner.taxable";
+            public const string title = "shopify.IDeliveryPromiseParticipantOwner.title";
+            public const string translations = "shopify.IDeliveryPromiseParticipantOwner.translations";
+            public const string unitPriceMeasurement = "shopify.IDeliveryPromiseParticipantOwner.unitPriceMeasurement";
+            public const string updatedAt = "shopify.IDeliveryPromiseParticipantOwner.updatedAt";
+        }
+
+        public static class DeliveryPromiseParticipantsUpdatePayload
+        {
+            public const string promiseParticipants = "shopify.DeliveryPromiseParticipantsUpdatePayload.promiseParticipants";
+            public const string userErrors = "shopify.DeliveryPromiseParticipantsUpdatePayload.userErrors";
+        }
+
+        public static class DeliveryPromiseProvider
+        {
+            public const string active = "shopify.DeliveryPromiseProvider.active";
+            public const string fulfillmentDelay = "shopify.DeliveryPromiseProvider.fulfillmentDelay";
+            public const string id = "shopify.DeliveryPromiseProvider.id";
+            public const string location = "shopify.DeliveryPromiseProvider.location";
+            public const string timeZone = "shopify.DeliveryPromiseProvider.timeZone";
+        }
+
+        public static class DeliveryPromiseProviderUpsertPayload
+        {
+            public const string deliveryPromiseProvider = "shopify.DeliveryPromiseProviderUpsertPayload.deliveryPromiseProvider";
+            public const string userErrors = "shopify.DeliveryPromiseProviderUpsertPayload.userErrors";
+        }
+
+        public static class DeliveryPromiseProviderUpsertUserError
+        {
+            public const string code = "shopify.DeliveryPromiseProviderUpsertUserError.code";
+            public const string field = "shopify.DeliveryPromiseProviderUpsertUserError.field";
+            public const string message = "shopify.DeliveryPromiseProviderUpsertUserError.message";
+        }
+
+        public static class DeliveryPromiseSetting
+        {
+            public const string deliveryDatesEnabled = "shopify.DeliveryPromiseSetting.deliveryDatesEnabled";
+            public const string processingTime = "shopify.DeliveryPromiseSetting.processingTime";
+        }
+
+        public static class DeliveryProvince
+        {
+            public const string code = "shopify.DeliveryProvince.code";
+            public const string id = "shopify.DeliveryProvince.id";
+            public const string name = "shopify.DeliveryProvince.name";
+            public const string translatedName = "shopify.DeliveryProvince.translatedName";
+        }
+
+        public static class DeliveryRateDefinition
+        {
+            public const string id = "shopify.DeliveryRateDefinition.id";
+            public const string price = "shopify.DeliveryRateDefinition.price";
+        }
+
+        public static class IDeliveryRateProvider
+        {
+            public const string id = "shopify.IDeliveryRateProvider.id";
+        }
+
+        public static class DeliverySetting
+        {
+            public const string legacyModeBlocked = "shopify.DeliverySetting.legacyModeBlocked";
+            public const string legacyModeProfiles = "shopify.DeliverySetting.legacyModeProfiles";
+        }
+
+        public static class DeliverySettingUpdatePayload
+        {
+            public const string setting = "shopify.DeliverySettingUpdatePayload.setting";
+            public const string userErrors = "shopify.DeliverySettingUpdatePayload.userErrors";
+        }
+
+        public static class DeliveryShippingOriginAssignPayload
+        {
+            public const string userErrors = "shopify.DeliveryShippingOriginAssignPayload.userErrors";
+        }
+
+        public static class DeliveryZone
+        {
+            public const string countries = "shopify.DeliveryZone.countries";
+            public const string id = "shopify.DeliveryZone.id";
+            public const string name = "shopify.DeliveryZone.name";
+        }
+
+        public static class IDepositConfiguration
+        {
+            public const string percentage = "shopify.IDepositConfiguration.percentage";
+        }
+
+        public static class DepositPercentage
+        {
+            public const string percentage = "shopify.DepositPercentage.percentage";
+        }
+
+        public static class IDiscount
+        {
+            public const string asyncUsageCount = "shopify.IDiscount.asyncUsageCount";
+            public const string combinesWith = "shopify.IDiscount.combinesWith";
+            public const string createdAt = "shopify.IDiscount.createdAt";
+            public const string discountClass = "shopify.IDiscount.discountClass";
+            public const string discountClasses = "shopify.IDiscount.discountClasses";
+            public const string endsAt = "shopify.IDiscount.endsAt";
+            public const string startsAt = "shopify.IDiscount.startsAt";
+            public const string status = "shopify.IDiscount.status";
+            public const string title = "shopify.IDiscount.title";
+            public const string updatedAt = "shopify.IDiscount.updatedAt";
+        }
+
+        public static class DiscountAllocation
+        {
+            public const string allocatedAmount = "shopify.DiscountAllocation.allocatedAmount";
+            public const string allocatedAmountSet = "shopify.DiscountAllocation.allocatedAmountSet";
+            public const string discountApplication = "shopify.DiscountAllocation.discountApplication";
+        }
+
+        public static class DiscountAllocationConnection
+        {
+            public const string edges = "shopify.DiscountAllocationConnection.edges";
+            public const string nodes = "shopify.DiscountAllocationConnection.nodes";
+            public const string pageInfo = "shopify.DiscountAllocationConnection.pageInfo";
+        }
+
+        public static class DiscountAllocationEdge
+        {
+            public const string cursor = "shopify.DiscountAllocationEdge.cursor";
+            public const string node = "shopify.DiscountAllocationEdge.node";
+        }
+
+        public static class DiscountAmount
+        {
+            public const string amount = "shopify.DiscountAmount.amount";
+            public const string appliesOnEachItem = "shopify.DiscountAmount.appliesOnEachItem";
+        }
+
+        public static class IDiscountApplication
+        {
+            public const string allocationMethod = "shopify.IDiscountApplication.allocationMethod";
+            public const string index = "shopify.IDiscountApplication.index";
+            public const string targetSelection = "shopify.IDiscountApplication.targetSelection";
+            public const string targetType = "shopify.IDiscountApplication.targetType";
+            public const string value = "shopify.IDiscountApplication.value";
+        }
+
+        public static class DiscountApplicationConnection
+        {
+            public const string edges = "shopify.DiscountApplicationConnection.edges";
+            public const string nodes = "shopify.DiscountApplicationConnection.nodes";
+            public const string pageInfo = "shopify.DiscountApplicationConnection.pageInfo";
+        }
+
+        public static class DiscountApplicationEdge
+        {
+            public const string cursor = "shopify.DiscountApplicationEdge.cursor";
+            public const string node = "shopify.DiscountApplicationEdge.node";
+        }
+
+        public static class IDiscountAutomatic
+        {
+            public const string asyncUsageCount = "shopify.IDiscountAutomatic.asyncUsageCount";
+            public const string combinesWith = "shopify.IDiscountAutomatic.combinesWith";
+            public const string createdAt = "shopify.IDiscountAutomatic.createdAt";
+            public const string discountClass = "shopify.IDiscountAutomatic.discountClass";
+            public const string discountClasses = "shopify.IDiscountAutomatic.discountClasses";
+            public const string endsAt = "shopify.IDiscountAutomatic.endsAt";
+            public const string startsAt = "shopify.IDiscountAutomatic.startsAt";
+            public const string status = "shopify.IDiscountAutomatic.status";
+            public const string title = "shopify.IDiscountAutomatic.title";
+            public const string updatedAt = "shopify.IDiscountAutomatic.updatedAt";
+        }
+
+        public static class DiscountAutomaticActivatePayload
+        {
+            public const string automaticDiscountNode = "shopify.DiscountAutomaticActivatePayload.automaticDiscountNode";
+            public const string userErrors = "shopify.DiscountAutomaticActivatePayload.userErrors";
+        }
+
+        public static class DiscountAutomaticApp
+        {
+            public const string appDiscountType = "shopify.DiscountAutomaticApp.appDiscountType";
+            public const string appliesOnOneTimePurchase = "shopify.DiscountAutomaticApp.appliesOnOneTimePurchase";
+            public const string appliesOnSubscription = "shopify.DiscountAutomaticApp.appliesOnSubscription";
+            public const string asyncUsageCount = "shopify.DiscountAutomaticApp.asyncUsageCount";
+            public const string combinesWith = "shopify.DiscountAutomaticApp.combinesWith";
+            public const string createdAt = "shopify.DiscountAutomaticApp.createdAt";
+            public const string discountClass = "shopify.DiscountAutomaticApp.discountClass";
+            public const string discountClasses = "shopify.DiscountAutomaticApp.discountClasses";
+            public const string discountId = "shopify.DiscountAutomaticApp.discountId";
+            public const string endsAt = "shopify.DiscountAutomaticApp.endsAt";
+            public const string errorHistory = "shopify.DiscountAutomaticApp.errorHistory";
+            public const string recurringCycleLimit = "shopify.DiscountAutomaticApp.recurringCycleLimit";
+            public const string startsAt = "shopify.DiscountAutomaticApp.startsAt";
+            public const string status = "shopify.DiscountAutomaticApp.status";
+            public const string title = "shopify.DiscountAutomaticApp.title";
+            public const string updatedAt = "shopify.DiscountAutomaticApp.updatedAt";
+        }
+
+        public static class DiscountAutomaticAppCreatePayload
+        {
+            public const string automaticAppDiscount = "shopify.DiscountAutomaticAppCreatePayload.automaticAppDiscount";
+            public const string userErrors = "shopify.DiscountAutomaticAppCreatePayload.userErrors";
+        }
+
+        public static class DiscountAutomaticAppUpdatePayload
+        {
+            public const string automaticAppDiscount = "shopify.DiscountAutomaticAppUpdatePayload.automaticAppDiscount";
+            public const string userErrors = "shopify.DiscountAutomaticAppUpdatePayload.userErrors";
+        }
+
+        public static class DiscountAutomaticBasic
+        {
+            public const string asyncUsageCount = "shopify.DiscountAutomaticBasic.asyncUsageCount";
+            public const string combinesWith = "shopify.DiscountAutomaticBasic.combinesWith";
+            public const string createdAt = "shopify.DiscountAutomaticBasic.createdAt";
+            public const string customerGets = "shopify.DiscountAutomaticBasic.customerGets";
+            public const string discountClass = "shopify.DiscountAutomaticBasic.discountClass";
+            public const string discountClasses = "shopify.DiscountAutomaticBasic.discountClasses";
+            public const string endsAt = "shopify.DiscountAutomaticBasic.endsAt";
+            public const string minimumRequirement = "shopify.DiscountAutomaticBasic.minimumRequirement";
+            public const string recurringCycleLimit = "shopify.DiscountAutomaticBasic.recurringCycleLimit";
+            public const string shortSummary = "shopify.DiscountAutomaticBasic.shortSummary";
+            public const string startsAt = "shopify.DiscountAutomaticBasic.startsAt";
+            public const string status = "shopify.DiscountAutomaticBasic.status";
+            public const string summary = "shopify.DiscountAutomaticBasic.summary";
+            public const string title = "shopify.DiscountAutomaticBasic.title";
+            public const string updatedAt = "shopify.DiscountAutomaticBasic.updatedAt";
+            public const string usageCount = "shopify.DiscountAutomaticBasic.usageCount";
+        }
+
+        public static class DiscountAutomaticBasicCreatePayload
+        {
+            public const string automaticDiscountNode = "shopify.DiscountAutomaticBasicCreatePayload.automaticDiscountNode";
+            public const string userErrors = "shopify.DiscountAutomaticBasicCreatePayload.userErrors";
+        }
+
+        public static class DiscountAutomaticBasicUpdatePayload
+        {
+            public const string automaticDiscountNode = "shopify.DiscountAutomaticBasicUpdatePayload.automaticDiscountNode";
+            public const string userErrors = "shopify.DiscountAutomaticBasicUpdatePayload.userErrors";
+        }
+
+        public static class DiscountAutomaticBulkDeletePayload
+        {
+            public const string job = "shopify.DiscountAutomaticBulkDeletePayload.job";
+            public const string userErrors = "shopify.DiscountAutomaticBulkDeletePayload.userErrors";
+        }
+
+        public static class DiscountAutomaticBxgy
+        {
+            public const string asyncUsageCount = "shopify.DiscountAutomaticBxgy.asyncUsageCount";
+            public const string combinesWith = "shopify.DiscountAutomaticBxgy.combinesWith";
+            public const string createdAt = "shopify.DiscountAutomaticBxgy.createdAt";
+            public const string customerBuys = "shopify.DiscountAutomaticBxgy.customerBuys";
+            public const string customerGets = "shopify.DiscountAutomaticBxgy.customerGets";
+            public const string discountClass = "shopify.DiscountAutomaticBxgy.discountClass";
+            public const string discountClasses = "shopify.DiscountAutomaticBxgy.discountClasses";
+            public const string endsAt = "shopify.DiscountAutomaticBxgy.endsAt";
+            public const string events = "shopify.DiscountAutomaticBxgy.events";
+            public const string id = "shopify.DiscountAutomaticBxgy.id";
+            public const string startsAt = "shopify.DiscountAutomaticBxgy.startsAt";
+            public const string status = "shopify.DiscountAutomaticBxgy.status";
+            public const string summary = "shopify.DiscountAutomaticBxgy.summary";
+            public const string title = "shopify.DiscountAutomaticBxgy.title";
+            public const string updatedAt = "shopify.DiscountAutomaticBxgy.updatedAt";
+            public const string usageCount = "shopify.DiscountAutomaticBxgy.usageCount";
+            public const string usesPerOrderLimit = "shopify.DiscountAutomaticBxgy.usesPerOrderLimit";
+        }
+
+        public static class DiscountAutomaticBxgyCreatePayload
+        {
+            public const string automaticDiscountNode = "shopify.DiscountAutomaticBxgyCreatePayload.automaticDiscountNode";
+            public const string userErrors = "shopify.DiscountAutomaticBxgyCreatePayload.userErrors";
+        }
+
+        public static class DiscountAutomaticBxgyUpdatePayload
+        {
+            public const string automaticDiscountNode = "shopify.DiscountAutomaticBxgyUpdatePayload.automaticDiscountNode";
+            public const string userErrors = "shopify.DiscountAutomaticBxgyUpdatePayload.userErrors";
+        }
+
+        public static class DiscountAutomaticConnection
+        {
+            public const string edges = "shopify.DiscountAutomaticConnection.edges";
+            public const string nodes = "shopify.DiscountAutomaticConnection.nodes";
+            public const string pageInfo = "shopify.DiscountAutomaticConnection.pageInfo";
+        }
+
+        public static class DiscountAutomaticDeactivatePayload
+        {
+            public const string automaticDiscountNode = "shopify.DiscountAutomaticDeactivatePayload.automaticDiscountNode";
+            public const string userErrors = "shopify.DiscountAutomaticDeactivatePayload.userErrors";
+        }
+
+        public static class DiscountAutomaticDeletePayload
+        {
+            public const string deletedAutomaticDiscountId = "shopify.DiscountAutomaticDeletePayload.deletedAutomaticDiscountId";
+            public const string userErrors = "shopify.DiscountAutomaticDeletePayload.userErrors";
+        }
+
+        public static class DiscountAutomaticEdge
+        {
+            public const string cursor = "shopify.DiscountAutomaticEdge.cursor";
+            public const string node = "shopify.DiscountAutomaticEdge.node";
+        }
+
+        public static class DiscountAutomaticFreeShipping
+        {
+            public const string appliesOnOneTimePurchase = "shopify.DiscountAutomaticFreeShipping.appliesOnOneTimePurchase";
+            public const string appliesOnSubscription = "shopify.DiscountAutomaticFreeShipping.appliesOnSubscription";
+            public const string asyncUsageCount = "shopify.DiscountAutomaticFreeShipping.asyncUsageCount";
+            public const string combinesWith = "shopify.DiscountAutomaticFreeShipping.combinesWith";
+            public const string createdAt = "shopify.DiscountAutomaticFreeShipping.createdAt";
+            public const string destinationSelection = "shopify.DiscountAutomaticFreeShipping.destinationSelection";
+            public const string discountClass = "shopify.DiscountAutomaticFreeShipping.discountClass";
+            public const string discountClasses = "shopify.DiscountAutomaticFreeShipping.discountClasses";
+            public const string endsAt = "shopify.DiscountAutomaticFreeShipping.endsAt";
+            public const string hasTimelineComment = "shopify.DiscountAutomaticFreeShipping.hasTimelineComment";
+            public const string maximumShippingPrice = "shopify.DiscountAutomaticFreeShipping.maximumShippingPrice";
+            public const string minimumRequirement = "shopify.DiscountAutomaticFreeShipping.minimumRequirement";
+            public const string recurringCycleLimit = "shopify.DiscountAutomaticFreeShipping.recurringCycleLimit";
+            public const string shortSummary = "shopify.DiscountAutomaticFreeShipping.shortSummary";
+            public const string startsAt = "shopify.DiscountAutomaticFreeShipping.startsAt";
+            public const string status = "shopify.DiscountAutomaticFreeShipping.status";
+            public const string summary = "shopify.DiscountAutomaticFreeShipping.summary";
+            public const string title = "shopify.DiscountAutomaticFreeShipping.title";
+            public const string totalSales = "shopify.DiscountAutomaticFreeShipping.totalSales";
+            public const string updatedAt = "shopify.DiscountAutomaticFreeShipping.updatedAt";
+        }
+
+        public static class DiscountAutomaticFreeShippingCreatePayload
+        {
+            public const string automaticDiscountNode = "shopify.DiscountAutomaticFreeShippingCreatePayload.automaticDiscountNode";
+            public const string userErrors = "shopify.DiscountAutomaticFreeShippingCreatePayload.userErrors";
+        }
+
+        public static class DiscountAutomaticFreeShippingUpdatePayload
+        {
+            public const string automaticDiscountNode = "shopify.DiscountAutomaticFreeShippingUpdatePayload.automaticDiscountNode";
+            public const string userErrors = "shopify.DiscountAutomaticFreeShippingUpdatePayload.userErrors";
+        }
+
+        public static class DiscountAutomaticNode
+        {
+            public const string automaticDiscount = "shopify.DiscountAutomaticNode.automaticDiscount";
+            public const string events = "shopify.DiscountAutomaticNode.events";
+            public const string id = "shopify.DiscountAutomaticNode.id";
+            public const string metafield = "shopify.DiscountAutomaticNode.metafield";
+            public const string metafieldDefinitions = "shopify.DiscountAutomaticNode.metafieldDefinitions";
+            public const string metafields = "shopify.DiscountAutomaticNode.metafields";
+        }
+
+        public static class DiscountAutomaticNodeConnection
+        {
+            public const string edges = "shopify.DiscountAutomaticNodeConnection.edges";
+            public const string nodes = "shopify.DiscountAutomaticNodeConnection.nodes";
+            public const string pageInfo = "shopify.DiscountAutomaticNodeConnection.pageInfo";
+        }
+
+        public static class DiscountAutomaticNodeEdge
+        {
+            public const string cursor = "shopify.DiscountAutomaticNodeEdge.cursor";
+            public const string node = "shopify.DiscountAutomaticNodeEdge.node";
+        }
+
+        public static class IDiscountCode
+        {
+            public const string appliesOncePerCustomer = "shopify.IDiscountCode.appliesOncePerCustomer";
+            public const string asyncUsageCount = "shopify.IDiscountCode.asyncUsageCount";
+            public const string codes = "shopify.IDiscountCode.codes";
+            public const string codesCount = "shopify.IDiscountCode.codesCount";
+            public const string combinesWith = "shopify.IDiscountCode.combinesWith";
+            public const string createdAt = "shopify.IDiscountCode.createdAt";
+            public const string customerSelection = "shopify.IDiscountCode.customerSelection";
+            public const string discountClass = "shopify.IDiscountCode.discountClass";
+            public const string discountClasses = "shopify.IDiscountCode.discountClasses";
+            public const string endsAt = "shopify.IDiscountCode.endsAt";
+            public const string hasTimelineComment = "shopify.IDiscountCode.hasTimelineComment";
+            public const string shareableUrls = "shopify.IDiscountCode.shareableUrls";
+            public const string startsAt = "shopify.IDiscountCode.startsAt";
+            public const string status = "shopify.IDiscountCode.status";
+            public const string title = "shopify.IDiscountCode.title";
+            public const string totalSales = "shopify.IDiscountCode.totalSales";
+            public const string updatedAt = "shopify.IDiscountCode.updatedAt";
+            public const string usageLimit = "shopify.IDiscountCode.usageLimit";
+        }
+
+        public static class DiscountCodeActivatePayload
+        {
+            public const string codeDiscountNode = "shopify.DiscountCodeActivatePayload.codeDiscountNode";
+            public const string userErrors = "shopify.DiscountCodeActivatePayload.userErrors";
+        }
+
+        public static class DiscountCodeApp
+        {
+            public const string appDiscountType = "shopify.DiscountCodeApp.appDiscountType";
+            public const string appliesOnOneTimePurchase = "shopify.DiscountCodeApp.appliesOnOneTimePurchase";
+            public const string appliesOnSubscription = "shopify.DiscountCodeApp.appliesOnSubscription";
+            public const string appliesOncePerCustomer = "shopify.DiscountCodeApp.appliesOncePerCustomer";
+            public const string asyncUsageCount = "shopify.DiscountCodeApp.asyncUsageCount";
+            public const string codes = "shopify.DiscountCodeApp.codes";
+            public const string codesCount = "shopify.DiscountCodeApp.codesCount";
+            public const string combinesWith = "shopify.DiscountCodeApp.combinesWith";
+            public const string createdAt = "shopify.DiscountCodeApp.createdAt";
+            public const string customerSelection = "shopify.DiscountCodeApp.customerSelection";
+            public const string discountClass = "shopify.DiscountCodeApp.discountClass";
+            public const string discountClasses = "shopify.DiscountCodeApp.discountClasses";
+            public const string discountId = "shopify.DiscountCodeApp.discountId";
+            public const string endsAt = "shopify.DiscountCodeApp.endsAt";
+            public const string errorHistory = "shopify.DiscountCodeApp.errorHistory";
+            public const string hasTimelineComment = "shopify.DiscountCodeApp.hasTimelineComment";
+            public const string recurringCycleLimit = "shopify.DiscountCodeApp.recurringCycleLimit";
+            public const string shareableUrls = "shopify.DiscountCodeApp.shareableUrls";
+            public const string startsAt = "shopify.DiscountCodeApp.startsAt";
+            public const string status = "shopify.DiscountCodeApp.status";
+            public const string title = "shopify.DiscountCodeApp.title";
+            public const string totalSales = "shopify.DiscountCodeApp.totalSales";
+            public const string updatedAt = "shopify.DiscountCodeApp.updatedAt";
+            public const string usageLimit = "shopify.DiscountCodeApp.usageLimit";
+        }
+
+        public static class DiscountCodeAppCreatePayload
+        {
+            public const string codeAppDiscount = "shopify.DiscountCodeAppCreatePayload.codeAppDiscount";
+            public const string userErrors = "shopify.DiscountCodeAppCreatePayload.userErrors";
+        }
+
+        public static class DiscountCodeAppUpdatePayload
+        {
+            public const string codeAppDiscount = "shopify.DiscountCodeAppUpdatePayload.codeAppDiscount";
+            public const string userErrors = "shopify.DiscountCodeAppUpdatePayload.userErrors";
+        }
+
+        public static class DiscountCodeApplication
+        {
+            public const string allocationMethod = "shopify.DiscountCodeApplication.allocationMethod";
+            public const string code = "shopify.DiscountCodeApplication.code";
+            public const string index = "shopify.DiscountCodeApplication.index";
+            public const string targetSelection = "shopify.DiscountCodeApplication.targetSelection";
+            public const string targetType = "shopify.DiscountCodeApplication.targetType";
+            public const string value = "shopify.DiscountCodeApplication.value";
+        }
+
+        public static class DiscountCodeBasic
+        {
+            public const string appliesOncePerCustomer = "shopify.DiscountCodeBasic.appliesOncePerCustomer";
+            public const string asyncUsageCount = "shopify.DiscountCodeBasic.asyncUsageCount";
+            public const string codes = "shopify.DiscountCodeBasic.codes";
+            public const string codesCount = "shopify.DiscountCodeBasic.codesCount";
+            public const string combinesWith = "shopify.DiscountCodeBasic.combinesWith";
+            public const string createdAt = "shopify.DiscountCodeBasic.createdAt";
+            public const string customerGets = "shopify.DiscountCodeBasic.customerGets";
+            public const string customerSelection = "shopify.DiscountCodeBasic.customerSelection";
+            public const string discountClass = "shopify.DiscountCodeBasic.discountClass";
+            public const string discountClasses = "shopify.DiscountCodeBasic.discountClasses";
+            public const string endsAt = "shopify.DiscountCodeBasic.endsAt";
+            public const string hasTimelineComment = "shopify.DiscountCodeBasic.hasTimelineComment";
+            public const string minimumRequirement = "shopify.DiscountCodeBasic.minimumRequirement";
+            public const string recurringCycleLimit = "shopify.DiscountCodeBasic.recurringCycleLimit";
+            public const string shareableUrls = "shopify.DiscountCodeBasic.shareableUrls";
+            public const string shortSummary = "shopify.DiscountCodeBasic.shortSummary";
+            public const string startsAt = "shopify.DiscountCodeBasic.startsAt";
+            public const string status = "shopify.DiscountCodeBasic.status";
+            public const string summary = "shopify.DiscountCodeBasic.summary";
+            public const string title = "shopify.DiscountCodeBasic.title";
+            public const string totalSales = "shopify.DiscountCodeBasic.totalSales";
+            public const string updatedAt = "shopify.DiscountCodeBasic.updatedAt";
+            public const string usageLimit = "shopify.DiscountCodeBasic.usageLimit";
+        }
+
+        public static class DiscountCodeBasicCreatePayload
+        {
+            public const string codeDiscountNode = "shopify.DiscountCodeBasicCreatePayload.codeDiscountNode";
+            public const string userErrors = "shopify.DiscountCodeBasicCreatePayload.userErrors";
+        }
+
+        public static class DiscountCodeBasicUpdatePayload
+        {
+            public const string codeDiscountNode = "shopify.DiscountCodeBasicUpdatePayload.codeDiscountNode";
+            public const string userErrors = "shopify.DiscountCodeBasicUpdatePayload.userErrors";
+        }
+
+        public static class DiscountCodeBulkActivatePayload
+        {
+            public const string job = "shopify.DiscountCodeBulkActivatePayload.job";
+            public const string userErrors = "shopify.DiscountCodeBulkActivatePayload.userErrors";
+        }
+
+        public static class DiscountCodeBulkDeactivatePayload
+        {
+            public const string job = "shopify.DiscountCodeBulkDeactivatePayload.job";
+            public const string userErrors = "shopify.DiscountCodeBulkDeactivatePayload.userErrors";
+        }
+
+        public static class DiscountCodeBulkDeletePayload
+        {
+            public const string job = "shopify.DiscountCodeBulkDeletePayload.job";
+            public const string userErrors = "shopify.DiscountCodeBulkDeletePayload.userErrors";
+        }
+
+        public static class DiscountCodeBxgy
+        {
+            public const string appliesOncePerCustomer = "shopify.DiscountCodeBxgy.appliesOncePerCustomer";
+            public const string asyncUsageCount = "shopify.DiscountCodeBxgy.asyncUsageCount";
+            public const string codes = "shopify.DiscountCodeBxgy.codes";
+            public const string codesCount = "shopify.DiscountCodeBxgy.codesCount";
+            public const string combinesWith = "shopify.DiscountCodeBxgy.combinesWith";
+            public const string createdAt = "shopify.DiscountCodeBxgy.createdAt";
+            public const string customerBuys = "shopify.DiscountCodeBxgy.customerBuys";
+            public const string customerGets = "shopify.DiscountCodeBxgy.customerGets";
+            public const string customerSelection = "shopify.DiscountCodeBxgy.customerSelection";
+            public const string discountClass = "shopify.DiscountCodeBxgy.discountClass";
+            public const string discountClasses = "shopify.DiscountCodeBxgy.discountClasses";
+            public const string endsAt = "shopify.DiscountCodeBxgy.endsAt";
+            public const string hasTimelineComment = "shopify.DiscountCodeBxgy.hasTimelineComment";
+            public const string shareableUrls = "shopify.DiscountCodeBxgy.shareableUrls";
+            public const string startsAt = "shopify.DiscountCodeBxgy.startsAt";
+            public const string status = "shopify.DiscountCodeBxgy.status";
+            public const string summary = "shopify.DiscountCodeBxgy.summary";
+            public const string title = "shopify.DiscountCodeBxgy.title";
+            public const string totalSales = "shopify.DiscountCodeBxgy.totalSales";
+            public const string updatedAt = "shopify.DiscountCodeBxgy.updatedAt";
+            public const string usageLimit = "shopify.DiscountCodeBxgy.usageLimit";
+            public const string usesPerOrderLimit = "shopify.DiscountCodeBxgy.usesPerOrderLimit";
+        }
+
+        public static class DiscountCodeBxgyCreatePayload
+        {
+            public const string codeDiscountNode = "shopify.DiscountCodeBxgyCreatePayload.codeDiscountNode";
+            public const string userErrors = "shopify.DiscountCodeBxgyCreatePayload.userErrors";
+        }
+
+        public static class DiscountCodeBxgyUpdatePayload
+        {
+            public const string codeDiscountNode = "shopify.DiscountCodeBxgyUpdatePayload.codeDiscountNode";
+            public const string userErrors = "shopify.DiscountCodeBxgyUpdatePayload.userErrors";
+        }
+
+        public static class DiscountCodeDeactivatePayload
+        {
+            public const string codeDiscountNode = "shopify.DiscountCodeDeactivatePayload.codeDiscountNode";
+            public const string userErrors = "shopify.DiscountCodeDeactivatePayload.userErrors";
+        }
+
+        public static class DiscountCodeDeletePayload
+        {
+            public const string deletedCodeDiscountId = "shopify.DiscountCodeDeletePayload.deletedCodeDiscountId";
+            public const string userErrors = "shopify.DiscountCodeDeletePayload.userErrors";
+        }
+
+        public static class DiscountCodeFreeShipping
+        {
+            public const string appliesOnOneTimePurchase = "shopify.DiscountCodeFreeShipping.appliesOnOneTimePurchase";
+            public const string appliesOnSubscription = "shopify.DiscountCodeFreeShipping.appliesOnSubscription";
+            public const string appliesOncePerCustomer = "shopify.DiscountCodeFreeShipping.appliesOncePerCustomer";
+            public const string asyncUsageCount = "shopify.DiscountCodeFreeShipping.asyncUsageCount";
+            public const string codes = "shopify.DiscountCodeFreeShipping.codes";
+            public const string codesCount = "shopify.DiscountCodeFreeShipping.codesCount";
+            public const string combinesWith = "shopify.DiscountCodeFreeShipping.combinesWith";
+            public const string createdAt = "shopify.DiscountCodeFreeShipping.createdAt";
+            public const string customerSelection = "shopify.DiscountCodeFreeShipping.customerSelection";
+            public const string destinationSelection = "shopify.DiscountCodeFreeShipping.destinationSelection";
+            public const string discountClass = "shopify.DiscountCodeFreeShipping.discountClass";
+            public const string discountClasses = "shopify.DiscountCodeFreeShipping.discountClasses";
+            public const string endsAt = "shopify.DiscountCodeFreeShipping.endsAt";
+            public const string hasTimelineComment = "shopify.DiscountCodeFreeShipping.hasTimelineComment";
+            public const string maximumShippingPrice = "shopify.DiscountCodeFreeShipping.maximumShippingPrice";
+            public const string minimumRequirement = "shopify.DiscountCodeFreeShipping.minimumRequirement";
+            public const string recurringCycleLimit = "shopify.DiscountCodeFreeShipping.recurringCycleLimit";
+            public const string shareableUrls = "shopify.DiscountCodeFreeShipping.shareableUrls";
+            public const string shortSummary = "shopify.DiscountCodeFreeShipping.shortSummary";
+            public const string startsAt = "shopify.DiscountCodeFreeShipping.startsAt";
+            public const string status = "shopify.DiscountCodeFreeShipping.status";
+            public const string summary = "shopify.DiscountCodeFreeShipping.summary";
+            public const string title = "shopify.DiscountCodeFreeShipping.title";
+            public const string totalSales = "shopify.DiscountCodeFreeShipping.totalSales";
+            public const string updatedAt = "shopify.DiscountCodeFreeShipping.updatedAt";
+            public const string usageLimit = "shopify.DiscountCodeFreeShipping.usageLimit";
+        }
+
+        public static class DiscountCodeFreeShippingCreatePayload
+        {
+            public const string codeDiscountNode = "shopify.DiscountCodeFreeShippingCreatePayload.codeDiscountNode";
+            public const string userErrors = "shopify.DiscountCodeFreeShippingCreatePayload.userErrors";
+        }
+
+        public static class DiscountCodeFreeShippingUpdatePayload
+        {
+            public const string codeDiscountNode = "shopify.DiscountCodeFreeShippingUpdatePayload.codeDiscountNode";
+            public const string userErrors = "shopify.DiscountCodeFreeShippingUpdatePayload.userErrors";
+        }
+
+        public static class DiscountCodeNode
+        {
+            public const string codeDiscount = "shopify.DiscountCodeNode.codeDiscount";
+            public const string events = "shopify.DiscountCodeNode.events";
+            public const string id = "shopify.DiscountCodeNode.id";
+            public const string metafield = "shopify.DiscountCodeNode.metafield";
+            public const string metafieldDefinitions = "shopify.DiscountCodeNode.metafieldDefinitions";
+            public const string metafields = "shopify.DiscountCodeNode.metafields";
+        }
+
+        public static class DiscountCodeNodeConnection
+        {
+            public const string edges = "shopify.DiscountCodeNodeConnection.edges";
+            public const string nodes = "shopify.DiscountCodeNodeConnection.nodes";
+            public const string pageInfo = "shopify.DiscountCodeNodeConnection.pageInfo";
+        }
+
+        public static class DiscountCodeNodeEdge
+        {
+            public const string cursor = "shopify.DiscountCodeNodeEdge.cursor";
+            public const string node = "shopify.DiscountCodeNodeEdge.node";
+        }
+
+        public static class DiscountCodeRedeemCodeBulkDeletePayload
+        {
+            public const string job = "shopify.DiscountCodeRedeemCodeBulkDeletePayload.job";
+            public const string userErrors = "shopify.DiscountCodeRedeemCodeBulkDeletePayload.userErrors";
+        }
+
+        public static class DiscountCollections
+        {
+            public const string collections = "shopify.DiscountCollections.collections";
+        }
+
+        public static class DiscountCombinesWith
+        {
+            public const string orderDiscounts = "shopify.DiscountCombinesWith.orderDiscounts";
+            public const string productDiscounts = "shopify.DiscountCombinesWith.productDiscounts";
+            public const string shippingDiscounts = "shopify.DiscountCombinesWith.shippingDiscounts";
+        }
+
+        public static class DiscountCountries
+        {
+            public const string countries = "shopify.DiscountCountries.countries";
+            public const string includeRestOfWorld = "shopify.DiscountCountries.includeRestOfWorld";
+        }
+
+        public static class DiscountCountryAll
+        {
+            public const string allCountries = "shopify.DiscountCountryAll.allCountries";
+        }
+
+        public static class DiscountCustomerAll
+        {
+            public const string allCustomers = "shopify.DiscountCustomerAll.allCustomers";
+        }
+
+        public static class DiscountCustomerBuys
+        {
+            public const string isOneTimePurchase = "shopify.DiscountCustomerBuys.isOneTimePurchase";
+            public const string isSubscription = "shopify.DiscountCustomerBuys.isSubscription";
+            public const string items = "shopify.DiscountCustomerBuys.items";
+            public const string value = "shopify.DiscountCustomerBuys.value";
+        }
+
+        public static class IDiscountCustomerBuysValue
+        {
+        }
+
+        public static class DiscountCustomerGets
+        {
+            public const string appliesOnOneTimePurchase = "shopify.DiscountCustomerGets.appliesOnOneTimePurchase";
+            public const string appliesOnSubscription = "shopify.DiscountCustomerGets.appliesOnSubscription";
+            public const string items = "shopify.DiscountCustomerGets.items";
+            public const string value = "shopify.DiscountCustomerGets.value";
+        }
+
+        public static class IDiscountCustomerGetsValue
+        {
+        }
+
+        public static class DiscountCustomerSegments
+        {
+            public const string segments = "shopify.DiscountCustomerSegments.segments";
+        }
+
+        public static class IDiscountCustomerSelection
+        {
+        }
+
+        public static class DiscountCustomers
+        {
+            public const string customers = "shopify.DiscountCustomers.customers";
+        }
+
+        public static class IDiscountEffect
+        {
+        }
+
+        public static class IDiscountItems
+        {
+        }
+
+        public static class DiscountMinimumQuantity
+        {
+            public const string greaterThanOrEqualToQuantity = "shopify.DiscountMinimumQuantity.greaterThanOrEqualToQuantity";
+        }
+
+        public static class IDiscountMinimumRequirement
+        {
+        }
+
+        public static class DiscountMinimumSubtotal
+        {
+            public const string greaterThanOrEqualToSubtotal = "shopify.DiscountMinimumSubtotal.greaterThanOrEqualToSubtotal";
+        }
+
+        public static class DiscountNode
+        {
+            public const string discount = "shopify.DiscountNode.discount";
+            public const string events = "shopify.DiscountNode.events";
+            public const string id = "shopify.DiscountNode.id";
+            public const string metafield = "shopify.DiscountNode.metafield";
+            public const string metafieldDefinitions = "shopify.DiscountNode.metafieldDefinitions";
+            public const string metafields = "shopify.DiscountNode.metafields";
+        }
+
+        public static class DiscountNodeConnection
+        {
+            public const string edges = "shopify.DiscountNodeConnection.edges";
+            public const string nodes = "shopify.DiscountNodeConnection.nodes";
+            public const string pageInfo = "shopify.DiscountNodeConnection.pageInfo";
+        }
+
+        public static class DiscountNodeEdge
+        {
+            public const string cursor = "shopify.DiscountNodeEdge.cursor";
+            public const string node = "shopify.DiscountNodeEdge.node";
+        }
+
+        public static class DiscountOnQuantity
+        {
+            public const string effect = "shopify.DiscountOnQuantity.effect";
+            public const string quantity = "shopify.DiscountOnQuantity.quantity";
+        }
+
+        public static class DiscountPercentage
+        {
+            public const string percentage = "shopify.DiscountPercentage.percentage";
+        }
+
+        public static class DiscountProducts
+        {
+            public const string productVariants = "shopify.DiscountProducts.productVariants";
+            public const string products = "shopify.DiscountProducts.products";
+        }
+
+        public static class DiscountPurchaseAmount
+        {
+            public const string amount = "shopify.DiscountPurchaseAmount.amount";
+        }
+
+        public static class DiscountQuantity
+        {
+            public const string quantity = "shopify.DiscountQuantity.quantity";
+        }
+
+        public static class DiscountRedeemCode
+        {
+            public const string asyncUsageCount = "shopify.DiscountRedeemCode.asyncUsageCount";
+            public const string code = "shopify.DiscountRedeemCode.code";
+            public const string createdBy = "shopify.DiscountRedeemCode.createdBy";
+            public const string id = "shopify.DiscountRedeemCode.id";
+        }
+
+        public static class DiscountRedeemCodeBulkAddPayload
+        {
+            public const string bulkCreation = "shopify.DiscountRedeemCodeBulkAddPayload.bulkCreation";
+            public const string userErrors = "shopify.DiscountRedeemCodeBulkAddPayload.userErrors";
+        }
+
+        public static class DiscountRedeemCodeBulkCreation
+        {
+            public const string codes = "shopify.DiscountRedeemCodeBulkCreation.codes";
+            public const string codesCount = "shopify.DiscountRedeemCodeBulkCreation.codesCount";
+            public const string createdAt = "shopify.DiscountRedeemCodeBulkCreation.createdAt";
+            public const string discountCode = "shopify.DiscountRedeemCodeBulkCreation.discountCode";
+            public const string done = "shopify.DiscountRedeemCodeBulkCreation.done";
+            public const string failedCount = "shopify.DiscountRedeemCodeBulkCreation.failedCount";
+            public const string id = "shopify.DiscountRedeemCodeBulkCreation.id";
+            public const string importedCount = "shopify.DiscountRedeemCodeBulkCreation.importedCount";
+        }
+
+        public static class DiscountRedeemCodeBulkCreationCode
+        {
+            public const string code = "shopify.DiscountRedeemCodeBulkCreationCode.code";
+            public const string discountRedeemCode = "shopify.DiscountRedeemCodeBulkCreationCode.discountRedeemCode";
+            public const string errors = "shopify.DiscountRedeemCodeBulkCreationCode.errors";
+        }
+
+        public static class DiscountRedeemCodeBulkCreationCodeConnection
+        {
+            public const string edges = "shopify.DiscountRedeemCodeBulkCreationCodeConnection.edges";
+            public const string nodes = "shopify.DiscountRedeemCodeBulkCreationCodeConnection.nodes";
+            public const string pageInfo = "shopify.DiscountRedeemCodeBulkCreationCodeConnection.pageInfo";
+        }
+
+        public static class DiscountRedeemCodeBulkCreationCodeEdge
+        {
+            public const string cursor = "shopify.DiscountRedeemCodeBulkCreationCodeEdge.cursor";
+            public const string node = "shopify.DiscountRedeemCodeBulkCreationCodeEdge.node";
+        }
+
+        public static class DiscountRedeemCodeConnection
+        {
+            public const string edges = "shopify.DiscountRedeemCodeConnection.edges";
+            public const string nodes = "shopify.DiscountRedeemCodeConnection.nodes";
+            public const string pageInfo = "shopify.DiscountRedeemCodeConnection.pageInfo";
+        }
+
+        public static class DiscountRedeemCodeEdge
+        {
+            public const string cursor = "shopify.DiscountRedeemCodeEdge.cursor";
+            public const string node = "shopify.DiscountRedeemCodeEdge.node";
+        }
+
+        public static class DiscountShareableUrl
+        {
+            public const string targetItemImage = "shopify.DiscountShareableUrl.targetItemImage";
+            public const string targetType = "shopify.DiscountShareableUrl.targetType";
+            public const string title = "shopify.DiscountShareableUrl.title";
+            public const string url = "shopify.DiscountShareableUrl.url";
+        }
+
+        public static class IDiscountShippingDestinationSelection
+        {
+        }
+
+        public static class DiscountUserError
+        {
+            public const string code = "shopify.DiscountUserError.code";
+            public const string extraInfo = "shopify.DiscountUserError.extraInfo";
+            public const string field = "shopify.DiscountUserError.field";
+            public const string message = "shopify.DiscountUserError.message";
+        }
+
+        public static class IDisplayableError
+        {
+            public const string field = "shopify.IDisplayableError.field";
+            public const string message = "shopify.IDisplayableError.message";
+        }
+
+        public static class DisputeEvidenceUpdatePayload
+        {
+            public const string disputeEvidence = "shopify.DisputeEvidenceUpdatePayload.disputeEvidence";
+            public const string userErrors = "shopify.DisputeEvidenceUpdatePayload.userErrors";
+        }
+
+        public static class DisputeEvidenceUpdateUserError
+        {
+            public const string code = "shopify.DisputeEvidenceUpdateUserError.code";
+            public const string field = "shopify.DisputeEvidenceUpdateUserError.field";
+            public const string message = "shopify.DisputeEvidenceUpdateUserError.message";
+        }
+
+        public static class Domain
+        {
+            public const string host = "shopify.Domain.host";
+            public const string id = "shopify.Domain.id";
+            public const string localization = "shopify.Domain.localization";
+            public const string marketWebPresence = "shopify.Domain.marketWebPresence";
+            public const string sslEnabled = "shopify.Domain.sslEnabled";
+            public const string url = "shopify.Domain.url";
+        }
+
+        public static class DomainLocalization
+        {
+            public const string alternateLocales = "shopify.DomainLocalization.alternateLocales";
+            public const string country = "shopify.DomainLocalization.country";
+            public const string defaultLocale = "shopify.DomainLocalization.defaultLocale";
+        }
+
+        public static class DraftOrder
+        {
+            public const string acceptAutomaticDiscounts = "shopify.DraftOrder.acceptAutomaticDiscounts";
+            public const string allVariantPricesOverridden = "shopify.DraftOrder.allVariantPricesOverridden";
+            public const string allowDiscountCodesInCheckout = "shopify.DraftOrder.allowDiscountCodesInCheckout";
+            public const string anyVariantPricesOverridden = "shopify.DraftOrder.anyVariantPricesOverridden";
+            public const string appliedDiscount = "shopify.DraftOrder.appliedDiscount";
+            public const string billingAddress = "shopify.DraftOrder.billingAddress";
+            public const string billingAddressMatchesShippingAddress = "shopify.DraftOrder.billingAddressMatchesShippingAddress";
+            public const string completedAt = "shopify.DraftOrder.completedAt";
+            public const string createdAt = "shopify.DraftOrder.createdAt";
+            public const string currencyCode = "shopify.DraftOrder.currencyCode";
+            public const string customAttributes = "shopify.DraftOrder.customAttributes";
+            public const string customer = "shopify.DraftOrder.customer";
+            public const string defaultCursor = "shopify.DraftOrder.defaultCursor";
+            public const string discountCodes = "shopify.DraftOrder.discountCodes";
+            public const string email = "shopify.DraftOrder.email";
+            public const string events = "shopify.DraftOrder.events";
+            public const string hasTimelineComment = "shopify.DraftOrder.hasTimelineComment";
+            public const string id = "shopify.DraftOrder.id";
+            public const string invoiceEmailTemplateSubject = "shopify.DraftOrder.invoiceEmailTemplateSubject";
+            public const string invoiceSentAt = "shopify.DraftOrder.invoiceSentAt";
+            public const string invoiceUrl = "shopify.DraftOrder.invoiceUrl";
+            public const string legacyResourceId = "shopify.DraftOrder.legacyResourceId";
+            public const string lineItems = "shopify.DraftOrder.lineItems";
+            public const string lineItemsSubtotalPrice = "shopify.DraftOrder.lineItemsSubtotalPrice";
+            public const string localizationExtensions = "shopify.DraftOrder.localizationExtensions";
+            public const string localizedFields = "shopify.DraftOrder.localizedFields";
+            public const string marketName = "shopify.DraftOrder.marketName";
+            public const string marketRegionCountryCode = "shopify.DraftOrder.marketRegionCountryCode";
+            public const string metafield = "shopify.DraftOrder.metafield";
+            public const string metafields = "shopify.DraftOrder.metafields";
+            public const string name = "shopify.DraftOrder.name";
+            public const string note2 = "shopify.DraftOrder.note2";
+            public const string order = "shopify.DraftOrder.order";
+            public const string paymentTerms = "shopify.DraftOrder.paymentTerms";
+            public const string phone = "shopify.DraftOrder.phone";
+            public const string platformDiscounts = "shopify.DraftOrder.platformDiscounts";
+            public const string poNumber = "shopify.DraftOrder.poNumber";
+            public const string presentmentCurrencyCode = "shopify.DraftOrder.presentmentCurrencyCode";
+            public const string purchasingEntity = "shopify.DraftOrder.purchasingEntity";
+            public const string ready = "shopify.DraftOrder.ready";
+            public const string reserveInventoryUntil = "shopify.DraftOrder.reserveInventoryUntil";
+            public const string shippingAddress = "shopify.DraftOrder.shippingAddress";
+            public const string shippingLine = "shopify.DraftOrder.shippingLine";
+            public const string status = "shopify.DraftOrder.status";
+            public const string subtotalPrice = "shopify.DraftOrder.subtotalPrice";
+            public const string subtotalPriceSet = "shopify.DraftOrder.subtotalPriceSet";
+            public const string tags = "shopify.DraftOrder.tags";
+            public const string taxExempt = "shopify.DraftOrder.taxExempt";
+            public const string taxLines = "shopify.DraftOrder.taxLines";
+            public const string taxesIncluded = "shopify.DraftOrder.taxesIncluded";
+            public const string totalDiscountsSet = "shopify.DraftOrder.totalDiscountsSet";
+            public const string totalLineItemsPriceSet = "shopify.DraftOrder.totalLineItemsPriceSet";
+            public const string totalPrice = "shopify.DraftOrder.totalPrice";
+            public const string totalPriceSet = "shopify.DraftOrder.totalPriceSet";
+            public const string totalQuantityOfLineItems = "shopify.DraftOrder.totalQuantityOfLineItems";
+            public const string totalShippingPrice = "shopify.DraftOrder.totalShippingPrice";
+            public const string totalShippingPriceSet = "shopify.DraftOrder.totalShippingPriceSet";
+            public const string totalTax = "shopify.DraftOrder.totalTax";
+            public const string totalTaxSet = "shopify.DraftOrder.totalTaxSet";
+            public const string totalWeight = "shopify.DraftOrder.totalWeight";
+            public const string transformerFingerprint = "shopify.DraftOrder.transformerFingerprint";
+            public const string updatedAt = "shopify.DraftOrder.updatedAt";
+            public const string visibleToCustomer = "shopify.DraftOrder.visibleToCustomer";
+            public const string warnings = "shopify.DraftOrder.warnings";
+        }
+
+        public static class DraftOrderAppliedDiscount
+        {
+            public const string amount = "shopify.DraftOrderAppliedDiscount.amount";
+            public const string amountSet = "shopify.DraftOrderAppliedDiscount.amountSet";
+            public const string amountV2 = "shopify.DraftOrderAppliedDiscount.amountV2";
+            public const string description = "shopify.DraftOrderAppliedDiscount.description";
+            public const string title = "shopify.DraftOrderAppliedDiscount.title";
+            public const string value = "shopify.DraftOrderAppliedDiscount.value";
+            public const string valueType = "shopify.DraftOrderAppliedDiscount.valueType";
+        }
+
+        public static class DraftOrderBulkAddTagsPayload
+        {
+            public const string job = "shopify.DraftOrderBulkAddTagsPayload.job";
+            public const string userErrors = "shopify.DraftOrderBulkAddTagsPayload.userErrors";
+        }
+
+        public static class DraftOrderBulkDeletePayload
+        {
+            public const string job = "shopify.DraftOrderBulkDeletePayload.job";
+            public const string userErrors = "shopify.DraftOrderBulkDeletePayload.userErrors";
+        }
+
+        public static class DraftOrderBulkRemoveTagsPayload
+        {
+            public const string job = "shopify.DraftOrderBulkRemoveTagsPayload.job";
+            public const string userErrors = "shopify.DraftOrderBulkRemoveTagsPayload.userErrors";
+        }
+
+        public static class DraftOrderBundleAddedWarning
+        {
+            public const string errorCode = "shopify.DraftOrderBundleAddedWarning.errorCode";
+            public const string field = "shopify.DraftOrderBundleAddedWarning.field";
+            public const string message = "shopify.DraftOrderBundleAddedWarning.message";
+        }
+
+        public static class DraftOrderCalculatePayload
+        {
+            public const string calculatedDraftOrder = "shopify.DraftOrderCalculatePayload.calculatedDraftOrder";
+            public const string userErrors = "shopify.DraftOrderCalculatePayload.userErrors";
+        }
+
+        public static class DraftOrderCompletePayload
+        {
+            public const string draftOrder = "shopify.DraftOrderCompletePayload.draftOrder";
+            public const string userErrors = "shopify.DraftOrderCompletePayload.userErrors";
+        }
+
+        public static class DraftOrderConnection
+        {
+            public const string edges = "shopify.DraftOrderConnection.edges";
+            public const string nodes = "shopify.DraftOrderConnection.nodes";
+            public const string pageInfo = "shopify.DraftOrderConnection.pageInfo";
+        }
+
+        public static class DraftOrderCreateFromOrderPayload
+        {
+            public const string draftOrder = "shopify.DraftOrderCreateFromOrderPayload.draftOrder";
+            public const string userErrors = "shopify.DraftOrderCreateFromOrderPayload.userErrors";
+        }
+
+        public static class DraftOrderCreateMerchantCheckoutPayload
+        {
+            public const string userErrors = "shopify.DraftOrderCreateMerchantCheckoutPayload.userErrors";
+        }
+
+        public static class DraftOrderCreatePayload
+        {
+            public const string draftOrder = "shopify.DraftOrderCreatePayload.draftOrder";
+            public const string userErrors = "shopify.DraftOrderCreatePayload.userErrors";
+        }
+
+        public static class DraftOrderDeletePayload
+        {
+            public const string deletedId = "shopify.DraftOrderDeletePayload.deletedId";
+            public const string userErrors = "shopify.DraftOrderDeletePayload.userErrors";
+        }
+
+        public static class DraftOrderDiscountNotAppliedWarning
+        {
+            public const string discountCode = "shopify.DraftOrderDiscountNotAppliedWarning.discountCode";
+            public const string discountTitle = "shopify.DraftOrderDiscountNotAppliedWarning.discountTitle";
+            public const string errorCode = "shopify.DraftOrderDiscountNotAppliedWarning.errorCode";
+            public const string field = "shopify.DraftOrderDiscountNotAppliedWarning.field";
+            public const string message = "shopify.DraftOrderDiscountNotAppliedWarning.message";
+            public const string priceRule = "shopify.DraftOrderDiscountNotAppliedWarning.priceRule";
+        }
+
+        public static class DraftOrderDuplicatePayload
+        {
+            public const string draftOrder = "shopify.DraftOrderDuplicatePayload.draftOrder";
+            public const string userErrors = "shopify.DraftOrderDuplicatePayload.userErrors";
+        }
+
+        public static class DraftOrderEdge
+        {
+            public const string cursor = "shopify.DraftOrderEdge.cursor";
+            public const string node = "shopify.DraftOrderEdge.node";
+        }
+
+        public static class DraftOrderInvoicePreviewPayload
+        {
+            public const string previewHtml = "shopify.DraftOrderInvoicePreviewPayload.previewHtml";
+            public const string previewSubject = "shopify.DraftOrderInvoicePreviewPayload.previewSubject";
+            public const string userErrors = "shopify.DraftOrderInvoicePreviewPayload.userErrors";
+        }
+
+        public static class DraftOrderInvoiceSendPayload
+        {
+            public const string draftOrder = "shopify.DraftOrderInvoiceSendPayload.draftOrder";
+            public const string userErrors = "shopify.DraftOrderInvoiceSendPayload.userErrors";
+        }
+
+        public static class DraftOrderLineItem
+        {
+            public const string appliedDiscount = "shopify.DraftOrderLineItem.appliedDiscount";
+            public const string approximateDiscountedUnitPriceSet = "shopify.DraftOrderLineItem.approximateDiscountedUnitPriceSet";
+            public const string bundleComponents = "shopify.DraftOrderLineItem.bundleComponents";
+            public const string components = "shopify.DraftOrderLineItem.components";
+            public const string custom = "shopify.DraftOrderLineItem.custom";
+            public const string customAttributes = "shopify.DraftOrderLineItem.customAttributes";
+            public const string customAttributesV2 = "shopify.DraftOrderLineItem.customAttributesV2";
+            public const string discountedTotal = "shopify.DraftOrderLineItem.discountedTotal";
+            public const string discountedTotalSet = "shopify.DraftOrderLineItem.discountedTotalSet";
+            public const string discountedUnitPrice = "shopify.DraftOrderLineItem.discountedUnitPrice";
+            public const string discountedUnitPriceSet = "shopify.DraftOrderLineItem.discountedUnitPriceSet";
+            public const string fulfillmentService = "shopify.DraftOrderLineItem.fulfillmentService";
+            public const string grams = "shopify.DraftOrderLineItem.grams";
+            public const string id = "shopify.DraftOrderLineItem.id";
+            public const string image = "shopify.DraftOrderLineItem.image";
+            public const string isGiftCard = "shopify.DraftOrderLineItem.isGiftCard";
+            public const string name = "shopify.DraftOrderLineItem.name";
+            public const string originalTotal = "shopify.DraftOrderLineItem.originalTotal";
+            public const string originalTotalSet = "shopify.DraftOrderLineItem.originalTotalSet";
+            public const string originalUnitPrice = "shopify.DraftOrderLineItem.originalUnitPrice";
+            public const string originalUnitPriceSet = "shopify.DraftOrderLineItem.originalUnitPriceSet";
+            public const string originalUnitPriceWithCurrency = "shopify.DraftOrderLineItem.originalUnitPriceWithCurrency";
+            public const string priceOverride = "shopify.DraftOrderLineItem.priceOverride";
+            public const string product = "shopify.DraftOrderLineItem.product";
+            public const string quantity = "shopify.DraftOrderLineItem.quantity";
+            public const string requiresShipping = "shopify.DraftOrderLineItem.requiresShipping";
+            public const string sku = "shopify.DraftOrderLineItem.sku";
+            public const string taxLines = "shopify.DraftOrderLineItem.taxLines";
+            public const string taxable = "shopify.DraftOrderLineItem.taxable";
+            public const string title = "shopify.DraftOrderLineItem.title";
+            public const string totalDiscount = "shopify.DraftOrderLineItem.totalDiscount";
+            public const string totalDiscountSet = "shopify.DraftOrderLineItem.totalDiscountSet";
+            public const string uuid = "shopify.DraftOrderLineItem.uuid";
+            public const string variant = "shopify.DraftOrderLineItem.variant";
+            public const string variantTitle = "shopify.DraftOrderLineItem.variantTitle";
+            public const string vendor = "shopify.DraftOrderLineItem.vendor";
+            public const string weight = "shopify.DraftOrderLineItem.weight";
+        }
+
+        public static class DraftOrderLineItemConnection
+        {
+            public const string edges = "shopify.DraftOrderLineItemConnection.edges";
+            public const string nodes = "shopify.DraftOrderLineItemConnection.nodes";
+            public const string pageInfo = "shopify.DraftOrderLineItemConnection.pageInfo";
+        }
+
+        public static class DraftOrderLineItemEdge
+        {
+            public const string cursor = "shopify.DraftOrderLineItemEdge.cursor";
+            public const string node = "shopify.DraftOrderLineItemEdge.node";
+        }
+
+        public static class DraftOrderPlatformDiscount
+        {
+            public const string allocations = "shopify.DraftOrderPlatformDiscount.allocations";
+            public const string automaticDiscount = "shopify.DraftOrderPlatformDiscount.automaticDiscount";
+            public const string bxgyDiscount = "shopify.DraftOrderPlatformDiscount.bxgyDiscount";
+            public const string code = "shopify.DraftOrderPlatformDiscount.code";
+            public const string discountClass = "shopify.DraftOrderPlatformDiscount.discountClass";
+            public const string discountNode = "shopify.DraftOrderPlatformDiscount.discountNode";
+            public const string id = "shopify.DraftOrderPlatformDiscount.id";
+            public const string presentationLevel = "shopify.DraftOrderPlatformDiscount.presentationLevel";
+            public const string shortSummary = "shopify.DraftOrderPlatformDiscount.shortSummary";
+            public const string summary = "shopify.DraftOrderPlatformDiscount.summary";
+            public const string title = "shopify.DraftOrderPlatformDiscount.title";
+            public const string totalAmount = "shopify.DraftOrderPlatformDiscount.totalAmount";
+            public const string totalAmountPriceSet = "shopify.DraftOrderPlatformDiscount.totalAmountPriceSet";
+        }
+
+        public static class DraftOrderPlatformDiscountAllocation
+        {
+            public const string id = "shopify.DraftOrderPlatformDiscountAllocation.id";
+            public const string quantity = "shopify.DraftOrderPlatformDiscountAllocation.quantity";
+            public const string reductionAmount = "shopify.DraftOrderPlatformDiscountAllocation.reductionAmount";
+            public const string reductionAmountSet = "shopify.DraftOrderPlatformDiscountAllocation.reductionAmountSet";
+            public const string target = "shopify.DraftOrderPlatformDiscountAllocation.target";
+        }
+
+        public static class IDraftOrderPlatformDiscountAllocationTarget
+        {
+            public const string custom = "shopify.IDraftOrderPlatformDiscountAllocationTarget.custom";
+            public const string title = "shopify.IDraftOrderPlatformDiscountAllocationTarget.title";
+        }
+
+        public static class DraftOrderTag
+        {
+            public const string handle = "shopify.DraftOrderTag.handle";
+            public const string id = "shopify.DraftOrderTag.id";
+            public const string title = "shopify.DraftOrderTag.title";
+        }
+
+        public static class DraftOrderUpdatePayload
+        {
+            public const string draftOrder = "shopify.DraftOrderUpdatePayload.draftOrder";
+            public const string userErrors = "shopify.DraftOrderUpdatePayload.userErrors";
+        }
+
+        public static class IDraftOrderWarning
+        {
+            public const string errorCode = "shopify.IDraftOrderWarning.errorCode";
+            public const string field = "shopify.IDraftOrderWarning.field";
+            public const string message = "shopify.IDraftOrderWarning.message";
+        }
+
+        public static class Duty
+        {
+            public const string countryCodeOfOrigin = "shopify.Duty.countryCodeOfOrigin";
+            public const string harmonizedSystemCode = "shopify.Duty.harmonizedSystemCode";
+            public const string id = "shopify.Duty.id";
+            public const string price = "shopify.Duty.price";
+            public const string taxLines = "shopify.Duty.taxLines";
+        }
+
+        public static class DutySale
+        {
+            public const string actionType = "shopify.DutySale.actionType";
+            public const string duty = "shopify.DutySale.duty";
+            public const string id = "shopify.DutySale.id";
+            public const string lineType = "shopify.DutySale.lineType";
+            public const string quantity = "shopify.DutySale.quantity";
+            public const string taxes = "shopify.DutySale.taxes";
+            public const string totalAmount = "shopify.DutySale.totalAmount";
+            public const string totalDiscountAmountAfterTaxes = "shopify.DutySale.totalDiscountAmountAfterTaxes";
+            public const string totalDiscountAmountBeforeTaxes = "shopify.DutySale.totalDiscountAmountBeforeTaxes";
+            public const string totalTaxAmount = "shopify.DutySale.totalTaxAmount";
+        }
+
+        public static class EditableProperty
+        {
+            public const string locked = "shopify.EditableProperty.locked";
+            public const string reason = "shopify.EditableProperty.reason";
+        }
+
+        public static class EntitlementsType
+        {
+            public const string markets = "shopify.EntitlementsType.markets";
+        }
+
+        public static class ErrorsServerPixelUserError
+        {
+            public const string code = "shopify.ErrorsServerPixelUserError.code";
+            public const string field = "shopify.ErrorsServerPixelUserError.field";
+            public const string message = "shopify.ErrorsServerPixelUserError.message";
+        }
+
+        public static class ErrorsWebPixelUserError
+        {
+            public const string code = "shopify.ErrorsWebPixelUserError.code";
+            public const string field = "shopify.ErrorsWebPixelUserError.field";
+            public const string message = "shopify.ErrorsWebPixelUserError.message";
+        }
+
+        public static class IEvent
+        {
+            public const string action = "shopify.IEvent.action";
+            public const string appTitle = "shopify.IEvent.appTitle";
+            public const string attributeToApp = "shopify.IEvent.attributeToApp";
+            public const string attributeToUser = "shopify.IEvent.attributeToUser";
+            public const string createdAt = "shopify.IEvent.createdAt";
+            public const string criticalAlert = "shopify.IEvent.criticalAlert";
+            public const string id = "shopify.IEvent.id";
+            public const string message = "shopify.IEvent.message";
+        }
+
+        public static class EventBridgeServerPixelUpdatePayload
+        {
+            public const string serverPixel = "shopify.EventBridgeServerPixelUpdatePayload.serverPixel";
+            public const string userErrors = "shopify.EventBridgeServerPixelUpdatePayload.userErrors";
+        }
+
+        public static class EventBridgeWebhookSubscriptionCreatePayload
+        {
+            public const string userErrors = "shopify.EventBridgeWebhookSubscriptionCreatePayload.userErrors";
+            public const string webhookSubscription = "shopify.EventBridgeWebhookSubscriptionCreatePayload.webhookSubscription";
+        }
+
+        public static class EventBridgeWebhookSubscriptionUpdatePayload
+        {
+            public const string userErrors = "shopify.EventBridgeWebhookSubscriptionUpdatePayload.userErrors";
+            public const string webhookSubscription = "shopify.EventBridgeWebhookSubscriptionUpdatePayload.webhookSubscription";
+        }
+
+        public static class EventConnection
+        {
+            public const string edges = "shopify.EventConnection.edges";
+            public const string nodes = "shopify.EventConnection.nodes";
+            public const string pageInfo = "shopify.EventConnection.pageInfo";
+        }
+
+        public static class EventEdge
+        {
+            public const string cursor = "shopify.EventEdge.cursor";
+            public const string node = "shopify.EventEdge.node";
+        }
+
+        public static class ExchangeLineItem
+        {
+            public const string id = "shopify.ExchangeLineItem.id";
+            public const string lineItem = "shopify.ExchangeLineItem.lineItem";
+        }
+
+        public static class ExchangeLineItemConnection
+        {
+            public const string edges = "shopify.ExchangeLineItemConnection.edges";
+            public const string nodes = "shopify.ExchangeLineItemConnection.nodes";
+            public const string pageInfo = "shopify.ExchangeLineItemConnection.pageInfo";
+        }
+
+        public static class ExchangeLineItemEdge
+        {
+            public const string cursor = "shopify.ExchangeLineItemEdge.cursor";
+            public const string node = "shopify.ExchangeLineItemEdge.node";
+        }
+
+        public static class ExchangeV2
+        {
+            public const string additions = "shopify.ExchangeV2.additions";
+            public const string completedAt = "shopify.ExchangeV2.completedAt";
+            public const string createdAt = "shopify.ExchangeV2.createdAt";
+            public const string id = "shopify.ExchangeV2.id";
+            public const string location = "shopify.ExchangeV2.location";
+            public const string mirrored = "shopify.ExchangeV2.mirrored";
+            public const string note = "shopify.ExchangeV2.note";
+            public const string refunds = "shopify.ExchangeV2.refunds";
+            public const string returns = "shopify.ExchangeV2.returns";
+            public const string staffMember = "shopify.ExchangeV2.staffMember";
+            public const string totalAmountProcessedSet = "shopify.ExchangeV2.totalAmountProcessedSet";
+            public const string totalPriceSet = "shopify.ExchangeV2.totalPriceSet";
+            public const string transactions = "shopify.ExchangeV2.transactions";
+        }
+
+        public static class ExchangeV2Additions
+        {
+            public const string lineItems = "shopify.ExchangeV2Additions.lineItems";
+            public const string subtotalPriceSet = "shopify.ExchangeV2Additions.subtotalPriceSet";
+            public const string taxLines = "shopify.ExchangeV2Additions.taxLines";
+            public const string totalPriceSet = "shopify.ExchangeV2Additions.totalPriceSet";
+        }
+
+        public static class ExchangeV2Connection
+        {
+            public const string edges = "shopify.ExchangeV2Connection.edges";
+            public const string nodes = "shopify.ExchangeV2Connection.nodes";
+            public const string pageInfo = "shopify.ExchangeV2Connection.pageInfo";
+        }
+
+        public static class ExchangeV2Edge
+        {
+            public const string cursor = "shopify.ExchangeV2Edge.cursor";
+            public const string node = "shopify.ExchangeV2Edge.node";
+        }
+
+        public static class ExchangeV2LineItem
+        {
+            public const string customAttributes = "shopify.ExchangeV2LineItem.customAttributes";
+            public const string discountedTotalSet = "shopify.ExchangeV2LineItem.discountedTotalSet";
+            public const string discountedUnitPriceSet = "shopify.ExchangeV2LineItem.discountedUnitPriceSet";
+            public const string fulfillmentService = "shopify.ExchangeV2LineItem.fulfillmentService";
+            public const string giftCard = "shopify.ExchangeV2LineItem.giftCard";
+            public const string giftCards = "shopify.ExchangeV2LineItem.giftCards";
+            public const string isGiftCard = "shopify.ExchangeV2LineItem.isGiftCard";
+            public const string lineItem = "shopify.ExchangeV2LineItem.lineItem";
+            public const string name = "shopify.ExchangeV2LineItem.name";
+            public const string originalTotalSet = "shopify.ExchangeV2LineItem.originalTotalSet";
+            public const string originalUnitPriceSet = "shopify.ExchangeV2LineItem.originalUnitPriceSet";
+            public const string quantity = "shopify.ExchangeV2LineItem.quantity";
+            public const string requiresShipping = "shopify.ExchangeV2LineItem.requiresShipping";
+            public const string sku = "shopify.ExchangeV2LineItem.sku";
+            public const string taxLines = "shopify.ExchangeV2LineItem.taxLines";
+            public const string taxable = "shopify.ExchangeV2LineItem.taxable";
+            public const string title = "shopify.ExchangeV2LineItem.title";
+            public const string variant = "shopify.ExchangeV2LineItem.variant";
+            public const string variantTitle = "shopify.ExchangeV2LineItem.variantTitle";
+            public const string vendor = "shopify.ExchangeV2LineItem.vendor";
+        }
+
+        public static class ExchangeV2Returns
+        {
+            public const string lineItems = "shopify.ExchangeV2Returns.lineItems";
+            public const string orderDiscountAmountSet = "shopify.ExchangeV2Returns.orderDiscountAmountSet";
+            public const string shippingRefundAmountSet = "shopify.ExchangeV2Returns.shippingRefundAmountSet";
+            public const string subtotalPriceSet = "shopify.ExchangeV2Returns.subtotalPriceSet";
+            public const string taxLines = "shopify.ExchangeV2Returns.taxLines";
+            public const string tipRefundAmountSet = "shopify.ExchangeV2Returns.tipRefundAmountSet";
+            public const string totalPriceSet = "shopify.ExchangeV2Returns.totalPriceSet";
+        }
+
+        public static class ExternalVideo
+        {
+            public const string alt = "shopify.ExternalVideo.alt";
+            public const string createdAt = "shopify.ExternalVideo.createdAt";
+            public const string embedUrl = "shopify.ExternalVideo.embedUrl";
+            public const string embeddedUrl = "shopify.ExternalVideo.embeddedUrl";
+            public const string fileErrors = "shopify.ExternalVideo.fileErrors";
+            public const string fileStatus = "shopify.ExternalVideo.fileStatus";
+            public const string host = "shopify.ExternalVideo.host";
+            public const string id = "shopify.ExternalVideo.id";
+            public const string mediaContentType = "shopify.ExternalVideo.mediaContentType";
+            public const string mediaErrors = "shopify.ExternalVideo.mediaErrors";
+            public const string mediaWarnings = "shopify.ExternalVideo.mediaWarnings";
+            public const string originUrl = "shopify.ExternalVideo.originUrl";
+            public const string preview = "shopify.ExternalVideo.preview";
+            public const string status = "shopify.ExternalVideo.status";
+            public const string updatedAt = "shopify.ExternalVideo.updatedAt";
+        }
+
+        public static class FailedRequirement
+        {
+            public const string action = "shopify.FailedRequirement.action";
+            public const string message = "shopify.FailedRequirement.message";
+        }
+
+        public static class IFee
+        {
+            public const string id = "shopify.IFee.id";
+        }
+
+        public static class FeeSale
+        {
+            public const string actionType = "shopify.FeeSale.actionType";
+            public const string fee = "shopify.FeeSale.fee";
+            public const string id = "shopify.FeeSale.id";
+            public const string lineType = "shopify.FeeSale.lineType";
+            public const string quantity = "shopify.FeeSale.quantity";
+            public const string taxes = "shopify.FeeSale.taxes";
+            public const string totalAmount = "shopify.FeeSale.totalAmount";
+            public const string totalDiscountAmountAfterTaxes = "shopify.FeeSale.totalDiscountAmountAfterTaxes";
+            public const string totalDiscountAmountBeforeTaxes = "shopify.FeeSale.totalDiscountAmountBeforeTaxes";
+            public const string totalTaxAmount = "shopify.FeeSale.totalTaxAmount";
+        }
+
+        public static class IFile
+        {
+            public const string alt = "shopify.IFile.alt";
+            public const string createdAt = "shopify.IFile.createdAt";
+            public const string fileErrors = "shopify.IFile.fileErrors";
+            public const string fileStatus = "shopify.IFile.fileStatus";
+            public const string id = "shopify.IFile.id";
+            public const string preview = "shopify.IFile.preview";
+            public const string updatedAt = "shopify.IFile.updatedAt";
+        }
+
+        public static class FileAcknowledgeUpdateFailedPayload
+        {
+            public const string files = "shopify.FileAcknowledgeUpdateFailedPayload.files";
+            public const string userErrors = "shopify.FileAcknowledgeUpdateFailedPayload.userErrors";
+        }
+
+        public static class FileConnection
+        {
+            public const string edges = "shopify.FileConnection.edges";
+            public const string nodes = "shopify.FileConnection.nodes";
+            public const string pageInfo = "shopify.FileConnection.pageInfo";
+        }
+
+        public static class FileCreatePayload
+        {
+            public const string files = "shopify.FileCreatePayload.files";
+            public const string userErrors = "shopify.FileCreatePayload.userErrors";
+        }
+
+        public static class FileDeletePayload
+        {
+            public const string deletedFileIds = "shopify.FileDeletePayload.deletedFileIds";
+            public const string userErrors = "shopify.FileDeletePayload.userErrors";
+        }
+
+        public static class FileEdge
+        {
+            public const string cursor = "shopify.FileEdge.cursor";
+            public const string node = "shopify.FileEdge.node";
+        }
+
+        public static class FileError
+        {
+            public const string code = "shopify.FileError.code";
+            public const string details = "shopify.FileError.details";
+            public const string message = "shopify.FileError.message";
+        }
+
+        public static class FileUpdatePayload
+        {
+            public const string files = "shopify.FileUpdatePayload.files";
+            public const string userErrors = "shopify.FileUpdatePayload.userErrors";
+        }
+
+        public static class FilesUserError
+        {
+            public const string code = "shopify.FilesUserError.code";
+            public const string field = "shopify.FilesUserError.field";
+            public const string message = "shopify.FilesUserError.message";
+        }
+
+        public static class FilterOption
+        {
+            public const string label = "shopify.FilterOption.label";
+            public const string value = "shopify.FilterOption.value";
+        }
+
+        public static class FinanceAppAccessPolicy
+        {
+            public const string access = "shopify.FinanceAppAccessPolicy.access";
+        }
+
+        public static class FinanceKycInformation
+        {
+            public const string businessAddress = "shopify.FinanceKycInformation.businessAddress";
+            public const string businessType = "shopify.FinanceKycInformation.businessType";
+            public const string industry = "shopify.FinanceKycInformation.industry";
+            public const string legalName = "shopify.FinanceKycInformation.legalName";
+            public const string shopOwner = "shopify.FinanceKycInformation.shopOwner";
+            public const string taxIdentification = "shopify.FinanceKycInformation.taxIdentification";
+        }
+
+        public static class FinancialKycShopOwner
+        {
+            public const string email = "shopify.FinancialKycShopOwner.email";
+            public const string firstName = "shopify.FinancialKycShopOwner.firstName";
+            public const string id = "shopify.FinancialKycShopOwner.id";
+            public const string lastName = "shopify.FinancialKycShopOwner.lastName";
+            public const string phone = "shopify.FinancialKycShopOwner.phone";
+        }
+
+        public static class FinancialSummaryDiscountAllocation
+        {
+            public const string approximateAllocatedAmountPerItem = "shopify.FinancialSummaryDiscountAllocation.approximateAllocatedAmountPerItem";
+            public const string discountApplication = "shopify.FinancialSummaryDiscountAllocation.discountApplication";
+        }
+
+        public static class FinancialSummaryDiscountApplication
+        {
+            public const string allocationMethod = "shopify.FinancialSummaryDiscountApplication.allocationMethod";
+            public const string targetSelection = "shopify.FinancialSummaryDiscountApplication.targetSelection";
+            public const string targetType = "shopify.FinancialSummaryDiscountApplication.targetType";
+        }
+
+        public static class FlowGenerateSignaturePayload
+        {
+            public const string payload = "shopify.FlowGenerateSignaturePayload.payload";
+            public const string signature = "shopify.FlowGenerateSignaturePayload.signature";
+            public const string userErrors = "shopify.FlowGenerateSignaturePayload.userErrors";
+        }
+
+        public static class FlowTriggerReceivePayload
+        {
+            public const string userErrors = "shopify.FlowTriggerReceivePayload.userErrors";
+        }
+
+        public static class Fulfillment
+        {
+            public const string createdAt = "shopify.Fulfillment.createdAt";
+            public const string deliveredAt = "shopify.Fulfillment.deliveredAt";
+            public const string displayStatus = "shopify.Fulfillment.displayStatus";
+            public const string estimatedDeliveryAt = "shopify.Fulfillment.estimatedDeliveryAt";
+            public const string events = "shopify.Fulfillment.events";
+            public const string fulfillmentLineItems = "shopify.Fulfillment.fulfillmentLineItems";
+            public const string fulfillmentOrders = "shopify.Fulfillment.fulfillmentOrders";
+            public const string id = "shopify.Fulfillment.id";
+            public const string inTransitAt = "shopify.Fulfillment.inTransitAt";
+            public const string legacyResourceId = "shopify.Fulfillment.legacyResourceId";
+            public const string location = "shopify.Fulfillment.location";
+            public const string name = "shopify.Fulfillment.name";
+            public const string order = "shopify.Fulfillment.order";
+            public const string originAddress = "shopify.Fulfillment.originAddress";
+            public const string requiresShipping = "shopify.Fulfillment.requiresShipping";
+            public const string service = "shopify.Fulfillment.service";
+            public const string status = "shopify.Fulfillment.status";
+            public const string totalQuantity = "shopify.Fulfillment.totalQuantity";
+            public const string trackingInfo = "shopify.Fulfillment.trackingInfo";
+            public const string updatedAt = "shopify.Fulfillment.updatedAt";
+        }
+
+        public static class FulfillmentCancelPayload
+        {
+            public const string fulfillment = "shopify.FulfillmentCancelPayload.fulfillment";
+            public const string userErrors = "shopify.FulfillmentCancelPayload.userErrors";
+        }
+
+        public static class FulfillmentConnection
+        {
+            public const string edges = "shopify.FulfillmentConnection.edges";
+            public const string nodes = "shopify.FulfillmentConnection.nodes";
+            public const string pageInfo = "shopify.FulfillmentConnection.pageInfo";
+        }
+
+        public static class FulfillmentConstraintRule
+        {
+            public const string deliveryMethodTypes = "shopify.FulfillmentConstraintRule.deliveryMethodTypes";
+            public const string function = "shopify.FulfillmentConstraintRule.function";
+            public const string id = "shopify.FulfillmentConstraintRule.id";
+            public const string metafield = "shopify.FulfillmentConstraintRule.metafield";
+            public const string metafields = "shopify.FulfillmentConstraintRule.metafields";
+        }
+
+        public static class FulfillmentConstraintRuleCreatePayload
+        {
+            public const string fulfillmentConstraintRule = "shopify.FulfillmentConstraintRuleCreatePayload.fulfillmentConstraintRule";
+            public const string userErrors = "shopify.FulfillmentConstraintRuleCreatePayload.userErrors";
+        }
+
+        public static class FulfillmentConstraintRuleCreateUserError
+        {
+            public const string code = "shopify.FulfillmentConstraintRuleCreateUserError.code";
+            public const string field = "shopify.FulfillmentConstraintRuleCreateUserError.field";
+            public const string message = "shopify.FulfillmentConstraintRuleCreateUserError.message";
+        }
+
+        public static class FulfillmentConstraintRuleDeletePayload
+        {
+            public const string success = "shopify.FulfillmentConstraintRuleDeletePayload.success";
+            public const string userErrors = "shopify.FulfillmentConstraintRuleDeletePayload.userErrors";
+        }
+
+        public static class FulfillmentConstraintRuleDeleteUserError
+        {
+            public const string code = "shopify.FulfillmentConstraintRuleDeleteUserError.code";
+            public const string field = "shopify.FulfillmentConstraintRuleDeleteUserError.field";
+            public const string message = "shopify.FulfillmentConstraintRuleDeleteUserError.message";
+        }
+
+        public static class FulfillmentConstraintRuleUpdatePayload
+        {
+            public const string fulfillmentConstraintRule = "shopify.FulfillmentConstraintRuleUpdatePayload.fulfillmentConstraintRule";
+            public const string userErrors = "shopify.FulfillmentConstraintRuleUpdatePayload.userErrors";
+        }
+
+        public static class FulfillmentConstraintRuleUpdateUserError
+        {
+            public const string code = "shopify.FulfillmentConstraintRuleUpdateUserError.code";
+            public const string field = "shopify.FulfillmentConstraintRuleUpdateUserError.field";
+            public const string message = "shopify.FulfillmentConstraintRuleUpdateUserError.message";
+        }
+
+        public static class FulfillmentCreatePayload
+        {
+            public const string fulfillment = "shopify.FulfillmentCreatePayload.fulfillment";
+            public const string userErrors = "shopify.FulfillmentCreatePayload.userErrors";
+        }
+
+        public static class FulfillmentCreateV2Payload
+        {
+            public const string fulfillment = "shopify.FulfillmentCreateV2Payload.fulfillment";
+            public const string userErrors = "shopify.FulfillmentCreateV2Payload.userErrors";
+        }
+
+        public static class FulfillmentEdge
+        {
+            public const string cursor = "shopify.FulfillmentEdge.cursor";
+            public const string node = "shopify.FulfillmentEdge.node";
+        }
+
+        public static class FulfillmentEvent
+        {
+            public const string address1 = "shopify.FulfillmentEvent.address1";
+            public const string city = "shopify.FulfillmentEvent.city";
+            public const string country = "shopify.FulfillmentEvent.country";
+            public const string createdAt = "shopify.FulfillmentEvent.createdAt";
+            public const string estimatedDeliveryAt = "shopify.FulfillmentEvent.estimatedDeliveryAt";
+            public const string happenedAt = "shopify.FulfillmentEvent.happenedAt";
+            public const string id = "shopify.FulfillmentEvent.id";
+            public const string latitude = "shopify.FulfillmentEvent.latitude";
+            public const string longitude = "shopify.FulfillmentEvent.longitude";
+            public const string message = "shopify.FulfillmentEvent.message";
+            public const string province = "shopify.FulfillmentEvent.province";
+            public const string status = "shopify.FulfillmentEvent.status";
+            public const string zip = "shopify.FulfillmentEvent.zip";
+        }
+
+        public static class FulfillmentEventConnection
+        {
+            public const string edges = "shopify.FulfillmentEventConnection.edges";
+            public const string nodes = "shopify.FulfillmentEventConnection.nodes";
+            public const string pageInfo = "shopify.FulfillmentEventConnection.pageInfo";
+        }
+
+        public static class FulfillmentEventCreatePayload
+        {
+            public const string fulfillmentEvent = "shopify.FulfillmentEventCreatePayload.fulfillmentEvent";
+            public const string userErrors = "shopify.FulfillmentEventCreatePayload.userErrors";
+        }
+
+        public static class FulfillmentEventEdge
+        {
+            public const string cursor = "shopify.FulfillmentEventEdge.cursor";
+            public const string node = "shopify.FulfillmentEventEdge.node";
+        }
+
+        public static class FulfillmentHold
+        {
+            public const string displayReason = "shopify.FulfillmentHold.displayReason";
+            public const string handle = "shopify.FulfillmentHold.handle";
+            public const string heldByApp = "shopify.FulfillmentHold.heldByApp";
+            public const string heldByRequestingApp = "shopify.FulfillmentHold.heldByRequestingApp";
+            public const string id = "shopify.FulfillmentHold.id";
+            public const string reason = "shopify.FulfillmentHold.reason";
+            public const string reasonNotes = "shopify.FulfillmentHold.reasonNotes";
+        }
+
+        public static class FulfillmentLineItem
+        {
+            public const string discountedTotal = "shopify.FulfillmentLineItem.discountedTotal";
+            public const string discountedTotalSet = "shopify.FulfillmentLineItem.discountedTotalSet";
+            public const string id = "shopify.FulfillmentLineItem.id";
+            public const string lineItem = "shopify.FulfillmentLineItem.lineItem";
+            public const string originalTotal = "shopify.FulfillmentLineItem.originalTotal";
+            public const string originalTotalSet = "shopify.FulfillmentLineItem.originalTotalSet";
+            public const string quantity = "shopify.FulfillmentLineItem.quantity";
+        }
+
+        public static class FulfillmentLineItemConnection
+        {
+            public const string edges = "shopify.FulfillmentLineItemConnection.edges";
+            public const string nodes = "shopify.FulfillmentLineItemConnection.nodes";
+            public const string pageInfo = "shopify.FulfillmentLineItemConnection.pageInfo";
+        }
+
+        public static class FulfillmentLineItemEdge
+        {
+            public const string cursor = "shopify.FulfillmentLineItemEdge.cursor";
+            public const string node = "shopify.FulfillmentLineItemEdge.node";
+        }
+
+        public static class FulfillmentOrder
+        {
+            public const string assignedLocation = "shopify.FulfillmentOrder.assignedLocation";
+            public const string channelId = "shopify.FulfillmentOrder.channelId";
+            public const string createdAt = "shopify.FulfillmentOrder.createdAt";
+            public const string deliveryMethod = "shopify.FulfillmentOrder.deliveryMethod";
+            public const string destination = "shopify.FulfillmentOrder.destination";
+            public const string fulfillAt = "shopify.FulfillmentOrder.fulfillAt";
+            public const string fulfillBy = "shopify.FulfillmentOrder.fulfillBy";
+            public const string fulfillmentHolds = "shopify.FulfillmentOrder.fulfillmentHolds";
+            public const string fulfillmentOrdersForMerge = "shopify.FulfillmentOrder.fulfillmentOrdersForMerge";
+            public const string fulfillments = "shopify.FulfillmentOrder.fulfillments";
+            public const string id = "shopify.FulfillmentOrder.id";
+            public const string internationalDuties = "shopify.FulfillmentOrder.internationalDuties";
+            public const string lineItems = "shopify.FulfillmentOrder.lineItems";
+            public const string locationsForMove = "shopify.FulfillmentOrder.locationsForMove";
+            public const string merchantRequests = "shopify.FulfillmentOrder.merchantRequests";
+            public const string order = "shopify.FulfillmentOrder.order";
+            public const string orderId = "shopify.FulfillmentOrder.orderId";
+            public const string orderName = "shopify.FulfillmentOrder.orderName";
+            public const string orderProcessedAt = "shopify.FulfillmentOrder.orderProcessedAt";
+            public const string requestStatus = "shopify.FulfillmentOrder.requestStatus";
+            public const string status = "shopify.FulfillmentOrder.status";
+            public const string supportedActions = "shopify.FulfillmentOrder.supportedActions";
+            public const string updatedAt = "shopify.FulfillmentOrder.updatedAt";
+        }
+
+        public static class FulfillmentOrderAcceptCancellationRequestPayload
+        {
+            public const string fulfillmentOrder = "shopify.FulfillmentOrderAcceptCancellationRequestPayload.fulfillmentOrder";
+            public const string userErrors = "shopify.FulfillmentOrderAcceptCancellationRequestPayload.userErrors";
+        }
+
+        public static class FulfillmentOrderAcceptFulfillmentRequestPayload
+        {
+            public const string fulfillmentOrder = "shopify.FulfillmentOrderAcceptFulfillmentRequestPayload.fulfillmentOrder";
+            public const string userErrors = "shopify.FulfillmentOrderAcceptFulfillmentRequestPayload.userErrors";
+        }
+
+        public static class FulfillmentOrderAssignedLocation
+        {
+            public const string address1 = "shopify.FulfillmentOrderAssignedLocation.address1";
+            public const string address2 = "shopify.FulfillmentOrderAssignedLocation.address2";
+            public const string city = "shopify.FulfillmentOrderAssignedLocation.city";
+            public const string countryCode = "shopify.FulfillmentOrderAssignedLocation.countryCode";
+            public const string location = "shopify.FulfillmentOrderAssignedLocation.location";
+            public const string name = "shopify.FulfillmentOrderAssignedLocation.name";
+            public const string phone = "shopify.FulfillmentOrderAssignedLocation.phone";
+            public const string province = "shopify.FulfillmentOrderAssignedLocation.province";
+            public const string zip = "shopify.FulfillmentOrderAssignedLocation.zip";
+        }
+
+        public static class FulfillmentOrderCancelPayload
+        {
+            public const string fulfillmentOrder = "shopify.FulfillmentOrderCancelPayload.fulfillmentOrder";
+            public const string replacementFulfillmentOrder = "shopify.FulfillmentOrderCancelPayload.replacementFulfillmentOrder";
+            public const string userErrors = "shopify.FulfillmentOrderCancelPayload.userErrors";
+        }
+
+        public static class FulfillmentOrderClosePayload
+        {
+            public const string fulfillmentOrder = "shopify.FulfillmentOrderClosePayload.fulfillmentOrder";
+            public const string userErrors = "shopify.FulfillmentOrderClosePayload.userErrors";
+        }
+
+        public static class FulfillmentOrderConnection
+        {
+            public const string edges = "shopify.FulfillmentOrderConnection.edges";
+            public const string nodes = "shopify.FulfillmentOrderConnection.nodes";
+            public const string pageInfo = "shopify.FulfillmentOrderConnection.pageInfo";
+        }
+
+        public static class FulfillmentOrderDestination
+        {
+            public const string address1 = "shopify.FulfillmentOrderDestination.address1";
+            public const string address2 = "shopify.FulfillmentOrderDestination.address2";
+            public const string city = "shopify.FulfillmentOrderDestination.city";
+            public const string company = "shopify.FulfillmentOrderDestination.company";
+            public const string countryCode = "shopify.FulfillmentOrderDestination.countryCode";
+            public const string email = "shopify.FulfillmentOrderDestination.email";
+            public const string firstName = "shopify.FulfillmentOrderDestination.firstName";
+            public const string id = "shopify.FulfillmentOrderDestination.id";
+            public const string lastName = "shopify.FulfillmentOrderDestination.lastName";
+            public const string location = "shopify.FulfillmentOrderDestination.location";
+            public const string phone = "shopify.FulfillmentOrderDestination.phone";
+            public const string province = "shopify.FulfillmentOrderDestination.province";
+            public const string zip = "shopify.FulfillmentOrderDestination.zip";
+        }
+
+        public static class FulfillmentOrderEdge
+        {
+            public const string cursor = "shopify.FulfillmentOrderEdge.cursor";
+            public const string node = "shopify.FulfillmentOrderEdge.node";
+        }
+
+        public static class FulfillmentOrderHoldPayload
+        {
+            public const string fulfillmentHold = "shopify.FulfillmentOrderHoldPayload.fulfillmentHold";
+            public const string fulfillmentOrder = "shopify.FulfillmentOrderHoldPayload.fulfillmentOrder";
+            public const string remainingFulfillmentOrder = "shopify.FulfillmentOrderHoldPayload.remainingFulfillmentOrder";
+            public const string userErrors = "shopify.FulfillmentOrderHoldPayload.userErrors";
+        }
+
+        public static class FulfillmentOrderHoldUserError
+        {
+            public const string code = "shopify.FulfillmentOrderHoldUserError.code";
+            public const string field = "shopify.FulfillmentOrderHoldUserError.field";
+            public const string message = "shopify.FulfillmentOrderHoldUserError.message";
+        }
+
+        public static class FulfillmentOrderInternationalDuties
+        {
+            public const string incoterm = "shopify.FulfillmentOrderInternationalDuties.incoterm";
+        }
+
+        public static class FulfillmentOrderLineItem
+        {
+            public const string financialSummaries = "shopify.FulfillmentOrderLineItem.financialSummaries";
+            public const string id = "shopify.FulfillmentOrderLineItem.id";
+            public const string image = "shopify.FulfillmentOrderLineItem.image";
+            public const string inventoryItemId = "shopify.FulfillmentOrderLineItem.inventoryItemId";
+            public const string lineItem = "shopify.FulfillmentOrderLineItem.lineItem";
+            public const string originalUnitPriceSet = "shopify.FulfillmentOrderLineItem.originalUnitPriceSet";
+            public const string productTitle = "shopify.FulfillmentOrderLineItem.productTitle";
+            public const string remainingQuantity = "shopify.FulfillmentOrderLineItem.remainingQuantity";
+            public const string requiresShipping = "shopify.FulfillmentOrderLineItem.requiresShipping";
+            public const string sku = "shopify.FulfillmentOrderLineItem.sku";
+            public const string totalQuantity = "shopify.FulfillmentOrderLineItem.totalQuantity";
+            public const string variant = "shopify.FulfillmentOrderLineItem.variant";
+            public const string variantTitle = "shopify.FulfillmentOrderLineItem.variantTitle";
+            public const string vendor = "shopify.FulfillmentOrderLineItem.vendor";
+            public const string warnings = "shopify.FulfillmentOrderLineItem.warnings";
+            public const string weight = "shopify.FulfillmentOrderLineItem.weight";
+        }
+
+        public static class FulfillmentOrderLineItemConnection
+        {
+            public const string edges = "shopify.FulfillmentOrderLineItemConnection.edges";
+            public const string nodes = "shopify.FulfillmentOrderLineItemConnection.nodes";
+            public const string pageInfo = "shopify.FulfillmentOrderLineItemConnection.pageInfo";
+        }
+
+        public static class FulfillmentOrderLineItemEdge
+        {
+            public const string cursor = "shopify.FulfillmentOrderLineItemEdge.cursor";
+            public const string node = "shopify.FulfillmentOrderLineItemEdge.node";
+        }
+
+        public static class FulfillmentOrderLineItemFinancialSummary
+        {
+            public const string approximateDiscountedUnitPriceSet = "shopify.FulfillmentOrderLineItemFinancialSummary.approximateDiscountedUnitPriceSet";
+            public const string discountAllocations = "shopify.FulfillmentOrderLineItemFinancialSummary.discountAllocations";
+            public const string originalUnitPriceSet = "shopify.FulfillmentOrderLineItemFinancialSummary.originalUnitPriceSet";
+            public const string quantity = "shopify.FulfillmentOrderLineItemFinancialSummary.quantity";
+        }
+
+        public static class FulfillmentOrderLineItemWarning
+        {
+            public const string description = "shopify.FulfillmentOrderLineItemWarning.description";
+            public const string title = "shopify.FulfillmentOrderLineItemWarning.title";
+        }
+
+        public static class FulfillmentOrderLineItemsPreparedForPickupPayload
+        {
+            public const string userErrors = "shopify.FulfillmentOrderLineItemsPreparedForPickupPayload.userErrors";
+        }
+
+        public static class FulfillmentOrderLineItemsPreparedForPickupUserError
+        {
+            public const string code = "shopify.FulfillmentOrderLineItemsPreparedForPickupUserError.code";
+            public const string field = "shopify.FulfillmentOrderLineItemsPreparedForPickupUserError.field";
+            public const string message = "shopify.FulfillmentOrderLineItemsPreparedForPickupUserError.message";
+        }
+
+        public static class FulfillmentOrderLocationForMove
+        {
+            public const string availableLineItems = "shopify.FulfillmentOrderLocationForMove.availableLineItems";
+            public const string availableLineItemsCount = "shopify.FulfillmentOrderLocationForMove.availableLineItemsCount";
+            public const string location = "shopify.FulfillmentOrderLocationForMove.location";
+            public const string message = "shopify.FulfillmentOrderLocationForMove.message";
+            public const string movable = "shopify.FulfillmentOrderLocationForMove.movable";
+            public const string unavailableLineItems = "shopify.FulfillmentOrderLocationForMove.unavailableLineItems";
+            public const string unavailableLineItemsCount = "shopify.FulfillmentOrderLocationForMove.unavailableLineItemsCount";
+        }
+
+        public static class FulfillmentOrderLocationForMoveConnection
+        {
+            public const string edges = "shopify.FulfillmentOrderLocationForMoveConnection.edges";
+            public const string nodes = "shopify.FulfillmentOrderLocationForMoveConnection.nodes";
+            public const string pageInfo = "shopify.FulfillmentOrderLocationForMoveConnection.pageInfo";
+        }
+
+        public static class FulfillmentOrderLocationForMoveEdge
+        {
+            public const string cursor = "shopify.FulfillmentOrderLocationForMoveEdge.cursor";
+            public const string node = "shopify.FulfillmentOrderLocationForMoveEdge.node";
+        }
+
+        public static class FulfillmentOrderMerchantRequest
+        {
+            public const string fulfillmentOrder = "shopify.FulfillmentOrderMerchantRequest.fulfillmentOrder";
+            public const string id = "shopify.FulfillmentOrderMerchantRequest.id";
+            public const string kind = "shopify.FulfillmentOrderMerchantRequest.kind";
+            public const string message = "shopify.FulfillmentOrderMerchantRequest.message";
+            public const string requestOptions = "shopify.FulfillmentOrderMerchantRequest.requestOptions";
+            public const string responseData = "shopify.FulfillmentOrderMerchantRequest.responseData";
+            public const string sentAt = "shopify.FulfillmentOrderMerchantRequest.sentAt";
+        }
+
+        public static class FulfillmentOrderMerchantRequestConnection
+        {
+            public const string edges = "shopify.FulfillmentOrderMerchantRequestConnection.edges";
+            public const string nodes = "shopify.FulfillmentOrderMerchantRequestConnection.nodes";
+            public const string pageInfo = "shopify.FulfillmentOrderMerchantRequestConnection.pageInfo";
+        }
+
+        public static class FulfillmentOrderMerchantRequestEdge
+        {
+            public const string cursor = "shopify.FulfillmentOrderMerchantRequestEdge.cursor";
+            public const string node = "shopify.FulfillmentOrderMerchantRequestEdge.node";
+        }
+
+        public static class FulfillmentOrderMergePayload
+        {
+            public const string fulfillmentOrderMerges = "shopify.FulfillmentOrderMergePayload.fulfillmentOrderMerges";
+            public const string userErrors = "shopify.FulfillmentOrderMergePayload.userErrors";
+        }
+
+        public static class FulfillmentOrderMergeResult
+        {
+            public const string fulfillmentOrder = "shopify.FulfillmentOrderMergeResult.fulfillmentOrder";
+        }
+
+        public static class FulfillmentOrderMergeUserError
+        {
+            public const string code = "shopify.FulfillmentOrderMergeUserError.code";
+            public const string field = "shopify.FulfillmentOrderMergeUserError.field";
+            public const string message = "shopify.FulfillmentOrderMergeUserError.message";
+        }
+
+        public static class FulfillmentOrderMovePayload
+        {
+            public const string movedFulfillmentOrder = "shopify.FulfillmentOrderMovePayload.movedFulfillmentOrder";
+            public const string originalFulfillmentOrder = "shopify.FulfillmentOrderMovePayload.originalFulfillmentOrder";
+            public const string remainingFulfillmentOrder = "shopify.FulfillmentOrderMovePayload.remainingFulfillmentOrder";
+            public const string userErrors = "shopify.FulfillmentOrderMovePayload.userErrors";
+        }
+
+        public static class FulfillmentOrderOpenPayload
+        {
+            public const string fulfillmentOrder = "shopify.FulfillmentOrderOpenPayload.fulfillmentOrder";
+            public const string userErrors = "shopify.FulfillmentOrderOpenPayload.userErrors";
+        }
+
+        public static class FulfillmentOrderRejectCancellationRequestPayload
+        {
+            public const string fulfillmentOrder = "shopify.FulfillmentOrderRejectCancellationRequestPayload.fulfillmentOrder";
+            public const string userErrors = "shopify.FulfillmentOrderRejectCancellationRequestPayload.userErrors";
+        }
+
+        public static class FulfillmentOrderRejectFulfillmentRequestPayload
+        {
+            public const string fulfillmentOrder = "shopify.FulfillmentOrderRejectFulfillmentRequestPayload.fulfillmentOrder";
+            public const string userErrors = "shopify.FulfillmentOrderRejectFulfillmentRequestPayload.userErrors";
+        }
+
+        public static class FulfillmentOrderReleaseHoldPayload
+        {
+            public const string fulfillmentOrder = "shopify.FulfillmentOrderReleaseHoldPayload.fulfillmentOrder";
+            public const string userErrors = "shopify.FulfillmentOrderReleaseHoldPayload.userErrors";
+        }
+
+        public static class FulfillmentOrderReleaseHoldUserError
+        {
+            public const string code = "shopify.FulfillmentOrderReleaseHoldUserError.code";
+            public const string field = "shopify.FulfillmentOrderReleaseHoldUserError.field";
+            public const string message = "shopify.FulfillmentOrderReleaseHoldUserError.message";
+        }
+
+        public static class FulfillmentOrderReschedulePayload
+        {
+            public const string fulfillmentOrder = "shopify.FulfillmentOrderReschedulePayload.fulfillmentOrder";
+            public const string userErrors = "shopify.FulfillmentOrderReschedulePayload.userErrors";
+        }
+
+        public static class FulfillmentOrderRescheduleUserError
+        {
+            public const string code = "shopify.FulfillmentOrderRescheduleUserError.code";
+            public const string field = "shopify.FulfillmentOrderRescheduleUserError.field";
+            public const string message = "shopify.FulfillmentOrderRescheduleUserError.message";
+        }
+
+        public static class FulfillmentOrderSplitPayload
+        {
+            public const string fulfillmentOrderSplits = "shopify.FulfillmentOrderSplitPayload.fulfillmentOrderSplits";
+            public const string userErrors = "shopify.FulfillmentOrderSplitPayload.userErrors";
+        }
+
+        public static class FulfillmentOrderSplitResult
+        {
+            public const string fulfillmentOrder = "shopify.FulfillmentOrderSplitResult.fulfillmentOrder";
+            public const string remainingFulfillmentOrder = "shopify.FulfillmentOrderSplitResult.remainingFulfillmentOrder";
+            public const string replacementFulfillmentOrder = "shopify.FulfillmentOrderSplitResult.replacementFulfillmentOrder";
+        }
+
+        public static class FulfillmentOrderSplitUserError
+        {
+            public const string code = "shopify.FulfillmentOrderSplitUserError.code";
+            public const string field = "shopify.FulfillmentOrderSplitUserError.field";
+            public const string message = "shopify.FulfillmentOrderSplitUserError.message";
+        }
+
+        public static class FulfillmentOrderSubmitCancellationRequestPayload
+        {
+            public const string fulfillmentOrder = "shopify.FulfillmentOrderSubmitCancellationRequestPayload.fulfillmentOrder";
+            public const string userErrors = "shopify.FulfillmentOrderSubmitCancellationRequestPayload.userErrors";
+        }
+
+        public static class FulfillmentOrderSubmitFulfillmentRequestPayload
+        {
+            public const string originalFulfillmentOrder = "shopify.FulfillmentOrderSubmitFulfillmentRequestPayload.originalFulfillmentOrder";
+            public const string submittedFulfillmentOrder = "shopify.FulfillmentOrderSubmitFulfillmentRequestPayload.submittedFulfillmentOrder";
+            public const string unsubmittedFulfillmentOrder = "shopify.FulfillmentOrderSubmitFulfillmentRequestPayload.unsubmittedFulfillmentOrder";
+            public const string userErrors = "shopify.FulfillmentOrderSubmitFulfillmentRequestPayload.userErrors";
+        }
+
+        public static class FulfillmentOrderSupportedAction
+        {
+            public const string action = "shopify.FulfillmentOrderSupportedAction.action";
+            public const string externalUrl = "shopify.FulfillmentOrderSupportedAction.externalUrl";
+        }
+
+        public static class FulfillmentOrdersSetFulfillmentDeadlinePayload
+        {
+            public const string success = "shopify.FulfillmentOrdersSetFulfillmentDeadlinePayload.success";
+            public const string userErrors = "shopify.FulfillmentOrdersSetFulfillmentDeadlinePayload.userErrors";
+        }
+
+        public static class FulfillmentOrdersSetFulfillmentDeadlineUserError
+        {
+            public const string code = "shopify.FulfillmentOrdersSetFulfillmentDeadlineUserError.code";
+            public const string field = "shopify.FulfillmentOrdersSetFulfillmentDeadlineUserError.field";
+            public const string message = "shopify.FulfillmentOrdersSetFulfillmentDeadlineUserError.message";
+        }
+
+        public static class FulfillmentOriginAddress
+        {
+            public const string address1 = "shopify.FulfillmentOriginAddress.address1";
+            public const string address2 = "shopify.FulfillmentOriginAddress.address2";
+            public const string city = "shopify.FulfillmentOriginAddress.city";
+            public const string countryCode = "shopify.FulfillmentOriginAddress.countryCode";
+            public const string provinceCode = "shopify.FulfillmentOriginAddress.provinceCode";
+            public const string zip = "shopify.FulfillmentOriginAddress.zip";
+        }
+
+        public static class FulfillmentService
+        {
+            public const string callbackUrl = "shopify.FulfillmentService.callbackUrl";
+            public const string fulfillmentOrdersOptIn = "shopify.FulfillmentService.fulfillmentOrdersOptIn";
+            public const string handle = "shopify.FulfillmentService.handle";
+            public const string id = "shopify.FulfillmentService.id";
+            public const string inventoryManagement = "shopify.FulfillmentService.inventoryManagement";
+            public const string location = "shopify.FulfillmentService.location";
+            public const string permitsSkuSharing = "shopify.FulfillmentService.permitsSkuSharing";
+            public const string requiresShippingMethod = "shopify.FulfillmentService.requiresShippingMethod";
+            public const string serviceName = "shopify.FulfillmentService.serviceName";
+            public const string trackingSupport = "shopify.FulfillmentService.trackingSupport";
+            public const string type = "shopify.FulfillmentService.type";
+        }
+
+        public static class FulfillmentServiceCreatePayload
+        {
+            public const string fulfillmentService = "shopify.FulfillmentServiceCreatePayload.fulfillmentService";
+            public const string userErrors = "shopify.FulfillmentServiceCreatePayload.userErrors";
+        }
+
+        public static class FulfillmentServiceDeletePayload
+        {
+            public const string deletedId = "shopify.FulfillmentServiceDeletePayload.deletedId";
+            public const string userErrors = "shopify.FulfillmentServiceDeletePayload.userErrors";
+        }
+
+        public static class FulfillmentServiceUpdatePayload
+        {
+            public const string fulfillmentService = "shopify.FulfillmentServiceUpdatePayload.fulfillmentService";
+            public const string userErrors = "shopify.FulfillmentServiceUpdatePayload.userErrors";
+        }
+
+        public static class FulfillmentTrackingInfo
+        {
+            public const string company = "shopify.FulfillmentTrackingInfo.company";
+            public const string number = "shopify.FulfillmentTrackingInfo.number";
+            public const string url = "shopify.FulfillmentTrackingInfo.url";
+        }
+
+        public static class FulfillmentTrackingInfoUpdatePayload
+        {
+            public const string fulfillment = "shopify.FulfillmentTrackingInfoUpdatePayload.fulfillment";
+            public const string userErrors = "shopify.FulfillmentTrackingInfoUpdatePayload.userErrors";
+        }
+
+        public static class FulfillmentTrackingInfoUpdateV2Payload
+        {
+            public const string fulfillment = "shopify.FulfillmentTrackingInfoUpdateV2Payload.fulfillment";
+            public const string userErrors = "shopify.FulfillmentTrackingInfoUpdateV2Payload.userErrors";
+        }
+
+        public static class FunctionsAppBridge
+        {
+            public const string createPath = "shopify.FunctionsAppBridge.createPath";
+            public const string detailsPath = "shopify.FunctionsAppBridge.detailsPath";
+        }
+
+        public static class FunctionsErrorHistory
+        {
+            public const string errorsFirstOccurredAt = "shopify.FunctionsErrorHistory.errorsFirstOccurredAt";
+            public const string firstOccurredAt = "shopify.FunctionsErrorHistory.firstOccurredAt";
+            public const string hasBeenSharedSinceLastError = "shopify.FunctionsErrorHistory.hasBeenSharedSinceLastError";
+            public const string hasSharedRecentErrors = "shopify.FunctionsErrorHistory.hasSharedRecentErrors";
+        }
+
+        public static class GenericFile
+        {
+            public const string alt = "shopify.GenericFile.alt";
+            public const string createdAt = "shopify.GenericFile.createdAt";
+            public const string fileErrors = "shopify.GenericFile.fileErrors";
+            public const string fileStatus = "shopify.GenericFile.fileStatus";
+            public const string id = "shopify.GenericFile.id";
+            public const string mimeType = "shopify.GenericFile.mimeType";
+            public const string originalFileSize = "shopify.GenericFile.originalFileSize";
+            public const string preview = "shopify.GenericFile.preview";
+            public const string updatedAt = "shopify.GenericFile.updatedAt";
+            public const string url = "shopify.GenericFile.url";
+        }
+
+        public static class GiftCard
+        {
+            public const string balance = "shopify.GiftCard.balance";
+            public const string createdAt = "shopify.GiftCard.createdAt";
+            public const string customer = "shopify.GiftCard.customer";
+            public const string deactivatedAt = "shopify.GiftCard.deactivatedAt";
+            public const string enabled = "shopify.GiftCard.enabled";
+            public const string expiresOn = "shopify.GiftCard.expiresOn";
+            public const string id = "shopify.GiftCard.id";
+            public const string initialValue = "shopify.GiftCard.initialValue";
+            public const string lastCharacters = "shopify.GiftCard.lastCharacters";
+            public const string maskedCode = "shopify.GiftCard.maskedCode";
+            public const string note = "shopify.GiftCard.note";
+            public const string order = "shopify.GiftCard.order";
+            public const string recipientAttributes = "shopify.GiftCard.recipientAttributes";
+            public const string templateSuffix = "shopify.GiftCard.templateSuffix";
+            public const string transactions = "shopify.GiftCard.transactions";
+            public const string updatedAt = "shopify.GiftCard.updatedAt";
+        }
+
+        public static class GiftCardConfiguration
+        {
+            public const string issueLimit = "shopify.GiftCardConfiguration.issueLimit";
+            public const string purchaseLimit = "shopify.GiftCardConfiguration.purchaseLimit";
+        }
+
+        public static class GiftCardConnection
+        {
+            public const string edges = "shopify.GiftCardConnection.edges";
+            public const string nodes = "shopify.GiftCardConnection.nodes";
+            public const string pageInfo = "shopify.GiftCardConnection.pageInfo";
+        }
+
+        public static class GiftCardCreatePayload
+        {
+            public const string giftCard = "shopify.GiftCardCreatePayload.giftCard";
+            public const string giftCardCode = "shopify.GiftCardCreatePayload.giftCardCode";
+            public const string userErrors = "shopify.GiftCardCreatePayload.userErrors";
+        }
+
+        public static class GiftCardCreditPayload
+        {
+            public const string giftCardCreditTransaction = "shopify.GiftCardCreditPayload.giftCardCreditTransaction";
+            public const string userErrors = "shopify.GiftCardCreditPayload.userErrors";
+        }
+
+        public static class GiftCardCreditTransaction
+        {
+            public const string amount = "shopify.GiftCardCreditTransaction.amount";
+            public const string giftCard = "shopify.GiftCardCreditTransaction.giftCard";
+            public const string id = "shopify.GiftCardCreditTransaction.id";
+            public const string metafield = "shopify.GiftCardCreditTransaction.metafield";
+            public const string metafields = "shopify.GiftCardCreditTransaction.metafields";
+            public const string note = "shopify.GiftCardCreditTransaction.note";
+            public const string processedAt = "shopify.GiftCardCreditTransaction.processedAt";
+        }
+
+        public static class GiftCardDeactivatePayload
+        {
+            public const string giftCard = "shopify.GiftCardDeactivatePayload.giftCard";
+            public const string userErrors = "shopify.GiftCardDeactivatePayload.userErrors";
+        }
+
+        public static class GiftCardDeactivateUserError
+        {
+            public const string code = "shopify.GiftCardDeactivateUserError.code";
+            public const string field = "shopify.GiftCardDeactivateUserError.field";
+            public const string message = "shopify.GiftCardDeactivateUserError.message";
+        }
+
+        public static class GiftCardDebitPayload
+        {
+            public const string giftCardDebitTransaction = "shopify.GiftCardDebitPayload.giftCardDebitTransaction";
+            public const string userErrors = "shopify.GiftCardDebitPayload.userErrors";
+        }
+
+        public static class GiftCardDebitTransaction
+        {
+            public const string amount = "shopify.GiftCardDebitTransaction.amount";
+            public const string giftCard = "shopify.GiftCardDebitTransaction.giftCard";
+            public const string id = "shopify.GiftCardDebitTransaction.id";
+            public const string metafield = "shopify.GiftCardDebitTransaction.metafield";
+            public const string metafields = "shopify.GiftCardDebitTransaction.metafields";
+            public const string note = "shopify.GiftCardDebitTransaction.note";
+            public const string processedAt = "shopify.GiftCardDebitTransaction.processedAt";
+        }
+
+        public static class GiftCardEdge
+        {
+            public const string cursor = "shopify.GiftCardEdge.cursor";
+            public const string node = "shopify.GiftCardEdge.node";
+        }
+
+        public static class GiftCardRecipient
+        {
+            public const string message = "shopify.GiftCardRecipient.message";
+            public const string preferredName = "shopify.GiftCardRecipient.preferredName";
+            public const string recipient = "shopify.GiftCardRecipient.recipient";
+            public const string sendNotificationAt = "shopify.GiftCardRecipient.sendNotificationAt";
+        }
+
+        public static class GiftCardSale
+        {
+            public const string actionType = "shopify.GiftCardSale.actionType";
+            public const string id = "shopify.GiftCardSale.id";
+            public const string lineItem = "shopify.GiftCardSale.lineItem";
+            public const string lineType = "shopify.GiftCardSale.lineType";
+            public const string quantity = "shopify.GiftCardSale.quantity";
+            public const string taxes = "shopify.GiftCardSale.taxes";
+            public const string totalAmount = "shopify.GiftCardSale.totalAmount";
+            public const string totalDiscountAmountAfterTaxes = "shopify.GiftCardSale.totalDiscountAmountAfterTaxes";
+            public const string totalDiscountAmountBeforeTaxes = "shopify.GiftCardSale.totalDiscountAmountBeforeTaxes";
+            public const string totalTaxAmount = "shopify.GiftCardSale.totalTaxAmount";
+        }
+
+        public static class GiftCardSendNotificationToCustomerPayload
+        {
+            public const string giftCard = "shopify.GiftCardSendNotificationToCustomerPayload.giftCard";
+            public const string userErrors = "shopify.GiftCardSendNotificationToCustomerPayload.userErrors";
+        }
+
+        public static class GiftCardSendNotificationToCustomerUserError
+        {
+            public const string code = "shopify.GiftCardSendNotificationToCustomerUserError.code";
+            public const string field = "shopify.GiftCardSendNotificationToCustomerUserError.field";
+            public const string message = "shopify.GiftCardSendNotificationToCustomerUserError.message";
+        }
+
+        public static class GiftCardSendNotificationToRecipientPayload
+        {
+            public const string giftCard = "shopify.GiftCardSendNotificationToRecipientPayload.giftCard";
+            public const string userErrors = "shopify.GiftCardSendNotificationToRecipientPayload.userErrors";
+        }
+
+        public static class GiftCardSendNotificationToRecipientUserError
+        {
+            public const string code = "shopify.GiftCardSendNotificationToRecipientUserError.code";
+            public const string field = "shopify.GiftCardSendNotificationToRecipientUserError.field";
+            public const string message = "shopify.GiftCardSendNotificationToRecipientUserError.message";
+        }
+
+        public static class IGiftCardTransaction
+        {
+            public const string amount = "shopify.IGiftCardTransaction.amount";
+            public const string giftCard = "shopify.IGiftCardTransaction.giftCard";
+            public const string id = "shopify.IGiftCardTransaction.id";
+            public const string note = "shopify.IGiftCardTransaction.note";
+            public const string processedAt = "shopify.IGiftCardTransaction.processedAt";
+        }
+
+        public static class GiftCardTransactionConnection
+        {
+            public const string edges = "shopify.GiftCardTransactionConnection.edges";
+            public const string nodes = "shopify.GiftCardTransactionConnection.nodes";
+            public const string pageInfo = "shopify.GiftCardTransactionConnection.pageInfo";
+        }
+
+        public static class GiftCardTransactionEdge
+        {
+            public const string cursor = "shopify.GiftCardTransactionEdge.cursor";
+            public const string node = "shopify.GiftCardTransactionEdge.node";
+        }
+
+        public static class GiftCardTransactionUserError
+        {
+            public const string code = "shopify.GiftCardTransactionUserError.code";
+            public const string field = "shopify.GiftCardTransactionUserError.field";
+            public const string message = "shopify.GiftCardTransactionUserError.message";
+        }
+
+        public static class GiftCardUpdatePayload
+        {
+            public const string giftCard = "shopify.GiftCardUpdatePayload.giftCard";
+            public const string userErrors = "shopify.GiftCardUpdatePayload.userErrors";
+        }
+
+        public static class GiftCardUserError
+        {
+            public const string code = "shopify.GiftCardUserError.code";
+            public const string field = "shopify.GiftCardUserError.field";
+            public const string message = "shopify.GiftCardUserError.message";
+        }
+
+        public static class IHasCompareDigest
+        {
+            public const string compareDigest = "shopify.IHasCompareDigest.compareDigest";
+        }
+
+        public static class IHasEvents
+        {
+            public const string events = "shopify.IHasEvents.events";
+        }
+
+        public static class IHasLocalizationExtensions
+        {
+            public const string localizationExtensions = "shopify.IHasLocalizationExtensions.localizationExtensions";
+        }
+
+        public static class IHasLocalizedFields
+        {
+            public const string localizedFields = "shopify.IHasLocalizedFields.localizedFields";
+        }
+
+        public static class IHasMetafieldDefinitions
+        {
+            public const string metafieldDefinitions = "shopify.IHasMetafieldDefinitions.metafieldDefinitions";
+        }
+
+        public static class IHasMetafields
+        {
+            public const string metafield = "shopify.IHasMetafields.metafield";
+            public const string metafields = "shopify.IHasMetafields.metafields";
+        }
+
+        public static class IHasPublishedTranslations
+        {
+            public const string translations = "shopify.IHasPublishedTranslations.translations";
+        }
+
+        public static class IHasStoreCreditAccounts
+        {
+            public const string storeCreditAccounts = "shopify.IHasStoreCreditAccounts.storeCreditAccounts";
+        }
+
+        public static class Image
+        {
+            public const string altText = "shopify.Image.altText";
+            public const string height = "shopify.Image.height";
+            public const string id = "shopify.Image.id";
+            public const string metafield = "shopify.Image.metafield";
+            public const string metafields = "shopify.Image.metafields";
+            public const string originalSrc = "shopify.Image.originalSrc";
+            public const string src = "shopify.Image.src";
+            public const string transformedSrc = "shopify.Image.transformedSrc";
+            public const string url = "shopify.Image.url";
+            public const string width = "shopify.Image.width";
+        }
+
+        public static class ImageConnection
+        {
+            public const string edges = "shopify.ImageConnection.edges";
+            public const string nodes = "shopify.ImageConnection.nodes";
+            public const string pageInfo = "shopify.ImageConnection.pageInfo";
+        }
+
+        public static class ImageEdge
+        {
+            public const string cursor = "shopify.ImageEdge.cursor";
+            public const string node = "shopify.ImageEdge.node";
+        }
+
+        public static class ImageUploadParameter
+        {
+            public const string name = "shopify.ImageUploadParameter.name";
+            public const string value = "shopify.ImageUploadParameter.value";
+        }
+
+        public static class InventoryActivatePayload
+        {
+            public const string inventoryLevel = "shopify.InventoryActivatePayload.inventoryLevel";
+            public const string userErrors = "shopify.InventoryActivatePayload.userErrors";
+        }
+
+        public static class InventoryAdjustQuantitiesPayload
+        {
+            public const string inventoryAdjustmentGroup = "shopify.InventoryAdjustQuantitiesPayload.inventoryAdjustmentGroup";
+            public const string userErrors = "shopify.InventoryAdjustQuantitiesPayload.userErrors";
+        }
+
+        public static class InventoryAdjustQuantitiesUserError
+        {
+            public const string code = "shopify.InventoryAdjustQuantitiesUserError.code";
+            public const string field = "shopify.InventoryAdjustQuantitiesUserError.field";
+            public const string message = "shopify.InventoryAdjustQuantitiesUserError.message";
+        }
+
+        public static class InventoryAdjustmentGroup
+        {
+            public const string app = "shopify.InventoryAdjustmentGroup.app";
+            public const string changes = "shopify.InventoryAdjustmentGroup.changes";
+            public const string createdAt = "shopify.InventoryAdjustmentGroup.createdAt";
+            public const string id = "shopify.InventoryAdjustmentGroup.id";
+            public const string reason = "shopify.InventoryAdjustmentGroup.reason";
+            public const string referenceDocumentUri = "shopify.InventoryAdjustmentGroup.referenceDocumentUri";
+            public const string staffMember = "shopify.InventoryAdjustmentGroup.staffMember";
+        }
+
+        public static class InventoryBulkToggleActivationPayload
+        {
+            public const string inventoryItem = "shopify.InventoryBulkToggleActivationPayload.inventoryItem";
+            public const string inventoryLevels = "shopify.InventoryBulkToggleActivationPayload.inventoryLevels";
+            public const string userErrors = "shopify.InventoryBulkToggleActivationPayload.userErrors";
+        }
+
+        public static class InventoryBulkToggleActivationUserError
+        {
+            public const string code = "shopify.InventoryBulkToggleActivationUserError.code";
+            public const string field = "shopify.InventoryBulkToggleActivationUserError.field";
+            public const string message = "shopify.InventoryBulkToggleActivationUserError.message";
+        }
+
+        public static class InventoryChange
+        {
+            public const string delta = "shopify.InventoryChange.delta";
+            public const string item = "shopify.InventoryChange.item";
+            public const string ledgerDocumentUri = "shopify.InventoryChange.ledgerDocumentUri";
+            public const string location = "shopify.InventoryChange.location";
+            public const string name = "shopify.InventoryChange.name";
+            public const string quantityAfterChange = "shopify.InventoryChange.quantityAfterChange";
+        }
+
+        public static class InventoryDeactivatePayload
+        {
+            public const string userErrors = "shopify.InventoryDeactivatePayload.userErrors";
+        }
+
+        public static class InventoryItem
+        {
+            public const string countryCodeOfOrigin = "shopify.InventoryItem.countryCodeOfOrigin";
+            public const string countryHarmonizedSystemCodes = "shopify.InventoryItem.countryHarmonizedSystemCodes";
+            public const string createdAt = "shopify.InventoryItem.createdAt";
+            public const string duplicateSkuCount = "shopify.InventoryItem.duplicateSkuCount";
+            public const string harmonizedSystemCode = "shopify.InventoryItem.harmonizedSystemCode";
+            public const string id = "shopify.InventoryItem.id";
+            public const string inventoryHistoryUrl = "shopify.InventoryItem.inventoryHistoryUrl";
+            public const string inventoryLevel = "shopify.InventoryItem.inventoryLevel";
+            public const string inventoryLevels = "shopify.InventoryItem.inventoryLevels";
+            public const string legacyResourceId = "shopify.InventoryItem.legacyResourceId";
+            public const string locationsCount = "shopify.InventoryItem.locationsCount";
+            public const string measurement = "shopify.InventoryItem.measurement";
+            public const string provinceCodeOfOrigin = "shopify.InventoryItem.provinceCodeOfOrigin";
+            public const string requiresShipping = "shopify.InventoryItem.requiresShipping";
+            public const string sku = "shopify.InventoryItem.sku";
+            public const string tracked = "shopify.InventoryItem.tracked";
+            public const string trackedEditable = "shopify.InventoryItem.trackedEditable";
+            public const string unitCost = "shopify.InventoryItem.unitCost";
+            public const string updatedAt = "shopify.InventoryItem.updatedAt";
+            public const string variant = "shopify.InventoryItem.variant";
+        }
+
+        public static class InventoryItemConnection
+        {
+            public const string edges = "shopify.InventoryItemConnection.edges";
+            public const string nodes = "shopify.InventoryItemConnection.nodes";
+            public const string pageInfo = "shopify.InventoryItemConnection.pageInfo";
+        }
+
+        public static class InventoryItemEdge
+        {
+            public const string cursor = "shopify.InventoryItemEdge.cursor";
+            public const string node = "shopify.InventoryItemEdge.node";
+        }
+
+        public static class InventoryItemMeasurement
+        {
+            public const string id = "shopify.InventoryItemMeasurement.id";
+            public const string weight = "shopify.InventoryItemMeasurement.weight";
+        }
+
+        public static class InventoryItemUpdatePayload
+        {
+            public const string inventoryItem = "shopify.InventoryItemUpdatePayload.inventoryItem";
+            public const string userErrors = "shopify.InventoryItemUpdatePayload.userErrors";
+        }
+
+        public static class InventoryLevel
+        {
+            public const string canDeactivate = "shopify.InventoryLevel.canDeactivate";
+            public const string createdAt = "shopify.InventoryLevel.createdAt";
+            public const string deactivationAlert = "shopify.InventoryLevel.deactivationAlert";
+            public const string id = "shopify.InventoryLevel.id";
+            public const string item = "shopify.InventoryLevel.item";
+            public const string location = "shopify.InventoryLevel.location";
+            public const string quantities = "shopify.InventoryLevel.quantities";
+            public const string scheduledChanges = "shopify.InventoryLevel.scheduledChanges";
+            public const string updatedAt = "shopify.InventoryLevel.updatedAt";
+        }
+
+        public static class InventoryLevelConnection
+        {
+            public const string edges = "shopify.InventoryLevelConnection.edges";
+            public const string nodes = "shopify.InventoryLevelConnection.nodes";
+            public const string pageInfo = "shopify.InventoryLevelConnection.pageInfo";
+        }
+
+        public static class InventoryLevelEdge
+        {
+            public const string cursor = "shopify.InventoryLevelEdge.cursor";
+            public const string node = "shopify.InventoryLevelEdge.node";
+        }
+
+        public static class InventoryMoveQuantitiesPayload
+        {
+            public const string inventoryAdjustmentGroup = "shopify.InventoryMoveQuantitiesPayload.inventoryAdjustmentGroup";
+            public const string userErrors = "shopify.InventoryMoveQuantitiesPayload.userErrors";
+        }
+
+        public static class InventoryMoveQuantitiesUserError
+        {
+            public const string code = "shopify.InventoryMoveQuantitiesUserError.code";
+            public const string field = "shopify.InventoryMoveQuantitiesUserError.field";
+            public const string message = "shopify.InventoryMoveQuantitiesUserError.message";
+        }
+
+        public static class InventoryProperties
+        {
+            public const string quantityNames = "shopify.InventoryProperties.quantityNames";
+        }
+
+        public static class InventoryQuantity
+        {
+            public const string id = "shopify.InventoryQuantity.id";
+            public const string name = "shopify.InventoryQuantity.name";
+            public const string quantity = "shopify.InventoryQuantity.quantity";
+            public const string updatedAt = "shopify.InventoryQuantity.updatedAt";
+        }
+
+        public static class InventoryQuantityName
+        {
+            public const string belongsTo = "shopify.InventoryQuantityName.belongsTo";
+            public const string comprises = "shopify.InventoryQuantityName.comprises";
+            public const string displayName = "shopify.InventoryQuantityName.displayName";
+            public const string isInUse = "shopify.InventoryQuantityName.isInUse";
+            public const string name = "shopify.InventoryQuantityName.name";
+        }
+
+        public static class InventoryScheduledChange
+        {
+            public const string expectedAt = "shopify.InventoryScheduledChange.expectedAt";
+            public const string fromName = "shopify.InventoryScheduledChange.fromName";
+            public const string inventoryLevel = "shopify.InventoryScheduledChange.inventoryLevel";
+            public const string ledgerDocumentUri = "shopify.InventoryScheduledChange.ledgerDocumentUri";
+            public const string quantity = "shopify.InventoryScheduledChange.quantity";
+            public const string toName = "shopify.InventoryScheduledChange.toName";
+        }
+
+        public static class InventoryScheduledChangeConnection
+        {
+            public const string edges = "shopify.InventoryScheduledChangeConnection.edges";
+            public const string nodes = "shopify.InventoryScheduledChangeConnection.nodes";
+            public const string pageInfo = "shopify.InventoryScheduledChangeConnection.pageInfo";
+        }
+
+        public static class InventoryScheduledChangeEdge
+        {
+            public const string cursor = "shopify.InventoryScheduledChangeEdge.cursor";
+            public const string node = "shopify.InventoryScheduledChangeEdge.node";
+        }
+
+        public static class InventorySetOnHandQuantitiesPayload
+        {
+            public const string inventoryAdjustmentGroup = "shopify.InventorySetOnHandQuantitiesPayload.inventoryAdjustmentGroup";
+            public const string userErrors = "shopify.InventorySetOnHandQuantitiesPayload.userErrors";
+        }
+
+        public static class InventorySetOnHandQuantitiesUserError
+        {
+            public const string code = "shopify.InventorySetOnHandQuantitiesUserError.code";
+            public const string field = "shopify.InventorySetOnHandQuantitiesUserError.field";
+            public const string message = "shopify.InventorySetOnHandQuantitiesUserError.message";
+        }
+
+        public static class InventorySetQuantitiesPayload
+        {
+            public const string inventoryAdjustmentGroup = "shopify.InventorySetQuantitiesPayload.inventoryAdjustmentGroup";
+            public const string userErrors = "shopify.InventorySetQuantitiesPayload.userErrors";
+        }
+
+        public static class InventorySetQuantitiesUserError
+        {
+            public const string code = "shopify.InventorySetQuantitiesUserError.code";
+            public const string field = "shopify.InventorySetQuantitiesUserError.field";
+            public const string message = "shopify.InventorySetQuantitiesUserError.message";
+        }
+
+        public static class InventorySetScheduledChangesPayload
+        {
+            public const string scheduledChanges = "shopify.InventorySetScheduledChangesPayload.scheduledChanges";
+            public const string userErrors = "shopify.InventorySetScheduledChangesPayload.userErrors";
+        }
+
+        public static class InventorySetScheduledChangesUserError
+        {
+            public const string code = "shopify.InventorySetScheduledChangesUserError.code";
+            public const string field = "shopify.InventorySetScheduledChangesUserError.field";
+            public const string message = "shopify.InventorySetScheduledChangesUserError.message";
+        }
+
+        public static class Job
+        {
+            public const string done = "shopify.Job.done";
+            public const string id = "shopify.Job.id";
+            public const string query = "shopify.Job.query";
+        }
+
+        public static class IJobResult
+        {
+            public const string done = "shopify.IJobResult.done";
+            public const string id = "shopify.IJobResult.id";
+        }
+
+        public static class ILegacyInteroperability
+        {
+            public const string legacyResourceId = "shopify.ILegacyInteroperability.legacyResourceId";
+        }
+
+        public static class LimitedPendingOrderCount
+        {
+            public const string atMax = "shopify.LimitedPendingOrderCount.atMax";
+            public const string count = "shopify.LimitedPendingOrderCount.count";
+        }
+
+        public static class LineItem
+        {
+            public const string canRestock = "shopify.LineItem.canRestock";
+            public const string contract = "shopify.LineItem.contract";
+            public const string currentQuantity = "shopify.LineItem.currentQuantity";
+            public const string customAttributes = "shopify.LineItem.customAttributes";
+            public const string discountAllocations = "shopify.LineItem.discountAllocations";
+            public const string discountedTotal = "shopify.LineItem.discountedTotal";
+            public const string discountedTotalSet = "shopify.LineItem.discountedTotalSet";
+            public const string discountedUnitPrice = "shopify.LineItem.discountedUnitPrice";
+            public const string discountedUnitPriceAfterAllDiscountsSet = "shopify.LineItem.discountedUnitPriceAfterAllDiscountsSet";
+            public const string discountedUnitPriceSet = "shopify.LineItem.discountedUnitPriceSet";
+            public const string duties = "shopify.LineItem.duties";
+            public const string fulfillableQuantity = "shopify.LineItem.fulfillableQuantity";
+            public const string fulfillmentService = "shopify.LineItem.fulfillmentService";
+            public const string fulfillmentStatus = "shopify.LineItem.fulfillmentStatus";
+            public const string id = "shopify.LineItem.id";
+            public const string image = "shopify.LineItem.image";
+            public const string isGiftCard = "shopify.LineItem.isGiftCard";
+            public const string lineItemGroup = "shopify.LineItem.lineItemGroup";
+            public const string merchantEditable = "shopify.LineItem.merchantEditable";
+            public const string name = "shopify.LineItem.name";
+            public const string nonFulfillableQuantity = "shopify.LineItem.nonFulfillableQuantity";
+            public const string originalTotal = "shopify.LineItem.originalTotal";
+            public const string originalTotalSet = "shopify.LineItem.originalTotalSet";
+            public const string originalUnitPrice = "shopify.LineItem.originalUnitPrice";
+            public const string originalUnitPriceSet = "shopify.LineItem.originalUnitPriceSet";
+            public const string product = "shopify.LineItem.product";
+            public const string quantity = "shopify.LineItem.quantity";
+            public const string refundableQuantity = "shopify.LineItem.refundableQuantity";
+            public const string requiresShipping = "shopify.LineItem.requiresShipping";
+            public const string restockable = "shopify.LineItem.restockable";
+            public const string sellingPlan = "shopify.LineItem.sellingPlan";
+            public const string sku = "shopify.LineItem.sku";
+            public const string staffMember = "shopify.LineItem.staffMember";
+            public const string taxLines = "shopify.LineItem.taxLines";
+            public const string taxable = "shopify.LineItem.taxable";
+            public const string title = "shopify.LineItem.title";
+            public const string totalDiscount = "shopify.LineItem.totalDiscount";
+            public const string totalDiscountSet = "shopify.LineItem.totalDiscountSet";
+            public const string unfulfilledDiscountedTotal = "shopify.LineItem.unfulfilledDiscountedTotal";
+            public const string unfulfilledDiscountedTotalSet = "shopify.LineItem.unfulfilledDiscountedTotalSet";
+            public const string unfulfilledOriginalTotal = "shopify.LineItem.unfulfilledOriginalTotal";
+            public const string unfulfilledOriginalTotalSet = "shopify.LineItem.unfulfilledOriginalTotalSet";
+            public const string unfulfilledQuantity = "shopify.LineItem.unfulfilledQuantity";
+            public const string variant = "shopify.LineItem.variant";
+            public const string variantTitle = "shopify.LineItem.variantTitle";
+            public const string vendor = "shopify.LineItem.vendor";
+        }
+
+        public static class LineItemConnection
+        {
+            public const string edges = "shopify.LineItemConnection.edges";
+            public const string nodes = "shopify.LineItemConnection.nodes";
+            public const string pageInfo = "shopify.LineItemConnection.pageInfo";
+        }
+
+        public static class LineItemEdge
+        {
+            public const string cursor = "shopify.LineItemEdge.cursor";
+            public const string node = "shopify.LineItemEdge.node";
+        }
+
+        public static class LineItemGroup
+        {
+            public const string customAttributes = "shopify.LineItemGroup.customAttributes";
+            public const string id = "shopify.LineItemGroup.id";
+            public const string quantity = "shopify.LineItemGroup.quantity";
+            public const string title = "shopify.LineItemGroup.title";
+            public const string variantId = "shopify.LineItemGroup.variantId";
+            public const string variantSku = "shopify.LineItemGroup.variantSku";
+        }
+
+        public static class LineItemSellingPlan
+        {
+            public const string name = "shopify.LineItemSellingPlan.name";
+            public const string sellingPlanId = "shopify.LineItemSellingPlan.sellingPlanId";
+        }
+
+        public static class Link
+        {
+            public const string label = "shopify.Link.label";
+            public const string translations = "shopify.Link.translations";
+            public const string url = "shopify.Link.url";
+        }
+
+        public static class LinkedMetafield
+        {
+            public const string key = "shopify.LinkedMetafield.key";
+            public const string @namespace = "shopify.LinkedMetafield.namespace";
+        }
+
+        public static class LocalPaymentMethodsPaymentDetails
+        {
+            public const string paymentDescriptor = "shopify.LocalPaymentMethodsPaymentDetails.paymentDescriptor";
+            public const string paymentMethodName = "shopify.LocalPaymentMethodsPaymentDetails.paymentMethodName";
+        }
+
+        public static class Locale
+        {
+            public const string isoCode = "shopify.Locale.isoCode";
+            public const string name = "shopify.Locale.name";
+        }
+
+        public static class LocalizationExtension
+        {
+            public const string countryCode = "shopify.LocalizationExtension.countryCode";
+            public const string key = "shopify.LocalizationExtension.key";
+            public const string purpose = "shopify.LocalizationExtension.purpose";
+            public const string title = "shopify.LocalizationExtension.title";
+            public const string value = "shopify.LocalizationExtension.value";
+        }
+
+        public static class LocalizationExtensionConnection
+        {
+            public const string edges = "shopify.LocalizationExtensionConnection.edges";
+            public const string nodes = "shopify.LocalizationExtensionConnection.nodes";
+            public const string pageInfo = "shopify.LocalizationExtensionConnection.pageInfo";
+        }
+
+        public static class LocalizationExtensionEdge
+        {
+            public const string cursor = "shopify.LocalizationExtensionEdge.cursor";
+            public const string node = "shopify.LocalizationExtensionEdge.node";
+        }
+
+        public static class LocalizedField
+        {
+            public const string countryCode = "shopify.LocalizedField.countryCode";
+            public const string key = "shopify.LocalizedField.key";
+            public const string purpose = "shopify.LocalizedField.purpose";
+            public const string title = "shopify.LocalizedField.title";
+            public const string value = "shopify.LocalizedField.value";
+        }
+
+        public static class LocalizedFieldConnection
+        {
+            public const string edges = "shopify.LocalizedFieldConnection.edges";
+            public const string nodes = "shopify.LocalizedFieldConnection.nodes";
+            public const string pageInfo = "shopify.LocalizedFieldConnection.pageInfo";
+        }
+
+        public static class LocalizedFieldEdge
+        {
+            public const string cursor = "shopify.LocalizedFieldEdge.cursor";
+            public const string node = "shopify.LocalizedFieldEdge.node";
+        }
+
+        public static class Location
+        {
+            public const string activatable = "shopify.Location.activatable";
+            public const string address = "shopify.Location.address";
+            public const string addressVerified = "shopify.Location.addressVerified";
+            public const string createdAt = "shopify.Location.createdAt";
+            public const string deactivatable = "shopify.Location.deactivatable";
+            public const string deactivatedAt = "shopify.Location.deactivatedAt";
+            public const string deletable = "shopify.Location.deletable";
+            public const string fulfillmentService = "shopify.Location.fulfillmentService";
+            public const string fulfillsOnlineOrders = "shopify.Location.fulfillsOnlineOrders";
+            public const string hasActiveInventory = "shopify.Location.hasActiveInventory";
+            public const string hasUnfulfilledOrders = "shopify.Location.hasUnfulfilledOrders";
+            public const string id = "shopify.Location.id";
+            public const string inventoryLevel = "shopify.Location.inventoryLevel";
+            public const string inventoryLevels = "shopify.Location.inventoryLevels";
+            public const string isActive = "shopify.Location.isActive";
+            public const string isFulfillmentService = "shopify.Location.isFulfillmentService";
+            public const string isPrimary = "shopify.Location.isPrimary";
+            public const string legacyResourceId = "shopify.Location.legacyResourceId";
+            public const string localPickupSettingsV2 = "shopify.Location.localPickupSettingsV2";
+            public const string metafield = "shopify.Location.metafield";
+            public const string metafieldDefinitions = "shopify.Location.metafieldDefinitions";
+            public const string metafields = "shopify.Location.metafields";
+            public const string name = "shopify.Location.name";
+            public const string shipsInventory = "shopify.Location.shipsInventory";
+            public const string suggestedAddresses = "shopify.Location.suggestedAddresses";
+            public const string updatedAt = "shopify.Location.updatedAt";
+        }
+
+        public static class LocationActivatePayload
+        {
+            public const string location = "shopify.LocationActivatePayload.location";
+            public const string locationActivateUserErrors = "shopify.LocationActivatePayload.locationActivateUserErrors";
+        }
+
+        public static class LocationActivateUserError
+        {
+            public const string code = "shopify.LocationActivateUserError.code";
+            public const string field = "shopify.LocationActivateUserError.field";
+            public const string message = "shopify.LocationActivateUserError.message";
+        }
+
+        public static class LocationAddPayload
+        {
+            public const string location = "shopify.LocationAddPayload.location";
+            public const string userErrors = "shopify.LocationAddPayload.userErrors";
+        }
+
+        public static class LocationAddUserError
+        {
+            public const string code = "shopify.LocationAddUserError.code";
+            public const string field = "shopify.LocationAddUserError.field";
+            public const string message = "shopify.LocationAddUserError.message";
+        }
+
+        public static class LocationAddress
+        {
+            public const string address1 = "shopify.LocationAddress.address1";
+            public const string address2 = "shopify.LocationAddress.address2";
+            public const string city = "shopify.LocationAddress.city";
+            public const string country = "shopify.LocationAddress.country";
+            public const string countryCode = "shopify.LocationAddress.countryCode";
+            public const string formatted = "shopify.LocationAddress.formatted";
+            public const string latitude = "shopify.LocationAddress.latitude";
+            public const string longitude = "shopify.LocationAddress.longitude";
+            public const string phone = "shopify.LocationAddress.phone";
+            public const string province = "shopify.LocationAddress.province";
+            public const string provinceCode = "shopify.LocationAddress.provinceCode";
+            public const string zip = "shopify.LocationAddress.zip";
+        }
+
+        public static class LocationConnection
+        {
+            public const string edges = "shopify.LocationConnection.edges";
+            public const string nodes = "shopify.LocationConnection.nodes";
+            public const string pageInfo = "shopify.LocationConnection.pageInfo";
+        }
+
+        public static class LocationDeactivatePayload
+        {
+            public const string location = "shopify.LocationDeactivatePayload.location";
+            public const string locationDeactivateUserErrors = "shopify.LocationDeactivatePayload.locationDeactivateUserErrors";
+        }
+
+        public static class LocationDeactivateUserError
+        {
+            public const string code = "shopify.LocationDeactivateUserError.code";
+            public const string field = "shopify.LocationDeactivateUserError.field";
+            public const string message = "shopify.LocationDeactivateUserError.message";
+        }
+
+        public static class LocationDeletePayload
+        {
+            public const string deletedLocationId = "shopify.LocationDeletePayload.deletedLocationId";
+            public const string locationDeleteUserErrors = "shopify.LocationDeletePayload.locationDeleteUserErrors";
+        }
+
+        public static class LocationDeleteUserError
+        {
+            public const string code = "shopify.LocationDeleteUserError.code";
+            public const string field = "shopify.LocationDeleteUserError.field";
+            public const string message = "shopify.LocationDeleteUserError.message";
+        }
+
+        public static class LocationEdge
+        {
+            public const string cursor = "shopify.LocationEdge.cursor";
+            public const string node = "shopify.LocationEdge.node";
+        }
+
+        public static class LocationEditPayload
+        {
+            public const string location = "shopify.LocationEditPayload.location";
+            public const string userErrors = "shopify.LocationEditPayload.userErrors";
+        }
+
+        public static class LocationEditUserError
+        {
+            public const string code = "shopify.LocationEditUserError.code";
+            public const string field = "shopify.LocationEditUserError.field";
+            public const string message = "shopify.LocationEditUserError.message";
+        }
+
+        public static class LocationLocalPickupDisablePayload
+        {
+            public const string locationId = "shopify.LocationLocalPickupDisablePayload.locationId";
+            public const string userErrors = "shopify.LocationLocalPickupDisablePayload.userErrors";
+        }
+
+        public static class LocationLocalPickupEnablePayload
+        {
+            public const string localPickupSettings = "shopify.LocationLocalPickupEnablePayload.localPickupSettings";
+            public const string userErrors = "shopify.LocationLocalPickupEnablePayload.userErrors";
+        }
+
+        public static class LocationSuggestedAddress
+        {
+            public const string address1 = "shopify.LocationSuggestedAddress.address1";
+            public const string address2 = "shopify.LocationSuggestedAddress.address2";
+            public const string city = "shopify.LocationSuggestedAddress.city";
+            public const string country = "shopify.LocationSuggestedAddress.country";
+            public const string countryCode = "shopify.LocationSuggestedAddress.countryCode";
+            public const string formatted = "shopify.LocationSuggestedAddress.formatted";
+            public const string province = "shopify.LocationSuggestedAddress.province";
+            public const string provinceCode = "shopify.LocationSuggestedAddress.provinceCode";
+            public const string zip = "shopify.LocationSuggestedAddress.zip";
+        }
+
+        public static class LocationsCondition
+        {
+            public const string applicationLevel = "shopify.LocationsCondition.applicationLevel";
+            public const string locations = "shopify.LocationsCondition.locations";
+        }
+
+        public static class MailingAddress
+        {
+            public const string address1 = "shopify.MailingAddress.address1";
+            public const string address2 = "shopify.MailingAddress.address2";
+            public const string city = "shopify.MailingAddress.city";
+            public const string company = "shopify.MailingAddress.company";
+            public const string coordinatesValidated = "shopify.MailingAddress.coordinatesValidated";
+            public const string country = "shopify.MailingAddress.country";
+            public const string countryCode = "shopify.MailingAddress.countryCode";
+            public const string countryCodeV2 = "shopify.MailingAddress.countryCodeV2";
+            public const string firstName = "shopify.MailingAddress.firstName";
+            public const string formatted = "shopify.MailingAddress.formatted";
+            public const string formattedArea = "shopify.MailingAddress.formattedArea";
+            public const string id = "shopify.MailingAddress.id";
+            public const string lastName = "shopify.MailingAddress.lastName";
+            public const string latitude = "shopify.MailingAddress.latitude";
+            public const string longitude = "shopify.MailingAddress.longitude";
+            public const string name = "shopify.MailingAddress.name";
+            public const string phone = "shopify.MailingAddress.phone";
+            public const string province = "shopify.MailingAddress.province";
+            public const string provinceCode = "shopify.MailingAddress.provinceCode";
+            public const string timeZone = "shopify.MailingAddress.timeZone";
+            public const string validationResultSummary = "shopify.MailingAddress.validationResultSummary";
+            public const string zip = "shopify.MailingAddress.zip";
+        }
+
+        public static class MailingAddressConnection
+        {
+            public const string edges = "shopify.MailingAddressConnection.edges";
+            public const string nodes = "shopify.MailingAddressConnection.nodes";
+            public const string pageInfo = "shopify.MailingAddressConnection.pageInfo";
+        }
+
+        public static class MailingAddressEdge
+        {
+            public const string cursor = "shopify.MailingAddressEdge.cursor";
+            public const string node = "shopify.MailingAddressEdge.node";
+        }
+
+        public static class ManualDiscountApplication
+        {
+            public const string allocationMethod = "shopify.ManualDiscountApplication.allocationMethod";
+            public const string description = "shopify.ManualDiscountApplication.description";
+            public const string index = "shopify.ManualDiscountApplication.index";
+            public const string targetSelection = "shopify.ManualDiscountApplication.targetSelection";
+            public const string targetType = "shopify.ManualDiscountApplication.targetType";
+            public const string title = "shopify.ManualDiscountApplication.title";
+            public const string value = "shopify.ManualDiscountApplication.value";
+        }
+
+        public static class Market
+        {
+            public const string assignedCustomization = "shopify.Market.assignedCustomization";
+            public const string catalogs = "shopify.Market.catalogs";
+            public const string catalogsCount = "shopify.Market.catalogsCount";
+            public const string conditions = "shopify.Market.conditions";
+            public const string currencySettings = "shopify.Market.currencySettings";
+            public const string enabled = "shopify.Market.enabled";
+            public const string handle = "shopify.Market.handle";
+            public const string id = "shopify.Market.id";
+            public const string metafield = "shopify.Market.metafield";
+            public const string metafieldDefinitions = "shopify.Market.metafieldDefinitions";
+            public const string metafields = "shopify.Market.metafields";
+            public const string name = "shopify.Market.name";
+            public const string priceInclusions = "shopify.Market.priceInclusions";
+            public const string priceList = "shopify.Market.priceList";
+            public const string primary = "shopify.Market.primary";
+            public const string regions = "shopify.Market.regions";
+            public const string status = "shopify.Market.status";
+            public const string type = "shopify.Market.type";
+            public const string webPresence = "shopify.Market.webPresence";
+            public const string webPresences = "shopify.Market.webPresences";
+        }
+
+        public static class MarketCatalog
+        {
+            public const string id = "shopify.MarketCatalog.id";
+            public const string markets = "shopify.MarketCatalog.markets";
+            public const string marketsCount = "shopify.MarketCatalog.marketsCount";
+            public const string operations = "shopify.MarketCatalog.operations";
+            public const string priceList = "shopify.MarketCatalog.priceList";
+            public const string publication = "shopify.MarketCatalog.publication";
+            public const string status = "shopify.MarketCatalog.status";
+            public const string title = "shopify.MarketCatalog.title";
+        }
+
+        public static class MarketCatalogConnection
+        {
+            public const string edges = "shopify.MarketCatalogConnection.edges";
+            public const string nodes = "shopify.MarketCatalogConnection.nodes";
+            public const string pageInfo = "shopify.MarketCatalogConnection.pageInfo";
+        }
+
+        public static class MarketCatalogEdge
+        {
+            public const string cursor = "shopify.MarketCatalogEdge.cursor";
+            public const string node = "shopify.MarketCatalogEdge.node";
+        }
+
+        public static class MarketConditions
+        {
+            public const string companyLocationsCondition = "shopify.MarketConditions.companyLocationsCondition";
+            public const string conditionTypes = "shopify.MarketConditions.conditionTypes";
+            public const string locationsCondition = "shopify.MarketConditions.locationsCondition";
+            public const string regionsCondition = "shopify.MarketConditions.regionsCondition";
+        }
+
+        public static class MarketConnection
+        {
+            public const string edges = "shopify.MarketConnection.edges";
+            public const string nodes = "shopify.MarketConnection.nodes";
+            public const string pageInfo = "shopify.MarketConnection.pageInfo";
+        }
+
+        public static class MarketCreatePayload
+        {
+            public const string market = "shopify.MarketCreatePayload.market";
+            public const string userErrors = "shopify.MarketCreatePayload.userErrors";
+        }
+
+        public static class MarketCurrencySettings
+        {
+            public const string baseCurrency = "shopify.MarketCurrencySettings.baseCurrency";
+            public const string localCurrencies = "shopify.MarketCurrencySettings.localCurrencies";
+        }
+
+        public static class MarketCurrencySettingsUpdatePayload
+        {
+            public const string market = "shopify.MarketCurrencySettingsUpdatePayload.market";
+            public const string userErrors = "shopify.MarketCurrencySettingsUpdatePayload.userErrors";
+        }
+
+        public static class MarketCurrencySettingsUserError
+        {
+            public const string code = "shopify.MarketCurrencySettingsUserError.code";
+            public const string field = "shopify.MarketCurrencySettingsUserError.field";
+            public const string message = "shopify.MarketCurrencySettingsUserError.message";
+        }
+
+        public static class MarketDeletePayload
+        {
+            public const string deletedId = "shopify.MarketDeletePayload.deletedId";
+            public const string userErrors = "shopify.MarketDeletePayload.userErrors";
+        }
+
+        public static class MarketEdge
+        {
+            public const string cursor = "shopify.MarketEdge.cursor";
+            public const string node = "shopify.MarketEdge.node";
+        }
+
+        public static class MarketLocalizableContent
+        {
+            public const string digest = "shopify.MarketLocalizableContent.digest";
+            public const string key = "shopify.MarketLocalizableContent.key";
+            public const string value = "shopify.MarketLocalizableContent.value";
+        }
+
+        public static class MarketLocalizableResource
+        {
+            public const string marketLocalizableContent = "shopify.MarketLocalizableResource.marketLocalizableContent";
+            public const string marketLocalizations = "shopify.MarketLocalizableResource.marketLocalizations";
+            public const string resourceId = "shopify.MarketLocalizableResource.resourceId";
+        }
+
+        public static class MarketLocalizableResourceConnection
+        {
+            public const string edges = "shopify.MarketLocalizableResourceConnection.edges";
+            public const string nodes = "shopify.MarketLocalizableResourceConnection.nodes";
+            public const string pageInfo = "shopify.MarketLocalizableResourceConnection.pageInfo";
+        }
+
+        public static class MarketLocalizableResourceEdge
+        {
+            public const string cursor = "shopify.MarketLocalizableResourceEdge.cursor";
+            public const string node = "shopify.MarketLocalizableResourceEdge.node";
+        }
+
+        public static class MarketLocalization
+        {
+            public const string key = "shopify.MarketLocalization.key";
+            public const string market = "shopify.MarketLocalization.market";
+            public const string outdated = "shopify.MarketLocalization.outdated";
+            public const string updatedAt = "shopify.MarketLocalization.updatedAt";
+            public const string value = "shopify.MarketLocalization.value";
+        }
+
+        public static class MarketLocalizationsRegisterPayload
+        {
+            public const string marketLocalizations = "shopify.MarketLocalizationsRegisterPayload.marketLocalizations";
+            public const string userErrors = "shopify.MarketLocalizationsRegisterPayload.userErrors";
+        }
+
+        public static class MarketLocalizationsRemovePayload
+        {
+            public const string marketLocalizations = "shopify.MarketLocalizationsRemovePayload.marketLocalizations";
+            public const string userErrors = "shopify.MarketLocalizationsRemovePayload.userErrors";
+        }
+
+        public static class MarketPriceInclusions
+        {
+            public const string inclusiveDutiesPricingStrategy = "shopify.MarketPriceInclusions.inclusiveDutiesPricingStrategy";
+            public const string inclusiveTaxPricingStrategy = "shopify.MarketPriceInclusions.inclusiveTaxPricingStrategy";
+        }
+
+        public static class IMarketRegion
+        {
+            public const string id = "shopify.IMarketRegion.id";
+            public const string name = "shopify.IMarketRegion.name";
+        }
+
+        public static class MarketRegionConnection
+        {
+            public const string edges = "shopify.MarketRegionConnection.edges";
+            public const string nodes = "shopify.MarketRegionConnection.nodes";
+            public const string pageInfo = "shopify.MarketRegionConnection.pageInfo";
+        }
+
+        public static class MarketRegionCountry
+        {
+            public const string code = "shopify.MarketRegionCountry.code";
+            public const string currency = "shopify.MarketRegionCountry.currency";
+            public const string id = "shopify.MarketRegionCountry.id";
+            public const string name = "shopify.MarketRegionCountry.name";
+        }
+
+        public static class MarketRegionDeletePayload
+        {
+            public const string deletedId = "shopify.MarketRegionDeletePayload.deletedId";
+            public const string market = "shopify.MarketRegionDeletePayload.market";
+            public const string userErrors = "shopify.MarketRegionDeletePayload.userErrors";
+        }
+
+        public static class MarketRegionEdge
+        {
+            public const string cursor = "shopify.MarketRegionEdge.cursor";
+            public const string node = "shopify.MarketRegionEdge.node";
+        }
+
+        public static class MarketRegionsCreatePayload
+        {
+            public const string market = "shopify.MarketRegionsCreatePayload.market";
+            public const string userErrors = "shopify.MarketRegionsCreatePayload.userErrors";
+        }
+
+        public static class MarketRegionsDeletePayload
+        {
+            public const string deletedIds = "shopify.MarketRegionsDeletePayload.deletedIds";
+            public const string userErrors = "shopify.MarketRegionsDeletePayload.userErrors";
+        }
+
+        public static class MarketUpdatePayload
+        {
+            public const string market = "shopify.MarketUpdatePayload.market";
+            public const string userErrors = "shopify.MarketUpdatePayload.userErrors";
+        }
+
+        public static class MarketUserError
+        {
+            public const string code = "shopify.MarketUserError.code";
+            public const string field = "shopify.MarketUserError.field";
+            public const string message = "shopify.MarketUserError.message";
+        }
+
+        public static class MarketWebPresence
+        {
+            public const string alternateLocales = "shopify.MarketWebPresence.alternateLocales";
+            public const string defaultLocale = "shopify.MarketWebPresence.defaultLocale";
+            public const string domain = "shopify.MarketWebPresence.domain";
+            public const string id = "shopify.MarketWebPresence.id";
+            public const string market = "shopify.MarketWebPresence.market";
+            public const string markets = "shopify.MarketWebPresence.markets";
+            public const string rootUrls = "shopify.MarketWebPresence.rootUrls";
+            public const string subfolderSuffix = "shopify.MarketWebPresence.subfolderSuffix";
+        }
+
+        public static class MarketWebPresenceConnection
+        {
+            public const string edges = "shopify.MarketWebPresenceConnection.edges";
+            public const string nodes = "shopify.MarketWebPresenceConnection.nodes";
+            public const string pageInfo = "shopify.MarketWebPresenceConnection.pageInfo";
+        }
+
+        public static class MarketWebPresenceCreatePayload
+        {
+            public const string market = "shopify.MarketWebPresenceCreatePayload.market";
+            public const string userErrors = "shopify.MarketWebPresenceCreatePayload.userErrors";
+        }
+
+        public static class MarketWebPresenceDeletePayload
+        {
+            public const string deletedId = "shopify.MarketWebPresenceDeletePayload.deletedId";
+            public const string market = "shopify.MarketWebPresenceDeletePayload.market";
+            public const string userErrors = "shopify.MarketWebPresenceDeletePayload.userErrors";
+        }
+
+        public static class MarketWebPresenceEdge
+        {
+            public const string cursor = "shopify.MarketWebPresenceEdge.cursor";
+            public const string node = "shopify.MarketWebPresenceEdge.node";
+        }
+
+        public static class MarketWebPresenceRootUrl
+        {
+            public const string locale = "shopify.MarketWebPresenceRootUrl.locale";
+            public const string url = "shopify.MarketWebPresenceRootUrl.url";
+        }
+
+        public static class MarketWebPresenceUpdatePayload
+        {
+            public const string market = "shopify.MarketWebPresenceUpdatePayload.market";
+            public const string userErrors = "shopify.MarketWebPresenceUpdatePayload.userErrors";
+        }
+
+        public static class MarketingActivitiesDeleteAllExternalPayload
+        {
+            public const string job = "shopify.MarketingActivitiesDeleteAllExternalPayload.job";
+            public const string userErrors = "shopify.MarketingActivitiesDeleteAllExternalPayload.userErrors";
+        }
+
+        public static class MarketingActivity
+        {
+            public const string activityListUrl = "shopify.MarketingActivity.activityListUrl";
+            public const string adSpend = "shopify.MarketingActivity.adSpend";
+            public const string app = "shopify.MarketingActivity.app";
+            public const string appErrors = "shopify.MarketingActivity.appErrors";
+            public const string budget = "shopify.MarketingActivity.budget";
+            public const string createdAt = "shopify.MarketingActivity.createdAt";
+            public const string formData = "shopify.MarketingActivity.formData";
+            public const string hierarchyLevel = "shopify.MarketingActivity.hierarchyLevel";
+            public const string id = "shopify.MarketingActivity.id";
+            public const string inMainWorkflowVersion = "shopify.MarketingActivity.inMainWorkflowVersion";
+            public const string isExternal = "shopify.MarketingActivity.isExternal";
+            public const string marketingChannel = "shopify.MarketingActivity.marketingChannel";
+            public const string marketingChannelType = "shopify.MarketingActivity.marketingChannelType";
+            public const string marketingEvent = "shopify.MarketingActivity.marketingEvent";
+            public const string parentActivityId = "shopify.MarketingActivity.parentActivityId";
+            public const string parentRemoteId = "shopify.MarketingActivity.parentRemoteId";
+            public const string sourceAndMedium = "shopify.MarketingActivity.sourceAndMedium";
+            public const string status = "shopify.MarketingActivity.status";
+            public const string statusBadgeType = "shopify.MarketingActivity.statusBadgeType";
+            public const string statusBadgeTypeV2 = "shopify.MarketingActivity.statusBadgeTypeV2";
+            public const string statusLabel = "shopify.MarketingActivity.statusLabel";
+            public const string statusTransitionedAt = "shopify.MarketingActivity.statusTransitionedAt";
+            public const string tactic = "shopify.MarketingActivity.tactic";
+            public const string targetStatus = "shopify.MarketingActivity.targetStatus";
+            public const string title = "shopify.MarketingActivity.title";
+            public const string updatedAt = "shopify.MarketingActivity.updatedAt";
+            public const string urlParameterValue = "shopify.MarketingActivity.urlParameterValue";
+            public const string utmParameters = "shopify.MarketingActivity.utmParameters";
+        }
+
+        public static class MarketingActivityConnection
+        {
+            public const string edges = "shopify.MarketingActivityConnection.edges";
+            public const string nodes = "shopify.MarketingActivityConnection.nodes";
+            public const string pageInfo = "shopify.MarketingActivityConnection.pageInfo";
+        }
+
+        public static class MarketingActivityCreateExternalPayload
+        {
+            public const string marketingActivity = "shopify.MarketingActivityCreateExternalPayload.marketingActivity";
+            public const string userErrors = "shopify.MarketingActivityCreateExternalPayload.userErrors";
+        }
+
+        public static class MarketingActivityCreatePayload
+        {
+            public const string marketingActivity = "shopify.MarketingActivityCreatePayload.marketingActivity";
+            public const string redirectPath = "shopify.MarketingActivityCreatePayload.redirectPath";
+            public const string userErrors = "shopify.MarketingActivityCreatePayload.userErrors";
+        }
+
+        public static class MarketingActivityDeleteExternalPayload
+        {
+            public const string deletedMarketingActivityId = "shopify.MarketingActivityDeleteExternalPayload.deletedMarketingActivityId";
+            public const string userErrors = "shopify.MarketingActivityDeleteExternalPayload.userErrors";
+        }
+
+        public static class MarketingActivityEdge
+        {
+            public const string cursor = "shopify.MarketingActivityEdge.cursor";
+            public const string node = "shopify.MarketingActivityEdge.node";
+        }
+
+        public static class MarketingActivityExtensionAppErrors
+        {
+            public const string code = "shopify.MarketingActivityExtensionAppErrors.code";
+            public const string userErrors = "shopify.MarketingActivityExtensionAppErrors.userErrors";
+        }
+
+        public static class MarketingActivityUpdateExternalPayload
+        {
+            public const string marketingActivity = "shopify.MarketingActivityUpdateExternalPayload.marketingActivity";
+            public const string userErrors = "shopify.MarketingActivityUpdateExternalPayload.userErrors";
+        }
+
+        public static class MarketingActivityUpdatePayload
+        {
+            public const string marketingActivity = "shopify.MarketingActivityUpdatePayload.marketingActivity";
+            public const string redirectPath = "shopify.MarketingActivityUpdatePayload.redirectPath";
+            public const string userErrors = "shopify.MarketingActivityUpdatePayload.userErrors";
+        }
+
+        public static class MarketingActivityUpsertExternalPayload
+        {
+            public const string marketingActivity = "shopify.MarketingActivityUpsertExternalPayload.marketingActivity";
+            public const string userErrors = "shopify.MarketingActivityUpsertExternalPayload.userErrors";
+        }
+
+        public static class MarketingActivityUserError
+        {
+            public const string code = "shopify.MarketingActivityUserError.code";
+            public const string field = "shopify.MarketingActivityUserError.field";
+            public const string message = "shopify.MarketingActivityUserError.message";
+        }
+
+        public static class MarketingBudget
+        {
+            public const string budgetType = "shopify.MarketingBudget.budgetType";
+            public const string total = "shopify.MarketingBudget.total";
+        }
+
+        public static class MarketingEngagement
+        {
+            public const string adSpend = "shopify.MarketingEngagement.adSpend";
+            public const string channelHandle = "shopify.MarketingEngagement.channelHandle";
+            public const string clicksCount = "shopify.MarketingEngagement.clicksCount";
+            public const string commentsCount = "shopify.MarketingEngagement.commentsCount";
+            public const string complaintsCount = "shopify.MarketingEngagement.complaintsCount";
+            public const string failsCount = "shopify.MarketingEngagement.failsCount";
+            public const string favoritesCount = "shopify.MarketingEngagement.favoritesCount";
+            public const string firstTimeCustomers = "shopify.MarketingEngagement.firstTimeCustomers";
+            public const string impressionsCount = "shopify.MarketingEngagement.impressionsCount";
+            public const string isCumulative = "shopify.MarketingEngagement.isCumulative";
+            public const string marketingActivity = "shopify.MarketingEngagement.marketingActivity";
+            public const string occurredOn = "shopify.MarketingEngagement.occurredOn";
+            public const string orders = "shopify.MarketingEngagement.orders";
+            public const string returningCustomers = "shopify.MarketingEngagement.returningCustomers";
+            public const string sales = "shopify.MarketingEngagement.sales";
+            public const string sendsCount = "shopify.MarketingEngagement.sendsCount";
+            public const string sessionsCount = "shopify.MarketingEngagement.sessionsCount";
+            public const string sharesCount = "shopify.MarketingEngagement.sharesCount";
+            public const string uniqueClicksCount = "shopify.MarketingEngagement.uniqueClicksCount";
+            public const string uniqueViewsCount = "shopify.MarketingEngagement.uniqueViewsCount";
+            public const string unsubscribesCount = "shopify.MarketingEngagement.unsubscribesCount";
+            public const string utcOffset = "shopify.MarketingEngagement.utcOffset";
+            public const string viewsCount = "shopify.MarketingEngagement.viewsCount";
+        }
+
+        public static class MarketingEngagementCreatePayload
+        {
+            public const string marketingEngagement = "shopify.MarketingEngagementCreatePayload.marketingEngagement";
+            public const string userErrors = "shopify.MarketingEngagementCreatePayload.userErrors";
+        }
+
+        public static class MarketingEngagementsDeletePayload
+        {
+            public const string result = "shopify.MarketingEngagementsDeletePayload.result";
+            public const string userErrors = "shopify.MarketingEngagementsDeletePayload.userErrors";
+        }
+
+        public static class MarketingEvent
+        {
+            public const string app = "shopify.MarketingEvent.app";
+            public const string channel = "shopify.MarketingEvent.channel";
+            public const string channelHandle = "shopify.MarketingEvent.channelHandle";
+            public const string description = "shopify.MarketingEvent.description";
+            public const string endedAt = "shopify.MarketingEvent.endedAt";
+            public const string id = "shopify.MarketingEvent.id";
+            public const string legacyResourceId = "shopify.MarketingEvent.legacyResourceId";
+            public const string manageUrl = "shopify.MarketingEvent.manageUrl";
+            public const string marketingChannelType = "shopify.MarketingEvent.marketingChannelType";
+            public const string previewUrl = "shopify.MarketingEvent.previewUrl";
+            public const string remoteId = "shopify.MarketingEvent.remoteId";
+            public const string scheduledToEndAt = "shopify.MarketingEvent.scheduledToEndAt";
+            public const string sourceAndMedium = "shopify.MarketingEvent.sourceAndMedium";
+            public const string startedAt = "shopify.MarketingEvent.startedAt";
+            public const string targetTypeDisplayText = "shopify.MarketingEvent.targetTypeDisplayText";
+            public const string type = "shopify.MarketingEvent.type";
+            public const string utmCampaign = "shopify.MarketingEvent.utmCampaign";
+            public const string utmMedium = "shopify.MarketingEvent.utmMedium";
+            public const string utmSource = "shopify.MarketingEvent.utmSource";
+        }
+
+        public static class MarketingEventConnection
+        {
+            public const string edges = "shopify.MarketingEventConnection.edges";
+            public const string nodes = "shopify.MarketingEventConnection.nodes";
+            public const string pageInfo = "shopify.MarketingEventConnection.pageInfo";
+        }
+
+        public static class MarketingEventEdge
+        {
+            public const string cursor = "shopify.MarketingEventEdge.cursor";
+            public const string node = "shopify.MarketingEventEdge.node";
+        }
+
+        public static class MarketsB2BEntitlement
+        {
+            public const string catalogs = "shopify.MarketsB2BEntitlement.catalogs";
+            public const string enabled = "shopify.MarketsB2BEntitlement.enabled";
+        }
+
+        public static class MarketsCatalogsEntitlement
+        {
+            public const string enabled = "shopify.MarketsCatalogsEntitlement.enabled";
+        }
+
+        public static class MarketsRegionsEntitlement
+        {
+            public const string catalogs = "shopify.MarketsRegionsEntitlement.catalogs";
+            public const string enabled = "shopify.MarketsRegionsEntitlement.enabled";
+        }
+
+        public static class MarketsRetailEntitlement
+        {
+            public const string catalogs = "shopify.MarketsRetailEntitlement.catalogs";
+            public const string enabled = "shopify.MarketsRetailEntitlement.enabled";
+        }
+
+        public static class MarketsThemesEntitlement
+        {
+            public const string enabled = "shopify.MarketsThemesEntitlement.enabled";
+        }
+
+        public static class MarketsType
+        {
+            public const string b2b = "shopify.MarketsType.b2b";
+            public const string regions = "shopify.MarketsType.regions";
+            public const string retail = "shopify.MarketsType.retail";
+            public const string themes = "shopify.MarketsType.themes";
+        }
+
+        public static class IMedia
+        {
+            public const string alt = "shopify.IMedia.alt";
+            public const string id = "shopify.IMedia.id";
+            public const string mediaContentType = "shopify.IMedia.mediaContentType";
+            public const string mediaErrors = "shopify.IMedia.mediaErrors";
+            public const string mediaWarnings = "shopify.IMedia.mediaWarnings";
+            public const string preview = "shopify.IMedia.preview";
+            public const string status = "shopify.IMedia.status";
+        }
+
+        public static class MediaConnection
+        {
+            public const string edges = "shopify.MediaConnection.edges";
+            public const string nodes = "shopify.MediaConnection.nodes";
+            public const string pageInfo = "shopify.MediaConnection.pageInfo";
+        }
+
+        public static class MediaEdge
+        {
+            public const string cursor = "shopify.MediaEdge.cursor";
+            public const string node = "shopify.MediaEdge.node";
+        }
+
+        public static class MediaError
+        {
+            public const string code = "shopify.MediaError.code";
+            public const string details = "shopify.MediaError.details";
+            public const string message = "shopify.MediaError.message";
+        }
+
+        public static class MediaImage
+        {
+            public const string alt = "shopify.MediaImage.alt";
+            public const string createdAt = "shopify.MediaImage.createdAt";
+            public const string fileErrors = "shopify.MediaImage.fileErrors";
+            public const string fileStatus = "shopify.MediaImage.fileStatus";
+            public const string id = "shopify.MediaImage.id";
+            public const string image = "shopify.MediaImage.image";
+            public const string mediaContentType = "shopify.MediaImage.mediaContentType";
+            public const string mediaErrors = "shopify.MediaImage.mediaErrors";
+            public const string mediaWarnings = "shopify.MediaImage.mediaWarnings";
+            public const string metafield = "shopify.MediaImage.metafield";
+            public const string metafields = "shopify.MediaImage.metafields";
+            public const string mimeType = "shopify.MediaImage.mimeType";
+            public const string originalSource = "shopify.MediaImage.originalSource";
+            public const string preview = "shopify.MediaImage.preview";
+            public const string status = "shopify.MediaImage.status";
+            public const string updatedAt = "shopify.MediaImage.updatedAt";
+        }
+
+        public static class MediaImageOriginalSource
+        {
+            public const string fileSize = "shopify.MediaImageOriginalSource.fileSize";
+            public const string url = "shopify.MediaImageOriginalSource.url";
+        }
+
+        public static class MediaPreviewImage
+        {
+            public const string image = "shopify.MediaPreviewImage.image";
+            public const string status = "shopify.MediaPreviewImage.status";
+        }
+
+        public static class MediaUserError
+        {
+            public const string code = "shopify.MediaUserError.code";
+            public const string field = "shopify.MediaUserError.field";
+            public const string message = "shopify.MediaUserError.message";
+        }
+
+        public static class MediaWarning
+        {
+            public const string code = "shopify.MediaWarning.code";
+            public const string message = "shopify.MediaWarning.message";
+        }
+
+        public static class Menu
+        {
+            public const string handle = "shopify.Menu.handle";
+            public const string id = "shopify.Menu.id";
+            public const string isDefault = "shopify.Menu.isDefault";
+            public const string items = "shopify.Menu.items";
+            public const string title = "shopify.Menu.title";
+            public const string translations = "shopify.Menu.translations";
+        }
+
+        public static class MenuConnection
+        {
+            public const string edges = "shopify.MenuConnection.edges";
+            public const string nodes = "shopify.MenuConnection.nodes";
+            public const string pageInfo = "shopify.MenuConnection.pageInfo";
+        }
+
+        public static class MenuCreatePayload
+        {
+            public const string menu = "shopify.MenuCreatePayload.menu";
+            public const string userErrors = "shopify.MenuCreatePayload.userErrors";
+        }
+
+        public static class MenuCreateUserError
+        {
+            public const string code = "shopify.MenuCreateUserError.code";
+            public const string field = "shopify.MenuCreateUserError.field";
+            public const string message = "shopify.MenuCreateUserError.message";
+        }
+
+        public static class MenuDeletePayload
+        {
+            public const string deletedMenuId = "shopify.MenuDeletePayload.deletedMenuId";
+            public const string userErrors = "shopify.MenuDeletePayload.userErrors";
+        }
+
+        public static class MenuDeleteUserError
+        {
+            public const string code = "shopify.MenuDeleteUserError.code";
+            public const string field = "shopify.MenuDeleteUserError.field";
+            public const string message = "shopify.MenuDeleteUserError.message";
+        }
+
+        public static class MenuEdge
+        {
+            public const string cursor = "shopify.MenuEdge.cursor";
+            public const string node = "shopify.MenuEdge.node";
+        }
+
+        public static class MenuItem
+        {
+            public const string id = "shopify.MenuItem.id";
+            public const string items = "shopify.MenuItem.items";
+            public const string resourceId = "shopify.MenuItem.resourceId";
+            public const string tags = "shopify.MenuItem.tags";
+            public const string title = "shopify.MenuItem.title";
+            public const string type = "shopify.MenuItem.type";
+            public const string url = "shopify.MenuItem.url";
+        }
+
+        public static class MenuUpdatePayload
+        {
+            public const string menu = "shopify.MenuUpdatePayload.menu";
+            public const string userErrors = "shopify.MenuUpdatePayload.userErrors";
+        }
+
+        public static class MenuUpdateUserError
+        {
+            public const string code = "shopify.MenuUpdateUserError.code";
+            public const string field = "shopify.MenuUpdateUserError.field";
+            public const string message = "shopify.MenuUpdateUserError.message";
+        }
+
+        public static class MerchantApprovalSignals
+        {
+            public const string identityVerified = "shopify.MerchantApprovalSignals.identityVerified";
+            public const string verifiedByShopify = "shopify.MerchantApprovalSignals.verifiedByShopify";
+            public const string verifiedByShopifyTier = "shopify.MerchantApprovalSignals.verifiedByShopifyTier";
+        }
+
+        public static class Metafield
+        {
+            public const string compareDigest = "shopify.Metafield.compareDigest";
+            public const string createdAt = "shopify.Metafield.createdAt";
+            public const string definition = "shopify.Metafield.definition";
+            public const string description = "shopify.Metafield.description";
+            public const string id = "shopify.Metafield.id";
+            public const string jsonValue = "shopify.Metafield.jsonValue";
+            public const string key = "shopify.Metafield.key";
+            public const string legacyResourceId = "shopify.Metafield.legacyResourceId";
+            public const string @namespace = "shopify.Metafield.namespace";
+            public const string owner = "shopify.Metafield.owner";
+            public const string ownerType = "shopify.Metafield.ownerType";
+            public const string reference = "shopify.Metafield.reference";
+            public const string references = "shopify.Metafield.references";
+            public const string type = "shopify.Metafield.type";
+            public const string updatedAt = "shopify.Metafield.updatedAt";
+            public const string value = "shopify.Metafield.value";
+        }
+
+        public static class MetafieldAccess
+        {
+            public const string admin = "shopify.MetafieldAccess.admin";
+            public const string customerAccount = "shopify.MetafieldAccess.customerAccount";
+            public const string grants = "shopify.MetafieldAccess.grants";
+            public const string storefront = "shopify.MetafieldAccess.storefront";
+        }
+
+        public static class MetafieldAccessGrant
+        {
+            public const string access = "shopify.MetafieldAccessGrant.access";
+            public const string grantee = "shopify.MetafieldAccessGrant.grantee";
+        }
+
+        public static class MetafieldCapabilities
+        {
+            public const string adminFilterable = "shopify.MetafieldCapabilities.adminFilterable";
+            public const string smartCollectionCondition = "shopify.MetafieldCapabilities.smartCollectionCondition";
+            public const string uniqueValues = "shopify.MetafieldCapabilities.uniqueValues";
+        }
+
+        public static class MetafieldCapabilityAdminFilterable
+        {
+            public const string eligible = "shopify.MetafieldCapabilityAdminFilterable.eligible";
+            public const string enabled = "shopify.MetafieldCapabilityAdminFilterable.enabled";
+            public const string status = "shopify.MetafieldCapabilityAdminFilterable.status";
+        }
+
+        public static class MetafieldCapabilitySmartCollectionCondition
+        {
+            public const string eligible = "shopify.MetafieldCapabilitySmartCollectionCondition.eligible";
+            public const string enabled = "shopify.MetafieldCapabilitySmartCollectionCondition.enabled";
+        }
+
+        public static class MetafieldCapabilityUniqueValues
+        {
+            public const string eligible = "shopify.MetafieldCapabilityUniqueValues.eligible";
+            public const string enabled = "shopify.MetafieldCapabilityUniqueValues.enabled";
+        }
+
+        public static class MetafieldConnection
+        {
+            public const string edges = "shopify.MetafieldConnection.edges";
+            public const string nodes = "shopify.MetafieldConnection.nodes";
+            public const string pageInfo = "shopify.MetafieldConnection.pageInfo";
+        }
+
+        public static class MetafieldDefinition
+        {
+            public const string access = "shopify.MetafieldDefinition.access";
+            public const string capabilities = "shopify.MetafieldDefinition.capabilities";
+            public const string constraints = "shopify.MetafieldDefinition.constraints";
+            public const string description = "shopify.MetafieldDefinition.description";
+            public const string id = "shopify.MetafieldDefinition.id";
+            public const string key = "shopify.MetafieldDefinition.key";
+            public const string metafields = "shopify.MetafieldDefinition.metafields";
+            public const string metafieldsCount = "shopify.MetafieldDefinition.metafieldsCount";
+            public const string name = "shopify.MetafieldDefinition.name";
+            public const string @namespace = "shopify.MetafieldDefinition.namespace";
+            public const string ownerType = "shopify.MetafieldDefinition.ownerType";
+            public const string pinnedPosition = "shopify.MetafieldDefinition.pinnedPosition";
+            public const string standardTemplate = "shopify.MetafieldDefinition.standardTemplate";
+            public const string type = "shopify.MetafieldDefinition.type";
+            public const string useAsCollectionCondition = "shopify.MetafieldDefinition.useAsCollectionCondition";
+            public const string validationStatus = "shopify.MetafieldDefinition.validationStatus";
+            public const string validations = "shopify.MetafieldDefinition.validations";
+        }
+
+        public static class MetafieldDefinitionConnection
+        {
+            public const string edges = "shopify.MetafieldDefinitionConnection.edges";
+            public const string nodes = "shopify.MetafieldDefinitionConnection.nodes";
+            public const string pageInfo = "shopify.MetafieldDefinitionConnection.pageInfo";
+        }
+
+        public static class MetafieldDefinitionConstraintValue
+        {
+            public const string value = "shopify.MetafieldDefinitionConstraintValue.value";
+        }
+
+        public static class MetafieldDefinitionConstraintValueConnection
+        {
+            public const string edges = "shopify.MetafieldDefinitionConstraintValueConnection.edges";
+            public const string nodes = "shopify.MetafieldDefinitionConstraintValueConnection.nodes";
+            public const string pageInfo = "shopify.MetafieldDefinitionConstraintValueConnection.pageInfo";
+        }
+
+        public static class MetafieldDefinitionConstraintValueEdge
+        {
+            public const string cursor = "shopify.MetafieldDefinitionConstraintValueEdge.cursor";
+            public const string node = "shopify.MetafieldDefinitionConstraintValueEdge.node";
+        }
+
+        public static class MetafieldDefinitionConstraints
+        {
+            public const string key = "shopify.MetafieldDefinitionConstraints.key";
+            public const string values = "shopify.MetafieldDefinitionConstraints.values";
+        }
+
+        public static class MetafieldDefinitionCreatePayload
+        {
+            public const string createdDefinition = "shopify.MetafieldDefinitionCreatePayload.createdDefinition";
+            public const string userErrors = "shopify.MetafieldDefinitionCreatePayload.userErrors";
+        }
+
+        public static class MetafieldDefinitionCreateUserError
+        {
+            public const string code = "shopify.MetafieldDefinitionCreateUserError.code";
+            public const string elementIndex = "shopify.MetafieldDefinitionCreateUserError.elementIndex";
+            public const string field = "shopify.MetafieldDefinitionCreateUserError.field";
+            public const string message = "shopify.MetafieldDefinitionCreateUserError.message";
+        }
+
+        public static class MetafieldDefinitionDeletePayload
+        {
+            public const string deletedDefinition = "shopify.MetafieldDefinitionDeletePayload.deletedDefinition";
+            public const string deletedDefinitionId = "shopify.MetafieldDefinitionDeletePayload.deletedDefinitionId";
+            public const string userErrors = "shopify.MetafieldDefinitionDeletePayload.userErrors";
+        }
+
+        public static class MetafieldDefinitionDeleteUserError
+        {
+            public const string code = "shopify.MetafieldDefinitionDeleteUserError.code";
+            public const string field = "shopify.MetafieldDefinitionDeleteUserError.field";
+            public const string message = "shopify.MetafieldDefinitionDeleteUserError.message";
+        }
+
+        public static class MetafieldDefinitionEdge
+        {
+            public const string cursor = "shopify.MetafieldDefinitionEdge.cursor";
+            public const string node = "shopify.MetafieldDefinitionEdge.node";
+        }
+
+        public static class MetafieldDefinitionIdentifier
+        {
+            public const string key = "shopify.MetafieldDefinitionIdentifier.key";
+            public const string @namespace = "shopify.MetafieldDefinitionIdentifier.namespace";
+            public const string ownerType = "shopify.MetafieldDefinitionIdentifier.ownerType";
+        }
+
+        public static class MetafieldDefinitionPinPayload
+        {
+            public const string pinnedDefinition = "shopify.MetafieldDefinitionPinPayload.pinnedDefinition";
+            public const string userErrors = "shopify.MetafieldDefinitionPinPayload.userErrors";
+        }
+
+        public static class MetafieldDefinitionPinUserError
+        {
+            public const string code = "shopify.MetafieldDefinitionPinUserError.code";
+            public const string field = "shopify.MetafieldDefinitionPinUserError.field";
+            public const string message = "shopify.MetafieldDefinitionPinUserError.message";
+        }
+
+        public static class MetafieldDefinitionSupportedValidation
+        {
+            public const string name = "shopify.MetafieldDefinitionSupportedValidation.name";
+            public const string type = "shopify.MetafieldDefinitionSupportedValidation.type";
+        }
+
+        public static class MetafieldDefinitionType
+        {
+            public const string category = "shopify.MetafieldDefinitionType.category";
+            public const string name = "shopify.MetafieldDefinitionType.name";
+            public const string supportedValidations = "shopify.MetafieldDefinitionType.supportedValidations";
+            public const string supportsDefinitionMigrations = "shopify.MetafieldDefinitionType.supportsDefinitionMigrations";
+            public const string valueType = "shopify.MetafieldDefinitionType.valueType";
+        }
+
+        public static class MetafieldDefinitionUnpinPayload
+        {
+            public const string unpinnedDefinition = "shopify.MetafieldDefinitionUnpinPayload.unpinnedDefinition";
+            public const string userErrors = "shopify.MetafieldDefinitionUnpinPayload.userErrors";
+        }
+
+        public static class MetafieldDefinitionUnpinUserError
+        {
+            public const string code = "shopify.MetafieldDefinitionUnpinUserError.code";
+            public const string field = "shopify.MetafieldDefinitionUnpinUserError.field";
+            public const string message = "shopify.MetafieldDefinitionUnpinUserError.message";
+        }
+
+        public static class MetafieldDefinitionUpdatePayload
+        {
+            public const string updatedDefinition = "shopify.MetafieldDefinitionUpdatePayload.updatedDefinition";
+            public const string userErrors = "shopify.MetafieldDefinitionUpdatePayload.userErrors";
+            public const string validationJob = "shopify.MetafieldDefinitionUpdatePayload.validationJob";
+        }
+
+        public static class MetafieldDefinitionUpdateUserError
+        {
+            public const string code = "shopify.MetafieldDefinitionUpdateUserError.code";
+            public const string elementIndex = "shopify.MetafieldDefinitionUpdateUserError.elementIndex";
+            public const string field = "shopify.MetafieldDefinitionUpdateUserError.field";
+            public const string message = "shopify.MetafieldDefinitionUpdateUserError.message";
+        }
+
+        public static class MetafieldDefinitionValidation
+        {
+            public const string name = "shopify.MetafieldDefinitionValidation.name";
+            public const string type = "shopify.MetafieldDefinitionValidation.type";
+            public const string value = "shopify.MetafieldDefinitionValidation.value";
+        }
+
+        public static class MetafieldEdge
+        {
+            public const string cursor = "shopify.MetafieldEdge.cursor";
+            public const string node = "shopify.MetafieldEdge.node";
+        }
+
+        public static class MetafieldIdentifier
+        {
+            public const string key = "shopify.MetafieldIdentifier.key";
+            public const string @namespace = "shopify.MetafieldIdentifier.namespace";
+            public const string ownerId = "shopify.MetafieldIdentifier.ownerId";
+        }
+
+        public static class IMetafieldReference
+        {
+            public const string id = "shopify.IMetafieldReference.id";
+        }
+
+        public static class MetafieldReferenceConnection
+        {
+            public const string edges = "shopify.MetafieldReferenceConnection.edges";
+            public const string nodes = "shopify.MetafieldReferenceConnection.nodes";
+            public const string pageInfo = "shopify.MetafieldReferenceConnection.pageInfo";
+        }
+
+        public static class MetafieldReferenceEdge
+        {
+            public const string cursor = "shopify.MetafieldReferenceEdge.cursor";
+            public const string node = "shopify.MetafieldReferenceEdge.node";
+        }
+
+        public static class IMetafieldReferencer
+        {
+            public const string id = "shopify.IMetafieldReferencer.id";
+        }
+
+        public static class MetafieldRelation
+        {
+            public const string key = "shopify.MetafieldRelation.key";
+            public const string name = "shopify.MetafieldRelation.name";
+            public const string @namespace = "shopify.MetafieldRelation.namespace";
+            public const string referencer = "shopify.MetafieldRelation.referencer";
+            public const string target = "shopify.MetafieldRelation.target";
+        }
+
+        public static class MetafieldRelationConnection
+        {
+            public const string edges = "shopify.MetafieldRelationConnection.edges";
+            public const string nodes = "shopify.MetafieldRelationConnection.nodes";
+            public const string pageInfo = "shopify.MetafieldRelationConnection.pageInfo";
+        }
+
+        public static class MetafieldRelationEdge
+        {
+            public const string cursor = "shopify.MetafieldRelationEdge.cursor";
+            public const string node = "shopify.MetafieldRelationEdge.node";
+        }
+
+        public static class MetafieldsDeletePayload
+        {
+            public const string deletedMetafields = "shopify.MetafieldsDeletePayload.deletedMetafields";
+            public const string userErrors = "shopify.MetafieldsDeletePayload.userErrors";
+        }
+
+        public static class MetafieldsSetPayload
+        {
+            public const string metafields = "shopify.MetafieldsSetPayload.metafields";
+            public const string userErrors = "shopify.MetafieldsSetPayload.userErrors";
+        }
+
+        public static class MetafieldsSetUserError
+        {
+            public const string code = "shopify.MetafieldsSetUserError.code";
+            public const string elementIndex = "shopify.MetafieldsSetUserError.elementIndex";
+            public const string field = "shopify.MetafieldsSetUserError.field";
+            public const string message = "shopify.MetafieldsSetUserError.message";
+        }
+
+        public static class Metaobject
+        {
+            public const string capabilities = "shopify.Metaobject.capabilities";
+            public const string createdBy = "shopify.Metaobject.createdBy";
+            public const string createdByApp = "shopify.Metaobject.createdByApp";
+            public const string createdByStaff = "shopify.Metaobject.createdByStaff";
+            public const string definition = "shopify.Metaobject.definition";
+            public const string displayName = "shopify.Metaobject.displayName";
+            public const string field = "shopify.Metaobject.field";
+            public const string fields = "shopify.Metaobject.fields";
+            public const string handle = "shopify.Metaobject.handle";
+            public const string id = "shopify.Metaobject.id";
+            public const string referencedBy = "shopify.Metaobject.referencedBy";
+            public const string staffMember = "shopify.Metaobject.staffMember";
+            public const string thumbnailField = "shopify.Metaobject.thumbnailField";
+            public const string type = "shopify.Metaobject.type";
+            public const string updatedAt = "shopify.Metaobject.updatedAt";
+        }
+
+        public static class MetaobjectAccess
+        {
+            public const string admin = "shopify.MetaobjectAccess.admin";
+            public const string storefront = "shopify.MetaobjectAccess.storefront";
+        }
+
+        public static class MetaobjectBulkDeletePayload
+        {
+            public const string job = "shopify.MetaobjectBulkDeletePayload.job";
+            public const string userErrors = "shopify.MetaobjectBulkDeletePayload.userErrors";
+        }
+
+        public static class MetaobjectCapabilities
+        {
+            public const string onlineStore = "shopify.MetaobjectCapabilities.onlineStore";
+            public const string publishable = "shopify.MetaobjectCapabilities.publishable";
+            public const string renderable = "shopify.MetaobjectCapabilities.renderable";
+            public const string translatable = "shopify.MetaobjectCapabilities.translatable";
+        }
+
+        public static class MetaobjectCapabilitiesOnlineStore
+        {
+            public const string data = "shopify.MetaobjectCapabilitiesOnlineStore.data";
+            public const string enabled = "shopify.MetaobjectCapabilitiesOnlineStore.enabled";
+        }
+
+        public static class MetaobjectCapabilitiesPublishable
+        {
+            public const string enabled = "shopify.MetaobjectCapabilitiesPublishable.enabled";
+        }
+
+        public static class MetaobjectCapabilitiesRenderable
+        {
+            public const string data = "shopify.MetaobjectCapabilitiesRenderable.data";
+            public const string enabled = "shopify.MetaobjectCapabilitiesRenderable.enabled";
+        }
+
+        public static class MetaobjectCapabilitiesTranslatable
+        {
+            public const string enabled = "shopify.MetaobjectCapabilitiesTranslatable.enabled";
+        }
+
+        public static class MetaobjectCapabilityData
+        {
+            public const string onlineStore = "shopify.MetaobjectCapabilityData.onlineStore";
+            public const string publishable = "shopify.MetaobjectCapabilityData.publishable";
+        }
+
+        public static class MetaobjectCapabilityDataOnlineStore
+        {
+            public const string templateSuffix = "shopify.MetaobjectCapabilityDataOnlineStore.templateSuffix";
+        }
+
+        public static class MetaobjectCapabilityDataPublishable
+        {
+            public const string status = "shopify.MetaobjectCapabilityDataPublishable.status";
+        }
+
+        public static class MetaobjectCapabilityDefinitionDataOnlineStore
+        {
+            public const string canCreateRedirects = "shopify.MetaobjectCapabilityDefinitionDataOnlineStore.canCreateRedirects";
+            public const string urlHandle = "shopify.MetaobjectCapabilityDefinitionDataOnlineStore.urlHandle";
+        }
+
+        public static class MetaobjectCapabilityDefinitionDataRenderable
+        {
+            public const string metaDescriptionKey = "shopify.MetaobjectCapabilityDefinitionDataRenderable.metaDescriptionKey";
+            public const string metaTitleKey = "shopify.MetaobjectCapabilityDefinitionDataRenderable.metaTitleKey";
+        }
+
+        public static class MetaobjectConnection
+        {
+            public const string edges = "shopify.MetaobjectConnection.edges";
+            public const string nodes = "shopify.MetaobjectConnection.nodes";
+            public const string pageInfo = "shopify.MetaobjectConnection.pageInfo";
+        }
+
+        public static class MetaobjectCreatePayload
+        {
+            public const string metaobject = "shopify.MetaobjectCreatePayload.metaobject";
+            public const string userErrors = "shopify.MetaobjectCreatePayload.userErrors";
+        }
+
+        public static class MetaobjectDefinition
+        {
+            public const string access = "shopify.MetaobjectDefinition.access";
+            public const string capabilities = "shopify.MetaobjectDefinition.capabilities";
+            public const string createdByApp = "shopify.MetaobjectDefinition.createdByApp";
+            public const string createdByStaff = "shopify.MetaobjectDefinition.createdByStaff";
+            public const string description = "shopify.MetaobjectDefinition.description";
+            public const string displayNameKey = "shopify.MetaobjectDefinition.displayNameKey";
+            public const string fieldDefinitions = "shopify.MetaobjectDefinition.fieldDefinitions";
+            public const string hasThumbnailField = "shopify.MetaobjectDefinition.hasThumbnailField";
+            public const string id = "shopify.MetaobjectDefinition.id";
+            public const string metaobjects = "shopify.MetaobjectDefinition.metaobjects";
+            public const string metaobjectsCount = "shopify.MetaobjectDefinition.metaobjectsCount";
+            public const string name = "shopify.MetaobjectDefinition.name";
+            public const string standardTemplate = "shopify.MetaobjectDefinition.standardTemplate";
+            public const string type = "shopify.MetaobjectDefinition.type";
+        }
+
+        public static class MetaobjectDefinitionConnection
+        {
+            public const string edges = "shopify.MetaobjectDefinitionConnection.edges";
+            public const string nodes = "shopify.MetaobjectDefinitionConnection.nodes";
+            public const string pageInfo = "shopify.MetaobjectDefinitionConnection.pageInfo";
+        }
+
+        public static class MetaobjectDefinitionCreatePayload
+        {
+            public const string metaobjectDefinition = "shopify.MetaobjectDefinitionCreatePayload.metaobjectDefinition";
+            public const string userErrors = "shopify.MetaobjectDefinitionCreatePayload.userErrors";
+        }
+
+        public static class MetaobjectDefinitionDeletePayload
+        {
+            public const string deletedId = "shopify.MetaobjectDefinitionDeletePayload.deletedId";
+            public const string userErrors = "shopify.MetaobjectDefinitionDeletePayload.userErrors";
+        }
+
+        public static class MetaobjectDefinitionEdge
+        {
+            public const string cursor = "shopify.MetaobjectDefinitionEdge.cursor";
+            public const string node = "shopify.MetaobjectDefinitionEdge.node";
+        }
+
+        public static class MetaobjectDefinitionUpdatePayload
+        {
+            public const string metaobjectDefinition = "shopify.MetaobjectDefinitionUpdatePayload.metaobjectDefinition";
+            public const string userErrors = "shopify.MetaobjectDefinitionUpdatePayload.userErrors";
+        }
+
+        public static class MetaobjectDeletePayload
+        {
+            public const string deletedId = "shopify.MetaobjectDeletePayload.deletedId";
+            public const string userErrors = "shopify.MetaobjectDeletePayload.userErrors";
+        }
+
+        public static class MetaobjectEdge
+        {
+            public const string cursor = "shopify.MetaobjectEdge.cursor";
+            public const string node = "shopify.MetaobjectEdge.node";
+        }
+
+        public static class MetaobjectField
+        {
+            public const string definition = "shopify.MetaobjectField.definition";
+            public const string jsonValue = "shopify.MetaobjectField.jsonValue";
+            public const string key = "shopify.MetaobjectField.key";
+            public const string reference = "shopify.MetaobjectField.reference";
+            public const string references = "shopify.MetaobjectField.references";
+            public const string thumbnail = "shopify.MetaobjectField.thumbnail";
+            public const string type = "shopify.MetaobjectField.type";
+            public const string value = "shopify.MetaobjectField.value";
+        }
+
+        public static class MetaobjectFieldDefinition
+        {
+            public const string description = "shopify.MetaobjectFieldDefinition.description";
+            public const string key = "shopify.MetaobjectFieldDefinition.key";
+            public const string name = "shopify.MetaobjectFieldDefinition.name";
+            public const string required = "shopify.MetaobjectFieldDefinition.required";
+            public const string type = "shopify.MetaobjectFieldDefinition.type";
+            public const string validations = "shopify.MetaobjectFieldDefinition.validations";
+        }
+
+        public static class MetaobjectThumbnail
+        {
+            public const string file = "shopify.MetaobjectThumbnail.file";
+            public const string hex = "shopify.MetaobjectThumbnail.hex";
+        }
+
+        public static class MetaobjectUpdatePayload
+        {
+            public const string metaobject = "shopify.MetaobjectUpdatePayload.metaobject";
+            public const string userErrors = "shopify.MetaobjectUpdatePayload.userErrors";
+        }
+
+        public static class MetaobjectUpsertPayload
+        {
+            public const string metaobject = "shopify.MetaobjectUpsertPayload.metaobject";
+            public const string userErrors = "shopify.MetaobjectUpsertPayload.userErrors";
+        }
+
+        public static class MetaobjectUserError
+        {
+            public const string code = "shopify.MetaobjectUserError.code";
+            public const string elementIndex = "shopify.MetaobjectUserError.elementIndex";
+            public const string elementKey = "shopify.MetaobjectUserError.elementKey";
+            public const string field = "shopify.MetaobjectUserError.field";
+            public const string message = "shopify.MetaobjectUserError.message";
+        }
+
+        public static class IMobilePlatformApplication
+        {
+            public const string id = "shopify.IMobilePlatformApplication.id";
+        }
+
+        public static class MobilePlatformApplicationConnection
+        {
+            public const string edges = "shopify.MobilePlatformApplicationConnection.edges";
+            public const string nodes = "shopify.MobilePlatformApplicationConnection.nodes";
+            public const string pageInfo = "shopify.MobilePlatformApplicationConnection.pageInfo";
+        }
+
+        public static class MobilePlatformApplicationCreatePayload
+        {
+            public const string mobilePlatformApplication = "shopify.MobilePlatformApplicationCreatePayload.mobilePlatformApplication";
+            public const string userErrors = "shopify.MobilePlatformApplicationCreatePayload.userErrors";
+        }
+
+        public static class MobilePlatformApplicationDeletePayload
+        {
+            public const string deletedMobilePlatformApplicationId = "shopify.MobilePlatformApplicationDeletePayload.deletedMobilePlatformApplicationId";
+            public const string userErrors = "shopify.MobilePlatformApplicationDeletePayload.userErrors";
+        }
+
+        public static class MobilePlatformApplicationEdge
+        {
+            public const string cursor = "shopify.MobilePlatformApplicationEdge.cursor";
+            public const string node = "shopify.MobilePlatformApplicationEdge.node";
+        }
+
+        public static class MobilePlatformApplicationUpdatePayload
+        {
+            public const string mobilePlatformApplication = "shopify.MobilePlatformApplicationUpdatePayload.mobilePlatformApplication";
+            public const string userErrors = "shopify.MobilePlatformApplicationUpdatePayload.userErrors";
+        }
+
+        public static class MobilePlatformApplicationUserError
+        {
+            public const string code = "shopify.MobilePlatformApplicationUserError.code";
+            public const string field = "shopify.MobilePlatformApplicationUserError.field";
+            public const string message = "shopify.MobilePlatformApplicationUserError.message";
+        }
+
+        public static class Model3d
+        {
+            public const string alt = "shopify.Model3d.alt";
+            public const string boundingBox = "shopify.Model3d.boundingBox";
+            public const string createdAt = "shopify.Model3d.createdAt";
+            public const string fileErrors = "shopify.Model3d.fileErrors";
+            public const string fileStatus = "shopify.Model3d.fileStatus";
+            public const string filename = "shopify.Model3d.filename";
+            public const string id = "shopify.Model3d.id";
+            public const string mediaContentType = "shopify.Model3d.mediaContentType";
+            public const string mediaErrors = "shopify.Model3d.mediaErrors";
+            public const string mediaWarnings = "shopify.Model3d.mediaWarnings";
+            public const string originalSource = "shopify.Model3d.originalSource";
+            public const string preview = "shopify.Model3d.preview";
+            public const string sources = "shopify.Model3d.sources";
+            public const string status = "shopify.Model3d.status";
+            public const string updatedAt = "shopify.Model3d.updatedAt";
+        }
+
+        public static class Model3dBoundingBox
+        {
+            public const string size = "shopify.Model3dBoundingBox.size";
+        }
+
+        public static class Model3dSource
+        {
+            public const string filesize = "shopify.Model3dSource.filesize";
+            public const string format = "shopify.Model3dSource.format";
+            public const string mimeType = "shopify.Model3dSource.mimeType";
+            public const string url = "shopify.Model3dSource.url";
+        }
+
+        public static class MoneyBag
+        {
+            public const string presentmentMoney = "shopify.MoneyBag.presentmentMoney";
+            public const string shopMoney = "shopify.MoneyBag.shopMoney";
+        }
+
+        public static class MoneyV2
+        {
+            public const string amount = "shopify.MoneyV2.amount";
+            public const string currencyCode = "shopify.MoneyV2.currencyCode";
+        }
+
+        public static class Mutation
+        {
+            public const string abandonmentEmailStateUpdate = "shopify.Mutation.abandonmentEmailStateUpdate";
+            public const string abandonmentUpdateActivitiesDeliveryStatuses = "shopify.Mutation.abandonmentUpdateActivitiesDeliveryStatuses";
+            public const string appPurchaseOneTimeCreate = "shopify.Mutation.appPurchaseOneTimeCreate";
+            public const string appRevokeAccessScopes = "shopify.Mutation.appRevokeAccessScopes";
+            public const string appSubscriptionCancel = "shopify.Mutation.appSubscriptionCancel";
+            public const string appSubscriptionCreate = "shopify.Mutation.appSubscriptionCreate";
+            public const string appSubscriptionLineItemUpdate = "shopify.Mutation.appSubscriptionLineItemUpdate";
+            public const string appSubscriptionTrialExtend = "shopify.Mutation.appSubscriptionTrialExtend";
+            public const string appUsageRecordCreate = "shopify.Mutation.appUsageRecordCreate";
+            public const string articleCreate = "shopify.Mutation.articleCreate";
+            public const string articleDelete = "shopify.Mutation.articleDelete";
+            public const string articleUpdate = "shopify.Mutation.articleUpdate";
+            public const string backupRegionUpdate = "shopify.Mutation.backupRegionUpdate";
+            public const string blogCreate = "shopify.Mutation.blogCreate";
+            public const string blogDelete = "shopify.Mutation.blogDelete";
+            public const string blogUpdate = "shopify.Mutation.blogUpdate";
+            public const string bulkOperationCancel = "shopify.Mutation.bulkOperationCancel";
+            public const string bulkOperationRunMutation = "shopify.Mutation.bulkOperationRunMutation";
+            public const string bulkOperationRunQuery = "shopify.Mutation.bulkOperationRunQuery";
+            public const string bulkProductResourceFeedbackCreate = "shopify.Mutation.bulkProductResourceFeedbackCreate";
+            public const string carrierServiceCreate = "shopify.Mutation.carrierServiceCreate";
+            public const string carrierServiceDelete = "shopify.Mutation.carrierServiceDelete";
+            public const string carrierServiceUpdate = "shopify.Mutation.carrierServiceUpdate";
+            public const string cartTransformCreate = "shopify.Mutation.cartTransformCreate";
+            public const string cartTransformDelete = "shopify.Mutation.cartTransformDelete";
+            public const string catalogContextUpdate = "shopify.Mutation.catalogContextUpdate";
+            public const string catalogCreate = "shopify.Mutation.catalogCreate";
+            public const string catalogDelete = "shopify.Mutation.catalogDelete";
+            public const string catalogUpdate = "shopify.Mutation.catalogUpdate";
+            public const string checkoutBrandingUpsert = "shopify.Mutation.checkoutBrandingUpsert";
+            public const string collectionAddProducts = "shopify.Mutation.collectionAddProducts";
+            public const string collectionAddProductsV2 = "shopify.Mutation.collectionAddProductsV2";
+            public const string collectionCreate = "shopify.Mutation.collectionCreate";
+            public const string collectionDelete = "shopify.Mutation.collectionDelete";
+            public const string collectionPublish = "shopify.Mutation.collectionPublish";
+            public const string collectionRemoveProducts = "shopify.Mutation.collectionRemoveProducts";
+            public const string collectionReorderProducts = "shopify.Mutation.collectionReorderProducts";
+            public const string collectionUnpublish = "shopify.Mutation.collectionUnpublish";
+            public const string collectionUpdate = "shopify.Mutation.collectionUpdate";
+            public const string combinedListingUpdate = "shopify.Mutation.combinedListingUpdate";
+            public const string commentApprove = "shopify.Mutation.commentApprove";
+            public const string commentDelete = "shopify.Mutation.commentDelete";
+            public const string commentNotSpam = "shopify.Mutation.commentNotSpam";
+            public const string commentSpam = "shopify.Mutation.commentSpam";
+            public const string companiesDelete = "shopify.Mutation.companiesDelete";
+            public const string companyAddressDelete = "shopify.Mutation.companyAddressDelete";
+            public const string companyAssignCustomerAsContact = "shopify.Mutation.companyAssignCustomerAsContact";
+            public const string companyAssignMainContact = "shopify.Mutation.companyAssignMainContact";
+            public const string companyContactAssignRole = "shopify.Mutation.companyContactAssignRole";
+            public const string companyContactAssignRoles = "shopify.Mutation.companyContactAssignRoles";
+            public const string companyContactCreate = "shopify.Mutation.companyContactCreate";
+            public const string companyContactDelete = "shopify.Mutation.companyContactDelete";
+            public const string companyContactRemoveFromCompany = "shopify.Mutation.companyContactRemoveFromCompany";
+            public const string companyContactRevokeRole = "shopify.Mutation.companyContactRevokeRole";
+            public const string companyContactRevokeRoles = "shopify.Mutation.companyContactRevokeRoles";
+            public const string companyContactSendWelcomeEmail = "shopify.Mutation.companyContactSendWelcomeEmail";
+            public const string companyContactUpdate = "shopify.Mutation.companyContactUpdate";
+            public const string companyContactsDelete = "shopify.Mutation.companyContactsDelete";
+            public const string companyCreate = "shopify.Mutation.companyCreate";
+            public const string companyDelete = "shopify.Mutation.companyDelete";
+            public const string companyLocationAssignAddress = "shopify.Mutation.companyLocationAssignAddress";
+            public const string companyLocationAssignRoles = "shopify.Mutation.companyLocationAssignRoles";
+            public const string companyLocationAssignStaffMembers = "shopify.Mutation.companyLocationAssignStaffMembers";
+            public const string companyLocationAssignTaxExemptions = "shopify.Mutation.companyLocationAssignTaxExemptions";
+            public const string companyLocationCreate = "shopify.Mutation.companyLocationCreate";
+            public const string companyLocationCreateTaxRegistration = "shopify.Mutation.companyLocationCreateTaxRegistration";
+            public const string companyLocationDelete = "shopify.Mutation.companyLocationDelete";
+            public const string companyLocationRemoveStaffMembers = "shopify.Mutation.companyLocationRemoveStaffMembers";
+            public const string companyLocationRevokeRoles = "shopify.Mutation.companyLocationRevokeRoles";
+            public const string companyLocationRevokeTaxExemptions = "shopify.Mutation.companyLocationRevokeTaxExemptions";
+            public const string companyLocationRevokeTaxRegistration = "shopify.Mutation.companyLocationRevokeTaxRegistration";
+            public const string companyLocationTaxSettingsUpdate = "shopify.Mutation.companyLocationTaxSettingsUpdate";
+            public const string companyLocationUpdate = "shopify.Mutation.companyLocationUpdate";
+            public const string companyLocationsDelete = "shopify.Mutation.companyLocationsDelete";
+            public const string companyRevokeMainContact = "shopify.Mutation.companyRevokeMainContact";
+            public const string companyUpdate = "shopify.Mutation.companyUpdate";
+            public const string consentPolicyUpdate = "shopify.Mutation.consentPolicyUpdate";
+            public const string customerAddTaxExemptions = "shopify.Mutation.customerAddTaxExemptions";
+            public const string customerAddressCreate = "shopify.Mutation.customerAddressCreate";
+            public const string customerAddressDelete = "shopify.Mutation.customerAddressDelete";
+            public const string customerAddressUpdate = "shopify.Mutation.customerAddressUpdate";
+            public const string customerCancelDataErasure = "shopify.Mutation.customerCancelDataErasure";
+            public const string customerCreate = "shopify.Mutation.customerCreate";
+            public const string customerDelete = "shopify.Mutation.customerDelete";
+            public const string customerEmailMarketingConsentUpdate = "shopify.Mutation.customerEmailMarketingConsentUpdate";
+            public const string customerGenerateAccountActivationUrl = "shopify.Mutation.customerGenerateAccountActivationUrl";
+            public const string customerMerge = "shopify.Mutation.customerMerge";
+            public const string customerPaymentMethodCreateFromDuplicationData = "shopify.Mutation.customerPaymentMethodCreateFromDuplicationData";
+            public const string customerPaymentMethodCreditCardCreate = "shopify.Mutation.customerPaymentMethodCreditCardCreate";
+            public const string customerPaymentMethodCreditCardUpdate = "shopify.Mutation.customerPaymentMethodCreditCardUpdate";
+            public const string customerPaymentMethodGetDuplicationData = "shopify.Mutation.customerPaymentMethodGetDuplicationData";
+            public const string customerPaymentMethodGetUpdateUrl = "shopify.Mutation.customerPaymentMethodGetUpdateUrl";
+            public const string customerPaymentMethodPaypalBillingAgreementCreate = "shopify.Mutation.customerPaymentMethodPaypalBillingAgreementCreate";
+            public const string customerPaymentMethodPaypalBillingAgreementUpdate = "shopify.Mutation.customerPaymentMethodPaypalBillingAgreementUpdate";
+            public const string customerPaymentMethodRemoteCreate = "shopify.Mutation.customerPaymentMethodRemoteCreate";
+            public const string customerPaymentMethodRevoke = "shopify.Mutation.customerPaymentMethodRevoke";
+            public const string customerPaymentMethodSendUpdateEmail = "shopify.Mutation.customerPaymentMethodSendUpdateEmail";
+            public const string customerRemoveTaxExemptions = "shopify.Mutation.customerRemoveTaxExemptions";
+            public const string customerReplaceTaxExemptions = "shopify.Mutation.customerReplaceTaxExemptions";
+            public const string customerRequestDataErasure = "shopify.Mutation.customerRequestDataErasure";
+            public const string customerSegmentMembersQueryCreate = "shopify.Mutation.customerSegmentMembersQueryCreate";
+            public const string customerSendAccountInviteEmail = "shopify.Mutation.customerSendAccountInviteEmail";
+            public const string customerSet = "shopify.Mutation.customerSet";
+            public const string customerSmsMarketingConsentUpdate = "shopify.Mutation.customerSmsMarketingConsentUpdate";
+            public const string customerUpdate = "shopify.Mutation.customerUpdate";
+            public const string customerUpdateDefaultAddress = "shopify.Mutation.customerUpdateDefaultAddress";
+            public const string dataSaleOptOut = "shopify.Mutation.dataSaleOptOut";
+            public const string delegateAccessTokenCreate = "shopify.Mutation.delegateAccessTokenCreate";
+            public const string delegateAccessTokenDestroy = "shopify.Mutation.delegateAccessTokenDestroy";
+            public const string deliveryCustomizationActivation = "shopify.Mutation.deliveryCustomizationActivation";
+            public const string deliveryCustomizationCreate = "shopify.Mutation.deliveryCustomizationCreate";
+            public const string deliveryCustomizationDelete = "shopify.Mutation.deliveryCustomizationDelete";
+            public const string deliveryCustomizationUpdate = "shopify.Mutation.deliveryCustomizationUpdate";
+            public const string deliveryProfileCreate = "shopify.Mutation.deliveryProfileCreate";
+            public const string deliveryProfileRemove = "shopify.Mutation.deliveryProfileRemove";
+            public const string deliveryProfileUpdate = "shopify.Mutation.deliveryProfileUpdate";
+            public const string deliveryPromiseParticipantsUpdate = "shopify.Mutation.deliveryPromiseParticipantsUpdate";
+            public const string deliveryPromiseProviderUpsert = "shopify.Mutation.deliveryPromiseProviderUpsert";
+            public const string deliverySettingUpdate = "shopify.Mutation.deliverySettingUpdate";
+            public const string deliveryShippingOriginAssign = "shopify.Mutation.deliveryShippingOriginAssign";
+            public const string discountAutomaticActivate = "shopify.Mutation.discountAutomaticActivate";
+            public const string discountAutomaticAppCreate = "shopify.Mutation.discountAutomaticAppCreate";
+            public const string discountAutomaticAppUpdate = "shopify.Mutation.discountAutomaticAppUpdate";
+            public const string discountAutomaticBasicCreate = "shopify.Mutation.discountAutomaticBasicCreate";
+            public const string discountAutomaticBasicUpdate = "shopify.Mutation.discountAutomaticBasicUpdate";
+            public const string discountAutomaticBulkDelete = "shopify.Mutation.discountAutomaticBulkDelete";
+            public const string discountAutomaticBxgyCreate = "shopify.Mutation.discountAutomaticBxgyCreate";
+            public const string discountAutomaticBxgyUpdate = "shopify.Mutation.discountAutomaticBxgyUpdate";
+            public const string discountAutomaticDeactivate = "shopify.Mutation.discountAutomaticDeactivate";
+            public const string discountAutomaticDelete = "shopify.Mutation.discountAutomaticDelete";
+            public const string discountAutomaticFreeShippingCreate = "shopify.Mutation.discountAutomaticFreeShippingCreate";
+            public const string discountAutomaticFreeShippingUpdate = "shopify.Mutation.discountAutomaticFreeShippingUpdate";
+            public const string discountCodeActivate = "shopify.Mutation.discountCodeActivate";
+            public const string discountCodeAppCreate = "shopify.Mutation.discountCodeAppCreate";
+            public const string discountCodeAppUpdate = "shopify.Mutation.discountCodeAppUpdate";
+            public const string discountCodeBasicCreate = "shopify.Mutation.discountCodeBasicCreate";
+            public const string discountCodeBasicUpdate = "shopify.Mutation.discountCodeBasicUpdate";
+            public const string discountCodeBulkActivate = "shopify.Mutation.discountCodeBulkActivate";
+            public const string discountCodeBulkDeactivate = "shopify.Mutation.discountCodeBulkDeactivate";
+            public const string discountCodeBulkDelete = "shopify.Mutation.discountCodeBulkDelete";
+            public const string discountCodeBxgyCreate = "shopify.Mutation.discountCodeBxgyCreate";
+            public const string discountCodeBxgyUpdate = "shopify.Mutation.discountCodeBxgyUpdate";
+            public const string discountCodeDeactivate = "shopify.Mutation.discountCodeDeactivate";
+            public const string discountCodeDelete = "shopify.Mutation.discountCodeDelete";
+            public const string discountCodeFreeShippingCreate = "shopify.Mutation.discountCodeFreeShippingCreate";
+            public const string discountCodeFreeShippingUpdate = "shopify.Mutation.discountCodeFreeShippingUpdate";
+            public const string discountCodeRedeemCodeBulkDelete = "shopify.Mutation.discountCodeRedeemCodeBulkDelete";
+            public const string discountRedeemCodeBulkAdd = "shopify.Mutation.discountRedeemCodeBulkAdd";
+            public const string disputeEvidenceUpdate = "shopify.Mutation.disputeEvidenceUpdate";
+            public const string draftOrderBulkAddTags = "shopify.Mutation.draftOrderBulkAddTags";
+            public const string draftOrderBulkDelete = "shopify.Mutation.draftOrderBulkDelete";
+            public const string draftOrderBulkRemoveTags = "shopify.Mutation.draftOrderBulkRemoveTags";
+            public const string draftOrderCalculate = "shopify.Mutation.draftOrderCalculate";
+            public const string draftOrderComplete = "shopify.Mutation.draftOrderComplete";
+            public const string draftOrderCreate = "shopify.Mutation.draftOrderCreate";
+            public const string draftOrderCreateFromOrder = "shopify.Mutation.draftOrderCreateFromOrder";
+            public const string draftOrderCreateMerchantCheckout = "shopify.Mutation.draftOrderCreateMerchantCheckout";
+            public const string draftOrderDelete = "shopify.Mutation.draftOrderDelete";
+            public const string draftOrderDuplicate = "shopify.Mutation.draftOrderDuplicate";
+            public const string draftOrderInvoicePreview = "shopify.Mutation.draftOrderInvoicePreview";
+            public const string draftOrderInvoiceSend = "shopify.Mutation.draftOrderInvoiceSend";
+            public const string draftOrderUpdate = "shopify.Mutation.draftOrderUpdate";
+            public const string eventBridgeServerPixelUpdate = "shopify.Mutation.eventBridgeServerPixelUpdate";
+            public const string eventBridgeWebhookSubscriptionCreate = "shopify.Mutation.eventBridgeWebhookSubscriptionCreate";
+            public const string eventBridgeWebhookSubscriptionUpdate = "shopify.Mutation.eventBridgeWebhookSubscriptionUpdate";
+            public const string fileAcknowledgeUpdateFailed = "shopify.Mutation.fileAcknowledgeUpdateFailed";
+            public const string fileCreate = "shopify.Mutation.fileCreate";
+            public const string fileDelete = "shopify.Mutation.fileDelete";
+            public const string fileUpdate = "shopify.Mutation.fileUpdate";
+            public const string flowGenerateSignature = "shopify.Mutation.flowGenerateSignature";
+            public const string flowTriggerReceive = "shopify.Mutation.flowTriggerReceive";
+            public const string fulfillmentCancel = "shopify.Mutation.fulfillmentCancel";
+            public const string fulfillmentConstraintRuleCreate = "shopify.Mutation.fulfillmentConstraintRuleCreate";
+            public const string fulfillmentConstraintRuleDelete = "shopify.Mutation.fulfillmentConstraintRuleDelete";
+            public const string fulfillmentConstraintRuleUpdate = "shopify.Mutation.fulfillmentConstraintRuleUpdate";
+            public const string fulfillmentCreate = "shopify.Mutation.fulfillmentCreate";
+            public const string fulfillmentCreateV2 = "shopify.Mutation.fulfillmentCreateV2";
+            public const string fulfillmentEventCreate = "shopify.Mutation.fulfillmentEventCreate";
+            public const string fulfillmentOrderAcceptCancellationRequest = "shopify.Mutation.fulfillmentOrderAcceptCancellationRequest";
+            public const string fulfillmentOrderAcceptFulfillmentRequest = "shopify.Mutation.fulfillmentOrderAcceptFulfillmentRequest";
+            public const string fulfillmentOrderCancel = "shopify.Mutation.fulfillmentOrderCancel";
+            public const string fulfillmentOrderClose = "shopify.Mutation.fulfillmentOrderClose";
+            public const string fulfillmentOrderHold = "shopify.Mutation.fulfillmentOrderHold";
+            public const string fulfillmentOrderLineItemsPreparedForPickup = "shopify.Mutation.fulfillmentOrderLineItemsPreparedForPickup";
+            public const string fulfillmentOrderMerge = "shopify.Mutation.fulfillmentOrderMerge";
+            public const string fulfillmentOrderMove = "shopify.Mutation.fulfillmentOrderMove";
+            public const string fulfillmentOrderOpen = "shopify.Mutation.fulfillmentOrderOpen";
+            public const string fulfillmentOrderRejectCancellationRequest = "shopify.Mutation.fulfillmentOrderRejectCancellationRequest";
+            public const string fulfillmentOrderRejectFulfillmentRequest = "shopify.Mutation.fulfillmentOrderRejectFulfillmentRequest";
+            public const string fulfillmentOrderReleaseHold = "shopify.Mutation.fulfillmentOrderReleaseHold";
+            public const string fulfillmentOrderReschedule = "shopify.Mutation.fulfillmentOrderReschedule";
+            public const string fulfillmentOrderSplit = "shopify.Mutation.fulfillmentOrderSplit";
+            public const string fulfillmentOrderSubmitCancellationRequest = "shopify.Mutation.fulfillmentOrderSubmitCancellationRequest";
+            public const string fulfillmentOrderSubmitFulfillmentRequest = "shopify.Mutation.fulfillmentOrderSubmitFulfillmentRequest";
+            public const string fulfillmentOrdersSetFulfillmentDeadline = "shopify.Mutation.fulfillmentOrdersSetFulfillmentDeadline";
+            public const string fulfillmentServiceCreate = "shopify.Mutation.fulfillmentServiceCreate";
+            public const string fulfillmentServiceDelete = "shopify.Mutation.fulfillmentServiceDelete";
+            public const string fulfillmentServiceUpdate = "shopify.Mutation.fulfillmentServiceUpdate";
+            public const string fulfillmentTrackingInfoUpdate = "shopify.Mutation.fulfillmentTrackingInfoUpdate";
+            public const string fulfillmentTrackingInfoUpdateV2 = "shopify.Mutation.fulfillmentTrackingInfoUpdateV2";
+            public const string giftCardCreate = "shopify.Mutation.giftCardCreate";
+            public const string giftCardCredit = "shopify.Mutation.giftCardCredit";
+            public const string giftCardDeactivate = "shopify.Mutation.giftCardDeactivate";
+            public const string giftCardDebit = "shopify.Mutation.giftCardDebit";
+            public const string giftCardSendNotificationToCustomer = "shopify.Mutation.giftCardSendNotificationToCustomer";
+            public const string giftCardSendNotificationToRecipient = "shopify.Mutation.giftCardSendNotificationToRecipient";
+            public const string giftCardUpdate = "shopify.Mutation.giftCardUpdate";
+            public const string inventoryActivate = "shopify.Mutation.inventoryActivate";
+            public const string inventoryAdjustQuantities = "shopify.Mutation.inventoryAdjustQuantities";
+            public const string inventoryBulkToggleActivation = "shopify.Mutation.inventoryBulkToggleActivation";
+            public const string inventoryDeactivate = "shopify.Mutation.inventoryDeactivate";
+            public const string inventoryItemUpdate = "shopify.Mutation.inventoryItemUpdate";
+            public const string inventoryMoveQuantities = "shopify.Mutation.inventoryMoveQuantities";
+            public const string inventorySetOnHandQuantities = "shopify.Mutation.inventorySetOnHandQuantities";
+            public const string inventorySetQuantities = "shopify.Mutation.inventorySetQuantities";
+            public const string inventorySetScheduledChanges = "shopify.Mutation.inventorySetScheduledChanges";
+            public const string locationActivate = "shopify.Mutation.locationActivate";
+            public const string locationAdd = "shopify.Mutation.locationAdd";
+            public const string locationDeactivate = "shopify.Mutation.locationDeactivate";
+            public const string locationDelete = "shopify.Mutation.locationDelete";
+            public const string locationEdit = "shopify.Mutation.locationEdit";
+            public const string locationLocalPickupDisable = "shopify.Mutation.locationLocalPickupDisable";
+            public const string locationLocalPickupEnable = "shopify.Mutation.locationLocalPickupEnable";
+            public const string marketCreate = "shopify.Mutation.marketCreate";
+            public const string marketCurrencySettingsUpdate = "shopify.Mutation.marketCurrencySettingsUpdate";
+            public const string marketDelete = "shopify.Mutation.marketDelete";
+            public const string marketLocalizationsRegister = "shopify.Mutation.marketLocalizationsRegister";
+            public const string marketLocalizationsRemove = "shopify.Mutation.marketLocalizationsRemove";
+            public const string marketRegionDelete = "shopify.Mutation.marketRegionDelete";
+            public const string marketRegionsCreate = "shopify.Mutation.marketRegionsCreate";
+            public const string marketRegionsDelete = "shopify.Mutation.marketRegionsDelete";
+            public const string marketUpdate = "shopify.Mutation.marketUpdate";
+            public const string marketWebPresenceCreate = "shopify.Mutation.marketWebPresenceCreate";
+            public const string marketWebPresenceDelete = "shopify.Mutation.marketWebPresenceDelete";
+            public const string marketWebPresenceUpdate = "shopify.Mutation.marketWebPresenceUpdate";
+            public const string marketingActivitiesDeleteAllExternal = "shopify.Mutation.marketingActivitiesDeleteAllExternal";
+            public const string marketingActivityCreate = "shopify.Mutation.marketingActivityCreate";
+            public const string marketingActivityCreateExternal = "shopify.Mutation.marketingActivityCreateExternal";
+            public const string marketingActivityDeleteExternal = "shopify.Mutation.marketingActivityDeleteExternal";
+            public const string marketingActivityUpdate = "shopify.Mutation.marketingActivityUpdate";
+            public const string marketingActivityUpdateExternal = "shopify.Mutation.marketingActivityUpdateExternal";
+            public const string marketingActivityUpsertExternal = "shopify.Mutation.marketingActivityUpsertExternal";
+            public const string marketingEngagementCreate = "shopify.Mutation.marketingEngagementCreate";
+            public const string marketingEngagementsDelete = "shopify.Mutation.marketingEngagementsDelete";
+            public const string menuCreate = "shopify.Mutation.menuCreate";
+            public const string menuDelete = "shopify.Mutation.menuDelete";
+            public const string menuUpdate = "shopify.Mutation.menuUpdate";
+            public const string metafieldDefinitionCreate = "shopify.Mutation.metafieldDefinitionCreate";
+            public const string metafieldDefinitionDelete = "shopify.Mutation.metafieldDefinitionDelete";
+            public const string metafieldDefinitionPin = "shopify.Mutation.metafieldDefinitionPin";
+            public const string metafieldDefinitionUnpin = "shopify.Mutation.metafieldDefinitionUnpin";
+            public const string metafieldDefinitionUpdate = "shopify.Mutation.metafieldDefinitionUpdate";
+            public const string metafieldsDelete = "shopify.Mutation.metafieldsDelete";
+            public const string metafieldsSet = "shopify.Mutation.metafieldsSet";
+            public const string metaobjectBulkDelete = "shopify.Mutation.metaobjectBulkDelete";
+            public const string metaobjectCreate = "shopify.Mutation.metaobjectCreate";
+            public const string metaobjectDefinitionCreate = "shopify.Mutation.metaobjectDefinitionCreate";
+            public const string metaobjectDefinitionDelete = "shopify.Mutation.metaobjectDefinitionDelete";
+            public const string metaobjectDefinitionUpdate = "shopify.Mutation.metaobjectDefinitionUpdate";
+            public const string metaobjectDelete = "shopify.Mutation.metaobjectDelete";
+            public const string metaobjectUpdate = "shopify.Mutation.metaobjectUpdate";
+            public const string metaobjectUpsert = "shopify.Mutation.metaobjectUpsert";
+            public const string mobilePlatformApplicationCreate = "shopify.Mutation.mobilePlatformApplicationCreate";
+            public const string mobilePlatformApplicationDelete = "shopify.Mutation.mobilePlatformApplicationDelete";
+            public const string mobilePlatformApplicationUpdate = "shopify.Mutation.mobilePlatformApplicationUpdate";
+            public const string orderCancel = "shopify.Mutation.orderCancel";
+            public const string orderCapture = "shopify.Mutation.orderCapture";
+            public const string orderClose = "shopify.Mutation.orderClose";
+            public const string orderCreate = "shopify.Mutation.orderCreate";
+            public const string orderCreateMandatePayment = "shopify.Mutation.orderCreateMandatePayment";
+            public const string orderCreateManualPayment = "shopify.Mutation.orderCreateManualPayment";
+            public const string orderDelete = "shopify.Mutation.orderDelete";
+            public const string orderEditAddCustomItem = "shopify.Mutation.orderEditAddCustomItem";
+            public const string orderEditAddLineItemDiscount = "shopify.Mutation.orderEditAddLineItemDiscount";
+            public const string orderEditAddShippingLine = "shopify.Mutation.orderEditAddShippingLine";
+            public const string orderEditAddVariant = "shopify.Mutation.orderEditAddVariant";
+            public const string orderEditBegin = "shopify.Mutation.orderEditBegin";
+            public const string orderEditCommit = "shopify.Mutation.orderEditCommit";
+            public const string orderEditRemoveDiscount = "shopify.Mutation.orderEditRemoveDiscount";
+            public const string orderEditRemoveLineItemDiscount = "shopify.Mutation.orderEditRemoveLineItemDiscount";
+            public const string orderEditRemoveShippingLine = "shopify.Mutation.orderEditRemoveShippingLine";
+            public const string orderEditSetQuantity = "shopify.Mutation.orderEditSetQuantity";
+            public const string orderEditUpdateDiscount = "shopify.Mutation.orderEditUpdateDiscount";
+            public const string orderEditUpdateShippingLine = "shopify.Mutation.orderEditUpdateShippingLine";
+            public const string orderInvoiceSend = "shopify.Mutation.orderInvoiceSend";
+            public const string orderMarkAsPaid = "shopify.Mutation.orderMarkAsPaid";
+            public const string orderOpen = "shopify.Mutation.orderOpen";
+            public const string orderRiskAssessmentCreate = "shopify.Mutation.orderRiskAssessmentCreate";
+            public const string orderUpdate = "shopify.Mutation.orderUpdate";
+            public const string pageCreate = "shopify.Mutation.pageCreate";
+            public const string pageDelete = "shopify.Mutation.pageDelete";
+            public const string pageUpdate = "shopify.Mutation.pageUpdate";
+            public const string paymentCustomizationActivation = "shopify.Mutation.paymentCustomizationActivation";
+            public const string paymentCustomizationCreate = "shopify.Mutation.paymentCustomizationCreate";
+            public const string paymentCustomizationDelete = "shopify.Mutation.paymentCustomizationDelete";
+            public const string paymentCustomizationUpdate = "shopify.Mutation.paymentCustomizationUpdate";
+            public const string paymentReminderSend = "shopify.Mutation.paymentReminderSend";
+            public const string paymentTermsCreate = "shopify.Mutation.paymentTermsCreate";
+            public const string paymentTermsDelete = "shopify.Mutation.paymentTermsDelete";
+            public const string paymentTermsUpdate = "shopify.Mutation.paymentTermsUpdate";
+            public const string priceListCreate = "shopify.Mutation.priceListCreate";
+            public const string priceListDelete = "shopify.Mutation.priceListDelete";
+            public const string priceListFixedPricesAdd = "shopify.Mutation.priceListFixedPricesAdd";
+            public const string priceListFixedPricesByProductUpdate = "shopify.Mutation.priceListFixedPricesByProductUpdate";
+            public const string priceListFixedPricesDelete = "shopify.Mutation.priceListFixedPricesDelete";
+            public const string priceListFixedPricesUpdate = "shopify.Mutation.priceListFixedPricesUpdate";
+            public const string priceListUpdate = "shopify.Mutation.priceListUpdate";
+            public const string privacyFeaturesDisable = "shopify.Mutation.privacyFeaturesDisable";
+            public const string productBundleCreate = "shopify.Mutation.productBundleCreate";
+            public const string productBundleUpdate = "shopify.Mutation.productBundleUpdate";
+            public const string productChangeStatus = "shopify.Mutation.productChangeStatus";
+            public const string productCreate = "shopify.Mutation.productCreate";
+            public const string productCreateMedia = "shopify.Mutation.productCreateMedia";
+            public const string productDelete = "shopify.Mutation.productDelete";
+            public const string productDeleteMedia = "shopify.Mutation.productDeleteMedia";
+            public const string productDuplicate = "shopify.Mutation.productDuplicate";
+            public const string productFeedCreate = "shopify.Mutation.productFeedCreate";
+            public const string productFeedDelete = "shopify.Mutation.productFeedDelete";
+            public const string productFullSync = "shopify.Mutation.productFullSync";
+            public const string productJoinSellingPlanGroups = "shopify.Mutation.productJoinSellingPlanGroups";
+            public const string productLeaveSellingPlanGroups = "shopify.Mutation.productLeaveSellingPlanGroups";
+            public const string productOptionUpdate = "shopify.Mutation.productOptionUpdate";
+            public const string productOptionsCreate = "shopify.Mutation.productOptionsCreate";
+            public const string productOptionsDelete = "shopify.Mutation.productOptionsDelete";
+            public const string productOptionsReorder = "shopify.Mutation.productOptionsReorder";
+            public const string productPublish = "shopify.Mutation.productPublish";
+            public const string productReorderMedia = "shopify.Mutation.productReorderMedia";
+            public const string productSet = "shopify.Mutation.productSet";
+            public const string productUnpublish = "shopify.Mutation.productUnpublish";
+            public const string productUpdate = "shopify.Mutation.productUpdate";
+            public const string productUpdateMedia = "shopify.Mutation.productUpdateMedia";
+            public const string productVariantAppendMedia = "shopify.Mutation.productVariantAppendMedia";
+            public const string productVariantDetachMedia = "shopify.Mutation.productVariantDetachMedia";
+            public const string productVariantJoinSellingPlanGroups = "shopify.Mutation.productVariantJoinSellingPlanGroups";
+            public const string productVariantLeaveSellingPlanGroups = "shopify.Mutation.productVariantLeaveSellingPlanGroups";
+            public const string productVariantRelationshipBulkUpdate = "shopify.Mutation.productVariantRelationshipBulkUpdate";
+            public const string productVariantsBulkCreate = "shopify.Mutation.productVariantsBulkCreate";
+            public const string productVariantsBulkDelete = "shopify.Mutation.productVariantsBulkDelete";
+            public const string productVariantsBulkReorder = "shopify.Mutation.productVariantsBulkReorder";
+            public const string productVariantsBulkUpdate = "shopify.Mutation.productVariantsBulkUpdate";
+            public const string pubSubServerPixelUpdate = "shopify.Mutation.pubSubServerPixelUpdate";
+            public const string pubSubWebhookSubscriptionCreate = "shopify.Mutation.pubSubWebhookSubscriptionCreate";
+            public const string pubSubWebhookSubscriptionUpdate = "shopify.Mutation.pubSubWebhookSubscriptionUpdate";
+            public const string publicationCreate = "shopify.Mutation.publicationCreate";
+            public const string publicationDelete = "shopify.Mutation.publicationDelete";
+            public const string publicationUpdate = "shopify.Mutation.publicationUpdate";
+            public const string publishablePublish = "shopify.Mutation.publishablePublish";
+            public const string publishablePublishToCurrentChannel = "shopify.Mutation.publishablePublishToCurrentChannel";
+            public const string publishableUnpublish = "shopify.Mutation.publishableUnpublish";
+            public const string publishableUnpublishToCurrentChannel = "shopify.Mutation.publishableUnpublishToCurrentChannel";
+            public const string quantityPricingByVariantUpdate = "shopify.Mutation.quantityPricingByVariantUpdate";
+            public const string quantityRulesAdd = "shopify.Mutation.quantityRulesAdd";
+            public const string quantityRulesDelete = "shopify.Mutation.quantityRulesDelete";
+            public const string refundCreate = "shopify.Mutation.refundCreate";
+            public const string returnApproveRequest = "shopify.Mutation.returnApproveRequest";
+            public const string returnCancel = "shopify.Mutation.returnCancel";
+            public const string returnClose = "shopify.Mutation.returnClose";
+            public const string returnCreate = "shopify.Mutation.returnCreate";
+            public const string returnDeclineRequest = "shopify.Mutation.returnDeclineRequest";
+            public const string returnLineItemRemoveFromReturn = "shopify.Mutation.returnLineItemRemoveFromReturn";
+            public const string returnRefund = "shopify.Mutation.returnRefund";
+            public const string returnReopen = "shopify.Mutation.returnReopen";
+            public const string returnRequest = "shopify.Mutation.returnRequest";
+            public const string reverseDeliveryCreateWithShipping = "shopify.Mutation.reverseDeliveryCreateWithShipping";
+            public const string reverseDeliveryShippingUpdate = "shopify.Mutation.reverseDeliveryShippingUpdate";
+            public const string reverseFulfillmentOrderDispose = "shopify.Mutation.reverseFulfillmentOrderDispose";
+            public const string savedSearchCreate = "shopify.Mutation.savedSearchCreate";
+            public const string savedSearchDelete = "shopify.Mutation.savedSearchDelete";
+            public const string savedSearchUpdate = "shopify.Mutation.savedSearchUpdate";
+            public const string scriptTagCreate = "shopify.Mutation.scriptTagCreate";
+            public const string scriptTagDelete = "shopify.Mutation.scriptTagDelete";
+            public const string scriptTagUpdate = "shopify.Mutation.scriptTagUpdate";
+            public const string segmentCreate = "shopify.Mutation.segmentCreate";
+            public const string segmentDelete = "shopify.Mutation.segmentDelete";
+            public const string segmentUpdate = "shopify.Mutation.segmentUpdate";
+            public const string sellingPlanGroupAddProductVariants = "shopify.Mutation.sellingPlanGroupAddProductVariants";
+            public const string sellingPlanGroupAddProducts = "shopify.Mutation.sellingPlanGroupAddProducts";
+            public const string sellingPlanGroupCreate = "shopify.Mutation.sellingPlanGroupCreate";
+            public const string sellingPlanGroupDelete = "shopify.Mutation.sellingPlanGroupDelete";
+            public const string sellingPlanGroupRemoveProductVariants = "shopify.Mutation.sellingPlanGroupRemoveProductVariants";
+            public const string sellingPlanGroupRemoveProducts = "shopify.Mutation.sellingPlanGroupRemoveProducts";
+            public const string sellingPlanGroupUpdate = "shopify.Mutation.sellingPlanGroupUpdate";
+            public const string serverPixelCreate = "shopify.Mutation.serverPixelCreate";
+            public const string serverPixelDelete = "shopify.Mutation.serverPixelDelete";
+            public const string shippingPackageDelete = "shopify.Mutation.shippingPackageDelete";
+            public const string shippingPackageMakeDefault = "shopify.Mutation.shippingPackageMakeDefault";
+            public const string shippingPackageUpdate = "shopify.Mutation.shippingPackageUpdate";
+            public const string shopLocaleDisable = "shopify.Mutation.shopLocaleDisable";
+            public const string shopLocaleEnable = "shopify.Mutation.shopLocaleEnable";
+            public const string shopLocaleUpdate = "shopify.Mutation.shopLocaleUpdate";
+            public const string shopPolicyUpdate = "shopify.Mutation.shopPolicyUpdate";
+            public const string shopResourceFeedbackCreate = "shopify.Mutation.shopResourceFeedbackCreate";
+            public const string shopifyPaymentsPayoutAlternateCurrencyCreate = "shopify.Mutation.shopifyPaymentsPayoutAlternateCurrencyCreate";
+            public const string stagedUploadTargetGenerate = "shopify.Mutation.stagedUploadTargetGenerate";
+            public const string stagedUploadTargetsGenerate = "shopify.Mutation.stagedUploadTargetsGenerate";
+            public const string stagedUploadsCreate = "shopify.Mutation.stagedUploadsCreate";
+            public const string standardMetafieldDefinitionEnable = "shopify.Mutation.standardMetafieldDefinitionEnable";
+            public const string standardMetaobjectDefinitionEnable = "shopify.Mutation.standardMetaobjectDefinitionEnable";
+            public const string storeCreditAccountCredit = "shopify.Mutation.storeCreditAccountCredit";
+            public const string storeCreditAccountDebit = "shopify.Mutation.storeCreditAccountDebit";
+            public const string storefrontAccessTokenCreate = "shopify.Mutation.storefrontAccessTokenCreate";
+            public const string storefrontAccessTokenDelete = "shopify.Mutation.storefrontAccessTokenDelete";
+            public const string subscriptionBillingAttemptCreate = "shopify.Mutation.subscriptionBillingAttemptCreate";
+            public const string subscriptionBillingCycleBulkCharge = "shopify.Mutation.subscriptionBillingCycleBulkCharge";
+            public const string subscriptionBillingCycleBulkSearch = "shopify.Mutation.subscriptionBillingCycleBulkSearch";
+            public const string subscriptionBillingCycleCharge = "shopify.Mutation.subscriptionBillingCycleCharge";
+            public const string subscriptionBillingCycleContractDraftCommit = "shopify.Mutation.subscriptionBillingCycleContractDraftCommit";
+            public const string subscriptionBillingCycleContractDraftConcatenate = "shopify.Mutation.subscriptionBillingCycleContractDraftConcatenate";
+            public const string subscriptionBillingCycleContractEdit = "shopify.Mutation.subscriptionBillingCycleContractEdit";
+            public const string subscriptionBillingCycleEditDelete = "shopify.Mutation.subscriptionBillingCycleEditDelete";
+            public const string subscriptionBillingCycleEditsDelete = "shopify.Mutation.subscriptionBillingCycleEditsDelete";
+            public const string subscriptionBillingCycleScheduleEdit = "shopify.Mutation.subscriptionBillingCycleScheduleEdit";
+            public const string subscriptionBillingCycleSkip = "shopify.Mutation.subscriptionBillingCycleSkip";
+            public const string subscriptionBillingCycleUnskip = "shopify.Mutation.subscriptionBillingCycleUnskip";
+            public const string subscriptionContractActivate = "shopify.Mutation.subscriptionContractActivate";
+            public const string subscriptionContractAtomicCreate = "shopify.Mutation.subscriptionContractAtomicCreate";
+            public const string subscriptionContractCancel = "shopify.Mutation.subscriptionContractCancel";
+            public const string subscriptionContractCreate = "shopify.Mutation.subscriptionContractCreate";
+            public const string subscriptionContractExpire = "shopify.Mutation.subscriptionContractExpire";
+            public const string subscriptionContractFail = "shopify.Mutation.subscriptionContractFail";
+            public const string subscriptionContractPause = "shopify.Mutation.subscriptionContractPause";
+            public const string subscriptionContractProductChange = "shopify.Mutation.subscriptionContractProductChange";
+            public const string subscriptionContractSetNextBillingDate = "shopify.Mutation.subscriptionContractSetNextBillingDate";
+            public const string subscriptionContractUpdate = "shopify.Mutation.subscriptionContractUpdate";
+            public const string subscriptionDraftCommit = "shopify.Mutation.subscriptionDraftCommit";
+            public const string subscriptionDraftDiscountAdd = "shopify.Mutation.subscriptionDraftDiscountAdd";
+            public const string subscriptionDraftDiscountCodeApply = "shopify.Mutation.subscriptionDraftDiscountCodeApply";
+            public const string subscriptionDraftDiscountRemove = "shopify.Mutation.subscriptionDraftDiscountRemove";
+            public const string subscriptionDraftDiscountUpdate = "shopify.Mutation.subscriptionDraftDiscountUpdate";
+            public const string subscriptionDraftFreeShippingDiscountAdd = "shopify.Mutation.subscriptionDraftFreeShippingDiscountAdd";
+            public const string subscriptionDraftFreeShippingDiscountUpdate = "shopify.Mutation.subscriptionDraftFreeShippingDiscountUpdate";
+            public const string subscriptionDraftLineAdd = "shopify.Mutation.subscriptionDraftLineAdd";
+            public const string subscriptionDraftLineRemove = "shopify.Mutation.subscriptionDraftLineRemove";
+            public const string subscriptionDraftLineUpdate = "shopify.Mutation.subscriptionDraftLineUpdate";
+            public const string subscriptionDraftUpdate = "shopify.Mutation.subscriptionDraftUpdate";
+            public const string tagsAdd = "shopify.Mutation.tagsAdd";
+            public const string tagsRemove = "shopify.Mutation.tagsRemove";
+            public const string taxAppConfigure = "shopify.Mutation.taxAppConfigure";
+            public const string themeCreate = "shopify.Mutation.themeCreate";
+            public const string themeDelete = "shopify.Mutation.themeDelete";
+            public const string themeFilesCopy = "shopify.Mutation.themeFilesCopy";
+            public const string themeFilesDelete = "shopify.Mutation.themeFilesDelete";
+            public const string themeFilesUpsert = "shopify.Mutation.themeFilesUpsert";
+            public const string themePublish = "shopify.Mutation.themePublish";
+            public const string themeUpdate = "shopify.Mutation.themeUpdate";
+            public const string transactionVoid = "shopify.Mutation.transactionVoid";
+            public const string translationsRegister = "shopify.Mutation.translationsRegister";
+            public const string translationsRemove = "shopify.Mutation.translationsRemove";
+            public const string urlRedirectBulkDeleteAll = "shopify.Mutation.urlRedirectBulkDeleteAll";
+            public const string urlRedirectBulkDeleteByIds = "shopify.Mutation.urlRedirectBulkDeleteByIds";
+            public const string urlRedirectBulkDeleteBySavedSearch = "shopify.Mutation.urlRedirectBulkDeleteBySavedSearch";
+            public const string urlRedirectBulkDeleteBySearch = "shopify.Mutation.urlRedirectBulkDeleteBySearch";
+            public const string urlRedirectCreate = "shopify.Mutation.urlRedirectCreate";
+            public const string urlRedirectDelete = "shopify.Mutation.urlRedirectDelete";
+            public const string urlRedirectImportCreate = "shopify.Mutation.urlRedirectImportCreate";
+            public const string urlRedirectImportSubmit = "shopify.Mutation.urlRedirectImportSubmit";
+            public const string urlRedirectUpdate = "shopify.Mutation.urlRedirectUpdate";
+            public const string validationCreate = "shopify.Mutation.validationCreate";
+            public const string validationDelete = "shopify.Mutation.validationDelete";
+            public const string validationUpdate = "shopify.Mutation.validationUpdate";
+            public const string webPixelCreate = "shopify.Mutation.webPixelCreate";
+            public const string webPixelDelete = "shopify.Mutation.webPixelDelete";
+            public const string webPixelUpdate = "shopify.Mutation.webPixelUpdate";
+            public const string webPresenceCreate = "shopify.Mutation.webPresenceCreate";
+            public const string webPresenceDelete = "shopify.Mutation.webPresenceDelete";
+            public const string webPresenceUpdate = "shopify.Mutation.webPresenceUpdate";
+            public const string webhookSubscriptionCreate = "shopify.Mutation.webhookSubscriptionCreate";
+            public const string webhookSubscriptionDelete = "shopify.Mutation.webhookSubscriptionDelete";
+            public const string webhookSubscriptionUpdate = "shopify.Mutation.webhookSubscriptionUpdate";
+        }
+
+        public static class MutationsStagedUploadTargetGenerateUploadParameter
+        {
+            public const string name = "shopify.MutationsStagedUploadTargetGenerateUploadParameter.name";
+            public const string value = "shopify.MutationsStagedUploadTargetGenerateUploadParameter.value";
+        }
+
+        public static class INavigable
+        {
+            public const string defaultCursor = "shopify.INavigable.defaultCursor";
+        }
+
+        public static class NavigationItem
+        {
+            public const string id = "shopify.NavigationItem.id";
+            public const string title = "shopify.NavigationItem.title";
+            public const string url = "shopify.NavigationItem.url";
+        }
+
+        public static class INode
+        {
+            public const string id = "shopify.INode.id";
+        }
+
+        public static class OnlineStore
+        {
+            public const string passwordProtection = "shopify.OnlineStore.passwordProtection";
+        }
+
+        public static class OnlineStorePasswordProtection
+        {
+            public const string enabled = "shopify.OnlineStorePasswordProtection.enabled";
+        }
+
+        public static class IOnlineStorePreviewable
+        {
+            public const string onlineStorePreviewUrl = "shopify.IOnlineStorePreviewable.onlineStorePreviewUrl";
+        }
+
+        public static class OnlineStoreTheme
+        {
+            public const string createdAt = "shopify.OnlineStoreTheme.createdAt";
+            public const string files = "shopify.OnlineStoreTheme.files";
+            public const string id = "shopify.OnlineStoreTheme.id";
+            public const string name = "shopify.OnlineStoreTheme.name";
+            public const string prefix = "shopify.OnlineStoreTheme.prefix";
+            public const string processing = "shopify.OnlineStoreTheme.processing";
+            public const string processingFailed = "shopify.OnlineStoreTheme.processingFailed";
+            public const string role = "shopify.OnlineStoreTheme.role";
+            public const string themeStoreId = "shopify.OnlineStoreTheme.themeStoreId";
+            public const string translations = "shopify.OnlineStoreTheme.translations";
+            public const string updatedAt = "shopify.OnlineStoreTheme.updatedAt";
+        }
+
+        public static class OnlineStoreThemeConnection
+        {
+            public const string edges = "shopify.OnlineStoreThemeConnection.edges";
+            public const string nodes = "shopify.OnlineStoreThemeConnection.nodes";
+            public const string pageInfo = "shopify.OnlineStoreThemeConnection.pageInfo";
+        }
+
+        public static class OnlineStoreThemeEdge
+        {
+            public const string cursor = "shopify.OnlineStoreThemeEdge.cursor";
+            public const string node = "shopify.OnlineStoreThemeEdge.node";
+        }
+
+        public static class OnlineStoreThemeFile
+        {
+            public const string body = "shopify.OnlineStoreThemeFile.body";
+            public const string checksumMd5 = "shopify.OnlineStoreThemeFile.checksumMd5";
+            public const string contentType = "shopify.OnlineStoreThemeFile.contentType";
+            public const string createdAt = "shopify.OnlineStoreThemeFile.createdAt";
+            public const string filename = "shopify.OnlineStoreThemeFile.filename";
+            public const string size = "shopify.OnlineStoreThemeFile.size";
+            public const string updatedAt = "shopify.OnlineStoreThemeFile.updatedAt";
+        }
+
+        public static class IOnlineStoreThemeFileBody
+        {
+        }
+
+        public static class OnlineStoreThemeFileBodyBase64
+        {
+            public const string contentBase64 = "shopify.OnlineStoreThemeFileBodyBase64.contentBase64";
+        }
+
+        public static class OnlineStoreThemeFileBodyText
+        {
+            public const string content = "shopify.OnlineStoreThemeFileBodyText.content";
+        }
+
+        public static class OnlineStoreThemeFileBodyUrl
+        {
+            public const string url = "shopify.OnlineStoreThemeFileBodyUrl.url";
+        }
+
+        public static class OnlineStoreThemeFileConnection
+        {
+            public const string edges = "shopify.OnlineStoreThemeFileConnection.edges";
+            public const string nodes = "shopify.OnlineStoreThemeFileConnection.nodes";
+            public const string pageInfo = "shopify.OnlineStoreThemeFileConnection.pageInfo";
+            public const string userErrors = "shopify.OnlineStoreThemeFileConnection.userErrors";
+        }
+
+        public static class OnlineStoreThemeFileEdge
+        {
+            public const string cursor = "shopify.OnlineStoreThemeFileEdge.cursor";
+            public const string node = "shopify.OnlineStoreThemeFileEdge.node";
+        }
+
+        public static class OnlineStoreThemeFileOperationResult
+        {
+            public const string checksumMd5 = "shopify.OnlineStoreThemeFileOperationResult.checksumMd5";
+            public const string createdAt = "shopify.OnlineStoreThemeFileOperationResult.createdAt";
+            public const string filename = "shopify.OnlineStoreThemeFileOperationResult.filename";
+            public const string size = "shopify.OnlineStoreThemeFileOperationResult.size";
+            public const string updatedAt = "shopify.OnlineStoreThemeFileOperationResult.updatedAt";
+        }
+
+        public static class OnlineStoreThemeFileReadResult
+        {
+            public const string code = "shopify.OnlineStoreThemeFileReadResult.code";
+            public const string filename = "shopify.OnlineStoreThemeFileReadResult.filename";
+        }
+
+        public static class OnlineStoreThemeFilesUserErrors
+        {
+            public const string code = "shopify.OnlineStoreThemeFilesUserErrors.code";
+            public const string field = "shopify.OnlineStoreThemeFilesUserErrors.field";
+            public const string filename = "shopify.OnlineStoreThemeFilesUserErrors.filename";
+            public const string message = "shopify.OnlineStoreThemeFilesUserErrors.message";
+        }
+
+        public static class Order
+        {
+            public const string additionalFees = "shopify.Order.additionalFees";
+            public const string agreements = "shopify.Order.agreements";
+            public const string alerts = "shopify.Order.alerts";
+            public const string app = "shopify.Order.app";
+            public const string billingAddress = "shopify.Order.billingAddress";
+            public const string billingAddressMatchesShippingAddress = "shopify.Order.billingAddressMatchesShippingAddress";
+            public const string canMarkAsPaid = "shopify.Order.canMarkAsPaid";
+            public const string canNotifyCustomer = "shopify.Order.canNotifyCustomer";
+            public const string cancelReason = "shopify.Order.cancelReason";
+            public const string cancellation = "shopify.Order.cancellation";
+            public const string cancelledAt = "shopify.Order.cancelledAt";
+            public const string capturable = "shopify.Order.capturable";
+            public const string cartDiscountAmount = "shopify.Order.cartDiscountAmount";
+            public const string cartDiscountAmountSet = "shopify.Order.cartDiscountAmountSet";
+            public const string channel = "shopify.Order.channel";
+            public const string channelInformation = "shopify.Order.channelInformation";
+            public const string clientIp = "shopify.Order.clientIp";
+            public const string closed = "shopify.Order.closed";
+            public const string closedAt = "shopify.Order.closedAt";
+            public const string confirmationNumber = "shopify.Order.confirmationNumber";
+            public const string confirmed = "shopify.Order.confirmed";
+            public const string createdAt = "shopify.Order.createdAt";
+            public const string currencyCode = "shopify.Order.currencyCode";
+            public const string currentCartDiscountAmountSet = "shopify.Order.currentCartDiscountAmountSet";
+            public const string currentShippingPriceSet = "shopify.Order.currentShippingPriceSet";
+            public const string currentSubtotalLineItemsQuantity = "shopify.Order.currentSubtotalLineItemsQuantity";
+            public const string currentSubtotalPriceSet = "shopify.Order.currentSubtotalPriceSet";
+            public const string currentTaxLines = "shopify.Order.currentTaxLines";
+            public const string currentTotalAdditionalFeesSet = "shopify.Order.currentTotalAdditionalFeesSet";
+            public const string currentTotalDiscountsSet = "shopify.Order.currentTotalDiscountsSet";
+            public const string currentTotalDutiesSet = "shopify.Order.currentTotalDutiesSet";
+            public const string currentTotalPriceSet = "shopify.Order.currentTotalPriceSet";
+            public const string currentTotalTaxSet = "shopify.Order.currentTotalTaxSet";
+            public const string currentTotalWeight = "shopify.Order.currentTotalWeight";
+            public const string customAttributes = "shopify.Order.customAttributes";
+            public const string customer = "shopify.Order.customer";
+            public const string customerAcceptsMarketing = "shopify.Order.customerAcceptsMarketing";
+            public const string customerJourney = "shopify.Order.customerJourney";
+            public const string customerJourneySummary = "shopify.Order.customerJourneySummary";
+            public const string customerLocale = "shopify.Order.customerLocale";
+            public const string discountApplications = "shopify.Order.discountApplications";
+            public const string discountCode = "shopify.Order.discountCode";
+            public const string discountCodes = "shopify.Order.discountCodes";
+            public const string displayAddress = "shopify.Order.displayAddress";
+            public const string displayFinancialStatus = "shopify.Order.displayFinancialStatus";
+            public const string displayFulfillmentStatus = "shopify.Order.displayFulfillmentStatus";
+            public const string disputes = "shopify.Order.disputes";
+            public const string dutiesIncluded = "shopify.Order.dutiesIncluded";
+            public const string edited = "shopify.Order.edited";
+            public const string email = "shopify.Order.email";
+            public const string estimatedTaxes = "shopify.Order.estimatedTaxes";
+            public const string events = "shopify.Order.events";
+            public const string exchangeV2s = "shopify.Order.exchangeV2s";
+            public const string fulfillable = "shopify.Order.fulfillable";
+            public const string fulfillmentOrders = "shopify.Order.fulfillmentOrders";
+            public const string fulfillments = "shopify.Order.fulfillments";
+            public const string fulfillmentsCount = "shopify.Order.fulfillmentsCount";
+            public const string fullyPaid = "shopify.Order.fullyPaid";
+            public const string hasTimelineComment = "shopify.Order.hasTimelineComment";
+            public const string id = "shopify.Order.id";
+            public const string landingPageDisplayText = "shopify.Order.landingPageDisplayText";
+            public const string landingPageUrl = "shopify.Order.landingPageUrl";
+            public const string legacyResourceId = "shopify.Order.legacyResourceId";
+            public const string lineItems = "shopify.Order.lineItems";
+            public const string localizationExtensions = "shopify.Order.localizationExtensions";
+            public const string localizedFields = "shopify.Order.localizedFields";
+            public const string merchantBusinessEntity = "shopify.Order.merchantBusinessEntity";
+            public const string merchantEditable = "shopify.Order.merchantEditable";
+            public const string merchantEditableErrors = "shopify.Order.merchantEditableErrors";
+            public const string merchantOfRecordApp = "shopify.Order.merchantOfRecordApp";
+            public const string metafield = "shopify.Order.metafield";
+            public const string metafieldDefinitions = "shopify.Order.metafieldDefinitions";
+            public const string metafields = "shopify.Order.metafields";
+            public const string name = "shopify.Order.name";
+            public const string netPayment = "shopify.Order.netPayment";
+            public const string netPaymentSet = "shopify.Order.netPaymentSet";
+            public const string nonFulfillableLineItems = "shopify.Order.nonFulfillableLineItems";
+            public const string note = "shopify.Order.note";
+            public const string originalTotalAdditionalFeesSet = "shopify.Order.originalTotalAdditionalFeesSet";
+            public const string originalTotalDutiesSet = "shopify.Order.originalTotalDutiesSet";
+            public const string originalTotalPriceSet = "shopify.Order.originalTotalPriceSet";
+            public const string paymentCollectionDetails = "shopify.Order.paymentCollectionDetails";
+            public const string paymentGatewayNames = "shopify.Order.paymentGatewayNames";
+            public const string paymentTerms = "shopify.Order.paymentTerms";
+            public const string phone = "shopify.Order.phone";
+            public const string physicalLocation = "shopify.Order.physicalLocation";
+            public const string poNumber = "shopify.Order.poNumber";
+            public const string presentmentCurrencyCode = "shopify.Order.presentmentCurrencyCode";
+            public const string processedAt = "shopify.Order.processedAt";
+            public const string publication = "shopify.Order.publication";
+            public const string purchasingEntity = "shopify.Order.purchasingEntity";
+            public const string referralCode = "shopify.Order.referralCode";
+            public const string referrerDisplayText = "shopify.Order.referrerDisplayText";
+            public const string referrerUrl = "shopify.Order.referrerUrl";
+            public const string refundDiscrepancySet = "shopify.Order.refundDiscrepancySet";
+            public const string refundable = "shopify.Order.refundable";
+            public const string refunds = "shopify.Order.refunds";
+            public const string registeredSourceUrl = "shopify.Order.registeredSourceUrl";
+            public const string requiresShipping = "shopify.Order.requiresShipping";
+            public const string restockable = "shopify.Order.restockable";
+            public const string retailLocation = "shopify.Order.retailLocation";
+            public const string returnStatus = "shopify.Order.returnStatus";
+            public const string returns = "shopify.Order.returns";
+            public const string risk = "shopify.Order.risk";
+            public const string riskLevel = "shopify.Order.riskLevel";
+            public const string risks = "shopify.Order.risks";
+            public const string shippingAddress = "shopify.Order.shippingAddress";
+            public const string shippingLine = "shopify.Order.shippingLine";
+            public const string shippingLines = "shopify.Order.shippingLines";
+            public const string shopifyProtect = "shopify.Order.shopifyProtect";
+            public const string sourceIdentifier = "shopify.Order.sourceIdentifier";
+            public const string sourceName = "shopify.Order.sourceName";
+            public const string staffMember = "shopify.Order.staffMember";
+            public const string statusPageUrl = "shopify.Order.statusPageUrl";
+            public const string subtotalLineItemsQuantity = "shopify.Order.subtotalLineItemsQuantity";
+            public const string subtotalPrice = "shopify.Order.subtotalPrice";
+            public const string subtotalPriceSet = "shopify.Order.subtotalPriceSet";
+            public const string suggestedRefund = "shopify.Order.suggestedRefund";
+            public const string tags = "shopify.Order.tags";
+            public const string taxExempt = "shopify.Order.taxExempt";
+            public const string taxLines = "shopify.Order.taxLines";
+            public const string taxesIncluded = "shopify.Order.taxesIncluded";
+            public const string test = "shopify.Order.test";
+            public const string totalCapturable = "shopify.Order.totalCapturable";
+            public const string totalCapturableSet = "shopify.Order.totalCapturableSet";
+            public const string totalCashRoundingAdjustment = "shopify.Order.totalCashRoundingAdjustment";
+            public const string totalDiscounts = "shopify.Order.totalDiscounts";
+            public const string totalDiscountsSet = "shopify.Order.totalDiscountsSet";
+            public const string totalOutstandingSet = "shopify.Order.totalOutstandingSet";
+            public const string totalPrice = "shopify.Order.totalPrice";
+            public const string totalPriceSet = "shopify.Order.totalPriceSet";
+            public const string totalReceived = "shopify.Order.totalReceived";
+            public const string totalReceivedSet = "shopify.Order.totalReceivedSet";
+            public const string totalRefunded = "shopify.Order.totalRefunded";
+            public const string totalRefundedSet = "shopify.Order.totalRefundedSet";
+            public const string totalRefundedShippingSet = "shopify.Order.totalRefundedShippingSet";
+            public const string totalShippingPrice = "shopify.Order.totalShippingPrice";
+            public const string totalShippingPriceSet = "shopify.Order.totalShippingPriceSet";
+            public const string totalTax = "shopify.Order.totalTax";
+            public const string totalTaxSet = "shopify.Order.totalTaxSet";
+            public const string totalTipReceived = "shopify.Order.totalTipReceived";
+            public const string totalTipReceivedSet = "shopify.Order.totalTipReceivedSet";
+            public const string totalWeight = "shopify.Order.totalWeight";
+            public const string transactions = "shopify.Order.transactions";
+            public const string transactionsCount = "shopify.Order.transactionsCount";
+            public const string unpaid = "shopify.Order.unpaid";
+            public const string updatedAt = "shopify.Order.updatedAt";
+        }
+
+        public static class OrderAdjustment
+        {
+            public const string amountSet = "shopify.OrderAdjustment.amountSet";
+            public const string id = "shopify.OrderAdjustment.id";
+            public const string reason = "shopify.OrderAdjustment.reason";
+            public const string taxAmountSet = "shopify.OrderAdjustment.taxAmountSet";
+        }
+
+        public static class OrderAdjustmentConnection
+        {
+            public const string edges = "shopify.OrderAdjustmentConnection.edges";
+            public const string nodes = "shopify.OrderAdjustmentConnection.nodes";
+            public const string pageInfo = "shopify.OrderAdjustmentConnection.pageInfo";
+        }
+
+        public static class OrderAdjustmentEdge
+        {
+            public const string cursor = "shopify.OrderAdjustmentEdge.cursor";
+            public const string node = "shopify.OrderAdjustmentEdge.node";
+        }
+
+        public static class OrderAgreement
+        {
+            public const string app = "shopify.OrderAgreement.app";
+            public const string happenedAt = "shopify.OrderAgreement.happenedAt";
+            public const string id = "shopify.OrderAgreement.id";
+            public const string order = "shopify.OrderAgreement.order";
+            public const string reason = "shopify.OrderAgreement.reason";
+            public const string sales = "shopify.OrderAgreement.sales";
+            public const string user = "shopify.OrderAgreement.user";
+        }
+
+        public static class OrderApp
+        {
+            public const string icon = "shopify.OrderApp.icon";
+            public const string id = "shopify.OrderApp.id";
+            public const string name = "shopify.OrderApp.name";
+        }
+
+        public static class OrderCancelPayload
+        {
+            public const string job = "shopify.OrderCancelPayload.job";
+            public const string orderCancelUserErrors = "shopify.OrderCancelPayload.orderCancelUserErrors";
+            public const string userErrors = "shopify.OrderCancelPayload.userErrors";
+        }
+
+        public static class OrderCancelUserError
+        {
+            public const string code = "shopify.OrderCancelUserError.code";
+            public const string field = "shopify.OrderCancelUserError.field";
+            public const string message = "shopify.OrderCancelUserError.message";
+        }
+
+        public static class OrderCancellation
+        {
+            public const string staffNote = "shopify.OrderCancellation.staffNote";
+        }
+
+        public static class OrderCapturePayload
+        {
+            public const string transaction = "shopify.OrderCapturePayload.transaction";
+            public const string userErrors = "shopify.OrderCapturePayload.userErrors";
+        }
+
+        public static class OrderClosePayload
+        {
+            public const string order = "shopify.OrderClosePayload.order";
+            public const string userErrors = "shopify.OrderClosePayload.userErrors";
+        }
+
+        public static class OrderConnection
+        {
+            public const string edges = "shopify.OrderConnection.edges";
+            public const string nodes = "shopify.OrderConnection.nodes";
+            public const string pageInfo = "shopify.OrderConnection.pageInfo";
+        }
+
+        public static class OrderCreateMandatePaymentPayload
+        {
+            public const string job = "shopify.OrderCreateMandatePaymentPayload.job";
+            public const string paymentReferenceId = "shopify.OrderCreateMandatePaymentPayload.paymentReferenceId";
+            public const string userErrors = "shopify.OrderCreateMandatePaymentPayload.userErrors";
+        }
+
+        public static class OrderCreateMandatePaymentUserError
+        {
+            public const string code = "shopify.OrderCreateMandatePaymentUserError.code";
+            public const string field = "shopify.OrderCreateMandatePaymentUserError.field";
+            public const string message = "shopify.OrderCreateMandatePaymentUserError.message";
+        }
+
+        public static class OrderCreateManualPaymentOrderCreateManualPaymentError
+        {
+            public const string code = "shopify.OrderCreateManualPaymentOrderCreateManualPaymentError.code";
+            public const string field = "shopify.OrderCreateManualPaymentOrderCreateManualPaymentError.field";
+            public const string message = "shopify.OrderCreateManualPaymentOrderCreateManualPaymentError.message";
+        }
+
+        public static class OrderCreateManualPaymentPayload
+        {
+            public const string order = "shopify.OrderCreateManualPaymentPayload.order";
+            public const string userErrors = "shopify.OrderCreateManualPaymentPayload.userErrors";
+        }
+
+        public static class OrderCreatePayload
+        {
+            public const string order = "shopify.OrderCreatePayload.order";
+            public const string userErrors = "shopify.OrderCreatePayload.userErrors";
+        }
+
+        public static class OrderCreateUserError
+        {
+            public const string code = "shopify.OrderCreateUserError.code";
+            public const string field = "shopify.OrderCreateUserError.field";
+            public const string message = "shopify.OrderCreateUserError.message";
+        }
+
+        public static class OrderDeletePayload
+        {
+            public const string deletedId = "shopify.OrderDeletePayload.deletedId";
+            public const string userErrors = "shopify.OrderDeletePayload.userErrors";
+        }
+
+        public static class OrderDeleteUserError
+        {
+            public const string code = "shopify.OrderDeleteUserError.code";
+            public const string field = "shopify.OrderDeleteUserError.field";
+            public const string message = "shopify.OrderDeleteUserError.message";
+        }
+
+        public static class OrderDisputeSummary
+        {
+            public const string id = "shopify.OrderDisputeSummary.id";
+            public const string initiatedAs = "shopify.OrderDisputeSummary.initiatedAs";
+            public const string status = "shopify.OrderDisputeSummary.status";
+        }
+
+        public static class OrderEdge
+        {
+            public const string cursor = "shopify.OrderEdge.cursor";
+            public const string node = "shopify.OrderEdge.node";
+        }
+
+        public static class OrderEditAddCustomItemPayload
+        {
+            public const string calculatedLineItem = "shopify.OrderEditAddCustomItemPayload.calculatedLineItem";
+            public const string calculatedOrder = "shopify.OrderEditAddCustomItemPayload.calculatedOrder";
+            public const string userErrors = "shopify.OrderEditAddCustomItemPayload.userErrors";
+        }
+
+        public static class OrderEditAddLineItemDiscountPayload
+        {
+            public const string addedDiscountStagedChange = "shopify.OrderEditAddLineItemDiscountPayload.addedDiscountStagedChange";
+            public const string calculatedLineItem = "shopify.OrderEditAddLineItemDiscountPayload.calculatedLineItem";
+            public const string calculatedOrder = "shopify.OrderEditAddLineItemDiscountPayload.calculatedOrder";
+            public const string userErrors = "shopify.OrderEditAddLineItemDiscountPayload.userErrors";
+        }
+
+        public static class OrderEditAddShippingLinePayload
+        {
+            public const string calculatedOrder = "shopify.OrderEditAddShippingLinePayload.calculatedOrder";
+            public const string calculatedShippingLine = "shopify.OrderEditAddShippingLinePayload.calculatedShippingLine";
+            public const string userErrors = "shopify.OrderEditAddShippingLinePayload.userErrors";
+        }
+
+        public static class OrderEditAddShippingLineUserError
+        {
+            public const string code = "shopify.OrderEditAddShippingLineUserError.code";
+            public const string field = "shopify.OrderEditAddShippingLineUserError.field";
+            public const string message = "shopify.OrderEditAddShippingLineUserError.message";
+        }
+
+        public static class OrderEditAddVariantPayload
+        {
+            public const string calculatedLineItem = "shopify.OrderEditAddVariantPayload.calculatedLineItem";
+            public const string calculatedOrder = "shopify.OrderEditAddVariantPayload.calculatedOrder";
+            public const string userErrors = "shopify.OrderEditAddVariantPayload.userErrors";
+        }
+
+        public static class OrderEditAgreement
+        {
+            public const string app = "shopify.OrderEditAgreement.app";
+            public const string happenedAt = "shopify.OrderEditAgreement.happenedAt";
+            public const string id = "shopify.OrderEditAgreement.id";
+            public const string reason = "shopify.OrderEditAgreement.reason";
+            public const string sales = "shopify.OrderEditAgreement.sales";
+            public const string user = "shopify.OrderEditAgreement.user";
+        }
+
+        public static class OrderEditBeginPayload
+        {
+            public const string calculatedOrder = "shopify.OrderEditBeginPayload.calculatedOrder";
+            public const string userErrors = "shopify.OrderEditBeginPayload.userErrors";
+        }
+
+        public static class OrderEditCommitPayload
+        {
+            public const string order = "shopify.OrderEditCommitPayload.order";
+            public const string userErrors = "shopify.OrderEditCommitPayload.userErrors";
+        }
+
+        public static class OrderEditRemoveDiscountPayload
+        {
+            public const string calculatedOrder = "shopify.OrderEditRemoveDiscountPayload.calculatedOrder";
+            public const string userErrors = "shopify.OrderEditRemoveDiscountPayload.userErrors";
+        }
+
+        public static class OrderEditRemoveDiscountUserError
+        {
+            public const string code = "shopify.OrderEditRemoveDiscountUserError.code";
+            public const string field = "shopify.OrderEditRemoveDiscountUserError.field";
+            public const string message = "shopify.OrderEditRemoveDiscountUserError.message";
+        }
+
+        public static class OrderEditRemoveLineItemDiscountPayload
+        {
+            public const string calculatedLineItem = "shopify.OrderEditRemoveLineItemDiscountPayload.calculatedLineItem";
+            public const string calculatedOrder = "shopify.OrderEditRemoveLineItemDiscountPayload.calculatedOrder";
+            public const string userErrors = "shopify.OrderEditRemoveLineItemDiscountPayload.userErrors";
+        }
+
+        public static class OrderEditRemoveShippingLinePayload
+        {
+            public const string calculatedOrder = "shopify.OrderEditRemoveShippingLinePayload.calculatedOrder";
+            public const string userErrors = "shopify.OrderEditRemoveShippingLinePayload.userErrors";
+        }
+
+        public static class OrderEditRemoveShippingLineUserError
+        {
+            public const string code = "shopify.OrderEditRemoveShippingLineUserError.code";
+            public const string field = "shopify.OrderEditRemoveShippingLineUserError.field";
+            public const string message = "shopify.OrderEditRemoveShippingLineUserError.message";
+        }
+
+        public static class OrderEditSetQuantityPayload
+        {
+            public const string calculatedLineItem = "shopify.OrderEditSetQuantityPayload.calculatedLineItem";
+            public const string calculatedOrder = "shopify.OrderEditSetQuantityPayload.calculatedOrder";
+            public const string userErrors = "shopify.OrderEditSetQuantityPayload.userErrors";
+        }
+
+        public static class OrderEditUpdateDiscountPayload
+        {
+            public const string calculatedOrder = "shopify.OrderEditUpdateDiscountPayload.calculatedOrder";
+            public const string userErrors = "shopify.OrderEditUpdateDiscountPayload.userErrors";
+        }
+
+        public static class OrderEditUpdateDiscountUserError
+        {
+            public const string code = "shopify.OrderEditUpdateDiscountUserError.code";
+            public const string field = "shopify.OrderEditUpdateDiscountUserError.field";
+            public const string message = "shopify.OrderEditUpdateDiscountUserError.message";
+        }
+
+        public static class OrderEditUpdateShippingLinePayload
+        {
+            public const string calculatedOrder = "shopify.OrderEditUpdateShippingLinePayload.calculatedOrder";
+            public const string userErrors = "shopify.OrderEditUpdateShippingLinePayload.userErrors";
+        }
+
+        public static class OrderEditUpdateShippingLineUserError
+        {
+            public const string code = "shopify.OrderEditUpdateShippingLineUserError.code";
+            public const string field = "shopify.OrderEditUpdateShippingLineUserError.field";
+            public const string message = "shopify.OrderEditUpdateShippingLineUserError.message";
+        }
+
+        public static class OrderInvoiceSendPayload
+        {
+            public const string order = "shopify.OrderInvoiceSendPayload.order";
+            public const string userErrors = "shopify.OrderInvoiceSendPayload.userErrors";
+        }
+
+        public static class OrderInvoiceSendUserError
+        {
+            public const string code = "shopify.OrderInvoiceSendUserError.code";
+            public const string field = "shopify.OrderInvoiceSendUserError.field";
+            public const string message = "shopify.OrderInvoiceSendUserError.message";
+        }
+
+        public static class OrderMarkAsPaidPayload
+        {
+            public const string order = "shopify.OrderMarkAsPaidPayload.order";
+            public const string userErrors = "shopify.OrderMarkAsPaidPayload.userErrors";
+        }
+
+        public static class OrderOpenPayload
+        {
+            public const string order = "shopify.OrderOpenPayload.order";
+            public const string userErrors = "shopify.OrderOpenPayload.userErrors";
+        }
+
+        public static class OrderPaymentCollectionDetails
+        {
+            public const string additionalPaymentCollectionUrl = "shopify.OrderPaymentCollectionDetails.additionalPaymentCollectionUrl";
+            public const string vaultedPaymentMethods = "shopify.OrderPaymentCollectionDetails.vaultedPaymentMethods";
+        }
+
+        public static class OrderPaymentStatus
+        {
+            public const string errorMessage = "shopify.OrderPaymentStatus.errorMessage";
+            public const string paymentReferenceId = "shopify.OrderPaymentStatus.paymentReferenceId";
+            public const string status = "shopify.OrderPaymentStatus.status";
+            public const string transactions = "shopify.OrderPaymentStatus.transactions";
+            public const string translatedErrorMessage = "shopify.OrderPaymentStatus.translatedErrorMessage";
+        }
+
+        public static class OrderRisk
+        {
+            public const string display = "shopify.OrderRisk.display";
+            public const string level = "shopify.OrderRisk.level";
+            public const string message = "shopify.OrderRisk.message";
+        }
+
+        public static class OrderRiskAssessment
+        {
+            public const string facts = "shopify.OrderRiskAssessment.facts";
+            public const string provider = "shopify.OrderRiskAssessment.provider";
+            public const string riskLevel = "shopify.OrderRiskAssessment.riskLevel";
+        }
+
+        public static class OrderRiskAssessmentCreatePayload
+        {
+            public const string orderRiskAssessment = "shopify.OrderRiskAssessmentCreatePayload.orderRiskAssessment";
+            public const string userErrors = "shopify.OrderRiskAssessmentCreatePayload.userErrors";
+        }
+
+        public static class OrderRiskAssessmentCreateUserError
+        {
+            public const string code = "shopify.OrderRiskAssessmentCreateUserError.code";
+            public const string field = "shopify.OrderRiskAssessmentCreateUserError.field";
+            public const string message = "shopify.OrderRiskAssessmentCreateUserError.message";
+        }
+
+        public static class OrderRiskSummary
+        {
+            public const string assessments = "shopify.OrderRiskSummary.assessments";
+            public const string recommendation = "shopify.OrderRiskSummary.recommendation";
+        }
+
+        public static class IOrderStagedChange
+        {
+        }
+
+        public static class OrderStagedChangeAddCustomItem
+        {
+            public const string originalUnitPrice = "shopify.OrderStagedChangeAddCustomItem.originalUnitPrice";
+            public const string quantity = "shopify.OrderStagedChangeAddCustomItem.quantity";
+            public const string title = "shopify.OrderStagedChangeAddCustomItem.title";
+        }
+
+        public static class OrderStagedChangeAddLineItemDiscount
+        {
+            public const string description = "shopify.OrderStagedChangeAddLineItemDiscount.description";
+            public const string id = "shopify.OrderStagedChangeAddLineItemDiscount.id";
+            public const string value = "shopify.OrderStagedChangeAddLineItemDiscount.value";
+        }
+
+        public static class OrderStagedChangeAddShippingLine
+        {
+            public const string phone = "shopify.OrderStagedChangeAddShippingLine.phone";
+            public const string presentmentTitle = "shopify.OrderStagedChangeAddShippingLine.presentmentTitle";
+            public const string price = "shopify.OrderStagedChangeAddShippingLine.price";
+            public const string title = "shopify.OrderStagedChangeAddShippingLine.title";
+        }
+
+        public static class OrderStagedChangeAddVariant
+        {
+            public const string quantity = "shopify.OrderStagedChangeAddVariant.quantity";
+            public const string variant = "shopify.OrderStagedChangeAddVariant.variant";
+        }
+
+        public static class OrderStagedChangeConnection
+        {
+            public const string edges = "shopify.OrderStagedChangeConnection.edges";
+            public const string nodes = "shopify.OrderStagedChangeConnection.nodes";
+            public const string pageInfo = "shopify.OrderStagedChangeConnection.pageInfo";
+        }
+
+        public static class OrderStagedChangeDecrementItem
+        {
+            public const string delta = "shopify.OrderStagedChangeDecrementItem.delta";
+            public const string lineItem = "shopify.OrderStagedChangeDecrementItem.lineItem";
+            public const string restock = "shopify.OrderStagedChangeDecrementItem.restock";
+        }
+
+        public static class OrderStagedChangeEdge
+        {
+            public const string cursor = "shopify.OrderStagedChangeEdge.cursor";
+            public const string node = "shopify.OrderStagedChangeEdge.node";
+        }
+
+        public static class OrderStagedChangeIncrementItem
+        {
+            public const string delta = "shopify.OrderStagedChangeIncrementItem.delta";
+            public const string lineItem = "shopify.OrderStagedChangeIncrementItem.lineItem";
+        }
+
+        public static class OrderStagedChangeRemoveShippingLine
+        {
+            public const string shippingLine = "shopify.OrderStagedChangeRemoveShippingLine.shippingLine";
+        }
+
+        public static class OrderTransaction
+        {
+            public const string accountNumber = "shopify.OrderTransaction.accountNumber";
+            public const string amount = "shopify.OrderTransaction.amount";
+            public const string amountRoundingSet = "shopify.OrderTransaction.amountRoundingSet";
+            public const string amountSet = "shopify.OrderTransaction.amountSet";
+            public const string amountV2 = "shopify.OrderTransaction.amountV2";
+            public const string authorizationCode = "shopify.OrderTransaction.authorizationCode";
+            public const string authorizationExpiresAt = "shopify.OrderTransaction.authorizationExpiresAt";
+            public const string createdAt = "shopify.OrderTransaction.createdAt";
+            public const string errorCode = "shopify.OrderTransaction.errorCode";
+            public const string fees = "shopify.OrderTransaction.fees";
+            public const string formattedGateway = "shopify.OrderTransaction.formattedGateway";
+            public const string gateway = "shopify.OrderTransaction.gateway";
+            public const string id = "shopify.OrderTransaction.id";
+            public const string kind = "shopify.OrderTransaction.kind";
+            public const string manualPaymentGateway = "shopify.OrderTransaction.manualPaymentGateway";
+            public const string manuallyCapturable = "shopify.OrderTransaction.manuallyCapturable";
+            public const string maximumRefundable = "shopify.OrderTransaction.maximumRefundable";
+            public const string maximumRefundableV2 = "shopify.OrderTransaction.maximumRefundableV2";
+            public const string multiCapturable = "shopify.OrderTransaction.multiCapturable";
+            public const string order = "shopify.OrderTransaction.order";
+            public const string parentTransaction = "shopify.OrderTransaction.parentTransaction";
+            public const string paymentDetails = "shopify.OrderTransaction.paymentDetails";
+            public const string paymentIcon = "shopify.OrderTransaction.paymentIcon";
+            public const string paymentId = "shopify.OrderTransaction.paymentId";
+            public const string paymentMethod = "shopify.OrderTransaction.paymentMethod";
+            public const string processedAt = "shopify.OrderTransaction.processedAt";
+            public const string receiptJson = "shopify.OrderTransaction.receiptJson";
+            public const string settlementCurrency = "shopify.OrderTransaction.settlementCurrency";
+            public const string settlementCurrencyRate = "shopify.OrderTransaction.settlementCurrencyRate";
+            public const string shopifyPaymentsSet = "shopify.OrderTransaction.shopifyPaymentsSet";
+            public const string status = "shopify.OrderTransaction.status";
+            public const string test = "shopify.OrderTransaction.test";
+            public const string totalUnsettled = "shopify.OrderTransaction.totalUnsettled";
+            public const string totalUnsettledSet = "shopify.OrderTransaction.totalUnsettledSet";
+            public const string totalUnsettledV2 = "shopify.OrderTransaction.totalUnsettledV2";
+            public const string user = "shopify.OrderTransaction.user";
+        }
+
+        public static class OrderTransactionConnection
+        {
+            public const string edges = "shopify.OrderTransactionConnection.edges";
+            public const string nodes = "shopify.OrderTransactionConnection.nodes";
+            public const string pageInfo = "shopify.OrderTransactionConnection.pageInfo";
+        }
+
+        public static class OrderTransactionEdge
+        {
+            public const string cursor = "shopify.OrderTransactionEdge.cursor";
+            public const string node = "shopify.OrderTransactionEdge.node";
+        }
+
+        public static class OrderUpdatePayload
+        {
+            public const string order = "shopify.OrderUpdatePayload.order";
+            public const string userErrors = "shopify.OrderUpdatePayload.userErrors";
+        }
+
+        public static class Page
+        {
+            public const string body = "shopify.Page.body";
+            public const string bodySummary = "shopify.Page.bodySummary";
+            public const string createdAt = "shopify.Page.createdAt";
+            public const string defaultCursor = "shopify.Page.defaultCursor";
+            public const string events = "shopify.Page.events";
+            public const string handle = "shopify.Page.handle";
+            public const string id = "shopify.Page.id";
+            public const string isPublished = "shopify.Page.isPublished";
+            public const string metafield = "shopify.Page.metafield";
+            public const string metafieldDefinitions = "shopify.Page.metafieldDefinitions";
+            public const string metafields = "shopify.Page.metafields";
+            public const string publishedAt = "shopify.Page.publishedAt";
+            public const string templateSuffix = "shopify.Page.templateSuffix";
+            public const string title = "shopify.Page.title";
+            public const string translations = "shopify.Page.translations";
+            public const string updatedAt = "shopify.Page.updatedAt";
+        }
+
+        public static class PageConnection
+        {
+            public const string edges = "shopify.PageConnection.edges";
+            public const string nodes = "shopify.PageConnection.nodes";
+            public const string pageInfo = "shopify.PageConnection.pageInfo";
+        }
+
+        public static class PageCreatePayload
+        {
+            public const string page = "shopify.PageCreatePayload.page";
+            public const string userErrors = "shopify.PageCreatePayload.userErrors";
+        }
+
+        public static class PageCreateUserError
+        {
+            public const string code = "shopify.PageCreateUserError.code";
+            public const string field = "shopify.PageCreateUserError.field";
+            public const string message = "shopify.PageCreateUserError.message";
+        }
+
+        public static class PageDeletePayload
+        {
+            public const string deletedPageId = "shopify.PageDeletePayload.deletedPageId";
+            public const string userErrors = "shopify.PageDeletePayload.userErrors";
+        }
+
+        public static class PageDeleteUserError
+        {
+            public const string code = "shopify.PageDeleteUserError.code";
+            public const string field = "shopify.PageDeleteUserError.field";
+            public const string message = "shopify.PageDeleteUserError.message";
+        }
+
+        public static class PageEdge
+        {
+            public const string cursor = "shopify.PageEdge.cursor";
+            public const string node = "shopify.PageEdge.node";
+        }
+
+        public static class PageUpdatePayload
+        {
+            public const string page = "shopify.PageUpdatePayload.page";
+            public const string userErrors = "shopify.PageUpdatePayload.userErrors";
+        }
+
+        public static class PageUpdateUserError
+        {
+            public const string code = "shopify.PageUpdateUserError.code";
+            public const string field = "shopify.PageUpdateUserError.field";
+            public const string message = "shopify.PageUpdateUserError.message";
+        }
+
+        public static class PaymentCustomization
+        {
+            public const string enabled = "shopify.PaymentCustomization.enabled";
+            public const string errorHistory = "shopify.PaymentCustomization.errorHistory";
+            public const string functionId = "shopify.PaymentCustomization.functionId";
+            public const string id = "shopify.PaymentCustomization.id";
+            public const string metafield = "shopify.PaymentCustomization.metafield";
+            public const string metafieldDefinitions = "shopify.PaymentCustomization.metafieldDefinitions";
+            public const string metafields = "shopify.PaymentCustomization.metafields";
+            public const string shopifyFunction = "shopify.PaymentCustomization.shopifyFunction";
+            public const string title = "shopify.PaymentCustomization.title";
+        }
+
+        public static class PaymentCustomizationActivationPayload
+        {
+            public const string ids = "shopify.PaymentCustomizationActivationPayload.ids";
+            public const string userErrors = "shopify.PaymentCustomizationActivationPayload.userErrors";
+        }
+
+        public static class PaymentCustomizationConnection
+        {
+            public const string edges = "shopify.PaymentCustomizationConnection.edges";
+            public const string nodes = "shopify.PaymentCustomizationConnection.nodes";
+            public const string pageInfo = "shopify.PaymentCustomizationConnection.pageInfo";
+        }
+
+        public static class PaymentCustomizationCreatePayload
+        {
+            public const string paymentCustomization = "shopify.PaymentCustomizationCreatePayload.paymentCustomization";
+            public const string userErrors = "shopify.PaymentCustomizationCreatePayload.userErrors";
+        }
+
+        public static class PaymentCustomizationDeletePayload
+        {
+            public const string deletedId = "shopify.PaymentCustomizationDeletePayload.deletedId";
+            public const string userErrors = "shopify.PaymentCustomizationDeletePayload.userErrors";
+        }
+
+        public static class PaymentCustomizationEdge
+        {
+            public const string cursor = "shopify.PaymentCustomizationEdge.cursor";
+            public const string node = "shopify.PaymentCustomizationEdge.node";
+        }
+
+        public static class PaymentCustomizationError
+        {
+            public const string code = "shopify.PaymentCustomizationError.code";
+            public const string field = "shopify.PaymentCustomizationError.field";
+            public const string message = "shopify.PaymentCustomizationError.message";
+        }
+
+        public static class PaymentCustomizationUpdatePayload
+        {
+            public const string paymentCustomization = "shopify.PaymentCustomizationUpdatePayload.paymentCustomization";
+            public const string userErrors = "shopify.PaymentCustomizationUpdatePayload.userErrors";
+        }
+
+        public static class IPaymentDetails
+        {
+            public const string paymentMethodName = "shopify.IPaymentDetails.paymentMethodName";
+        }
+
+        public static class IPaymentInstrument
+        {
+            public const string name = "shopify.IPaymentInstrument.name";
+        }
+
+        public static class PaymentMandate
+        {
+            public const string id = "shopify.PaymentMandate.id";
+            public const string paymentInstrument = "shopify.PaymentMandate.paymentInstrument";
+        }
+
+        public static class PaymentReminderSendPayload
+        {
+            public const string success = "shopify.PaymentReminderSendPayload.success";
+            public const string userErrors = "shopify.PaymentReminderSendPayload.userErrors";
+        }
+
+        public static class PaymentReminderSendUserError
+        {
+            public const string code = "shopify.PaymentReminderSendUserError.code";
+            public const string field = "shopify.PaymentReminderSendUserError.field";
+            public const string message = "shopify.PaymentReminderSendUserError.message";
+        }
+
+        public static class PaymentSchedule
+        {
+            public const string amount = "shopify.PaymentSchedule.amount";
+            public const string completedAt = "shopify.PaymentSchedule.completedAt";
+            public const string dueAt = "shopify.PaymentSchedule.dueAt";
+            public const string id = "shopify.PaymentSchedule.id";
+            public const string issuedAt = "shopify.PaymentSchedule.issuedAt";
+            public const string paymentTerms = "shopify.PaymentSchedule.paymentTerms";
+        }
+
+        public static class PaymentScheduleConnection
+        {
+            public const string edges = "shopify.PaymentScheduleConnection.edges";
+            public const string nodes = "shopify.PaymentScheduleConnection.nodes";
+            public const string pageInfo = "shopify.PaymentScheduleConnection.pageInfo";
+        }
+
+        public static class PaymentScheduleEdge
+        {
+            public const string cursor = "shopify.PaymentScheduleEdge.cursor";
+            public const string node = "shopify.PaymentScheduleEdge.node";
+        }
+
+        public static class PaymentSettings
+        {
+            public const string supportedDigitalWallets = "shopify.PaymentSettings.supportedDigitalWallets";
+        }
+
+        public static class PaymentTerms
+        {
+            public const string draftOrder = "shopify.PaymentTerms.draftOrder";
+            public const string dueInDays = "shopify.PaymentTerms.dueInDays";
+            public const string id = "shopify.PaymentTerms.id";
+            public const string order = "shopify.PaymentTerms.order";
+            public const string overdue = "shopify.PaymentTerms.overdue";
+            public const string paymentSchedules = "shopify.PaymentTerms.paymentSchedules";
+            public const string paymentTermsName = "shopify.PaymentTerms.paymentTermsName";
+            public const string paymentTermsType = "shopify.PaymentTerms.paymentTermsType";
+            public const string translatedName = "shopify.PaymentTerms.translatedName";
+        }
+
+        public static class PaymentTermsCreatePayload
+        {
+            public const string paymentTerms = "shopify.PaymentTermsCreatePayload.paymentTerms";
+            public const string userErrors = "shopify.PaymentTermsCreatePayload.userErrors";
+        }
+
+        public static class PaymentTermsCreateUserError
+        {
+            public const string code = "shopify.PaymentTermsCreateUserError.code";
+            public const string field = "shopify.PaymentTermsCreateUserError.field";
+            public const string message = "shopify.PaymentTermsCreateUserError.message";
+        }
+
+        public static class PaymentTermsDeletePayload
+        {
+            public const string deletedId = "shopify.PaymentTermsDeletePayload.deletedId";
+            public const string userErrors = "shopify.PaymentTermsDeletePayload.userErrors";
+        }
+
+        public static class PaymentTermsDeleteUserError
+        {
+            public const string code = "shopify.PaymentTermsDeleteUserError.code";
+            public const string field = "shopify.PaymentTermsDeleteUserError.field";
+            public const string message = "shopify.PaymentTermsDeleteUserError.message";
+        }
+
+        public static class PaymentTermsTemplate
+        {
+            public const string description = "shopify.PaymentTermsTemplate.description";
+            public const string dueInDays = "shopify.PaymentTermsTemplate.dueInDays";
+            public const string id = "shopify.PaymentTermsTemplate.id";
+            public const string name = "shopify.PaymentTermsTemplate.name";
+            public const string paymentTermsType = "shopify.PaymentTermsTemplate.paymentTermsType";
+            public const string translatedName = "shopify.PaymentTermsTemplate.translatedName";
+        }
+
+        public static class PaymentTermsUpdatePayload
+        {
+            public const string paymentTerms = "shopify.PaymentTermsUpdatePayload.paymentTerms";
+            public const string userErrors = "shopify.PaymentTermsUpdatePayload.userErrors";
+        }
+
+        public static class PaymentTermsUpdateUserError
+        {
+            public const string code = "shopify.PaymentTermsUpdateUserError.code";
+            public const string field = "shopify.PaymentTermsUpdateUserError.field";
+            public const string message = "shopify.PaymentTermsUpdateUserError.message";
+        }
+
+        public static class PriceList
+        {
+            public const string catalog = "shopify.PriceList.catalog";
+            public const string currency = "shopify.PriceList.currency";
+            public const string fixedPricesCount = "shopify.PriceList.fixedPricesCount";
+            public const string id = "shopify.PriceList.id";
+            public const string name = "shopify.PriceList.name";
+            public const string parent = "shopify.PriceList.parent";
+            public const string prices = "shopify.PriceList.prices";
+            public const string quantityRules = "shopify.PriceList.quantityRules";
+        }
+
+        public static class PriceListAdjustment
+        {
+            public const string type = "shopify.PriceListAdjustment.type";
+            public const string value = "shopify.PriceListAdjustment.value";
+        }
+
+        public static class PriceListAdjustmentSettings
+        {
+            public const string compareAtMode = "shopify.PriceListAdjustmentSettings.compareAtMode";
+        }
+
+        public static class PriceListConnection
+        {
+            public const string edges = "shopify.PriceListConnection.edges";
+            public const string nodes = "shopify.PriceListConnection.nodes";
+            public const string pageInfo = "shopify.PriceListConnection.pageInfo";
+        }
+
+        public static class PriceListCreatePayload
+        {
+            public const string priceList = "shopify.PriceListCreatePayload.priceList";
+            public const string userErrors = "shopify.PriceListCreatePayload.userErrors";
+        }
+
+        public static class PriceListDeletePayload
+        {
+            public const string deletedId = "shopify.PriceListDeletePayload.deletedId";
+            public const string userErrors = "shopify.PriceListDeletePayload.userErrors";
+        }
+
+        public static class PriceListEdge
+        {
+            public const string cursor = "shopify.PriceListEdge.cursor";
+            public const string node = "shopify.PriceListEdge.node";
+        }
+
+        public static class PriceListFixedPricesAddPayload
+        {
+            public const string prices = "shopify.PriceListFixedPricesAddPayload.prices";
+            public const string userErrors = "shopify.PriceListFixedPricesAddPayload.userErrors";
+        }
+
+        public static class PriceListFixedPricesByProductBulkUpdateUserError
+        {
+            public const string code = "shopify.PriceListFixedPricesByProductBulkUpdateUserError.code";
+            public const string field = "shopify.PriceListFixedPricesByProductBulkUpdateUserError.field";
+            public const string message = "shopify.PriceListFixedPricesByProductBulkUpdateUserError.message";
+        }
+
+        public static class PriceListFixedPricesByProductUpdatePayload
+        {
+            public const string priceList = "shopify.PriceListFixedPricesByProductUpdatePayload.priceList";
+            public const string pricesToAddProducts = "shopify.PriceListFixedPricesByProductUpdatePayload.pricesToAddProducts";
+            public const string pricesToDeleteProducts = "shopify.PriceListFixedPricesByProductUpdatePayload.pricesToDeleteProducts";
+            public const string userErrors = "shopify.PriceListFixedPricesByProductUpdatePayload.userErrors";
+        }
+
+        public static class PriceListFixedPricesDeletePayload
+        {
+            public const string deletedFixedPriceVariantIds = "shopify.PriceListFixedPricesDeletePayload.deletedFixedPriceVariantIds";
+            public const string userErrors = "shopify.PriceListFixedPricesDeletePayload.userErrors";
+        }
+
+        public static class PriceListFixedPricesUpdatePayload
+        {
+            public const string deletedFixedPriceVariantIds = "shopify.PriceListFixedPricesUpdatePayload.deletedFixedPriceVariantIds";
+            public const string priceList = "shopify.PriceListFixedPricesUpdatePayload.priceList";
+            public const string pricesAdded = "shopify.PriceListFixedPricesUpdatePayload.pricesAdded";
+            public const string userErrors = "shopify.PriceListFixedPricesUpdatePayload.userErrors";
+        }
+
+        public static class PriceListParent
+        {
+            public const string adjustment = "shopify.PriceListParent.adjustment";
+            public const string settings = "shopify.PriceListParent.settings";
+        }
+
+        public static class PriceListPrice
+        {
+            public const string compareAtPrice = "shopify.PriceListPrice.compareAtPrice";
+            public const string originType = "shopify.PriceListPrice.originType";
+            public const string price = "shopify.PriceListPrice.price";
+            public const string quantityPriceBreaks = "shopify.PriceListPrice.quantityPriceBreaks";
+            public const string variant = "shopify.PriceListPrice.variant";
+        }
+
+        public static class PriceListPriceConnection
+        {
+            public const string edges = "shopify.PriceListPriceConnection.edges";
+            public const string nodes = "shopify.PriceListPriceConnection.nodes";
+            public const string pageInfo = "shopify.PriceListPriceConnection.pageInfo";
+        }
+
+        public static class PriceListPriceEdge
+        {
+            public const string cursor = "shopify.PriceListPriceEdge.cursor";
+            public const string node = "shopify.PriceListPriceEdge.node";
+        }
+
+        public static class PriceListPriceUserError
+        {
+            public const string code = "shopify.PriceListPriceUserError.code";
+            public const string field = "shopify.PriceListPriceUserError.field";
+            public const string message = "shopify.PriceListPriceUserError.message";
+        }
+
+        public static class PriceListUpdatePayload
+        {
+            public const string priceList = "shopify.PriceListUpdatePayload.priceList";
+            public const string userErrors = "shopify.PriceListUpdatePayload.userErrors";
+        }
+
+        public static class PriceListUserError
+        {
+            public const string code = "shopify.PriceListUserError.code";
+            public const string field = "shopify.PriceListUserError.field";
+            public const string message = "shopify.PriceListUserError.message";
+        }
+
+        public static class PriceRule
+        {
+            public const string allocationLimit = "shopify.PriceRule.allocationLimit";
+            public const string allocationMethod = "shopify.PriceRule.allocationMethod";
+            public const string app = "shopify.PriceRule.app";
+            public const string combinesWith = "shopify.PriceRule.combinesWith";
+            public const string createdAt = "shopify.PriceRule.createdAt";
+            public const string customerSelection = "shopify.PriceRule.customerSelection";
+            public const string discountClass = "shopify.PriceRule.discountClass";
+            public const string discountClasses = "shopify.PriceRule.discountClasses";
+            public const string discountCodes = "shopify.PriceRule.discountCodes";
+            public const string discountCodesCount = "shopify.PriceRule.discountCodesCount";
+            public const string endsAt = "shopify.PriceRule.endsAt";
+            public const string entitlementToPrerequisiteQuantityRatio = "shopify.PriceRule.entitlementToPrerequisiteQuantityRatio";
+            public const string events = "shopify.PriceRule.events";
+            public const string features = "shopify.PriceRule.features";
+            public const string hasTimelineComment = "shopify.PriceRule.hasTimelineComment";
+            public const string id = "shopify.PriceRule.id";
+            public const string itemEntitlements = "shopify.PriceRule.itemEntitlements";
+            public const string itemPrerequisites = "shopify.PriceRule.itemPrerequisites";
+            public const string legacyResourceId = "shopify.PriceRule.legacyResourceId";
+            public const string oncePerCustomer = "shopify.PriceRule.oncePerCustomer";
+            public const string prerequisiteQuantityRange = "shopify.PriceRule.prerequisiteQuantityRange";
+            public const string prerequisiteShippingPriceRange = "shopify.PriceRule.prerequisiteShippingPriceRange";
+            public const string prerequisiteSubtotalRange = "shopify.PriceRule.prerequisiteSubtotalRange";
+            public const string prerequisiteToEntitlementQuantityRatio = "shopify.PriceRule.prerequisiteToEntitlementQuantityRatio";
+            public const string shareableUrls = "shopify.PriceRule.shareableUrls";
+            public const string shippingEntitlements = "shopify.PriceRule.shippingEntitlements";
+            public const string startsAt = "shopify.PriceRule.startsAt";
+            public const string status = "shopify.PriceRule.status";
+            public const string summary = "shopify.PriceRule.summary";
+            public const string target = "shopify.PriceRule.target";
+            public const string title = "shopify.PriceRule.title";
+            public const string totalSales = "shopify.PriceRule.totalSales";
+            public const string traits = "shopify.PriceRule.traits";
+            public const string usageCount = "shopify.PriceRule.usageCount";
+            public const string usageLimit = "shopify.PriceRule.usageLimit";
+            public const string validityPeriod = "shopify.PriceRule.validityPeriod";
+            public const string value = "shopify.PriceRule.value";
+            public const string valueV2 = "shopify.PriceRule.valueV2";
+        }
+
+        public static class PriceRuleCustomerSelection
+        {
+            public const string customers = "shopify.PriceRuleCustomerSelection.customers";
+            public const string forAllCustomers = "shopify.PriceRuleCustomerSelection.forAllCustomers";
+            public const string segments = "shopify.PriceRuleCustomerSelection.segments";
+        }
+
+        public static class PriceRuleDiscountCode
+        {
+            public const string app = "shopify.PriceRuleDiscountCode.app";
+            public const string code = "shopify.PriceRuleDiscountCode.code";
+            public const string id = "shopify.PriceRuleDiscountCode.id";
+            public const string usageCount = "shopify.PriceRuleDiscountCode.usageCount";
+        }
+
+        public static class PriceRuleDiscountCodeConnection
+        {
+            public const string edges = "shopify.PriceRuleDiscountCodeConnection.edges";
+            public const string nodes = "shopify.PriceRuleDiscountCodeConnection.nodes";
+            public const string pageInfo = "shopify.PriceRuleDiscountCodeConnection.pageInfo";
+        }
+
+        public static class PriceRuleDiscountCodeEdge
+        {
+            public const string cursor = "shopify.PriceRuleDiscountCodeEdge.cursor";
+            public const string node = "shopify.PriceRuleDiscountCodeEdge.node";
+        }
+
+        public static class PriceRuleEntitlementToPrerequisiteQuantityRatio
+        {
+            public const string entitlementQuantity = "shopify.PriceRuleEntitlementToPrerequisiteQuantityRatio.entitlementQuantity";
+            public const string prerequisiteQuantity = "shopify.PriceRuleEntitlementToPrerequisiteQuantityRatio.prerequisiteQuantity";
+        }
+
+        public static class PriceRuleFixedAmountValue
+        {
+            public const string amount = "shopify.PriceRuleFixedAmountValue.amount";
+        }
+
+        public static class PriceRuleItemEntitlements
+        {
+            public const string collections = "shopify.PriceRuleItemEntitlements.collections";
+            public const string productVariants = "shopify.PriceRuleItemEntitlements.productVariants";
+            public const string products = "shopify.PriceRuleItemEntitlements.products";
+            public const string targetAllLineItems = "shopify.PriceRuleItemEntitlements.targetAllLineItems";
+        }
+
+        public static class PriceRuleLineItemPrerequisites
+        {
+            public const string collections = "shopify.PriceRuleLineItemPrerequisites.collections";
+            public const string productVariants = "shopify.PriceRuleLineItemPrerequisites.productVariants";
+            public const string products = "shopify.PriceRuleLineItemPrerequisites.products";
+        }
+
+        public static class PriceRuleMoneyRange
+        {
+            public const string greaterThan = "shopify.PriceRuleMoneyRange.greaterThan";
+            public const string greaterThanOrEqualTo = "shopify.PriceRuleMoneyRange.greaterThanOrEqualTo";
+            public const string lessThan = "shopify.PriceRuleMoneyRange.lessThan";
+            public const string lessThanOrEqualTo = "shopify.PriceRuleMoneyRange.lessThanOrEqualTo";
+        }
+
+        public static class PriceRulePercentValue
+        {
+            public const string percentage = "shopify.PriceRulePercentValue.percentage";
+        }
+
+        public static class PriceRulePrerequisiteToEntitlementQuantityRatio
+        {
+            public const string entitlementQuantity = "shopify.PriceRulePrerequisiteToEntitlementQuantityRatio.entitlementQuantity";
+            public const string prerequisiteQuantity = "shopify.PriceRulePrerequisiteToEntitlementQuantityRatio.prerequisiteQuantity";
+        }
+
+        public static class PriceRuleQuantityRange
+        {
+            public const string greaterThan = "shopify.PriceRuleQuantityRange.greaterThan";
+            public const string greaterThanOrEqualTo = "shopify.PriceRuleQuantityRange.greaterThanOrEqualTo";
+            public const string lessThan = "shopify.PriceRuleQuantityRange.lessThan";
+            public const string lessThanOrEqualTo = "shopify.PriceRuleQuantityRange.lessThanOrEqualTo";
+        }
+
+        public static class PriceRuleShareableUrl
+        {
+            public const string targetItemImage = "shopify.PriceRuleShareableUrl.targetItemImage";
+            public const string targetType = "shopify.PriceRuleShareableUrl.targetType";
+            public const string title = "shopify.PriceRuleShareableUrl.title";
+            public const string url = "shopify.PriceRuleShareableUrl.url";
+        }
+
+        public static class PriceRuleShippingLineEntitlements
+        {
+            public const string countryCodes = "shopify.PriceRuleShippingLineEntitlements.countryCodes";
+            public const string includeRestOfWorld = "shopify.PriceRuleShippingLineEntitlements.includeRestOfWorld";
+            public const string targetAllShippingLines = "shopify.PriceRuleShippingLineEntitlements.targetAllShippingLines";
+        }
+
+        public static class PriceRuleValidityPeriod
+        {
+            public const string end = "shopify.PriceRuleValidityPeriod.end";
+            public const string start = "shopify.PriceRuleValidityPeriod.start";
+        }
+
+        public static class IPriceRuleValue
+        {
+        }
+
+        public static class PricingPercentageValue
+        {
+            public const string percentage = "shopify.PricingPercentageValue.percentage";
+        }
+
+        public static class IPricingValue
+        {
+        }
+
+        public static class PrivacyFeaturesDisablePayload
+        {
+            public const string featuresDisabled = "shopify.PrivacyFeaturesDisablePayload.featuresDisabled";
+            public const string userErrors = "shopify.PrivacyFeaturesDisablePayload.userErrors";
+        }
+
+        public static class PrivacyFeaturesDisableUserError
+        {
+            public const string code = "shopify.PrivacyFeaturesDisableUserError.code";
+            public const string field = "shopify.PrivacyFeaturesDisableUserError.field";
+            public const string message = "shopify.PrivacyFeaturesDisableUserError.message";
+        }
+
+        public static class PrivacyPolicy
+        {
+            public const string autoManaged = "shopify.PrivacyPolicy.autoManaged";
+            public const string supportedLocales = "shopify.PrivacyPolicy.supportedLocales";
+        }
+
+        public static class PrivacySettings
+        {
+            public const string banner = "shopify.PrivacySettings.banner";
+            public const string dataSaleOptOutPage = "shopify.PrivacySettings.dataSaleOptOutPage";
+            public const string privacyPolicy = "shopify.PrivacySettings.privacyPolicy";
+        }
+
+        public static class Product
+        {
+            public const string availablePublicationsCount = "shopify.Product.availablePublicationsCount";
+            public const string bodyHtml = "shopify.Product.bodyHtml";
+            public const string bundleComponents = "shopify.Product.bundleComponents";
+            public const string category = "shopify.Product.category";
+            public const string collections = "shopify.Product.collections";
+            public const string combinedListing = "shopify.Product.combinedListing";
+            public const string combinedListingRole = "shopify.Product.combinedListingRole";
+            public const string compareAtPriceRange = "shopify.Product.compareAtPriceRange";
+            public const string contextualPricing = "shopify.Product.contextualPricing";
+            public const string createdAt = "shopify.Product.createdAt";
+            public const string customProductType = "shopify.Product.customProductType";
+            public const string defaultCursor = "shopify.Product.defaultCursor";
+            public const string description = "shopify.Product.description";
+            public const string descriptionHtml = "shopify.Product.descriptionHtml";
+            public const string descriptionPlainSummary = "shopify.Product.descriptionPlainSummary";
+            public const string events = "shopify.Product.events";
+            public const string featuredImage = "shopify.Product.featuredImage";
+            public const string featuredMedia = "shopify.Product.featuredMedia";
+            public const string feedback = "shopify.Product.feedback";
+            public const string giftCardTemplateSuffix = "shopify.Product.giftCardTemplateSuffix";
+            public const string handle = "shopify.Product.handle";
+            public const string hasOnlyDefaultVariant = "shopify.Product.hasOnlyDefaultVariant";
+            public const string hasOutOfStockVariants = "shopify.Product.hasOutOfStockVariants";
+            public const string hasVariantsThatRequiresComponents = "shopify.Product.hasVariantsThatRequiresComponents";
+            public const string id = "shopify.Product.id";
+            public const string images = "shopify.Product.images";
+            public const string inCollection = "shopify.Product.inCollection";
+            public const string isGiftCard = "shopify.Product.isGiftCard";
+            public const string legacyResourceId = "shopify.Product.legacyResourceId";
+            public const string media = "shopify.Product.media";
+            public const string mediaCount = "shopify.Product.mediaCount";
+            public const string metafield = "shopify.Product.metafield";
+            public const string metafieldDefinitions = "shopify.Product.metafieldDefinitions";
+            public const string metafields = "shopify.Product.metafields";
+            public const string onlineStorePreviewUrl = "shopify.Product.onlineStorePreviewUrl";
+            public const string onlineStoreUrl = "shopify.Product.onlineStoreUrl";
+            public const string options = "shopify.Product.options";
+            public const string priceRange = "shopify.Product.priceRange";
+            public const string priceRangeV2 = "shopify.Product.priceRangeV2";
+            public const string productCategory = "shopify.Product.productCategory";
+            public const string productPublications = "shopify.Product.productPublications";
+            public const string productType = "shopify.Product.productType";
+            public const string publicationCount = "shopify.Product.publicationCount";
+            public const string publications = "shopify.Product.publications";
+            public const string publishedAt = "shopify.Product.publishedAt";
+            public const string publishedInContext = "shopify.Product.publishedInContext";
+            public const string publishedOnChannel = "shopify.Product.publishedOnChannel";
+            public const string publishedOnCurrentChannel = "shopify.Product.publishedOnCurrentChannel";
+            public const string publishedOnCurrentPublication = "shopify.Product.publishedOnCurrentPublication";
+            public const string publishedOnPublication = "shopify.Product.publishedOnPublication";
+            public const string requiresSellingPlan = "shopify.Product.requiresSellingPlan";
+            public const string resourcePublicationOnCurrentPublication = "shopify.Product.resourcePublicationOnCurrentPublication";
+            public const string resourcePublications = "shopify.Product.resourcePublications";
+            public const string resourcePublicationsCount = "shopify.Product.resourcePublicationsCount";
+            public const string resourcePublicationsV2 = "shopify.Product.resourcePublicationsV2";
+            public const string restrictedForResource = "shopify.Product.restrictedForResource";
+            public const string sellingPlanGroupCount = "shopify.Product.sellingPlanGroupCount";
+            public const string sellingPlanGroups = "shopify.Product.sellingPlanGroups";
+            public const string sellingPlanGroupsCount = "shopify.Product.sellingPlanGroupsCount";
+            public const string seo = "shopify.Product.seo";
+            public const string standardizedProductType = "shopify.Product.standardizedProductType";
+            public const string status = "shopify.Product.status";
+            public const string storefrontId = "shopify.Product.storefrontId";
+            public const string tags = "shopify.Product.tags";
+            public const string templateSuffix = "shopify.Product.templateSuffix";
+            public const string title = "shopify.Product.title";
+            public const string totalInventory = "shopify.Product.totalInventory";
+            public const string totalVariants = "shopify.Product.totalVariants";
+            public const string tracksInventory = "shopify.Product.tracksInventory";
+            public const string translations = "shopify.Product.translations";
+            public const string unpublishedChannels = "shopify.Product.unpublishedChannels";
+            public const string unpublishedPublications = "shopify.Product.unpublishedPublications";
+            public const string updatedAt = "shopify.Product.updatedAt";
+            public const string variants = "shopify.Product.variants";
+            public const string variantsCount = "shopify.Product.variantsCount";
+            public const string vendor = "shopify.Product.vendor";
+        }
+
+        public static class ProductBundleComponent
+        {
+            public const string componentProduct = "shopify.ProductBundleComponent.componentProduct";
+            public const string componentVariants = "shopify.ProductBundleComponent.componentVariants";
+            public const string componentVariantsCount = "shopify.ProductBundleComponent.componentVariantsCount";
+            public const string optionSelections = "shopify.ProductBundleComponent.optionSelections";
+            public const string quantity = "shopify.ProductBundleComponent.quantity";
+            public const string quantityOption = "shopify.ProductBundleComponent.quantityOption";
+        }
+
+        public static class ProductBundleComponentConnection
+        {
+            public const string edges = "shopify.ProductBundleComponentConnection.edges";
+            public const string nodes = "shopify.ProductBundleComponentConnection.nodes";
+            public const string pageInfo = "shopify.ProductBundleComponentConnection.pageInfo";
+        }
+
+        public static class ProductBundleComponentEdge
+        {
+            public const string cursor = "shopify.ProductBundleComponentEdge.cursor";
+            public const string node = "shopify.ProductBundleComponentEdge.node";
+        }
+
+        public static class ProductBundleComponentOptionSelection
+        {
+            public const string componentOption = "shopify.ProductBundleComponentOptionSelection.componentOption";
+            public const string parentOption = "shopify.ProductBundleComponentOptionSelection.parentOption";
+            public const string values = "shopify.ProductBundleComponentOptionSelection.values";
+        }
+
+        public static class ProductBundleComponentOptionSelectionValue
+        {
+            public const string selectionStatus = "shopify.ProductBundleComponentOptionSelectionValue.selectionStatus";
+            public const string value = "shopify.ProductBundleComponentOptionSelectionValue.value";
+        }
+
+        public static class ProductBundleComponentQuantityOption
+        {
+            public const string name = "shopify.ProductBundleComponentQuantityOption.name";
+            public const string parentOption = "shopify.ProductBundleComponentQuantityOption.parentOption";
+            public const string values = "shopify.ProductBundleComponentQuantityOption.values";
+        }
+
+        public static class ProductBundleComponentQuantityOptionValue
+        {
+            public const string name = "shopify.ProductBundleComponentQuantityOptionValue.name";
+            public const string quantity = "shopify.ProductBundleComponentQuantityOptionValue.quantity";
+        }
+
+        public static class ProductBundleCreatePayload
+        {
+            public const string productBundleOperation = "shopify.ProductBundleCreatePayload.productBundleOperation";
+            public const string userErrors = "shopify.ProductBundleCreatePayload.userErrors";
+        }
+
+        public static class ProductBundleMutationUserError
+        {
+            public const string code = "shopify.ProductBundleMutationUserError.code";
+            public const string field = "shopify.ProductBundleMutationUserError.field";
+            public const string message = "shopify.ProductBundleMutationUserError.message";
+        }
+
+        public static class ProductBundleOperation
+        {
+            public const string id = "shopify.ProductBundleOperation.id";
+            public const string product = "shopify.ProductBundleOperation.product";
+            public const string status = "shopify.ProductBundleOperation.status";
+            public const string userErrors = "shopify.ProductBundleOperation.userErrors";
+        }
+
+        public static class ProductBundleUpdatePayload
+        {
+            public const string productBundleOperation = "shopify.ProductBundleUpdatePayload.productBundleOperation";
+            public const string userErrors = "shopify.ProductBundleUpdatePayload.userErrors";
+        }
+
+        public static class ProductCategory
+        {
+            public const string productTaxonomyNode = "shopify.ProductCategory.productTaxonomyNode";
+        }
+
+        public static class ProductChangeStatusPayload
+        {
+            public const string product = "shopify.ProductChangeStatusPayload.product";
+            public const string userErrors = "shopify.ProductChangeStatusPayload.userErrors";
+        }
+
+        public static class ProductChangeStatusUserError
+        {
+            public const string code = "shopify.ProductChangeStatusUserError.code";
+            public const string field = "shopify.ProductChangeStatusUserError.field";
+            public const string message = "shopify.ProductChangeStatusUserError.message";
+        }
+
+        public static class ProductCompareAtPriceRange
+        {
+            public const string maxVariantCompareAtPrice = "shopify.ProductCompareAtPriceRange.maxVariantCompareAtPrice";
+            public const string minVariantCompareAtPrice = "shopify.ProductCompareAtPriceRange.minVariantCompareAtPrice";
+        }
+
+        public static class ProductConnection
+        {
+            public const string edges = "shopify.ProductConnection.edges";
+            public const string nodes = "shopify.ProductConnection.nodes";
+            public const string pageInfo = "shopify.ProductConnection.pageInfo";
+        }
+
+        public static class ProductContextualPricing
+        {
+            public const string fixedQuantityRulesCount = "shopify.ProductContextualPricing.fixedQuantityRulesCount";
+            public const string maxVariantPricing = "shopify.ProductContextualPricing.maxVariantPricing";
+            public const string minVariantPricing = "shopify.ProductContextualPricing.minVariantPricing";
+            public const string priceRange = "shopify.ProductContextualPricing.priceRange";
+        }
+
+        public static class ProductCreateMediaPayload
+        {
+            public const string media = "shopify.ProductCreateMediaPayload.media";
+            public const string mediaUserErrors = "shopify.ProductCreateMediaPayload.mediaUserErrors";
+            public const string product = "shopify.ProductCreateMediaPayload.product";
+            public const string userErrors = "shopify.ProductCreateMediaPayload.userErrors";
+        }
+
+        public static class ProductCreatePayload
+        {
+            public const string product = "shopify.ProductCreatePayload.product";
+            public const string shop = "shopify.ProductCreatePayload.shop";
+            public const string userErrors = "shopify.ProductCreatePayload.userErrors";
+        }
+
+        public static class ProductDeleteMediaPayload
+        {
+            public const string deletedMediaIds = "shopify.ProductDeleteMediaPayload.deletedMediaIds";
+            public const string deletedProductImageIds = "shopify.ProductDeleteMediaPayload.deletedProductImageIds";
+            public const string mediaUserErrors = "shopify.ProductDeleteMediaPayload.mediaUserErrors";
+            public const string product = "shopify.ProductDeleteMediaPayload.product";
+            public const string userErrors = "shopify.ProductDeleteMediaPayload.userErrors";
+        }
+
+        public static class ProductDeleteOperation
+        {
+            public const string deletedProductId = "shopify.ProductDeleteOperation.deletedProductId";
+            public const string id = "shopify.ProductDeleteOperation.id";
+            public const string product = "shopify.ProductDeleteOperation.product";
+            public const string status = "shopify.ProductDeleteOperation.status";
+            public const string userErrors = "shopify.ProductDeleteOperation.userErrors";
+        }
+
+        public static class ProductDeletePayload
+        {
+            public const string deletedProductId = "shopify.ProductDeletePayload.deletedProductId";
+            public const string productDeleteOperation = "shopify.ProductDeletePayload.productDeleteOperation";
+            public const string shop = "shopify.ProductDeletePayload.shop";
+            public const string userErrors = "shopify.ProductDeletePayload.userErrors";
+        }
+
+        public static class ProductDuplicateJob
+        {
+            public const string done = "shopify.ProductDuplicateJob.done";
+            public const string id = "shopify.ProductDuplicateJob.id";
+        }
+
+        public static class ProductDuplicateOperation
+        {
+            public const string id = "shopify.ProductDuplicateOperation.id";
+            public const string newProduct = "shopify.ProductDuplicateOperation.newProduct";
+            public const string product = "shopify.ProductDuplicateOperation.product";
+            public const string status = "shopify.ProductDuplicateOperation.status";
+            public const string userErrors = "shopify.ProductDuplicateOperation.userErrors";
+        }
+
+        public static class ProductDuplicatePayload
+        {
+            public const string imageJob = "shopify.ProductDuplicatePayload.imageJob";
+            public const string newProduct = "shopify.ProductDuplicatePayload.newProduct";
+            public const string productDuplicateOperation = "shopify.ProductDuplicatePayload.productDuplicateOperation";
+            public const string shop = "shopify.ProductDuplicatePayload.shop";
+            public const string userErrors = "shopify.ProductDuplicatePayload.userErrors";
+        }
+
+        public static class ProductEdge
+        {
+            public const string cursor = "shopify.ProductEdge.cursor";
+            public const string node = "shopify.ProductEdge.node";
+        }
+
+        public static class ProductFeed
+        {
+            public const string country = "shopify.ProductFeed.country";
+            public const string id = "shopify.ProductFeed.id";
+            public const string language = "shopify.ProductFeed.language";
+            public const string status = "shopify.ProductFeed.status";
+        }
+
+        public static class ProductFeedConnection
+        {
+            public const string edges = "shopify.ProductFeedConnection.edges";
+            public const string nodes = "shopify.ProductFeedConnection.nodes";
+            public const string pageInfo = "shopify.ProductFeedConnection.pageInfo";
+        }
+
+        public static class ProductFeedCreatePayload
+        {
+            public const string productFeed = "shopify.ProductFeedCreatePayload.productFeed";
+            public const string userErrors = "shopify.ProductFeedCreatePayload.userErrors";
+        }
+
+        public static class ProductFeedCreateUserError
+        {
+            public const string code = "shopify.ProductFeedCreateUserError.code";
+            public const string field = "shopify.ProductFeedCreateUserError.field";
+            public const string message = "shopify.ProductFeedCreateUserError.message";
+        }
+
+        public static class ProductFeedDeletePayload
+        {
+            public const string deletedId = "shopify.ProductFeedDeletePayload.deletedId";
+            public const string userErrors = "shopify.ProductFeedDeletePayload.userErrors";
+        }
+
+        public static class ProductFeedDeleteUserError
+        {
+            public const string code = "shopify.ProductFeedDeleteUserError.code";
+            public const string field = "shopify.ProductFeedDeleteUserError.field";
+            public const string message = "shopify.ProductFeedDeleteUserError.message";
+        }
+
+        public static class ProductFeedEdge
+        {
+            public const string cursor = "shopify.ProductFeedEdge.cursor";
+            public const string node = "shopify.ProductFeedEdge.node";
+        }
+
+        public static class ProductFullSyncPayload
+        {
+            public const string id = "shopify.ProductFullSyncPayload.id";
+            public const string userErrors = "shopify.ProductFullSyncPayload.userErrors";
+        }
+
+        public static class ProductFullSyncUserError
+        {
+            public const string code = "shopify.ProductFullSyncUserError.code";
+            public const string field = "shopify.ProductFullSyncUserError.field";
+            public const string message = "shopify.ProductFullSyncUserError.message";
+        }
+
+        public static class ProductJoinSellingPlanGroupsPayload
+        {
+            public const string product = "shopify.ProductJoinSellingPlanGroupsPayload.product";
+            public const string userErrors = "shopify.ProductJoinSellingPlanGroupsPayload.userErrors";
+        }
+
+        public static class ProductLeaveSellingPlanGroupsPayload
+        {
+            public const string product = "shopify.ProductLeaveSellingPlanGroupsPayload.product";
+            public const string userErrors = "shopify.ProductLeaveSellingPlanGroupsPayload.userErrors";
+        }
+
+        public static class IProductOperation
+        {
+            public const string product = "shopify.IProductOperation.product";
+            public const string status = "shopify.IProductOperation.status";
+        }
+
+        public static class ProductOption
+        {
+            public const string id = "shopify.ProductOption.id";
+            public const string linkedMetafield = "shopify.ProductOption.linkedMetafield";
+            public const string name = "shopify.ProductOption.name";
+            public const string optionValues = "shopify.ProductOption.optionValues";
+            public const string position = "shopify.ProductOption.position";
+            public const string translations = "shopify.ProductOption.translations";
+            public const string values = "shopify.ProductOption.values";
+        }
+
+        public static class ProductOptionUpdatePayload
+        {
+            public const string product = "shopify.ProductOptionUpdatePayload.product";
+            public const string userErrors = "shopify.ProductOptionUpdatePayload.userErrors";
+        }
+
+        public static class ProductOptionUpdateUserError
+        {
+            public const string code = "shopify.ProductOptionUpdateUserError.code";
+            public const string field = "shopify.ProductOptionUpdateUserError.field";
+            public const string message = "shopify.ProductOptionUpdateUserError.message";
+        }
+
+        public static class ProductOptionValue
+        {
+            public const string hasVariants = "shopify.ProductOptionValue.hasVariants";
+            public const string id = "shopify.ProductOptionValue.id";
+            public const string linkedMetafieldValue = "shopify.ProductOptionValue.linkedMetafieldValue";
+            public const string name = "shopify.ProductOptionValue.name";
+            public const string swatch = "shopify.ProductOptionValue.swatch";
+            public const string translations = "shopify.ProductOptionValue.translations";
+        }
+
+        public static class ProductOptionValueSwatch
+        {
+            public const string color = "shopify.ProductOptionValueSwatch.color";
+            public const string image = "shopify.ProductOptionValueSwatch.image";
+        }
+
+        public static class ProductOptionsCreatePayload
+        {
+            public const string product = "shopify.ProductOptionsCreatePayload.product";
+            public const string userErrors = "shopify.ProductOptionsCreatePayload.userErrors";
+        }
+
+        public static class ProductOptionsCreateUserError
+        {
+            public const string code = "shopify.ProductOptionsCreateUserError.code";
+            public const string field = "shopify.ProductOptionsCreateUserError.field";
+            public const string message = "shopify.ProductOptionsCreateUserError.message";
+        }
+
+        public static class ProductOptionsDeletePayload
+        {
+            public const string deletedOptionsIds = "shopify.ProductOptionsDeletePayload.deletedOptionsIds";
+            public const string product = "shopify.ProductOptionsDeletePayload.product";
+            public const string userErrors = "shopify.ProductOptionsDeletePayload.userErrors";
+        }
+
+        public static class ProductOptionsDeleteUserError
+        {
+            public const string code = "shopify.ProductOptionsDeleteUserError.code";
+            public const string field = "shopify.ProductOptionsDeleteUserError.field";
+            public const string message = "shopify.ProductOptionsDeleteUserError.message";
+        }
+
+        public static class ProductOptionsReorderPayload
+        {
+            public const string product = "shopify.ProductOptionsReorderPayload.product";
+            public const string userErrors = "shopify.ProductOptionsReorderPayload.userErrors";
+        }
+
+        public static class ProductOptionsReorderUserError
+        {
+            public const string code = "shopify.ProductOptionsReorderUserError.code";
+            public const string field = "shopify.ProductOptionsReorderUserError.field";
+            public const string message = "shopify.ProductOptionsReorderUserError.message";
+        }
+
+        public static class ProductPriceRange
+        {
+            public const string maxVariantPrice = "shopify.ProductPriceRange.maxVariantPrice";
+            public const string minVariantPrice = "shopify.ProductPriceRange.minVariantPrice";
+        }
+
+        public static class ProductPriceRangeV2
+        {
+            public const string maxVariantPrice = "shopify.ProductPriceRangeV2.maxVariantPrice";
+            public const string minVariantPrice = "shopify.ProductPriceRangeV2.minVariantPrice";
+        }
+
+        public static class ProductPublication
+        {
+            public const string channel = "shopify.ProductPublication.channel";
+            public const string isPublished = "shopify.ProductPublication.isPublished";
+            public const string product = "shopify.ProductPublication.product";
+            public const string publishDate = "shopify.ProductPublication.publishDate";
+        }
+
+        public static class ProductPublicationConnection
+        {
+            public const string edges = "shopify.ProductPublicationConnection.edges";
+            public const string nodes = "shopify.ProductPublicationConnection.nodes";
+            public const string pageInfo = "shopify.ProductPublicationConnection.pageInfo";
+        }
+
+        public static class ProductPublicationEdge
+        {
+            public const string cursor = "shopify.ProductPublicationEdge.cursor";
+            public const string node = "shopify.ProductPublicationEdge.node";
+        }
+
+        public static class ProductPublishPayload
+        {
+            public const string product = "shopify.ProductPublishPayload.product";
+            public const string productPublications = "shopify.ProductPublishPayload.productPublications";
+            public const string shop = "shopify.ProductPublishPayload.shop";
+            public const string userErrors = "shopify.ProductPublishPayload.userErrors";
+        }
+
+        public static class ProductReorderMediaPayload
+        {
+            public const string job = "shopify.ProductReorderMediaPayload.job";
+            public const string mediaUserErrors = "shopify.ProductReorderMediaPayload.mediaUserErrors";
+            public const string userErrors = "shopify.ProductReorderMediaPayload.userErrors";
+        }
+
+        public static class ProductResourceFeedback
+        {
+            public const string feedbackGeneratedAt = "shopify.ProductResourceFeedback.feedbackGeneratedAt";
+            public const string messages = "shopify.ProductResourceFeedback.messages";
+            public const string productId = "shopify.ProductResourceFeedback.productId";
+            public const string productUpdatedAt = "shopify.ProductResourceFeedback.productUpdatedAt";
+            public const string state = "shopify.ProductResourceFeedback.state";
+        }
+
+        public static class ProductSale
+        {
+            public const string actionType = "shopify.ProductSale.actionType";
+            public const string id = "shopify.ProductSale.id";
+            public const string lineItem = "shopify.ProductSale.lineItem";
+            public const string lineType = "shopify.ProductSale.lineType";
+            public const string quantity = "shopify.ProductSale.quantity";
+            public const string taxes = "shopify.ProductSale.taxes";
+            public const string totalAmount = "shopify.ProductSale.totalAmount";
+            public const string totalDiscountAmountAfterTaxes = "shopify.ProductSale.totalDiscountAmountAfterTaxes";
+            public const string totalDiscountAmountBeforeTaxes = "shopify.ProductSale.totalDiscountAmountBeforeTaxes";
+            public const string totalTaxAmount = "shopify.ProductSale.totalTaxAmount";
+        }
+
+        public static class ProductSetOperation
+        {
+            public const string id = "shopify.ProductSetOperation.id";
+            public const string product = "shopify.ProductSetOperation.product";
+            public const string status = "shopify.ProductSetOperation.status";
+            public const string userErrors = "shopify.ProductSetOperation.userErrors";
+        }
+
+        public static class ProductSetPayload
+        {
+            public const string product = "shopify.ProductSetPayload.product";
+            public const string productSetOperation = "shopify.ProductSetPayload.productSetOperation";
+            public const string userErrors = "shopify.ProductSetPayload.userErrors";
+        }
+
+        public static class ProductSetUserError
+        {
+            public const string code = "shopify.ProductSetUserError.code";
+            public const string field = "shopify.ProductSetUserError.field";
+            public const string message = "shopify.ProductSetUserError.message";
+        }
+
+        public static class ProductTaxonomyNode
+        {
+            public const string fullName = "shopify.ProductTaxonomyNode.fullName";
+            public const string id = "shopify.ProductTaxonomyNode.id";
+            public const string isLeaf = "shopify.ProductTaxonomyNode.isLeaf";
+            public const string isRoot = "shopify.ProductTaxonomyNode.isRoot";
+            public const string name = "shopify.ProductTaxonomyNode.name";
+        }
+
+        public static class ProductUnpublishPayload
+        {
+            public const string product = "shopify.ProductUnpublishPayload.product";
+            public const string shop = "shopify.ProductUnpublishPayload.shop";
+            public const string userErrors = "shopify.ProductUnpublishPayload.userErrors";
+        }
+
+        public static class ProductUpdateMediaPayload
+        {
+            public const string media = "shopify.ProductUpdateMediaPayload.media";
+            public const string mediaUserErrors = "shopify.ProductUpdateMediaPayload.mediaUserErrors";
+            public const string product = "shopify.ProductUpdateMediaPayload.product";
+            public const string userErrors = "shopify.ProductUpdateMediaPayload.userErrors";
+        }
+
+        public static class ProductUpdatePayload
+        {
+            public const string product = "shopify.ProductUpdatePayload.product";
+            public const string userErrors = "shopify.ProductUpdatePayload.userErrors";
+        }
+
+        public static class ProductVariant
+        {
+            public const string availableForSale = "shopify.ProductVariant.availableForSale";
+            public const string barcode = "shopify.ProductVariant.barcode";
+            public const string compareAtPrice = "shopify.ProductVariant.compareAtPrice";
+            public const string contextualPricing = "shopify.ProductVariant.contextualPricing";
+            public const string createdAt = "shopify.ProductVariant.createdAt";
+            public const string defaultCursor = "shopify.ProductVariant.defaultCursor";
+            public const string deliveryProfile = "shopify.ProductVariant.deliveryProfile";
+            public const string displayName = "shopify.ProductVariant.displayName";
+            public const string events = "shopify.ProductVariant.events";
+            public const string id = "shopify.ProductVariant.id";
+            public const string image = "shopify.ProductVariant.image";
+            public const string inventoryItem = "shopify.ProductVariant.inventoryItem";
+            public const string inventoryPolicy = "shopify.ProductVariant.inventoryPolicy";
+            public const string inventoryQuantity = "shopify.ProductVariant.inventoryQuantity";
+            public const string legacyResourceId = "shopify.ProductVariant.legacyResourceId";
+            public const string media = "shopify.ProductVariant.media";
+            public const string metafield = "shopify.ProductVariant.metafield";
+            public const string metafieldDefinitions = "shopify.ProductVariant.metafieldDefinitions";
+            public const string metafields = "shopify.ProductVariant.metafields";
+            public const string position = "shopify.ProductVariant.position";
+            public const string presentmentPrices = "shopify.ProductVariant.presentmentPrices";
+            public const string price = "shopify.ProductVariant.price";
+            public const string product = "shopify.ProductVariant.product";
+            public const string productVariantComponents = "shopify.ProductVariant.productVariantComponents";
+            public const string requiresComponents = "shopify.ProductVariant.requiresComponents";
+            public const string selectedOptions = "shopify.ProductVariant.selectedOptions";
+            public const string sellableOnlineQuantity = "shopify.ProductVariant.sellableOnlineQuantity";
+            public const string sellingPlanGroupCount = "shopify.ProductVariant.sellingPlanGroupCount";
+            public const string sellingPlanGroups = "shopify.ProductVariant.sellingPlanGroups";
+            public const string sellingPlanGroupsCount = "shopify.ProductVariant.sellingPlanGroupsCount";
+            public const string sku = "shopify.ProductVariant.sku";
+            public const string storefrontId = "shopify.ProductVariant.storefrontId";
+            public const string taxCode = "shopify.ProductVariant.taxCode";
+            public const string taxable = "shopify.ProductVariant.taxable";
+            public const string title = "shopify.ProductVariant.title";
+            public const string translations = "shopify.ProductVariant.translations";
+            public const string unitPriceMeasurement = "shopify.ProductVariant.unitPriceMeasurement";
+            public const string updatedAt = "shopify.ProductVariant.updatedAt";
+        }
+
+        public static class ProductVariantAppendMediaPayload
+        {
+            public const string product = "shopify.ProductVariantAppendMediaPayload.product";
+            public const string productVariants = "shopify.ProductVariantAppendMediaPayload.productVariants";
+            public const string userErrors = "shopify.ProductVariantAppendMediaPayload.userErrors";
+        }
+
+        public static class ProductVariantComponent
+        {
+            public const string id = "shopify.ProductVariantComponent.id";
+            public const string productVariant = "shopify.ProductVariantComponent.productVariant";
+            public const string quantity = "shopify.ProductVariantComponent.quantity";
+        }
+
+        public static class ProductVariantComponentConnection
+        {
+            public const string edges = "shopify.ProductVariantComponentConnection.edges";
+            public const string nodes = "shopify.ProductVariantComponentConnection.nodes";
+            public const string pageInfo = "shopify.ProductVariantComponentConnection.pageInfo";
+        }
+
+        public static class ProductVariantComponentEdge
+        {
+            public const string cursor = "shopify.ProductVariantComponentEdge.cursor";
+            public const string node = "shopify.ProductVariantComponentEdge.node";
+        }
+
+        public static class ProductVariantConnection
+        {
+            public const string edges = "shopify.ProductVariantConnection.edges";
+            public const string nodes = "shopify.ProductVariantConnection.nodes";
+            public const string pageInfo = "shopify.ProductVariantConnection.pageInfo";
+        }
+
+        public static class ProductVariantContextualPricing
+        {
+            public const string compareAtPrice = "shopify.ProductVariantContextualPricing.compareAtPrice";
+            public const string price = "shopify.ProductVariantContextualPricing.price";
+            public const string quantityPriceBreaks = "shopify.ProductVariantContextualPricing.quantityPriceBreaks";
+            public const string quantityRule = "shopify.ProductVariantContextualPricing.quantityRule";
+        }
+
+        public static class ProductVariantDetachMediaPayload
+        {
+            public const string product = "shopify.ProductVariantDetachMediaPayload.product";
+            public const string productVariants = "shopify.ProductVariantDetachMediaPayload.productVariants";
+            public const string userErrors = "shopify.ProductVariantDetachMediaPayload.userErrors";
+        }
+
+        public static class ProductVariantEdge
+        {
+            public const string cursor = "shopify.ProductVariantEdge.cursor";
+            public const string node = "shopify.ProductVariantEdge.node";
+        }
+
+        public static class ProductVariantJoinSellingPlanGroupsPayload
+        {
+            public const string productVariant = "shopify.ProductVariantJoinSellingPlanGroupsPayload.productVariant";
+            public const string userErrors = "shopify.ProductVariantJoinSellingPlanGroupsPayload.userErrors";
+        }
+
+        public static class ProductVariantLeaveSellingPlanGroupsPayload
+        {
+            public const string productVariant = "shopify.ProductVariantLeaveSellingPlanGroupsPayload.productVariant";
+            public const string userErrors = "shopify.ProductVariantLeaveSellingPlanGroupsPayload.userErrors";
+        }
+
+        public static class ProductVariantPricePair
+        {
+            public const string compareAtPrice = "shopify.ProductVariantPricePair.compareAtPrice";
+            public const string price = "shopify.ProductVariantPricePair.price";
+        }
+
+        public static class ProductVariantPricePairConnection
+        {
+            public const string edges = "shopify.ProductVariantPricePairConnection.edges";
+            public const string nodes = "shopify.ProductVariantPricePairConnection.nodes";
+            public const string pageInfo = "shopify.ProductVariantPricePairConnection.pageInfo";
+        }
+
+        public static class ProductVariantPricePairEdge
+        {
+            public const string cursor = "shopify.ProductVariantPricePairEdge.cursor";
+            public const string node = "shopify.ProductVariantPricePairEdge.node";
+        }
+
+        public static class ProductVariantRelationshipBulkUpdatePayload
+        {
+            public const string parentProductVariants = "shopify.ProductVariantRelationshipBulkUpdatePayload.parentProductVariants";
+            public const string userErrors = "shopify.ProductVariantRelationshipBulkUpdatePayload.userErrors";
+        }
+
+        public static class ProductVariantRelationshipBulkUpdateUserError
+        {
+            public const string code = "shopify.ProductVariantRelationshipBulkUpdateUserError.code";
+            public const string field = "shopify.ProductVariantRelationshipBulkUpdateUserError.field";
+            public const string message = "shopify.ProductVariantRelationshipBulkUpdateUserError.message";
+        }
+
+        public static class ProductVariantsBulkCreatePayload
+        {
+            public const string product = "shopify.ProductVariantsBulkCreatePayload.product";
+            public const string productVariants = "shopify.ProductVariantsBulkCreatePayload.productVariants";
+            public const string userErrors = "shopify.ProductVariantsBulkCreatePayload.userErrors";
+        }
+
+        public static class ProductVariantsBulkCreateUserError
+        {
+            public const string code = "shopify.ProductVariantsBulkCreateUserError.code";
+            public const string field = "shopify.ProductVariantsBulkCreateUserError.field";
+            public const string message = "shopify.ProductVariantsBulkCreateUserError.message";
+        }
+
+        public static class ProductVariantsBulkDeletePayload
+        {
+            public const string product = "shopify.ProductVariantsBulkDeletePayload.product";
+            public const string userErrors = "shopify.ProductVariantsBulkDeletePayload.userErrors";
+        }
+
+        public static class ProductVariantsBulkDeleteUserError
+        {
+            public const string code = "shopify.ProductVariantsBulkDeleteUserError.code";
+            public const string field = "shopify.ProductVariantsBulkDeleteUserError.field";
+            public const string message = "shopify.ProductVariantsBulkDeleteUserError.message";
+        }
+
+        public static class ProductVariantsBulkReorderPayload
+        {
+            public const string product = "shopify.ProductVariantsBulkReorderPayload.product";
+            public const string userErrors = "shopify.ProductVariantsBulkReorderPayload.userErrors";
+        }
+
+        public static class ProductVariantsBulkReorderUserError
+        {
+            public const string code = "shopify.ProductVariantsBulkReorderUserError.code";
+            public const string field = "shopify.ProductVariantsBulkReorderUserError.field";
+            public const string message = "shopify.ProductVariantsBulkReorderUserError.message";
+        }
+
+        public static class ProductVariantsBulkUpdatePayload
+        {
+            public const string product = "shopify.ProductVariantsBulkUpdatePayload.product";
+            public const string productVariants = "shopify.ProductVariantsBulkUpdatePayload.productVariants";
+            public const string userErrors = "shopify.ProductVariantsBulkUpdatePayload.userErrors";
+        }
+
+        public static class ProductVariantsBulkUpdateUserError
+        {
+            public const string code = "shopify.ProductVariantsBulkUpdateUserError.code";
+            public const string field = "shopify.ProductVariantsBulkUpdateUserError.field";
+            public const string message = "shopify.ProductVariantsBulkUpdateUserError.message";
+        }
+
+        public static class PubSubServerPixelUpdatePayload
+        {
+            public const string serverPixel = "shopify.PubSubServerPixelUpdatePayload.serverPixel";
+            public const string userErrors = "shopify.PubSubServerPixelUpdatePayload.userErrors";
+        }
+
+        public static class PubSubWebhookSubscriptionCreatePayload
+        {
+            public const string userErrors = "shopify.PubSubWebhookSubscriptionCreatePayload.userErrors";
+            public const string webhookSubscription = "shopify.PubSubWebhookSubscriptionCreatePayload.webhookSubscription";
+        }
+
+        public static class PubSubWebhookSubscriptionCreateUserError
+        {
+            public const string code = "shopify.PubSubWebhookSubscriptionCreateUserError.code";
+            public const string field = "shopify.PubSubWebhookSubscriptionCreateUserError.field";
+            public const string message = "shopify.PubSubWebhookSubscriptionCreateUserError.message";
+        }
+
+        public static class PubSubWebhookSubscriptionUpdatePayload
+        {
+            public const string userErrors = "shopify.PubSubWebhookSubscriptionUpdatePayload.userErrors";
+            public const string webhookSubscription = "shopify.PubSubWebhookSubscriptionUpdatePayload.webhookSubscription";
+        }
+
+        public static class PubSubWebhookSubscriptionUpdateUserError
+        {
+            public const string code = "shopify.PubSubWebhookSubscriptionUpdateUserError.code";
+            public const string field = "shopify.PubSubWebhookSubscriptionUpdateUserError.field";
+            public const string message = "shopify.PubSubWebhookSubscriptionUpdateUserError.message";
+        }
+
+        public static class Publication
+        {
+            public const string app = "shopify.Publication.app";
+            public const string autoPublish = "shopify.Publication.autoPublish";
+            public const string catalog = "shopify.Publication.catalog";
+            public const string collectionPublicationsV3 = "shopify.Publication.collectionPublicationsV3";
+            public const string collections = "shopify.Publication.collections";
+            public const string hasCollection = "shopify.Publication.hasCollection";
+            public const string id = "shopify.Publication.id";
+            public const string includedProducts = "shopify.Publication.includedProducts";
+            public const string name = "shopify.Publication.name";
+            public const string operation = "shopify.Publication.operation";
+            public const string productPublicationsV3 = "shopify.Publication.productPublicationsV3";
+            public const string products = "shopify.Publication.products";
+            public const string supportsFuturePublishing = "shopify.Publication.supportsFuturePublishing";
+        }
+
+        public static class PublicationConnection
+        {
+            public const string edges = "shopify.PublicationConnection.edges";
+            public const string nodes = "shopify.PublicationConnection.nodes";
+            public const string pageInfo = "shopify.PublicationConnection.pageInfo";
+        }
+
+        public static class PublicationCreatePayload
+        {
+            public const string publication = "shopify.PublicationCreatePayload.publication";
+            public const string userErrors = "shopify.PublicationCreatePayload.userErrors";
+        }
+
+        public static class PublicationDeletePayload
+        {
+            public const string deletedId = "shopify.PublicationDeletePayload.deletedId";
+            public const string userErrors = "shopify.PublicationDeletePayload.userErrors";
+        }
+
+        public static class PublicationEdge
+        {
+            public const string cursor = "shopify.PublicationEdge.cursor";
+            public const string node = "shopify.PublicationEdge.node";
+        }
+
+        public static class IPublicationOperation
+        {
+            public const string id = "shopify.IPublicationOperation.id";
+            public const string processedRowCount = "shopify.IPublicationOperation.processedRowCount";
+            public const string rowCount = "shopify.IPublicationOperation.rowCount";
+            public const string status = "shopify.IPublicationOperation.status";
+        }
+
+        public static class PublicationResourceOperation
+        {
+            public const string id = "shopify.PublicationResourceOperation.id";
+            public const string processedRowCount = "shopify.PublicationResourceOperation.processedRowCount";
+            public const string rowCount = "shopify.PublicationResourceOperation.rowCount";
+            public const string status = "shopify.PublicationResourceOperation.status";
+        }
+
+        public static class PublicationUpdatePayload
+        {
+            public const string publication = "shopify.PublicationUpdatePayload.publication";
+            public const string userErrors = "shopify.PublicationUpdatePayload.userErrors";
+        }
+
+        public static class PublicationUserError
+        {
+            public const string code = "shopify.PublicationUserError.code";
+            public const string field = "shopify.PublicationUserError.field";
+            public const string message = "shopify.PublicationUserError.message";
+        }
+
+        public static class IPublishable
+        {
+            public const string availablePublicationsCount = "shopify.IPublishable.availablePublicationsCount";
+            public const string publicationCount = "shopify.IPublishable.publicationCount";
+            public const string publishedOnChannel = "shopify.IPublishable.publishedOnChannel";
+            public const string publishedOnCurrentChannel = "shopify.IPublishable.publishedOnCurrentChannel";
+            public const string publishedOnCurrentPublication = "shopify.IPublishable.publishedOnCurrentPublication";
+            public const string publishedOnPublication = "shopify.IPublishable.publishedOnPublication";
+            public const string resourcePublications = "shopify.IPublishable.resourcePublications";
+            public const string resourcePublicationsCount = "shopify.IPublishable.resourcePublicationsCount";
+            public const string resourcePublicationsV2 = "shopify.IPublishable.resourcePublicationsV2";
+            public const string unpublishedChannels = "shopify.IPublishable.unpublishedChannels";
+            public const string unpublishedPublications = "shopify.IPublishable.unpublishedPublications";
+        }
+
+        public static class PublishablePublishPayload
+        {
+            public const string publishable = "shopify.PublishablePublishPayload.publishable";
+            public const string shop = "shopify.PublishablePublishPayload.shop";
+            public const string userErrors = "shopify.PublishablePublishPayload.userErrors";
+        }
+
+        public static class PublishablePublishToCurrentChannelPayload
+        {
+            public const string publishable = "shopify.PublishablePublishToCurrentChannelPayload.publishable";
+            public const string shop = "shopify.PublishablePublishToCurrentChannelPayload.shop";
+            public const string userErrors = "shopify.PublishablePublishToCurrentChannelPayload.userErrors";
+        }
+
+        public static class PublishableUnpublishPayload
+        {
+            public const string publishable = "shopify.PublishableUnpublishPayload.publishable";
+            public const string shop = "shopify.PublishableUnpublishPayload.shop";
+            public const string userErrors = "shopify.PublishableUnpublishPayload.userErrors";
+        }
+
+        public static class PublishableUnpublishToCurrentChannelPayload
+        {
+            public const string publishable = "shopify.PublishableUnpublishToCurrentChannelPayload.publishable";
+            public const string shop = "shopify.PublishableUnpublishToCurrentChannelPayload.shop";
+            public const string userErrors = "shopify.PublishableUnpublishToCurrentChannelPayload.userErrors";
+        }
+
+        public static class PurchasingCompany
+        {
+            public const string company = "shopify.PurchasingCompany.company";
+            public const string contact = "shopify.PurchasingCompany.contact";
+            public const string location = "shopify.PurchasingCompany.location";
+        }
+
+        public static class IPurchasingEntity
+        {
+        }
+
+        public static class QuantityPriceBreak
+        {
+            public const string id = "shopify.QuantityPriceBreak.id";
+            public const string minimumQuantity = "shopify.QuantityPriceBreak.minimumQuantity";
+            public const string price = "shopify.QuantityPriceBreak.price";
+            public const string priceList = "shopify.QuantityPriceBreak.priceList";
+            public const string variant = "shopify.QuantityPriceBreak.variant";
+        }
+
+        public static class QuantityPriceBreakConnection
+        {
+            public const string edges = "shopify.QuantityPriceBreakConnection.edges";
+            public const string nodes = "shopify.QuantityPriceBreakConnection.nodes";
+            public const string pageInfo = "shopify.QuantityPriceBreakConnection.pageInfo";
+        }
+
+        public static class QuantityPriceBreakEdge
+        {
+            public const string cursor = "shopify.QuantityPriceBreakEdge.cursor";
+            public const string node = "shopify.QuantityPriceBreakEdge.node";
+        }
+
+        public static class QuantityPricingByVariantUpdatePayload
+        {
+            public const string productVariants = "shopify.QuantityPricingByVariantUpdatePayload.productVariants";
+            public const string userErrors = "shopify.QuantityPricingByVariantUpdatePayload.userErrors";
+        }
+
+        public static class QuantityPricingByVariantUserError
+        {
+            public const string code = "shopify.QuantityPricingByVariantUserError.code";
+            public const string field = "shopify.QuantityPricingByVariantUserError.field";
+            public const string message = "shopify.QuantityPricingByVariantUserError.message";
+        }
+
+        public static class QuantityRule
+        {
+            public const string increment = "shopify.QuantityRule.increment";
+            public const string isDefault = "shopify.QuantityRule.isDefault";
+            public const string maximum = "shopify.QuantityRule.maximum";
+            public const string minimum = "shopify.QuantityRule.minimum";
+            public const string originType = "shopify.QuantityRule.originType";
+            public const string productVariant = "shopify.QuantityRule.productVariant";
+        }
+
+        public static class QuantityRuleConnection
+        {
+            public const string edges = "shopify.QuantityRuleConnection.edges";
+            public const string nodes = "shopify.QuantityRuleConnection.nodes";
+            public const string pageInfo = "shopify.QuantityRuleConnection.pageInfo";
+        }
+
+        public static class QuantityRuleEdge
+        {
+            public const string cursor = "shopify.QuantityRuleEdge.cursor";
+            public const string node = "shopify.QuantityRuleEdge.node";
+        }
+
+        public static class QuantityRuleUserError
+        {
+            public const string code = "shopify.QuantityRuleUserError.code";
+            public const string field = "shopify.QuantityRuleUserError.field";
+            public const string message = "shopify.QuantityRuleUserError.message";
+        }
+
+        public static class QuantityRulesAddPayload
+        {
+            public const string quantityRules = "shopify.QuantityRulesAddPayload.quantityRules";
+            public const string userErrors = "shopify.QuantityRulesAddPayload.userErrors";
+        }
+
+        public static class QuantityRulesDeletePayload
+        {
+            public const string deletedQuantityRulesVariantIds = "shopify.QuantityRulesDeletePayload.deletedQuantityRulesVariantIds";
+            public const string userErrors = "shopify.QuantityRulesDeletePayload.userErrors";
+        }
+
+        public static class QueryRoot
+        {
+            public const string abandonedCheckouts = "shopify.QueryRoot.abandonedCheckouts";
+            public const string abandonedCheckoutsCount = "shopify.QueryRoot.abandonedCheckoutsCount";
+            public const string abandonment = "shopify.QueryRoot.abandonment";
+            public const string abandonmentByAbandonedCheckoutId = "shopify.QueryRoot.abandonmentByAbandonedCheckoutId";
+            public const string app = "shopify.QueryRoot.app";
+            public const string appByHandle = "shopify.QueryRoot.appByHandle";
+            public const string appByKey = "shopify.QueryRoot.appByKey";
+            public const string appDiscountType = "shopify.QueryRoot.appDiscountType";
+            public const string appDiscountTypes = "shopify.QueryRoot.appDiscountTypes";
+            public const string appDiscountTypesNodes = "shopify.QueryRoot.appDiscountTypesNodes";
+            public const string appInstallation = "shopify.QueryRoot.appInstallation";
+            public const string appInstallations = "shopify.QueryRoot.appInstallations";
+            public const string article = "shopify.QueryRoot.article";
+            public const string articleAuthors = "shopify.QueryRoot.articleAuthors";
+            public const string articleTags = "shopify.QueryRoot.articleTags";
+            public const string articles = "shopify.QueryRoot.articles";
+            public const string assignedFulfillmentOrders = "shopify.QueryRoot.assignedFulfillmentOrders";
+            public const string automaticDiscount = "shopify.QueryRoot.automaticDiscount";
+            public const string automaticDiscountNode = "shopify.QueryRoot.automaticDiscountNode";
+            public const string automaticDiscountNodes = "shopify.QueryRoot.automaticDiscountNodes";
+            public const string automaticDiscountSavedSearches = "shopify.QueryRoot.automaticDiscountSavedSearches";
+            public const string automaticDiscounts = "shopify.QueryRoot.automaticDiscounts";
+            public const string availableBackupRegions = "shopify.QueryRoot.availableBackupRegions";
+            public const string availableCarrierServices = "shopify.QueryRoot.availableCarrierServices";
+            public const string availableLocales = "shopify.QueryRoot.availableLocales";
+            public const string backupRegion = "shopify.QueryRoot.backupRegion";
+            public const string blog = "shopify.QueryRoot.blog";
+            public const string blogs = "shopify.QueryRoot.blogs";
+            public const string blogsCount = "shopify.QueryRoot.blogsCount";
+            public const string businessEntities = "shopify.QueryRoot.businessEntities";
+            public const string businessEntity = "shopify.QueryRoot.businessEntity";
+            public const string carrierService = "shopify.QueryRoot.carrierService";
+            public const string carrierServices = "shopify.QueryRoot.carrierServices";
+            public const string cartTransforms = "shopify.QueryRoot.cartTransforms";
+            public const string cashTrackingSession = "shopify.QueryRoot.cashTrackingSession";
+            public const string cashTrackingSessions = "shopify.QueryRoot.cashTrackingSessions";
+            public const string catalog = "shopify.QueryRoot.catalog";
+            public const string catalogOperations = "shopify.QueryRoot.catalogOperations";
+            public const string catalogs = "shopify.QueryRoot.catalogs";
+            public const string catalogsCount = "shopify.QueryRoot.catalogsCount";
+            public const string channel = "shopify.QueryRoot.channel";
+            public const string channels = "shopify.QueryRoot.channels";
+            public const string checkoutBranding = "shopify.QueryRoot.checkoutBranding";
+            public const string checkoutProfile = "shopify.QueryRoot.checkoutProfile";
+            public const string checkoutProfiles = "shopify.QueryRoot.checkoutProfiles";
+            public const string codeDiscountNode = "shopify.QueryRoot.codeDiscountNode";
+            public const string codeDiscountNodeByCode = "shopify.QueryRoot.codeDiscountNodeByCode";
+            public const string codeDiscountNodes = "shopify.QueryRoot.codeDiscountNodes";
+            public const string codeDiscountSavedSearches = "shopify.QueryRoot.codeDiscountSavedSearches";
+            public const string collection = "shopify.QueryRoot.collection";
+            public const string collectionByHandle = "shopify.QueryRoot.collectionByHandle";
+            public const string collectionByIdentifier = "shopify.QueryRoot.collectionByIdentifier";
+            public const string collectionRulesConditions = "shopify.QueryRoot.collectionRulesConditions";
+            public const string collectionSavedSearches = "shopify.QueryRoot.collectionSavedSearches";
+            public const string collections = "shopify.QueryRoot.collections";
+            public const string collectionsCount = "shopify.QueryRoot.collectionsCount";
+            public const string comment = "shopify.QueryRoot.comment";
+            public const string comments = "shopify.QueryRoot.comments";
+            public const string companies = "shopify.QueryRoot.companies";
+            public const string companiesCount = "shopify.QueryRoot.companiesCount";
+            public const string company = "shopify.QueryRoot.company";
+            public const string companyContact = "shopify.QueryRoot.companyContact";
+            public const string companyContactRole = "shopify.QueryRoot.companyContactRole";
+            public const string companyLocation = "shopify.QueryRoot.companyLocation";
+            public const string companyLocations = "shopify.QueryRoot.companyLocations";
+            public const string consentPolicy = "shopify.QueryRoot.consentPolicy";
+            public const string consentPolicyRegions = "shopify.QueryRoot.consentPolicyRegions";
+            public const string currentAppInstallation = "shopify.QueryRoot.currentAppInstallation";
+            public const string currentBulkOperation = "shopify.QueryRoot.currentBulkOperation";
+            public const string currentStaffMember = "shopify.QueryRoot.currentStaffMember";
+            public const string customer = "shopify.QueryRoot.customer";
+            public const string customerAccountPage = "shopify.QueryRoot.customerAccountPage";
+            public const string customerAccountPages = "shopify.QueryRoot.customerAccountPages";
+            public const string customerByIdentifier = "shopify.QueryRoot.customerByIdentifier";
+            public const string customerMergeJobStatus = "shopify.QueryRoot.customerMergeJobStatus";
+            public const string customerMergePreview = "shopify.QueryRoot.customerMergePreview";
+            public const string customerPaymentMethod = "shopify.QueryRoot.customerPaymentMethod";
+            public const string customerSavedSearches = "shopify.QueryRoot.customerSavedSearches";
+            public const string customerSegmentMembers = "shopify.QueryRoot.customerSegmentMembers";
+            public const string customerSegmentMembersQuery = "shopify.QueryRoot.customerSegmentMembersQuery";
+            public const string customerSegmentMembership = "shopify.QueryRoot.customerSegmentMembership";
+            public const string customers = "shopify.QueryRoot.customers";
+            public const string customersCount = "shopify.QueryRoot.customersCount";
+            public const string deletionEvents = "shopify.QueryRoot.deletionEvents";
+            public const string deliveryCustomization = "shopify.QueryRoot.deliveryCustomization";
+            public const string deliveryCustomizations = "shopify.QueryRoot.deliveryCustomizations";
+            public const string deliveryProfile = "shopify.QueryRoot.deliveryProfile";
+            public const string deliveryProfiles = "shopify.QueryRoot.deliveryProfiles";
+            public const string deliveryPromiseParticipants = "shopify.QueryRoot.deliveryPromiseParticipants";
+            public const string deliveryPromiseProvider = "shopify.QueryRoot.deliveryPromiseProvider";
+            public const string deliveryPromiseSettings = "shopify.QueryRoot.deliveryPromiseSettings";
+            public const string deliverySettings = "shopify.QueryRoot.deliverySettings";
+            public const string discountCodesCount = "shopify.QueryRoot.discountCodesCount";
+            public const string discountNode = "shopify.QueryRoot.discountNode";
+            public const string discountNodes = "shopify.QueryRoot.discountNodes";
+            public const string discountNodesCount = "shopify.QueryRoot.discountNodesCount";
+            public const string discountRedeemCodeBulkCreation = "shopify.QueryRoot.discountRedeemCodeBulkCreation";
+            public const string discountRedeemCodeSavedSearches = "shopify.QueryRoot.discountRedeemCodeSavedSearches";
+            public const string dispute = "shopify.QueryRoot.dispute";
+            public const string disputeEvidence = "shopify.QueryRoot.disputeEvidence";
+            public const string disputes = "shopify.QueryRoot.disputes";
+            public const string domain = "shopify.QueryRoot.domain";
+            public const string draftOrder = "shopify.QueryRoot.draftOrder";
+            public const string draftOrderSavedSearches = "shopify.QueryRoot.draftOrderSavedSearches";
+            public const string draftOrderTag = "shopify.QueryRoot.draftOrderTag";
+            public const string draftOrders = "shopify.QueryRoot.draftOrders";
+            public const string @event = "shopify.QueryRoot.event";
+            public const string events = "shopify.QueryRoot.events";
+            public const string eventsCount = "shopify.QueryRoot.eventsCount";
+            public const string fileSavedSearches = "shopify.QueryRoot.fileSavedSearches";
+            public const string files = "shopify.QueryRoot.files";
+            public const string financeAppAccessPolicy = "shopify.QueryRoot.financeAppAccessPolicy";
+            public const string financeKycInformation = "shopify.QueryRoot.financeKycInformation";
+            public const string fulfillment = "shopify.QueryRoot.fulfillment";
+            public const string fulfillmentConstraintRules = "shopify.QueryRoot.fulfillmentConstraintRules";
+            public const string fulfillmentOrder = "shopify.QueryRoot.fulfillmentOrder";
+            public const string fulfillmentOrders = "shopify.QueryRoot.fulfillmentOrders";
+            public const string fulfillmentService = "shopify.QueryRoot.fulfillmentService";
+            public const string giftCard = "shopify.QueryRoot.giftCard";
+            public const string giftCardConfiguration = "shopify.QueryRoot.giftCardConfiguration";
+            public const string giftCards = "shopify.QueryRoot.giftCards";
+            public const string giftCardsCount = "shopify.QueryRoot.giftCardsCount";
+            public const string inventoryItem = "shopify.QueryRoot.inventoryItem";
+            public const string inventoryItems = "shopify.QueryRoot.inventoryItems";
+            public const string inventoryLevel = "shopify.QueryRoot.inventoryLevel";
+            public const string inventoryProperties = "shopify.QueryRoot.inventoryProperties";
+            public const string job = "shopify.QueryRoot.job";
+            public const string location = "shopify.QueryRoot.location";
+            public const string locationByIdentifier = "shopify.QueryRoot.locationByIdentifier";
+            public const string locations = "shopify.QueryRoot.locations";
+            public const string locationsAvailableForDeliveryProfiles = "shopify.QueryRoot.locationsAvailableForDeliveryProfiles";
+            public const string locationsAvailableForDeliveryProfilesConnection = "shopify.QueryRoot.locationsAvailableForDeliveryProfilesConnection";
+            public const string locationsCount = "shopify.QueryRoot.locationsCount";
+            public const string manualHoldsFulfillmentOrders = "shopify.QueryRoot.manualHoldsFulfillmentOrders";
+            public const string market = "shopify.QueryRoot.market";
+            public const string marketByGeography = "shopify.QueryRoot.marketByGeography";
+            public const string marketLocalizableResource = "shopify.QueryRoot.marketLocalizableResource";
+            public const string marketLocalizableResources = "shopify.QueryRoot.marketLocalizableResources";
+            public const string marketLocalizableResourcesByIds = "shopify.QueryRoot.marketLocalizableResourcesByIds";
+            public const string marketingActivities = "shopify.QueryRoot.marketingActivities";
+            public const string marketingActivity = "shopify.QueryRoot.marketingActivity";
+            public const string marketingEvent = "shopify.QueryRoot.marketingEvent";
+            public const string marketingEvents = "shopify.QueryRoot.marketingEvents";
+            public const string markets = "shopify.QueryRoot.markets";
+            public const string menu = "shopify.QueryRoot.menu";
+            public const string menus = "shopify.QueryRoot.menus";
+            public const string metafieldDefinition = "shopify.QueryRoot.metafieldDefinition";
+            public const string metafieldDefinitionTypes = "shopify.QueryRoot.metafieldDefinitionTypes";
+            public const string metafieldDefinitions = "shopify.QueryRoot.metafieldDefinitions";
+            public const string metaobject = "shopify.QueryRoot.metaobject";
+            public const string metaobjectByHandle = "shopify.QueryRoot.metaobjectByHandle";
+            public const string metaobjectDefinition = "shopify.QueryRoot.metaobjectDefinition";
+            public const string metaobjectDefinitionByType = "shopify.QueryRoot.metaobjectDefinitionByType";
+            public const string metaobjectDefinitions = "shopify.QueryRoot.metaobjectDefinitions";
+            public const string metaobjects = "shopify.QueryRoot.metaobjects";
+            public const string mobilePlatformApplication = "shopify.QueryRoot.mobilePlatformApplication";
+            public const string mobilePlatformApplications = "shopify.QueryRoot.mobilePlatformApplications";
+            public const string node = "shopify.QueryRoot.node";
+            public const string nodes = "shopify.QueryRoot.nodes";
+            public const string onlineStore = "shopify.QueryRoot.onlineStore";
+            public const string order = "shopify.QueryRoot.order";
+            public const string orderByIdentifier = "shopify.QueryRoot.orderByIdentifier";
+            public const string orderPaymentStatus = "shopify.QueryRoot.orderPaymentStatus";
+            public const string orderSavedSearches = "shopify.QueryRoot.orderSavedSearches";
+            public const string orders = "shopify.QueryRoot.orders";
+            public const string ordersCount = "shopify.QueryRoot.ordersCount";
+            public const string page = "shopify.QueryRoot.page";
+            public const string pages = "shopify.QueryRoot.pages";
+            public const string pagesCount = "shopify.QueryRoot.pagesCount";
+            public const string paymentCustomization = "shopify.QueryRoot.paymentCustomization";
+            public const string paymentCustomizations = "shopify.QueryRoot.paymentCustomizations";
+            public const string paymentTermsTemplates = "shopify.QueryRoot.paymentTermsTemplates";
+            public const string pendingOrdersCount = "shopify.QueryRoot.pendingOrdersCount";
+            public const string priceList = "shopify.QueryRoot.priceList";
+            public const string priceLists = "shopify.QueryRoot.priceLists";
+            public const string primaryMarket = "shopify.QueryRoot.primaryMarket";
+            public const string privacySettings = "shopify.QueryRoot.privacySettings";
+            public const string product = "shopify.QueryRoot.product";
+            public const string productByHandle = "shopify.QueryRoot.productByHandle";
+            public const string productByIdentifier = "shopify.QueryRoot.productByIdentifier";
+            public const string productDuplicateJob = "shopify.QueryRoot.productDuplicateJob";
+            public const string productFeed = "shopify.QueryRoot.productFeed";
+            public const string productFeeds = "shopify.QueryRoot.productFeeds";
+            public const string productOperation = "shopify.QueryRoot.productOperation";
+            public const string productResourceFeedback = "shopify.QueryRoot.productResourceFeedback";
+            public const string productSavedSearches = "shopify.QueryRoot.productSavedSearches";
+            public const string productTags = "shopify.QueryRoot.productTags";
+            public const string productTypes = "shopify.QueryRoot.productTypes";
+            public const string productVariant = "shopify.QueryRoot.productVariant";
+            public const string productVariantByIdentifier = "shopify.QueryRoot.productVariantByIdentifier";
+            public const string productVariants = "shopify.QueryRoot.productVariants";
+            public const string productVariantsCount = "shopify.QueryRoot.productVariantsCount";
+            public const string productVendors = "shopify.QueryRoot.productVendors";
+            public const string products = "shopify.QueryRoot.products";
+            public const string productsCount = "shopify.QueryRoot.productsCount";
+            public const string publicApiVersions = "shopify.QueryRoot.publicApiVersions";
+            public const string publication = "shopify.QueryRoot.publication";
+            public const string publications = "shopify.QueryRoot.publications";
+            public const string publicationsCount = "shopify.QueryRoot.publicationsCount";
+            public const string publishedProductsCount = "shopify.QueryRoot.publishedProductsCount";
+            public const string refund = "shopify.QueryRoot.refund";
+            public const string @return = "shopify.QueryRoot.return";
+            public const string returnCalculate = "shopify.QueryRoot.returnCalculate";
+            public const string returnableFulfillment = "shopify.QueryRoot.returnableFulfillment";
+            public const string returnableFulfillments = "shopify.QueryRoot.returnableFulfillments";
+            public const string reverseDelivery = "shopify.QueryRoot.reverseDelivery";
+            public const string reverseFulfillmentOrder = "shopify.QueryRoot.reverseFulfillmentOrder";
+            public const string scriptTag = "shopify.QueryRoot.scriptTag";
+            public const string scriptTags = "shopify.QueryRoot.scriptTags";
+            public const string segment = "shopify.QueryRoot.segment";
+            public const string segmentFilterSuggestions = "shopify.QueryRoot.segmentFilterSuggestions";
+            public const string segmentFilters = "shopify.QueryRoot.segmentFilters";
+            public const string segmentMigrations = "shopify.QueryRoot.segmentMigrations";
+            public const string segmentValueSuggestions = "shopify.QueryRoot.segmentValueSuggestions";
+            public const string segments = "shopify.QueryRoot.segments";
+            public const string segmentsCount = "shopify.QueryRoot.segmentsCount";
+            public const string sellingPlanGroup = "shopify.QueryRoot.sellingPlanGroup";
+            public const string sellingPlanGroups = "shopify.QueryRoot.sellingPlanGroups";
+            public const string serverPixel = "shopify.QueryRoot.serverPixel";
+            public const string shop = "shopify.QueryRoot.shop";
+            public const string shopBillingPreferences = "shopify.QueryRoot.shopBillingPreferences";
+            public const string shopLocales = "shopify.QueryRoot.shopLocales";
+            public const string shopifyFunction = "shopify.QueryRoot.shopifyFunction";
+            public const string shopifyFunctions = "shopify.QueryRoot.shopifyFunctions";
+            public const string shopifyPaymentsAccount = "shopify.QueryRoot.shopifyPaymentsAccount";
+            public const string staffMember = "shopify.QueryRoot.staffMember";
+            public const string staffMembers = "shopify.QueryRoot.staffMembers";
+            public const string standardMetafieldDefinitionTemplates = "shopify.QueryRoot.standardMetafieldDefinitionTemplates";
+            public const string storeCreditAccount = "shopify.QueryRoot.storeCreditAccount";
+            public const string subscriptionBillingAttempt = "shopify.QueryRoot.subscriptionBillingAttempt";
+            public const string subscriptionBillingAttempts = "shopify.QueryRoot.subscriptionBillingAttempts";
+            public const string subscriptionBillingCycle = "shopify.QueryRoot.subscriptionBillingCycle";
+            public const string subscriptionBillingCycleBulkResults = "shopify.QueryRoot.subscriptionBillingCycleBulkResults";
+            public const string subscriptionBillingCycles = "shopify.QueryRoot.subscriptionBillingCycles";
+            public const string subscriptionContract = "shopify.QueryRoot.subscriptionContract";
+            public const string subscriptionContracts = "shopify.QueryRoot.subscriptionContracts";
+            public const string subscriptionDraft = "shopify.QueryRoot.subscriptionDraft";
+            public const string taxonomy = "shopify.QueryRoot.taxonomy";
+            public const string tenderTransactions = "shopify.QueryRoot.tenderTransactions";
+            public const string theme = "shopify.QueryRoot.theme";
+            public const string themes = "shopify.QueryRoot.themes";
+            public const string translatableResource = "shopify.QueryRoot.translatableResource";
+            public const string translatableResources = "shopify.QueryRoot.translatableResources";
+            public const string translatableResourcesByIds = "shopify.QueryRoot.translatableResourcesByIds";
+            public const string urlRedirect = "shopify.QueryRoot.urlRedirect";
+            public const string urlRedirectImport = "shopify.QueryRoot.urlRedirectImport";
+            public const string urlRedirectSavedSearches = "shopify.QueryRoot.urlRedirectSavedSearches";
+            public const string urlRedirects = "shopify.QueryRoot.urlRedirects";
+            public const string urlRedirectsCount = "shopify.QueryRoot.urlRedirectsCount";
+            public const string validation = "shopify.QueryRoot.validation";
+            public const string validations = "shopify.QueryRoot.validations";
+            public const string webPixel = "shopify.QueryRoot.webPixel";
+            public const string webPresences = "shopify.QueryRoot.webPresences";
+            public const string webhookSubscription = "shopify.QueryRoot.webhookSubscription";
+            public const string webhookSubscriptions = "shopify.QueryRoot.webhookSubscriptions";
+            public const string webhookSubscriptionsCount = "shopify.QueryRoot.webhookSubscriptionsCount";
+        }
+
+        public static class Refund
+        {
+            public const string createdAt = "shopify.Refund.createdAt";
+            public const string duties = "shopify.Refund.duties";
+            public const string id = "shopify.Refund.id";
+            public const string legacyResourceId = "shopify.Refund.legacyResourceId";
+            public const string note = "shopify.Refund.note";
+            public const string order = "shopify.Refund.order";
+            public const string orderAdjustments = "shopify.Refund.orderAdjustments";
+            public const string refundLineItems = "shopify.Refund.refundLineItems";
+            public const string refundShippingLines = "shopify.Refund.refundShippingLines";
+            public const string @return = "shopify.Refund.return";
+            public const string staffMember = "shopify.Refund.staffMember";
+            public const string totalRefunded = "shopify.Refund.totalRefunded";
+            public const string totalRefundedSet = "shopify.Refund.totalRefundedSet";
+            public const string transactions = "shopify.Refund.transactions";
+            public const string updatedAt = "shopify.Refund.updatedAt";
+        }
+
+        public static class RefundAgreement
+        {
+            public const string app = "shopify.RefundAgreement.app";
+            public const string happenedAt = "shopify.RefundAgreement.happenedAt";
+            public const string id = "shopify.RefundAgreement.id";
+            public const string reason = "shopify.RefundAgreement.reason";
+            public const string refund = "shopify.RefundAgreement.refund";
+            public const string sales = "shopify.RefundAgreement.sales";
+            public const string user = "shopify.RefundAgreement.user";
+        }
+
+        public static class RefundConnection
+        {
+            public const string edges = "shopify.RefundConnection.edges";
+            public const string nodes = "shopify.RefundConnection.nodes";
+            public const string pageInfo = "shopify.RefundConnection.pageInfo";
+        }
+
+        public static class RefundCreatePayload
+        {
+            public const string order = "shopify.RefundCreatePayload.order";
+            public const string refund = "shopify.RefundCreatePayload.refund";
+            public const string userErrors = "shopify.RefundCreatePayload.userErrors";
+        }
+
+        public static class RefundDuty
+        {
+            public const string amountSet = "shopify.RefundDuty.amountSet";
+            public const string originalDuty = "shopify.RefundDuty.originalDuty";
+        }
+
+        public static class RefundEdge
+        {
+            public const string cursor = "shopify.RefundEdge.cursor";
+            public const string node = "shopify.RefundEdge.node";
+        }
+
+        public static class RefundLineItem
+        {
+            public const string id = "shopify.RefundLineItem.id";
+            public const string lineItem = "shopify.RefundLineItem.lineItem";
+            public const string location = "shopify.RefundLineItem.location";
+            public const string price = "shopify.RefundLineItem.price";
+            public const string priceSet = "shopify.RefundLineItem.priceSet";
+            public const string quantity = "shopify.RefundLineItem.quantity";
+            public const string restockType = "shopify.RefundLineItem.restockType";
+            public const string restocked = "shopify.RefundLineItem.restocked";
+            public const string subtotal = "shopify.RefundLineItem.subtotal";
+            public const string subtotalSet = "shopify.RefundLineItem.subtotalSet";
+            public const string totalTax = "shopify.RefundLineItem.totalTax";
+            public const string totalTaxSet = "shopify.RefundLineItem.totalTaxSet";
+        }
+
+        public static class RefundLineItemConnection
+        {
+            public const string edges = "shopify.RefundLineItemConnection.edges";
+            public const string nodes = "shopify.RefundLineItemConnection.nodes";
+            public const string pageInfo = "shopify.RefundLineItemConnection.pageInfo";
+        }
+
+        public static class RefundLineItemEdge
+        {
+            public const string cursor = "shopify.RefundLineItemEdge.cursor";
+            public const string node = "shopify.RefundLineItemEdge.node";
+        }
+
+        public static class RefundShippingLine
+        {
+            public const string id = "shopify.RefundShippingLine.id";
+            public const string shippingLine = "shopify.RefundShippingLine.shippingLine";
+            public const string subtotalAmountSet = "shopify.RefundShippingLine.subtotalAmountSet";
+            public const string taxAmountSet = "shopify.RefundShippingLine.taxAmountSet";
+        }
+
+        public static class RefundShippingLineConnection
+        {
+            public const string edges = "shopify.RefundShippingLineConnection.edges";
+            public const string nodes = "shopify.RefundShippingLineConnection.nodes";
+            public const string pageInfo = "shopify.RefundShippingLineConnection.pageInfo";
+        }
+
+        public static class RefundShippingLineEdge
+        {
+            public const string cursor = "shopify.RefundShippingLineEdge.cursor";
+            public const string node = "shopify.RefundShippingLineEdge.node";
+        }
+
+        public static class RegionsCondition
+        {
+            public const string applicationLevel = "shopify.RegionsCondition.applicationLevel";
+            public const string regions = "shopify.RegionsCondition.regions";
+        }
+
+        public static class ResourceAlert
+        {
+            public const string actions = "shopify.ResourceAlert.actions";
+            public const string content = "shopify.ResourceAlert.content";
+            public const string dismissibleHandle = "shopify.ResourceAlert.dismissibleHandle";
+            public const string icon = "shopify.ResourceAlert.icon";
+            public const string severity = "shopify.ResourceAlert.severity";
+            public const string title = "shopify.ResourceAlert.title";
+        }
+
+        public static class ResourceAlertAction
+        {
+            public const string primary = "shopify.ResourceAlertAction.primary";
+            public const string show = "shopify.ResourceAlertAction.show";
+            public const string title = "shopify.ResourceAlertAction.title";
+            public const string url = "shopify.ResourceAlertAction.url";
+        }
+
+        public static class ResourceFeedback
+        {
+            public const string appFeedback = "shopify.ResourceFeedback.appFeedback";
+            public const string details = "shopify.ResourceFeedback.details";
+            public const string summary = "shopify.ResourceFeedback.summary";
+        }
+
+        public static class IResourceOperation
+        {
+            public const string id = "shopify.IResourceOperation.id";
+            public const string processedRowCount = "shopify.IResourceOperation.processedRowCount";
+            public const string rowCount = "shopify.IResourceOperation.rowCount";
+            public const string status = "shopify.IResourceOperation.status";
+        }
+
+        public static class ResourcePublication
+        {
+            public const string channel = "shopify.ResourcePublication.channel";
+            public const string isPublished = "shopify.ResourcePublication.isPublished";
+            public const string publication = "shopify.ResourcePublication.publication";
+            public const string publishDate = "shopify.ResourcePublication.publishDate";
+            public const string publishable = "shopify.ResourcePublication.publishable";
+        }
+
+        public static class ResourcePublicationConnection
+        {
+            public const string edges = "shopify.ResourcePublicationConnection.edges";
+            public const string nodes = "shopify.ResourcePublicationConnection.nodes";
+            public const string pageInfo = "shopify.ResourcePublicationConnection.pageInfo";
+        }
+
+        public static class ResourcePublicationEdge
+        {
+            public const string cursor = "shopify.ResourcePublicationEdge.cursor";
+            public const string node = "shopify.ResourcePublicationEdge.node";
+        }
+
+        public static class ResourcePublicationV2
+        {
+            public const string isPublished = "shopify.ResourcePublicationV2.isPublished";
+            public const string publication = "shopify.ResourcePublicationV2.publication";
+            public const string publishDate = "shopify.ResourcePublicationV2.publishDate";
+            public const string publishable = "shopify.ResourcePublicationV2.publishable";
+        }
+
+        public static class ResourcePublicationV2Connection
+        {
+            public const string edges = "shopify.ResourcePublicationV2Connection.edges";
+            public const string nodes = "shopify.ResourcePublicationV2Connection.nodes";
+            public const string pageInfo = "shopify.ResourcePublicationV2Connection.pageInfo";
+        }
+
+        public static class ResourcePublicationV2Edge
+        {
+            public const string cursor = "shopify.ResourcePublicationV2Edge.cursor";
+            public const string node = "shopify.ResourcePublicationV2Edge.node";
+        }
+
+        public static class RestockingFee
+        {
+            public const string amountSet = "shopify.RestockingFee.amountSet";
+            public const string id = "shopify.RestockingFee.id";
+            public const string percentage = "shopify.RestockingFee.percentage";
+        }
+
+        public static class RestrictedForResource
+        {
+            public const string restricted = "shopify.RestrictedForResource.restricted";
+            public const string restrictedReason = "shopify.RestrictedForResource.restrictedReason";
+        }
+
+        public static class Return
+        {
+            public const string decline = "shopify.Return.decline";
+            public const string exchangeLineItems = "shopify.Return.exchangeLineItems";
+            public const string id = "shopify.Return.id";
+            public const string name = "shopify.Return.name";
+            public const string order = "shopify.Return.order";
+            public const string refunds = "shopify.Return.refunds";
+            public const string returnLineItems = "shopify.Return.returnLineItems";
+            public const string returnShippingFees = "shopify.Return.returnShippingFees";
+            public const string reverseFulfillmentOrders = "shopify.Return.reverseFulfillmentOrders";
+            public const string status = "shopify.Return.status";
+            public const string suggestedRefund = "shopify.Return.suggestedRefund";
+            public const string totalQuantity = "shopify.Return.totalQuantity";
+        }
+
+        public static class ReturnAgreement
+        {
+            public const string app = "shopify.ReturnAgreement.app";
+            public const string happenedAt = "shopify.ReturnAgreement.happenedAt";
+            public const string id = "shopify.ReturnAgreement.id";
+            public const string reason = "shopify.ReturnAgreement.reason";
+            public const string @return = "shopify.ReturnAgreement.return";
+            public const string sales = "shopify.ReturnAgreement.sales";
+            public const string user = "shopify.ReturnAgreement.user";
+        }
+
+        public static class ReturnApproveRequestPayload
+        {
+            public const string @return = "shopify.ReturnApproveRequestPayload.return";
+            public const string userErrors = "shopify.ReturnApproveRequestPayload.userErrors";
+        }
+
+        public static class ReturnCancelPayload
+        {
+            public const string @return = "shopify.ReturnCancelPayload.return";
+            public const string userErrors = "shopify.ReturnCancelPayload.userErrors";
+        }
+
+        public static class ReturnClosePayload
+        {
+            public const string @return = "shopify.ReturnClosePayload.return";
+            public const string userErrors = "shopify.ReturnClosePayload.userErrors";
+        }
+
+        public static class ReturnConnection
+        {
+            public const string edges = "shopify.ReturnConnection.edges";
+            public const string nodes = "shopify.ReturnConnection.nodes";
+            public const string pageInfo = "shopify.ReturnConnection.pageInfo";
+        }
+
+        public static class ReturnCreatePayload
+        {
+            public const string @return = "shopify.ReturnCreatePayload.return";
+            public const string userErrors = "shopify.ReturnCreatePayload.userErrors";
+        }
+
+        public static class ReturnDecline
+        {
+            public const string note = "shopify.ReturnDecline.note";
+            public const string reason = "shopify.ReturnDecline.reason";
+        }
+
+        public static class ReturnDeclineRequestPayload
+        {
+            public const string @return = "shopify.ReturnDeclineRequestPayload.return";
+            public const string userErrors = "shopify.ReturnDeclineRequestPayload.userErrors";
+        }
+
+        public static class ReturnEdge
+        {
+            public const string cursor = "shopify.ReturnEdge.cursor";
+            public const string node = "shopify.ReturnEdge.node";
+        }
+
+        public static class ReturnLineItem
+        {
+            public const string customerNote = "shopify.ReturnLineItem.customerNote";
+            public const string fulfillmentLineItem = "shopify.ReturnLineItem.fulfillmentLineItem";
+            public const string id = "shopify.ReturnLineItem.id";
+            public const string quantity = "shopify.ReturnLineItem.quantity";
+            public const string refundableQuantity = "shopify.ReturnLineItem.refundableQuantity";
+            public const string refundedQuantity = "shopify.ReturnLineItem.refundedQuantity";
+            public const string restockingFee = "shopify.ReturnLineItem.restockingFee";
+            public const string returnReason = "shopify.ReturnLineItem.returnReason";
+            public const string returnReasonNote = "shopify.ReturnLineItem.returnReasonNote";
+            public const string totalWeight = "shopify.ReturnLineItem.totalWeight";
+            public const string withCodeDiscountedTotalPriceSet = "shopify.ReturnLineItem.withCodeDiscountedTotalPriceSet";
+        }
+
+        public static class ReturnLineItemRemoveFromReturnPayload
+        {
+            public const string @return = "shopify.ReturnLineItemRemoveFromReturnPayload.return";
+            public const string userErrors = "shopify.ReturnLineItemRemoveFromReturnPayload.userErrors";
+        }
+
+        public static class IReturnLineItemType
+        {
+            public const string customerNote = "shopify.IReturnLineItemType.customerNote";
+            public const string quantity = "shopify.IReturnLineItemType.quantity";
+            public const string refundableQuantity = "shopify.IReturnLineItemType.refundableQuantity";
+            public const string refundedQuantity = "shopify.IReturnLineItemType.refundedQuantity";
+            public const string returnReason = "shopify.IReturnLineItemType.returnReason";
+            public const string returnReasonNote = "shopify.IReturnLineItemType.returnReasonNote";
+        }
+
+        public static class ReturnLineItemTypeConnection
+        {
+            public const string edges = "shopify.ReturnLineItemTypeConnection.edges";
+            public const string nodes = "shopify.ReturnLineItemTypeConnection.nodes";
+            public const string pageInfo = "shopify.ReturnLineItemTypeConnection.pageInfo";
+        }
+
+        public static class ReturnLineItemTypeEdge
+        {
+            public const string cursor = "shopify.ReturnLineItemTypeEdge.cursor";
+            public const string node = "shopify.ReturnLineItemTypeEdge.node";
+        }
+
+        public static class ReturnRefundPayload
+        {
+            public const string refund = "shopify.ReturnRefundPayload.refund";
+            public const string userErrors = "shopify.ReturnRefundPayload.userErrors";
+        }
+
+        public static class ReturnReopenPayload
+        {
+            public const string @return = "shopify.ReturnReopenPayload.return";
+            public const string userErrors = "shopify.ReturnReopenPayload.userErrors";
+        }
+
+        public static class ReturnRequestPayload
+        {
+            public const string @return = "shopify.ReturnRequestPayload.return";
+            public const string userErrors = "shopify.ReturnRequestPayload.userErrors";
+        }
+
+        public static class ReturnShippingFee
+        {
+            public const string amountSet = "shopify.ReturnShippingFee.amountSet";
+            public const string id = "shopify.ReturnShippingFee.id";
+        }
+
+        public static class ReturnUserError
+        {
+            public const string code = "shopify.ReturnUserError.code";
+            public const string field = "shopify.ReturnUserError.field";
+            public const string message = "shopify.ReturnUserError.message";
+        }
+
+        public static class ReturnableFulfillment
+        {
+            public const string fulfillment = "shopify.ReturnableFulfillment.fulfillment";
+            public const string id = "shopify.ReturnableFulfillment.id";
+            public const string returnableFulfillmentLineItems = "shopify.ReturnableFulfillment.returnableFulfillmentLineItems";
+        }
+
+        public static class ReturnableFulfillmentConnection
+        {
+            public const string edges = "shopify.ReturnableFulfillmentConnection.edges";
+            public const string nodes = "shopify.ReturnableFulfillmentConnection.nodes";
+            public const string pageInfo = "shopify.ReturnableFulfillmentConnection.pageInfo";
+        }
+
+        public static class ReturnableFulfillmentEdge
+        {
+            public const string cursor = "shopify.ReturnableFulfillmentEdge.cursor";
+            public const string node = "shopify.ReturnableFulfillmentEdge.node";
+        }
+
+        public static class ReturnableFulfillmentLineItem
+        {
+            public const string fulfillmentLineItem = "shopify.ReturnableFulfillmentLineItem.fulfillmentLineItem";
+            public const string quantity = "shopify.ReturnableFulfillmentLineItem.quantity";
+        }
+
+        public static class ReturnableFulfillmentLineItemConnection
+        {
+            public const string edges = "shopify.ReturnableFulfillmentLineItemConnection.edges";
+            public const string nodes = "shopify.ReturnableFulfillmentLineItemConnection.nodes";
+            public const string pageInfo = "shopify.ReturnableFulfillmentLineItemConnection.pageInfo";
+        }
+
+        public static class ReturnableFulfillmentLineItemEdge
+        {
+            public const string cursor = "shopify.ReturnableFulfillmentLineItemEdge.cursor";
+            public const string node = "shopify.ReturnableFulfillmentLineItemEdge.node";
+        }
+
+        public static class ReverseDelivery
+        {
+            public const string deliverable = "shopify.ReverseDelivery.deliverable";
+            public const string id = "shopify.ReverseDelivery.id";
+            public const string reverseDeliveryLineItems = "shopify.ReverseDelivery.reverseDeliveryLineItems";
+            public const string reverseFulfillmentOrder = "shopify.ReverseDelivery.reverseFulfillmentOrder";
+        }
+
+        public static class ReverseDeliveryConnection
+        {
+            public const string edges = "shopify.ReverseDeliveryConnection.edges";
+            public const string nodes = "shopify.ReverseDeliveryConnection.nodes";
+            public const string pageInfo = "shopify.ReverseDeliveryConnection.pageInfo";
+        }
+
+        public static class ReverseDeliveryCreateWithShippingPayload
+        {
+            public const string reverseDelivery = "shopify.ReverseDeliveryCreateWithShippingPayload.reverseDelivery";
+            public const string userErrors = "shopify.ReverseDeliveryCreateWithShippingPayload.userErrors";
+        }
+
+        public static class IReverseDeliveryDeliverable
+        {
+            public const string label = "shopify.IReverseDeliveryDeliverable.label";
+            public const string tracking = "shopify.IReverseDeliveryDeliverable.tracking";
+        }
+
+        public static class ReverseDeliveryEdge
+        {
+            public const string cursor = "shopify.ReverseDeliveryEdge.cursor";
+            public const string node = "shopify.ReverseDeliveryEdge.node";
+        }
+
+        public static class ReverseDeliveryLabelV2
+        {
+            public const string createdAt = "shopify.ReverseDeliveryLabelV2.createdAt";
+            public const string publicFileUrl = "shopify.ReverseDeliveryLabelV2.publicFileUrl";
+            public const string updatedAt = "shopify.ReverseDeliveryLabelV2.updatedAt";
+        }
+
+        public static class ReverseDeliveryLineItem
+        {
+            public const string dispositions = "shopify.ReverseDeliveryLineItem.dispositions";
+            public const string id = "shopify.ReverseDeliveryLineItem.id";
+            public const string quantity = "shopify.ReverseDeliveryLineItem.quantity";
+            public const string reverseFulfillmentOrderLineItem = "shopify.ReverseDeliveryLineItem.reverseFulfillmentOrderLineItem";
+        }
+
+        public static class ReverseDeliveryLineItemConnection
+        {
+            public const string edges = "shopify.ReverseDeliveryLineItemConnection.edges";
+            public const string nodes = "shopify.ReverseDeliveryLineItemConnection.nodes";
+            public const string pageInfo = "shopify.ReverseDeliveryLineItemConnection.pageInfo";
+        }
+
+        public static class ReverseDeliveryLineItemEdge
+        {
+            public const string cursor = "shopify.ReverseDeliveryLineItemEdge.cursor";
+            public const string node = "shopify.ReverseDeliveryLineItemEdge.node";
+        }
+
+        public static class ReverseDeliveryShippingDeliverable
+        {
+            public const string label = "shopify.ReverseDeliveryShippingDeliverable.label";
+            public const string tracking = "shopify.ReverseDeliveryShippingDeliverable.tracking";
+        }
+
+        public static class ReverseDeliveryShippingUpdatePayload
+        {
+            public const string reverseDelivery = "shopify.ReverseDeliveryShippingUpdatePayload.reverseDelivery";
+            public const string userErrors = "shopify.ReverseDeliveryShippingUpdatePayload.userErrors";
+        }
+
+        public static class ReverseDeliveryTrackingV2
+        {
+            public const string carrierName = "shopify.ReverseDeliveryTrackingV2.carrierName";
+            public const string number = "shopify.ReverseDeliveryTrackingV2.number";
+            public const string url = "shopify.ReverseDeliveryTrackingV2.url";
+        }
+
+        public static class ReverseFulfillmentOrder
+        {
+            public const string id = "shopify.ReverseFulfillmentOrder.id";
+            public const string lineItems = "shopify.ReverseFulfillmentOrder.lineItems";
+            public const string order = "shopify.ReverseFulfillmentOrder.order";
+            public const string reverseDeliveries = "shopify.ReverseFulfillmentOrder.reverseDeliveries";
+            public const string status = "shopify.ReverseFulfillmentOrder.status";
+            public const string thirdPartyConfirmation = "shopify.ReverseFulfillmentOrder.thirdPartyConfirmation";
+        }
+
+        public static class ReverseFulfillmentOrderConnection
+        {
+            public const string edges = "shopify.ReverseFulfillmentOrderConnection.edges";
+            public const string nodes = "shopify.ReverseFulfillmentOrderConnection.nodes";
+            public const string pageInfo = "shopify.ReverseFulfillmentOrderConnection.pageInfo";
+        }
+
+        public static class ReverseFulfillmentOrderDisposePayload
+        {
+            public const string reverseFulfillmentOrderLineItems = "shopify.ReverseFulfillmentOrderDisposePayload.reverseFulfillmentOrderLineItems";
+            public const string userErrors = "shopify.ReverseFulfillmentOrderDisposePayload.userErrors";
+        }
+
+        public static class ReverseFulfillmentOrderDisposition
+        {
+            public const string id = "shopify.ReverseFulfillmentOrderDisposition.id";
+            public const string location = "shopify.ReverseFulfillmentOrderDisposition.location";
+            public const string quantity = "shopify.ReverseFulfillmentOrderDisposition.quantity";
+            public const string type = "shopify.ReverseFulfillmentOrderDisposition.type";
+        }
+
+        public static class ReverseFulfillmentOrderEdge
+        {
+            public const string cursor = "shopify.ReverseFulfillmentOrderEdge.cursor";
+            public const string node = "shopify.ReverseFulfillmentOrderEdge.node";
+        }
+
+        public static class ReverseFulfillmentOrderLineItem
+        {
+            public const string dispositions = "shopify.ReverseFulfillmentOrderLineItem.dispositions";
+            public const string fulfillmentLineItem = "shopify.ReverseFulfillmentOrderLineItem.fulfillmentLineItem";
+            public const string id = "shopify.ReverseFulfillmentOrderLineItem.id";
+            public const string totalQuantity = "shopify.ReverseFulfillmentOrderLineItem.totalQuantity";
+        }
+
+        public static class ReverseFulfillmentOrderLineItemConnection
+        {
+            public const string edges = "shopify.ReverseFulfillmentOrderLineItemConnection.edges";
+            public const string nodes = "shopify.ReverseFulfillmentOrderLineItemConnection.nodes";
+            public const string pageInfo = "shopify.ReverseFulfillmentOrderLineItemConnection.pageInfo";
+        }
+
+        public static class ReverseFulfillmentOrderLineItemEdge
+        {
+            public const string cursor = "shopify.ReverseFulfillmentOrderLineItemEdge.cursor";
+            public const string node = "shopify.ReverseFulfillmentOrderLineItemEdge.node";
+        }
+
+        public static class ReverseFulfillmentOrderThirdPartyConfirmation
+        {
+            public const string status = "shopify.ReverseFulfillmentOrderThirdPartyConfirmation.status";
+        }
+
+        public static class RiskFact
+        {
+            public const string description = "shopify.RiskFact.description";
+            public const string sentiment = "shopify.RiskFact.sentiment";
+        }
+
+        public static class RowCount
+        {
+            public const string count = "shopify.RowCount.count";
+            public const string exceedsMax = "shopify.RowCount.exceedsMax";
+        }
+
+        public static class SEO
+        {
+            public const string description = "shopify.SEO.description";
+            public const string title = "shopify.SEO.title";
+        }
+
+        public static class ISale
+        {
+            public const string actionType = "shopify.ISale.actionType";
+            public const string id = "shopify.ISale.id";
+            public const string lineType = "shopify.ISale.lineType";
+            public const string quantity = "shopify.ISale.quantity";
+            public const string taxes = "shopify.ISale.taxes";
+            public const string totalAmount = "shopify.ISale.totalAmount";
+            public const string totalDiscountAmountAfterTaxes = "shopify.ISale.totalDiscountAmountAfterTaxes";
+            public const string totalDiscountAmountBeforeTaxes = "shopify.ISale.totalDiscountAmountBeforeTaxes";
+            public const string totalTaxAmount = "shopify.ISale.totalTaxAmount";
+        }
+
+        public static class SaleAdditionalFee
+        {
+            public const string id = "shopify.SaleAdditionalFee.id";
+            public const string name = "shopify.SaleAdditionalFee.name";
+            public const string price = "shopify.SaleAdditionalFee.price";
+            public const string taxLines = "shopify.SaleAdditionalFee.taxLines";
+        }
+
+        public static class SaleConnection
+        {
+            public const string edges = "shopify.SaleConnection.edges";
+            public const string nodes = "shopify.SaleConnection.nodes";
+            public const string pageInfo = "shopify.SaleConnection.pageInfo";
+        }
+
+        public static class SaleEdge
+        {
+            public const string cursor = "shopify.SaleEdge.cursor";
+            public const string node = "shopify.SaleEdge.node";
+        }
+
+        public static class SaleTax
+        {
+            public const string amount = "shopify.SaleTax.amount";
+            public const string id = "shopify.SaleTax.id";
+            public const string taxLine = "shopify.SaleTax.taxLine";
+        }
+
+        public static class ISalesAgreement
+        {
+            public const string app = "shopify.ISalesAgreement.app";
+            public const string happenedAt = "shopify.ISalesAgreement.happenedAt";
+            public const string id = "shopify.ISalesAgreement.id";
+            public const string reason = "shopify.ISalesAgreement.reason";
+            public const string sales = "shopify.ISalesAgreement.sales";
+            public const string user = "shopify.ISalesAgreement.user";
+        }
+
+        public static class SalesAgreementConnection
+        {
+            public const string edges = "shopify.SalesAgreementConnection.edges";
+            public const string nodes = "shopify.SalesAgreementConnection.nodes";
+            public const string pageInfo = "shopify.SalesAgreementConnection.pageInfo";
+        }
+
+        public static class SalesAgreementEdge
+        {
+            public const string cursor = "shopify.SalesAgreementEdge.cursor";
+            public const string node = "shopify.SalesAgreementEdge.node";
+        }
+
+        public static class SavedSearch
+        {
+            public const string filters = "shopify.SavedSearch.filters";
+            public const string id = "shopify.SavedSearch.id";
+            public const string legacyResourceId = "shopify.SavedSearch.legacyResourceId";
+            public const string name = "shopify.SavedSearch.name";
+            public const string query = "shopify.SavedSearch.query";
+            public const string resourceType = "shopify.SavedSearch.resourceType";
+            public const string searchTerms = "shopify.SavedSearch.searchTerms";
+        }
+
+        public static class SavedSearchConnection
+        {
+            public const string edges = "shopify.SavedSearchConnection.edges";
+            public const string nodes = "shopify.SavedSearchConnection.nodes";
+            public const string pageInfo = "shopify.SavedSearchConnection.pageInfo";
+        }
+
+        public static class SavedSearchCreatePayload
+        {
+            public const string savedSearch = "shopify.SavedSearchCreatePayload.savedSearch";
+            public const string userErrors = "shopify.SavedSearchCreatePayload.userErrors";
+        }
+
+        public static class SavedSearchDeletePayload
+        {
+            public const string deletedSavedSearchId = "shopify.SavedSearchDeletePayload.deletedSavedSearchId";
+            public const string shop = "shopify.SavedSearchDeletePayload.shop";
+            public const string userErrors = "shopify.SavedSearchDeletePayload.userErrors";
+        }
+
+        public static class SavedSearchEdge
+        {
+            public const string cursor = "shopify.SavedSearchEdge.cursor";
+            public const string node = "shopify.SavedSearchEdge.node";
+        }
+
+        public static class SavedSearchUpdatePayload
+        {
+            public const string savedSearch = "shopify.SavedSearchUpdatePayload.savedSearch";
+            public const string userErrors = "shopify.SavedSearchUpdatePayload.userErrors";
+        }
+
+        public static class ScriptDiscountApplication
+        {
+            public const string allocationMethod = "shopify.ScriptDiscountApplication.allocationMethod";
+            public const string description = "shopify.ScriptDiscountApplication.description";
+            public const string index = "shopify.ScriptDiscountApplication.index";
+            public const string targetSelection = "shopify.ScriptDiscountApplication.targetSelection";
+            public const string targetType = "shopify.ScriptDiscountApplication.targetType";
+            public const string title = "shopify.ScriptDiscountApplication.title";
+            public const string value = "shopify.ScriptDiscountApplication.value";
+        }
+
+        public static class ScriptTag
+        {
+            public const string cache = "shopify.ScriptTag.cache";
+            public const string createdAt = "shopify.ScriptTag.createdAt";
+            public const string displayScope = "shopify.ScriptTag.displayScope";
+            public const string id = "shopify.ScriptTag.id";
+            public const string legacyResourceId = "shopify.ScriptTag.legacyResourceId";
+            public const string src = "shopify.ScriptTag.src";
+            public const string updatedAt = "shopify.ScriptTag.updatedAt";
+        }
+
+        public static class ScriptTagConnection
+        {
+            public const string edges = "shopify.ScriptTagConnection.edges";
+            public const string nodes = "shopify.ScriptTagConnection.nodes";
+            public const string pageInfo = "shopify.ScriptTagConnection.pageInfo";
+        }
+
+        public static class ScriptTagCreatePayload
+        {
+            public const string scriptTag = "shopify.ScriptTagCreatePayload.scriptTag";
+            public const string userErrors = "shopify.ScriptTagCreatePayload.userErrors";
+        }
+
+        public static class ScriptTagDeletePayload
+        {
+            public const string deletedScriptTagId = "shopify.ScriptTagDeletePayload.deletedScriptTagId";
+            public const string userErrors = "shopify.ScriptTagDeletePayload.userErrors";
+        }
+
+        public static class ScriptTagEdge
+        {
+            public const string cursor = "shopify.ScriptTagEdge.cursor";
+            public const string node = "shopify.ScriptTagEdge.node";
+        }
+
+        public static class ScriptTagUpdatePayload
+        {
+            public const string scriptTag = "shopify.ScriptTagUpdatePayload.scriptTag";
+            public const string userErrors = "shopify.ScriptTagUpdatePayload.userErrors";
+        }
+
+        public static class SearchFilter
+        {
+            public const string key = "shopify.SearchFilter.key";
+            public const string value = "shopify.SearchFilter.value";
+        }
+
+        public static class SearchFilterOptions
+        {
+            public const string productAvailability = "shopify.SearchFilterOptions.productAvailability";
+        }
+
+        public static class SearchResult
+        {
+            public const string description = "shopify.SearchResult.description";
+            public const string image = "shopify.SearchResult.image";
+            public const string reference = "shopify.SearchResult.reference";
+            public const string title = "shopify.SearchResult.title";
+            public const string url = "shopify.SearchResult.url";
+        }
+
+        public static class SearchResultConnection
+        {
+            public const string edges = "shopify.SearchResultConnection.edges";
+            public const string pageInfo = "shopify.SearchResultConnection.pageInfo";
+            public const string resultsAfterCount = "shopify.SearchResultConnection.resultsAfterCount";
+        }
+
+        public static class SearchResultEdge
+        {
+            public const string cursor = "shopify.SearchResultEdge.cursor";
+            public const string node = "shopify.SearchResultEdge.node";
+        }
+
+        public static class Segment
+        {
+            public const string creationDate = "shopify.Segment.creationDate";
+            public const string id = "shopify.Segment.id";
+            public const string lastEditDate = "shopify.Segment.lastEditDate";
+            public const string name = "shopify.Segment.name";
+            public const string query = "shopify.Segment.query";
+        }
+
+        public static class SegmentAssociationFilter
+        {
+            public const string localizedName = "shopify.SegmentAssociationFilter.localizedName";
+            public const string multiValue = "shopify.SegmentAssociationFilter.multiValue";
+            public const string queryName = "shopify.SegmentAssociationFilter.queryName";
+        }
+
+        public static class SegmentAttributeStatistics
+        {
+            public const string average = "shopify.SegmentAttributeStatistics.average";
+            public const string sum = "shopify.SegmentAttributeStatistics.sum";
+        }
+
+        public static class SegmentBooleanFilter
+        {
+            public const string localizedName = "shopify.SegmentBooleanFilter.localizedName";
+            public const string multiValue = "shopify.SegmentBooleanFilter.multiValue";
+            public const string queryName = "shopify.SegmentBooleanFilter.queryName";
+        }
+
+        public static class SegmentConnection
+        {
+            public const string edges = "shopify.SegmentConnection.edges";
+            public const string nodes = "shopify.SegmentConnection.nodes";
+            public const string pageInfo = "shopify.SegmentConnection.pageInfo";
+        }
+
+        public static class SegmentCreatePayload
+        {
+            public const string segment = "shopify.SegmentCreatePayload.segment";
+            public const string userErrors = "shopify.SegmentCreatePayload.userErrors";
+        }
+
+        public static class SegmentDateFilter
+        {
+            public const string localizedName = "shopify.SegmentDateFilter.localizedName";
+            public const string multiValue = "shopify.SegmentDateFilter.multiValue";
+            public const string queryName = "shopify.SegmentDateFilter.queryName";
+        }
+
+        public static class SegmentDeletePayload
+        {
+            public const string deletedSegmentId = "shopify.SegmentDeletePayload.deletedSegmentId";
+            public const string userErrors = "shopify.SegmentDeletePayload.userErrors";
+        }
+
+        public static class SegmentEdge
+        {
+            public const string cursor = "shopify.SegmentEdge.cursor";
+            public const string node = "shopify.SegmentEdge.node";
+        }
+
+        public static class SegmentEnumFilter
+        {
+            public const string localizedName = "shopify.SegmentEnumFilter.localizedName";
+            public const string multiValue = "shopify.SegmentEnumFilter.multiValue";
+            public const string queryName = "shopify.SegmentEnumFilter.queryName";
+        }
+
+        public static class SegmentEventFilter
+        {
+            public const string localizedName = "shopify.SegmentEventFilter.localizedName";
+            public const string multiValue = "shopify.SegmentEventFilter.multiValue";
+            public const string parameters = "shopify.SegmentEventFilter.parameters";
+            public const string queryName = "shopify.SegmentEventFilter.queryName";
+            public const string returnValueType = "shopify.SegmentEventFilter.returnValueType";
+        }
+
+        public static class SegmentEventFilterParameter
+        {
+            public const string acceptsMultipleValues = "shopify.SegmentEventFilterParameter.acceptsMultipleValues";
+            public const string localizedDescription = "shopify.SegmentEventFilterParameter.localizedDescription";
+            public const string localizedName = "shopify.SegmentEventFilterParameter.localizedName";
+            public const string optional = "shopify.SegmentEventFilterParameter.optional";
+            public const string parameterType = "shopify.SegmentEventFilterParameter.parameterType";
+            public const string queryName = "shopify.SegmentEventFilterParameter.queryName";
+        }
+
+        public static class ISegmentFilter
+        {
+            public const string localizedName = "shopify.ISegmentFilter.localizedName";
+            public const string multiValue = "shopify.ISegmentFilter.multiValue";
+            public const string queryName = "shopify.ISegmentFilter.queryName";
+        }
+
+        public static class SegmentFilterConnection
+        {
+            public const string edges = "shopify.SegmentFilterConnection.edges";
+            public const string nodes = "shopify.SegmentFilterConnection.nodes";
+            public const string pageInfo = "shopify.SegmentFilterConnection.pageInfo";
+        }
+
+        public static class SegmentFilterEdge
+        {
+            public const string cursor = "shopify.SegmentFilterEdge.cursor";
+            public const string node = "shopify.SegmentFilterEdge.node";
+        }
+
+        public static class SegmentFloatFilter
+        {
+            public const string localizedName = "shopify.SegmentFloatFilter.localizedName";
+            public const string multiValue = "shopify.SegmentFloatFilter.multiValue";
+            public const string queryName = "shopify.SegmentFloatFilter.queryName";
+        }
+
+        public static class SegmentIntegerFilter
+        {
+            public const string localizedName = "shopify.SegmentIntegerFilter.localizedName";
+            public const string multiValue = "shopify.SegmentIntegerFilter.multiValue";
+            public const string queryName = "shopify.SegmentIntegerFilter.queryName";
+        }
+
+        public static class SegmentMembership
+        {
+            public const string isMember = "shopify.SegmentMembership.isMember";
+            public const string segmentId = "shopify.SegmentMembership.segmentId";
+        }
+
+        public static class SegmentMembershipResponse
+        {
+            public const string memberships = "shopify.SegmentMembershipResponse.memberships";
+        }
+
+        public static class SegmentMigration
+        {
+            public const string id = "shopify.SegmentMigration.id";
+            public const string savedSearchId = "shopify.SegmentMigration.savedSearchId";
+            public const string segmentId = "shopify.SegmentMigration.segmentId";
+        }
+
+        public static class SegmentMigrationConnection
+        {
+            public const string edges = "shopify.SegmentMigrationConnection.edges";
+            public const string nodes = "shopify.SegmentMigrationConnection.nodes";
+            public const string pageInfo = "shopify.SegmentMigrationConnection.pageInfo";
+        }
+
+        public static class SegmentMigrationEdge
+        {
+            public const string cursor = "shopify.SegmentMigrationEdge.cursor";
+            public const string node = "shopify.SegmentMigrationEdge.node";
+        }
+
+        public static class SegmentStatistics
+        {
+            public const string attributeStatistics = "shopify.SegmentStatistics.attributeStatistics";
+        }
+
+        public static class SegmentStringFilter
+        {
+            public const string localizedName = "shopify.SegmentStringFilter.localizedName";
+            public const string multiValue = "shopify.SegmentStringFilter.multiValue";
+            public const string queryName = "shopify.SegmentStringFilter.queryName";
+        }
+
+        public static class SegmentUpdatePayload
+        {
+            public const string segment = "shopify.SegmentUpdatePayload.segment";
+            public const string userErrors = "shopify.SegmentUpdatePayload.userErrors";
+        }
+
+        public static class SegmentValue
+        {
+            public const string localizedValue = "shopify.SegmentValue.localizedValue";
+            public const string queryName = "shopify.SegmentValue.queryName";
+        }
+
+        public static class SegmentValueConnection
+        {
+            public const string edges = "shopify.SegmentValueConnection.edges";
+            public const string nodes = "shopify.SegmentValueConnection.nodes";
+            public const string pageInfo = "shopify.SegmentValueConnection.pageInfo";
+        }
+
+        public static class SegmentValueEdge
+        {
+            public const string cursor = "shopify.SegmentValueEdge.cursor";
+            public const string node = "shopify.SegmentValueEdge.node";
+        }
+
+        public static class SelectedOption
+        {
+            public const string name = "shopify.SelectedOption.name";
+            public const string optionValue = "shopify.SelectedOption.optionValue";
+            public const string value = "shopify.SelectedOption.value";
+        }
+
+        public static class SellingPlan
+        {
+            public const string billingPolicy = "shopify.SellingPlan.billingPolicy";
+            public const string category = "shopify.SellingPlan.category";
+            public const string createdAt = "shopify.SellingPlan.createdAt";
+            public const string deliveryPolicy = "shopify.SellingPlan.deliveryPolicy";
+            public const string description = "shopify.SellingPlan.description";
+            public const string id = "shopify.SellingPlan.id";
+            public const string inventoryPolicy = "shopify.SellingPlan.inventoryPolicy";
+            public const string metafield = "shopify.SellingPlan.metafield";
+            public const string metafieldDefinitions = "shopify.SellingPlan.metafieldDefinitions";
+            public const string metafields = "shopify.SellingPlan.metafields";
+            public const string name = "shopify.SellingPlan.name";
+            public const string options = "shopify.SellingPlan.options";
+            public const string position = "shopify.SellingPlan.position";
+            public const string pricingPolicies = "shopify.SellingPlan.pricingPolicies";
+            public const string translations = "shopify.SellingPlan.translations";
+        }
+
+        public static class SellingPlanAnchor
+        {
+            public const string cutoffDay = "shopify.SellingPlanAnchor.cutoffDay";
+            public const string day = "shopify.SellingPlanAnchor.day";
+            public const string month = "shopify.SellingPlanAnchor.month";
+            public const string type = "shopify.SellingPlanAnchor.type";
+        }
+
+        public static class ISellingPlanBillingPolicy
+        {
+        }
+
+        public static class SellingPlanCheckoutCharge
+        {
+            public const string type = "shopify.SellingPlanCheckoutCharge.type";
+            public const string value = "shopify.SellingPlanCheckoutCharge.value";
+        }
+
+        public static class SellingPlanCheckoutChargePercentageValue
+        {
+            public const string percentage = "shopify.SellingPlanCheckoutChargePercentageValue.percentage";
+        }
+
+        public static class ISellingPlanCheckoutChargeValue
+        {
+        }
+
+        public static class SellingPlanConnection
+        {
+            public const string edges = "shopify.SellingPlanConnection.edges";
+            public const string nodes = "shopify.SellingPlanConnection.nodes";
+            public const string pageInfo = "shopify.SellingPlanConnection.pageInfo";
+        }
+
+        public static class ISellingPlanDeliveryPolicy
+        {
+            public const string anchors = "shopify.ISellingPlanDeliveryPolicy.anchors";
+            public const string cutoff = "shopify.ISellingPlanDeliveryPolicy.cutoff";
+            public const string intent = "shopify.ISellingPlanDeliveryPolicy.intent";
+            public const string preAnchorBehavior = "shopify.ISellingPlanDeliveryPolicy.preAnchorBehavior";
+        }
+
+        public static class SellingPlanEdge
+        {
+            public const string cursor = "shopify.SellingPlanEdge.cursor";
+            public const string node = "shopify.SellingPlanEdge.node";
+        }
+
+        public static class SellingPlanFixedBillingPolicy
+        {
+            public const string checkoutCharge = "shopify.SellingPlanFixedBillingPolicy.checkoutCharge";
+            public const string remainingBalanceChargeExactTime = "shopify.SellingPlanFixedBillingPolicy.remainingBalanceChargeExactTime";
+            public const string remainingBalanceChargeTimeAfterCheckout = "shopify.SellingPlanFixedBillingPolicy.remainingBalanceChargeTimeAfterCheckout";
+            public const string remainingBalanceChargeTrigger = "shopify.SellingPlanFixedBillingPolicy.remainingBalanceChargeTrigger";
+        }
+
+        public static class SellingPlanFixedDeliveryPolicy
+        {
+            public const string anchors = "shopify.SellingPlanFixedDeliveryPolicy.anchors";
+            public const string cutoff = "shopify.SellingPlanFixedDeliveryPolicy.cutoff";
+            public const string fulfillmentExactTime = "shopify.SellingPlanFixedDeliveryPolicy.fulfillmentExactTime";
+            public const string fulfillmentTrigger = "shopify.SellingPlanFixedDeliveryPolicy.fulfillmentTrigger";
+            public const string intent = "shopify.SellingPlanFixedDeliveryPolicy.intent";
+            public const string preAnchorBehavior = "shopify.SellingPlanFixedDeliveryPolicy.preAnchorBehavior";
+        }
+
+        public static class SellingPlanFixedPricingPolicy
+        {
+            public const string adjustmentType = "shopify.SellingPlanFixedPricingPolicy.adjustmentType";
+            public const string adjustmentValue = "shopify.SellingPlanFixedPricingPolicy.adjustmentValue";
+            public const string createdAt = "shopify.SellingPlanFixedPricingPolicy.createdAt";
+        }
+
+        public static class SellingPlanGroup
+        {
+            public const string appId = "shopify.SellingPlanGroup.appId";
+            public const string appliesToProduct = "shopify.SellingPlanGroup.appliesToProduct";
+            public const string appliesToProductVariant = "shopify.SellingPlanGroup.appliesToProductVariant";
+            public const string appliesToProductVariants = "shopify.SellingPlanGroup.appliesToProductVariants";
+            public const string createdAt = "shopify.SellingPlanGroup.createdAt";
+            public const string description = "shopify.SellingPlanGroup.description";
+            public const string id = "shopify.SellingPlanGroup.id";
+            public const string merchantCode = "shopify.SellingPlanGroup.merchantCode";
+            public const string name = "shopify.SellingPlanGroup.name";
+            public const string options = "shopify.SellingPlanGroup.options";
+            public const string position = "shopify.SellingPlanGroup.position";
+            public const string productVariants = "shopify.SellingPlanGroup.productVariants";
+            public const string productVariantsCount = "shopify.SellingPlanGroup.productVariantsCount";
+            public const string products = "shopify.SellingPlanGroup.products";
+            public const string productsCount = "shopify.SellingPlanGroup.productsCount";
+            public const string sellingPlans = "shopify.SellingPlanGroup.sellingPlans";
+            public const string summary = "shopify.SellingPlanGroup.summary";
+            public const string translations = "shopify.SellingPlanGroup.translations";
+        }
+
+        public static class SellingPlanGroupAddProductVariantsPayload
+        {
+            public const string sellingPlanGroup = "shopify.SellingPlanGroupAddProductVariantsPayload.sellingPlanGroup";
+            public const string userErrors = "shopify.SellingPlanGroupAddProductVariantsPayload.userErrors";
+        }
+
+        public static class SellingPlanGroupAddProductsPayload
+        {
+            public const string sellingPlanGroup = "shopify.SellingPlanGroupAddProductsPayload.sellingPlanGroup";
+            public const string userErrors = "shopify.SellingPlanGroupAddProductsPayload.userErrors";
+        }
+
+        public static class SellingPlanGroupConnection
+        {
+            public const string edges = "shopify.SellingPlanGroupConnection.edges";
+            public const string nodes = "shopify.SellingPlanGroupConnection.nodes";
+            public const string pageInfo = "shopify.SellingPlanGroupConnection.pageInfo";
+        }
+
+        public static class SellingPlanGroupCreatePayload
+        {
+            public const string sellingPlanGroup = "shopify.SellingPlanGroupCreatePayload.sellingPlanGroup";
+            public const string userErrors = "shopify.SellingPlanGroupCreatePayload.userErrors";
+        }
+
+        public static class SellingPlanGroupDeletePayload
+        {
+            public const string deletedSellingPlanGroupId = "shopify.SellingPlanGroupDeletePayload.deletedSellingPlanGroupId";
+            public const string userErrors = "shopify.SellingPlanGroupDeletePayload.userErrors";
+        }
+
+        public static class SellingPlanGroupEdge
+        {
+            public const string cursor = "shopify.SellingPlanGroupEdge.cursor";
+            public const string node = "shopify.SellingPlanGroupEdge.node";
+        }
+
+        public static class SellingPlanGroupRemoveProductVariantsPayload
+        {
+            public const string removedProductVariantIds = "shopify.SellingPlanGroupRemoveProductVariantsPayload.removedProductVariantIds";
+            public const string userErrors = "shopify.SellingPlanGroupRemoveProductVariantsPayload.userErrors";
+        }
+
+        public static class SellingPlanGroupRemoveProductsPayload
+        {
+            public const string removedProductIds = "shopify.SellingPlanGroupRemoveProductsPayload.removedProductIds";
+            public const string userErrors = "shopify.SellingPlanGroupRemoveProductsPayload.userErrors";
+        }
+
+        public static class SellingPlanGroupUpdatePayload
+        {
+            public const string deletedSellingPlanIds = "shopify.SellingPlanGroupUpdatePayload.deletedSellingPlanIds";
+            public const string sellingPlanGroup = "shopify.SellingPlanGroupUpdatePayload.sellingPlanGroup";
+            public const string userErrors = "shopify.SellingPlanGroupUpdatePayload.userErrors";
+        }
+
+        public static class SellingPlanGroupUserError
+        {
+            public const string code = "shopify.SellingPlanGroupUserError.code";
+            public const string field = "shopify.SellingPlanGroupUserError.field";
+            public const string message = "shopify.SellingPlanGroupUserError.message";
+        }
+
+        public static class SellingPlanInventoryPolicy
+        {
+            public const string reserve = "shopify.SellingPlanInventoryPolicy.reserve";
+        }
+
+        public static class ISellingPlanPricingPolicy
+        {
+            public const string adjustmentType = "shopify.ISellingPlanPricingPolicy.adjustmentType";
+            public const string adjustmentValue = "shopify.ISellingPlanPricingPolicy.adjustmentValue";
+            public const string createdAt = "shopify.ISellingPlanPricingPolicy.createdAt";
+        }
+
+        public static class ISellingPlanPricingPolicyAdjustmentValue
+        {
+        }
+
+        public static class ISellingPlanPricingPolicyBase
+        {
+            public const string adjustmentType = "shopify.ISellingPlanPricingPolicyBase.adjustmentType";
+            public const string adjustmentValue = "shopify.ISellingPlanPricingPolicyBase.adjustmentValue";
+        }
+
+        public static class SellingPlanPricingPolicyPercentageValue
+        {
+            public const string percentage = "shopify.SellingPlanPricingPolicyPercentageValue.percentage";
+        }
+
+        public static class SellingPlanRecurringBillingPolicy
+        {
+            public const string anchors = "shopify.SellingPlanRecurringBillingPolicy.anchors";
+            public const string createdAt = "shopify.SellingPlanRecurringBillingPolicy.createdAt";
+            public const string interval = "shopify.SellingPlanRecurringBillingPolicy.interval";
+            public const string intervalCount = "shopify.SellingPlanRecurringBillingPolicy.intervalCount";
+            public const string maxCycles = "shopify.SellingPlanRecurringBillingPolicy.maxCycles";
+            public const string minCycles = "shopify.SellingPlanRecurringBillingPolicy.minCycles";
+        }
+
+        public static class SellingPlanRecurringDeliveryPolicy
+        {
+            public const string anchors = "shopify.SellingPlanRecurringDeliveryPolicy.anchors";
+            public const string createdAt = "shopify.SellingPlanRecurringDeliveryPolicy.createdAt";
+            public const string cutoff = "shopify.SellingPlanRecurringDeliveryPolicy.cutoff";
+            public const string intent = "shopify.SellingPlanRecurringDeliveryPolicy.intent";
+            public const string interval = "shopify.SellingPlanRecurringDeliveryPolicy.interval";
+            public const string intervalCount = "shopify.SellingPlanRecurringDeliveryPolicy.intervalCount";
+            public const string preAnchorBehavior = "shopify.SellingPlanRecurringDeliveryPolicy.preAnchorBehavior";
+        }
+
+        public static class SellingPlanRecurringPricingPolicy
+        {
+            public const string adjustmentType = "shopify.SellingPlanRecurringPricingPolicy.adjustmentType";
+            public const string adjustmentValue = "shopify.SellingPlanRecurringPricingPolicy.adjustmentValue";
+            public const string afterCycle = "shopify.SellingPlanRecurringPricingPolicy.afterCycle";
+            public const string createdAt = "shopify.SellingPlanRecurringPricingPolicy.createdAt";
+        }
+
+        public static class ServerPixel
+        {
+            public const string id = "shopify.ServerPixel.id";
+            public const string status = "shopify.ServerPixel.status";
+            public const string webhookEndpointAddress = "shopify.ServerPixel.webhookEndpointAddress";
+        }
+
+        public static class ServerPixelCreatePayload
+        {
+            public const string serverPixel = "shopify.ServerPixelCreatePayload.serverPixel";
+            public const string userErrors = "shopify.ServerPixelCreatePayload.userErrors";
+        }
+
+        public static class ServerPixelDeletePayload
+        {
+            public const string deletedServerPixelId = "shopify.ServerPixelDeletePayload.deletedServerPixelId";
+            public const string userErrors = "shopify.ServerPixelDeletePayload.userErrors";
+        }
+
+        public static class ShippingLine
+        {
+            public const string carrierIdentifier = "shopify.ShippingLine.carrierIdentifier";
+            public const string code = "shopify.ShippingLine.code";
+            public const string currentDiscountedPriceSet = "shopify.ShippingLine.currentDiscountedPriceSet";
+            public const string custom = "shopify.ShippingLine.custom";
+            public const string deliveryCategory = "shopify.ShippingLine.deliveryCategory";
+            public const string discountAllocations = "shopify.ShippingLine.discountAllocations";
+            public const string discountedPrice = "shopify.ShippingLine.discountedPrice";
+            public const string discountedPriceSet = "shopify.ShippingLine.discountedPriceSet";
+            public const string id = "shopify.ShippingLine.id";
+            public const string isRemoved = "shopify.ShippingLine.isRemoved";
+            public const string originalPrice = "shopify.ShippingLine.originalPrice";
+            public const string originalPriceSet = "shopify.ShippingLine.originalPriceSet";
+            public const string phone = "shopify.ShippingLine.phone";
+            public const string price = "shopify.ShippingLine.price";
+            public const string requestedFulfillmentService = "shopify.ShippingLine.requestedFulfillmentService";
+            public const string shippingRateHandle = "shopify.ShippingLine.shippingRateHandle";
+            public const string source = "shopify.ShippingLine.source";
+            public const string taxLines = "shopify.ShippingLine.taxLines";
+            public const string title = "shopify.ShippingLine.title";
+        }
+
+        public static class ShippingLineConnection
+        {
+            public const string edges = "shopify.ShippingLineConnection.edges";
+            public const string nodes = "shopify.ShippingLineConnection.nodes";
+            public const string pageInfo = "shopify.ShippingLineConnection.pageInfo";
+        }
+
+        public static class ShippingLineEdge
+        {
+            public const string cursor = "shopify.ShippingLineEdge.cursor";
+            public const string node = "shopify.ShippingLineEdge.node";
+        }
+
+        public static class ShippingLineSale
+        {
+            public const string actionType = "shopify.ShippingLineSale.actionType";
+            public const string id = "shopify.ShippingLineSale.id";
+            public const string lineType = "shopify.ShippingLineSale.lineType";
+            public const string quantity = "shopify.ShippingLineSale.quantity";
+            public const string shippingLine = "shopify.ShippingLineSale.shippingLine";
+            public const string taxes = "shopify.ShippingLineSale.taxes";
+            public const string totalAmount = "shopify.ShippingLineSale.totalAmount";
+            public const string totalDiscountAmountAfterTaxes = "shopify.ShippingLineSale.totalDiscountAmountAfterTaxes";
+            public const string totalDiscountAmountBeforeTaxes = "shopify.ShippingLineSale.totalDiscountAmountBeforeTaxes";
+            public const string totalTaxAmount = "shopify.ShippingLineSale.totalTaxAmount";
+        }
+
+        public static class ShippingPackageDeletePayload
+        {
+            public const string deletedId = "shopify.ShippingPackageDeletePayload.deletedId";
+            public const string userErrors = "shopify.ShippingPackageDeletePayload.userErrors";
+        }
+
+        public static class ShippingPackageMakeDefaultPayload
+        {
+            public const string userErrors = "shopify.ShippingPackageMakeDefaultPayload.userErrors";
+        }
+
+        public static class ShippingPackageUpdatePayload
+        {
+            public const string userErrors = "shopify.ShippingPackageUpdatePayload.userErrors";
+        }
+
+        public static class ShippingRate
+        {
+            public const string handle = "shopify.ShippingRate.handle";
+            public const string price = "shopify.ShippingRate.price";
+            public const string title = "shopify.ShippingRate.title";
+        }
+
+        public static class ShippingRefund
+        {
+            public const string amount = "shopify.ShippingRefund.amount";
+            public const string amountSet = "shopify.ShippingRefund.amountSet";
+            public const string maximumRefundable = "shopify.ShippingRefund.maximumRefundable";
+            public const string maximumRefundableSet = "shopify.ShippingRefund.maximumRefundableSet";
+            public const string tax = "shopify.ShippingRefund.tax";
+            public const string taxSet = "shopify.ShippingRefund.taxSet";
+        }
+
+        public static class Shop
+        {
+            public const string accountOwner = "shopify.Shop.accountOwner";
+            public const string alerts = "shopify.Shop.alerts";
+            public const string allProductCategories = "shopify.Shop.allProductCategories";
+            public const string allProductCategoriesList = "shopify.Shop.allProductCategoriesList";
+            public const string analyticsToken = "shopify.Shop.analyticsToken";
+            public const string assignedFulfillmentOrders = "shopify.Shop.assignedFulfillmentOrders";
+            public const string availableChannelApps = "shopify.Shop.availableChannelApps";
+            public const string billingAddress = "shopify.Shop.billingAddress";
+            public const string channelDefinitionsForInstalledChannels = "shopify.Shop.channelDefinitionsForInstalledChannels";
+            public const string channels = "shopify.Shop.channels";
+            public const string checkoutApiSupported = "shopify.Shop.checkoutApiSupported";
+            public const string collections = "shopify.Shop.collections";
+            public const string contactEmail = "shopify.Shop.contactEmail";
+            public const string countriesInShippingZones = "shopify.Shop.countriesInShippingZones";
+            public const string createdAt = "shopify.Shop.createdAt";
+            public const string currencyCode = "shopify.Shop.currencyCode";
+            public const string currencyFormats = "shopify.Shop.currencyFormats";
+            public const string currencySettings = "shopify.Shop.currencySettings";
+            public const string customerAccounts = "shopify.Shop.customerAccounts";
+            public const string customerAccountsV2 = "shopify.Shop.customerAccountsV2";
+            public const string customerTags = "shopify.Shop.customerTags";
+            public const string customers = "shopify.Shop.customers";
+            public const string description = "shopify.Shop.description";
+            public const string domains = "shopify.Shop.domains";
+            public const string draftOrderTags = "shopify.Shop.draftOrderTags";
+            public const string draftOrders = "shopify.Shop.draftOrders";
+            public const string email = "shopify.Shop.email";
+            public const string enabledPresentmentCurrencies = "shopify.Shop.enabledPresentmentCurrencies";
+            public const string entitlements = "shopify.Shop.entitlements";
+            public const string features = "shopify.Shop.features";
+            public const string fulfillmentOrders = "shopify.Shop.fulfillmentOrders";
+            public const string fulfillmentServices = "shopify.Shop.fulfillmentServices";
+            public const string ianaTimezone = "shopify.Shop.ianaTimezone";
+            public const string id = "shopify.Shop.id";
+            public const string inventoryItems = "shopify.Shop.inventoryItems";
+            public const string limitedPendingOrderCount = "shopify.Shop.limitedPendingOrderCount";
+            public const string locations = "shopify.Shop.locations";
+            public const string marketingSmsConsentEnabledAtCheckout = "shopify.Shop.marketingSmsConsentEnabledAtCheckout";
+            public const string merchantApprovalSignals = "shopify.Shop.merchantApprovalSignals";
+            public const string metafield = "shopify.Shop.metafield";
+            public const string metafields = "shopify.Shop.metafields";
+            public const string myshopifyDomain = "shopify.Shop.myshopifyDomain";
+            public const string name = "shopify.Shop.name";
+            public const string navigationSettings = "shopify.Shop.navigationSettings";
+            public const string orderNumberFormatPrefix = "shopify.Shop.orderNumberFormatPrefix";
+            public const string orderNumberFormatSuffix = "shopify.Shop.orderNumberFormatSuffix";
+            public const string orderTags = "shopify.Shop.orderTags";
+            public const string orders = "shopify.Shop.orders";
+            public const string paymentSettings = "shopify.Shop.paymentSettings";
+            public const string plan = "shopify.Shop.plan";
+            public const string primaryDomain = "shopify.Shop.primaryDomain";
+            public const string productImages = "shopify.Shop.productImages";
+            public const string productTags = "shopify.Shop.productTags";
+            public const string productTypes = "shopify.Shop.productTypes";
+            public const string productVariants = "shopify.Shop.productVariants";
+            public const string productVendors = "shopify.Shop.productVendors";
+            public const string products = "shopify.Shop.products";
+            public const string publicationCount = "shopify.Shop.publicationCount";
+            public const string resourceLimits = "shopify.Shop.resourceLimits";
+            public const string richTextEditorUrl = "shopify.Shop.richTextEditorUrl";
+            public const string search = "shopify.Shop.search";
+            public const string searchFilters = "shopify.Shop.searchFilters";
+            public const string setupRequired = "shopify.Shop.setupRequired";
+            public const string shipsToCountries = "shopify.Shop.shipsToCountries";
+            public const string shopOwnerName = "shopify.Shop.shopOwnerName";
+            public const string shopPolicies = "shopify.Shop.shopPolicies";
+            public const string staffMembers = "shopify.Shop.staffMembers";
+            public const string storefrontAccessTokens = "shopify.Shop.storefrontAccessTokens";
+            public const string storefrontUrl = "shopify.Shop.storefrontUrl";
+            public const string taxShipping = "shopify.Shop.taxShipping";
+            public const string taxesIncluded = "shopify.Shop.taxesIncluded";
+            public const string timezoneAbbreviation = "shopify.Shop.timezoneAbbreviation";
+            public const string timezoneOffset = "shopify.Shop.timezoneOffset";
+            public const string timezoneOffsetMinutes = "shopify.Shop.timezoneOffsetMinutes";
+            public const string transactionalSmsDisabled = "shopify.Shop.transactionalSmsDisabled";
+            public const string translations = "shopify.Shop.translations";
+            public const string unitSystem = "shopify.Shop.unitSystem";
+            public const string updatedAt = "shopify.Shop.updatedAt";
+            public const string url = "shopify.Shop.url";
+            public const string weightUnit = "shopify.Shop.weightUnit";
+        }
+
+        public static class ShopAddress
+        {
+            public const string address1 = "shopify.ShopAddress.address1";
+            public const string address2 = "shopify.ShopAddress.address2";
+            public const string city = "shopify.ShopAddress.city";
+            public const string company = "shopify.ShopAddress.company";
+            public const string coordinatesValidated = "shopify.ShopAddress.coordinatesValidated";
+            public const string country = "shopify.ShopAddress.country";
+            public const string countryCode = "shopify.ShopAddress.countryCode";
+            public const string countryCodeV2 = "shopify.ShopAddress.countryCodeV2";
+            public const string firstName = "shopify.ShopAddress.firstName";
+            public const string formatted = "shopify.ShopAddress.formatted";
+            public const string formattedArea = "shopify.ShopAddress.formattedArea";
+            public const string id = "shopify.ShopAddress.id";
+            public const string lastName = "shopify.ShopAddress.lastName";
+            public const string latitude = "shopify.ShopAddress.latitude";
+            public const string longitude = "shopify.ShopAddress.longitude";
+            public const string name = "shopify.ShopAddress.name";
+            public const string phone = "shopify.ShopAddress.phone";
+            public const string province = "shopify.ShopAddress.province";
+            public const string provinceCode = "shopify.ShopAddress.provinceCode";
+            public const string zip = "shopify.ShopAddress.zip";
+        }
+
+        public static class ShopAlert
+        {
+            public const string action = "shopify.ShopAlert.action";
+            public const string description = "shopify.ShopAlert.description";
+        }
+
+        public static class ShopAlertAction
+        {
+            public const string title = "shopify.ShopAlertAction.title";
+            public const string url = "shopify.ShopAlertAction.url";
+        }
+
+        public static class ShopBillingPreferences
+        {
+            public const string currency = "shopify.ShopBillingPreferences.currency";
+        }
+
+        public static class ShopFeatures
+        {
+            public const string avalaraAvatax = "shopify.ShopFeatures.avalaraAvatax";
+            public const string branding = "shopify.ShopFeatures.branding";
+            public const string bundles = "shopify.ShopFeatures.bundles";
+            public const string captcha = "shopify.ShopFeatures.captcha";
+            public const string captchaExternalDomains = "shopify.ShopFeatures.captchaExternalDomains";
+            public const string cartTransform = "shopify.ShopFeatures.cartTransform";
+            public const string deliveryProfiles = "shopify.ShopFeatures.deliveryProfiles";
+            public const string dynamicRemarketing = "shopify.ShopFeatures.dynamicRemarketing";
+            public const string eligibleForSubscriptionMigration = "shopify.ShopFeatures.eligibleForSubscriptionMigration";
+            public const string eligibleForSubscriptions = "shopify.ShopFeatures.eligibleForSubscriptions";
+            public const string giftCards = "shopify.ShopFeatures.giftCards";
+            public const string harmonizedSystemCode = "shopify.ShopFeatures.harmonizedSystemCode";
+            public const string internationalDomains = "shopify.ShopFeatures.internationalDomains";
+            public const string internationalPriceOverrides = "shopify.ShopFeatures.internationalPriceOverrides";
+            public const string internationalPriceRules = "shopify.ShopFeatures.internationalPriceRules";
+            public const string legacySubscriptionGatewayEnabled = "shopify.ShopFeatures.legacySubscriptionGatewayEnabled";
+            public const string liveView = "shopify.ShopFeatures.liveView";
+            public const string onboardingVisual = "shopify.ShopFeatures.onboardingVisual";
+            public const string paypalExpressSubscriptionGatewayStatus = "shopify.ShopFeatures.paypalExpressSubscriptionGatewayStatus";
+            public const string reports = "shopify.ShopFeatures.reports";
+            public const string sellsSubscriptions = "shopify.ShopFeatures.sellsSubscriptions";
+            public const string shopifyPlus = "shopify.ShopFeatures.shopifyPlus";
+            public const string showMetrics = "shopify.ShopFeatures.showMetrics";
+            public const string storefront = "shopify.ShopFeatures.storefront";
+            public const string unifiedMarkets = "shopify.ShopFeatures.unifiedMarkets";
+            public const string usingShopifyBalance = "shopify.ShopFeatures.usingShopifyBalance";
+        }
+
+        public static class ShopLocale
+        {
+            public const string locale = "shopify.ShopLocale.locale";
+            public const string marketWebPresences = "shopify.ShopLocale.marketWebPresences";
+            public const string name = "shopify.ShopLocale.name";
+            public const string primary = "shopify.ShopLocale.primary";
+            public const string published = "shopify.ShopLocale.published";
+        }
+
+        public static class ShopLocaleDisablePayload
+        {
+            public const string locale = "shopify.ShopLocaleDisablePayload.locale";
+            public const string userErrors = "shopify.ShopLocaleDisablePayload.userErrors";
+        }
+
+        public static class ShopLocaleEnablePayload
+        {
+            public const string shopLocale = "shopify.ShopLocaleEnablePayload.shopLocale";
+            public const string userErrors = "shopify.ShopLocaleEnablePayload.userErrors";
+        }
+
+        public static class ShopLocaleUpdatePayload
+        {
+            public const string shopLocale = "shopify.ShopLocaleUpdatePayload.shopLocale";
+            public const string userErrors = "shopify.ShopLocaleUpdatePayload.userErrors";
+        }
+
+        public static class ShopPayInstallmentsPaymentDetails
+        {
+            public const string paymentMethodName = "shopify.ShopPayInstallmentsPaymentDetails.paymentMethodName";
+        }
+
+        public static class ShopPlan
+        {
+            public const string displayName = "shopify.ShopPlan.displayName";
+            public const string partnerDevelopment = "shopify.ShopPlan.partnerDevelopment";
+            public const string shopifyPlus = "shopify.ShopPlan.shopifyPlus";
+        }
+
+        public static class ShopPolicy
+        {
+            public const string body = "shopify.ShopPolicy.body";
+            public const string createdAt = "shopify.ShopPolicy.createdAt";
+            public const string id = "shopify.ShopPolicy.id";
+            public const string title = "shopify.ShopPolicy.title";
+            public const string translations = "shopify.ShopPolicy.translations";
+            public const string type = "shopify.ShopPolicy.type";
+            public const string updatedAt = "shopify.ShopPolicy.updatedAt";
+            public const string url = "shopify.ShopPolicy.url";
+        }
+
+        public static class ShopPolicyUpdatePayload
+        {
+            public const string shopPolicy = "shopify.ShopPolicyUpdatePayload.shopPolicy";
+            public const string userErrors = "shopify.ShopPolicyUpdatePayload.userErrors";
+        }
+
+        public static class ShopPolicyUserError
+        {
+            public const string code = "shopify.ShopPolicyUserError.code";
+            public const string field = "shopify.ShopPolicyUserError.field";
+            public const string message = "shopify.ShopPolicyUserError.message";
+        }
+
+        public static class ShopResourceFeedbackCreatePayload
+        {
+            public const string feedback = "shopify.ShopResourceFeedbackCreatePayload.feedback";
+            public const string userErrors = "shopify.ShopResourceFeedbackCreatePayload.userErrors";
+        }
+
+        public static class ShopResourceFeedbackCreateUserError
+        {
+            public const string code = "shopify.ShopResourceFeedbackCreateUserError.code";
+            public const string field = "shopify.ShopResourceFeedbackCreateUserError.field";
+            public const string message = "shopify.ShopResourceFeedbackCreateUserError.message";
+        }
+
+        public static class ShopResourceLimits
+        {
+            public const string locationLimit = "shopify.ShopResourceLimits.locationLimit";
+            public const string maxProductOptions = "shopify.ShopResourceLimits.maxProductOptions";
+            public const string maxProductVariants = "shopify.ShopResourceLimits.maxProductVariants";
+            public const string redirectLimitReached = "shopify.ShopResourceLimits.redirectLimitReached";
+        }
+
+        public static class ShopifyFunction
+        {
+            public const string apiType = "shopify.ShopifyFunction.apiType";
+            public const string apiVersion = "shopify.ShopifyFunction.apiVersion";
+            public const string app = "shopify.ShopifyFunction.app";
+            public const string appBridge = "shopify.ShopifyFunction.appBridge";
+            public const string appKey = "shopify.ShopifyFunction.appKey";
+            public const string description = "shopify.ShopifyFunction.description";
+            public const string id = "shopify.ShopifyFunction.id";
+            public const string inputQuery = "shopify.ShopifyFunction.inputQuery";
+            public const string title = "shopify.ShopifyFunction.title";
+            public const string useCreationUi = "shopify.ShopifyFunction.useCreationUi";
+        }
+
+        public static class ShopifyFunctionConnection
+        {
+            public const string edges = "shopify.ShopifyFunctionConnection.edges";
+            public const string nodes = "shopify.ShopifyFunctionConnection.nodes";
+            public const string pageInfo = "shopify.ShopifyFunctionConnection.pageInfo";
+        }
+
+        public static class ShopifyFunctionEdge
+        {
+            public const string cursor = "shopify.ShopifyFunctionEdge.cursor";
+            public const string node = "shopify.ShopifyFunctionEdge.node";
+        }
+
+        public static class ShopifyPaymentsAccount
+        {
+            public const string accountOpenerName = "shopify.ShopifyPaymentsAccount.accountOpenerName";
+            public const string activated = "shopify.ShopifyPaymentsAccount.activated";
+            public const string balance = "shopify.ShopifyPaymentsAccount.balance";
+            public const string balanceTransactions = "shopify.ShopifyPaymentsAccount.balanceTransactions";
+            public const string bankAccounts = "shopify.ShopifyPaymentsAccount.bankAccounts";
+            public const string chargeStatementDescriptor = "shopify.ShopifyPaymentsAccount.chargeStatementDescriptor";
+            public const string chargeStatementDescriptors = "shopify.ShopifyPaymentsAccount.chargeStatementDescriptors";
+            public const string country = "shopify.ShopifyPaymentsAccount.country";
+            public const string defaultCurrency = "shopify.ShopifyPaymentsAccount.defaultCurrency";
+            public const string disputes = "shopify.ShopifyPaymentsAccount.disputes";
+            public const string id = "shopify.ShopifyPaymentsAccount.id";
+            public const string onboardable = "shopify.ShopifyPaymentsAccount.onboardable";
+            public const string payoutSchedule = "shopify.ShopifyPaymentsAccount.payoutSchedule";
+            public const string payoutStatementDescriptor = "shopify.ShopifyPaymentsAccount.payoutStatementDescriptor";
+            public const string payouts = "shopify.ShopifyPaymentsAccount.payouts";
+        }
+
+        public static class ShopifyPaymentsAddressBasic
+        {
+            public const string addressLine1 = "shopify.ShopifyPaymentsAddressBasic.addressLine1";
+            public const string addressLine2 = "shopify.ShopifyPaymentsAddressBasic.addressLine2";
+            public const string city = "shopify.ShopifyPaymentsAddressBasic.city";
+            public const string country = "shopify.ShopifyPaymentsAddressBasic.country";
+            public const string postalCode = "shopify.ShopifyPaymentsAddressBasic.postalCode";
+            public const string zone = "shopify.ShopifyPaymentsAddressBasic.zone";
+        }
+
+        public static class ShopifyPaymentsAdjustmentOrder
+        {
+            public const string amount = "shopify.ShopifyPaymentsAdjustmentOrder.amount";
+            public const string fees = "shopify.ShopifyPaymentsAdjustmentOrder.fees";
+            public const string link = "shopify.ShopifyPaymentsAdjustmentOrder.link";
+            public const string name = "shopify.ShopifyPaymentsAdjustmentOrder.name";
+            public const string net = "shopify.ShopifyPaymentsAdjustmentOrder.net";
+            public const string orderTransactionId = "shopify.ShopifyPaymentsAdjustmentOrder.orderTransactionId";
+        }
+
+        public static class ShopifyPaymentsAssociatedOrder
+        {
+            public const string id = "shopify.ShopifyPaymentsAssociatedOrder.id";
+            public const string name = "shopify.ShopifyPaymentsAssociatedOrder.name";
+        }
+
+        public static class ShopifyPaymentsBalanceTransaction
+        {
+            public const string adjustmentReason = "shopify.ShopifyPaymentsBalanceTransaction.adjustmentReason";
+            public const string adjustmentsOrders = "shopify.ShopifyPaymentsBalanceTransaction.adjustmentsOrders";
+            public const string amount = "shopify.ShopifyPaymentsBalanceTransaction.amount";
+            public const string associatedOrder = "shopify.ShopifyPaymentsBalanceTransaction.associatedOrder";
+            public const string associatedPayout = "shopify.ShopifyPaymentsBalanceTransaction.associatedPayout";
+            public const string fee = "shopify.ShopifyPaymentsBalanceTransaction.fee";
+            public const string id = "shopify.ShopifyPaymentsBalanceTransaction.id";
+            public const string net = "shopify.ShopifyPaymentsBalanceTransaction.net";
+            public const string sourceId = "shopify.ShopifyPaymentsBalanceTransaction.sourceId";
+            public const string sourceOrderTransactionId = "shopify.ShopifyPaymentsBalanceTransaction.sourceOrderTransactionId";
+            public const string sourceType = "shopify.ShopifyPaymentsBalanceTransaction.sourceType";
+            public const string test = "shopify.ShopifyPaymentsBalanceTransaction.test";
+            public const string transactionDate = "shopify.ShopifyPaymentsBalanceTransaction.transactionDate";
+            public const string type = "shopify.ShopifyPaymentsBalanceTransaction.type";
+        }
+
+        public static class ShopifyPaymentsBalanceTransactionAssociatedPayout
+        {
+            public const string id = "shopify.ShopifyPaymentsBalanceTransactionAssociatedPayout.id";
+            public const string status = "shopify.ShopifyPaymentsBalanceTransactionAssociatedPayout.status";
+        }
+
+        public static class ShopifyPaymentsBalanceTransactionConnection
+        {
+            public const string edges = "shopify.ShopifyPaymentsBalanceTransactionConnection.edges";
+            public const string nodes = "shopify.ShopifyPaymentsBalanceTransactionConnection.nodes";
+            public const string pageInfo = "shopify.ShopifyPaymentsBalanceTransactionConnection.pageInfo";
+        }
+
+        public static class ShopifyPaymentsBalanceTransactionEdge
+        {
+            public const string cursor = "shopify.ShopifyPaymentsBalanceTransactionEdge.cursor";
+            public const string node = "shopify.ShopifyPaymentsBalanceTransactionEdge.node";
+        }
+
+        public static class ShopifyPaymentsBankAccount
+        {
+            public const string accountNumberLastDigits = "shopify.ShopifyPaymentsBankAccount.accountNumberLastDigits";
+            public const string bankName = "shopify.ShopifyPaymentsBankAccount.bankName";
+            public const string country = "shopify.ShopifyPaymentsBankAccount.country";
+            public const string createdAt = "shopify.ShopifyPaymentsBankAccount.createdAt";
+            public const string currency = "shopify.ShopifyPaymentsBankAccount.currency";
+            public const string id = "shopify.ShopifyPaymentsBankAccount.id";
+            public const string payouts = "shopify.ShopifyPaymentsBankAccount.payouts";
+            public const string status = "shopify.ShopifyPaymentsBankAccount.status";
+        }
+
+        public static class ShopifyPaymentsBankAccountConnection
+        {
+            public const string edges = "shopify.ShopifyPaymentsBankAccountConnection.edges";
+            public const string nodes = "shopify.ShopifyPaymentsBankAccountConnection.nodes";
+            public const string pageInfo = "shopify.ShopifyPaymentsBankAccountConnection.pageInfo";
+        }
+
+        public static class ShopifyPaymentsBankAccountEdge
+        {
+            public const string cursor = "shopify.ShopifyPaymentsBankAccountEdge.cursor";
+            public const string node = "shopify.ShopifyPaymentsBankAccountEdge.node";
+        }
+
+        public static class IShopifyPaymentsChargeStatementDescriptor
+        {
+            public const string @default = "shopify.IShopifyPaymentsChargeStatementDescriptor.default";
+            public const string prefix = "shopify.IShopifyPaymentsChargeStatementDescriptor.prefix";
+        }
+
+        public static class ShopifyPaymentsDefaultChargeStatementDescriptor
+        {
+            public const string @default = "shopify.ShopifyPaymentsDefaultChargeStatementDescriptor.default";
+            public const string prefix = "shopify.ShopifyPaymentsDefaultChargeStatementDescriptor.prefix";
+        }
+
+        public static class ShopifyPaymentsDispute
+        {
+            public const string amount = "shopify.ShopifyPaymentsDispute.amount";
+            public const string evidenceDueBy = "shopify.ShopifyPaymentsDispute.evidenceDueBy";
+            public const string evidenceSentOn = "shopify.ShopifyPaymentsDispute.evidenceSentOn";
+            public const string finalizedOn = "shopify.ShopifyPaymentsDispute.finalizedOn";
+            public const string id = "shopify.ShopifyPaymentsDispute.id";
+            public const string initiatedAt = "shopify.ShopifyPaymentsDispute.initiatedAt";
+            public const string legacyResourceId = "shopify.ShopifyPaymentsDispute.legacyResourceId";
+            public const string order = "shopify.ShopifyPaymentsDispute.order";
+            public const string reasonDetails = "shopify.ShopifyPaymentsDispute.reasonDetails";
+            public const string status = "shopify.ShopifyPaymentsDispute.status";
+            public const string type = "shopify.ShopifyPaymentsDispute.type";
+        }
+
+        public static class ShopifyPaymentsDisputeConnection
+        {
+            public const string edges = "shopify.ShopifyPaymentsDisputeConnection.edges";
+            public const string nodes = "shopify.ShopifyPaymentsDisputeConnection.nodes";
+            public const string pageInfo = "shopify.ShopifyPaymentsDisputeConnection.pageInfo";
+        }
+
+        public static class ShopifyPaymentsDisputeEdge
+        {
+            public const string cursor = "shopify.ShopifyPaymentsDisputeEdge.cursor";
+            public const string node = "shopify.ShopifyPaymentsDisputeEdge.node";
+        }
+
+        public static class ShopifyPaymentsDisputeEvidence
+        {
+            public const string accessActivityLog = "shopify.ShopifyPaymentsDisputeEvidence.accessActivityLog";
+            public const string billingAddress = "shopify.ShopifyPaymentsDisputeEvidence.billingAddress";
+            public const string cancellationPolicyDisclosure = "shopify.ShopifyPaymentsDisputeEvidence.cancellationPolicyDisclosure";
+            public const string cancellationPolicyFile = "shopify.ShopifyPaymentsDisputeEvidence.cancellationPolicyFile";
+            public const string cancellationRebuttal = "shopify.ShopifyPaymentsDisputeEvidence.cancellationRebuttal";
+            public const string customerCommunicationFile = "shopify.ShopifyPaymentsDisputeEvidence.customerCommunicationFile";
+            public const string customerEmailAddress = "shopify.ShopifyPaymentsDisputeEvidence.customerEmailAddress";
+            public const string customerFirstName = "shopify.ShopifyPaymentsDisputeEvidence.customerFirstName";
+            public const string customerLastName = "shopify.ShopifyPaymentsDisputeEvidence.customerLastName";
+            public const string customerPurchaseIp = "shopify.ShopifyPaymentsDisputeEvidence.customerPurchaseIp";
+            public const string dispute = "shopify.ShopifyPaymentsDisputeEvidence.dispute";
+            public const string disputeFileUploads = "shopify.ShopifyPaymentsDisputeEvidence.disputeFileUploads";
+            public const string fulfillments = "shopify.ShopifyPaymentsDisputeEvidence.fulfillments";
+            public const string id = "shopify.ShopifyPaymentsDisputeEvidence.id";
+            public const string productDescription = "shopify.ShopifyPaymentsDisputeEvidence.productDescription";
+            public const string refundPolicyDisclosure = "shopify.ShopifyPaymentsDisputeEvidence.refundPolicyDisclosure";
+            public const string refundPolicyFile = "shopify.ShopifyPaymentsDisputeEvidence.refundPolicyFile";
+            public const string refundRefusalExplanation = "shopify.ShopifyPaymentsDisputeEvidence.refundRefusalExplanation";
+            public const string serviceDocumentationFile = "shopify.ShopifyPaymentsDisputeEvidence.serviceDocumentationFile";
+            public const string shippingAddress = "shopify.ShopifyPaymentsDisputeEvidence.shippingAddress";
+            public const string shippingDocumentationFile = "shopify.ShopifyPaymentsDisputeEvidence.shippingDocumentationFile";
+            public const string submitted = "shopify.ShopifyPaymentsDisputeEvidence.submitted";
+            public const string uncategorizedFile = "shopify.ShopifyPaymentsDisputeEvidence.uncategorizedFile";
+            public const string uncategorizedText = "shopify.ShopifyPaymentsDisputeEvidence.uncategorizedText";
+        }
+
+        public static class ShopifyPaymentsDisputeFileUpload
+        {
+            public const string disputeEvidenceType = "shopify.ShopifyPaymentsDisputeFileUpload.disputeEvidenceType";
+            public const string fileSize = "shopify.ShopifyPaymentsDisputeFileUpload.fileSize";
+            public const string fileType = "shopify.ShopifyPaymentsDisputeFileUpload.fileType";
+            public const string id = "shopify.ShopifyPaymentsDisputeFileUpload.id";
+            public const string originalFileName = "shopify.ShopifyPaymentsDisputeFileUpload.originalFileName";
+            public const string url = "shopify.ShopifyPaymentsDisputeFileUpload.url";
+        }
+
+        public static class ShopifyPaymentsDisputeFulfillment
+        {
+            public const string id = "shopify.ShopifyPaymentsDisputeFulfillment.id";
+            public const string shippingCarrier = "shopify.ShopifyPaymentsDisputeFulfillment.shippingCarrier";
+            public const string shippingDate = "shopify.ShopifyPaymentsDisputeFulfillment.shippingDate";
+            public const string shippingTrackingNumber = "shopify.ShopifyPaymentsDisputeFulfillment.shippingTrackingNumber";
+        }
+
+        public static class ShopifyPaymentsDisputeReasonDetails
+        {
+            public const string networkReasonCode = "shopify.ShopifyPaymentsDisputeReasonDetails.networkReasonCode";
+            public const string reason = "shopify.ShopifyPaymentsDisputeReasonDetails.reason";
+        }
+
+        public static class ShopifyPaymentsExtendedAuthorization
+        {
+            public const string extendedAuthorizationExpiresAt = "shopify.ShopifyPaymentsExtendedAuthorization.extendedAuthorizationExpiresAt";
+            public const string standardAuthorizationExpiresAt = "shopify.ShopifyPaymentsExtendedAuthorization.standardAuthorizationExpiresAt";
+        }
+
+        public static class ShopifyPaymentsJpChargeStatementDescriptor
+        {
+            public const string @default = "shopify.ShopifyPaymentsJpChargeStatementDescriptor.default";
+            public const string kana = "shopify.ShopifyPaymentsJpChargeStatementDescriptor.kana";
+            public const string kanji = "shopify.ShopifyPaymentsJpChargeStatementDescriptor.kanji";
+            public const string prefix = "shopify.ShopifyPaymentsJpChargeStatementDescriptor.prefix";
+        }
+
+        public static class ShopifyPaymentsMerchantCategoryCode
+        {
+            public const string category = "shopify.ShopifyPaymentsMerchantCategoryCode.category";
+            public const string categoryLabel = "shopify.ShopifyPaymentsMerchantCategoryCode.categoryLabel";
+            public const string code = "shopify.ShopifyPaymentsMerchantCategoryCode.code";
+            public const string id = "shopify.ShopifyPaymentsMerchantCategoryCode.id";
+            public const string subcategoryLabel = "shopify.ShopifyPaymentsMerchantCategoryCode.subcategoryLabel";
+        }
+
+        public static class ShopifyPaymentsPayout
+        {
+            public const string bankAccount = "shopify.ShopifyPaymentsPayout.bankAccount";
+            public const string businessEntity = "shopify.ShopifyPaymentsPayout.businessEntity";
+            public const string gross = "shopify.ShopifyPaymentsPayout.gross";
+            public const string id = "shopify.ShopifyPaymentsPayout.id";
+            public const string issuedAt = "shopify.ShopifyPaymentsPayout.issuedAt";
+            public const string legacyResourceId = "shopify.ShopifyPaymentsPayout.legacyResourceId";
+            public const string net = "shopify.ShopifyPaymentsPayout.net";
+            public const string status = "shopify.ShopifyPaymentsPayout.status";
+            public const string summary = "shopify.ShopifyPaymentsPayout.summary";
+            public const string transactionType = "shopify.ShopifyPaymentsPayout.transactionType";
+        }
+
+        public static class ShopifyPaymentsPayoutAlternateCurrencyCreatePayload
+        {
+            public const string payout = "shopify.ShopifyPaymentsPayoutAlternateCurrencyCreatePayload.payout";
+            public const string success = "shopify.ShopifyPaymentsPayoutAlternateCurrencyCreatePayload.success";
+            public const string userErrors = "shopify.ShopifyPaymentsPayoutAlternateCurrencyCreatePayload.userErrors";
+        }
+
+        public static class ShopifyPaymentsPayoutAlternateCurrencyCreateUserError
+        {
+            public const string code = "shopify.ShopifyPaymentsPayoutAlternateCurrencyCreateUserError.code";
+            public const string field = "shopify.ShopifyPaymentsPayoutAlternateCurrencyCreateUserError.field";
+            public const string message = "shopify.ShopifyPaymentsPayoutAlternateCurrencyCreateUserError.message";
+        }
+
+        public static class ShopifyPaymentsPayoutConnection
+        {
+            public const string edges = "shopify.ShopifyPaymentsPayoutConnection.edges";
+            public const string nodes = "shopify.ShopifyPaymentsPayoutConnection.nodes";
+            public const string pageInfo = "shopify.ShopifyPaymentsPayoutConnection.pageInfo";
+        }
+
+        public static class ShopifyPaymentsPayoutEdge
+        {
+            public const string cursor = "shopify.ShopifyPaymentsPayoutEdge.cursor";
+            public const string node = "shopify.ShopifyPaymentsPayoutEdge.node";
+        }
+
+        public static class ShopifyPaymentsPayoutSchedule
+        {
+            public const string interval = "shopify.ShopifyPaymentsPayoutSchedule.interval";
+            public const string monthlyAnchor = "shopify.ShopifyPaymentsPayoutSchedule.monthlyAnchor";
+            public const string weeklyAnchor = "shopify.ShopifyPaymentsPayoutSchedule.weeklyAnchor";
+        }
+
+        public static class ShopifyPaymentsPayoutSummary
+        {
+            public const string adjustmentsFee = "shopify.ShopifyPaymentsPayoutSummary.adjustmentsFee";
+            public const string adjustmentsGross = "shopify.ShopifyPaymentsPayoutSummary.adjustmentsGross";
+            public const string advanceFees = "shopify.ShopifyPaymentsPayoutSummary.advanceFees";
+            public const string advanceGross = "shopify.ShopifyPaymentsPayoutSummary.advanceGross";
+            public const string chargesFee = "shopify.ShopifyPaymentsPayoutSummary.chargesFee";
+            public const string chargesGross = "shopify.ShopifyPaymentsPayoutSummary.chargesGross";
+            public const string refundsFee = "shopify.ShopifyPaymentsPayoutSummary.refundsFee";
+            public const string refundsFeeGross = "shopify.ShopifyPaymentsPayoutSummary.refundsFeeGross";
+            public const string reservedFundsFee = "shopify.ShopifyPaymentsPayoutSummary.reservedFundsFee";
+            public const string reservedFundsGross = "shopify.ShopifyPaymentsPayoutSummary.reservedFundsGross";
+            public const string retriedPayoutsFee = "shopify.ShopifyPaymentsPayoutSummary.retriedPayoutsFee";
+            public const string retriedPayoutsGross = "shopify.ShopifyPaymentsPayoutSummary.retriedPayoutsGross";
+        }
+
+        public static class ShopifyPaymentsRefundSet
+        {
+            public const string acquirerReferenceNumber = "shopify.ShopifyPaymentsRefundSet.acquirerReferenceNumber";
+        }
+
+        public static class ShopifyPaymentsTaxIdentification
+        {
+            public const string taxIdentificationType = "shopify.ShopifyPaymentsTaxIdentification.taxIdentificationType";
+            public const string value = "shopify.ShopifyPaymentsTaxIdentification.value";
+        }
+
+        public static class ShopifyPaymentsToolingProviderPayout
+        {
+            public const string amount = "shopify.ShopifyPaymentsToolingProviderPayout.amount";
+            public const string arrivalDate = "shopify.ShopifyPaymentsToolingProviderPayout.arrivalDate";
+            public const string createdAt = "shopify.ShopifyPaymentsToolingProviderPayout.createdAt";
+            public const string currency = "shopify.ShopifyPaymentsToolingProviderPayout.currency";
+            public const string remoteId = "shopify.ShopifyPaymentsToolingProviderPayout.remoteId";
+        }
+
+        public static class ShopifyPaymentsTransactionSet
+        {
+            public const string extendedAuthorizationSet = "shopify.ShopifyPaymentsTransactionSet.extendedAuthorizationSet";
+            public const string refundSet = "shopify.ShopifyPaymentsTransactionSet.refundSet";
+        }
+
+        public static class ShopifyProtectOrderEligibility
+        {
+            public const string status = "shopify.ShopifyProtectOrderEligibility.status";
+        }
+
+        public static class ShopifyProtectOrderSummary
+        {
+            public const string eligibility = "shopify.ShopifyProtectOrderSummary.eligibility";
+            public const string status = "shopify.ShopifyProtectOrderSummary.status";
+        }
+
+        public static class StaffMember
+        {
+            public const string accountType = "shopify.StaffMember.accountType";
+            public const string active = "shopify.StaffMember.active";
+            public const string avatar = "shopify.StaffMember.avatar";
+            public const string email = "shopify.StaffMember.email";
+            public const string exists = "shopify.StaffMember.exists";
+            public const string firstName = "shopify.StaffMember.firstName";
+            public const string id = "shopify.StaffMember.id";
+            public const string initials = "shopify.StaffMember.initials";
+            public const string isShopOwner = "shopify.StaffMember.isShopOwner";
+            public const string lastName = "shopify.StaffMember.lastName";
+            public const string locale = "shopify.StaffMember.locale";
+            public const string name = "shopify.StaffMember.name";
+            public const string phone = "shopify.StaffMember.phone";
+            public const string privateData = "shopify.StaffMember.privateData";
+        }
+
+        public static class StaffMemberConnection
+        {
+            public const string edges = "shopify.StaffMemberConnection.edges";
+            public const string nodes = "shopify.StaffMemberConnection.nodes";
+            public const string pageInfo = "shopify.StaffMemberConnection.pageInfo";
+        }
+
+        public static class StaffMemberEdge
+        {
+            public const string cursor = "shopify.StaffMemberEdge.cursor";
+            public const string node = "shopify.StaffMemberEdge.node";
+        }
+
+        public static class StaffMemberPrivateData
+        {
+            public const string accountSettingsUrl = "shopify.StaffMemberPrivateData.accountSettingsUrl";
+            public const string createdAt = "shopify.StaffMemberPrivateData.createdAt";
+            public const string permissions = "shopify.StaffMemberPrivateData.permissions";
+        }
+
+        public static class StagedMediaUploadTarget
+        {
+            public const string parameters = "shopify.StagedMediaUploadTarget.parameters";
+            public const string resourceUrl = "shopify.StagedMediaUploadTarget.resourceUrl";
+            public const string url = "shopify.StagedMediaUploadTarget.url";
+        }
+
+        public static class StagedUploadParameter
+        {
+            public const string name = "shopify.StagedUploadParameter.name";
+            public const string value = "shopify.StagedUploadParameter.value";
+        }
+
+        public static class StagedUploadTarget
+        {
+            public const string parameters = "shopify.StagedUploadTarget.parameters";
+            public const string url = "shopify.StagedUploadTarget.url";
+        }
+
+        public static class StagedUploadTargetGeneratePayload
+        {
+            public const string parameters = "shopify.StagedUploadTargetGeneratePayload.parameters";
+            public const string url = "shopify.StagedUploadTargetGeneratePayload.url";
+            public const string userErrors = "shopify.StagedUploadTargetGeneratePayload.userErrors";
+        }
+
+        public static class StagedUploadTargetsGeneratePayload
+        {
+            public const string urls = "shopify.StagedUploadTargetsGeneratePayload.urls";
+            public const string userErrors = "shopify.StagedUploadTargetsGeneratePayload.userErrors";
+        }
+
+        public static class StagedUploadsCreatePayload
+        {
+            public const string stagedTargets = "shopify.StagedUploadsCreatePayload.stagedTargets";
+            public const string userErrors = "shopify.StagedUploadsCreatePayload.userErrors";
+        }
+
+        public static class StandardMetafieldDefinitionEnablePayload
+        {
+            public const string createdDefinition = "shopify.StandardMetafieldDefinitionEnablePayload.createdDefinition";
+            public const string userErrors = "shopify.StandardMetafieldDefinitionEnablePayload.userErrors";
+        }
+
+        public static class StandardMetafieldDefinitionEnableUserError
+        {
+            public const string code = "shopify.StandardMetafieldDefinitionEnableUserError.code";
+            public const string field = "shopify.StandardMetafieldDefinitionEnableUserError.field";
+            public const string message = "shopify.StandardMetafieldDefinitionEnableUserError.message";
+        }
+
+        public static class StandardMetafieldDefinitionTemplate
+        {
+            public const string description = "shopify.StandardMetafieldDefinitionTemplate.description";
+            public const string id = "shopify.StandardMetafieldDefinitionTemplate.id";
+            public const string key = "shopify.StandardMetafieldDefinitionTemplate.key";
+            public const string name = "shopify.StandardMetafieldDefinitionTemplate.name";
+            public const string @namespace = "shopify.StandardMetafieldDefinitionTemplate.namespace";
+            public const string ownerTypes = "shopify.StandardMetafieldDefinitionTemplate.ownerTypes";
+            public const string type = "shopify.StandardMetafieldDefinitionTemplate.type";
+            public const string validations = "shopify.StandardMetafieldDefinitionTemplate.validations";
+            public const string visibleToStorefrontApi = "shopify.StandardMetafieldDefinitionTemplate.visibleToStorefrontApi";
+        }
+
+        public static class StandardMetafieldDefinitionTemplateConnection
+        {
+            public const string edges = "shopify.StandardMetafieldDefinitionTemplateConnection.edges";
+            public const string nodes = "shopify.StandardMetafieldDefinitionTemplateConnection.nodes";
+            public const string pageInfo = "shopify.StandardMetafieldDefinitionTemplateConnection.pageInfo";
+        }
+
+        public static class StandardMetafieldDefinitionTemplateEdge
+        {
+            public const string cursor = "shopify.StandardMetafieldDefinitionTemplateEdge.cursor";
+            public const string node = "shopify.StandardMetafieldDefinitionTemplateEdge.node";
+        }
+
+        public static class StandardMetaobjectCapabilityTemplate
+        {
+            public const string capabilityType = "shopify.StandardMetaobjectCapabilityTemplate.capabilityType";
+        }
+
+        public static class StandardMetaobjectDefinitionEnablePayload
+        {
+            public const string metaobjectDefinition = "shopify.StandardMetaobjectDefinitionEnablePayload.metaobjectDefinition";
+            public const string userErrors = "shopify.StandardMetaobjectDefinitionEnablePayload.userErrors";
+        }
+
+        public static class StandardMetaobjectDefinitionFieldTemplate
+        {
+            public const string description = "shopify.StandardMetaobjectDefinitionFieldTemplate.description";
+            public const string key = "shopify.StandardMetaobjectDefinitionFieldTemplate.key";
+            public const string name = "shopify.StandardMetaobjectDefinitionFieldTemplate.name";
+            public const string required = "shopify.StandardMetaobjectDefinitionFieldTemplate.required";
+            public const string type = "shopify.StandardMetaobjectDefinitionFieldTemplate.type";
+            public const string validations = "shopify.StandardMetaobjectDefinitionFieldTemplate.validations";
+            public const string visibleToStorefrontApi = "shopify.StandardMetaobjectDefinitionFieldTemplate.visibleToStorefrontApi";
+        }
+
+        public static class StandardMetaobjectDefinitionTemplate
+        {
+            public const string description = "shopify.StandardMetaobjectDefinitionTemplate.description";
+            public const string displayNameKey = "shopify.StandardMetaobjectDefinitionTemplate.displayNameKey";
+            public const string enabledCapabilities = "shopify.StandardMetaobjectDefinitionTemplate.enabledCapabilities";
+            public const string fieldDefinitions = "shopify.StandardMetaobjectDefinitionTemplate.fieldDefinitions";
+            public const string name = "shopify.StandardMetaobjectDefinitionTemplate.name";
+            public const string type = "shopify.StandardMetaobjectDefinitionTemplate.type";
+        }
+
+        public static class StandardizedProductType
+        {
+            public const string productTaxonomyNode = "shopify.StandardizedProductType.productTaxonomyNode";
+        }
+
+        public static class StoreCreditAccount
+        {
+            public const string balance = "shopify.StoreCreditAccount.balance";
+            public const string id = "shopify.StoreCreditAccount.id";
+            public const string owner = "shopify.StoreCreditAccount.owner";
+            public const string transactions = "shopify.StoreCreditAccount.transactions";
+        }
+
+        public static class StoreCreditAccountConnection
+        {
+            public const string edges = "shopify.StoreCreditAccountConnection.edges";
+            public const string nodes = "shopify.StoreCreditAccountConnection.nodes";
+            public const string pageInfo = "shopify.StoreCreditAccountConnection.pageInfo";
+        }
+
+        public static class StoreCreditAccountCreditPayload
+        {
+            public const string storeCreditAccountTransaction = "shopify.StoreCreditAccountCreditPayload.storeCreditAccountTransaction";
+            public const string userErrors = "shopify.StoreCreditAccountCreditPayload.userErrors";
+        }
+
+        public static class StoreCreditAccountCreditTransaction
+        {
+            public const string account = "shopify.StoreCreditAccountCreditTransaction.account";
+            public const string amount = "shopify.StoreCreditAccountCreditTransaction.amount";
+            public const string balanceAfterTransaction = "shopify.StoreCreditAccountCreditTransaction.balanceAfterTransaction";
+            public const string createdAt = "shopify.StoreCreditAccountCreditTransaction.createdAt";
+            public const string @event = "shopify.StoreCreditAccountCreditTransaction.event";
+            public const string expiresAt = "shopify.StoreCreditAccountCreditTransaction.expiresAt";
+            public const string id = "shopify.StoreCreditAccountCreditTransaction.id";
+            public const string origin = "shopify.StoreCreditAccountCreditTransaction.origin";
+            public const string remainingAmount = "shopify.StoreCreditAccountCreditTransaction.remainingAmount";
+        }
+
+        public static class StoreCreditAccountCreditUserError
+        {
+            public const string code = "shopify.StoreCreditAccountCreditUserError.code";
+            public const string field = "shopify.StoreCreditAccountCreditUserError.field";
+            public const string message = "shopify.StoreCreditAccountCreditUserError.message";
+        }
+
+        public static class StoreCreditAccountDebitPayload
+        {
+            public const string storeCreditAccountTransaction = "shopify.StoreCreditAccountDebitPayload.storeCreditAccountTransaction";
+            public const string userErrors = "shopify.StoreCreditAccountDebitPayload.userErrors";
+        }
+
+        public static class StoreCreditAccountDebitRevertTransaction
+        {
+            public const string account = "shopify.StoreCreditAccountDebitRevertTransaction.account";
+            public const string amount = "shopify.StoreCreditAccountDebitRevertTransaction.amount";
+            public const string balanceAfterTransaction = "shopify.StoreCreditAccountDebitRevertTransaction.balanceAfterTransaction";
+            public const string createdAt = "shopify.StoreCreditAccountDebitRevertTransaction.createdAt";
+            public const string debitTransaction = "shopify.StoreCreditAccountDebitRevertTransaction.debitTransaction";
+            public const string @event = "shopify.StoreCreditAccountDebitRevertTransaction.event";
+            public const string id = "shopify.StoreCreditAccountDebitRevertTransaction.id";
+            public const string origin = "shopify.StoreCreditAccountDebitRevertTransaction.origin";
+        }
+
+        public static class StoreCreditAccountDebitTransaction
+        {
+            public const string account = "shopify.StoreCreditAccountDebitTransaction.account";
+            public const string amount = "shopify.StoreCreditAccountDebitTransaction.amount";
+            public const string balanceAfterTransaction = "shopify.StoreCreditAccountDebitTransaction.balanceAfterTransaction";
+            public const string createdAt = "shopify.StoreCreditAccountDebitTransaction.createdAt";
+            public const string @event = "shopify.StoreCreditAccountDebitTransaction.event";
+            public const string id = "shopify.StoreCreditAccountDebitTransaction.id";
+            public const string origin = "shopify.StoreCreditAccountDebitTransaction.origin";
+        }
+
+        public static class StoreCreditAccountDebitUserError
+        {
+            public const string code = "shopify.StoreCreditAccountDebitUserError.code";
+            public const string field = "shopify.StoreCreditAccountDebitUserError.field";
+            public const string message = "shopify.StoreCreditAccountDebitUserError.message";
+        }
+
+        public static class StoreCreditAccountEdge
+        {
+            public const string cursor = "shopify.StoreCreditAccountEdge.cursor";
+            public const string node = "shopify.StoreCreditAccountEdge.node";
+        }
+
+        public static class StoreCreditAccountExpirationTransaction
+        {
+            public const string account = "shopify.StoreCreditAccountExpirationTransaction.account";
+            public const string amount = "shopify.StoreCreditAccountExpirationTransaction.amount";
+            public const string balanceAfterTransaction = "shopify.StoreCreditAccountExpirationTransaction.balanceAfterTransaction";
+            public const string createdAt = "shopify.StoreCreditAccountExpirationTransaction.createdAt";
+            public const string creditTransaction = "shopify.StoreCreditAccountExpirationTransaction.creditTransaction";
+            public const string @event = "shopify.StoreCreditAccountExpirationTransaction.event";
+            public const string origin = "shopify.StoreCreditAccountExpirationTransaction.origin";
+        }
+
+        public static class IStoreCreditAccountTransaction
+        {
+            public const string account = "shopify.IStoreCreditAccountTransaction.account";
+            public const string amount = "shopify.IStoreCreditAccountTransaction.amount";
+            public const string balanceAfterTransaction = "shopify.IStoreCreditAccountTransaction.balanceAfterTransaction";
+            public const string createdAt = "shopify.IStoreCreditAccountTransaction.createdAt";
+            public const string @event = "shopify.IStoreCreditAccountTransaction.event";
+            public const string origin = "shopify.IStoreCreditAccountTransaction.origin";
+        }
+
+        public static class StoreCreditAccountTransactionConnection
+        {
+            public const string edges = "shopify.StoreCreditAccountTransactionConnection.edges";
+            public const string nodes = "shopify.StoreCreditAccountTransactionConnection.nodes";
+            public const string pageInfo = "shopify.StoreCreditAccountTransactionConnection.pageInfo";
+        }
+
+        public static class StoreCreditAccountTransactionEdge
+        {
+            public const string cursor = "shopify.StoreCreditAccountTransactionEdge.cursor";
+            public const string node = "shopify.StoreCreditAccountTransactionEdge.node";
+        }
+
+        public static class IStoreCreditAccountTransactionOrigin
+        {
+            public const string accountNumber = "shopify.IStoreCreditAccountTransactionOrigin.accountNumber";
+            public const string amount = "shopify.IStoreCreditAccountTransactionOrigin.amount";
+            public const string amountRoundingSet = "shopify.IStoreCreditAccountTransactionOrigin.amountRoundingSet";
+            public const string amountSet = "shopify.IStoreCreditAccountTransactionOrigin.amountSet";
+            public const string amountV2 = "shopify.IStoreCreditAccountTransactionOrigin.amountV2";
+            public const string authorizationCode = "shopify.IStoreCreditAccountTransactionOrigin.authorizationCode";
+            public const string authorizationExpiresAt = "shopify.IStoreCreditAccountTransactionOrigin.authorizationExpiresAt";
+            public const string createdAt = "shopify.IStoreCreditAccountTransactionOrigin.createdAt";
+            public const string errorCode = "shopify.IStoreCreditAccountTransactionOrigin.errorCode";
+            public const string fees = "shopify.IStoreCreditAccountTransactionOrigin.fees";
+            public const string formattedGateway = "shopify.IStoreCreditAccountTransactionOrigin.formattedGateway";
+            public const string gateway = "shopify.IStoreCreditAccountTransactionOrigin.gateway";
+            public const string id = "shopify.IStoreCreditAccountTransactionOrigin.id";
+            public const string kind = "shopify.IStoreCreditAccountTransactionOrigin.kind";
+            public const string manualPaymentGateway = "shopify.IStoreCreditAccountTransactionOrigin.manualPaymentGateway";
+            public const string manuallyCapturable = "shopify.IStoreCreditAccountTransactionOrigin.manuallyCapturable";
+            public const string maximumRefundable = "shopify.IStoreCreditAccountTransactionOrigin.maximumRefundable";
+            public const string maximumRefundableV2 = "shopify.IStoreCreditAccountTransactionOrigin.maximumRefundableV2";
+            public const string multiCapturable = "shopify.IStoreCreditAccountTransactionOrigin.multiCapturable";
+            public const string order = "shopify.IStoreCreditAccountTransactionOrigin.order";
+            public const string parentTransaction = "shopify.IStoreCreditAccountTransactionOrigin.parentTransaction";
+            public const string paymentDetails = "shopify.IStoreCreditAccountTransactionOrigin.paymentDetails";
+            public const string paymentIcon = "shopify.IStoreCreditAccountTransactionOrigin.paymentIcon";
+            public const string paymentId = "shopify.IStoreCreditAccountTransactionOrigin.paymentId";
+            public const string paymentMethod = "shopify.IStoreCreditAccountTransactionOrigin.paymentMethod";
+            public const string processedAt = "shopify.IStoreCreditAccountTransactionOrigin.processedAt";
+            public const string receiptJson = "shopify.IStoreCreditAccountTransactionOrigin.receiptJson";
+            public const string settlementCurrency = "shopify.IStoreCreditAccountTransactionOrigin.settlementCurrency";
+            public const string settlementCurrencyRate = "shopify.IStoreCreditAccountTransactionOrigin.settlementCurrencyRate";
+            public const string shopifyPaymentsSet = "shopify.IStoreCreditAccountTransactionOrigin.shopifyPaymentsSet";
+            public const string status = "shopify.IStoreCreditAccountTransactionOrigin.status";
+            public const string test = "shopify.IStoreCreditAccountTransactionOrigin.test";
+            public const string totalUnsettled = "shopify.IStoreCreditAccountTransactionOrigin.totalUnsettled";
+            public const string totalUnsettledSet = "shopify.IStoreCreditAccountTransactionOrigin.totalUnsettledSet";
+            public const string totalUnsettledV2 = "shopify.IStoreCreditAccountTransactionOrigin.totalUnsettledV2";
+            public const string user = "shopify.IStoreCreditAccountTransactionOrigin.user";
+        }
+
+        public static class StorefrontAccessToken
+        {
+            public const string accessScopes = "shopify.StorefrontAccessToken.accessScopes";
+            public const string accessToken = "shopify.StorefrontAccessToken.accessToken";
+            public const string createdAt = "shopify.StorefrontAccessToken.createdAt";
+            public const string id = "shopify.StorefrontAccessToken.id";
+            public const string title = "shopify.StorefrontAccessToken.title";
+            public const string updatedAt = "shopify.StorefrontAccessToken.updatedAt";
+        }
+
+        public static class StorefrontAccessTokenConnection
+        {
+            public const string edges = "shopify.StorefrontAccessTokenConnection.edges";
+            public const string nodes = "shopify.StorefrontAccessTokenConnection.nodes";
+            public const string pageInfo = "shopify.StorefrontAccessTokenConnection.pageInfo";
+        }
+
+        public static class StorefrontAccessTokenCreatePayload
+        {
+            public const string shop = "shopify.StorefrontAccessTokenCreatePayload.shop";
+            public const string storefrontAccessToken = "shopify.StorefrontAccessTokenCreatePayload.storefrontAccessToken";
+            public const string userErrors = "shopify.StorefrontAccessTokenCreatePayload.userErrors";
+        }
+
+        public static class StorefrontAccessTokenDeletePayload
+        {
+            public const string deletedStorefrontAccessTokenId = "shopify.StorefrontAccessTokenDeletePayload.deletedStorefrontAccessTokenId";
+            public const string userErrors = "shopify.StorefrontAccessTokenDeletePayload.userErrors";
+        }
+
+        public static class StorefrontAccessTokenEdge
+        {
+            public const string cursor = "shopify.StorefrontAccessTokenEdge.cursor";
+            public const string node = "shopify.StorefrontAccessTokenEdge.node";
+        }
+
+        public static class StringConnection
+        {
+            public const string edges = "shopify.StringConnection.edges";
+            public const string nodes = "shopify.StringConnection.nodes";
+            public const string pageInfo = "shopify.StringConnection.pageInfo";
+        }
+
+        public static class StringEdge
+        {
+            public const string cursor = "shopify.StringEdge.cursor";
+            public const string node = "shopify.StringEdge.node";
+        }
+
+        public static class SubscriptionAppliedCodeDiscount
+        {
+            public const string id = "shopify.SubscriptionAppliedCodeDiscount.id";
+            public const string redeemCode = "shopify.SubscriptionAppliedCodeDiscount.redeemCode";
+            public const string rejectionReason = "shopify.SubscriptionAppliedCodeDiscount.rejectionReason";
+        }
+
+        public static class SubscriptionBillingAttempt
+        {
+            public const string completedAt = "shopify.SubscriptionBillingAttempt.completedAt";
+            public const string createdAt = "shopify.SubscriptionBillingAttempt.createdAt";
+            public const string errorCode = "shopify.SubscriptionBillingAttempt.errorCode";
+            public const string errorMessage = "shopify.SubscriptionBillingAttempt.errorMessage";
+            public const string id = "shopify.SubscriptionBillingAttempt.id";
+            public const string idempotencyKey = "shopify.SubscriptionBillingAttempt.idempotencyKey";
+            public const string nextActionUrl = "shopify.SubscriptionBillingAttempt.nextActionUrl";
+            public const string order = "shopify.SubscriptionBillingAttempt.order";
+            public const string originTime = "shopify.SubscriptionBillingAttempt.originTime";
+            public const string paymentGroupId = "shopify.SubscriptionBillingAttempt.paymentGroupId";
+            public const string paymentSessionId = "shopify.SubscriptionBillingAttempt.paymentSessionId";
+            public const string processingError = "shopify.SubscriptionBillingAttempt.processingError";
+            public const string ready = "shopify.SubscriptionBillingAttempt.ready";
+            public const string respectInventoryPolicy = "shopify.SubscriptionBillingAttempt.respectInventoryPolicy";
+            public const string subscriptionContract = "shopify.SubscriptionBillingAttempt.subscriptionContract";
+            public const string transactions = "shopify.SubscriptionBillingAttempt.transactions";
+        }
+
+        public static class SubscriptionBillingAttemptConnection
+        {
+            public const string edges = "shopify.SubscriptionBillingAttemptConnection.edges";
+            public const string nodes = "shopify.SubscriptionBillingAttemptConnection.nodes";
+            public const string pageInfo = "shopify.SubscriptionBillingAttemptConnection.pageInfo";
+        }
+
+        public static class SubscriptionBillingAttemptCreatePayload
+        {
+            public const string subscriptionBillingAttempt = "shopify.SubscriptionBillingAttemptCreatePayload.subscriptionBillingAttempt";
+            public const string userErrors = "shopify.SubscriptionBillingAttemptCreatePayload.userErrors";
+        }
+
+        public static class SubscriptionBillingAttemptEdge
+        {
+            public const string cursor = "shopify.SubscriptionBillingAttemptEdge.cursor";
+            public const string node = "shopify.SubscriptionBillingAttemptEdge.node";
+        }
+
+        public static class SubscriptionBillingAttemptGenericError
+        {
+            public const string code = "shopify.SubscriptionBillingAttemptGenericError.code";
+            public const string message = "shopify.SubscriptionBillingAttemptGenericError.message";
+        }
+
+        public static class SubscriptionBillingAttemptInsufficientStockProductVariantsError
+        {
+            public const string code = "shopify.SubscriptionBillingAttemptInsufficientStockProductVariantsError.code";
+            public const string insufficientStockProductVariants = "shopify.SubscriptionBillingAttemptInsufficientStockProductVariantsError.insufficientStockProductVariants";
+            public const string message = "shopify.SubscriptionBillingAttemptInsufficientStockProductVariantsError.message";
+        }
+
+        public static class SubscriptionBillingAttemptOutOfStockProductVariantsError
+        {
+            public const string code = "shopify.SubscriptionBillingAttemptOutOfStockProductVariantsError.code";
+            public const string message = "shopify.SubscriptionBillingAttemptOutOfStockProductVariantsError.message";
+            public const string outOfStockProductVariants = "shopify.SubscriptionBillingAttemptOutOfStockProductVariantsError.outOfStockProductVariants";
+        }
+
+        public static class ISubscriptionBillingAttemptProcessingError
+        {
+            public const string code = "shopify.ISubscriptionBillingAttemptProcessingError.code";
+            public const string message = "shopify.ISubscriptionBillingAttemptProcessingError.message";
+        }
+
+        public static class SubscriptionBillingCycle
+        {
+            public const string billingAttemptExpectedDate = "shopify.SubscriptionBillingCycle.billingAttemptExpectedDate";
+            public const string billingAttempts = "shopify.SubscriptionBillingCycle.billingAttempts";
+            public const string cycleEndAt = "shopify.SubscriptionBillingCycle.cycleEndAt";
+            public const string cycleIndex = "shopify.SubscriptionBillingCycle.cycleIndex";
+            public const string cycleStartAt = "shopify.SubscriptionBillingCycle.cycleStartAt";
+            public const string edited = "shopify.SubscriptionBillingCycle.edited";
+            public const string editedContract = "shopify.SubscriptionBillingCycle.editedContract";
+            public const string skipped = "shopify.SubscriptionBillingCycle.skipped";
+            public const string sourceContract = "shopify.SubscriptionBillingCycle.sourceContract";
+            public const string status = "shopify.SubscriptionBillingCycle.status";
+        }
+
+        public static class SubscriptionBillingCycleBulkChargePayload
+        {
+            public const string job = "shopify.SubscriptionBillingCycleBulkChargePayload.job";
+            public const string userErrors = "shopify.SubscriptionBillingCycleBulkChargePayload.userErrors";
+        }
+
+        public static class SubscriptionBillingCycleBulkSearchPayload
+        {
+            public const string job = "shopify.SubscriptionBillingCycleBulkSearchPayload.job";
+            public const string userErrors = "shopify.SubscriptionBillingCycleBulkSearchPayload.userErrors";
+        }
+
+        public static class SubscriptionBillingCycleBulkUserError
+        {
+            public const string code = "shopify.SubscriptionBillingCycleBulkUserError.code";
+            public const string field = "shopify.SubscriptionBillingCycleBulkUserError.field";
+            public const string message = "shopify.SubscriptionBillingCycleBulkUserError.message";
+        }
+
+        public static class SubscriptionBillingCycleChargePayload
+        {
+            public const string subscriptionBillingAttempt = "shopify.SubscriptionBillingCycleChargePayload.subscriptionBillingAttempt";
+            public const string userErrors = "shopify.SubscriptionBillingCycleChargePayload.userErrors";
+        }
+
+        public static class SubscriptionBillingCycleConnection
+        {
+            public const string edges = "shopify.SubscriptionBillingCycleConnection.edges";
+            public const string nodes = "shopify.SubscriptionBillingCycleConnection.nodes";
+            public const string pageInfo = "shopify.SubscriptionBillingCycleConnection.pageInfo";
+        }
+
+        public static class SubscriptionBillingCycleContractDraftCommitPayload
+        {
+            public const string contract = "shopify.SubscriptionBillingCycleContractDraftCommitPayload.contract";
+            public const string userErrors = "shopify.SubscriptionBillingCycleContractDraftCommitPayload.userErrors";
+        }
+
+        public static class SubscriptionBillingCycleContractDraftConcatenatePayload
+        {
+            public const string draft = "shopify.SubscriptionBillingCycleContractDraftConcatenatePayload.draft";
+            public const string userErrors = "shopify.SubscriptionBillingCycleContractDraftConcatenatePayload.userErrors";
+        }
+
+        public static class SubscriptionBillingCycleContractEditPayload
+        {
+            public const string draft = "shopify.SubscriptionBillingCycleContractEditPayload.draft";
+            public const string userErrors = "shopify.SubscriptionBillingCycleContractEditPayload.userErrors";
+        }
+
+        public static class SubscriptionBillingCycleEdge
+        {
+            public const string cursor = "shopify.SubscriptionBillingCycleEdge.cursor";
+            public const string node = "shopify.SubscriptionBillingCycleEdge.node";
+        }
+
+        public static class SubscriptionBillingCycleEditDeletePayload
+        {
+            public const string billingCycles = "shopify.SubscriptionBillingCycleEditDeletePayload.billingCycles";
+            public const string userErrors = "shopify.SubscriptionBillingCycleEditDeletePayload.userErrors";
+        }
+
+        public static class SubscriptionBillingCycleEditedContract
+        {
+            public const string app = "shopify.SubscriptionBillingCycleEditedContract.app";
+            public const string appAdminUrl = "shopify.SubscriptionBillingCycleEditedContract.appAdminUrl";
+            public const string billingCycles = "shopify.SubscriptionBillingCycleEditedContract.billingCycles";
+            public const string createdAt = "shopify.SubscriptionBillingCycleEditedContract.createdAt";
+            public const string currencyCode = "shopify.SubscriptionBillingCycleEditedContract.currencyCode";
+            public const string customAttributes = "shopify.SubscriptionBillingCycleEditedContract.customAttributes";
+            public const string customer = "shopify.SubscriptionBillingCycleEditedContract.customer";
+            public const string customerPaymentMethod = "shopify.SubscriptionBillingCycleEditedContract.customerPaymentMethod";
+            public const string deliveryMethod = "shopify.SubscriptionBillingCycleEditedContract.deliveryMethod";
+            public const string deliveryPrice = "shopify.SubscriptionBillingCycleEditedContract.deliveryPrice";
+            public const string discounts = "shopify.SubscriptionBillingCycleEditedContract.discounts";
+            public const string lineCount = "shopify.SubscriptionBillingCycleEditedContract.lineCount";
+            public const string lines = "shopify.SubscriptionBillingCycleEditedContract.lines";
+            public const string linesCount = "shopify.SubscriptionBillingCycleEditedContract.linesCount";
+            public const string note = "shopify.SubscriptionBillingCycleEditedContract.note";
+            public const string orders = "shopify.SubscriptionBillingCycleEditedContract.orders";
+            public const string updatedAt = "shopify.SubscriptionBillingCycleEditedContract.updatedAt";
+        }
+
+        public static class SubscriptionBillingCycleEditsDeletePayload
+        {
+            public const string billingCycles = "shopify.SubscriptionBillingCycleEditsDeletePayload.billingCycles";
+            public const string userErrors = "shopify.SubscriptionBillingCycleEditsDeletePayload.userErrors";
+        }
+
+        public static class SubscriptionBillingCycleScheduleEditPayload
+        {
+            public const string billingCycle = "shopify.SubscriptionBillingCycleScheduleEditPayload.billingCycle";
+            public const string userErrors = "shopify.SubscriptionBillingCycleScheduleEditPayload.userErrors";
+        }
+
+        public static class SubscriptionBillingCycleSkipPayload
+        {
+            public const string billingCycle = "shopify.SubscriptionBillingCycleSkipPayload.billingCycle";
+            public const string userErrors = "shopify.SubscriptionBillingCycleSkipPayload.userErrors";
+        }
+
+        public static class SubscriptionBillingCycleSkipUserError
+        {
+            public const string code = "shopify.SubscriptionBillingCycleSkipUserError.code";
+            public const string field = "shopify.SubscriptionBillingCycleSkipUserError.field";
+            public const string message = "shopify.SubscriptionBillingCycleSkipUserError.message";
+        }
+
+        public static class SubscriptionBillingCycleUnskipPayload
+        {
+            public const string billingCycle = "shopify.SubscriptionBillingCycleUnskipPayload.billingCycle";
+            public const string userErrors = "shopify.SubscriptionBillingCycleUnskipPayload.userErrors";
+        }
+
+        public static class SubscriptionBillingCycleUnskipUserError
+        {
+            public const string code = "shopify.SubscriptionBillingCycleUnskipUserError.code";
+            public const string field = "shopify.SubscriptionBillingCycleUnskipUserError.field";
+            public const string message = "shopify.SubscriptionBillingCycleUnskipUserError.message";
+        }
+
+        public static class SubscriptionBillingCycleUserError
+        {
+            public const string code = "shopify.SubscriptionBillingCycleUserError.code";
+            public const string field = "shopify.SubscriptionBillingCycleUserError.field";
+            public const string message = "shopify.SubscriptionBillingCycleUserError.message";
+        }
+
+        public static class SubscriptionBillingPolicy
+        {
+            public const string anchors = "shopify.SubscriptionBillingPolicy.anchors";
+            public const string interval = "shopify.SubscriptionBillingPolicy.interval";
+            public const string intervalCount = "shopify.SubscriptionBillingPolicy.intervalCount";
+            public const string maxCycles = "shopify.SubscriptionBillingPolicy.maxCycles";
+            public const string minCycles = "shopify.SubscriptionBillingPolicy.minCycles";
+        }
+
+        public static class SubscriptionContract
+        {
+            public const string app = "shopify.SubscriptionContract.app";
+            public const string appAdminUrl = "shopify.SubscriptionContract.appAdminUrl";
+            public const string billingAttempts = "shopify.SubscriptionContract.billingAttempts";
+            public const string billingPolicy = "shopify.SubscriptionContract.billingPolicy";
+            public const string createdAt = "shopify.SubscriptionContract.createdAt";
+            public const string currencyCode = "shopify.SubscriptionContract.currencyCode";
+            public const string customAttributes = "shopify.SubscriptionContract.customAttributes";
+            public const string customer = "shopify.SubscriptionContract.customer";
+            public const string customerPaymentMethod = "shopify.SubscriptionContract.customerPaymentMethod";
+            public const string deliveryMethod = "shopify.SubscriptionContract.deliveryMethod";
+            public const string deliveryPolicy = "shopify.SubscriptionContract.deliveryPolicy";
+            public const string deliveryPrice = "shopify.SubscriptionContract.deliveryPrice";
+            public const string discounts = "shopify.SubscriptionContract.discounts";
+            public const string id = "shopify.SubscriptionContract.id";
+            public const string lastBillingAttemptErrorType = "shopify.SubscriptionContract.lastBillingAttemptErrorType";
+            public const string lastPaymentStatus = "shopify.SubscriptionContract.lastPaymentStatus";
+            public const string lineCount = "shopify.SubscriptionContract.lineCount";
+            public const string lines = "shopify.SubscriptionContract.lines";
+            public const string linesCount = "shopify.SubscriptionContract.linesCount";
+            public const string nextBillingDate = "shopify.SubscriptionContract.nextBillingDate";
+            public const string note = "shopify.SubscriptionContract.note";
+            public const string orders = "shopify.SubscriptionContract.orders";
+            public const string originOrder = "shopify.SubscriptionContract.originOrder";
+            public const string revisionId = "shopify.SubscriptionContract.revisionId";
+            public const string status = "shopify.SubscriptionContract.status";
+            public const string updatedAt = "shopify.SubscriptionContract.updatedAt";
+        }
+
+        public static class SubscriptionContractActivatePayload
+        {
+            public const string contract = "shopify.SubscriptionContractActivatePayload.contract";
+            public const string userErrors = "shopify.SubscriptionContractActivatePayload.userErrors";
+        }
+
+        public static class SubscriptionContractAtomicCreatePayload
+        {
+            public const string contract = "shopify.SubscriptionContractAtomicCreatePayload.contract";
+            public const string userErrors = "shopify.SubscriptionContractAtomicCreatePayload.userErrors";
+        }
+
+        public static class ISubscriptionContractBase
+        {
+            public const string app = "shopify.ISubscriptionContractBase.app";
+            public const string appAdminUrl = "shopify.ISubscriptionContractBase.appAdminUrl";
+            public const string currencyCode = "shopify.ISubscriptionContractBase.currencyCode";
+            public const string customAttributes = "shopify.ISubscriptionContractBase.customAttributes";
+            public const string customer = "shopify.ISubscriptionContractBase.customer";
+            public const string customerPaymentMethod = "shopify.ISubscriptionContractBase.customerPaymentMethod";
+            public const string deliveryMethod = "shopify.ISubscriptionContractBase.deliveryMethod";
+            public const string deliveryPrice = "shopify.ISubscriptionContractBase.deliveryPrice";
+            public const string discounts = "shopify.ISubscriptionContractBase.discounts";
+            public const string lineCount = "shopify.ISubscriptionContractBase.lineCount";
+            public const string lines = "shopify.ISubscriptionContractBase.lines";
+            public const string linesCount = "shopify.ISubscriptionContractBase.linesCount";
+            public const string note = "shopify.ISubscriptionContractBase.note";
+            public const string orders = "shopify.ISubscriptionContractBase.orders";
+            public const string updatedAt = "shopify.ISubscriptionContractBase.updatedAt";
+        }
+
+        public static class SubscriptionContractCancelPayload
+        {
+            public const string contract = "shopify.SubscriptionContractCancelPayload.contract";
+            public const string userErrors = "shopify.SubscriptionContractCancelPayload.userErrors";
+        }
+
+        public static class SubscriptionContractConnection
+        {
+            public const string edges = "shopify.SubscriptionContractConnection.edges";
+            public const string nodes = "shopify.SubscriptionContractConnection.nodes";
+            public const string pageInfo = "shopify.SubscriptionContractConnection.pageInfo";
+        }
+
+        public static class SubscriptionContractCreatePayload
+        {
+            public const string draft = "shopify.SubscriptionContractCreatePayload.draft";
+            public const string userErrors = "shopify.SubscriptionContractCreatePayload.userErrors";
+        }
+
+        public static class SubscriptionContractEdge
+        {
+            public const string cursor = "shopify.SubscriptionContractEdge.cursor";
+            public const string node = "shopify.SubscriptionContractEdge.node";
+        }
+
+        public static class SubscriptionContractExpirePayload
+        {
+            public const string contract = "shopify.SubscriptionContractExpirePayload.contract";
+            public const string userErrors = "shopify.SubscriptionContractExpirePayload.userErrors";
+        }
+
+        public static class SubscriptionContractFailPayload
+        {
+            public const string contract = "shopify.SubscriptionContractFailPayload.contract";
+            public const string userErrors = "shopify.SubscriptionContractFailPayload.userErrors";
+        }
+
+        public static class SubscriptionContractPausePayload
+        {
+            public const string contract = "shopify.SubscriptionContractPausePayload.contract";
+            public const string userErrors = "shopify.SubscriptionContractPausePayload.userErrors";
+        }
+
+        public static class SubscriptionContractProductChangePayload
+        {
+            public const string contract = "shopify.SubscriptionContractProductChangePayload.contract";
+            public const string lineUpdated = "shopify.SubscriptionContractProductChangePayload.lineUpdated";
+            public const string userErrors = "shopify.SubscriptionContractProductChangePayload.userErrors";
+        }
+
+        public static class SubscriptionContractSetNextBillingDatePayload
+        {
+            public const string contract = "shopify.SubscriptionContractSetNextBillingDatePayload.contract";
+            public const string userErrors = "shopify.SubscriptionContractSetNextBillingDatePayload.userErrors";
+        }
+
+        public static class SubscriptionContractStatusUpdateUserError
+        {
+            public const string code = "shopify.SubscriptionContractStatusUpdateUserError.code";
+            public const string field = "shopify.SubscriptionContractStatusUpdateUserError.field";
+            public const string message = "shopify.SubscriptionContractStatusUpdateUserError.message";
+        }
+
+        public static class SubscriptionContractUpdatePayload
+        {
+            public const string draft = "shopify.SubscriptionContractUpdatePayload.draft";
+            public const string userErrors = "shopify.SubscriptionContractUpdatePayload.userErrors";
+        }
+
+        public static class SubscriptionContractUserError
+        {
+            public const string code = "shopify.SubscriptionContractUserError.code";
+            public const string field = "shopify.SubscriptionContractUserError.field";
+            public const string message = "shopify.SubscriptionContractUserError.message";
+        }
+
+        public static class SubscriptionCyclePriceAdjustment
+        {
+            public const string adjustmentType = "shopify.SubscriptionCyclePriceAdjustment.adjustmentType";
+            public const string adjustmentValue = "shopify.SubscriptionCyclePriceAdjustment.adjustmentValue";
+            public const string afterCycle = "shopify.SubscriptionCyclePriceAdjustment.afterCycle";
+            public const string computedPrice = "shopify.SubscriptionCyclePriceAdjustment.computedPrice";
+        }
+
+        public static class ISubscriptionDeliveryMethod
+        {
+        }
+
+        public static class SubscriptionDeliveryMethodLocalDelivery
+        {
+            public const string address = "shopify.SubscriptionDeliveryMethodLocalDelivery.address";
+            public const string localDeliveryOption = "shopify.SubscriptionDeliveryMethodLocalDelivery.localDeliveryOption";
+        }
+
+        public static class SubscriptionDeliveryMethodLocalDeliveryOption
+        {
+            public const string code = "shopify.SubscriptionDeliveryMethodLocalDeliveryOption.code";
+            public const string description = "shopify.SubscriptionDeliveryMethodLocalDeliveryOption.description";
+            public const string instructions = "shopify.SubscriptionDeliveryMethodLocalDeliveryOption.instructions";
+            public const string phone = "shopify.SubscriptionDeliveryMethodLocalDeliveryOption.phone";
+            public const string presentmentTitle = "shopify.SubscriptionDeliveryMethodLocalDeliveryOption.presentmentTitle";
+            public const string title = "shopify.SubscriptionDeliveryMethodLocalDeliveryOption.title";
+        }
+
+        public static class SubscriptionDeliveryMethodPickup
+        {
+            public const string pickupOption = "shopify.SubscriptionDeliveryMethodPickup.pickupOption";
+        }
+
+        public static class SubscriptionDeliveryMethodPickupOption
+        {
+            public const string code = "shopify.SubscriptionDeliveryMethodPickupOption.code";
+            public const string description = "shopify.SubscriptionDeliveryMethodPickupOption.description";
+            public const string location = "shopify.SubscriptionDeliveryMethodPickupOption.location";
+            public const string presentmentTitle = "shopify.SubscriptionDeliveryMethodPickupOption.presentmentTitle";
+            public const string title = "shopify.SubscriptionDeliveryMethodPickupOption.title";
+        }
+
+        public static class SubscriptionDeliveryMethodShipping
+        {
+            public const string address = "shopify.SubscriptionDeliveryMethodShipping.address";
+            public const string shippingOption = "shopify.SubscriptionDeliveryMethodShipping.shippingOption";
+        }
+
+        public static class SubscriptionDeliveryMethodShippingOption
+        {
+            public const string carrierService = "shopify.SubscriptionDeliveryMethodShippingOption.carrierService";
+            public const string code = "shopify.SubscriptionDeliveryMethodShippingOption.code";
+            public const string description = "shopify.SubscriptionDeliveryMethodShippingOption.description";
+            public const string presentmentTitle = "shopify.SubscriptionDeliveryMethodShippingOption.presentmentTitle";
+            public const string title = "shopify.SubscriptionDeliveryMethodShippingOption.title";
+        }
+
+        public static class ISubscriptionDeliveryOption
+        {
+            public const string code = "shopify.ISubscriptionDeliveryOption.code";
+            public const string description = "shopify.ISubscriptionDeliveryOption.description";
+            public const string phoneRequired = "shopify.ISubscriptionDeliveryOption.phoneRequired";
+            public const string presentmentTitle = "shopify.ISubscriptionDeliveryOption.presentmentTitle";
+            public const string price = "shopify.ISubscriptionDeliveryOption.price";
+            public const string title = "shopify.ISubscriptionDeliveryOption.title";
+        }
+
+        public static class ISubscriptionDeliveryOptionResult
+        {
+        }
+
+        public static class SubscriptionDeliveryOptionResultFailure
+        {
+            public const string message = "shopify.SubscriptionDeliveryOptionResultFailure.message";
+        }
+
+        public static class SubscriptionDeliveryOptionResultSuccess
+        {
+            public const string deliveryOptions = "shopify.SubscriptionDeliveryOptionResultSuccess.deliveryOptions";
+        }
+
+        public static class SubscriptionDeliveryPolicy
+        {
+            public const string anchors = "shopify.SubscriptionDeliveryPolicy.anchors";
+            public const string interval = "shopify.SubscriptionDeliveryPolicy.interval";
+            public const string intervalCount = "shopify.SubscriptionDeliveryPolicy.intervalCount";
+        }
+
+        public static class ISubscriptionDiscount
+        {
+            public const string id = "shopify.ISubscriptionDiscount.id";
+            public const string rejectionReason = "shopify.ISubscriptionDiscount.rejectionReason";
+        }
+
+        public static class SubscriptionDiscountAllocation
+        {
+            public const string amount = "shopify.SubscriptionDiscountAllocation.amount";
+            public const string discount = "shopify.SubscriptionDiscountAllocation.discount";
+        }
+
+        public static class SubscriptionDiscountConnection
+        {
+            public const string edges = "shopify.SubscriptionDiscountConnection.edges";
+            public const string nodes = "shopify.SubscriptionDiscountConnection.nodes";
+            public const string pageInfo = "shopify.SubscriptionDiscountConnection.pageInfo";
+        }
+
+        public static class SubscriptionDiscountEdge
+        {
+            public const string cursor = "shopify.SubscriptionDiscountEdge.cursor";
+            public const string node = "shopify.SubscriptionDiscountEdge.node";
+        }
+
+        public static class SubscriptionDiscountEntitledLines
+        {
+            public const string all = "shopify.SubscriptionDiscountEntitledLines.all";
+            public const string lines = "shopify.SubscriptionDiscountEntitledLines.lines";
+        }
+
+        public static class SubscriptionDiscountFixedAmountValue
+        {
+            public const string amount = "shopify.SubscriptionDiscountFixedAmountValue.amount";
+            public const string appliesOnEachItem = "shopify.SubscriptionDiscountFixedAmountValue.appliesOnEachItem";
+        }
+
+        public static class SubscriptionDiscountPercentageValue
+        {
+            public const string percentage = "shopify.SubscriptionDiscountPercentageValue.percentage";
+        }
+
+        public static class ISubscriptionDiscountValue
+        {
+        }
+
+        public static class SubscriptionDraft
+        {
+            public const string billingCycle = "shopify.SubscriptionDraft.billingCycle";
+            public const string billingPolicy = "shopify.SubscriptionDraft.billingPolicy";
+            public const string concatenatedBillingCycles = "shopify.SubscriptionDraft.concatenatedBillingCycles";
+            public const string currencyCode = "shopify.SubscriptionDraft.currencyCode";
+            public const string customAttributes = "shopify.SubscriptionDraft.customAttributes";
+            public const string customer = "shopify.SubscriptionDraft.customer";
+            public const string customerPaymentMethod = "shopify.SubscriptionDraft.customerPaymentMethod";
+            public const string deliveryMethod = "shopify.SubscriptionDraft.deliveryMethod";
+            public const string deliveryOptions = "shopify.SubscriptionDraft.deliveryOptions";
+            public const string deliveryPolicy = "shopify.SubscriptionDraft.deliveryPolicy";
+            public const string deliveryPrice = "shopify.SubscriptionDraft.deliveryPrice";
+            public const string discounts = "shopify.SubscriptionDraft.discounts";
+            public const string discountsAdded = "shopify.SubscriptionDraft.discountsAdded";
+            public const string discountsRemoved = "shopify.SubscriptionDraft.discountsRemoved";
+            public const string discountsUpdated = "shopify.SubscriptionDraft.discountsUpdated";
+            public const string id = "shopify.SubscriptionDraft.id";
+            public const string lines = "shopify.SubscriptionDraft.lines";
+            public const string linesAdded = "shopify.SubscriptionDraft.linesAdded";
+            public const string linesRemoved = "shopify.SubscriptionDraft.linesRemoved";
+            public const string nextBillingDate = "shopify.SubscriptionDraft.nextBillingDate";
+            public const string note = "shopify.SubscriptionDraft.note";
+            public const string originalContract = "shopify.SubscriptionDraft.originalContract";
+            public const string shippingOptions = "shopify.SubscriptionDraft.shippingOptions";
+            public const string status = "shopify.SubscriptionDraft.status";
+        }
+
+        public static class SubscriptionDraftCommitPayload
+        {
+            public const string contract = "shopify.SubscriptionDraftCommitPayload.contract";
+            public const string userErrors = "shopify.SubscriptionDraftCommitPayload.userErrors";
+        }
+
+        public static class SubscriptionDraftDiscountAddPayload
+        {
+            public const string discountAdded = "shopify.SubscriptionDraftDiscountAddPayload.discountAdded";
+            public const string draft = "shopify.SubscriptionDraftDiscountAddPayload.draft";
+            public const string userErrors = "shopify.SubscriptionDraftDiscountAddPayload.userErrors";
+        }
+
+        public static class SubscriptionDraftDiscountCodeApplyPayload
+        {
+            public const string appliedDiscount = "shopify.SubscriptionDraftDiscountCodeApplyPayload.appliedDiscount";
+            public const string draft = "shopify.SubscriptionDraftDiscountCodeApplyPayload.draft";
+            public const string userErrors = "shopify.SubscriptionDraftDiscountCodeApplyPayload.userErrors";
+        }
+
+        public static class SubscriptionDraftDiscountRemovePayload
+        {
+            public const string discountRemoved = "shopify.SubscriptionDraftDiscountRemovePayload.discountRemoved";
+            public const string draft = "shopify.SubscriptionDraftDiscountRemovePayload.draft";
+            public const string userErrors = "shopify.SubscriptionDraftDiscountRemovePayload.userErrors";
+        }
+
+        public static class SubscriptionDraftDiscountUpdatePayload
+        {
+            public const string discountUpdated = "shopify.SubscriptionDraftDiscountUpdatePayload.discountUpdated";
+            public const string draft = "shopify.SubscriptionDraftDiscountUpdatePayload.draft";
+            public const string userErrors = "shopify.SubscriptionDraftDiscountUpdatePayload.userErrors";
+        }
+
+        public static class SubscriptionDraftFreeShippingDiscountAddPayload
+        {
+            public const string discountAdded = "shopify.SubscriptionDraftFreeShippingDiscountAddPayload.discountAdded";
+            public const string draft = "shopify.SubscriptionDraftFreeShippingDiscountAddPayload.draft";
+            public const string userErrors = "shopify.SubscriptionDraftFreeShippingDiscountAddPayload.userErrors";
+        }
+
+        public static class SubscriptionDraftFreeShippingDiscountUpdatePayload
+        {
+            public const string discountUpdated = "shopify.SubscriptionDraftFreeShippingDiscountUpdatePayload.discountUpdated";
+            public const string draft = "shopify.SubscriptionDraftFreeShippingDiscountUpdatePayload.draft";
+            public const string userErrors = "shopify.SubscriptionDraftFreeShippingDiscountUpdatePayload.userErrors";
+        }
+
+        public static class SubscriptionDraftLineAddPayload
+        {
+            public const string draft = "shopify.SubscriptionDraftLineAddPayload.draft";
+            public const string lineAdded = "shopify.SubscriptionDraftLineAddPayload.lineAdded";
+            public const string userErrors = "shopify.SubscriptionDraftLineAddPayload.userErrors";
+        }
+
+        public static class SubscriptionDraftLineRemovePayload
+        {
+            public const string discountsUpdated = "shopify.SubscriptionDraftLineRemovePayload.discountsUpdated";
+            public const string draft = "shopify.SubscriptionDraftLineRemovePayload.draft";
+            public const string lineRemoved = "shopify.SubscriptionDraftLineRemovePayload.lineRemoved";
+            public const string userErrors = "shopify.SubscriptionDraftLineRemovePayload.userErrors";
+        }
+
+        public static class SubscriptionDraftLineUpdatePayload
+        {
+            public const string draft = "shopify.SubscriptionDraftLineUpdatePayload.draft";
+            public const string lineUpdated = "shopify.SubscriptionDraftLineUpdatePayload.lineUpdated";
+            public const string userErrors = "shopify.SubscriptionDraftLineUpdatePayload.userErrors";
+        }
+
+        public static class SubscriptionDraftUpdatePayload
+        {
+            public const string draft = "shopify.SubscriptionDraftUpdatePayload.draft";
+            public const string userErrors = "shopify.SubscriptionDraftUpdatePayload.userErrors";
+        }
+
+        public static class SubscriptionDraftUserError
+        {
+            public const string code = "shopify.SubscriptionDraftUserError.code";
+            public const string field = "shopify.SubscriptionDraftUserError.field";
+            public const string message = "shopify.SubscriptionDraftUserError.message";
+        }
+
+        public static class SubscriptionLine
+        {
+            public const string concatenatedOriginContract = "shopify.SubscriptionLine.concatenatedOriginContract";
+            public const string currentPrice = "shopify.SubscriptionLine.currentPrice";
+            public const string customAttributes = "shopify.SubscriptionLine.customAttributes";
+            public const string discountAllocations = "shopify.SubscriptionLine.discountAllocations";
+            public const string id = "shopify.SubscriptionLine.id";
+            public const string lineDiscountedPrice = "shopify.SubscriptionLine.lineDiscountedPrice";
+            public const string pricingPolicy = "shopify.SubscriptionLine.pricingPolicy";
+            public const string productId = "shopify.SubscriptionLine.productId";
+            public const string quantity = "shopify.SubscriptionLine.quantity";
+            public const string requiresShipping = "shopify.SubscriptionLine.requiresShipping";
+            public const string sellingPlanId = "shopify.SubscriptionLine.sellingPlanId";
+            public const string sellingPlanName = "shopify.SubscriptionLine.sellingPlanName";
+            public const string sku = "shopify.SubscriptionLine.sku";
+            public const string taxable = "shopify.SubscriptionLine.taxable";
+            public const string title = "shopify.SubscriptionLine.title";
+            public const string variantId = "shopify.SubscriptionLine.variantId";
+            public const string variantImage = "shopify.SubscriptionLine.variantImage";
+            public const string variantTitle = "shopify.SubscriptionLine.variantTitle";
+        }
+
+        public static class SubscriptionLineConnection
+        {
+            public const string edges = "shopify.SubscriptionLineConnection.edges";
+            public const string nodes = "shopify.SubscriptionLineConnection.nodes";
+            public const string pageInfo = "shopify.SubscriptionLineConnection.pageInfo";
+        }
+
+        public static class SubscriptionLineEdge
+        {
+            public const string cursor = "shopify.SubscriptionLineEdge.cursor";
+            public const string node = "shopify.SubscriptionLineEdge.node";
+        }
+
+        public static class SubscriptionLocalDeliveryOption
+        {
+            public const string code = "shopify.SubscriptionLocalDeliveryOption.code";
+            public const string description = "shopify.SubscriptionLocalDeliveryOption.description";
+            public const string phoneRequired = "shopify.SubscriptionLocalDeliveryOption.phoneRequired";
+            public const string presentmentTitle = "shopify.SubscriptionLocalDeliveryOption.presentmentTitle";
+            public const string price = "shopify.SubscriptionLocalDeliveryOption.price";
+            public const string title = "shopify.SubscriptionLocalDeliveryOption.title";
+        }
+
+        public static class SubscriptionMailingAddress
+        {
+            public const string address1 = "shopify.SubscriptionMailingAddress.address1";
+            public const string address2 = "shopify.SubscriptionMailingAddress.address2";
+            public const string city = "shopify.SubscriptionMailingAddress.city";
+            public const string company = "shopify.SubscriptionMailingAddress.company";
+            public const string country = "shopify.SubscriptionMailingAddress.country";
+            public const string countryCode = "shopify.SubscriptionMailingAddress.countryCode";
+            public const string firstName = "shopify.SubscriptionMailingAddress.firstName";
+            public const string lastName = "shopify.SubscriptionMailingAddress.lastName";
+            public const string name = "shopify.SubscriptionMailingAddress.name";
+            public const string phone = "shopify.SubscriptionMailingAddress.phone";
+            public const string province = "shopify.SubscriptionMailingAddress.province";
+            public const string provinceCode = "shopify.SubscriptionMailingAddress.provinceCode";
+            public const string zip = "shopify.SubscriptionMailingAddress.zip";
+        }
+
+        public static class SubscriptionManualDiscount
+        {
+            public const string entitledLines = "shopify.SubscriptionManualDiscount.entitledLines";
+            public const string id = "shopify.SubscriptionManualDiscount.id";
+            public const string recurringCycleLimit = "shopify.SubscriptionManualDiscount.recurringCycleLimit";
+            public const string rejectionReason = "shopify.SubscriptionManualDiscount.rejectionReason";
+            public const string targetType = "shopify.SubscriptionManualDiscount.targetType";
+            public const string title = "shopify.SubscriptionManualDiscount.title";
+            public const string type = "shopify.SubscriptionManualDiscount.type";
+            public const string usageCount = "shopify.SubscriptionManualDiscount.usageCount";
+            public const string value = "shopify.SubscriptionManualDiscount.value";
+        }
+
+        public static class SubscriptionManualDiscountConnection
+        {
+            public const string edges = "shopify.SubscriptionManualDiscountConnection.edges";
+            public const string nodes = "shopify.SubscriptionManualDiscountConnection.nodes";
+            public const string pageInfo = "shopify.SubscriptionManualDiscountConnection.pageInfo";
+        }
+
+        public static class SubscriptionManualDiscountEdge
+        {
+            public const string cursor = "shopify.SubscriptionManualDiscountEdge.cursor";
+            public const string node = "shopify.SubscriptionManualDiscountEdge.node";
+        }
+
+        public static class SubscriptionPickupOption
+        {
+            public const string code = "shopify.SubscriptionPickupOption.code";
+            public const string description = "shopify.SubscriptionPickupOption.description";
+            public const string location = "shopify.SubscriptionPickupOption.location";
+            public const string phoneRequired = "shopify.SubscriptionPickupOption.phoneRequired";
+            public const string pickupTime = "shopify.SubscriptionPickupOption.pickupTime";
+            public const string presentmentTitle = "shopify.SubscriptionPickupOption.presentmentTitle";
+            public const string price = "shopify.SubscriptionPickupOption.price";
+            public const string title = "shopify.SubscriptionPickupOption.title";
+        }
+
+        public static class SubscriptionPricingPolicy
+        {
+            public const string basePrice = "shopify.SubscriptionPricingPolicy.basePrice";
+            public const string cycleDiscounts = "shopify.SubscriptionPricingPolicy.cycleDiscounts";
+        }
+
+        public static class SubscriptionShippingOption
+        {
+            public const string carrierService = "shopify.SubscriptionShippingOption.carrierService";
+            public const string code = "shopify.SubscriptionShippingOption.code";
+            public const string description = "shopify.SubscriptionShippingOption.description";
+            public const string phoneRequired = "shopify.SubscriptionShippingOption.phoneRequired";
+            public const string presentmentTitle = "shopify.SubscriptionShippingOption.presentmentTitle";
+            public const string price = "shopify.SubscriptionShippingOption.price";
+            public const string title = "shopify.SubscriptionShippingOption.title";
+        }
+
+        public static class ISubscriptionShippingOptionResult
+        {
+        }
+
+        public static class SubscriptionShippingOptionResultFailure
+        {
+            public const string message = "shopify.SubscriptionShippingOptionResultFailure.message";
+        }
+
+        public static class SubscriptionShippingOptionResultSuccess
+        {
+            public const string shippingOptions = "shopify.SubscriptionShippingOptionResultSuccess.shippingOptions";
+        }
+
+        public static class SuggestedOrderTransaction
+        {
+            public const string accountNumber = "shopify.SuggestedOrderTransaction.accountNumber";
+            public const string amount = "shopify.SuggestedOrderTransaction.amount";
+            public const string amountSet = "shopify.SuggestedOrderTransaction.amountSet";
+            public const string formattedGateway = "shopify.SuggestedOrderTransaction.formattedGateway";
+            public const string gateway = "shopify.SuggestedOrderTransaction.gateway";
+            public const string kind = "shopify.SuggestedOrderTransaction.kind";
+            public const string maximumRefundable = "shopify.SuggestedOrderTransaction.maximumRefundable";
+            public const string maximumRefundableSet = "shopify.SuggestedOrderTransaction.maximumRefundableSet";
+            public const string parentTransaction = "shopify.SuggestedOrderTransaction.parentTransaction";
+            public const string paymentDetails = "shopify.SuggestedOrderTransaction.paymentDetails";
+        }
+
+        public static class SuggestedRefund
+        {
+            public const string amount = "shopify.SuggestedRefund.amount";
+            public const string amountSet = "shopify.SuggestedRefund.amountSet";
+            public const string discountedSubtotalSet = "shopify.SuggestedRefund.discountedSubtotalSet";
+            public const string maximumRefundable = "shopify.SuggestedRefund.maximumRefundable";
+            public const string maximumRefundableSet = "shopify.SuggestedRefund.maximumRefundableSet";
+            public const string refundDuties = "shopify.SuggestedRefund.refundDuties";
+            public const string refundLineItems = "shopify.SuggestedRefund.refundLineItems";
+            public const string shipping = "shopify.SuggestedRefund.shipping";
+            public const string subtotal = "shopify.SuggestedRefund.subtotal";
+            public const string subtotalSet = "shopify.SuggestedRefund.subtotalSet";
+            public const string suggestedTransactions = "shopify.SuggestedRefund.suggestedTransactions";
+            public const string totalCartDiscountAmountSet = "shopify.SuggestedRefund.totalCartDiscountAmountSet";
+            public const string totalDutiesSet = "shopify.SuggestedRefund.totalDutiesSet";
+            public const string totalTaxSet = "shopify.SuggestedRefund.totalTaxSet";
+            public const string totalTaxes = "shopify.SuggestedRefund.totalTaxes";
+        }
+
+        public static class SuggestedReturnRefund
+        {
+            public const string amount = "shopify.SuggestedReturnRefund.amount";
+            public const string discountedSubtotal = "shopify.SuggestedReturnRefund.discountedSubtotal";
+            public const string maximumRefundable = "shopify.SuggestedReturnRefund.maximumRefundable";
+            public const string refundDuties = "shopify.SuggestedReturnRefund.refundDuties";
+            public const string shipping = "shopify.SuggestedReturnRefund.shipping";
+            public const string subtotal = "shopify.SuggestedReturnRefund.subtotal";
+            public const string suggestedTransactions = "shopify.SuggestedReturnRefund.suggestedTransactions";
+            public const string totalCartDiscountAmount = "shopify.SuggestedReturnRefund.totalCartDiscountAmount";
+            public const string totalDuties = "shopify.SuggestedReturnRefund.totalDuties";
+            public const string totalTax = "shopify.SuggestedReturnRefund.totalTax";
+        }
+
+        public static class TagsAddPayload
+        {
+            public const string node = "shopify.TagsAddPayload.node";
+            public const string userErrors = "shopify.TagsAddPayload.userErrors";
+        }
+
+        public static class TagsRemovePayload
+        {
+            public const string node = "shopify.TagsRemovePayload.node";
+            public const string userErrors = "shopify.TagsRemovePayload.userErrors";
+        }
+
+        public static class TaxAppConfiguration
+        {
+            public const string state = "shopify.TaxAppConfiguration.state";
+        }
+
+        public static class TaxAppConfigurePayload
+        {
+            public const string taxAppConfiguration = "shopify.TaxAppConfigurePayload.taxAppConfiguration";
+            public const string userErrors = "shopify.TaxAppConfigurePayload.userErrors";
+        }
+
+        public static class TaxAppConfigureUserError
+        {
+            public const string code = "shopify.TaxAppConfigureUserError.code";
+            public const string field = "shopify.TaxAppConfigureUserError.field";
+            public const string message = "shopify.TaxAppConfigureUserError.message";
+        }
+
+        public static class TaxLine
+        {
+            public const string channelLiable = "shopify.TaxLine.channelLiable";
+            public const string price = "shopify.TaxLine.price";
+            public const string priceSet = "shopify.TaxLine.priceSet";
+            public const string rate = "shopify.TaxLine.rate";
+            public const string ratePercentage = "shopify.TaxLine.ratePercentage";
+            public const string source = "shopify.TaxLine.source";
+            public const string title = "shopify.TaxLine.title";
+        }
+
+        public static class Taxonomy
+        {
+            public const string categories = "shopify.Taxonomy.categories";
+        }
+
+        public static class TaxonomyAttribute
+        {
+            public const string id = "shopify.TaxonomyAttribute.id";
+        }
+
+        public static class TaxonomyCategory
+        {
+            public const string ancestorIds = "shopify.TaxonomyCategory.ancestorIds";
+            public const string attributes = "shopify.TaxonomyCategory.attributes";
+            public const string childrenIds = "shopify.TaxonomyCategory.childrenIds";
+            public const string fullName = "shopify.TaxonomyCategory.fullName";
+            public const string id = "shopify.TaxonomyCategory.id";
+            public const string isArchived = "shopify.TaxonomyCategory.isArchived";
+            public const string isLeaf = "shopify.TaxonomyCategory.isLeaf";
+            public const string isRoot = "shopify.TaxonomyCategory.isRoot";
+            public const string level = "shopify.TaxonomyCategory.level";
+            public const string name = "shopify.TaxonomyCategory.name";
+            public const string parentId = "shopify.TaxonomyCategory.parentId";
+        }
+
+        public static class ITaxonomyCategoryAttribute
+        {
+            public const string id = "shopify.ITaxonomyCategoryAttribute.id";
+        }
+
+        public static class TaxonomyCategoryAttributeConnection
+        {
+            public const string edges = "shopify.TaxonomyCategoryAttributeConnection.edges";
+            public const string nodes = "shopify.TaxonomyCategoryAttributeConnection.nodes";
+            public const string pageInfo = "shopify.TaxonomyCategoryAttributeConnection.pageInfo";
+        }
+
+        public static class TaxonomyCategoryAttributeEdge
+        {
+            public const string cursor = "shopify.TaxonomyCategoryAttributeEdge.cursor";
+            public const string node = "shopify.TaxonomyCategoryAttributeEdge.node";
+        }
+
+        public static class TaxonomyCategoryConnection
+        {
+            public const string edges = "shopify.TaxonomyCategoryConnection.edges";
+            public const string nodes = "shopify.TaxonomyCategoryConnection.nodes";
+            public const string pageInfo = "shopify.TaxonomyCategoryConnection.pageInfo";
+        }
+
+        public static class TaxonomyCategoryEdge
+        {
+            public const string cursor = "shopify.TaxonomyCategoryEdge.cursor";
+            public const string node = "shopify.TaxonomyCategoryEdge.node";
+        }
+
+        public static class TaxonomyChoiceListAttribute
+        {
+            public const string id = "shopify.TaxonomyChoiceListAttribute.id";
+            public const string name = "shopify.TaxonomyChoiceListAttribute.name";
+            public const string values = "shopify.TaxonomyChoiceListAttribute.values";
+        }
+
+        public static class TaxonomyMeasurementAttribute
+        {
+            public const string id = "shopify.TaxonomyMeasurementAttribute.id";
+            public const string name = "shopify.TaxonomyMeasurementAttribute.name";
+            public const string options = "shopify.TaxonomyMeasurementAttribute.options";
+        }
+
+        public static class TaxonomyValue
+        {
+            public const string id = "shopify.TaxonomyValue.id";
+            public const string name = "shopify.TaxonomyValue.name";
+        }
+
+        public static class TaxonomyValueConnection
+        {
+            public const string edges = "shopify.TaxonomyValueConnection.edges";
+            public const string nodes = "shopify.TaxonomyValueConnection.nodes";
+            public const string pageInfo = "shopify.TaxonomyValueConnection.pageInfo";
+        }
+
+        public static class TaxonomyValueEdge
+        {
+            public const string cursor = "shopify.TaxonomyValueEdge.cursor";
+            public const string node = "shopify.TaxonomyValueEdge.node";
+        }
+
+        public static class TenderTransaction
+        {
+            public const string amount = "shopify.TenderTransaction.amount";
+            public const string id = "shopify.TenderTransaction.id";
+            public const string order = "shopify.TenderTransaction.order";
+            public const string paymentMethod = "shopify.TenderTransaction.paymentMethod";
+            public const string processedAt = "shopify.TenderTransaction.processedAt";
+            public const string remoteReference = "shopify.TenderTransaction.remoteReference";
+            public const string test = "shopify.TenderTransaction.test";
+            public const string transactionDetails = "shopify.TenderTransaction.transactionDetails";
+            public const string user = "shopify.TenderTransaction.user";
+        }
+
+        public static class TenderTransactionConnection
+        {
+            public const string edges = "shopify.TenderTransactionConnection.edges";
+            public const string nodes = "shopify.TenderTransactionConnection.nodes";
+            public const string pageInfo = "shopify.TenderTransactionConnection.pageInfo";
+        }
+
+        public static class TenderTransactionCreditCardDetails
+        {
+            public const string creditCardCompany = "shopify.TenderTransactionCreditCardDetails.creditCardCompany";
+            public const string creditCardNumber = "shopify.TenderTransactionCreditCardDetails.creditCardNumber";
+        }
+
+        public static class ITenderTransactionDetails
+        {
+            public const string creditCardCompany = "shopify.ITenderTransactionDetails.creditCardCompany";
+            public const string creditCardNumber = "shopify.ITenderTransactionDetails.creditCardNumber";
+        }
+
+        public static class TenderTransactionEdge
+        {
+            public const string cursor = "shopify.TenderTransactionEdge.cursor";
+            public const string node = "shopify.TenderTransactionEdge.node";
+        }
+
+        public static class ThemeCreatePayload
+        {
+            public const string theme = "shopify.ThemeCreatePayload.theme";
+            public const string userErrors = "shopify.ThemeCreatePayload.userErrors";
+        }
+
+        public static class ThemeCreateUserError
+        {
+            public const string code = "shopify.ThemeCreateUserError.code";
+            public const string field = "shopify.ThemeCreateUserError.field";
+            public const string message = "shopify.ThemeCreateUserError.message";
+        }
+
+        public static class ThemeDeletePayload
+        {
+            public const string deletedThemeId = "shopify.ThemeDeletePayload.deletedThemeId";
+            public const string userErrors = "shopify.ThemeDeletePayload.userErrors";
+        }
+
+        public static class ThemeDeleteUserError
+        {
+            public const string code = "shopify.ThemeDeleteUserError.code";
+            public const string field = "shopify.ThemeDeleteUserError.field";
+            public const string message = "shopify.ThemeDeleteUserError.message";
+        }
+
+        public static class ThemeFilesCopyPayload
+        {
+            public const string copiedThemeFiles = "shopify.ThemeFilesCopyPayload.copiedThemeFiles";
+            public const string userErrors = "shopify.ThemeFilesCopyPayload.userErrors";
+        }
+
+        public static class ThemeFilesDeletePayload
+        {
+            public const string deletedThemeFiles = "shopify.ThemeFilesDeletePayload.deletedThemeFiles";
+            public const string userErrors = "shopify.ThemeFilesDeletePayload.userErrors";
+        }
+
+        public static class ThemeFilesUpsertPayload
+        {
+            public const string job = "shopify.ThemeFilesUpsertPayload.job";
+            public const string upsertedThemeFiles = "shopify.ThemeFilesUpsertPayload.upsertedThemeFiles";
+            public const string userErrors = "shopify.ThemeFilesUpsertPayload.userErrors";
+        }
+
+        public static class ThemePublishPayload
+        {
+            public const string theme = "shopify.ThemePublishPayload.theme";
+            public const string userErrors = "shopify.ThemePublishPayload.userErrors";
+        }
+
+        public static class ThemePublishUserError
+        {
+            public const string code = "shopify.ThemePublishUserError.code";
+            public const string field = "shopify.ThemePublishUserError.field";
+            public const string message = "shopify.ThemePublishUserError.message";
+        }
+
+        public static class ThemeUpdatePayload
+        {
+            public const string theme = "shopify.ThemeUpdatePayload.theme";
+            public const string userErrors = "shopify.ThemeUpdatePayload.userErrors";
+        }
+
+        public static class ThemeUpdateUserError
+        {
+            public const string code = "shopify.ThemeUpdateUserError.code";
+            public const string field = "shopify.ThemeUpdateUserError.field";
+            public const string message = "shopify.ThemeUpdateUserError.message";
+        }
+
+        public static class TipSale
+        {
+            public const string actionType = "shopify.TipSale.actionType";
+            public const string id = "shopify.TipSale.id";
+            public const string lineItem = "shopify.TipSale.lineItem";
+            public const string lineType = "shopify.TipSale.lineType";
+            public const string quantity = "shopify.TipSale.quantity";
+            public const string taxes = "shopify.TipSale.taxes";
+            public const string totalAmount = "shopify.TipSale.totalAmount";
+            public const string totalDiscountAmountAfterTaxes = "shopify.TipSale.totalDiscountAmountAfterTaxes";
+            public const string totalDiscountAmountBeforeTaxes = "shopify.TipSale.totalDiscountAmountBeforeTaxes";
+            public const string totalTaxAmount = "shopify.TipSale.totalTaxAmount";
+        }
+
+        public static class TransactionFee
+        {
+            public const string amount = "shopify.TransactionFee.amount";
+            public const string flatFee = "shopify.TransactionFee.flatFee";
+            public const string flatFeeName = "shopify.TransactionFee.flatFeeName";
+            public const string id = "shopify.TransactionFee.id";
+            public const string rate = "shopify.TransactionFee.rate";
+            public const string rateName = "shopify.TransactionFee.rateName";
+            public const string taxAmount = "shopify.TransactionFee.taxAmount";
+            public const string type = "shopify.TransactionFee.type";
+        }
+
+        public static class TransactionVoidPayload
+        {
+            public const string transaction = "shopify.TransactionVoidPayload.transaction";
+            public const string userErrors = "shopify.TransactionVoidPayload.userErrors";
+        }
+
+        public static class TransactionVoidUserError
+        {
+            public const string code = "shopify.TransactionVoidUserError.code";
+            public const string field = "shopify.TransactionVoidUserError.field";
+            public const string message = "shopify.TransactionVoidUserError.message";
+        }
+
+        public static class TranslatableContent
+        {
+            public const string digest = "shopify.TranslatableContent.digest";
+            public const string key = "shopify.TranslatableContent.key";
+            public const string locale = "shopify.TranslatableContent.locale";
+            public const string type = "shopify.TranslatableContent.type";
+            public const string value = "shopify.TranslatableContent.value";
+        }
+
+        public static class TranslatableResource
+        {
+            public const string nestedTranslatableResources = "shopify.TranslatableResource.nestedTranslatableResources";
+            public const string resourceId = "shopify.TranslatableResource.resourceId";
+            public const string translatableContent = "shopify.TranslatableResource.translatableContent";
+            public const string translations = "shopify.TranslatableResource.translations";
+        }
+
+        public static class TranslatableResourceConnection
+        {
+            public const string edges = "shopify.TranslatableResourceConnection.edges";
+            public const string nodes = "shopify.TranslatableResourceConnection.nodes";
+            public const string pageInfo = "shopify.TranslatableResourceConnection.pageInfo";
+        }
+
+        public static class TranslatableResourceEdge
+        {
+            public const string cursor = "shopify.TranslatableResourceEdge.cursor";
+            public const string node = "shopify.TranslatableResourceEdge.node";
+        }
+
+        public static class Translation
+        {
+            public const string key = "shopify.Translation.key";
+            public const string locale = "shopify.Translation.locale";
+            public const string market = "shopify.Translation.market";
+            public const string outdated = "shopify.Translation.outdated";
+            public const string updatedAt = "shopify.Translation.updatedAt";
+            public const string value = "shopify.Translation.value";
+        }
+
+        public static class TranslationUserError
+        {
+            public const string code = "shopify.TranslationUserError.code";
+            public const string field = "shopify.TranslationUserError.field";
+            public const string message = "shopify.TranslationUserError.message";
+        }
+
+        public static class TranslationsRegisterPayload
+        {
+            public const string translations = "shopify.TranslationsRegisterPayload.translations";
+            public const string userErrors = "shopify.TranslationsRegisterPayload.userErrors";
+        }
+
+        public static class TranslationsRemovePayload
+        {
+            public const string translations = "shopify.TranslationsRemovePayload.translations";
+            public const string userErrors = "shopify.TranslationsRemovePayload.userErrors";
+        }
+
+        public static class TypedAttribute
+        {
+            public const string key = "shopify.TypedAttribute.key";
+            public const string value = "shopify.TypedAttribute.value";
+        }
+
+        public static class UTMParameters
+        {
+            public const string campaign = "shopify.UTMParameters.campaign";
+            public const string content = "shopify.UTMParameters.content";
+            public const string medium = "shopify.UTMParameters.medium";
+            public const string source = "shopify.UTMParameters.source";
+            public const string term = "shopify.UTMParameters.term";
+        }
+
+        public static class UnitPriceMeasurement
+        {
+            public const string measuredType = "shopify.UnitPriceMeasurement.measuredType";
+            public const string quantityUnit = "shopify.UnitPriceMeasurement.quantityUnit";
+            public const string quantityValue = "shopify.UnitPriceMeasurement.quantityValue";
+            public const string referenceUnit = "shopify.UnitPriceMeasurement.referenceUnit";
+            public const string referenceValue = "shopify.UnitPriceMeasurement.referenceValue";
+        }
+
+        public static class UnknownSale
+        {
+            public const string actionType = "shopify.UnknownSale.actionType";
+            public const string id = "shopify.UnknownSale.id";
+            public const string lineType = "shopify.UnknownSale.lineType";
+            public const string quantity = "shopify.UnknownSale.quantity";
+            public const string taxes = "shopify.UnknownSale.taxes";
+            public const string totalAmount = "shopify.UnknownSale.totalAmount";
+            public const string totalDiscountAmountAfterTaxes = "shopify.UnknownSale.totalDiscountAmountAfterTaxes";
+            public const string totalDiscountAmountBeforeTaxes = "shopify.UnknownSale.totalDiscountAmountBeforeTaxes";
+            public const string totalTaxAmount = "shopify.UnknownSale.totalTaxAmount";
+        }
+
+        public static class UnverifiedReturnLineItem
+        {
+            public const string customerNote = "shopify.UnverifiedReturnLineItem.customerNote";
+            public const string id = "shopify.UnverifiedReturnLineItem.id";
+            public const string quantity = "shopify.UnverifiedReturnLineItem.quantity";
+            public const string refundableQuantity = "shopify.UnverifiedReturnLineItem.refundableQuantity";
+            public const string refundedQuantity = "shopify.UnverifiedReturnLineItem.refundedQuantity";
+            public const string returnReason = "shopify.UnverifiedReturnLineItem.returnReason";
+            public const string returnReasonNote = "shopify.UnverifiedReturnLineItem.returnReasonNote";
+            public const string unitPrice = "shopify.UnverifiedReturnLineItem.unitPrice";
+        }
+
+        public static class UrlRedirect
+        {
+            public const string id = "shopify.UrlRedirect.id";
+            public const string path = "shopify.UrlRedirect.path";
+            public const string target = "shopify.UrlRedirect.target";
+        }
+
+        public static class UrlRedirectBulkDeleteAllPayload
+        {
+            public const string job = "shopify.UrlRedirectBulkDeleteAllPayload.job";
+            public const string userErrors = "shopify.UrlRedirectBulkDeleteAllPayload.userErrors";
+        }
+
+        public static class UrlRedirectBulkDeleteByIdsPayload
+        {
+            public const string job = "shopify.UrlRedirectBulkDeleteByIdsPayload.job";
+            public const string userErrors = "shopify.UrlRedirectBulkDeleteByIdsPayload.userErrors";
+        }
+
+        public static class UrlRedirectBulkDeleteByIdsUserError
+        {
+            public const string code = "shopify.UrlRedirectBulkDeleteByIdsUserError.code";
+            public const string field = "shopify.UrlRedirectBulkDeleteByIdsUserError.field";
+            public const string message = "shopify.UrlRedirectBulkDeleteByIdsUserError.message";
+        }
+
+        public static class UrlRedirectBulkDeleteBySavedSearchPayload
+        {
+            public const string job = "shopify.UrlRedirectBulkDeleteBySavedSearchPayload.job";
+            public const string userErrors = "shopify.UrlRedirectBulkDeleteBySavedSearchPayload.userErrors";
+        }
+
+        public static class UrlRedirectBulkDeleteBySavedSearchUserError
+        {
+            public const string code = "shopify.UrlRedirectBulkDeleteBySavedSearchUserError.code";
+            public const string field = "shopify.UrlRedirectBulkDeleteBySavedSearchUserError.field";
+            public const string message = "shopify.UrlRedirectBulkDeleteBySavedSearchUserError.message";
+        }
+
+        public static class UrlRedirectBulkDeleteBySearchPayload
+        {
+            public const string job = "shopify.UrlRedirectBulkDeleteBySearchPayload.job";
+            public const string userErrors = "shopify.UrlRedirectBulkDeleteBySearchPayload.userErrors";
+        }
+
+        public static class UrlRedirectBulkDeleteBySearchUserError
+        {
+            public const string code = "shopify.UrlRedirectBulkDeleteBySearchUserError.code";
+            public const string field = "shopify.UrlRedirectBulkDeleteBySearchUserError.field";
+            public const string message = "shopify.UrlRedirectBulkDeleteBySearchUserError.message";
+        }
+
+        public static class UrlRedirectConnection
+        {
+            public const string edges = "shopify.UrlRedirectConnection.edges";
+            public const string nodes = "shopify.UrlRedirectConnection.nodes";
+            public const string pageInfo = "shopify.UrlRedirectConnection.pageInfo";
+        }
+
+        public static class UrlRedirectCreatePayload
+        {
+            public const string urlRedirect = "shopify.UrlRedirectCreatePayload.urlRedirect";
+            public const string userErrors = "shopify.UrlRedirectCreatePayload.userErrors";
+        }
+
+        public static class UrlRedirectDeletePayload
+        {
+            public const string deletedUrlRedirectId = "shopify.UrlRedirectDeletePayload.deletedUrlRedirectId";
+            public const string userErrors = "shopify.UrlRedirectDeletePayload.userErrors";
+        }
+
+        public static class UrlRedirectEdge
+        {
+            public const string cursor = "shopify.UrlRedirectEdge.cursor";
+            public const string node = "shopify.UrlRedirectEdge.node";
+        }
+
+        public static class UrlRedirectImport
+        {
+            public const string count = "shopify.UrlRedirectImport.count";
+            public const string createdCount = "shopify.UrlRedirectImport.createdCount";
+            public const string failedCount = "shopify.UrlRedirectImport.failedCount";
+            public const string finished = "shopify.UrlRedirectImport.finished";
+            public const string finishedAt = "shopify.UrlRedirectImport.finishedAt";
+            public const string id = "shopify.UrlRedirectImport.id";
+            public const string previewRedirects = "shopify.UrlRedirectImport.previewRedirects";
+            public const string updatedCount = "shopify.UrlRedirectImport.updatedCount";
+        }
+
+        public static class UrlRedirectImportCreatePayload
+        {
+            public const string urlRedirectImport = "shopify.UrlRedirectImportCreatePayload.urlRedirectImport";
+            public const string userErrors = "shopify.UrlRedirectImportCreatePayload.userErrors";
+        }
+
+        public static class UrlRedirectImportPreview
+        {
+            public const string path = "shopify.UrlRedirectImportPreview.path";
+            public const string target = "shopify.UrlRedirectImportPreview.target";
+        }
+
+        public static class UrlRedirectImportSubmitPayload
+        {
+            public const string job = "shopify.UrlRedirectImportSubmitPayload.job";
+            public const string userErrors = "shopify.UrlRedirectImportSubmitPayload.userErrors";
+        }
+
+        public static class UrlRedirectImportUserError
+        {
+            public const string code = "shopify.UrlRedirectImportUserError.code";
+            public const string field = "shopify.UrlRedirectImportUserError.field";
+            public const string message = "shopify.UrlRedirectImportUserError.message";
+        }
+
+        public static class UrlRedirectUpdatePayload
+        {
+            public const string urlRedirect = "shopify.UrlRedirectUpdatePayload.urlRedirect";
+            public const string userErrors = "shopify.UrlRedirectUpdatePayload.userErrors";
+        }
+
+        public static class UrlRedirectUserError
+        {
+            public const string code = "shopify.UrlRedirectUserError.code";
+            public const string field = "shopify.UrlRedirectUserError.field";
+            public const string message = "shopify.UrlRedirectUserError.message";
+        }
+
+        public static class UserError
+        {
+            public const string field = "shopify.UserError.field";
+            public const string message = "shopify.UserError.message";
+        }
+
+        public static class Validation
+        {
+            public const string blockOnFailure = "shopify.Validation.blockOnFailure";
+            public const string enabled = "shopify.Validation.enabled";
+            public const string errorHistory = "shopify.Validation.errorHistory";
+            public const string id = "shopify.Validation.id";
+            public const string metafield = "shopify.Validation.metafield";
+            public const string metafieldDefinitions = "shopify.Validation.metafieldDefinitions";
+            public const string metafields = "shopify.Validation.metafields";
+            public const string shopifyFunction = "shopify.Validation.shopifyFunction";
+            public const string title = "shopify.Validation.title";
+        }
+
+        public static class ValidationConnection
+        {
+            public const string edges = "shopify.ValidationConnection.edges";
+            public const string nodes = "shopify.ValidationConnection.nodes";
+            public const string pageInfo = "shopify.ValidationConnection.pageInfo";
+        }
+
+        public static class ValidationCreatePayload
+        {
+            public const string userErrors = "shopify.ValidationCreatePayload.userErrors";
+            public const string validation = "shopify.ValidationCreatePayload.validation";
+        }
+
+        public static class ValidationDeletePayload
+        {
+            public const string deletedId = "shopify.ValidationDeletePayload.deletedId";
+            public const string userErrors = "shopify.ValidationDeletePayload.userErrors";
+        }
+
+        public static class ValidationEdge
+        {
+            public const string cursor = "shopify.ValidationEdge.cursor";
+            public const string node = "shopify.ValidationEdge.node";
+        }
+
+        public static class ValidationUpdatePayload
+        {
+            public const string userErrors = "shopify.ValidationUpdatePayload.userErrors";
+            public const string validation = "shopify.ValidationUpdatePayload.validation";
+        }
+
+        public static class ValidationUserError
+        {
+            public const string code = "shopify.ValidationUserError.code";
+            public const string field = "shopify.ValidationUserError.field";
+            public const string message = "shopify.ValidationUserError.message";
+        }
+
+        public static class VaultCreditCard
+        {
+            public const string billingAddress = "shopify.VaultCreditCard.billingAddress";
+            public const string brand = "shopify.VaultCreditCard.brand";
+            public const string expired = "shopify.VaultCreditCard.expired";
+            public const string expiryMonth = "shopify.VaultCreditCard.expiryMonth";
+            public const string expiryYear = "shopify.VaultCreditCard.expiryYear";
+            public const string lastDigits = "shopify.VaultCreditCard.lastDigits";
+            public const string name = "shopify.VaultCreditCard.name";
+        }
+
+        public static class VaultPaypalBillingAgreement
+        {
+            public const string inactive = "shopify.VaultPaypalBillingAgreement.inactive";
+            public const string name = "shopify.VaultPaypalBillingAgreement.name";
+            public const string paypalAccountEmail = "shopify.VaultPaypalBillingAgreement.paypalAccountEmail";
+        }
+
+        public static class Vector3
+        {
+            public const string x = "shopify.Vector3.x";
+            public const string y = "shopify.Vector3.y";
+            public const string z = "shopify.Vector3.z";
+        }
+
+        public static class Video
+        {
+            public const string alt = "shopify.Video.alt";
+            public const string createdAt = "shopify.Video.createdAt";
+            public const string duration = "shopify.Video.duration";
+            public const string fileErrors = "shopify.Video.fileErrors";
+            public const string fileStatus = "shopify.Video.fileStatus";
+            public const string filename = "shopify.Video.filename";
+            public const string id = "shopify.Video.id";
+            public const string mediaContentType = "shopify.Video.mediaContentType";
+            public const string mediaErrors = "shopify.Video.mediaErrors";
+            public const string mediaWarnings = "shopify.Video.mediaWarnings";
+            public const string originalSource = "shopify.Video.originalSource";
+            public const string preview = "shopify.Video.preview";
+            public const string sources = "shopify.Video.sources";
+            public const string status = "shopify.Video.status";
+            public const string updatedAt = "shopify.Video.updatedAt";
+        }
+
+        public static class VideoSource
+        {
+            public const string fileSize = "shopify.VideoSource.fileSize";
+            public const string format = "shopify.VideoSource.format";
+            public const string height = "shopify.VideoSource.height";
+            public const string mimeType = "shopify.VideoSource.mimeType";
+            public const string url = "shopify.VideoSource.url";
+            public const string width = "shopify.VideoSource.width";
+        }
+
+        public static class WebPixel
+        {
+            public const string id = "shopify.WebPixel.id";
+            public const string settings = "shopify.WebPixel.settings";
+        }
+
+        public static class WebPixelCreatePayload
+        {
+            public const string userErrors = "shopify.WebPixelCreatePayload.userErrors";
+            public const string webPixel = "shopify.WebPixelCreatePayload.webPixel";
+        }
+
+        public static class WebPixelDeletePayload
+        {
+            public const string deletedWebPixelId = "shopify.WebPixelDeletePayload.deletedWebPixelId";
+            public const string userErrors = "shopify.WebPixelDeletePayload.userErrors";
+        }
+
+        public static class WebPixelUpdatePayload
+        {
+            public const string userErrors = "shopify.WebPixelUpdatePayload.userErrors";
+            public const string webPixel = "shopify.WebPixelUpdatePayload.webPixel";
+        }
+
+        public static class WebPresenceCreatePayload
+        {
+            public const string userErrors = "shopify.WebPresenceCreatePayload.userErrors";
+            public const string webPresence = "shopify.WebPresenceCreatePayload.webPresence";
+        }
+
+        public static class WebPresenceDeletePayload
+        {
+            public const string deletedId = "shopify.WebPresenceDeletePayload.deletedId";
+            public const string userErrors = "shopify.WebPresenceDeletePayload.userErrors";
+        }
+
+        public static class WebPresenceUpdatePayload
+        {
+            public const string userErrors = "shopify.WebPresenceUpdatePayload.userErrors";
+            public const string webPresence = "shopify.WebPresenceUpdatePayload.webPresence";
+        }
+
+        public static class WebhookEventBridgeEndpoint
+        {
+            public const string arn = "shopify.WebhookEventBridgeEndpoint.arn";
+        }
+
+        public static class WebhookHttpEndpoint
+        {
+            public const string callbackUrl = "shopify.WebhookHttpEndpoint.callbackUrl";
+        }
+
+        public static class WebhookPubSubEndpoint
+        {
+            public const string pubSubProject = "shopify.WebhookPubSubEndpoint.pubSubProject";
+            public const string pubSubTopic = "shopify.WebhookPubSubEndpoint.pubSubTopic";
+        }
+
+        public static class WebhookSubscription
+        {
+            public const string apiVersion = "shopify.WebhookSubscription.apiVersion";
+            public const string callbackUrl = "shopify.WebhookSubscription.callbackUrl";
+            public const string createdAt = "shopify.WebhookSubscription.createdAt";
+            public const string endpoint = "shopify.WebhookSubscription.endpoint";
+            public const string filter = "shopify.WebhookSubscription.filter";
+            public const string format = "shopify.WebhookSubscription.format";
+            public const string id = "shopify.WebhookSubscription.id";
+            public const string includeFields = "shopify.WebhookSubscription.includeFields";
+            public const string legacyResourceId = "shopify.WebhookSubscription.legacyResourceId";
+            public const string metafieldNamespaces = "shopify.WebhookSubscription.metafieldNamespaces";
+            public const string metafields = "shopify.WebhookSubscription.metafields";
+            public const string topic = "shopify.WebhookSubscription.topic";
+            public const string updatedAt = "shopify.WebhookSubscription.updatedAt";
+        }
+
+        public static class WebhookSubscriptionConnection
+        {
+            public const string edges = "shopify.WebhookSubscriptionConnection.edges";
+            public const string nodes = "shopify.WebhookSubscriptionConnection.nodes";
+            public const string pageInfo = "shopify.WebhookSubscriptionConnection.pageInfo";
+        }
+
+        public static class WebhookSubscriptionCreatePayload
+        {
+            public const string userErrors = "shopify.WebhookSubscriptionCreatePayload.userErrors";
+            public const string webhookSubscription = "shopify.WebhookSubscriptionCreatePayload.webhookSubscription";
+        }
+
+        public static class WebhookSubscriptionDeletePayload
+        {
+            public const string deletedWebhookSubscriptionId = "shopify.WebhookSubscriptionDeletePayload.deletedWebhookSubscriptionId";
+            public const string userErrors = "shopify.WebhookSubscriptionDeletePayload.userErrors";
+        }
+
+        public static class WebhookSubscriptionEdge
+        {
+            public const string cursor = "shopify.WebhookSubscriptionEdge.cursor";
+            public const string node = "shopify.WebhookSubscriptionEdge.node";
+        }
+
+        public static class IWebhookSubscriptionEndpoint
+        {
+        }
+
+        public static class WebhookSubscriptionMetafieldIdentifier
+        {
+            public const string key = "shopify.WebhookSubscriptionMetafieldIdentifier.key";
+            public const string @namespace = "shopify.WebhookSubscriptionMetafieldIdentifier.namespace";
+        }
+
+        public static class WebhookSubscriptionUpdatePayload
+        {
+            public const string userErrors = "shopify.WebhookSubscriptionUpdatePayload.userErrors";
+            public const string webhookSubscription = "shopify.WebhookSubscriptionUpdatePayload.webhookSubscription";
+        }
+
+        public static class Weight
+        {
+            public const string unit = "shopify.Weight.unit";
+            public const string value = "shopify.Weight.value";
+        }
+
+        public static class __Directive
+        {
+            public const string args = "shopify.__Directive.args";
+            public const string description = "shopify.__Directive.description";
+            public const string isRepeatable = "shopify.__Directive.isRepeatable";
+            public const string locations = "shopify.__Directive.locations";
+            public const string name = "shopify.__Directive.name";
+            public const string onField = "shopify.__Directive.onField";
+            public const string onFragment = "shopify.__Directive.onFragment";
+            public const string onOperation = "shopify.__Directive.onOperation";
+        }
+
+        public static class __EnumValue
+        {
+            public const string deprecationReason = "shopify.__EnumValue.deprecationReason";
+            public const string description = "shopify.__EnumValue.description";
+            public const string isDeprecated = "shopify.__EnumValue.isDeprecated";
+            public const string isPrivatelyDocumented = "shopify.__EnumValue.isPrivatelyDocumented";
+            public const string name = "shopify.__EnumValue.name";
+        }
+
+        public static class __Field
+        {
+            public const string accessRestricted = "shopify.__Field.accessRestricted";
+            public const string accessRestrictedReason = "shopify.__Field.accessRestrictedReason";
+            public const string args = "shopify.__Field.args";
+            public const string deprecationReason = "shopify.__Field.deprecationReason";
+            public const string description = "shopify.__Field.description";
+            public const string isDeprecated = "shopify.__Field.isDeprecated";
+            public const string isPrivatelyDocumented = "shopify.__Field.isPrivatelyDocumented";
+            public const string isProtected = "shopify.__Field.isProtected";
+            public const string name = "shopify.__Field.name";
+            public const string protectedContent = "shopify.__Field.protectedContent";
+            public const string protectedSubject = "shopify.__Field.protectedSubject";
+            public const string requiredAccess = "shopify.__Field.requiredAccess";
+            public const string type = "shopify.__Field.type";
+        }
+
+        public static class __InputValue
+        {
+            public const string defaultValue = "shopify.__InputValue.defaultValue";
+            public const string deprecationReason = "shopify.__InputValue.deprecationReason";
+            public const string description = "shopify.__InputValue.description";
+            public const string gidTypes = "shopify.__InputValue.gidTypes";
+            public const string isDeprecated = "shopify.__InputValue.isDeprecated";
+            public const string name = "shopify.__InputValue.name";
+            public const string type = "shopify.__InputValue.type";
+        }
+
+        public static class __Schema
+        {
+            public const string description = "shopify.__Schema.description";
+            public const string directives = "shopify.__Schema.directives";
+            public const string mutationType = "shopify.__Schema.mutationType";
+            public const string queryType = "shopify.__Schema.queryType";
+            public const string subscriptionType = "shopify.__Schema.subscriptionType";
+            public const string types = "shopify.__Schema.types";
+        }
+
+        public static class __Type
+        {
+            public const string accessRestricted = "shopify.__Type.accessRestricted";
+            public const string accessRestrictedReason = "shopify.__Type.accessRestrictedReason";
+            public const string componentName = "shopify.__Type.componentName";
+            public const string description = "shopify.__Type.description";
+            public const string enumValues = "shopify.__Type.enumValues";
+            public const string fields = "shopify.__Type.fields";
+            public const string inputFields = "shopify.__Type.inputFields";
+            public const string interfaces = "shopify.__Type.interfaces";
+            public const string isOneOf = "shopify.__Type.isOneOf";
+            public const string isPrivatelyDocumented = "shopify.__Type.isPrivatelyDocumented";
+            public const string isProtected = "shopify.__Type.isProtected";
+            public const string kind = "shopify.__Type.kind";
+            public const string name = "shopify.__Type.name";
+            public const string ofType = "shopify.__Type.ofType";
+            public const string possibleTypes = "shopify.__Type.possibleTypes";
+            public const string protectedSubject = "shopify.__Type.protectedSubject";
+            public const string requiredAccess = "shopify.__Type.requiredAccess";
+            public const string specifiedByURL = "shopify.__Type.specifiedByURL";
+        }
+    }
 }
