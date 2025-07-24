@@ -65,22 +65,22 @@ public class GraphQLClient<TClientOptions>
         _defaultOptions = defaultOptions;
     }
 
-    public Task<GraphQLResponse<JsonElement>> ExecuteAsync([StringSyntax("GraphQL")] string query, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
+    public Task<GraphQLResponse<JsonElement>> ExecuteAsync([StringSyntax("GraphQL")] string query, TClientOptions options = null, CancellationToken cancellationToken = default)
     {
         return ExecuteAsync<JsonElement>(query, options, cancellationToken);
     }
 
-    public Task<GraphQLResponse<T>> ExecuteAsync<T>([StringSyntax("GraphQL")] string query, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
+    public Task<GraphQLResponse<T>> ExecuteAsync<T>([StringSyntax("GraphQL")] string query, TClientOptions options = null, CancellationToken cancellationToken = default)
     {
         return ExecuteAsync<T>(new GraphQLRequest { query = query }, options, cancellationToken);
     }
 
-    public Task<GraphQLResponse<JsonElement>> ExecuteAsync(GraphQLRequest request, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
+    public Task<GraphQLResponse<JsonElement>> ExecuteAsync(GraphQLRequest request, TClientOptions options = null, CancellationToken cancellationToken = default)
     {
         return ExecuteAsync<JsonElement>(request, options, cancellationToken);
     }
 
-    public async Task<GraphQLResponse<T>> ExecuteAsync<T>(GraphQLRequest request, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
+    public async Task<GraphQLResponse<T>> ExecuteAsync<T>(GraphQLRequest request, TClientOptions options = null, CancellationToken cancellationToken = default)
     {
         var interceptor = options?.Interceptor ?? _defaultOptions?.Interceptor ?? NoOpInterceptor.Instance;
 
@@ -94,7 +94,7 @@ public class GraphQLClient<TClientOptions>
         }
     }
 
-    private async Task<GraphQLResponse<T>> ExecuteCoreAsync<T>(GraphQLRequest request, GraphQLClientOptions options = null, CancellationToken cancellationToken = default)
+    private async Task<GraphQLResponse<T>> ExecuteCoreAsync<T>(GraphQLRequest request, TClientOptions options = null, CancellationToken cancellationToken = default)
     {
         HttpResponse httpResponse = null;
         try
@@ -141,8 +141,13 @@ public class GraphQLClient<TClientOptions>
         }
     }
 
-    private HttpRequestMessage CreateHttpRequest(GraphQLRequest request, GraphQLClientOptions options)
+    protected virtual void ValidateOptions(TClientOptions defaultOptions, TClientOptions options)
     {
+    }
+
+    private HttpRequestMessage CreateHttpRequest(GraphQLRequest request, TClientOptions options)
+    {
+        ValidateOptions(_defaultOptions, options);
         var uri = options?.Uri ?? _defaultOptions?.Uri ?? throw new ArgumentNullException($"{nameof(options)}.{nameof(options.Uri)}");
         var requestMessage = new HttpRequestMessage
         {
