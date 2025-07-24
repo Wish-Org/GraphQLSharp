@@ -18,7 +18,9 @@ public class GraphQLTypeGeneratorOptions
     public Dictionary<(string, string), string> GraphQLTypeToTypeNameOverride { get; set; }
 
     /// <summary>
-    /// Indicates whether enum members are generated as enum or string. Enum types will still be generated regardless of this setting.
+    /// Indicates whether enum members are generated as enum or string.
+    /// Defaults to false. 
+    /// Enum types will still be generated regardless of this setting.
     /// </summary>
     public bool EnumMembersAsString { get; set; }
 
