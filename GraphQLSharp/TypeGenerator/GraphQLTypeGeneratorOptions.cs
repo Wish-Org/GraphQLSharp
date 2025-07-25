@@ -5,7 +5,12 @@ public class GraphQLTypeGeneratorOptions
     /// <summary>
     /// The namespace to use for the generated types.
     /// </summary>
-    public string Namespace { get; set; }
+    public string NamespaceTypes { get; set; }
+
+    /// <summary>
+    /// The namespace to use for the generated client.
+    /// </summary>
+    public string NamespaceClient { get; set; }
 
     /// <summary>
     /// A mapping of scalar GraphQL type names to .NET type names.

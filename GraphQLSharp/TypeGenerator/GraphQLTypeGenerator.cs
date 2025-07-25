@@ -155,16 +155,18 @@ public class GraphQLTypeGenerator
                 .AppendLine("using System.Text.Json;")
                 .AppendLine("using System.Text.Json.Serialization;")
                 .AppendLine("using GraphQLSharp;")
-                .AppendLine($"namespace {options.Namespace} {{")
+                .AppendLine($"namespace {options.NamespaceClient} {{")
                 .AppendLine("public class GraphQLClient : ")
-                .AppendLine(mutationType == null ? $"GraphQLClient<{queryType}, {clientOptionsTypeName}>" : $"GraphQLClient<{queryType}, {mutationType}, {clientOptionsTypeName}>")
+                .AppendLine(mutationType == null ? $"GraphQLClient<{queryType}, {clientOptionsTypeName}>" : $"GraphQLClient<{options.NamespaceTypes}.{queryType}, {options.NamespaceTypes}.{mutationType}, {clientOptionsTypeName}>")
                 .AppendLine($$"""
                     {
                         public GraphQLClient({{clientOptionsTypeName}}? defaultOptions = null) : base(defaultOptions!)
                         {
                         }
                     }
-                    """);
+                    """)
+                .AppendLine("}")
+                .AppendLine($"namespace {options.NamespaceTypes} {{");
 
         var objectTypeNameToUnionTypes = allTypes.Where(t => t.kind == GraphQLTypeKind.UNION)
                                                   .SelectMany(tUnion => tUnion.possibleTypes.Select(tObject => (tUnion, tObject)))
@@ -189,7 +191,7 @@ public class GraphQLTypeGenerator
                 .AppendLine("{");
                 foreach (var memberName in dotNetType.GetMembers())
                 {
-                    string memberFullName = $"{options.Namespace}.{dotNetType.TypeName}.{memberName}";
+                    string memberFullName = $"{options.NamespaceTypes}.{dotNetType.TypeName}.{memberName}";
                     str.AppendLine($"public const string {EscapeCSharpKeyword(memberName)} = {SymbolDisplay.FormatLiteral(memberFullName, true)};");
                 }
                 str.AppendLine("}");

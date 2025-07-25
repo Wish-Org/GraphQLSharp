@@ -8,7 +8,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using GraphQLSharp;
 
-namespace square
+namespace Square
 {
     public class GraphQLClient : GraphQLClient<Query, GraphQLClientOptions>
     {
@@ -16,7 +16,10 @@ namespace square
         {
         }
     }
+}
 
+namespace Square.Types
+{
     ///<summary>
     ///Represents a postal address in a country.
     ///For more information, see [Working with Addresses](https://developer.squareup.com/docs/build-basics/working-with-addresses).

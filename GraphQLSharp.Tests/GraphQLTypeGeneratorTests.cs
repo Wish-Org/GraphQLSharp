@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using shopify;
+using Shopify.Types;
 using System.Text.Json;
 
 namespace GraphQLSharp.Tests;
@@ -12,7 +12,8 @@ public class GraphQLSharp_Tests
     {
         var options = new GraphQLTypeGeneratorOptions
         {
-            Namespace = "shopify",
+            NamespaceClient = "Shopify",
+            NamespaceTypes = "Shopify.Types",
             ScalarTypeNameToDotNetTypeName = new Dictionary<string, string>
                 {
                     { "UnsignedInt64", "ulong" },
@@ -52,7 +53,8 @@ public class GraphQLSharp_Tests
     {
         var options = new GraphQLTypeGeneratorOptions
         {
-            Namespace = "square",
+            NamespaceClient = "Square",
+            NamespaceTypes = "Square.Types",
             ScalarTypeNameToDotNetTypeName = new Dictionary<string, string>
                 {
                     { "Decimal", "decimal" },
