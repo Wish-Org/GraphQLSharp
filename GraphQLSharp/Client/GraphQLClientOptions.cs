@@ -16,7 +16,7 @@ public class GraphQLClientOptions
     /// </summary>
     public bool ThrowOnGraphQLErrors { get; set; } = true;
 
-    public Uri Uri { get; set; }
+    public virtual Uri Uri { get; set; }
 
     /// <summary>
     /// An (optional) custom HttpClient to be used for sending requests.
@@ -29,7 +29,7 @@ public class GraphQLClientOptions
     /// An (optional) configuration callback to modify the HttpRequestHeaders before sending the request.
     /// This can be used to set custom headers, authentication tokens, etc.
     /// </summary>
-    public Action<HttpRequestHeaders> ConfigureHttpRequestHeaders { get; set; }
+    public virtual Action<HttpRequestHeaders> ConfigureHttpRequestHeaders { get; set; }
 
     /// <summary>
     /// An (optional) JSON serializer options to be used for serializing and deserializing GraphQL requests and responses.

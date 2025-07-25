@@ -77,6 +77,7 @@ public class GraphQLClient<TClientOptions>
 
     public Task<GraphQLResponse<JsonElement>> ExecuteAsync(GraphQLRequest request, TClientOptions options = null, CancellationToken cancellationToken = default)
     {
+        //returing JsonElement and not JsonDocument because JsonDocument is disposable and we don't want to force the user to dispose it
         return ExecuteAsync<JsonElement>(request, options, cancellationToken);
     }
 
