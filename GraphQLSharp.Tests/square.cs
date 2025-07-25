@@ -10,7 +10,7 @@ using GraphQLSharp;
 
 namespace Square
 {
-    public class GraphQLClient : GraphQLClient<Query, GraphQLClientOptions>
+    public class GraphQLClient : GraphQLClient<Types.Query, GraphQLClientOptions>
     {
         public GraphQLClient(GraphQLClientOptions? defaultOptions = null) : base(defaultOptions!)
         {

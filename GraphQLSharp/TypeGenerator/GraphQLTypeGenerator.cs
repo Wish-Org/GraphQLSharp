@@ -157,7 +157,7 @@ public class GraphQLTypeGenerator
                 .AppendLine("using GraphQLSharp;")
                 .AppendLine($"namespace {options.NamespaceClient} {{")
                 .AppendLine("public class GraphQLClient : ")
-                .AppendLine(mutationType == null ? $"GraphQLClient<{queryType}, {clientOptionsTypeName}>" : $"GraphQLClient<{options.NamespaceTypes}.{queryType}, {options.NamespaceTypes}.{mutationType}, {clientOptionsTypeName}>")
+                .AppendLine(mutationType == null ? $"GraphQLClient<{options.NamespaceTypes}.{queryType}, {clientOptionsTypeName}>" : $"GraphQLClient<{options.NamespaceTypes}.{queryType}, {options.NamespaceTypes}.{mutationType}, {clientOptionsTypeName}>")
                 .AppendLine($$"""
                     {
                         public GraphQLClient({{clientOptionsTypeName}}? defaultOptions = null) : base(defaultOptions!)
