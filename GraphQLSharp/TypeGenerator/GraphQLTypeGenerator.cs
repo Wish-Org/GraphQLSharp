@@ -156,7 +156,8 @@ public class GraphQLTypeGenerator
                 .AppendLine("using System.Text.Json.Serialization;")
                 .AppendLine("using GraphQLSharp;")
                 .AppendLine($"namespace {options.NamespaceClient} {{")
-                .AppendLine("public class GraphQLClient : ")
+                //generating partial class to allow for extension methods and member overrides
+                .AppendLine("public partial class GraphQLClient : ")
                 .AppendLine(mutationType == null ? $"GraphQLClient<{options.NamespaceTypes}.{queryType}, {clientOptionsTypeName}>" : $"GraphQLClient<{options.NamespaceTypes}.{queryType}, {options.NamespaceTypes}.{mutationType}, {clientOptionsTypeName}>")
                 .AppendLine($$"""
                     {
