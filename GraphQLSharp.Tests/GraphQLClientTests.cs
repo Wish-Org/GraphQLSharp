@@ -7,7 +7,7 @@ namespace GraphQLSharp.Tests;
 [TestClass]
 public class GraphQLClientTests
 {
-    private GraphQLClient<QueryRoot, Mutation, GraphQLClientOptions> _client;
+    private GraphQLClient<GraphQLRequest, GraphQLClientOptions, QueryRoot, Mutation> _client;
 
     [TestInitialize]
     public void Initialize()

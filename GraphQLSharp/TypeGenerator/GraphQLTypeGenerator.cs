@@ -144,6 +144,7 @@ public class GraphQLTypeGenerator
         var queryType = schemaElt.GetProperty("queryType").GetProperty("name").GetString();
         var mutationType = schemaElt.TryGetProperty("mutationType", out var elt) && elt.ValueKind == JsonValueKind.Object ? elt.GetProperty("name").GetString() : null;
         var clientOptionsTypeName = options.ClientOptionsType == null ? typeof(GraphQLClientOptions).Name : options.ClientOptionsType.FullName;
+        var graphQLRequestTypeName = options.GraphQLRequestType == null ? typeof(GraphQLRequest).Name : options.GraphQLRequestType.FullName;
 
         var context = new Context();
         var str = context.StrBuilder;
@@ -158,7 +159,7 @@ public class GraphQLTypeGenerator
                 .AppendLine($"namespace {options.NamespaceClient} {{")
                 //generating partial class to allow for extension methods and member overrides
                 .AppendLine("public partial class GraphQLClient : ")
-                .AppendLine(mutationType == null ? $"GraphQLClient<{options.NamespaceTypes}.{queryType}, {clientOptionsTypeName}>" : $"GraphQLClient<{options.NamespaceTypes}.{queryType}, {options.NamespaceTypes}.{mutationType}, {clientOptionsTypeName}>")
+                .AppendLine(mutationType == null ? $"GraphQLClient<{graphQLRequestTypeName}, {clientOptionsTypeName}, {options.NamespaceTypes}.{queryType}>" : $"GraphQLClient<{graphQLRequestTypeName}, {clientOptionsTypeName}, {options.NamespaceTypes}.{queryType}, {options.NamespaceTypes}.{mutationType}>")
                 .AppendLine($$"""
                     {
                         public GraphQLClient({{clientOptionsTypeName}}? defaultOptions = null) : base(defaultOptions!)

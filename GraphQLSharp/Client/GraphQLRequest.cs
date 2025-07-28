@@ -6,7 +6,7 @@ namespace GraphQLSharp;
 public class GraphQLRequest
 {
     [StringSyntax("GraphQL")]
-    public required string query { get; set; }
+    public string query { get; set; }
 
     public string operationName { get; set; }
 

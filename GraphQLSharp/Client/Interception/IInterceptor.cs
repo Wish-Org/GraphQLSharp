@@ -7,11 +7,13 @@ namespace GraphQLSharp;
 /// </summary>
 public interface IInterceptor
 {
-    Task<GraphQLResponse<T>> InterceptRequestAsync<T, TClientOptions>(GraphQLRequest request,
-                                                                        TClientOptions defaultOptions,
-                                                                        TClientOptions options,
-                                                                        CancellationToken cancellationToken,
-                                                                        Func<GraphQLRequest, CancellationToken, Task<GraphQLResponse<T>>> executeAsync
-                                                                        )
-                                                                    where TClientOptions : GraphQLClientOptions;
+    Task<GraphQLResponse<TData>> InterceptRequestAsync<TGraphQLRequest, TClientOptions, TData>(
+                                TGraphQLRequest request,
+                                TClientOptions defaultOptions,
+                                TClientOptions options,
+                                CancellationToken cancellationToken,
+                                Func<TGraphQLRequest, CancellationToken,
+                                Task<GraphQLResponse<TData>>> executeAsync)
+                where TGraphQLRequest : GraphQLRequest, new()
+                where TClientOptions : GraphQLClientOptions;
 }
