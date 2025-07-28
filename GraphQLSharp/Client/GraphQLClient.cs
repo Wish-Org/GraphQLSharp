@@ -87,7 +87,9 @@ public class GraphQLClient<TClientOptions>
 
         try
         {
-            return await interceptor.InterceptRequestAsync(request, options, async (req, reqOpts) => await ExecuteCoreAsync<T>(req, reqOpts, cancellationToken), cancellationToken);
+            return await interceptor.InterceptRequestAsync(request, _defaultOptions, options, cancellationToken,
+                                                            //the interceptor may pass through a different request or cancellationToken
+                                                            async (req, token) => await ExecuteCoreAsync<T>(req, options, token));
         }
         catch (Exception ex) when (ex is not GraphQLException)
         {
