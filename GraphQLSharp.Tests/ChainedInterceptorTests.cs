@@ -23,15 +23,10 @@ public class ChainedInterceptorTests
         {
             Uri = new Uri("https://example.com/graphql"),
             Interceptor = new ChainedInterceptor(
-                new TestInterceptor(
-                () => entries.Add("Before1"),
-                () => entries.Add("After1")))
-                .Wrap(new TestInterceptor(
-                    () => entries.Add("Before2"),
-                    () => entries.Add("After2")))
-                    .Wrap(new TestInterceptor(
-                        () => entries.Add("Before3"),
-                        () => entries.Add("After3"))),
+                new TestInterceptor(() => entries.Add("Before1"), () => entries.Add("After1")),
+                new TestInterceptor(() => entries.Add("Before2"), () => entries.Add("After2")),
+                new TestInterceptor(() => entries.Add("Before3"), () => entries.Add("After3"))
+            ),
             HttpClient = new HttpClient(new TestHttpMessageHandler(msg =>
             {
                 return new HttpResponseMessage(HttpStatusCode.OK)

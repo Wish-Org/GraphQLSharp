@@ -2,17 +2,19 @@ namespace GraphQLSharp;
 
 public class ChainedInterceptor : IInterceptor
 {
-    private List<IInterceptor> _interceptors = new List<IInterceptor>();
+    private IInterceptor[] _interceptors;
 
-    public ChainedInterceptor(IInterceptor innerMostInterceptor)
-    {
-        this._interceptors.Add(innerMostInterceptor);
-    }
 
-    public ChainedInterceptor Wrap(IInterceptor nextInterceptor)
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ChainedInterceptor"/> class with the specified interceptors.
+    /// </summary>
+    /// <param name="interceptors">
+    /// An array of interceptors to chain together.
+    /// The first interceptor in the array will be executed first, followed by the second, and so on.
+    /// </param>
+    public ChainedInterceptor(params IInterceptor[] interceptors)
     {
-        _interceptors.Add(nextInterceptor);
-        return this;
+        this._interceptors = interceptors;
     }
 
     public async Task<GraphQLResponse<TData>> InterceptRequestAsync<TGraphQLRequest, TClientOptions, TData>(TGraphQLRequest request, TClientOptions defaultOptions, TClientOptions options, CancellationToken cancellationToken, Func<TGraphQLRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync)
