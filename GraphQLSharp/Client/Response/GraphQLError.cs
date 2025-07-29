@@ -2,7 +2,7 @@ using System.Text.Json;
 
 namespace GraphQLSharp;
 
-public class GraphQLError
+public class GraphQLError : IHasExtensions
 {
     public string message { get; set; }
     public List<GraphQLErrorLocation> locations { get; set; }

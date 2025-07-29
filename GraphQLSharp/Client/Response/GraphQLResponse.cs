@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace GraphQLSharp;
 
-public class GraphQLResponse<T>
+public class GraphQLResponse<T> : IHasExtensions
 {
     [JsonIgnore]
     public GraphQLRequest Request { get; internal set; }
@@ -21,13 +21,5 @@ public class GraphQLResponse<T>
     {
         if (errors?.Count > 0)
             throw new GraphQLErrorsException(Request, HttpResponse, errors, extensions);
-    }
-
-    public TExtension GetExtension<TExtension>(string key)
-    {
-        if (extensions == null || !extensions.TryGetValue(key, out var element))
-            return default;
-
-        return Serializer.Deserialize<TExtension>(element.GetRawText());
     }
 }

@@ -2,7 +2,7 @@ using System.Text.Json;
 
 namespace GraphQLSharp;
 
-public class GraphQLErrorsException : GraphQLException
+public class GraphQLErrorsException : GraphQLException, IHasExtensions
 {
     public readonly IEnumerable<GraphQLError> errors;
 
@@ -17,13 +17,5 @@ public class GraphQLErrorsException : GraphQLException
     {
         this.errors = errors;
         this.extensions = extensions;
-    }
-
-    public TExtension GetExtension<TExtension>(string key)
-    {
-        if (extensions == null || !extensions.TryGetValue(key, out var element))
-            return default;
-
-        return Serializer.Deserialize<TExtension>(element.GetRawText());
     }
 }
