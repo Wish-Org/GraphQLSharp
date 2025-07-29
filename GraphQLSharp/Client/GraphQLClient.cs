@@ -52,9 +52,6 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions>
 
     private readonly TClientOptions _defaultOptions;
 
-    protected virtual IInterceptor DefaultInterceptor => NoOpInterceptor.Instance;
-
-
     public GraphQLClient(TClientOptions defaultOptions = null)
     {
         _defaultOptions = defaultOptions;
@@ -74,7 +71,7 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions>
     public async Task<GraphQLResponse<T>> ExecuteAsync<T>(TGraphQLRequest request, TClientOptions options = null, CancellationToken cancellationToken = default)
     {
         options = this.GetClientOptions(options);
-        var interceptor = options.Interceptor ?? DefaultInterceptor;
+        var interceptor = options.Interceptor ?? NoOpInterceptor.Instance;
 
         try
         {
