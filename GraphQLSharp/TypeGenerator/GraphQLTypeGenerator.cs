@@ -135,6 +135,16 @@ public class GraphQLTypeGenerator
 
     public string GenerateTypes(GraphQLTypeGeneratorOptions options, JsonDocument introspectionQueryResponse)
     {
+        if (options.ClientOptionsType != null && !typeof(GraphQLClientOptionsBase).IsAssignableFrom(options.ClientOptionsType))
+            throw new ArgumentException($"{nameof(options.ClientOptionsType)} must inherit from {nameof(GraphQLClientOptionsBase)}", nameof(options.ClientOptionsType));
+
+        if (options.ClientOptionsType != null && !typeof(IGraphQLClientOptions).IsAssignableFrom(options.ClientOptionsType))
+            throw new ArgumentException($"{nameof(options.ClientOptionsType)} must implement {nameof(IGraphQLClientOptions)}", nameof(options.ClientOptionsType));
+
+        if (options.GraphQLRequestType != null && !typeof(GraphQLRequest).IsAssignableFrom(options.GraphQLRequestType))
+            throw new ArgumentException($"{nameof(options.GraphQLRequestType)} must inherit from {nameof(GraphQLRequest)}", nameof(options.GraphQLRequestType));
+
+
         // Get the "data.__schema" element or "__schema" element if the "data" property doesn't exist
         var schemaElt = introspectionQueryResponse.RootElement.TryGetProperty("data", out var dataElt) ?
                         dataElt.GetProperty("__schema") :
@@ -143,6 +153,7 @@ public class GraphQLTypeGenerator
         var allTypes = schemaElt.GetProperty("types").Deserialize<GraphQLType[]>();
         var queryType = schemaElt.GetProperty("queryType").GetProperty("name").GetString();
         var mutationType = schemaElt.TryGetProperty("mutationType", out var elt) && elt.ValueKind == JsonValueKind.Object ? elt.GetProperty("name").GetString() : null;
+
         var clientOptionsTypeName = options.ClientOptionsType == null ? typeof(GraphQLClientOptions).Name : options.ClientOptionsType.FullName;
         var graphQLRequestTypeName = options.GraphQLRequestType == null ? typeof(GraphQLRequest).Name : options.GraphQLRequestType.FullName;
 

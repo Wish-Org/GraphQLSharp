@@ -31,7 +31,7 @@ public class GraphQLTypeGeneratorOptions
 
     /// <summary>
     /// An optional Type that represents the client options for the generated GraphQL client.
-    /// The type must inherit from GraphQLClientOptions.
+    /// The type must inherit from GraphQLClientOptionsBase and implement IGraphQLClientOptions.
     /// </summary>
     public Type ClientOptionsType { get; set; }
 
