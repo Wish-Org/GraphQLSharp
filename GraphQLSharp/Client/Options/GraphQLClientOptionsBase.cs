@@ -1,35 +1,6 @@
-using System.Net.Http.Headers;
 using System.Text.Json;
 
 namespace GraphQLSharp;
-
-
-public class GraphQLClientOptions : GraphQLClientOptionsBase, IGraphQLClientOptions
-{
-    private readonly Uri _uri;
-
-    public GraphQLClientOptions(Uri uri)
-    {
-        _uri = uri ?? throw new ArgumentNullException(nameof(uri));
-    }
-
-    public Action<HttpRequestHeaders> ConfigureHttpRequestHeaders { get; set; }
-
-    Uri IGraphQLClientOptions.Uri => _uri;
-
-    Action<HttpRequestHeaders> IGraphQLClientOptions.ConfigureHttpRequestHeaders => ConfigureHttpRequestHeaders;
-}
-
-public interface IGraphQLClientOptions
-{
-    Uri Uri { get; }
-
-    /// <summary>
-    /// An (optional) configuration callback to modify the HttpRequestHeaders before sending the request.
-    /// This can be used to set custom headers, authentication tokens, etc.
-    /// </summary>
-    Action<HttpRequestHeaders> ConfigureHttpRequestHeaders { get; }
-}
 
 /// <summary>
 /// Options for configuring GraphQL requests.

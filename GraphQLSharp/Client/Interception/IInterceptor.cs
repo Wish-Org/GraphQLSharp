@@ -14,5 +14,5 @@ public interface IInterceptor
                                 Func<TGraphQLRequest, CancellationToken,
                                 Task<GraphQLResponse<TData>>> executeAsync)
                 where TGraphQLRequest : GraphQLRequest, new()
-                where TClientOptions : GraphQLClientOptionsBase;
+                where TClientOptions : GraphQLClientOptionsBase, IGraphQLClientOptions;
 }
