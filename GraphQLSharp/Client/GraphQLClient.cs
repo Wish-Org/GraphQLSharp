@@ -1,4 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text.Json;
@@ -9,7 +8,7 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions, TQueryRoot, TMutatio
     where TGraphQLRequest : GraphQLRequest, new()
     where TQueryRoot : class
     where TMutationRoot : class
-    where TClientOptions : GraphQLClientOptions
+    where TClientOptions : GraphQLClientOptionsBase, IGraphQLClientOptions
 {
     public GraphQLClient(TClientOptions defaultOptions = null) : base(defaultOptions)
     {
@@ -24,7 +23,7 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions, TQueryRoot, TMutatio
 public class GraphQLClient<TGraphQLRequest, TClientOptions, TQueryRoot> : GraphQLClient<TGraphQLRequest, TClientOptions>
     where TGraphQLRequest : GraphQLRequest, new()
     where TQueryRoot : class
-    where TClientOptions : GraphQLClientOptions
+    where TClientOptions : GraphQLClientOptionsBase, IGraphQLClientOptions
 {
     public GraphQLClient(TClientOptions defaultOptions = null) : base(defaultOptions)
     {
@@ -45,7 +44,7 @@ public class GraphQLCLient : GraphQLClient<GraphQLRequest, GraphQLClientOptions>
 
 public class GraphQLClient<TGraphQLRequest, TClientOptions>
     where TGraphQLRequest : GraphQLRequest, new()
-    where TClientOptions : GraphQLClientOptions
+    where TClientOptions : GraphQLClientOptionsBase, IGraphQLClientOptions
 {
     private static readonly HttpClient _defaultHttpClient = new();
 
@@ -61,6 +60,11 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions>
         _defaultOptions = defaultOptions;
     }
 
+    private TClientOptions GetClientOptions(TClientOptions options)
+    {
+        return options ?? _defaultOptions ?? throw new ArgumentNullException(nameof(options));
+    }
+
     public Task<GraphQLResponse<JsonElement>> ExecuteAsync(TGraphQLRequest request, TClientOptions options = null, CancellationToken cancellationToken = default)
     {
         //returing JsonElement and not JsonDocument because JsonDocument is disposable and we don't want to force the user to dispose it
@@ -69,11 +73,12 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions>
 
     public async Task<GraphQLResponse<T>> ExecuteAsync<T>(TGraphQLRequest request, TClientOptions options = null, CancellationToken cancellationToken = default)
     {
-        var interceptor = options?.Interceptor ?? _defaultOptions?.Interceptor ?? DefaultInterceptor;
+        options = this.GetClientOptions(options);
+        var interceptor = options.Interceptor ?? DefaultInterceptor;
 
         try
         {
-            return await interceptor.InterceptRequestAsync(request, _defaultOptions, options, cancellationToken,
+            return await interceptor.InterceptRequestAsync(request, options, cancellationToken,
                                                             //the interceptor may pass through a different request or cancellationToken
                                                             async (req, token) => await ExecuteCoreAsync<T>(req, options, token));
         }
@@ -89,8 +94,8 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions>
         try
         {
             using HttpRequestMessage requestMessage = CreateHttpRequest(request, options);
-
-            var httpClient = options?.HttpClient ?? _defaultOptions?.HttpClient ?? _defaultHttpClient;
+            options = this.GetClientOptions(options);
+            var httpClient = options?.HttpClient ?? _defaultHttpClient;
             using var httpResponseMsg = await httpClient.SendAsync(requestMessage, cancellationToken);
             //httpResponseMsg needs to disposed so we create a small copy of basic information
             httpResponse = new HttpResponse(httpResponseMsg);
@@ -106,7 +111,7 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions>
             GraphQLResponse<T> res;
             try
             {
-                res = await httpResponseMsg.Content.ReadFromJsonAsync<GraphQLResponse<T>>(options?.JsonSerializerOptions ?? _defaultOptions?.JsonSerializerOptions ?? Serializer.Options, cancellationToken);
+                res = await httpResponseMsg.Content.ReadFromJsonAsync<GraphQLResponse<T>>(options?.JsonSerializerOptions ?? Serializer.Options, cancellationToken);
                 if (res == null)
                     throw new GraphQLException(request, httpResponse, $"Failed to deserialize null GraphQL response. Request: {request}");
             }
@@ -118,7 +123,7 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions>
             res.Request = request;
             res.HttpResponse = httpResponse;
 
-            bool throwOnGraphQLErrors = options?.ThrowOnGraphQLErrors ?? _defaultOptions?.ThrowOnGraphQLErrors ?? true;
+            bool throwOnGraphQLErrors = options?.ThrowOnGraphQLErrors ?? true;
             if (throwOnGraphQLErrors)
                 res.ThrowIfAnyError();
 
@@ -130,25 +135,20 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions>
         }
     }
 
-    protected virtual void ValidateOptions(TClientOptions defaultOptions, TClientOptions options)
-    {
-    }
-
     private HttpRequestMessage CreateHttpRequest(TGraphQLRequest request, TClientOptions options)
     {
         _ = request.query ?? throw new ArgumentNullException(nameof(request.query));
-        ValidateOptions(_defaultOptions, options);
-        var uri = options?.Uri ?? _defaultOptions?.Uri ?? throw new ArgumentNullException($"{nameof(options)}.{nameof(options.Uri)}");
+        options = this.GetClientOptions(options);
+        var uri = options.Uri ?? throw new ArgumentNullException(nameof(IGraphQLClientOptions.Uri));
         var requestMessage = new HttpRequestMessage
         {
             Method = HttpMethod.Post,
             RequestUri = uri,
-            Content = JsonContent.Create(request, options: options?.JsonSerializerOptions ?? _defaultOptions?.JsonSerializerOptions ?? Serializer.Options),
+            Content = JsonContent.Create(request, options: options?.JsonSerializerOptions ?? Serializer.Options),
         };
 
         requestMessage.Headers.UserAgent.Add(_defaultUserAgent);
-        _defaultOptions?.ConfigureHttpRequestHeaders?.Invoke(requestMessage.Headers);
-        options?.ConfigureHttpRequestHeaders?.Invoke(requestMessage.Headers);
+        options.ConfigureHttpRequestHeaders?.Invoke(requestMessage.Headers);
         return requestMessage;
     }
 }

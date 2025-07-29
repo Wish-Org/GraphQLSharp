@@ -19,9 +19,8 @@ public class RetryInterceptorTests
             """;
 
         int tries = 0;
-        var options = new GraphQLClientOptions
+        var options = new GraphQLClientOptions(new Uri("https://example.com/graphql"))
         {
-            Uri = new Uri("https://example.com/graphql"),
             Interceptor = new RetryInterceptor(),
             HttpClient = new HttpClient(new TestHttpMessageHandler(msg =>
             {
@@ -50,9 +49,8 @@ public class RetryInterceptorTests
             """;
 
         int tries = 0;
-        var options = new GraphQLClientOptions
+        var options = new GraphQLClientOptions(new Uri("https://example.com/graphql"))
         {
-            Uri = new Uri("https://example.com/graphql"),
             Interceptor = new RetryInterceptor(),
             HttpClient = new HttpClient(new TestHttpMessageHandler(msg =>
             {

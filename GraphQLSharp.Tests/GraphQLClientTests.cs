@@ -12,18 +12,21 @@ public class GraphQLClientTests
     [TestInitialize]
     public void Initialize()
     {
+        _client = new(GetClientOptions());
+    }
+
+    private static GraphQLClientOptions GetClientOptions()
+    {
         string shopId = Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_ID", EnvironmentVariableTarget.User) ?? Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_ID");
         string token = Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_TOKEN", EnvironmentVariableTarget.User) ?? Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_TOKEN");
-
-        _client = new(new GraphQLClientOptions
+        return new GraphQLClientOptions(new Uri($"https://{shopId}/admin/api/unstable/graphql.json"))
         {
-            Uri = new Uri($"https://{shopId}/admin/api/2025-04/graphql.json"),
             ConfigureHttpRequestHeaders = headers =>
             {
                 headers.UserAgent.Add(new(typeof(GraphQLClientTests).Assembly.GetName().Name!, typeof(GraphQLClientTests).Assembly.GetName().Version!.ToString()));
                 headers.Add("X-Shopify-Access-Token", token);
             }
-        });
+        };
     }
 
     [TestMethod]
@@ -275,11 +278,9 @@ public class GraphQLClientTests
             query = query
         };
 
-        var response = await _client.ExecuteQueryAsync(request,
-                                            new GraphQLClientOptions
-                                            {
-                                                ThrowOnGraphQLErrors = false
-                                            });
+        var options = GetClientOptions();
+        options.ThrowOnGraphQLErrors = false;
+        var response = await _client.ExecuteQueryAsync(request, options);
         Assert.IsNotNull(response.errors);
         Assert.IsTrue(response.errors.Count > 0);
     }
