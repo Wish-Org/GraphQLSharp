@@ -135,6 +135,11 @@ public class GraphQLTypeGenerator
 
     public string GenerateTypes(GraphQLTypeGeneratorOptions options, JsonDocument introspectionQueryResponse)
     {
+        _ = options ?? throw new ArgumentNullException(nameof(options));
+        _ = introspectionQueryResponse ?? throw new ArgumentNullException(nameof(introspectionQueryResponse));
+        _ = options.NamespaceTypes ?? throw new ArgumentNullException(nameof(options.NamespaceTypes));
+        _ = options.NamespaceClient ?? throw new ArgumentNullException(nameof(options.NamespaceClient));
+
         if (options.ClientOptionsType != null && !typeof(GraphQLClientOptionsBase).IsAssignableFrom(options.ClientOptionsType))
             throw new ArgumentException($"{nameof(options.ClientOptionsType)} must inherit from {nameof(GraphQLClientOptionsBase)}", nameof(options.ClientOptionsType));
 
@@ -156,6 +161,7 @@ public class GraphQLTypeGenerator
 
         var clientOptionsTypeName = options.ClientOptionsType == null ? typeof(GraphQLClientOptions).Name : options.ClientOptionsType.FullName;
         var graphQLRequestTypeName = options.GraphQLRequestType == null ? typeof(GraphQLRequest).Name : options.GraphQLRequestType.FullName;
+        string clientClassName = options.ClientClassName ?? "GraphQLClient";
 
         var context = new Context();
         var str = context.StrBuilder;
@@ -169,11 +175,11 @@ public class GraphQLTypeGenerator
                 .AppendLine("using GraphQLSharp;")
                 .AppendLine($"namespace {options.NamespaceClient} {{")
                 //generating partial class to allow for extension methods and member overrides
-                .AppendLine("public partial class GraphQLClient : ")
+                .AppendLine($"public partial class {clientClassName} : ")
                 .AppendLine(mutationType == null ? $"GraphQLClient<{graphQLRequestTypeName}, {clientOptionsTypeName}, {options.NamespaceTypes}.{queryType}>" : $"GraphQLClient<{graphQLRequestTypeName}, {clientOptionsTypeName}, {options.NamespaceTypes}.{queryType}, {options.NamespaceTypes}.{mutationType}>")
                 .AppendLine($$"""
                     {
-                        public GraphQLClient({{clientOptionsTypeName}}? defaultOptions = null) : base(defaultOptions!)
+                        public {{clientClassName}}({{clientOptionsTypeName}}? defaultOptions = null) : base(defaultOptions!)
                         {
                         }
                     }

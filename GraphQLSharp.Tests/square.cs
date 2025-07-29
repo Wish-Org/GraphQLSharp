@@ -10,9 +10,9 @@ using GraphQLSharp;
 
 namespace Square
 {
-    public partial class GraphQLClient : GraphQLClient<GraphQLRequest, GraphQLClientOptions, Square.Types.Query>
+    public partial class SquareClient : GraphQLClient<GraphQLRequest, GraphQLClientOptions, Square.Types.Query>
     {
-        public GraphQLClient(GraphQLClientOptions? defaultOptions = null) : base(defaultOptions!)
+        public SquareClient(GraphQLClientOptions? defaultOptions = null) : base(defaultOptions!)
         {
         }
     }

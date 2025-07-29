@@ -13,6 +13,12 @@ public class GraphQLTypeGeneratorOptions
     public string NamespaceClient { get; set; }
 
     /// <summary>
+    /// The name of the generated client class.
+    /// Defaults to "GraphQLClient" if unspecified.
+    /// </summary>
+    public string ClientClassName { get; set; }
+
+    /// <summary>
     /// A mapping of scalar GraphQL type names to .NET type names.
     /// </summary>
     public Dictionary<string, string> ScalarTypeNameToDotNetTypeName { get; set; }

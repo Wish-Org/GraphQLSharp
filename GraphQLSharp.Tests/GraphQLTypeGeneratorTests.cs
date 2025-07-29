@@ -14,6 +14,7 @@ public class GraphQLSharp_Tests
         {
             NamespaceClient = "Shopify",
             NamespaceTypes = "Shopify.Types",
+            ClientClassName = "ShopifyClient",
             ScalarTypeNameToDotNetTypeName = new Dictionary<string, string>
                 {
                     { "UnsignedInt64", "ulong" },
@@ -55,6 +56,7 @@ public class GraphQLSharp_Tests
         {
             NamespaceClient = "Square",
             NamespaceTypes = "Square.Types",
+            ClientClassName = "SquareClient",
             ScalarTypeNameToDotNetTypeName = new Dictionary<string, string>
                 {
                     { "Decimal", "decimal" },

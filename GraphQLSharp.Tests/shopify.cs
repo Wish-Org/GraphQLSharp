@@ -10,9 +10,9 @@ using GraphQLSharp;
 
 namespace Shopify
 {
-    public partial class GraphQLClient : GraphQLClient<GraphQLRequest, GraphQLClientOptions, Shopify.Types.QueryRoot, Shopify.Types.Mutation>
+    public partial class ShopifyClient : GraphQLClient<GraphQLRequest, GraphQLClientOptions, Shopify.Types.QueryRoot, Shopify.Types.Mutation>
     {
-        public GraphQLClient(GraphQLClientOptions? defaultOptions = null) : base(defaultOptions!)
+        public ShopifyClient(GraphQLClientOptions? defaultOptions = null) : base(defaultOptions!)
         {
         }
     }
