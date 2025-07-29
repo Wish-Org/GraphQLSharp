@@ -22,4 +22,12 @@ public class GraphQLResponse<T>
         if (errors?.Count > 0)
             throw new GraphQLErrorsException(Request, HttpResponse, errors, extensions);
     }
+
+    public TExtension GetExtension<TExtension>(string key)
+    {
+        if (extensions == null || !extensions.TryGetValue(key, out var element))
+            return default;
+
+        return Serializer.Deserialize<TExtension>(element.GetRawText());
+    }
 }

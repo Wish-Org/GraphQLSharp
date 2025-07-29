@@ -30,7 +30,7 @@ public static class Serializer
         return JsonSerializer.Deserialize(json, type, Options);
     }
 
-    public static T? Deserialize<T>(string json) where T : class
+    public static T? Deserialize<T>(string json)
     {
         return JsonSerializer.Deserialize<T>(json, Options);
     }

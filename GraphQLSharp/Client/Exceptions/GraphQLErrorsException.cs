@@ -18,4 +18,12 @@ public class GraphQLErrorsException : GraphQLException
         this.errors = errors;
         this.extensions = extensions;
     }
+
+    public TExtension GetExtension<TExtension>(string key)
+    {
+        if (extensions == null || !extensions.TryGetValue(key, out var element))
+            return default;
+
+        return Serializer.Deserialize<TExtension>(element.GetRawText());
+    }
 }
