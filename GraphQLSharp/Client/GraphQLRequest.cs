@@ -20,4 +20,9 @@ public class GraphQLRequest
                 variables: {JsonSerializer.Serialize(variables, new JsonSerializerOptions { WriteIndented = true })},
             """;
     }
+
+    public static implicit operator GraphQLRequest(string query)
+    {
+        return new GraphQLRequest { query = query };
+    }
 }

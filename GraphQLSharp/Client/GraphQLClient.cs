@@ -15,11 +15,6 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions, TQueryRoot, TMutatio
     {
     }
 
-    public Task<GraphQLResponse<TMutationRoot>> ExecuteMutationAsync([StringSyntax("GraphQL")] string query, TClientOptions options = null, CancellationToken cancellationToken = default)
-    {
-        return ExecuteAsync<TMutationRoot>(query, options, cancellationToken);
-    }
-
     public Task<GraphQLResponse<TMutationRoot>> ExecuteMutationAsync(TGraphQLRequest request, TClientOptions options = null, CancellationToken cancellationToken = default)
     {
         return ExecuteAsync<TMutationRoot>(request, options, cancellationToken);
@@ -33,11 +28,6 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions, TQueryRoot> : GraphQ
 {
     public GraphQLClient(TClientOptions defaultOptions = null) : base(defaultOptions)
     {
-    }
-
-    public Task<GraphQLResponse<TQueryRoot>> ExecuteQueryAsync([StringSyntax("GraphQL")] string query, TClientOptions options = null, CancellationToken cancellationToken = default)
-    {
-        return ExecuteAsync<TQueryRoot>(query, options, cancellationToken);
     }
 
     public Task<GraphQLResponse<TQueryRoot>> ExecuteQueryAsync(TGraphQLRequest request, TClientOptions options = null, CancellationToken cancellationToken = default)
@@ -69,16 +59,6 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions>
     public GraphQLClient(TClientOptions defaultOptions = null)
     {
         _defaultOptions = defaultOptions;
-    }
-
-    public Task<GraphQLResponse<JsonElement>> ExecuteAsync([StringSyntax("GraphQL")] string query, TClientOptions options = null, CancellationToken cancellationToken = default)
-    {
-        return ExecuteAsync<JsonElement>(query, options, cancellationToken);
-    }
-
-    public Task<GraphQLResponse<T>> ExecuteAsync<T>([StringSyntax("GraphQL")] string query, TClientOptions options = null, CancellationToken cancellationToken = default)
-    {
-        return ExecuteAsync<T>(new TGraphQLRequest { query = query }, options, cancellationToken);
     }
 
     public Task<GraphQLResponse<JsonElement>> ExecuteAsync(TGraphQLRequest request, TClientOptions options = null, CancellationToken cancellationToken = default)
