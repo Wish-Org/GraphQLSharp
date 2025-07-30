@@ -17,8 +17,11 @@ public class GraphQLClientTests
 
     private static GraphQLClientOptions GetClientOptions()
     {
-        string shopId = Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_ID", EnvironmentVariableTarget.User) ?? Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_ID");
-        string token = Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_TOKEN", EnvironmentVariableTarget.User) ?? Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_TOKEN");
+        string shopId = Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_ID", EnvironmentVariableTarget.User) ??
+                            Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_ID");
+        string token = Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_TOKEN", EnvironmentVariableTarget.User) ??
+                            Environment.GetEnvironmentVariable("GRAPHQLSHARP_SHOP_TOKEN");
+
         return new GraphQLClientOptions(new Uri($"https://{shopId}/admin/api/unstable/graphql.json"))
         {
             ConfigureHttpRequestHeaders = headers =>
