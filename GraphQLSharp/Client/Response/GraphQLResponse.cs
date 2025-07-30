@@ -3,7 +3,16 @@ using System.Text.Json.Serialization;
 
 namespace GraphQLSharp;
 
-public class GraphQLResponse<T> : IHasExtensions
+public class GraphQLResponse<T> : GraphQLResponse
+{
+    public new T data
+    {
+        get => (T)base.data;
+        set => base.data = value;
+    }
+}
+
+public class GraphQLResponse : IHasExtensions
 {
     [JsonIgnore]
     public GraphQLRequest Request { get; internal set; }
@@ -11,7 +20,7 @@ public class GraphQLResponse<T> : IHasExtensions
     [JsonIgnore]
     public HttpResponse HttpResponse { get; internal set; }
 
-    public T data { get; set; }
+    public object data { get; set; }
 
     public List<GraphQLError> errors { get; set; }
 
@@ -20,6 +29,6 @@ public class GraphQLResponse<T> : IHasExtensions
     public void ThrowIfAnyError()
     {
         if (errors?.Count > 0)
-            throw new GraphQLErrorsException(Request, HttpResponse, errors, extensions);
+            throw new GraphQLErrorsException(this);
     }
 }

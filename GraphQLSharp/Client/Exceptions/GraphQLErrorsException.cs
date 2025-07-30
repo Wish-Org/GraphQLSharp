@@ -1,21 +1,15 @@
-using System.Text.Json;
-
 namespace GraphQLSharp;
 
-public class GraphQLErrorsException : GraphQLException, IHasExtensions
+public class GraphQLErrorsException : GraphQLException
 {
-    public readonly IEnumerable<GraphQLError> errors;
+    public readonly GraphQLResponse response;
 
-    public Dictionary<string, JsonElement> extensions { get; set; }
-
-    public GraphQLErrorsException(GraphQLRequest request, HttpResponse httpResponse, List<GraphQLError> errors, Dictionary<string, JsonElement> extensions)
-        : base(request, httpResponse, $"""
+    public GraphQLErrorsException(GraphQLResponse response)
+        : base(response.Request, response.HttpResponse, $"""
                         GraphQL request returned errors:
-                        Request: {request}
-                        Errors: {string.Join("\n", errors.Select(e => e.ToString()))}
+                        Request: {response.Request}
+                        Errors: {string.Join("\n", response.errors.Select(e => e.ToString()))}
                         """)
     {
-        this.errors = errors;
-        this.extensions = extensions;
     }
 }
