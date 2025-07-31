@@ -7,27 +7,30 @@ namespace GraphQLSharp;
 
 public static class Serializer
 {
-    public static readonly JsonSerializerOptions Options = new JsonSerializerOptions
-    {
-        NumberHandling = JsonNumberHandling.AllowReadingFromString,
-        Converters = { new JsonStringEnumConverter() },
-        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
-    };
+    public static readonly JsonSerializerOptions Options;
 
-    public static readonly JsonSerializerOptions OptionsIndented = new JsonSerializerOptions(Options)
+    public static readonly JsonSerializerOptions OptionsIndented;
+
+    static Serializer()
     {
-        WriteIndented = true
-    };
+        Options = new JsonSerializerOptions
+        {
+            NumberHandling = JsonNumberHandling.AllowReadingFromString,
+            Converters = { new JsonStringEnumConverter() },
+            DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
+        };
+        Options.Converters.Add(new SafeDateTimeConverter());
+        Options.Converters.Add(new SafeDateTimeOffsetConverter());
+
+        OptionsIndented = new JsonSerializerOptions(Options)
+        {
+            WriteIndented = true
+        };
+    }
 
     public static JsonSerializerOptions GetOptions(bool indent)
     {
         return indent ? OptionsIndented : Options;
-    }
-
-    static Serializer()
-    {
-        Options.Converters.Add(new SafeDateTimeConverter());
-        Options.Converters.Add(new SafeDateTimeOffsetConverter());
     }
 
     public static string Serialize(object obj, bool indent = false)
