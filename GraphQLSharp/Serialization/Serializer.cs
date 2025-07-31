@@ -14,24 +14,34 @@ public static class Serializer
         DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
     };
 
+    public static readonly JsonSerializerOptions OptionsIndented = new JsonSerializerOptions(Options)
+    {
+        WriteIndented = true
+    };
+
+    public static JsonSerializerOptions GetOptions(bool indent)
+    {
+        return indent ? OptionsIndented : Options;
+    }
+
     static Serializer()
     {
         Options.Converters.Add(new SafeDateTimeConverter());
         Options.Converters.Add(new SafeDateTimeOffsetConverter());
     }
 
-    public static string Serialize(object obj)
+    public static string Serialize(object obj, bool indent = false)
     {
-        return JsonSerializer.Serialize(obj, obj.GetType(), Options);
+        return JsonSerializer.Serialize(obj, obj.GetType(), GetOptions(indent));
     }
 
-    public static object? Deserialize(string json, Type type)
+    public static object? Deserialize(string json, Type type, bool indent = false)
     {
-        return JsonSerializer.Deserialize(json, type, Options);
+        return JsonSerializer.Deserialize(json, type, GetOptions(indent));
     }
 
-    public static T? Deserialize<T>(string json)
+    public static T? Deserialize<T>(string json, bool indent = false)
     {
-        return JsonSerializer.Deserialize<T>(json, Options);
+        return JsonSerializer.Deserialize<T>(json, GetOptions(indent));
     }
 }

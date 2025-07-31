@@ -13,5 +13,5 @@ public abstract class GraphQLObject<TSelf> : IGraphQLObject where TSelf : GraphQ
 
 public static class GraphQLObjectExtensions
 {
-    public static string ToJson(this IGraphQLObject o) => Serializer.Serialize(o);
+    public static string ToJson(this IGraphQLObject o, bool indent = false) => Serializer.Serialize(o, indent);
 }
