@@ -13,7 +13,8 @@ public class TestInterceptor : IInterceptor
 
     public async Task<GraphQLResponse<TData>> InterceptRequestAsync<TGraphQLRequest, TClientOptions, TData>(
         TGraphQLRequest request,
-        TClientOptions options,
+        TClientOptions deafultOptions,
+        TClientOptions requestOptions,
         CancellationToken cancellationToken,
         Func<TGraphQLRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync)
         where TGraphQLRequest : GraphQLRequest, new()

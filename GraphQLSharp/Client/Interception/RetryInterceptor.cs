@@ -22,7 +22,12 @@ public class RetryInterceptor : IInterceptor
         return _retryableStatusCodes.Contains(r.StatusCode);
     }
 
-    public async Task<GraphQLResponse<TData>> InterceptRequestAsync<TGraphQLRequest, TClientOptions, TData>(TGraphQLRequest request, TClientOptions options, CancellationToken cancellationToken, Func<TGraphQLRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync)
+    public async Task<GraphQLResponse<TData>> InterceptRequestAsync<TGraphQLRequest, TClientOptions, TData>(
+        TGraphQLRequest request,
+        TClientOptions defaultOptions,
+        TClientOptions requestOptions,
+        CancellationToken cancellationToken,
+        Func<TGraphQLRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync)
         where TGraphQLRequest : GraphQLRequest, new()
         where TClientOptions : GraphQLClientOptionsBase, IGraphQLClientOptions
     {

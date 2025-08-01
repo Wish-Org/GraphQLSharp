@@ -10,10 +10,11 @@ namespace GraphQLSharp;
 public abstract class GraphQLClientOptionsBase
 {
     /// <summary>
-    /// Whether to throw an exception if the GraphQL response contains errors. Defaults to TRUE.
+    /// Whether to throw an exception if the GraphQL response contains errors.
+    /// Defaults to true if unspecified.
     /// If set to false, the response will still contain the errors, but no exception will be thrown.
     /// </summary>
-    public bool ThrowOnGraphQLErrors { get; set; } = true;
+    public bool? ThrowOnGraphQLErrors { get; set; } = true;
 
     /// <summary>
     /// An (optional) custom HttpClient to be used for sending requests.

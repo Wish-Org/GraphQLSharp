@@ -9,7 +9,8 @@ public interface IInterceptor
 {
     Task<GraphQLResponse<TData>> InterceptRequestAsync<TGraphQLRequest, TClientOptions, TData>(
                                 TGraphQLRequest request,
-                                TClientOptions options,
+                                TClientOptions defaultOptions,
+                                TClientOptions requestOptions,
                                 CancellationToken cancellationToken,
                                 Func<TGraphQLRequest, CancellationToken,
                                 Task<GraphQLResponse<TData>>> executeAsync)

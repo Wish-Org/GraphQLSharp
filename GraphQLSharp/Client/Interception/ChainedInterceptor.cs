@@ -17,7 +17,11 @@ public class ChainedInterceptor : IInterceptor
         this._interceptors = interceptors;
     }
 
-    public async Task<GraphQLResponse<TData>> InterceptRequestAsync<TGraphQLRequest, TClientOptions, TData>(TGraphQLRequest request, TClientOptions options, CancellationToken cancellationToken, Func<TGraphQLRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync)
+    public async Task<GraphQLResponse<TData>> InterceptRequestAsync<TGraphQLRequest, TClientOptions, TData>(TGraphQLRequest request,
+                                                                                                            TClientOptions defaultOptions,
+                                                                                                            TClientOptions requestOptions,
+                                                                                                            CancellationToken cancellationToken,
+                                                                                                            Func<TGraphQLRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync)
         where TGraphQLRequest : GraphQLRequest, new()
         where TClientOptions : GraphQLClientOptionsBase, IGraphQLClientOptions
     {
@@ -25,7 +29,7 @@ public class ChainedInterceptor : IInterceptor
         {
             var capturedInterceptor = interceptor;
             var capturedExecuteAsync = executeAsync;
-            executeAsync = (req, ct) => capturedInterceptor.InterceptRequestAsync(req, options, ct, capturedExecuteAsync);
+            executeAsync = (req, ct) => capturedInterceptor.InterceptRequestAsync(req, defaultOptions, requestOptions, ct, capturedExecuteAsync);
         }
 
         return await executeAsync(request, cancellationToken);

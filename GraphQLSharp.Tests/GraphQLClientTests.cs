@@ -60,7 +60,7 @@ public class GraphQLClientTests
             """;
 
         //response is strongly typed
-        var response = await _client.ExecuteQueryAsync(query);
+        var response = await _client.QueryAsync(query);
         Assert.IsNotNull(response.data.products.nodes.FirstOrDefault()?.id);
     }
 
@@ -83,7 +83,7 @@ public class GraphQLClientTests
             """;
 
         //response is strongly typed
-        var response = await _client.ExecuteQueryAsync(query);
+        var response = await _client.QueryAsync(query);
     }
 
     [TestMethod]
@@ -99,7 +99,7 @@ public class GraphQLClientTests
                 }
             """;
 
-        var response = await _client.ExecuteMutationAsync(query);
+        var response = await _client.MutationAsync(query);
         Assert.IsTrue(response.data.appSubscriptionTrialExtend.userErrors.Any());
     }
 
@@ -119,7 +119,7 @@ public class GraphQLClientTests
             }
             """;
 
-        var response = await _client.ExecuteMutationAsync(query);
+        var response = await _client.MutationAsync(query);
     }
 
     [TestMethod]
@@ -148,7 +148,7 @@ public class GraphQLClientTests
         };
 
         //response is strongly typed
-        var response = await _client.ExecuteQueryAsync(request);
+        var response = await _client.QueryAsync(request);
         Assert.IsNotNull(response.data.products.nodes.FirstOrDefault()?.id);
     }
 
@@ -188,7 +188,7 @@ public class GraphQLClientTests
             }
         };
 
-        var response = await _client.ExecuteQueryAsync(request);
+        var response = await _client.QueryAsync(request);
         Assert.IsNotNull(response.data.products.nodes.FirstOrDefault()?.id);
     }
 
@@ -257,7 +257,7 @@ public class GraphQLClientTests
             query = query
         };
 
-        var response = await _client.ExecuteQueryAsync(request);
+        var response = await _client.QueryAsync(request);
     }
 
     [TestMethod]
@@ -283,7 +283,7 @@ public class GraphQLClientTests
 
         var options = GetClientOptions();
         options.ThrowOnGraphQLErrors = false;
-        var response = await _client.ExecuteQueryAsync(request, options);
+        var response = await _client.QueryAsync(request, options);
         Assert.IsNotNull(response.errors);
         Assert.IsTrue(response.errors.Count > 0);
     }

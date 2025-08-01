@@ -14,7 +14,7 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions, TQueryRoot, TMutatio
     {
     }
 
-    public Task<GraphQLResponse<TMutationRoot>> ExecuteMutationAsync(TGraphQLRequest request, TClientOptions options = null, CancellationToken cancellationToken = default)
+    public Task<GraphQLResponse<TMutationRoot>> MutationAsync(TGraphQLRequest request, TClientOptions options = null, CancellationToken cancellationToken = default)
     {
         return ExecuteAsync<TMutationRoot>(request, options, cancellationToken);
     }
@@ -29,7 +29,7 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions, TQueryRoot> : GraphQ
     {
     }
 
-    public Task<GraphQLResponse<TQueryRoot>> ExecuteQueryAsync(TGraphQLRequest request, TClientOptions options = null, CancellationToken cancellationToken = default)
+    public Task<GraphQLResponse<TQueryRoot>> QueryAsync(TGraphQLRequest request, TClientOptions options = null, CancellationToken cancellationToken = default)
     {
         return ExecuteAsync<TQueryRoot>(request, options, cancellationToken);
     }
@@ -50,17 +50,40 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions>
 
     private static readonly ProductInfoHeaderValue _defaultUserAgent = new(typeof(GraphQLClient<TGraphQLRequest, TClientOptions>).Assembly.GetName().Name!, typeof(GraphQLClient<TGraphQLRequest, TClientOptions>).Assembly.GetName().Version!.ToString());
 
-    private readonly TClientOptions _defaultOptions;
+    protected readonly TClientOptions _defaultOptions;
 
     public GraphQLClient(TClientOptions defaultOptions = null)
     {
         _defaultOptions = defaultOptions;
     }
 
-    private TClientOptions GetClientOptions(TClientOptions options)
+    protected virtual IInterceptor DefaultInterceptor => NoOpInterceptor.Instance;
+
+    protected T GetOptionValue<T>(TClientOptions requestOptions, Func<TClientOptions, T> optionSelector, T defaultValue = default)
     {
-        return options ?? _defaultOptions ?? throw new ArgumentNullException(nameof(options));
+        var requestOptionValue = requestOptions == null ? default : optionSelector(requestOptions);
+        var defaultOptionValue = _defaultOptions == null ? default : optionSelector(_defaultOptions);
+        return requestOptionValue ?? defaultOptionValue ?? defaultValue;
     }
+
+    protected IInterceptor GetInterceptor(TClientOptions requestOptions)
+            => GetOptionValue(requestOptions, o => o.Interceptor, DefaultInterceptor ?? NoOpInterceptor.Instance);
+
+    protected JsonSerializerOptions GetJsonSerializerOptions(TClientOptions requestOptions)
+            => GetOptionValue(requestOptions, o => o.JsonSerializerOptions, Serializer.Options);
+
+    protected HttpClient GetHttpClient(TClientOptions requestOptions)
+            => GetOptionValue(requestOptions, o => o.HttpClient, _defaultHttpClient);
+
+    protected bool GetThrowOnGraphQLErrors(TClientOptions requestOptions)
+            => GetOptionValue(requestOptions, o => o.ThrowOnGraphQLErrors, true).Value;
+
+    protected Uri GetUri(TClientOptions requestOptions)
+            => GetOptionValue(requestOptions, o => o.Uri, null);
+
+    protected Action<HttpRequestHeaders> GetConfigureHttpRequestHeaders(TClientOptions requestOptions)
+            => GetOptionValue(requestOptions, o => o.ConfigureHttpRequestHeaders, null);
+
 
     public Task<GraphQLResponse<JsonElement>> ExecuteAsync(TGraphQLRequest request, TClientOptions options = null, CancellationToken cancellationToken = default)
     {
@@ -70,12 +93,11 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions>
 
     public async Task<GraphQLResponse<T>> ExecuteAsync<T>(TGraphQLRequest request, TClientOptions options = null, CancellationToken cancellationToken = default)
     {
-        options = this.GetClientOptions(options);
-        var interceptor = options.Interceptor ?? NoOpInterceptor.Instance;
+        var interceptor = GetInterceptor(options);
 
         try
         {
-            return await interceptor.InterceptRequestAsync(request, options, cancellationToken,
+            return await interceptor.InterceptRequestAsync(request, _defaultOptions, options, cancellationToken,
                                                             //the interceptor may pass through a different request or cancellationToken
                                                             async (req, token) => await ExecuteCoreAsync<T>(req, options, token));
         }
@@ -91,8 +113,7 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions>
         try
         {
             using HttpRequestMessage requestMessage = CreateHttpRequest(request, options);
-            options = this.GetClientOptions(options);
-            var httpClient = options?.HttpClient ?? _defaultHttpClient;
+            var httpClient = GetOptionValue(options, o => o.HttpClient, _defaultHttpClient);
             using var httpResponseMsg = await httpClient.SendAsync(requestMessage, cancellationToken);
             //httpResponseMsg needs to disposed so we create a small copy of basic information
             httpResponse = new HttpResponse(httpResponseMsg);
@@ -108,7 +129,7 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions>
             GraphQLResponse<T> res;
             try
             {
-                res = await httpResponseMsg.Content.ReadFromJsonAsync<GraphQLResponse<T>>(options?.JsonSerializerOptions ?? Serializer.Options, cancellationToken);
+                res = await httpResponseMsg.Content.ReadFromJsonAsync<GraphQLResponse<T>>(GetJsonSerializerOptions(options), cancellationToken);
                 if (res == null)
                     throw new GraphQLException(request, httpResponse, $"Failed to deserialize null GraphQL response. Request: {request}");
             }
@@ -120,7 +141,7 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions>
             res.Request = request;
             res.HttpResponse = httpResponse;
 
-            bool throwOnGraphQLErrors = options?.ThrowOnGraphQLErrors ?? true;
+            bool throwOnGraphQLErrors = GetThrowOnGraphQLErrors(options);
             if (throwOnGraphQLErrors)
                 res.ThrowIfAnyError();
 
@@ -135,17 +156,16 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions>
     private HttpRequestMessage CreateHttpRequest(TGraphQLRequest request, TClientOptions options)
     {
         _ = request.query ?? throw new ArgumentNullException(nameof(request.query));
-        options = this.GetClientOptions(options);
-        var uri = options.Uri ?? throw new ArgumentNullException(nameof(IGraphQLClientOptions.Uri));
+        var uri = GetUri(options) ?? throw new ArgumentNullException(nameof(IGraphQLClientOptions.Uri));
         var requestMessage = new HttpRequestMessage
         {
             Method = HttpMethod.Post,
             RequestUri = uri,
-            Content = JsonContent.Create(request, options: options?.JsonSerializerOptions ?? Serializer.Options),
+            Content = JsonContent.Create(request, options: GetJsonSerializerOptions(options)),
         };
 
         requestMessage.Headers.UserAgent.Add(_defaultUserAgent);
-        options.ConfigureHttpRequestHeaders?.Invoke(requestMessage.Headers);
+        GetConfigureHttpRequestHeaders(options)?.Invoke(requestMessage.Headers);
         return requestMessage;
     }
 }
