@@ -8,12 +8,11 @@ public class NoOpInterceptor : IInterceptor
 
     public Task<GraphQLResponse<T>> InterceptRequestAsync<TGraphQLRequest, TClientOptions, T>(
         TGraphQLRequest request,
-        TClientOptions defaultOptions,
-        TClientOptions requestOptions,
+        TClientOptions options,
         CancellationToken cancellationToken,
         Func<TGraphQLRequest, CancellationToken, Task<GraphQLResponse<T>>> executeAsync)
-        where TGraphQLRequest : GraphQLRequest, new()
-        where TClientOptions : GraphQLClientOptionsBase, IGraphQLClientOptions<TClientOptions>
+        where TGraphQLRequest : GraphQLRequest
+        where TClientOptions : IGraphQLClientOptions
     {
         return executeAsync(request, cancellationToken);
     }

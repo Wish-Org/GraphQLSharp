@@ -34,7 +34,7 @@ public class ChainedInterceptorTests
                 };
             }))
         };
-        var response = await new GraphQLCLient().ExecuteAsync(query, options);
+        var response = await new GraphQLCLient(options).ExecuteAsync(query);
         Assert.AreEqual(HttpStatusCode.OK, response.HttpResponse.StatusCode);
         Assert.IsTrue(entries.SequenceEqual(
         [

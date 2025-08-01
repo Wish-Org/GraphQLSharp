@@ -283,7 +283,8 @@ public class GraphQLClientTests
 
         var options = GetClientOptions();
         options.ThrowOnGraphQLErrors = false;
-        var response = await _client.QueryAsync(request, options);
+        var client = new GraphQLClient<GraphQLRequest, GraphQLClientOptions, QueryRoot, Mutation>(options);
+        var response = await client.QueryAsync(request);
         Assert.IsNotNull(response.errors);
         Assert.IsTrue(response.errors.Count > 0);
     }

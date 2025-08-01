@@ -31,7 +31,7 @@ public class RetryInterceptorTests
                 };
             }))
         };
-        var response = await new GraphQLCLient().ExecuteAsync(query, options);
+        var response = await new GraphQLCLient(options).ExecuteAsync(query);
         Assert.AreEqual(1, tries);
         Assert.AreEqual(HttpStatusCode.OK, response.HttpResponse.StatusCode);
     }
@@ -61,7 +61,7 @@ public class RetryInterceptorTests
                 };
             }))
         };
-        var response = await new GraphQLCLient().ExecuteAsync(query, options);
+        var response = await new GraphQLCLient(options).ExecuteAsync(query);
         Assert.AreEqual(RetryInterceptor.MAX_TRIES, tries);
         Assert.AreEqual(HttpStatusCode.OK, response.HttpResponse.StatusCode);
     }

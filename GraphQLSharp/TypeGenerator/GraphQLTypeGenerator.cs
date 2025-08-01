@@ -140,11 +140,8 @@ public class GraphQLTypeGenerator
         _ = options.NamespaceTypes ?? throw new ArgumentNullException(nameof(options.NamespaceTypes));
         _ = options.NamespaceClient ?? throw new ArgumentNullException(nameof(options.NamespaceClient));
 
-        if (options.ClientOptionsType != null && !typeof(GraphQLClientOptionsBase).IsAssignableFrom(options.ClientOptionsType))
-            throw new ArgumentException($"{nameof(options.ClientOptionsType)} must inherit from {nameof(GraphQLClientOptionsBase)}", nameof(options.ClientOptionsType));
-
-        if (options.ClientOptionsType != null && !typeof(IGraphQLClientOptions<>).MakeGenericType(options.ClientOptionsType).IsAssignableFrom(options.ClientOptionsType))
-            throw new ArgumentException($"{nameof(options.ClientOptionsType)} must implement IGraphQLClientOptions<{options.ClientOptionsType.Name}>", nameof(options.ClientOptionsType));
+        if (options.ClientOptionsType != null && !typeof(IGraphQLClientOptions).IsAssignableFrom(options.ClientOptionsType))
+            throw new ArgumentException($"{nameof(options.ClientOptionsType)} must implement {nameof(IGraphQLClientOptions)}", nameof(options.ClientOptionsType));
 
         if (options.GraphQLRequestType != null && !typeof(GraphQLRequest).IsAssignableFrom(options.GraphQLRequestType))
             throw new ArgumentException($"{nameof(options.GraphQLRequestType)} must inherit from {nameof(GraphQLRequest)}", nameof(options.GraphQLRequestType));
