@@ -22,14 +22,14 @@ public class RetryInterceptorTests
         var options = new GraphQLClientOptions(new Uri("https://example.com/graphql"))
         {
             Interceptor = new RetryInterceptor(),
-            HttpClient = new HttpClient(new TestHttpMessageHandler(msg =>
+            HttpClient = new TestHttpClient(msg =>
             {
                 ++tries;
                 return new HttpResponseMessage(HttpStatusCode.OK)
                 {
                     Content = new StringContent("""{"data":{"shop":{"id":"gid://shopify/Shop/1234567890"}}}""")
                 };
-            }))
+            })
         };
         var response = await new GraphQLCLient(options).ExecuteAsync(query);
         Assert.AreEqual(1, tries);
@@ -52,14 +52,14 @@ public class RetryInterceptorTests
         var options = new GraphQLClientOptions(new Uri("https://example.com/graphql"))
         {
             Interceptor = new RetryInterceptor(),
-            HttpClient = new HttpClient(new TestHttpMessageHandler(msg =>
+            HttpClient = new TestHttpClient(msg =>
             {
                 var statusCode = ++tries <= RetryInterceptor.MAX_TRIES - 1 ? HttpStatusCode.InternalServerError : HttpStatusCode.OK;
                 return new HttpResponseMessage(statusCode)
                 {
                     Content = new StringContent("""{"data":{"shop":{"id":"gid://shopify/Shop/1234567890"}}}""")
                 };
-            }))
+            })
         };
         var response = await new GraphQLCLient(options).ExecuteAsync(query);
         Assert.AreEqual(RetryInterceptor.MAX_TRIES, tries);

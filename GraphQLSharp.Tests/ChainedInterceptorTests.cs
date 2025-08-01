@@ -26,13 +26,13 @@ public class ChainedInterceptorTests
                 new TestInterceptor(() => entries.Add("Before2"), () => entries.Add("After2")),
                 new TestInterceptor(() => entries.Add("Before3"), () => entries.Add("After3"))
             ),
-            HttpClient = new HttpClient(new TestHttpMessageHandler(msg =>
+            HttpClient = new TestHttpClient(msg =>
             {
                 return new HttpResponseMessage(HttpStatusCode.OK)
                 {
                     Content = new StringContent("""{"data":{"shop":{"id":"gid://shopify/Shop/1234567890"}}}""")
                 };
-            }))
+            })
         };
         var response = await new GraphQLCLient(options).ExecuteAsync(query);
         Assert.AreEqual(HttpStatusCode.OK, response.HttpResponse.StatusCode);
