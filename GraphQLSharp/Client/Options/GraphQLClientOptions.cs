@@ -1,10 +1,9 @@
 using System.Net.Http.Headers;
-using System.Text.Json;
 
 namespace GraphQLSharp;
 
 
-public class GraphQLClientOptions : GraphQLClientOptionsBase, IGraphQLClientOptions
+public class GraphQLClientOptions : GraphQLClientOptionsBase, IGraphQLClientOptions<GraphQLClientOptions>
 {
     private readonly Uri _uri;
 
@@ -15,7 +14,13 @@ public class GraphQLClientOptions : GraphQLClientOptionsBase, IGraphQLClientOpti
 
     public Action<HttpRequestHeaders> ConfigureHttpRequestHeaders { get; set; }
 
-    Uri IGraphQLClientOptions.Uri => _uri;
+    static Action<HttpRequestHeaders> IGraphQLClientOptions<GraphQLClientOptions>.GetConfigureHttpRequestHeaders(GraphQLClientOptions defaultOptions, GraphQLClientOptions requestOptions)
+    {
+        return requestOptions.ConfigureHttpRequestHeaders ?? defaultOptions.ConfigureHttpRequestHeaders;
+    }
 
-    Action<HttpRequestHeaders> IGraphQLClientOptions.ConfigureHttpRequestHeaders => ConfigureHttpRequestHeaders;
+    static Uri IGraphQLClientOptions<GraphQLClientOptions>.GetUri(GraphQLClientOptions defaultOptions, GraphQLClientOptions requestOptions)
+    {
+        return requestOptions._uri ?? defaultOptions._uri;
+    }
 }

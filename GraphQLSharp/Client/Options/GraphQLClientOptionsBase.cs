@@ -14,7 +14,7 @@ public abstract class GraphQLClientOptionsBase
     /// Defaults to true if unspecified.
     /// If set to false, the response will still contain the errors, but no exception will be thrown.
     /// </summary>
-    public bool? ThrowOnGraphQLErrors { get; set; } = true;
+    public bool? ThrowOnGraphQLErrors { get; set; }
 
     /// <summary>
     /// An (optional) custom HttpClient to be used for sending requests.

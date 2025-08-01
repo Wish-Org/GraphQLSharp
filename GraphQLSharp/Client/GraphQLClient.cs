@@ -8,7 +8,7 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions, TQueryRoot, TMutatio
     where TGraphQLRequest : GraphQLRequest, new()
     where TQueryRoot : class
     where TMutationRoot : class
-    where TClientOptions : GraphQLClientOptionsBase, IGraphQLClientOptions
+    where TClientOptions : GraphQLClientOptionsBase, IGraphQLClientOptions<TClientOptions>
 {
     public GraphQLClient(TClientOptions defaultOptions = null) : base(defaultOptions)
     {
@@ -23,7 +23,7 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions, TQueryRoot, TMutatio
 public class GraphQLClient<TGraphQLRequest, TClientOptions, TQueryRoot> : GraphQLClient<TGraphQLRequest, TClientOptions>
     where TGraphQLRequest : GraphQLRequest, new()
     where TQueryRoot : class
-    where TClientOptions : GraphQLClientOptionsBase, IGraphQLClientOptions
+    where TClientOptions : GraphQLClientOptionsBase, IGraphQLClientOptions<TClientOptions>
 {
     public GraphQLClient(TClientOptions defaultOptions = null) : base(defaultOptions)
     {
@@ -44,7 +44,7 @@ public class GraphQLCLient : GraphQLClient<GraphQLRequest, GraphQLClientOptions>
 
 public class GraphQLClient<TGraphQLRequest, TClientOptions>
     where TGraphQLRequest : GraphQLRequest, new()
-    where TClientOptions : GraphQLClientOptionsBase, IGraphQLClientOptions
+    where TClientOptions : GraphQLClientOptionsBase, IGraphQLClientOptions<TClientOptions>
 {
     private static readonly HttpClient _defaultHttpClient = new();
 
@@ -79,10 +79,10 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions>
             => GetOptionValue(requestOptions, o => o.ThrowOnGraphQLErrors, true).Value;
 
     protected Uri GetUri(TClientOptions requestOptions)
-            => GetOptionValue(requestOptions, o => o.Uri, null);
+            => TClientOptions.GetUri(_defaultOptions, requestOptions);
 
     protected Action<HttpRequestHeaders> GetConfigureHttpRequestHeaders(TClientOptions requestOptions)
-            => GetOptionValue(requestOptions, o => o.ConfigureHttpRequestHeaders, null);
+            => TClientOptions.GetConfigureHttpRequestHeaders(_defaultOptions, requestOptions);
 
 
     public Task<GraphQLResponse<JsonElement>> ExecuteAsync(TGraphQLRequest request, TClientOptions options = null, CancellationToken cancellationToken = default)
@@ -156,7 +156,7 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions>
     private HttpRequestMessage CreateHttpRequest(TGraphQLRequest request, TClientOptions options)
     {
         _ = request.query ?? throw new ArgumentNullException(nameof(request.query));
-        var uri = GetUri(options) ?? throw new ArgumentNullException(nameof(IGraphQLClientOptions.Uri));
+        var uri = GetUri(options) ?? throw new ArgumentNullException($"{nameof(IGraphQLClientOptions<TClientOptions>.GetUri)} must a non-null URI.");
         var requestMessage = new HttpRequestMessage
         {
             Method = HttpMethod.Post,

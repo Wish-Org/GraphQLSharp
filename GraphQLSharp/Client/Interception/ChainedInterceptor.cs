@@ -23,7 +23,7 @@ public class ChainedInterceptor : IInterceptor
                                                                                                             CancellationToken cancellationToken,
                                                                                                             Func<TGraphQLRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync)
         where TGraphQLRequest : GraphQLRequest, new()
-        where TClientOptions : GraphQLClientOptionsBase, IGraphQLClientOptions
+        where TClientOptions : GraphQLClientOptionsBase, IGraphQLClientOptions<TClientOptions>
     {
         foreach (var interceptor in _interceptors)
         {
