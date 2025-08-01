@@ -16,11 +16,11 @@ public class GraphQLClientOptions : GraphQLClientOptionsBase, IGraphQLClientOpti
 
     static Action<HttpRequestHeaders> IGraphQLClientOptions<GraphQLClientOptions>.GetConfigureHttpRequestHeaders(GraphQLClientOptions defaultOptions, GraphQLClientOptions requestOptions)
     {
-        return requestOptions.ConfigureHttpRequestHeaders ?? defaultOptions.ConfigureHttpRequestHeaders;
+        return requestOptions?.ConfigureHttpRequestHeaders ?? defaultOptions?.ConfigureHttpRequestHeaders;
     }
 
     static Uri IGraphQLClientOptions<GraphQLClientOptions>.GetUri(GraphQLClientOptions defaultOptions, GraphQLClientOptions requestOptions)
     {
-        return requestOptions._uri ?? defaultOptions._uri;
+        return requestOptions?._uri ?? defaultOptions?._uri;
     }
 }
