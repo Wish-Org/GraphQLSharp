@@ -16,7 +16,7 @@ public class TestInterceptor : IInterceptor
         TClientOptions options,
         CancellationToken cancellationToken,
         Func<TGraphQLRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync)
-        where TGraphQLRequest : GraphQLRequest, new()
+        where TGraphQLRequest : GraphQLRequest
         where TClientOptions : IGraphQLClientOptions
     {
         _onBeforeExecute?.Invoke();
