@@ -10,7 +10,7 @@ public class ChainedInterceptor : IInterceptor
     /// </summary>
     /// <param name="interceptors">
     /// An array of interceptors to chain together.
-    /// The first interceptor in the array will be executed first, followed by the second, and so on.
+    /// The first interceptor in the array will be executed first (inner most), followed by the second, and so on.
     /// </param>
     public ChainedInterceptor(params IInterceptor[] interceptors)
     {
