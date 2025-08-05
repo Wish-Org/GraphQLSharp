@@ -176,7 +176,7 @@ public class GraphQLTypeGenerator
                 .AppendLine(mutationType == null ? $"GraphQLClient<{graphQLRequestTypeName}, {clientOptionsTypeName}, {options.NamespaceTypes}.{queryType}>" : $"GraphQLClient<{graphQLRequestTypeName}, {clientOptionsTypeName}, {options.NamespaceTypes}.{queryType}, {options.NamespaceTypes}.{mutationType}>")
                 .AppendLine($$"""
                     {
-                        public {{clientClassName}}({{clientOptionsTypeName}}? defaultOptions = null) : base(defaultOptions!)
+                        public {{clientClassName}}({{clientOptionsTypeName}}? options = null) : base(options!)
                         {
                         }
                     }
