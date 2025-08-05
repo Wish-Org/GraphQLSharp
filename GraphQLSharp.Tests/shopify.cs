@@ -12,7 +12,7 @@ namespace Shopify
 {
     public partial class ShopifyClient : GraphQLClient<GraphQLRequest, GraphQLClientOptions, Shopify.Types.QueryRoot, Shopify.Types.Mutation>
     {
-        public ShopifyClient(GraphQLClientOptions? defaultOptions = null) : base(defaultOptions!)
+        public ShopifyClient(GraphQLClientOptions? options = null) : base(options!)
         {
         }
     }
@@ -194,7 +194,7 @@ namespace Shopify.Types
     public class AbandonedCheckoutConnection : GraphQLObject<AbandonedCheckoutConnection>, IConnectionWithNodesAndEdges<AbandonedCheckoutEdge, AbandonedCheckout>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -298,7 +298,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///The image associated with the line item's variant or product.
+        ///The image associated with the line item&apos;s variant or product.
         ///NULL if the line item has no product, or if neither the variant nor the product have an image.
         ///</summary>
         [Description("The image associated with the line item's variant or product.\nNULL if the line item has no product, or if neither the variant nor the product have an image.")]
@@ -339,7 +339,7 @@ namespace Shopify.Types
         public string? sku { get; set; }
 
         ///<summary>
-        ///Title of the line item. Defaults to the product's title.
+        ///Title of the line item. Defaults to the product&apos;s title.
         ///</summary>
         [Description("Title of the line item. Defaults to the product's title.")]
         public string? title { get; set; }
@@ -353,7 +353,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///Title of the variant for this line item.
-        ///NULL for custom line items and products that don't have distinct variants.
+        ///NULL for custom line items and products that don&apos;t have distinct variants.
         ///</summary>
         [Description("Title of the variant for this line item.\nNULL for custom line items and products that don't have distinct variants.")]
         public string? variantTitle { get; set; }
@@ -374,7 +374,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The variant image associated with the line item component.
-        ///NULL if the variant associated doesn't have an image.
+        ///NULL if the variant associated doesn&apos;t have an image.
         ///</summary>
         [Description("The variant image associated with the line item component.\nNULL if the variant associated doesn't have an image.")]
         public Image? image { get; set; }
@@ -407,7 +407,7 @@ namespace Shopify.Types
     public class AbandonedCheckoutLineItemConnection : GraphQLObject<AbandonedCheckoutLineItemConnection>, IConnectionWithNodesAndEdges<AbandonedCheckoutLineItemEdge, AbandonedCheckoutLineItem>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -477,7 +477,7 @@ namespace Shopify.Types
         ID,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -566,7 +566,7 @@ namespace Shopify.Types
         public int? daysSinceLastAbandonmentEmail { get; set; }
 
         ///<summary>
-        ///When the email was sent, if that's the case.
+        ///When the email was sent, if that&apos;s the case.
         ///</summary>
         [Description("When the email was sent, if that's the case.")]
         public DateTime? emailSentAt { get; set; }
@@ -626,7 +626,7 @@ namespace Shopify.Types
         public bool? isFromShopPay { get; set; }
 
         ///<summary>
-        ///Whether the customer didn't complete another most significant step since this abandonment.
+        ///Whether the customer didn&apos;t complete another most significant step since this abandonment.
         ///</summary>
         [Description("Whether the customer didn't complete another most significant step since this abandonment.")]
         [NonNull]
@@ -1270,7 +1270,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///The SHA256 fingerprints of the app's signing certificate.
+        ///The SHA256 fingerprints of the app&apos;s signing certificate.
         ///</summary>
         [Description("The SHA256 fingerprints of the app's signing certificate.")]
         [NonNull]
@@ -1587,7 +1587,7 @@ namespace Shopify.Types
         public PriceList? priceList { get; set; }
 
         ///<summary>
-        ///A group of products and collections that's published to a catalog.
+        ///A group of products and collections that&apos;s published to a catalog.
         ///</summary>
         [Description("A group of products and collections that's published to a catalog.")]
         public Publication? publication { get; set; }
@@ -1614,7 +1614,7 @@ namespace Shopify.Types
     public class AppConnection : GraphQLObject<AppConnection>, IConnectionWithNodesAndEdges<AppEdge, App>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -1684,7 +1684,7 @@ namespace Shopify.Types
     public class AppCreditConnection : GraphQLObject<AppCreditConnection>, IConnectionWithNodesAndEdges<AppCreditEdge, AppCredit>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -1763,20 +1763,20 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The details about the app extension that's providing the
+    ///The details about the app extension that&apos;s providing the
     ///[discount type](https://help.shopify.com/manual/discounts/discount-types).
-    ///This information includes the app extension's name and
+    ///This information includes the app extension&apos;s name and
     ///[client ID](https://shopify.dev/docs/apps/build/authentication-authorization/client-secrets),
     ///[App Bridge configuration](https://shopify.dev/docs/api/app-bridge),
     ///[discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations),
     ///[function ID](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries),
-    ///and other metadata about the discount type, including the discount type's name and description.
+    ///and other metadata about the discount type, including the discount type&apos;s name and description.
     ///</summary>
     [Description("The details about the app extension that's providing the\n[discount type](https://help.shopify.com/manual/discounts/discount-types).\nThis information includes the app extension's name and\n[client ID](https://shopify.dev/docs/apps/build/authentication-authorization/client-secrets),\n[App Bridge configuration](https://shopify.dev/docs/api/app-bridge),\n[discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations),\n[function ID](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries),\nand other metadata about the discount type, including the discount type's name and description.")]
     public class AppDiscountType : GraphQLObject<AppDiscountType>
     {
         ///<summary>
-        ///The name of the app extension that's providing the
+        ///The name of the app extension that&apos;s providing the
         ///[discount type](https://help.shopify.com/manual/discounts/discount-types).
         ///</summary>
         [Description("The name of the app extension that's providing the\n[discount type](https://help.shopify.com/manual/discounts/discount-types).")]
@@ -1793,7 +1793,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The [client ID](https://shopify.dev/docs/apps/build/authentication-authorization/client-secrets)
-        ///of the app extension that's providing the [discount type](https://help.shopify.com/manual/discounts/discount-types).
+        ///of the app extension that&apos;s providing the [discount type](https://help.shopify.com/manual/discounts/discount-types).
         ///</summary>
         [Description("The [client ID](https://shopify.dev/docs/apps/build/authentication-authorization/client-secrets)\nof the app extension that's providing the [discount type](https://help.shopify.com/manual/discounts/discount-types).")]
         [NonNull]
@@ -1809,7 +1809,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)
-        ///that's used to control how discounts can be combined.
+        ///that&apos;s used to control how discounts can be combined.
         ///</summary>
         [Description("The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)\nthat's used to control how discounts can be combined.")]
         [Obsolete("Use `discountClasses` instead.")]
@@ -1860,7 +1860,7 @@ namespace Shopify.Types
     public class AppDiscountTypeConnection : GraphQLObject<AppDiscountTypeConnection>, IConnectionWithNodesAndEdges<AppDiscountTypeEdge, AppDiscountType>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -2030,7 +2030,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -2111,7 +2111,7 @@ namespace Shopify.Types
     public class AppInstallationConnection : GraphQLObject<AppInstallationConnection>, IConnectionWithNodesAndEdges<AppInstallationEdge, AppInstallation>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -2214,7 +2214,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The information about the price that's charged to a shop every plan period.
+    ///The information about the price that&apos;s charged to a shop every plan period.
     ///The concrete type can be `AppRecurringPricing` for recurring billing or `AppUsagePricing` for usage-based billing.
     ///</summary>
     [Description("The information about the price that's charged to a shop every plan period.\nThe concrete type can be `AppRecurringPricing` for recurring billing or `AppUsagePricing` for usage-based billing.")]
@@ -2264,22 +2264,22 @@ namespace Shopify.Types
     public enum AppPublicCategory
     {
         ///<summary>
-        ///The app's public category is [private](https://shopify.dev/apps/distribution#deprecated-app-types).
+        ///The app&apos;s public category is [private](https://shopify.dev/apps/distribution#deprecated-app-types).
         ///</summary>
         [Description("The app's public category is [private](https://shopify.dev/apps/distribution#deprecated-app-types).")]
         PRIVATE,
         ///<summary>
-        ///The app's public category is [public](https://shopify.dev/apps/distribution#capabilities-and-requirements).
+        ///The app&apos;s public category is [public](https://shopify.dev/apps/distribution#capabilities-and-requirements).
         ///</summary>
         [Description("The app's public category is [public](https://shopify.dev/apps/distribution#capabilities-and-requirements).")]
         PUBLIC,
         ///<summary>
-        ///The app's public category is [custom](https://shopify.dev/apps/distribution#capabilities-and-requirements).
+        ///The app&apos;s public category is [custom](https://shopify.dev/apps/distribution#capabilities-and-requirements).
         ///</summary>
         [Description("The app's public category is [custom](https://shopify.dev/apps/distribution#capabilities-and-requirements).")]
         CUSTOM,
         ///<summary>
-        ///The app's public category is other. An app is in this category if it's not classified under any of the other app types (private, public, or custom).
+        ///The app&apos;s public category is other. An app is in this category if it&apos;s not classified under any of the other app types (private, public, or custom).
         ///</summary>
         [Description("The app's public category is other. An app is in this category if it's not classified under any of the other app types (private, public, or custom).")]
         OTHER,
@@ -2394,7 +2394,7 @@ namespace Shopify.Types
     public class AppPurchaseOneTimeConnection : GraphQLObject<AppPurchaseOneTimeConnection>, IConnectionWithNodesAndEdges<AppPurchaseOneTimeEdge, AppPurchaseOneTime>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -2431,7 +2431,7 @@ namespace Shopify.Types
         ///The URL that the merchant can access to approve or decline the newly created app one-time purchase.
         ///
         ///If the merchant declines, then the merchant is redirected to the app and receives a notification message stating that the charge was declined.
-        ///If the merchant approves and they're successfully invoiced, then the state of the charge changes from `pending` to `active`.
+        ///If the merchant approves and they&apos;re successfully invoiced, then the state of the charge changes from `pending` to `active`.
         ///
         ///You get paid after the charge is activated.
         ///</summary>
@@ -2617,7 +2617,7 @@ namespace Shopify.Types
     public class AppRevenueAttributionRecordConnection : GraphQLObject<AppRevenueAttributionRecordConnection>, IConnectionWithNodesAndEdges<AppRevenueAttributionRecordEdge, AppRevenueAttributionRecord>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -2777,7 +2777,7 @@ namespace Shopify.Types
         [Description("Already granted implied scopes cannot be revoked.")]
         CANNOT_REVOKE_IMPLIED_SCOPES,
         ///<summary>
-        ///Cannot revoke optional scopes that haven't been declared.
+        ///Cannot revoke optional scopes that haven&apos;t been declared.
         ///</summary>
         [Description("Cannot revoke optional scopes that haven't been declared.")]
         CANNOT_REVOKE_UNDECLARED_SCOPES,
@@ -2833,7 +2833,7 @@ namespace Shopify.Types
         public DateTime? createdAt { get; set; }
 
         ///<summary>
-        ///The date and time when the current app subscription period ends. Returns `null` if the subscription isn't active.
+        ///The date and time when the current app subscription period ends. Returns `null` if the subscription isn&apos;t active.
         ///</summary>
         [Description("The date and time when the current app subscription period ends. Returns `null` if the subscription isn't active.")]
         public DateTime? currentPeriodEnd { get; set; }
@@ -2881,7 +2881,7 @@ namespace Shopify.Types
         public bool? test { get; set; }
 
         ///<summary>
-        ///The number of free trial days, starting at the subscription's creation date, by which billing is delayed.
+        ///The number of free trial days, starting at the subscription&apos;s creation date, by which billing is delayed.
         ///</summary>
         [Description("The number of free trial days, starting at the subscription's creation date, by which billing is delayed.")]
         [NonNull]
@@ -2915,7 +2915,7 @@ namespace Shopify.Types
     public class AppSubscriptionConnection : GraphQLObject<AppSubscriptionConnection>, IConnectionWithNodesAndEdges<AppSubscriptionEdge, AppSubscription>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -3079,7 +3079,7 @@ namespace Shopify.Types
         public AppPlanV2? plan { get; set; }
 
         ///<summary>
-        ///A list of the store's usage records for a usage pricing plan.
+        ///A list of the store&apos;s usage records for a usage pricing plan.
         ///</summary>
         [Description("A list of the store's usage records for a usage pricing plan.")]
         [NonNull]
@@ -3119,17 +3119,17 @@ namespace Shopify.Types
     public enum AppSubscriptionReplacementBehavior
     {
         ///<summary>
-        ///Cancels the merchant's current app subscription immediately and replaces it with the newly created app subscription.
+        ///Cancels the merchant&apos;s current app subscription immediately and replaces it with the newly created app subscription.
         ///</summary>
         [Description("Cancels the merchant's current app subscription immediately and replaces it with the newly created app subscription.")]
         APPLY_IMMEDIATELY,
         ///<summary>
-        ///Defers canceling the merchant's current app subscription and applying the newly created app subscription until the start of the next billing cycle. This value is ignored if the new app subscription is using a different currency than the current app subscription, in which case the new app subscription is applied immediately.
+        ///Defers canceling the merchant&apos;s current app subscription and applying the newly created app subscription until the start of the next billing cycle. This value is ignored if the new app subscription is using a different currency than the current app subscription, in which case the new app subscription is applied immediately.
         ///</summary>
         [Description("Defers canceling the merchant's current app subscription and applying the newly created app subscription until the start of the next billing cycle. This value is ignored if the new app subscription is using a different currency than the current app subscription, in which case the new app subscription is applied immediately.")]
         APPLY_ON_NEXT_BILLING_CYCLE,
         ///<summary>
-        ///Cancels the merchant's current app subscription immediately and replaces it with the newly created app subscription, with the exception of
+        ///Cancels the merchant&apos;s current app subscription immediately and replaces it with the newly created app subscription, with the exception of
         ///the following scenarios where replacing the current app subscription will be deferred until the start of the next billing cycle.
         ///1) The current app subscription is annual and the newly created app subscription is annual, using the same currency, but is of a lesser value.
         ///2) The current app subscription is annual and the newly created app subscription is monthly and using the same currency.
@@ -3198,7 +3198,7 @@ namespace Shopify.Types
         [Description("The app subscription was declined by the merchant. This is a terminal state.")]
         DECLINED,
         ///<summary>
-        ///The app subscription wasn't approved by the merchant within two days of being created. This is a terminal state.
+        ///The app subscription wasn&apos;t approved by the merchant within two days of being created. This is a terminal state.
         ///</summary>
         [Description("The app subscription wasn't approved by the merchant within two days of being created. This is a terminal state.")]
         EXPIRED,
@@ -3279,17 +3279,17 @@ namespace Shopify.Types
     public enum AppSubscriptionTrialExtendUserErrorCode
     {
         ///<summary>
-        ///The app subscription wasn't found.
+        ///The app subscription wasn&apos;t found.
         ///</summary>
         [Description("The app subscription wasn't found.")]
         SUBSCRIPTION_NOT_FOUND,
         ///<summary>
-        ///The trial isn't active.
+        ///The trial isn&apos;t active.
         ///</summary>
         [Description("The trial isn't active.")]
         TRIAL_NOT_ACTIVE,
         ///<summary>
-        ///The app subscription isn't active.
+        ///The app subscription isn&apos;t active.
         ///</summary>
         [Description("The app subscription isn't active.")]
         SUBSCRIPTION_NOT_ACTIVE,
@@ -3359,7 +3359,7 @@ namespace Shopify.Types
         ///<summary>
         ///The terms and conditions for app usage pricing.
         ///Must be present in order to create usage charges.
-        ///The terms are presented to the merchant when they approve an app's usage charges.
+        ///The terms are presented to the merchant when they approve an app&apos;s usage charges.
         ///</summary>
         [Description("The terms and conditions for app usage pricing.\nMust be present in order to create usage charges.\nThe terms are presented to the merchant when they approve an app's usage charges.")]
         [NonNull]
@@ -3421,7 +3421,7 @@ namespace Shopify.Types
     public class AppUsageRecordConnection : GraphQLObject<AppUsageRecordConnection>, IConnectionWithNodesAndEdges<AppUsageRecordEdge, AppUsageRecord>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -3574,14 +3574,14 @@ namespace Shopify.Types
         public Blog? blog { get; set; }
 
         ///<summary>
-        ///The text of the article's body, complete with HTML markup.
+        ///The text of the article&apos;s body, complete with HTML markup.
         ///</summary>
         [Description("The text of the article's body, complete with HTML markup.")]
         [NonNull]
         public string? body { get; set; }
 
         ///<summary>
-        ///List of the article's comments.
+        ///List of the article&apos;s comments.
         ///</summary>
         [Description("List of the article's comments.")]
         [NonNull]
@@ -3615,8 +3615,8 @@ namespace Shopify.Types
         public EventConnection? events { get; set; }
 
         ///<summary>
-        ///A unique, human-friendly string for the article that's automatically generated from the article's title.
-        ///The handle is used in the article's URL.
+        ///A unique, human-friendly string for the article that&apos;s automatically generated from the article&apos;s title.
+        ///The handle is used in the article&apos;s URL.
         ///</summary>
         [Description("A unique, human-friendly string for the article that's automatically generated from the article's title.\nThe handle is used in the article's URL.")]
         [NonNull]
@@ -3644,7 +3644,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -3668,7 +3668,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The date and time (ISO 8601 format) when the article became or will become visible.
-        ///Returns null when the article isn't visible.
+        ///Returns null when the article isn&apos;t visible.
         ///</summary>
         [Description("The date and time (ISO 8601 format) when the article became or will become visible.\nReturns null when the article isn't visible.")]
         public DateTime? publishedAt { get; set; }
@@ -3689,7 +3689,7 @@ namespace Shopify.Types
         public IEnumerable<string>? tags { get; set; }
 
         ///<summary>
-        ///The name of the template an article is using if it's using an alternate template.
+        ///The name of the template an article is using if it&apos;s using an alternate template.
         ///If an article is using the default `article.liquid` template, then the value returned is `null`.
         ///</summary>
         [Description("The name of the template an article is using if it's using an alternate template.\nIf an article is using the default `article.liquid` template, then the value returned is `null`.")]
@@ -3723,7 +3723,7 @@ namespace Shopify.Types
     public class ArticleAuthor : GraphQLObject<ArticleAuthor>
     {
         ///<summary>
-        ///The author's full name.
+        ///The author&apos;s full name.
         ///</summary>
         [Description("The author's full name.")]
         [NonNull]
@@ -3737,7 +3737,7 @@ namespace Shopify.Types
     public class ArticleAuthorConnection : GraphQLObject<ArticleAuthorConnection>, IConnectionWithNodesAndEdges<ArticleAuthorEdge, ArticleAuthor>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -3786,7 +3786,7 @@ namespace Shopify.Types
     public class ArticleConnection : GraphQLObject<ArticleConnection>, IConnectionWithNodesAndEdges<ArticleEdge, Article>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -3860,17 +3860,17 @@ namespace Shopify.Types
     public enum ArticleCreateUserErrorCode
     {
         ///<summary>
-        ///Can't create an article author if both author name and user ID are supplied.
+        ///Can&apos;t create an article author if both author name and user ID are supplied.
         ///</summary>
         [Description("Can't create an article author if both author name and user ID are supplied.")]
         AMBIGUOUS_AUTHOR,
         ///<summary>
-        ///Can't create a blog from input if a blog ID is supplied.
+        ///Can&apos;t create a blog from input if a blog ID is supplied.
         ///</summary>
         [Description("Can't create a blog from input if a blog ID is supplied.")]
         AMBIGUOUS_BLOG,
         ///<summary>
-        ///Can't create an article if both author name and user ID are blank.
+        ///Can&apos;t create an article if both author name and user ID are blank.
         ///</summary>
         [Description("Can't create an article if both author name and user ID are blank.")]
         AUTHOR_FIELD_REQUIRED,
@@ -3900,7 +3900,7 @@ namespace Shopify.Types
         [Description("The input value is blank.")]
         BLANK,
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -4002,7 +4002,7 @@ namespace Shopify.Types
     public enum ArticleDeleteUserErrorCode
     {
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -4159,12 +4159,12 @@ namespace Shopify.Types
     public enum ArticleUpdateUserErrorCode
     {
         ///<summary>
-        ///Can't update an article author if both author name and user ID are supplied.
+        ///Can&apos;t update an article author if both author name and user ID are supplied.
         ///</summary>
         [Description("Can't update an article author if both author name and user ID are supplied.")]
         AMBIGUOUS_AUTHOR,
         ///<summary>
-        ///Can't create a blog from input if a blog ID is supplied.
+        ///Can&apos;t create a blog from input if a blog ID is supplied.
         ///</summary>
         [Description("Can't create a blog from input if a blog ID is supplied.")]
         AMBIGUOUS_BLOG,
@@ -4189,7 +4189,7 @@ namespace Shopify.Types
         [Description("The input value is blank.")]
         BLANK,
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -4240,23 +4240,23 @@ namespace Shopify.Types
     ///A custom property. Attributes are used to store additional information about a Shopify resource, such as
     ///products, customers, or orders. Attributes are stored as key-value pairs.
     ///
-    ///For example, a list of attributes might include whether a customer is a first-time buyer (`"customer_first_order": "true"`),
-    ///whether an order is gift-wrapped (`"gift_wrapped": "true"`), a preferred delivery date
-    ///(`"preferred_delivery_date": "2025-10-01"`), the discount applied (`"loyalty_discount_applied": "10%"`), and any
-    ///notes provided by the customer (`"customer_notes": "Please leave at the front door"`).
+    ///For example, a list of attributes might include whether a customer is a first-time buyer (`&quot;customer_first_order&quot;: &quot;true&quot;`),
+    ///whether an order is gift-wrapped (`&quot;gift_wrapped&quot;: &quot;true&quot;`), a preferred delivery date
+    ///(`&quot;preferred_delivery_date&quot;: &quot;2025-10-01&quot;`), the discount applied (`&quot;loyalty_discount_applied&quot;: &quot;10%&quot;`), and any
+    ///notes provided by the customer (`&quot;customer_notes&quot;: &quot;Please leave at the front door&quot;`).
     ///</summary>
     [Description("A custom property. Attributes are used to store additional information about a Shopify resource, such as\nproducts, customers, or orders. Attributes are stored as key-value pairs.\n\nFor example, a list of attributes might include whether a customer is a first-time buyer (`\"customer_first_order\": \"true\"`),\nwhether an order is gift-wrapped (`\"gift_wrapped\": \"true\"`), a preferred delivery date\n(`\"preferred_delivery_date\": \"2025-10-01\"`), the discount applied (`\"loyalty_discount_applied\": \"10%\"`), and any\nnotes provided by the customer (`\"customer_notes\": \"Please leave at the front door\"`).")]
     public class Attribute : GraphQLObject<Attribute>
     {
         ///<summary>
-        ///The key or name of the attribute. For example, `"customer_first_order"`.
+        ///The key or name of the attribute. For example, `&quot;customer_first_order&quot;`.
         ///</summary>
         [Description("The key or name of the attribute. For example, `\"customer_first_order\"`.")]
         [NonNull]
         public string? key { get; set; }
 
         ///<summary>
-        ///The value of the attribute. For example, `"true"`.
+        ///The value of the attribute. For example, `&quot;true&quot;`.
         ///</summary>
         [Description("The value of the attribute. For example, `\"true\"`.")]
         public string? value { get; set; }
@@ -4269,7 +4269,7 @@ namespace Shopify.Types
     public class AutomaticDiscountApplication : GraphQLObject<AutomaticDiscountApplication>, IDiscountApplication
     {
         ///<summary>
-        ///The method by which the discount's value is applied to its entitled items.
+        ///The method by which the discount&apos;s value is applied to its entitled items.
         ///</summary>
         [Description("The method by which the discount's value is applied to its entitled items.")]
         [NonNull]
@@ -4600,7 +4600,7 @@ namespace Shopify.Types
     ///| `refund_failure` | We failed to refund `{money_amount}`. | The refund failed. The funds are still with the shop. |
     ///| `refund_pending` | Refund of `{money_amount}` is still pending. | The refund is in process. The funds are still with shop. |
     ///| `refund_success` | We successfully refunded `{money_amount}`. | The refund was successful. The funds have been transferred to the customer. |
-    ///| `restock_line_items` | We restocked `{number_of_line_items}`. |	One or more of the order's line items have been restocked. |
+    ///| `restock_line_items` | We restocked `{number_of_line_items}`. |	One or more of the order&apos;s line items have been restocked. |
     ///| `sale_failure` | The customer failed to pay `{money_amount}`. | The sale failed. The funds are not available to the shop. |
     ///| `sale_pending` | The `{money_amount}` is pending. | The sale is in process. The funds are not yet available to the shop. |
     ///| `sale_success` | We successfully captured `{money_amount}`. | The sale was successful. The funds are now with the shop. |
@@ -4788,7 +4788,7 @@ namespace Shopify.Types
         [Description("Billing cycle selector cannot select billing cycle outside of start date range.")]
         CYCLE_START_DATE_OUT_OF_RANGE,
         ///<summary>
-        ///Origin time needs to be within the selected billing cycle's start and end at date.
+        ///Origin time needs to be within the selected billing cycle&apos;s start and end at date.
         ///</summary>
         [Description("Origin time needs to be within the selected billing cycle's start and end at date.")]
         ORIGIN_TIME_OUT_OF_RANGE,
@@ -4844,7 +4844,7 @@ namespace Shopify.Types
     public class Blog : GraphQLObject<Blog>, IHasEvents, IHasMetafieldDefinitions, IHasMetafields, IHasPublishedTranslations, INode, IMetafieldReferencer
     {
         ///<summary>
-        ///List of the blog's articles.
+        ///List of the blog&apos;s articles.
         ///</summary>
         [Description("List of the blog's articles.")]
         [NonNull]
@@ -4878,7 +4878,7 @@ namespace Shopify.Types
         public EventConnection? events { get; set; }
 
         ///<summary>
-        ///FeedBurner provider details. Any blogs that aren't already integrated with FeedBurner can't use the service.
+        ///FeedBurner provider details. Any blogs that aren&apos;t already integrated with FeedBurner can&apos;t use the service.
         ///</summary>
         [Description("FeedBurner provider details. Any blogs that aren't already integrated with FeedBurner can't use the service.")]
         public BlogFeed? feed { get; set; }
@@ -4900,7 +4900,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -4930,7 +4930,7 @@ namespace Shopify.Types
         public IEnumerable<string>? tags { get; set; }
 
         ///<summary>
-        ///The name of the template a blog is using if it's using an alternate template.
+        ///The name of the template a blog is using if it&apos;s using an alternate template.
         ///Returns `null` if a blog is using the default blog.liquid template.
         ///</summary>
         [Description("The name of the template a blog is using if it's using an alternate template.\nReturns `null` if a blog is using the default blog.liquid template.")]
@@ -4964,7 +4964,7 @@ namespace Shopify.Types
     public class BlogConnection : GraphQLObject<BlogConnection>, IConnectionWithNodesAndEdges<BlogEdge, Blog>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -5048,7 +5048,7 @@ namespace Shopify.Types
         [Description("The input value is too long.")]
         TOO_LONG,
         ///<summary>
-        ///The input value isn't included in the list.
+        ///The input value isn&apos;t included in the list.
         ///</summary>
         [Description("The input value isn't included in the list.")]
         INCLUSION,
@@ -5126,7 +5126,7 @@ namespace Shopify.Types
     public enum BlogDeleteUserErrorCode
     {
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -5159,7 +5159,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///FeedBurner provider details. Any blogs that aren't already integrated with FeedBurner can't use the service.
+    ///FeedBurner provider details. Any blogs that aren&apos;t already integrated with FeedBurner can&apos;t use the service.
     ///</summary>
     [Description("FeedBurner provider details. Any blogs that aren't already integrated with FeedBurner can't use the service.")]
     public class BlogFeed : GraphQLObject<BlogFeed>
@@ -5262,7 +5262,7 @@ namespace Shopify.Types
     public enum BlogUpdateUserErrorCode
     {
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -5282,7 +5282,7 @@ namespace Shopify.Types
         [Description("The input value is too long.")]
         TOO_LONG,
         ///<summary>
-        ///The input value isn't included in the list.
+        ///The input value isn&apos;t included in the list.
         ///</summary>
         [Description("The input value isn't included in the list.")]
         INCLUSION,
@@ -5319,7 +5319,7 @@ namespace Shopify.Types
         [Description("The JSONL file submitted via the `stagedUploadsCreate` mutation is invalid. Update the file and try again.")]
         INVALID_STAGED_UPLOAD_FILE,
         ///<summary>
-        ///The JSONL file could not be found. Try [uploading the file](https://shopify.dev/api/usage/bulk-operations/imports#generate-the-uploaded-url-and-parameters) again, and check that you've entered the URL correctly for the `stagedUploadPath` mutation argument.
+        ///The JSONL file could not be found. Try [uploading the file](https://shopify.dev/api/usage/bulk-operations/imports#generate-the-uploaded-url-and-parameters) again, and check that you&apos;ve entered the URL correctly for the `stagedUploadPath` mutation argument.
         ///</summary>
         [Description("The JSONL file could not be found. Try [uploading the file](https://shopify.dev/api/usage/bulk-operations/imports#generate-the-uploaded-url-and-parameters) again, and check that you've entered the URL correctly for the `stagedUploadPath` mutation argument.")]
         NO_SUCH_FILE,
@@ -5420,7 +5420,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The URL that points to the partial or incomplete response data (in [JSONL](http://jsonlines.org/) format) that was returned by a failed operation.
-        ///The URL expires 7 days after the operation fails. Returns `null` when there's no data available.
+        ///The URL expires 7 days after the operation fails. Returns `null` when there&apos;s no data available.
         ///</summary>
         [Description("The URL that points to the partial or incomplete response data (in [JSONL](http://jsonlines.org/) format) that was returned by a failed operation.\nThe URL expires 7 days after the operation fails. Returns `null` when there's no data available.")]
         public string? partialDataUrl { get; set; }
@@ -5449,7 +5449,7 @@ namespace Shopify.Types
         public string? status { get; set; }
 
         ///<summary>
-        ///The bulk operation's type.
+        ///The bulk operation&apos;s type.
         ///</summary>
         [Description("The bulk operation's type.")]
         [NonNull]
@@ -5614,7 +5614,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The valid values for the bulk operation's type.
+    ///The valid values for the bulk operation&apos;s type.
     ///</summary>
     [Description("The valid values for the bulk operation's type.")]
     public enum BulkOperationType
@@ -5694,7 +5694,7 @@ namespace Shopify.Types
     public class BulkProductResourceFeedbackCreatePayload : GraphQLObject<BulkProductResourceFeedbackCreatePayload>
     {
         ///<summary>
-        ///The feedback that's created.
+        ///The feedback that&apos;s created.
         ///</summary>
         [Description("The feedback that's created.")]
         public IEnumerable<ProductResourceFeedback>? feedback { get; set; }
@@ -5750,7 +5750,7 @@ namespace Shopify.Types
         [Description("The feedback for a later version of this resource was already accepted.")]
         OUTDATED_FEEDBACK,
         ///<summary>
-        ///The product wasn't found or isn't available to the channel.
+        ///The product wasn&apos;t found or isn&apos;t available to the channel.
         ///</summary>
         [Description("The product wasn't found or isn't available to the channel.")]
         PRODUCT_NOT_FOUND,
@@ -5826,7 +5826,7 @@ namespace Shopify.Types
         [Description("An internal error occurred.")]
         INTERNAL_ERROR,
         ///<summary>
-        ///The resource wasn't found.
+        ///The resource wasn&apos;t found.
         ///</summary>
         [Description("The resource wasn't found.")]
         RESOURCE_NOT_FOUND,
@@ -5925,26 +5925,26 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Represents a merchant's Business Entity.
+    ///Represents a merchant&apos;s Business Entity.
     ///</summary>
     [Description("Represents a merchant's Business Entity.")]
     public class BusinessEntity : GraphQLObject<BusinessEntity>, INode
     {
         ///<summary>
-        ///The address of the merchant's Business Entity.
+        ///The address of the merchant&apos;s Business Entity.
         ///</summary>
         [Description("The address of the merchant's Business Entity.")]
         [NonNull]
         public BusinessEntityAddress? address { get; set; }
 
         ///<summary>
-        ///The name of the company associated with the merchant's Business Entity.
+        ///The name of the company associated with the merchant&apos;s Business Entity.
         ///</summary>
         [Description("The name of the company associated with the merchant's Business Entity.")]
         public string? companyName { get; set; }
 
         ///<summary>
-        ///The display name of the merchant's Business Entity.
+        ///The display name of the merchant&apos;s Business Entity.
         ///</summary>
         [Description("The display name of the merchant's Business Entity.")]
         [NonNull]
@@ -5958,7 +5958,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///Whether it's the merchant's primary Business Entity.
+        ///Whether it&apos;s the merchant&apos;s primary Business Entity.
         ///</summary>
         [Description("Whether it's the merchant's primary Business Entity.")]
         [NonNull]
@@ -5972,7 +5972,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Represents the address of a merchant's Business Entity.
+    ///Represents the address of a merchant&apos;s Business Entity.
     ///</summary>
     [Description("Represents the address of a merchant's Business Entity.")]
     public class BusinessEntityAddress : GraphQLObject<BusinessEntityAddress>
@@ -5996,7 +5996,7 @@ namespace Shopify.Types
         public string? city { get; set; }
 
         ///<summary>
-        ///The country code of the merchant's Business Entity.
+        ///The country code of the merchant&apos;s Business Entity.
         ///</summary>
         [Description("The country code of the merchant's Business Entity.")]
         [NonNull]
@@ -6064,7 +6064,7 @@ namespace Shopify.Types
     public class CalculatedAutomaticDiscountApplication : GraphQLObject<CalculatedAutomaticDiscountApplication>, ICalculatedDiscountApplication
     {
         ///<summary>
-        ///The method by which the discount's value is allocated to its entitled items.
+        ///The method by which the discount&apos;s value is allocated to its entitled items.
         ///</summary>
         [Description("The method by which the discount's value is allocated to its entitled items.")]
         [NonNull]
@@ -6119,7 +6119,7 @@ namespace Shopify.Types
     public class CalculatedDiscountAllocation : GraphQLObject<CalculatedDiscountAllocation>
     {
         ///<summary>
-        ///The money amount that's allocated by the discount application in shop and presentment currencies.
+        ///The money amount that&apos;s allocated by the discount application in shop and presentment currencies.
         ///</summary>
         [Description("The money amount that's allocated by the discount application in shop and presentment currencies.")]
         [NonNull]
@@ -6149,7 +6149,7 @@ namespace Shopify.Types
         public CalculatedManualDiscountApplication? AsCalculatedManualDiscountApplication() => this as CalculatedManualDiscountApplication;
         public CalculatedScriptDiscountApplication? AsCalculatedScriptDiscountApplication() => this as CalculatedScriptDiscountApplication;
         ///<summary>
-        ///The method by which the discount's value is allocated to its entitled items.
+        ///The method by which the discount&apos;s value is allocated to its entitled items.
         ///</summary>
         [Description("The method by which the discount's value is allocated to its entitled items.")]
         [NonNull]
@@ -6204,7 +6204,7 @@ namespace Shopify.Types
     public class CalculatedDiscountApplicationConnection : GraphQLObject<CalculatedDiscountApplicationConnection>, IConnectionWithNodesAndEdges<CalculatedDiscountApplicationEdge, ICalculatedDiscountApplication>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -6253,7 +6253,7 @@ namespace Shopify.Types
     public class CalculatedDiscountCodeApplication : GraphQLObject<CalculatedDiscountCodeApplication>, ICalculatedDiscountApplication
     {
         ///<summary>
-        ///The method by which the discount's value is allocated to its entitled items.
+        ///The method by which the discount&apos;s value is allocated to its entitled items.
         ///</summary>
         [Description("The method by which the discount's value is allocated to its entitled items.")]
         [NonNull]
@@ -6574,7 +6574,7 @@ namespace Shopify.Types
         ///<summary>
         ///The `discountedTotal` divided by `quantity`,
         ///equal to the average value of the line item price per unit after discounts are applied.
-        ///This value doesn't include discounts applied to the entire draft order.
+        ///This value doesn&apos;t include discounts applied to the entire draft order.
         ///</summary>
         [Description("The `discountedTotal` divided by `quantity`,\nequal to the average value of the line item price per unit after discounts are applied.\nThis value doesn't include discounts applied to the entire draft order.")]
         [NonNull]
@@ -6895,7 +6895,7 @@ namespace Shopify.Types
         public IEnumerable<DiscountAllocation>? discountAllocations { get; set; }
 
         ///<summary>
-        ///The price of a single quantity of the line item with line item discounts applied, in shop and presentment currencies. Discounts applied to the entire order aren't included in this price.
+        ///The price of a single quantity of the line item with line item discounts applied, in shop and presentment currencies. Discounts applied to the entire order aren&apos;t included in this price.
         ///</summary>
         [Description("The price of a single quantity of the line item with line item discounts applied, in shop and presentment currencies. Discounts applied to the entire order aren't included in this price.")]
         [NonNull]
@@ -6937,7 +6937,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///The image object associated to the line item's variant.
+        ///The image object associated to the line item&apos;s variant.
         ///</summary>
         [Description("The image object associated to the line item's variant.")]
         public Image? image { get; set; }
@@ -7018,7 +7018,7 @@ namespace Shopify.Types
     public class CalculatedLineItemConnection : GraphQLObject<CalculatedLineItemConnection>, IConnectionWithNodesAndEdges<CalculatedLineItemEdge, CalculatedLineItem>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -7067,7 +7067,7 @@ namespace Shopify.Types
     public class CalculatedManualDiscountApplication : GraphQLObject<CalculatedManualDiscountApplication>, ICalculatedDiscountApplication
     {
         ///<summary>
-        ///The method by which the discount's value is allocated to its entitled items.
+        ///The method by which the discount&apos;s value is allocated to its entitled items.
         ///</summary>
         [Description("The method by which the discount's value is allocated to its entitled items.")]
         [NonNull]
@@ -7136,7 +7136,7 @@ namespace Shopify.Types
         public CalculatedLineItemConnection? addedLineItems { get; set; }
 
         ///<summary>
-        ///Amount of the order-level discount (doesn't contain any line item discounts) in shop and presentment currencies.
+        ///Amount of the order-level discount (doesn&apos;t contain any line item discounts) in shop and presentment currencies.
         ///</summary>
         [Description("Amount of the order-level discount (doesn't contain any line item discounts) in shop and presentment currencies.")]
         public MoneyBag? cartDiscountAmountSet { get; set; }
@@ -7202,14 +7202,14 @@ namespace Shopify.Types
         public OrderStagedChangeConnection? stagedChanges { get; set; }
 
         ///<summary>
-        ///The sum of the quantities for the line items that contribute to the order's subtotal.
+        ///The sum of the quantities for the line items that contribute to the order&apos;s subtotal.
         ///</summary>
         [Description("The sum of the quantities for the line items that contribute to the order's subtotal.")]
         [NonNull]
         public int? subtotalLineItemsQuantity { get; set; }
 
         ///<summary>
-        ///The subtotal of the line items, in shop and presentment currencies, after all the discounts are applied.  The subtotal doesn't include shipping.  The subtotal includes taxes for taxes-included orders and excludes taxes for taxes-excluded orders.
+        ///The subtotal of the line items, in shop and presentment currencies, after all the discounts are applied.  The subtotal doesn&apos;t include shipping.  The subtotal includes taxes for taxes-included orders and excludes taxes for taxes-excluded orders.
         ///</summary>
         [Description("The subtotal of the line items, in shop and presentment currencies, after all the discounts are applied.  The subtotal doesn't include shipping.  The subtotal includes taxes for taxes-included orders and excludes taxes for taxes-excluded orders.")]
         public MoneyBag? subtotalPriceSet { get; set; }
@@ -7407,7 +7407,7 @@ namespace Shopify.Types
     public class CalculatedScriptDiscountApplication : GraphQLObject<CalculatedScriptDiscountApplication>, ICalculatedDiscountApplication
     {
         ///<summary>
-        ///The method by which the discount's value is allocated to its entitled items.
+        ///The method by which the discount&apos;s value is allocated to its entitled items.
         ///</summary>
         [Description("The method by which the discount's value is allocated to its entitled items.")]
         [NonNull]
@@ -7468,7 +7468,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///The price of the shipping line when sold and before applying discounts. This field includes taxes if `Order.taxesIncluded` is true. Otherwise, this field doesn't include taxes for the shipping line.
+        ///The price of the shipping line when sold and before applying discounts. This field includes taxes if `Order.taxesIncluded` is true. Otherwise, this field doesn&apos;t include taxes for the shipping line.
         ///</summary>
         [Description("The price of the shipping line when sold and before applying discounts. This field includes taxes if `Order.taxesIncluded` is true. Otherwise, this field doesn't include taxes for the shipping line.")]
         [NonNull]
@@ -7532,13 +7532,13 @@ namespace Shopify.Types
         public string? avsResultCode { get; set; }
 
         ///<summary>
-        ///The issuer identification number (IIN), formerly known as bank identification number (BIN) of the customer's credit card. This is made up of the first few digits of the credit card number.
+        ///The issuer identification number (IIN), formerly known as bank identification number (BIN) of the customer&apos;s credit card. This is made up of the first few digits of the credit card number.
         ///</summary>
         [Description("The issuer identification number (IIN), formerly known as bank identification number (BIN) of the customer's credit card. This is made up of the first few digits of the credit card number.")]
         public string? bin { get; set; }
 
         ///<summary>
-        ///The name of the company that issued the customer's credit card.
+        ///The name of the company that issued the customer&apos;s credit card.
         ///</summary>
         [Description("The name of the company that issued the customer's credit card.")]
         public string? company { get; set; }
@@ -7568,7 +7568,7 @@ namespace Shopify.Types
         public string? name { get; set; }
 
         ///<summary>
-        ///The customer's credit card number, with most of the leading digits redacted.
+        ///The customer&apos;s credit card number, with most of the leading digits redacted.
         ///</summary>
         [Description("The customer's credit card number, with most of the leading digits redacted.")]
         public string? number { get; set; }
@@ -7837,7 +7837,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -7859,7 +7859,7 @@ namespace Shopify.Types
     public class CartTransformConnection : GraphQLObject<CartTransformConnection>, IConnectionWithNodesAndEdges<CartTransformEdge, CartTransform>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -8108,14 +8108,14 @@ namespace Shopify.Types
     public class CashRoundingAdjustment : GraphQLObject<CashRoundingAdjustment>
     {
         ///<summary>
-        ///The rounding adjustment that can be applied to totalReceived for an Order involving cash payments in shop and presentment currencies. Could be a positive or negative value. Value is 0 if there's no rounding, or for non-cash payments.
+        ///The rounding adjustment that can be applied to totalReceived for an Order involving cash payments in shop and presentment currencies. Could be a positive or negative value. Value is 0 if there&apos;s no rounding, or for non-cash payments.
         ///</summary>
         [Description("The rounding adjustment that can be applied to totalReceived for an Order involving cash payments in shop and presentment currencies. Could be a positive or negative value. Value is 0 if there's no rounding, or for non-cash payments.")]
         [NonNull]
         public MoneyBag? paymentSet { get; set; }
 
         ///<summary>
-        ///The rounding adjustment that can be applied to totalRefunded for an Order involving cash payments in shop and presentment currencies. Could be a positive or negative value. Value is 0 if there's no rounding, or for non-cash refunds.
+        ///The rounding adjustment that can be applied to totalRefunded for an Order involving cash payments in shop and presentment currencies. Could be a positive or negative value. Value is 0 if there&apos;s no rounding, or for non-cash refunds.
         ///</summary>
         [Description("The rounding adjustment that can be applied to totalRefunded for an Order involving cash payments in shop and presentment currencies. Could be a positive or negative value. Value is 0 if there's no rounding, or for non-cash refunds.")]
         [NonNull]
@@ -8170,7 +8170,7 @@ namespace Shopify.Types
     public class CashTrackingAdjustmentConnection : GraphQLObject<CashTrackingAdjustmentConnection>, IConnectionWithNodesAndEdges<CashTrackingAdjustmentEdge, CashTrackingAdjustment>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -8369,7 +8369,7 @@ namespace Shopify.Types
     public class CashTrackingSessionConnection : GraphQLObject<CashTrackingSessionConnection>, IConnectionWithNodesAndEdges<CashTrackingSessionEdge, CashTrackingSession>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -8514,7 +8514,7 @@ namespace Shopify.Types
         public PriceList? priceList { get; }
 
         ///<summary>
-        ///A group of products and collections that's published to a catalog.
+        ///A group of products and collections that&apos;s published to a catalog.
         ///</summary>
         [Description("A group of products and collections that's published to a catalog.")]
         public Publication? publication { get; }
@@ -8541,7 +8541,7 @@ namespace Shopify.Types
     public class CatalogConnection : GraphQLObject<CatalogConnection>, IConnectionWithNodesAndEdges<CatalogEdge, ICatalog>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -8689,7 +8689,7 @@ namespace Shopify.Types
         ID,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -8744,7 +8744,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The associated catalog's type.
+    ///The associated catalog&apos;s type.
     ///</summary>
     [Description("The associated catalog's type.")]
     public enum CatalogType
@@ -8842,7 +8842,7 @@ namespace Shopify.Types
         [Description("Catalog failed to save.")]
         CATALOG_FAILED_TO_SAVE,
         ///<summary>
-        ///The catalog wasn't found.
+        ///The catalog wasn&apos;t found.
         ///</summary>
         [Description("The catalog wasn't found.")]
         CATALOG_NOT_FOUND,
@@ -8862,7 +8862,7 @@ namespace Shopify.Types
         [Description("Quantity price breaks can be associated only with company location catalogs or catalogs associated with compatible markets.")]
         CATALOG_CONTEXT_DOES_NOT_SUPPORT_QUANTITY_PRICE_BREAKS,
         ///<summary>
-        ///The catalog can't be associated with more than one market.
+        ///The catalog can&apos;t be associated with more than one market.
         ///</summary>
         [Description("The catalog can't be associated with more than one market.")]
         CANNOT_ADD_MORE_THAN_ONE_MARKET,
@@ -8917,7 +8917,7 @@ namespace Shopify.Types
         [Description("Market not found.")]
         MARKET_NOT_FOUND,
         ///<summary>
-        ///The catalog's market and price list currencies do not match.
+        ///The catalog&apos;s market and price list currencies do not match.
         ///</summary>
         [Description("The catalog's market and price list currencies do not match.")]
         MARKET_AND_PRICE_LIST_CURRENCY_MISMATCH,
@@ -8962,7 +8962,7 @@ namespace Shopify.Types
         [Description("Must have `contexts_to_add` or `contexts_to_remove` argument.")]
         REQUIRES_CONTEXTS_TO_ADD_OR_REMOVE,
         ///<summary>
-        ///Can't perform this action on a catalog of this type.
+        ///Can&apos;t perform this action on a catalog of this type.
         ///</summary>
         [Description("Can't perform this action on a catalog of this type.")]
         UNSUPPORTED_CATALOG_ACTION,
@@ -9192,7 +9192,7 @@ namespace Shopify.Types
     public class ChannelConnection : GraphQLObject<ChannelConnection>, IConnectionWithNodesAndEdges<ChannelEdge, Channel>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -9585,13 +9585,13 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The customizations for the breadcrumbs that represent a buyer's journey to the checkout.
+    ///The customizations for the breadcrumbs that represent a buyer&apos;s journey to the checkout.
     ///</summary>
     [Description("The customizations for the breadcrumbs that represent a buyer's journey to the checkout.")]
     public class CheckoutBrandingBuyerJourney : GraphQLObject<CheckoutBrandingBuyerJourney>
     {
         ///<summary>
-        ///An option to display or hide the breadcrumbs that represent the buyer's journey on 3-page checkout.
+        ///An option to display or hide the breadcrumbs that represent the buyer&apos;s journey on 3-page checkout.
         ///</summary>
         [Description("An option to display or hide the breadcrumbs that represent the buyer's journey on 3-page checkout.")]
         public string? visibility { get; set; }
@@ -9660,14 +9660,14 @@ namespace Shopify.Types
     public class CheckoutBrandingChoiceList : GraphQLObject<CheckoutBrandingChoiceList>
     {
         ///<summary>
-        ///The settings that apply to the 'group' variant of ChoiceList.
+        ///The settings that apply to the &apos;group&apos; variant of ChoiceList.
         ///</summary>
         [Description("The settings that apply to the 'group' variant of ChoiceList.")]
         public CheckoutBrandingChoiceListGroup? group { get; set; }
     }
 
     ///<summary>
-    ///The settings that apply to the 'group' variant of ChoiceList.
+    ///The settings that apply to the &apos;group&apos; variant of ChoiceList.
     ///</summary>
     [Description("The settings that apply to the 'group' variant of ChoiceList.")]
     public class CheckoutBrandingChoiceListGroup : GraphQLObject<CheckoutBrandingChoiceListGroup>
@@ -9692,7 +9692,7 @@ namespace Shopify.Types
         public string? accent { get; set; }
 
         ///<summary>
-        ///A color that's strongly associated with the merchant. Currently used for
+        ///A color that&apos;s strongly associated with the merchant. Currently used for
         ///primary buttons, for example **Pay now**, and secondary buttons, for example **Buy again**.
         ///</summary>
         [Description("A color that's strongly associated with the merchant. Currently used for\nprimary buttons, for example **Pay now**, and secondary buttons, for example **Buy again**.")]
@@ -9773,7 +9773,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A base set of color customizations that's applied to an area of Checkout, from which every component
+    ///A base set of color customizations that&apos;s applied to an area of Checkout, from which every component
     ///pulls its colors.
     ///</summary>
     [Description("A base set of color customizations that's applied to an area of Checkout, from which every component\npulls its colors.")]
@@ -9915,7 +9915,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The container's divider customizations.
+    ///The container&apos;s divider customizations.
     ///</summary>
     [Description("The container's divider customizations.")]
     public class CheckoutBrandingContainerDivider : GraphQLObject<CheckoutBrandingContainerDivider>
@@ -9946,7 +9946,7 @@ namespace Shopify.Types
     public class CheckoutBrandingContent : GraphQLObject<CheckoutBrandingContent>
     {
         ///<summary>
-        ///The content container's divider style and visibility.
+        ///The content container&apos;s divider style and visibility.
         ///</summary>
         [Description("The content container's divider style and visibility.")]
         public CheckoutBrandingContainerDivider? divider { get; set; }
@@ -10132,7 +10132,7 @@ namespace Shopify.Types
     public class CheckoutBrandingCustomizations : GraphQLObject<CheckoutBrandingCustomizations>
     {
         ///<summary>
-        ///The customizations for the breadcrumbs that represent a buyer's journey to the checkout.
+        ///The customizations for the breadcrumbs that represent a buyer&apos;s journey to the checkout.
         ///</summary>
         [Description("The customizations for the breadcrumbs that represent a buyer's journey to the checkout.")]
         public CheckoutBrandingBuyerJourney? buyerJourney { get; set; }
@@ -10705,7 +10705,7 @@ namespace Shopify.Types
         public string? contentType { get; set; }
 
         ///<summary>
-        ///The image that's used for the header back to cart link in 1-page checkout when the content type is set to image.
+        ///The image that&apos;s used for the header back to cart link in 1-page checkout when the content type is set to image.
         ///</summary>
         [Description("The image that's used for the header back to cart link in 1-page checkout when the content type is set to image.")]
         public Image? image { get; set; }
@@ -10835,7 +10835,7 @@ namespace Shopify.Types
         public string? colorScheme { get; set; }
 
         ///<summary>
-        ///The main container's divider style and visibility.
+        ///The main container&apos;s divider style and visibility.
         ///</summary>
         [Description("The main container's divider style and visibility.")]
         public CheckoutBrandingContainerDivider? divider { get; set; }
@@ -10977,7 +10977,7 @@ namespace Shopify.Types
     public enum CheckoutBrandingObjectFit
     {
         ///<summary>
-        ///The Contain value for fit. The image is scaled to maintain its aspect ratio while fitting within the containing box. The entire image is made to fill the box, while preserving its aspect ratio, so the image will be "letterboxed" if its aspect ratio does not match the aspect ratio of the box. This is the default value.
+        ///The Contain value for fit. The image is scaled to maintain its aspect ratio while fitting within the containing box. The entire image is made to fill the box, while preserving its aspect ratio, so the image will be &quot;letterboxed&quot; if its aspect ratio does not match the aspect ratio of the box. This is the default value.
         ///</summary>
         [Description("The Contain value for fit. The image is scaled to maintain its aspect ratio while fitting within the containing box. The entire image is made to fill the box, while preserving its aspect ratio, so the image will be \"letterboxed\" if its aspect ratio does not match the aspect ratio of the box. This is the default value.")]
         CONTAIN,
@@ -11013,7 +11013,7 @@ namespace Shopify.Types
         public string? colorScheme { get; set; }
 
         ///<summary>
-        ///The order summary container's divider style and visibility.
+        ///The order summary container&apos;s divider style and visibility.
         ///</summary>
         [Description("The order summary container's divider style and visibility.")]
         public CheckoutBrandingContainerDivider? divider { get; set; }
@@ -11694,7 +11694,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A checkout profile defines the branding settings and the UI extensions for a store's checkout. A checkout profile could be published or draft. A store might have at most one published checkout profile, which is used to render their live checkout. The store could also have multiple draft profiles that were created, previewed, and published using the admin checkout editor.
+    ///A checkout profile defines the branding settings and the UI extensions for a store&apos;s checkout. A checkout profile could be published or draft. A store might have at most one published checkout profile, which is used to render their live checkout. The store could also have multiple draft profiles that were created, previewed, and published using the admin checkout editor.
     ///</summary>
     [Description("A checkout profile defines the branding settings and the UI extensions for a store's checkout. A checkout profile could be published or draft. A store might have at most one published checkout profile, which is used to render their live checkout. The store could also have multiple draft profiles that were created, previewed, and published using the admin checkout editor.")]
     public class CheckoutProfile : GraphQLObject<CheckoutProfile>, INode
@@ -11756,7 +11756,7 @@ namespace Shopify.Types
     public class CheckoutProfileConnection : GraphQLObject<CheckoutProfileConnection>, IConnectionWithNodesAndEdges<CheckoutProfileEdge, CheckoutProfile>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -11863,7 +11863,7 @@ namespace Shopify.Types
         ID,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -11915,12 +11915,12 @@ namespace Shopify.Types
     ///- Manage collection visibility and publication across sales channels.
     ///- Add rich descriptions, images, and metadata to enhance discovery.
     ///
-    ///> Note:
-    ///> Collections are unpublished by default. To make them available to customers,
+    ///&gt; Note:
+    ///&gt; Collections are unpublished by default. To make them available to customers,
     ///use the [`publishablePublish`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/publishablePublish)
     ///mutation after creation.
     ///
-    ///Collections can be displayed in a store with Shopify's theme system through [Liquid templates](https://shopify.dev/docs/storefronts/themes/architecture/templates/collection)
+    ///Collections can be displayed in a store with Shopify&apos;s theme system through [Liquid templates](https://shopify.dev/docs/storefronts/themes/architecture/templates/collection)
     ///and can be customized with [template suffixes](https://shopify.dev/docs/storefronts/themes/architecture/templates/alternate-templates)
     ///for unique layouts. They also support advanced features like translated content, resource feedback,
     ///and contextual publication for location-based catalogs.
@@ -11961,15 +11961,15 @@ namespace Shopify.Types
         public EventConnection? events { get; set; }
 
         ///<summary>
-        ///Information about the collection that's provided through resource feedback.
+        ///Information about the collection that&apos;s provided through resource feedback.
         ///</summary>
         [Description("Information about the collection that's provided through resource feedback.")]
         public ResourceFeedback? feedback { get; set; }
 
         ///<summary>
-        ///A unique string that identifies the collection. If a handle isn't specified when a collection is created, it's automatically generated from the collection's original title, and typically includes words from the title separated by hyphens. For example, a collection that was created with the title `Summer Catalog 2022` might have the handle `summer-catalog-2022`.
+        ///A unique string that identifies the collection. If a handle isn&apos;t specified when a collection is created, it&apos;s automatically generated from the collection&apos;s original title, and typically includes words from the title separated by hyphens. For example, a collection that was created with the title `Summer Catalog 2022` might have the handle `summer-catalog-2022`.
         ///
-        ///If the title is changed, the handle doesn't automatically change.
+        ///If the title is changed, the handle doesn&apos;t automatically change.
         ///
         ///The handle can be used in themes by the Liquid templating language to refer to the collection, but using the ID is preferred because it never changes.
         ///</summary>
@@ -12006,7 +12006,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -12079,9 +12079,9 @@ namespace Shopify.Types
         public bool? publishedOnCurrentChannel { get; set; }
 
         ///<summary>
-        ///Whether the resource is published to the app's
+        ///Whether the resource is published to the app&apos;s
         ///[publication](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication).
-        ///For example, the resource might be published to the app's online store channel.
+        ///For example, the resource might be published to the app&apos;s online store channel.
         ///</summary>
         [Description("Whether the resource is published to the app's\n[publication](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication).\nFor example, the resource might be published to the app's online store channel.")]
         [NonNull]
@@ -12143,7 +12143,7 @@ namespace Shopify.Types
         ///<summary>
         ///The Storefront GraphQL API ID of the `Collection`.
         ///
-        ///As of the `2022-04` version release, the Storefront GraphQL API will no longer return Base64 encoded IDs to match the behavior of the Admin GraphQL API. Therefore, you can safely use the `id` field's value instead.
+        ///As of the `2022-04` version release, the Storefront GraphQL API will no longer return Base64 encoded IDs to match the behavior of the Admin GraphQL API. Therefore, you can safely use the `id` field&apos;s value instead.
         ///</summary>
         [Description("The Storefront GraphQL API ID of the `Collection`.\n\nAs of the `2022-04` version release, the Storefront GraphQL API will no longer return Base64 encoded IDs to match the behavior of the Admin GraphQL API. Therefore, you can safely use the `id` field's value instead.")]
         [Obsolete("Use `id` instead.")]
@@ -12157,7 +12157,7 @@ namespace Shopify.Types
         public string? templateSuffix { get; set; }
 
         ///<summary>
-        ///The name of the collection. It's displayed in the Shopify admin and is typically displayed in sales channels, such as an online store.
+        ///The name of the collection. It&apos;s displayed in the Shopify admin and is typically displayed in sales channels, such as an online store.
         ///</summary>
         [Description("The name of the collection. It's displayed in the Shopify admin and is typically displayed in sales channels, such as an online store.")]
         [NonNull]
@@ -12180,7 +12180,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The list of [publications](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication)
-        ///that the resource isn't published to.
+        ///that the resource isn&apos;t published to.
         ///</summary>
         [Description("The list of [publications](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication)\nthat the resource isn't published to.")]
         [NonNull]
@@ -12267,12 +12267,12 @@ namespace Shopify.Types
     public enum CollectionAddProductsV2UserErrorCode
     {
         ///<summary>
-        ///Can't manually add products to a smart collection.
+        ///Can&apos;t manually add products to a smart collection.
         ///</summary>
         [Description("Can't manually add products to a smart collection.")]
         CANT_ADD_TO_SMART_COLLECTION,
         ///<summary>
-        ///Collection doesn't exist.
+        ///Collection doesn&apos;t exist.
         ///</summary>
         [Description("Collection doesn't exist.")]
         COLLECTION_DOES_NOT_EXIST,
@@ -12291,7 +12291,7 @@ namespace Shopify.Types
     public class CollectionConnection : GraphQLObject<CollectionConnection>, IConnectionWithNodesAndEdges<CollectionEdge, Collection>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -12339,7 +12339,7 @@ namespace Shopify.Types
     public class CollectionDeletePayload : GraphQLObject<CollectionDeletePayload>
     {
         ///<summary>
-        ///The ID of the collection that was deleted. Returns `null` if the collection doesn't exist.
+        ///The ID of the collection that was deleted. Returns `null` if the collection doesn&apos;t exist.
         ///</summary>
         [Description("The ID of the collection that was deleted. Returns `null` if the collection doesn't exist.")]
         public string? deletedCollectionId { get; set; }
@@ -12430,7 +12430,7 @@ namespace Shopify.Types
     public class CollectionPublicationConnection : GraphQLObject<CollectionPublicationConnection>, IConnectionWithNodesAndEdges<CollectionPublicationEdge, CollectionPublication>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -12546,7 +12546,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Represents at rule that's used to assign products to a collection.
+    ///Represents at rule that&apos;s used to assign products to a collection.
     ///</summary>
     [Description("Represents at rule that's used to assign products to a collection.")]
     public class CollectionRule : GraphQLObject<CollectionRule>
@@ -12643,7 +12643,7 @@ namespace Shopify.Types
         [Description("The [`variant_price`](https://shopify.dev/api/admin-graphql/latest/objects/ProductVariant#field-productvariant-price) attribute.")]
         VARIANT_PRICE,
         ///<summary>
-        ///An attribute evaluated based on the `compare_at_price` attribute of the product's variants.
+        ///An attribute evaluated based on the `compare_at_price` attribute of the product&apos;s variants.
         ///With `is_set` relation, the rule matches products with at least one variant with `compare_at_price` set.
         ///With `is_not_set` relation, the rule matches matches products with at least one variant with `compare_at_price` not set.
         ///</summary>
@@ -12918,7 +12918,7 @@ namespace Shopify.Types
         ID,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -13104,7 +13104,7 @@ namespace Shopify.Types
     public class CombinedListingChildConnection : GraphQLObject<CombinedListingChildConnection>, IConnectionWithNodesAndEdges<CombinedListingChildEdge, CombinedListingChild>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -13314,7 +13314,7 @@ namespace Shopify.Types
         [Description("Parent product cannot be a combined listing child.")]
         PARENT_PRODUCT_CANNOT_BE_COMBINED_LISTING_CHILD,
         ///<summary>
-        ///Unable to update components for a product that isn't a combined listing.
+        ///Unable to update components for a product that isn&apos;t a combined listing.
         ///</summary>
         [Description("Unable to update components for a product that isn't a combined listing.")]
         PARENT_PRODUCT_MUST_BE_A_COMBINED_LISTING,
@@ -13566,7 +13566,7 @@ namespace Shopify.Types
     public enum CommentApproveUserErrorCode
     {
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -13584,7 +13584,7 @@ namespace Shopify.Types
     public class CommentAuthor : GraphQLObject<CommentAuthor>
     {
         ///<summary>
-        ///The author's email.
+        ///The author&apos;s email.
         ///</summary>
         [Description("The author's email.")]
         [NonNull]
@@ -13605,7 +13605,7 @@ namespace Shopify.Types
     public class CommentConnection : GraphQLObject<CommentConnection>, IConnectionWithNodesAndEdges<CommentEdge, Comment>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -13679,7 +13679,7 @@ namespace Shopify.Types
     public enum CommentDeleteUserErrorCode
     {
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -13922,7 +13922,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -14031,7 +14031,7 @@ namespace Shopify.Types
     public enum CommentNotSpamUserErrorCode
     {
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -14149,7 +14149,7 @@ namespace Shopify.Types
     public enum CommentSpamUserErrorCode
     {
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -14284,7 +14284,7 @@ namespace Shopify.Types
         public CompanyContactRole? defaultRole { get; set; }
 
         ///<summary>
-        ///The list of the company's draft orders.
+        ///The list of the company&apos;s draft orders.
         ///</summary>
         [Description("The list of the company's draft orders.")]
         [NonNull]
@@ -14345,7 +14345,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -14381,7 +14381,7 @@ namespace Shopify.Types
         public string? note { get; set; }
 
         ///<summary>
-        ///The list of the company's orders.
+        ///The list of the company&apos;s orders.
         ///</summary>
         [Description("The list of the company's orders.")]
         [NonNull]
@@ -14507,7 +14507,7 @@ namespace Shopify.Types
         public string? province { get; set; }
 
         ///<summary>
-        ///The identity of the recipient e.g. 'Receiving Department'.
+        ///The identity of the recipient e.g. &apos;Receiving Department&apos;.
         ///</summary>
         [Description("The identity of the recipient e.g. 'Receiving Department'.")]
         public string? recipient { get; set; }
@@ -14624,7 +14624,7 @@ namespace Shopify.Types
     public class CompanyConnection : GraphQLObject<CompanyConnection>, IConnectionWithNodesAndEdges<CompanyEdge, Company>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -14701,7 +14701,7 @@ namespace Shopify.Types
         public string? lifetimeDuration { get; set; }
 
         ///<summary>
-        ///The company contact's locale (language).
+        ///The company contact&apos;s locale (language).
         ///</summary>
         [Description("The company contact's locale (language).")]
         public string? locale { get; set; }
@@ -14721,7 +14721,7 @@ namespace Shopify.Types
         public CompanyContactRoleAssignmentConnection? roleAssignments { get; set; }
 
         ///<summary>
-        ///The company contact's job title.
+        ///The company contact&apos;s job title.
         ///</summary>
         [Description("The company contact's job title.")]
         public string? title { get; set; }
@@ -14781,7 +14781,7 @@ namespace Shopify.Types
     public class CompanyContactConnection : GraphQLObject<CompanyContactConnection>, IConnectionWithNodesAndEdges<CompanyContactEdge, CompanyContact>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -14952,7 +14952,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The CompanyContactRoleAssignment describes the company and location associated to a company contact's role.
+    ///The CompanyContactRoleAssignment describes the company and location associated to a company contact&apos;s role.
     ///</summary>
     [Description("The CompanyContactRoleAssignment describes the company and location associated to a company contact's role.")]
     public class CompanyContactRoleAssignment : GraphQLObject<CompanyContactRoleAssignment>, INode
@@ -14993,7 +14993,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///The role that's assigned to the company contact.
+        ///The role that&apos;s assigned to the company contact.
         ///</summary>
         [Description("The role that's assigned to the company contact.")]
         [NonNull]
@@ -15014,7 +15014,7 @@ namespace Shopify.Types
     public class CompanyContactRoleAssignmentConnection : GraphQLObject<CompanyContactRoleAssignmentConnection>, IConnectionWithNodesAndEdges<CompanyContactRoleAssignmentEdge, CompanyContactRoleAssignment>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -15099,7 +15099,7 @@ namespace Shopify.Types
     public class CompanyContactRoleConnection : GraphQLObject<CompanyContactRoleConnection>, IConnectionWithNodesAndEdges<CompanyContactRoleEdge, CompanyContactRole>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -15229,7 +15229,7 @@ namespace Shopify.Types
         NAME_EMAIL,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -15360,7 +15360,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A location or branch of a [company that's a customer](https://shopify.dev/api/admin-graphql/latest/objects/company) of the shop. Configuration of B2B relationship, for example prices lists and checkout settings, may be done for a location.
+    ///A location or branch of a [company that&apos;s a customer](https://shopify.dev/api/admin-graphql/latest/objects/company) of the shop. Configuration of B2B relationship, for example prices lists and checkout settings, may be done for a location.
     ///</summary>
     [Description("A location or branch of a [company that's a customer](https://shopify.dev/api/admin-graphql/latest/objects/company) of the shop. Configuration of B2B relationship, for example prices lists and checkout settings, may be done for a location.")]
     public class CompanyLocation : GraphQLObject<CompanyLocation>, ICommentEventSubject, IHasEvents, IHasMetafieldDefinitions, IHasMetafields, INavigable, INode, IMetafieldReferencer
@@ -15372,7 +15372,7 @@ namespace Shopify.Types
         public CompanyAddress? billingAddress { get; set; }
 
         ///<summary>
-        ///The configuration for the buyer's B2B checkout.
+        ///The configuration for the buyer&apos;s B2B checkout.
         ///</summary>
         [Description("The configuration for the buyer's B2B checkout.")]
         public BuyerExperienceConfiguration? buyerExperienceConfiguration { get; set; }
@@ -15405,7 +15405,7 @@ namespace Shopify.Types
         public DateTime? createdAt { get; set; }
 
         ///<summary>
-        ///The location's currency based on the shipping address. If the shipping address is empty, then the value is the shop's primary market.
+        ///The location&apos;s currency based on the shipping address. If the shipping address is empty, then the value is the shop&apos;s primary market.
         ///</summary>
         [Description("The location's currency based on the shipping address. If the shipping address is empty, then the value is the shop's primary market.")]
         [NonNull]
@@ -15466,7 +15466,7 @@ namespace Shopify.Types
         public string? locale { get; set; }
 
         ///<summary>
-        ///The market that includes the location's shipping address. If the shipping address is empty, then the value is the shop's primary market.
+        ///The market that includes the location&apos;s shipping address. If the shipping address is empty, then the value is the shop&apos;s primary market.
         ///</summary>
         [Description("The market that includes the location's shipping address. If the shipping address is empty, then the value is the shop's primary market.")]
         [Obsolete("This `market` field will be removed in a future version of the API.")]
@@ -15475,7 +15475,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -15714,7 +15714,7 @@ namespace Shopify.Types
         public PriceList? priceList { get; set; }
 
         ///<summary>
-        ///A group of products and collections that's published to a catalog.
+        ///A group of products and collections that&apos;s published to a catalog.
         ///</summary>
         [Description("A group of products and collections that's published to a catalog.")]
         public Publication? publication { get; set; }
@@ -15741,7 +15741,7 @@ namespace Shopify.Types
     public class CompanyLocationConnection : GraphQLObject<CompanyLocationConnection>, IConnectionWithNodesAndEdges<CompanyLocationEdge, CompanyLocation>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -15956,7 +15956,7 @@ namespace Shopify.Types
         NAME,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -15979,7 +15979,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A representation of store's staff member who is assigned to a [company location](https://shopify.dev/api/admin-graphql/latest/objects/CompanyLocation) of the shop. The staff member's actions will be limited to objects associated with the assigned company location.
+    ///A representation of store&apos;s staff member who is assigned to a [company location](https://shopify.dev/api/admin-graphql/latest/objects/CompanyLocation) of the shop. The staff member&apos;s actions will be limited to objects associated with the assigned company location.
     ///</summary>
     [Description("A representation of store's staff member who is assigned to a [company location](https://shopify.dev/api/admin-graphql/latest/objects/CompanyLocation) of the shop. The staff member's actions will be limited to objects associated with the assigned company location.")]
     public class CompanyLocationStaffMemberAssignment : GraphQLObject<CompanyLocationStaffMemberAssignment>, INode
@@ -15999,7 +15999,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///Represents the data of a staff member who's assigned to a company location.
+        ///Represents the data of a staff member who&apos;s assigned to a company location.
         ///</summary>
         [Description("Represents the data of a staff member who's assigned to a company location.")]
         [NonNull]
@@ -16013,7 +16013,7 @@ namespace Shopify.Types
     public class CompanyLocationStaffMemberAssignmentConnection : GraphQLObject<CompanyLocationStaffMemberAssignmentConnection>, IConnectionWithNodesAndEdges<CompanyLocationStaffMemberAssignmentEdge, CompanyLocationStaffMemberAssignment>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -16380,7 +16380,7 @@ namespace Shopify.Types
         [Description("Region code must match the country code.")]
         REGION_CODE_MUST_MATCH_COUNTRY_CODE,
         ///<summary>
-        ///Shopify's cookie banner must be disabled.
+        ///Shopify&apos;s cookie banner must be disabled.
         ///</summary>
         [Description("Shopify's cookie banner must be disabled.")]
         SHOPIFY_COOKIE_BANNER_NOT_DISABLED,
@@ -16426,7 +16426,7 @@ namespace Shopify.Types
     public class ConsentPolicyUpdatePayload : GraphQLObject<ConsentPolicyUpdatePayload>
     {
         ///<summary>
-        ///All updated and created consent policies. The consent policies that haven't been modified as part of the mutation aren't returned.
+        ///All updated and created consent policies. The consent policies that haven&apos;t been modified as part of the mutation aren&apos;t returned.
         ///</summary>
         [Description("All updated and created consent policies. The consent policies that haven't been modified as part of the mutation aren't returned.")]
         public IEnumerable<ConsentPolicy>? updatedPolicies { get; set; }
@@ -16440,7 +16440,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A shop's banner settings.
+    ///A shop&apos;s banner settings.
     ///</summary>
     [Description("A shop's banner settings.")]
     public class CookieBanner : GraphQLObject<CookieBanner>, IHasPublishedTranslations
@@ -16481,7 +16481,7 @@ namespace Shopify.Types
         public int? count { get; set; }
 
         ///<summary>
-        ///The count's precision, or the exactness of the value.
+        ///The count&apos;s precision, or the exactness of the value.
         ///</summary>
         [Description("The count's precision, or the exactness of the value.")]
         [NonNull]
@@ -16526,7 +16526,7 @@ namespace Shopify.Types
         public IEnumerable<string>? countryCodes { get; set; }
 
         ///<summary>
-        ///Whether 'Rest of World' has been defined in any of the shipping zones.
+        ///Whether &apos;Rest of World&apos; has been defined in any of the shipping zones.
         ///</summary>
         [Description("Whether 'Rest of World' has been defined in any of the shipping zones.")]
         [NonNull]
@@ -16535,7 +16535,7 @@ namespace Shopify.Types
 
     ///<summary>
     ///The code designating a country/region, which generally follows ISO 3166-1 alpha-2 guidelines.
-    ///If a territory doesn't have a country code value in the `CountryCode` enum, then it might be considered a subdivision
+    ///If a territory doesn&apos;t have a country code value in the `CountryCode` enum, then it might be considered a subdivision
     ///of another country. For example, the territories associated with Spain are represented by the country code `ES`,
     ///and the territories associated with the United States of America are represented by the country code `US`.
     ///</summary>
@@ -16578,7 +16578,7 @@ namespace Shopify.Types
         [Description("Anguilla.")]
         AI,
         ///<summary>
-        ///Antigua & Barbuda.
+        ///Antigua &amp; Barbuda.
         ///</summary>
         [Description("Antigua & Barbuda.")]
         AG,
@@ -16673,7 +16673,7 @@ namespace Shopify.Types
         [Description("Bolivia.")]
         BO,
         ///<summary>
-        ///Bosnia & Herzegovina.
+        ///Bosnia &amp; Herzegovina.
         ///</summary>
         [Description("Bosnia & Herzegovina.")]
         BA,
@@ -17013,7 +17013,7 @@ namespace Shopify.Types
         [Description("Haiti.")]
         HT,
         ///<summary>
-        ///Heard & McDonald Islands.
+        ///Heard &amp; McDonald Islands.
         ///</summary>
         [Description("Heard & McDonald Islands.")]
         HM,
@@ -17448,7 +17448,7 @@ namespace Shopify.Types
         [Description("St. Helena.")]
         SH,
         ///<summary>
-        ///St. Kitts & Nevis.
+        ///St. Kitts &amp; Nevis.
         ///</summary>
         [Description("St. Kitts & Nevis.")]
         KN,
@@ -17463,7 +17463,7 @@ namespace Shopify.Types
         [Description("St. Martin.")]
         MF,
         ///<summary>
-        ///St. Pierre & Miquelon.
+        ///St. Pierre &amp; Miquelon.
         ///</summary>
         [Description("St. Pierre & Miquelon.")]
         PM,
@@ -17478,7 +17478,7 @@ namespace Shopify.Types
         [Description("San Marino.")]
         SM,
         ///<summary>
-        ///São Tomé & Príncipe.
+        ///São Tomé &amp; Príncipe.
         ///</summary>
         [Description("São Tomé & Príncipe.")]
         ST,
@@ -17543,7 +17543,7 @@ namespace Shopify.Types
         [Description("South Africa.")]
         ZA,
         ///<summary>
-        ///South Georgia & South Sandwich Islands.
+        ///South Georgia &amp; South Sandwich Islands.
         ///</summary>
         [Description("South Georgia & South Sandwich Islands.")]
         GS,
@@ -17568,7 +17568,7 @@ namespace Shopify.Types
         [Description("Sri Lanka.")]
         LK,
         ///<summary>
-        ///St. Vincent & Grenadines.
+        ///St. Vincent &amp; Grenadines.
         ///</summary>
         [Description("St. Vincent & Grenadines.")]
         VC,
@@ -17583,7 +17583,7 @@ namespace Shopify.Types
         [Description("Suriname.")]
         SR,
         ///<summary>
-        ///Svalbard & Jan Mayen.
+        ///Svalbard &amp; Jan Mayen.
         ///</summary>
         [Description("Svalbard & Jan Mayen.")]
         SJ,
@@ -17643,7 +17643,7 @@ namespace Shopify.Types
         [Description("Tonga.")]
         TO,
         ///<summary>
-        ///Trinidad & Tobago.
+        ///Trinidad &amp; Tobago.
         ///</summary>
         [Description("Trinidad & Tobago.")]
         TT,
@@ -17668,7 +17668,7 @@ namespace Shopify.Types
         [Description("Turkmenistan.")]
         TM,
         ///<summary>
-        ///Turks & Caicos Islands.
+        ///Turks &amp; Caicos Islands.
         ///</summary>
         [Description("Turks & Caicos Islands.")]
         TC,
@@ -17738,7 +17738,7 @@ namespace Shopify.Types
         [Description("British Virgin Islands.")]
         VG,
         ///<summary>
-        ///Wallis & Futuna.
+        ///Wallis &amp; Futuna.
         ///</summary>
         [Description("Wallis & Futuna.")]
         WF,
@@ -18046,7 +18046,7 @@ namespace Shopify.Types
     public class CountryHarmonizedSystemCodeConnection : GraphQLObject<CountryHarmonizedSystemCodeConnection>, IConnectionWithNodesAndEdges<CountryHarmonizedSystemCodeEdge, CountryHarmonizedSystemCode>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -18834,7 +18834,7 @@ namespace Shopify.Types
         [Description("Tanzanian Shilling (TZS).")]
         TZS,
         ///<summary>
-        ///Tongan Pa'anga (TOP).
+        ///Tongan Pa&apos;anga (TOP).
         ///</summary>
         [Description("Tongan Pa'anga (TOP).")]
         TOP,
@@ -19164,7 +19164,7 @@ namespace Shopify.Types
     public class CurrencySetting : GraphQLObject<CurrencySetting>
     {
         ///<summary>
-        ///The currency's ISO code.
+        ///The currency&apos;s ISO code.
         ///</summary>
         [Description("The currency's ISO code.")]
         [NonNull]
@@ -19185,7 +19185,7 @@ namespace Shopify.Types
         public bool? enabled { get; set; }
 
         ///<summary>
-        ///The date and time when the active exchange rate for the currency was last modified. It can be the automatic rate's creation date, or the manual rate's last updated at date if active.
+        ///The date and time when the active exchange rate for the currency was last modified. It can be the automatic rate&apos;s creation date, or the manual rate&apos;s last updated at date if active.
         ///</summary>
         [Description("The date and time when the active exchange rate for the currency was last modified. It can be the automatic rate's creation date, or the manual rate's last updated at date if active.")]
         public DateTime? rateUpdatedAt { get; set; }
@@ -19198,7 +19198,7 @@ namespace Shopify.Types
     public class CurrencySettingConnection : GraphQLObject<CurrencySettingConnection>, IConnectionWithNodesAndEdges<CurrencySettingEdge, CurrencySetting>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -19241,10 +19241,10 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Represents information about a customer of the shop, such as the customer's contact details, their order
-    ///history, and whether they've agreed to receive marketing material by email.
+    ///Represents information about a customer of the shop, such as the customer&apos;s contact details, their order
+    ///history, and whether they&apos;ve agreed to receive marketing material by email.
     ///
-    ///**Caution:** Only use this data if it's required for your app's functionality. Shopify will restrict [access to scopes](https://shopify.dev/api/usage/access-scopes) for apps that don't have a legitimate use for the associated data.
+    ///**Caution:** Only use this data if it&apos;s required for your app&apos;s functionality. Shopify will restrict [access to scopes](https://shopify.dev/api/usage/access-scopes) for apps that don&apos;t have a legitimate use for the associated data.
     ///</summary>
     [Description("Represents information about a customer of the shop, such as the customer's contact details, their order\nhistory, and whether they've agreed to receive marketing material by email.\n\n**Caution:** Only use this data if it's required for your app's functionality. Shopify will restrict [access to scopes](https://shopify.dev/api/usage/access-scopes) for apps that don't have a legitimate use for the associated data.")]
     public class Customer : GraphQLObject<Customer>, ICommentEventSubject, IHasEvents, IHasMetafieldDefinitions, IHasMetafields, IHasStoreCreditAccounts, ILegacyInteroperability, INode, ICommentEventEmbed, IMetafieldReference, IMetafieldReferencer, IPurchasingEntity
@@ -19273,15 +19273,15 @@ namespace Shopify.Types
         ///<summary>
         ///Whether the merchant can delete the customer from their store.
         ///
-        ///A customer can be deleted from a store only if they haven't yet made an order. After a customer makes an
-        ///order, they can't be deleted from a store.
+        ///A customer can be deleted from a store only if they haven&apos;t yet made an order. After a customer makes an
+        ///order, they can&apos;t be deleted from a store.
         ///</summary>
         [Description("Whether the merchant can delete the customer from their store.\n\nA customer can be deleted from a store only if they haven't yet made an order. After a customer makes an\norder, they can't be deleted from a store.")]
         [NonNull]
         public bool? canDelete { get; set; }
 
         ///<summary>
-        ///A list of the customer's company contact profiles.
+        ///A list of the customer&apos;s company contact profiles.
         ///</summary>
         [Description("A list of the customer's company contact profiles.")]
         [NonNull]
@@ -19308,27 +19308,27 @@ namespace Shopify.Types
         public MailingAddress? defaultAddress { get; set; }
 
         ///<summary>
-        ///The customer's default email address.
+        ///The customer&apos;s default email address.
         ///</summary>
         [Description("The customer's default email address.")]
         public CustomerEmailAddress? defaultEmailAddress { get; set; }
 
         ///<summary>
-        ///The customer's default phone number.
+        ///The customer&apos;s default phone number.
         ///</summary>
         [Description("The customer's default phone number.")]
         public CustomerPhoneNumber? defaultPhoneNumber { get; set; }
 
         ///<summary>
         ///The full name of the customer, based on the values for first_name and last_name. If the first_name and
-        ///last_name are not available, then this falls back to the customer's email address, and if that is not available, the customer's phone number.
+        ///last_name are not available, then this falls back to the customer&apos;s email address, and if that is not available, the customer&apos;s phone number.
         ///</summary>
         [Description("The full name of the customer, based on the values for first_name and last_name. If the first_name and\nlast_name are not available, then this falls back to the customer's email address, and if that is not available, the customer's phone number.")]
         [NonNull]
         public string? displayName { get; set; }
 
         ///<summary>
-        ///The customer's email address.
+        ///The customer&apos;s email address.
         ///</summary>
         [Description("The customer's email address.")]
         [Obsolete("Use `defaultEmailAddress.emailAddress` instead.")]
@@ -19336,7 +19336,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The current email marketing state for the customer.
-        ///If the customer doesn't have an email address, then this property is `null`.
+        ///If the customer doesn&apos;t have an email address, then this property is `null`.
         ///</summary>
         [Description("The current email marketing state for the customer.\nIf the customer doesn't have an email address, then this property is `null`.")]
         [Obsolete("Use `defaultEmailAddress.marketingState`, `defaultEmailAddress.marketingOptInLevel`, `defaultEmailAddress.marketingUpdatedAt`, and `defaultEmailAddress.sourceLocation` instead.")]
@@ -19350,13 +19350,13 @@ namespace Shopify.Types
         public EventConnection? events { get; set; }
 
         ///<summary>
-        ///The customer's first name.
+        ///The customer&apos;s first name.
         ///</summary>
         [Description("The customer's first name.")]
         public string? firstName { get; set; }
 
         ///<summary>
-        ///Whether the merchant has added timeline comments about the customer on the customer's page.
+        ///Whether the merchant has added timeline comments about the customer on the customer&apos;s page.
         ///</summary>
         [Description("Whether the merchant has added timeline comments about the customer on the customer's page.")]
         [Obsolete("To query for comments on the timeline, use the `events` connection and a 'query' argument containing `verb:comment`, or look for a 'CommentEvent' in the `__typename` of `events`.")]
@@ -19378,13 +19378,13 @@ namespace Shopify.Types
         public Image? image { get; set; }
 
         ///<summary>
-        ///The customer's last name.
+        ///The customer&apos;s last name.
         ///</summary>
         [Description("The customer's last name.")]
         public string? lastName { get; set; }
 
         ///<summary>
-        ///The customer's last order.
+        ///The customer&apos;s last order.
         ///</summary>
         [Description("The customer's last order.")]
         public Order? lastOrder { get; set; }
@@ -19399,14 +19399,14 @@ namespace Shopify.Types
         ///<summary>
         ///The amount of time since the customer was first added to the store.
         ///
-        ///Example: 'about 12 years'.
+        ///Example: &apos;about 12 years&apos;.
         ///</summary>
         [Description("The amount of time since the customer was first added to the store.\n\nExample: 'about 12 years'.")]
         [NonNull]
         public string? lifetimeDuration { get; set; }
 
         ///<summary>
-        ///The customer's locale.
+        ///The customer&apos;s locale.
         ///</summary>
         [Description("The customer's locale.")]
         [NonNull]
@@ -19428,7 +19428,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -19451,7 +19451,7 @@ namespace Shopify.Types
         public MetafieldConnection? metafields { get; set; }
 
         ///<summary>
-        ///A unique identifier for the customer that's used with Multipass login.
+        ///A unique identifier for the customer that&apos;s used with Multipass login.
         ///</summary>
         [Description("A unique identifier for the customer that's used with Multipass login.")]
         public string? multipassIdentifier { get; set; }
@@ -19470,21 +19470,21 @@ namespace Shopify.Types
         public ulong? numberOfOrders { get; set; }
 
         ///<summary>
-        ///A list of the customer's orders.
+        ///A list of the customer&apos;s orders.
         ///</summary>
         [Description("A list of the customer's orders.")]
         [NonNull]
         public OrderConnection? orders { get; set; }
 
         ///<summary>
-        ///A list of the customer's payment methods.
+        ///A list of the customer&apos;s payment methods.
         ///</summary>
         [Description("A list of the customer's payment methods.")]
         [NonNull]
         public CustomerPaymentMethodConnection? paymentMethods { get; set; }
 
         ///<summary>
-        ///The customer's phone number.
+        ///The customer&apos;s phone number.
         ///</summary>
         [Description("The customer's phone number.")]
         [Obsolete("Use `defaultPhoneNumber.phoneNumber` instead.")]
@@ -19498,7 +19498,7 @@ namespace Shopify.Types
         public string? productSubscriberStatus { get; set; }
 
         ///<summary>
-        ///The current SMS marketing state for the customer's phone number.
+        ///The current SMS marketing state for the customer&apos;s phone number.
         ///
         ///If the customer does not have a phone number, then this property is `null`.
         ///</summary>
@@ -19507,7 +19507,7 @@ namespace Shopify.Types
         public CustomerSmsMarketingConsentState? smsMarketingConsent { get; set; }
 
         ///<summary>
-        ///The state of the customer's account with the shop.
+        ///The state of the customer&apos;s account with the shop.
         ///
         ///Please note that this only meaningful when Classic Customer Accounts is active.
         ///</summary>
@@ -19531,7 +19531,7 @@ namespace Shopify.Types
         public StoreCreditAccountConnection? storeCreditAccounts { get; set; }
 
         ///<summary>
-        ///A list of the customer's subscription contracts.
+        ///A list of the customer&apos;s subscription contracts.
         ///</summary>
         [Description("A list of the customer's subscription contracts.")]
         [NonNull]
@@ -19577,7 +19577,7 @@ namespace Shopify.Types
         ///Whether the email address is formatted correctly.
         ///
         ///Returns `true` when the email is formatted correctly and
-        ///belongs to an existing domain. This doesn't guarantee that
+        ///belongs to an existing domain. This doesn&apos;t guarantee that
         ///the email address actually exists.
         ///</summary>
         [Description("Whether the email address is formatted correctly.\n\nReturns `true` when the email is formatted correctly and\nbelongs to an existing domain. This doesn't guarantee that\nthe email address actually exists.")]
@@ -19743,7 +19743,7 @@ namespace Shopify.Types
     public class CustomerAccountPageConnection : GraphQLObject<CustomerAccountPageConnection>, IConnectionWithNodesAndEdges<CustomerAccountPageEdge, ICustomerAccountPage>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -19786,7 +19786,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Information about the shop's customer accounts.
+    ///Information about the shop&apos;s customer accounts.
     ///</summary>
     [Description("Information about the shop's customer accounts.")]
     public class CustomerAccountsV2 : GraphQLObject<CustomerAccountsV2>
@@ -19940,7 +19940,7 @@ namespace Shopify.Types
         [Description("Failed to cancel customer data erasure.")]
         FAILED_TO_CANCEL,
         ///<summary>
-        ///Customer's data is not scheduled for erasure.
+        ///Customer&apos;s data is not scheduled for erasure.
         ///</summary>
         [Description("Customer's data is not scheduled for erasure.")]
         NOT_BEING_ERASED,
@@ -20012,7 +20012,7 @@ namespace Shopify.Types
     public class CustomerConnection : GraphQLObject<CustomerConnection>, IConnectionWithNodesAndEdges<CustomerEdge, Customer>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -20034,7 +20034,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The source that collected the customer's consent to receive marketing materials.
+    ///The source that collected the customer&apos;s consent to receive marketing materials.
     ///</summary>
     [Description("The source that collected the customer's consent to receive marketing materials.")]
     public enum CustomerConsentCollectedFrom
@@ -20118,7 +20118,7 @@ namespace Shopify.Types
         public int? expiryYear { get; set; }
 
         ///<summary>
-        ///The card's BIN number.
+        ///The card&apos;s BIN number.
         ///</summary>
         [Description("The card's BIN number.")]
         public string? firstDigits { get; set; }
@@ -20282,7 +20282,7 @@ namespace Shopify.Types
     public class CustomerEmailAddress : GraphQLObject<CustomerEmailAddress>
     {
         ///<summary>
-        ///The customer's default email address.
+        ///The customer&apos;s default email address.
         ///</summary>
         [Description("The customer's default email address.")]
         [NonNull]
@@ -20340,7 +20340,7 @@ namespace Shopify.Types
         ///<summary>
         ///Whether the email address is formatted correctly.
         ///
-        ///Returns `true` when the email is formatted correctly. This doesn't guarantee that the email address
+        ///Returns `true` when the email is formatted correctly. This doesn&apos;t guarantee that the email address
         ///actually exists.
         ///</summary>
         [Description("Whether the email address is formatted correctly.\n\nReturns `true` when the email is formatted correctly. This doesn't guarantee that the email address\nactually exists.")]
@@ -20428,7 +20428,7 @@ namespace Shopify.Types
     {
         ///<summary>
         ///The date and time at which the customer consented to receive marketing material by email.
-        ///The customer's consent state reflects the consent record with the most recent `consent_updated_at` date.
+        ///The customer&apos;s consent state reflects the consent record with the most recent `consent_updated_at` date.
         ///If no date is provided, then the date and time at which the consent information was sent is used.
         ///</summary>
         [Description("The date and time at which the customer consented to receive marketing material by email.\nThe customer's consent state reflects the consent record with the most recent `consent_updated_at` date.\nIf no date is provided, then the date and time at which the consent information was sent is used.")]
@@ -20513,7 +20513,7 @@ namespace Shopify.Types
         [Description("The input value is invalid.")]
         INVALID,
         ///<summary>
-        ///The input value isn't included in the list.
+        ///The input value isn&apos;t included in the list.
         ///</summary>
         [Description("The input value isn't included in the list.")]
         INCLUSION,
@@ -20544,7 +20544,7 @@ namespace Shopify.Types
     public enum CustomerEmailMarketingState
     {
         ///<summary>
-        ///The customer isn't subscribed to email marketing.
+        ///The customer isn&apos;t subscribed to email marketing.
         ///</summary>
         [Description("The customer isn't subscribed to email marketing.")]
         NOT_SUBSCRIBED,
@@ -20559,12 +20559,12 @@ namespace Shopify.Types
         [Description("The customer is subscribed to email marketing.")]
         SUBSCRIBED,
         ///<summary>
-        ///The customer isn't currently subscribed to email marketing but was previously subscribed.
+        ///The customer isn&apos;t currently subscribed to email marketing but was previously subscribed.
         ///</summary>
         [Description("The customer isn't currently subscribed to email marketing but was previously subscribed.")]
         UNSUBSCRIBED,
         ///<summary>
-        ///The customer's personal data is erased. This value is internally-set and read-only.
+        ///The customer&apos;s personal data is erased. This value is internally-set and read-only.
         ///</summary>
         [Description("The customer's personal data is erased. This value is internally-set and read-only.")]
         REDACTED,
@@ -20606,13 +20606,13 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Represents a customer's visiting activities on a shop's online store.
+    ///Represents a customer&apos;s visiting activities on a shop&apos;s online store.
     ///</summary>
     [Description("Represents a customer's visiting activities on a shop's online store.")]
     public class CustomerJourney : GraphQLObject<CustomerJourney>
     {
         ///<summary>
-        ///The position of the current order within the customer's order history.
+        ///The position of the current order within the customer&apos;s order history.
         ///</summary>
         [Description("The position of the current order within the customer's order history.")]
         [NonNull]
@@ -20626,7 +20626,7 @@ namespace Shopify.Types
         public int? daysToConversion { get; set; }
 
         ///<summary>
-        ///The customer's first session going into the shop.
+        ///The customer&apos;s first session going into the shop.
         ///</summary>
         [Description("The customer's first session going into the shop.")]
         [NonNull]
@@ -20647,13 +20647,13 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Represents a customer's visiting activities on a shop's online store.
+    ///Represents a customer&apos;s visiting activities on a shop&apos;s online store.
     ///</summary>
     [Description("Represents a customer's visiting activities on a shop's online store.")]
     public class CustomerJourneySummary : GraphQLObject<CustomerJourneySummary>
     {
         ///<summary>
-        ///The position of the current order within the customer's order history. Test orders aren't included.
+        ///The position of the current order within the customer&apos;s order history. Test orders aren&apos;t included.
         ///</summary>
         [Description("The position of the current order within the customer's order history. Test orders aren't included.")]
         public int? customerOrderIndex { get; set; }
@@ -20665,7 +20665,7 @@ namespace Shopify.Types
         public int? daysToConversion { get; set; }
 
         ///<summary>
-        ///The customer's first session going into the shop.
+        ///The customer&apos;s first session going into the shop.
         ///</summary>
         [Description("The customer's first session going into the shop.")]
         public CustomerVisit? firstVisit { get; set; }
@@ -20677,7 +20677,7 @@ namespace Shopify.Types
         public CustomerVisit? lastVisit { get; set; }
 
         ///<summary>
-        ///The events preceding a customer's order, such as shop sessions.
+        ///The events preceding a customer&apos;s order, such as shop sessions.
         ///</summary>
         [Description("The events preceding a customer's order, such as shop sessions.")]
         public CustomerMomentConnection? moments { get; set; }
@@ -21032,7 +21032,7 @@ namespace Shopify.Types
         public DiscountNodeConnection? discountNodes { get; set; }
 
         ///<summary>
-        ///The full name of the customer, based on the values for `first_name` and `last_name`. If `first_name` and `last_name` aren't available, then this field falls back to the customer's email address. If the customer's email isn't available, then this field falls back to the customer's phone number.
+        ///The full name of the customer, based on the values for `first_name` and `last_name`. If `first_name` and `last_name` aren&apos;t available, then this field falls back to the customer&apos;s email address. If the customer&apos;s email isn&apos;t available, then this field falls back to the customer&apos;s phone number.
         ///</summary>
         [Description("The full name of the customer, based on the values for `first_name` and `last_name`. If `first_name` and `last_name` aren't available, then this field falls back to the customer's email address. If the customer's email isn't available, then this field falls back to the customer's phone number.")]
         [NonNull]
@@ -21248,7 +21248,7 @@ namespace Shopify.Types
         public CustomerMergeRequest? mergeInProgress { get; set; }
 
         ///<summary>
-        ///The reason why the customer can't be merged with another customer.
+        ///The reason why the customer can&apos;t be merged with another customer.
         ///</summary>
         [Description("The reason why the customer can't be merged with another customer.")]
         public string? reason { get; set; }
@@ -21264,7 +21264,7 @@ namespace Shopify.Types
     {
         public CustomerVisit? AsCustomerVisit() => this as CustomerVisit;
         ///<summary>
-        ///The date and time when the customer's session occurred.
+        ///The date and time when the customer&apos;s session occurred.
         ///</summary>
         [Description("The date and time when the customer's session occurred.")]
         [NonNull]
@@ -21278,7 +21278,7 @@ namespace Shopify.Types
     public class CustomerMomentConnection : GraphQLObject<CustomerMomentConnection>, IConnectionWithNodesAndEdges<CustomerMomentEdge, ICustomerMoment>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -21399,7 +21399,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A customer's payment method.
+    ///A customer&apos;s payment method.
     ///</summary>
     [Description("A customer's payment method.")]
     public class CustomerPaymentMethod : GraphQLObject<CustomerPaymentMethod>, INode
@@ -21450,7 +21450,7 @@ namespace Shopify.Types
     public class CustomerPaymentMethodConnection : GraphQLObject<CustomerPaymentMethodConnection>, IConnectionWithNodesAndEdges<CustomerPaymentMethodEdge, CustomerPaymentMethod>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -21529,7 +21529,7 @@ namespace Shopify.Types
         [Description("Too many requests.")]
         TOO_MANY_REQUESTS,
         ///<summary>
-        ///Customer doesn't exist.
+        ///Customer doesn&apos;t exist.
         ///</summary>
         [Description("Customer doesn't exist.")]
         CUSTOMER_DOES_NOT_EXIST,
@@ -21673,7 +21673,7 @@ namespace Shopify.Types
     public enum CustomerPaymentMethodGetDuplicationDataUserErrorCode
     {
         ///<summary>
-        ///Payment method doesn't exist.
+        ///Payment method doesn&apos;t exist.
         ///</summary>
         [Description("Payment method doesn't exist.")]
         PAYMENT_METHOD_DOES_NOT_EXIST,
@@ -21688,7 +21688,7 @@ namespace Shopify.Types
         [Description("Too many requests.")]
         TOO_MANY_REQUESTS,
         ///<summary>
-        ///Customer doesn't exist.
+        ///Customer doesn&apos;t exist.
         ///</summary>
         [Description("Customer doesn't exist.")]
         CUSTOMER_DOES_NOT_EXIST,
@@ -21767,7 +21767,7 @@ namespace Shopify.Types
     public enum CustomerPaymentMethodGetUpdateUrlUserErrorCode
     {
         ///<summary>
-        ///Payment method doesn't exist.
+        ///Payment method doesn&apos;t exist.
         ///</summary>
         [Description("Payment method doesn't exist.")]
         PAYMENT_METHOD_DOES_NOT_EXIST,
@@ -21782,7 +21782,7 @@ namespace Shopify.Types
         [Description("Too many requests.")]
         TOO_MANY_REQUESTS,
         ///<summary>
-        ///Customer doesn't exist.
+        ///Customer doesn&apos;t exist.
         ///</summary>
         [Description("Customer doesn't exist.")]
         CUSTOMER_DOES_NOT_EXIST,
@@ -22185,7 +22185,7 @@ namespace Shopify.Types
         public bool? isRevocable { get; set; }
 
         ///<summary>
-        ///The customers's PayPal account email address.
+        ///The customers&apos;s PayPal account email address.
         ///</summary>
         [Description("The customers's PayPal account email address.")]
         public string? paypalAccountEmail { get; set; }
@@ -22226,7 +22226,7 @@ namespace Shopify.Types
         public DateTime? marketingUpdatedAt { get; set; }
 
         ///<summary>
-        ///A customer's phone number.
+        ///A customer&apos;s phone number.
         ///</summary>
         [Description("A customer's phone number.")]
         [NonNull]
@@ -22246,17 +22246,17 @@ namespace Shopify.Types
     public enum CustomerPredictedSpendTier
     {
         ///<summary>
-        ///The customer's spending is predicted to be in the top spending range for the shop in the following year.
+        ///The customer&apos;s spending is predicted to be in the top spending range for the shop in the following year.
         ///</summary>
         [Description("The customer's spending is predicted to be in the top spending range for the shop in the following year.")]
         HIGH,
         ///<summary>
-        ///The customer's spending is predicted to be in the normal spending range for the shop in the following year.
+        ///The customer&apos;s spending is predicted to be in the normal spending range for the shop in the following year.
         ///</summary>
         [Description("The customer's spending is predicted to be in the normal spending range for the shop in the following year.")]
         MEDIUM,
         ///<summary>
-        ///The customer's spending is predicted to be zero, or in the lowest spending range for the shop in the following year.
+        ///The customer&apos;s spending is predicted to be zero, or in the lowest spending range for the shop in the following year.
         ///</summary>
         [Description("The customer's spending is predicted to be zero, or in the lowest spending range for the shop in the following year.")]
         LOW,
@@ -22270,7 +22270,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The possible product subscription states for a customer, as defined by the customer's subscription contracts.
+    ///The possible product subscription states for a customer, as defined by the customer&apos;s subscription contracts.
     ///</summary>
     [Description("The possible product subscription states for a customer, as defined by the customer's subscription contracts.")]
     public enum CustomerProductSubscriberStatus
@@ -22281,19 +22281,19 @@ namespace Shopify.Types
         [Description("The customer has at least one active subscription contract.")]
         ACTIVE,
         ///<summary>
-        ///The customer's last subscription contract was cancelled and there are no other active or paused
+        ///The customer&apos;s last subscription contract was cancelled and there are no other active or paused
         ///subscription contracts.
         ///</summary>
         [Description("The customer's last subscription contract was cancelled and there are no other active or paused\nsubscription contracts.")]
         CANCELLED,
         ///<summary>
-        ///The customer's last subscription contract expired and there are no other active or paused
+        ///The customer&apos;s last subscription contract expired and there are no other active or paused
         ///subscription contracts.
         ///</summary>
         [Description("The customer's last subscription contract expired and there are no other active or paused\nsubscription contracts.")]
         EXPIRED,
         ///<summary>
-        ///The customer's last subscription contract failed and there are no other active or paused
+        ///The customer&apos;s last subscription contract failed and there are no other active or paused
         ///subscription contracts.
         ///</summary>
         [Description("The customer's last subscription contract failed and there are no other active or paused\nsubscription contracts.")]
@@ -22546,32 +22546,32 @@ namespace Shopify.Types
         public MoneyV2? amountSpent { get; set; }
 
         ///<summary>
-        ///The member's default address.
+        ///The member&apos;s default address.
         ///</summary>
         [Description("The member's default address.")]
         public MailingAddress? defaultAddress { get; set; }
 
         ///<summary>
-        ///The member's default email address.
+        ///The member&apos;s default email address.
         ///</summary>
         [Description("The member's default email address.")]
         public CustomerEmailAddress? defaultEmailAddress { get; set; }
 
         ///<summary>
-        ///The member's default phone number.
+        ///The member&apos;s default phone number.
         ///</summary>
         [Description("The member's default phone number.")]
         public CustomerPhoneNumber? defaultPhoneNumber { get; set; }
 
         ///<summary>
-        ///The full name of the member, which is based on the values of the `first_name` and `last_name` fields. If the member's first name and last name aren't available, then the customer's email address is used. If the customer's email address isn't available, then the customer's phone number is used.
+        ///The full name of the member, which is based on the values of the `first_name` and `last_name` fields. If the member&apos;s first name and last name aren&apos;t available, then the customer&apos;s email address is used. If the customer&apos;s email address isn&apos;t available, then the customer&apos;s phone number is used.
         ///</summary>
         [Description("The full name of the member, which is based on the values of the `first_name` and `last_name` fields. If the member's first name and last name aren't available, then the customer's email address is used. If the customer's email address isn't available, then the customer's phone number is used.")]
         [NonNull]
         public string? displayName { get; set; }
 
         ///<summary>
-        ///The member's first name.
+        ///The member&apos;s first name.
         ///</summary>
         [Description("The member's first name.")]
         public string? firstName { get; set; }
@@ -22584,13 +22584,13 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///The member's last name.
+        ///The member&apos;s last name.
         ///</summary>
         [Description("The member's last name.")]
         public string? lastName { get; set; }
 
         ///<summary>
-        ///The ID of the member's most recent order.
+        ///The ID of the member&apos;s most recent order.
         ///</summary>
         [Description("The ID of the member's most recent order.")]
         public string? lastOrderId { get; set; }
@@ -22604,7 +22604,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -22708,7 +22708,7 @@ namespace Shopify.Types
         public bool? done { get; set; }
 
         ///<summary>
-        ///A globally-unique ID that's returned when running an asynchronous mutation.
+        ///A globally-unique ID that&apos;s returned when running an asynchronous mutation.
         ///</summary>
         [Description("A globally-unique ID that's returned when running an asynchronous mutation.")]
         [NonNull]
@@ -22901,7 +22901,7 @@ namespace Shopify.Types
         [Description("The input value is invalid.")]
         INVALID,
         ///<summary>
-        ///The input value isn't included in the list.
+        ///The input value isn&apos;t included in the list.
         ///</summary>
         [Description("The input value isn't included in the list.")]
         INCLUSION,
@@ -23080,7 +23080,7 @@ namespace Shopify.Types
         [Description("The input value is invalid.")]
         INVALID,
         ///<summary>
-        ///The input value isn't included in the list.
+        ///The input value isn&apos;t included in the list.
         ///</summary>
         [Description("The input value isn't included in the list.")]
         INCLUSION,
@@ -23107,7 +23107,7 @@ namespace Shopify.Types
     ///<summary>
     ///The record of when a customer consented to receive marketing material by SMS.
     ///
-    ///The customer's consent state reflects the record with the most recent date when consent was updated.
+    ///The customer&apos;s consent state reflects the record with the most recent date when consent was updated.
     ///</summary>
     [Description("The record of when a customer consented to receive marketing material by SMS.\n\nThe customer's consent state reflects the record with the most recent date when consent was updated.")]
     public class CustomerSmsMarketingConsentState : GraphQLObject<CustomerSmsMarketingConsentState>
@@ -23173,7 +23173,7 @@ namespace Shopify.Types
     public enum CustomerSmsMarketingState
     {
         ///<summary>
-        ///The customer hasn't subscribed to SMS marketing.
+        ///The customer hasn&apos;t subscribed to SMS marketing.
         ///</summary>
         [Description("The customer hasn't subscribed to SMS marketing.")]
         NOT_SUBSCRIBED,
@@ -23188,12 +23188,12 @@ namespace Shopify.Types
         [Description("The customer is subscribed to SMS marketing.")]
         SUBSCRIBED,
         ///<summary>
-        ///The customer isn't currently subscribed to SMS marketing but was previously subscribed.
+        ///The customer isn&apos;t currently subscribed to SMS marketing but was previously subscribed.
         ///</summary>
         [Description("The customer isn't currently subscribed to SMS marketing but was previously subscribed.")]
         UNSUBSCRIBED,
         ///<summary>
-        ///The customer's personal data is erased. This value is internally-set and read-only.
+        ///The customer&apos;s personal data is erased. This value is internally-set and read-only.
         ///</summary>
         [Description("The customer's personal data is erased. This value is internally-set and read-only.")]
         REDACTED,
@@ -23236,7 +23236,7 @@ namespace Shopify.Types
         NAME,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -23258,7 +23258,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The valid values for the state of a customer's account with a shop.
+    ///The valid values for the state of a customer&apos;s account with a shop.
     ///</summary>
     [Description("The valid values for the state of a customer's account with a shop.")]
     public enum CustomerState
@@ -23269,7 +23269,7 @@ namespace Shopify.Types
         [Description("The customer declined the email invite to create an account.")]
         DECLINED,
         ///<summary>
-        ///The customer doesn't have an active account. Customer accounts can be disabled from the Shopify admin at any time.
+        ///The customer doesn&apos;t have an active account. Customer accounts can be disabled from the Shopify admin at any time.
         ///</summary>
         [Description("The customer doesn't have an active account. Customer accounts can be disabled from the Shopify admin at any time.")]
         DISABLED,
@@ -23294,7 +23294,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A customer's computed statistics.
+    ///A customer&apos;s computed statistics.
     ///</summary>
     [Description("A customer's computed statistics.")]
     public class CustomerStatistics : GraphQLObject<CustomerStatistics>
@@ -23353,7 +23353,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Represents a customer's session visiting a shop's online store, including information about the marketing activity attributed to starting the session.
+    ///Represents a customer&apos;s session visiting a shop&apos;s online store, including information about the marketing activity attributed to starting the session.
     ///</summary>
     [Description("Represents a customer's session visiting a shop's online store, including information about the marketing activity attributed to starting the session.")]
     public class CustomerVisit : GraphQLObject<CustomerVisit>, ICustomerMoment, INode
@@ -23385,7 +23385,7 @@ namespace Shopify.Types
         public MarketingEvent? marketingEvent { get; set; }
 
         ///<summary>
-        ///The date and time when the customer's session occurred.
+        ///The date and time when the customer&apos;s session occurred.
         ///</summary>
         [Description("The date and time when the customer's session occurred.")]
         [NonNull]
@@ -23473,7 +23473,7 @@ namespace Shopify.Types
     public class CustomerVisitProductInfoConnection : GraphQLObject<CustomerVisitProductInfoConnection>, IConnectionWithNodesAndEdges<CustomerVisitProductInfoEdge, CustomerVisitProductInfo>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -23516,7 +23516,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A shop's data sale opt out page.
+    ///A shop&apos;s data sale opt out page.
     ///</summary>
     [Description("A shop's data sale opt out page.")]
     public class DataSaleOptOutPage : GraphQLObject<DataSaleOptOutPage>
@@ -23691,7 +23691,7 @@ namespace Shopify.Types
         public DelegateAccessToken? delegateAccessToken { get; set; }
 
         ///<summary>
-        ///The user's shop.
+        ///The user&apos;s shop.
         ///</summary>
         [Description("The user's shop.")]
         [NonNull]
@@ -23738,12 +23738,12 @@ namespace Shopify.Types
     public enum DelegateAccessTokenCreateUserErrorCode
     {
         ///<summary>
-        ///The access scope can't be empty.
+        ///The access scope can&apos;t be empty.
         ///</summary>
         [Description("The access scope can't be empty.")]
         EMPTY_ACCESS_SCOPE,
         ///<summary>
-        ///The parent access token can't be a delegate token.
+        ///The parent access token can&apos;t be a delegate token.
         ///</summary>
         [Description("The parent access token can't be a delegate token.")]
         DELEGATE_ACCESS_TOKEN,
@@ -23753,12 +23753,12 @@ namespace Shopify.Types
         [Description("The expires_in value must be greater than 0.")]
         NEGATIVE_EXPIRES_IN,
         ///<summary>
-        ///The delegate token can't expire after the parent token.
+        ///The delegate token can&apos;t expire after the parent token.
         ///</summary>
         [Description("The delegate token can't expire after the parent token.")]
         EXPIRES_AFTER_PARENT,
         ///<summary>
-        ///The parent access token can't have a refresh token.
+        ///The parent access token can&apos;t have a refresh token.
         ///</summary>
         [Description("The parent access token can't have a refresh token.")]
         REFRESH_TOKEN,
@@ -23792,7 +23792,7 @@ namespace Shopify.Types
     public class DelegateAccessTokenDestroyPayload : GraphQLObject<DelegateAccessTokenDestroyPayload>
     {
         ///<summary>
-        ///The user's shop.
+        ///The user&apos;s shop.
         ///</summary>
         [Description("The user's shop.")]
         [NonNull]
@@ -23876,7 +23876,7 @@ namespace Shopify.Types
 
     ///<summary>
     ///Deletion events chronicle the destruction of resources (e.g. products and collections).
-    ///Once deleted, the deletion event is the only trace of the original's existence,
+    ///Once deleted, the deletion event is the only trace of the original&apos;s existence,
     ///as the resource itself has been removed and can no longer be accessed.
     ///</summary>
     [Description("Deletion events chronicle the destruction of resources (e.g. products and collections).\nOnce deleted, the deletion event is the only trace of the original's existence,\nas the resource itself has been removed and can no longer be accessed.")]
@@ -23911,7 +23911,7 @@ namespace Shopify.Types
     public class DeletionEventConnection : GraphQLObject<DeletionEventConnection>, IConnectionWithNodesAndEdges<DeletionEventEdge, DeletionEvent>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -24038,18 +24038,18 @@ namespace Shopify.Types
     ///<summary>
     ///A carrier service (also known as a carrier calculated service or shipping service) provides real-time shipping rates to Shopify. Some common carrier services include Canada Post, FedEx, UPS, and USPS. The term **carrier** is often used interchangeably with the terms **shipping company** and **rate provider**.
     ///
-    ///Using the CarrierService resource, you can add a carrier service to a shop and then provide a list of applicable shipping rates at checkout. You can even use the cart data to adjust shipping rates and offer shipping discounts based on what is in the customer's cart.
+    ///Using the CarrierService resource, you can add a carrier service to a shop and then provide a list of applicable shipping rates at checkout. You can even use the cart data to adjust shipping rates and offer shipping discounts based on what is in the customer&apos;s cart.
     ///
     ///## Requirements for accessing the CarrierService resource
-    ///To access the CarrierService resource, add the `write_shipping` permission to your app's requested scopes. For more information, see [API access scopes](https://shopify.dev/docs/admin-api/access-scopes).
+    ///To access the CarrierService resource, add the `write_shipping` permission to your app&apos;s requested scopes. For more information, see [API access scopes](https://shopify.dev/docs/admin-api/access-scopes).
     ///
-    ///Your app's request to create a carrier service will fail unless the store installing your carrier service meets one of the following requirements:
-    ///* It's on the Advanced Shopify plan or higher.
-    ///* It's on the Shopify plan with yearly billing, or the carrier service feature has been added to the store for a monthly fee. For more information, contact [Shopify Support](https://help.shopify.com/questions).
-    ///* It's a development store.
+    ///Your app&apos;s request to create a carrier service will fail unless the store installing your carrier service meets one of the following requirements:
+    ///* It&apos;s on the Advanced Shopify plan or higher.
+    ///* It&apos;s on the Shopify plan with yearly billing, or the carrier service feature has been added to the store for a monthly fee. For more information, contact [Shopify Support](https://help.shopify.com/questions).
+    ///* It&apos;s a development store.
     ///
-    ///> Note:
-    ///> If a store changes its Shopify plan, then the store's association with a carrier service is deactivated if the store no long meets one of the requirements above.
+    ///&gt; Note:
+    ///&gt; If a store changes its Shopify plan, then the store&apos;s association with a carrier service is deactivated if the store no long meets one of the requirements above.
     ///
     ///## Providing shipping rates to Shopify
     ///When adding a carrier service to a store, you need to provide a POST endpoint rooted in the `callbackUrl` property where Shopify can retrieve applicable shipping rates. The callback URL should be a public endpoint that expects these requests from Shopify.
@@ -24058,53 +24058,53 @@ namespace Shopify.Types
     ///
     ///```json
     ///{
-    ///  "rate": {
-    ///    "origin": {
-    ///      "country": "CA",
-    ///      "postal_code": "K2P1L4",
-    ///      "province": "ON",
-    ///      "city": "Ottawa",
-    ///      "name": null,
-    ///      "address1": "150 Elgin St.",
-    ///      "address2": "",
-    ///      "address3": null,
-    ///      "phone": null,
-    ///      "fax": null,
-    ///      "email": null,
-    ///      "address_type": null,
-    ///      "company_name": "Jamie D's Emporium"
+    ///  &quot;rate&quot;: {
+    ///    &quot;origin&quot;: {
+    ///      &quot;country&quot;: &quot;CA&quot;,
+    ///      &quot;postal_code&quot;: &quot;K2P1L4&quot;,
+    ///      &quot;province&quot;: &quot;ON&quot;,
+    ///      &quot;city&quot;: &quot;Ottawa&quot;,
+    ///      &quot;name&quot;: null,
+    ///      &quot;address1&quot;: &quot;150 Elgin St.&quot;,
+    ///      &quot;address2&quot;: &quot; &quot;,
+    ///      &quot;address3&quot;: null,
+    ///      &quot;phone&quot;: null,
+    ///      &quot;fax&quot;: null,
+    ///      &quot;email&quot;: null,
+    ///      &quot;address_type&quot;: null,
+    ///      &quot;company_name&quot;: &quot;Jamie D&apos;s Emporium&quot;
     ///    },
-    ///    "destination": {
-    ///      "country": "CA",
-    ///      "postal_code": "K1M1M4",
-    ///      "province": "ON",
-    ///      "city": "Ottawa",
-    ///      "name": "Bob Norman",
-    ///      "address1": "24 Sussex Dr.",
-    ///      "address2": "",
-    ///      "address3": null,
-    ///      "phone": null,
-    ///      "fax": null,
-    ///      "email": null,
-    ///      "address_type": null,
-    ///      "company_name": null
+    ///    &quot;destination&quot;: {
+    ///      &quot;country&quot;: &quot;CA&quot;,
+    ///      &quot;postal_code&quot;: &quot;K1M1M4&quot;,
+    ///      &quot;province&quot;: &quot;ON&quot;,
+    ///      &quot;city&quot;: &quot;Ottawa&quot;,
+    ///      &quot;name&quot;: &quot;Bob Norman&quot;,
+    ///      &quot;address1&quot;: &quot;24 Sussex Dr.&quot;,
+    ///      &quot;address2&quot;: &quot; &quot;,
+    ///      &quot;address3&quot;: null,
+    ///      &quot;phone&quot;: null,
+    ///      &quot;fax&quot;: null,
+    ///      &quot;email&quot;: null,
+    ///      &quot;address_type&quot;: null,
+    ///      &quot;company_name&quot;: null
     ///    },
-    ///    "items": [{
-    ///      "name": "Short Sleeve T-Shirt",
-    ///      "sku": "",
-    ///      "quantity": 1,
-    ///      "grams": 1000,
-    ///      "price": 1999,
-    ///      "vendor": "Jamie D's Emporium",
-    ///      "requires_shipping": true,
-    ///      "taxable": true,
-    ///      "fulfillment_service": "manual",
-    ///      "properties": null,
-    ///      "product_id": 48447225880,
-    ///      "variant_id": 258644705304
+    ///    &quot;items&quot;: [{
+    ///      &quot;name&quot;: &quot;Short Sleeve T-Shirt&quot;,
+    ///      &quot;sku&quot;: &quot; &quot;,
+    ///      &quot;quantity&quot;: 1,
+    ///      &quot;grams&quot;: 1000,
+    ///      &quot;price&quot;: 1999,
+    ///      &quot;vendor&quot;: &quot;Jamie D&apos;s Emporium&quot;,
+    ///      &quot;requires_shipping&quot;: true,
+    ///      &quot;taxable&quot;: true,
+    ///      &quot;fulfillment_service&quot;: &quot;manual&quot;,
+    ///      &quot;properties&quot;: null,
+    ///      &quot;product_id&quot;: 48447225880,
+    ///      &quot;variant_id&quot;: 258644705304
     ///    }],
-    ///    "currency": "USD",
-    ///    "locale": "en"
+    ///    &quot;currency&quot;: &quot;USD&quot;,
+    ///    &quot;locale&quot;: &quot;en&quot;
     ///  }
     ///}
     ///```
@@ -24112,31 +24112,31 @@ namespace Shopify.Types
     ///### Example response
     ///```json
     ///{
-    ///   "rates": [
+    ///   &quot;rates&quot;: [
     ///       {
-    ///           "service_name": "canadapost-overnight",
-    ///           "service_code": "ON",
-    ///           "total_price": "1295",
-    ///           "description": "This is the fastest option by far",
-    ///           "currency": "CAD",
-    ///           "min_delivery_date": "2013-04-12 14:48:45 -0400",
-    ///           "max_delivery_date": "2013-04-12 14:48:45 -0400"
+    ///           &quot;service_name&quot;: &quot;canadapost-overnight&quot;,
+    ///           &quot;service_code&quot;: &quot;ON&quot;,
+    ///           &quot;total_price&quot;: &quot;1295&quot;,
+    ///           &quot;description&quot;: &quot;This is the fastest option by far&quot;,
+    ///           &quot;currency&quot;: &quot;CAD&quot;,
+    ///           &quot;min_delivery_date&quot;: &quot;2013-04-12 14:48:45 -0400&quot;,
+    ///           &quot;max_delivery_date&quot;: &quot;2013-04-12 14:48:45 -0400&quot;
     ///       },
     ///       {
-    ///           "service_name": "fedex-2dayground",
-    ///           "service_code": "2D",
-    ///           "total_price": "2934",
-    ///           "currency": "USD",
-    ///           "min_delivery_date": "2013-04-12 14:48:45 -0400",
-    ///           "max_delivery_date": "2013-04-12 14:48:45 -0400"
+    ///           &quot;service_name&quot;: &quot;fedex-2dayground&quot;,
+    ///           &quot;service_code&quot;: &quot;2D&quot;,
+    ///           &quot;total_price&quot;: &quot;2934&quot;,
+    ///           &quot;currency&quot;: &quot;USD&quot;,
+    ///           &quot;min_delivery_date&quot;: &quot;2013-04-12 14:48:45 -0400&quot;,
+    ///           &quot;max_delivery_date&quot;: &quot;2013-04-12 14:48:45 -0400&quot;
     ///       },
     ///       {
-    ///           "service_name": "fedex-priorityovernight",
-    ///           "service_code": "1D",
-    ///           "total_price": "3587",
-    ///           "currency": "USD",
-    ///           "min_delivery_date": "2013-04-12 14:48:45 -0400",
-    ///           "max_delivery_date": "2013-04-12 14:48:45 -0400"
+    ///           &quot;service_name&quot;: &quot;fedex-priorityovernight&quot;,
+    ///           &quot;service_code&quot;: &quot;1D&quot;,
+    ///           &quot;total_price&quot;: &quot;3587&quot;,
+    ///           &quot;currency&quot;: &quot;USD&quot;,
+    ///           &quot;min_delivery_date&quot;: &quot;2013-04-12 14:48:45 -0400&quot;,
+    ///           &quot;max_delivery_date&quot;: &quot;2013-04-12 14:48:45 -0400&quot;
     ///       }
     ///   ]
     ///}
@@ -24162,7 +24162,7 @@ namespace Shopify.Types
     ///| `description`           | Yes      | A description of the rate, which customers see at checkout. For example: `Includes tracking and insurance`.                                                                                                  |
     ///| `service_code`          | Yes      | A unique code associated with the rate. For example: `expedited_mail`.                                                                                                                                       |
     ///| `currency`              | Yes      | The currency of the shipping rate.                                                                                                                                                                           |
-    ///| `total_price`           | Yes      | The total price expressed in subunits. If the currency doesn't use subunits, then the value must be multiplied by 100. For example: `"total_price": 500` for 5.00 CAD, `"total_price": 100000` for 1000 JPY. |
+    ///| `total_price`           | Yes      | The total price expressed in subunits. If the currency doesn&apos;t use subunits, then the value must be multiplied by 100. For example: `&quot;total_price&quot;: 500` for 5.00 CAD, `&quot;total_price&quot;: 100000` for 1000 JPY. |
     ///| `phone_required`        | No       | Whether the customer must provide a phone number at checkout.                                                                                                                                                |
     ///| `min_delivery_date`     | No       | The earliest delivery date for the displayed rate.                                                                                                                                                           |
     ///| `max_delivery_date`     | No       | The latest delivery date for the displayed rate to still be valid.                                                                                                                                           |
@@ -24184,11 +24184,11 @@ namespace Shopify.Types
     ///| 1500 to 3000  | 5s         |
     ///| Over 3000     | 3s         |
     ///
-    ///> Note:
-    ///> These values are upper limits and should not be interpretted as a goal to develop towards. Shopify is constantly evaluating the performance of the platform and working towards improving resilience as well as app capabilities. As such, these numbers may be adjusted outside of our normal versioning timelines.
+    ///&gt; Note:
+    ///&gt; These values are upper limits and should not be interpretted as a goal to develop towards. Shopify is constantly evaluating the performance of the platform and working towards improving resilience as well as app capabilities. As such, these numbers may be adjusted outside of our normal versioning timelines.
     ///
     ///## Server-side caching of requests
-    ///Shopify provides server-side caching to reduce the number of requests it makes. Any shipping rate request that identically matches the following fields will be retrieved from Shopify's cache of the initial response:
+    ///Shopify provides server-side caching to reduce the number of requests it makes. Any shipping rate request that identically matches the following fields will be retrieved from Shopify&apos;s cache of the initial response:
     ///* variant IDs
     ///* default shipping box weight and dimensions
     ///* variant quantities
@@ -24284,7 +24284,7 @@ namespace Shopify.Types
     public class DeliveryCarrierServiceConnection : GraphQLObject<DeliveryCarrierServiceConnection>, IConnectionWithNodesAndEdges<DeliveryCarrierServiceEdge, DeliveryCarrierService>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -24431,7 +24431,7 @@ namespace Shopify.Types
         ///<summary>
         ///A two-letter country code in ISO 3166-1 alpha-2 standard.
         ///It also includes a flag indicating whether the country should be
-        ///a part of the 'Rest Of World' shipping zone.
+        ///a part of the &apos;Rest Of World&apos; shipping zone.
         ///</summary>
         [Description("A two-letter country code in ISO 3166-1 alpha-2 standard.\nIt also includes a flag indicating whether the country should be\na part of the 'Rest Of World' shipping zone.")]
         [NonNull]
@@ -24459,7 +24459,7 @@ namespace Shopify.Types
         public IEnumerable<DeliveryProvince>? provinces { get; set; }
 
         ///<summary>
-        ///The translated name of the country. The translation returned is based on the system's locale.
+        ///The translated name of the country. The translation returned is based on the system&apos;s locale.
         ///</summary>
         [Description("The translated name of the country. The translation returned is based on the system's locale.")]
         [NonNull]
@@ -24488,7 +24488,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The country code and whether the country is a part of the 'Rest Of World' shipping zone.
+    ///The country code and whether the country is a part of the &apos;Rest Of World&apos; shipping zone.
     ///</summary>
     [Description("The country code and whether the country is a part of the 'Rest Of World' shipping zone.")]
     public class DeliveryCountryCodeOrRestOfWorld : GraphQLObject<DeliveryCountryCodeOrRestOfWorld>
@@ -24500,7 +24500,7 @@ namespace Shopify.Types
         public string? countryCode { get; set; }
 
         ///<summary>
-        ///Whether the country is a part of the 'Rest of World' shipping zone.
+        ///Whether the country is a part of the &apos;Rest of World&apos; shipping zone.
         ///</summary>
         [Description("Whether the country is a part of the 'Rest of World' shipping zone.")]
         [NonNull]
@@ -24509,7 +24509,7 @@ namespace Shopify.Types
 
     ///<summary>
     ///The list of country codes and information whether the countries
-    ///are a part of the 'Rest Of World' shipping zone.
+    ///are a part of the &apos;Rest Of World&apos; shipping zone.
     ///</summary>
     [Description("The list of country codes and information whether the countries\nare a part of the 'Rest Of World' shipping zone.")]
     public class DeliveryCountryCodesOrRestOfWorld : GraphQLObject<DeliveryCountryCodesOrRestOfWorld>
@@ -24522,7 +24522,7 @@ namespace Shopify.Types
         public IEnumerable<string>? countryCodes { get; set; }
 
         ///<summary>
-        ///Whether the countries are a part of the 'Rest of World' shipping zone.
+        ///Whether the countries are a part of the &apos;Rest of World&apos; shipping zone.
         ///</summary>
         [Description("Whether the countries are a part of the 'Rest of World' shipping zone.")]
         [NonNull]
@@ -24564,7 +24564,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -24628,7 +24628,7 @@ namespace Shopify.Types
     public class DeliveryCustomizationConnection : GraphQLObject<DeliveryCustomizationConnection>, IConnectionWithNodesAndEdges<DeliveryCustomizationEdge, DeliveryCustomization>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -24867,7 +24867,7 @@ namespace Shopify.Types
     public enum DeliveryLegacyModeBlockedReason
     {
         ///<summary>
-        ///Multi-Location mode is disabled. The shop can't convert to full multi-location delivery profiles mode.
+        ///Multi-Location mode is disabled. The shop can&apos;t convert to full multi-location delivery profiles mode.
         ///</summary>
         [Description("Multi-Location mode is disabled. The shop can't convert to full multi-location delivery profiles mode.")]
         [Obsolete("All shops are now using multi-location mode.")]
@@ -25026,7 +25026,7 @@ namespace Shopify.Types
     public class DeliveryLocationGroupZoneConnection : GraphQLObject<DeliveryLocationGroupZoneConnection>, IConnectionWithNodesAndEdges<DeliveryLocationGroupZoneEdge, DeliveryLocationGroupZone>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -25150,7 +25150,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///The latest delivery date and time when the fulfillment is expected to arrive at the buyer's location.
+        ///The latest delivery date and time when the fulfillment is expected to arrive at the buyer&apos;s location.
         ///</summary>
         [Description("The latest delivery date and time when the fulfillment is expected to arrive at the buyer's location.")]
         public DateTime? maxDeliveryDateTime { get; set; }
@@ -25163,7 +25163,7 @@ namespace Shopify.Types
         public string? methodType { get; set; }
 
         ///<summary>
-        ///The earliest delivery date and time when the fulfillment is expected to arrive at the buyer's location.
+        ///The earliest delivery date and time when the fulfillment is expected to arrive at the buyer&apos;s location.
         ///</summary>
         [Description("The earliest delivery date and time when the fulfillment is expected to arrive at the buyer's location.")]
         public DateTime? minDeliveryDateTime { get; set; }
@@ -25262,7 +25262,7 @@ namespace Shopify.Types
     public class DeliveryMethodDefinitionConnection : GraphQLObject<DeliveryMethodDefinitionConnection>, IConnectionWithNodesAndEdges<DeliveryMethodDefinitionEdge, DeliveryMethodDefinition>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -25579,7 +25579,7 @@ namespace Shopify.Types
         public SellingPlanGroupConnection? sellingPlanGroups { get; set; }
 
         ///<summary>
-        ///List of locations that haven't been assigned to a location group for this profile.
+        ///List of locations that haven&apos;t been assigned to a location group for this profile.
         ///</summary>
         [Description("List of locations that haven't been assigned to a location group for this profile.")]
         [NonNull]
@@ -25607,7 +25607,7 @@ namespace Shopify.Types
     public class DeliveryProfileConnection : GraphQLObject<DeliveryProfileConnection>, IConnectionWithNodesAndEdges<DeliveryProfileEdge, DeliveryProfile>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -25704,7 +25704,7 @@ namespace Shopify.Types
     public class DeliveryProfileItemConnection : GraphQLObject<DeliveryProfileItemConnection>, IConnectionWithNodesAndEdges<DeliveryProfileItemEdge, DeliveryProfileItem>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -25848,7 +25848,7 @@ namespace Shopify.Types
     public class DeliveryPromiseParticipantConnection : GraphQLObject<DeliveryPromiseParticipantConnection>, IConnectionWithNodesAndEdges<DeliveryPromiseParticipantEdge, DeliveryPromiseParticipant>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -25946,7 +25946,7 @@ namespace Shopify.Types
         public DeliveryProfile? deliveryProfile { get; set; }
 
         ///<summary>
-        ///Display name of the variant, based on product's title + variant's title.
+        ///Display name of the variant, based on product&apos;s title + variant&apos;s title.
         ///</summary>
         [Description("Display name of the variant, based on product's title + variant's title.")]
         [NonNull]
@@ -25980,7 +25980,7 @@ namespace Shopify.Types
         public InventoryItem? inventoryItem { get; set; }
 
         ///<summary>
-        ///Whether customers are allowed to place an order for the product variant when it's out of stock.
+        ///Whether customers are allowed to place an order for the product variant when it&apos;s out of stock.
         ///</summary>
         [Description("Whether customers are allowed to place an order for the product variant when it's out of stock.")]
         [NonNull]
@@ -26008,7 +26008,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -26069,7 +26069,7 @@ namespace Shopify.Types
         ///<summary>
         ///Whether a product variant requires components. The default value is `false`.
         ///If `true`, then the product variant can only be purchased as a parent bundle with components and it will be omitted
-        ///from channels that don't support bundles.
+        ///from channels that don&apos;t support bundles.
         ///</summary>
         [Description("Whether a product variant requires components. The default value is `false`.\nIf `true`, then the product variant can only be purchased as a parent bundle with components and it will be omitted\nfrom channels that don't support bundles.")]
         [NonNull]
@@ -26084,7 +26084,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The total sellable quantity of the variant for online channels.
-        ///This doesn't represent the total available inventory or capture
+        ///This doesn&apos;t represent the total available inventory or capture
         ///[limitations based on customer location](https://help.shopify.com/manual/markets/inventory_and_fulfillment).
         ///</summary>
         [Description("The total sellable quantity of the variant for online channels.\nThis doesn't represent the total available inventory or capture\n[limitations based on customer location](https://help.shopify.com/manual/markets/inventory_and_fulfillment).")]
@@ -26122,7 +26122,7 @@ namespace Shopify.Types
         ///<summary>
         ///The Storefront GraphQL API ID of the `ProductVariant`.
         ///
-        ///The Storefront GraphQL API will no longer return Base64 encoded IDs to match the behavior of the Admin GraphQL API. Therefore, you can safely use the `id` field's value instead.
+        ///The Storefront GraphQL API will no longer return Base64 encoded IDs to match the behavior of the Admin GraphQL API. Therefore, you can safely use the `id` field&apos;s value instead.
         ///</summary>
         [Description("The Storefront GraphQL API ID of the `ProductVariant`.\n\nThe Storefront GraphQL API will no longer return Base64 encoded IDs to match the behavior of the Admin GraphQL API. Therefore, you can safely use the `id` field's value instead.")]
         [Obsolete("Use `id` instead.")]
@@ -26302,7 +26302,7 @@ namespace Shopify.Types
     public enum DeliveryPromiseProviderUpsertUserErrorCode
     {
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -26312,7 +26312,7 @@ namespace Shopify.Types
         [Description("The input value is too long.")]
         TOO_LONG,
         ///<summary>
-        ///The location doesn't belong to the app.
+        ///The location doesn&apos;t belong to the app.
         ///</summary>
         [Description("The location doesn't belong to the app.")]
         MUST_BELONG_TO_APP,
@@ -26379,7 +26379,7 @@ namespace Shopify.Types
         public string? name { get; set; }
 
         ///<summary>
-        ///The translated name of the region. The translation returned is based on the system's locale.
+        ///The translated name of the region. The translation returned is based on the system&apos;s locale.
         ///</summary>
         [Description("The translated name of the region. The translation returned is based on the system's locale.")]
         [NonNull]
@@ -26429,7 +26429,7 @@ namespace Shopify.Types
     ///<summary>
     ///The `DeliverySetting` object enables you to manage shop-wide shipping settings.
     ///You can enable legacy compatibility mode for the multi-location delivery profiles feature
-    ///if the legacy mode isn't blocked.
+    ///if the legacy mode isn&apos;t blocked.
     ///</summary>
     [Description("The `DeliverySetting` object enables you to manage shop-wide shipping settings.\nYou can enable legacy compatibility mode for the multi-location delivery profiles feature\nif the legacy mode isn't blocked.")]
     public class DeliverySetting : GraphQLObject<DeliverySetting>
@@ -26484,7 +26484,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A zone is a group of countries that have the same shipping rates. Customers can order products from a store only if they choose a shipping destination that's included in one of the store's zones.
+    ///A zone is a group of countries that have the same shipping rates. Customers can order products from a store only if they choose a shipping destination that&apos;s included in one of the store&apos;s zones.
     ///</summary>
     [Description("A zone is a group of countries that have the same shipping rates. Customers can order products from a store only if they choose a shipping destination that's included in one of the store's zones.")]
     public class DeliveryZone : GraphQLObject<DeliveryZone>, INode
@@ -26615,7 +26615,7 @@ namespace Shopify.Types
         public DiscountCodeFreeShipping? AsDiscountCodeFreeShipping() => this as DiscountCodeFreeShipping;
         ///<summary>
         ///The number of times that the discount has been used.
-        ///For example, if a "Buy 3, Get 1 Free" t-shirt discount
+        ///For example, if a &quot;Buy 3, Get 1 Free&quot; t-shirt discount
         ///is automatically applied in 200 transactions, then the
         ///discount has been used 200 times.
         ///This value is updated asynchronously. As a result,
@@ -26646,7 +26646,7 @@ namespace Shopify.Types
         ///<summary>
         ///The
         ///[discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)
-        ///that's used to control how discounts can be combined.
+        ///that&apos;s used to control how discounts can be combined.
         ///</summary>
         [Description("The\n[discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)\nthat's used to control how discounts can be combined.")]
         [Obsolete("Use `discountClasses` instead.")]
@@ -26683,7 +26683,7 @@ namespace Shopify.Types
         public string? status { get; set; }
 
         ///<summary>
-        ///The discount's name that displays to merchants in the Shopify admin and to customers.
+        ///The discount&apos;s name that displays to merchants in the Shopify admin and to customers.
         ///</summary>
         [Description("The discount's name that displays to merchants in the Shopify admin and to customers.")]
         [NonNull]
@@ -26698,13 +26698,13 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///An amount that's allocated to a line based on an associated discount application.
+    ///An amount that&apos;s allocated to a line based on an associated discount application.
     ///</summary>
     [Description("An amount that's allocated to a line based on an associated discount application.")]
     public class DiscountAllocation : GraphQLObject<DiscountAllocation>
     {
         ///<summary>
-        ///The money amount that's allocated to a line based on the associated discount application.
+        ///The money amount that&apos;s allocated to a line based on the associated discount application.
         ///</summary>
         [Description("The money amount that's allocated to a line based on the associated discount application.")]
         [Obsolete("Use `allocatedAmountSet` instead.")]
@@ -26712,7 +26712,7 @@ namespace Shopify.Types
         public MoneyV2? allocatedAmount { get; set; }
 
         ///<summary>
-        ///The money amount that's allocated to a line based on the associated discount application in shop and presentment currencies.
+        ///The money amount that&apos;s allocated to a line based on the associated discount application in shop and presentment currencies.
         ///</summary>
         [Description("The money amount that's allocated to a line based on the associated discount application in shop and presentment currencies.")]
         [NonNull]
@@ -26733,7 +26733,7 @@ namespace Shopify.Types
     public class DiscountAllocationConnection : GraphQLObject<DiscountAllocationConnection>, IConnectionWithNodesAndEdges<DiscountAllocationEdge, DiscountAllocation>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -26798,9 +26798,9 @@ namespace Shopify.Types
 
     ///<summary>
     ///Discount applications capture the intentions of a discount source at
-    ///the time of application on an order's line items or shipping lines.
+    ///the time of application on an order&apos;s line items or shipping lines.
     ///
-    ///Discount applications don't represent the actual final amount discounted on a line (line item or shipping line). The actual amount discounted on a line is represented by the [DiscountAllocation](https://shopify.dev/api/admin-graphql/latest/objects/discountallocation) object.
+    ///Discount applications don&apos;t represent the actual final amount discounted on a line (line item or shipping line). The actual amount discounted on a line is represented by the [DiscountAllocation](https://shopify.dev/api/admin-graphql/latest/objects/discountallocation) object.
     ///</summary>
     [Description("Discount applications capture the intentions of a discount source at\nthe time of application on an order's line items or shipping lines.\n\nDiscount applications don't represent the actual final amount discounted on a line (line item or shipping line). The actual amount discounted on a line is represented by the [DiscountAllocation](https://shopify.dev/api/admin-graphql/latest/objects/discountallocation) object.")]
     [JsonPolymorphic(TypeDiscriminatorPropertyName = "__typename")]
@@ -26815,7 +26815,7 @@ namespace Shopify.Types
         public ManualDiscountApplication? AsManualDiscountApplication() => this as ManualDiscountApplication;
         public ScriptDiscountApplication? AsScriptDiscountApplication() => this as ScriptDiscountApplication;
         ///<summary>
-        ///The method by which the discount's value is applied to its entitled items.
+        ///The method by which the discount&apos;s value is applied to its entitled items.
         ///</summary>
         [Description("The method by which the discount's value is applied to its entitled items.")]
         [NonNull]
@@ -26852,7 +26852,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The method by which the discount's value is allocated onto its entitled lines.
+    ///The method by which the discount&apos;s value is allocated onto its entitled lines.
     ///</summary>
     [Description("The method by which the discount's value is allocated onto its entitled lines.")]
     public enum DiscountApplicationAllocationMethod
@@ -26890,7 +26890,7 @@ namespace Shopify.Types
     public class DiscountApplicationConnection : GraphQLObject<DiscountApplicationConnection>, IConnectionWithNodesAndEdges<DiscountApplicationEdge, IDiscountApplication>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -26933,7 +26933,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The level at which the discount's value is applied.
+    ///The level at which the discount&apos;s value is applied.
     ///</summary>
     [Description("The level at which the discount's value is applied.")]
     public enum DiscountApplicationLevel
@@ -26960,7 +26960,7 @@ namespace Shopify.Types
 
     ///<summary>
     ///The lines on the order to which the discount is applied, of the type defined by
-    ///the discount application's `targetType`. For example, the value `ENTITLED`, combined with a `targetType` of
+    ///the discount application&apos;s `targetType`. For example, the value `ENTITLED`, combined with a `targetType` of
     ///`LINE_ITEM`, applies the discount on all line items that are entitled to the discount.
     ///The value `ALL`, combined with a `targetType` of `SHIPPING_LINE`, applies the discount on all shipping lines.
     ///</summary>
@@ -26973,7 +26973,7 @@ namespace Shopify.Types
         [Description("The discount is allocated onto all the lines.")]
         ALL,
         ///<summary>
-        ///The discount is allocated onto only the lines that it's entitled for.
+        ///The discount is allocated onto only the lines that it&apos;s entitled for.
         ///</summary>
         [Description("The discount is allocated onto only the lines that it's entitled for.")]
         ENTITLED,
@@ -27032,7 +27032,7 @@ namespace Shopify.Types
         public DiscountAutomaticFreeShipping? AsDiscountAutomaticFreeShipping() => this as DiscountAutomaticFreeShipping;
         ///<summary>
         ///The number of times that the discount has been used.
-        ///For example, if a "Buy 3, Get 1 Free" t-shirt discount
+        ///For example, if a &quot;Buy 3, Get 1 Free&quot; t-shirt discount
         ///is automatically applied in 200 transactions, then the
         ///discount has been used 200 times.
         ///This value is updated asynchronously. As a result,
@@ -27063,7 +27063,7 @@ namespace Shopify.Types
         ///<summary>
         ///The
         ///[discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)
-        ///that's used to control how discounts can be combined.
+        ///that&apos;s used to control how discounts can be combined.
         ///</summary>
         [Description("The\n[discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)\nthat's used to control how discounts can be combined.")]
         [Obsolete("Use `discountClasses` instead.")]
@@ -27100,7 +27100,7 @@ namespace Shopify.Types
         public string? status { get; set; }
 
         ///<summary>
-        ///The discount's name that displays to merchants in the Shopify admin and to customers.
+        ///The discount&apos;s name that displays to merchants in the Shopify admin and to customers.
         ///</summary>
         [Description("The discount's name that displays to merchants in the Shopify admin and to customers.")]
         [NonNull]
@@ -27139,14 +27139,14 @@ namespace Shopify.Types
     ///that are managed by an app using
     ///[Shopify Functions](https://shopify.dev/docs/apps/build/functions).
     ///Use `DiscountAutomaticApp`when you need advanced, custom, or
-    ///dynamic discount capabilities that aren't supported by
-    ///[Shopify's native discount types](https://help.shopify.com/manual/discounts/discount-types).
+    ///dynamic discount capabilities that aren&apos;t supported by
+    ///[Shopify&apos;s native discount types](https://help.shopify.com/manual/discounts/discount-types).
     ///
     ///Learn more about creating
     ///[custom discount functionality](https://shopify.dev/docs/apps/build/discounts/build-discount-function).
     ///
-    ///> Note:
-    ///> The [`DiscountCodeApp`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountCodeApp)
+    ///&gt; Note:
+    ///&gt; The [`DiscountCodeApp`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountCodeApp)
     ///object has similar functionality to the `DiscountAutomaticApp` object, with the exception that `DiscountCodeApp`
     ///stores information about discount codes that are managed by an app using Shopify Functions.
     ///</summary>
@@ -27154,14 +27154,14 @@ namespace Shopify.Types
     public class DiscountAutomaticApp : GraphQLObject<DiscountAutomaticApp>, IDiscount, IDiscountAutomatic
     {
         ///<summary>
-        ///The details about the app extension that's providing the
+        ///The details about the app extension that&apos;s providing the
         ///[discount type](https://help.shopify.com/manual/discounts/discount-types).
-        ///This information includes the app extension's name and
+        ///This information includes the app extension&apos;s name and
         ///[client ID](https://shopify.dev/docs/apps/build/authentication-authorization/client-secrets),
         ///[App Bridge configuration](https://shopify.dev/docs/api/app-bridge),
         ///[discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations),
         ///[function ID](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries),
-        ///and other metadata about the discount type, including the discount type's name and description.
+        ///and other metadata about the discount type, including the discount type&apos;s name and description.
         ///</summary>
         [Description("The details about the app extension that's providing the\n[discount type](https://help.shopify.com/manual/discounts/discount-types).\nThis information includes the app extension's name and\n[client ID](https://shopify.dev/docs/apps/build/authentication-authorization/client-secrets),\n[App Bridge configuration](https://shopify.dev/docs/api/app-bridge),\n[discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations),\n[function ID](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries),\nand other metadata about the discount type, including the discount type's name and description.")]
         [NonNull]
@@ -27186,7 +27186,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The number of times that the discount has been used.
-        ///For example, if a "Buy 3, Get 1 Free" t-shirt discount
+        ///For example, if a &quot;Buy 3, Get 1 Free&quot; t-shirt discount
         ///is automatically applied in 200 transactions, then the
         ///discount has been used 200 times.
         ///This value is updated asynchronously. As a result,
@@ -27217,7 +27217,7 @@ namespace Shopify.Types
         ///<summary>
         ///The
         ///[discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)
-        ///that's used to control how discounts can be combined.
+        ///that&apos;s used to control how discounts can be combined.
         ///</summary>
         [Description("The\n[discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)\nthat's used to control how discounts can be combined.")]
         [Obsolete("Use `discountClasses` instead.")]
@@ -27279,7 +27279,7 @@ namespace Shopify.Types
         public string? status { get; set; }
 
         ///<summary>
-        ///The discount's name that displays to merchants in the Shopify admin and to customers.
+        ///The discount&apos;s name that displays to merchants in the Shopify admin and to customers.
         ///</summary>
         [Description("The discount's name that displays to merchants in the Shopify admin and to customers.")]
         [NonNull]
@@ -27337,18 +27337,18 @@ namespace Shopify.Types
     ///The `DiscountAutomaticBasic` object lets you manage
     ///[amount off discounts](https://help.shopify.com/manual/discounts/discount-types/percentage-fixed-amount)
     ///that are automatically applied on a cart and at checkout. Amount off discounts give customers a
-    ///fixed value or a percentage off the products in an order, but don't apply to shipping costs.
+    ///fixed value or a percentage off the products in an order, but don&apos;t apply to shipping costs.
     ///
     ///The `DiscountAutomaticBasic` object stores information about automatic amount off discounts that apply to
     ///specific [products and variants](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountProducts),
     ///[collections](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountCollections),
     ///or [all items in a cart](https://shopify.dev/docs/api/admin-graphql/latest/objects/AllDiscountItems).
     ///
-    ///Learn more about working with [Shopify's discount model](https://shopify.dev/docs/apps/build/discounts),
+    ///Learn more about working with [Shopify&apos;s discount model](https://shopify.dev/docs/apps/build/discounts),
     ///including limitations and considerations.
     ///
-    ///> Note:
-    ///> The [`DiscountCodeBasic`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountCodeBasic)
+    ///&gt; Note:
+    ///&gt; The [`DiscountCodeBasic`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountCodeBasic)
     ///object has similar functionality to the `DiscountAutomaticBasic` object, but customers need to enter a code to
     ///receive a discount.
     ///</summary>
@@ -27357,7 +27357,7 @@ namespace Shopify.Types
     {
         ///<summary>
         ///The number of times that the discount has been used.
-        ///For example, if a "Buy 3, Get 1 Free" t-shirt discount
+        ///For example, if a &quot;Buy 3, Get 1 Free&quot; t-shirt discount
         ///is automatically applied in 200 transactions, then the
         ///discount has been used 200 times.
         ///This value is updated asynchronously. As a result,
@@ -27394,7 +27394,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)
-        ///that's used to control how discounts can be combined.
+        ///that&apos;s used to control how discounts can be combined.
         ///</summary>
         [Description("The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)\nthat's used to control how discounts can be combined.")]
         [Obsolete("Use `discountClasses` instead.")]
@@ -27465,7 +27465,7 @@ namespace Shopify.Types
         public string? summary { get; set; }
 
         ///<summary>
-        ///The discount's name that displays to merchants in the Shopify admin and to customers.
+        ///The discount&apos;s name that displays to merchants in the Shopify admin and to customers.
         ///</summary>
         [Description("The discount's name that displays to merchants in the Shopify admin and to customers.")]
         [NonNull]
@@ -27558,11 +27558,11 @@ namespace Shopify.Types
     ///[collections](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountCollections),
     ///or [all items in a cart](https://shopify.dev/docs/api/admin-graphql/latest/objects/AllDiscountItems).
     ///
-    ///Learn more about working with [Shopify's discount model](https://shopify.dev/docs/apps/build/discounts),
+    ///Learn more about working with [Shopify&apos;s discount model](https://shopify.dev/docs/apps/build/discounts),
     ///including limitations and considerations.
     ///
-    ///> Note:
-    ///> The [`DiscountCodeBxgy`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountCodeBxgy)
+    ///&gt; Note:
+    ///&gt; The [`DiscountCodeBxgy`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountCodeBxgy)
     ///object has similar functionality to the `DiscountAutomaticBxgy` object, but customers need to enter a code to
     ///receive a discount.
     ///</summary>
@@ -27571,7 +27571,7 @@ namespace Shopify.Types
     {
         ///<summary>
         ///The number of times that the discount has been used.
-        ///For example, if a "Buy 3, Get 1 Free" t-shirt discount
+        ///For example, if a &quot;Buy 3, Get 1 Free&quot; t-shirt discount
         ///is automatically applied in 200 transactions, then the
         ///discount has been used 200 times.
         ///This value is updated asynchronously. As a result,
@@ -27615,7 +27615,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)
-        ///that's used to control how discounts can be combined.
+        ///that&apos;s used to control how discounts can be combined.
         ///</summary>
         [Description("The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)\nthat's used to control how discounts can be combined.")]
         [Obsolete("Use `discountClasses` instead.")]
@@ -27676,7 +27676,7 @@ namespace Shopify.Types
         public string? summary { get; set; }
 
         ///<summary>
-        ///The discount's name that displays to merchants in the Shopify admin and to customers.
+        ///The discount&apos;s name that displays to merchants in the Shopify admin and to customers.
         ///</summary>
         [Description("The discount's name that displays to merchants in the Shopify admin and to customers.")]
         [NonNull]
@@ -27751,7 +27751,7 @@ namespace Shopify.Types
     public class DiscountAutomaticConnection : GraphQLObject<DiscountAutomaticConnection>, IConnectionWithNodesAndEdges<DiscountAutomaticEdge, IDiscountAutomatic>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -27844,11 +27844,11 @@ namespace Shopify.Types
     ///[collections](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountCollections),
     ///or [all items in a cart](https://shopify.dev/docs/api/admin-graphql/latest/objects/AllDiscountItems).
     ///
-    ///Learn more about working with [Shopify's discount model](https://shopify.dev/docs/apps/build/discounts),
+    ///Learn more about working with [Shopify&apos;s discount model](https://shopify.dev/docs/apps/build/discounts),
     ///including limitations and considerations.
     ///
-    ///> Note:
-    ///> The [`DiscountCodeFreeShipping`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountCodeFreeShipping)
+    ///&gt; Note:
+    ///&gt; The [`DiscountCodeFreeShipping`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountCodeFreeShipping)
     ///object has similar functionality to the `DiscountAutomaticFreeShipping` object, but customers need to enter a code to
     ///receive a discount.
     ///</summary>
@@ -27877,7 +27877,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The number of times that the discount has been used.
-        ///For example, if a "Buy 3, Get 1 Free" t-shirt discount
+        ///For example, if a &quot;Buy 3, Get 1 Free&quot; t-shirt discount
         ///is automatically applied in 200 transactions, then the
         ///discount has been used 200 times.
         ///This value is updated asynchronously. As a result,
@@ -27918,7 +27918,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)
-        ///that's used to control how discounts can be combined.
+        ///that&apos;s used to control how discounts can be combined.
         ///</summary>
         [Description("The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)\nthat's used to control how discounts can be combined.")]
         [Obsolete("Use `discountClasses` instead.")]
@@ -28004,7 +28004,7 @@ namespace Shopify.Types
         public string? summary { get; set; }
 
         ///<summary>
-        ///The discount's name that displays to merchants in the Shopify admin and to customers.
+        ///The discount&apos;s name that displays to merchants in the Shopify admin and to customers.
         ///</summary>
         [Description("The discount's name that displays to merchants in the Shopify admin and to customers.")]
         [NonNull]
@@ -28065,16 +28065,16 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The `DiscountAutomaticNode` object enables you to manage [automatic discounts](https://help.shopify.com/manual/discounts/discount-types#automatic-discounts) that are applied when an order meets specific criteria. You can create amount off, free shipping, or buy X get Y automatic discounts. For example, you can offer customers a free shipping discount that applies when conditions are met. Or you can offer customers a buy X get Y discount that's automatically applied when customers spend a specified amount of money, or a specified quantity of products.
+    ///The `DiscountAutomaticNode` object enables you to manage [automatic discounts](https://help.shopify.com/manual/discounts/discount-types#automatic-discounts) that are applied when an order meets specific criteria. You can create amount off, free shipping, or buy X get Y automatic discounts. For example, you can offer customers a free shipping discount that applies when conditions are met. Or you can offer customers a buy X get Y discount that&apos;s automatically applied when customers spend a specified amount of money, or a specified quantity of products.
     ///
-    ///Learn more about working with [Shopify's discount model](https://shopify.dev/docs/apps/build/discounts),
+    ///Learn more about working with [Shopify&apos;s discount model](https://shopify.dev/docs/apps/build/discounts),
     ///including related queries, mutations, limitations, and considerations.
     ///</summary>
     [Description("The `DiscountAutomaticNode` object enables you to manage [automatic discounts](https://help.shopify.com/manual/discounts/discount-types#automatic-discounts) that are applied when an order meets specific criteria. You can create amount off, free shipping, or buy X get Y automatic discounts. For example, you can offer customers a free shipping discount that applies when conditions are met. Or you can offer customers a buy X get Y discount that's automatically applied when customers spend a specified amount of money, or a specified quantity of products.\n\nLearn more about working with [Shopify's discount model](https://shopify.dev/docs/apps/build/discounts),\nincluding related queries, mutations, limitations, and considerations.")]
     public class DiscountAutomaticNode : GraphQLObject<DiscountAutomaticNode>, IHasEvents, IHasMetafieldDefinitions, IHasMetafields, INode, IMetafieldReferencer
     {
         ///<summary>
-        ///A discount that's applied automatically when an order meets specific criteria. Learn more about [automatic discounts](https://help.shopify.com/manual/discounts/discount-types#automatic-discounts).
+        ///A discount that&apos;s applied automatically when an order meets specific criteria. Learn more about [automatic discounts](https://help.shopify.com/manual/discounts/discount-types#automatic-discounts).
         ///</summary>
         [Description("A discount that's applied automatically when an order meets specific criteria. Learn more about [automatic discounts](https://help.shopify.com/manual/discounts/discount-types#automatic-discounts).")]
         [NonNull]
@@ -28096,7 +28096,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -28126,7 +28126,7 @@ namespace Shopify.Types
     public class DiscountAutomaticNodeConnection : GraphQLObject<DiscountAutomaticNodeConnection>, IConnectionWithNodesAndEdges<DiscountAutomaticNodeEdge, DiscountAutomaticNode>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -28170,7 +28170,7 @@ namespace Shopify.Types
 
     ///<summary>
     ///The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)
-    ///that's used to control how discounts can be combined.
+    ///that&apos;s used to control how discounts can be combined.
     ///</summary>
     [Description("The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)\nthat's used to control how discounts can be combined.")]
     public enum DiscountClass
@@ -28229,7 +28229,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The number of times that the discount has been used.
-        ///For example, if a "Buy 3, Get 1 Free" t-shirt discount
+        ///For example, if a &quot;Buy 3, Get 1 Free&quot; t-shirt discount
         ///is automatically applied in 200 transactions, then the
         ///discount has been used 200 times.
         ///This value is updated asynchronously. As a result,
@@ -28280,7 +28280,7 @@ namespace Shopify.Types
         ///<summary>
         ///The
         ///[discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)
-        ///that's used to control how discounts can be combined.
+        ///that&apos;s used to control how discounts can be combined.
         ///</summary>
         [Description("The\n[discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)\nthat's used to control how discounts can be combined.")]
         [Obsolete("Use `discountClasses` instead.")]
@@ -28333,7 +28333,7 @@ namespace Shopify.Types
         public string? status { get; set; }
 
         ///<summary>
-        ///The discount's name that displays to merchants in the Shopify admin and to customers.
+        ///The discount&apos;s name that displays to merchants in the Shopify admin and to customers.
         ///</summary>
         [Description("The discount's name that displays to merchants in the Shopify admin and to customers.")]
         [NonNull]
@@ -28385,14 +28385,14 @@ namespace Shopify.Types
     ///that are managed by an app using
     ///[Shopify Functions](https://shopify.dev/docs/apps/build/functions).
     ///Use `DiscountCodeApp` when you need advanced, custom, or
-    ///dynamic discount capabilities that aren't supported by
-    ///[Shopify's native discount types](https://help.shopify.com/manual/discounts/discount-types).
+    ///dynamic discount capabilities that aren&apos;t supported by
+    ///[Shopify&apos;s native discount types](https://help.shopify.com/manual/discounts/discount-types).
     ///
     ///Learn more about creating
     ///[custom discount functionality](https://shopify.dev/docs/apps/build/discounts/build-discount-function).
     ///
-    ///> Note:
-    ///> The [`DiscountAutomaticApp`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountAutomaticApp)
+    ///&gt; Note:
+    ///&gt; The [`DiscountAutomaticApp`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountAutomaticApp)
     ///object has similar functionality to the `DiscountCodeApp` object, with the exception that `DiscountAutomaticApp`
     ///stores information about automatic discounts that are managed by an app using Shopify Functions.
     ///</summary>
@@ -28400,14 +28400,14 @@ namespace Shopify.Types
     public class DiscountCodeApp : GraphQLObject<DiscountCodeApp>, IDiscount, IDiscountCode
     {
         ///<summary>
-        ///The details about the app extension that's providing the
+        ///The details about the app extension that&apos;s providing the
         ///[discount type](https://help.shopify.com/manual/discounts/discount-types).
-        ///This information includes the app extension's name and
+        ///This information includes the app extension&apos;s name and
         ///[client ID](https://shopify.dev/docs/apps/build/authentication-authorization/client-secrets),
         ///[App Bridge configuration](https://shopify.dev/docs/api/app-bridge),
         ///[discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations),
         ///[function ID](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries),
-        ///and other metadata about the discount type, including the discount type's name and description.
+        ///and other metadata about the discount type, including the discount type&apos;s name and description.
         ///</summary>
         [Description("The details about the app extension that's providing the\n[discount type](https://help.shopify.com/manual/discounts/discount-types).\nThis information includes the app extension's name and\n[client ID](https://shopify.dev/docs/apps/build/authentication-authorization/client-secrets),\n[App Bridge configuration](https://shopify.dev/docs/api/app-bridge),\n[discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations),\n[function ID](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries),\nand other metadata about the discount type, including the discount type's name and description.")]
         [NonNull]
@@ -28436,7 +28436,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The number of times that the discount has been used.
-        ///For example, if a "Buy 3, Get 1 Free" t-shirt discount
+        ///For example, if a &quot;Buy 3, Get 1 Free&quot; t-shirt discount
         ///is automatically applied in 200 transactions, then the
         ///discount has been used 200 times.
         ///This value is updated asynchronously. As a result,
@@ -28487,7 +28487,7 @@ namespace Shopify.Types
         ///<summary>
         ///The
         ///[discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)
-        ///that's used to control how discounts can be combined.
+        ///that&apos;s used to control how discounts can be combined.
         ///</summary>
         [Description("The\n[discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)\nthat's used to control how discounts can be combined.")]
         [Obsolete("Use `discountClasses` instead.")]
@@ -28564,7 +28564,7 @@ namespace Shopify.Types
         public string? status { get; set; }
 
         ///<summary>
-        ///The discount's name that displays to merchants in the Shopify admin and to customers.
+        ///The discount&apos;s name that displays to merchants in the Shopify admin and to customers.
         ///</summary>
         [Description("The discount's name that displays to merchants in the Shopify admin and to customers.")]
         [NonNull]
@@ -28635,13 +28635,13 @@ namespace Shopify.Types
     ///Discount code applications capture the intentions of a discount code at
     ///the time that it is applied onto an order.
     ///
-    ///Discount applications don't represent the actual final amount discounted on a line (line item or shipping line). The actual amount discounted on a line is represented by the [DiscountAllocation](https://shopify.dev/api/admin-graphql/latest/objects/discountallocation) object.
+    ///Discount applications don&apos;t represent the actual final amount discounted on a line (line item or shipping line). The actual amount discounted on a line is represented by the [DiscountAllocation](https://shopify.dev/api/admin-graphql/latest/objects/discountallocation) object.
     ///</summary>
     [Description("Discount code applications capture the intentions of a discount code at\nthe time that it is applied onto an order.\n\nDiscount applications don't represent the actual final amount discounted on a line (line item or shipping line). The actual amount discounted on a line is represented by the [DiscountAllocation](https://shopify.dev/api/admin-graphql/latest/objects/discountallocation) object.")]
     public class DiscountCodeApplication : GraphQLObject<DiscountCodeApplication>, IDiscountApplication
     {
         ///<summary>
-        ///The method by which the discount's value is applied to its entitled items.
+        ///The method by which the discount&apos;s value is applied to its entitled items.
         ///</summary>
         [Description("The method by which the discount's value is applied to its entitled items.")]
         [NonNull]
@@ -28688,18 +28688,18 @@ namespace Shopify.Types
     ///The `DiscountCodeBasic` object lets you manage
     ///[amount off discounts](https://help.shopify.com/manual/discounts/discount-types/percentage-fixed-amount)
     ///that are applied on a cart and at checkout when a customer enters a code. Amount off discounts give customers a
-    ///fixed value or a percentage off the products in an order, but don't apply to shipping costs.
+    ///fixed value or a percentage off the products in an order, but don&apos;t apply to shipping costs.
     ///
     ///The `DiscountCodeBasic` object stores information about amount off code discounts that apply to
     ///specific [products and variants](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountProducts),
     ///[collections](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountCollections),
     ///or [all items in a cart](https://shopify.dev/docs/api/admin-graphql/latest/objects/AllDiscountItems).
     ///
-    ///Learn more about working with [Shopify's discount model](https://shopify.dev/docs/apps/build/discounts),
+    ///Learn more about working with [Shopify&apos;s discount model](https://shopify.dev/docs/apps/build/discounts),
     ///including limitations and considerations.
     ///
-    ///> Note:
-    ///> The [`DiscountAutomaticBasic`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountAutomaticBasic)
+    ///&gt; Note:
+    ///&gt; The [`DiscountAutomaticBasic`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountAutomaticBasic)
     ///object has similar functionality to the `DiscountCodeBasic` object, but discounts are automatically applied,
     ///without the need for customers to enter a code.
     ///</summary>
@@ -28715,7 +28715,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The number of times that the discount has been used.
-        ///For example, if a "Buy 3, Get 1 Free" t-shirt discount
+        ///For example, if a &quot;Buy 3, Get 1 Free&quot; t-shirt discount
         ///is automatically applied in 200 transactions, then the
         ///discount has been used 200 times.
         ///This value is updated asynchronously. As a result,
@@ -28772,7 +28772,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)
-        ///that's used to control how discounts can be combined.
+        ///that&apos;s used to control how discounts can be combined.
         ///</summary>
         [Description("The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)\nthat's used to control how discounts can be combined.")]
         [Obsolete("Use `discountClasses` instead.")]
@@ -28858,7 +28858,7 @@ namespace Shopify.Types
         public string? summary { get; set; }
 
         ///<summary>
-        ///The discount's name that displays to merchants in the Shopify admin and to customers.
+        ///The discount&apos;s name that displays to merchants in the Shopify admin and to customers.
         ///</summary>
         [Description("The discount's name that displays to merchants in the Shopify admin and to customers.")]
         [NonNull]
@@ -28997,11 +28997,11 @@ namespace Shopify.Types
     ///[collections](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountCollections),
     ///or [all items in a cart](https://shopify.dev/docs/api/admin-graphql/latest/objects/AllDiscountItems).
     ///
-    ///Learn more about working with [Shopify's discount model](https://shopify.dev/docs/apps/build/discounts),
+    ///Learn more about working with [Shopify&apos;s discount model](https://shopify.dev/docs/apps/build/discounts),
     ///including limitations and considerations.
     ///
-    ///> Note:
-    ///> The [`DiscountAutomaticBxgy`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountAutomaticBxgy)
+    ///&gt; Note:
+    ///&gt; The [`DiscountAutomaticBxgy`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountAutomaticBxgy)
     ///object has similar functionality to the `DiscountCodeBxgy` object, but discounts are automatically applied,
     ///without the need for customers to enter a code.
     ///</summary>
@@ -29017,7 +29017,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The number of times that the discount has been used.
-        ///For example, if a "Buy 3, Get 1 Free" t-shirt discount
+        ///For example, if a &quot;Buy 3, Get 1 Free&quot; t-shirt discount
         ///is automatically applied in 200 transactions, then the
         ///discount has been used 200 times.
         ///This value is updated asynchronously. As a result,
@@ -29081,7 +29081,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)
-        ///that's used to control how discounts can be combined.
+        ///that&apos;s used to control how discounts can be combined.
         ///</summary>
         [Description("The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)\nthat's used to control how discounts can be combined.")]
         [Obsolete("Use `discountClasses` instead.")]
@@ -29143,7 +29143,7 @@ namespace Shopify.Types
         public string? summary { get; set; }
 
         ///<summary>
-        ///The discount's name that displays to merchants in the Shopify admin and to customers.
+        ///The discount&apos;s name that displays to merchants in the Shopify admin and to customers.
         ///</summary>
         [Description("The discount's name that displays to merchants in the Shopify admin and to customers.")]
         [NonNull]
@@ -29267,11 +29267,11 @@ namespace Shopify.Types
     ///[collections](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountCollections),
     ///or [all items in a cart](https://shopify.dev/docs/api/admin-graphql/latest/objects/AllDiscountItems).
     ///
-    ///Learn more about working with [Shopify's discount model](https://shopify.dev/docs/apps/build/discounts),
+    ///Learn more about working with [Shopify&apos;s discount model](https://shopify.dev/docs/apps/build/discounts),
     ///including limitations and considerations.
     ///
-    ///> Note:
-    ///> The
+    ///&gt; Note:
+    ///&gt; The
     ///[`DiscountAutomaticFreeShipping`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DiscountAutomaticFreeShipping)
     ///object has similar functionality to the `DiscountCodeFreeShipping` object, but discounts are automatically applied,
     ///without the need for customers to enter a code.
@@ -29308,7 +29308,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The number of times that the discount has been used.
-        ///For example, if a "Buy 3, Get 1 Free" t-shirt discount
+        ///For example, if a &quot;Buy 3, Get 1 Free&quot; t-shirt discount
         ///is automatically applied in 200 transactions, then the
         ///discount has been used 200 times.
         ///This value is updated asynchronously. As a result,
@@ -29369,7 +29369,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)
-        ///that's used to control how discounts can be combined.
+        ///that&apos;s used to control how discounts can be combined.
         ///</summary>
         [Description("The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)\nthat's used to control how discounts can be combined.")]
         [Obsolete("Use `discountClasses` instead.")]
@@ -29461,7 +29461,7 @@ namespace Shopify.Types
         public string? summary { get; set; }
 
         ///<summary>
-        ///The discount's name that displays to merchants in the Shopify admin and to customers.
+        ///The discount&apos;s name that displays to merchants in the Shopify admin and to customers.
         ///</summary>
         [Description("The discount's name that displays to merchants in the Shopify admin and to customers.")]
         [NonNull]
@@ -29531,7 +29531,7 @@ namespace Shopify.Types
     ///<summary>
     ///The `DiscountCodeNode` object enables you to manage [code discounts](https://help.shopify.com/manual/discounts/discount-types#discount-codes) that are applied when customers enter a code at checkout. For example, you can offer discounts where customers have to enter a code to redeem an amount off discount on products, variants, or collections in a store. Or, you can offer discounts where customers have to enter a code to get free shipping. Merchants can create and share discount codes individually with customers.
     ///
-    ///Learn more about working with [Shopify's discount model](https://shopify.dev/docs/apps/build/discounts),
+    ///Learn more about working with [Shopify&apos;s discount model](https://shopify.dev/docs/apps/build/discounts),
     ///including related queries, mutations, limitations, and considerations.
     ///</summary>
     [Description("The `DiscountCodeNode` object enables you to manage [code discounts](https://help.shopify.com/manual/discounts/discount-types#discount-codes) that are applied when customers enter a code at checkout. For example, you can offer discounts where customers have to enter a code to redeem an amount off discount on products, variants, or collections in a store. Or, you can offer discounts where customers have to enter a code to get free shipping. Merchants can create and share discount codes individually with customers.\n\nLearn more about working with [Shopify's discount model](https://shopify.dev/docs/apps/build/discounts),\nincluding related queries, mutations, limitations, and considerations.")]
@@ -29560,7 +29560,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -29590,7 +29590,7 @@ namespace Shopify.Types
     public class DiscountCodeNodeConnection : GraphQLObject<DiscountCodeNodeConnection>, IConnectionWithNodesAndEdges<DiscountCodeNodeEdge, DiscountCodeNode>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -29675,7 +29675,7 @@ namespace Shopify.Types
         ID,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -29753,7 +29753,7 @@ namespace Shopify.Types
         public IEnumerable<string>? countries { get; set; }
 
         ///<summary>
-        ///Whether the discount is applicable to countries that haven't been defined in the shop's shipping zones.
+        ///Whether the discount is applicable to countries that haven&apos;t been defined in the shop&apos;s shipping zones.
         ///</summary>
         [Description("Whether the discount is applicable to countries that haven't been defined in the shop's shipping zones.")]
         [NonNull]
@@ -30062,7 +30062,7 @@ namespace Shopify.Types
         [Description("The input value is already present.")]
         DUPLICATE,
         ///<summary>
-        ///The input value isn't included in the list.
+        ///The input value isn&apos;t included in the list.
         ///</summary>
         [Description("The input value isn't included in the list.")]
         INCLUSION,
@@ -30077,7 +30077,7 @@ namespace Shopify.Types
         [Description("The discountClass is invalid for the price rule.")]
         INVALID_DISCOUNT_CLASS_FOR_PRICE_RULE,
         ///<summary>
-        ///The active period overlaps with too many other app-provided discounts. There's a limit on the number of app discounts that can be active at any given time.
+        ///The active period overlaps with too many other app-provided discounts. There&apos;s a limit on the number of app discounts that can be active at any given time.
         ///</summary>
         [Description("The active period overlaps with too many other app-provided discounts. There's a limit on the number of app discounts that can be active at any given time.")]
         MAX_APP_DISCOUNTS,
@@ -30132,7 +30132,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The type used to target the items required for discount eligibility, or the items to which the application of a discount might apply. For example, for a customer to be eligible for a discount, they're required to add an item from a specified collection to their order. Alternatively, a customer might be required to add a specific product or product variant. When using this type to target which items the discount will apply to, the discount might apply to all items on the order, or to specific products and product variants, or items in a given collection.
+    ///The type used to target the items required for discount eligibility, or the items to which the application of a discount might apply. For example, for a customer to be eligible for a discount, they&apos;re required to add an item from a specified collection to their order. Alternatively, a customer might be required to add a specific product or product variant. When using this type to target which items the discount will apply to, the discount might apply to all items on the order, or to specific products and product variants, or items in a given collection.
     ///</summary>
     [Description("The type used to target the items required for discount eligibility, or the items to which the application of a discount might apply. For example, for a customer to be eligible for a discount, they're required to add an item from a specified collection to their order. Alternatively, a customer might be required to add a specific product or product variant. When using this type to target which items the discount will apply to, the discount might apply to all items on the order, or to specific products and product variants, or items in a given collection.")]
     [JsonPolymorphic(TypeDiscriminatorPropertyName = "__typename")]
@@ -30153,7 +30153,7 @@ namespace Shopify.Types
     public class DiscountMinimumQuantity : GraphQLObject<DiscountMinimumQuantity>, IDiscountMinimumRequirement
     {
         ///<summary>
-        ///The minimum quantity of items that's required for the discount to be applied.
+        ///The minimum quantity of items that&apos;s required for the discount to be applied.
         ///</summary>
         [Description("The minimum quantity of items that's required for the discount to be applied.")]
         [NonNull]
@@ -30180,7 +30180,7 @@ namespace Shopify.Types
     public class DiscountMinimumSubtotal : GraphQLObject<DiscountMinimumSubtotal>, IDiscountMinimumRequirement
     {
         ///<summary>
-        ///The minimum subtotal that's required for the discount to be applied.
+        ///The minimum subtotal that&apos;s required for the discount to be applied.
         ///</summary>
         [Description("The minimum subtotal that's required for the discount to be applied.")]
         [NonNull]
@@ -30191,16 +30191,16 @@ namespace Shopify.Types
     ///The `DiscountNode` object enables you to manage [discounts](https://help.shopify.com/manual/discounts), which are applied at checkout or on a cart.
     ///
     ///
-    ///Discounts are a way for merchants to promote sales and special offers, or as customer loyalty rewards. Discounts can apply to [orders, products, or shipping](https://shopify.dev/docs/apps/build/discounts#discount-classes), and can be either automatic or code-based. For example, you can offer customers a buy X get Y discount that's automatically applied when purchases meet specific criteria. Or, you can offer discounts where customers have to enter a code to redeem an amount off discount on products, variants, or collections in a store.
+    ///Discounts are a way for merchants to promote sales and special offers, or as customer loyalty rewards. Discounts can apply to [orders, products, or shipping](https://shopify.dev/docs/apps/build/discounts#discount-classes), and can be either automatic or code-based. For example, you can offer customers a buy X get Y discount that&apos;s automatically applied when purchases meet specific criteria. Or, you can offer discounts where customers have to enter a code to redeem an amount off discount on products, variants, or collections in a store.
     ///
-    ///Learn more about working with [Shopify's discount model](https://shopify.dev/docs/apps/build/discounts),
+    ///Learn more about working with [Shopify&apos;s discount model](https://shopify.dev/docs/apps/build/discounts),
     ///including related mutations, limitations, and considerations.
     ///</summary>
     [Description("The `DiscountNode` object enables you to manage [discounts](https://help.shopify.com/manual/discounts), which are applied at checkout or on a cart.\n\n\nDiscounts are a way for merchants to promote sales and special offers, or as customer loyalty rewards. Discounts can apply to [orders, products, or shipping](https://shopify.dev/docs/apps/build/discounts#discount-classes), and can be either automatic or code-based. For example, you can offer customers a buy X get Y discount that's automatically applied when purchases meet specific criteria. Or, you can offer discounts where customers have to enter a code to redeem an amount off discount on products, variants, or collections in a store.\n\nLearn more about working with [Shopify's discount model](https://shopify.dev/docs/apps/build/discounts),\nincluding related mutations, limitations, and considerations.")]
     public class DiscountNode : GraphQLObject<DiscountNode>, IHasEvents, IHasMetafieldDefinitions, IHasMetafields, INode, IMetafieldReferencer
     {
         ///<summary>
-        ///A discount that's applied at checkout or on cart.
+        ///A discount that&apos;s applied at checkout or on cart.
         ///
         ///
         ///Discounts can be [automatic or code-based](https://shopify.dev/docs/apps/build/discounts#discount-methods).
@@ -30225,7 +30225,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -30255,7 +30255,7 @@ namespace Shopify.Types
     public class DiscountNodeConnection : GraphQLObject<DiscountNodeConnection>, IConnectionWithNodesAndEdges<DiscountNodeEdge, DiscountNode>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -30304,7 +30304,7 @@ namespace Shopify.Types
     public class DiscountOnQuantity : GraphQLObject<DiscountOnQuantity>, IDiscountCustomerGetsValue
     {
         ///<summary>
-        ///The discount's effect on qualifying items.
+        ///The discount&apos;s effect on qualifying items.
         ///</summary>
         [Description("The discount's effect on qualifying items.")]
         [NonNull]
@@ -30382,7 +30382,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A code that a customer can use at checkout to receive a discount. For example, a customer can use the redeem code 'SUMMER20' at checkout to receive a 20% discount on their entire order.
+    ///A code that a customer can use at checkout to receive a discount. For example, a customer can use the redeem code &apos;SUMMER20&apos; at checkout to receive a 20% discount on their entire order.
     ///</summary>
     [Description("A code that a customer can use at checkout to receive a discount. For example, a customer can use the redeem code 'SUMMER20' at checkout to receive a 20% discount on their entire order.")]
     public class DiscountRedeemCode : GraphQLObject<DiscountRedeemCode>
@@ -30479,7 +30479,7 @@ namespace Shopify.Types
         public bool? done { get; set; }
 
         ///<summary>
-        ///The number of codes that weren't created successfully.
+        ///The number of codes that weren&apos;t created successfully.
         ///</summary>
         [Description("The number of codes that weren't created successfully.")]
         [NonNull]
@@ -30516,7 +30516,7 @@ namespace Shopify.Types
         ///<summary>
         ///The successfully created discount redeem code.
         ///
-        ///If the discount redeem code couldn't be created, then this field is `null``.
+        ///If the discount redeem code couldn&apos;t be created, then this field is `null``.
         ///</summary>
         [Description("The successfully created discount redeem code.\n\nIf the discount redeem code couldn't be created, then this field is `null``.")]
         public DiscountRedeemCode? discountRedeemCode { get; set; }
@@ -30536,7 +30536,7 @@ namespace Shopify.Types
     public class DiscountRedeemCodeBulkCreationCodeConnection : GraphQLObject<DiscountRedeemCodeBulkCreationCodeConnection>, IConnectionWithNodesAndEdges<DiscountRedeemCodeBulkCreationCodeEdge, DiscountRedeemCodeBulkCreationCode>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -30585,7 +30585,7 @@ namespace Shopify.Types
     public class DiscountRedeemCodeConnection : GraphQLObject<DiscountRedeemCodeConnection>, IConnectionWithNodesAndEdges<DiscountRedeemCodeEdge, DiscountRedeemCode>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -30640,14 +30640,14 @@ namespace Shopify.Types
         public Image? targetItemImage { get; set; }
 
         ///<summary>
-        ///The type of page that's associated with the URL.
+        ///The type of page that&apos;s associated with the URL.
         ///</summary>
         [Description("The type of page that's associated with the URL.")]
         [NonNull]
         public string? targetType { get; set; }
 
         ///<summary>
-        ///The title of the page that's associated with the URL.
+        ///The title of the page that&apos;s associated with the URL.
         ///</summary>
         [Description("The title of the page that's associated with the URL.")]
         [NonNull]
@@ -30692,7 +30692,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The type used to target the eligible countries of an order's shipping destination for which the discount applies. For example, the discount might be applicable when shipping to all countries, or only to a set of countries.
+    ///The type used to target the eligible countries of an order&apos;s shipping destination for which the discount applies. For example, the discount might be applicable when shipping to all countries, or only to a set of countries.
     ///</summary>
     [Description("The type used to target the eligible countries of an order's shipping destination for which the discount applies. For example, the discount might be applicable when shipping to all countries, or only to a set of countries.")]
     [JsonPolymorphic(TypeDiscriminatorPropertyName = "__typename")]
@@ -30727,7 +30727,7 @@ namespace Shopify.Types
         ID,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -31408,7 +31408,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///The localization of the domain, if the domain doesn't redirect.
+        ///The localization of the domain, if the domain doesn&apos;t redirect.
         ///</summary>
         [Description("The localization of the domain, if the domain doesn't redirect.")]
         public DomainLocalization? localization { get; set; }
@@ -31441,20 +31441,20 @@ namespace Shopify.Types
     public class DomainLocalization : GraphQLObject<DomainLocalization>
     {
         ///<summary>
-        ///The ISO codes for the domain’s alternate locales. For example, `["en"]`.
+        ///The ISO codes for the domain’s alternate locales. For example, `[&quot;en&quot;]`.
         ///</summary>
         [Description("The ISO codes for the domain’s alternate locales. For example, `[\"en\"]`.")]
         [NonNull]
         public IEnumerable<string>? alternateLocales { get; set; }
 
         ///<summary>
-        ///The ISO code for the country assigned to the domain. For example, `"CA"` or "*" for a domain set to "Rest of world".
+        ///The ISO code for the country assigned to the domain. For example, `&quot;CA&quot;` or &quot;*&quot; for a domain set to &quot;Rest of world&quot;.
         ///</summary>
         [Description("The ISO code for the country assigned to the domain. For example, `\"CA\"` or \"*\" for a domain set to \"Rest of world\".")]
         public string? country { get; set; }
 
         ///<summary>
-        ///The ISO code for the domain’s default locale. For example, `"en"`.
+        ///The ISO code for the domain’s default locale. For example, `&quot;en&quot;`.
         ///</summary>
         [Description("The ISO code for the domain’s default locale. For example, `\"en\"`.")]
         [NonNull]
@@ -31466,14 +31466,14 @@ namespace Shopify.Types
     ///
     ///- Create new orders for sales made by phone, in person, by chat, or elsewhere. When a merchant accepts payment for a draft order, an order is created.
     ///- Send invoices to customers to pay with a secure checkout link.
-    ///- Use custom items to represent additional costs or products that aren't displayed in a shop's inventory.
+    ///- Use custom items to represent additional costs or products that aren&apos;t displayed in a shop&apos;s inventory.
     ///- Re-create orders manually from active sales channels.
     ///- Sell products at discount or wholesale rates.
     ///- Take pre-orders.
     ///
     ///For draft orders in multiple currencies `presentment_money` is the source of truth for what a customer is going to be charged and `shop_money` is an estimate of what the merchant might receive in their shop currency.
     ///
-    ///**Caution:** Only use this data if it's required for your app's functionality. Shopify will restrict [access to scopes](https://shopify.dev/api/usage/access-scopes) for apps that don't have a legitimate use for the associated data.
+    ///**Caution:** Only use this data if it&apos;s required for your app&apos;s functionality. Shopify will restrict [access to scopes](https://shopify.dev/api/usage/access-scopes) for apps that don&apos;t have a legitimate use for the associated data.
     ///
     ///Draft orders created on or after April 1, 2025 will be automatically purged after one year of inactivity.
     ///</summary>
@@ -31530,7 +31530,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The date and time when the draft order was converted to a new order,
-        ///and had it's status changed to **Completed**.
+        ///and had it&apos;s status changed to **Completed**.
         ///</summary>
         [Description("The date and time when the draft order was converted to a new order,\nand had it's status changed to **Completed**.")]
         public DateTime? completedAt { get; set; }
@@ -31677,7 +31677,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -31938,7 +31938,7 @@ namespace Shopify.Types
     public class DraftOrderAppliedDiscount : GraphQLObject<DraftOrderAppliedDiscount>
     {
         ///<summary>
-        ///Amount of the order-level discount that's applied to the draft order in shop currency.
+        ///Amount of the order-level discount that&apos;s applied to the draft order in shop currency.
         ///</summary>
         [Description("Amount of the order-level discount that's applied to the draft order in shop currency.")]
         [Obsolete("Use `amountSet` instead.")]
@@ -31974,7 +31974,7 @@ namespace Shopify.Types
         public string? title { get; set; }
 
         ///<summary>
-        ///The order level discount amount. If `valueType` is `"percentage"`,
+        ///The order level discount amount. If `valueType` is `&quot;percentage&quot;`,
         ///then `value` is the percentage discount.
         ///</summary>
         [Description("The order level discount amount. If `valueType` is `\"percentage\"`,\nthen `value` is the percentage discount.")]
@@ -31996,7 +31996,7 @@ namespace Shopify.Types
     public enum DraftOrderAppliedDiscountType
     {
         ///<summary>
-        ///A fixed amount in the store's currency.
+        ///A fixed amount in the store&apos;s currency.
         ///</summary>
         [Description("A fixed amount in the store's currency.")]
         FIXED_AMOUNT,
@@ -32148,7 +32148,7 @@ namespace Shopify.Types
     public class DraftOrderConnection : GraphQLObject<DraftOrderConnection>, IConnectionWithNodesAndEdges<DraftOrderEdge, DraftOrder>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -32250,13 +32250,13 @@ namespace Shopify.Types
     public class DraftOrderDiscountNotAppliedWarning : GraphQLObject<DraftOrderDiscountNotAppliedWarning>, IDraftOrderWarning
     {
         ///<summary>
-        ///The code of the discount that can't be applied.
+        ///The code of the discount that can&apos;t be applied.
         ///</summary>
         [Description("The code of the discount that can't be applied.")]
         public string? discountCode { get; set; }
 
         ///<summary>
-        ///The title of the discount that can't be applied.
+        ///The title of the discount that can&apos;t be applied.
         ///</summary>
         [Description("The title of the discount that can't be applied.")]
         public string? discountTitle { get; set; }
@@ -32283,7 +32283,7 @@ namespace Shopify.Types
         public string? message { get; set; }
 
         ///<summary>
-        ///The price rule that can't be applied.
+        ///The price rule that can&apos;t be applied.
         ///</summary>
         [Description("The price rule that can't be applied.")]
         public PriceRule? priceRule { get; set; }
@@ -32391,7 +32391,7 @@ namespace Shopify.Types
         ///<summary>
         ///The `discountedTotal` divided by `quantity`,
         ///equal to the average value of the line item price per unit after discounts are applied.
-        ///This value doesn't include discounts applied to the entire draft order.
+        ///This value doesn&apos;t include discounts applied to the entire draft order.
         ///</summary>
         [Description("The `discountedTotal` divided by `quantity`,\nequal to the average value of the line item price per unit after discounts are applied.\nThis value doesn't include discounts applied to the entire draft order.")]
         [NonNull]
@@ -32654,7 +32654,7 @@ namespace Shopify.Types
     public class DraftOrderLineItemConnection : GraphQLObject<DraftOrderLineItemConnection>, IConnectionWithNodesAndEdges<DraftOrderLineItemEdge, DraftOrderLineItem>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -32703,7 +32703,7 @@ namespace Shopify.Types
     public class DraftOrderPlatformDiscount : GraphQLObject<DraftOrderPlatformDiscount>
     {
         ///<summary>
-        ///Price reduction allocations across the draft order's lines.
+        ///Price reduction allocations across the draft order&apos;s lines.
         ///</summary>
         [Description("Price reduction allocations across the draft order's lines.")]
         [NonNull]
@@ -32793,7 +32793,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Price reduction allocations across the draft order's lines.
+    ///Price reduction allocations across the draft order&apos;s lines.
     ///</summary>
     [Description("Price reduction allocations across the draft order's lines.")]
     public class DraftOrderPlatformDiscountAllocation : GraphQLObject<DraftOrderPlatformDiscountAllocation>
@@ -32882,7 +32882,7 @@ namespace Shopify.Types
         NUMBER,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -32931,7 +32931,7 @@ namespace Shopify.Types
         [Description("An invoice for the draft order has been sent to the customer.")]
         INVOICE_SENT,
         ///<summary>
-        ///The draft order is open. It has not been paid, and an invoice hasn't been sent.
+        ///The draft order is open. It has not been paid, and an invoice hasn&apos;t been sent.
         ///</summary>
         [Description("The draft order is open. It has not been paid, and an invoice hasn't been sent.")]
         OPEN,
@@ -33162,7 +33162,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The shop's entitlements.
+    ///The shop&apos;s entitlements.
     ///</summary>
     [Description("The shop's entitlements.")]
     public class EntitlementsType : GraphQLObject<EntitlementsType>
@@ -33208,7 +33208,7 @@ namespace Shopify.Types
     public enum ErrorsServerPixelUserErrorCode
     {
         ///<summary>
-        ///A server pixel doesn't exist for this app and shop.
+        ///A server pixel doesn&apos;t exist for this app and shop.
         ///</summary>
         [Description("A server pixel doesn't exist for this app and shop.")]
         NOT_FOUND,
@@ -33280,7 +33280,7 @@ namespace Shopify.Types
         [Description("The input value is already taken.")]
         TAKEN,
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -33472,7 +33472,7 @@ namespace Shopify.Types
     public class EventConnection : GraphQLObject<EventConnection>, IConnectionWithNodesAndEdges<EventEdge, IEvent>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -33630,7 +33630,7 @@ namespace Shopify.Types
         [Description("A Order resource generated the event.")]
         ORDER,
         ///<summary>
-        ///Subject type is not available. This usually means that the subject isn't available in the current
+        ///Subject type is not available. This usually means that the subject isn&apos;t available in the current
         ///        version of the API, using a newer API version may resolve this.
         ///</summary>
         [Description("Subject type is not available. This usually means that the subject isn't available in the current\n        version of the API, using a newer API version may resolve this.")]
@@ -33673,7 +33673,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///The order line item for the exchange. If the exchange line has been processed multiple times, this will be the first associated line item and won't reflect all processed values.
+        ///The order line item for the exchange. If the exchange line has been processed multiple times, this will be the first associated line item and won&apos;t reflect all processed values.
         ///</summary>
         [Description("The order line item for the exchange. If the exchange line has been processed multiple times, this will be the first associated line item and won't reflect all processed values.")]
         [Obsolete("Use `lineItems` instead.")]
@@ -33687,7 +33687,7 @@ namespace Shopify.Types
     public class ExchangeLineItemConnection : GraphQLObject<ExchangeLineItemConnection>, IConnectionWithNodesAndEdges<ExchangeLineItemEdge, ExchangeLineItem>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -33865,7 +33865,7 @@ namespace Shopify.Types
     public class ExchangeV2Connection : GraphQLObject<ExchangeV2Connection>, IConnectionWithNodesAndEdges<ExchangeV2Edge, ExchangeV2>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -34069,7 +34069,7 @@ namespace Shopify.Types
         public IEnumerable<ExchangeV2LineItem>? lineItems { get; set; }
 
         ///<summary>
-        ///The amount of the order-level discount for the items and shipping being returned, which doesn't contain any line item discounts.
+        ///The amount of the order-level discount for the items and shipping being returned, which doesn&apos;t contain any line item discounts.
         ///</summary>
         [Description("The amount of the order-level discount for the items and shipping being returned, which doesn't contain any line item discounts.")]
         [NonNull]
@@ -34430,7 +34430,7 @@ namespace Shopify.Types
     public class FileConnection : GraphQLObject<FileConnection>, IConnectionWithNodesAndEdges<FileEdge, IFile>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -34468,7 +34468,7 @@ namespace Shopify.Types
         [Description("A Shopify-hosted generic file.")]
         FILE,
         ///<summary>
-        ///A Shopify-hosted video file. It's recommended to use this type for all video files.
+        ///A Shopify-hosted video file. It&apos;s recommended to use this type for all video files.
         ///</summary>
         [Description("A Shopify-hosted video file. It's recommended to use this type for all video files.")]
         VIDEO,
@@ -34729,7 +34729,7 @@ namespace Shopify.Types
         [Description("Model failed validation.")]
         MODEL3D_VALIDATION_ERROR,
         ///<summary>
-        ///File could not be created because the model's thumbnail generation failed.
+        ///File could not be created because the model&apos;s thumbnail generation failed.
         ///</summary>
         [Description("File could not be created because the model's thumbnail generation failed.")]
         MODEL3D_THUMBNAIL_GENERATION_ERROR,
@@ -34739,7 +34739,7 @@ namespace Shopify.Types
         [Description("There was an issue while trying to generate a new thumbnail.")]
         MODEL3D_THUMBNAIL_REGENERATION_ERROR,
         ///<summary>
-        ///File could not be created because the model can't be converted to USDZ format.
+        ///File could not be created because the model can&apos;t be converted to USDZ format.
         ///</summary>
         [Description("File could not be created because the model can't be converted to USDZ format.")]
         MODEL3D_GLB_TO_USDZ_CONVERSION_ERROR,
@@ -34769,7 +34769,7 @@ namespace Shopify.Types
         [Description("File could not be created because the image has an invalid aspect ratio.")]
         INVALID_IMAGE_ASPECT_RATIO,
         ///<summary>
-        ///File could not be created because the image's resolution exceeds the max limit.
+        ///File could not be created because the image&apos;s resolution exceeds the max limit.
         ///</summary>
         [Description("File could not be created because the image's resolution exceeds the max limit.")]
         INVALID_IMAGE_RESOLUTION,
@@ -34850,7 +34850,7 @@ namespace Shopify.Types
         ORIGINAL_UPLOAD_SIZE,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -34878,7 +34878,7 @@ namespace Shopify.Types
     public enum FileStatus
     {
         ///<summary>
-        ///File has been uploaded but hasn't been processed.
+        ///File has been uploaded but hasn&apos;t been processed.
         ///</summary>
         [Description("File has been uploaded but hasn't been processed.")]
         UPLOADED,
@@ -34969,7 +34969,7 @@ namespace Shopify.Types
         [Description("At least one argument is required.")]
         MISSING_ARGUMENTS,
         ///<summary>
-        ///Search query isn't supported.
+        ///Search query isn&apos;t supported.
         ///</summary>
         [Description("Search query isn't supported.")]
         INVALID_QUERY,
@@ -35140,14 +35140,14 @@ namespace Shopify.Types
     public class FilterOption : GraphQLObject<FilterOption>
     {
         ///<summary>
-        ///The filter option's label for display purposes.
+        ///The filter option&apos;s label for display purposes.
         ///</summary>
         [Description("The filter option's label for display purposes.")]
         [NonNull]
         public string? label { get; set; }
 
         ///<summary>
-        ///The filter option's value.
+        ///The filter option&apos;s value.
         ///</summary>
         [Description("The filter option's value.")]
         [NonNull]
@@ -35155,13 +35155,13 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Current user's access policy for a finance app.
+    ///Current user&apos;s access policy for a finance app.
     ///</summary>
     [Description("Current user's access policy for a finance app.")]
     public class FinanceAppAccessPolicy : GraphQLObject<FinanceAppAccessPolicy>
     {
         ///<summary>
-        ///Current shop staff's access within the app.
+        ///Current shop staff&apos;s access within the app.
         ///</summary>
         [Description("Current shop staff's access within the app.")]
         [NonNull]
@@ -35252,13 +35252,13 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///An amount that's allocated to a line item based on an associated discount application.
+    ///An amount that&apos;s allocated to a line item based on an associated discount application.
     ///</summary>
     [Description("An amount that's allocated to a line item based on an associated discount application.")]
     public class FinancialSummaryDiscountAllocation : GraphQLObject<FinancialSummaryDiscountAllocation>
     {
         ///<summary>
-        ///The money amount that's allocated per unit on the associated line based on the discount application in shop and presentment currencies. If the allocated amount for the line cannot be evenly divided by the quantity, then this amount will be an approximate amount, avoiding fractional pennies. For example, if the associated line had a quantity of 3 with a discount of 4 cents, then the discount distribution would be [0.01, 0.01, 0.02]. This field returns the highest number of the distribution. In this example, this would be 0.02.
+        ///The money amount that&apos;s allocated per unit on the associated line based on the discount application in shop and presentment currencies. If the allocated amount for the line cannot be evenly divided by the quantity, then this amount will be an approximate amount, avoiding fractional pennies. For example, if the associated line had a quantity of 3 with a discount of 4 cents, then the discount distribution would be [0.01, 0.01, 0.02]. This field returns the highest number of the distribution. In this example, this would be 0.02.
         ///</summary>
         [Description("The money amount that's allocated per unit on the associated line based on the discount application in shop and presentment currencies. If the allocated amount for the line cannot be evenly divided by the quantity, then this amount will be an approximate amount, avoiding fractional pennies. For example, if the associated line had a quantity of 3 with a discount of 4 cents, then the discount distribution would be [0.01, 0.01, 0.02]. This field returns the highest number of the distribution. In this example, this would be 0.02.")]
         [NonNull]
@@ -35274,13 +35274,13 @@ namespace Shopify.Types
 
     ///<summary>
     ///Discount applications capture the intentions of a discount source at
-    ///the time of application on an order's line items or shipping lines.
+    ///the time of application on an order&apos;s line items or shipping lines.
     ///</summary>
     [Description("Discount applications capture the intentions of a discount source at\nthe time of application on an order's line items or shipping lines.")]
     public class FinancialSummaryDiscountApplication : GraphQLObject<FinancialSummaryDiscountApplication>
     {
         ///<summary>
-        ///The method by which the discount's value is applied to its entitled items.
+        ///The method by which the discount&apos;s value is applied to its entitled items.
         ///</summary>
         [Description("The method by which the discount's value is applied to its entitled items.")]
         [NonNull]
@@ -35384,7 +35384,7 @@ namespace Shopify.Types
         public FulfillmentEventConnection? events { get; set; }
 
         ///<summary>
-        ///List of the fulfillment's line items.
+        ///List of the fulfillment&apos;s line items.
         ///</summary>
         [Description("List of the fulfillment's line items.")]
         [NonNull]
@@ -35438,7 +35438,7 @@ namespace Shopify.Types
         public Order? order { get; set; }
 
         ///<summary>
-        ///The address at which the fulfillment occurred. This field is intended for tax purposes, as a full address is required for tax providers to accurately calculate taxes. Typically this is the address of the warehouse or fulfillment center. To retrieve a fulfillment location's address, use the `assignedLocation` field on the [`FulfillmentOrder`](/docs/api/admin-graphql/latest/objects/FulfillmentOrder) object instead.
+        ///The address at which the fulfillment occurred. This field is intended for tax purposes, as a full address is required for tax providers to accurately calculate taxes. Typically this is the address of the warehouse or fulfillment center. To retrieve a fulfillment location&apos;s address, use the `assignedLocation` field on the [`FulfillmentOrder`](/docs/api/admin-graphql/latest/objects/FulfillmentOrder) object instead.
         ///</summary>
         [Description("The address at which the fulfillment occurred. This field is intended for tax purposes, as a full address is required for tax providers to accurately calculate taxes. Typically this is the address of the warehouse or fulfillment center. To retrieve a fulfillment location's address, use the `assignedLocation` field on the [`FulfillmentOrder`](/docs/api/admin-graphql/latest/objects/FulfillmentOrder) object instead.")]
         public FulfillmentOriginAddress? originAddress { get; set; }
@@ -35513,7 +35513,7 @@ namespace Shopify.Types
     public class FulfillmentConnection : GraphQLObject<FulfillmentConnection>, IConnectionWithNodesAndEdges<FulfillmentEdge, Fulfillment>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -35563,7 +35563,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -36089,7 +36089,7 @@ namespace Shopify.Types
     public class FulfillmentEventConnection : GraphQLObject<FulfillmentEventConnection>, IConnectionWithNodesAndEdges<FulfillmentEventEdge, FulfillmentEvent>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -36362,7 +36362,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Represents a line item from an order that's included in a fulfillment.
+    ///Represents a line item from an order that&apos;s included in a fulfillment.
     ///</summary>
     [Description("Represents a line item from an order that's included in a fulfillment.")]
     public class FulfillmentLineItem : GraphQLObject<FulfillmentLineItem>, INode
@@ -36376,7 +36376,7 @@ namespace Shopify.Types
         public decimal? discountedTotal { get; set; }
 
         ///<summary>
-        ///The total price after discounts are applied in shop and presentment currencies. This value doesn't include order-level discounts.
+        ///The total price after discounts are applied in shop and presentment currencies. This value doesn&apos;t include order-level discounts.
         ///</summary>
         [Description("The total price after discounts are applied in shop and presentment currencies. This value doesn't include order-level discounts.")]
         [NonNull]
@@ -36390,7 +36390,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///The associated order's line item.
+        ///The associated order&apos;s line item.
         ///</summary>
         [Description("The associated order's line item.")]
         [NonNull]
@@ -36425,7 +36425,7 @@ namespace Shopify.Types
     public class FulfillmentLineItemConnection : GraphQLObject<FulfillmentLineItemConnection>, IConnectionWithNodesAndEdges<FulfillmentLineItemEdge, FulfillmentLineItem>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -36475,7 +36475,7 @@ namespace Shopify.Types
     ///[order](https://shopify.dev/api/admin-graphql/latest/objects/Order)
     ///at a given location.
     ///
-    ///{{ '/api/reference/fulfillment_order_relationships.png' | image }}
+    ///{{ &apos;/api/reference/fulfillment_order_relationships.png&apos; | image }}
     ///
     ///Fulfillment orders represent the work which is intended to be done in relation to an order.
     ///When fulfillment has started for one or more line items, a
@@ -36484,11 +36484,11 @@ namespace Shopify.Types
     ///
     ///[See below for more details on creating fulfillments](#the-lifecycle-of-a-fulfillment-order-at-a-location-which-is-managed-by-a-fulfillment-service).
     ///
-    ///> Note:
-    ///> Shopify creates fulfillment orders automatically when an order is created.
-    ///> It is not possible to manually create fulfillment orders.
-    ///>
-    ///> [See below for more details on the lifecycle of a fulfillment order](#the-lifecycle-of-a-fulfillment-order).
+    ///&gt; Note:
+    ///&gt; Shopify creates fulfillment orders automatically when an order is created.
+    ///&gt; It is not possible to manually create fulfillment orders.
+    ///&gt;
+    ///&gt; [See below for more details on the lifecycle of a fulfillment order](#the-lifecycle-of-a-fulfillment-order).
     ///
     ///## Retrieving fulfillment orders
     ///
@@ -36501,7 +36501,7 @@ namespace Shopify.Types
     ///[API access scopes](#api-access-scopes)
     ///govern which fulfillments orders are returned to clients.
     ///An API client will only receive a subset of the fulfillment orders which belong to an order
-    ///if they don't have the necessary access scopes to view all of the fulfillment orders.
+    ///if they don&apos;t have the necessary access scopes to view all of the fulfillment orders.
     ///
     ///### Fulfillment orders assigned to the app for fulfillment
     ///
@@ -36598,7 +36598,7 @@ namespace Shopify.Types
     ///### Fulfillment service app access scopes
     ///
     ///Usually, **fulfillment services** have the `write_assigned_fulfillment_orders` access scope
-    ///and don't have the `*_third_party_fulfillment_orders`
+    ///and don&apos;t have the `*_third_party_fulfillment_orders`
     ///or `*_merchant_managed_fulfillment_orders` access scopes.
     ///The app will only have access to the fulfillment orders assigned to their location
     ///(or multiple locations if the app registers multiple fulfillment services on the shop).
@@ -36634,20 +36634,20 @@ namespace Shopify.Types
     public class FulfillmentOrder : GraphQLObject<FulfillmentOrder>, INode, IMetafieldReferencer
     {
         ///<summary>
-        ///The fulfillment order's assigned location. This is the location where the fulfillment is expected to happen.
+        ///The fulfillment order&apos;s assigned location. This is the location where the fulfillment is expected to happen.
         ///
-        ///The fulfillment order's assigned location might change in the following cases:
+        ///The fulfillment order&apos;s assigned location might change in the following cases:
         ///
         ///- The fulfillment order has been entirely moved to a new location. For example, the [fulfillmentOrderMove](
         ///  https://shopify.dev/api/admin-graphql/latest/mutations/fulfillmentOrderMove
         ///  ) mutation has been called, and you see the original fulfillment order in the [movedFulfillmentOrder](
         ///  https://shopify.dev/api/admin-graphql/latest/mutations/fulfillmentOrderMove#field-fulfillmentordermovepayload-movedfulfillmentorder
-        ///  ) field within the mutation's response.
-        ///- Work on the fulfillment order hasn't yet begun, which means that the fulfillment order has the
+        ///  ) field within the mutation&apos;s response.
+        ///- Work on the fulfillment order hasn&apos;t yet begun, which means that the fulfillment order has the
         ///    [OPEN](https://shopify.dev/api/admin-graphql/latest/enums/FulfillmentOrderStatus#value-open),
         ///    [SCHEDULED](https://shopify.dev/api/admin-graphql/latest/enums/FulfillmentOrderStatus#value-scheduled), or
         ///    [ON_HOLD](https://shopify.dev/api/admin-graphql/latest/enums/FulfillmentOrderStatus#value-onhold)
-        ///    status, and the shop's location properties might be undergoing edits (for example, in the Shopify admin).
+        ///    status, and the shop&apos;s location properties might be undergoing edits (for example, in the Shopify admin).
         ///</summary>
         [Description("The fulfillment order's assigned location. This is the location where the fulfillment is expected to happen.\n\nThe fulfillment order's assigned location might change in the following cases:\n\n- The fulfillment order has been entirely moved to a new location. For example, the [fulfillmentOrderMove](\n  https://shopify.dev/api/admin-graphql/latest/mutations/fulfillmentOrderMove\n  ) mutation has been called, and you see the original fulfillment order in the [movedFulfillmentOrder](\n  https://shopify.dev/api/admin-graphql/latest/mutations/fulfillmentOrderMove#field-fulfillmentordermovepayload-movedfulfillmentorder\n  ) field within the mutation's response.\n- Work on the fulfillment order hasn't yet begun, which means that the fulfillment order has the\n    [OPEN](https://shopify.dev/api/admin-graphql/latest/enums/FulfillmentOrderStatus#value-open),\n    [SCHEDULED](https://shopify.dev/api/admin-graphql/latest/enums/FulfillmentOrderStatus#value-scheduled), or\n    [ON_HOLD](https://shopify.dev/api/admin-graphql/latest/enums/FulfillmentOrderStatus#value-onhold)\n    status, and the shop's location properties might be undergoing edits (for example, in the Shopify admin).")]
         [NonNull]
@@ -36725,7 +36725,7 @@ namespace Shopify.Types
         public FulfillmentOrderInternationalDuties? internationalDuties { get; set; }
 
         ///<summary>
-        ///A list of the fulfillment order's line items.
+        ///A list of the fulfillment order&apos;s line items.
         ///</summary>
         [Description("A list of the fulfillment order's line items.")]
         [NonNull]
@@ -36746,23 +36746,23 @@ namespace Shopify.Types
         public FulfillmentOrderMerchantRequestConnection? merchantRequests { get; set; }
 
         ///<summary>
-        ///The order that's associated with the fulfillment order.
+        ///The order that&apos;s associated with the fulfillment order.
         ///</summary>
         [Description("The order that's associated with the fulfillment order.")]
         [NonNull]
         public Order? order { get; set; }
 
         ///<summary>
-        ///ID of the order that's associated with the fulfillment order.
+        ///ID of the order that&apos;s associated with the fulfillment order.
         ///</summary>
         [Description("ID of the order that's associated with the fulfillment order.")]
         [NonNull]
         public string? orderId { get; set; }
 
         ///<summary>
-        ///The unique identifier for the order that appears on the order page in the Shopify admin and the <b>Order status</b> page.
-        ///For example, "#1001", "EN1001", or "1001-A".
-        ///This value isn't unique across multiple stores.
+        ///The unique identifier for the order that appears on the order page in the Shopify admin and the &lt;b&gt;Order status&lt;/b&gt; page.
+        ///For example, &quot;#1001&quot;, &quot;EN1001&quot;, or &quot;1001-A&quot;.
+        ///This value isn&apos;t unique across multiple stores.
         ///</summary>
         [Description("The unique identifier for the order that appears on the order page in the Shopify admin and the <b>Order status</b> page.\nFor example, \"#1001\", \"EN1001\", or \"1001-A\".\nThis value isn't unique across multiple stores.")]
         [NonNull]
@@ -36924,27 +36924,27 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The fulfillment order's assigned location. This is the location where the fulfillment is expected to happen.
+    ///The fulfillment order&apos;s assigned location. This is the location where the fulfillment is expected to happen.
     ///
-    /// The fulfillment order's assigned location might change in the following cases:
+    /// The fulfillment order&apos;s assigned location might change in the following cases:
     ///
     ///  - The fulfillment order has been entirely moved to a new location. For example, the [fulfillmentOrderMove](
     ///    https://shopify.dev/api/admin-graphql/latest/mutations/fulfillmentOrderMove
     ///    ) mutation has been called, and you see the original fulfillment order in the [movedFulfillmentOrder](
     ///    https://shopify.dev/api/admin-graphql/latest/mutations/fulfillmentOrderMove#field-fulfillmentordermovepayload-movedfulfillmentorder
-    ///    ) field within the mutation's response.
+    ///    ) field within the mutation&apos;s response.
     ///
     ///  - Work on the fulfillment order has not yet begun, which means that the fulfillment order has the
     ///      [OPEN](https://shopify.dev/api/admin-graphql/latest/enums/FulfillmentOrderStatus#value-open),
     ///      [SCHEDULED](https://shopify.dev/api/admin-graphql/latest/enums/FulfillmentOrderStatus#value-scheduled), or
     ///      [ON_HOLD](https://shopify.dev/api/admin-graphql/latest/enums/FulfillmentOrderStatus#value-onhold)
-    ///      status, and the shop's location properties might be undergoing edits (for example, in the Shopify admin).
+    ///      status, and the shop&apos;s location properties might be undergoing edits (for example, in the Shopify admin).
     ///
     ///If the [fulfillmentOrderMove](
     ///https://shopify.dev/api/admin-graphql/latest/mutations/fulfillmentOrderMove
-    ///) mutation has moved the fulfillment order's line items to a new location,
-    ///but hasn't moved the fulfillment order instance itself, then the original fulfillment order's assigned location
-    ///doesn't change.
+    ///) mutation has moved the fulfillment order&apos;s line items to a new location,
+    ///but hasn&apos;t moved the fulfillment order instance itself, then the original fulfillment order&apos;s assigned location
+    ///doesn&apos;t change.
     ///This happens if the fulfillment order is being split during the move, or if all line items can be moved
     ///to an existing fulfillment order at a new location.
     ///
@@ -36954,8 +36954,8 @@ namespace Shopify.Types
     ///[CLOSED](https://shopify.dev/api/admin-graphql/latest/enums/FulfillmentOrderStatus#value-closed),
     ///[CANCELLED](https://shopify.dev/api/admin-graphql/latest/enums/FulfillmentOrderStatus#value-cancelled), or
     ///[INCOMPLETE](https://shopify.dev/api/admin-graphql/latest/enums/FulfillmentOrderStatus#value-incomplete)
-    ///status, `FulfillmentOrderAssignedLocation` acts as a snapshot of the shop's location content.
-    ///Up-to-date shop's location data may be queried through [location](
+    ///status, `FulfillmentOrderAssignedLocation` acts as a snapshot of the shop&apos;s location content.
+    ///Up-to-date shop&apos;s location data may be queried through [location](
     ///  https://shopify.dev/api/admin-graphql/latest/objects/FulfillmentOrderAssignedLocation#field-fulfillmentorderassignedlocation-location
     ///) connection.
     ///</summary>
@@ -36989,7 +36989,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The location where the fulfillment is expected to happen. This value might be different from
-        ///`FulfillmentOrderAssignedLocation` if the location's attributes were updated
+        ///`FulfillmentOrderAssignedLocation` if the location&apos;s attributes were updated
         ///after the fulfillment order was taken into work of canceled.
         ///</summary>
         [Description("The location where the fulfillment is expected to happen. This value might be different from\n`FulfillmentOrderAssignedLocation` if the location's attributes were updated\nafter the fulfillment order was taken into work of canceled.")]
@@ -37039,14 +37039,14 @@ namespace Shopify.Types
         [Description("Fulfillment orders for which the merchant has requested fulfillment.")]
         FULFILLMENT_REQUESTED,
         ///<summary>
-        ///Fulfillment orders for which the merchant's fulfillment request has been accepted.
+        ///Fulfillment orders for which the merchant&apos;s fulfillment request has been accepted.
         ///Any number of fulfillments can be created on these fulfillment orders
         ///to completely fulfill the requested items.
         ///</summary>
         [Description("Fulfillment orders for which the merchant's fulfillment request has been accepted.\nAny number of fulfillments can be created on these fulfillment orders\nto completely fulfill the requested items.")]
         FULFILLMENT_ACCEPTED,
         ///<summary>
-        ///Fulfillment orders for which the merchant hasn't yet requested fulfillment.
+        ///Fulfillment orders for which the merchant hasn&apos;t yet requested fulfillment.
         ///</summary>
         [Description("Fulfillment orders for which the merchant hasn't yet requested fulfillment.")]
         FULFILLMENT_UNSUBMITTED,
@@ -37113,7 +37113,7 @@ namespace Shopify.Types
     public class FulfillmentOrderConnection : GraphQLObject<FulfillmentOrderConnection>, IConnectionWithNodesAndEdges<FulfillmentOrderEdge, FulfillmentOrder>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -37260,7 +37260,7 @@ namespace Shopify.Types
         public FulfillmentOrder? fulfillmentOrder { get; set; }
 
         ///<summary>
-        ///The remaining fulfillment order containing the line items to which the hold wasn't applied,
+        ///The remaining fulfillment order containing the line items to which the hold wasn&apos;t applied,
         ///if specific line items were specified to be placed on hold.
         ///</summary>
         [Description("The remaining fulfillment order containing the line items to which the hold wasn't applied,\nif specific line items were specified to be placed on hold.")]
@@ -37381,7 +37381,7 @@ namespace Shopify.Types
     public class FulfillmentOrderLineItem : GraphQLObject<FulfillmentOrderLineItem>, INode
     {
         ///<summary>
-        ///The financial summary for the Fulfillment Order's Line Items.
+        ///The financial summary for the Fulfillment Order&apos;s Line Items.
         ///</summary>
         [Description("The financial summary for the Fulfillment Order's Line Items.")]
         [NonNull]
@@ -37395,7 +37395,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///The image associated to the line item's variant.
+        ///The image associated to the line item&apos;s variant.
         ///</summary>
         [Description("The image associated to the line item's variant.")]
         public Image? image { get; set; }
@@ -37494,7 +37494,7 @@ namespace Shopify.Types
     public class FulfillmentOrderLineItemConnection : GraphQLObject<FulfillmentOrderLineItemConnection>, IConnectionWithNodesAndEdges<FulfillmentOrderLineItemEdge, FulfillmentOrderLineItem>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -37543,7 +37543,7 @@ namespace Shopify.Types
     public class FulfillmentOrderLineItemFinancialSummary : GraphQLObject<FulfillmentOrderLineItemFinancialSummary>
     {
         ///<summary>
-        ///The approximate split price of a line item unit, in shop and presentment currencies. This value doesn't include discounts applied to the entire order.For the full picture of applied discounts, see discountAllocations.
+        ///The approximate split price of a line item unit, in shop and presentment currencies. This value doesn&apos;t include discounts applied to the entire order.For the full picture of applied discounts, see discountAllocations.
         ///</summary>
         [Description("The approximate split price of a line item unit, in shop and presentment currencies. This value doesn't include discounts applied to the entire order.For the full picture of applied discounts, see discountAllocations.")]
         [NonNull]
@@ -37681,14 +37681,14 @@ namespace Shopify.Types
         public Count? availableLineItemsCount { get; set; }
 
         ///<summary>
-        ///The location being considered as the fulfillment order's new assigned location.
+        ///The location being considered as the fulfillment order&apos;s new assigned location.
         ///</summary>
         [Description("The location being considered as the fulfillment order's new assigned location.")]
         [NonNull]
         public Location? location { get; set; }
 
         ///<summary>
-        ///A human-readable string with the reason why the fulfillment order, or some of its line items, can't be
+        ///A human-readable string with the reason why the fulfillment order, or some of its line items, can&apos;t be
         ///moved to the location.
         ///</summary>
         [Description("A human-readable string with the reason why the fulfillment order, or some of its line items, can't be\nmoved to the location.")]
@@ -37709,7 +37709,7 @@ namespace Shopify.Types
         public FulfillmentOrderLineItemConnection? unavailableLineItems { get; set; }
 
         ///<summary>
-        ///Total number of fulfillment order line items that can't be moved from their current assigned location to the
+        ///Total number of fulfillment order line items that can&apos;t be moved from their current assigned location to the
         ///given location.
         ///</summary>
         [Description("Total number of fulfillment order line items that can't be moved from their current assigned location to the\ngiven location.")]
@@ -37723,7 +37723,7 @@ namespace Shopify.Types
     public class FulfillmentOrderLocationForMoveConnection : GraphQLObject<FulfillmentOrderLocationForMoveConnection>, IConnectionWithNodesAndEdges<FulfillmentOrderLocationForMoveEdge, FulfillmentOrderLocationForMove>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -37829,7 +37829,7 @@ namespace Shopify.Types
     public class FulfillmentOrderMerchantRequestConnection : GraphQLObject<FulfillmentOrderMerchantRequestConnection>, IConnectionWithNodesAndEdges<FulfillmentOrderMerchantRequestEdge, FulfillmentOrderMerchantRequest>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -37994,8 +37994,8 @@ namespace Shopify.Types
         ///<summary>
         ///The fulfillment order which now contains the moved line items and is assigned to the destination location.
         ///
-        ///If the original fulfillment order doesn't have any line items which are fully or partially fulfilled, the original fulfillment order will be moved to the new location.
-        ///However if this isn't the case, the moved fulfillment order will differ from the original one.
+        ///If the original fulfillment order doesn&apos;t have any line items which are fully or partially fulfilled, the original fulfillment order will be moved to the new location.
+        ///However if this isn&apos;t the case, the moved fulfillment order will differ from the original one.
         ///</summary>
         [Description("The fulfillment order which now contains the moved line items and is assigned to the destination location.\n\nIf the original fulfillment order doesn't have any line items which are fully or partially fulfilled, the original fulfillment order will be moved to the new location.\nHowever if this isn't the case, the moved fulfillment order will differ from the original one.")]
         public FulfillmentOrder? movedFulfillmentOrder { get; set; }
@@ -38110,7 +38110,7 @@ namespace Shopify.Types
         [Description("The fulfillment order was rejected because of an undeliverable destination.")]
         UNDELIVERABLE_DESTINATION,
         ///<summary>
-        ///The fulfillment order was rejected because international address shipping hasn't been enabled.
+        ///The fulfillment order was rejected because international address shipping hasn&apos;t been enabled.
         ///</summary>
         [Description("The fulfillment order was rejected because international address shipping hasn't been enabled.")]
         INTERNATIONAL_SHIPPING_UNAVAILABLE,
@@ -38232,12 +38232,12 @@ namespace Shopify.Types
     public enum FulfillmentOrderReleaseHoldUserErrorCode
     {
         ///<summary>
-        ///The fulfillment order wasn't found.
+        ///The fulfillment order wasn&apos;t found.
         ///</summary>
         [Description("The fulfillment order wasn't found.")]
         FULFILLMENT_ORDER_NOT_FOUND,
         ///<summary>
-        ///The app doesn't have access to release the fulfillment hold.
+        ///The app doesn&apos;t have access to release the fulfillment hold.
         ///</summary>
         [Description("The app doesn't have access to release the fulfillment hold.")]
         INVALID_ACCESS,
@@ -38257,7 +38257,7 @@ namespace Shopify.Types
     {
         ///<summary>
         ///The initial request status for the newly-created fulfillment orders. This is the only valid
-        ///request status for fulfillment orders that aren't assigned to a fulfillment service.
+        ///request status for fulfillment orders that aren&apos;t assigned to a fulfillment service.
         ///</summary>
         [Description("The initial request status for the newly-created fulfillment orders. This is the only valid\nrequest status for fulfillment orders that aren't assigned to a fulfillment service.")]
         UNSUBMITTED,
@@ -38267,12 +38267,12 @@ namespace Shopify.Types
         [Description("The merchant requested fulfillment for this fulfillment order.")]
         SUBMITTED,
         ///<summary>
-        ///The fulfillment service accepted the merchant's fulfillment request.
+        ///The fulfillment service accepted the merchant&apos;s fulfillment request.
         ///</summary>
         [Description("The fulfillment service accepted the merchant's fulfillment request.")]
         ACCEPTED,
         ///<summary>
-        ///The fulfillment service rejected the merchant's fulfillment request.
+        ///The fulfillment service rejected the merchant&apos;s fulfillment request.
         ///</summary>
         [Description("The fulfillment service rejected the merchant's fulfillment request.")]
         REJECTED,
@@ -38282,12 +38282,12 @@ namespace Shopify.Types
         [Description("The merchant requested a cancellation of the fulfillment request for this fulfillment order.")]
         CANCELLATION_REQUESTED,
         ///<summary>
-        ///The fulfillment service accepted the merchant's fulfillment cancellation request.
+        ///The fulfillment service accepted the merchant&apos;s fulfillment cancellation request.
         ///</summary>
         [Description("The fulfillment service accepted the merchant's fulfillment cancellation request.")]
         CANCELLATION_ACCEPTED,
         ///<summary>
-        ///The fulfillment service rejected the merchant's fulfillment cancellation request.
+        ///The fulfillment service rejected the merchant&apos;s fulfillment cancellation request.
         ///</summary>
         [Description("The fulfillment service rejected the merchant's fulfillment cancellation request.")]
         CANCELLATION_REJECTED,
@@ -38444,7 +38444,7 @@ namespace Shopify.Types
         public FulfillmentOrder? remainingFulfillmentOrder { get; set; }
 
         ///<summary>
-        ///The replacement fulfillment order if the original fulfillment order wasn't in a state to be split.
+        ///The replacement fulfillment order if the original fulfillment order wasn&apos;t in a state to be split.
         ///</summary>
         [Description("The replacement fulfillment order if the original fulfillment order wasn't in a state to be split.")]
         public FulfillmentOrder? replacementFulfillmentOrder { get; set; }
@@ -38549,7 +38549,7 @@ namespace Shopify.Types
         [Description("The fulfillment order is deferred and will be ready for fulfillment after the date and time specified in `fulfill_at`.")]
         SCHEDULED,
         ///<summary>
-        ///The fulfillment order is on hold. The fulfillment process can't be initiated until the hold on the fulfillment order is released.
+        ///The fulfillment order is on hold. The fulfillment process can&apos;t be initiated until the hold on the fulfillment order is released.
         ///</summary>
         [Description("The fulfillment order is on hold. The fulfillment process can't be initiated until the hold on the fulfillment order is released.")]
         ON_HOLD,
@@ -38707,7 +38707,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The address at which the fulfillment occurred. This object is intended for tax purposes, as a full address is required for tax providers to accurately calculate taxes. Typically this is the address of the warehouse or fulfillment center. To retrieve a fulfillment location's address, use the `assignedLocation` field on the [`FulfillmentOrder`](/docs/api/admin-graphql/latest/objects/FulfillmentOrder) object instead.
+    ///The address at which the fulfillment occurred. This object is intended for tax purposes, as a full address is required for tax providers to accurately calculate taxes. Typically this is the address of the warehouse or fulfillment center. To retrieve a fulfillment location&apos;s address, use the `assignedLocation` field on the [`FulfillmentOrder`](/docs/api/admin-graphql/latest/objects/FulfillmentOrder) object instead.
     ///</summary>
     [Description("The address at which the fulfillment occurred. This object is intended for tax purposes, as a full address is required for tax providers to accurately calculate taxes. Typically this is the address of the warehouse or fulfillment center. To retrieve a fulfillment location's address, use the `assignedLocation` field on the [`FulfillmentOrder`](/docs/api/admin-graphql/latest/objects/FulfillmentOrder) object instead.")]
     public class FulfillmentOriginAddress : GraphQLObject<FulfillmentOriginAddress>
@@ -38755,7 +38755,7 @@ namespace Shopify.Types
     ///on behalf of the store owner. Fulfillment services charge a fee to package and ship items
     ///and update product inventory levels. Some well known fulfillment services with Shopify integrations
     ///include: Amazon, Shipwire, and Rakuten. When an app registers a new `FulfillmentService` on a store,
-    ///Shopify automatically creates a `Location` that's associated to the fulfillment service.
+    ///Shopify automatically creates a `Location` that&apos;s associated to the fulfillment service.
     ///To learn more about fulfillment services, refer to
     ///[Manage fulfillments as a fulfillment service app](https://shopify.dev/apps/fulfillment/fulfillment-service-apps)
     ///guide.
@@ -38777,12 +38777,12 @@ namespace Shopify.Types
     ///[fulfillmentServiceCreate](https://shopify.dev/api/admin-graphql/latest/mutations/fulfillmentServiceCreate)
     ///mutation.
     ///
-    ///- Shopify sends POST requests to the `<callbackUrl>/fulfillment_order_notification` endpoint
+    ///- Shopify sends POST requests to the `&lt;callbackUrl&gt;/fulfillment_order_notification` endpoint
     ///  to notify the fulfillment service about fulfillment requests and fulfillment cancellation requests.
     ///
     ///  For more information, refer to
     ///  [Receive fulfillment requests and cancellations](https://shopify.dev/apps/fulfillment/fulfillment-service-apps/manage-fulfillments#step-2-receive-fulfillment-requests-and-cancellations).
-    ///- Shopify sends GET requests to the `<callbackUrl>/fetch_tracking_numbers` endpoint to retrieve tracking numbers for orders
+    ///- Shopify sends GET requests to the `&lt;callbackUrl&gt;/fetch_tracking_numbers` endpoint to retrieve tracking numbers for orders
     ///  if `trackingSupport` is set to `true`.
     ///
     ///  For more information, refer to
@@ -38791,7 +38791,7 @@ namespace Shopify.Types
     ///  Fulfillment services can also update tracking information using the
     ///  [fulfillmentTrackingInfoUpdate](https://shopify.dev/api/admin-graphql/latest/mutations/fulfillmentTrackingInfoUpdate) mutation,
     ///  rather than waiting for Shopify to ask for tracking numbers.
-    ///- Shopify sends GET requests to the `<callbackUrl>/fetch_stock` endpoint to retrieve
+    ///- Shopify sends GET requests to the `&lt;callbackUrl&gt;/fetch_stock` endpoint to retrieve
     ///  on hand inventory levels for the fulfillment service location if `inventoryManagement` is set to `true`.
     ///
     ///  For more information, refer to
@@ -38820,11 +38820,11 @@ namespace Shopify.Types
         ///<summary>
         ///The callback URL that the fulfillment service has registered for requests. The following considerations apply:
         ///
-        ///- Shopify queries the `<callbackUrl>/fetch_tracking_numbers` endpoint to retrieve tracking numbers
+        ///- Shopify queries the `&lt;callbackUrl&gt;/fetch_tracking_numbers` endpoint to retrieve tracking numbers
         ///    for orders, if `trackingSupport` is set to `true`.
-        ///- Shopify queries the `<callbackUrl>/fetch_stock` endpoint to retrieve inventory levels,
+        ///- Shopify queries the `&lt;callbackUrl&gt;/fetch_stock` endpoint to retrieve inventory levels,
         ///    if `inventoryManagement` is set to `true`.
-        ///- Shopify uses the `<callbackUrl>/fulfillment_order_notification` endpoint to send
+        ///- Shopify uses the `&lt;callbackUrl&gt;/fulfillment_order_notification` endpoint to send
         ///    [fulfillment and cancellation requests](https://shopify.dev/apps/build/orders-fulfillment/fulfillment-service-apps/build-for-fulfillment-services#step-9-optional-enable-tracking-support).
         ///</summary>
         [Description("The callback URL that the fulfillment service has registered for requests. The following considerations apply:\n\n- Shopify queries the `<callbackUrl>/fetch_tracking_numbers` endpoint to retrieve tracking numbers\n    for orders, if `trackingSupport` is set to `true`.\n- Shopify queries the `<callbackUrl>/fetch_stock` endpoint to retrieve inventory levels,\n    if `inventoryManagement` is set to `true`.\n- Shopify uses the `<callbackUrl>/fulfillment_order_notification` endpoint to send\n    [fulfillment and cancellation requests](https://shopify.dev/apps/build/orders-fulfillment/fulfillment-service-apps/build-for-fulfillment-services#step-9-optional-enable-tracking-support).")]
@@ -38937,7 +38937,7 @@ namespace Shopify.Types
         [Description("Deactivate and delete the inventory and location.")]
         DELETE,
         ///<summary>
-        ///Keep the inventory in place and convert the Fulfillment Service's location to be merchant managed.
+        ///Keep the inventory in place and convert the Fulfillment Service&apos;s location to be merchant managed.
         ///</summary>
         [Description("Keep the inventory in place and convert the Fulfillment Service's location to be merchant managed.")]
         KEEP,
@@ -39092,7 +39092,7 @@ namespace Shopify.Types
         ///
         ///Additionally, for the tracking companies listed on the
         ///[Shipping Carriers help page](https://help.shopify.com/manual/shipping/understanding-shipping/shipping-carriers#integrated-shipping-carriers)
-        ///Shopify will automatically update the fulfillment's `shipment_status` field during the fulfillment process.
+        ///Shopify will automatically update the fulfillment&apos;s `shipment_status` field during the fulfillment process.
         ///
         ///### Supported tracking companies
         ///
@@ -39144,7 +39144,7 @@ namespace Shopify.Types
         ///  * Fulfilla
         ///  * GLS
         ///  * Guangdong Weisuyi Information Technology (WSE)
-        ///  * Heppner Internationale Spedition GmbH & Co.
+        ///  * Heppner Internationale Spedition GmbH &amp; Co.
         ///  * Iceland Post
         ///  * IDEX
         ///  * Israel Post
@@ -39257,9 +39257,9 @@ namespace Shopify.Types
         ///<summary>
         ///The URLs to track the fulfillment.
         ///
-        ///The tracking URL is displayed in the merchant's admin on the order page.
+        ///The tracking URL is displayed in the merchant&apos;s admin on the order page.
         ///The tracking URL is displayed in the shipping confirmation email, which can optionally be sent to the customer.
-        ///When accounts are enabled, it's also displayed in the customer's order history.
+        ///When accounts are enabled, it&apos;s also displayed in the customer&apos;s order history.
         ///</summary>
         [Description("The URLs to track the fulfillment.\n\nThe tracking URL is displayed in the merchant's admin on the order page.\nThe tracking URL is displayed in the shipping confirmation email, which can optionally be sent to the customer.\nWhen accounts are enabled, it's also displayed in the customer's order history.")]
         public string? url { get; set; }
@@ -39402,13 +39402,13 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///The generic file's MIME type.
+        ///The generic file&apos;s MIME type.
         ///</summary>
         [Description("The generic file's MIME type.")]
         public string? mimeType { get; set; }
 
         ///<summary>
-        ///The generic file's size in bytes.
+        ///The generic file&apos;s size in bytes.
         ///</summary>
         [Description("The generic file's size in bytes.")]
         public int? originalFileSize { get; set; }
@@ -39427,7 +39427,7 @@ namespace Shopify.Types
         public DateTime? updatedAt { get; set; }
 
         ///<summary>
-        ///The generic file's URL.
+        ///The generic file&apos;s URL.
         ///</summary>
         [Description("The generic file's URL.")]
         public string? url { get; set; }
@@ -39440,7 +39440,7 @@ namespace Shopify.Types
     public class GiftCard : GraphQLObject<GiftCard>, INode
     {
         ///<summary>
-        ///The gift card's remaining balance.
+        ///The gift card&apos;s remaining balance.
         ///</summary>
         [Description("The gift card's remaining balance.")]
         [NonNull]
@@ -39507,7 +39507,7 @@ namespace Shopify.Types
         public string? maskedCode { get; set; }
 
         ///<summary>
-        ///The note associated with the gift card, which isn't visible to the customer.
+        ///The note associated with the gift card, which isn&apos;t visible to the customer.
         ///</summary>
         [Description("The note associated with the gift card, which isn't visible to the customer.")]
         public string? note { get; set; }
@@ -39572,7 +39572,7 @@ namespace Shopify.Types
     public class GiftCardConnection : GraphQLObject<GiftCardConnection>, IConnectionWithNodesAndEdges<GiftCardEdge, GiftCard>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -39606,7 +39606,7 @@ namespace Shopify.Types
         public GiftCard? giftCard { get; set; }
 
         ///<summary>
-        ///The created gift card's code.
+        ///The created gift card&apos;s code.
         ///</summary>
         [Description("The created gift card's code.")]
         public string? giftCardCode { get; set; }
@@ -39668,7 +39668,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -39809,7 +39809,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -39900,7 +39900,7 @@ namespace Shopify.Types
         [Description("The input value should be greater than the minimum allowed value.")]
         GREATER_THAN,
         ///<summary>
-        ///The gift card's value exceeds the allowed limits.
+        ///The gift card&apos;s value exceeds the allowed limits.
         ///</summary>
         [Description("The gift card's value exceeds the allowed limits.")]
         GIFT_CARD_LIMIT_EXCEEDED,
@@ -40313,7 +40313,7 @@ namespace Shopify.Types
     public class GiftCardTransactionConnection : GraphQLObject<GiftCardTransactionConnection>, IConnectionWithNodesAndEdges<GiftCardTransactionEdge, IGiftCardTransaction>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -40398,7 +40398,7 @@ namespace Shopify.Types
         [Description("Unexpected internal error happened.")]
         INTERNAL_ERROR,
         ///<summary>
-        ///The gift card's value exceeds the allowed limits.
+        ///The gift card&apos;s value exceeds the allowed limits.
         ///</summary>
         [Description("The gift card's value exceeds the allowed limits.")]
         GIFT_CARD_LIMIT_EXCEEDED,
@@ -40709,7 +40709,7 @@ namespace Shopify.Types
         public Validation? AsValidation() => this as Validation;
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -40802,7 +40802,7 @@ namespace Shopify.Types
         public string? altText { get; set; }
 
         ///<summary>
-        ///The original height of the image in pixels. Returns `null` if the image isn't hosted by Shopify.
+        ///The original height of the image in pixels. Returns `null` if the image isn&apos;t hosted by Shopify.
         ///</summary>
         [Description("The original height of the image in pixels. Returns `null` if the image isn't hosted by Shopify.")]
         public int? height { get; set; }
@@ -40815,7 +40815,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -40850,8 +40850,8 @@ namespace Shopify.Types
         ///<summary>
         ///The location of the transformed image as a URL.
         ///
-        ///All transformation arguments are considered "best-effort". If they can be applied to an image, they will be.
-        ///Otherwise any transformations which an image type doesn't support will be ignored.
+        ///All transformation arguments are considered &quot;best-effort&quot;. If they can be applied to an image, they will be.
+        ///Otherwise any transformations which an image type doesn&apos;t support will be ignored.
         ///</summary>
         [Description("The location of the transformed image as a URL.\n\nAll transformation arguments are considered \"best-effort\". If they can be applied to an image, they will be.\nOtherwise any transformations which an image type doesn't support will be ignored.")]
         [Obsolete("Use `url(transform:)` instead")]
@@ -40863,7 +40863,7 @@ namespace Shopify.Types
         ///
         ///If no transform options are specified, then the original image will be preserved including any pre-applied transforms.
         ///
-        ///All transformation options are considered "best-effort". Any transformation that the original image type doesn't support will be ignored.
+        ///All transformation options are considered &quot;best-effort&quot;. Any transformation that the original image type doesn&apos;t support will be ignored.
         ///
         ///If you need multiple variations of the same image, then you can use [GraphQL aliases](https://graphql.org/learn/queries/#aliases).
         ///</summary>
@@ -40872,7 +40872,7 @@ namespace Shopify.Types
         public string? url { get; set; }
 
         ///<summary>
-        ///The original width of the image in pixels. Returns `null` if the image isn't hosted by Shopify.
+        ///The original width of the image in pixels. Returns `null` if the image isn&apos;t hosted by Shopify.
         ///</summary>
         [Description("The original width of the image in pixels. Returns `null` if the image isn't hosted by Shopify.")]
         public int? width { get; set; }
@@ -40885,7 +40885,7 @@ namespace Shopify.Types
     public class ImageConnection : GraphQLObject<ImageConnection>, IConnectionWithNodesAndEdges<ImageEdge, Image>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -41147,12 +41147,12 @@ namespace Shopify.Types
         [Description("The specified quantity name is invalid.")]
         INVALID_QUANTITY_NAME,
         ///<summary>
-        ///The quantity can't be lower than -2,000,000,000.
+        ///The quantity can&apos;t be lower than -2,000,000,000.
         ///</summary>
         [Description("The quantity can't be lower than -2,000,000,000.")]
         INVALID_QUANTITY_TOO_LOW,
         ///<summary>
-        ///The quantity can't be higher than 2,000,000,000.
+        ///The quantity can&apos;t be higher than 2,000,000,000.
         ///</summary>
         [Description("The quantity can't be higher than 2,000,000,000.")]
         INVALID_QUANTITY_TOO_HIGH,
@@ -41167,7 +41167,7 @@ namespace Shopify.Types
         [Description("The specified reference document is invalid.")]
         INVALID_REFERENCE_DOCUMENT,
         ///<summary>
-        ///The quantities couldn't be adjusted. Try again.
+        ///The quantities couldn&apos;t be adjusted. Try again.
         ///</summary>
         [Description("The quantities couldn't be adjusted. Try again.")]
         ADJUST_QUANTITIES_FAILED,
@@ -41249,7 +41249,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A freeform URI that represents why the inventory change happened. This can be the entity adjusting inventory
-        ///quantities or the Shopify resource that's associated with the inventory adjustment. For example, a unit in a
+        ///quantities or the Shopify resource that&apos;s associated with the inventory adjustment. For example, a unit in a
         ///draft order might have been previously reserved, and a merchant later creates an order from the draft order.
         ///In this case, the `referenceDocumentUri` for the inventory adjustment is a URI referencing the order ID.
         ///</summary>
@@ -41522,13 +41522,13 @@ namespace Shopify.Types
         public string? inventoryHistoryUrl { get; set; }
 
         ///<summary>
-        ///The inventory item's quantities at the specified location.
+        ///The inventory item&apos;s quantities at the specified location.
         ///</summary>
         [Description("The inventory item's quantities at the specified location.")]
         public InventoryLevel? inventoryLevel { get; set; }
 
         ///<summary>
-        ///A list of the inventory item's quantities for each location that the inventory item can be stocked at.
+        ///A list of the inventory item&apos;s quantities for each location that the inventory item can be stocked at.
         ///</summary>
         [Description("A list of the inventory item's quantities for each location that the inventory item can be stocked at.")]
         [NonNull]
@@ -41588,7 +41588,7 @@ namespace Shopify.Types
         public EditableProperty? trackedEditable { get; set; }
 
         ///<summary>
-        ///Unit cost associated with the inventory item. Note: the user must have "View product costs" permission granted in order to access this field once product granular permissions are enabled.
+        ///Unit cost associated with the inventory item. Note: the user must have &quot;View product costs&quot; permission granted in order to access this field once product granular permissions are enabled.
         ///</summary>
         [Description("Unit cost associated with the inventory item. Note: the user must have \"View product costs\" permission granted in order to access this field once product granular permissions are enabled.")]
         public MoneyV2? unitCost { get; set; }
@@ -41615,7 +41615,7 @@ namespace Shopify.Types
     public class InventoryItemConnection : GraphQLObject<InventoryItemConnection>, IConnectionWithNodesAndEdges<InventoryItemEdge, InventoryItem>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -41719,7 +41719,7 @@ namespace Shopify.Types
         public DateTime? createdAt { get; set; }
 
         ///<summary>
-        ///Describes either the impact of deactivating the inventory level, or why the inventory level can't be deactivated.
+        ///Describes either the impact of deactivating the inventory level, or why the inventory level can&apos;t be deactivated.
         ///</summary>
         [Description("Describes either the impact of deactivating the inventory level, or why the inventory level can't be deactivated.")]
         public string? deactivationAlert { get; set; }
@@ -41774,7 +41774,7 @@ namespace Shopify.Types
     public class InventoryLevelConnection : GraphQLObject<InventoryLevelConnection>, IConnectionWithNodesAndEdges<InventoryLevelEdge, InventoryLevel>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -41904,12 +41904,12 @@ namespace Shopify.Types
         [Description("The specified quantity name is invalid.")]
         INVALID_QUANTITY_NAME,
         ///<summary>
-        ///The quantity can't be negative.
+        ///The quantity can&apos;t be negative.
         ///</summary>
         [Description("The quantity can't be negative.")]
         INVALID_QUANTITY_NEGATIVE,
         ///<summary>
-        ///The quantity can't be higher than 2,000,000,000.
+        ///The quantity can&apos;t be higher than 2,000,000,000.
         ///</summary>
         [Description("The quantity can't be higher than 2,000,000,000.")]
         INVALID_QUANTITY_TOO_HIGH,
@@ -41924,17 +41924,17 @@ namespace Shopify.Types
         [Description("The specified reference document is invalid.")]
         INVALID_REFERENCE_DOCUMENT,
         ///<summary>
-        ///The quantities couldn't be moved. Try again.
+        ///The quantities couldn&apos;t be moved. Try again.
         ///</summary>
         [Description("The quantities couldn't be moved. Try again.")]
         MOVE_QUANTITIES_FAILED,
         ///<summary>
-        ///The quantities can't be moved between different locations.
+        ///The quantities can&apos;t be moved between different locations.
         ///</summary>
         [Description("The quantities can't be moved between different locations.")]
         DIFFERENT_LOCATIONS,
         ///<summary>
-        ///The quantity names for each change can't be the same.
+        ///The quantity names for each change can&apos;t be the same.
         ///</summary>
         [Description("The quantity names for each change can't be the same.")]
         SAME_QUANTITY_NAME,
@@ -42128,7 +42128,7 @@ namespace Shopify.Types
     public class InventoryScheduledChangeConnection : GraphQLObject<InventoryScheduledChangeConnection>, IConnectionWithNodesAndEdges<InventoryScheduledChangeEdge, InventoryScheduledChange>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -42233,7 +42233,7 @@ namespace Shopify.Types
         [Description("The specified location could not be found.")]
         INVALID_LOCATION,
         ///<summary>
-        ///The quantity can't be negative.
+        ///The quantity can&apos;t be negative.
         ///</summary>
         [Description("The quantity can't be negative.")]
         INVALID_QUANTITY_NEGATIVE,
@@ -42248,7 +42248,7 @@ namespace Shopify.Types
         [Description("The specified reference document is invalid.")]
         INVALID_REFERENCE_DOCUMENT,
         ///<summary>
-        ///The on-hand quantities couldn't be set. Try again.
+        ///The on-hand quantities couldn&apos;t be set. Try again.
         ///</summary>
         [Description("The on-hand quantities couldn't be set. Try again.")]
         SET_ON_HAND_QUANTITIES_FAILED,
@@ -42263,7 +42263,7 @@ namespace Shopify.Types
         [Description("The specified inventory item is not allowed to be adjusted via API. Example: if the inventory item is a parent bundle.")]
         NON_MUTABLE_INVENTORY_ITEM,
         ///<summary>
-        ///The total quantity can't be higher than 1,000,000,000.
+        ///The total quantity can&apos;t be higher than 1,000,000,000.
         ///</summary>
         [Description("The total quantity can't be higher than 1,000,000,000.")]
         INVALID_QUANTITY_TOO_HIGH,
@@ -42345,7 +42345,7 @@ namespace Shopify.Types
         [Description("The specified location could not be found.")]
         INVALID_LOCATION,
         ///<summary>
-        ///The quantity can't be negative.
+        ///The quantity can&apos;t be negative.
         ///</summary>
         [Description("The quantity can't be negative.")]
         INVALID_QUANTITY_NEGATIVE,
@@ -42365,12 +42365,12 @@ namespace Shopify.Types
         [Description("The specified inventory item is not stocked at the location.")]
         ITEM_NOT_STOCKED_AT_LOCATION,
         ///<summary>
-        ///The total quantity can't be higher than 1,000,000,000.
+        ///The total quantity can&apos;t be higher than 1,000,000,000.
         ///</summary>
         [Description("The total quantity can't be higher than 1,000,000,000.")]
         INVALID_QUANTITY_TOO_HIGH,
         ///<summary>
-        ///The total quantity can't be lower than -1,000,000,000.
+        ///The total quantity can&apos;t be lower than -1,000,000,000.
         ///</summary>
         [Description("The total quantity can't be lower than -1,000,000,000.")]
         INVALID_QUANTITY_TOO_LOW,
@@ -42385,7 +42385,7 @@ namespace Shopify.Types
         [Description("The compareQuantity value does not match persisted value.")]
         COMPARE_QUANTITY_STALE,
         ///<summary>
-        ///The quantity name must be either 'available' or 'on_hand'.
+        ///The quantity name must be either &apos;available&apos; or &apos;on_hand&apos;.
         ///</summary>
         [Description("The quantity name must be either 'available' or 'on_hand'.")]
         INVALID_NAME,
@@ -42476,7 +42476,7 @@ namespace Shopify.Types
         [Description("There was an error updating the scheduled changes.")]
         ERROR_UPDATING_SCHEDULED,
         ///<summary>
-        ///The from_name and to_name can't be the same.
+        ///The from_name and to_name can&apos;t be the same.
         ///</summary>
         [Description("The from_name and to_name can't be the same.")]
         SAME_FROM_TO_NAMES,
@@ -42506,7 +42506,7 @@ namespace Shopify.Types
         [Description("The item can only have one scheduled change for quantity name as the fromName.")]
         DUPLICATE_FROM_NAME,
         ///<summary>
-        ///The location couldn't be found.
+        ///The location couldn&apos;t be found.
         ///</summary>
         [Description("The location couldn't be found.")]
         LOCATION_NOT_FOUND,
@@ -42568,7 +42568,7 @@ namespace Shopify.Types
         public bool? done { get; set; }
 
         ///<summary>
-        ///A globally-unique ID that's returned when running an asynchronous mutation.
+        ///A globally-unique ID that&apos;s returned when running an asynchronous mutation.
         ///</summary>
         [Description("A globally-unique ID that's returned when running an asynchronous mutation.")]
         [NonNull]
@@ -42598,7 +42598,7 @@ namespace Shopify.Types
         public bool? done { get; }
 
         ///<summary>
-        ///A globally-unique ID that's returned when running an asynchronous mutation.
+        ///A globally-unique ID that&apos;s returned when running an asynchronous mutation.
         ///</summary>
         [Description("A globally-unique ID that's returned when running an asynchronous mutation.")]
         [NonNull]
@@ -43644,7 +43644,7 @@ namespace Shopify.Types
         public IEnumerable<DiscountAllocation>? discountAllocations { get; set; }
 
         ///<summary>
-        ///The total discounted price of the line item in shop currency, including refunded and removed quantities. This value doesn't include order-level discounts.
+        ///The total discounted price of the line item in shop currency, including refunded and removed quantities. This value doesn&apos;t include order-level discounts.
         ///</summary>
         [Description("The total discounted price of the line item in shop currency, including refunded and removed quantities. This value doesn't include order-level discounts.")]
         [Obsolete("Use `discountedTotalSet` instead.")]
@@ -43652,14 +43652,14 @@ namespace Shopify.Types
         public decimal? discountedTotal { get; set; }
 
         ///<summary>
-        ///The total discounted price of the line item in shop and presentment currencies, including refunded and removed quantities. This value doesn't include order-level discounts. Code-based discounts aren't included by default.
+        ///The total discounted price of the line item in shop and presentment currencies, including refunded and removed quantities. This value doesn&apos;t include order-level discounts. Code-based discounts aren&apos;t included by default.
         ///</summary>
         [Description("The total discounted price of the line item in shop and presentment currencies, including refunded and removed quantities. This value doesn't include order-level discounts. Code-based discounts aren't included by default.")]
         [NonNull]
         public MoneyBag? discountedTotalSet { get; set; }
 
         ///<summary>
-        ///The approximate unit price of the line item in shop currency. This value includes line-level discounts and discounts applied to refunded and removed quantities. It doesn't include order-level or code-based discounts.
+        ///The approximate unit price of the line item in shop currency. This value includes line-level discounts and discounts applied to refunded and removed quantities. It doesn&apos;t include order-level or code-based discounts.
         ///</summary>
         [Description("The approximate unit price of the line item in shop currency. This value includes line-level discounts and discounts applied to refunded and removed quantities. It doesn't include order-level or code-based discounts.")]
         [Obsolete("Use `discountedUnitPriceSet` instead.")]
@@ -43674,7 +43674,7 @@ namespace Shopify.Types
         public MoneyBag? discountedUnitPriceAfterAllDiscountsSet { get; set; }
 
         ///<summary>
-        ///The approximate unit price of the line item in shop and presentment currencies. This value includes line-level discounts and discounts applied to refunded and removed quantities. It doesn't include order-level or code-based discounts.
+        ///The approximate unit price of the line item in shop and presentment currencies. This value includes line-level discounts and discounts applied to refunded and removed quantities. It doesn&apos;t include order-level or code-based discounts.
         ///</summary>
         [Description("The approximate unit price of the line item in shop and presentment currencies. This value includes line-level discounts and discounts applied to refunded and removed quantities. It doesn't include order-level or code-based discounts.")]
         [NonNull]
@@ -43702,11 +43702,11 @@ namespace Shopify.Types
         ///
         ///**Scenario 1**
         ///- The product variant is stocked by a single fulfillment service.
-        ///- The [FulfillmentService](/api/admin-graphql/latest/objects/FulfillmentService) is a third-party fulfillment service. Third-party fulfillment services don't have a handle with the value `manual`.
+        ///- The [FulfillmentService](/api/admin-graphql/latest/objects/FulfillmentService) is a third-party fulfillment service. Third-party fulfillment services don&apos;t have a handle with the value `manual`.
         ///
         ///**Scenario 2**
         ///- Multiple fulfillment services stock the product variant.
-        ///- The last time that the line item was unfulfilled, it was awaiting fulfillment by a third-party fulfillment service. Third-party fulfillment services don't have a handle with the value `manual`.
+        ///- The last time that the line item was unfulfilled, it was awaiting fulfillment by a third-party fulfillment service. Third-party fulfillment services don&apos;t have a handle with the value `manual`.
         ///
         ///If none of the above conditions are met, then the fulfillment service has the `manual` handle.
         ///</summary>
@@ -43715,8 +43715,8 @@ namespace Shopify.Types
         public FulfillmentService? fulfillmentService { get; set; }
 
         ///<summary>
-        ///The line item's fulfillment status. Returns 'fulfilled' if fulfillableQuantity >= quantity,
-        ///'partial' if  fulfillableQuantity > 0, and 'unfulfilled' otherwise.
+        ///The line item&apos;s fulfillment status. Returns &apos;fulfilled&apos; if fulfillableQuantity &gt;= quantity,
+        ///&apos;partial&apos; if  fulfillableQuantity &gt; 0, and &apos;unfulfilled&apos; otherwise.
         ///</summary>
         [Description("The line item's fulfillment status. Returns 'fulfilled' if fulfillableQuantity >= quantity,\n'partial' if  fulfillableQuantity > 0, and 'unfulfilled' otherwise.")]
         [Obsolete("Use [FulfillmentOrderLineItem#remainingQuantity](https://shopify.dev/api/admin-graphql/latest/objects/FulfillmentOrderLineItem#field-fulfillmentorderlineitem-remainingquantity) instead")]
@@ -43731,7 +43731,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///The image associated to the line item's variant.
+        ///The image associated to the line item&apos;s variant.
         ///</summary>
         [Description("The image associated to the line item's variant.")]
         public Image? image { get; set; }
@@ -43764,7 +43764,7 @@ namespace Shopify.Types
         public string? name { get; set; }
 
         ///<summary>
-        ///The total number of units that can't be fulfilled. For example, if items have been refunded, or the item is not something that can be fulfilled, like a tip. Please see the [FulfillmentOrder](https://shopify.dev/api/admin-graphql/latest/objects/FulfillmentOrder) object for more fulfillment details.
+        ///The total number of units that can&apos;t be fulfilled. For example, if items have been refunded, or the item is not something that can be fulfilled, like a tip. Please see the [FulfillmentOrder](https://shopify.dev/api/admin-graphql/latest/objects/FulfillmentOrder) object for more fulfillment details.
         ///</summary>
         [Description("The total number of units that can't be fulfilled. For example, if items have been refunded, or the item is not something that can be fulfilled, like a tip. Please see the [FulfillmentOrder](https://shopify.dev/api/admin-graphql/latest/objects/FulfillmentOrder) object for more fulfillment details.")]
         [NonNull]
@@ -43772,7 +43772,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///In shop currency, the total price of the line item when the order was created.
-        ///This value doesn't include discounts.
+        ///This value doesn&apos;t include discounts.
         ///</summary>
         [Description("In shop currency, the total price of the line item when the order was created.\nThis value doesn't include discounts.")]
         [Obsolete("Use `originalTotalSet` instead.")]
@@ -43781,14 +43781,14 @@ namespace Shopify.Types
 
         ///<summary>
         ///In shop and presentment currencies, the total price of the line item when the order was created.
-        ///This value doesn't include discounts.
+        ///This value doesn&apos;t include discounts.
         ///</summary>
         [Description("In shop and presentment currencies, the total price of the line item when the order was created.\nThis value doesn't include discounts.")]
         [NonNull]
         public MoneyBag? originalTotalSet { get; set; }
 
         ///<summary>
-        ///In shop currency, the unit price of the line item when the order was created. This value doesn't include discounts.
+        ///In shop currency, the unit price of the line item when the order was created. This value doesn&apos;t include discounts.
         ///</summary>
         [Description("In shop currency, the unit price of the line item when the order was created. This value doesn't include discounts.")]
         [Obsolete("Use `originalUnitPriceSet` instead.")]
@@ -43796,14 +43796,14 @@ namespace Shopify.Types
         public decimal? originalUnitPrice { get; set; }
 
         ///<summary>
-        ///In shop and presentment currencies, the unit price of the line item when the order was created. This value doesn't include discounts.
+        ///In shop and presentment currencies, the unit price of the line item when the order was created. This value doesn&apos;t include discounts.
         ///</summary>
         [Description("In shop and presentment currencies, the unit price of the line item when the order was created. This value doesn't include discounts.")]
         [NonNull]
         public MoneyBag? originalUnitPriceSet { get; set; }
 
         ///<summary>
-        ///The Product object associated with this line item's variant.
+        ///The Product object associated with this line item&apos;s variant.
         ///</summary>
         [Description("The Product object associated with this line item's variant.")]
         public Product? product { get; set; }
@@ -43876,7 +43876,7 @@ namespace Shopify.Types
         public string? title { get; set; }
 
         ///<summary>
-        ///The total discount allocated to the line item in shop currency, including the total allocated to refunded and removed quantities. This value doesn't include order-level discounts.
+        ///The total discount allocated to the line item in shop currency, including the total allocated to refunded and removed quantities. This value doesn&apos;t include order-level discounts.
         ///</summary>
         [Description("The total discount allocated to the line item in shop currency, including the total allocated to refunded and removed quantities. This value doesn't include order-level discounts.")]
         [Obsolete("Use `totalDiscountSet` instead.")]
@@ -43884,7 +43884,7 @@ namespace Shopify.Types
         public decimal? totalDiscount { get; set; }
 
         ///<summary>
-        ///The total discount allocated to the line item in shop and presentment currencies, including the total allocated to refunded and removed quantities. This value doesn't include order-level discounts.
+        ///The total discount allocated to the line item in shop and presentment currencies, including the total allocated to refunded and removed quantities. This value doesn&apos;t include order-level discounts.
         ///</summary>
         [Description("The total discount allocated to the line item in shop and presentment currencies, including the total allocated to refunded and removed quantities. This value doesn't include order-level discounts.")]
         [NonNull]
@@ -43906,7 +43906,7 @@ namespace Shopify.Types
         public MoneyBag? unfulfilledDiscountedTotalSet { get; set; }
 
         ///<summary>
-        ///In shop currency, the total price of the unfulfilled quantity for the line item. This value doesn't include discounts.
+        ///In shop currency, the total price of the unfulfilled quantity for the line item. This value doesn&apos;t include discounts.
         ///</summary>
         [Description("In shop currency, the total price of the unfulfilled quantity for the line item. This value doesn't include discounts.")]
         [Obsolete("Use `unfulfilledOriginalTotalSet` instead.")]
@@ -43914,7 +43914,7 @@ namespace Shopify.Types
         public decimal? unfulfilledOriginalTotal { get; set; }
 
         ///<summary>
-        ///In shop and presentment currencies, the total price of the unfulfilled quantity for the line item. This value doesn't include discounts.
+        ///In shop and presentment currencies, the total price of the unfulfilled quantity for the line item. This value doesn&apos;t include discounts.
         ///</summary>
         [Description("In shop and presentment currencies, the total price of the unfulfilled quantity for the line item. This value doesn't include discounts.")]
         [NonNull]
@@ -43953,7 +43953,7 @@ namespace Shopify.Types
     public class LineItemConnection : GraphQLObject<LineItemConnection>, IConnectionWithNodesAndEdges<LineItemEdge, LineItem>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -44314,7 +44314,7 @@ namespace Shopify.Types
     public class LocalizationExtensionConnection : GraphQLObject<LocalizationExtensionConnection>, IConnectionWithNodesAndEdges<LocalizationExtensionEdge, LocalizationExtension>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -44363,187 +44363,187 @@ namespace Shopify.Types
     public enum LocalizationExtensionKey
     {
         ///<summary>
-        ///Extension key 'tax_credential_br' for country BR.
+        ///Extension key &apos;tax_credential_br&apos; for country BR.
         ///</summary>
         [Description("Extension key 'tax_credential_br' for country BR.")]
         TAX_CREDENTIAL_BR,
         ///<summary>
-        ///Extension key 'shipping_credential_br' for country BR.
+        ///Extension key &apos;shipping_credential_br&apos; for country BR.
         ///</summary>
         [Description("Extension key 'shipping_credential_br' for country BR.")]
         SHIPPING_CREDENTIAL_BR,
         ///<summary>
-        ///Extension key 'tax_credential_cl' for country CL.
+        ///Extension key &apos;tax_credential_cl&apos; for country CL.
         ///</summary>
         [Description("Extension key 'tax_credential_cl' for country CL.")]
         TAX_CREDENTIAL_CL,
         ///<summary>
-        ///Extension key 'shipping_credential_cl' for country CL.
+        ///Extension key &apos;shipping_credential_cl&apos; for country CL.
         ///</summary>
         [Description("Extension key 'shipping_credential_cl' for country CL.")]
         SHIPPING_CREDENTIAL_CL,
         ///<summary>
-        ///Extension key 'shipping_credential_cn' for country CN.
+        ///Extension key &apos;shipping_credential_cn&apos; for country CN.
         ///</summary>
         [Description("Extension key 'shipping_credential_cn' for country CN.")]
         SHIPPING_CREDENTIAL_CN,
         ///<summary>
-        ///Extension key 'tax_credential_co' for country CO.
+        ///Extension key &apos;tax_credential_co&apos; for country CO.
         ///</summary>
         [Description("Extension key 'tax_credential_co' for country CO.")]
         TAX_CREDENTIAL_CO,
         ///<summary>
-        ///Extension key 'tax_credential_type_co' for country CO.
+        ///Extension key &apos;tax_credential_type_co&apos; for country CO.
         ///</summary>
         [Description("Extension key 'tax_credential_type_co' for country CO.")]
         TAX_CREDENTIAL_TYPE_CO,
         ///<summary>
-        ///Extension key 'shipping_credential_co' for country CO.
+        ///Extension key &apos;shipping_credential_co&apos; for country CO.
         ///</summary>
         [Description("Extension key 'shipping_credential_co' for country CO.")]
         SHIPPING_CREDENTIAL_CO,
         ///<summary>
-        ///Extension key 'shipping_credential_type_co' for country CO.
+        ///Extension key &apos;shipping_credential_type_co&apos; for country CO.
         ///</summary>
         [Description("Extension key 'shipping_credential_type_co' for country CO.")]
         SHIPPING_CREDENTIAL_TYPE_CO,
         ///<summary>
-        ///Extension key 'tax_credential_cr' for country CR.
+        ///Extension key &apos;tax_credential_cr&apos; for country CR.
         ///</summary>
         [Description("Extension key 'tax_credential_cr' for country CR.")]
         TAX_CREDENTIAL_CR,
         ///<summary>
-        ///Extension key 'shipping_credential_cr' for country CR.
+        ///Extension key &apos;shipping_credential_cr&apos; for country CR.
         ///</summary>
         [Description("Extension key 'shipping_credential_cr' for country CR.")]
         SHIPPING_CREDENTIAL_CR,
         ///<summary>
-        ///Extension key 'tax_credential_ec' for country EC.
+        ///Extension key &apos;tax_credential_ec&apos; for country EC.
         ///</summary>
         [Description("Extension key 'tax_credential_ec' for country EC.")]
         TAX_CREDENTIAL_EC,
         ///<summary>
-        ///Extension key 'shipping_credential_ec' for country EC.
+        ///Extension key &apos;shipping_credential_ec&apos; for country EC.
         ///</summary>
         [Description("Extension key 'shipping_credential_ec' for country EC.")]
         SHIPPING_CREDENTIAL_EC,
         ///<summary>
-        ///Extension key 'tax_credential_gt' for country GT.
+        ///Extension key &apos;tax_credential_gt&apos; for country GT.
         ///</summary>
         [Description("Extension key 'tax_credential_gt' for country GT.")]
         TAX_CREDENTIAL_GT,
         ///<summary>
-        ///Extension key 'shipping_credential_gt' for country GT.
+        ///Extension key &apos;shipping_credential_gt&apos; for country GT.
         ///</summary>
         [Description("Extension key 'shipping_credential_gt' for country GT.")]
         SHIPPING_CREDENTIAL_GT,
         ///<summary>
-        ///Extension key 'tax_credential_id' for country ID.
+        ///Extension key &apos;tax_credential_id&apos; for country ID.
         ///</summary>
         [Description("Extension key 'tax_credential_id' for country ID.")]
         TAX_CREDENTIAL_ID,
         ///<summary>
-        ///Extension key 'shipping_credential_id' for country ID.
+        ///Extension key &apos;shipping_credential_id&apos; for country ID.
         ///</summary>
         [Description("Extension key 'shipping_credential_id' for country ID.")]
         SHIPPING_CREDENTIAL_ID,
         ///<summary>
-        ///Extension key 'tax_credential_it' for country IT.
+        ///Extension key &apos;tax_credential_it&apos; for country IT.
         ///</summary>
         [Description("Extension key 'tax_credential_it' for country IT.")]
         TAX_CREDENTIAL_IT,
         ///<summary>
-        ///Extension key 'tax_email_it' for country IT.
+        ///Extension key &apos;tax_email_it&apos; for country IT.
         ///</summary>
         [Description("Extension key 'tax_email_it' for country IT.")]
         TAX_EMAIL_IT,
         ///<summary>
-        ///Extension key 'tax_credential_my' for country MY.
+        ///Extension key &apos;tax_credential_my&apos; for country MY.
         ///</summary>
         [Description("Extension key 'tax_credential_my' for country MY.")]
         TAX_CREDENTIAL_MY,
         ///<summary>
-        ///Extension key 'shipping_credential_my' for country MY.
+        ///Extension key &apos;shipping_credential_my&apos; for country MY.
         ///</summary>
         [Description("Extension key 'shipping_credential_my' for country MY.")]
         SHIPPING_CREDENTIAL_MY,
         ///<summary>
-        ///Extension key 'shipping_credential_mx' for country MX.
+        ///Extension key &apos;shipping_credential_mx&apos; for country MX.
         ///</summary>
         [Description("Extension key 'shipping_credential_mx' for country MX.")]
         SHIPPING_CREDENTIAL_MX,
         ///<summary>
-        ///Extension key 'tax_credential_mx' for country MX.
+        ///Extension key &apos;tax_credential_mx&apos; for country MX.
         ///</summary>
         [Description("Extension key 'tax_credential_mx' for country MX.")]
         TAX_CREDENTIAL_MX,
         ///<summary>
-        ///Extension key 'tax_credential_type_mx' for country MX.
+        ///Extension key &apos;tax_credential_type_mx&apos; for country MX.
         ///</summary>
         [Description("Extension key 'tax_credential_type_mx' for country MX.")]
         TAX_CREDENTIAL_TYPE_MX,
         ///<summary>
-        ///Extension key 'tax_credential_use_mx' for country MX.
+        ///Extension key &apos;tax_credential_use_mx&apos; for country MX.
         ///</summary>
         [Description("Extension key 'tax_credential_use_mx' for country MX.")]
         TAX_CREDENTIAL_USE_MX,
         ///<summary>
-        ///Extension key 'tax_credential_py' for country PY.
+        ///Extension key &apos;tax_credential_py&apos; for country PY.
         ///</summary>
         [Description("Extension key 'tax_credential_py' for country PY.")]
         TAX_CREDENTIAL_PY,
         ///<summary>
-        ///Extension key 'shipping_credential_py' for country PY.
+        ///Extension key &apos;shipping_credential_py&apos; for country PY.
         ///</summary>
         [Description("Extension key 'shipping_credential_py' for country PY.")]
         SHIPPING_CREDENTIAL_PY,
         ///<summary>
-        ///Extension key 'tax_credential_pe' for country PE.
+        ///Extension key &apos;tax_credential_pe&apos; for country PE.
         ///</summary>
         [Description("Extension key 'tax_credential_pe' for country PE.")]
         TAX_CREDENTIAL_PE,
         ///<summary>
-        ///Extension key 'shipping_credential_pe' for country PE.
+        ///Extension key &apos;shipping_credential_pe&apos; for country PE.
         ///</summary>
         [Description("Extension key 'shipping_credential_pe' for country PE.")]
         SHIPPING_CREDENTIAL_PE,
         ///<summary>
-        ///Extension key 'tax_credential_pt' for country PT.
+        ///Extension key &apos;tax_credential_pt&apos; for country PT.
         ///</summary>
         [Description("Extension key 'tax_credential_pt' for country PT.")]
         TAX_CREDENTIAL_PT,
         ///<summary>
-        ///Extension key 'shipping_credential_pt' for country PT.
+        ///Extension key &apos;shipping_credential_pt&apos; for country PT.
         ///</summary>
         [Description("Extension key 'shipping_credential_pt' for country PT.")]
         SHIPPING_CREDENTIAL_PT,
         ///<summary>
-        ///Extension key 'shipping_credential_kr' for country KR.
+        ///Extension key &apos;shipping_credential_kr&apos; for country KR.
         ///</summary>
         [Description("Extension key 'shipping_credential_kr' for country KR.")]
         SHIPPING_CREDENTIAL_KR,
         ///<summary>
-        ///Extension key 'tax_credential_es' for country ES.
+        ///Extension key &apos;tax_credential_es&apos; for country ES.
         ///</summary>
         [Description("Extension key 'tax_credential_es' for country ES.")]
         TAX_CREDENTIAL_ES,
         ///<summary>
-        ///Extension key 'shipping_credential_es' for country ES.
+        ///Extension key &apos;shipping_credential_es&apos; for country ES.
         ///</summary>
         [Description("Extension key 'shipping_credential_es' for country ES.")]
         SHIPPING_CREDENTIAL_ES,
         ///<summary>
-        ///Extension key 'shipping_credential_tw' for country TW.
+        ///Extension key &apos;shipping_credential_tw&apos; for country TW.
         ///</summary>
         [Description("Extension key 'shipping_credential_tw' for country TW.")]
         SHIPPING_CREDENTIAL_TW,
         ///<summary>
-        ///Extension key 'tax_credential_tr' for country TR.
+        ///Extension key &apos;tax_credential_tr&apos; for country TR.
         ///</summary>
         [Description("Extension key 'tax_credential_tr' for country TR.")]
         TAX_CREDENTIAL_TR,
         ///<summary>
-        ///Extension key 'shipping_credential_tr' for country TR.
+        ///Extension key &apos;shipping_credential_tr&apos; for country TR.
         ///</summary>
         [Description("Extension key 'shipping_credential_tr' for country TR.")]
         SHIPPING_CREDENTIAL_TR,
@@ -44663,7 +44663,7 @@ namespace Shopify.Types
     public class LocalizedFieldConnection : GraphQLObject<LocalizedFieldConnection>, IConnectionWithNodesAndEdges<LocalizedFieldEdge, LocalizedField>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -44712,187 +44712,187 @@ namespace Shopify.Types
     public enum LocalizedFieldKey
     {
         ///<summary>
-        ///Localized field key 'tax_credential_br' for country Brazil.
+        ///Localized field key &apos;tax_credential_br&apos; for country Brazil.
         ///</summary>
         [Description("Localized field key 'tax_credential_br' for country Brazil.")]
         TAX_CREDENTIAL_BR,
         ///<summary>
-        ///Localized field key 'shipping_credential_br' for country Brazil.
+        ///Localized field key &apos;shipping_credential_br&apos; for country Brazil.
         ///</summary>
         [Description("Localized field key 'shipping_credential_br' for country Brazil.")]
         SHIPPING_CREDENTIAL_BR,
         ///<summary>
-        ///Localized field key 'tax_credential_cl' for country Chile.
+        ///Localized field key &apos;tax_credential_cl&apos; for country Chile.
         ///</summary>
         [Description("Localized field key 'tax_credential_cl' for country Chile.")]
         TAX_CREDENTIAL_CL,
         ///<summary>
-        ///Localized field key 'shipping_credential_cl' for country Chile.
+        ///Localized field key &apos;shipping_credential_cl&apos; for country Chile.
         ///</summary>
         [Description("Localized field key 'shipping_credential_cl' for country Chile.")]
         SHIPPING_CREDENTIAL_CL,
         ///<summary>
-        ///Localized field key 'shipping_credential_cn' for country China.
+        ///Localized field key &apos;shipping_credential_cn&apos; for country China.
         ///</summary>
         [Description("Localized field key 'shipping_credential_cn' for country China.")]
         SHIPPING_CREDENTIAL_CN,
         ///<summary>
-        ///Localized field key 'tax_credential_co' for country Colombia.
+        ///Localized field key &apos;tax_credential_co&apos; for country Colombia.
         ///</summary>
         [Description("Localized field key 'tax_credential_co' for country Colombia.")]
         TAX_CREDENTIAL_CO,
         ///<summary>
-        ///Localized field key 'tax_credential_type_co' for country Colombia.
+        ///Localized field key &apos;tax_credential_type_co&apos; for country Colombia.
         ///</summary>
         [Description("Localized field key 'tax_credential_type_co' for country Colombia.")]
         TAX_CREDENTIAL_TYPE_CO,
         ///<summary>
-        ///Localized field key 'shipping_credential_co' for country Colombia.
+        ///Localized field key &apos;shipping_credential_co&apos; for country Colombia.
         ///</summary>
         [Description("Localized field key 'shipping_credential_co' for country Colombia.")]
         SHIPPING_CREDENTIAL_CO,
         ///<summary>
-        ///Localized field key 'shipping_credential_type_co' for country Colombia.
+        ///Localized field key &apos;shipping_credential_type_co&apos; for country Colombia.
         ///</summary>
         [Description("Localized field key 'shipping_credential_type_co' for country Colombia.")]
         SHIPPING_CREDENTIAL_TYPE_CO,
         ///<summary>
-        ///Localized field key 'tax_credential_cr' for country Costa Rica.
+        ///Localized field key &apos;tax_credential_cr&apos; for country Costa Rica.
         ///</summary>
         [Description("Localized field key 'tax_credential_cr' for country Costa Rica.")]
         TAX_CREDENTIAL_CR,
         ///<summary>
-        ///Localized field key 'shipping_credential_cr' for country Costa Rica.
+        ///Localized field key &apos;shipping_credential_cr&apos; for country Costa Rica.
         ///</summary>
         [Description("Localized field key 'shipping_credential_cr' for country Costa Rica.")]
         SHIPPING_CREDENTIAL_CR,
         ///<summary>
-        ///Localized field key 'tax_credential_ec' for country Ecuador.
+        ///Localized field key &apos;tax_credential_ec&apos; for country Ecuador.
         ///</summary>
         [Description("Localized field key 'tax_credential_ec' for country Ecuador.")]
         TAX_CREDENTIAL_EC,
         ///<summary>
-        ///Localized field key 'shipping_credential_ec' for country Ecuador.
+        ///Localized field key &apos;shipping_credential_ec&apos; for country Ecuador.
         ///</summary>
         [Description("Localized field key 'shipping_credential_ec' for country Ecuador.")]
         SHIPPING_CREDENTIAL_EC,
         ///<summary>
-        ///Localized field key 'tax_credential_gt' for country Guatemala.
+        ///Localized field key &apos;tax_credential_gt&apos; for country Guatemala.
         ///</summary>
         [Description("Localized field key 'tax_credential_gt' for country Guatemala.")]
         TAX_CREDENTIAL_GT,
         ///<summary>
-        ///Localized field key 'shipping_credential_gt' for country Guatemala.
+        ///Localized field key &apos;shipping_credential_gt&apos; for country Guatemala.
         ///</summary>
         [Description("Localized field key 'shipping_credential_gt' for country Guatemala.")]
         SHIPPING_CREDENTIAL_GT,
         ///<summary>
-        ///Localized field key 'tax_credential_id' for country Indonesia.
+        ///Localized field key &apos;tax_credential_id&apos; for country Indonesia.
         ///</summary>
         [Description("Localized field key 'tax_credential_id' for country Indonesia.")]
         TAX_CREDENTIAL_ID,
         ///<summary>
-        ///Localized field key 'shipping_credential_id' for country Indonesia.
+        ///Localized field key &apos;shipping_credential_id&apos; for country Indonesia.
         ///</summary>
         [Description("Localized field key 'shipping_credential_id' for country Indonesia.")]
         SHIPPING_CREDENTIAL_ID,
         ///<summary>
-        ///Localized field key 'tax_credential_it' for country Italy.
+        ///Localized field key &apos;tax_credential_it&apos; for country Italy.
         ///</summary>
         [Description("Localized field key 'tax_credential_it' for country Italy.")]
         TAX_CREDENTIAL_IT,
         ///<summary>
-        ///Localized field key 'tax_email_it' for country Italy.
+        ///Localized field key &apos;tax_email_it&apos; for country Italy.
         ///</summary>
         [Description("Localized field key 'tax_email_it' for country Italy.")]
         TAX_EMAIL_IT,
         ///<summary>
-        ///Localized field key 'tax_credential_my' for country Malaysia.
+        ///Localized field key &apos;tax_credential_my&apos; for country Malaysia.
         ///</summary>
         [Description("Localized field key 'tax_credential_my' for country Malaysia.")]
         TAX_CREDENTIAL_MY,
         ///<summary>
-        ///Localized field key 'shipping_credential_my' for country Malaysia.
+        ///Localized field key &apos;shipping_credential_my&apos; for country Malaysia.
         ///</summary>
         [Description("Localized field key 'shipping_credential_my' for country Malaysia.")]
         SHIPPING_CREDENTIAL_MY,
         ///<summary>
-        ///Localized field key 'shipping_credential_mx' for country Mexico.
+        ///Localized field key &apos;shipping_credential_mx&apos; for country Mexico.
         ///</summary>
         [Description("Localized field key 'shipping_credential_mx' for country Mexico.")]
         SHIPPING_CREDENTIAL_MX,
         ///<summary>
-        ///Localized field key 'tax_credential_mx' for country Mexico.
+        ///Localized field key &apos;tax_credential_mx&apos; for country Mexico.
         ///</summary>
         [Description("Localized field key 'tax_credential_mx' for country Mexico.")]
         TAX_CREDENTIAL_MX,
         ///<summary>
-        ///Localized field key 'tax_credential_type_mx' for country Mexico.
+        ///Localized field key &apos;tax_credential_type_mx&apos; for country Mexico.
         ///</summary>
         [Description("Localized field key 'tax_credential_type_mx' for country Mexico.")]
         TAX_CREDENTIAL_TYPE_MX,
         ///<summary>
-        ///Localized field key 'tax_credential_use_mx' for country Mexico.
+        ///Localized field key &apos;tax_credential_use_mx&apos; for country Mexico.
         ///</summary>
         [Description("Localized field key 'tax_credential_use_mx' for country Mexico.")]
         TAX_CREDENTIAL_USE_MX,
         ///<summary>
-        ///Localized field key 'tax_credential_py' for country Paraguay.
+        ///Localized field key &apos;tax_credential_py&apos; for country Paraguay.
         ///</summary>
         [Description("Localized field key 'tax_credential_py' for country Paraguay.")]
         TAX_CREDENTIAL_PY,
         ///<summary>
-        ///Localized field key 'shipping_credential_py' for country Paraguay.
+        ///Localized field key &apos;shipping_credential_py&apos; for country Paraguay.
         ///</summary>
         [Description("Localized field key 'shipping_credential_py' for country Paraguay.")]
         SHIPPING_CREDENTIAL_PY,
         ///<summary>
-        ///Localized field key 'tax_credential_pe' for country Peru.
+        ///Localized field key &apos;tax_credential_pe&apos; for country Peru.
         ///</summary>
         [Description("Localized field key 'tax_credential_pe' for country Peru.")]
         TAX_CREDENTIAL_PE,
         ///<summary>
-        ///Localized field key 'shipping_credential_pe' for country Peru.
+        ///Localized field key &apos;shipping_credential_pe&apos; for country Peru.
         ///</summary>
         [Description("Localized field key 'shipping_credential_pe' for country Peru.")]
         SHIPPING_CREDENTIAL_PE,
         ///<summary>
-        ///Localized field key 'tax_credential_pt' for country Portugal.
+        ///Localized field key &apos;tax_credential_pt&apos; for country Portugal.
         ///</summary>
         [Description("Localized field key 'tax_credential_pt' for country Portugal.")]
         TAX_CREDENTIAL_PT,
         ///<summary>
-        ///Localized field key 'shipping_credential_pt' for country Portugal.
+        ///Localized field key &apos;shipping_credential_pt&apos; for country Portugal.
         ///</summary>
         [Description("Localized field key 'shipping_credential_pt' for country Portugal.")]
         SHIPPING_CREDENTIAL_PT,
         ///<summary>
-        ///Localized field key 'shipping_credential_kr' for country South Korea.
+        ///Localized field key &apos;shipping_credential_kr&apos; for country South Korea.
         ///</summary>
         [Description("Localized field key 'shipping_credential_kr' for country South Korea.")]
         SHIPPING_CREDENTIAL_KR,
         ///<summary>
-        ///Localized field key 'tax_credential_es' for country Spain.
+        ///Localized field key &apos;tax_credential_es&apos; for country Spain.
         ///</summary>
         [Description("Localized field key 'tax_credential_es' for country Spain.")]
         TAX_CREDENTIAL_ES,
         ///<summary>
-        ///Localized field key 'shipping_credential_es' for country Spain.
+        ///Localized field key &apos;shipping_credential_es&apos; for country Spain.
         ///</summary>
         [Description("Localized field key 'shipping_credential_es' for country Spain.")]
         SHIPPING_CREDENTIAL_ES,
         ///<summary>
-        ///Localized field key 'shipping_credential_tw' for country Taiwan.
+        ///Localized field key &apos;shipping_credential_tw&apos; for country Taiwan.
         ///</summary>
         [Description("Localized field key 'shipping_credential_tw' for country Taiwan.")]
         SHIPPING_CREDENTIAL_TW,
         ///<summary>
-        ///Localized field key 'tax_credential_tr' for country Turkey.
+        ///Localized field key &apos;tax_credential_tr&apos; for country Turkey.
         ///</summary>
         [Description("Localized field key 'tax_credential_tr' for country Turkey.")]
         TAX_CREDENTIAL_TR,
         ///<summary>
-        ///Localized field key 'shipping_credential_tr' for country Turkey.
+        ///Localized field key &apos;shipping_credential_tr&apos; for country Turkey.
         ///</summary>
         [Description("Localized field key 'shipping_credential_tr' for country Turkey.")]
         SHIPPING_CREDENTIAL_TR,
@@ -44974,7 +44974,7 @@ namespace Shopify.Types
         ///<summary>
         ///Whether the location can be reactivated. If `false`, then trying to activate the location with the
         ///[`LocationActivate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/locationActivate)
-        ///mutation will return an error that describes why the location can't be activated.
+        ///mutation will return an error that describes why the location can&apos;t be activated.
         ///</summary>
         [Description("Whether the location can be reactivated. If `false`, then trying to activate the location with the\n[`LocationActivate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/locationActivate)\nmutation will return an error that describes why the location can't be activated.")]
         [NonNull]
@@ -45005,14 +45005,14 @@ namespace Shopify.Types
         ///Whether this location can be deactivated. If `true`, then the location can be deactivated by calling the
         ///[`LocationDeactivate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/locationDeactivate)
         ///mutation. If `false`, then calling the mutation to deactivate it will return an error that describes why the
-        ///location can't be deactivated.
+        ///location can&apos;t be deactivated.
         ///</summary>
         [Description("Whether this location can be deactivated. If `true`, then the location can be deactivated by calling the\n[`LocationDeactivate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/locationDeactivate)\nmutation. If `false`, then calling the mutation to deactivate it will return an error that describes why the\nlocation can't be deactivated.")]
         [NonNull]
         public bool? deactivatable { get; set; }
 
         ///<summary>
-        ///The date and time ([ISO 8601 format](http://en.wikipedia.org/wiki/ISO_8601)) that the location was deactivated at. For example, 3:30 pm on September 7, 2019 in the time zone of UTC (Universal Time Coordinated) is represented as `"2019-09-07T15:50:00Z`".
+        ///The date and time ([ISO 8601 format](http://en.wikipedia.org/wiki/ISO_8601)) that the location was deactivated at. For example, 3:30 pm on September 7, 2019 in the time zone of UTC (Universal Time Coordinated) is represented as `&quot;2019-09-07T15:50:00Z`&quot;.
         ///</summary>
         [Description("The date and time ([ISO 8601 format](http://en.wikipedia.org/wiki/ISO_8601)) that the location was deactivated at. For example, 3:30 pm on September 7, 2019 in the time zone of UTC (Universal Time Coordinated) is represented as `\"2019-09-07T15:50:00Z`\".")]
         public string? deactivatedAt { get; set; }
@@ -45111,7 +45111,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -45353,12 +45353,12 @@ namespace Shopify.Types
         [Description("Unstructured reserved namespace.")]
         UNSTRUCTURED_RESERVED_NAMESPACE,
         ///<summary>
-        ///Owner type can't be used in this mutation.
+        ///Owner type can&apos;t be used in this mutation.
         ///</summary>
         [Description("Owner type can't be used in this mutation.")]
         DISALLOWED_OWNER_TYPE,
         ///<summary>
-        ///The input value isn't included in the list.
+        ///The input value isn&apos;t included in the list.
         ///</summary>
         [Description("The input value isn't included in the list.")]
         INCLUSION,
@@ -45491,7 +45491,7 @@ namespace Shopify.Types
     public class LocationConnection : GraphQLObject<LocationConnection>, IConnectionWithNodesAndEdges<LocationEdge, Location>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -45838,7 +45838,7 @@ namespace Shopify.Types
         [Description("The input value is blank.")]
         BLANK,
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -45893,12 +45893,12 @@ namespace Shopify.Types
         [Description("Unstructured reserved namespace.")]
         UNSTRUCTURED_RESERVED_NAMESPACE,
         ///<summary>
-        ///Owner type can't be used in this mutation.
+        ///Owner type can&apos;t be used in this mutation.
         ///</summary>
         [Description("Owner type can't be used in this mutation.")]
         DISALLOWED_OWNER_TYPE,
         ///<summary>
-        ///The input value isn't included in the list.
+        ///The input value isn&apos;t included in the list.
         ///</summary>
         [Description("The input value isn't included in the list.")]
         INCLUSION,
@@ -46005,7 +46005,7 @@ namespace Shopify.Types
         NAME,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -46103,7 +46103,7 @@ namespace Shopify.Types
     ///<summary>
     ///Represents a customer mailing address.
     ///
-    ///For example, a customer's default address and an order's billing address are both mailling addresses.
+    ///For example, a customer&apos;s default address and an order&apos;s billing address are both mailling addresses.
     ///</summary>
     [Description("Represents a customer mailing address.\n\nFor example, a customer's default address and an order's billing address are both mailling addresses.")]
     public class MailingAddress : GraphQLObject<MailingAddress>, INode
@@ -46127,7 +46127,7 @@ namespace Shopify.Types
         public string? city { get; set; }
 
         ///<summary>
-        ///The name of the customer's company or organization.
+        ///The name of the customer&apos;s company or organization.
         ///</summary>
         [Description("The name of the customer's company or organization.")]
         public string? company { get; set; }
@@ -46240,7 +46240,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The validation status that is leveraged by the address validation feature in the Shopify Admin.
-        ///See ["Validating addresses in your Shopify admin"](https://help.shopify.com/manual/fulfillment/managing-orders/validating-order-address) for more details.
+        ///See [&quot;Validating addresses in your Shopify admin&quot;](https://help.shopify.com/manual/fulfillment/managing-orders/validating-order-address) for more details.
         ///</summary>
         [Description("The validation status that is leveraged by the address validation feature in the Shopify Admin.\nSee [\"Validating addresses in your Shopify admin\"](https://help.shopify.com/manual/fulfillment/managing-orders/validating-order-address) for more details.")]
         public string? validationResultSummary { get; set; }
@@ -46259,7 +46259,7 @@ namespace Shopify.Types
     public class MailingAddressConnection : GraphQLObject<MailingAddressConnection>, IConnectionWithNodesAndEdges<MailingAddressEdge, MailingAddress>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -46334,13 +46334,13 @@ namespace Shopify.Types
     ///<summary>
     ///Manual discount applications capture the intentions of a discount that was manually created for an order.
     ///
-    ///Discount applications don't represent the actual final amount discounted on a line (line item or shipping line). The actual amount discounted on a line is represented by the [DiscountAllocation](https://shopify.dev/api/admin-graphql/latest/objects/discountallocation) object.
+    ///Discount applications don&apos;t represent the actual final amount discounted on a line (line item or shipping line). The actual amount discounted on a line is represented by the [DiscountAllocation](https://shopify.dev/api/admin-graphql/latest/objects/discountallocation) object.
     ///</summary>
     [Description("Manual discount applications capture the intentions of a discount that was manually created for an order.\n\nDiscount applications don't represent the actual final amount discounted on a line (line item or shipping line). The actual amount discounted on a line is represented by the [DiscountAllocation](https://shopify.dev/api/admin-graphql/latest/objects/discountallocation) object.")]
     public class ManualDiscountApplication : GraphQLObject<ManualDiscountApplication>, IDiscountApplication
     {
         ///<summary>
-        ///The method by which the discount's value is applied to its entitled items.
+        ///The method by which the discount&apos;s value is applied to its entitled items.
         ///</summary>
         [Description("The method by which the discount's value is applied to its entitled items.")]
         [NonNull]
@@ -46434,7 +46434,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///Whether the market is enabled to receive visitors and sales. **Note**: Regions in inactive
-        ///markets can't be selected on the storefront or in checkout.
+        ///markets can&apos;t be selected on the storefront or in checkout.
         ///</summary>
         [Description("Whether the market is enabled to receive visitors and sales. **Note**: Regions in inactive\nmarkets can't be selected on the storefront or in checkout.")]
         [Obsolete("Use `status` instead.")]
@@ -46457,7 +46457,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -46536,10 +46536,10 @@ namespace Shopify.Types
         ///<summary>
         ///The market’s web presence, which defines its SEO strategy. This can be a different domain,
         ///subdomain, or subfolders of the primary domain. Each web presence comprises one or more
-        ///language variants. If a market doesn't have its own web presence, then the market is accessible on the
-        ///primary market's domains using [country
+        ///language variants. If a market doesn&apos;t have its own web presence, then the market is accessible on the
+        ///primary market&apos;s domains using [country
         ///selectors](https://shopify.dev/themes/internationalization/multiple-currencies-languages#the-country-selector).
-        ///If it's the primary market and it has multiple web presences, then this field will return the primary domain web presence.
+        ///If it&apos;s the primary market and it has multiple web presences, then this field will return the primary domain web presence.
         ///</summary>
         [Description("The market’s web presence, which defines its SEO strategy. This can be a different domain,\nsubdomain, or subfolders of the primary domain. Each web presence comprises one or more\nlanguage variants. If a market doesn't have its own web presence, then the market is accessible on the\nprimary market's domains using [country\nselectors](https://shopify.dev/themes/internationalization/multiple-currencies-languages#the-country-selector).\nIf it's the primary market and it has multiple web presences, then this field will return the primary domain web presence.")]
         [Obsolete("Use `webPresences` instead.")]
@@ -46548,8 +46548,8 @@ namespace Shopify.Types
         ///<summary>
         ///The market’s web presences, which defines its SEO strategy. This can be a different domain,
         ///subdomain, or subfolders of the primary domain. Each web presence comprises one or more
-        ///language variants. If a market doesn't have any web presences, then the market is accessible on the
-        ///primary market's domains using [country
+        ///language variants. If a market doesn&apos;t have any web presences, then the market is accessible on the
+        ///primary market&apos;s domains using [country
         ///selectors](https://shopify.dev/themes/internationalization/multiple-currencies-languages#the-country-selector).
         ///</summary>
         [Description("The market’s web presences, which defines its SEO strategy. This can be a different domain,\nsubdomain, or subfolders of the primary domain. Each web presence comprises one or more\nlanguage variants. If a market doesn't have any web presences, then the market is accessible on the\nprimary market's domains using [country\nselectors](https://shopify.dev/themes/internationalization/multiple-currencies-languages#the-country-selector).")]
@@ -46597,7 +46597,7 @@ namespace Shopify.Types
         public PriceList? priceList { get; set; }
 
         ///<summary>
-        ///A group of products and collections that's published to a catalog.
+        ///A group of products and collections that&apos;s published to a catalog.
         ///</summary>
         [Description("A group of products and collections that's published to a catalog.")]
         public Publication? publication { get; set; }
@@ -46624,7 +46624,7 @@ namespace Shopify.Types
     public class MarketCatalogConnection : GraphQLObject<MarketCatalogConnection>, IConnectionWithNodesAndEdges<MarketCatalogEdge, MarketCatalog>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -46697,7 +46697,7 @@ namespace Shopify.Types
     public enum MarketConditionType
     {
         ///<summary>
-        ///The condition checks the visitor's region.
+        ///The condition checks the visitor&apos;s region.
         ///</summary>
         [Description("The condition checks the visitor's region.")]
         REGION,
@@ -46759,7 +46759,7 @@ namespace Shopify.Types
     public class MarketConnection : GraphQLObject<MarketConnection>, IConnectionWithNodesAndEdges<MarketEdge, Market>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -46801,13 +46801,13 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A market's currency settings.
+    ///A market&apos;s currency settings.
     ///</summary>
     [Description("A market's currency settings.")]
     public class MarketCurrencySettings : GraphQLObject<MarketCurrencySettings>
     {
         ///<summary>
-        ///The currency which this market's customers must use if local currencies are disabled.
+        ///The currency which this market&apos;s customers must use if local currencies are disabled.
         ///</summary>
         [Description("The currency which this market's customers must use if local currencies are disabled.")]
         [NonNull]
@@ -46817,7 +46817,7 @@ namespace Shopify.Types
         ///Whether or not local currencies are enabled. If enabled, then prices will
         ///be converted to give each customer the best experience based on their
         ///region. If disabled, then all customers in this market will see prices
-        ///in the market's base currency.
+        ///in the market&apos;s base currency.
         ///</summary>
         [Description("Whether or not local currencies are enabled. If enabled, then prices will\nbe converted to give each customer the best experience based on their\nregion. If disabled, then all customers in this market will see prices\nin the market's base currency.")]
         [NonNull]
@@ -46878,7 +46878,7 @@ namespace Shopify.Types
     public enum MarketCurrencySettingsUserErrorCode
     {
         ///<summary>
-        ///The specified market wasn't found.
+        ///The specified market wasn&apos;t found.
         ///</summary>
         [Description("The specified market wasn't found.")]
         MARKET_NOT_FOUND,
@@ -46893,12 +46893,12 @@ namespace Shopify.Types
         [Description("This action is restricted if unified markets is enabled.")]
         UNIFIED_MARKETS_ENABLED,
         ///<summary>
-        ///The shop's payment gateway does not support enabling more than one currency.
+        ///The shop&apos;s payment gateway does not support enabling more than one currency.
         ///</summary>
         [Description("The shop's payment gateway does not support enabling more than one currency.")]
         MULTIPLE_CURRENCIES_NOT_SUPPORTED,
         ///<summary>
-        ///Can't enable or disable local currencies on a single country market.
+        ///Can&apos;t enable or disable local currencies on a single country market.
         ///</summary>
         [Description("Can't enable or disable local currencies on a single country market.")]
         NO_LOCAL_CURRENCIES_ON_SINGLE_COUNTRY_MARKET,
@@ -46967,7 +46967,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The market localizable content of a resource's field.
+    ///The market localizable content of a resource&apos;s field.
     ///</summary>
     [Description("The market localizable content of a resource's field.")]
     public class MarketLocalizableContent : GraphQLObject<MarketLocalizableContent>
@@ -46979,7 +46979,7 @@ namespace Shopify.Types
         public string? digest { get; set; }
 
         ///<summary>
-        ///The resource field that's being localized.
+        ///The resource field that&apos;s being localized.
         ///</summary>
         [Description("The resource field that's being localized.")]
         [NonNull]
@@ -47027,7 +47027,7 @@ namespace Shopify.Types
     public class MarketLocalizableResourceConnection : GraphQLObject<MarketLocalizableResourceConnection>, IConnectionWithNodesAndEdges<MarketLocalizableResourceEdge, MarketLocalizableResource>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -47225,7 +47225,7 @@ namespace Shopify.Types
     public class MarketRegionConnection : GraphQLObject<MarketRegionConnection>, IConnectionWithNodesAndEdges<MarketRegionEdge, IMarketRegion>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -47506,32 +47506,32 @@ namespace Shopify.Types
         [Description("The input value is blank.")]
         BLANK,
         ///<summary>
-        ///The input value isn't included in the list.
+        ///The input value isn&apos;t included in the list.
         ///</summary>
         [Description("The input value isn't included in the list.")]
         INCLUSION,
         ///<summary>
-        ///The market wasn't found.
+        ///The market wasn&apos;t found.
         ///</summary>
         [Description("The market wasn't found.")]
         MARKET_NOT_FOUND,
         ///<summary>
-        ///The market region wasn't found.
+        ///The market region wasn&apos;t found.
         ///</summary>
         [Description("The market region wasn't found.")]
         REGION_NOT_FOUND,
         ///<summary>
-        ///The market web presence wasn't found.
+        ///The market web presence wasn&apos;t found.
         ///</summary>
         [Description("The market web presence wasn't found.")]
         WEB_PRESENCE_NOT_FOUND,
         ///<summary>
-        ///Can't add regions to the primary market.
+        ///Can&apos;t add regions to the primary market.
         ///</summary>
         [Description("Can't add regions to the primary market.")]
         CANNOT_ADD_REGIONS_TO_PRIMARY_MARKET,
         ///<summary>
-        ///Can't delete the only region in a market.
+        ///Can&apos;t delete the only region in a market.
         ///</summary>
         [Description("Can't delete the only region in a market.")]
         CANNOT_DELETE_ONLY_REGION,
@@ -47541,7 +47541,7 @@ namespace Shopify.Types
         [Description("Exactly one input option is required.")]
         REQUIRES_EXACTLY_ONE_OPTION,
         ///<summary>
-        ///Can't delete the primary market.
+        ///Can&apos;t delete the primary market.
         ///</summary>
         [Description("Can't delete the primary market.")]
         CANNOT_DELETE_PRIMARY_MARKET,
@@ -47576,7 +47576,7 @@ namespace Shopify.Types
         [Description("No languages selected.")]
         NO_LANGUAGES,
         ///<summary>
-        ///Can't enable or disable local currencies on a single country market.
+        ///Can&apos;t enable or disable local currencies on a single country market.
         ///</summary>
         [Description("Can't enable or disable local currencies on a single country market.")]
         NO_LOCAL_CURRENCIES_ON_SINGLE_COUNTRY_MARKET,
@@ -47606,17 +47606,17 @@ namespace Shopify.Types
         [Description("Cannot add region-specific language.")]
         REGION_SPECIFIC_LANGUAGE,
         ///<summary>
-        ///Can't pass both `subfolderSuffix` and `domainId`.
+        ///Can&apos;t pass both `subfolderSuffix` and `domainId`.
         ///</summary>
         [Description("Can't pass both `subfolderSuffix` and `domainId`.")]
         CANNOT_HAVE_SUBFOLDER_AND_DOMAIN,
         ///<summary>
-        ///Can't add the web presence to the primary market.
+        ///Can&apos;t add the web presence to the primary market.
         ///</summary>
         [Description("Can't add the web presence to the primary market.")]
         CANNOT_ADD_WEB_PRESENCE_TO_PRIMARY_MARKET,
         ///<summary>
-        ///Can't add another web presence to the market.
+        ///Can&apos;t add another web presence to the market.
         ///</summary>
         [Description("Can't add another web presence to the market.")]
         MARKET_REACHED_WEB_PRESENCE_LIMIT,
@@ -47626,12 +47626,12 @@ namespace Shopify.Types
         [Description("Market and condition types are not compatible with each other.")]
         MARKET_NOT_COMPATIBLE_WITH_CONDITION_TYPES,
         ///<summary>
-        ///Can't have multiple subfolder web presences per market.
+        ///Can&apos;t have multiple subfolder web presences per market.
         ///</summary>
         [Description("Can't have multiple subfolder web presences per market.")]
         CANNOT_HAVE_MULTIPLE_SUBFOLDERS_PER_MARKET,
         ///<summary>
-        ///Can't have both subfolder and domain web presences.
+        ///Can&apos;t have both subfolder and domain web presences.
         ///</summary>
         [Description("Can't have both subfolder and domain web presences.")]
         CANNOT_HAVE_BOTH_SUBFOLDER_AND_DOMAIN_WEB_PRESENCES,
@@ -47646,42 +47646,42 @@ namespace Shopify.Types
         [Description("The primary market must use the primary domain.")]
         PRIMARY_MARKET_MUST_USE_PRIMARY_DOMAIN,
         ///<summary>
-        ///Can't delete the primary market's web presence.
+        ///Can&apos;t delete the primary market&apos;s web presence.
         ///</summary>
         [Description("Can't delete the primary market's web presence.")]
         CANNOT_DELETE_PRIMARY_MARKET_WEB_PRESENCE,
         ///<summary>
-        ///Can't have more than 50 markets.
+        ///Can&apos;t have more than 50 markets.
         ///</summary>
         [Description("Can't have more than 50 markets.")]
         SHOP_REACHED_MARKETS_LIMIT,
         ///<summary>
-        ///Can't disable the primary market.
+        ///Can&apos;t disable the primary market.
         ///</summary>
         [Description("Can't disable the primary market.")]
         CANNOT_DISABLE_PRIMARY_MARKET,
         ///<summary>
-        ///The language isn't published to the store.
+        ///The language isn&apos;t published to the store.
         ///</summary>
         [Description("The language isn't published to the store.")]
         UNPUBLISHED_LANGUAGE,
         ///<summary>
-        ///The language isn't enabled on the store.
+        ///The language isn&apos;t enabled on the store.
         ///</summary>
         [Description("The language isn't enabled on the store.")]
         DISABLED_LANGUAGE,
         ///<summary>
-        ///Can't set default locale to null.
+        ///Can&apos;t set default locale to null.
         ///</summary>
         [Description("Can't set default locale to null.")]
         CANNOT_SET_DEFAULT_LOCALE_TO_NULL,
         ///<summary>
-        ///Can't add unsupported country or region.
+        ///Can&apos;t add unsupported country or region.
         ///</summary>
         [Description("Can't add unsupported country or region.")]
         UNSUPPORTED_COUNTRY_REGION,
         ///<summary>
-        ///Can't add customer account domain to a market.
+        ///Can&apos;t add customer account domain to a market.
         ///</summary>
         [Description("Can't add customer account domain to a market.")]
         CANNOT_ADD_CUSTOMER_DOMAIN,
@@ -47711,7 +47711,7 @@ namespace Shopify.Types
         [Description("One or more customizations were not found.")]
         CUSTOMIZATIONS_NOT_FOUND,
         ///<summary>
-        ///Matching ALL or NONE isn't supported for this driver type.
+        ///Matching ALL or NONE isn&apos;t supported for this driver type.
         ///</summary>
         [Description("Matching ALL or NONE isn't supported for this driver type.")]
         WILDCARD_NOT_SUPPORTED,
@@ -47751,7 +47751,7 @@ namespace Shopify.Types
         [Description("The currency settings of the given market cannot be changed because the market manager has exclusive control of pricing.")]
         MANAGED_MARKET,
         ///<summary>
-        ///The shop's payment gateway does not support enabling more than one currency.
+        ///The shop&apos;s payment gateway does not support enabling more than one currency.
         ///</summary>
         [Description("The shop's payment gateway does not support enabling more than one currency.")]
         MULTIPLE_CURRENCIES_NOT_SUPPORTED,
@@ -47771,7 +47771,7 @@ namespace Shopify.Types
         [Description("Can’t delete, disable, or change the type of the last region market.")]
         MUST_HAVE_AT_LEAST_ONE_ACTIVE_REGION_MARKET,
         ///<summary>
-        ///The user doesn't have permission access to create or edit markets.
+        ///The user doesn&apos;t have permission access to create or edit markets.
         ///</summary>
         [Description("The user doesn't have permission access to create or edit markets.")]
         USER_LACKS_PERMISSION,
@@ -47786,7 +47786,7 @@ namespace Shopify.Types
         [Description("Unified markets are not enabled.")]
         UNIFIED_MARKETS_NOT_ENABLED,
         ///<summary>
-        ///Can't add web presence to the another market.
+        ///Can&apos;t add web presence to the another market.
         ///</summary>
         [Description("Can't add web presence to the another market.")]
         WEB_PRESENCE_REACHED_MARKETS_LIMIT,
@@ -47796,7 +47796,7 @@ namespace Shopify.Types
         [Description("Catalog condition types must be the same for all conditions on a catalog.")]
         CATALOG_CONDITION_TYPES_MUST_BE_THE_SAME,
         ///<summary>
-        ///A direct connection catalog can't be attached to a market.
+        ///A direct connection catalog can&apos;t be attached to a market.
         ///</summary>
         [Description("A direct connection catalog can't be attached to a market.")]
         MARKET_CANT_HAVE_DIRECT_CONNECTION_CATALOG,
@@ -47836,7 +47836,7 @@ namespace Shopify.Types
         [Description("Location match all is only valid with one non-match all region.")]
         LOCATION_MATCH_ALL_REQUIRES_ONE_SPECIFIC_REGION,
         ///<summary>
-        ///A location's country does not match the region's country.
+        ///A location&apos;s country does not match the region&apos;s country.
         ///</summary>
         [Description("A location's country does not match the region's country.")]
         LOCATION_REGION_COUNTRY_MISMATCH,
@@ -47962,7 +47962,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The web presence’s domain.
-        ///This field will be null if `subfolderSuffix` isn't null.
+        ///This field will be null if `subfolderSuffix` isn&apos;t null.
         ///</summary>
         [Description("The web presence’s domain.\nThis field will be null if `subfolderSuffix` isn't null.")]
         public Domain? domain { get; set; }
@@ -47975,7 +47975,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///The associated market. This can be null for a web presence that isn't associated with a market.
+        ///The associated market. This can be null for a web presence that isn&apos;t associated with a market.
         ///</summary>
         [Description("The associated market. This can be null for a web presence that isn't associated with a market.")]
         [Obsolete("Use `markets` instead.")]
@@ -47995,7 +47995,7 @@ namespace Shopify.Types
         public IEnumerable<MarketWebPresenceRootUrl>? rootUrls { get; set; }
 
         ///<summary>
-        ///The market-specific suffix of the subfolders defined by the web presence. Example: in `/en-us` the subfolder suffix is `us`. This field will be null if `domain` isn't null.
+        ///The market-specific suffix of the subfolders defined by the web presence. Example: in `/en-us` the subfolder suffix is `us`. This field will be null if `domain` isn&apos;t null.
         ///</summary>
         [Description("The market-specific suffix of the subfolders defined by the web presence. Example: in `/en-us` the subfolder suffix is `us`. This field will be null if `domain` isn't null.")]
         public string? subfolderSuffix { get; set; }
@@ -48008,7 +48008,7 @@ namespace Shopify.Types
     public class MarketWebPresenceConnection : GraphQLObject<MarketWebPresenceConnection>, IConnectionWithNodesAndEdges<MarketWebPresenceEdge, MarketWebPresence>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -48145,7 +48145,7 @@ namespace Shopify.Types
     public class MarketingActivitiesDeleteAllExternalPayload : GraphQLObject<MarketingActivitiesDeleteAllExternalPayload>
     {
         ///<summary>
-        ///The asynchronous job that performs the deletion. The status of the job may be used to determine when it's safe again to create new activities.
+        ///The asynchronous job that performs the deletion. The status of the job may be used to determine when it&apos;s safe again to create new activities.
         ///</summary>
         [Description("The asynchronous job that performs the deletion. The status of the job may be used to determine when it's safe again to create new activities.")]
         public Job? job { get; set; }
@@ -48284,14 +48284,14 @@ namespace Shopify.Types
         public string? status { get; set; }
 
         ///<summary>
-        ///The severity of the marketing activity's status.
+        ///The severity of the marketing activity&apos;s status.
         ///</summary>
         [Description("The severity of the marketing activity's status.")]
         [Obsolete("Use `statusBadgeTypeV2` instead.")]
         public string? statusBadgeType { get; set; }
 
         ///<summary>
-        ///The severity of the marketing activity's status.
+        ///The severity of the marketing activity&apos;s status.
         ///</summary>
         [Description("The severity of the marketing activity's status.")]
         public string? statusBadgeTypeV2 { get; set; }
@@ -48306,7 +48306,7 @@ namespace Shopify.Types
         ///<summary>
         ///The [date and time](
         ///          https://help.shopify.com/https://en.wikipedia.org/wiki/ISO_8601
-        ///          ) when the activity's status last changed.
+        ///          ) when the activity&apos;s status last changed.
         ///</summary>
         [Description("The [date and time](\n          https://help.shopify.com/https://en.wikipedia.org/wiki/ISO_8601\n          ) when the activity's status last changed.")]
         public DateTime? statusTransitionedAt { get; set; }
@@ -48325,7 +48325,7 @@ namespace Shopify.Types
         public string? targetStatus { get; set; }
 
         ///<summary>
-        ///The marketing activity's title, which is rendered on the marketing listing page.
+        ///The marketing activity&apos;s title, which is rendered on the marketing listing page.
         ///</summary>
         [Description("The marketing activity's title, which is rendered on the marketing listing page.")]
         [NonNull]
@@ -48360,7 +48360,7 @@ namespace Shopify.Types
     public class MarketingActivityConnection : GraphQLObject<MarketingActivityConnection>, IConnectionWithNodesAndEdges<MarketingActivityEdge, MarketingActivity>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -48565,7 +48565,7 @@ namespace Shopify.Types
         [Description("This marketing activity was deleted and it was triggered from outside of Shopify.")]
         DELETED_EXTERNALLY,
         ///<summary>
-        ///The marketing activity's status is unknown.
+        ///The marketing activity&apos;s status is unknown.
         ///</summary>
         [Description("The marketing activity's status is unknown.")]
         UNDEFINED,
@@ -48598,7 +48598,7 @@ namespace Shopify.Types
         [Description("A group of advertisement activities. Must be parented by a campaign activity.")]
         AD_GROUP,
         ///<summary>
-        ///A campaign activity. May contain either ad groups or ads as child activities. If childless, then the campaign activity should have tracking parameters assigned (URL or UTM) otherwise it won't appear in marketing reports.
+        ///A campaign activity. May contain either ad groups or ads as child activities. If childless, then the campaign activity should have tracking parameters assigned (URL or UTM) otherwise it won&apos;t appear in marketing reports.
         ///</summary>
         [Description("A campaign activity. May contain either ad groups or ads as child activities. If childless, then the campaign activity should have tracking parameters assigned (URL or UTM) otherwise it won't appear in marketing reports.")]
         CAMPAIGN,
@@ -48688,7 +48688,7 @@ namespace Shopify.Types
         [Description("This marketing activity is currently not running.")]
         PAUSED,
         ///<summary>
-        ///This marketing activity is pending creation on the app's marketing platform.
+        ///This marketing activity is pending creation on the app&apos;s marketing platform.
         ///</summary>
         [Description("This marketing activity is pending creation on the app's marketing platform.")]
         PENDING,
@@ -48698,7 +48698,7 @@ namespace Shopify.Types
         [Description("This marketing activity is scheduled to run.")]
         SCHEDULED,
         ///<summary>
-        ///The marketing activity's status is unknown.
+        ///The marketing activity&apos;s status is unknown.
         ///</summary>
         [Description("The marketing activity's status is unknown.")]
         UNDEFINED,
@@ -48906,7 +48906,7 @@ namespace Shopify.Types
         [Description("All currency codes provided in the input need to match.")]
         CURRENCY_CODE_MISMATCH_INPUT,
         ///<summary>
-        ///The currency codes provided need to match the referenced marketing activity's currency code.
+        ///The currency codes provided need to match the referenced marketing activity&apos;s currency code.
         ///</summary>
         [Description("The currency codes provided need to match the referenced marketing activity's currency code.")]
         MARKETING_ACTIVITY_CURRENCY_CODE_MISMATCH,
@@ -48996,12 +48996,12 @@ namespace Shopify.Types
         [Description("This activity has child activities and thus cannot be deleted. Child activities must be deleted before a parent activity.")]
         CANNOT_DELETE_ACTIVITY_WITH_CHILD_EVENTS,
         ///<summary>
-        ///The activity's tactic can not be updated to STOREFRONT_APP. This type of tactic can only be specified when creating a new activity.
+        ///The activity&apos;s tactic can not be updated to STOREFRONT_APP. This type of tactic can only be specified when creating a new activity.
         ///</summary>
         [Description("The activity's tactic can not be updated to STOREFRONT_APP. This type of tactic can only be specified when creating a new activity.")]
         CANNOT_UPDATE_TACTIC_TO_STOREFRONT_APP,
         ///<summary>
-        ///The activity's tactic can not be updated from STOREFRONT_APP.
+        ///The activity&apos;s tactic can not be updated from STOREFRONT_APP.
         ///</summary>
         [Description("The activity's tactic can not be updated from STOREFRONT_APP.")]
         CANNOT_UPDATE_TACTIC_IF_ORIGINALLY_STOREFRONT_APP,
@@ -49175,7 +49175,7 @@ namespace Shopify.Types
         public int? favoritesCount { get; set; }
 
         ///<summary>
-        ///The number of customers that have placed their first order. Doesn't include adjustments such as edits, exchanges, or returns.
+        ///The number of customers that have placed their first order. Doesn&apos;t include adjustments such as edits, exchanges, or returns.
         ///</summary>
         [Description("The number of customers that have placed their first order. Doesn't include adjustments such as edits, exchanges, or returns.")]
         public decimal? firstTimeCustomers { get; set; }
@@ -49187,7 +49187,7 @@ namespace Shopify.Types
         public int? impressionsCount { get; set; }
 
         ///<summary>
-        ///Specifies how the provided metrics have been aggregated. Cumulative metrics are aggregated from the first day of reporting up to and including `occuredOn`. Non-cumulative metrics are aggregated over the single day indicated in `occuredOn`. Cumulative metrics will monotonically increase in time as each record includes the previous day's values, and so on. Non-cumulative is strongly preferred, and support for cumulative metrics may be deprecated in the future.
+        ///Specifies how the provided metrics have been aggregated. Cumulative metrics are aggregated from the first day of reporting up to and including `occuredOn`. Non-cumulative metrics are aggregated over the single day indicated in `occuredOn`. Cumulative metrics will monotonically increase in time as each record includes the previous day&apos;s values, and so on. Non-cumulative is strongly preferred, and support for cumulative metrics may be deprecated in the future.
         ///</summary>
         [Description("Specifies how the provided metrics have been aggregated. Cumulative metrics are aggregated from the first day of reporting up to and including `occuredOn`. Non-cumulative metrics are aggregated over the single day indicated in `occuredOn`. Cumulative metrics will monotonically increase in time as each record includes the previous day's values, and so on. Non-cumulative is strongly preferred, and support for cumulative metrics may be deprecated in the future.")]
         [NonNull]
@@ -49200,7 +49200,7 @@ namespace Shopify.Types
         public MarketingActivity? marketingActivity { get; set; }
 
         ///<summary>
-        ///The calendar date (in the time zone offset specified by the utcOffset field) for which the metrics are being reported. For example, a shop in UTC-5 would set utcOffset="-05:00" and aggregate all engagements from 05:00:00Z up to 29:00:00Z (5am UTC next day) for each call.
+        ///The calendar date (in the time zone offset specified by the utcOffset field) for which the metrics are being reported. For example, a shop in UTC-5 would set utcOffset=&quot;-05:00&quot; and aggregate all engagements from 05:00:00Z up to 29:00:00Z (5am UTC next day) for each call.
         ///</summary>
         [Description("The calendar date (in the time zone offset specified by the utcOffset field) for which the metrics are being reported. For example, a shop in UTC-5 would set utcOffset=\"-05:00\" and aggregate all engagements from 05:00:00Z up to 29:00:00Z (5am UTC next day) for each call.")]
         [NonNull]
@@ -49213,7 +49213,7 @@ namespace Shopify.Types
         public decimal? orders { get; set; }
 
         ///<summary>
-        ///The number of returning customers that have placed an order. Doesn't include adjustments such as edits, exchanges, or returns.
+        ///The number of returning customers that have placed an order. Doesn&apos;t include adjustments such as edits, exchanges, or returns.
         ///</summary>
         [Description("The number of returning customers that have placed an order. Doesn't include adjustments such as edits, exchanges, or returns.")]
         public decimal? returningCustomers { get; set; }
@@ -49237,7 +49237,7 @@ namespace Shopify.Types
         public int? sessionsCount { get; set; }
 
         ///<summary>
-        ///The total number of times marketing content was distributed or reposted to either one's own network of followers through a social media platform or other digital channels. For message-based platforms such as email or SMS, this represents the number of times marketing emails or messages were forwarded.
+        ///The total number of times marketing content was distributed or reposted to either one&apos;s own network of followers through a social media platform or other digital channels. For message-based platforms such as email or SMS, this represents the number of times marketing emails or messages were forwarded.
         ///</summary>
         [Description("The total number of times marketing content was distributed or reposted to either one's own network of followers through a social media platform or other digital channels. For message-based platforms such as email or SMS, this represents the number of times marketing emails or messages were forwarded.")]
         public int? sharesCount { get; set; }
@@ -49261,7 +49261,7 @@ namespace Shopify.Types
         public int? unsubscribesCount { get; set; }
 
         ///<summary>
-        ///The UTC offset for the time zone in which the metrics are being reported, in the format `"+HH:MM"` or `"-HH:MM"`. Used in combination with occurredOn when aggregating daily metrics. Must match the account settings for the shop to minimize eventual discrepancies in reporting.
+        ///The UTC offset for the time zone in which the metrics are being reported, in the format `&quot;+HH:MM&quot;` or `&quot;-HH:MM&quot;`. Used in combination with occurredOn when aggregating daily metrics. Must match the account settings for the shop to minimize eventual discrepancies in reporting.
         ///</summary>
         [Description("The UTC offset for the time zone in which the metrics are being reported, in the format `\"+HH:MM\"` or `\"-HH:MM\"`. Used in combination with occurredOn when aggregating daily metrics. Must match the account settings for the shop to minimize eventual discrepancies in reporting.")]
         [NonNull]
@@ -49315,7 +49315,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Represents actions that market a merchant's store or products.
+    ///Represents actions that market a merchant&apos;s store or products.
     ///</summary>
     [Description("Represents actions that market a merchant's store or products.")]
     public class MarketingEvent : GraphQLObject<MarketingEvent>, ILegacyInteroperability, INode
@@ -49455,7 +49455,7 @@ namespace Shopify.Types
     public class MarketingEventConnection : GraphQLObject<MarketingEventConnection>, IConnectionWithNodesAndEdges<MarketingEventEdge, MarketingEvent>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -49855,7 +49855,7 @@ namespace Shopify.Types
     public class MediaConnection : GraphQLObject<MediaConnection>, IConnectionWithNodesAndEdges<MediaEdge, IMedia>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -50078,7 +50078,7 @@ namespace Shopify.Types
         [Description("Model failed validation.")]
         MODEL3D_VALIDATION_ERROR,
         ///<summary>
-        ///Media could not be created because the model's thumbnail generation failed.
+        ///Media could not be created because the model&apos;s thumbnail generation failed.
         ///</summary>
         [Description("Media could not be created because the model's thumbnail generation failed.")]
         MODEL3D_THUMBNAIL_GENERATION_ERROR,
@@ -50088,7 +50088,7 @@ namespace Shopify.Types
         [Description("There was an issue while trying to generate a new thumbnail.")]
         MODEL3D_THUMBNAIL_REGENERATION_ERROR,
         ///<summary>
-        ///Media could not be created because the model can't be converted to USDZ format.
+        ///Media could not be created because the model can&apos;t be converted to USDZ format.
         ///</summary>
         [Description("Media could not be created because the model can't be converted to USDZ format.")]
         MODEL3D_GLB_TO_USDZ_CONVERSION_ERROR,
@@ -50118,7 +50118,7 @@ namespace Shopify.Types
         [Description("Media could not be created because the image has an invalid aspect ratio.")]
         INVALID_IMAGE_ASPECT_RATIO,
         ///<summary>
-        ///Media could not be created because the image's resolution exceeds the max limit.
+        ///Media could not be created because the image&apos;s resolution exceeds the max limit.
         ///</summary>
         [Description("Media could not be created because the image's resolution exceeds the max limit.")]
         INVALID_IMAGE_RESOLUTION,
@@ -50196,7 +50196,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The `MediaImage` object represents an image hosted on Shopify's
+    ///The `MediaImage` object represents an image hosted on Shopify&apos;s
     ///[content delivery network (CDN)](https://shopify.dev/docs/storefronts/themes/best-practices/performance/platform#shopify-cdn).
     ///Shopify CDN is a content system that serves as the primary way to store,
     ///manage, and deliver visual content for products, variants, and other resources across the Shopify platform.
@@ -50287,7 +50287,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -50675,7 +50675,7 @@ namespace Shopify.Types
     public class Menu : GraphQLObject<Menu>, IHasPublishedTranslations, INode
     {
         ///<summary>
-        ///The menu's handle.
+        ///The menu&apos;s handle.
         ///</summary>
         [Description("The menu's handle.")]
         [NonNull]
@@ -50689,7 +50689,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///Whether the menu is a default. The handle for default menus can't be updated and default menus can't be deleted.
+        ///Whether the menu is a default. The handle for default menus can&apos;t be updated and default menus can&apos;t be deleted.
         ///</summary>
         [Description("Whether the menu is a default. The handle for default menus can't be updated and default menus can't be deleted.")]
         [NonNull]
@@ -50703,7 +50703,7 @@ namespace Shopify.Types
         public IEnumerable<MenuItem>? items { get; set; }
 
         ///<summary>
-        ///The menu's title.
+        ///The menu&apos;s title.
         ///</summary>
         [Description("The menu's title.")]
         [NonNull]
@@ -50724,7 +50724,7 @@ namespace Shopify.Types
     public class MenuConnection : GraphQLObject<MenuConnection>, IConnectionWithNodesAndEdges<MenuEdge, Menu>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -50798,7 +50798,7 @@ namespace Shopify.Types
     public enum MenuCreateUserErrorCode
     {
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -50933,28 +50933,28 @@ namespace Shopify.Types
         public string? resourceId { get; set; }
 
         ///<summary>
-        ///The menu item's tags to filter a collection.
+        ///The menu item&apos;s tags to filter a collection.
         ///</summary>
         [Description("The menu item's tags to filter a collection.")]
         [NonNull]
         public IEnumerable<string>? tags { get; set; }
 
         ///<summary>
-        ///The menu item's title.
+        ///The menu item&apos;s title.
         ///</summary>
         [Description("The menu item's title.")]
         [NonNull]
         public string? title { get; set; }
 
         ///<summary>
-        ///The menu item's type.
+        ///The menu item&apos;s type.
         ///</summary>
         [Description("The menu item's type.")]
         [NonNull]
         public string? type { get; set; }
 
         ///<summary>
-        ///The menu item's url.
+        ///The menu item&apos;s url.
         ///</summary>
         [Description("The menu item's url.")]
         public string? url { get; set; }
@@ -51133,7 +51133,7 @@ namespace Shopify.Types
     public enum MenuUpdateUserErrorCode
     {
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -51152,7 +51152,7 @@ namespace Shopify.Types
 
     ///<summary>
     ///The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)
-    ///that's used to control how discounts can be combined.
+    ///that&apos;s used to control how discounts can be combined.
     ///</summary>
     [Description("The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)\nthat's used to control how discounts can be combined.")]
     public enum MerchandiseDiscountClass
@@ -51186,21 +51186,21 @@ namespace Shopify.Types
     public class MerchantApprovalSignals : GraphQLObject<MerchantApprovalSignals>
     {
         ///<summary>
-        ///Whether the shop's Shopify Payments account identity is verified. Returns `false` if the identity is unverified or if the shop doesn't have a Shopify Payments account.
+        ///Whether the shop&apos;s Shopify Payments account identity is verified. Returns `false` if the identity is unverified or if the shop doesn&apos;t have a Shopify Payments account.
         ///</summary>
         [Description("Whether the shop's Shopify Payments account identity is verified. Returns `false` if the identity is unverified or if the shop doesn't have a Shopify Payments account.")]
         [NonNull]
         public bool? identityVerified { get; set; }
 
         ///<summary>
-        ///Whether Shopify has pre-verified the merchant's business for onboarding to channel integration apps. Returns `false` if the shop isn't marked for verification.
+        ///Whether Shopify has pre-verified the merchant&apos;s business for onboarding to channel integration apps. Returns `false` if the shop isn&apos;t marked for verification.
         ///</summary>
         [Description("Whether Shopify has pre-verified the merchant's business for onboarding to channel integration apps. Returns `false` if the shop isn't marked for verification.")]
         [NonNull]
         public bool? verifiedByShopify { get; set; }
 
         ///<summary>
-        ///Which tier of the Shopify verification was determined for the merchant's business for onboarding to channel integration apps.
+        ///Which tier of the Shopify verification was determined for the merchant&apos;s business for onboarding to channel integration apps.
         ///</summary>
         [Description("Which tier of the Shopify verification was determined for the merchant's business for onboarding to channel integration apps.")]
         [NonNull]
@@ -51293,13 +51293,13 @@ namespace Shopify.Types
         public string? ownerType { get; set; }
 
         ///<summary>
-        ///Returns a reference object if the metafield definition's type is a resource reference.
+        ///Returns a reference object if the metafield definition&apos;s type is a resource reference.
         ///</summary>
         [Description("Returns a reference object if the metafield definition's type is a resource reference.")]
         public IMetafieldReference? reference { get; set; }
 
         ///<summary>
-        ///A list of reference objects if the metafield's type is a resource reference list.
+        ///A list of reference objects if the metafield&apos;s type is a resource reference list.
         ///</summary>
         [Description("A list of reference objects if the metafield's type is a resource reference list.")]
         public MetafieldReferenceConnection? references { get; set; }
@@ -51320,7 +51320,7 @@ namespace Shopify.Types
         public DateTime? updatedAt { get; set; }
 
         ///<summary>
-        ///The data stored in the metafield. Always stored as a string, regardless of the metafield's type.
+        ///The data stored in the metafield. Always stored as a string, regardless of the metafield&apos;s type.
         ///</summary>
         [Description("The data stored in the metafield. Always stored as a string, regardless of the metafield's type.")]
         [NonNull]
@@ -51328,7 +51328,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Access permissions for the definition's metafields.
+    ///Access permissions for the definition&apos;s metafields.
     ///</summary>
     [Description("Access permissions for the definition's metafields.")]
     public class MetafieldAccess : GraphQLObject<MetafieldAccess>
@@ -51500,7 +51500,7 @@ namespace Shopify.Types
         public bool? enabled { get; set; }
 
         ///<summary>
-        ///Determines the metafield definition's filter status for use in admin filtering.
+        ///Determines the metafield definition&apos;s filter status for use in admin filtering.
         ///</summary>
         [Description("Determines the metafield definition's filter status for use in admin filtering.")]
         [NonNull]
@@ -51556,7 +51556,7 @@ namespace Shopify.Types
     public class MetafieldConnection : GraphQLObject<MetafieldConnection>, IConnectionWithNodesAndEdges<MetafieldEdge, Metafield>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -51777,7 +51777,7 @@ namespace Shopify.Types
         [Description("The metafield definition cannot be used for admin filtering.")]
         NOT_FILTERABLE,
         ///<summary>
-        ///The metafield definition's metafields are currently being processed for admin filtering.
+        ///The metafield definition&apos;s metafields are currently being processed for admin filtering.
         ///</summary>
         [Description("The metafield definition's metafields are currently being processed for admin filtering.")]
         IN_PROGRESS,
@@ -51808,7 +51808,7 @@ namespace Shopify.Types
     public class MetafieldDefinitionConnection : GraphQLObject<MetafieldDefinitionConnection>, IConnectionWithNodesAndEdges<MetafieldDefinitionEdge, MetafieldDefinition>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -51880,7 +51880,7 @@ namespace Shopify.Types
     public class MetafieldDefinitionConstraintValueConnection : GraphQLObject<MetafieldDefinitionConstraintValueConnection>, IConnectionWithNodesAndEdges<MetafieldDefinitionConstraintValueEdge, MetafieldDefinitionConstraintValue>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -51976,7 +51976,7 @@ namespace Shopify.Types
         public string? code { get; set; }
 
         ///<summary>
-        ///The index of the array element that's causing the error.
+        ///The index of the array element that&apos;s causing the error.
         ///</summary>
         [Description("The index of the array element that's causing the error.")]
         public int? elementIndex { get; set; }
@@ -52007,7 +52007,7 @@ namespace Shopify.Types
         [Description("The input value is invalid.")]
         INVALID,
         ///<summary>
-        ///The input value isn't included in the list.
+        ///The input value isn&apos;t included in the list.
         ///</summary>
         [Description("The input value isn't included in the list.")]
         INCLUSION,
@@ -52250,7 +52250,7 @@ namespace Shopify.Types
         [Description("Definition is managed by app configuration and cannot be modified through the API.")]
         APP_CONFIG_MANAGED,
         ///<summary>
-        ///Owner type can't be used in this mutation.
+        ///Owner type can&apos;t be used in this mutation.
         ///</summary>
         [Description("Owner type can't be used in this mutation.")]
         DISALLOWED_OWNER_TYPE,
@@ -52396,7 +52396,7 @@ namespace Shopify.Types
         [Description("The metafield definition does not support pinning.")]
         UNSUPPORTED_PINNING,
         ///<summary>
-        ///Owner type can't be used in this mutation.
+        ///Owner type can&apos;t be used in this mutation.
         ///</summary>
         [Description("Owner type can't be used in this mutation.")]
         DISALLOWED_OWNER_TYPE,
@@ -52465,7 +52465,7 @@ namespace Shopify.Types
         PINNED_POSITION,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -52605,7 +52605,7 @@ namespace Shopify.Types
         [Description("The metafield definition was not found.")]
         NOT_FOUND,
         ///<summary>
-        ///The metafield definition isn't pinned.
+        ///The metafield definition isn&apos;t pinned.
         ///</summary>
         [Description("The metafield definition isn't pinned.")]
         NOT_PINNED,
@@ -52620,7 +52620,7 @@ namespace Shopify.Types
         [Description("Definition is managed by app configuration and cannot be modified through the API.")]
         APP_CONFIG_MANAGED,
         ///<summary>
-        ///Owner type can't be used in this mutation.
+        ///Owner type can&apos;t be used in this mutation.
         ///</summary>
         [Description("Owner type can't be used in this mutation.")]
         DISALLOWED_OWNER_TYPE,
@@ -52655,7 +52655,7 @@ namespace Shopify.Types
         public IEnumerable<MetafieldDefinitionUpdateUserError>? userErrors { get; set; }
 
         ///<summary>
-        ///The asynchronous job updating the metafield definition's validation_status.
+        ///The asynchronous job updating the metafield definition&apos;s validation_status.
         ///</summary>
         [Description("The asynchronous job updating the metafield definition's validation_status.")]
         public Job? validationJob { get; set; }
@@ -52674,7 +52674,7 @@ namespace Shopify.Types
         public string? code { get; set; }
 
         ///<summary>
-        ///The index of the array element that's causing the error.
+        ///The index of the array element that&apos;s causing the error.
         ///</summary>
         [Description("The index of the array element that's causing the error.")]
         public int? elementIndex { get; set; }
@@ -52715,7 +52715,7 @@ namespace Shopify.Types
         [Description("The input value is blank.")]
         BLANK,
         ///<summary>
-        ///The metafield definition wasn't found.
+        ///The metafield definition wasn&apos;t found.
         ///</summary>
         [Description("The metafield definition wasn't found.")]
         NOT_FOUND,
@@ -52775,7 +52775,7 @@ namespace Shopify.Types
         [Description("You cannot change the metaobject definition pointed to by a metaobject reference metafield definition.")]
         METAOBJECT_DEFINITION_CHANGED,
         ///<summary>
-        ///Owner type can't be used in this mutation.
+        ///Owner type can&apos;t be used in this mutation.
         ///</summary>
         [Description("Owner type can't be used in this mutation.")]
         DISALLOWED_OWNER_TYPE,
@@ -52882,17 +52882,17 @@ namespace Shopify.Types
     public enum MetafieldDefinitionValidationStatus
     {
         ///<summary>
-        ///All of this definition's metafields are valid.
+        ///All of this definition&apos;s metafields are valid.
         ///</summary>
         [Description("All of this definition's metafields are valid.")]
         ALL_VALID,
         ///<summary>
-        ///Asynchronous validation of this definition's metafields is in progress.
+        ///Asynchronous validation of this definition&apos;s metafields is in progress.
         ///</summary>
         [Description("Asynchronous validation of this definition's metafields is in progress.")]
         IN_PROGRESS,
         ///<summary>
-        ///Some of this definition's metafields are invalid.
+        ///Some of this definition&apos;s metafields are invalid.
         ///</summary>
         [Description("Some of this definition's metafields are invalid.")]
         SOME_INVALID,
@@ -52979,7 +52979,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Possible types of a metafield's owner resource.
+    ///Possible types of a metafield&apos;s owner resource.
     ///</summary>
     [Description("Possible types of a metafield's owner resource.")]
     public enum MetafieldOwnerType
@@ -53190,7 +53190,7 @@ namespace Shopify.Types
     public class MetafieldReferenceConnection : GraphQLObject<MetafieldReferenceConnection>, IConnectionWithNodesAndEdges<MetafieldReferenceEdge, IMetafieldReference>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -53342,7 +53342,7 @@ namespace Shopify.Types
     public class MetafieldRelationConnection : GraphQLObject<MetafieldRelationConnection>, IConnectionWithNodesAndEdges<MetafieldRelationEdge, MetafieldRelation>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -53506,7 +53506,7 @@ namespace Shopify.Types
     public class MetafieldsDeletePayload : GraphQLObject<MetafieldsDeletePayload>
     {
         ///<summary>
-        ///List of metafield identifiers that were deleted, null if the corresponding metafield isn't found.
+        ///List of metafield identifiers that were deleted, null if the corresponding metafield isn&apos;t found.
         ///</summary>
         [Description("List of metafield identifiers that were deleted, null if the corresponding metafield isn't found.")]
         public IEnumerable<MetafieldIdentifier>? deletedMetafields { get; set; }
@@ -53552,7 +53552,7 @@ namespace Shopify.Types
         public string? code { get; set; }
 
         ///<summary>
-        ///The index of the array element that's causing the error.
+        ///The index of the array element that&apos;s causing the error.
         ///</summary>
         [Description("The index of the array element that's causing the error.")]
         public int? elementIndex { get; set; }
@@ -53608,7 +53608,7 @@ namespace Shopify.Types
         [Description("ApiPermission metafields can only be created or updated by the app owner.")]
         APP_NOT_AUTHORIZED,
         ///<summary>
-        ///The input value isn't included in the list.
+        ///The input value isn&apos;t included in the list.
         ///</summary>
         [Description("The input value isn't included in the list.")]
         INCLUSION,
@@ -53783,7 +53783,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Access permissions for the definition's metaobjects.
+    ///Access permissions for the definition&apos;s metaobjects.
     ///</summary>
     [Description("Access permissions for the definition's metaobjects.")]
     public class MetaobjectAccess : GraphQLObject<MetaobjectAccess>
@@ -54121,7 +54121,7 @@ namespace Shopify.Types
     public class MetaobjectConnection : GraphQLObject<MetaobjectConnection>, IConnectionWithNodesAndEdges<MetaobjectEdge, Metaobject>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -54270,7 +54270,7 @@ namespace Shopify.Types
     public class MetaobjectDefinitionConnection : GraphQLObject<MetaobjectDefinitionConnection>, IConnectionWithNodesAndEdges<MetaobjectDefinitionEdge, MetaobjectDefinition>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -54473,7 +54473,7 @@ namespace Shopify.Types
 
     ///<summary>
     ///Defines a field for a MetaobjectDefinition with properties
-    ///such as the field's data type and validations.
+    ///such as the field&apos;s data type and validations.
     ///</summary>
     [Description("Defines a field for a MetaobjectDefinition with properties\nsuch as the field's data type and validations.")]
     public class MetaobjectFieldDefinition : GraphQLObject<MetaobjectFieldDefinition>
@@ -54678,7 +54678,7 @@ namespace Shopify.Types
         [Description("The input value is invalid.")]
         INVALID,
         ///<summary>
-        ///The input value isn't included in the list.
+        ///The input value isn&apos;t included in the list.
         ///</summary>
         [Description("The input value isn't included in the list.")]
         INCLUSION,
@@ -54748,7 +54748,7 @@ namespace Shopify.Types
         [Description("Missing required fields were found for this object.")]
         OBJECT_FIELD_REQUIRED,
         ///<summary>
-        ///The requested record couldn't be found.
+        ///The requested record couldn&apos;t be found.
         ///</summary>
         [Description("The requested record couldn't be found.")]
         RECORD_NOT_FOUND,
@@ -54907,8 +54907,8 @@ namespace Shopify.Types
     ///or [Android app link](https://developer.android.com/training/app-links/) verification endpoints for merchant Shopify iOS or Android apps.
     ///Shared web credentials let iOS users access a native app after logging into the respective website in Safari without re-entering
     ///their username and password. If a user changes their credentials in the app, then those changes are reflected in Safari.
-    ///You must use a custom domain to integrate shared web credentials with Shopify. With each platform's link system,
-    ///users can tap a link to a shop's website and get seamlessly redirected to a merchant's installed app without going
+    ///You must use a custom domain to integrate shared web credentials with Shopify. With each platform&apos;s link system,
+    ///users can tap a link to a shop&apos;s website and get seamlessly redirected to a merchant&apos;s installed app without going
     ///through a browser or manually selecting an app.
     ///
     ///For full configuration instructions on iOS shared web credentials,
@@ -54941,7 +54941,7 @@ namespace Shopify.Types
     public class MobilePlatformApplicationConnection : GraphQLObject<MobilePlatformApplicationConnection>, IConnectionWithNodesAndEdges<MobilePlatformApplicationEdge, IMobilePlatformApplication>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -55081,7 +55081,7 @@ namespace Shopify.Types
         [Description("The input value is invalid.")]
         INVALID,
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -55112,7 +55112,7 @@ namespace Shopify.Types
         public string? alt { get; set; }
 
         ///<summary>
-        ///The 3d model's bounding box information.
+        ///The 3d model&apos;s bounding box information.
         ///</summary>
         [Description("The 3d model's bounding box information.")]
         public Model3dBoundingBox? boundingBox { get; set; }
@@ -55139,7 +55139,7 @@ namespace Shopify.Types
         public string? fileStatus { get; set; }
 
         ///<summary>
-        ///The 3d model's filename.
+        ///The 3d model&apos;s filename.
         ///</summary>
         [Description("The 3d model's filename.")]
         [NonNull]
@@ -55174,7 +55174,7 @@ namespace Shopify.Types
         public IEnumerable<MediaWarning>? mediaWarnings { get; set; }
 
         ///<summary>
-        ///The 3d model's original source.
+        ///The 3d model&apos;s original source.
         ///</summary>
         [Description("The 3d model's original source.")]
         public Model3dSource? originalSource { get; set; }
@@ -55186,7 +55186,7 @@ namespace Shopify.Types
         public MediaPreviewImage? preview { get; set; }
 
         ///<summary>
-        ///The 3d model's sources.
+        ///The 3d model&apos;s sources.
         ///</summary>
         [Description("The 3d model's sources.")]
         [NonNull]
@@ -55234,28 +55234,28 @@ namespace Shopify.Types
     public class Model3dSource : GraphQLObject<Model3dSource>
     {
         ///<summary>
-        ///The 3d model source's filesize.
+        ///The 3d model source&apos;s filesize.
         ///</summary>
         [Description("The 3d model source's filesize.")]
         [NonNull]
         public int? filesize { get; set; }
 
         ///<summary>
-        ///The 3d model source's format.
+        ///The 3d model source&apos;s format.
         ///</summary>
         [Description("The 3d model source's format.")]
         [NonNull]
         public string? format { get; set; }
 
         ///<summary>
-        ///The 3d model source's MIME type.
+        ///The 3d model source&apos;s MIME type.
         ///</summary>
         [Description("The 3d model source's MIME type.")]
         [NonNull]
         public string? mimeType { get; set; }
 
         ///<summary>
-        ///The 3d model source's URL.
+        ///The 3d model source&apos;s URL.
         ///</summary>
         [Description("The 3d model source's URL.")]
         [NonNull]
@@ -55264,7 +55264,7 @@ namespace Shopify.Types
 
     ///<summary>
     ///A collection of monetary values in their respective currencies. Typically used in the context of multi-currency pricing and transactions,
-    ///when an amount in the shop's currency is converted to the customer's currency of choice (the presentment currency).
+    ///when an amount in the shop&apos;s currency is converted to the customer&apos;s currency of choice (the presentment currency).
     ///</summary>
     [Description("A collection of monetary values in their respective currencies. Typically used in the context of multi-currency pricing and transactions,\nwhen an amount in the shop's currency is converted to the customer's currency of choice (the presentment currency).")]
     public class MoneyBag : GraphQLObject<MoneyBag>
@@ -55309,7 +55309,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The schema's entry point for all mutation operations.
+    ///The schema&apos;s entry point for all mutation operations.
     ///</summary>
     [Description("The schema's entry point for all mutation operations.")]
     public class Mutation : GraphQLObject<Mutation>, IMutationRoot
@@ -55329,8 +55329,8 @@ namespace Shopify.Types
 
         ///<summary>
         ///Charges a shop for features or services one time.
-        ///This type of charge is recommended for apps that aren't billed on a recurring basis.
-        ///Test and demo shops aren't charged.
+        ///This type of charge is recommended for apps that aren&apos;t billed on a recurring basis.
+        ///Test and demo shops aren&apos;t charged.
         ///</summary>
         [Description("Charges a shop for features or services one time.\nThis type of charge is recommended for apps that aren't billed on a recurring basis.\nTest and demo shops aren't charged.")]
         public AppPurchaseOneTimeCreatePayload? appPurchaseOneTimeCreate { get; set; }
@@ -55504,8 +55504,8 @@ namespace Shopify.Types
         ///Updates the checkout branding settings for a
         ///[checkout profile](https://shopify.dev/api/admin-graphql/unstable/queries/checkoutProfile).
         ///
-        ///If the settings don't exist, then new settings are created. The checkout branding settings applied to a
-        ///published checkout profile will be immediately visible within the store's checkout. The checkout branding
+        ///If the settings don&apos;t exist, then new settings are created. The checkout branding settings applied to a
+        ///published checkout profile will be immediately visible within the store&apos;s checkout. The checkout branding
         ///settings applied to a draft checkout profile could be previewed within the admin checkout editor.
         ///
         ///To learn more about updating checkout branding settings, refer to the checkout branding
@@ -55545,8 +55545,8 @@ namespace Shopify.Types
         ///- Organize products by category, season, or promotion
         ///- Automate product grouping using rules (for example, by tag, type, or price)
         ///
-        ///> Note:
-        ///> The created collection is unpublished by default. To make it available to customers,
+        ///&gt; Note:
+        ///&gt; The created collection is unpublished by default. To make it available to customers,
         ///use the [`publishablePublish`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/publishablePublish)
         ///mutation after creation.
         ///
@@ -55604,7 +55604,7 @@ namespace Shopify.Types
         ///
         ///There are two types of collections with different update capabilities:
         ///
-        ///- **[Custom (manual) collections](https://help.shopify.com/manual/products/collections/manual-shopify-collection)**: You can update collection properties, but rule sets can't be modified since products are manually selected.
+        ///- **[Custom (manual) collections](https://help.shopify.com/manual/products/collections/manual-shopify-collection)**: You can update collection properties, but rule sets can&apos;t be modified since products are manually selected.
         ///- **[Smart (automated) collections](https://help.shopify.com/manual/products/collections/automated-collections)**: You can update both collection properties and the rules that automatically determine which products are included.
         ///When updating [rule sets](https://shopify.dev/docs/api/admin-graphql/latest/objects/CollectionRuleConditions) for smart collections, the operation might be processed asynchronously. In these cases, the mutation returns a [`job`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Job) object that you can use to track the progress of the update.
         ///
@@ -55875,21 +55875,21 @@ namespace Shopify.Types
         public CustomerAddressCreatePayload? customerAddressCreate { get; set; }
 
         ///<summary>
-        ///Deletes a customer's address.
+        ///Deletes a customer&apos;s address.
         ///</summary>
         [Description("Deletes a customer's address.")]
         public CustomerAddressDeletePayload? customerAddressDelete { get; set; }
 
         ///<summary>
-        ///Update a customer's address information.
+        ///Update a customer&apos;s address information.
         ///</summary>
         [Description("Update a customer's address information.")]
         public CustomerAddressUpdatePayload? customerAddressUpdate { get; set; }
 
         ///<summary>
-        ///Cancels a pending erasure of a customer's data. Read more [here](https://help.shopify.com/manual/privacy-and-security/privacy/processing-customer-data-requests#cancel-customer-data-erasure).
+        ///Cancels a pending erasure of a customer&apos;s data. Read more [here](https://help.shopify.com/manual/privacy-and-security/privacy/processing-customer-data-requests#cancel-customer-data-erasure).
         ///
-        ///To request an erasure of a customer's data use the [customerRequestDataErasure mutation](https://shopify.dev/api/admin-graphql/unstable/mutations/customerRequestDataErasure).
+        ///To request an erasure of a customer&apos;s data use the [customerRequestDataErasure mutation](https://shopify.dev/api/admin-graphql/unstable/mutations/customerRequestDataErasure).
         ///</summary>
         [Description("Cancels a pending erasure of a customer's data. Read more [here](https://help.shopify.com/manual/privacy-and-security/privacy/processing-customer-data-requests#cancel-customer-data-erasure).\n\nTo request an erasure of a customer's data use the [customerRequestDataErasure mutation](https://shopify.dev/api/admin-graphql/unstable/mutations/customerRequestDataErasure).")]
         public CustomerCancelDataErasurePayload? customerCancelDataErasure { get; set; }
@@ -55907,7 +55907,7 @@ namespace Shopify.Types
         public CustomerDeletePayload? customerDelete { get; set; }
 
         ///<summary>
-        ///Update a customer's email marketing information information.
+        ///Update a customer&apos;s email marketing information information.
         ///</summary>
         [Description("Update a customer's email marketing information information.")]
         public CustomerEmailMarketingConsentUpdatePayload? customerEmailMarketingConsentUpdate { get; set; }
@@ -55983,7 +55983,7 @@ namespace Shopify.Types
         public CustomerPaymentMethodRemoteCreatePayload? customerPaymentMethodRemoteCreate { get; set; }
 
         ///<summary>
-        ///Revokes a customer's payment method.
+        ///Revokes a customer&apos;s payment method.
         ///</summary>
         [Description("Revokes a customer's payment method.")]
         public CustomerPaymentMethodRevokePayload? customerPaymentMethodRevoke { get; set; }
@@ -56007,7 +56007,7 @@ namespace Shopify.Types
         public CustomerReplaceTaxExemptionsPayload? customerReplaceTaxExemptions { get; set; }
 
         ///<summary>
-        ///Enqueues a request to erase customer's data. Read more [here](https://help.shopify.com/manual/privacy-and-security/privacy/processing-customer-data-requests#erase-customer-personal-data).
+        ///Enqueues a request to erase customer&apos;s data. Read more [here](https://help.shopify.com/manual/privacy-and-security/privacy/processing-customer-data-requests#erase-customer-personal-data).
         ///
         ///To cancel the data erasure request use the [customerCancelDataErasure mutation](https://shopify.dev/api/admin-graphql/unstable/mutations/customerCancelDataErasure).
         ///</summary>
@@ -56037,7 +56037,7 @@ namespace Shopify.Types
         ///To create a new customer omit the `identifier` argument.
         ///To update an existing customer, include the `identifier` with the id of the customer to update.
         ///
-        ///To perform an 'upsert' by unique key (email or phone)
+        ///To perform an &apos;upsert&apos; by unique key (email or phone)
         ///use the `identifier` argument to upsert a customer by a unique key (email or phone). If a customer
         ///with the specified unique key exists, it will be updated. If not, a new customer will be created with
         ///that unique key.
@@ -56056,19 +56056,19 @@ namespace Shopify.Types
         public CustomerSetPayload? customerSet { get; set; }
 
         ///<summary>
-        ///Update a customer's SMS marketing consent information.
+        ///Update a customer&apos;s SMS marketing consent information.
         ///</summary>
         [Description("Update a customer's SMS marketing consent information.")]
         public CustomerSmsMarketingConsentUpdatePayload? customerSmsMarketingConsentUpdate { get; set; }
 
         ///<summary>
-        ///Update a customer's attributes. As of API version 2022-10, apps using protected customer data must meet the protected customer data [requirements](https://shopify.dev/apps/store/data-protection/protected-customer-data).
+        ///Update a customer&apos;s attributes. As of API version 2022-10, apps using protected customer data must meet the protected customer data [requirements](https://shopify.dev/apps/store/data-protection/protected-customer-data).
         ///</summary>
         [Description("Update a customer's attributes. As of API version 2022-10, apps using protected customer data must meet the protected customer data [requirements](https://shopify.dev/apps/store/data-protection/protected-customer-data).")]
         public CustomerUpdatePayload? customerUpdate { get; set; }
 
         ///<summary>
-        ///Updates a customer's default address.
+        ///Updates a customer&apos;s default address.
         ///</summary>
         [Description("Updates a customer's default address.")]
         public CustomerUpdateDefaultAddressPayload? customerUpdateDefaultAddress { get; set; }
@@ -56167,18 +56167,18 @@ namespace Shopify.Types
         public DiscountAutomaticActivatePayload? discountAutomaticActivate { get; set; }
 
         ///<summary>
-        ///Creates an automatic discount that's managed by an app.
+        ///Creates an automatic discount that&apos;s managed by an app.
         ///Use this mutation with [Shopify Functions](https://shopify.dev/docs/apps/build/functions)
-        ///when you need advanced, custom, or dynamic discount capabilities that aren't supported by
-        ///[Shopify's native discount types](https://help.shopify.com/manual/discounts/discount-types).
+        ///when you need advanced, custom, or dynamic discount capabilities that aren&apos;t supported by
+        ///[Shopify&apos;s native discount types](https://help.shopify.com/manual/discounts/discount-types).
         ///
-        ///For example, use this mutation to create an automatic discount using an app's
-        ///"Volume" discount type that applies a percentage
+        ///For example, use this mutation to create an automatic discount using an app&apos;s
+        ///&quot;Volume&quot; discount type that applies a percentage
         ///off when customers purchase more than the minimum quantity of a product. For an example implementation,
         ///refer to [our tutorial](https://shopify.dev/docs/apps/build/discounts/build-discount-function).
         ///
-        ///> Note:
-        ///> To create code discounts with custom logic, use the
+        ///&gt; Note:
+        ///&gt; To create code discounts with custom logic, use the
         ///[`discountCodeAppCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountCodeAppCreate)
         ///mutation.
         ///</summary>
@@ -56186,18 +56186,18 @@ namespace Shopify.Types
         public DiscountAutomaticAppCreatePayload? discountAutomaticAppCreate { get; set; }
 
         ///<summary>
-        ///Updates an existing automatic discount that's managed by an app using
+        ///Updates an existing automatic discount that&apos;s managed by an app using
         ///[Shopify Functions](https://shopify.dev/docs/apps/build/functions).
         ///Use this mutation when you need advanced, custom, or
-        ///dynamic discount capabilities that aren't supported by
-        ///[Shopify's native discount types](https://help.shopify.com/manual/discounts/discount-types).
+        ///dynamic discount capabilities that aren&apos;t supported by
+        ///[Shopify&apos;s native discount types](https://help.shopify.com/manual/discounts/discount-types).
         ///
-        ///For example, use this mutation to update a new "Volume" discount type that applies a percentage
+        ///For example, use this mutation to update a new &quot;Volume&quot; discount type that applies a percentage
         ///off when customers purchase more than the minimum quantity of a product. For an example implementation,
         ///refer to [our tutorial](https://shopify.dev/docs/apps/build/discounts/build-discount-function).
         ///
-        ///> Note:
-        ///> To update code discounts with custom logic, use the
+        ///&gt; Note:
+        ///&gt; To update code discounts with custom logic, use the
         ///[`discountCodeAppUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountCodeAppUpdate)
         ///mutation instead.
         ///</summary>
@@ -56207,10 +56207,10 @@ namespace Shopify.Types
         ///<summary>
         ///Creates an
         ///[amount off discount](https://help.shopify.com/manual/discounts/discount-types/percentage-fixed-amount)
-        ///that's automatically applied on a cart and at checkout.
+        ///that&apos;s automatically applied on a cart and at checkout.
         ///
-        ///> Note:
-        ///> To create code discounts, use the
+        ///&gt; Note:
+        ///&gt; To create code discounts, use the
         ///[`discountCodeBasicCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountCodeBasicCreate)
         ///mutation.
         ///</summary>
@@ -56220,10 +56220,10 @@ namespace Shopify.Types
         ///<summary>
         ///Updates an existing
         ///[amount off discount](https://help.shopify.com/manual/discounts/discount-types/percentage-fixed-amount)
-        ///that's automatically applied on a cart and at checkout.
+        ///that&apos;s automatically applied on a cart and at checkout.
         ///
-        ///> Note:
-        ///> To update code discounts, use the
+        ///&gt; Note:
+        ///&gt; To update code discounts, use the
         ///[`discountCodeBasicUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountCodeBasicUpdate)
         ///mutation instead.
         ///</summary>
@@ -56241,10 +56241,10 @@ namespace Shopify.Types
         ///<summary>
         ///Creates a
         ///[buy X get Y discount (BXGY)](https://help.shopify.com/manual/discounts/discount-types/buy-x-get-y)
-        ///that's automatically applied on a cart and at checkout.
+        ///that&apos;s automatically applied on a cart and at checkout.
         ///
-        ///> Note:
-        ///> To create code discounts, use the
+        ///&gt; Note:
+        ///&gt; To create code discounts, use the
         ///[`discountCodeBxgyCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountCodeBxgyCreate)
         ///mutation.
         ///</summary>
@@ -56254,10 +56254,10 @@ namespace Shopify.Types
         ///<summary>
         ///Updates an existing
         ///[buy X get Y discount (BXGY)](https://help.shopify.com/manual/discounts/discount-types/buy-x-get-y)
-        ///that's automatically applied on a cart and at checkout.
+        ///that&apos;s automatically applied on a cart and at checkout.
         ///
-        ///> Note:
-        ///> To update code discounts, use the
+        ///&gt; Note:
+        ///&gt; To update code discounts, use the
         ///[`discountCodeBxgyUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountCodeBxgyUpdate)
         ///mutation instead.
         ///</summary>
@@ -56280,10 +56280,10 @@ namespace Shopify.Types
         ///<summary>
         ///Creates a
         ///[free shipping discount](https://help.shopify.com/manual/discounts/discount-types/free-shipping)
-        ///that's automatically applied on a cart and at checkout.
+        ///that&apos;s automatically applied on a cart and at checkout.
         ///
-        ///> Note:
-        ///> To create code discounts, use the
+        ///&gt; Note:
+        ///&gt; To create code discounts, use the
         ///[`discountCodeFreeShippingCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountCodeFreeShippingCreate)
         ///mutation.
         ///</summary>
@@ -56293,10 +56293,10 @@ namespace Shopify.Types
         ///<summary>
         ///Updates an existing
         ///[free shipping discount](https://help.shopify.com/manual/discounts/discount-types/free-shipping)
-        ///that's automatically applied on a cart and at checkout.
+        ///that&apos;s automatically applied on a cart and at checkout.
         ///
-        ///> Note:
-        ///> To update code discounts, use the
+        ///&gt; Note:
+        ///&gt; To update code discounts, use the
         ///[`discountCodeFreeShippingUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountCodeFreeShippingUpdate)
         ///mutation instead.
         ///</summary>
@@ -56310,40 +56310,40 @@ namespace Shopify.Types
         public DiscountCodeActivatePayload? discountCodeActivate { get; set; }
 
         ///<summary>
-        ///Creates a code discount. The discount type must be provided by an app extension that uses [Shopify Functions](https://shopify.dev/docs/apps/build/functions). Functions can implement [order](https://shopify.dev/docs/api/functions/reference/order-discounts), [product](https://shopify.dev/docs/api/functions/reference/product-discounts), or [shipping](https://shopify.dev/docs/api/functions/reference/shipping-discounts) discount functions. Use this mutation with Shopify Functions when you need custom logic beyond [Shopify's native discount types](https://help.shopify.com/manual/discounts/discount-types).
+        ///Creates a code discount. The discount type must be provided by an app extension that uses [Shopify Functions](https://shopify.dev/docs/apps/build/functions). Functions can implement [order](https://shopify.dev/docs/api/functions/reference/order-discounts), [product](https://shopify.dev/docs/api/functions/reference/product-discounts), or [shipping](https://shopify.dev/docs/api/functions/reference/shipping-discounts) discount functions. Use this mutation with Shopify Functions when you need custom logic beyond [Shopify&apos;s native discount types](https://help.shopify.com/manual/discounts/discount-types).
         ///
-        ///For example, use this mutation to create a code discount using an app's "Volume" discount type that applies a percentage off when customers purchase more than the minimum quantity
+        ///For example, use this mutation to create a code discount using an app&apos;s &quot;Volume&quot; discount type that applies a percentage off when customers purchase more than the minimum quantity
         ///of a product. For an example implementation, refer to [our tutorial](https://shopify.dev/docs/apps/build/discounts/build-discount-function).
         ///
-        ///> Note:
-        ///> To create automatic discounts with custom logic, use [`discountAutomaticAppCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticAppCreate).
+        ///&gt; Note:
+        ///&gt; To create automatic discounts with custom logic, use [`discountAutomaticAppCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticAppCreate).
         ///</summary>
         [Description("Creates a code discount. The discount type must be provided by an app extension that uses [Shopify Functions](https://shopify.dev/docs/apps/build/functions). Functions can implement [order](https://shopify.dev/docs/api/functions/reference/order-discounts), [product](https://shopify.dev/docs/api/functions/reference/product-discounts), or [shipping](https://shopify.dev/docs/api/functions/reference/shipping-discounts) discount functions. Use this mutation with Shopify Functions when you need custom logic beyond [Shopify's native discount types](https://help.shopify.com/manual/discounts/discount-types).\n\nFor example, use this mutation to create a code discount using an app's \"Volume\" discount type that applies a percentage off when customers purchase more than the minimum quantity\nof a product. For an example implementation, refer to [our tutorial](https://shopify.dev/docs/apps/build/discounts/build-discount-function).\n\n> Note:\n> To create automatic discounts with custom logic, use [`discountAutomaticAppCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticAppCreate).")]
         public DiscountCodeAppCreatePayload? discountCodeAppCreate { get; set; }
 
         ///<summary>
-        ///Updates a code discount, where the discount type is provided by an app extension that uses [Shopify Functions](https://shopify.dev/docs/apps/build/functions). Use this mutation when you need advanced, custom, or dynamic discount capabilities that aren't supported by [Shopify's native discount types](https://help.shopify.com/manual/discounts/discount-types).
+        ///Updates a code discount, where the discount type is provided by an app extension that uses [Shopify Functions](https://shopify.dev/docs/apps/build/functions). Use this mutation when you need advanced, custom, or dynamic discount capabilities that aren&apos;t supported by [Shopify&apos;s native discount types](https://help.shopify.com/manual/discounts/discount-types).
         ///
-        ///> Note:
-        ///> To update automatic discounts, use [`discountAutomaticAppUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticAppUpdate).
+        ///&gt; Note:
+        ///&gt; To update automatic discounts, use [`discountAutomaticAppUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticAppUpdate).
         ///</summary>
         [Description("Updates a code discount, where the discount type is provided by an app extension that uses [Shopify Functions](https://shopify.dev/docs/apps/build/functions). Use this mutation when you need advanced, custom, or dynamic discount capabilities that aren't supported by [Shopify's native discount types](https://help.shopify.com/manual/discounts/discount-types).\n\n> Note:\n> To update automatic discounts, use [`discountAutomaticAppUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticAppUpdate).")]
         public DiscountCodeAppUpdatePayload? discountCodeAppUpdate { get; set; }
 
         ///<summary>
-        ///Creates an [amount off discount](https://help.shopify.com/manual/discounts/discount-types/percentage-fixed-amount) that's applied on a cart and at checkout when a customer enters a code. Amount off discounts can be a percentage off or a fixed amount off.
+        ///Creates an [amount off discount](https://help.shopify.com/manual/discounts/discount-types/percentage-fixed-amount) that&apos;s applied on a cart and at checkout when a customer enters a code. Amount off discounts can be a percentage off or a fixed amount off.
         ///
-        ///> Note:
-        ///> To create discounts that are automatically applied on a cart and at checkout, use the [`discountAutomaticBasicCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticBasicCreate) mutation.
+        ///&gt; Note:
+        ///&gt; To create discounts that are automatically applied on a cart and at checkout, use the [`discountAutomaticBasicCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticBasicCreate) mutation.
         ///</summary>
         [Description("Creates an [amount off discount](https://help.shopify.com/manual/discounts/discount-types/percentage-fixed-amount) that's applied on a cart and at checkout when a customer enters a code. Amount off discounts can be a percentage off or a fixed amount off.\n\n> Note:\n> To create discounts that are automatically applied on a cart and at checkout, use the [`discountAutomaticBasicCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticBasicCreate) mutation.")]
         public DiscountCodeBasicCreatePayload? discountCodeBasicCreate { get; set; }
 
         ///<summary>
-        ///Updates an [amount off discount](https://help.shopify.com/manual/discounts/discount-types/percentage-fixed-amount) that's applied on a cart and at checkout when a customer enters a code. Amount off discounts can be a percentage off or a fixed amount off.
+        ///Updates an [amount off discount](https://help.shopify.com/manual/discounts/discount-types/percentage-fixed-amount) that&apos;s applied on a cart and at checkout when a customer enters a code. Amount off discounts can be a percentage off or a fixed amount off.
         ///
-        ///> Note:
-        ///> To update discounts that are automatically applied on a cart and at checkout, use the [`discountAutomaticBasicUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticBasicUpdate) mutation.
+        ///&gt; Note:
+        ///&gt; To update discounts that are automatically applied on a cart and at checkout, use the [`discountAutomaticBasicUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticBasicUpdate) mutation.
         ///</summary>
         [Description("Updates an [amount off discount](https://help.shopify.com/manual/discounts/discount-types/percentage-fixed-amount) that's applied on a cart and at checkout when a customer enters a code. Amount off discounts can be a percentage off or a fixed amount off.\n\n> Note:\n> To update discounts that are automatically applied on a cart and at checkout, use the [`discountAutomaticBasicUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticBasicUpdate) mutation.")]
         public DiscountCodeBasicUpdatePayload? discountCodeBasicUpdate { get; set; }
@@ -56384,10 +56384,10 @@ namespace Shopify.Types
         ///<summary>
         ///Creates a
         ///[buy X get Y discount (BXGY)](https://help.shopify.com/manual/discounts/discount-types/buy-x-get-y)
-        ///that's applied on a cart and at checkout when a customer enters a code.
+        ///that&apos;s applied on a cart and at checkout when a customer enters a code.
         ///
-        ///> Note:
-        ///> To create discounts that are automatically applied on a cart and at checkout, use the
+        ///&gt; Note:
+        ///&gt; To create discounts that are automatically applied on a cart and at checkout, use the
         ///[`discountAutomaticBxgyCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticBxgyCreate)
         ///mutation.
         ///</summary>
@@ -56397,10 +56397,10 @@ namespace Shopify.Types
         ///<summary>
         ///Updates a
         ///[buy X get Y discount (BXGY)](https://help.shopify.com/manual/discounts/discount-types/buy-x-get-y)
-        ///that's applied on a cart and at checkout when a customer enters a code.
+        ///that&apos;s applied on a cart and at checkout when a customer enters a code.
         ///
-        ///> Note:
-        ///> To update discounts that are automatically applied on a cart and at checkout, use the
+        ///&gt; Note:
+        ///&gt; To update discounts that are automatically applied on a cart and at checkout, use the
         ///[`discountAutomaticBxgyUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticBxgyUpdate)
         ///mutation.
         ///</summary>
@@ -56421,19 +56421,19 @@ namespace Shopify.Types
         public DiscountCodeDeletePayload? discountCodeDelete { get; set; }
 
         ///<summary>
-        ///Creates an [free shipping discount](https://help.shopify.com/manual/discounts/discount-types/free-shipping) that's applied on a cart and at checkout when a customer enters a code.
+        ///Creates an [free shipping discount](https://help.shopify.com/manual/discounts/discount-types/free-shipping) that&apos;s applied on a cart and at checkout when a customer enters a code.
         ///
-        ///> Note:
-        ///> To create discounts that are automatically applied on a cart and at checkout, use the [`discountAutomaticFreeShippingCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticFreeShippingCreate) mutation.
+        ///&gt; Note:
+        ///&gt; To create discounts that are automatically applied on a cart and at checkout, use the [`discountAutomaticFreeShippingCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticFreeShippingCreate) mutation.
         ///</summary>
         [Description("Creates an [free shipping discount](https://help.shopify.com/manual/discounts/discount-types/free-shipping) that's applied on a cart and at checkout when a customer enters a code.\n\n> Note:\n> To create discounts that are automatically applied on a cart and at checkout, use the [`discountAutomaticFreeShippingCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticFreeShippingCreate) mutation.")]
         public DiscountCodeFreeShippingCreatePayload? discountCodeFreeShippingCreate { get; set; }
 
         ///<summary>
-        ///Updates a [free shipping discount](https://help.shopify.com/manual/discounts/discount-types/free-shipping) that's applied on a cart and at checkout when a customer enters a code.
+        ///Updates a [free shipping discount](https://help.shopify.com/manual/discounts/discount-types/free-shipping) that&apos;s applied on a cart and at checkout when a customer enters a code.
         ///
-        ///> Note:
-        ///> To update a free shipping discount that's automatically applied on a cart and at checkout, use the [`discountAutomaticFreeShippingUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticFreeShippingUpdate) mutation.
+        ///&gt; Note:
+        ///&gt; To update a free shipping discount that&apos;s automatically applied on a cart and at checkout, use the [`discountAutomaticFreeShippingUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticFreeShippingUpdate) mutation.
         ///</summary>
         [Description("Updates a [free shipping discount](https://help.shopify.com/manual/discounts/discount-types/free-shipping) that's applied on a cart and at checkout when a customer enters a code.\n\n> Note:\n> To update a free shipping discount that's automatically applied on a cart and at checkout, use the [`discountAutomaticFreeShippingUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/discountAutomaticFreeShippingUpdate) mutation.")]
         public DiscountCodeFreeShippingUpdatePayload? discountCodeFreeShippingUpdate { get; set; }
@@ -56490,7 +56490,7 @@ namespace Shopify.Types
         ///<summary>
         ///Completes a [draft order](https://shopify.dev/docs/api/admin-graphql/latest/objects/DraftOrder) and
         ///converts it into a [regular order](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order).
-        ///The order appears in the merchant's orders list, and the customer can be notified about their order.
+        ///The order appears in the merchant&apos;s orders list, and the customer can be notified about their order.
         ///
         ///Use the `draftOrderComplete` mutation when a merchant is ready to finalize a draft order and create a real
         ///order in their store. The `draftOrderComplete` mutation also supports sales channel attribution for tracking
@@ -56505,8 +56505,8 @@ namespace Shopify.Types
         ///- Specify a custom payment amount.
         ///- Select a specific payment gateway.
         ///
-        ///> Note:
-        ///> When completing a draft order, inventory is [reserved](https://shopify.dev/docs/apps/build/orders-fulfillment/inventory-management-apps#inventory-states)
+        ///&gt; Note:
+        ///&gt; When completing a draft order, inventory is [reserved](https://shopify.dev/docs/apps/build/orders-fulfillment/inventory-management-apps#inventory-states)
         ///for the items in the order. This means the items will no longer be available for other customers to purchase.
         ///Make sure to verify inventory availability before completing the draft order.
         ///</summary>
@@ -56532,9 +56532,9 @@ namespace Shopify.Types
         ///- Duplicate a draft order using the [`draftOrderDuplicate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/draftOrderDuplicate) mutation.
         ///- Delete the draft order using the [`draftOrderDelete`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/draftOrderDelete) mutation.
         ///
-        ///> Note:
-        ///> When you create a draft order, you can't [reserve or hold inventory](https://shopify.dev/docs/apps/build/orders-fulfillment/inventory-management-apps#inventory-states) for the items in the order by default.
-        ///> However, you can reserve inventory using the [`reserveInventoryUntil`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/draftOrderCreate#arguments-input.fields.reserveInventoryUntil) input.
+        ///&gt; Note:
+        ///&gt; When you create a draft order, you can&apos;t [reserve or hold inventory](https://shopify.dev/docs/apps/build/orders-fulfillment/inventory-management-apps#inventory-states) for the items in the order by default.
+        ///&gt; However, you can reserve inventory using the [`reserveInventoryUntil`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/draftOrderCreate#arguments-input.fields.reserveInventoryUntil) input.
         ///</summary>
         [Description("Creates a [draft order](https://shopify.dev/docs/api/admin-graphql/latest/objects/DraftOrder)\nwith attributes such as customer information, line items, shipping and billing addresses, and payment terms.\nDraft orders are useful for merchants that need to:\n\n- Create new orders for sales made by phone, in person, by chat, or elsewhere. When a merchant accepts payment for a draft order, an order is created.\n- Send invoices to customers with a secure checkout link.\n- Use custom items to represent additional costs or products not in inventory.\n- Re-create orders manually from active sales channels.\n- Sell products at discount or wholesale rates.\n- Take pre-orders.\n\nAfter creating a draft order, you can:\n- Send an invoice to the customer using the [`draftOrderInvoiceSend`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/draftOrderInvoiceSend) mutation.\n- Complete the draft order using the [`draftOrderComplete`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/draftOrderComplete) mutation.\n- Update the draft order using the [`draftOrderUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/draftOrderUpdate) mutation.\n- Duplicate a draft order using the [`draftOrderDuplicate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/draftOrderDuplicate) mutation.\n- Delete the draft order using the [`draftOrderDelete`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/draftOrderDelete) mutation.\n\n> Note:\n> When you create a draft order, you can't [reserve or hold inventory](https://shopify.dev/docs/apps/build/orders-fulfillment/inventory-management-apps#inventory-states) for the items in the order by default.\n> However, you can reserve inventory using the [`reserveInventoryUntil`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/draftOrderCreate#arguments-input.fields.reserveInventoryUntil) input.")]
         public DraftOrderCreatePayload? draftOrderCreate { get; set; }
@@ -56599,7 +56599,7 @@ namespace Shopify.Types
         ///<summary>
         ///Creates a new Amazon EventBridge webhook subscription.
         ///
-        ///Building an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).
+        ///Building an app? If you only use app-specific webhooks, you won&apos;t need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify &amp; require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).
         ///</summary>
         [Description("Creates a new Amazon EventBridge webhook subscription.\n\nBuilding an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).")]
         [Obsolete("Use `webhookSubscriptionCreate` instead.")]
@@ -56608,7 +56608,7 @@ namespace Shopify.Types
         ///<summary>
         ///Updates an Amazon EventBridge webhook subscription.
         ///
-        ///Building an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).
+        ///Building an app? If you only use app-specific webhooks, you won&apos;t need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify &amp; require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).
         ///</summary>
         [Description("Updates an Amazon EventBridge webhook subscription.\n\nBuilding an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).")]
         [Obsolete("Use `webhookSubscriptionUpdate` instead.")]
@@ -56640,10 +56640,10 @@ namespace Shopify.Types
         ///The mutation handles duplicate filenames using configurable resolution modes that automatically append UUIDs,
         ///replace existing files, or raise errors when conflicts occur.
         ///
-        ///> Note:
-        ///> Files are processed asynchronously. Check the
-        ///> [`fileStatus`](https://shopify.dev/docs/api/admin-graphql/latest/interfaces/File#fields-fileStatus)
-        ///> field to monitor processing completion. The maximum number of files that can be created in a single batch is 250.
+        ///&gt; Note:
+        ///&gt; Files are processed asynchronously. Check the
+        ///&gt; [`fileStatus`](https://shopify.dev/docs/api/admin-graphql/latest/interfaces/File#fields-fileStatus)
+        ///&gt; field to monitor processing completion. The maximum number of files that can be created in a single batch is 250.
         ///
         ///After creating files, you can make subsequent updates using the following mutations:
         ///
@@ -56666,7 +56666,7 @@ namespace Shopify.Types
         ///Deletes file assets that were previously uploaded to your store.
         ///
         ///Use the `fileDelete` mutation to permanently remove media and file assets from your store when they are no longer needed.
-        ///This mutation handles the complete removal of files from both your store's file library and any associated references
+        ///This mutation handles the complete removal of files from both your store&apos;s file library and any associated references
         ///to products or other resources.
         ///
         ///The `fileDelete` mutation supports removal of multiple file types:
@@ -56684,13 +56684,13 @@ namespace Shopify.Types
         ///to manage these relationships, and when files are deleted, the system automatically cleans up all references.
         ///Files that are currently being processed by other operations are rejected to prevent conflicts.
         ///
-        ///> Caution:
-        ///> File deletion is permanent and can't be undone. When you delete a file that's being used in your store,
-        ///> it will immediately stop appearing wherever it was displayed. For example, if you delete a product image,
-        ///> that product will show a broken image or placeholder on your storefront and in the admin. The same applies
-        ///> to any other files linked from themes, blog posts, or pages. Before deleting files, you can use the
-        ///> [`files` query](https://shopify.dev/api/admin-graphql/latest/queries/files) to list and review
-        ///> your store's file assets.
+        ///&gt; Caution:
+        ///&gt; File deletion is permanent and can&apos;t be undone. When you delete a file that&apos;s being used in your store,
+        ///&gt; it will immediately stop appearing wherever it was displayed. For example, if you delete a product image,
+        ///&gt; that product will show a broken image or placeholder on your storefront and in the admin. The same applies
+        ///&gt; to any other files linked from themes, blog posts, or pages. Before deleting files, you can use the
+        ///&gt; [`files` query](https://shopify.dev/api/admin-graphql/latest/queries/files) to list and review
+        ///&gt; your store&apos;s file assets.
         ///
         ///Learn how to manage
         ///[product media and file assets](https://shopify.dev/docs/apps/build/online-store/product-media)
@@ -56711,7 +56711,7 @@ namespace Shopify.Types
         ///- **File content**: Replace image or generic file content while maintaining the same URL.
         ///- **Filename**: Modify file names (extension must match the original).
         ///- **Product references**: Add or remove associations between files and products. Removing file-product associations
-        ///deletes the file from the product's media gallery and clears the image from any product variants that were using it.
+        ///deletes the file from the product&apos;s media gallery and clears the image from any product variants that were using it.
         ///
         ///The mutation handles different file types with specific capabilities:
         ///
@@ -56719,9 +56719,9 @@ namespace Shopify.Types
         ///- **Generic files**: Update original source, filename, and alt text.
         ///- **Videos and 3D models**: Update alt text and product references.
         ///
-        ///> Note:
-        ///> Files must be in `ready` state before they can be updated. The mutation includes file locking to prevent
-        ///> conflicts during updates. You can't simultaneously update both `originalSource` and `previewImageSource`.
+        ///&gt; Note:
+        ///&gt; Files must be in `ready` state before they can be updated. The mutation includes file locking to prevent
+        ///&gt; conflicts during updates. You can&apos;t simultaneously update both `originalSource` and `previewImageSource`.
         ///
         ///After updating files, you can use related mutations for additional file management:
         ///
@@ -56872,17 +56872,17 @@ namespace Shopify.Types
         ///Moving a fulfillment order will fail in the following circumstances:
         ///
         ///* The fulfillment order is closed.
-        ///* The destination location doesn't stock the requested inventory item.
-        ///* The API client doesn't have the correct permissions.
+        ///* The destination location doesn&apos;t stock the requested inventory item.
+        ///* The API client doesn&apos;t have the correct permissions.
         ///
-        ///Line items which have already been fulfilled can't be re-assigned
+        ///Line items which have already been fulfilled can&apos;t be re-assigned
         ///and will always remain assigned to the original location.
         ///
-        ///You can't change the assigned location while a fulfillment order has a
+        ///You can&apos;t change the assigned location while a fulfillment order has a
         ///[request status](https://shopify.dev/docs/api/admin-graphql/latest/enums/FulfillmentOrderRequestStatus)
         ///of `SUBMITTED`, `ACCEPTED`, `CANCELLATION_REQUESTED`, or `CANCELLATION_REJECTED`.
         ///These request statuses mean that a fulfillment order is awaiting action by a fulfillment service
-        ///and can't be re-assigned without first having the fulfillment service accept a cancellation request.
+        ///and can&apos;t be re-assigned without first having the fulfillment service accept a cancellation request.
         ///This behavior is intended to prevent items from being fulfilled by multiple locations or fulfillment services.
         ///
         ///### How re-assigning line items affects fulfillment orders
@@ -56970,10 +56970,10 @@ namespace Shopify.Types
         ///
         ///When creating a fulfillment service, a new location will be automatically created on the shop
         ///and will be associated with this fulfillment service.
-        ///This location will be named after the fulfillment service and inherit the shop's address.
+        ///This location will be named after the fulfillment service and inherit the shop&apos;s address.
         ///
         ///If you are using API version `2023-10` or later, and you need to specify custom attributes for the fulfillment service location
-        ///(for example, to change its address to a country different from the shop's country),
+        ///(for example, to change its address to a country different from the shop&apos;s country),
         ///use the
         ///[LocationEdit](https://shopify.dev/api/admin-graphql/latest/mutations/locationEdit)
         ///mutation after creating the fulfillment service.
@@ -57069,13 +57069,13 @@ namespace Shopify.Types
         public InventoryAdjustQuantitiesPayload? inventoryAdjustQuantities { get; set; }
 
         ///<summary>
-        ///Modify the activation status of an inventory item at locations. Activating an inventory item at a particular location allows that location to stock that inventory item. Deactivating an inventory item at a location removes the inventory item's quantities and turns off the inventory item from that location.
+        ///Modify the activation status of an inventory item at locations. Activating an inventory item at a particular location allows that location to stock that inventory item. Deactivating an inventory item at a location removes the inventory item&apos;s quantities and turns off the inventory item from that location.
         ///</summary>
         [Description("Modify the activation status of an inventory item at locations. Activating an inventory item at a particular location allows that location to stock that inventory item. Deactivating an inventory item at a location removes the inventory item's quantities and turns off the inventory item from that location.")]
         public InventoryBulkToggleActivationPayload? inventoryBulkToggleActivation { get; set; }
 
         ///<summary>
-        ///Removes an inventory item's quantities from a location, and turns off inventory at the location.
+        ///Removes an inventory item&apos;s quantities from a location, and turns off inventory at the location.
         ///</summary>
         [Description("Removes an inventory item's quantities from a location, and turns off inventory at the location.")]
         public InventoryDeactivatePayload? inventoryDeactivate { get; set; }
@@ -57106,14 +57106,14 @@ namespace Shopify.Types
         ///If the `compareQuantity` value does not match the persisted value, the mutation will return an error. In order to opt out
         ///of the `compareQuantity` check, the `ignoreCompareQuantity` argument can be set to true.
         ///
-        ///> Note:
-        ///> Only use this mutation if calling on behalf of a system that acts as the source of truth for inventory quantities,
-        ///> otherwise please consider using the [inventoryAdjustQuantities](https://shopify.dev/api/admin-graphql/latest/mutations/inventoryAdjustQuantities) mutation.
-        ///>
-        ///>
-        ///> Opting out of the `compareQuantity` check can lead to inaccurate inventory quantities if multiple requests are made concurrently.
-        ///> It is recommended to always include the `compareQuantity` value to ensure the accuracy of the inventory quantities and to opt out
-        ///> of the check using `ignoreCompareQuantity` only when necessary.
+        ///&gt; Note:
+        ///&gt; Only use this mutation if calling on behalf of a system that acts as the source of truth for inventory quantities,
+        ///&gt; otherwise please consider using the [inventoryAdjustQuantities](https://shopify.dev/api/admin-graphql/latest/mutations/inventoryAdjustQuantities) mutation.
+        ///&gt;
+        ///&gt;
+        ///&gt; Opting out of the `compareQuantity` check can lead to inaccurate inventory quantities if multiple requests are made concurrently.
+        ///&gt; It is recommended to always include the `compareQuantity` value to ensure the accuracy of the inventory quantities and to opt out
+        ///&gt; of the check using `ignoreCompareQuantity` only when necessary.
         ///</summary>
         [Description("Set quantities of specified name using absolute values. This mutation supports compare-and-set functionality to handle\nconcurrent requests properly. If `ignoreCompareQuantity` is not set to true,\nthe mutation will only update the quantity if the persisted quantity matches the `compareQuantity` value.\nIf the `compareQuantity` value does not match the persisted value, the mutation will return an error. In order to opt out\nof the `compareQuantity` check, the `ignoreCompareQuantity` argument can be set to true.\n\n> Note:\n> Only use this mutation if calling on behalf of a system that acts as the source of truth for inventory quantities,\n> otherwise please consider using the [inventoryAdjustQuantities](https://shopify.dev/api/admin-graphql/latest/mutations/inventoryAdjustQuantities) mutation.\n>\n>\n> Opting out of the `compareQuantity` check can lead to inaccurate inventory quantities if multiple requests are made concurrently.\n> It is recommended to always include the `compareQuantity` value to ensure the accuracy of the inventory quantities and to opt out\n> of the check using `ignoreCompareQuantity` only when necessary.")]
         public InventorySetQuantitiesPayload? inventorySetQuantities { get; set; }
@@ -57375,7 +57375,7 @@ namespace Shopify.Types
         ///
         ///As of `2024-07`, this operation supports compare-and-set functionality to better handle concurrent requests.
         ///If `compareDigest` is set for any metafield, the mutation will only set that metafield if the persisted metafield value matches the digest used on `compareDigest`.
-        ///If the metafield doesn't exist yet, but you want to guarantee that the operation will run in a safe manner, set `compareDigest` to `null`.
+        ///If the metafield doesn&apos;t exist yet, but you want to guarantee that the operation will run in a safe manner, set `compareDigest` to `null`.
         ///The `compareDigest` value can be acquired by querying the metafield object and selecting `compareDigest` as a field.
         ///If the `compareDigest` value does not match the digest for the persisted value, the mutation will return an error.
         ///You can opt out of write guarantees by not sending `compareDigest` in the request.
@@ -57454,8 +57454,8 @@ namespace Shopify.Types
         ///<summary>
         ///Cancels an order, with options for refunding, restocking inventory, and customer notification.
         ///
-        ///> Caution:
-        ///> Order cancellation is irreversible. An order that has been cancelled can't be restored to its original state.
+        ///&gt; Caution:
+        ///&gt; Order cancellation is irreversible. An order that has been cancelled can&apos;t be restored to its original state.
         ///
         ///Use the `orderCancel` mutation to programmatically cancel orders in scenarios such as:
         ///
@@ -57472,21 +57472,21 @@ namespace Shopify.Types
         ///
         ///The mutation supports different cancellation reasons: customer requests, payment declines, fraud,
         ///inventory issues, staff errors, or other unspecified reasons. Each cancellation can include optional
-        ///staff notes for internal documentation (notes aren't visible to customers).
+        ///staff notes for internal documentation (notes aren&apos;t visible to customers).
         ///
         ///An order can only be cancelled if it meets the following criteria:
         ///
-        ///- The order hasn't already been cancelled.
+        ///- The order hasn&apos;t already been cancelled.
         ///- The order has no pending payment authorizations.
         ///- The order has no active returns in progress.
-        ///- The order has no outstanding fulfillments that can't be cancelled.
+        ///- The order has no outstanding fulfillments that can&apos;t be cancelled.
         ///
         ///Orders might be assigned to locations that become
         ///[deactivated](https://help.shopify.com/manual/fulfillment/setup/locations-management#deactivate-and-reactivate-locations)
         ///after the order was created. When cancelling such orders, inventory behavior depends on payment status:
         ///
         ///- **Paid orders**: Cancellation will fail with an error if restocking is enabled, since inventory
-        ///can't be returned to deactivated locations.
+        ///can&apos;t be returned to deactivated locations.
         ///- **Unpaid orders**: Cancellation succeeds but inventory is not restocked anywhere, even when the
         ///restock option is enabled. The committed inventory effectively becomes unavailable rather than being
         ///returned to stock at the deactivated location.
@@ -57517,8 +57517,8 @@ namespace Shopify.Types
         ///- To perform multiple captures on the same order, as long as the order transaction is
         ///[multi-capturable](https://shopify.dev/docs/api/admin-graphql/latest/objects/ordertransaction#field-OrderTransaction.fields.multiCapturable)
         ///
-        ///> Note:
-        ///> Multi-capture functionality is only available to stores on a
+        ///&gt; Note:
+        ///&gt; Multi-capture functionality is only available to stores on a
         ///[Shopify Plus plan](https://help.shopify.com/manual/intro-to-shopify/pricing-plans/plans-features/shopify-plus-plan).
         ///For multi-currency orders, the [`currency`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/orderCapture#arguments-input.fields.currency)
         ///field is required and should match the presentment currency from the order.
@@ -57527,7 +57527,7 @@ namespace Shopify.Types
         ///
         ///- View the transaction details including status, amount, and processing information.
         ///- Track the captured amount in both shop and presentment currencies.
-        ///- Monitor the transaction's settlement status.
+        ///- Monitor the transaction&apos;s settlement status.
         ///
         ///Learn more about [order transactions](https://shopify.dev/docs/api/admin-graphql/latest/objects/OrderTransaction).
         ///</summary>
@@ -57544,23 +57544,23 @@ namespace Shopify.Types
         ///Creates an order with attributes such as customer information, line items, and shipping and billing addresses.
         ///
         ///Use the `orderCreate` mutation to programmatically generate orders in scenarios where
-        ///orders aren't created through the standard checkout process, such as when importing orders from an external
+        ///orders aren&apos;t created through the standard checkout process, such as when importing orders from an external
         ///system or creating orders for wholesale customers.
         ///
-        ///The `orderCreate` mutation doesn't support applying multiple discounts, such as discounts on line items.
-        ///Automatic discounts won't be applied unless you replicate the logic of those discounts in your custom
+        ///The `orderCreate` mutation doesn&apos;t support applying multiple discounts, such as discounts on line items.
+        ///Automatic discounts won&apos;t be applied unless you replicate the logic of those discounts in your custom
         ///implementation. You can [apply a discount code](https://shopify.dev/docs/api/admin-graphql/latest/input-objects/OrderCreateDiscountCodeInput),
         ///but only one discount code can be set for each order.
         ///
-        ///> Note:
-        ///> If you're using the `orderCreate` mutation with a
-        ///> [trial](https://help.shopify.com/manual/intro-to-shopify/pricing-plans/free-trial) or
-        ///> [development store](https://shopify.dev/docs/api/development-stores), then you can create a
-        ///> maximum of five new orders per minute.
+        ///&gt; Note:
+        ///&gt; If you&apos;re using the `orderCreate` mutation with a
+        ///&gt; [trial](https://help.shopify.com/manual/intro-to-shopify/pricing-plans/free-trial) or
+        ///&gt; [development store](https://shopify.dev/docs/api/development-stores), then you can create a
+        ///&gt; maximum of five new orders per minute.
         ///
         ///After you create an order, you can make subsequent edits to the order using one of the following mutations:
         ///* [`orderUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/orderUpdate):
-        ///Used for simple updates to an order, such as changing the order's note, tags, or customer information.
+        ///Used for simple updates to an order, such as changing the order&apos;s note, tags, or customer information.
         ///* [`orderEditBegin`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/orderEditBegin):
         ///Used when you need to make significant updates to an order, such as adding or removing line items, changing
         ///quantities, or modifying discounts. The `orderEditBegin` mutation initiates an order editing session,
@@ -57580,7 +57580,7 @@ namespace Shopify.Types
         public OrderCreateMandatePaymentPayload? orderCreateMandatePayment { get; set; }
 
         ///<summary>
-        ///Create a manual payment for an order. You can only create a manual payment for an order if it isn't already
+        ///Create a manual payment for an order. You can only create a manual payment for an order if it isn&apos;t already
         ///fully paid.
         ///</summary>
         [Description("Create a manual payment for an order. You can only create a manual payment for an order if it isn't already\nfully paid.")]
@@ -57687,10 +57687,10 @@ namespace Shopify.Types
         ///The mutation validates that the order can be marked as paid before processing.
         ///An order can be marked as paid only if it has a positive outstanding balance and its
         ///[financial status](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order#field-Order.fields.displayFinancialStatus)
-        ///isn't already `PAID`. The mutation will either create a new sale transaction for the full
-        ///outstanding amount or capture an existing authorized transaction, depending on the order's current payment state.
+        ///isn&apos;t already `PAID`. The mutation will either create a new sale transaction for the full
+        ///outstanding amount or capture an existing authorized transaction, depending on the order&apos;s current payment state.
         ///
-        ///After successfully marking an order as paid, the order's financial status is updated to
+        ///After successfully marking an order as paid, the order&apos;s financial status is updated to
         ///reflect the payment, and payment events are logged for tracking and analytics
         ///purposes.
         ///
@@ -57713,7 +57713,7 @@ namespace Shopify.Types
         public OrderRiskAssessmentCreatePayload? orderRiskAssessmentCreate { get; set; }
 
         ///<summary>
-        ///Updates the attributes of an order, such as the customer's email, the shipping address for the order,
+        ///Updates the attributes of an order, such as the customer&apos;s email, the shipping address for the order,
         ///tags, and [metafields](https://shopify.dev/docs/apps/build/custom-data) associated with the order.
         ///
         ///If you need to make significant updates to an order, such as adding or removing line items, changing
@@ -57839,7 +57839,7 @@ namespace Shopify.Types
         public PriceListUpdatePayload? priceListUpdate { get; set; }
 
         ///<summary>
-        ///Disable a shop's privacy features.
+        ///Disable a shop&apos;s privacy features.
         ///</summary>
         [Description("Disable a shop's privacy features.")]
         public PrivacyFeaturesDisablePayload? privacyFeaturesDisable { get; set; }
@@ -57883,10 +57883,10 @@ namespace Shopify.Types
         ///[`productVariantsBulkCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productVariantsBulkCreate)
         ///mutation.
         ///
-        ///> Note:
-        ///> The `productCreate` mutation has a [throttle](https://shopify.dev/docs/api/usage/rate-limits#resource-based-rate-limits)
-        ///> that takes effect when a store has 50,000 product variants. After this threshold is reached, no more than
-        ///> 1,000 new product variants can be created per day.
+        ///&gt; Note:
+        ///&gt; The `productCreate` mutation has a [throttle](https://shopify.dev/docs/api/usage/rate-limits#resource-based-rate-limits)
+        ///&gt; that takes effect when a store has 50,000 product variants. After this threshold is reached, no more than
+        ///&gt; 1,000 new product variants can be created per day.
         ///
         ///After you create a product, you can make subsequent edits to the product using one of the following mutations:
         ///
@@ -57894,7 +57894,7 @@ namespace Shopify.Types
         ///Used to publish the product and make it available to customers. The `productCreate` mutation creates products
         ///in an unpublished state by default, so you must perform a separate operation to publish the product.
         ///- [`productUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productUpdate):
-        ///Used to update a single product, such as changing the product's title, description, vendor, or associated media.
+        ///Used to update a single product, such as changing the product&apos;s title, description, vendor, or associated media.
         ///- [`productSet`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productSet):
         ///Used to perform multiple operations on products, such as creating or modifying product options and variants.
         ///
@@ -57930,11 +57930,11 @@ namespace Shopify.Types
         ///The `productDelete` mutation also has the following effects on existing orders and transactions:
         ///
         ///- **Draft orders**: Existing draft orders that reference this product will retain the product information as stored data, but the product reference will be removed. Draft orders can still be completed with the stored product details.
-        ///- **Completed orders and refunds**: Previously completed orders that included this product aren't affected. The product information in completed orders is preserved for record-keeping, and existing refunds for this product remain valid and processable.
+        ///- **Completed orders and refunds**: Previously completed orders that included this product aren&apos;t affected. The product information in completed orders is preserved for record-keeping, and existing refunds for this product remain valid and processable.
         ///
-        ///> Caution:
-        ///> Product deletion is irreversible. After a product is deleted, it can't be recovered. Consider archiving
-        ///> or unpublishing products instead if you might need to restore them later.
+        ///&gt; Caution:
+        ///&gt; Product deletion is irreversible. After a product is deleted, it can&apos;t be recovered. Consider archiving
+        ///&gt; or unpublishing products instead if you might need to restore them later.
         ///
         ///If you need to delete a large product, such as one that has many
         ///[variants](https://shopify.dev/api/admin-graphql/latest/objects/ProductVariant)
@@ -58025,23 +58025,23 @@ namespace Shopify.Types
         ///
         ///Use the `productOptionUpdate` mutation for the following use cases:
         ///
-        ///- **Update product choices**: Modify an existing option, like "Size" (Small, Medium, Large) or
-        ///"Color" (Red, Blue, Green), so customers can select their preferred variant.
-        ///- **Enable personalization features**: Update an option (for example, "Engraving text") to let customers customize their purchase.
+        ///- **Update product choices**: Modify an existing option, like &quot;Size&quot; (Small, Medium, Large) or
+        ///&quot;Color&quot; (Red, Blue, Green), so customers can select their preferred variant.
+        ///- **Enable personalization features**: Update an option (for example, &quot;Engraving text&quot;) to let customers customize their purchase.
         ///- **Offer seasonal or limited edition products**: Update a value
-        ///(for example, "Holiday red") on an existing option to support limited-time or seasonal variants.
+        ///(for example, &quot;Holiday red&quot;) on an existing option to support limited-time or seasonal variants.
         ///- **Integrate with apps that manage product configuration**: Allow third-party apps to update options, like
-        ///"Bundle size", when customers select or customize
+        ///&quot;Bundle size&quot;, when customers select or customize
         ///[product bundles](https://shopify.dev/docs/apps/build/product-merchandising/bundles).
         ///- **Link options to metafields**: Associate a product option with a custom
-        ///[metafield](https://shopify.dev/docs/apps/build/custom-data), like "Fabric code", for
+        ///[metafield](https://shopify.dev/docs/apps/build/custom-data), like &quot;Fabric code&quot;, for
         ///richer integrations with other systems or apps.
         ///
-        ///> Note:
-        ///> The `productOptionUpdate` mutation enforces strict data integrity for product options and variants.
+        ///&gt; Note:
+        ///&gt; The `productOptionUpdate` mutation enforces strict data integrity for product options and variants.
         ///All option positions must be sequential, and every option should be used by at least one variant.
         ///
-        ///After you update a product option, you can further manage a product's configuration using related mutations:
+        ///After you update a product option, you can further manage a product&apos;s configuration using related mutations:
         ///
         ///- [`productOptionsCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productOptionsCreate)
         ///- [`productOptionsDelete`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productOptionsDelete)
@@ -58064,26 +58064,26 @@ namespace Shopify.Types
         ///
         ///Use the `productOptionsCreate` mutation for the following use cases:
         ///
-        ///- **Add product choices**: Add a new option, like "Size" (Small, Medium, Large) or
-        ///"Color" (Red, Blue, Green), to an existing product so customers can select their preferred variant.
-        ///- **Enable personalization features**: Add options such as "Engraving text" to let customers customize their purchase.
+        ///- **Add product choices**: Add a new option, like &quot;Size&quot; (Small, Medium, Large) or
+        ///&quot;Color&quot; (Red, Blue, Green), to an existing product so customers can select their preferred variant.
+        ///- **Enable personalization features**: Add options such as &quot;Engraving text&quot; to let customers customize their purchase.
         ///- **Offer seasonal or limited edition products**: Add a new value
-        ///(for example, "Holiday red") to an existing option to support limited-time or seasonal variants.
+        ///(for example, &quot;Holiday red&quot;) to an existing option to support limited-time or seasonal variants.
         ///- **Integrate with apps that manage product configuration**: Allow third-party apps to add options, like
-        ///"Bundle size", when customers select or customize
+        ///&quot;Bundle size&quot;, when customers select or customize
         ///[product bundles](https://shopify.dev/docs/apps/build/product-merchandising/bundles).
         ///- **Link options to metafields**: Associate a product option with a custom
-        ///[metafield](https://shopify.dev/docs/apps/build/custom-data), like "Fabric code", for
+        ///[metafield](https://shopify.dev/docs/apps/build/custom-data), like &quot;Fabric code&quot;, for
         ///richer integrations with other systems or apps.
         ///
-        ///> Note:
-        ///> The `productOptionsCreate` mutation enforces strict data integrity for product options and variants.
+        ///&gt; Note:
+        ///&gt; The `productOptionsCreate` mutation enforces strict data integrity for product options and variants.
         ///All option positions must be sequential, and every option should be used by at least one variant.
         ///If you use the [`CREATE` variant strategy](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productOptionsCreate#arguments-variantStrategy.enums.CREATE), consider the maximum allowed number of variants for each product
-        ///(100 by default, and 2,048 if you've
+        ///(100 by default, and 2,048 if you&apos;ve
         ///[enabled the **Extended Variants** developer preview](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/migrate-and-test#create-a-development-store-that-allows-2-048-variants-per-product)).
         ///
-        ///After you create product options, you can further manage a product's configuration using related mutations:
+        ///After you create product options, you can further manage a product&apos;s configuration using related mutations:
         ///
         ///- [`productOptionUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productOptionUpdate)
         ///- [`productOptionsReorder`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productOptionsReorder)
@@ -58103,27 +58103,27 @@ namespace Shopify.Types
         ///from a [product](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product). Product options
         ///define the choices available for a product, such as size, color, or material.
         ///
-        ///> Caution:
-        ///> Removing an option can affect a product's
-        ///> [variants](https://shopify.dev/docs/api/admin-graphql/latest/objects/ProductVariant) and their
-        ///> configuration. Deleting an option might also delete associated option values and, depending on the chosen
-        ///> [strategy](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productoptionsdelete#arguments-strategy),
-        ///> might affect variants.
+        ///&gt; Caution:
+        ///&gt; Removing an option can affect a product&apos;s
+        ///&gt; [variants](https://shopify.dev/docs/api/admin-graphql/latest/objects/ProductVariant) and their
+        ///&gt; configuration. Deleting an option might also delete associated option values and, depending on the chosen
+        ///&gt; [strategy](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productoptionsdelete#arguments-strategy),
+        ///&gt; might affect variants.
         ///
         ///Use the `productOptionsDelete` mutation for the following use cases:
         ///
         ///- **Simplify product configuration**: Remove obsolete or unnecessary options
-        ///(for example, discontinue "Material" if all variants are now the same material).
+        ///(for example, discontinue &quot;Material&quot; if all variants are now the same material).
         ///- **Clean up after seasonal or limited-time offerings**: Delete options that are no longer
-        ///relevant (for example, "Holiday edition").
+        ///relevant (for example, &quot;Holiday edition&quot;).
         ///- **Automate catalog management**: Enable apps or integrations to programmatically remove options as product
         ///data changes.
         ///
-        ///> Note:
-        ///> The `productOptionsDelete` mutation enforces strict data integrity for product options and variants.
-        ///> All option positions must remain sequential, and every remaining option must be used by at least one variant.
+        ///&gt; Note:
+        ///&gt; The `productOptionsDelete` mutation enforces strict data integrity for product options and variants.
+        ///&gt; All option positions must remain sequential, and every remaining option must be used by at least one variant.
         ///
-        ///After you delete a product option, you can further manage a product's configuration using related mutations:
+        ///After you delete a product option, you can further manage a product&apos;s configuration using related mutations:
         ///
         ///- [`productOptionsCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productOptionsCreate)
         ///- [`productOptionUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productOptionUpdate)
@@ -58147,45 +58147,45 @@ namespace Shopify.Types
         ///
         ///The `productOptionsReorder` mutation accepts a list of product options, each identified by `id` or `name`, and an
         ///optional list of values (also by `id` or `name`) specifying the new order. The order of options in the
-        ///mutation's input determines their new positions (for example, the first option becomes `option1`).
+        ///mutation&apos;s input determines their new positions (for example, the first option becomes `option1`).
         ///The order of values within each option determines their new positions. The mutation recalculates the order of
         ///variants based on the new option and value order.
         ///
         ///Suppose a product has the following variants:
         ///
-        ///1. `"Red / Small"`
-        ///2. `"Green / Medium"`
-        ///3. `"Blue / Small"`
+        ///1. `&quot;Red / Small&quot;`
+        ///2. `&quot;Green / Medium&quot;`
+        ///3. `&quot;Blue / Small&quot;`
         ///
         ///You reorder options and values:
         ///
         ///```
         ///options: [
-        ///  { name: "Size", values: [{ name: "Small" }, { name: "Medium" }] },
-        ///  { name: "Color", values: [{ name: "Green" }, { name: "Red" }, { name: "Blue" }] }
+        ///  { name: &quot;Size&quot;, values: [{ name: &quot;Small&quot; }, { name: &quot;Medium&quot; }] },
+        ///  { name: &quot;Color&quot;, values: [{ name: &quot;Green&quot; }, { name: &quot;Red&quot; }, { name: &quot;Blue&quot; }] }
         ///]
         ///```
         ///
         ///The resulting variant order will be:
         ///
-        ///1. `"Small / Green"`
-        ///2. `"Small / Red"`
-        ///3. `"Small / Blue"`
-        ///4. `"Medium / Green"`
+        ///1. `&quot;Small / Green&quot;`
+        ///2. `&quot;Small / Red&quot;`
+        ///3. `&quot;Small / Blue&quot;`
+        ///4. `&quot;Medium / Green&quot;`
         ///
         ///Use the `productOptionsReorder` mutation for the following use cases:
         ///
-        ///- **Change the order of product options**: For example, display "Color" before "Size" in a store.
-        ///- **Reorder option values within an option**: For example, show "Red" before "Blue" in a color picker.
+        ///- **Change the order of product options**: For example, display &quot;Color&quot; before &quot;Size&quot; in a store.
+        ///- **Reorder option values within an option**: For example, show &quot;Red&quot; before &quot;Blue&quot; in a color picker.
         ///- **Control the order of product variants**: The order of options and their values determines the sequence in which variants are listed and selected.
         ///- **Highlight best-selling options**: Present the most popular or relevant options and values first.
         ///- **Promote merchandising strategies**: Highlight seasonal colors, limited editions, or featured sizes.
         ///
-        ///> Note:
-        ///> The `productOptionsReorder` mutation enforces strict data integrity for product options and variants.
-        ///> All option positions must be sequential, and every option should be used by at least one variant.
+        ///&gt; Note:
+        ///&gt; The `productOptionsReorder` mutation enforces strict data integrity for product options and variants.
+        ///&gt; All option positions must be sequential, and every option should be used by at least one variant.
         ///
-        ///After you reorder product options, you can further manage a product's configuration using related mutations:
+        ///After you reorder product options, you can further manage a product&apos;s configuration using related mutations:
         ///
         ///- [`productOptionsCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productOptionsCreate)
         ///- [`productOptionsDelete`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productOptionsDelete)
@@ -58219,20 +58219,20 @@ namespace Shopify.Types
         ///product catalogs, and perform batch updates. The mutation is helpful for bulk product management, including price
         ///adjustments, inventory updates, and product lifecycle management.
         ///
-        ///The behavior of `productSet` depends on the type of field it's modifying:
+        ///The behavior of `productSet` depends on the type of field it&apos;s modifying:
         ///
         ///- **For list fields**: Creates new entries, updates existing entries, and deletes existing entries
-        ///that aren't included in the mutation's input. Common examples of list fields include
+        ///that aren&apos;t included in the mutation&apos;s input. Common examples of list fields include
         ///[`collections`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productSet#arguments-input.fields.collections),
         ///[`metafields`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productSet#arguments-input.fields.metafields),
         ///and [`variants`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productSet#arguments-input.fields.variants).
         ///
         ///- **For all other field types**: Updates only the included fields. Any omitted fields will remain unchanged.
         ///
-        ///> Note:
-        ///> By default, stores have a limit of 100 product variants for each product. You can create a development store and
-        ///> [enable the **Extended Variants** developer preview](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/migrate-and-test#create-a-development-store-that-allows-2-048-variants-per-product)
-        ///> to create or update a maximum of 2,048 product variants in a single operation.
+        ///&gt; Note:
+        ///&gt; By default, stores have a limit of 100 product variants for each product. You can create a development store and
+        ///&gt; [enable the **Extended Variants** developer preview](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/migrate-and-test#create-a-development-store-that-allows-2-048-variants-per-product)
+        ///&gt; to create or update a maximum of 2,048 product variants in a single operation.
         ///
         ///You can run `productSet` in one of the following modes:
         ///
@@ -58274,16 +58274,16 @@ namespace Shopify.Types
         ///process of updating them one by one in the Shopify admin. Common examples including updating
         ///product details like status or tags.
         ///
-        ///The `productUpdate` mutation doesn't support updating
+        ///The `productUpdate` mutation doesn&apos;t support updating
         ///[product variants](https://shopify.dev/docs/api/admin-graphql/latest/objects/ProductVariant).
         ///To update multiple product variants for a single product and manage prices, use the
         ///[`productVariantsBulkUpdate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productVariantsBulkUpdate)
         ///mutation.
         ///
-        ///> Note:
-        ///> The `productUpdate` mutation has a [throttle](https://shopify.dev/docs/api/usage/rate-limits#resource-based-rate-limits)
-        ///> that takes effect when a store has 50,000 product variants. After this threshold is reached, no more than
-        ///> 1,000 new product variants can be updated per day.
+        ///&gt; Note:
+        ///&gt; The `productUpdate` mutation has a [throttle](https://shopify.dev/docs/api/usage/rate-limits#resource-based-rate-limits)
+        ///&gt; that takes effect when a store has 50,000 product variants. After this threshold is reached, no more than
+        ///&gt; 1,000 new product variants can be updated per day.
         ///
         ///After updating a product, you can make additional changes using one of the following mutations:
         ///
@@ -58351,10 +58351,10 @@ namespace Shopify.Types
         ///- Associating media (for example, images, videos, and 3D models) with the product or its variants
         ///- Handling complex product configurations
         ///
-        ///> Note:
-        ///> By default, stores have a limit of 100 product variants for each product. You can create a development store and
-        ///> [enable the **Extended Variants** developer preview](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/migrate-and-test#create-a-development-store-that-allows-2-048-variants-per-product)
-        ///> to create a maximum of 2,048 product variants in a single operation.
+        ///&gt; Note:
+        ///&gt; By default, stores have a limit of 100 product variants for each product. You can create a development store and
+        ///&gt; [enable the **Extended Variants** developer preview](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/migrate-and-test#create-a-development-store-that-allows-2-048-variants-per-product)
+        ///&gt; to create a maximum of 2,048 product variants in a single operation.
         ///
         ///After creating variants, you can make additional changes using one of the following mutations:
         ///
@@ -58396,7 +58396,7 @@ namespace Shopify.Types
         ///
         ///Use the `productVariantsBulkUpdate` mutation to efficiently modify product variants—such as different sizes,
         ///colors, or materials—associated with an existing product. The mutation is helpful if you need to update a
-        ///product's variants in bulk, such as importing from an external system.
+        ///product&apos;s variants in bulk, such as importing from an external system.
         ///
         ///The mutation supports:
         ///
@@ -58404,10 +58404,10 @@ namespace Shopify.Types
         ///- Associating media (for example, images, videos, and 3D models) with the product or its variants
         ///- Handling complex product configurations
         ///
-        ///> Note:
-        ///> By default, stores have a limit of 100 product variants for each product. You can create a development store and
-        ///> [enable the **Extended Variants** developer preview](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/migrate-and-test#create-a-development-store-that-allows-2-048-variants-per-product)
-        ///> to update a maximum of 2,048 product variants in a single operation.
+        ///&gt; Note:
+        ///&gt; By default, stores have a limit of 100 product variants for each product. You can create a development store and
+        ///&gt; [enable the **Extended Variants** developer preview](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/migrate-and-test#create-a-development-store-that-allows-2-048-variants-per-product)
+        ///&gt; to update a maximum of 2,048 product variants in a single operation.
         ///
         ///After creating variants, you can make additional changes using the
         ///[`productSet`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/productSet) mutation,
@@ -58436,7 +58436,7 @@ namespace Shopify.Types
         ///<summary>
         ///Creates a new Google Cloud Pub/Sub webhook subscription.
         ///
-        ///Building an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).
+        ///Building an app? If you only use app-specific webhooks, you won&apos;t need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify &amp; require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).
         ///</summary>
         [Description("Creates a new Google Cloud Pub/Sub webhook subscription.\n\nBuilding an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).")]
         [Obsolete("Use `webhookSubscriptionCreate` instead.")]
@@ -58445,7 +58445,7 @@ namespace Shopify.Types
         ///<summary>
         ///Updates a Google Cloud Pub/Sub webhook subscription.
         ///
-        ///Building an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).
+        ///Building an app? If you only use app-specific webhooks, you won&apos;t need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify &amp; require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).
         ///</summary>
         [Description("Updates a Google Cloud Pub/Sub webhook subscription.\n\nBuilding an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).")]
         [Obsolete("Use `webhookSubscriptionUpdate` instead.")]
@@ -58470,25 +58470,25 @@ namespace Shopify.Types
         public PublicationUpdatePayload? publicationUpdate { get; set; }
 
         ///<summary>
-        ///Publishes a resource to a channel. If the resource is a product, then it's visible in the channel only if the product status is `active`. Products that are sold exclusively on subscription (`requiresSellingPlan: true`) can be published only on online stores.
+        ///Publishes a resource to a channel. If the resource is a product, then it&apos;s visible in the channel only if the product status is `active`. Products that are sold exclusively on subscription (`requiresSellingPlan: true`) can be published only on online stores.
         ///</summary>
         [Description("Publishes a resource to a channel. If the resource is a product, then it's visible in the channel only if the product status is `active`. Products that are sold exclusively on subscription (`requiresSellingPlan: true`) can be published only on online stores.")]
         public PublishablePublishPayload? publishablePublish { get; set; }
 
         ///<summary>
-        ///Publishes a resource to current channel. If the resource is a product, then it's visible in the channel only if the product status is `active`. Products that are sold exclusively on subscription (`requiresSellingPlan: true`) can be published only on online stores.
+        ///Publishes a resource to current channel. If the resource is a product, then it&apos;s visible in the channel only if the product status is `active`. Products that are sold exclusively on subscription (`requiresSellingPlan: true`) can be published only on online stores.
         ///</summary>
         [Description("Publishes a resource to current channel. If the resource is a product, then it's visible in the channel only if the product status is `active`. Products that are sold exclusively on subscription (`requiresSellingPlan: true`) can be published only on online stores.")]
         public PublishablePublishToCurrentChannelPayload? publishablePublishToCurrentChannel { get; set; }
 
         ///<summary>
-        ///Unpublishes a resource from a channel. If the resource is a product, then it's visible in the channel only if the product status is `active`.
+        ///Unpublishes a resource from a channel. If the resource is a product, then it&apos;s visible in the channel only if the product status is `active`.
         ///</summary>
         [Description("Unpublishes a resource from a channel. If the resource is a product, then it's visible in the channel only if the product status is `active`.")]
         public PublishableUnpublishPayload? publishableUnpublish { get; set; }
 
         ///<summary>
-        ///Unpublishes a resource from the current channel. If the resource is a product, then it's visible in the channel only if the product status is `active`.
+        ///Unpublishes a resource from the current channel. If the resource is a product, then it&apos;s visible in the channel only if the product status is `active`.
         ///</summary>
         [Description("Unpublishes a resource from the current channel. If the resource is a product, then it's visible in the channel only if the product status is `active`.")]
         public PublishableUnpublishToCurrentChannelPayload? publishableUnpublishToCurrentChannel { get; set; }
@@ -58532,7 +58532,7 @@ namespace Shopify.Types
         ///You can create both full and partial refunds, and optionally allow over-refunding in specific
         ///cases.
         ///
-        ///After creating a refund, you can track its status and details through the order's
+        ///After creating a refund, you can track its status and details through the order&apos;s
         ///[`refunds`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order#field-Order.fields.refunds)
         ///field. The refund is associated with the order and can be used for reporting and reconciliation purposes.
         ///
@@ -58540,8 +58540,8 @@ namespace Shopify.Types
         ///[managing returns](https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps/build-return-management)
         ///and [refunding duties](https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps/view-and-refund-duties).
         ///
-        ///> Note:
-        ///> The refunding behavior of the `refundCreate` mutation is similar to the
+        ///&gt; Note:
+        ///&gt; The refunding behavior of the `refundCreate` mutation is similar to the
         ///[`refundReturn`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/returnRefund)
         ///mutation. The key difference is that the `refundCreate` mutation lets you to specify restocking behavior
         ///for line items, whereas the `returnRefund` mutation focuses solely on handling the financial refund without
@@ -58551,7 +58551,7 @@ namespace Shopify.Types
         public RefundCreatePayload? refundCreate { get; set; }
 
         ///<summary>
-        ///Approves a customer's return request.
+        ///Approves a customer&apos;s return request.
         ///If this mutation is successful, then the `Return.status` field of the
         ///approved return is set to `OPEN`.
         ///</summary>
@@ -58576,7 +58576,7 @@ namespace Shopify.Types
         ///<summary>
         ///Creates a return from an existing order that has at least one fulfilled
         ///[line item](https://shopify.dev/docs/api/admin-graphql/latest/objects/LineItem)
-        ///that hasn't yet been refunded. If you create a return on an archived order, then the order is automatically
+        ///that hasn&apos;t yet been refunded. If you create a return on an archived order, then the order is automatically
         ///unarchived.
         ///
         ///Use the `returnCreate` mutation when your workflow involves
@@ -58595,7 +58595,7 @@ namespace Shopify.Types
         ///- Generates sales records that reverse the sales records for the items being returned
         ///- Generates sales records for any exchange line items
         ///
-        ///After you've created a return, use the
+        ///After you&apos;ve created a return, use the
         ///[`return`](https://shopify.dev/docs/api/admin-graphql/latest/queries/return) query to retrieve the
         ///return by its ID. Learn more about providing a
         ///[return management workflow](https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps/build-return-management)
@@ -58633,7 +58633,7 @@ namespace Shopify.Types
         public ReturnReopenPayload? returnReopen { get; set; }
 
         ///<summary>
-        ///A customer's return request that hasn't been approved or declined.
+        ///A customer&apos;s return request that hasn&apos;t been approved or declined.
         ///This mutation sets the value of the `Return.status` field to `REQUESTED`.
         ///To create a return that has the `Return.status` field set to `OPEN`, use the `returnCreate` mutation.
         ///</summary>
@@ -58677,11 +58677,11 @@ namespace Shopify.Types
         public SavedSearchUpdatePayload? savedSearchUpdate { get; set; }
 
         ///<summary>
-        ///<div class="note"><h4>Theme app extensions</h4>
-        ///  <p>If your app integrates with a Shopify theme and you plan to submit it to the Shopify App Store, you must use theme app extensions instead of Script tags. Script tags can only be used with vintage themes. <a href="/apps/online-store#what-integration-method-should-i-use" target="_blank">Learn more</a>.</p></div>
+        ///&lt;div class=&quot;note&quot; &gt; &lt;h4&gt;Theme app extensions&lt;/h4&gt;
+        ///  &lt;p&gt;If your app integrates with a Shopify theme and you plan to submit it to the Shopify App Store, you must use theme app extensions instead of Script tags. Script tags can only be used with vintage themes. &lt;a href=&quot;/apps/online-store#what-integration-method-should-i-use&quot; target=&quot;_blank&quot; &gt;Learn more&lt;/a&gt;.&lt;/p&gt; &lt;/div&gt;
         ///
-        ///<div class="note"><h4>Script tag deprecation</h4>
-        ///  <p>Script tags will be sunset for the <b>Order status</b> page on August 28, 2025. <a href="https://www.shopify.com/plus/upgrading-to-checkout-extensibility">Upgrade to Checkout Extensibility</a> before this date. <a href="/docs/api/liquid/objects#script">Shopify Scripts</a> will continue to work alongside Checkout Extensibility until August 28, 2025.</p></div>
+        ///&lt;div class=&quot;note&quot; &gt; &lt;h4&gt;Script tag deprecation&lt;/h4&gt;
+        ///  &lt;p&gt;Script tags will be sunset for the &lt;b&gt;Order status&lt;/b&gt; page on August 28, 2025. &lt;a href=&quot;https://www.shopify.com/plus/upgrading-to-checkout-extensibility&quot; &gt;Upgrade to Checkout Extensibility&lt;/a&gt; before this date. &lt;a href=&quot;/docs/api/liquid/objects#script&quot; &gt;Shopify Scripts&lt;/a&gt; will continue to work alongside Checkout Extensibility until August 28, 2025.&lt;/p&gt; &lt;/div&gt;
         ///
         ///
         ///Creates a new script tag.
@@ -58690,11 +58690,11 @@ namespace Shopify.Types
         public ScriptTagCreatePayload? scriptTagCreate { get; set; }
 
         ///<summary>
-        ///<div class="note"><h4>Theme app extensions</h4>
-        ///  <p>If your app integrates with a Shopify theme and you plan to submit it to the Shopify App Store, you must use theme app extensions instead of Script tags. Script tags can only be used with vintage themes. <a href="/apps/online-store#what-integration-method-should-i-use" target="_blank">Learn more</a>.</p></div>
+        ///&lt;div class=&quot;note&quot; &gt; &lt;h4&gt;Theme app extensions&lt;/h4&gt;
+        ///  &lt;p&gt;If your app integrates with a Shopify theme and you plan to submit it to the Shopify App Store, you must use theme app extensions instead of Script tags. Script tags can only be used with vintage themes. &lt;a href=&quot;/apps/online-store#what-integration-method-should-i-use&quot; target=&quot;_blank&quot; &gt;Learn more&lt;/a&gt;.&lt;/p&gt; &lt;/div&gt;
         ///
-        ///<div class="note"><h4>Script tag deprecation</h4>
-        ///  <p>Script tags will be sunset for the <b>Order status</b> page on August 28, 2025. <a href="https://www.shopify.com/plus/upgrading-to-checkout-extensibility">Upgrade to Checkout Extensibility</a> before this date. <a href="/docs/api/liquid/objects#script">Shopify Scripts</a> will continue to work alongside Checkout Extensibility until August 28, 2025.</p></div>
+        ///&lt;div class=&quot;note&quot; &gt; &lt;h4&gt;Script tag deprecation&lt;/h4&gt;
+        ///  &lt;p&gt;Script tags will be sunset for the &lt;b&gt;Order status&lt;/b&gt; page on August 28, 2025. &lt;a href=&quot;https://www.shopify.com/plus/upgrading-to-checkout-extensibility&quot; &gt;Upgrade to Checkout Extensibility&lt;/a&gt; before this date. &lt;a href=&quot;/docs/api/liquid/objects#script&quot; &gt;Shopify Scripts&lt;/a&gt; will continue to work alongside Checkout Extensibility until August 28, 2025.&lt;/p&gt; &lt;/div&gt;
         ///
         ///
         ///Deletes a script tag.
@@ -58703,11 +58703,11 @@ namespace Shopify.Types
         public ScriptTagDeletePayload? scriptTagDelete { get; set; }
 
         ///<summary>
-        ///<div class="note"><h4>Theme app extensions</h4>
-        ///  <p>If your app integrates with a Shopify theme and you plan to submit it to the Shopify App Store, you must use theme app extensions instead of Script tags. Script tags can only be used with vintage themes. <a href="/apps/online-store#what-integration-method-should-i-use" target="_blank">Learn more</a>.</p></div>
+        ///&lt;div class=&quot;note&quot; &gt; &lt;h4&gt;Theme app extensions&lt;/h4&gt;
+        ///  &lt;p&gt;If your app integrates with a Shopify theme and you plan to submit it to the Shopify App Store, you must use theme app extensions instead of Script tags. Script tags can only be used with vintage themes. &lt;a href=&quot;/apps/online-store#what-integration-method-should-i-use&quot; target=&quot;_blank&quot; &gt;Learn more&lt;/a&gt;.&lt;/p&gt; &lt;/div&gt;
         ///
-        ///<div class="note"><h4>Script tag deprecation</h4>
-        ///  <p>Script tags will be sunset for the <b>Order status</b> page on August 28, 2025. <a href="https://www.shopify.com/plus/upgrading-to-checkout-extensibility">Upgrade to Checkout Extensibility</a> before this date. <a href="/docs/api/liquid/objects#script">Shopify Scripts</a> will continue to work alongside Checkout Extensibility until August 28, 2025.</p></div>
+        ///&lt;div class=&quot;note&quot; &gt; &lt;h4&gt;Script tag deprecation&lt;/h4&gt;
+        ///  &lt;p&gt;Script tags will be sunset for the &lt;b&gt;Order status&lt;/b&gt; page on August 28, 2025. &lt;a href=&quot;https://www.shopify.com/plus/upgrading-to-checkout-extensibility&quot; &gt;Upgrade to Checkout Extensibility&lt;/a&gt; before this date. &lt;a href=&quot;/docs/api/liquid/objects#script&quot; &gt;Shopify Scripts&lt;/a&gt; will continue to work alongside Checkout Extensibility until August 28, 2025.&lt;/p&gt; &lt;/div&gt;
         ///
         ///
         ///Updates a script tag.
@@ -58782,7 +58782,7 @@ namespace Shopify.Types
         public ServerPixelCreatePayload? serverPixelCreate { get; set; }
 
         ///<summary>
-        ///Deletes the Server Pixel associated with the current app & shop.
+        ///Deletes the Server Pixel associated with the current app &amp; shop.
         ///</summary>
         [Description("Deletes the Server Pixel associated with the current app & shop.")]
         public ServerPixelDeletePayload? serverPixelDelete { get; set; }
@@ -58836,7 +58836,7 @@ namespace Shopify.Types
         ///
         ///Resource feedback notifications are displayed to the merchant on the home screen of their Shopify admin, and in the product details view for any products that are published to your app.
         ///
-        ///This resource should be used only in cases where you're describing steps that a merchant is required to complete. If your app offers optional or promotional set-up steps, or if it makes recommendations, then don't use resource feedback to let merchants know about them.
+        ///This resource should be used only in cases where you&apos;re describing steps that a merchant is required to complete. If your app offers optional or promotional set-up steps, or if it makes recommendations, then don&apos;t use resource feedback to let merchants know about them.
         ///
         ///## Sending feedback on a shop
         ///
@@ -58883,7 +58883,7 @@ namespace Shopify.Types
         ///For small files or simple use cases, you can use [`fileCreate`](https://shopify.dev/docs/api/admin-graphql/latest/mutations/fileCreate)
         ///directly by providing the file content inline.
         ///
-        ///The `stagedUploadsCreate` mutation is the first step in Shopify's secure two-step upload process:
+        ///The `stagedUploadsCreate` mutation is the first step in Shopify&apos;s secure two-step upload process:
         ///
         ///**Step 1: Create staged upload targets** (this mutation)
         ///- Generate secure, temporary upload URLs for your files.
@@ -58894,13 +58894,13 @@ namespace Shopify.Types
         ///- Use the returned `resourceUrl` as the `originalSource` in subsequent mutations like `fileCreate`.
         ///
         ///This approach provides better performance for large files, handles network interruptions gracefully,
-        ///and ensures secure file transfers to Shopify's storage infrastructure.
+        ///and ensures secure file transfers to Shopify&apos;s storage infrastructure.
         ///
-        ///> Note:
-        ///> File size is required when uploading
-        ///> [`VIDEO`](https://shopify.dev/docs/api/admin-graphql/latest/enums/StagedUploadTargetGenerateUploadResource#enums-VIDEO) or
-        ///> [`MODEL_3D`](https://shopify.dev/docs/api/admin-graphql/latest/enums/StagedUploadTargetGenerateUploadResource#enums-MODEL_3D)
-        ///> resources.
+        ///&gt; Note:
+        ///&gt; File size is required when uploading
+        ///&gt; [`VIDEO`](https://shopify.dev/docs/api/admin-graphql/latest/enums/StagedUploadTargetGenerateUploadResource#enums-VIDEO) or
+        ///&gt; [`MODEL_3D`](https://shopify.dev/docs/api/admin-graphql/latest/enums/StagedUploadTargetGenerateUploadResource#enums-MODEL_3D)
+        ///&gt; resources.
         ///
         ///After creating staged upload targets, complete the process by:
         ///
@@ -59207,7 +59207,7 @@ namespace Shopify.Types
         public ThemeFilesCopyPayload? themeFilesCopy { get; set; }
 
         ///<summary>
-        ///Deletes a theme's files.
+        ///Deletes a theme&apos;s files.
         ///</summary>
         [Description("Deletes a theme's files.")]
         public ThemeFilesDeletePayload? themeFilesDelete { get; set; }
@@ -59332,7 +59332,7 @@ namespace Shopify.Types
         ///by creating a web pixel record on the store where you installed your app.
         ///
         ///When you run the `webPixelCreate` mutation, Shopify validates it
-        ///against the settings definition in `shopify.extension.toml`. If the `settings` input field doesn't match
+        ///against the settings definition in `shopify.extension.toml`. If the `settings` input field doesn&apos;t match
         ///the schema that you defined, then the mutation fails. Learn how to
         ///define [web pixel settings](https://shopify.dev/docs/apps/build/marketing-analytics/build-web-pixels#step-2-define-your-web-pixel-settings).
         ///</summary>
@@ -59350,7 +59350,7 @@ namespace Shopify.Types
         ///by updating a web pixel record on the store where you installed your app.
         ///
         ///When you run the `webPixelUpdate` mutation, Shopify validates it
-        ///against the settings definition in `shopify.extension.toml`. If the `settings` input field doesn't match
+        ///against the settings definition in `shopify.extension.toml`. If the `settings` input field doesn&apos;t match
         ///the schema that you defined, then the mutation fails. Learn how to
         ///define [web pixel settings](https://shopify.dev/docs/apps/build/marketing-analytics/build-web-pixels#step-2-define-your-web-pixel-settings).
         ///</summary>
@@ -59378,7 +59378,7 @@ namespace Shopify.Types
         ///<summary>
         ///Creates a new webhook subscription.
         ///
-        ///Building an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).
+        ///Building an app? If you only use app-specific webhooks, you won&apos;t need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify &amp; require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).
         ///</summary>
         [Description("Creates a new webhook subscription.\n\nBuilding an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).")]
         public WebhookSubscriptionCreatePayload? webhookSubscriptionCreate { get; set; }
@@ -59386,7 +59386,7 @@ namespace Shopify.Types
         ///<summary>
         ///Deletes a webhook subscription.
         ///
-        ///Building an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).
+        ///Building an app? If you only use app-specific webhooks, you won&apos;t need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify &amp; require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).
         ///</summary>
         [Description("Deletes a webhook subscription.\n\nBuilding an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).")]
         public WebhookSubscriptionDeletePayload? webhookSubscriptionDelete { get; set; }
@@ -59394,7 +59394,7 @@ namespace Shopify.Types
         ///<summary>
         ///Updates a webhook subscription.
         ///
-        ///Building an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).
+        ///Building an app? If you only use app-specific webhooks, you won&apos;t need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify &amp; require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).
         ///</summary>
         [Description("Updates a webhook subscription.\n\nBuilding an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).")]
         public WebhookSubscriptionUpdatePayload? webhookSubscriptionUpdate { get; set; }
@@ -59430,7 +59430,7 @@ namespace Shopify.Types
 
     ///<summary>
     ///A default cursor that you can use in queries to paginate your results. Each edge in a connection can
-    ///return a cursor, which is a reference to the edge's position in the connection. You can use an edge's cursor as
+    ///return a cursor, which is a reference to the edge&apos;s position in the connection. You can use an edge&apos;s cursor as
     ///the starting point to retrieve the nodes before or after it in a connection.
     ///
     ///To learn more about using cursor-based pagination, refer to
@@ -59891,7 +59891,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The shop's online store channel.
+    ///The shop&apos;s online store channel.
     ///</summary>
     [Description("The shop's online store channel.")]
     public class OnlineStore : GraphQLObject<OnlineStore>
@@ -60023,7 +60023,7 @@ namespace Shopify.Types
     public class OnlineStoreThemeConnection : GraphQLObject<OnlineStoreThemeConnection>, IConnectionWithNodesAndEdges<OnlineStoreThemeEdge, OnlineStoreTheme>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -60214,7 +60214,7 @@ namespace Shopify.Types
     public class OnlineStoreThemeFileConnection : GraphQLObject<OnlineStoreThemeFileConnection>, IConnectionWithNodesAndEdges<OnlineStoreThemeFileEdge, OnlineStoreThemeFile>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -60418,7 +60418,7 @@ namespace Shopify.Types
     public enum OnlineStoreThemeFilesUserErrorsCode
     {
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -60478,7 +60478,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The `Order` object represents a customer's request to purchase one or more products from a store. Use the `Order` object to handle the complete purchase lifecycle from checkout to fulfillment.
+    ///The `Order` object represents a customer&apos;s request to purchase one or more products from a store. Use the `Order` object to handle the complete purchase lifecycle from checkout to fulfillment.
     ///
     ///Use the `Order` object when you need to:
     ///
@@ -60490,13 +60490,13 @@ namespace Shopify.Types
     ///
     ///The `Order` object serves as the central hub connecting customer information, product details, payment processing, and fulfillment data within the GraphQL Admin API schema.
     ///
-    ///> Note:
-    ///> Only the last 60 days' worth of orders from a store are accessible from the `Order` object by default. If you want to access older records,
-    ///> then you need to [request access to all orders](https://shopify.dev/docs/api/usage/access-scopes#orders-permissions). If your app is granted
-    ///> access, then you can add the `read_all_orders`, `read_orders`, and `write_orders` scopes.
+    ///&gt; Note:
+    ///&gt; Only the last 60 days&apos; worth of orders from a store are accessible from the `Order` object by default. If you want to access older records,
+    ///&gt; then you need to [request access to all orders](https://shopify.dev/docs/api/usage/access-scopes#orders-permissions). If your app is granted
+    ///&gt; access, then you can add the `read_all_orders`, `read_orders`, and `write_orders` scopes.
     ///
-    ///> Caution:
-    ///> Only use orders data if it's required for your app's functionality. Shopify will restrict [access to scopes](https://shopify.dev/docs/api/usage/access-scopes#requesting-specific-permissions) for apps that don't have a legitimate use for the associated data.
+    ///&gt; Caution:
+    ///&gt; Only use orders data if it&apos;s required for your app&apos;s functionality. Shopify will restrict [access to scopes](https://shopify.dev/docs/api/usage/access-scopes#requesting-specific-permissions) for apps that don&apos;t have a legitimate use for the associated data.
     ///
     ///Learn more about [building apps for orders and fulfillment](https://shopify.dev/docs/apps/build/orders-fulfillment).
     ///</summary>
@@ -60518,14 +60518,14 @@ namespace Shopify.Types
         public SalesAgreementConnection? agreements { get; set; }
 
         ///<summary>
-        ///A list of messages that appear on the **Orders** page in the Shopify admin. These alerts provide merchants with important information about an order's status or required actions.
+        ///A list of messages that appear on the **Orders** page in the Shopify admin. These alerts provide merchants with important information about an order&apos;s status or required actions.
         ///</summary>
         [Description("A list of messages that appear on the **Orders** page in the Shopify admin. These alerts provide merchants with important information about an order's status or required actions.")]
         [NonNull]
         public IEnumerable<ResourceAlert>? alerts { get; set; }
 
         ///<summary>
-        ///The application that created the order. For example, "Online Store", "Point of Sale", or a custom app name.
+        ///The application that created the order. For example, &quot;Online Store&quot;, &quot;Point of Sale&quot;, or a custom app name.
         ///Use this to identify the order source for attribution and fulfillment workflows.
         ///Learn more about [building apps for orders and fulfillment](https://shopify.dev/docs/apps/build/orders-fulfillment).
         ///</summary>
@@ -60540,7 +60540,7 @@ namespace Shopify.Types
         public MailingAddress? billingAddress { get; set; }
 
         ///<summary>
-        ///Whether the billing address matches the [shipping address](https://shopify.dev/docs/api/admin-graphql/latest/objects/order#field-Order.fields.shippingAddress). Returns `true` if both addresses are the same, and `false` if they're different or if an address is missing.
+        ///Whether the billing address matches the [shipping address](https://shopify.dev/docs/api/admin-graphql/latest/objects/order#field-Order.fields.shippingAddress). Returns `true` if both addresses are the same, and `false` if they&apos;re different or if an address is missing.
         ///</summary>
         [Description("Whether the billing address matches the [shipping address](https://shopify.dev/docs/api/admin-graphql/latest/objects/order#field-Order.fields.shippingAddress). Returns `true` if both addresses are the same, and `false` if they're different or if an address is missing.")]
         [NonNull]
@@ -60562,27 +60562,27 @@ namespace Shopify.Types
         public bool? canNotifyCustomer { get; set; }
 
         ///<summary>
-        ///The reason provided for an order cancellation. For example, a merchant might cancel an order if there's insufficient inventory. Returns `null` if the order hasn't been canceled.
+        ///The reason provided for an order cancellation. For example, a merchant might cancel an order if there&apos;s insufficient inventory. Returns `null` if the order hasn&apos;t been canceled.
         ///</summary>
         [Description("The reason provided for an order cancellation. For example, a merchant might cancel an order if there's insufficient inventory. Returns `null` if the order hasn't been canceled.")]
         public string? cancelReason { get; set; }
 
         ///<summary>
-        ///Details of an order's cancellation, if it has been canceled. This includes the reason, date, and any [staff notes](https://shopify.dev/api/admin-graphql/latest/objects/OrderCancellation#field-OrderCancellation.fields.staffNote).
+        ///Details of an order&apos;s cancellation, if it has been canceled. This includes the reason, date, and any [staff notes](https://shopify.dev/api/admin-graphql/latest/objects/OrderCancellation#field-OrderCancellation.fields.staffNote).
         ///</summary>
         [Description("Details of an order's cancellation, if it has been canceled. This includes the reason, date, and any [staff notes](https://shopify.dev/api/admin-graphql/latest/objects/OrderCancellation#field-OrderCancellation.fields.staffNote).")]
         public OrderCancellation? cancellation { get; set; }
 
         ///<summary>
         ///The date and time in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601) when an order was canceled.
-        ///Returns `null` if the order hasn't been canceled.
+        ///Returns `null` if the order hasn&apos;t been canceled.
         ///</summary>
         [Description("The date and time in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601) when an order was canceled.\nReturns `null` if the order hasn't been canceled.")]
         public DateTime? cancelledAt { get; set; }
 
         ///<summary>
         ///Whether an authorized payment for an order can be captured.
-        ///Returns `true` if an authorized payment exists that hasn't been fully captured yet. Learn more about [capturing payments](https://help.shopify.com/en/manual/fulfillment/managing-orders/payments/capturing-payments).
+        ///Returns `true` if an authorized payment exists that hasn&apos;t been fully captured yet. Learn more about [capturing payments](https://help.shopify.com/en/manual/fulfillment/managing-orders/payments/capturing-payments).
         ///</summary>
         [Description("Whether an authorized payment for an order can be captured.\nReturns `true` if an authorized payment exists that hasn't been fully captured yet. Learn more about [capturing payments](https://help.shopify.com/en/manual/fulfillment/managing-orders/payments/capturing-payments).")]
         [NonNull]
@@ -60629,20 +60629,20 @@ namespace Shopify.Types
         public bool? closed { get; set; }
 
         ///<summary>
-        ///The date and time [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601) when an order was closed. Shopify automatically records this timestamp when all items have been fulfilled or canceled, and all financial transactions are complete. Returns `null` if the order isn't closed.
+        ///The date and time [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601) when an order was closed. Shopify automatically records this timestamp when all items have been fulfilled or canceled, and all financial transactions are complete. Returns `null` if the order isn&apos;t closed.
         ///</summary>
         [Description("The date and time [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601) when an order was closed. Shopify automatically records this timestamp when all items have been fulfilled or canceled, and all financial transactions are complete. Returns `null` if the order isn't closed.")]
         public DateTime? closedAt { get; set; }
 
         ///<summary>
         ///A customer-facing order identifier, often shown instead of the sequential order name.
-        ///It uses a random alphanumeric format (for example, `XPAV284CT`) and isn't guaranteed to be unique across orders.
+        ///It uses a random alphanumeric format (for example, `XPAV284CT`) and isn&apos;t guaranteed to be unique across orders.
         ///</summary>
         [Description("A customer-facing order identifier, often shown instead of the sequential order name.\nIt uses a random alphanumeric format (for example, `XPAV284CT`) and isn't guaranteed to be unique across orders.")]
         public string? confirmationNumber { get; set; }
 
         ///<summary>
-        ///Whether inventory has been reserved for an order. Returns `true` if inventory quantities for an order's [line items](https://shopify.dev/docs/api/admin-graphql/latest/objects/LineItem) have been reserved.
+        ///Whether inventory has been reserved for an order. Returns `true` if inventory quantities for an order&apos;s [line items](https://shopify.dev/docs/api/admin-graphql/latest/objects/LineItem) have been reserved.
         ///Learn more about [managing inventory quantities and states](https://shopify.dev/docs/apps/build/orders-fulfillment/inventory-management-apps/manage-quantities-states).
         ///</summary>
         [Description("Whether inventory has been reserved for an order. Returns `true` if inventory quantities for an order's [line items](https://shopify.dev/docs/api/admin-graphql/latest/objects/LineItem) have been reserved.\nLearn more about [managing inventory quantities and states](https://shopify.dev/docs/apps/build/orders-fulfillment/inventory-management-apps/manage-quantities-states).")]
@@ -60650,14 +60650,14 @@ namespace Shopify.Types
         public bool? confirmed { get; set; }
 
         ///<summary>
-        ///The date and time in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601) when an order was created. This timestamp is set when the customer completes checkout and remains unchanged throughout an order's lifecycle.
+        ///The date and time in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601) when an order was created. This timestamp is set when the customer completes checkout and remains unchanged throughout an order&apos;s lifecycle.
         ///</summary>
         [Description("The date and time in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601) when an order was created. This timestamp is set when the customer completes checkout and remains unchanged throughout an order's lifecycle.")]
         [NonNull]
         public DateTime? createdAt { get; set; }
 
         ///<summary>
-        ///The shop currency when the order was placed. For example, "USD" or "CAD".
+        ///The shop currency when the order was placed. For example, &quot;USD&quot; or &quot;CAD&quot;.
         ///</summary>
         [Description("The shop currency when the order was placed. For example, \"USD\" or \"CAD\".")]
         [NonNull]
@@ -60679,7 +60679,7 @@ namespace Shopify.Types
         public MoneyBag? currentShippingPriceSet { get; set; }
 
         ///<summary>
-        ///The current sum of the quantities for all line items that contribute to the order's subtotal price, after returns, refunds, order edits, and cancellations.
+        ///The current sum of the quantities for all line items that contribute to the order&apos;s subtotal price, after returns, refunds, order edits, and cancellations.
         ///</summary>
         [Description("The current sum of the quantities for all line items that contribute to the order's subtotal price, after returns, refunds, order edits, and cancellations.")]
         [NonNull]
@@ -60767,22 +60767,22 @@ namespace Shopify.Types
         public bool? customerAcceptsMarketing { get; set; }
 
         ///<summary>
-        ///The customer's visits and interactions with the online store before placing the order.
+        ///The customer&apos;s visits and interactions with the online store before placing the order.
         ///</summary>
         [Description("The customer's visits and interactions with the online store before placing the order.")]
         [Obsolete("Use `customerJourneySummary` instead.")]
         public CustomerJourney? customerJourney { get; set; }
 
         ///<summary>
-        ///The customer's visits and interactions with the online store before placing the order.
+        ///The customer&apos;s visits and interactions with the online store before placing the order.
         ///Use this to understand customer behavior, attribution sources, and marketing effectiveness to optimize your sales funnel.
         ///</summary>
         [Description("The customer's visits and interactions with the online store before placing the order.\nUse this to understand customer behavior, attribution sources, and marketing effectiveness to optimize your sales funnel.")]
         public CustomerJourneySummary? customerJourneySummary { get; set; }
 
         ///<summary>
-        ///The customer's language and region preference at the time of purchase. For example, "en" for English, "fr-CA" for French (Canada), or "es-MX" for Spanish (Mexico).
-        ///Use this to provide localized customer service and targeted marketing in the customer's preferred language.
+        ///The customer&apos;s language and region preference at the time of purchase. For example, &quot;en&quot; for English, &quot;fr-CA&quot; for French (Canada), or &quot;es-MX&quot; for Spanish (Mexico).
+        ///Use this to provide localized customer service and targeted marketing in the customer&apos;s preferred language.
         ///</summary>
         [Description("The customer's language and region preference at the time of purchase. For example, \"en\" for English, \"fr-CA\" for French (Canada), or \"es-MX\" for Spanish (Mexico).\nUse this to provide localized customer service and targeted marketing in the customer's preferred language.")]
         public string? customerLocale { get; set; }
@@ -60816,13 +60816,13 @@ namespace Shopify.Types
         public MailingAddress? displayAddress { get; set; }
 
         ///<summary>
-        ///An order's financial status for display in the Shopify admin.
+        ///An order&apos;s financial status for display in the Shopify admin.
         ///</summary>
         [Description("An order's financial status for display in the Shopify admin.")]
         public string? displayFinancialStatus { get; set; }
 
         ///<summary>
-        ///The order's fulfillment status that displays in the Shopify admin to merchants. For example, an order might be unfulfilled or scheduled.
+        ///The order&apos;s fulfillment status that displays in the Shopify admin to merchants. For example, an order might be unfulfilled or scheduled.
         ///For detailed processing, use the [`FulfillmentOrder`](https://shopify.dev/docs/api/admin-graphql/latest/objects/FulfillmentOrder) object.
         ///</summary>
         [Description("The order's fulfillment status that displays in the Shopify admin to merchants. For example, an order might be unfulfilled or scheduled.\nFor detailed processing, use the [`FulfillmentOrder`](https://shopify.dev/docs/api/admin-graphql/latest/objects/FulfillmentOrder) object.")]
@@ -60862,7 +60862,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///Whether taxes on the order are estimated.
-        ///This field returns `false` when taxes on the order are finalized and aren't subject to any changes.
+        ///This field returns `false` when taxes on the order are finalized and aren&apos;t subject to any changes.
         ///</summary>
         [Description("Whether taxes on the order are estimated.\nThis field returns `false` when taxes on the order are finalized and aren't subject to any changes.")]
         [NonNull]
@@ -60956,7 +60956,7 @@ namespace Shopify.Types
         public ulong? legacyResourceId { get; set; }
 
         ///<summary>
-        ///A list of the order's line items. Line items represent the individual products and quantities that make up the order.
+        ///A list of the order&apos;s line items. Line items represent the individual products and quantities that make up the order.
         ///</summary>
         [Description("A list of the order's line items. Line items represent the individual products and quantities that make up the order.")]
         [NonNull]
@@ -60986,14 +60986,14 @@ namespace Shopify.Types
         public BusinessEntity? merchantBusinessEntity { get; set; }
 
         ///<summary>
-        ///Whether the order can be edited by the merchant. Returns `false` for orders that can't be modified, such as canceled orders or orders with specific payment statuses.
+        ///Whether the order can be edited by the merchant. Returns `false` for orders that can&apos;t be modified, such as canceled orders or orders with specific payment statuses.
         ///</summary>
         [Description("Whether the order can be edited by the merchant. Returns `false` for orders that can't be modified, such as canceled orders or orders with specific payment statuses.")]
         [NonNull]
         public bool? merchantEditable { get; set; }
 
         ///<summary>
-        ///A list of reasons why the order can't be edited. For example, canceled orders can't be edited.
+        ///A list of reasons why the order can&apos;t be edited. For example, canceled orders can&apos;t be edited.
         ///</summary>
         [Description("A list of reasons why the order can't be edited. For example, canceled orders can't be edited.")]
         [NonNull]
@@ -61007,7 +61007,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -61031,8 +61031,8 @@ namespace Shopify.Types
 
         ///<summary>
         ///The unique identifier for the order that appears on the order page in the Shopify admin and the **Order status** page.
-        ///For example, "#1001", "EN1001", or "1001-A".
-        ///This value isn't unique across multiple stores. Use this field to identify orders in the Shopify admin and for order tracking.
+        ///For example, &quot;#1001&quot;, &quot;EN1001&quot;, or &quot;1001-A&quot;.
+        ///This value isn&apos;t unique across multiple stores. Use this field to identify orders in the Shopify admin and for order tracking.
         ///</summary>
         [Description("The unique identifier for the order that appears on the order page in the Shopify admin and the **Order status** page.\nFor example, \"#1001\", \"EN1001\", or \"1001-A\".\nThis value isn't unique across multiple stores. Use this field to identify orders in the Shopify admin and for order tracking.")]
         [NonNull]
@@ -61054,8 +61054,8 @@ namespace Shopify.Types
         public MoneyBag? netPaymentSet { get; set; }
 
         ///<summary>
-        ///A list of line items that can't be fulfilled.
-        ///For example, tips and fully refunded line items can't be fulfilled.
+        ///A list of line items that can&apos;t be fulfilled.
+        ///For example, tips and fully refunded line items can&apos;t be fulfilled.
         ///For a more granular view of the fulfillment status, refer to the [FulfillmentOrder](https://shopify.dev/api/admin-graphql/latest/objects/FulfillmentOrder) object.
         ///</summary>
         [Description("A list of line items that can't be fulfilled.\nFor example, tips and fully refunded line items can't be fulfilled.\nFor a more granular view of the fulfillment status, refer to the [FulfillmentOrder](https://shopify.dev/api/admin-graphql/latest/objects/FulfillmentOrder) object.")]
@@ -61072,7 +61072,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The total amount of all additional fees, such as import fees or taxes, that were applied when an order was created.
-        ///Returns `null` if additional fees aren't applicable.
+        ///Returns `null` if additional fees aren&apos;t applicable.
         ///</summary>
         [Description("The total amount of all additional fees, such as import fees or taxes, that were applied when an order was created.\nReturns `null` if additional fees aren't applicable.")]
         public MoneyBag? originalTotalAdditionalFeesSet { get; set; }
@@ -61101,7 +61101,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A list of the names of all payment gateways used for the order.
-        ///For example, "Shopify Payments" and "Cash on Delivery (COD)".
+        ///For example, &quot;Shopify Payments&quot; and &quot;Cash on Delivery (COD)&quot;.
         ///</summary>
         [Description("A list of the names of all payment gateways used for the order.\nFor example, \"Shopify Payments\" and \"Cash on Delivery (COD)\".")]
         [NonNull]
@@ -61132,15 +61132,15 @@ namespace Shopify.Types
         public Location? physicalLocation { get; set; }
 
         ///<summary>
-        ///The purchase order (PO) number that's associated with an order.
+        ///The purchase order (PO) number that&apos;s associated with an order.
         ///This is typically provided by business customers who require a PO number for their procurement.
         ///</summary>
         [Description("The purchase order (PO) number that's associated with an order.\nThis is typically provided by business customers who require a PO number for their procurement.")]
         public string? poNumber { get; set; }
 
         ///<summary>
-        ///The currency used by the customer when placing the order. For example, "USD", "EUR", or "CAD".
-        ///This may differ from the shop's base currency when serving international customers or using multi-currency pricing.
+        ///The currency used by the customer when placing the order. For example, &quot;USD&quot;, &quot;EUR&quot;, or &quot;CAD&quot;.
+        ///This may differ from the shop&apos;s base currency when serving international customers or using multi-currency pricing.
         ///</summary>
         [Description("The currency used by the customer when placing the order. For example, \"USD\", \"EUR\", or \"CAD\".\nThis may differ from the shop's base currency when serving international customers or using multi-currency pricing.")]
         [NonNull]
@@ -61169,7 +61169,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The marketing referral code from the link that the customer clicked to visit the store.
-        ///Supports the following URL attributes: "ref", "source", or "r".
+        ///Supports the following URL attributes: &quot;ref&quot;, &quot;source&quot;, or &quot;r&quot;.
         ///For example, if the URL is `{shop}.myshopify.com/products/slide?ref=j2tj1tn2`, then this value is `j2tj1tn2`.
         ///</summary>
         [Description("The marketing referral code from the link that the customer clicked to visit the store.\nSupports the following URL attributes: \"ref\", \"source\", or \"r\".\nFor example, if the URL is `{shop}.myshopify.com/products/slide?ref=j2tj1tn2`, then this value is `j2tj1tn2`.")]
@@ -61177,7 +61177,7 @@ namespace Shopify.Types
         public string? referralCode { get; set; }
 
         ///<summary>
-        ///A web domain or short description of the source that sent the customer to your online store. For example, "shopify.com" or "email".
+        ///A web domain or short description of the source that sent the customer to your online store. For example, &quot;shopify.com&quot; or &quot;email&quot;.
         ///</summary>
         [Description("A web domain or short description of the source that sent the customer to your online store. For example, \"shopify.com\" or \"email\".")]
         [Obsolete("Use `customerJourneySummary.lastVisit.referralInfoHtml` instead")]
@@ -61192,7 +61192,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The difference between the suggested and actual refund amount of all refunds that have been applied to the order.
-        ///A positive value indicates a difference in the merchant's favor, and a negative value indicates a difference in the customer's favor.
+        ///A positive value indicates a difference in the merchant&apos;s favor, and a negative value indicates a difference in the customer&apos;s favor.
         ///</summary>
         [Description("The difference between the suggested and actual refund amount of all refunds that have been applied to the order.\nA positive value indicates a difference in the merchant's favor, and a negative value indicates a difference in the customer's favor.")]
         [NonNull]
@@ -61215,7 +61215,7 @@ namespace Shopify.Types
         public IEnumerable<Refund>? refunds { get; set; }
 
         ///<summary>
-        ///The URL of the source that the order originated from, if found in the domain registry. Returns `null` if the source URL isn't in the domain registry.
+        ///The URL of the source that the order originated from, if found in the domain registry. Returns `null` if the source URL isn&apos;t in the domain registry.
         ///</summary>
         [Description("The URL of the source that the order originated from, if found in the domain registry. Returns `null` if the source URL isn't in the domain registry.")]
         public string? registeredSourceUrl { get; set; }
@@ -61231,20 +61231,20 @@ namespace Shopify.Types
 
         ///<summary>
         ///Whether any line items on the order can be restocked into inventory.
-        ///Returns `false` for digital products, custom items, or items that can't be resold.
+        ///Returns `false` for digital products, custom items, or items that can&apos;t be resold.
         ///</summary>
         [Description("Whether any line items on the order can be restocked into inventory.\nReturns `false` for digital products, custom items, or items that can't be resold.")]
         [NonNull]
         public bool? restockable { get; set; }
 
         ///<summary>
-        ///The physical location where a retail order is created or completed, except for draft POS orders completed using the "mark as paid" flow in the Shopify admin, which return `null`. Transactions associated with the order might have been processed at a different location.
+        ///The physical location where a retail order is created or completed, except for draft POS orders completed using the &quot;mark as paid&quot; flow in the Shopify admin, which return `null`. Transactions associated with the order might have been processed at a different location.
         ///</summary>
         [Description("The physical location where a retail order is created or completed, except for draft POS orders completed using the \"mark as paid\" flow in the Shopify admin, which return `null`. Transactions associated with the order might have been processed at a different location.")]
         public Location? retailLocation { get; set; }
 
         ///<summary>
-        ///The order's aggregated return status for display purposes.
+        ///The order&apos;s aggregated return status for display purposes.
         ///Indicates the overall state of returns for the order, helping merchants track and manage the return process.
         ///</summary>
         [Description("The order's aggregated return status for display purposes.\nIndicates the overall state of returns for the order, helping merchants track and manage the return process.")]
@@ -61287,8 +61287,8 @@ namespace Shopify.Types
 
         ///<summary>
         ///The shipping address where the order will be delivered.
-        ///Contains the customer's delivery location for fulfillment and shipping label generation.
-        ///Returns `null` for digital orders or orders that don't require shipping.
+        ///Contains the customer&apos;s delivery location for fulfillment and shipping label generation.
+        ///Returns `null` for digital orders or orders that don&apos;t require shipping.
         ///</summary>
         [Description("The shipping address where the order will be delivered.\nContains the customer's delivery location for fulfillment and shipping label generation.\nReturns `null` for digital orders or orders that don't require shipping.")]
         public MailingAddress? shippingAddress { get; set; }
@@ -61312,7 +61312,7 @@ namespace Shopify.Types
         ///<summary>
         ///The Shopify Protect details for the order, including fraud protection status and coverage information.
         ///Shopify Protect helps protect eligible orders against fraudulent chargebacks.
-        ///Returns `null` if Shopify Protect is disabled for the shop or the order isn't eligible for protection.
+        ///Returns `null` if Shopify Protect is disabled for the shop or the order isn&apos;t eligible for protection.
         ///Learn more about [Shopify Protect](https://www.shopify.com/protect).
         ///</summary>
         [Description("The Shopify Protect details for the order, including fraud protection status and coverage information.\nShopify Protect helps protect eligible orders against fraudulent chargebacks.\nReturns `null` if Shopify Protect is disabled for the shop or the order isn't eligible for protection.\nLearn more about [Shopify Protect](https://www.shopify.com/protect).")]
@@ -61320,13 +61320,13 @@ namespace Shopify.Types
 
         ///<summary>
         ///A unique POS or third party order identifier.
-        ///For example, "1234-12-1000" or "111-98567-54". The [`receiptNumber`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order#field-receiptNumber) field is derived from this value for POS orders.
+        ///For example, &quot;1234-12-1000&quot; or &quot;111-98567-54&quot;. The [`receiptNumber`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order#field-receiptNumber) field is derived from this value for POS orders.
         ///</summary>
         [Description("A unique POS or third party order identifier.\nFor example, \"1234-12-1000\" or \"111-98567-54\". The [`receiptNumber`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order#field-receiptNumber) field is derived from this value for POS orders.")]
         public string? sourceIdentifier { get; set; }
 
         ///<summary>
-        ///The name of the source associated with the order, such as "web", "mobile_app", or "pos". Use this field to identify the platform where the order was placed.
+        ///The name of the source associated with the order, such as &quot;web&quot;, &quot;mobile_app&quot;, or &quot;pos&quot;. Use this field to identify the platform where the order was placed.
         ///</summary>
         [Description("The name of the source associated with the order, such as \"web\", \"mobile_app\", or \"pos\". Use this field to identify the platform where the order was placed.")]
         public string? sourceName { get; set; }
@@ -61340,7 +61340,7 @@ namespace Shopify.Types
         public StaffMember? staffMember { get; set; }
 
         ///<summary>
-        ///The URL where customers can check their order's current status, including tracking information and delivery updates.
+        ///The URL where customers can check their order&apos;s current status, including tracking information and delivery updates.
         ///Provides order tracking links in emails, apps, or customer communications.
         ///</summary>
         [Description("The URL where customers can check their order's current status, including tracking information and delivery updates.\nProvides order tracking links in emails, apps, or customer communications.")]
@@ -61348,8 +61348,8 @@ namespace Shopify.Types
         public string? statusPageUrl { get; set; }
 
         ///<summary>
-        ///The sum of quantities for all line items that contribute to the order's subtotal price.
-        ///This excludes quantities for items like tips, shipping costs, or gift cards that don't affect the subtotal.
+        ///The sum of quantities for all line items that contribute to the order&apos;s subtotal price.
+        ///This excludes quantities for items like tips, shipping costs, or gift cards that don&apos;t affect the subtotal.
         ///Use this to quickly understand the total item count for pricing calculations.
         ///</summary>
         [Description("The sum of quantities for all line items that contribute to the order's subtotal price.\nThis excludes quantities for items like tips, shipping costs, or gift cards that don't affect the subtotal.\nUse this to quickly understand the total item count for pricing calculations.")]
@@ -61416,15 +61416,15 @@ namespace Shopify.Types
         ///<summary>
         ///Whether the order is a test.
         ///Test orders are made using the Shopify Bogus Gateway or a payment provider with test mode enabled.
-        ///A test order can't be converted into a real order and vice versa.
+        ///A test order can&apos;t be converted into a real order and vice versa.
         ///</summary>
         [Description("Whether the order is a test.\nTest orders are made using the Shopify Bogus Gateway or a payment provider with test mode enabled.\nA test order can't be converted into a real order and vice versa.")]
         [NonNull]
         public bool? test { get; set; }
 
         ///<summary>
-        ///The authorized amount that's uncaptured or undercaptured, in shop currency.
-        ///This amount isn't adjusted for returns.
+        ///The authorized amount that&apos;s uncaptured or undercaptured, in shop currency.
+        ///This amount isn&apos;t adjusted for returns.
         ///</summary>
         [Description("The authorized amount that's uncaptured or undercaptured, in shop currency.\nThis amount isn't adjusted for returns.")]
         [Obsolete("Use `totalCapturableSet` instead.")]
@@ -61432,8 +61432,8 @@ namespace Shopify.Types
         public decimal? totalCapturable { get; set; }
 
         ///<summary>
-        ///The authorized amount that's uncaptured or undercaptured, in shop and presentment currencies.
-        ///This amount isn't adjusted for returns.
+        ///The authorized amount that&apos;s uncaptured or undercaptured, in shop and presentment currencies.
+        ///This amount isn&apos;t adjusted for returns.
         ///</summary>
         [Description("The authorized amount that's uncaptured or undercaptured, in shop and presentment currencies.\nThis amount isn't adjusted for returns.")]
         [NonNull]
@@ -61463,7 +61463,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The total amount not yet transacted for the order, in shop and presentment currencies.
-        ///A positive value indicates a difference in the merchant's favor (payment from customer to merchant) and a negative value indicates a difference in the customer's favor (refund from merchant to customer).
+        ///A positive value indicates a difference in the merchant&apos;s favor (payment from customer to merchant) and a negative value indicates a difference in the customer&apos;s favor (refund from merchant to customer).
         ///</summary>
         [Description("The total amount not yet transacted for the order, in shop and presentment currencies.\nA positive value indicates a difference in the merchant's favor (payment from customer to merchant) and a negative value indicates a difference in the customer's favor (refund from merchant to customer).")]
         [NonNull]
@@ -61684,7 +61684,7 @@ namespace Shopify.Types
     public class OrderAdjustmentConnection : GraphQLObject<OrderAdjustmentConnection>, IConnectionWithNodesAndEdges<OrderAdjustmentEdge, OrderAdjustment>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -61921,7 +61921,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Represents the reason for the order's cancellation.
+    ///Represents the reason for the order&apos;s cancellation.
     ///</summary>
     [Description("Represents the reason for the order's cancellation.")]
     public enum OrderCancelReason
@@ -62006,7 +62006,7 @@ namespace Shopify.Types
         [Description("An order refund was requested but the user does not have the refund_orders permission.")]
         NO_REFUND_PERMISSION,
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -62090,7 +62090,7 @@ namespace Shopify.Types
     public class OrderConnection : GraphQLObject<OrderConnection>, IConnectionWithNodesAndEdges<OrderEdge, Order>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -62172,7 +62172,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The order's status in terms of fulfilled line items.
+    ///The order&apos;s status in terms of fulfilled line items.
     ///</summary>
     [Description("The order's status in terms of fulfilled line items.")]
     public enum OrderCreateFulfillmentStatus
@@ -62213,12 +62213,12 @@ namespace Shopify.Types
         [Description("Do not claim inventory.")]
         BYPASS,
         ///<summary>
-        ///Ignore the product's inventory policy and claim inventory.
+        ///Ignore the product&apos;s inventory policy and claim inventory.
         ///</summary>
         [Description("Ignore the product's inventory policy and claim inventory.")]
         DECREMENT_IGNORING_POLICY,
         ///<summary>
-        ///Follow the product's inventory policy and claim inventory, if possible.
+        ///Follow the product&apos;s inventory policy and claim inventory, if possible.
         ///</summary>
         [Description("Follow the product's inventory policy and claim inventory, if possible.")]
         DECREMENT_OBEYING_POLICY,
@@ -62542,7 +62542,7 @@ namespace Shopify.Types
     public enum OrderDeleteUserErrorCode
     {
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -62560,7 +62560,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Represents the order's current financial status.
+    ///Represents the order&apos;s current financial status.
     ///</summary>
     [Description("Represents the order's current financial status.")]
     public enum OrderDisplayFinancialStatus
@@ -62571,7 +62571,7 @@ namespace Shopify.Types
         [Description("Displayed as **Pending**. Orders have this status when the payment provider needs time to complete the payment, or when manual payment methods are being used.")]
         PENDING,
         ///<summary>
-        ///Displayed as **Authorized**. The payment provider has validated the customer's payment information. This status appears only for manual payment capture and indicates payments should be captured before the authorization period expires.
+        ///Displayed as **Authorized**. The payment provider has validated the customer&apos;s payment information. This status appears only for manual payment capture and indicates payments should be captured before the authorization period expires.
         ///</summary>
         [Description("Displayed as **Authorized**. The payment provider has validated the customer's payment information. This status appears only for manual payment capture and indicates payments should be captured before the authorization period expires.")]
         AUTHORIZED,
@@ -62602,7 +62602,7 @@ namespace Shopify.Types
         [Description("Displayed as **Refunded**. The full amount paid for an order was refunded to the customer.")]
         REFUNDED,
         ///<summary>
-        ///Displayed as **Expired**. Payment wasn't captured before the payment provider's deadline on an authorized order. Some payment providers use this status to indicate failed payment processing.
+        ///Displayed as **Expired**. Payment wasn&apos;t captured before the payment provider&apos;s deadline on an authorized order. Some payment providers use this status to indicate failed payment processing.
         ///</summary>
         [Description("Displayed as **Expired**. Payment wasn't captured before the payment provider's deadline on an authorized order. Some payment providers use this status to indicate failed payment processing.")]
         EXPIRED,
@@ -62621,7 +62621,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Represents the order's aggregated fulfillment status for display purposes.
+    ///Represents the order&apos;s aggregated fulfillment status for display purposes.
     ///</summary>
     [Description("Represents the order's aggregated fulfillment status for display purposes.")]
     public enum OrderDisplayFulfillmentStatus
@@ -62642,17 +62642,17 @@ namespace Shopify.Types
         [Description("Displayed as **Fulfilled**. All the items in the order have been fulfilled.")]
         FULFILLED,
         ///<summary>
-        ///Displayed as **Restocked**. All the items in the order have been restocked. Replaced by the "UNFULFILLED" status.
+        ///Displayed as **Restocked**. All the items in the order have been restocked. Replaced by the &quot;UNFULFILLED&quot; status.
         ///</summary>
         [Description("Displayed as **Restocked**. All the items in the order have been restocked. Replaced by the \"UNFULFILLED\" status.")]
         RESTOCKED,
         ///<summary>
-        ///Displayed as **Pending fulfillment**. A request for fulfillment of some items awaits a response from the fulfillment service. Replaced by the "IN_PROGRESS" status.
+        ///Displayed as **Pending fulfillment**. A request for fulfillment of some items awaits a response from the fulfillment service. Replaced by the &quot;IN_PROGRESS&quot; status.
         ///</summary>
         [Description("Displayed as **Pending fulfillment**. A request for fulfillment of some items awaits a response from the fulfillment service. Replaced by the \"IN_PROGRESS\" status.")]
         PENDING_FULFILLMENT,
         ///<summary>
-        ///Displayed as **Open**. None of the items in the order have been fulfilled. Replaced by "UNFULFILLED" status.
+        ///Displayed as **Open**. None of the items in the order have been fulfilled. Replaced by &quot;UNFULFILLED&quot; status.
         ///</summary>
         [Description("Displayed as **Open**. None of the items in the order have been fulfilled. Replaced by \"UNFULFILLED\" status.")]
         OPEN,
@@ -62814,7 +62814,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The [calculated shipping line](https://shopify.dev/api/admin-graphql/latest/objects/calculatedshippingline)
-        ///that's added during this order edit.
+        ///that&apos;s added during this order edit.
         ///</summary>
         [Description("The [calculated shipping line](https://shopify.dev/api/admin-graphql/latest/objects/calculatedshippingline)\nthat's added during this order edit.")]
         public CalculatedShippingLine? calculatedShippingLine { get; set; }
@@ -62879,7 +62879,7 @@ namespace Shopify.Types
     {
         ///<summary>
         ///The [calculated line item](https://shopify.dev/api/admin-graphql/latest/objects/calculatedlineitem)
-        ///that's added during this order edit.
+        ///that&apos;s added during this order edit.
         ///</summary>
         [Description("The [calculated line item](https://shopify.dev/api/admin-graphql/latest/objects/calculatedlineitem)\nthat's added during this order edit.")]
         public CalculatedLineItem? calculatedLineItem { get; set; }
@@ -63419,7 +63419,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The status of a customer's payment for an order.
+    ///The status of a customer&apos;s payment for an order.
     ///</summary>
     [Description("The status of a customer's payment for an order.")]
     public class OrderPaymentStatus : GraphQLObject<OrderPaymentStatus>
@@ -63549,7 +63549,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The order's aggregated return status that's used for display purposes.
+    ///The order&apos;s aggregated return status that&apos;s used for display purposes.
     ///An order might have multiple returns, so this field communicates the prioritized return status.
     ///The `OrderReturnStatus` enum is a supported filter parameter in the [`orders` query](https://shopify.dev/api/admin-graphql/latest/queries/orders#:~:text=reference_location_id-,return_status,-risk_level).
     ///</summary>
@@ -63620,7 +63620,7 @@ namespace Shopify.Types
         public string? level { get; set; }
 
         ///<summary>
-        ///The risk message that's shown to the merchant in the Shopify admin.
+        ///The risk message that&apos;s shown to the merchant in the Shopify admin.
         ///</summary>
         [Description("The risk message that's shown to the merchant in the Shopify admin.")]
         [Obsolete("This field is deprecated in favor of OrderRiskAssessment.facts.")]
@@ -63630,7 +63630,7 @@ namespace Shopify.Types
     ///<summary>
     ///The risk assessments for an order.
     ///
-    ///See the [example query "Retrieves a list of all order risks for an order"](https://shopify.dev/docs/api/admin-graphql/unstable/queries/order?example=Retrieves+a+list+of+all+order+risks+for+an+order).
+    ///See the [example query &quot;Retrieves a list of all order risks for an order&quot;](https://shopify.dev/docs/api/admin-graphql/unstable/queries/order?example=Retrieves+a+list+of+all+order+risks+for+an+order).
     ///</summary>
     [Description("The risk assessments for an order.\n\nSee the [example query \"Retrieves a list of all order risks for an order\"](https://shopify.dev/docs/api/admin-graphql/unstable/queries/order?example=Retrieves+a+list+of+all+order+risks+for+an+order).")]
     public class OrderRiskAssessment : GraphQLObject<OrderRiskAssessment>
@@ -63725,7 +63725,7 @@ namespace Shopify.Types
         [Description("The input value is invalid.")]
         INVALID,
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -63811,7 +63811,7 @@ namespace Shopify.Types
     ///<summary>
     ///Summary of risk characteristics for an order.
     ///
-    ///See the [example query "Retrieves a list of all order risks for an order"](https://shopify.dev/docs/api/admin-graphql/unstable/queries/order?example=Retrieves+a+list+of+all+order+risks+for+an+order).
+    ///See the [example query &quot;Retrieves a list of all order risks for an order&quot;](https://shopify.dev/docs/api/admin-graphql/unstable/queries/order?example=Retrieves+a+list+of+all+order+risks+for+an+order).
     ///</summary>
     [Description("Summary of risk characteristics for an order.\n\nSee the [example query \"Retrieves a list of all order risks for an order\"](https://shopify.dev/docs/api/admin-graphql/unstable/queries/order?example=Retrieves+a+list+of+all+order+risks+for+an+order).")]
     public class OrderRiskSummary : GraphQLObject<OrderRiskSummary>
@@ -63843,7 +63843,7 @@ namespace Shopify.Types
         [Description("Sorts by the date and time the order was created.")]
         CREATED_AT,
         ///<summary>
-        ///Sorts by the customer's name.
+        ///Sorts by the customer&apos;s name.
         ///</summary>
         [Description("Sorts by the customer's name.")]
         CUSTOMER_NAME,
@@ -63858,7 +63858,7 @@ namespace Shopify.Types
         [Description("Sorts by the financial status of the order.")]
         FINANCIAL_STATUS,
         ///<summary>
-        ///Sorts by the order's fulfillment status.
+        ///Sorts by the order&apos;s fulfillment status.
         ///</summary>
         [Description("Sorts by the order's fulfillment status.")]
         FULFILLMENT_STATUS,
@@ -63884,7 +63884,7 @@ namespace Shopify.Types
         PROCESSED_AT,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -63954,7 +63954,7 @@ namespace Shopify.Types
     public class OrderStagedChangeAddCustomItem : GraphQLObject<OrderStagedChangeAddCustomItem>, IOrderStagedChange
     {
         ///<summary>
-        ///The price of an individual item without any discounts applied. This value can't be negative.
+        ///The price of an individual item without any discounts applied. This value can&apos;t be negative.
         ///</summary>
         [Description("The price of an individual item without any discounts applied. This value can't be negative.")]
         [NonNull]
@@ -64017,7 +64017,7 @@ namespace Shopify.Types
         public string? phone { get; set; }
 
         ///<summary>
-        ///The shipping line's title that's shown to the buyer.
+        ///The shipping line&apos;s title that&apos;s shown to the buyer.
         ///</summary>
         [Description("The shipping line's title that's shown to the buyer.")]
         public string? presentmentTitle { get; set; }
@@ -64064,7 +64064,7 @@ namespace Shopify.Types
     public class OrderStagedChangeConnection : GraphQLObject<OrderStagedChangeConnection>, IConnectionWithNodesAndEdges<OrderStagedChangeEdge, IOrderStagedChange>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -64170,7 +64170,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The `OrderTransaction` object represents a payment transaction that's associated with an order. An order
+    ///The `OrderTransaction` object represents a payment transaction that&apos;s associated with an order. An order
     ///transaction is a specific action or event that happens within the context of an order, such as a customer paying
     ///for a purchase or receiving a refund, or other payment-related activity.
     ///
@@ -64444,7 +64444,7 @@ namespace Shopify.Types
     public class OrderTransactionConnection : GraphQLObject<OrderTransactionConnection>, IConnectionWithNodesAndEdges<OrderTransactionEdge, OrderTransaction>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -64568,7 +64568,7 @@ namespace Shopify.Types
         [Description("A real card was used but the gateway was in test mode.")]
         TEST_MODE_LIVE_CARD,
         ///<summary>
-        ///The gateway or merchant configuration doesn't support a feature, such as network tokenization.
+        ///The gateway or merchant configuration doesn&apos;t support a feature, such as network tokenization.
         ///</summary>
         [Description("The gateway or merchant configuration doesn't support a feature, such as network tokenization.")]
         UNSUPPORTED_FEATURE,
@@ -64578,7 +64578,7 @@ namespace Shopify.Types
         [Description("There was an unknown error with processing the payment.")]
         GENERIC_ERROR,
         ///<summary>
-        ///The payment method is not available in the customer's country.
+        ///The payment method is not available in the customer&apos;s country.
         ///</summary>
         [Description("The payment method is not available in the customer's country.")]
         INVALID_COUNTRY,
@@ -64677,7 +64677,7 @@ namespace Shopify.Types
         [Description("A transfer of the money that was reserved by an authorization.")]
         CAPTURE,
         ///<summary>
-        ///An amount reserved against the cardholder's funding source.
+        ///An amount reserved against the cardholder&apos;s funding source.
         ///Money does not change hands until the authorization is captured.
         ///</summary>
         [Description("An amount reserved against the cardholder's funding source.\nMoney does not change hands until the authorization is captured.")]
@@ -64694,7 +64694,7 @@ namespace Shopify.Types
         [Description("A partial or full return of captured funds to the cardholder.\nA refund can happen only after a capture is processed.")]
         REFUND,
         ///<summary>
-        ///The money returned to the customer when they've paid too much during a cash transaction.
+        ///The money returned to the customer when they&apos;ve paid too much during a cash transaction.
         ///</summary>
         [Description("The money returned to the customer when they've paid too much during a cash transaction.")]
         CHANGE,
@@ -64855,7 +64855,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -64879,13 +64879,13 @@ namespace Shopify.Types
 
         ///<summary>
         ///The date and time (ISO 8601 format) when the page became or will become visible.
-        ///Returns null when the page isn't visible.
+        ///Returns null when the page isn&apos;t visible.
         ///</summary>
         [Description("The date and time (ISO 8601 format) when the page became or will become visible.\nReturns null when the page isn't visible.")]
         public DateTime? publishedAt { get; set; }
 
         ///<summary>
-        ///The suffix of the template that's used to render the page.
+        ///The suffix of the template that&apos;s used to render the page.
         ///</summary>
         [Description("The suffix of the template that's used to render the page.")]
         public string? templateSuffix { get; set; }
@@ -64919,7 +64919,7 @@ namespace Shopify.Types
     public class PageConnection : GraphQLObject<PageConnection>, IConnectionWithNodesAndEdges<PageEdge, Page>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -65099,7 +65099,7 @@ namespace Shopify.Types
     public enum PageDeleteUserErrorCode
     {
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -65225,7 +65225,7 @@ namespace Shopify.Types
         [Description("Can’t set isPublished to true and also set a future publish date.")]
         INVALID_PUBLISH_DATE,
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -65314,7 +65314,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -65378,7 +65378,7 @@ namespace Shopify.Types
     public class PaymentCustomizationConnection : GraphQLObject<PaymentCustomizationConnection>, IConnectionWithNodesAndEdges<PaymentCustomizationEdge, PaymentCustomization>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -65839,7 +65839,7 @@ namespace Shopify.Types
     public class PaymentScheduleConnection : GraphQLObject<PaymentScheduleConnection>, IConnectionWithNodesAndEdges<PaymentScheduleEdge, PaymentSchedule>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -65955,7 +65955,7 @@ namespace Shopify.Types
         public string? paymentTermsType { get; set; }
 
         ///<summary>
-        ///The payment terms name, translated into the shop admin's preferred language.
+        ///The payment terms name, translated into the shop admin&apos;s preferred language.
         ///</summary>
         [Description("The payment terms name, translated into the shop admin's preferred language.")]
         [NonNull]
@@ -66150,12 +66150,12 @@ namespace Shopify.Types
         [Description("The payment terms or payment terms template is due on receipt.")]
         RECEIPT,
         ///<summary>
-        ///The payment terms or payment terms template is a net type. It's due a number of days after issue.
+        ///The payment terms or payment terms template is a net type. It&apos;s due a number of days after issue.
         ///</summary>
         [Description("The payment terms or payment terms template is a net type. It's due a number of days after issue.")]
         NET,
         ///<summary>
-        ///The payment terms or payment terms template is a fixed type. It's due on a specified date.
+        ///The payment terms or payment terms template is a fixed type. It&apos;s due on a specified date.
         ///</summary>
         [Description("The payment terms or payment terms template is a fixed type. It's due on a specified date.")]
         FIXED,
@@ -66353,7 +66353,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///How to calculate the parent product variant's price while bulk updating variant relationships.
+    ///How to calculate the parent product variant&apos;s price while bulk updating variant relationships.
     ///</summary>
     [Description("How to calculate the parent product variant's price while bulk updating variant relationships.")]
     public enum PriceCalculationType
@@ -66543,7 +66543,7 @@ namespace Shopify.Types
     public class PriceListConnection : GraphQLObject<PriceListConnection>, IConnectionWithNodesAndEdges<PriceListEdge, PriceList>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -66683,7 +66683,7 @@ namespace Shopify.Types
         [Description("No update operations specified.")]
         NO_UPDATE_OPERATIONS_SPECIFIED,
         ///<summary>
-        ///The currency specified does not match the price list's currency.
+        ///The currency specified does not match the price list&apos;s currency.
         ///</summary>
         [Description("The currency specified does not match the price list's currency.")]
         PRICES_TO_ADD_CURRENCY_MISMATCH,
@@ -66828,7 +66828,7 @@ namespace Shopify.Types
         public PriceListAdjustment? adjustment { get; set; }
 
         ///<summary>
-        ///A price list's settings for adjustment.
+        ///A price list&apos;s settings for adjustment.
         ///</summary>
         [Description("A price list's settings for adjustment.")]
         [NonNull]
@@ -66884,7 +66884,7 @@ namespace Shopify.Types
     public class PriceListPriceConnection : GraphQLObject<PriceListPriceConnection>, IConnectionWithNodesAndEdges<PriceListPriceEdge, PriceListPrice>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -66988,17 +66988,17 @@ namespace Shopify.Types
         [Description("The input value is blank.")]
         BLANK,
         ///<summary>
-        ///The price list doesn't exist.
+        ///The price list doesn&apos;t exist.
         ///</summary>
         [Description("The price list doesn't exist.")]
         PRICE_LIST_NOT_FOUND,
         ///<summary>
-        ///The specified currency doesn't match the price list's currency.
+        ///The specified currency doesn&apos;t match the price list&apos;s currency.
         ///</summary>
         [Description("The specified currency doesn't match the price list's currency.")]
         PRICE_LIST_CURRENCY_MISMATCH,
         ///<summary>
-        ///A fixed price for the specified product variant doesn't exist.
+        ///A fixed price for the specified product variant doesn&apos;t exist.
         ///</summary>
         [Description("A fixed price for the specified product variant doesn't exist.")]
         VARIANT_NOT_FOUND,
@@ -67105,7 +67105,7 @@ namespace Shopify.Types
         [Description("The input value is blank.")]
         BLANK,
         ///<summary>
-        ///The input value isn't included in the list.
+        ///The input value isn&apos;t included in the list.
         ///</summary>
         [Description("The input value isn't included in the list.")]
         INCLUSION,
@@ -67115,7 +67115,7 @@ namespace Shopify.Types
         [Description("The input value is too long.")]
         TOO_LONG,
         ///<summary>
-        ///The specified price list doesn't exist.
+        ///The specified price list doesn&apos;t exist.
         ///</summary>
         [Description("The specified price list doesn't exist.")]
         PRICE_LIST_NOT_FOUND,
@@ -67160,7 +67160,7 @@ namespace Shopify.Types
         [Description("Only one context rule option may be specified.")]
         CONTEXT_RULE_LIMIT_ONE_OPTION,
         ///<summary>
-        ///The price list currency is not supported by the shop's payment gateway.
+        ///The price list currency is not supported by the shop&apos;s payment gateway.
         ///</summary>
         [Description("The price list currency is not supported by the shop's payment gateway.")]
         CURRENCY_NOT_SUPPORTED,
@@ -67235,7 +67235,7 @@ namespace Shopify.Types
         public int? allocationLimit { get; set; }
 
         ///<summary>
-        ///The method by which the price rule's value is allocated to its entitled items.
+        ///The method by which the price rule&apos;s value is allocated to its entitled items.
         ///</summary>
         [Description("The method by which the price rule's value is allocated to its entitled items.")]
         [NonNull]
@@ -67274,7 +67274,7 @@ namespace Shopify.Types
         ///<summary>
         ///The
         ///[discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)
-        ///that's used to control how discounts can be combined.
+        ///that&apos;s used to control how discounts can be combined.
         ///</summary>
         [Description("The\n[discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)\nthat's used to control how discounts can be combined.")]
         [Obsolete("Use `discountClasses` instead.")]
@@ -67289,7 +67289,7 @@ namespace Shopify.Types
         public IEnumerable<string>? discountClasses { get; set; }
 
         ///<summary>
-        ///List of the price rule's discount codes.
+        ///List of the price rule&apos;s discount codes.
         ///</summary>
         [Description("List of the price rule's discount codes.")]
         [NonNull]
@@ -67322,7 +67322,7 @@ namespace Shopify.Types
         public EventConnection? events { get; set; }
 
         ///<summary>
-        ///A list of the price rule's features.
+        ///A list of the price rule&apos;s features.
         ///</summary>
         [Description("A list of the price rule's features.")]
         [NonNull]
@@ -67449,7 +67449,7 @@ namespace Shopify.Types
         public MoneyV2? totalSales { get; set; }
 
         ///<summary>
-        ///A list of the price rule's features.
+        ///A list of the price rule&apos;s features.
         ///</summary>
         [Description("A list of the price rule's features.")]
         [Obsolete("Use `features` instead.")]
@@ -67493,7 +67493,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The method by which the price rule's value is allocated to its entitled items.
+    ///The method by which the price rule&apos;s value is allocated to its entitled items.
     ///</summary>
     [Description("The method by which the price rule's value is allocated to its entitled items.")]
     public enum PriceRuleAllocationMethod
@@ -67585,7 +67585,7 @@ namespace Shopify.Types
     public class PriceRuleDiscountCodeConnection : GraphQLObject<PriceRuleDiscountCodeConnection>, IConnectionWithNodesAndEdges<PriceRuleDiscountCodeEdge, PriceRuleDiscountCode>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -67877,14 +67877,14 @@ namespace Shopify.Types
         public Image? targetItemImage { get; set; }
 
         ///<summary>
-        ///The type of page that's associated with the URL.
+        ///The type of page that&apos;s associated with the URL.
         ///</summary>
         [Description("The type of page that's associated with the URL.")]
         [NonNull]
         public string? targetType { get; set; }
 
         ///<summary>
-        ///The title of the page that's associated with the URL.
+        ///The title of the page that&apos;s associated with the URL.
         ///</summary>
         [Description("The title of the page that's associated with the URL.")]
         [NonNull]
@@ -67942,7 +67942,7 @@ namespace Shopify.Types
         public IEnumerable<string>? countryCodes { get; set; }
 
         ///<summary>
-        ///Whether the price rule is applicable to countries that haven't been defined in the shop's shipping zones.
+        ///Whether the price rule is applicable to countries that haven&apos;t been defined in the shop&apos;s shipping zones.
         ///</summary>
         [Description("Whether the price rule is applicable to countries that haven't been defined in the shop's shipping zones.")]
         [NonNull]
@@ -69720,7 +69720,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The input fields for a shop's privacy settings.
+    ///The input fields for a shop&apos;s privacy settings.
     ///</summary>
     [Description("The input fields for a shop's privacy settings.")]
     public enum PrivacyFeaturesEnum
@@ -69750,7 +69750,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A shop's privacy policy settings.
+    ///A shop&apos;s privacy policy settings.
     ///</summary>
     [Description("A shop's privacy policy settings.")]
     public class PrivacyPolicy : GraphQLObject<PrivacyPolicy>
@@ -69771,25 +69771,25 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A shop's privacy settings.
+    ///A shop&apos;s privacy settings.
     ///</summary>
     [Description("A shop's privacy settings.")]
     public class PrivacySettings : GraphQLObject<PrivacySettings>
     {
         ///<summary>
-        ///Banner customizations for the 'cookie banner'.
+        ///Banner customizations for the &apos;cookie banner&apos;.
         ///</summary>
         [Description("Banner customizations for the 'cookie banner'.")]
         public CookieBanner? banner { get; set; }
 
         ///<summary>
-        ///A shop's data sale opt out page (e.g. CCPA).
+        ///A shop&apos;s data sale opt out page (e.g. CCPA).
         ///</summary>
         [Description("A shop's data sale opt out page (e.g. CCPA).")]
         public DataSaleOptOutPage? dataSaleOptOutPage { get; set; }
 
         ///<summary>
-        ///A shop's privacy policy settings.
+        ///A shop&apos;s privacy policy settings.
         ///</summary>
         [Description("A shop's privacy policy settings.")]
         public PrivacyPolicy? privacyPolicy { get; set; }
@@ -69803,7 +69803,7 @@ namespace Shopify.Types
     ///You can also add or update product [media](https://shopify.dev/docs/api/admin-graphql/latest/interfaces/media).
     ///Products can be organized by grouping them into a [collection](https://shopify.dev/docs/api/admin-graphql/latest/objects/collection).
     ///
-    ///Learn more about working with [Shopify's product model](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/product-model-components),
+    ///Learn more about working with [Shopify&apos;s product model](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/product-model-components),
     ///including limitations and considerations.
     ///</summary>
     [Description("The `Product` object lets you manage products in a merchant’s store.\n\nProducts are the goods and services that merchants offer to customers. They can include various details such as title, description, price, images, and options such as size or color.\nYou can use [product variants](https://shopify.dev/docs/api/admin-graphql/latest/objects/productvariant) to create or update different versions of the same product.\nYou can also add or update product [media](https://shopify.dev/docs/api/admin-graphql/latest/interfaces/media).\nProducts can be organized by grouping them into a [collection](https://shopify.dev/docs/api/admin-graphql/latest/objects/collection).\n\nLearn more about working with [Shopify's product model](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/product-model-components),\nincluding limitations and considerations.")]
@@ -69821,7 +69821,7 @@ namespace Shopify.Types
         ///<summary>
         ///The description of the product, with
         ///HTML tags. For example, the description might include
-        ///bold `<strong></strong>` and italic `<i></i>` text.
+        ///bold `&lt;strong&gt; &lt;/strong&gt;` and italic `&lt;i&gt; &lt;/i&gt;` text.
         ///</summary>
         [Description("The description of the product, with\nHTML tags. For example, the description might include\nbold `<strong></strong>` and italic `<i></i>` text.")]
         [Obsolete("Use `descriptionHtml` instead.")]
@@ -69837,7 +69837,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The category of a product
-        ///from [Shopify's Standard Product Taxonomy](https://shopify.github.io/product-taxonomy/releases/unstable/?categoryId=sg-4-17-2-17).
+        ///from [Shopify&apos;s Standard Product Taxonomy](https://shopify.github.io/product-taxonomy/releases/unstable/?categoryId=sg-4-17-2-17).
         ///</summary>
         [Description("The category of a product\nfrom [Shopify's Standard Product Taxonomy](https://shopify.github.io/product-taxonomy/releases/unstable/?categoryId=sg-4-17-2-17).")]
         public TaxonomyCategory? category { get; set; }
@@ -69862,20 +69862,20 @@ namespace Shopify.Types
         ///The [role of the product](https://shopify.dev/docs/apps/build/product-merchandising/combined-listings/build-for-combined-listings)
         ///in a combined listing.
         ///
-        ///If `null`, then the product isn't part of any combined listing.
+        ///If `null`, then the product isn&apos;t part of any combined listing.
         ///</summary>
         [Description("The [role of the product](https://shopify.dev/docs/apps/build/product-merchandising/combined-listings/build-for-combined-listings)\nin a combined listing.\n\nIf `null`, then the product isn't part of any combined listing.")]
         public string? combinedListingRole { get; set; }
 
         ///<summary>
         ///The [compare-at price range](https://help.shopify.com/manual/products/details/product-pricing/sale-pricing)
-        ///of the product in the shop's default currency.
+        ///of the product in the shop&apos;s default currency.
         ///</summary>
         [Description("The [compare-at price range](https://help.shopify.com/manual/products/details/product-pricing/sale-pricing)\nof the product in the shop's default currency.")]
         public ProductCompareAtPriceRange? compareAtPriceRange { get; set; }
 
         ///<summary>
-        ///The pricing that applies to a customer in a specific context. For example, a price might vary depending on the customer's location. Only active markets are considered in the price resolution.
+        ///The pricing that applies to a customer in a specific context. For example, a price might vary depending on the customer&apos;s location. Only active markets are considered in the price resolution.
         ///</summary>
         [Description("The pricing that applies to a customer in a specific context. For example, a price might vary depending on the customer's location. Only active markets are considered in the price resolution.")]
         [NonNull]
@@ -69913,7 +69913,7 @@ namespace Shopify.Types
         ///<summary>
         ///The description of the product, with
         ///HTML tags. For example, the description might include
-        ///bold `<strong></strong>` and italic `<i></i>` text.
+        ///bold `&lt;strong&gt; &lt;/strong&gt;` and italic `&lt;i&gt; &lt;/i&gt;` text.
         ///</summary>
         [Description("The description of the product, with\nHTML tags. For example, the description might include\nbold `<strong></strong>` and italic `<i></i>` text.")]
         [NonNull]
@@ -69953,21 +69953,21 @@ namespace Shopify.Types
         ///The information that lets merchants know what steps they need to take
         ///to make sure that the app is set up correctly.
         ///
-        ///For example, if a merchant hasn't set up a product correctly in the app,
-        ///then the feedback might include a message that says "You need to add a price
-        ///to this product".
+        ///For example, if a merchant hasn&apos;t set up a product correctly in the app,
+        ///then the feedback might include a message that says &quot;You need to add a price
+        ///to this product&quot;.
         ///</summary>
         [Description("The information that lets merchants know what steps they need to take\nto make sure that the app is set up correctly.\n\nFor example, if a merchant hasn't set up a product correctly in the app,\nthen the feedback might include a message that says \"You need to add a price\nto this product\".")]
         public ResourceFeedback? feedback { get; set; }
 
         ///<summary>
-        ///The [theme template](https://shopify.dev/docs/storefronts/themes/architecture/templates) that's used when customers view the gift card in a store.
+        ///The [theme template](https://shopify.dev/docs/storefronts/themes/architecture/templates) that&apos;s used when customers view the gift card in a store.
         ///</summary>
         [Description("The [theme template](https://shopify.dev/docs/storefronts/themes/architecture/templates) that's used when customers view the gift card in a store.")]
         public string? giftCardTemplateSuffix { get; set; }
 
         ///<summary>
-        ///A unique, human-readable string of the product's title. A handle can contain letters, hyphens (`-`), and numbers, but no spaces.
+        ///A unique, human-readable string of the product&apos;s title. A handle can contain letters, hyphens (`-`), and numbers, but no spaces.
         ///The handle is used in the online store URL for the product.
         ///</summary>
         [Description("A unique, human-readable string of the product's title. A handle can contain letters, hyphens (`-`), and numbers, but no spaces.\nThe handle is used in the online store URL for the product.")]
@@ -70046,14 +70046,14 @@ namespace Shopify.Types
 
         ///<summary>
         ///The total count of [media](https://shopify.dev/docs/apps/build/online-store/product-media)
-        ///that's associated with a product.
+        ///that&apos;s associated with a product.
         ///</summary>
         [Description("The total count of [media](https://shopify.dev/docs/apps/build/online-store/product-media)\nthat's associated with a product.")]
         public Count? mediaCount { get; set; }
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -70082,15 +70082,15 @@ namespace Shopify.Types
         public string? onlineStorePreviewUrl { get; set; }
 
         ///<summary>
-        ///The product's URL on the online store.
-        ///If `null`, then the product isn't published to the online store sales channel.
+        ///The product&apos;s URL on the online store.
+        ///If `null`, then the product isn&apos;t published to the online store sales channel.
         ///</summary>
         [Description("The product's URL on the online store.\nIf `null`, then the product isn't published to the online store sales channel.")]
         public string? onlineStoreUrl { get; set; }
 
         ///<summary>
         ///A list of product options. The limit is defined by the
-        ///[shop's resource limits for product options](https://shopify.dev/docs/api/admin-graphql/latest/objects/Shop#field-resourcelimits) (`Shop.resourceLimits.maxProductOptions`).
+        ///[shop&apos;s resource limits for product options](https://shopify.dev/docs/api/admin-graphql/latest/objects/Shop#field-resourcelimits) (`Shop.resourceLimits.maxProductOptions`).
         ///</summary>
         [Description("A list of product options. The limit is defined by the\n[shop's resource limits for product options](https://shopify.dev/docs/api/admin-graphql/latest/objects/Shop#field-resourcelimits) (`Shop.resourceLimits.maxProductOptions`).")]
         [NonNull]
@@ -70187,9 +70187,9 @@ namespace Shopify.Types
         public bool? publishedOnCurrentChannel { get; set; }
 
         ///<summary>
-        ///Whether the resource is published to the app's
+        ///Whether the resource is published to the app&apos;s
         ///[publication](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication).
-        ///For example, the resource might be published to the app's online store channel.
+        ///For example, the resource might be published to the app&apos;s online store channel.
         ///</summary>
         [Description("Whether the resource is published to the app's\n[publication](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication).\nFor example, the resource might be published to the app's online store channel.")]
         [NonNull]
@@ -70214,7 +70214,7 @@ namespace Shopify.Types
         public bool? requiresSellingPlan { get; set; }
 
         ///<summary>
-        ///The resource that's either published or staged to be published to
+        ///The resource that&apos;s either published or staged to be published to
         ///the [publication](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication).
         ///</summary>
         [Description("The resource that's either published or staged to be published to\nthe [publication](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication).")]
@@ -70265,7 +70265,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A list of all [selling plan groups](https://shopify.dev/docs/apps/build/purchase-options/subscriptions/selling-plans/build-a-selling-plan)
-        ///that are associated with the product either directly, or through the product's variants.
+        ///that are associated with the product either directly, or through the product&apos;s variants.
         ///</summary>
         [Description("A list of all [selling plan groups](https://shopify.dev/docs/apps/build/purchase-options/subscriptions/selling-plans/build-a-selling-plan)\nthat are associated with the product either directly, or through the product's variants.")]
         [NonNull]
@@ -70304,7 +70304,7 @@ namespace Shopify.Types
         ///<summary>
         ///The Storefront GraphQL API ID of the `Product`.
         ///
-        ///The Storefront GraphQL API will no longer return Base64 encoded IDs to match the behavior of the Admin GraphQL API. Therefore, you can safely use the `id` field's value instead.
+        ///The Storefront GraphQL API will no longer return Base64 encoded IDs to match the behavior of the Admin GraphQL API. Therefore, you can safely use the `id` field&apos;s value instead.
         ///</summary>
         [Description("The Storefront GraphQL API ID of the `Product`.\n\nThe Storefront GraphQL API will no longer return Base64 encoded IDs to match the behavior of the Admin GraphQL API. Therefore, you can safely use the `id` field's value instead.")]
         [Obsolete("Use `id` instead.")]
@@ -70326,21 +70326,21 @@ namespace Shopify.Types
         public IEnumerable<string>? tags { get; set; }
 
         ///<summary>
-        ///The [theme template](https://shopify.dev/docs/storefronts/themes/architecture/templates) that's used when customers view the product in a store.
+        ///The [theme template](https://shopify.dev/docs/storefronts/themes/architecture/templates) that&apos;s used when customers view the product in a store.
         ///</summary>
         [Description("The [theme template](https://shopify.dev/docs/storefronts/themes/architecture/templates) that's used when customers view the product in a store.")]
         public string? templateSuffix { get; set; }
 
         ///<summary>
-        ///The name for the product that displays to customers. The title is used to construct the product's handle.
-        ///For example, if a product is titled "Black Sunglasses", then the handle is `black-sunglasses`.
+        ///The name for the product that displays to customers. The title is used to construct the product&apos;s handle.
+        ///For example, if a product is titled &quot;Black Sunglasses&quot;, then the handle is `black-sunglasses`.
         ///</summary>
         [Description("The name for the product that displays to customers. The title is used to construct the product's handle.\nFor example, if a product is titled \"Black Sunglasses\", then the handle is `black-sunglasses`.")]
         [NonNull]
         public string? title { get; set; }
 
         ///<summary>
-        ///The quantity of inventory that's in stock.
+        ///The quantity of inventory that&apos;s in stock.
         ///</summary>
         [Description("The quantity of inventory that's in stock.")]
         [NonNull]
@@ -70380,7 +70380,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The list of [publications](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication)
-        ///that the resource isn't published to.
+        ///that the resource isn&apos;t published to.
         ///</summary>
         [Description("The list of [publications](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication)\nthat the resource isn't published to.")]
         [NonNull]
@@ -70388,7 +70388,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The date and time when the product was last modified.
-        ///A product's `updatedAt` value can change for different reasons. For example, if an order
+        ///A product&apos;s `updatedAt` value can change for different reasons. For example, if an order
         ///is placed for a product that has inventory tracking set up, then the inventory adjustment
         ///is counted as an update.
         ///</summary>
@@ -70412,7 +70412,7 @@ namespace Shopify.Types
         public Count? variantsCount { get; set; }
 
         ///<summary>
-        ///The name of the product's vendor.
+        ///The name of the product&apos;s vendor.
         ///</summary>
         [Description("The name of the product's vendor.")]
         [NonNull]
@@ -70420,20 +70420,20 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The product's component information.
+    ///The product&apos;s component information.
     ///</summary>
     [Description("The product's component information.")]
     public class ProductBundleComponent : GraphQLObject<ProductBundleComponent>
     {
         ///<summary>
-        ///The product that's related as a component.
+        ///The product that&apos;s related as a component.
         ///</summary>
         [Description("The product that's related as a component.")]
         [NonNull]
         public Product? componentProduct { get; set; }
 
         ///<summary>
-        ///The list of products' variants that are components.
+        ///The list of products&apos; variants that are components.
         ///</summary>
         [Description("The list of products' variants that are components.")]
         [NonNull]
@@ -70446,7 +70446,7 @@ namespace Shopify.Types
         public Count? componentVariantsCount { get; set; }
 
         ///<summary>
-        ///The options in the parent and the component options they're connected to, along with the chosen option values
+        ///The options in the parent and the component options they&apos;re connected to, along with the chosen option values
         ///that appear in the bundle.
         ///</summary>
         [Description("The options in the parent and the component options they're connected to, along with the chosen option values\nthat appear in the bundle.")]
@@ -70455,13 +70455,13 @@ namespace Shopify.Types
 
         ///<summary>
         ///The quantity of the component product set for this bundle line.
-        ///It will be null if there's a quantityOption present.
+        ///It will be null if there&apos;s a quantityOption present.
         ///</summary>
         [Description("The quantity of the component product set for this bundle line.\nIt will be null if there's a quantityOption present.")]
         public int? quantity { get; set; }
 
         ///<summary>
-        ///The quantity as option of the component product. It will be null if there's a quantity set.
+        ///The quantity as option of the component product. It will be null if there&apos;s a quantity set.
         ///</summary>
         [Description("The quantity as option of the component product. It will be null if there's a quantity set.")]
         public ProductBundleComponentQuantityOption? quantityOption { get; set; }
@@ -70474,7 +70474,7 @@ namespace Shopify.Types
     public class ProductBundleComponentConnection : GraphQLObject<ProductBundleComponentConnection>, IConnectionWithNodesAndEdges<ProductBundleComponentEdge, ProductBundleComponent>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -70946,14 +70946,14 @@ namespace Shopify.Types
     public class ProductCompareAtPriceRange : GraphQLObject<ProductCompareAtPriceRange>
     {
         ///<summary>
-        ///The highest variant's compare-at price.
+        ///The highest variant&apos;s compare-at price.
         ///</summary>
         [Description("The highest variant's compare-at price.")]
         [NonNull]
         public MoneyV2? maxVariantCompareAtPrice { get; set; }
 
         ///<summary>
-        ///The lowest variant's compare-at price.
+        ///The lowest variant&apos;s compare-at price.
         ///</summary>
         [Description("The lowest variant's compare-at price.")]
         [NonNull]
@@ -70967,7 +70967,7 @@ namespace Shopify.Types
     public class ProductConnection : GraphQLObject<ProductConnection>, IConnectionWithNodesAndEdges<ProductEdge, Product>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -70998,7 +70998,7 @@ namespace Shopify.Types
     public class ProductContextualPricing : GraphQLObject<ProductContextualPricing>
     {
         ///<summary>
-        ///The number of fixed quantity rules for the product's variants on the price list.
+        ///The number of fixed quantity rules for the product&apos;s variants on the price list.
         ///</summary>
         [Description("The number of fixed quantity rules for the product's variants on the price list.")]
         [NonNull]
@@ -71225,7 +71225,7 @@ namespace Shopify.Types
         public bool? done { get; set; }
 
         ///<summary>
-        ///A globally-unique ID that's returned when running an asynchronous mutation.
+        ///A globally-unique ID that&apos;s returned when running an asynchronous mutation.
         ///</summary>
         [Description("A globally-unique ID that's returned when running an asynchronous mutation.")]
         [NonNull]
@@ -71312,7 +71312,7 @@ namespace Shopify.Types
         public ProductDuplicateOperation? productDuplicateOperation { get; set; }
 
         ///<summary>
-        ///The user's shop.
+        ///The user&apos;s shop.
         ///</summary>
         [Description("The user's shop.")]
         [NonNull]
@@ -71387,7 +71387,7 @@ namespace Shopify.Types
     public class ProductFeedConnection : GraphQLObject<ProductFeedConnection>, IConnectionWithNodesAndEdges<ProductFeedEdge, ProductFeed>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -71805,7 +71805,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The product property names. For example, "Size", "Color", and "Material".
+    ///The product property names. For example, &quot;Size&quot;, &quot;Color&quot;, and &quot;Material&quot;.
     ///Variants are selected based on permutations of these options.
     ///The limit for each product property name is 255 characters.
     ///</summary>
@@ -71840,7 +71840,7 @@ namespace Shopify.Types
         public IEnumerable<ProductOptionValue>? optionValues { get; set; }
 
         ///<summary>
-        ///The product option's position.
+        ///The product option&apos;s position.
         ///</summary>
         [Description("The product option's position.")]
         [NonNull]
@@ -72110,7 +72110,7 @@ namespace Shopify.Types
         [Description("Operation is not supported for a combined listing parent product.")]
         UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION,
         ///<summary>
-        ///Cannot update the option because it would result in deleting variants, and you don't have the required permissions.
+        ///Cannot update the option because it would result in deleting variants, and you don&apos;t have the required permissions.
         ///</summary>
         [Description("Cannot update the option because it would result in deleting variants, and you don't have the required permissions.")]
         CANNOT_DELETE_VARIANT_WITHOUT_PERMISSION,
@@ -72188,7 +72188,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The product option value names. For example, "Red", "Blue", and "Green" for a "Color" option.
+    ///The product option value names. For example, &quot;Red&quot;, &quot;Blue&quot;, and &quot;Green&quot; for a &quot;Color&quot; option.
     ///</summary>
     [Description("The product option value names. For example, \"Red\", \"Blue\", and \"Green\" for a \"Color\" option.")]
     public class ProductOptionValue : GraphQLObject<ProductOptionValue>, IHasPublishedTranslations, INode
@@ -72426,7 +72426,7 @@ namespace Shopify.Types
         [Description("Operation is not supported for a combined listing parent product.")]
         UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION,
         ///<summary>
-        ///Cannot specify 'linkedMetafieldValue' for an option that is not linked to a metafield.
+        ///Cannot specify &apos;linkedMetafieldValue&apos; for an option that is not linked to a metafield.
         ///</summary>
         [Description("Cannot specify 'linkedMetafieldValue' for an option that is not linked to a metafield.")]
         LINKED_METAFIELD_VALUE_WITHOUT_LINKED_OPTION,
@@ -72546,7 +72546,7 @@ namespace Shopify.Types
         [Description("Options do not belong to the same product.")]
         OPTIONS_DO_NOT_BELONG_TO_THE_SAME_PRODUCT,
         ///<summary>
-        ///Can't delete option with multiple values.
+        ///Can&apos;t delete option with multiple values.
         ///</summary>
         [Description("Can't delete option with multiple values.")]
         CANNOT_DELETE_OPTION_WITH_MULTIPLE_VALUES,
@@ -72566,7 +72566,7 @@ namespace Shopify.Types
         [Description("Operation is not supported for a combined listing parent product.")]
         UNSUPPORTED_COMBINED_LISTING_PARENT_OPERATION,
         ///<summary>
-        ///Cannot perform option deletion because it would result in deleting variants, and you don't have the required permissions.
+        ///Cannot perform option deletion because it would result in deleting variants, and you don&apos;t have the required permissions.
         ///</summary>
         [Description("Cannot perform option deletion because it would result in deleting variants, and you don't have the required permissions.")]
         CANNOT_DELETE_VARIANT_WITHOUT_PERMISSION,
@@ -72728,14 +72728,14 @@ namespace Shopify.Types
     public class ProductPriceRange : GraphQLObject<ProductPriceRange>
     {
         ///<summary>
-        ///The highest variant's price.
+        ///The highest variant&apos;s price.
         ///</summary>
         [Description("The highest variant's price.")]
         [NonNull]
         public MoneyV2? maxVariantPrice { get; set; }
 
         ///<summary>
-        ///The lowest variant's price.
+        ///The lowest variant&apos;s price.
         ///</summary>
         [Description("The lowest variant's price.")]
         [NonNull]
@@ -72749,14 +72749,14 @@ namespace Shopify.Types
     public class ProductPriceRangeV2 : GraphQLObject<ProductPriceRangeV2>
     {
         ///<summary>
-        ///The highest variant's price.
+        ///The highest variant&apos;s price.
         ///</summary>
         [Description("The highest variant's price.")]
         [NonNull]
         public MoneyV2? maxVariantPrice { get; set; }
 
         ///<summary>
-        ///The lowest variant's price.
+        ///The lowest variant&apos;s price.
         ///</summary>
         [Description("The lowest variant's price.")]
         [NonNull]
@@ -72804,7 +72804,7 @@ namespace Shopify.Types
     public class ProductPublicationConnection : GraphQLObject<ProductPublicationConnection>, IConnectionWithNodesAndEdges<ProductPublicationEdge, ProductPublication>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -72866,7 +72866,7 @@ namespace Shopify.Types
         public IEnumerable<ProductPublication>? productPublications { get; set; }
 
         ///<summary>
-        ///The user's shop.
+        ///The user&apos;s shop.
         ///</summary>
         [Description("The user's shop.")]
         [NonNull]
@@ -73383,7 +73383,7 @@ namespace Shopify.Types
         PUBLISHED_AT,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -73424,17 +73424,17 @@ namespace Shopify.Types
     public enum ProductStatus
     {
         ///<summary>
-        ///The product is ready to sell and can be published to sales channels and apps. Products with an active status aren't automatically published to sales channels, such as the online store, or apps. By default, existing products are set to active.
+        ///The product is ready to sell and can be published to sales channels and apps. Products with an active status aren&apos;t automatically published to sales channels, such as the online store, or apps. By default, existing products are set to active.
         ///</summary>
         [Description("The product is ready to sell and can be published to sales channels and apps. Products with an active status aren't automatically published to sales channels, such as the online store, or apps. By default, existing products are set to active.")]
         ACTIVE,
         ///<summary>
-        ///The product is no longer being sold and isn't available to customers on sales channels and apps.
+        ///The product is no longer being sold and isn&apos;t available to customers on sales channels and apps.
         ///</summary>
         [Description("The product is no longer being sold and isn't available to customers on sales channels and apps.")]
         ARCHIVED,
         ///<summary>
-        ///The product isn't ready to sell and is unavailable to customers on sales channels and apps. By default, duplicated and unarchived products are set to draft.
+        ///The product isn&apos;t ready to sell and is unavailable to customers on sales channels and apps. By default, duplicated and unarchived products are set to draft.
         ///</summary>
         [Description("The product isn't ready to sell and is unavailable to customers on sales channels and apps. By default, duplicated and unarchived products are set to draft.")]
         DRAFT,
@@ -73454,7 +73454,7 @@ namespace Shopify.Types
     public class ProductTaxonomyNode : GraphQLObject<ProductTaxonomyNode>, INode
     {
         ///<summary>
-        ///The full name of the product taxonomy node. For example,  Animals & Pet Supplies > Pet Supplies > Dog Supplies > Dog Beds.
+        ///The full name of the product taxonomy node. For example,  Animals &amp; Pet Supplies &gt; Pet Supplies &gt; Dog Supplies &gt; Dog Beds.
         ///</summary>
         [Description("The full name of the product taxonomy node. For example,  Animals & Pet Supplies > Pet Supplies > Dog Supplies > Dog Beds.")]
         [NonNull]
@@ -73502,7 +73502,7 @@ namespace Shopify.Types
         public Product? product { get; set; }
 
         ///<summary>
-        ///The user's shop.
+        ///The user&apos;s shop.
         ///</summary>
         [Description("The user's shop.")]
         [NonNull]
@@ -73577,7 +73577,7 @@ namespace Shopify.Types
     ///such as size or color. For example, if a merchant sells t-shirts with options for size and color, then a small,
     ///blue t-shirt would be one product variant and a large, blue t-shirt would be another.
     ///
-    ///Use the `ProductVariant` object to manage the full lifecycle and configuration of a product's variants. Common
+    ///Use the `ProductVariant` object to manage the full lifecycle and configuration of a product&apos;s variants. Common
     ///use cases for using the `ProductVariant` object include:
     ///
     ///- Tracking inventory for each variant
@@ -73589,7 +73589,7 @@ namespace Shopify.Types
     ///
     ///A `ProductVariant` is associated with a parent
     ///[`Product`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product) object.
-    ///`ProductVariant` serves as the central link between a product's merchandising configuration, inventory,
+    ///`ProductVariant` serves as the central link between a product&apos;s merchandising configuration, inventory,
     ///pricing, fulfillment, and sales channels within the GraphQL Admin API schema. Each variant
     ///can reference other GraphQL types such as:
     ///
@@ -73597,7 +73597,7 @@ namespace Shopify.Types
     ///- [`Image`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Image): Used for variant-specific images
     ///- [`SellingPlanGroup`](https://shopify.dev/docs/api/admin-graphql/latest/objects/SellingPlanGroup): Used for subscriptions and selling plans
     ///
-    ///Learn more about [Shopify's product model](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/product-model-components).
+    ///Learn more about [Shopify&apos;s product model](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/product-model-components).
     ///</summary>
     [Description("The `ProductVariant` object represents a version of a\n[product](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product)\nthat comes in more than one [option](https://shopify.dev/docs/api/admin-graphql/latest/objects/ProductOption),\nsuch as size or color. For example, if a merchant sells t-shirts with options for size and color, then a small,\nblue t-shirt would be one product variant and a large, blue t-shirt would be another.\n\nUse the `ProductVariant` object to manage the full lifecycle and configuration of a product's variants. Common\nuse cases for using the `ProductVariant` object include:\n\n- Tracking inventory for each variant\n- Setting unique prices for each variant\n- Assigning barcodes and SKUs to connect variants to fulfillment services\n- Attaching variant-specific images and media\n- Setting delivery and tax requirements\n- Supporting product bundles, subscriptions, and selling plans\n\nA `ProductVariant` is associated with a parent\n[`Product`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product) object.\n`ProductVariant` serves as the central link between a product's merchandising configuration, inventory,\npricing, fulfillment, and sales channels within the GraphQL Admin API schema. Each variant\ncan reference other GraphQL types such as:\n\n- [`InventoryItem`](https://shopify.dev/docs/api/admin-graphql/latest/objects/InventoryItem): Used for inventory tracking\n- [`Image`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Image): Used for variant-specific images\n- [`SellingPlanGroup`](https://shopify.dev/docs/api/admin-graphql/latest/objects/SellingPlanGroup): Used for subscriptions and selling plans\n\nLearn more about [Shopify's product model](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/product-model-components).")]
     public class ProductVariant : GraphQLObject<ProductVariant>, IHasEvents, IHasMetafieldDefinitions, IHasMetafields, IHasPublishedTranslations, ILegacyInteroperability, INavigable, INode, ICommentEventEmbed, IDeliveryPromiseParticipantOwner, IMetafieldReference, IMetafieldReferencer
@@ -73649,7 +73649,7 @@ namespace Shopify.Types
         public DeliveryProfile? deliveryProfile { get; set; }
 
         ///<summary>
-        ///Display name of the variant, based on product's title + variant's title.
+        ///Display name of the variant, based on product&apos;s title + variant&apos;s title.
         ///</summary>
         [Description("Display name of the variant, based on product's title + variant's title.")]
         [NonNull]
@@ -73683,7 +73683,7 @@ namespace Shopify.Types
         public InventoryItem? inventoryItem { get; set; }
 
         ///<summary>
-        ///Whether customers are allowed to place an order for the product variant when it's out of stock.
+        ///Whether customers are allowed to place an order for the product variant when it&apos;s out of stock.
         ///</summary>
         [Description("Whether customers are allowed to place an order for the product variant when it's out of stock.")]
         [NonNull]
@@ -73711,7 +73711,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -73772,7 +73772,7 @@ namespace Shopify.Types
         ///<summary>
         ///Whether a product variant requires components. The default value is `false`.
         ///If `true`, then the product variant can only be purchased as a parent bundle with components and it will be omitted
-        ///from channels that don't support bundles.
+        ///from channels that don&apos;t support bundles.
         ///</summary>
         [Description("Whether a product variant requires components. The default value is `false`.\nIf `true`, then the product variant can only be purchased as a parent bundle with components and it will be omitted\nfrom channels that don't support bundles.")]
         [NonNull]
@@ -73787,7 +73787,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The total sellable quantity of the variant for online channels.
-        ///This doesn't represent the total available inventory or capture
+        ///This doesn&apos;t represent the total available inventory or capture
         ///[limitations based on customer location](https://help.shopify.com/manual/markets/inventory_and_fulfillment).
         ///</summary>
         [Description("The total sellable quantity of the variant for online channels.\nThis doesn't represent the total available inventory or capture\n[limitations based on customer location](https://help.shopify.com/manual/markets/inventory_and_fulfillment).")]
@@ -73825,7 +73825,7 @@ namespace Shopify.Types
         ///<summary>
         ///The Storefront GraphQL API ID of the `ProductVariant`.
         ///
-        ///The Storefront GraphQL API will no longer return Base64 encoded IDs to match the behavior of the Admin GraphQL API. Therefore, you can safely use the `id` field's value instead.
+        ///The Storefront GraphQL API will no longer return Base64 encoded IDs to match the behavior of the Admin GraphQL API. Therefore, you can safely use the `id` field&apos;s value instead.
         ///</summary>
         [Description("The Storefront GraphQL API ID of the `ProductVariant`.\n\nThe Storefront GraphQL API will no longer return Base64 encoded IDs to match the behavior of the Admin GraphQL API. Therefore, you can safely use the `id` field's value instead.")]
         [Obsolete("Use `id` instead.")]
@@ -73937,7 +73937,7 @@ namespace Shopify.Types
     public class ProductVariantComponentConnection : GraphQLObject<ProductVariantComponentConnection>, IConnectionWithNodesAndEdges<ProductVariantComponentEdge, ProductVariantComponent>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -73986,7 +73986,7 @@ namespace Shopify.Types
     public class ProductVariantConnection : GraphQLObject<ProductVariantConnection>, IConnectionWithNodesAndEdges<ProductVariantEdge, ProductVariant>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -74096,12 +74096,12 @@ namespace Shopify.Types
     public enum ProductVariantInventoryPolicy
     {
         ///<summary>
-        ///Customers can't buy this product variant after it's out of stock.
+        ///Customers can&apos;t buy this product variant after it&apos;s out of stock.
         ///</summary>
         [Description("Customers can't buy this product variant after it's out of stock.")]
         DENY,
         ///<summary>
-        ///Customers can buy this product variant after it's out of stock.
+        ///Customers can buy this product variant after it&apos;s out of stock.
         ///</summary>
         [Description("Customers can buy this product variant after it's out of stock.")]
         CONTINUE,
@@ -74180,7 +74180,7 @@ namespace Shopify.Types
     public class ProductVariantPricePairConnection : GraphQLObject<ProductVariantPricePairConnection>, IConnectionWithNodesAndEdges<ProductVariantPricePairEdge, ProductVariantPricePair>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -74295,7 +74295,7 @@ namespace Shopify.Types
         [Description("A parent product variant cannot contain itself as a component.")]
         CIRCULAR_REFERENCE,
         ///<summary>
-        ///Nested parent product variants aren't supported.
+        ///Nested parent product variants aren&apos;t supported.
         ///</summary>
         [Description("Nested parent product variants aren't supported.")]
         NESTED_PARENT_PRODUCT_VARIANT,
@@ -74330,7 +74330,7 @@ namespace Shopify.Types
         [Description("Unable to remove product variant relationships.")]
         FAILED_TO_REMOVE,
         ///<summary>
-        ///The product variant relationships to remove must be specified if all the parent product variant's components aren't being removed.
+        ///The product variant relationships to remove must be specified if all the parent product variant&apos;s components aren&apos;t being removed.
         ///</summary>
         [Description("The product variant relationships to remove must be specified if all the parent product variant's components aren't being removed.")]
         MUST_SPECIFY_COMPONENTS,
@@ -74429,8 +74429,8 @@ namespace Shopify.Types
         [Description("Sort by the `id` value.")]
         ID,
         ///<summary>
-        ///Sort by available inventory quantity in the location specified by the `query:"location_id:"` argument.
-        ///Don't use this sort key when no `location_id` in query is specified.
+        ///Sort by available inventory quantity in the location specified by the `query:&quot;location_id:&quot;` argument.
+        ///Don&apos;t use this sort key when no `location_id` in query is specified.
         ///</summary>
         [Description("Sort by available inventory quantity in the location specified by the `query:\"location_id:\"` argument.\nDon't use this sort key when no `location_id` in query is specified.")]
         INVENTORY_LEVELS_AVAILABLE,
@@ -74466,7 +74466,7 @@ namespace Shopify.Types
         POSITION,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -75123,7 +75123,7 @@ namespace Shopify.Types
         PUBLISHED_AT,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -75422,7 +75422,7 @@ namespace Shopify.Types
     public class PublicationConnection : GraphQLObject<PublicationConnection>, IConnectionWithNodesAndEdges<PublicationEdge, Publication>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -75474,7 +75474,7 @@ namespace Shopify.Types
     public class PublicationCreatePayload : GraphQLObject<PublicationCreatePayload>
     {
         ///<summary>
-        ///The publication that's been created.
+        ///The publication that&apos;s been created.
         ///</summary>
         [Description("The publication that's been created.")]
         public Publication? publication { get; set; }
@@ -75608,7 +75608,7 @@ namespace Shopify.Types
     public class PublicationUpdatePayload : GraphQLObject<PublicationUpdatePayload>
     {
         ///<summary>
-        ///The publication that's been updated.
+        ///The publication that&apos;s been updated.
         ///</summary>
         [Description("The publication that's been updated.")]
         public Publication? publication { get; set; }
@@ -75654,7 +75654,7 @@ namespace Shopify.Types
     public enum PublicationUserErrorCode
     {
         ///<summary>
-        ///Can't perform this action on a publication.
+        ///Can&apos;t perform this action on a publication.
         ///</summary>
         [Description("Can't perform this action on a publication.")]
         UNSUPPORTED_PUBLICATION_ACTION,
@@ -75689,12 +75689,12 @@ namespace Shopify.Types
         [Description("Catalog does not exist.")]
         CATALOG_NOT_FOUND,
         ///<summary>
-        ///Can't modify a publication that belongs to an app catalog.
+        ///Can&apos;t modify a publication that belongs to an app catalog.
         ///</summary>
         [Description("Can't modify a publication that belongs to an app catalog.")]
         CANNOT_MODIFY_APP_CATALOG_PUBLICATION,
         ///<summary>
-        ///Can't modify a publication that belongs to a market catalog.
+        ///Can&apos;t modify a publication that belongs to a market catalog.
         ///</summary>
         [Description("Can't modify a publication that belongs to a market catalog.")]
         CANNOT_MODIFY_MARKET_CATALOG_PUBLICATION,
@@ -75818,9 +75818,9 @@ namespace Shopify.Types
         public bool? publishedOnCurrentChannel { get; }
 
         ///<summary>
-        ///Whether the resource is published to the app's
+        ///Whether the resource is published to the app&apos;s
         ///[publication](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication).
-        ///For example, the resource might be published to the app's online store channel.
+        ///For example, the resource might be published to the app&apos;s online store channel.
         ///</summary>
         [Description("Whether the resource is published to the app's\n[publication](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication).\nFor example, the resource might be published to the app's online store channel.")]
         [NonNull]
@@ -75869,7 +75869,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The list of [publications](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication)
-        ///that the resource isn't published to.
+        ///that the resource isn&apos;t published to.
         ///</summary>
         [Description("The list of [publications](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication)\nthat the resource isn't published to.")]
         [NonNull]
@@ -75889,7 +75889,7 @@ namespace Shopify.Types
         public IPublishable? publishable { get; set; }
 
         ///<summary>
-        ///The user's shop.
+        ///The user&apos;s shop.
         ///</summary>
         [Description("The user's shop.")]
         [NonNull]
@@ -75916,7 +75916,7 @@ namespace Shopify.Types
         public IPublishable? publishable { get; set; }
 
         ///<summary>
-        ///The user's shop.
+        ///The user&apos;s shop.
         ///</summary>
         [Description("The user's shop.")]
         [NonNull]
@@ -75943,7 +75943,7 @@ namespace Shopify.Types
         public IPublishable? publishable { get; set; }
 
         ///<summary>
-        ///The user's shop.
+        ///The user&apos;s shop.
         ///</summary>
         [Description("The user's shop.")]
         [NonNull]
@@ -75970,7 +75970,7 @@ namespace Shopify.Types
         public IPublishable? publishable { get; set; }
 
         ///<summary>
-        ///The user's shop.
+        ///The user&apos;s shop.
         ///</summary>
         [Description("The user's shop.")]
         [NonNull]
@@ -76074,7 +76074,7 @@ namespace Shopify.Types
     public class QuantityPriceBreakConnection : GraphQLObject<QuantityPriceBreakConnection>, IConnectionWithNodesAndEdges<QuantityPriceBreakEdge, QuantityPriceBreak>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -76213,7 +76213,7 @@ namespace Shopify.Types
         [Description("Invalid quantity price break.")]
         QUANTITY_PRICE_BREAK_ADD_INVALID,
         ///<summary>
-        ///Quantity price break's fixed price not found.
+        ///Quantity price break&apos;s fixed price not found.
         ///</summary>
         [Description("Quantity price break's fixed price not found.")]
         QUANTITY_PRICE_BREAK_ADD_PRICE_LIST_PRICE_NOT_FOUND,
@@ -76348,7 +76348,7 @@ namespace Shopify.Types
         [Description("Price list and fixed price currency mismatch.")]
         PRICE_ADD_CURRENCY_MISMATCH,
         ///<summary>
-        ///Fixed price's variant not found.
+        ///Fixed price&apos;s variant not found.
         ///</summary>
         [Description("Fixed price's variant not found.")]
         PRICE_ADD_VARIANT_NOT_FOUND,
@@ -76363,7 +76363,7 @@ namespace Shopify.Types
         [Description("Price is not fixed.")]
         PRICE_DELETE_PRICE_NOT_FIXED,
         ///<summary>
-        ///Fixed price's variant not found.
+        ///Fixed price&apos;s variant not found.
         ///</summary>
         [Description("Fixed price's variant not found.")]
         PRICE_DELETE_VARIANT_NOT_FOUND,
@@ -76447,7 +76447,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The value that defines the lowest allowed quantity purchased by the customer.
-        ///The minimum must be a multiple of the quantity rule's increment.
+        ///The minimum must be a multiple of the quantity rule&apos;s increment.
         ///</summary>
         [Description("The value that defines the lowest allowed quantity purchased by the customer.\nThe minimum must be a multiple of the quantity rule's increment.")]
         [NonNull]
@@ -76475,7 +76475,7 @@ namespace Shopify.Types
     public class QuantityRuleConnection : GraphQLObject<QuantityRuleConnection>, IConnectionWithNodesAndEdges<QuantityRuleEdge, QuantityRule>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -76710,7 +76710,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The schema's entry-point for queries. This acts as the public, top-level API from which all queries must start.
+    ///The schema&apos;s entry-point for queries. This acts as the public, top-level API from which all queries must start.
     ///</summary>
     [Description("The schema's entry-point for queries. This acts as the public, top-level API from which all queries must start.")]
     public class QueryRoot : GraphQLObject<QueryRoot>, IQueryRoot
@@ -76748,14 +76748,14 @@ namespace Shopify.Types
 
         ///<summary>
         ///Fetches app by handle.
-        ///Returns null if the app doesn't exist.
+        ///Returns null if the app doesn&apos;t exist.
         ///</summary>
         [Description("Fetches app by handle.\nReturns null if the app doesn't exist.")]
         public App? appByHandle { get; set; }
 
         ///<summary>
         ///Fetches an app by its client ID.
-        ///Returns null if the app doesn't exist.
+        ///Returns null if the app doesn&apos;t exist.
         ///</summary>
         [Description("Fetches an app by its client ID.\nReturns null if the app doesn't exist.")]
         public App? appByKey { get; set; }
@@ -76787,7 +76787,7 @@ namespace Shopify.Types
         public AppInstallation? appInstallation { get; set; }
 
         ///<summary>
-        ///A list of app installations. To use this query, you need to contact [Shopify Support](https://partners.shopify.com/current/support/) to grant your custom app the `read_apps` access scope. Public apps can't be granted this access scope.
+        ///A list of app installations. To use this query, you need to contact [Shopify Support](https://partners.shopify.com/current/support/) to grant your custom app the `read_apps` access scope. Public apps can&apos;t be granted this access scope.
         ///</summary>
         [Description("A list of app installations. To use this query, you need to contact [Shopify Support](https://partners.shopify.com/current/support/) to grant your custom app the `read_apps` access scope. Public apps can't be granted this access scope.")]
         [NonNull]
@@ -76814,7 +76814,7 @@ namespace Shopify.Types
         public IEnumerable<string>? articleTags { get; set; }
 
         ///<summary>
-        ///List of the shop's articles.
+        ///List of the shop&apos;s articles.
         ///</summary>
         [Description("List of the shop's articles.")]
         [NonNull]
@@ -76866,7 +76866,7 @@ namespace Shopify.Types
         public DiscountAutomaticNodeConnection? automaticDiscountNodes { get; set; }
 
         ///<summary>
-        ///List of the shop's automatic discount saved searches.
+        ///List of the shop&apos;s automatic discount saved searches.
         ///</summary>
         [Description("List of the shop's automatic discount saved searches.")]
         [NonNull]
@@ -76915,7 +76915,7 @@ namespace Shopify.Types
         public Blog? blog { get; set; }
 
         ///<summary>
-        ///List of the shop's blogs.
+        ///List of the shop&apos;s blogs.
         ///</summary>
         [Description("List of the shop's blogs.")]
         [NonNull]
@@ -76967,7 +76967,7 @@ namespace Shopify.Types
         public CashTrackingSession? cashTrackingSession { get; set; }
 
         ///<summary>
-        ///Returns a shop's cash tracking sessions for locations with a POS Pro subscription.
+        ///Returns a shop&apos;s cash tracking sessions for locations with a POS Pro subscription.
         ///
         ///Tip: To query for cash tracking sessions in bulk, you can
         ///[perform a bulk operation](https://shopify.dev/docs/api/usage/bulk-operations/queries).
@@ -77077,7 +77077,7 @@ namespace Shopify.Types
         public DiscountCodeNodeConnection? codeDiscountNodes { get; set; }
 
         ///<summary>
-        ///List of the shop's code discount saved searches.
+        ///List of the shop&apos;s code discount saved searches.
         ///</summary>
         [Description("List of the shop's code discount saved searches.")]
         [NonNull]
@@ -77124,7 +77124,7 @@ namespace Shopify.Types
         public IEnumerable<CollectionRuleConditions>? collectionRulesConditions { get; set; }
 
         ///<summary>
-        ///Returns a list of the shop's collection saved searches.
+        ///Returns a list of the shop&apos;s collection saved searches.
         ///</summary>
         [Description("Returns a list of the shop's collection saved searches.")]
         [NonNull]
@@ -77139,7 +77139,7 @@ namespace Shopify.Types
         ///
         ///Use the `collections` query when you need to:
         ///
-        ///- Build a browsing interface for a store's product groupings.
+        ///- Build a browsing interface for a store&apos;s product groupings.
         ///- Create collection searching, sorting, and filtering experiences (for example, by title, type, or published status).
         ///- Sync collection data with external systems.
         ///- Manage both custom ([manual](https://help.shopify.com/manual/products/collections/manual-shopify-collection))
@@ -77177,7 +77177,7 @@ namespace Shopify.Types
         public Comment? comment { get; set; }
 
         ///<summary>
-        ///List of the shop's comments.
+        ///List of the shop&apos;s comments.
         ///</summary>
         [Description("List of the shop's comments.")]
         [NonNull]
@@ -77249,7 +77249,7 @@ namespace Shopify.Types
         public AppInstallation? currentAppInstallation { get; set; }
 
         ///<summary>
-        ///Returns the current app's most recent BulkOperation. Apps can run one bulk query and one bulk mutation operation at a time, by shop.
+        ///Returns the current app&apos;s most recent BulkOperation. Apps can run one bulk query and one bulk mutation operation at a time, by shop.
         ///</summary>
         [Description("Returns the current app's most recent BulkOperation. Apps can run one bulk query and one bulk mutation operation at a time, by shop.")]
         public BulkOperation? currentBulkOperation { get; set; }
@@ -77273,7 +77273,7 @@ namespace Shopify.Types
         public ICustomerAccountPage? customerAccountPage { get; set; }
 
         ///<summary>
-        ///List of the shop's customer account pages.
+        ///List of the shop&apos;s customer account pages.
         ///</summary>
         [Description("List of the shop's customer account pages.")]
         public CustomerAccountPageConnection? customerAccountPages { get; set; }
@@ -77304,14 +77304,14 @@ namespace Shopify.Types
         public CustomerPaymentMethod? customerPaymentMethod { get; set; }
 
         ///<summary>
-        ///List of the shop's customer saved searches.
+        ///List of the shop&apos;s customer saved searches.
         ///</summary>
         [Description("List of the shop's customer saved searches.")]
         [NonNull]
         public SavedSearchConnection? customerSavedSearches { get; set; }
 
         ///<summary>
-        ///The list of members, such as customers, that's associated with an individual segment.
+        ///The list of members, such as customers, that&apos;s associated with an individual segment.
         ///The maximum page size is 1000.
         ///</summary>
         [Description("The list of members, such as customers, that's associated with an individual segment.\nThe maximum page size is 1000.")]
@@ -77437,7 +77437,7 @@ namespace Shopify.Types
         public DiscountRedeemCodeBulkCreation? discountRedeemCodeBulkCreation { get; set; }
 
         ///<summary>
-        ///List of the shop's redeemed discount code saved searches.
+        ///List of the shop&apos;s redeemed discount code saved searches.
         ///</summary>
         [Description("List of the shop's redeemed discount code saved searches.")]
         [NonNull]
@@ -77493,7 +77493,7 @@ namespace Shopify.Types
         public DraftOrder? draftOrder { get; set; }
 
         ///<summary>
-        ///List of the shop's draft order saved searches.
+        ///List of the shop&apos;s draft order saved searches.
         ///</summary>
         [Description("List of the shop's draft order saved searches.")]
         [NonNull]
@@ -77531,7 +77531,7 @@ namespace Shopify.Types
         public Count? eventsCount { get; set; }
 
         ///<summary>
-        ///A list of the shop's file saved searches.
+        ///A list of the shop&apos;s file saved searches.
         ///</summary>
         [Description("A list of the shop's file saved searches.")]
         [NonNull]
@@ -77568,7 +77568,7 @@ namespace Shopify.Types
         public FinanceAppAccessPolicy? financeAppAccessPolicy { get; set; }
 
         ///<summary>
-        ///Returns the KYC information for the shop's Shopify Payments account, used in embedded finance apps.
+        ///Returns the KYC information for the shop&apos;s Shopify Payments account, used in embedded finance apps.
         ///</summary>
         [Description("Returns the KYC information for the shop's Shopify Payments account, used in embedded finance apps.")]
         public FinanceKycInformation? financeKycInformation { get; set; }
@@ -77601,7 +77601,7 @@ namespace Shopify.Types
         ///Use this query to retrieve fulfillment orders assigned to merchant-managed locations,
         ///third-party fulfillment service locations, or all kinds of locations together.
         ///
-        ///For fetching only the fulfillment orders assigned to the app's locations, use the
+        ///For fetching only the fulfillment orders assigned to the app&apos;s locations, use the
         ///[assignedFulfillmentOrders](https://shopify.dev/api/admin-graphql/2024-07/objects/queryroot#connection-assignedfulfillmentorders)
         ///connection.
         ///</summary>
@@ -77622,7 +77622,7 @@ namespace Shopify.Types
         public GiftCard? giftCard { get; set; }
 
         ///<summary>
-        ///The configuration for the shop's gift cards.
+        ///The configuration for the shop&apos;s gift cards.
         ///</summary>
         [Description("The configuration for the shop's gift cards.")]
         [NonNull]
@@ -77796,7 +77796,7 @@ namespace Shopify.Types
         public Menu? menu { get; set; }
 
         ///<summary>
-        ///The shop's menus.
+        ///The shop&apos;s menus.
         ///</summary>
         [Description("The shop's menus.")]
         [NonNull]
@@ -77897,7 +77897,7 @@ namespace Shopify.Types
         public IEnumerable<INode>? nodes { get; set; }
 
         ///<summary>
-        ///The shop's online store channel.
+        ///The shop&apos;s online store channel.
         ///</summary>
         [Description("The shop's online store channel.")]
         [NonNull]
@@ -77935,7 +77935,7 @@ namespace Shopify.Types
         public OrderPaymentStatus? orderPaymentStatus { get; set; }
 
         ///<summary>
-        ///List of the shop's order saved searches.
+        ///List of the shop&apos;s order saved searches.
         ///</summary>
         [Description("List of the shop's order saved searches.")]
         [NonNull]
@@ -77963,7 +77963,7 @@ namespace Shopify.Types
         public Page? page { get; set; }
 
         ///<summary>
-        ///List of the shop's pages.
+        ///List of the shop&apos;s pages.
         ///</summary>
         [Description("List of the shop's pages.")]
         [NonNull]
@@ -78040,7 +78040,7 @@ namespace Shopify.Types
         ///- Handle international sales with localized pricing and content.
         ///- Manage product variants and product options.
         ///
-        ///Learn more about working with [Shopify's product model](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/product-model-components).
+        ///Learn more about working with [Shopify&apos;s product model](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/product-model-components).
         ///</summary>
         [Description("Retrieves a [product](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product) by its ID.\nA product is an item that a merchant can sell in their store.\n\nUse the `product` query when you need to:\n\n- Access essential product data (for example, title, description, price, images, SEO metadata, and metafields).\n- Build product detail pages and manage inventory.\n- Handle international sales with localized pricing and content.\n- Manage product variants and product options.\n\nLearn more about working with [Shopify's product model](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/product-model-components).")]
         public Product? product { get; set; }
@@ -78106,7 +78106,7 @@ namespace Shopify.Types
         public ProductResourceFeedback? productResourceFeedback { get; set; }
 
         ///<summary>
-        ///Returns a list of the shop's product saved searches.
+        ///Returns a list of the shop&apos;s product saved searches.
         ///</summary>
         [Description("Returns a list of the shop's product saved searches.")]
         [NonNull]
@@ -78142,7 +78142,7 @@ namespace Shopify.Types
         ///- Handle international sales with localized pricing and content.
         ///- Manage product variants that are part of a bundle or selling plan.
         ///
-        ///Learn more about working with [Shopify's product model](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/product-model-components).
+        ///Learn more about working with [Shopify&apos;s product model](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/product-model-components).
         ///</summary>
         [Description("Retrieves a [product variant](https://shopify.dev/docs/api/admin-graphql/latest/objects/ProductVariant) by its ID.\n\nA product variant is a specific version of a\n[product](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product) that comes in more than\none [option](https://shopify.dev/docs/api/admin-graphql/latest/objects/ProductOption),\nsuch as size or color. For example, if a merchant sells t-shirts with options for size and color,\nthen a small, blue t-shirt would be one product variant and a large, blue t-shirt would be another.\n\nUse the `productVariant` query when you need to:\n\n- Access essential product variant data (for example, title, price, image, and metafields).\n- Build product detail pages and manage inventory.\n- Handle international sales with localized pricing and content.\n- Manage product variants that are part of a bundle or selling plan.\n\nLearn more about working with [Shopify's product model](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/product-model-components).")]
         public ProductVariant? productVariant { get; set; }
@@ -78165,7 +78165,7 @@ namespace Shopify.Types
         ///Use the `productVariants` query when you need to:
         ///
         ///- Search for product variants by attributes such as SKU, barcode, or inventory quantity.
-        ///- Filter product variants by attributes, such as whether they're gift cards or have custom metafields.
+        ///- Filter product variants by attributes, such as whether they&apos;re gift cards or have custom metafields.
         ///- Fetch product variants for bulk operations, such as updating prices or inventory.
         ///- Preload data for product variants, such as inventory items, selected options, or associated products.
         ///
@@ -78179,7 +78179,7 @@ namespace Shopify.Types
         ///- Media attachments (for example, images and videos)
         ///- Associated products, selling plans, bundles, and metafields
         ///
-        ///Learn more about working with [Shopify's product model](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/product-model-components).
+        ///Learn more about working with [Shopify&apos;s product model](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/product-model-components).
         ///</summary>
         [Description("Retrieves a list of [product variants](https://shopify.dev/docs/api/admin-graphql/latest/objects/ProductVariant)\nassociated with a [product](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product).\n\nA product variant is a specific version of a product that comes in more than\none [option](https://shopify.dev/docs/api/admin-graphql/latest/objects/ProductOption),\nsuch as size or color. For example, if a merchant sells t-shirts with options for size and color,\nthen a small, blue t-shirt would be one product variant and a large, blue t-shirt would be another.\n\nUse the `productVariants` query when you need to:\n\n- Search for product variants by attributes such as SKU, barcode, or inventory quantity.\n- Filter product variants by attributes, such as whether they're gift cards or have custom metafields.\n- Fetch product variants for bulk operations, such as updating prices or inventory.\n- Preload data for product variants, such as inventory items, selected options, or associated products.\n\nThe `productVariants` query supports [pagination](https://shopify.dev/docs/api/usage/pagination-graphql)\nto handle large product catalogs and [saved searches](https://shopify.dev/docs/api/admin-graphql/latest/queries/productVariants#arguments-savedSearchId)\nfor frequently used product variant queries.\n\nThe `productVariants` query returns product variants with their associated metadata, including:\n\n- Basic product variant information (for example, title, SKU, barcode, price, and inventory)\n- Media attachments (for example, images and videos)\n- Associated products, selling plans, bundles, and metafields\n\nLearn more about working with [Shopify's product model](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/product-model-components).")]
         [NonNull]
@@ -78222,7 +78222,7 @@ namespace Shopify.Types
         ///- Product categories and tags
         ///- Product availability and publishing statuses
         ///
-        ///Learn more about working with [Shopify's product model](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/product-model-components).
+        ///Learn more about working with [Shopify&apos;s product model](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/product-model-components).
         ///</summary>
         [Description("Retrieves a list of [products](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product)\nin a store. Products are the items that merchants can sell in their store.\n\nUse the `products` query when you need to:\n\n- Build a browsing interface for a product catalog.\n- Create product [searching](https://shopify.dev/docs/api/usage/search-syntax), [sorting](https://shopify.dev/docs/api/admin-graphql/latest/queries/products#arguments-sortKey), and [filtering](https://shopify.dev/docs/api/admin-graphql/latest/queries/products#arguments-query) experiences.\n- Implement product recommendations.\n- Sync product data with external systems.\n\nThe `products` query supports [pagination](https://shopify.dev/docs/api/usage/pagination-graphql)\nto handle large product catalogs and [saved searches](https://shopify.dev/docs/api/admin-graphql/latest/queries/products#arguments-savedSearchId)\nfor frequently used product queries.\n\nThe `products` query returns products with their associated metadata, including:\n\n- Basic product information (for example, title, description, vendor, and type)\n- Product options and product variants, with their prices and inventory\n- Media attachments (for example, images and videos)\n- SEO metadata\n- Product categories and tags\n- Product availability and publishing statuses\n\nLearn more about working with [Shopify's product model](https://shopify.dev/docs/apps/build/graphql/migrate/new-product-model/product-model-components).")]
         [NonNull]
@@ -78341,11 +78341,11 @@ namespace Shopify.Types
         public ReverseFulfillmentOrder? reverseFulfillmentOrder { get; set; }
 
         ///<summary>
-        ///<div class="note"><h4>Theme app extensions</h4>
-        ///  <p>If your app integrates with a Shopify theme and you plan to submit it to the Shopify App Store, you must use theme app extensions instead of Script tags. Script tags can only be used with vintage themes. <a href="/apps/online-store#what-integration-method-should-i-use" target="_blank">Learn more</a>.</p></div>
+        ///&lt;div class=&quot;note&quot; &gt; &lt;h4&gt;Theme app extensions&lt;/h4&gt;
+        ///  &lt;p&gt;If your app integrates with a Shopify theme and you plan to submit it to the Shopify App Store, you must use theme app extensions instead of Script tags. Script tags can only be used with vintage themes. &lt;a href=&quot;/apps/online-store#what-integration-method-should-i-use&quot; target=&quot;_blank&quot; &gt;Learn more&lt;/a&gt;.&lt;/p&gt; &lt;/div&gt;
         ///
-        ///<div class="note"><h4>Script tag deprecation</h4>
-        ///  <p>Script tags will be sunset for the <b>Order status</b> page on August 28, 2025. <a href="https://www.shopify.com/plus/upgrading-to-checkout-extensibility">Upgrade to Checkout Extensibility</a> before this date. <a href="/docs/api/liquid/objects#script">Shopify Scripts</a> will continue to work alongside Checkout Extensibility until August 28, 2025.</p></div>
+        ///&lt;div class=&quot;note&quot; &gt; &lt;h4&gt;Script tag deprecation&lt;/h4&gt;
+        ///  &lt;p&gt;Script tags will be sunset for the &lt;b&gt;Order status&lt;/b&gt; page on August 28, 2025. &lt;a href=&quot;https://www.shopify.com/plus/upgrading-to-checkout-extensibility&quot; &gt;Upgrade to Checkout Extensibility&lt;/a&gt; before this date. &lt;a href=&quot;/docs/api/liquid/objects#script&quot; &gt;Shopify Scripts&lt;/a&gt; will continue to work alongside Checkout Extensibility until August 28, 2025.&lt;/p&gt; &lt;/div&gt;
         ///
         ///
         ///Returns a `ScriptTag` resource by ID.
@@ -78354,11 +78354,11 @@ namespace Shopify.Types
         public ScriptTag? scriptTag { get; set; }
 
         ///<summary>
-        ///<div class="note"><h4>Theme app extensions</h4>
-        ///  <p>If your app integrates with a Shopify theme and you plan to submit it to the Shopify App Store, you must use theme app extensions instead of Script tags. Script tags can only be used with vintage themes. <a href="/apps/online-store#what-integration-method-should-i-use" target="_blank">Learn more</a>.</p></div>
+        ///&lt;div class=&quot;note&quot; &gt; &lt;h4&gt;Theme app extensions&lt;/h4&gt;
+        ///  &lt;p&gt;If your app integrates with a Shopify theme and you plan to submit it to the Shopify App Store, you must use theme app extensions instead of Script tags. Script tags can only be used with vintage themes. &lt;a href=&quot;/apps/online-store#what-integration-method-should-i-use&quot; target=&quot;_blank&quot; &gt;Learn more&lt;/a&gt;.&lt;/p&gt; &lt;/div&gt;
         ///
-        ///<div class="note"><h4>Script tag deprecation</h4>
-        ///  <p>Script tags will be sunset for the <b>Order status</b> page on August 28, 2025. <a href="https://www.shopify.com/plus/upgrading-to-checkout-extensibility">Upgrade to Checkout Extensibility</a> before this date. <a href="/docs/api/liquid/objects#script">Shopify Scripts</a> will continue to work alongside Checkout Extensibility until August 28, 2025.</p></div>
+        ///&lt;div class=&quot;note&quot; &gt; &lt;h4&gt;Script tag deprecation&lt;/h4&gt;
+        ///  &lt;p&gt;Script tags will be sunset for the &lt;b&gt;Order status&lt;/b&gt; page on August 28, 2025. &lt;a href=&quot;https://www.shopify.com/plus/upgrading-to-checkout-extensibility&quot; &gt;Upgrade to Checkout Extensibility&lt;/a&gt; before this date. &lt;a href=&quot;/docs/api/liquid/objects#script&quot; &gt;Shopify Scripts&lt;/a&gt; will continue to work alongside Checkout Extensibility until August 28, 2025.&lt;/p&gt; &lt;/div&gt;
         ///
         ///
         ///A list of script tags.
@@ -78388,7 +78388,7 @@ namespace Shopify.Types
         public SegmentFilterConnection? segmentFilters { get; set; }
 
         ///<summary>
-        ///A list of a shop's segment migrations.
+        ///A list of a shop&apos;s segment migrations.
         ///</summary>
         [Description("A list of a shop's segment migrations.")]
         [NonNull]
@@ -78402,7 +78402,7 @@ namespace Shopify.Types
         public SegmentValueConnection? segmentValueSuggestions { get; set; }
 
         ///<summary>
-        ///A list of a shop's segments.
+        ///A list of a shop&apos;s segments.
         ///</summary>
         [Description("A list of a shop's segments.")]
         [NonNull]
@@ -78442,7 +78442,7 @@ namespace Shopify.Types
         public Shop? shop { get; set; }
 
         ///<summary>
-        ///The shop's billing preferences.
+        ///The shop&apos;s billing preferences.
         ///</summary>
         [Description("The shop's billing preferences.")]
         [NonNull]
@@ -78458,7 +78458,7 @@ namespace Shopify.Types
         ///<summary>
         ///Returns a Shopify Function by its ID.
         ///[Functions](https://shopify.dev/apps/build/functions)
-        ///enable you to customize Shopify's backend logic at defined parts of the commerce loop.
+        ///enable you to customize Shopify&apos;s backend logic at defined parts of the commerce loop.
         ///</summary>
         [Description("Returns a Shopify Function by its ID.\n[Functions](https://shopify.dev/apps/build/functions)\nenable you to customize Shopify's backend logic at defined parts of the commerce loop.")]
         public ShopifyFunction? shopifyFunction { get; set; }
@@ -78614,7 +78614,7 @@ namespace Shopify.Types
         public UrlRedirectImport? urlRedirectImport { get; set; }
 
         ///<summary>
-        ///A list of the shop's URL redirect saved searches.
+        ///A list of the shop&apos;s URL redirect saved searches.
         ///</summary>
         [Description("A list of the shop's URL redirect saved searches.")]
         [NonNull]
@@ -78663,7 +78663,7 @@ namespace Shopify.Types
         ///<summary>
         ///Returns a webhook subscription by ID.
         ///
-        ///Building an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).
+        ///Building an app? If you only use app-specific webhooks, you won&apos;t need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify &amp; require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).
         ///</summary>
         [Description("Returns a webhook subscription by ID.\n\nBuilding an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).")]
         public WebhookSubscription? webhookSubscription { get; set; }
@@ -78671,7 +78671,7 @@ namespace Shopify.Types
         ///<summary>
         ///Returns a list of webhook subscriptions.
         ///
-        ///Building an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).
+        ///Building an app? If you only use app-specific webhooks, you won&apos;t need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify &amp; require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).
         ///</summary>
         [Description("Returns a list of webhook subscriptions.\n\nBuilding an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe).")]
         [NonNull]
@@ -78680,7 +78680,7 @@ namespace Shopify.Types
         ///<summary>
         ///The count of webhook subscriptions.
         ///
-        ///Building an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe). Limited to a maximum of 10000 by default.
+        ///Building an app? If you only use app-specific webhooks, you won&apos;t need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify &amp; require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe). Limited to a maximum of 10000 by default.
         ///</summary>
         [Description("The count of webhook subscriptions.\n\nBuilding an app? If you only use app-specific webhooks, you won't need this. App-specific webhook subscriptions specified in your `shopify.app.toml` may be easier. They are automatically kept up to date by Shopify & require less maintenance. Please read [About managing webhook subscriptions](https://shopify.dev/docs/apps/build/webhooks/subscribe). Limited to a maximum of 10000 by default.")]
         public Count? webhookSubscriptionsCount { get; set; }
@@ -78709,14 +78709,14 @@ namespace Shopify.Types
     ///if the refund was initiated through the returns process. The refund tracks both the presentment currency
     ///(what the customer sees) and the shop currency for accurate financial reporting.
     ///
-    ///> Note:
-    ///> The existence of a `Refund` object doesn't guarantee that the money has been returned to the customer.
-    ///> The actual financial processing happens through associated
-    ///> [`OrderTransaction`](https://shopify.dev/docs/api/admin-graphql/latest/objects/OrderTransaction)
-    ///> objects, which can be in various states, such as pending, processing, success, or failure.
-    ///> To determine if money has actually been refunded, check the
-    ///> [status](https://shopify.dev/docs/api/admin-graphql/latest/objects/OrderTransaction#field-OrderTransaction.fields.status)
-    ///> of the associated transactions.
+    ///&gt; Note:
+    ///&gt; The existence of a `Refund` object doesn&apos;t guarantee that the money has been returned to the customer.
+    ///&gt; The actual financial processing happens through associated
+    ///&gt; [`OrderTransaction`](https://shopify.dev/docs/api/admin-graphql/latest/objects/OrderTransaction)
+    ///&gt; objects, which can be in various states, such as pending, processing, success, or failure.
+    ///&gt; To determine if money has actually been refunded, check the
+    ///&gt; [status](https://shopify.dev/docs/api/admin-graphql/latest/objects/OrderTransaction#field-OrderTransaction.fields.status)
+    ///&gt; of the associated transactions.
     ///
     ///Learn more about
     ///[managing returns](https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps/build-return-management),
@@ -78889,7 +78889,7 @@ namespace Shopify.Types
     public class RefundConnection : GraphQLObject<RefundConnection>, IConnectionWithNodesAndEdges<RefundEdge, Refund>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -79002,7 +79002,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A line item that's included in a refund.
+    ///A line item that&apos;s included in a refund.
     ///</summary>
     [Description("A line item that's included in a refund.")]
     public class RefundLineItem : GraphQLObject<RefundLineItem>
@@ -79100,7 +79100,7 @@ namespace Shopify.Types
     public class RefundLineItemConnection : GraphQLObject<RefundLineItemConnection>, IConnectionWithNodesAndEdges<RefundLineItemEdge, RefundLineItem>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -79179,7 +79179,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A shipping line item that's included in a refund.
+    ///A shipping line item that&apos;s included in a refund.
     ///</summary>
     [Description("A shipping line item that's included in a refund.")]
     public class RefundShippingLine : GraphQLObject<RefundShippingLine>, INode
@@ -79220,7 +79220,7 @@ namespace Shopify.Types
     public class RefundShippingLineConnection : GraphQLObject<RefundShippingLineConnection>, IConnectionWithNodesAndEdges<RefundShippingLineEdge, RefundShippingLine>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -79263,7 +79263,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A condition checking the visitor's region.
+    ///A condition checking the visitor&apos;s region.
     ///</summary>
     [Description("A condition checking the visitor's region.")]
     public class RegionsCondition : GraphQLObject<RegionsCondition>
@@ -79283,7 +79283,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///An alert message that appears in the Shopify admin about a problem with a store resource, with 1 or more actions to take. For example, you could use an alert to indicate that you're not charging taxes on some product variants.
+    ///An alert message that appears in the Shopify admin about a problem with a store resource, with 1 or more actions to take. For example, you could use an alert to indicate that you&apos;re not charging taxes on some product variants.
     ///They can optionally have a specific icon and be dismissed by merchants.
     ///</summary>
     [Description("An alert message that appears in the Shopify admin about a problem with a store resource, with 1 or more actions to take. For example, you could use an alert to indicate that you're not charging taxes on some product variants.\nThey can optionally have a specific icon and be dismissed by merchants.")]
@@ -79306,13 +79306,13 @@ namespace Shopify.Types
 
         ///<summary>
         ///Unique identifier that appears when an alert is manually closed by the merchant.
-        ///Most alerts can't be manually closed.
+        ///Most alerts can&apos;t be manually closed.
         ///</summary>
         [Description("Unique identifier that appears when an alert is manually closed by the merchant.\nMost alerts can't be manually closed.")]
         public string? dismissibleHandle { get; set; }
 
         ///<summary>
-        ///An icon that's optionally displayed with the alert.
+        ///An icon that&apos;s optionally displayed with the alert.
         ///</summary>
         [Description("An icon that's optionally displayed with the alert.")]
         public string? icon { get; set; }
@@ -79593,7 +79593,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///The date that the resource publication was or is going to be published to the publication.
-        ///If the product isn't published, then this field returns an epoch timestamp.
+        ///If the product isn&apos;t published, then this field returns an epoch timestamp.
         ///</summary>
         [Description("The date that the resource publication was or is going to be published to the publication.\nIf the product isn't published, then this field returns an epoch timestamp.")]
         [NonNull]
@@ -79614,7 +79614,7 @@ namespace Shopify.Types
     public class ResourcePublicationConnection : GraphQLObject<ResourcePublicationConnection>, IConnectionWithNodesAndEdges<ResourcePublicationEdge, ResourcePublication>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -79658,7 +79658,7 @@ namespace Shopify.Types
 
     ///<summary>
     ///A resource publication represents information about the publication of a resource.
-    ///Unlike `ResourcePublication`, an instance of `ResourcePublicationV2` can't be unpublished. It must either be published or scheduled to be published.
+    ///Unlike `ResourcePublication`, an instance of `ResourcePublicationV2` can&apos;t be unpublished. It must either be published or scheduled to be published.
     ///
     ///See [ResourcePublication](/api/admin-graphql/latest/objects/ResourcePublication) for more context.
     ///</summary>
@@ -79701,7 +79701,7 @@ namespace Shopify.Types
     public class ResourcePublicationV2Connection : GraphQLObject<ResourcePublicationV2Connection>, IConnectionWithNodesAndEdges<ResourcePublicationV2Edge, ResourcePublicationV2>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -80019,7 +80019,7 @@ namespace Shopify.Types
     public class ReturnConnection : GraphQLObject<ReturnConnection>, IConnectionWithNodesAndEdges<ReturnEdge, Return>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -80061,7 +80061,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Additional information about why a merchant declined the customer's return request.
+    ///Additional information about why a merchant declined the customer&apos;s return request.
     ///</summary>
     [Description("Additional information about why a merchant declined the customer's return request.")]
     public class ReturnDecline : GraphQLObject<ReturnDecline>
@@ -80074,7 +80074,7 @@ namespace Shopify.Types
         public string? note { get; set; }
 
         ///<summary>
-        ///The reason the customer's return request was declined.
+        ///The reason the customer&apos;s return request was declined.
         ///</summary>
         [Description("The reason the customer's return request was declined.")]
         [NonNull]
@@ -80082,7 +80082,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The reason why the merchant declined a customer's return request.
+    ///The reason why the merchant declined a customer&apos;s return request.
     ///</summary>
     [Description("The reason why the merchant declined a customer's return request.")]
     public enum ReturnDeclineReason
@@ -80189,7 +80189,7 @@ namespace Shopify.Types
         [Description("The input value should be greater than or equal to the minimum value allowed.")]
         GREATER_THAN_OR_EQUAL_TO,
         ///<summary>
-        ///The input value isn't included in the list.
+        ///The input value isn&apos;t included in the list.
         ///</summary>
         [Description("The input value isn't included in the list.")]
         INCLUSION,
@@ -80473,7 +80473,7 @@ namespace Shopify.Types
     public class ReturnLineItemTypeConnection : GraphQLObject<ReturnLineItemTypeConnection>, IConnectionWithNodesAndEdges<ReturnLineItemTypeEdge, IReturnLineItemType>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -80772,7 +80772,7 @@ namespace Shopify.Types
     public class ReturnableFulfillmentConnection : GraphQLObject<ReturnableFulfillmentConnection>, IConnectionWithNodesAndEdges<ReturnableFulfillmentEdge, ReturnableFulfillment>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -80842,7 +80842,7 @@ namespace Shopify.Types
     public class ReturnableFulfillmentLineItemConnection : GraphQLObject<ReturnableFulfillmentLineItemConnection>, IConnectionWithNodesAndEdges<ReturnableFulfillmentLineItemEdge, ReturnableFulfillmentLineItem>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -80887,7 +80887,7 @@ namespace Shopify.Types
     ///<summary>
     ///A reverse delivery is a post-fulfillment object that represents a buyer sending a package to a merchant.
     ///For example, a buyer requests a return, and a merchant sends the buyer a shipping label.
-    ///The reverse delivery contains the context of the items sent back, how they're being sent back
+    ///The reverse delivery contains the context of the items sent back, how they&apos;re being sent back
     ///(for example, a shipping label), and the current state of the delivery (tracking information).
     ///</summary>
     [Description("A reverse delivery is a post-fulfillment object that represents a buyer sending a package to a merchant.\nFor example, a buyer requests a return, and a merchant sends the buyer a shipping label.\nThe reverse delivery contains the context of the items sent back, how they're being sent back\n(for example, a shipping label), and the current state of the delivery (tracking information).")]
@@ -80928,7 +80928,7 @@ namespace Shopify.Types
     public class ReverseDeliveryConnection : GraphQLObject<ReverseDeliveryConnection>, IConnectionWithNodesAndEdges<ReverseDeliveryEdge, ReverseDelivery>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -81081,7 +81081,7 @@ namespace Shopify.Types
     public class ReverseDeliveryLineItemConnection : GraphQLObject<ReverseDeliveryLineItemConnection>, IConnectionWithNodesAndEdges<ReverseDeliveryLineItemEdge, ReverseDeliveryLineItem>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -81243,7 +81243,7 @@ namespace Shopify.Types
     public class ReverseFulfillmentOrderConnection : GraphQLObject<ReverseFulfillmentOrderConnection>, IConnectionWithNodesAndEdges<ReverseFulfillmentOrderEdge, ReverseFulfillmentOrder>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -81335,7 +81335,7 @@ namespace Shopify.Types
         [Description("An item that requires further processing before being restocked or discarded.")]
         PROCESSING_REQUIRED,
         ///<summary>
-        ///An item that wasn't restocked.
+        ///An item that wasn&apos;t restocked.
         ///</summary>
         [Description("An item that wasn't restocked.")]
         NOT_RESTOCKED,
@@ -81416,7 +81416,7 @@ namespace Shopify.Types
     public class ReverseFulfillmentOrderLineItemConnection : GraphQLObject<ReverseFulfillmentOrderLineItemConnection>, IConnectionWithNodesAndEdges<ReverseFulfillmentOrderLineItemEdge, ReverseFulfillmentOrderLineItem>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -81684,7 +81684,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///An individual sale record associated with a sales agreement. Every money value in an order's sales data is represented in the currency's smallest unit. When amounts are divided across multiple line items, such as taxes or order discounts, the amounts might not divide evenly across all of the line items on the order. To address this, the remaining currency units that couldn't be divided evenly are allocated one at a time, starting with the first line item, until they are all accounted for. In aggregate, the values sum up correctly. In isolation, one line item might have a different tax or discount amount than another line item of the same price, before taxes and discounts. This is because the amount could not be divided evenly across the items. The allocation of currency units across line items is immutable. After they are allocated, currency units are never reallocated or redistributed among the line items.
+    ///An individual sale record associated with a sales agreement. Every money value in an order&apos;s sales data is represented in the currency&apos;s smallest unit. When amounts are divided across multiple line items, such as taxes or order discounts, the amounts might not divide evenly across all of the line items on the order. To address this, the remaining currency units that couldn&apos;t be divided evenly are allocated one at a time, starting with the first line item, until they are all accounted for. In aggregate, the values sum up correctly. In isolation, one line item might have a different tax or discount amount than another line item of the same price, before taxes and discounts. This is because the amount could not be divided evenly across the items. The allocation of currency units across line items is immutable. After they are allocated, currency units are never reallocated or redistributed among the line items.
     ///</summary>
     [Description("An individual sale record associated with a sales agreement. Every money value in an order's sales data is represented in the currency's smallest unit. When amounts are divided across multiple line items, such as taxes or order discounts, the amounts might not divide evenly across all of the line items on the order. To address this, the remaining currency units that couldn't be divided evenly are allocated one at a time, starting with the first line item, until they are all accounted for. In aggregate, the values sum up correctly. In isolation, one line item might have a different tax or discount amount than another line item of the same price, before taxes and discounts. This is because the amount could not be divided evenly across the items. The allocation of currency units across line items is immutable. After they are allocated, currency units are never reallocated or redistributed among the line items.")]
     [JsonPolymorphic(TypeDiscriminatorPropertyName = "__typename")]
@@ -81849,7 +81849,7 @@ namespace Shopify.Types
     public class SaleConnection : GraphQLObject<SaleConnection>, IConnectionWithNodesAndEdges<SaleEdge, ISale>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -82048,7 +82048,7 @@ namespace Shopify.Types
     public class SalesAgreementConnection : GraphQLObject<SalesAgreementConnection>, IConnectionWithNodesAndEdges<SalesAgreementEdge, ISalesAgreement>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -82153,7 +82153,7 @@ namespace Shopify.Types
     public class SavedSearchConnection : GraphQLObject<SavedSearchConnection>, IConnectionWithNodesAndEdges<SavedSearchEdge, SavedSearch>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -82288,15 +82288,15 @@ namespace Shopify.Types
 
     ///<summary>
     ///Script discount applications capture the intentions of a discount that
-    ///was created by a Shopify Script for an order's line item or shipping line.
+    ///was created by a Shopify Script for an order&apos;s line item or shipping line.
     ///
-    ///Discount applications don't represent the actual final amount discounted on a line (line item or shipping line). The actual amount discounted on a line is represented by the [DiscountAllocation](https://shopify.dev/api/admin-graphql/latest/objects/discountallocation) object.
+    ///Discount applications don&apos;t represent the actual final amount discounted on a line (line item or shipping line). The actual amount discounted on a line is represented by the [DiscountAllocation](https://shopify.dev/api/admin-graphql/latest/objects/discountallocation) object.
     ///</summary>
     [Description("Script discount applications capture the intentions of a discount that\nwas created by a Shopify Script for an order's line item or shipping line.\n\nDiscount applications don't represent the actual final amount discounted on a line (line item or shipping line). The actual amount discounted on a line is represented by the [DiscountAllocation](https://shopify.dev/api/admin-graphql/latest/objects/discountallocation) object.")]
     public class ScriptDiscountApplication : GraphQLObject<ScriptDiscountApplication>, IDiscountApplication
     {
         ///<summary>
-        ///The method by which the discount's value is applied to its entitled items.
+        ///The method by which the discount&apos;s value is applied to its entitled items.
         ///</summary>
         [Description("The method by which the discount's value is applied to its entitled items.")]
         [NonNull]
@@ -82348,14 +82348,14 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///<div class="note"><h4>Theme app extensions</h4>
-    ///  <p>If your app integrates with a Shopify theme and you plan to submit it to the Shopify App Store, you must use theme app extensions instead of Script tags. Script tags can only be used with vintage themes. <a href="/apps/online-store#what-integration-method-should-i-use" target="_blank">Learn more</a>.</p></div>
+    ///&lt;div class=&quot;note&quot; &gt; &lt;h4&gt;Theme app extensions&lt;/h4&gt;
+    ///  &lt;p&gt;If your app integrates with a Shopify theme and you plan to submit it to the Shopify App Store, you must use theme app extensions instead of Script tags. Script tags can only be used with vintage themes. &lt;a href=&quot;/apps/online-store#what-integration-method-should-i-use&quot; target=&quot;_blank&quot; &gt;Learn more&lt;/a&gt;.&lt;/p&gt; &lt;/div&gt;
     ///
-    ///<div class="note"><h4>Script tag deprecation</h4>
-    ///  <p>Script tags will be sunset for the <b>Order status</b> page on August 28, 2025. <a href="https://www.shopify.com/plus/upgrading-to-checkout-extensibility">Upgrade to Checkout Extensibility</a> before this date. <a href="/docs/api/liquid/objects#script">Shopify Scripts</a> will continue to work alongside Checkout Extensibility until August 28, 2025.</p></div>
+    ///&lt;div class=&quot;note&quot; &gt; &lt;h4&gt;Script tag deprecation&lt;/h4&gt;
+    ///  &lt;p&gt;Script tags will be sunset for the &lt;b&gt;Order status&lt;/b&gt; page on August 28, 2025. &lt;a href=&quot;https://www.shopify.com/plus/upgrading-to-checkout-extensibility&quot; &gt;Upgrade to Checkout Extensibility&lt;/a&gt; before this date. &lt;a href=&quot;/docs/api/liquid/objects#script&quot; &gt;Shopify Scripts&lt;/a&gt; will continue to work alongside Checkout Extensibility until August 28, 2025.&lt;/p&gt; &lt;/div&gt;
     ///
     ///
-    ///A script tag represents remote JavaScript code that is loaded into the pages of a shop's storefront or the **Order status** page of checkout.
+    ///A script tag represents remote JavaScript code that is loaded into the pages of a shop&apos;s storefront or the **Order status** page of checkout.
     ///</summary>
     [Description("<div class=\"note\"><h4>Theme app extensions</h4>\n  <p>If your app integrates with a Shopify theme and you plan to submit it to the Shopify App Store, you must use theme app extensions instead of Script tags. Script tags can only be used with vintage themes. <a href=\"/apps/online-store#what-integration-method-should-i-use\" target=\"_blank\">Learn more</a>.</p></div>\n\n<div class=\"note\"><h4>Script tag deprecation</h4>\n  <p>Script tags will be sunset for the <b>Order status</b> page on August 28, 2025. <a href=\"https://www.shopify.com/plus/upgrading-to-checkout-extensibility\">Upgrade to Checkout Extensibility</a> before this date. <a href=\"/docs/api/liquid/objects#script\">Shopify Scripts</a> will continue to work alongside Checkout Extensibility until August 28, 2025.</p></div>\n\n\nA script tag represents remote JavaScript code that is loaded into the pages of a shop's storefront or the **Order status** page of checkout.")]
     public class ScriptTag : GraphQLObject<ScriptTag>, ILegacyInteroperability, INode
@@ -82420,7 +82420,7 @@ namespace Shopify.Types
     public class ScriptTagConnection : GraphQLObject<ScriptTagConnection>, IConnectionWithNodesAndEdges<ScriptTagEdge, ScriptTag>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -82488,13 +82488,13 @@ namespace Shopify.Types
     public enum ScriptTagDisplayScope
     {
         ///<summary>
-        ///Include the script on both the web storefront and the <b>Order status</b> page.
+        ///Include the script on both the web storefront and the &lt;b&gt;Order status&lt;/b&gt; page.
         ///</summary>
         [Description("Include the script on both the web storefront and the <b>Order status</b> page.")]
         [Obsolete("`ALL` is deprecated. Use `ONLINE_STORE` instead.")]
         ALL,
         ///<summary>
-        ///Include the script only on the <b>Order status</b> page.
+        ///Include the script only on the &lt;b&gt;Order status&lt;/b&gt; page.
         ///</summary>
         [Description("Include the script only on the <b>Order status</b> page.")]
         [Obsolete("`ORDER_STATUS` is deprecated and unavailable as a mutation input.")]
@@ -82638,7 +82638,7 @@ namespace Shopify.Types
     public class SearchResultConnection : GraphQLObject<SearchResultConnection>, IConnectionWithEdges<SearchResultEdge, SearchResult>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -82790,7 +82790,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A filter that takes a value that's associated with an object. For example, the `tags` field is associated with the [`Customer`](/api/admin-graphql/latest/objects/Customer) object.
+    ///A filter that takes a value that&apos;s associated with an object. For example, the `tags` field is associated with the [`Customer`](/api/admin-graphql/latest/objects/Customer) object.
     ///</summary>
     [Description("A filter that takes a value that's associated with an object. For example, the `tags` field is associated with the [`Customer`](/api/admin-graphql/latest/objects/Customer) object.")]
     public class SegmentAssociationFilter : GraphQLObject<SegmentAssociationFilter>, ISegmentFilter
@@ -82839,7 +82839,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A filter with a Boolean value that's been added to a segment query.
+    ///A filter with a Boolean value that&apos;s been added to a segment query.
     ///</summary>
     [Description("A filter with a Boolean value that's been added to a segment query.")]
     public class SegmentBooleanFilter : GraphQLObject<SegmentBooleanFilter>, ISegmentFilter
@@ -82873,7 +82873,7 @@ namespace Shopify.Types
     public class SegmentConnection : GraphQLObject<SegmentConnection>, IConnectionWithNodesAndEdges<SegmentEdge, Segment>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -82915,7 +82915,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A filter with a date value that's been added to a segment query.
+    ///A filter with a date value that&apos;s been added to a segment query.
     ///</summary>
     [Description("A filter with a date value that's been added to a segment query.")]
     public class SegmentDateFilter : GraphQLObject<SegmentDateFilter>, ISegmentFilter
@@ -82984,7 +82984,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A filter with a set of possible values that's been added to a segment query.
+    ///A filter with a set of possible values that&apos;s been added to a segment query.
     ///</summary>
     [Description("A filter with a set of possible values that's been added to a segment query.")]
     public class SegmentEnumFilter : GraphQLObject<SegmentEnumFilter>, ISegmentFilter
@@ -83012,7 +83012,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A filter that's used to segment customers based on the date that an event occured. For example, the `product_bought` event filter allows you to segment customers based on what products they've bought.
+    ///A filter that&apos;s used to segment customers based on the date that an event occured. For example, the `product_bought` event filter allows you to segment customers based on what products they&apos;ve bought.
     ///</summary>
     [Description("A filter that's used to segment customers based on the date that an event occured. For example, the `product_bought` event filter allows you to segment customers based on what products they've bought.")]
     public class SegmentEventFilter : GraphQLObject<SegmentEventFilter>, ISegmentFilter
@@ -83154,7 +83154,7 @@ namespace Shopify.Types
     public class SegmentFilterConnection : GraphQLObject<SegmentFilterConnection>, IConnectionWithNodesAndEdges<SegmentFilterEdge, ISegmentFilter>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -83197,7 +83197,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A filter with a double-precision, floating-point value that's been added to a segment query.
+    ///A filter with a double-precision, floating-point value that&apos;s been added to a segment query.
     ///</summary>
     [Description("A filter with a double-precision, floating-point value that's been added to a segment query.")]
     public class SegmentFloatFilter : GraphQLObject<SegmentFloatFilter>, ISegmentFilter
@@ -83225,7 +83225,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A filter with an integer that's been added to a segment query.
+    ///A filter with an integer that&apos;s been added to a segment query.
     ///</summary>
     [Description("A filter with an integer that's been added to a segment query.")]
     public class SegmentIntegerFilter : GraphQLObject<SegmentIntegerFilter>, ISegmentFilter
@@ -83266,7 +83266,7 @@ namespace Shopify.Types
         public bool? isMember { get; set; }
 
         ///<summary>
-        ///A `segmentId` that's used for testing membership.
+        ///A `segmentId` that&apos;s used for testing membership.
         ///</summary>
         [Description("A `segmentId` that's used for testing membership.")]
         [NonNull]
@@ -83322,7 +83322,7 @@ namespace Shopify.Types
     public class SegmentMigrationConnection : GraphQLObject<SegmentMigrationConnection>, IConnectionWithNodesAndEdges<SegmentMigrationEdge, SegmentMigration>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -83387,7 +83387,7 @@ namespace Shopify.Types
         LAST_EDIT_DATE,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -83416,7 +83416,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A filter with a string that's been added to a segment query.
+    ///A filter with a string that&apos;s been added to a segment query.
     ///</summary>
     [Description("A filter with a string that's been added to a segment query.")]
     public class SegmentStringFilter : GraphQLObject<SegmentStringFilter>, ISegmentFilter
@@ -83472,7 +83472,7 @@ namespace Shopify.Types
     public class SegmentValue : GraphQLObject<SegmentValue>
     {
         ///<summary>
-        ///The localized version of the value's name. This name is displayed to the merchant.
+        ///The localized version of the value&apos;s name. This name is displayed to the merchant.
         ///</summary>
         [Description("The localized version of the value's name. This name is displayed to the merchant.")]
         [NonNull]
@@ -83493,7 +83493,7 @@ namespace Shopify.Types
     public class SegmentValueConnection : GraphQLObject<SegmentValueConnection>, IConnectionWithNodesAndEdges<SegmentValueEdge, SegmentValue>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -83623,7 +83623,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -83648,14 +83648,14 @@ namespace Shopify.Types
         ///<summary>
         ///A customer-facing description of the selling plan.
         ///
-        ///If your store supports multiple currencies, then don't include country-specific pricing content, such as "Buy monthly, get 10$ CAD off". This field won't be converted to reflect different currencies.
+        ///If your store supports multiple currencies, then don&apos;t include country-specific pricing content, such as &quot;Buy monthly, get 10$ CAD off&quot;. This field won&apos;t be converted to reflect different currencies.
         ///</summary>
         [Description("A customer-facing description of the selling plan.\n\nIf your store supports multiple currencies, then don't include country-specific pricing content, such as \"Buy monthly, get 10$ CAD off\". This field won't be converted to reflect different currencies.")]
         [NonNull]
         public string? name { get; set; }
 
         ///<summary>
-        ///The values of all options available on the selling plan. Selling plans are grouped together in Liquid when they're created by the same app, and have the same `selling_plan_group.name` and `selling_plan_group.options` values.
+        ///The values of all options available on the selling plan. Selling plans are grouped together in Liquid when they&apos;re created by the same app, and have the same `selling_plan_group.name` and `selling_plan_group.options` values.
         ///</summary>
         [Description("The values of all options available on the selling plan. Selling plans are grouped together in Liquid when they're created by the same app, and have the same `selling_plan_group.name` and `selling_plan_group.options` values.")]
         [NonNull]
@@ -83717,7 +83717,7 @@ namespace Shopify.Types
         ///If `type` is WEEKDAY, then the value must be between 1-7. Shopify interprets
         ///the days of the week according to ISO 8601, where 1 is Monday.
         ///
-        ///If `type` isn't WEEKDAY, then the value must be between 1-31.
+        ///If `type` isn&apos;t WEEKDAY, then the value must be between 1-31.
         ///</summary>
         [Description("The day of the anchor.\n\nIf `type` is WEEKDAY, then the value must be between 1-7. Shopify interprets\nthe days of the week according to ISO 8601, where 1 is Monday.\n\nIf `type` isn't WEEKDAY, then the value must be between 1-31.")]
         [NonNull]
@@ -83787,7 +83787,7 @@ namespace Shopify.Types
     ///<summary>
     ///The category of the selling plan. For the `OTHER` category,
     ///         you must fill out our [request form](https://docs.google.com/forms/d/e/1FAIpQLSeU18Xmw0Q61V8wdH-dfGafFqIBfRchQKUO8WAF3yJTvgyyZQ/viewform),
-    ///         where we'll review your request for a new purchase option.
+    ///         where we&apos;ll review your request for a new purchase option.
     ///</summary>
     [Description("The category of the selling plan. For the `OTHER` category,\n         you must fill out our [request form](https://docs.google.com/forms/d/e/1FAIpQLSeU18Xmw0Q61V8wdH-dfGafFqIBfRchQKUO8WAF3yJTvgyyZQ/viewform),\n         where we'll review your request for a new purchase option.")]
     public enum SellingPlanCategory
@@ -83823,7 +83823,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The amount charged at checkout when the full amount isn't charged at checkout.
+    ///The amount charged at checkout when the full amount isn&apos;t charged at checkout.
     ///</summary>
     [Description("The amount charged at checkout when the full amount isn't charged at checkout.")]
     public class SellingPlanCheckoutCharge : GraphQLObject<SellingPlanCheckoutCharge>
@@ -83858,7 +83858,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The checkout charge when the full amount isn't charged at checkout.
+    ///The checkout charge when the full amount isn&apos;t charged at checkout.
     ///</summary>
     [Description("The checkout charge when the full amount isn't charged at checkout.")]
     public enum SellingPlanCheckoutChargeType
@@ -83901,7 +83901,7 @@ namespace Shopify.Types
     public class SellingPlanConnection : GraphQLObject<SellingPlanConnection>, IConnectionWithNodesAndEdges<SellingPlanEdge, SellingPlan>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -83996,7 +83996,7 @@ namespace Shopify.Types
     public class SellingPlanFixedBillingPolicy : GraphQLObject<SellingPlanFixedBillingPolicy>, ISellingPlanBillingPolicy
     {
         ///<summary>
-        ///The checkout charge when the full amount isn't charged at checkout.
+        ///The checkout charge when the full amount isn&apos;t charged at checkout.
         ///</summary>
         [Description("The checkout charge when the full amount isn't charged at checkout.")]
         [NonNull]
@@ -84185,7 +84185,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Represents a selling method (for example, "Subscribe and save" or "Pre-paid"). Selling plan groups
+    ///Represents a selling method (for example, &quot;Subscribe and save&quot; or &quot;Pre-paid&quot;). Selling plan groups
     ///and associated records (selling plans and policies) are deleted 48 hours after a merchant
     ///uninstalls their subscriptions app. We recommend backing up these records if you need to restore them later.
     ///</summary>
@@ -84254,7 +84254,7 @@ namespace Shopify.Types
         public string? name { get; set; }
 
         ///<summary>
-        ///The values of all options available on the selling plan group. Selling plans are grouped together in Liquid when they're created by the same app, and have the same `selling_plan_group.name` and `selling_plan_group.options` values.
+        ///The values of all options available on the selling plan group. Selling plans are grouped together in Liquid when they&apos;re created by the same app, and have the same `selling_plan_group.name` and `selling_plan_group.options` values.
         ///</summary>
         [Description("The values of all options available on the selling plan group. Selling plans are grouped together in Liquid when they're created by the same app, and have the same `selling_plan_group.name` and `selling_plan_group.options` values.")]
         [NonNull]
@@ -84360,7 +84360,7 @@ namespace Shopify.Types
     public class SellingPlanGroupConnection : GraphQLObject<SellingPlanGroupConnection>, IConnectionWithNodesAndEdges<SellingPlanGroupEdge, SellingPlanGroup>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -84597,7 +84597,7 @@ namespace Shopify.Types
         [Description("The input value should be greater than or equal to the minimum value allowed.")]
         GREATER_THAN_OR_EQUAL_TO,
         ///<summary>
-        ///The input value isn't included in the list.
+        ///The input value isn&apos;t included in the list.
         ///</summary>
         [Description("The input value isn't included in the list.")]
         INCLUSION,
@@ -84622,7 +84622,7 @@ namespace Shopify.Types
         [Description("The input value is not a number.")]
         NOT_A_NUMBER,
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -84667,47 +84667,47 @@ namespace Shopify.Types
         [Description("Must include at least one selling plan.")]
         SELLING_PLAN_COUNT_LOWER_BOUND,
         ///<summary>
-        ///Selling plan's billing policy max cycles must be greater than min cycles.
+        ///Selling plan&apos;s billing policy max cycles must be greater than min cycles.
         ///</summary>
         [Description("Selling plan's billing policy max cycles must be greater than min cycles.")]
         SELLING_PLAN_MAX_CYCLES_MUST_BE_GREATER_THAN_MIN_CYCLES,
         ///<summary>
-        ///Selling plan's billing and delivery policies anchors must be equal.
+        ///Selling plan&apos;s billing and delivery policies anchors must be equal.
         ///</summary>
         [Description("Selling plan's billing and delivery policies anchors must be equal.")]
         SELLING_PLAN_BILLING_AND_DELIVERY_POLICY_ANCHORS_MUST_BE_EQUAL,
         ///<summary>
-        ///Selling plan's billing cycle must be a multiple of delivery cycle.
+        ///Selling plan&apos;s billing cycle must be a multiple of delivery cycle.
         ///</summary>
         [Description("Selling plan's billing cycle must be a multiple of delivery cycle.")]
         SELLING_PLAN_BILLING_CYCLE_MUST_BE_A_MULTIPLE_OF_DELIVERY_CYCLE,
         ///<summary>
-        ///Selling plan's pricing policies must contain one fixed pricing policy.
+        ///Selling plan&apos;s pricing policies must contain one fixed pricing policy.
         ///</summary>
         [Description("Selling plan's pricing policies must contain one fixed pricing policy.")]
         SELLING_PLAN_PRICING_POLICIES_MUST_CONTAIN_A_FIXED_PRICING_POLICY,
         ///<summary>
-        ///Cannot define option2 on this selling plan as there's no label on the parent selling plan group.
+        ///Cannot define option2 on this selling plan as there&apos;s no label on the parent selling plan group.
         ///</summary>
         [Description("Cannot define option2 on this selling plan as there's no label on the parent selling plan group.")]
         SELLING_PLAN_MISSING_OPTION2_LABEL_ON_PARENT_GROUP,
         ///<summary>
-        ///Cannot define option3 on this selling plan as there's no label on the parent selling plan group.
+        ///Cannot define option3 on this selling plan as there&apos;s no label on the parent selling plan group.
         ///</summary>
         [Description("Cannot define option3 on this selling plan as there's no label on the parent selling plan group.")]
         SELLING_PLAN_MISSING_OPTION3_LABEL_ON_PARENT_GROUP,
         ///<summary>
-        ///Selling plan's option2 is required because option2 exists.
+        ///Selling plan&apos;s option2 is required because option2 exists.
         ///</summary>
         [Description("Selling plan's option2 is required because option2 exists.")]
         SELLING_PLAN_OPTION2_REQUIRED_AS_DEFINED_ON_PARENT_GROUP,
         ///<summary>
-        ///Selling plan's option3 is required because option3 exists.
+        ///Selling plan&apos;s option3 is required because option3 exists.
         ///</summary>
         [Description("Selling plan's option3 is required because option3 exists.")]
         SELLING_PLAN_OPTION3_REQUIRED_AS_DEFINED_ON_PARENT_GROUP,
         ///<summary>
-        ///Selling plans can't have more than 2 pricing policies.
+        ///Selling plans can&apos;t have more than 2 pricing policies.
         ///</summary>
         [Description("Selling plans can't have more than 2 pricing policies.")]
         SELLING_PLAN_PRICING_POLICIES_LIMIT,
@@ -84787,7 +84787,7 @@ namespace Shopify.Types
         [Description("Only one pricing policy adjustment value type can be defined.")]
         ONLY_NEED_ONE_PRICING_POLICY_VALUE,
         ///<summary>
-        ///Pricing policy's adjustment value and adjustment type must match.
+        ///Pricing policy&apos;s adjustment value and adjustment type must match.
         ///</summary>
         [Description("Pricing policy's adjustment value and adjustment type must match.")]
         PRICING_POLICY_ADJUSTMENT_VALUE_AND_TYPE_MUST_MATCH,
@@ -84807,82 +84807,82 @@ namespace Shopify.Types
         [Description("A fixed selling plan can have at most one pricing policy.")]
         SELLING_PLAN_FIXED_PRICING_POLICIES_LIMIT,
         ///<summary>
-        ///A fixed billing policy's remaining_balance_charge_exact_time can't be blank when the remaining_balance_charge_trigger is EXACT_TIME.
+        ///A fixed billing policy&apos;s remaining_balance_charge_exact_time can&apos;t be blank when the remaining_balance_charge_trigger is EXACT_TIME.
         ///</summary>
         [Description("A fixed billing policy's remaining_balance_charge_exact_time can't be blank when the remaining_balance_charge_trigger is EXACT_TIME.")]
         REMAINING_BALANCE_CHARGE_EXACT_TIME_REQUIRED,
         ///<summary>
-        ///A fixed billing policy's checkout charge value and type must match.
+        ///A fixed billing policy&apos;s checkout charge value and type must match.
         ///</summary>
         [Description("A fixed billing policy's checkout charge value and type must match.")]
         CHECKOUT_CHARGE_VALUE_AND_TYPE_MUST_MATCH,
         ///<summary>
-        ///A fixed billing policy's checkout charge can have at most one value.
+        ///A fixed billing policy&apos;s checkout charge can have at most one value.
         ///</summary>
         [Description("A fixed billing policy's checkout charge can have at most one value.")]
         ONLY_NEED_ONE_CHECKOUT_CHARGE_VALUE,
         ///<summary>
-        ///A fixed billing policy's remaining_balance_charge_exact_time must not be present when the remaining_balance_charge_trigger isn't EXACT_TIME.
+        ///A fixed billing policy&apos;s remaining_balance_charge_exact_time must not be present when the remaining_balance_charge_trigger isn&apos;t EXACT_TIME.
         ///</summary>
         [Description("A fixed billing policy's remaining_balance_charge_exact_time must not be present when the remaining_balance_charge_trigger isn't EXACT_TIME.")]
         REMAINING_BALANCE_CHARGE_EXACT_TIME_NOT_ALLOWED,
         ///<summary>
-        ///A fixed billing policy's remaining_balance_charge_time_after_checkout must be present and greater than zero when the remaining_balance_charge_trigger is TIME_AFTER_CHECKOUT.
+        ///A fixed billing policy&apos;s remaining_balance_charge_time_after_checkout must be present and greater than zero when the remaining_balance_charge_trigger is TIME_AFTER_CHECKOUT.
         ///</summary>
         [Description("A fixed billing policy's remaining_balance_charge_time_after_checkout must be present and greater than zero when the remaining_balance_charge_trigger is TIME_AFTER_CHECKOUT.")]
         REMAINING_BALANCE_CHARGE_TIME_AFTER_CHECKOUT_MUST_BE_GREATER_THAN_ZERO,
         ///<summary>
-        ///A fixed billing policy's remaining_balance_charge_trigger must be NO_REMAINING_BALANCE when the checkout_charge_type is PERCENTAGE and checkout_charge_value is 100.
+        ///A fixed billing policy&apos;s remaining_balance_charge_trigger must be NO_REMAINING_BALANCE when the checkout_charge_type is PERCENTAGE and checkout_charge_value is 100.
         ///</summary>
         [Description("A fixed billing policy's remaining_balance_charge_trigger must be NO_REMAINING_BALANCE when the checkout_charge_type is PERCENTAGE and checkout_charge_value is 100.")]
         REMAINING_BALANCE_CHARGE_TRIGGER_ON_FULL_CHECKOUT,
         ///<summary>
-        ///A fixed billing policy's remaining_balance_charge_trigger can't be NO_REMAINING_BALANCE when the checkout_charge_type is PERCENTAGE and checkout_charge_value is less than 100.
+        ///A fixed billing policy&apos;s remaining_balance_charge_trigger can&apos;t be NO_REMAINING_BALANCE when the checkout_charge_type is PERCENTAGE and checkout_charge_value is less than 100.
         ///</summary>
         [Description("A fixed billing policy's remaining_balance_charge_trigger can't be NO_REMAINING_BALANCE when the checkout_charge_type is PERCENTAGE and checkout_charge_value is less than 100.")]
         REMAINING_BALANCE_CHARGE_TRIGGER_NO_REMAINING_BALANCE_ON_PARTIAL_PERCENTAGE_CHECKOUT_CHARGE,
         ///<summary>
-        ///A fixed billing policy's remaining_balance_charge_trigger can't be NO_REMAINING_BALANCE when the checkout_charge_type is PRICE.
+        ///A fixed billing policy&apos;s remaining_balance_charge_trigger can&apos;t be NO_REMAINING_BALANCE when the checkout_charge_type is PRICE.
         ///</summary>
         [Description("A fixed billing policy's remaining_balance_charge_trigger can't be NO_REMAINING_BALANCE when the checkout_charge_type is PRICE.")]
         REMAINING_BALANCE_CHARGE_TRIGGER_NO_REMAINING_BALANCE_ON_PRICE_CHECKOUT_CHARGE,
         ///<summary>
-        ///A fixed billing policy's fulfillment_exact_time can't be blank when the fulfillment_trigger is EXACT_TIME.
+        ///A fixed billing policy&apos;s fulfillment_exact_time can&apos;t be blank when the fulfillment_trigger is EXACT_TIME.
         ///</summary>
         [Description("A fixed billing policy's fulfillment_exact_time can't be blank when the fulfillment_trigger is EXACT_TIME.")]
         FULFILLMENT_EXACT_TIME_REQUIRED,
         ///<summary>
-        ///A fixed billing policy's fulfillment_exact_time must not be present when the fulfillment_trigger isn't EXACT_TIME.
+        ///A fixed billing policy&apos;s fulfillment_exact_time must not be present when the fulfillment_trigger isn&apos;t EXACT_TIME.
         ///</summary>
         [Description("A fixed billing policy's fulfillment_exact_time must not be present when the fulfillment_trigger isn't EXACT_TIME.")]
         FULFILLMENT_EXACT_TIME_NOT_ALLOWED,
         ///<summary>
-        ///A fixed delivery policy's anchors must not be present when the fulfillment_trigger isn't ANCHOR.
+        ///A fixed delivery policy&apos;s anchors must not be present when the fulfillment_trigger isn&apos;t ANCHOR.
         ///</summary>
         [Description("A fixed delivery policy's anchors must not be present when the fulfillment_trigger isn't ANCHOR.")]
         SELLING_PLAN_ANCHORS_NOT_ALLOWED,
         ///<summary>
-        ///A fixed delivery policy's anchors must be present when the fulfillment_trigger is ANCHOR.
+        ///A fixed delivery policy&apos;s anchors must be present when the fulfillment_trigger is ANCHOR.
         ///</summary>
         [Description("A fixed delivery policy's anchors must be present when the fulfillment_trigger is ANCHOR.")]
         SELLING_PLAN_ANCHORS_REQUIRED,
         ///<summary>
-        ///A selling plan can't have both fixed and recurring billing policies.
+        ///A selling plan can&apos;t have both fixed and recurring billing policies.
         ///</summary>
         [Description("A selling plan can't have both fixed and recurring billing policies.")]
         ONLY_ONE_OF_FIXED_OR_RECURRING_BILLING,
         ///<summary>
-        ///A selling plan can't have both fixed and recurring delivery policies.
+        ///A selling plan can&apos;t have both fixed and recurring delivery policies.
         ///</summary>
         [Description("A selling plan can't have both fixed and recurring delivery policies.")]
         ONLY_ONE_OF_FIXED_OR_RECURRING_DELIVERY,
         ///<summary>
-        ///Billing policy's interval is too large.
+        ///Billing policy&apos;s interval is too large.
         ///</summary>
         [Description("Billing policy's interval is too large.")]
         BILLING_POLICY_INTERVAL_TOO_LARGE,
         ///<summary>
-        ///Delivery policy's interval is too large.
+        ///Delivery policy&apos;s interval is too large.
         ///</summary>
         [Description("Delivery policy's interval is too large.")]
         DELIVERY_POLICY_INTERVAL_TOO_LARGE,
@@ -85320,7 +85320,7 @@ namespace Shopify.Types
     public enum SellingPlanRemainingBalanceChargeTrigger
     {
         ///<summary>
-        ///When there's no remaining balance to be charged after checkout.
+        ///When there&apos;s no remaining balance to be charged after checkout.
         ///</summary>
         [Description("When there's no remaining balance to be charged after checkout.")]
         NO_REMAINING_BALANCE,
@@ -85465,7 +85465,7 @@ namespace Shopify.Types
 
     ///<summary>
     ///The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)
-    ///that's used to control how discounts can be combined.
+    ///that&apos;s used to control how discounts can be combined.
     ///</summary>
     [Description("The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)\nthat's used to control how discounts can be combined.")]
     public enum ShippingDiscountClass
@@ -85538,7 +85538,7 @@ namespace Shopify.Types
         public MoneyV2? discountedPrice { get; set; }
 
         ///<summary>
-        ///The shipping price after applying discounts. If the parent order.taxesIncluded field is true, then this price includes taxes. If not, it's the pre-tax price.
+        ///The shipping price after applying discounts. If the parent order.taxesIncluded field is true, then this price includes taxes. If not, it&apos;s the pre-tax price.
         ///As of API version 2024-07, this will be calculated including cart level discounts, such as the free shipping discount.
         ///</summary>
         [Description("The shipping price after applying discounts. If the parent order.taxesIncluded field is true, then this price includes taxes. If not, it's the pre-tax price.\nAs of API version 2024-07, this will be calculated including cart level discounts, such as the free shipping discount.")]
@@ -85596,7 +85596,7 @@ namespace Shopify.Types
         public FulfillmentService? requestedFulfillmentService { get; set; }
 
         ///<summary>
-        ///A unique identifier for the shipping rate. The format can change without notice and isn't meant to be shown to users.
+        ///A unique identifier for the shipping rate. The format can change without notice and isn&apos;t meant to be shown to users.
         ///</summary>
         [Description("A unique identifier for the shipping rate. The format can change without notice and isn't meant to be shown to users.")]
         public string? shippingRateHandle { get; set; }
@@ -85629,7 +85629,7 @@ namespace Shopify.Types
     public class ShippingLineConnection : GraphQLObject<ShippingLineConnection>, IConnectionWithNodesAndEdges<ShippingLineEdge, ShippingLine>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -85924,14 +85924,14 @@ namespace Shopify.Types
         public StaffMember? accountOwner { get; set; }
 
         ///<summary>
-        ///A list of the shop's active alert messages that appear in the Shopify admin.
+        ///A list of the shop&apos;s active alert messages that appear in the Shopify admin.
         ///</summary>
         [Description("A list of the shop's active alert messages that appear in the Shopify admin.")]
         [NonNull]
         public IEnumerable<ShopAlert>? alerts { get; set; }
 
         ///<summary>
-        ///A list of the shop's product categories. Limit: 1000 product categories.
+        ///A list of the shop&apos;s product categories. Limit: 1000 product categories.
         ///</summary>
         [Description("A list of the shop's product categories. Limit: 1000 product categories.")]
         [Obsolete("Use `allProductCategoriesList` instead.")]
@@ -85939,14 +85939,14 @@ namespace Shopify.Types
         public IEnumerable<ProductCategory>? allProductCategories { get; set; }
 
         ///<summary>
-        ///A list of the shop's product categories. Limit: 1000 product categories.
+        ///A list of the shop&apos;s product categories. Limit: 1000 product categories.
         ///</summary>
         [Description("A list of the shop's product categories. Limit: 1000 product categories.")]
         [NonNull]
         public IEnumerable<TaxonomyCategory>? allProductCategoriesList { get; set; }
 
         ///<summary>
-        ///The token required to query the shop's reports or dashboards.
+        ///The token required to query the shop&apos;s reports or dashboards.
         ///</summary>
         [Description("The token required to query the shop's reports or dashboards.")]
         [Obsolete("Not supported anymore.")]
@@ -85987,7 +85987,7 @@ namespace Shopify.Types
         public AppConnection? availableChannelApps { get; set; }
 
         ///<summary>
-        ///The shop's billing address information.
+        ///The shop&apos;s billing address information.
         ///</summary>
         [Description("The shop's billing address information.")]
         [NonNull]
@@ -86001,7 +86001,7 @@ namespace Shopify.Types
         public IEnumerable<AvailableChannelDefinitionsByChannel>? channelDefinitionsForInstalledChannels { get; set; }
 
         ///<summary>
-        ///List of the shop's active sales channels.
+        ///List of the shop&apos;s active sales channels.
         ///</summary>
         [Description("List of the shop's active sales channels.")]
         [Obsolete("Use `QueryRoot.channels` instead.")]
@@ -86016,7 +86016,7 @@ namespace Shopify.Types
         public bool? checkoutApiSupported { get; set; }
 
         ///<summary>
-        ///List of the shop's collections.
+        ///List of the shop&apos;s collections.
         ///</summary>
         [Description("List of the shop's collections.")]
         [Obsolete("Use `QueryRoot.collections` instead.")]
@@ -86060,7 +86060,7 @@ namespace Shopify.Types
         public CurrencyFormats? currencyFormats { get; set; }
 
         ///<summary>
-        ///The presentment currency settings for the shop excluding the shop's own currency.
+        ///The presentment currency settings for the shop excluding the shop&apos;s own currency.
         ///</summary>
         [Description("The presentment currency settings for the shop excluding the shop's own currency.")]
         [NonNull]
@@ -86074,7 +86074,7 @@ namespace Shopify.Types
         public string? customerAccounts { get; set; }
 
         ///<summary>
-        ///Information about the shop's customer accounts.
+        ///Information about the shop&apos;s customer accounts.
         ///</summary>
         [Description("Information about the shop's customer accounts.")]
         [NonNull]
@@ -86096,7 +86096,7 @@ namespace Shopify.Types
         public CustomerConnection? customers { get; set; }
 
         ///<summary>
-        ///The shop's meta description used in search engine results.
+        ///The shop&apos;s meta description used in search engine results.
         ///</summary>
         [Description("The shop's meta description used in search engine results.")]
         public string? description { get; set; }
@@ -86125,7 +86125,7 @@ namespace Shopify.Types
         public DraftOrderConnection? draftOrders { get; set; }
 
         ///<summary>
-        ///The shop owner's email address.
+        ///The shop owner&apos;s email address.
         ///Shopify will use this email address to communicate with the shop owner.
         ///</summary>
         [Description("The shop owner's email address.\nShopify will use this email address to communicate with the shop owner.")]
@@ -86162,14 +86162,14 @@ namespace Shopify.Types
         public FulfillmentOrderConnection? fulfillmentOrders { get; set; }
 
         ///<summary>
-        ///List of the shop's installed fulfillment services.
+        ///List of the shop&apos;s installed fulfillment services.
         ///</summary>
         [Description("List of the shop's installed fulfillment services.")]
         [NonNull]
         public IEnumerable<FulfillmentService>? fulfillmentServices { get; set; }
 
         ///<summary>
-        ///The shop's time zone as defined by the IANA.
+        ///The shop&apos;s time zone as defined by the IANA.
         ///</summary>
         [Description("The shop's time zone as defined by the IANA.")]
         [NonNull]
@@ -86183,7 +86183,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///List of the shop's inventory items.
+        ///List of the shop&apos;s inventory items.
         ///</summary>
         [Description("List of the shop's inventory items.")]
         [Obsolete("Use `QueryRoot.inventoryItems` instead.")]
@@ -86208,7 +86208,7 @@ namespace Shopify.Types
         public LocationConnection? locations { get; set; }
 
         ///<summary>
-        ///Whether SMS marketing has been enabled on the shop's checkout configuration settings.
+        ///Whether SMS marketing has been enabled on the shop&apos;s checkout configuration settings.
         ///</summary>
         [Description("Whether SMS marketing has been enabled on the shop's checkout configuration settings.")]
         [NonNull]
@@ -86222,7 +86222,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -86237,21 +86237,21 @@ namespace Shopify.Types
         public MetafieldConnection? metafields { get; set; }
 
         ///<summary>
-        ///The shop's .myshopify.com domain name.
+        ///The shop&apos;s .myshopify.com domain name.
         ///</summary>
         [Description("The shop's .myshopify.com domain name.")]
         [NonNull]
         public string? myshopifyDomain { get; set; }
 
         ///<summary>
-        ///The shop's name.
+        ///The shop&apos;s name.
         ///</summary>
         [Description("The shop's name.")]
         [NonNull]
         public string? name { get; set; }
 
         ///<summary>
-        ///The shop's settings related to navigation.
+        ///The shop&apos;s settings related to navigation.
         ///</summary>
         [Description("The shop's settings related to navigation.")]
         [NonNull]
@@ -86279,7 +86279,7 @@ namespace Shopify.Types
         public StringConnection? orderTags { get; set; }
 
         ///<summary>
-        ///A list of the shop's orders.
+        ///A list of the shop&apos;s orders.
         ///</summary>
         [Description("A list of the shop's orders.")]
         [Obsolete("Use `QueryRoot.orders` instead.")]
@@ -86287,21 +86287,21 @@ namespace Shopify.Types
         public OrderConnection? orders { get; set; }
 
         ///<summary>
-        ///The shop's settings related to payments.
+        ///The shop&apos;s settings related to payments.
         ///</summary>
         [Description("The shop's settings related to payments.")]
         [NonNull]
         public PaymentSettings? paymentSettings { get; set; }
 
         ///<summary>
-        ///The shop's billing plan.
+        ///The shop&apos;s billing plan.
         ///</summary>
         [Description("The shop's billing plan.")]
         [NonNull]
         public ShopPlan? plan { get; set; }
 
         ///<summary>
-        ///The primary domain of the shop's online store.
+        ///The primary domain of the shop&apos;s online store.
         ///</summary>
         [Description("The primary domain of the shop's online store.")]
         [NonNull]
@@ -86332,7 +86332,7 @@ namespace Shopify.Types
         public StringConnection? productTypes { get; set; }
 
         ///<summary>
-        ///List of the shop's product variants.
+        ///List of the shop&apos;s product variants.
         ///</summary>
         [Description("List of the shop's product variants.")]
         [Obsolete("Use `QueryRoot.productVariants` instead.")]
@@ -86348,7 +86348,7 @@ namespace Shopify.Types
         public StringConnection? productVendors { get; set; }
 
         ///<summary>
-        ///List of the shop's products.
+        ///List of the shop&apos;s products.
         ///</summary>
         [Description("List of the shop's products.")]
         [Obsolete("Use `QueryRoot.products`.")]
@@ -86364,7 +86364,7 @@ namespace Shopify.Types
         public int? publicationCount { get; set; }
 
         ///<summary>
-        ///The shop's limits for specific resources. For example, the maximum number ofvariants allowed per product, or the maximum number of locations allowed.
+        ///The shop&apos;s limits for specific resources. For example, the maximum number ofvariants allowed per product, or the maximum number of locations allowed.
         ///</summary>
         [Description("The shop's limits for specific resources. For example, the maximum number ofvariants allowed per product, or the maximum number of locations allowed.")]
         [NonNull]
@@ -86420,7 +86420,7 @@ namespace Shopify.Types
         public IEnumerable<ShopPolicy>? shopPolicies { get; set; }
 
         ///<summary>
-        ///The paginated list of the shop's staff members.
+        ///The paginated list of the shop&apos;s staff members.
         ///</summary>
         [Description("The paginated list of the shop's staff members.")]
         [Obsolete("Use `QueryRoot.staffMembers` instead.")]
@@ -86435,7 +86435,7 @@ namespace Shopify.Types
         public StorefrontAccessTokenConnection? storefrontAccessTokens { get; set; }
 
         ///<summary>
-        ///The URL of the shop's storefront.
+        ///The URL of the shop&apos;s storefront.
         ///</summary>
         [Description("The URL of the shop's storefront.")]
         [Obsolete("Use `url` instead.")]
@@ -86450,28 +86450,28 @@ namespace Shopify.Types
         public bool? taxShipping { get; set; }
 
         ///<summary>
-        ///Whether applicable taxes are included in the shop's product prices.
+        ///Whether applicable taxes are included in the shop&apos;s product prices.
         ///</summary>
         [Description("Whether applicable taxes are included in the shop's product prices.")]
         [NonNull]
         public bool? taxesIncluded { get; set; }
 
         ///<summary>
-        ///The shop's time zone abbreviation.
+        ///The shop&apos;s time zone abbreviation.
         ///</summary>
         [Description("The shop's time zone abbreviation.")]
         [NonNull]
         public string? timezoneAbbreviation { get; set; }
 
         ///<summary>
-        ///The shop's time zone offset.
+        ///The shop&apos;s time zone offset.
         ///</summary>
         [Description("The shop's time zone offset.")]
         [NonNull]
         public string? timezoneOffset { get; set; }
 
         ///<summary>
-        ///The shop's time zone offset expressed as a number of minutes.
+        ///The shop&apos;s time zone offset expressed as a number of minutes.
         ///</summary>
         [Description("The shop's time zone offset expressed as a number of minutes.")]
         [NonNull]
@@ -86492,7 +86492,7 @@ namespace Shopify.Types
         public IEnumerable<Translation>? translations { get; set; }
 
         ///<summary>
-        ///The shop's unit system for weights and measures.
+        ///The shop&apos;s unit system for weights and measures.
         ///</summary>
         [Description("The shop's unit system for weights and measures.")]
         [NonNull]
@@ -86506,14 +86506,14 @@ namespace Shopify.Types
         public DateTime? updatedAt { get; set; }
 
         ///<summary>
-        ///The URL of the shop's online store.
+        ///The URL of the shop&apos;s online store.
         ///</summary>
         [Description("The URL of the shop's online store.")]
         [NonNull]
         public string? url { get; set; }
 
         ///<summary>
-        ///The shop's primary unit of weight for products and shipping.
+        ///The shop&apos;s primary unit of weight for products and shipping.
         ///</summary>
         [Description("The shop's primary unit of weight for products and shipping.")]
         [NonNull]
@@ -86756,7 +86756,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Represents the shop's customer account requirement preference.
+    ///Represents the shop&apos;s customer account requirement preference.
     ///</summary>
     [Description("Represents the shop's customer account requirement preference.")]
     public enum ShopCustomerAccountsSetting
@@ -86803,14 +86803,14 @@ namespace Shopify.Types
         public BundlesFeature? bundles { get; set; }
 
         ///<summary>
-        ///Whether a shop's online store can have CAPTCHA protection.
+        ///Whether a shop&apos;s online store can have CAPTCHA protection.
         ///</summary>
         [Description("Whether a shop's online store can have CAPTCHA protection.")]
         [NonNull]
         public bool? captcha { get; set; }
 
         ///<summary>
-        ///Whether a shop's online store can have CAPTCHA protection for domains not managed by Shopify.
+        ///Whether a shop&apos;s online store can have CAPTCHA protection for domains not managed by Shopify.
         ///</summary>
         [Description("Whether a shop's online store can have CAPTCHA protection for domains not managed by Shopify.")]
         [Obsolete("No longer required for external domains")]
@@ -86901,7 +86901,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///Whether to show the Live View metrics in the Shopify admin. Live view is hidden from merchants that are on a trial
-        ///or don't have a storefront.
+        ///or don&apos;t have a storefront.
         ///</summary>
         [Description("Whether to show the Live View metrics in the Shopify admin. Live view is hidden from merchants that are on a trial\nor don't have a storefront.")]
         [NonNull]
@@ -86974,7 +86974,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A locale that's been enabled on a shop.
+    ///A locale that&apos;s been enabled on a shop.
     ///</summary>
     [Description("A locale that's been enabled on a shop.")]
     public class ShopLocale : GraphQLObject<ShopLocale>
@@ -87095,7 +87095,7 @@ namespace Shopify.Types
     public class ShopPlan : GraphQLObject<ShopPlan>
     {
         ///<summary>
-        ///The name of the shop's billing plan.
+        ///The name of the shop&apos;s billing plan.
         ///</summary>
         [Description("The name of the shop's billing plan.")]
         [Obsolete("Use `publicDisplayName` instead.")]
@@ -87311,7 +87311,7 @@ namespace Shopify.Types
     public class ShopResourceFeedbackCreatePayload : GraphQLObject<ShopResourceFeedbackCreatePayload>
     {
         ///<summary>
-        ///The shop feedback that's created.
+        ///The shop feedback that&apos;s created.
         ///</summary>
         [Description("The shop feedback that's created.")]
         public AppFeedback? feedback { get; set; }
@@ -87533,7 +87533,7 @@ namespace Shopify.Types
     public class ShopifyFunctionConnection : GraphQLObject<ShopifyFunctionConnection>, IConnectionWithNodesAndEdges<ShopifyFunctionEdge, ShopifyFunction>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -87621,7 +87621,7 @@ namespace Shopify.Types
         ///<summary>
         ///The statement descriptor used for charges.
         ///
-        ///The statement descriptor appears on a customer's credit card or bank statement when they make a purchase.
+        ///The statement descriptor appears on a customer&apos;s credit card or bank statement when they make a purchase.
         ///</summary>
         [Description("The statement descriptor used for charges.\n\nThe statement descriptor appears on a customer's credit card or bank statement when they make a purchase.")]
         [Obsolete("Use `chargeStatementDescriptors` instead.")]
@@ -87630,7 +87630,7 @@ namespace Shopify.Types
         ///<summary>
         ///The statement descriptors used for charges.
         ///
-        ///These descriptors appear on a customer's credit card or bank statement when they make a purchase.
+        ///These descriptors appear on a customer&apos;s credit card or bank statement when they make a purchase.
         ///</summary>
         [Description("The statement descriptors used for charges.\n\nThese descriptors appear on a customer's credit card or bank statement when they make a purchase.")]
         public IShopifyPaymentsChargeStatementDescriptor? chargeStatementDescriptors { get; set; }
@@ -87680,7 +87680,7 @@ namespace Shopify.Types
         ///<summary>
         ///The descriptor used for payouts.
         ///
-        ///The descriptor appears on a merchant's bank statement when they receive a payout.
+        ///The descriptor appears on a merchant&apos;s bank statement when they receive a payout.
         ///</summary>
         [Description("The descriptor used for payouts.\n\nThe descriptor appears on a merchant's bank statement when they receive a payout.")]
         public string? payoutStatementDescriptor { get; set; }
@@ -87813,8 +87813,8 @@ namespace Shopify.Types
     public class ShopifyPaymentsBalanceTransaction : GraphQLObject<ShopifyPaymentsBalanceTransaction>, INode
     {
         ///<summary>
-        ///The reason for the adjustment that's associated with the transaction.
-        ///            If the source_type isn't an adjustment, the value will be null.
+        ///The reason for the adjustment that&apos;s associated with the transaction.
+        ///            If the source_type isn&apos;t an adjustment, the value will be null.
         ///</summary>
         [Description("The reason for the adjustment that's associated with the transaction.\n            If the source_type isn't an adjustment, the value will be null.")]
         public string? adjustmentReason { get; set; }
@@ -87861,7 +87861,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///The net amount contributing to the merchant's balance.
+        ///The net amount contributing to the merchant&apos;s balance.
         ///</summary>
         [Description("The net amount contributing to the merchant's balance.")]
         [NonNull]
@@ -87936,7 +87936,7 @@ namespace Shopify.Types
     public class ShopifyPaymentsBalanceTransactionConnection : GraphQLObject<ShopifyPaymentsBalanceTransactionConnection>, IConnectionWithNodesAndEdges<ShopifyPaymentsBalanceTransactionEdge, ShopifyPaymentsBalanceTransaction>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -88104,7 +88104,7 @@ namespace Shopify.Types
     public class ShopifyPaymentsBankAccountConnection : GraphQLObject<ShopifyPaymentsBankAccountConnection>, IConnectionWithNodesAndEdges<ShopifyPaymentsBankAccountEdge, ShopifyPaymentsBankAccount>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -88153,7 +88153,7 @@ namespace Shopify.Types
     public enum ShopifyPaymentsBankAccountStatus
     {
         ///<summary>
-        ///A bank account that hasn't had any activity and that's not validated.
+        ///A bank account that hasn&apos;t had any activity and that&apos;s not validated.
         ///</summary>
         [Description("A bank account that hasn't had any activity and that's not validated.")]
         NEW,
@@ -88409,13 +88409,13 @@ namespace Shopify.Types
         public DateTime? evidenceDueBy { get; set; }
 
         ///<summary>
-        ///The date when evidence was sent. Returns null if evidence hasn't yet been sent.
+        ///The date when evidence was sent. Returns null if evidence hasn&apos;t yet been sent.
         ///</summary>
         [Description("The date when evidence was sent. Returns null if evidence hasn't yet been sent.")]
         public DateTime? evidenceSentOn { get; set; }
 
         ///<summary>
-        ///The date when this dispute was resolved. Returns null if the dispute isn't yet resolved.
+        ///The date when this dispute was resolved. Returns null if the dispute isn&apos;t yet resolved.
         ///</summary>
         [Description("The date when this dispute was resolved. Returns null if the dispute isn't yet resolved.")]
         public DateTime? finalizedOn { get; set; }
@@ -88442,7 +88442,7 @@ namespace Shopify.Types
         public ulong? legacyResourceId { get; set; }
 
         ///<summary>
-        ///The order that contains the charge that's under dispute.
+        ///The order that contains the charge that&apos;s under dispute.
         ///</summary>
         [Description("The order that contains the charge that's under dispute.")]
         public Order? order { get; set; }
@@ -88476,7 +88476,7 @@ namespace Shopify.Types
     public class ShopifyPaymentsDisputeConnection : GraphQLObject<ShopifyPaymentsDisputeConnection>, IConnectionWithNodesAndEdges<ShopifyPaymentsDisputeEdge, ShopifyPaymentsDispute>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -88531,7 +88531,7 @@ namespace Shopify.Types
         public string? accessActivityLog { get; set; }
 
         ///<summary>
-        ///The billing address that's provided by the customer.
+        ///The billing address that&apos;s provided by the customer.
         ///</summary>
         [Description("The billing address that's provided by the customer.")]
         public MailingAddress? billingAddress { get; set; }
@@ -88561,19 +88561,19 @@ namespace Shopify.Types
         public ShopifyPaymentsDisputeFileUpload? customerCommunicationFile { get; set; }
 
         ///<summary>
-        ///The customer's email address.
+        ///The customer&apos;s email address.
         ///</summary>
         [Description("The customer's email address.")]
         public string? customerEmailAddress { get; set; }
 
         ///<summary>
-        ///The customer's first name.
+        ///The customer&apos;s first name.
         ///</summary>
         [Description("The customer's first name.")]
         public string? customerFirstName { get; set; }
 
         ///<summary>
-        ///The customer's last name.
+        ///The customer&apos;s last name.
         ///</summary>
         [Description("The customer's last name.")]
         public string? customerLastName { get; set; }
@@ -88643,7 +88643,7 @@ namespace Shopify.Types
         public ShopifyPaymentsDisputeFileUpload? serviceDocumentationFile { get; set; }
 
         ///<summary>
-        ///The mailing address for shipping that's provided by the customer.
+        ///The mailing address for shipping that&apos;s provided by the customer.
         ///</summary>
         [Description("The mailing address for shipping that's provided by the customer.")]
         public MailingAddress? shippingAddress { get; set; }
@@ -88802,7 +88802,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The reason for the dispute provided by the cardholder's bank.
+    ///The reason for the dispute provided by the cardholder&apos;s bank.
     ///</summary>
     [Description("The reason for the dispute provided by the cardholder's bank.")]
     public enum ShopifyPaymentsDisputeReason
@@ -88843,7 +88843,7 @@ namespace Shopify.Types
         [Description("The customer claims they did not receive the products or services purchased.")]
         PRODUCT_NOT_RECEIVED,
         ///<summary>
-        ///The customer claims that the purchased product was returned or the transaction was otherwise canceled, but you haven't yet provided a refund or credit.
+        ///The customer claims that the purchased product was returned or the transaction was otherwise canceled, but you haven&apos;t yet provided a refund or credit.
         ///</summary>
         [Description("The customer claims that the purchased product was returned or the transaction was otherwise canceled, but you haven't yet provided a refund or credit.")]
         CREDIT_NOT_PROCESSED,
@@ -88853,17 +88853,17 @@ namespace Shopify.Types
         [Description("The customer account associated with the purchase is incorrect.")]
         INCORRECT_ACCOUNT_DETAILS,
         ///<summary>
-        ///The customer's bank account has insufficient funds.
+        ///The customer&apos;s bank account has insufficient funds.
         ///</summary>
         [Description("The customer's bank account has insufficient funds.")]
         INSUFFICIENT_FUNDS,
         ///<summary>
-        ///The customer's bank can't process the charge.
+        ///The customer&apos;s bank can&apos;t process the charge.
         ///</summary>
         [Description("The customer's bank can't process the charge.")]
         BANK_CANNOT_PROCESS,
         ///<summary>
-        ///The customer's bank can't proceed with the debit since it hasn't been authorized.
+        ///The customer&apos;s bank can&apos;t proceed with the debit since it hasn&apos;t been authorized.
         ///</summary>
         [Description("The customer's bank can't proceed with the debit since it hasn't been authorized.")]
         DEBIT_NOT_AUTHORIZED,
@@ -88873,7 +88873,7 @@ namespace Shopify.Types
         [Description("The customer initiated the dispute. Contact the customer for additional details on why the payment was disputed.")]
         CUSTOMER_INITIATED,
         ///<summary>
-        ///The card issuer believes the disputed transaction doesn't conform to the network rules. These disputes occur when transactions don't meet card network requirements and may incur additional network fees if escalated for resolution.
+        ///The card issuer believes the disputed transaction doesn&apos;t conform to the network rules. These disputes occur when transactions don&apos;t meet card network requirements and may incur additional network fees if escalated for resolution.
         ///</summary>
         [Description("The card issuer believes the disputed transaction doesn't conform to the network rules. These disputes occur when transactions don't meet card network requirements and may incur additional network fees if escalated for resolution.")]
         NONCOMPLIANT,
@@ -88910,7 +88910,7 @@ namespace Shopify.Types
         public string? networkReasonCode { get; set; }
 
         ///<summary>
-        ///The reason for the dispute provided by the cardholder's banks.
+        ///The reason for the dispute provided by the cardholder&apos;s banks.
         ///</summary>
         [Description("The reason for the dispute provided by the cardholder's banks.")]
         [NonNull]
@@ -89013,7 +89013,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Payouts represent the movement of money between a merchant's Shopify
+    ///Payouts represent the movement of money between a merchant&apos;s Shopify
     ///Payments balance and their bank account.
     ///</summary>
     [Description("Payouts represent the movement of money between a merchant's Shopify\nPayments balance and their bank account.")]
@@ -89187,7 +89187,7 @@ namespace Shopify.Types
     public class ShopifyPaymentsPayoutConnection : GraphQLObject<ShopifyPaymentsPayoutConnection>, IConnectionWithNodesAndEdges<ShopifyPaymentsPayoutEdge, ShopifyPaymentsPayout>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -90213,7 +90213,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The status of an order's eligibility for protection against fraudulent chargebacks by Shopify Protect.
+    ///The status of an order&apos;s eligibility for protection against fraudulent chargebacks by Shopify Protect.
     ///</summary>
     [Description("The status of an order's eligibility for protection against fraudulent chargebacks by Shopify Protect.")]
     public enum ShopifyProtectEligibilityStatus
@@ -90225,12 +90225,12 @@ namespace Shopify.Types
         PENDING,
         ///<summary>
         ///The order is eligible for protection against fraudulent chargebacks.
-        ///If an order is updated, the order's eligibility may change and protection could be removed.
+        ///If an order is updated, the order&apos;s eligibility may change and protection could be removed.
         ///</summary>
         [Description("The order is eligible for protection against fraudulent chargebacks.\nIf an order is updated, the order's eligibility may change and protection could be removed.")]
         ELIGIBLE,
         ///<summary>
-        ///The order isn't eligible for protection against fraudulent chargebacks.
+        ///The order isn&apos;t eligible for protection against fraudulent chargebacks.
         ///</summary>
         [Description("The order isn't eligible for protection against fraudulent chargebacks.")]
         NOT_ELIGIBLE,
@@ -90244,7 +90244,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The eligibility details of an order's protection against fraudulent chargebacks by Shopify Protect.
+    ///The eligibility details of an order&apos;s protection against fraudulent chargebacks by Shopify Protect.
     ///</summary>
     [Description("The eligibility details of an order's protection against fraudulent chargebacks by Shopify Protect.")]
     public class ShopifyProtectOrderEligibility : GraphQLObject<ShopifyProtectOrderEligibility>
@@ -90264,14 +90264,14 @@ namespace Shopify.Types
     public class ShopifyProtectOrderSummary : GraphQLObject<ShopifyProtectOrderSummary>
     {
         ///<summary>
-        ///The eligibility details of an order's protection against fraudulent chargebacks.
+        ///The eligibility details of an order&apos;s protection against fraudulent chargebacks.
         ///</summary>
         [Description("The eligibility details of an order's protection against fraudulent chargebacks.")]
         [NonNull]
         public ShopifyProtectOrderEligibility? eligibility { get; set; }
 
         ///<summary>
-        ///The status of the order's protection against fraudulent chargebacks.
+        ///The status of the order&apos;s protection against fraudulent chargebacks.
         ///</summary>
         [Description("The status of the order's protection against fraudulent chargebacks.")]
         [NonNull]
@@ -90279,7 +90279,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The status of an order's protection with Shopify Protect.
+    ///The status of an order&apos;s protection with Shopify Protect.
     ///</summary>
     [Description("The status of an order's protection with Shopify Protect.")]
     public enum ShopifyProtectStatus
@@ -90291,12 +90291,12 @@ namespace Shopify.Types
         PENDING,
         ///<summary>
         ///The protection for the order is active and eligible for reimbursement against fraudulent chargebacks.
-        ///If an order is updated, the order's eligibility may change and protection could become inactive.
+        ///If an order is updated, the order&apos;s eligibility may change and protection could become inactive.
         ///</summary>
         [Description("The protection for the order is active and eligible for reimbursement against fraudulent chargebacks.\nIf an order is updated, the order's eligibility may change and protection could become inactive.")]
         ACTIVE,
         ///<summary>
-        ///The protection for an order isn't active because the order didn't meet eligibility requirements.
+        ///The protection for an order isn&apos;t active because the order didn&apos;t meet eligibility requirements.
         ///</summary>
         [Description("The protection for an order isn't active because the order didn't meet eligibility requirements.")]
         INACTIVE,
@@ -90306,7 +90306,7 @@ namespace Shopify.Types
         [Description("The order received a fraudulent chargeback and it was protected.")]
         PROTECTED,
         ///<summary>
-        ///The order received a chargeback but the order wasn't protected because it didn't meet coverage requirements.
+        ///The order received a chargeback but the order wasn&apos;t protected because it didn&apos;t meet coverage requirements.
         ///</summary>
         [Description("The order received a chargeback but the order wasn't protected because it didn't meet coverage requirements.")]
         NOT_PROTECTED,
@@ -90322,7 +90322,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Represents the data about a staff member's Shopify account. Merchants can use staff member data to get more information about the staff members in their store.
+    ///Represents the data about a staff member&apos;s Shopify account. Merchants can use staff member data to get more information about the staff members in their store.
     ///</summary>
     [Description("Represents the data about a staff member's Shopify account. Merchants can use staff member data to get more information about the staff members in their store.")]
     public class StaffMember : GraphQLObject<StaffMember>, INode
@@ -90341,28 +90341,28 @@ namespace Shopify.Types
         public bool? active { get; set; }
 
         ///<summary>
-        ///The image used as the staff member's avatar in the Shopify admin.
+        ///The image used as the staff member&apos;s avatar in the Shopify admin.
         ///</summary>
         [Description("The image used as the staff member's avatar in the Shopify admin.")]
         [NonNull]
         public Image? avatar { get; set; }
 
         ///<summary>
-        ///The staff member's email address.
+        ///The staff member&apos;s email address.
         ///</summary>
         [Description("The staff member's email address.")]
         [NonNull]
         public string? email { get; set; }
 
         ///<summary>
-        ///Whether the staff member's account exists.
+        ///Whether the staff member&apos;s account exists.
         ///</summary>
         [Description("Whether the staff member's account exists.")]
         [NonNull]
         public bool? exists { get; set; }
 
         ///<summary>
-        ///The staff member's first name.
+        ///The staff member&apos;s first name.
         ///</summary>
         [Description("The staff member's first name.")]
         public string? firstName { get; set; }
@@ -90375,7 +90375,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///The staff member's initials, if available.
+        ///The staff member&apos;s initials, if available.
         ///</summary>
         [Description("The staff member's initials, if available.")]
         public IEnumerable<string>? initials { get; set; }
@@ -90388,27 +90388,27 @@ namespace Shopify.Types
         public bool? isShopOwner { get; set; }
 
         ///<summary>
-        ///The staff member's last name.
+        ///The staff member&apos;s last name.
         ///</summary>
         [Description("The staff member's last name.")]
         public string? lastName { get; set; }
 
         ///<summary>
-        ///The staff member's preferred locale. Locale values use the format `language` or `language-COUNTRY`, where `language` is a two-letter language code, and `COUNTRY` is a two-letter country code. For example: `en` or `en-US`
+        ///The staff member&apos;s preferred locale. Locale values use the format `language` or `language-COUNTRY`, where `language` is a two-letter language code, and `COUNTRY` is a two-letter country code. For example: `en` or `en-US`
         ///</summary>
         [Description("The staff member's preferred locale. Locale values use the format `language` or `language-COUNTRY`, where `language` is a two-letter language code, and `COUNTRY` is a two-letter country code. For example: `en` or `en-US`")]
         [NonNull]
         public string? locale { get; set; }
 
         ///<summary>
-        ///The staff member's full name.
+        ///The staff member&apos;s full name.
         ///</summary>
         [Description("The staff member's full name.")]
         [NonNull]
         public string? name { get; set; }
 
         ///<summary>
-        ///The staff member's phone number.
+        ///The staff member&apos;s phone number.
         ///</summary>
         [Description("The staff member's phone number.")]
         public string? phone { get; set; }
@@ -90428,7 +90428,7 @@ namespace Shopify.Types
     public class StaffMemberConnection : GraphQLObject<StaffMemberConnection>, IConnectionWithNodesAndEdges<StaffMemberEdge, StaffMember>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -90727,7 +90727,7 @@ namespace Shopify.Types
     public class StaffMemberPrivateData : GraphQLObject<StaffMemberPrivateData>
     {
         ///<summary>
-        ///The URL to the staff member's account settings page.
+        ///The URL to the staff member&apos;s account settings page.
         ///</summary>
         [Description("The URL to the staff member's account settings page.")]
         [NonNull]
@@ -90848,7 +90848,7 @@ namespace Shopify.Types
 
     ///<summary>
     ///The parameters required to authenticate a file upload request using a
-    ///[StagedMediaUploadTarget's url field](https://shopify.dev/api/admin-graphql/latest/objects/StagedMediaUploadTarget#field-stagedmediauploadtarget-url).
+    ///[StagedMediaUploadTarget&apos;s url field](https://shopify.dev/api/admin-graphql/latest/objects/StagedMediaUploadTarget#field-stagedmediauploadtarget-url).
     ///
     ///For more information on the upload process, refer to
     ///[Upload media to Shopify](https://shopify.dev/apps/online-store/media/products#step-1-upload-media-to-shopify).
@@ -90857,14 +90857,14 @@ namespace Shopify.Types
     public class StagedUploadParameter : GraphQLObject<StagedUploadParameter>
     {
         ///<summary>
-        ///The parameter's name.
+        ///The parameter&apos;s name.
         ///</summary>
         [Description("The parameter's name.")]
         [NonNull]
         public string? name { get; set; }
 
         ///<summary>
-        ///The parameter's value.
+        ///The parameter&apos;s value.
         ///</summary>
         [Description("The parameter's value.")]
         [NonNull]
@@ -90968,7 +90968,7 @@ namespace Shopify.Types
         [Description("A Shopify hosted 3d model.\n\nFor example, after uploading the 3d model, you can add the 3d model to a product using the\n[productCreateMedia mutation](https://shopify.dev/api/admin-graphql/latest/mutations/productCreateMedia).")]
         MODEL_3D,
         ///<summary>
-        ///An image that's associated with a product.
+        ///An image that&apos;s associated with a product.
         ///
         ///For example, after uploading the image, you can add the image to a product using the
         ///[productCreateMedia mutation](https://shopify.dev/api/admin-graphql/latest/mutations/productCreateMedia).
@@ -91202,7 +91202,7 @@ namespace Shopify.Types
 
     ///<summary>
     ///Standard metafield definition templates provide preset configurations to create metafield definitions.
-    ///Each template has a specific namespace and key that we've reserved to have specific meanings for common use cases.
+    ///Each template has a specific namespace and key that we&apos;ve reserved to have specific meanings for common use cases.
     ///
     ///Refer to the [list of standard metafield definitions](https://shopify.dev/apps/metafields/definitions/standard-definitions).
     ///</summary>
@@ -91279,7 +91279,7 @@ namespace Shopify.Types
     public class StandardMetafieldDefinitionTemplateConnection : GraphQLObject<StandardMetafieldDefinitionTemplateConnection>, IConnectionWithNodesAndEdges<StandardMetafieldDefinitionTemplateEdge, StandardMetafieldDefinitionTemplate>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -91328,7 +91328,7 @@ namespace Shopify.Types
     public class StandardMetaobjectCapabilityTemplate : GraphQLObject<StandardMetaobjectCapabilityTemplate>
     {
         ///<summary>
-        ///The type of capability that's enabled for the metaobject definition.
+        ///The type of capability that&apos;s enabled for the metaobject definition.
         ///</summary>
         [Description("The type of capability that's enabled for the metaobject definition.")]
         [NonNull]
@@ -91515,7 +91515,7 @@ namespace Shopify.Types
     public class StoreCreditAccountConnection : GraphQLObject<StoreCreditAccountConnection>, IConnectionWithNodesAndEdges<StoreCreditAccountEdge, StoreCreditAccount>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -91685,7 +91685,7 @@ namespace Shopify.Types
         [Description("The expiry date must be in the future.")]
         EXPIRES_AT_IN_PAST,
         ///<summary>
-        ///The operation would cause the account's credit limit to be exceeded.
+        ///The operation would cause the account&apos;s credit limit to be exceeded.
         ///</summary>
         [Description("The operation would cause the account's credit limit to be exceeded.")]
         CREDIT_LIMIT_EXCEEDED,
@@ -92053,7 +92053,7 @@ namespace Shopify.Types
     public class StoreCreditAccountTransactionConnection : GraphQLObject<StoreCreditAccountTransactionConnection>, IConnectionWithNodesAndEdges<StoreCreditAccountTransactionEdge, IStoreCreditAccountTransaction>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -92400,7 +92400,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A token that's used to delegate unauthenticated access scopes to clients that need to access
+    ///A token that&apos;s used to delegate unauthenticated access scopes to clients that need to access
     ///the unauthenticated [Storefront API](https://shopify.dev/docs/api/storefront).
     ///
     ///An app can have a maximum of 100 active storefront access
@@ -92461,7 +92461,7 @@ namespace Shopify.Types
     public class StorefrontAccessTokenConnection : GraphQLObject<StorefrontAccessTokenConnection>, IConnectionWithNodesAndEdges<StorefrontAccessTokenEdge, StorefrontAccessToken>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -92489,7 +92489,7 @@ namespace Shopify.Types
     public class StorefrontAccessTokenCreatePayload : GraphQLObject<StorefrontAccessTokenCreatePayload>
     {
         ///<summary>
-        ///The user's shop.
+        ///The user&apos;s shop.
         ///</summary>
         [Description("The user's shop.")]
         [NonNull]
@@ -92557,7 +92557,7 @@ namespace Shopify.Types
     public class StringConnection : GraphQLObject<StringConnection>, IConnectionWithNodesAndEdges<StringEdge, string>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -92721,7 +92721,7 @@ namespace Shopify.Types
         public bool? ready { get; set; }
 
         ///<summary>
-        ///Whether the billing attempt respects the merchant's inventory policy.
+        ///Whether the billing attempt respects the merchant&apos;s inventory policy.
         ///</summary>
         [Description("Whether the billing attempt respects the merchant's inventory policy.")]
         [NonNull]
@@ -92749,7 +92749,7 @@ namespace Shopify.Types
     public class SubscriptionBillingAttemptConnection : GraphQLObject<SubscriptionBillingAttemptConnection>, IConnectionWithNodesAndEdges<SubscriptionBillingAttemptEdge, SubscriptionBillingAttempt>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -92879,7 +92879,7 @@ namespace Shopify.Types
         [Description("The shipping address is either missing or invalid.")]
         INVALID_SHIPPING_ADDRESS,
         ///<summary>
-        ///The billing agreement ID or the transaction ID for the customer's payment method is invalid.
+        ///The billing agreement ID or the transaction ID for the customer&apos;s payment method is invalid.
         ///</summary>
         [Description("The billing agreement ID or the transaction ID for the customer's payment method is invalid.")]
         INVALID_CUSTOMER_BILLING_AGREEMENT,
@@ -93036,13 +93036,13 @@ namespace Shopify.Types
     public enum SubscriptionBillingAttemptInventoryPolicy
     {
         ///<summary>
-        ///Respect the merchant's product variant
+        ///Respect the merchant&apos;s product variant
         ///        inventory policy for this billing attempt.
         ///</summary>
         [Description("Respect the merchant's product variant\n        inventory policy for this billing attempt.")]
         PRODUCT_VARIANT_INVENTORY_POLICY,
         ///<summary>
-        ///Override the merchant's product variant
+        ///Override the merchant&apos;s product variant
         ///         inventory policy and allow overselling for this billing attempt.
         ///</summary>
         [Description("Override the merchant's product variant\n         inventory policy and allow overselling for this billing attempt.")]
@@ -93254,7 +93254,7 @@ namespace Shopify.Types
         [Description("The billing cycle is billed.")]
         BILLED,
         ///<summary>
-        ///The billing cycle hasn't been billed.
+        ///The billing cycle hasn&apos;t been billed.
         ///</summary>
         [Description("The billing cycle hasn't been billed.")]
         UNBILLED,
@@ -93349,12 +93349,12 @@ namespace Shopify.Types
         [Description("The input value is blank.")]
         BLANK,
         ///<summary>
-        ///End date can't be more than 24 hours in the future.
+        ///End date can&apos;t be more than 24 hours in the future.
         ///</summary>
         [Description("End date can't be more than 24 hours in the future.")]
         END_DATE_IN_THE_FUTURE,
         ///<summary>
-        ///The range between start date and end date shouldn't be more than 1 week.
+        ///The range between start date and end date shouldn&apos;t be more than 1 week.
         ///</summary>
         [Description("The range between start date and end date shouldn't be more than 1 week.")]
         INVALID_DATE_RANGE,
@@ -93401,7 +93401,7 @@ namespace Shopify.Types
     public class SubscriptionBillingCycleConnection : GraphQLObject<SubscriptionBillingCycleConnection>, IConnectionWithNodesAndEdges<SubscriptionBillingCycleEdge, SubscriptionBillingCycle>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -93556,7 +93556,7 @@ namespace Shopify.Types
         public DateTime? createdAt { get; set; }
 
         ///<summary>
-        ///The currency that's used for the subscription contract.
+        ///The currency that&apos;s used for the subscription contract.
         ///</summary>
         [Description("The currency that's used for the subscription contract.")]
         [NonNull]
@@ -93576,7 +93576,7 @@ namespace Shopify.Types
         public Customer? customer { get; set; }
 
         ///<summary>
-        ///The customer payment method that's used for the subscription contract.
+        ///The customer payment method that&apos;s used for the subscription contract.
         ///</summary>
         [Description("The customer payment method that's used for the subscription contract.")]
         public CustomerPaymentMethod? customerPaymentMethod { get; set; }
@@ -93629,7 +93629,7 @@ namespace Shopify.Types
         public string? note { get; set; }
 
         ///<summary>
-        ///A list of the subscription contract's orders.
+        ///A list of the subscription contract&apos;s orders.
         ///</summary>
         [Description("A list of the subscription contract's orders.")]
         [NonNull]
@@ -93675,12 +93675,12 @@ namespace Shopify.Types
         [Description("The input value is invalid.")]
         INVALID,
         ///<summary>
-        ///Can't find the billing cycle.
+        ///Can&apos;t find the billing cycle.
         ///</summary>
         [Description("Can't find the billing cycle.")]
         CYCLE_NOT_FOUND,
         ///<summary>
-        ///There's no contract or schedule edit associated with the targeted billing cycle(s).
+        ///There&apos;s no contract or schedule edit associated with the targeted billing cycle(s).
         ///</summary>
         [Description("There's no contract or schedule edit associated with the targeted billing cycle(s).")]
         NO_CYCLE_EDITS,
@@ -93748,7 +93748,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///The input fields for possible reasons for editing the billing cycle's schedule.
+    ///The input fields for possible reasons for editing the billing cycle&apos;s schedule.
     ///</summary>
     [Description("The input fields for possible reasons for editing the billing cycle's schedule.")]
     public enum SubscriptionBillingCycleScheduleEditInputScheduleEditReason
@@ -94007,7 +94007,7 @@ namespace Shopify.Types
         public IEnumerable<SellingPlanAnchor>? anchors { get; set; }
 
         ///<summary>
-        ///The kind of interval that's associated with this schedule (e.g. Monthly, Weekly, etc).
+        ///The kind of interval that&apos;s associated with this schedule (e.g. Monthly, Weekly, etc).
         ///</summary>
         [Description("The kind of interval that's associated with this schedule (e.g. Monthly, Weekly, etc).")]
         [NonNull]
@@ -94073,7 +94073,7 @@ namespace Shopify.Types
         public DateTime? createdAt { get; set; }
 
         ///<summary>
-        ///The currency that's used for the subscription contract.
+        ///The currency that&apos;s used for the subscription contract.
         ///</summary>
         [Description("The currency that's used for the subscription contract.")]
         [NonNull]
@@ -94093,7 +94093,7 @@ namespace Shopify.Types
         public Customer? customer { get; set; }
 
         ///<summary>
-        ///The customer payment method that's used for the subscription contract.
+        ///The customer payment method that&apos;s used for the subscription contract.
         ///</summary>
         [Description("The customer payment method that's used for the subscription contract.")]
         public CustomerPaymentMethod? customerPaymentMethod { get; set; }
@@ -94181,7 +94181,7 @@ namespace Shopify.Types
         public string? note { get; set; }
 
         ///<summary>
-        ///A list of the subscription contract's orders.
+        ///A list of the subscription contract&apos;s orders.
         ///</summary>
         [Description("A list of the subscription contract's orders.")]
         [NonNull]
@@ -94279,7 +94279,7 @@ namespace Shopify.Types
         public string? appAdminUrl { get; }
 
         ///<summary>
-        ///The currency that's used for the subscription contract.
+        ///The currency that&apos;s used for the subscription contract.
         ///</summary>
         [Description("The currency that's used for the subscription contract.")]
         [NonNull]
@@ -94299,7 +94299,7 @@ namespace Shopify.Types
         public Customer? customer { get; }
 
         ///<summary>
-        ///The customer payment method that's used for the subscription contract.
+        ///The customer payment method that&apos;s used for the subscription contract.
         ///</summary>
         [Description("The customer payment method that's used for the subscription contract.")]
         public CustomerPaymentMethod? customerPaymentMethod { get; }
@@ -94352,7 +94352,7 @@ namespace Shopify.Types
         public string? note { get; }
 
         ///<summary>
-        ///A list of the subscription contract's orders.
+        ///A list of the subscription contract&apos;s orders.
         ///</summary>
         [Description("A list of the subscription contract's orders.")]
         [NonNull]
@@ -94393,7 +94393,7 @@ namespace Shopify.Types
     public class SubscriptionContractConnection : GraphQLObject<SubscriptionContractConnection>, IConnectionWithNodesAndEdges<SubscriptionContractEdge, SubscriptionContract>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -95010,8 +95010,8 @@ namespace Shopify.Types
     public class SubscriptionDeliveryMethodShippingOption : GraphQLObject<SubscriptionDeliveryMethodShippingOption>
     {
         ///<summary>
-        ///The carrier service that's providing this shipping option.
-        ///This field isn't currently supported and returns null.
+        ///The carrier service that&apos;s providing this shipping option.
+        ///This field isn&apos;t currently supported and returns null.
         ///</summary>
         [Description("The carrier service that's providing this shipping option.\nThis field isn't currently supported and returns null.")]
         [Obsolete("This field has never been implemented.")]
@@ -95149,7 +95149,7 @@ namespace Shopify.Types
         public IEnumerable<SellingPlanAnchor>? anchors { get; set; }
 
         ///<summary>
-        ///The kind of interval that's associated with this schedule (e.g. Monthly, Weekly, etc).
+        ///The kind of interval that&apos;s associated with this schedule (e.g. Monthly, Weekly, etc).
         ///</summary>
         [Description("The kind of interval that's associated with this schedule (e.g. Monthly, Weekly, etc).")]
         [NonNull]
@@ -95216,7 +95216,7 @@ namespace Shopify.Types
     public class SubscriptionDiscountConnection : GraphQLObject<SubscriptionDiscountConnection>, IConnectionWithNodesAndEdges<SubscriptionDiscountEdge, ISubscriptionDiscount>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -95408,7 +95408,7 @@ namespace Shopify.Types
     ///<summary>
     ///The `SubscriptionDraft` object represents a draft version of a
     ///[subscription contract](https://shopify.dev/docs/api/admin-graphql/latest/objects/SubscriptionContract)
-    ///before it's committed. It serves as a staging area for making changes to an existing subscription or creating
+    ///before it&apos;s committed. It serves as a staging area for making changes to an existing subscription or creating
     ///a new one. The draft allows you to preview and modify various aspects of a subscription before applying the changes.
     ///
     ///Use the `SubscriptionDraft` object to:
@@ -95426,7 +95426,7 @@ namespace Shopify.Types
     ///are committed. This allows you to preview the impact of your modifications before applying them. The draft can be
     ///associated with an existing subscription contract (for modifications) or used to create a new subscription.
     ///
-    ///The draft remains in a draft state until it's committed, at which point the changes are applied to the subscription
+    ///The draft remains in a draft state until it&apos;s committed, at which point the changes are applied to the subscription
     ///contract and the draft is no longer accessible.
     ///
     ///Learn more about
@@ -95784,7 +95784,7 @@ namespace Shopify.Types
         [Description("Discount must have at least one entitled line.")]
         NO_ENTITLED_LINES,
         ///<summary>
-        ///The customer doesn't exist.
+        ///The customer doesn&apos;t exist.
         ///</summary>
         [Description("The customer doesn't exist.")]
         CUSTOMER_DOES_NOT_EXIST,
@@ -95794,7 +95794,7 @@ namespace Shopify.Types
         [Description("The payment method customer must be the same as the contract customer.")]
         CUSTOMER_MISMATCH,
         ///<summary>
-        ///The delivery method can't be blank if any lines require shipping.
+        ///The delivery method can&apos;t be blank if any lines require shipping.
         ///</summary>
         [Description("The delivery method can't be blank if any lines require shipping.")]
         DELIVERY_METHOD_REQUIRED,
@@ -96187,7 +96187,7 @@ namespace Shopify.Types
         public SubscriptionContract? concatenatedOriginContract { get; set; }
 
         ///<summary>
-        ///The price per unit for the subscription line in the contract's currency.
+        ///The price per unit for the subscription line in the contract&apos;s currency.
         ///</summary>
         [Description("The price per unit for the subscription line in the contract's currency.")]
         [NonNull]
@@ -96255,7 +96255,7 @@ namespace Shopify.Types
         ///find the associated delivery profile.
         ///
         ///The subscription contract, subscription line, or selling plan might have
-        ///changed. As a result, the selling plan's attributes might not
+        ///changed. As a result, the selling plan&apos;s attributes might not
         ///match the information on the contract.
         ///</summary>
         [Description("The selling plan ID associated to the line.\n\nIndicates which selling plan was used to create this\ncontract line initially. The selling plan ID is also used to\nfind the associated delivery profile.\n\nThe subscription contract, subscription line, or selling plan might have\nchanged. As a result, the selling plan's attributes might not\nmatch the information on the contract.")]
@@ -96266,8 +96266,8 @@ namespace Shopify.Types
         ///the order line items created from this subscription line
         ///for both merchants and customers.
         ///
-        ///The value can be different from the selling plan's name, because both
-        ///the selling plan's name and the subscription line's selling_plan_name
+        ///The value can be different from the selling plan&apos;s name, because both
+        ///the selling plan&apos;s name and the subscription line&apos;s selling_plan_name
         ///attribute can be updated independently.
         ///</summary>
         [Description("The selling plan name associated to the line. This name describes\nthe order line items created from this subscription line\nfor both merchants and customers.\n\nThe value can be different from the selling plan's name, because both\nthe selling plan's name and the subscription line's selling_plan_name\nattribute can be updated independently.")]
@@ -96300,7 +96300,7 @@ namespace Shopify.Types
         public string? variantId { get; set; }
 
         ///<summary>
-        ///The image associated with the line item's variant or product.
+        ///The image associated with the line item&apos;s variant or product.
         ///</summary>
         [Description("The image associated with the line item's variant or product.")]
         public Image? variantImage { get; set; }
@@ -96319,7 +96319,7 @@ namespace Shopify.Types
     public class SubscriptionLineConnection : GraphQLObject<SubscriptionLineConnection>, IConnectionWithNodesAndEdges<SubscriptionLineEdge, SubscriptionLine>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -96432,7 +96432,7 @@ namespace Shopify.Types
         public string? city { get; set; }
 
         ///<summary>
-        ///The name of the customer's company or organization.
+        ///The name of the customer&apos;s company or organization.
         ///</summary>
         [Description("The name of the customer's company or organization.")]
         public string? company { get; set; }
@@ -96570,7 +96570,7 @@ namespace Shopify.Types
     public class SubscriptionManualDiscountConnection : GraphQLObject<SubscriptionManualDiscountConnection>, IConnectionWithNodesAndEdges<SubscriptionManualDiscountEdge, SubscriptionManualDiscount>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -96646,7 +96646,7 @@ namespace Shopify.Types
         public bool? phoneRequired { get; set; }
 
         ///<summary>
-        ///The estimated amount of time it takes for the pickup to be ready. For example, "Usually ready in 24 hours".).
+        ///The estimated amount of time it takes for the pickup to be ready. For example, &quot;Usually ready in 24 hours&quot;.).
         ///</summary>
         [Description("The estimated amount of time it takes for the pickup to be ready. For example, \"Usually ready in 24 hours\".).")]
         [NonNull]
@@ -96679,7 +96679,7 @@ namespace Shopify.Types
     public class SubscriptionPricingPolicy : GraphQLObject<SubscriptionPricingPolicy>
     {
         ///<summary>
-        ///The base price per unit for the subscription line in the contract's currency.
+        ///The base price per unit for the subscription line in the contract&apos;s currency.
         ///</summary>
         [Description("The base price per unit for the subscription line in the contract's currency.")]
         [NonNull]
@@ -96700,8 +96700,8 @@ namespace Shopify.Types
     public class SubscriptionShippingOption : GraphQLObject<SubscriptionShippingOption>, ISubscriptionDeliveryOption
     {
         ///<summary>
-        ///The carrier service that's providing this shipping option.
-        ///This field isn't currently supported and returns null.
+        ///The carrier service that&apos;s providing this shipping option.
+        ///This field isn&apos;t currently supported and returns null.
         ///</summary>
         [Description("The carrier service that's providing this shipping option.\nThis field isn't currently supported and returns null.")]
         [Obsolete("This field has never been implemented.")]
@@ -97307,7 +97307,7 @@ namespace Shopify.Types
         [Description("This customer is exempt from specific taxes for holding a valid FARMER_EXEMPTION in Saskatchewan.")]
         CA_SK_FARMER_EXEMPTION,
         ///<summary>
-        ///This customer is exempt from VAT for purchases within the EU that is shipping from outside of customer's country, as well as purchases from the EU to the UK.
+        ///This customer is exempt from VAT for purchases within the EU that is shipping from outside of customer&apos;s country, as well as purchases from the EU to the UK.
         ///</summary>
         [Description("This customer is exempt from VAT for purchases within the EU that is shipping from outside of customer's country, as well as purchases from the EU to the UK.")]
         EU_REVERSE_CHARGE_EXEMPTION_RULE,
@@ -97767,7 +97767,7 @@ namespace Shopify.Types
     public class TaxonomyCategory : GraphQLObject<TaxonomyCategory>, INode
     {
         ///<summary>
-        ///The IDs of the category's ancestor categories.
+        ///The IDs of the category&apos;s ancestor categories.
         ///</summary>
         [Description("The IDs of the category's ancestor categories.")]
         [NonNull]
@@ -97781,14 +97781,14 @@ namespace Shopify.Types
         public TaxonomyCategoryAttributeConnection? attributes { get; set; }
 
         ///<summary>
-        ///The IDs of the category's child categories.
+        ///The IDs of the category&apos;s child categories.
         ///</summary>
         [Description("The IDs of the category's child categories.")]
         [NonNull]
         public IEnumerable<string>? childrenIds { get; set; }
 
         ///<summary>
-        ///The full name of the taxonomy category. For example, Animals & Pet Supplies > Pet Supplies > Dog Supplies > Dog Beds.
+        ///The full name of the taxonomy category. For example, Animals &amp; Pet Supplies &gt; Pet Supplies &gt; Dog Supplies &gt; Dog Beds.
         ///</summary>
         [Description("The full name of the taxonomy category. For example, Animals & Pet Supplies > Pet Supplies > Dog Supplies > Dog Beds.")]
         [NonNull]
@@ -97809,21 +97809,21 @@ namespace Shopify.Types
         public bool? isArchived { get; set; }
 
         ///<summary>
-        ///Whether the category is a leaf category. A leaf category doesn't have any subcategories beneath it. For example, in Animals & Pet Supplies > Pet Supplies > Dog Supplies > Dog Treadmills, Dog Treadmills is a leaf category. The value is `true` when there are no `childrenIds` specified.
+        ///Whether the category is a leaf category. A leaf category doesn&apos;t have any subcategories beneath it. For example, in Animals &amp; Pet Supplies &gt; Pet Supplies &gt; Dog Supplies &gt; Dog Treadmills, Dog Treadmills is a leaf category. The value is `true` when there are no `childrenIds` specified.
         ///</summary>
         [Description("Whether the category is a leaf category. A leaf category doesn't have any subcategories beneath it. For example, in Animals & Pet Supplies > Pet Supplies > Dog Supplies > Dog Treadmills, Dog Treadmills is a leaf category. The value is `true` when there are no `childrenIds` specified.")]
         [NonNull]
         public bool? isLeaf { get; set; }
 
         ///<summary>
-        ///Whether the category is a root category. A root category is at the top level of the category hierarchy and doesn't have a parent category. For example, Animals & Pet Supplies. The value is `true` when there's no `parentId` specified.
+        ///Whether the category is a root category. A root category is at the top level of the category hierarchy and doesn&apos;t have a parent category. For example, Animals &amp; Pet Supplies. The value is `true` when there&apos;s no `parentId` specified.
         ///</summary>
         [Description("Whether the category is a root category. A root category is at the top level of the category hierarchy and doesn't have a parent category. For example, Animals & Pet Supplies. The value is `true` when there's no `parentId` specified.")]
         [NonNull]
         public bool? isRoot { get; set; }
 
         ///<summary>
-        ///The level of the category in the taxonomy tree. Levels indicate the depth of the category from the root. For example, in Animals & Pet Supplies > Pet Supplies > Dog Supplies, Animals & Pet Supplies is at level 1, Animals & Pet Supplies > Pet Supplies is at level 2, and Animals & Pet Supplies > Pet Supplies > Dog Supplies is at level 3.
+        ///The level of the category in the taxonomy tree. Levels indicate the depth of the category from the root. For example, in Animals &amp; Pet Supplies &gt; Pet Supplies &gt; Dog Supplies, Animals &amp; Pet Supplies is at level 1, Animals &amp; Pet Supplies &gt; Pet Supplies is at level 2, and Animals &amp; Pet Supplies &gt; Pet Supplies &gt; Dog Supplies is at level 3.
         ///</summary>
         [Description("The level of the category in the taxonomy tree. Levels indicate the depth of the category from the root. For example, in Animals & Pet Supplies > Pet Supplies > Dog Supplies, Animals & Pet Supplies is at level 1, Animals & Pet Supplies > Pet Supplies is at level 2, and Animals & Pet Supplies > Pet Supplies > Dog Supplies is at level 3.")]
         [NonNull]
@@ -97837,7 +97837,7 @@ namespace Shopify.Types
         public string? name { get; set; }
 
         ///<summary>
-        ///The ID of the category's parent category.
+        ///The ID of the category&apos;s parent category.
         ///</summary>
         [Description("The ID of the category's parent category.")]
         public string? parentId { get; set; }
@@ -97871,7 +97871,7 @@ namespace Shopify.Types
     public class TaxonomyCategoryAttributeConnection : GraphQLObject<TaxonomyCategoryAttributeConnection>, IConnectionWithNodesAndEdges<TaxonomyCategoryAttributeEdge, ITaxonomyCategoryAttribute>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -97920,7 +97920,7 @@ namespace Shopify.Types
     public class TaxonomyCategoryConnection : GraphQLObject<TaxonomyCategoryConnection>, IConnectionWithNodesAndEdges<TaxonomyCategoryEdge, TaxonomyCategory>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -98046,7 +98046,7 @@ namespace Shopify.Types
     public class TaxonomyValueConnection : GraphQLObject<TaxonomyValueConnection>, IConnectionWithNodesAndEdges<TaxonomyValueEdge, TaxonomyValue>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -98089,9 +98089,9 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///A TenderTransaction represents a transaction with financial impact on a shop's balance sheet. A tender transaction always
+    ///A TenderTransaction represents a transaction with financial impact on a shop&apos;s balance sheet. A tender transaction always
     ///represents actual money movement between a buyer and a shop. TenderTransactions can be used instead of OrderTransactions
-    ///for reconciling a shop's cash flow. A TenderTransaction is immutable once created.
+    ///for reconciling a shop&apos;s cash flow. A TenderTransaction is immutable once created.
     ///</summary>
     [Description("A TenderTransaction represents a transaction with financial impact on a shop's balance sheet. A tender transaction always\nrepresents actual money movement between a buyer and a shop. TenderTransactions can be used instead of OrderTransactions\nfor reconciling a shop's cash flow. A TenderTransaction is immutable once created.")]
     public class TenderTransaction : GraphQLObject<TenderTransaction>, INode
@@ -98111,7 +98111,7 @@ namespace Shopify.Types
         public string? id { get; set; }
 
         ///<summary>
-        ///The order that's related to the tender transaction. This value is null if the order has been deleted.
+        ///The order that&apos;s related to the tender transaction. This value is null if the order has been deleted.
         ///</summary>
         [Description("The order that's related to the tender transaction. This value is null if the order has been deleted.")]
         public Order? order { get; set; }
@@ -98161,7 +98161,7 @@ namespace Shopify.Types
     public class TenderTransactionConnection : GraphQLObject<TenderTransactionConnection>, IConnectionWithNodesAndEdges<TenderTransactionEdge, TenderTransaction>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -98189,13 +98189,13 @@ namespace Shopify.Types
     public class TenderTransactionCreditCardDetails : GraphQLObject<TenderTransactionCreditCardDetails>, ITenderTransactionDetails
     {
         ///<summary>
-        ///The name of the company that issued the customer's credit card. Example: `Visa`.
+        ///The name of the company that issued the customer&apos;s credit card. Example: `Visa`.
         ///</summary>
         [Description("The name of the company that issued the customer's credit card. Example: `Visa`.")]
         public string? creditCardCompany { get; set; }
 
         ///<summary>
-        ///The customer's credit card number, with all digits except the last 4 redacted. Example: `•••• •••• •••• 1234`
+        ///The customer&apos;s credit card number, with all digits except the last 4 redacted. Example: `•••• •••• •••• 1234`
         ///</summary>
         [Description("The customer's credit card number, with all digits except the last 4 redacted. Example: `•••• •••• •••• 1234`")]
         public string? creditCardNumber { get; set; }
@@ -98211,13 +98211,13 @@ namespace Shopify.Types
     {
         public TenderTransactionCreditCardDetails? AsTenderTransactionCreditCardDetails() => this as TenderTransactionCreditCardDetails;
         ///<summary>
-        ///The name of the company that issued the customer's credit card. Example: `Visa`.
+        ///The name of the company that issued the customer&apos;s credit card. Example: `Visa`.
         ///</summary>
         [Description("The name of the company that issued the customer's credit card. Example: `Visa`.")]
         public string? creditCardCompany { get; set; }
 
         ///<summary>
-        ///The customer's credit card number, with all digits except the last 4 redacted. Example: `•••• •••• •••• 1234`
+        ///The customer&apos;s credit card number, with all digits except the last 4 redacted. Example: `•••• •••• •••• 1234`
         ///</summary>
         [Description("The customer's credit card number, with all digits except the last 4 redacted. Example: `•••• •••• •••• 1234`")]
         public string? creditCardNumber { get; set; }
@@ -98313,7 +98313,7 @@ namespace Shopify.Types
         [Description("May not be used to fetch a file bigger\n            than 50MB.")]
         ZIP_TOO_LARGE,
         ///<summary>
-        ///Theme creation is not allowed for your shop's plan.
+        ///Theme creation is not allowed for your shop&apos;s plan.
         ///</summary>
         [Description("Theme creation is not allowed for your shop's plan.")]
         THEME_CREATION_NOT_ALLOWED_FOR_THEME_LIMITED_PLAN,
@@ -98386,7 +98386,7 @@ namespace Shopify.Types
     public enum ThemeDeleteUserErrorCode
     {
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -98516,7 +98516,7 @@ namespace Shopify.Types
     public enum ThemePublishUserErrorCode
     {
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -98648,7 +98648,7 @@ namespace Shopify.Types
     public enum ThemeUpdateUserErrorCode
     {
         ///<summary>
-        ///The record with the ID used as the input value couldn't be found.
+        ///The record with the ID used as the input value couldn&apos;t be found.
         ///</summary>
         [Description("The record with the ID used as the input value couldn't be found.")]
         NOT_FOUND,
@@ -98915,7 +98915,7 @@ namespace Shopify.Types
     }
 
     ///<summary>
-    ///Translatable content of a resource's field.
+    ///Translatable content of a resource&apos;s field.
     ///</summary>
     [Description("Translatable content of a resource's field.")]
     public class TranslatableContent : GraphQLObject<TranslatableContent>
@@ -98927,7 +98927,7 @@ namespace Shopify.Types
         public string? digest { get; set; }
 
         ///<summary>
-        ///The resource field that's being translated.
+        ///The resource field that&apos;s being translated.
         ///</summary>
         [Description("The resource field that's being translated.")]
         [NonNull]
@@ -98996,7 +98996,7 @@ namespace Shopify.Types
     public class TranslatableResourceConnection : GraphQLObject<TranslatableResourceConnection>, IConnectionWithNodesAndEdges<TranslatableResourceEdge, TranslatableResource>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -99060,7 +99060,7 @@ namespace Shopify.Types
         [Description("A product collection. Translatable fields: `title`, `body_html`, `handle`, `meta_title`, `meta_description`.")]
         COLLECTION,
         ///<summary>
-        ///The delivery method definition. For example, "Standard", or "Expedited". Translatable fields: `name`.
+        ///The delivery method definition. For example, &quot;Standard&quot;, or &quot;Expedited&quot;. Translatable fields: `name`.
         ///</summary>
         [Description("The delivery method definition. For example, \"Standard\", or \"Expedited\". Translatable fields: `name`.")]
         DELIVERY_METHOD_DEFINITION,
@@ -99150,13 +99150,13 @@ namespace Shopify.Types
         [Description("An online store product. Translatable fields: `title`, `body_html`, `handle`, `product_type`, `meta_title`, `meta_description`.")]
         PRODUCT,
         ///<summary>
-        ///An online store custom product property name. For example, "Size", "Color", or "Material".
+        ///An online store custom product property name. For example, &quot;Size&quot;, &quot;Color&quot;, or &quot;Material&quot;.
         ///        Translatable fields: `name`.
         ///</summary>
         [Description("An online store custom product property name. For example, \"Size\", \"Color\", or \"Material\".\n        Translatable fields: `name`.")]
         PRODUCT_OPTION,
         ///<summary>
-        ///The product option value names. For example, "Red", "Blue", and "Green" for a "Color" option. Translatable fields: `name`.
+        ///The product option value names. For example, &quot;Red&quot;, &quot;Blue&quot;, and &quot;Green&quot; for a &quot;Color&quot; option. Translatable fields: `name`.
         ///</summary>
         [Description("The product option value names. For example, \"Red\", \"Blue\", and \"Green\" for a \"Color\" option. Translatable fields: `name`.")]
         PRODUCT_OPTION_VALUE,
@@ -99326,12 +99326,12 @@ namespace Shopify.Types
         [Description("Locale code format is invalid.")]
         INVALID_FORMAT,
         ///<summary>
-        ///The shop isn't allowed to operate on market custom content.
+        ///The shop isn&apos;t allowed to operate on market custom content.
         ///</summary>
         [Description("The shop isn't allowed to operate on market custom content.")]
         MARKET_CUSTOM_CONTENT_NOT_ALLOWED,
         ///<summary>
-        ///The market corresponding to the `marketId` argument doesn't exist.
+        ///The market corresponding to the `marketId` argument doesn&apos;t exist.
         ///</summary>
         [Description("The market corresponding to the `marketId` argument doesn't exist.")]
         MARKET_DOES_NOT_EXIST,
@@ -99341,7 +99341,7 @@ namespace Shopify.Types
         [Description("The market override locale creation failed.")]
         MARKET_LOCALE_CREATION_FAILED,
         ///<summary>
-        ///The specified resource can't be customized for a market.
+        ///The specified resource can&apos;t be customized for a market.
         ///</summary>
         [Description("The specified resource can't be customized for a market.")]
         RESOURCE_NOT_MARKET_CUSTOMIZABLE,
@@ -99493,7 +99493,7 @@ namespace Shopify.Types
         public string? medium { get; set; }
 
         ///<summary>
-        ///The source of traffic to the merchant's store, such as Google or an email newsletter.
+        ///The source of traffic to the merchant&apos;s store, such as Google or an email newsletter.
         ///</summary>
         [Description("The source of traffic to the merchant's store, such as Google or an email newsletter.")]
         public string? source { get; set; }
@@ -99985,7 +99985,7 @@ namespace Shopify.Types
         [Description("Saved search not found.")]
         SAVED_SEARCH_NOT_FOUND,
         ///<summary>
-        ///The saved search's query cannot match all entries or be empty.
+        ///The saved search&apos;s query cannot match all entries or be empty.
         ///</summary>
         [Description("The saved search's query cannot match all entries or be empty.")]
         INVALID_SAVED_SEARCH_QUERY,
@@ -100068,7 +100068,7 @@ namespace Shopify.Types
     public class UrlRedirectConnection : GraphQLObject<UrlRedirectConnection>, IConnectionWithNodesAndEdges<UrlRedirectEdge, UrlRedirect>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -100390,7 +100390,7 @@ namespace Shopify.Types
         PATH,
         ///<summary>
         ///Sort by relevance to the search terms when the `query` parameter is specified on the connection.
-        ///Don't use this sort key when no search query is specified.
+        ///Don&apos;t use this sort key when no search query is specified.
         ///</summary>
         [Description("Sort by relevance to the search terms when the `query` parameter is specified on the connection.\nDon't use this sort key when no search query is specified.")]
         RELEVANCE,
@@ -100504,7 +100504,7 @@ namespace Shopify.Types
 
         ///<summary>
         ///A [custom field](https://shopify.dev/docs/apps/build/custom-data),
-        ///including its `namespace` and `key`, that's associated with a Shopify resource
+        ///including its `namespace` and `key`, that&apos;s associated with a Shopify resource
         ///for the purposes of adding and storing additional information.
         ///</summary>
         [Description("A [custom field](https://shopify.dev/docs/apps/build/custom-data),\nincluding its `namespace` and `key`, that's associated with a Shopify resource\nfor the purposes of adding and storing additional information.")]
@@ -100548,7 +100548,7 @@ namespace Shopify.Types
     public class ValidationConnection : GraphQLObject<ValidationConnection>, IConnectionWithNodesAndEdges<ValidationEdge, Validation>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -100716,12 +100716,12 @@ namespace Shopify.Types
         [Description("Shop must be on a Shopify Plus plan to activate functions from a custom app.")]
         CUSTOM_APP_FUNCTION_NOT_ELIGIBLE,
         ///<summary>
-        ///Function does not implement the required interface for this cart & checkout validation.
+        ///Function does not implement the required interface for this cart &amp; checkout validation.
         ///</summary>
         [Description("Function does not implement the required interface for this cart & checkout validation.")]
         FUNCTION_DOES_NOT_IMPLEMENT,
         ///<summary>
-        ///Only unlisted apps can be used for this cart & checkout validation.
+        ///Only unlisted apps can be used for this cart &amp; checkout validation.
         ///</summary>
         [Description("Only unlisted apps can be used for this cart & checkout validation.")]
         PUBLIC_APP_NOT_ALLOWED,
@@ -100756,12 +100756,12 @@ namespace Shopify.Types
         [Description("Unstructured reserved namespace.")]
         UNSTRUCTURED_RESERVED_NAMESPACE,
         ///<summary>
-        ///Owner type can't be used in this mutation.
+        ///Owner type can&apos;t be used in this mutation.
         ///</summary>
         [Description("Owner type can't be used in this mutation.")]
         DISALLOWED_OWNER_TYPE,
         ///<summary>
-        ///The input value isn't included in the list.
+        ///The input value isn&apos;t included in the list.
         ///</summary>
         [Description("The input value isn't included in the list.")]
         INCLUSION,
@@ -100965,7 +100965,7 @@ namespace Shopify.Types
         public DateTime? createdAt { get; set; }
 
         ///<summary>
-        ///The video's duration in milliseconds. This value is `null` unless the video's status field is
+        ///The video&apos;s duration in milliseconds. This value is `null` unless the video&apos;s status field is
         ///[READY](https://shopify.dev/api/admin-graphql/latest/enums/MediaStatus#value-ready).
         ///</summary>
         [Description("The video's duration in milliseconds. This value is `null` unless the video's status field is\n[READY](https://shopify.dev/api/admin-graphql/latest/enums/MediaStatus#value-ready).")]
@@ -100986,7 +100986,7 @@ namespace Shopify.Types
         public string? fileStatus { get; set; }
 
         ///<summary>
-        ///The video's filename.
+        ///The video&apos;s filename.
         ///</summary>
         [Description("The video's filename.")]
         [NonNull]
@@ -101021,7 +101021,7 @@ namespace Shopify.Types
         public IEnumerable<MediaWarning>? mediaWarnings { get; set; }
 
         ///<summary>
-        ///The video's original source. This value is `null` unless the video's status field is
+        ///The video&apos;s original source. This value is `null` unless the video&apos;s status field is
         ///[READY](https://shopify.dev/api/admin-graphql/latest/enums/MediaStatus#value-ready).
         ///</summary>
         [Description("The video's original source. This value is `null` unless the video's status field is\n[READY](https://shopify.dev/api/admin-graphql/latest/enums/MediaStatus#value-ready).")]
@@ -101034,7 +101034,7 @@ namespace Shopify.Types
         public MediaPreviewImage? preview { get; set; }
 
         ///<summary>
-        ///The video's sources. This value is empty unless the video's status field is
+        ///The video&apos;s sources. This value is empty unless the video&apos;s status field is
         ///[READY](https://shopify.dev/api/admin-graphql/latest/enums/MediaStatus#value-ready).
         ///</summary>
         [Description("The video's sources. This value is empty unless the video's status field is\n[READY](https://shopify.dev/api/admin-graphql/latest/enums/MediaStatus#value-ready).")]
@@ -101069,41 +101069,41 @@ namespace Shopify.Types
     public class VideoSource : GraphQLObject<VideoSource>
     {
         ///<summary>
-        ///The video source's file size in bytes.
+        ///The video source&apos;s file size in bytes.
         ///</summary>
         [Description("The video source's file size in bytes.")]
         public int? fileSize { get; set; }
 
         ///<summary>
-        ///The video source's file format extension.
+        ///The video source&apos;s file format extension.
         ///</summary>
         [Description("The video source's file format extension.")]
         [NonNull]
         public string? format { get; set; }
 
         ///<summary>
-        ///The video source's height.
+        ///The video source&apos;s height.
         ///</summary>
         [Description("The video source's height.")]
         [NonNull]
         public int? height { get; set; }
 
         ///<summary>
-        ///The video source's MIME type.
+        ///The video source&apos;s MIME type.
         ///</summary>
         [Description("The video source's MIME type.")]
         [NonNull]
         public string? mimeType { get; set; }
 
         ///<summary>
-        ///The video source's URL.
+        ///The video source&apos;s URL.
         ///</summary>
         [Description("The video source's URL.")]
         [NonNull]
         public string? url { get; set; }
 
         ///<summary>
-        ///The video source's width.
+        ///The video source&apos;s width.
         ///</summary>
         [Description("The video source's width.")]
         [NonNull]
@@ -101133,8 +101133,8 @@ namespace Shopify.Types
         ///<summary>
         ///The
         ///[settings object](https://shopify.dev/docs/apps/build/marketing-analytics/build-web-pixels#step-2-define-your-web-pixel-settings)
-        ///for the web pixel. This object specifies configuration options that control the web pixel's functionality and behavior. You can find the settings for a web pixel in
-        ///`extensions/<your_extension_name>/shopify.extension.toml`.
+        ///for the web pixel. This object specifies configuration options that control the web pixel&apos;s functionality and behavior. You can find the settings for a web pixel in
+        ///`extensions/&lt;your_extension_name&gt;/shopify.extension.toml`.
         ///</summary>
         [Description("The\n[settings object](https://shopify.dev/docs/apps/build/marketing-analytics/build-web-pixels#step-2-define-your-web-pixel-settings)\nfor the web pixel. This object specifies configuration options that control the web pixel's functionality and behavior. You can find the settings for a web pixel in\n`extensions/<your_extension_name>/shopify.extension.toml`.")]
         [NonNull]
@@ -101419,7 +101419,7 @@ namespace Shopify.Types
     public class WebhookSubscriptionConnection : GraphQLObject<WebhookSubscriptionConnection>, IConnectionWithNodesAndEdges<WebhookSubscriptionEdge, WebhookSubscription>
     {
         ///<summary>
-        ///The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.
+        ///The connection between the node and its parent. Each edge contains a minimum of the edge&apos;s cursor and the node.
         ///</summary>
         [Description("The connection between the node and its parent. Each edge contains a minimum of the edge's cursor and the node.")]
         [NonNull]
@@ -101585,8 +101585,8 @@ namespace Shopify.Types
     ///[Partner Dashboard](https://shopify.dev/apps/webhooks/configuration/mandatory-webhooks#subscribe-to-privacy-webhooks)
     ///or by updating the [app configuration file](https://shopify.dev/apps/tools/cli/configuration#app-configuration-file-example).
     ///
-    ///> Tip: 
-    ///>To configure your subscription using the app configuration file, refer to the [full list of topic names](https://shopify.dev/docs/api/webhooks?reference=graphql).
+    ///&gt; Tip: 
+    ///&gt;To configure your subscription using the app configuration file, refer to the [full list of topic names](https://shopify.dev/docs/api/webhooks?reference=graphql).
     ///</summary>
     [Description("The supported topics for webhook subscriptions. You can use webhook subscriptions to receive\nnotifications about particular events in a shop.\n\nYou create [mandatory webhooks](https://shopify.dev/apps/webhooks/configuration/mandatory-webhooks#mandatory-compliance-webhooks) either via the\n[Partner Dashboard](https://shopify.dev/apps/webhooks/configuration/mandatory-webhooks#subscribe-to-privacy-webhooks)\nor by updating the [app configuration file](https://shopify.dev/apps/tools/cli/configuration#app-configuration-file-example).\n\n> Tip: \n>To configure your subscription using the app configuration file, refer to the [full list of topic names](https://shopify.dev/docs/api/webhooks?reference=graphql).")]
     public enum WebhookSubscriptionTopic
@@ -101602,12 +101602,12 @@ namespace Shopify.Types
         [Description("The webhook topic for `app/scopes_update` events. Occurs whenever the access scopes of any installation are modified. Allows apps to keep track of the granted access scopes of their installations.")]
         APP_SCOPES_UPDATE,
         ///<summary>
-        ///The webhook topic for `carts/create` events. Occurs when a cart is created in the online store. Other types of carts aren't supported. For example, the webhook doesn't support carts that are created in a custom storefront. Requires the `read_orders` scope.
+        ///The webhook topic for `carts/create` events. Occurs when a cart is created in the online store. Other types of carts aren&apos;t supported. For example, the webhook doesn&apos;t support carts that are created in a custom storefront. Requires the `read_orders` scope.
         ///</summary>
         [Description("The webhook topic for `carts/create` events. Occurs when a cart is created in the online store. Other types of carts aren't supported. For example, the webhook doesn't support carts that are created in a custom storefront. Requires the `read_orders` scope.")]
         CARTS_CREATE,
         ///<summary>
-        ///The webhook topic for `carts/update` events. Occurs when a cart is updated in the online store. Other types of carts aren't supported. For example, the webhook doesn't support carts that are updated in a custom storefront. Requires the `read_orders` scope.
+        ///The webhook topic for `carts/update` events. Occurs when a cart is updated in the online store. Other types of carts aren&apos;t supported. For example, the webhook doesn&apos;t support carts that are updated in a custom storefront. Requires the `read_orders` scope.
         ///</summary>
         [Description("The webhook topic for `carts/update` events. Occurs when a cart is updated in the online store. Other types of carts aren't supported. For example, the webhook doesn't support carts that are updated in a custom storefront. Requires the `read_orders` scope.")]
         CARTS_UPDATE,
@@ -101737,7 +101737,7 @@ namespace Shopify.Types
         [Description("The webhook topic for `customers/purchasing_summary` events. Occurs when a customer sales history change. Requires the `read_customers` scope.")]
         CUSTOMERS_PURCHASING_SUMMARY,
         ///<summary>
-        ///The webhook topic for `customers_marketing_consent/update` events. Occurs whenever a customer's SMS marketing consent is updated. Requires the `read_customers` scope.
+        ///The webhook topic for `customers_marketing_consent/update` events. Occurs whenever a customer&apos;s SMS marketing consent is updated. Requires the `read_customers` scope.
         ///</summary>
         [Description("The webhook topic for `customers_marketing_consent/update` events. Occurs whenever a customer's SMS marketing consent is updated. Requires the `read_customers` scope.")]
         CUSTOMERS_MARKETING_CONSENT_UPDATE,
@@ -101752,7 +101752,7 @@ namespace Shopify.Types
         [Description("The webhook topic for `customer.tags_removed` events. Triggers when tags are removed from a customer. Requires the `read_customers` scope.")]
         CUSTOMER_TAGS_REMOVED,
         ///<summary>
-        ///The webhook topic for `customers_email_marketing_consent/update` events. Occurs whenever a customer's email marketing consent is updated. Requires the `read_customers` scope.
+        ///The webhook topic for `customers_email_marketing_consent/update` events. Occurs whenever a customer&apos;s email marketing consent is updated. Requires the `read_customers` scope.
         ///</summary>
         [Description("The webhook topic for `customers_email_marketing_consent/update` events. Occurs whenever a customer's email marketing consent is updated. Requires the `read_customers` scope.")]
         CUSTOMERS_EMAIL_MARKETING_CONSENT_UPDATE,
@@ -101802,17 +101802,17 @@ namespace Shopify.Types
         [Description("The webhook topic for `fulfillments/update` events. Occurs whenever a fulfillment is updated. Requires at least one of the following scopes: read_fulfillments, read_marketplace_orders.")]
         FULFILLMENTS_UPDATE,
         ///<summary>
-        ///The webhook topic for `attributed_sessions/first` events. Occurs whenever an order with a "first" attributed session is attributed. Requires the `read_marketing_events` scope.
+        ///The webhook topic for `attributed_sessions/first` events. Occurs whenever an order with a &quot;first&quot; attributed session is attributed. Requires the `read_marketing_events` scope.
         ///</summary>
         [Description("The webhook topic for `attributed_sessions/first` events. Occurs whenever an order with a \"first\" attributed session is attributed. Requires the `read_marketing_events` scope.")]
         ATTRIBUTED_SESSIONS_FIRST,
         ///<summary>
-        ///The webhook topic for `attributed_sessions/last` events. Occurs whenever an order with a "last" attributed session is attributed. Requires the `read_marketing_events` scope.
+        ///The webhook topic for `attributed_sessions/last` events. Occurs whenever an order with a &quot;last&quot; attributed session is attributed. Requires the `read_marketing_events` scope.
         ///</summary>
         [Description("The webhook topic for `attributed_sessions/last` events. Occurs whenever an order with a \"last\" attributed session is attributed. Requires the `read_marketing_events` scope.")]
         ATTRIBUTED_SESSIONS_LAST,
         ///<summary>
-        ///The webhook topic for `order_transactions/create` events. Occurs when a order transaction is created or when it's status is updated. Only occurs for transactions with a status of success, failure or error. Requires at least one of the following scopes: read_orders, read_marketplace_orders, read_buyer_membership_orders.
+        ///The webhook topic for `order_transactions/create` events. Occurs when a order transaction is created or when it&apos;s status is updated. Only occurs for transactions with a status of success, failure or error. Requires at least one of the following scopes: read_orders, read_marketplace_orders, read_buyer_membership_orders.
         ///</summary>
         [Description("The webhook topic for `order_transactions/create` events. Occurs when a order transaction is created or when it's status is updated. Only occurs for transactions with a status of success, failure or error. Requires at least one of the following scopes: read_orders, read_marketplace_orders, read_buyer_membership_orders.")]
         ORDER_TRANSACTIONS_CREATE,
@@ -101894,7 +101894,7 @@ namespace Shopify.Types
         [Description("The webhook topic for `fulfillment_holds/released` events. Occurs each time that a hold is released from a fulfillment order.\nFor cases where multiple holds are released from a fulfillment order a the same time, this webhook will trigger for each released hold.\n Requires at least one of the following scopes: read_merchant_managed_fulfillment_orders, read_assigned_fulfillment_orders, read_third_party_fulfillment_orders, read_marketplace_fulfillment_orders.")]
         FULFILLMENT_HOLDS_RELEASED,
         ///<summary>
-        ///The webhook topic for `fulfillment_orders/order_routing_complete` events. Occurs when an order has finished being routed and it's fulfillment orders assigned to a fulfillment service's location. Requires at least one of the following scopes: read_merchant_managed_fulfillment_orders, read_assigned_fulfillment_orders, read_third_party_fulfillment_orders, read_buyer_membership_orders, read_marketplace_fulfillment_orders.
+        ///The webhook topic for `fulfillment_orders/order_routing_complete` events. Occurs when an order has finished being routed and it&apos;s fulfillment orders assigned to a fulfillment service&apos;s location. Requires at least one of the following scopes: read_merchant_managed_fulfillment_orders, read_assigned_fulfillment_orders, read_third_party_fulfillment_orders, read_buyer_membership_orders, read_marketplace_fulfillment_orders.
         ///</summary>
         [Description("The webhook topic for `fulfillment_orders/order_routing_complete` events. Occurs when an order has finished being routed and it's fulfillment orders assigned to a fulfillment service's location. Requires at least one of the following scopes: read_merchant_managed_fulfillment_orders, read_assigned_fulfillment_orders, read_third_party_fulfillment_orders, read_buyer_membership_orders, read_marketplace_fulfillment_orders.")]
         FULFILLMENT_ORDERS_ORDER_ROUTING_COMPLETE,
@@ -101947,7 +101947,7 @@ namespace Shopify.Types
         [Description("The webhook topic for `fulfillment_holds/added` events. Occurs each time that a hold is added to a fulfillment order.\n\nFor cases where multiple holds are applied to a fulfillment order, this webhook will trigger after each hold is applied.\n Requires at least one of the following scopes: read_merchant_managed_fulfillment_orders, read_assigned_fulfillment_orders, read_third_party_fulfillment_orders, read_marketplace_fulfillment_orders.")]
         FULFILLMENT_HOLDS_ADDED,
         ///<summary>
-        ///The webhook topic for `fulfillment_orders/line_items_prepared_for_local_delivery` events. Occurs whenever a fulfillment order's line items are prepared for local delivery. Requires at least one of the following scopes: read_merchant_managed_fulfillment_orders, read_assigned_fulfillment_orders, read_third_party_fulfillment_orders, read_marketplace_fulfillment_orders.
+        ///The webhook topic for `fulfillment_orders/line_items_prepared_for_local_delivery` events. Occurs whenever a fulfillment order&apos;s line items are prepared for local delivery. Requires at least one of the following scopes: read_merchant_managed_fulfillment_orders, read_assigned_fulfillment_orders, read_third_party_fulfillment_orders, read_marketplace_fulfillment_orders.
         ///</summary>
         [Description("The webhook topic for `fulfillment_orders/line_items_prepared_for_local_delivery` events. Occurs whenever a fulfillment order's line items are prepared for local delivery. Requires at least one of the following scopes: read_merchant_managed_fulfillment_orders, read_assigned_fulfillment_orders, read_third_party_fulfillment_orders, read_marketplace_fulfillment_orders.")]
         FULFILLMENT_ORDERS_LINE_ITEMS_PREPARED_FOR_LOCAL_DELIVERY,
@@ -101990,7 +101990,7 @@ namespace Shopify.Types
         [Description("The webhook topic for `scheduled_product_listings/add` events. Occurs whenever a product is scheduled to be published. Requires the `read_product_listings` scope.")]
         SCHEDULED_PRODUCT_LISTINGS_ADD,
         ///<summary>
-        ///The webhook topic for `scheduled_product_listings/update` events. Occurs whenever a product's scheduled availability date changes. Requires the `read_product_listings` scope.
+        ///The webhook topic for `scheduled_product_listings/update` events. Occurs whenever a product&apos;s scheduled availability date changes. Requires the `read_product_listings` scope.
         ///</summary>
         [Description("The webhook topic for `scheduled_product_listings/update` events. Occurs whenever a product's scheduled availability date changes. Requires the `read_product_listings` scope.")]
         SCHEDULED_PRODUCT_LISTINGS_UPDATE,
@@ -102407,12 +102407,12 @@ namespace Shopify.Types
         [Description("The webhook topic for `orders/risk_assessment_changed` events. Triggers when a new risk assessment is available on the order.\nThis can be the first or a subsequent risk assessment.\nNew risk assessments can be provided until the order is marked as fulfilled.\nIncludes the risk level, risk facts, the provider and the order ID.\nWhen the provider is Shopify, that field is null.\nDoes not include the risk recommendation for the order.\nThe Shop ID is available in the headers.\n Requires the `read_orders` scope.")]
         ORDERS_RISK_ASSESSMENT_CHANGED,
         ///<summary>
-        ///The webhook topic for `orders/shopify_protect_eligibility_changed` events. Occurs whenever Shopify Protect's eligibility for an order is changed. Requires the `read_orders` scope.
+        ///The webhook topic for `orders/shopify_protect_eligibility_changed` events. Occurs whenever Shopify Protect&apos;s eligibility for an order is changed. Requires the `read_orders` scope.
         ///</summary>
         [Description("The webhook topic for `orders/shopify_protect_eligibility_changed` events. Occurs whenever Shopify Protect's eligibility for an order is changed. Requires the `read_orders` scope.")]
         ORDERS_SHOPIFY_PROTECT_ELIGIBILITY_CHANGED,
         ///<summary>
-        ///The webhook topic for `finance_kyc_information/update` events. Occurs whenever shop's finance KYC information was updated Requires the `read_financial_kyc_information` scope.
+        ///The webhook topic for `finance_kyc_information/update` events. Occurs whenever shop&apos;s finance KYC information was updated Requires the `read_financial_kyc_information` scope.
         ///</summary>
         [Description("The webhook topic for `finance_kyc_information/update` events. Occurs whenever shop's finance KYC information was updated Requires the `read_financial_kyc_information` scope.")]
         FINANCE_KYC_INFORMATION_UPDATE,
@@ -102572,7 +102572,7 @@ namespace Shopify.Types
         [Description("The webhook topic for `finance_app_staff_member/grant` events. Triggers when a staff is granted access to all or some finance app. Requires the `read_financial_kyc_information` scope.")]
         FINANCE_APP_STAFF_MEMBER_GRANT,
         ///<summary>
-        ///The webhook topic for `finance_app_staff_member/revoke` events. Triggers when a staff's access to all or some finance app has been revoked. Requires the `read_financial_kyc_information` scope.
+        ///The webhook topic for `finance_app_staff_member/revoke` events. Triggers when a staff&apos;s access to all or some finance app has been revoked. Requires the `read_financial_kyc_information` scope.
         ///</summary>
         [Description("The webhook topic for `finance_app_staff_member/revoke` events. Triggers when a staff's access to all or some finance app has been revoked. Requires the `read_financial_kyc_information` scope.")]
         FINANCE_APP_STAFF_MEMBER_REVOKE,
@@ -102582,7 +102582,7 @@ namespace Shopify.Types
         [Description("The webhook topic for `finance_app_staff_member/delete` events. Triggers when a staff with access to all or some finance app has been removed. Requires the `read_financial_kyc_information` scope.")]
         FINANCE_APP_STAFF_MEMBER_DELETE,
         ///<summary>
-        ///The webhook topic for `finance_app_staff_member/update` events. Triggers when a staff's information has been updated. Requires the `read_financial_kyc_information` scope.
+        ///The webhook topic for `finance_app_staff_member/update` events. Triggers when a staff&apos;s information has been updated. Requires the `read_financial_kyc_information` scope.
         ///</summary>
         [Description("The webhook topic for `finance_app_staff_member/update` events. Triggers when a staff's information has been updated. Requires the `read_financial_kyc_information` scope.")]
         FINANCE_APP_STAFF_MEMBER_UPDATE,
@@ -102929,7 +102929,7 @@ namespace Shopify.Types
     ///<summary>
     ///A Directive provides a way to describe alternate runtime execution and type validation behavior in a GraphQL document.
     ///
-    ///In some cases, you need to provide options to alter GraphQL's execution behavior in ways field arguments will not suffice, such as conditionally including or skipping a field. Directives provide this by describing additional information to the executor.
+    ///In some cases, you need to provide options to alter GraphQL&apos;s execution behavior in ways field arguments will not suffice, such as conditionally including or skipping a field. Directives provide this by describing additional information to the executor.
     ///</summary>
     [Description("A Directive provides a way to describe alternate runtime execution and type validation behavior in a GraphQL document.\n\nIn some cases, you need to provide options to alter GraphQL's execution behavior in ways field arguments will not suffice, such as conditionally including or skipping a field. Directives provide this by describing additional information to the executor.")]
     public class __Directive : GraphQLObject<__Directive>

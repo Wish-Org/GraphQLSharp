@@ -1,5 +1,6 @@
 ﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
+using System.Security;
 using System.Text;
 using System.Text.Json;
 
@@ -487,7 +488,7 @@ public class GraphQLTypeGenerator
 
         return $"""
                         ///<summary>
-                        ///{desc.TrimEnd('\n').Replace("\n", "\n///")}
+                        ///{SecurityElement.Escape(desc.TrimEnd('\n').Replace("\n", "\n///"))}
                         ///</summary>
                         [Description({SymbolDisplay.FormatLiteral(desc.TrimEnd('\n'), true)})]
                     """;
