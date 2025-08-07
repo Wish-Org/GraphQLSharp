@@ -1,6 +1,6 @@
 using GraphQLSharp;
 
-public class TestInterceptor : IInterceptor
+public class TestInterceptor : IInterceptor<GraphQLRequest, GraphQLClientOptions>
 {
     private readonly Action _onBeforeExecute;
     private readonly Action _onAfterExecute;
@@ -11,13 +11,7 @@ public class TestInterceptor : IInterceptor
         _onAfterExecute = onAfterExecute;
     }
 
-    public async Task<GraphQLResponse<TData>> InterceptRequestAsync<TGraphQLRequest, TClientOptions, TData>(
-        TGraphQLRequest request,
-        TClientOptions options,
-        CancellationToken cancellationToken,
-        Func<TGraphQLRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync)
-        where TGraphQLRequest : GraphQLRequest
-        where TClientOptions : class, IGraphQLClientOptions
+    public async Task<GraphQLResponse<TData>> InterceptRequestAsync<TData>(GraphQLRequest request, GraphQLClientOptions options, CancellationToken cancellationToken, Func<GraphQLRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync)
     {
         _onBeforeExecute?.Invoke();
         var response = await executeAsync(request, cancellationToken);

@@ -4,7 +4,7 @@ using System.Text.Json;
 namespace GraphQLSharp;
 
 
-public class GraphQLClientOptions : IGraphQLClientOptions
+public class GraphQLClientOptions : IGraphQLClientOptions<GraphQLClientOptions, GraphQLRequest>
 {
     public Uri Uri { get; private set; }
 
@@ -35,7 +35,7 @@ public class GraphQLClientOptions : IGraphQLClientOptions
     /// <summary>
     /// An (optional) Interceptor to be used for this request.
     /// </summary>
-    public IInterceptor Interceptor { get; set; }
+    public IInterceptor<GraphQLRequest, GraphQLClientOptions> Interceptor { get; set; }
 
     public Action<HttpRequestHeaders> ConfigureHttpRequestHeaders { get; set; }
 }

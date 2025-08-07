@@ -21,7 +21,7 @@ public class ChainedInterceptorTests
         var entries = new List<string>();
         var options = new GraphQLClientOptions(new Uri("https://example.com/graphql"))
         {
-            Interceptor = new ChainedInterceptor(
+            Interceptor = new ChainedInterceptor<GraphQLRequest, GraphQLClientOptions>(
                 new TestInterceptor(() => entries.Add("Before1"), () => entries.Add("After1")),
                 new TestInterceptor(() => entries.Add("Before2"), () => entries.Add("After2")),
                 new TestInterceptor(() => entries.Add("Before3"), () => entries.Add("After3"))

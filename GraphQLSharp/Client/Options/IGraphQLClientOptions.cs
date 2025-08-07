@@ -3,8 +3,13 @@ using System.Text.Json;
 
 namespace GraphQLSharp;
 
-public interface IGraphQLClientOptions
+public interface IGraphQLClientOptions<TSelf, TRequest>
+    where TSelf : class, IGraphQLClientOptions<TSelf, TRequest>
+    where TRequest : GraphQLRequest
 {
+    /// <summary>
+    /// The URI of the GraphQL endpoint.
+    /// </summary>
     Uri Uri { get; }
 
     /// <summary>
@@ -29,7 +34,7 @@ public interface IGraphQLClientOptions
     /// <summary>
     /// An (optional) Interceptor to be used for this request.
     /// </summary>
-    IInterceptor Interceptor { get; }
+    IInterceptor<TRequest, TSelf> Interceptor { get; }
 
     /// <summary>
     /// An (optional) configuration callback to modify the HttpRequestHeaders before sending the request.

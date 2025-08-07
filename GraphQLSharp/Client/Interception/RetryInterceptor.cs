@@ -2,7 +2,9 @@ using System.Net;
 
 namespace GraphQLSharp;
 
-public class RetryInterceptor : IInterceptor
+public class RetryInterceptor<TRequest, TOptions> : IInterceptor<TRequest, TOptions>
+    where TRequest : GraphQLRequest
+    where TOptions : class, IGraphQLClientOptions<TOptions, TRequest>
 {
     private static readonly TimeSpan DEFAULT_RETRY_DELAY = TimeSpan.FromSeconds(1);
     public const int MAX_TRIES = 3;
@@ -22,13 +24,7 @@ public class RetryInterceptor : IInterceptor
         return _retryableStatusCodes.Contains(r.StatusCode);
     }
 
-    public async Task<GraphQLResponse<TData>> InterceptRequestAsync<TGraphQLRequest, TClientOptions, TData>(
-        TGraphQLRequest request,
-        TClientOptions options,
-        CancellationToken cancellationToken,
-        Func<TGraphQLRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync)
-        where TGraphQLRequest : GraphQLRequest
-        where TClientOptions : class, IGraphQLClientOptions
+    public async Task<GraphQLResponse<TData>> InterceptRequestAsync<TData>(TRequest request, TOptions options, CancellationToken cancellationToken, Func<TRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync)
     {
         int tryCount = 0;
 

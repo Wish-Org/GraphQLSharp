@@ -1,18 +1,14 @@
 namespace GraphQLSharp;
 
-public class NoOpInterceptor : IInterceptor
+public class NoOpInterceptor<TRequest, TOptions> : IInterceptor<TRequest, TOptions>
+    where TRequest : GraphQLRequest
+    where TOptions : class, IGraphQLClientOptions<TOptions, TRequest>
 {
-    public static readonly NoOpInterceptor Instance = new();
+    public static readonly NoOpInterceptor<TRequest, TOptions> Instance = new();
 
     private NoOpInterceptor() { }
 
-    public Task<GraphQLResponse<T>> InterceptRequestAsync<TGraphQLRequest, TClientOptions, T>(
-        TGraphQLRequest request,
-        TClientOptions options,
-        CancellationToken cancellationToken,
-        Func<TGraphQLRequest, CancellationToken, Task<GraphQLResponse<T>>> executeAsync)
-        where TGraphQLRequest : GraphQLRequest
-        where TClientOptions : class, IGraphQLClientOptions
+    public Task<GraphQLResponse<TData>> InterceptRequestAsync<TData>(TRequest request, TOptions options, CancellationToken cancellationToken, Func<TRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync)
     {
         return executeAsync(request, cancellationToken);
     }

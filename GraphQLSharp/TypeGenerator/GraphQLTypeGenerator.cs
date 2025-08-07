@@ -141,11 +141,11 @@ public class GraphQLTypeGenerator
         _ = options.NamespaceTypes ?? throw new ArgumentNullException(nameof(options.NamespaceTypes));
         _ = options.NamespaceClient ?? throw new ArgumentNullException(nameof(options.NamespaceClient));
 
-        if (options.ClientOptionsType != null && !typeof(IGraphQLClientOptions).IsAssignableFrom(options.ClientOptionsType))
-            throw new ArgumentException($"{nameof(options.ClientOptionsType)} must implement {nameof(IGraphQLClientOptions)}", nameof(options.ClientOptionsType));
-
         if (options.GraphQLRequestType != null && !typeof(GraphQLRequest).IsAssignableFrom(options.GraphQLRequestType))
             throw new ArgumentException($"{nameof(options.GraphQLRequestType)} must inherit from {nameof(GraphQLRequest)}", nameof(options.GraphQLRequestType));
+
+        if (options.ClientOptionsType != null && !typeof(IGraphQLClientOptions<,>).MakeGenericType(options.ClientOptionsType, options.GraphQLRequestType).IsAssignableFrom(options.ClientOptionsType))
+            throw new ArgumentException($"{nameof(options.ClientOptionsType)} must implement IGraphQLClientOptions<{options.ClientOptionsType.Name},{options.GraphQLRequestType.Name}>", nameof(options.ClientOptionsType));
 
 
         // Get the "data.__schema" element or "__schema" element if the "data" property doesn't exist
