@@ -1,5 +1,5 @@
 namespace GraphQLSharp;
 
-public class NonNullAttribute : System.Attribute
+public class NonNullAttribute : Attribute
 {
 }
