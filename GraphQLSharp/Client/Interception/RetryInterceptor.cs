@@ -28,7 +28,7 @@ public class RetryInterceptor : IInterceptor
         CancellationToken cancellationToken,
         Func<TGraphQLRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync)
         where TGraphQLRequest : GraphQLRequest
-        where TClientOptions : IGraphQLClientOptions
+        where TClientOptions : class, IGraphQLClientOptions
     {
         int tryCount = 0;
 

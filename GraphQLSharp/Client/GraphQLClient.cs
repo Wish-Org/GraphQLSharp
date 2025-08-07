@@ -6,7 +6,7 @@ namespace GraphQLSharp;
 
 public class GraphQLClient<TGraphQLRequest, TClientOptions, TQueryRoot, TMutationRoot> : GraphQLClient<TGraphQLRequest, TClientOptions, TQueryRoot>
     where TGraphQLRequest : GraphQLRequest
-    where TClientOptions : IGraphQLClientOptions
+    where TClientOptions : class, IGraphQLClientOptions
     where TQueryRoot : class
     where TMutationRoot : class
 {
@@ -23,7 +23,7 @@ public class GraphQLClient<TGraphQLRequest, TClientOptions, TQueryRoot, TMutatio
 public class GraphQLClient<TGraphQLRequest, TClientOptions, TQueryRoot> : GraphQLClient<TGraphQLRequest, TClientOptions>
     where TGraphQLRequest : GraphQLRequest
     where TQueryRoot : class
-    where TClientOptions : IGraphQLClientOptions
+    where TClientOptions : class, IGraphQLClientOptions
 {
     public GraphQLClient(TClientOptions options) : base(options)
     {
@@ -44,7 +44,7 @@ public class GraphQLCLient : GraphQLClient<GraphQLRequest, GraphQLClientOptions>
 
 public class GraphQLClient<TGraphQLRequest, TClientOptions>
     where TGraphQLRequest : GraphQLRequest
-    where TClientOptions : IGraphQLClientOptions
+    where TClientOptions : class, IGraphQLClientOptions
 {
     private static readonly HttpClient _defaultHttpClient = new();
 

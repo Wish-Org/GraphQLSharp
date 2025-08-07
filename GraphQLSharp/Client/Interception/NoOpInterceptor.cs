@@ -12,7 +12,7 @@ public class NoOpInterceptor : IInterceptor
         CancellationToken cancellationToken,
         Func<TGraphQLRequest, CancellationToken, Task<GraphQLResponse<T>>> executeAsync)
         where TGraphQLRequest : GraphQLRequest
-        where TClientOptions : IGraphQLClientOptions
+        where TClientOptions : class, IGraphQLClientOptions
     {
         return executeAsync(request, cancellationToken);
     }

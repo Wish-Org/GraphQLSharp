@@ -7,12 +7,34 @@ namespace GraphQLSharp;
 /// </summary>
 public interface IInterceptor
 {
-    Task<GraphQLResponse<TData>> InterceptRequestAsync<TGraphQLRequest, TClientOptions, TData>(
+    Task<GraphQLResponse<TData>> InterceptRequestAsync<TGraphQLRequest, TOptions, TData>(
                                 TGraphQLRequest request,
-                                TClientOptions options,
+                                TOptions options,
                                 CancellationToken cancellationToken,
                                 Func<TGraphQLRequest, CancellationToken,
                                 Task<GraphQLResponse<TData>>> executeAsync)
                 where TGraphQLRequest : GraphQLRequest
-                where TClientOptions : IGraphQLClientOptions;
+                where TOptions : class, IGraphQLClientOptions;
+}
+
+public interface IInterceptor<TRequest, TOptions> : IInterceptor
+    where TRequest : GraphQLRequest
+    where TOptions : class, IGraphQLClientOptions
+{
+    Task<GraphQLResponse<TData>> InterceptRequestAsync<TData>(TRequest request,
+                                                            TOptions options,
+                                                            CancellationToken cancellationToken,
+                                                            Func<TRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync);
+    Task<GraphQLResponse<TData>> IInterceptor.InterceptRequestAsync<TGraphQLRequest, TClientOptions, TData>(
+                                    TGraphQLRequest request,
+                                    TClientOptions options,
+                                    CancellationToken cancellationToken,
+                                    Func<TGraphQLRequest, CancellationToken,
+                                    Task<GraphQLResponse<TData>>> executeAsync)
+    {
+        var shopifyRequest = request as TRequest;
+        var shopifyOptions = options as TOptions;
+        return this.InterceptRequestAsync(shopifyRequest, shopifyOptions, cancellationToken,
+                                            (r, token) => executeAsync(r as TGraphQLRequest, token));
+    }
 }
