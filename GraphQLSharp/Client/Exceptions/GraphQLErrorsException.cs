@@ -11,5 +11,6 @@ public class GraphQLErrorsException : GraphQLException
                         Errors: {string.Join("\n", response.errors.Select(e => e.ToString()))}
                         """)
     {
+        this.response = response;
     }
 }
