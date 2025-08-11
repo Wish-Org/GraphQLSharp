@@ -1,14 +1,12 @@
 namespace GraphQLSharp;
 
-public class GraphQLInterceptorException : Exception
+public class GraphQLInterceptorException : GraphQLException
 {
-    public readonly GraphQLRequest Request;
     public readonly IInterceptor Interceptor;
 
     public GraphQLInterceptorException(GraphQLRequest request, IInterceptor interceptor, Exception ex)
-     : base("Interceptor error occurred", ex)
+     : base(request, null, "Interceptor error occurred", ex)
     {
-        Request = request;
         Interceptor = interceptor;
     }
 }
