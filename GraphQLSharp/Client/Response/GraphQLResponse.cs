@@ -7,7 +7,7 @@ public class GraphQLResponse<T> : GraphQLResponse
 {
     public new T data
     {
-        get => (T)base.data;
+        get => base.data is null ? default : (T)base.data;
         set => base.data = value;
     }
 }

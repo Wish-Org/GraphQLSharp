@@ -227,9 +227,9 @@ public class GraphQLClientTests
 
         var response = await _client.ExecuteAsync(request);
         //response.data is JsonElement
-        var myProducts = response.data.GetProperty("myProducts")
+        var myProducts = response.data.Value.GetProperty("myProducts")
                                      .Deserialize<ProductConnection>(Serializer.Options);
-        var myOrders = response.data.GetProperty("myOrders")
+        var myOrders = response.data.Value.GetProperty("myOrders")
                                      .Deserialize<OrderConnection>(Serializer.Options);
         Assert.IsNotNull(myProducts.nodes.FirstOrDefault()?.title);
         Assert.IsNotNull(myOrders.nodes.FirstOrDefault()?.name);
@@ -285,6 +285,35 @@ public class GraphQLClientTests
         options.ThrowOnGraphQLErrors = false;
         var client = new GraphQLClient<GraphQLRequest, GraphQLClientOptions, QueryRoot, Mutation>(options);
         var response = await client.QueryAsync(request);
+        Assert.IsNotNull(response.errors);
+        Assert.IsTrue(response.errors.Count > 0);
+    }
+
+    [TestMethod]
+    public async Task QueryJsonWithSyntaxErrorNoThrow()
+    {
+        var query = """
+            query {
+                products(first: 10)
+                {
+                    nodes
+                    SYNTAX ERROR!!!
+                        id
+                        title
+                    }
+                }
+            }
+            """;
+
+        var request = new GraphQLRequest
+        {
+            query = query
+        };
+
+        var options = GetClientOptions();
+        options.ThrowOnGraphQLErrors = false;
+        var client = new GraphQLClient<GraphQLRequest, GraphQLClientOptions, QueryRoot, Mutation>(options);
+        var response = await client.ExecuteAsync(request);
         Assert.IsNotNull(response.errors);
         Assert.IsTrue(response.errors.Count > 0);
     }

@@ -57,10 +57,11 @@ public class GraphQLClient<TRequest, TOptions>
         _options = options ?? throw new ArgumentNullException(nameof(options));
     }
 
-    public Task<GraphQLResponse<JsonElement>> ExecuteAsync(TRequest request, CancellationToken cancellationToken = default)
+    public Task<GraphQLResponse<JsonElement?>> ExecuteAsync(TRequest request, CancellationToken cancellationToken = default)
     {
-        //returing JsonElement and not JsonDocument because JsonDocument is disposable and we don't want to force the user to dispose it
-        return ExecuteAsync<JsonElement>(request, cancellationToken);
+        //returing JsonElement? and not JsonDocument because JsonDocument is disposable and we don't want to force the user to dispose it
+        //JsonElement is a struct so we return a nullable value
+        return ExecuteAsync<JsonElement?>(request, cancellationToken);
     }
 
     public async Task<GraphQLResponse<T>> ExecuteAsync<T>(TRequest request, CancellationToken cancellationToken = default)

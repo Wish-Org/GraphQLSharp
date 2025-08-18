@@ -153,10 +153,10 @@ public async Task RequestWithAliases()
     };
 
     var response = await _client.ExecuteAsync(request);
-    //response.data is JsonElement
-    var myProducts = response.data.GetProperty("myProducts")
+    //response.data is JsonElement?
+    var myProducts = response.data.Value.GetProperty("myProducts")
                                     .Deserialize<ProductConnection>(Serializer.Options);
-    var myOrders = response.data.GetProperty("myOrders")
+    var myOrders = response.data.Value.GetProperty("myOrders")
                                     .Deserialize<OrderConnection>(Serializer.Options);
     Assert.IsNotNull(myProducts.nodes.FirstOrDefault()?.title);
     Assert.IsNotNull(myOrders.nodes.FirstOrDefault()?.name);
