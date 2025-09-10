@@ -12,7 +12,7 @@ public class GraphQLResponse<T> : GraphQLResponse
     }
 }
 
-public class GraphQLResponse : IHasExtensions
+public class GraphQLResponse : IHasExtensions, IGraphQLObject
 {
     [JsonIgnore]
     public GraphQLRequest Request { get; internal set; }
