@@ -3,7 +3,7 @@ using System.Text.Json;
 
 namespace GraphQLSharp;
 
-public class GraphQLRequest
+public class GraphQLRequest : IGraphQLObject
 {
     [StringSyntax("GraphQL")]
     public string query { get; set; }
