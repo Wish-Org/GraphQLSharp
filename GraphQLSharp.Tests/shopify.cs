@@ -576,6 +576,7 @@ namespace Shopify.Types
         ///The email state (e.g., sent or not sent).
         ///</summary>
         [Description("The email state (e.g., sent or not sent).")]
+        [EnumType(typeof(AbandonmentEmailState))]
         public string? emailState { get; set; }
 
         ///<summary>
@@ -802,6 +803,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(AbandonmentEmailStateUpdateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -866,6 +868,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(AbandonmentUpdateActivitiesDeliveryStatusesUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -2730,6 +2733,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(AppRevokeAccessScopesAppRevokeScopeErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -3257,6 +3261,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(AppSubscriptionTrialExtendUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -3838,6 +3843,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ArticleCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -3980,6 +3986,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ArticleDeleteUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -4137,6 +4144,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ArticleUpdateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -4731,6 +4739,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(BillingAttemptUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -5016,6 +5025,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(BlogCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -5104,6 +5114,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(BlogDeleteUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -5240,6 +5251,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(BlogUpdateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -5350,6 +5362,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(BulkMutationErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -5395,6 +5408,7 @@ namespace Shopify.Types
         ///Error code for failed operations.
         ///</summary>
         [Description("Error code for failed operations.")]
+        [EnumType(typeof(BulkOperationErrorCode))]
         public string? errorCode { get; set; }
 
         ///<summary>
@@ -5648,6 +5662,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(BulkOperationUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -5718,6 +5733,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(BulkProductResourceFeedbackCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -5909,6 +5925,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(BusinessCustomerErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -7584,6 +7601,7 @@ namespace Shopify.Types
         ///Digital wallet used for the payment.
         ///</summary>
         [Description("Digital wallet used for the payment.")]
+        [EnumType(typeof(DigitalWallet))]
         public string? wallet { get; set; }
     }
 
@@ -7617,6 +7635,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CarrierServiceCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -7681,6 +7700,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CarrierServiceDeleteUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -7775,6 +7795,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CarrierServiceUpdateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -7911,6 +7932,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CartTransformCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -7999,6 +8021,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CartTransformDeleteUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -8810,6 +8833,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CatalogUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -9503,30 +9527,35 @@ namespace Shopify.Types
         ///The background style used for buttons.
         ///</summary>
         [Description("The background style used for buttons.")]
+        [EnumType(typeof(CheckoutBrandingBackgroundStyle))]
         public string? background { get; set; }
 
         ///<summary>
         ///The block padding used for buttons.
         ///</summary>
         [Description("The block padding used for buttons.")]
+        [EnumType(typeof(CheckoutBrandingSpacing))]
         public string? blockPadding { get; set; }
 
         ///<summary>
         ///The border used for buttons.
         ///</summary>
         [Description("The border used for buttons.")]
+        [EnumType(typeof(CheckoutBrandingSimpleBorder))]
         public string? border { get; set; }
 
         ///<summary>
         ///The corner radius used for buttons.
         ///</summary>
         [Description("The corner radius used for buttons.")]
+        [EnumType(typeof(CheckoutBrandingCornerRadius))]
         public string? cornerRadius { get; set; }
 
         ///<summary>
         ///The inline padding used for buttons.
         ///</summary>
         [Description("The inline padding used for buttons.")]
+        [EnumType(typeof(CheckoutBrandingSpacing))]
         public string? inlinePadding { get; set; }
 
         ///<summary>
@@ -9595,6 +9624,7 @@ namespace Shopify.Types
         ///An option to display or hide the breadcrumbs that represent the buyer&apos;s journey on 3-page checkout.
         ///</summary>
         [Description("An option to display or hide the breadcrumbs that represent the buyer's journey on 3-page checkout.")]
+        [EnumType(typeof(CheckoutBrandingVisibility))]
         public string? visibility { get; set; }
     }
 
@@ -9608,6 +9638,7 @@ namespace Shopify.Types
         ///Whether the cart link is visible at checkout.
         ///</summary>
         [Description("Whether the cart link is visible at checkout.")]
+        [EnumType(typeof(CheckoutBrandingVisibility))]
         public string? visibility { get; set; }
     }
 
@@ -9651,6 +9682,7 @@ namespace Shopify.Types
         ///The corner radius used for checkboxes.
         ///</summary>
         [Description("The corner radius used for checkboxes.")]
+        [EnumType(typeof(CheckoutBrandingCornerRadius))]
         public string? cornerRadius { get; set; }
     }
 
@@ -9677,6 +9709,7 @@ namespace Shopify.Types
         ///The spacing between UI elements in the list.
         ///</summary>
         [Description("The spacing between UI elements in the list.")]
+        [EnumType(typeof(CheckoutBrandingSpacingKeyword))]
         public string? spacing { get; set; }
     }
 
@@ -9925,18 +9958,21 @@ namespace Shopify.Types
         ///The divider style.
         ///</summary>
         [Description("The divider style.")]
+        [EnumType(typeof(CheckoutBrandingBorderStyle))]
         public string? borderStyle { get; set; }
 
         ///<summary>
         ///The divider width.
         ///</summary>
         [Description("The divider width.")]
+        [EnumType(typeof(CheckoutBrandingBorderWidth))]
         public string? borderWidth { get; set; }
 
         ///<summary>
         ///The divider visibility.
         ///</summary>
         [Description("The divider visibility.")]
+        [EnumType(typeof(CheckoutBrandingVisibility))]
         public string? visibility { get; set; }
     }
 
@@ -9963,24 +9999,28 @@ namespace Shopify.Types
         ///The border used for form controls.
         ///</summary>
         [Description("The border used for form controls.")]
+        [EnumType(typeof(CheckoutBrandingSimpleBorder))]
         public string? border { get; set; }
 
         ///<summary>
         ///Set to TRANSPARENT to define transparent form controls. If null, form controls inherit colors from their scheme settings (for example, the main section inherits from `design_system.colors.schemes.scheme1.control` by default). Note that usage of the `customizations.control.color` setting to customize the form control color is deprecated.
         ///</summary>
         [Description("Set to TRANSPARENT to define transparent form controls. If null, form controls inherit colors from their scheme settings (for example, the main section inherits from `design_system.colors.schemes.scheme1.control` by default). Note that usage of the `customizations.control.color` setting to customize the form control color is deprecated.")]
+        [EnumType(typeof(CheckoutBrandingColorSelection))]
         public string? color { get; set; }
 
         ///<summary>
         ///The corner radius used for form controls.
         ///</summary>
         [Description("The corner radius used for form controls.")]
+        [EnumType(typeof(CheckoutBrandingCornerRadius))]
         public string? cornerRadius { get; set; }
 
         ///<summary>
         ///The label position used for form controls.
         ///</summary>
         [Description("The label position used for form controls.")]
+        [EnumType(typeof(CheckoutBrandingLabelPosition))]
         public string? labelPosition { get; set; }
     }
 
@@ -10302,12 +10342,14 @@ namespace Shopify.Types
         ///The border style for the divider.
         ///</summary>
         [Description("The border style for the divider.")]
+        [EnumType(typeof(CheckoutBrandingBorderStyle))]
         public string? borderStyle { get; set; }
 
         ///<summary>
         ///The border width for the divider.
         ///</summary>
         [Description("The border width for the divider.")]
+        [EnumType(typeof(CheckoutBrandingBorderWidth))]
         public string? borderWidth { get; set; }
     }
 
@@ -10334,6 +10376,7 @@ namespace Shopify.Types
         ///The corner radius used for the Express Checkout buttons.
         ///</summary>
         [Description("The corner radius used for the Express Checkout buttons.")]
+        [EnumType(typeof(CheckoutBrandingCornerRadius))]
         public string? cornerRadius { get; set; }
     }
 
@@ -10385,6 +10428,7 @@ namespace Shopify.Types
         ///The font loading strategy.
         ///</summary>
         [Description("The font loading strategy.")]
+        [EnumType(typeof(CheckoutBrandingFontLoadingStrategy))]
         public string? loadingStrategy { get; set; }
 
         ///<summary>
@@ -10466,12 +10510,14 @@ namespace Shopify.Types
         ///The footer alignment.
         ///</summary>
         [Description("The footer alignment.")]
+        [EnumType(typeof(CheckoutBrandingFooterAlignment))]
         public string? alignment { get; set; }
 
         ///<summary>
         ///The selected color scheme of the footer container.
         ///</summary>
         [Description("The selected color scheme of the footer container.")]
+        [EnumType(typeof(CheckoutBrandingColorSchemeSelection))]
         public string? colorScheme { get; set; }
 
         ///<summary>
@@ -10490,12 +10536,14 @@ namespace Shopify.Types
         ///The padding of the footer container.
         ///</summary>
         [Description("The padding of the footer container.")]
+        [EnumType(typeof(CheckoutBrandingSpacingKeyword))]
         public string? padding { get; set; }
 
         ///<summary>
         ///The footer position.
         ///</summary>
         [Description("The footer position.")]
+        [EnumType(typeof(CheckoutBrandingFooterPosition))]
         public string? position { get; set; }
     }
 
@@ -10539,6 +10587,7 @@ namespace Shopify.Types
         ///The visibility settings for footer content.
         ///</summary>
         [Description("The visibility settings for footer content.")]
+        [EnumType(typeof(CheckoutBrandingVisibility))]
         public string? visibility { get; set; }
     }
 
@@ -10577,6 +10626,7 @@ namespace Shopify.Types
         ///customizations.
         ///</summary>
         [Description("The global corner radius setting that overrides all other [corner radius](https://shopify.dev/docs/api/admin-graphql/latest/enums/CheckoutBrandingCornerRadius)\ncustomizations.")]
+        [EnumType(typeof(CheckoutBrandingGlobalCornerRadius))]
         public string? cornerRadius { get; set; }
 
         ///<summary>
@@ -10618,6 +10668,7 @@ namespace Shopify.Types
         ///The header alignment.
         ///</summary>
         [Description("The header alignment.")]
+        [EnumType(typeof(CheckoutBrandingHeaderAlignment))]
         public string? alignment { get; set; }
 
         ///<summary>
@@ -10636,6 +10687,7 @@ namespace Shopify.Types
         ///The selected color scheme of the header container.
         ///</summary>
         [Description("The selected color scheme of the header container.")]
+        [EnumType(typeof(CheckoutBrandingColorSchemeSelection))]
         public string? colorScheme { get; set; }
 
         ///<summary>
@@ -10654,12 +10706,14 @@ namespace Shopify.Types
         ///The padding of the header container.
         ///</summary>
         [Description("The padding of the header container.")]
+        [EnumType(typeof(CheckoutBrandingSpacingKeyword))]
         public string? padding { get; set; }
 
         ///<summary>
         ///The header position.
         ///</summary>
         [Description("The header position.")]
+        [EnumType(typeof(CheckoutBrandingHeaderPosition))]
         public string? position { get; set; }
     }
 
@@ -10703,6 +10757,7 @@ namespace Shopify.Types
         ///The content type for the header back to cart link in 1-page checkout. Setting this to image will render the custom image provided using the image field on the header cart_link object. If no image is provided, the default cart icon will be used.
         ///</summary>
         [Description("The content type for the header back to cart link in 1-page checkout. Setting this to image will render the custom image provided using the image field on the header cart_link object. If no image is provided, the default cart icon will be used.")]
+        [EnumType(typeof(CheckoutBrandingCartLinkContentType))]
         public string? contentType { get; set; }
 
         ///<summary>
@@ -10814,6 +10869,7 @@ namespace Shopify.Types
         ///The visibility of the logo.
         ///</summary>
         [Description("The visibility of the logo.")]
+        [EnumType(typeof(CheckoutBrandingVisibility))]
         public string? visibility { get; set; }
     }
 
@@ -10833,6 +10889,7 @@ namespace Shopify.Types
         ///The selected color scheme of the main container.
         ///</summary>
         [Description("The selected color scheme of the main container.")]
+        [EnumType(typeof(CheckoutBrandingColorSchemeSelection))]
         public string? colorScheme { get; set; }
 
         ///<summary>
@@ -10858,48 +10915,56 @@ namespace Shopify.Types
         ///The background style of the main sections.
         ///</summary>
         [Description("The background style of the main sections.")]
+        [EnumType(typeof(CheckoutBrandingBackground))]
         public string? background { get; set; }
 
         ///<summary>
         ///The border for the main sections.
         ///</summary>
         [Description("The border for the main sections.")]
+        [EnumType(typeof(CheckoutBrandingSimpleBorder))]
         public string? border { get; set; }
 
         ///<summary>
         ///The border style of the main sections.
         ///</summary>
         [Description("The border style of the main sections.")]
+        [EnumType(typeof(CheckoutBrandingBorderStyle))]
         public string? borderStyle { get; set; }
 
         ///<summary>
         ///The border width of the main sections.
         ///</summary>
         [Description("The border width of the main sections.")]
+        [EnumType(typeof(CheckoutBrandingBorderWidth))]
         public string? borderWidth { get; set; }
 
         ///<summary>
         ///The selected color scheme of the main sections.
         ///</summary>
         [Description("The selected color scheme of the main sections.")]
+        [EnumType(typeof(CheckoutBrandingColorSchemeSelection))]
         public string? colorScheme { get; set; }
 
         ///<summary>
         ///The corner radius of the main sections.
         ///</summary>
         [Description("The corner radius of the main sections.")]
+        [EnumType(typeof(CheckoutBrandingCornerRadius))]
         public string? cornerRadius { get; set; }
 
         ///<summary>
         ///The padding of the main sections.
         ///</summary>
         [Description("The padding of the main sections.")]
+        [EnumType(typeof(CheckoutBrandingSpacingKeyword))]
         public string? padding { get; set; }
 
         ///<summary>
         ///The shadow of the main sections.
         ///</summary>
         [Description("The shadow of the main sections.")]
+        [EnumType(typeof(CheckoutBrandingShadow))]
         public string? shadow { get; set; }
     }
 
@@ -10919,18 +10984,21 @@ namespace Shopify.Types
         ///The border used for merchandise thumbnails.
         ///</summary>
         [Description("The border used for merchandise thumbnails.")]
+        [EnumType(typeof(CheckoutBrandingSimpleBorder))]
         public string? border { get; set; }
 
         ///<summary>
         ///The corner radius used for merchandise thumbnails.
         ///</summary>
         [Description("The corner radius used for merchandise thumbnails.")]
+        [EnumType(typeof(CheckoutBrandingCornerRadius))]
         public string? cornerRadius { get; set; }
 
         ///<summary>
         ///The property used to customize how the product image fits within merchandise thumbnails.
         ///</summary>
         [Description("The property used to customize how the product image fits within merchandise thumbnails.")]
+        [EnumType(typeof(CheckoutBrandingObjectFit))]
         public string? fit { get; set; }
     }
 
@@ -10944,6 +11012,7 @@ namespace Shopify.Types
         ///The background used for merchandise thumbnail badges.
         ///</summary>
         [Description("The background used for merchandise thumbnail badges.")]
+        [EnumType(typeof(CheckoutBrandingMerchandiseThumbnailBadgeBackground))]
         public string? background { get; set; }
     }
 
@@ -11011,6 +11080,7 @@ namespace Shopify.Types
         ///The selected color scheme of the order summary container.
         ///</summary>
         [Description("The selected color scheme of the order summary container.")]
+        [EnumType(typeof(CheckoutBrandingColorSchemeSelection))]
         public string? colorScheme { get; set; }
 
         ///<summary>
@@ -11036,48 +11106,56 @@ namespace Shopify.Types
         ///The background style of the order summary sections.
         ///</summary>
         [Description("The background style of the order summary sections.")]
+        [EnumType(typeof(CheckoutBrandingBackground))]
         public string? background { get; set; }
 
         ///<summary>
         ///The border for the order summary sections.
         ///</summary>
         [Description("The border for the order summary sections.")]
+        [EnumType(typeof(CheckoutBrandingSimpleBorder))]
         public string? border { get; set; }
 
         ///<summary>
         ///The border style of the order summary sections.
         ///</summary>
         [Description("The border style of the order summary sections.")]
+        [EnumType(typeof(CheckoutBrandingBorderStyle))]
         public string? borderStyle { get; set; }
 
         ///<summary>
         ///The border width of the order summary sections.
         ///</summary>
         [Description("The border width of the order summary sections.")]
+        [EnumType(typeof(CheckoutBrandingBorderWidth))]
         public string? borderWidth { get; set; }
 
         ///<summary>
         ///The selected color scheme of the order summary sections.
         ///</summary>
         [Description("The selected color scheme of the order summary sections.")]
+        [EnumType(typeof(CheckoutBrandingColorSchemeSelection))]
         public string? colorScheme { get; set; }
 
         ///<summary>
         ///The corner radius of the order summary sections.
         ///</summary>
         [Description("The corner radius of the order summary sections.")]
+        [EnumType(typeof(CheckoutBrandingCornerRadius))]
         public string? cornerRadius { get; set; }
 
         ///<summary>
         ///The padding of the order summary sections.
         ///</summary>
         [Description("The padding of the order summary sections.")]
+        [EnumType(typeof(CheckoutBrandingSpacingKeyword))]
         public string? padding { get; set; }
 
         ///<summary>
         ///The shadow of the order summary sections.
         ///</summary>
         [Description("The shadow of the order summary sections.")]
+        [EnumType(typeof(CheckoutBrandingShadow))]
         public string? shadow { get; set; }
     }
 
@@ -11091,6 +11169,7 @@ namespace Shopify.Types
         ///The border used for selects.
         ///</summary>
         [Description("The border used for selects.")]
+        [EnumType(typeof(CheckoutBrandingBorder))]
         public string? border { get; set; }
 
         ///<summary>
@@ -11339,6 +11418,7 @@ namespace Shopify.Types
         ///The border used for text fields.
         ///</summary>
         [Description("The border used for text fields.")]
+        [EnumType(typeof(CheckoutBrandingBorder))]
         public string? border { get; set; }
 
         ///<summary>
@@ -11536,30 +11616,35 @@ namespace Shopify.Types
         ///The font.
         ///</summary>
         [Description("The font.")]
+        [EnumType(typeof(CheckoutBrandingTypographyFont))]
         public string? font { get; set; }
 
         ///<summary>
         ///The kerning.
         ///</summary>
         [Description("The kerning.")]
+        [EnumType(typeof(CheckoutBrandingTypographyKerning))]
         public string? kerning { get; set; }
 
         ///<summary>
         ///The letter case.
         ///</summary>
         [Description("The letter case.")]
+        [EnumType(typeof(CheckoutBrandingTypographyLetterCase))]
         public string? letterCase { get; set; }
 
         ///<summary>
         ///The font size.
         ///</summary>
         [Description("The font size.")]
+        [EnumType(typeof(CheckoutBrandingTypographySize))]
         public string? size { get; set; }
 
         ///<summary>
         ///The font weight.
         ///</summary>
         [Description("The font weight.")]
+        [EnumType(typeof(CheckoutBrandingTypographyWeight))]
         public string? weight { get; set; }
     }
 
@@ -11573,12 +11658,14 @@ namespace Shopify.Types
         ///The kerning.
         ///</summary>
         [Description("The kerning.")]
+        [EnumType(typeof(CheckoutBrandingTypographyKerning))]
         public string? kerning { get; set; }
 
         ///<summary>
         ///The letter case.
         ///</summary>
         [Description("The letter case.")]
+        [EnumType(typeof(CheckoutBrandingTypographyLetterCase))]
         public string? letterCase { get; set; }
     }
 
@@ -11636,6 +11723,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CheckoutBrandingUpsertUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -12245,6 +12333,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CollectionAddProductsV2UserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -13177,6 +13266,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CombinedListingUpdateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -13544,6 +13634,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CommentApproveUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -13657,6 +13748,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CommentDeleteUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -14009,6 +14101,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CommentNotSpamUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -14127,6 +14220,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CommentSpamUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -16163,6 +16257,7 @@ namespace Shopify.Types
         ///The application level for the condition.
         ///</summary>
         [Description("The application level for the condition.")]
+        [EnumType(typeof(MarketConditionApplicationType))]
         public string? applicationLevel { get; set; }
 
         ///<summary>
@@ -16304,6 +16399,7 @@ namespace Shopify.Types
         ///The `ISO 3166` country code for which the policy applies.
         ///</summary>
         [Description("The `ISO 3166` country code for which the policy applies.")]
+        [EnumType(typeof(PrivacyCountryCode))]
         public string? countryCode { get; set; }
 
         ///<summary>
@@ -16343,6 +16439,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ConsentPolicyErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -16411,6 +16508,7 @@ namespace Shopify.Types
         ///The `ISO 3166` country code for which the policy applies.
         ///</summary>
         [Description("The `ISO 3166` country code for which the policy applies.")]
+        [EnumType(typeof(PrivacyCountryCode))]
         public string? countryCode { get; set; }
 
         ///<summary>
@@ -19990,6 +20088,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CustomerCancelDataErasureErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -20194,6 +20293,7 @@ namespace Shopify.Types
         ///For example, US.
         ///</summary>
         [Description("The two-letter code for the country of the address.\nFor example, US.")]
+        [EnumType(typeof(CountryCode))]
         public string? countryCode { get; set; }
 
         ///<summary>
@@ -20294,6 +20394,7 @@ namespace Shopify.Types
         ///received when the marketing consent was updated.
         ///</summary>
         [Description("The marketing subscription opt-in level, as described by the M3AAWG best practices guidelines,\nreceived when the marketing consent was updated.")]
+        [EnumType(typeof(CustomerMarketingOptInLevel))]
         public string? marketingOptInLevel { get; set; }
 
         ///<summary>
@@ -20440,6 +20541,7 @@ namespace Shopify.Types
         ///that the customer gave when they consented to receive marketing material by email.
         ///</summary>
         [Description("The marketing subscription opt-in level, as described by the M3AAWG best practices guidelines,\nthat the customer gave when they consented to receive marketing material by email.")]
+        [EnumType(typeof(CustomerMarketingOptInLevel))]
         public string? marketingOptInLevel { get; set; }
 
         ///<summary>
@@ -20486,6 +20588,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CustomerEmailMarketingConsentUpdateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -21206,6 +21309,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CustomerMergeErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -21371,6 +21475,7 @@ namespace Shopify.Types
         ///For example, US.
         ///</summary>
         [Description("The two-letter code for the country of the address.\nFor example, US.")]
+        [EnumType(typeof(CountryCode))]
         public string? countryCode { get; set; }
 
         ///<summary>
@@ -21434,6 +21539,7 @@ namespace Shopify.Types
         ///The revocation reason for this payment method.
         ///</summary>
         [Description("The revocation reason for this payment method.")]
+        [EnumType(typeof(CustomerPaymentMethodRevocationReason))]
         public string? revokedReason { get; set; }
 
         ///<summary>
@@ -21502,6 +21608,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CustomerPaymentMethodCreateFromDuplicationDataUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -21651,6 +21758,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CustomerPaymentMethodGetDuplicationDataUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -21745,6 +21853,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CustomerPaymentMethodGetUpdateUrlUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -21867,6 +21976,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CustomerPaymentMethodRemoteUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -22113,6 +22223,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CustomerPaymentMethodUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -22202,6 +22313,7 @@ namespace Shopify.Types
         ///The source from which the SMS marketing information for the customer was collected.
         ///</summary>
         [Description("The source from which the SMS marketing information for the customer was collected.")]
+        [EnumType(typeof(CustomerConsentCollectedFrom))]
         public string? marketingCollectedFrom { get; set; }
 
         ///<summary>
@@ -22209,6 +22321,7 @@ namespace Shopify.Types
         ///received when the marketing consent was updated.
         ///</summary>
         [Description("The marketing subscription opt-in level, as described by the M3AAWG best practices guidelines,\nreceived when the marketing consent was updated.")]
+        [EnumType(typeof(CustomerMarketingOptInLevel))]
         public string? marketingOptInLevel { get; set; }
 
         ///<summary>
@@ -22416,6 +22529,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CustomerRequestDataErasureErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -22746,6 +22860,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CustomerSegmentMembersQueryUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -22810,6 +22925,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CustomerSendAccountInviteEmailUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -22874,6 +22990,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CustomerSetUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -23053,6 +23170,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(CustomerSmsMarketingConsentErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -23117,6 +23235,7 @@ namespace Shopify.Types
         ///The source from which the SMS marketing information for the customer was collected.
         ///</summary>
         [Description("The source from which the SMS marketing information for the customer was collected.")]
+        [EnumType(typeof(CustomerConsentCollectedFrom))]
         public string? consentCollectedFrom { get; set; }
 
         ///<summary>
@@ -23304,12 +23423,14 @@ namespace Shopify.Types
         ///The predicted spend tier of a customer with a shop.
         ///</summary>
         [Description("The predicted spend tier of a customer with a shop.")]
+        [EnumType(typeof(CustomerPredictedSpendTier))]
         public string? predictedSpendTier { get; set; }
 
         ///<summary>
         ///The RFM (Recency, Frequency, Monetary) group of the customer.
         ///</summary>
         [Description("The RFM (Recency, Frequency, Monetary) group of the customer.")]
+        [EnumType(typeof(CustomerRfmGroup))]
         public string? rfmGroup { get; set; }
     }
 
@@ -23432,6 +23553,7 @@ namespace Shopify.Types
         ///Type of marketing tactic.
         ///</summary>
         [Description("Type of marketing tactic.")]
+        [EnumType(typeof(MarketingTactic))]
         public string? sourceType { get; set; }
 
         ///<summary>
@@ -23560,6 +23682,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(DataSaleOptOutUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -23716,6 +23839,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(DelegateAccessTokenCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -23823,6 +23947,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(DelegateAccessTokenDestroyUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -24498,6 +24623,7 @@ namespace Shopify.Types
         ///The country code in the ISO 3166-1 alpha-2 format.
         ///</summary>
         [Description("The country code in the ISO 3166-1 alpha-2 format.")]
+        [EnumType(typeof(CountryCode))]
         public string? countryCode { get; set; }
 
         ///<summary>
@@ -24721,6 +24847,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(DeliveryCustomizationErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -25079,6 +25206,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(DeliveryLocationLocalPickupSettingsErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -26280,6 +26408,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(DeliveryPromiseProviderUpsertUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -30855,6 +30984,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(DiscountErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -31264,6 +31394,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(DisputeEvidenceUpdateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -33036,6 +33167,7 @@ namespace Shopify.Types
         ///The ISO 3166-1 alpha-2 country code of the country of origin used in calculating the duty.
         ///</summary>
         [Description("The ISO 3166-1 alpha-2 country code of the country of origin used in calculating the duty.")]
+        [EnumType(typeof(CountryCode))]
         public string? countryCodeOfOrigin { get; set; }
 
         ///<summary>
@@ -33186,6 +33318,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ErrorsServerPixelUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -33248,6 +33381,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ErrorsWebPixelUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -35118,6 +35252,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(FilesErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -35185,6 +35320,7 @@ namespace Shopify.Types
         ///The legal entity business type.
         ///</summary>
         [Description("The legal entity business type.")]
+        [EnumType(typeof(ShopifyPaymentsBusinessType))]
         public string? businessType { get; set; }
 
         ///<summary>
@@ -35369,6 +35505,7 @@ namespace Shopify.Types
         ///Human readable display status for this fulfillment.
         ///</summary>
         [Description("Human readable display status for this fulfillment.")]
+        [EnumType(typeof(FulfillmentDisplayStatus))]
         public string? displayStatus { get; set; }
 
         ///<summary>
@@ -35609,6 +35746,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(FulfillmentConstraintRuleCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -35709,6 +35847,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(FulfillmentConstraintRuleDeleteUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -35779,6 +35918,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(FulfillmentConstraintRuleUpdateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -37169,6 +37309,7 @@ namespace Shopify.Types
         ///The two-letter country code of the destination.
         ///</summary>
         [Description("The two-letter country code of the destination.")]
+        [EnumType(typeof(CountryCode))]
         public string? countryCode { get; set; }
 
         ///<summary>
@@ -37285,6 +37426,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(FulfillmentOrderHoldUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -37615,6 +37757,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(FulfillmentOrderLineItemsPreparedForPickupUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -37940,6 +38083,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(FulfillmentOrderMergeUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -38210,6 +38354,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(FulfillmentOrderReleaseHoldUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -38346,6 +38491,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(FulfillmentOrderRescheduleUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -38461,6 +38607,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(FulfillmentOrderSplitUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -38673,6 +38820,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(FulfillmentOrdersSetFulfillmentDeadlineUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -39727,6 +39875,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(GiftCardDeactivateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -40069,6 +40218,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(GiftCardSendNotificationToCustomerUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -40145,6 +40295,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(GiftCardSendNotificationToRecipientUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -40366,6 +40517,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(GiftCardTransactionUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -40466,6 +40618,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(GiftCardErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -41090,6 +41243,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(InventoryAdjustQuantitiesUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -41300,6 +41454,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(InventoryBulkToggleActivationUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -41480,6 +41635,7 @@ namespace Shopify.Types
         ///The ISO 3166-1 alpha-2 country code of where the item originated from.
         ///</summary>
         [Description("The ISO 3166-1 alpha-2 country code of where the item originated from.")]
+        [EnumType(typeof(CountryCode))]
         public string? countryCodeOfOrigin { get; set; }
 
         ///<summary>
@@ -41847,6 +42003,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(InventoryMoveQuantitiesUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -42201,6 +42358,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(InventorySetOnHandQuantitiesUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -42313,6 +42471,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(InventorySetQuantitiesUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -42449,6 +42608,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(InventorySetScheduledChangesUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -45193,6 +45353,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(LocationActivateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -45281,6 +45442,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(LocationAddUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -45543,6 +45705,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(LocationDeactivateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -45691,6 +45854,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(LocationDeleteUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -45806,6 +45970,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(LocationEditUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -46053,6 +46218,7 @@ namespace Shopify.Types
         ///The country code of the suggested address.
         ///</summary>
         [Description("The country code of the suggested address.")]
+        [EnumType(typeof(CountryCode))]
         public string? countryCode { get; set; }
 
         ///<summary>
@@ -46091,6 +46257,7 @@ namespace Shopify.Types
         ///The application level for the condition.
         ///</summary>
         [Description("The application level for the condition.")]
+        [EnumType(typeof(MarketConditionApplicationType))]
         public string? applicationLevel { get; set; }
 
         ///<summary>
@@ -46161,6 +46328,7 @@ namespace Shopify.Types
         ///For example, US.
         ///</summary>
         [Description("The two-letter code for the country of the address.\n\nFor example, US.")]
+        [EnumType(typeof(CountryCode))]
         public string? countryCodeV2 { get; set; }
 
         ///<summary>
@@ -46244,6 +46412,7 @@ namespace Shopify.Types
         ///See [&quot;Validating addresses in your Shopify admin&quot;](https://help.shopify.com/manual/fulfillment/managing-orders/validating-order-address) for more details.
         ///</summary>
         [Description("The validation status that is leveraged by the address validation feature in the Shopify Admin.\nSee [\"Validating addresses in your Shopify admin\"](https://help.shopify.com/manual/fulfillment/managing-orders/validating-order-address) for more details.")]
+        [EnumType(typeof(MailingAddressValidationResult))]
         public string? validationResultSummary { get; set; }
 
         ///<summary>
@@ -46856,6 +47025,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(MarketCurrencySettingsUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -47459,6 +47629,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(MarketUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -48214,6 +48385,7 @@ namespace Shopify.Types
         ///The hierarchy level of the marketing activity.
         ///</summary>
         [Description("The hierarchy level of the marketing activity.")]
+        [EnumType(typeof(MarketingActivityHierarchyLevel))]
         public string? hierarchyLevel { get; set; }
 
         ///<summary>
@@ -48289,12 +48461,14 @@ namespace Shopify.Types
         ///</summary>
         [Description("The severity of the marketing activity's status.")]
         [Obsolete("Use `statusBadgeTypeV2` instead.")]
+        [EnumType(typeof(MarketingActivityStatusBadgeType))]
         public string? statusBadgeType { get; set; }
 
         ///<summary>
         ///The severity of the marketing activity&apos;s status.
         ///</summary>
         [Description("The severity of the marketing activity's status.")]
+        [EnumType(typeof(BadgeType))]
         public string? statusBadgeTypeV2 { get; set; }
 
         ///<summary>
@@ -48323,6 +48497,7 @@ namespace Shopify.Types
         ///The status to which the marketing activity is currently transitioning.
         ///</summary>
         [Description("The status to which the marketing activity is currently transitioning.")]
+        [EnumType(typeof(MarketingActivityStatus))]
         public string? targetStatus { get; set; }
 
         ///<summary>
@@ -48844,6 +49019,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(MarketingActivityUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -49333,6 +49509,7 @@ namespace Shopify.Types
         ///</summary>
         [Description("The medium through which the marketing activity and event reached consumers. This is used for reporting aggregation.")]
         [Obsolete("Use `marketingChannelType` instead.")]
+        [EnumType(typeof(MarketingChannel))]
         public string? channel { get; set; }
 
         ///<summary>
@@ -49377,6 +49554,7 @@ namespace Shopify.Types
         ///The medium through which the marketing activity and event reached consumers. This is used for reporting aggregation.
         ///</summary>
         [Description("The medium through which the marketing activity and event reached consumers. This is used for reporting aggregation.")]
+        [EnumType(typeof(MarketingChannel))]
         public string? marketingChannelType { get; set; }
 
         ///<summary>
@@ -50458,6 +50636,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(MediaUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -50776,6 +50955,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(MenuCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -50846,6 +51026,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(MenuDeleteUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -51111,6 +51292,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(MenuUpdateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -51338,6 +51520,7 @@ namespace Shopify.Types
         ///The access permitted on the Admin API.
         ///</summary>
         [Description("The access permitted on the Admin API.")]
+        [EnumType(typeof(MetafieldAdminAccess))]
         public string? admin { get; set; }
 
         ///<summary>
@@ -51360,6 +51543,7 @@ namespace Shopify.Types
         ///The access permitted on the Storefront API.
         ///</summary>
         [Description("The access permitted on the Storefront API.")]
+        [EnumType(typeof(MetafieldStorefrontAccess))]
         public string? storefront { get; set; }
     }
 
@@ -51974,6 +52158,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(MetafieldDefinitionCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -52188,6 +52373,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(MetafieldDefinitionDeleteUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -52349,6 +52535,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(MetafieldDefinitionPinUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -52578,6 +52765,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(MetafieldDefinitionUnpinUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -52672,6 +52860,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(MetafieldDefinitionUpdateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -53550,6 +53739,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(MetafieldsSetUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -54639,6 +54829,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(MetaobjectUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -55054,6 +55245,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(MobilePlatformApplicationUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -60390,6 +60582,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(OnlineStoreThemeFilesUserErrorsCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -60566,6 +60759,7 @@ namespace Shopify.Types
         ///The reason provided for an order cancellation. For example, a merchant might cancel an order if there&apos;s insufficient inventory. Returns `null` if the order hasn&apos;t been canceled.
         ///</summary>
         [Description("The reason provided for an order cancellation. For example, a merchant might cancel an order if there's insufficient inventory. Returns `null` if the order hasn't been canceled.")]
+        [EnumType(typeof(OrderCancelReason))]
         public string? cancelReason { get; set; }
 
         ///<summary>
@@ -60820,6 +61014,7 @@ namespace Shopify.Types
         ///An order&apos;s financial status for display in the Shopify admin.
         ///</summary>
         [Description("An order's financial status for display in the Shopify admin.")]
+        [EnumType(typeof(OrderDisplayFinancialStatus))]
         public string? displayFinancialStatus { get; set; }
 
         ///<summary>
@@ -61668,6 +61863,7 @@ namespace Shopify.Types
         ///An optional reason that explains a discrepancy between calculated and actual refund amounts.
         ///</summary>
         [Description("An optional reason that explains a discrepancy between calculated and actual refund amounts.")]
+        [EnumType(typeof(OrderAdjustmentDiscrepancyReason))]
         public string? reason { get; set; }
 
         ///<summary>
@@ -61979,6 +62175,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(OrderCancelUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -62268,6 +62465,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(OrderCreateMandatePaymentUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -62312,6 +62510,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(OrderCreateManualPaymentOrderCreateManualPaymentErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -62420,6 +62619,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(OrderCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -62520,6 +62720,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(OrderDeleteUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -62838,6 +63039,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(OrderEditAddShippingLineUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -63017,6 +63219,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(OrderEditRemoveDiscountUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -63108,6 +63311,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(OrderEditRemoveShippingLineUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -63198,6 +63402,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(OrderEditUpdateDiscountUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -63262,6 +63467,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(OrderEditUpdateShippingLineUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -63326,6 +63532,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(OrderInvoiceSendUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -63618,6 +63825,7 @@ namespace Shopify.Types
         ///</summary>
         [Description("The likelihood that an order is fraudulent, based on this order risk. The level can be set by Shopify risk analysis or by an app.")]
         [Obsolete("This field is deprecated in favor of OrderRiskAssessment.riskLevel which allows for more granular risk levels, including PENDING and NONE.")]
+        [EnumType(typeof(OrderRiskLevel))]
         public string? level { get; set; }
 
         ///<summary>
@@ -63688,6 +63896,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(OrderRiskAssessmentCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -64255,6 +64464,7 @@ namespace Shopify.Types
         ///A standardized error code, independent of the payment provider.
         ///</summary>
         [Description("A standardized error code, independent of the payment provider.")]
+        [EnumType(typeof(OrderTransactionErrorCode))]
         public string? errorCode { get; set; }
 
         ///<summary>
@@ -64361,6 +64571,7 @@ namespace Shopify.Types
         ///</summary>
         [Description("The payment method used for the transaction. This value is `null` if the payment method is unknown.")]
         [Obsolete("Use `paymentIcon` instead.")]
+        [EnumType(typeof(PaymentMethods))]
         public string? paymentMethod { get; set; }
 
         ///<summary>
@@ -64380,6 +64591,7 @@ namespace Shopify.Types
         ///The settlement currency.
         ///</summary>
         [Description("The settlement currency.")]
+        [EnumType(typeof(CurrencyCode))]
         public string? settlementCurrency { get; set; }
 
         ///<summary>
@@ -64971,6 +65183,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(PageCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -65077,6 +65290,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(PageDeleteUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -65198,6 +65412,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(PageUpdateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -65471,6 +65686,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(PaymentCustomizationErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -65752,6 +65968,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(PaymentReminderSendUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -65993,6 +66210,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(PaymentTermsCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -66057,6 +66275,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(PaymentTermsDeleteUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -66211,6 +66430,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(PaymentTermsUpdateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -66656,6 +66876,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(PriceListFixedPricesByProductBulkUpdateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -66961,6 +67182,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(PriceListPriceUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -67073,6 +67295,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(PriceListUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -69686,6 +69909,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(PrivacyFeaturesDisableUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -69866,6 +70090,7 @@ namespace Shopify.Types
         ///If `null`, then the product isn&apos;t part of any combined listing.
         ///</summary>
         [Description("The [role of the product](https://shopify.dev/docs/apps/build/product-merchandising/combined-listings/build-for-combined-listings)\nin a combined listing.\n\nIf `null`, then the product isn't part of any combined listing.")]
+        [EnumType(typeof(CombinedListingsRole))]
         public string? combinedListingRole { get; set; }
 
         ///<summary>
@@ -70679,6 +70904,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ProductBundleMutationUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -70840,6 +71066,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ProductChangeStatusUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -71358,6 +71585,7 @@ namespace Shopify.Types
         ///The country of the product feed.
         ///</summary>
         [Description("The country of the product feed.")]
+        [EnumType(typeof(CountryCode))]
         public string? country { get; set; }
 
         ///<summary>
@@ -71371,6 +71599,7 @@ namespace Shopify.Types
         ///The language of the product feed.
         ///</summary>
         [Description("The language of the product feed.")]
+        [EnumType(typeof(LanguageCode))]
         public string? language { get; set; }
 
         ///<summary>
@@ -71439,6 +71668,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ProductFeedCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -71509,6 +71739,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ProductFeedDeleteUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -71618,6 +71849,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ProductFullSyncUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -71948,6 +72180,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ProductOptionUpdateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -72284,6 +72517,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ProductOptionsCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -72504,6 +72738,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ProductOptionsDeleteUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -72616,6 +72851,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ProductOptionsReorderUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -73113,6 +73349,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ProductSetUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -74253,6 +74490,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ProductVariantRelationshipBulkUpdateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -74559,6 +74797,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ProductVariantsBulkCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -74725,6 +74964,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ProductVariantsBulkDeleteUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -74813,6 +75053,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ProductVariantsBulkReorderUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -74907,6 +75148,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ProductVariantsBulkUpdateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -75208,6 +75450,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(PubSubWebhookSubscriptionCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -75278,6 +75521,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(PubSubWebhookSubscriptionUpdateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -75632,6 +75876,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(PublicationUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -76171,6 +76416,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(QuantityPricingByVariantUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -76552,6 +76798,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(QuantityRuleUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -79273,6 +79520,7 @@ namespace Shopify.Types
         ///The application level for the condition.
         ///</summary>
         [Description("The application level for the condition.")]
+        [EnumType(typeof(MarketConditionApplicationType))]
         public string? applicationLevel { get; set; }
 
         ///<summary>
@@ -79316,6 +79564,7 @@ namespace Shopify.Types
         ///An icon that&apos;s optionally displayed with the alert.
         ///</summary>
         [Description("An icon that's optionally displayed with the alert.")]
+        [EnumType(typeof(ResourceAlertIcon))]
         public string? icon { get; set; }
 
         ///<summary>
@@ -80721,6 +80970,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ReturnErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -83587,6 +83837,7 @@ namespace Shopify.Types
         ///The category used to classify the selling plan for reporting purposes.
         ///</summary>
         [Description("The category used to classify the selling plan for reporting purposes.")]
+        [EnumType(typeof(SellingPlanCategory))]
         public string? category { get; set; }
 
         ///<summary>
@@ -84555,6 +84806,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(SellingPlanGroupUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -85385,6 +85637,7 @@ namespace Shopify.Types
         ///The current state of this server pixel.
         ///</summary>
         [Description("The current state of this server pixel.")]
+        [EnumType(typeof(ServerPixelStatus))]
         public string? status { get; set; }
 
         ///<summary>
@@ -86579,6 +86832,7 @@ namespace Shopify.Types
         ///For example, US.
         ///</summary>
         [Description("The two-letter code for the country of the address.\n\nFor example, US.")]
+        [EnumType(typeof(CountryCode))]
         public string? countryCodeV2 { get; set; }
 
         ///<summary>
@@ -87289,6 +87543,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ShopPolicyErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -87335,6 +87590,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ShopResourceFeedbackCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -87887,6 +88143,7 @@ namespace Shopify.Types
         ///The source type of the balance transaction.
         ///</summary>
         [Description("The source type of the balance transaction.")]
+        [EnumType(typeof(ShopifyPaymentsSourceType))]
         public string? sourceType { get; set; }
 
         ///<summary>
@@ -87927,6 +88184,7 @@ namespace Shopify.Types
         ///The status of the payout associated with the balance transaction.
         ///</summary>
         [Description("The status of the payout associated with the balance transaction.")]
+        [EnumType(typeof(ShopifyPaymentsBalanceTransactionPayoutStatus))]
         public string? status { get; set; }
     }
 
@@ -88733,6 +88991,7 @@ namespace Shopify.Types
         ///The type of the file for the dispute evidence.
         ///</summary>
         [Description("The type of the file for the dispute evidence.")]
+        [EnumType(typeof(ShopifyPaymentsDisputeEvidenceFileType))]
         public string? disputeEvidenceType { get; set; }
 
         ///<summary>
@@ -89129,6 +89388,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ShopifyPaymentsPayoutAlternateCurrencyCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -89296,6 +89556,7 @@ namespace Shopify.Types
         ///If the payment interval is set to weekly, this value will be used.
         ///</summary>
         [Description("The day of the week funds will be paid out.\n\nThe value can be any weekday from Monday to Friday.\nIf the payment interval is set to weekly, this value will be used.")]
+        [EnumType(typeof(DayOfTheWeek))]
         public string? weeklyAnchor { get; set; }
     }
 
@@ -90332,6 +90593,7 @@ namespace Shopify.Types
         ///The type of account the staff member has.
         ///</summary>
         [Description("The type of account the staff member has.")]
+        [EnumType(typeof(AccountType))]
         public string? accountType { get; set; }
 
         ///<summary>
@@ -91107,6 +91369,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(StandardMetafieldDefinitionEnableUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -91638,6 +91901,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(StoreCreditAccountCreditUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -91859,6 +92123,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(StoreCreditAccountDebitUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -92163,6 +92428,7 @@ namespace Shopify.Types
         ///A standardized error code, independent of the payment provider.
         ///</summary>
         [Description("A standardized error code, independent of the payment provider.")]
+        [EnumType(typeof(OrderTransactionErrorCode))]
         public string? errorCode { get; set; }
 
         ///<summary>
@@ -92269,6 +92535,7 @@ namespace Shopify.Types
         ///</summary>
         [Description("The payment method used for the transaction. This value is `null` if the payment method is unknown.")]
         [Obsolete("Use `paymentIcon` instead.")]
+        [EnumType(typeof(PaymentMethods))]
         public string? paymentMethod { get; set; }
 
         ///<summary>
@@ -92288,6 +92555,7 @@ namespace Shopify.Types
         ///The settlement currency.
         ///</summary>
         [Description("The settlement currency.")]
+        [EnumType(typeof(CurrencyCode))]
         public string? settlementCurrency { get; set; }
 
         ///<summary>
@@ -92624,6 +92892,7 @@ namespace Shopify.Types
         ///The reason that the discount on the subscription draft is rejected.
         ///</summary>
         [Description("The reason that the discount on the subscription draft is rejected.")]
+        [EnumType(typeof(SubscriptionDiscountRejectionReason))]
         public string? rejectionReason { get; set; }
     }
 
@@ -92653,6 +92922,7 @@ namespace Shopify.Types
         ///</summary>
         [Description("A code corresponding to a payment error during processing.")]
         [Obsolete("Use `processingError.code` instead to get the errorCode")]
+        [EnumType(typeof(SubscriptionBillingAttemptErrorCode))]
         public string? errorCode { get; set; }
 
         ///<summary>
@@ -93317,6 +93587,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(SubscriptionBillingCycleBulkUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -93828,6 +94099,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(SubscriptionBillingCycleSkipUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -93892,6 +94164,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(SubscriptionBillingCycleUnskipUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -93936,6 +94209,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(SubscriptionBillingCycleErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -94137,12 +94411,14 @@ namespace Shopify.Types
         ///The last billing error type of the contract.
         ///</summary>
         [Description("The last billing error type of the contract.")]
+        [EnumType(typeof(SubscriptionContractLastBillingErrorType))]
         public string? lastBillingAttemptErrorType { get; set; }
 
         ///<summary>
         ///The current status of the last payment.
         ///</summary>
         [Description("The current status of the last payment.")]
+        [EnumType(typeof(SubscriptionContractLastPaymentStatus))]
         public string? lastPaymentStatus { get; set; }
 
         ///<summary>
@@ -94674,6 +94950,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(SubscriptionContractStatusUpdateErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -94762,6 +95039,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(SubscriptionContractErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -95186,6 +95464,7 @@ namespace Shopify.Types
         ///The reason that the discount on the subscription draft is rejected.
         ///</summary>
         [Description("The reason that the discount on the subscription draft is rejected.")]
+        [EnumType(typeof(SubscriptionDiscountRejectionReason))]
         public string? rejectionReason { get; set; }
     }
 
@@ -95596,6 +95875,7 @@ namespace Shopify.Types
         ///The current status of the subscription contract.
         ///</summary>
         [Description("The current status of the subscription contract.")]
+        [EnumType(typeof(SubscriptionContractSubscriptionStatus))]
         public string? status { get; set; }
     }
 
@@ -96159,6 +96439,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(SubscriptionDraftErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -96450,6 +96731,7 @@ namespace Shopify.Types
         ///For example, US.
         ///</summary>
         [Description("The two-letter code for the country of the address.\n\nFor example, US.")]
+        [EnumType(typeof(CountryCode))]
         public string? countryCode { get; set; }
 
         ///<summary>
@@ -96527,6 +96809,7 @@ namespace Shopify.Types
         ///The reason that the discount on the subscription draft is rejected.
         ///</summary>
         [Description("The reason that the discount on the subscription draft is rejected.")]
+        [EnumType(typeof(SubscriptionDiscountRejectionReason))]
         public string? rejectionReason { get; set; }
 
         ///<summary>
@@ -97155,6 +97438,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(TaxAppConfigureUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -98275,6 +98559,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ThemeCreateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -98364,6 +98649,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ThemeDeleteUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -98494,6 +98780,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ThemePublishUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -98626,6 +98913,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ThemeUpdateUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -98863,6 +99151,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(TransactionVoidUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -99392,6 +99681,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(TranslationErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -99516,12 +99806,14 @@ namespace Shopify.Types
         ///The type of unit of measurement for the unit price measurement.
         ///</summary>
         [Description("The type of unit of measurement for the unit price measurement.")]
+        [EnumType(typeof(UnitPriceMeasurementMeasuredType))]
         public string? measuredType { get; set; }
 
         ///<summary>
         ///The quantity unit for the unit price measurement.
         ///</summary>
         [Description("The quantity unit for the unit price measurement.")]
+        [EnumType(typeof(UnitPriceMeasurementMeasuredUnit))]
         public string? quantityUnit { get; set; }
 
         ///<summary>
@@ -99535,6 +99827,7 @@ namespace Shopify.Types
         ///The reference unit for the unit price measurement.
         ///</summary>
         [Description("The reference unit for the unit price measurement.")]
+        [EnumType(typeof(UnitPriceMeasurementMeasuredUnit))]
         public string? referenceUnit { get; set; }
 
         ///<summary>
@@ -99892,6 +100185,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(UrlRedirectBulkDeleteByIdsUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -99958,6 +100252,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(UrlRedirectBulkDeleteBySavedSearchUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -100028,6 +100323,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(UrlRedirectBulkDeleteBySearchUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -100357,6 +100653,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(UrlRedirectImportErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -100434,6 +100731,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(UrlRedirectErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
@@ -100679,6 +100977,7 @@ namespace Shopify.Types
         ///The error code.
         ///</summary>
         [Description("The error code.")]
+        [EnumType(typeof(ValidationUserErrorCode))]
         public string? code { get; set; }
 
         ///<summary>
