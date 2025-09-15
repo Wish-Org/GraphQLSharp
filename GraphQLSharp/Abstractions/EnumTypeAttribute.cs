@@ -2,7 +2,7 @@ namespace GraphQLSharp;
 
 public class EnumTypeAttribute : Attribute
 {
-    protected Type EnumType { get; set; }
+    public Type EnumType { get; }
 
     public EnumTypeAttribute(Type enumType)
     {
