@@ -404,6 +404,8 @@ public class GraphQLTypeGenerator
             str.AppendLine($"[Obsolete({SymbolDisplay.FormatLiteral(f.deprecationReason.TrimEnd(), true)})]");
         if (f.type.kind == GraphQLTypeKind.NON_NULL)
             str.AppendLine($"[NonNull]");
+        if (f.type.kind == GraphQLTypeKind.ENUM && options.EnumMembersAsString)
+            str.AppendLine($"[EnumType(typeof({f.type.name}))]");
 
         string typeName = GenerateTypeName(f.type, options, f.name, containingType);
         str.AppendLine($"public {typeName}? {EscapeCSharpKeyword(f.name)} {{ {(containingType.kind == GraphQLTypeKind.INTERFACE ? "get;" : "get;set;")} }}")
