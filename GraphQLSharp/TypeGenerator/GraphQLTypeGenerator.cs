@@ -197,26 +197,6 @@ public class GraphQLTypeGenerator
             str.AppendLine();
         });
 
-        if (options.GenerateMemberNames)
-        {
-            str.AppendLine("namespace _MemberNames")
-               .AppendLine("{");
-
-            foreach (var dotNetType in context.DotNetTypes)
-            {
-                str.AppendLine($"public static class {dotNetType.TypeName}")
-                .AppendLine("{");
-                foreach (var memberName in dotNetType.GetMembers())
-                {
-                    string memberFullName = $"{options.NamespaceTypes}.{dotNetType.TypeName}.{memberName}";
-                    str.AppendLine($"public const string {EscapeCSharpKeyword(memberName)} = {SymbolDisplay.FormatLiteral(memberFullName, true)};");
-                }
-                str.AppendLine("}");
-            }
-
-            str.AppendLine("}");
-        }
-
         str.AppendLine("}");
 
         string code = str.ToString();
@@ -404,8 +384,11 @@ public class GraphQLTypeGenerator
             str.AppendLine($"[Obsolete({SymbolDisplay.FormatLiteral(f.deprecationReason.TrimEnd(), true)})]");
         if (f.type.kind == GraphQLTypeKind.NON_NULL)
             str.AppendLine($"[NonNull]");
-        if (f.type.kind == GraphQLTypeKind.ENUM && options.EnumMembersAsString)
-            str.AppendLine($"[EnumType(typeof({f.type.name}))]");
+
+        var kind = f.type.kind == GraphQLTypeKind.NON_NULL ? f.type.ofType.kind : f.type.kind;
+        var type = f.type.kind == GraphQLTypeKind.NON_NULL ? f.type.ofType : f.type;
+        if (kind == GraphQLTypeKind.ENUM && options.EnumMembersAsString)
+            str.AppendLine($"[EnumType(typeof({type.name}))]");
 
         string typeName = GenerateTypeName(f.type, options, f.name, containingType);
         str.AppendLine($"public {typeName}? {EscapeCSharpKeyword(f.name)} {{ {(containingType.kind == GraphQLTypeKind.INTERFACE ? "get;" : "get;set;")} }}")
