@@ -110,28 +110,7 @@ public class GraphQLTypeGenerator
 
     private class Context
     {
-        public class DotNetTypeWithMembers
-        {
-            public string TypeName { get; init; }
-            private HashSet<string> MemberNames { get; } = new();
-            public void AddMember(string memberName)
-            {
-                MemberNames.Add(memberName);
-            }
-
-            public IEnumerable<string> GetMembers() => MemberNames;
-        }
-
         public readonly StringBuilder StrBuilder = new();
-        private readonly List<DotNetTypeWithMembers> _dotNetTypes = new();
-        public IEnumerable<DotNetTypeWithMembers> DotNetTypes => _dotNetTypes;
-
-        public DotNetTypeWithMembers AddDotNetType(string typeName)
-        {
-            var dotNetType = new DotNetTypeWithMembers { TypeName = typeName };
-            _dotNetTypes.Add(dotNetType);
-            return dotNetType;
-        }
     }
 
     public string GenerateTypes(GraphQLTypeGeneratorOptions options, JsonDocument introspectionQueryResponse)
@@ -259,9 +238,8 @@ public class GraphQLTypeGenerator
                                                     f => (GenerateTypeName(f.type, options), f.name));
         }
 
-        var dotNetType = ctx.AddDotNetType(interfaceName);
         commonFields
-            .ForEach(f => GenerateField(ctx, dotNetType, type, f, options));
+            .ForEach(f => GenerateField(ctx, type, f, options));
 
         str.AppendLine("}");
     }
@@ -298,11 +276,10 @@ public class GraphQLTypeGenerator
             }
         }
 
-        var dotNetType = ctx.AddDotNetType(interfaceName);
         type.fields
             //interface shouldn't redeclare fields already declare in parent interfaces
             .Where(f => (type.interfaces ?? []).SelectMany(i => i.fields).Where(f2 => f2.name == f.name).IsEmpty())
-            .ForEach(f => GenerateField(ctx, dotNetType, type, f, options));
+            .ForEach(f => GenerateField(ctx, type, f, options));
 
         str.AppendLine("}");
     }
@@ -369,14 +346,13 @@ public class GraphQLTypeGenerator
         str.AppendLine();
         str.AppendLine("{");
 
-        var dotNetType = ctx.AddDotNetType(className);
         type.fields
-            .ForEach(f => GenerateField(ctx, dotNetType, type, f, options));
+            .ForEach(f => GenerateField(ctx, type, f, options));
 
         str.AppendLine("}");
     }
 
-    private void GenerateField(Context ctx, Context.DotNetTypeWithMembers containingDotNetType, GraphQLType containingType, GraphQLField f, GraphQLTypeGeneratorOptions options)
+    private void GenerateField(Context ctx, GraphQLType containingType, GraphQLField f, GraphQLTypeGeneratorOptions options)
     {
         var str = ctx.StrBuilder
                         .AppendLine(GenerateDescriptionCommentAndAttribute(f.description));
@@ -393,7 +369,6 @@ public class GraphQLTypeGenerator
         string typeName = GenerateTypeName(f.type, options, f.name, containingType);
         str.AppendLine($"public {typeName}? {EscapeCSharpKeyword(f.name)} {{ {(containingType.kind == GraphQLTypeKind.INTERFACE ? "get;" : "get;set;")} }}")
            .AppendLine();
-        containingDotNetType.AddMember(f.name);
     }
 
     private bool TryGetTypeNameOverride(GraphQLType containingType, string fieldName, GraphQLTypeGeneratorOptions options, out string typeName)
