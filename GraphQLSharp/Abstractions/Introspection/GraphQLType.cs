@@ -19,6 +19,9 @@ public class GraphQLType
     //non-null for OBJECT and INTERFACE
     public GraphQLField[] fields { get; set; }
 
+    //non-null for INPUT_FIELD
+    public GraphQLField[] inputFields { get; set; }
+
     //non-null for OBJECT and INTERFACE
     public GraphQLType[] interfaces { get; set; }
 

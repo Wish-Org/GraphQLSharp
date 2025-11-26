@@ -35,7 +35,7 @@ public class GraphQLTypeGenerator
                 }
               }
             }
-
+            
             fragment fragField on __Field {
               name
               description
@@ -45,16 +45,26 @@ public class GraphQLTypeGenerator
                 ...fragType
               }
             }
-
+            
+            fragment inputFragField on __InputValue {
+              name
+              description
+              isDeprecated
+              deprecationReason
+              type {
+                ...fragType
+              }
+            }
+            
             {
               __schema {
                 queryType
                 {
-                    name
+                  name
                 }
                 mutationType
                 {
-                    name
+                  name
                 }
                 types {
                   kind
@@ -62,6 +72,9 @@ public class GraphQLTypeGenerator
                   description
                   fields(includeDeprecated: true) {
                     ...fragField
+                  }
+                  inputFields(includeDeprecated: true) {
+                    ...inputFragField
                   }
                   interfaces {
                     ...fragType
@@ -191,7 +204,9 @@ public class GraphQLTypeGenerator
 
     private void GenerateType(Context ctx, GraphQLType type, Dictionary<string, GraphQLType> typeNameToType, GraphQLTypeGeneratorOptions options, ILookup<string, GraphQLType> objectTypeNameToUnionTypes, (string queryType, string mutationType) rootTypes)
     {
-        if (type.kind is GraphQLTypeKind.SCALAR or GraphQLTypeKind.INPUT_OBJECT)
+        if (type.kind is GraphQLTypeKind.INPUT_OBJECT && options.GenerateInputObjects)
+            GenerateClass(ctx, type, typeNameToType, options, objectTypeNameToUnionTypes, rootTypes);
+        else if (type.kind is GraphQLTypeKind.SCALAR or GraphQLTypeKind.INPUT_OBJECT)
             return;
         else if (type.kind is GraphQLTypeKind.ENUM)
             GenerateEnum(ctx, type);
@@ -302,7 +317,7 @@ public class GraphQLTypeGenerator
         if (type.name == rootTypes.mutationType)
             str.Append($", IMutationRoot");
 
-        var interfaces = type.interfaces.Concat(objectTypeNameToUnionTypes[type.name]);
+        var interfaces = type.interfaces?.Concat(objectTypeNameToUnionTypes[type.name]) ?? [];
 
         if (interfaces.Any())
             str.Append($", {string.Join(',', interfaces.Select(i => this.GenerateTypeName(i, options)))}");
@@ -346,8 +361,8 @@ public class GraphQLTypeGenerator
         str.AppendLine();
         str.AppendLine("{");
 
-        type.fields
-            .ForEach(f => GenerateField(ctx, type, f, options));
+        var fields = type.kind == GraphQLTypeKind.INPUT_OBJECT ? type.inputFields : type.fields;
+        fields?.ForEach(f => GenerateField(ctx, type, f, options));
 
         str.AppendLine("}");
     }

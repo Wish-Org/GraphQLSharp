@@ -32,6 +32,7 @@ public class GraphQLSharp_Tests
                     { "StorefrontID", "string" },
                     { "Color", "string" },
                     { "BigInt", "long" },
+                    { "Scalar", "object" },
                 },
             GraphQLTypeToTypeNameOverride = new Dictionary<(string, string), string>
                 {
@@ -46,6 +47,49 @@ public class GraphQLSharp_Tests
         var shopifyDoc = JsonDocument.Parse(File.OpenRead(@"./shopify.json"));
         var code = generator.GenerateTypes(options, shopifyDoc);
         File.WriteAllText("../../../shopify.cs", code);
+    }
+
+    [TestMethod]
+    public void GenerateShopifyTypesWithInputs()
+    {
+        var options = new GraphQLTypeGeneratorOptions
+        {
+            NamespaceClient = "ShopifyInputs",
+            NamespaceTypes = "ShopifyInputs.Types",
+            ClientClassName = "ShopifyInputsClient",
+            ScalarTypeNameToDotNetTypeName = new Dictionary<string, string>
+                {
+                    { "UnsignedInt64", "ulong" },
+                    { "Money", "decimal" },
+                    { "Float", "decimal" },
+                    { "Decimal", "decimal" },
+                    { "DateTime", "DateTime" },
+                    { "Date", "DateOnly" },
+                    { "UtcOffset", "TimeSpan" },
+                    { "URL", "string" },
+                    { "HTML", "string" },
+                    { "JSON", "string" },
+                    { "FormattedString", "string" },
+                    { "ARN", "string" },
+                    { "StorefrontID", "string" },
+                    { "Color", "string" },
+                    { "BigInt", "long" },
+                    { "Scalar", "object" },
+                },
+            GraphQLTypeToTypeNameOverride = new Dictionary<(string, string), string>
+                {
+                    { ("ShopifyPaymentsDispute", "evidenceDueBy"), "DateTime" },
+                    { ("ShopifyPaymentsDispute", "evidenceSentOn"), "DateTime" },
+                    { ("ShopifyPaymentsDispute", "finalizedOn"), "DateTime" },
+                },
+            EnumMembersAsString = true,
+            GenerateInputObjects = true,
+        };
+
+        var generator = new GraphQLTypeGenerator();
+        var shopifyDoc = JsonDocument.Parse(File.OpenRead(@"./shopify.json"));
+        var code = generator.GenerateTypes(options, shopifyDoc);
+        File.WriteAllText("../../../shopify_inputs.cs", code);
     }
 
     [TestMethod]

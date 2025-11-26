@@ -30,7 +30,7 @@ public class GraphQLTypeGeneratorOptions
 
     /// <summary>
     /// Indicates whether enum members are generated as enum or string.
-    /// Defaults to false. 
+    /// Defaults to false.
     /// Enum types will still be generated regardless of this setting.
     /// </summary>
     public bool EnumMembersAsString { get; set; }
@@ -46,4 +46,9 @@ public class GraphQLTypeGeneratorOptions
     /// The type must inherit from GraphQLRequest.
     /// </summary>
     public Type GraphQLRequestType { get; set; }
+
+    /// <summary>
+    /// When set to true, classes will be generated for input objects
+    /// </summary>
+    public bool GenerateInputObjects { get; set; }
 }
