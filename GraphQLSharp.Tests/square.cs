@@ -93,6 +93,16 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `Address` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `Address` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class AddressFilter : GraphQLObject<AddressFilter>
+    {
+    }
+
+    ///<summary>
     ///Permissions: PAYMENTS_READ
     ///
     ///Additional details about Afterpay payments.
@@ -105,6 +115,16 @@ namespace Square.Types
         ///</summary>
         [Description("Email address on the buyer's Afterpay account.")]
         public string? emailAddress { get; set; }
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `AfterpayPaymentDetails` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `AfterpayPaymentDetails` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class AfterpayPaymentDetailsFilter : GraphQLObject<AfterpayPaymentDetailsFilter>
+    {
     }
 
     ///<summary>
@@ -137,6 +157,14 @@ namespace Square.Types
         public const string ARCHIVED_STATE_NOT_ARCHIVED = @"ARCHIVED_STATE_NOT_ARCHIVED";
         public const string ARCHIVED_STATE_ARCHIVED = @"ARCHIVED_STATE_ARCHIVED";
         public const string ARCHIVED_STATE_ALL = @"ARCHIVED_STATE_ALL";
+    }
+
+    ///<summary>
+    ///The query filter to return not archived (ARCHIVED_STATE_NOT_ARCHIVED), archived (ARCHIVED_STATE_ARCHIVED), or either type (ARCHIVED_STATE_ALL) of items.
+    ///</summary>
+    [Description("The query filter to return not archived (ARCHIVED_STATE_NOT_ARCHIVED), archived (ARCHIVED_STATE_ARCHIVED), or either type (ARCHIVED_STATE_ALL) of items.")]
+    public class ArchivedStateFilter : GraphQLObject<ArchivedStateFilter>
+    {
     }
 
     public enum AUTH_TARGET_TYPE
@@ -190,6 +218,16 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `BankAccountPaymentAccountOwnershipType` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `BankAccountPaymentAccountOwnershipType` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class BankAccountPaymentAccountOwnershipTypeFilter : GraphQLObject<BankAccountPaymentAccountOwnershipTypeFilter>
+    {
+    }
+
+    ///<summary>
     ///Permissions: PAYMENTS_READ
     ///
     ///ACH-specific details about `BANK_ACCOUNT` type payments with the `transferType` of `ACH`.
@@ -214,6 +252,16 @@ namespace Square.Types
         ///</summary>
         [Description("The routing number for the bank account.")]
         public string? routingNumber { get; set; }
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `BankAccountPaymentAchDetails` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `BankAccountPaymentAchDetails` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class BankAccountPaymentAchDetailsFilter : GraphQLObject<BankAccountPaymentAchDetailsFilter>
+    {
     }
 
     ///<summary>
@@ -276,6 +324,16 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `BankAccountPaymentDetails` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `BankAccountPaymentDetails` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class BankAccountPaymentDetailsFilter : GraphQLObject<BankAccountPaymentDetailsFilter>
+    {
+    }
+
+    ///<summary>
     ///The type of the bank transfer.
     ///</summary>
     [Description("The type of the bank transfer.")]
@@ -291,6 +349,16 @@ namespace Square.Types
         public const string ACH = @"ACH";
         public const string OPEN_BANKING = @"OPEN_BANKING";
         public const string UNKNOWN = @"UNKNOWN";
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `BankAccountPaymentTransferType` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `BankAccountPaymentTransferType` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class BankAccountPaymentTransferTypeFilter : GraphQLObject<BankAccountPaymentTransferTypeFilter>
+    {
     }
 
     ///<summary>
@@ -344,6 +412,98 @@ namespace Square.Types
         public const string OTHER = @"OTHER";
         public const string SAVINGS = @"SAVINGS";
         public const string UNKNOWN = @"UNKNOWN";
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `BankAccountType` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `BankAccountType` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class BankAccountTypeFilter : GraphQLObject<BankAccountTypeFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `Boolean` fields.
+    ///</summary>
+    [Description("Input type used to specify filters on `Boolean` fields.")]
+    public class BasicBooleanFilter : GraphQLObject<BasicBooleanFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `Currency` fields.
+    ///</summary>
+    [Description("Input type used to specify filters on `Currency` fields.")]
+    public class BasicCurrencyFilter : GraphQLObject<BasicCurrencyFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `DateTime` fields.
+    ///</summary>
+    [Description("Input type used to specify filters on `DateTime` fields.")]
+    public class BasicDateTimeFilter : GraphQLObject<BasicDateTimeFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `ID` fields.
+    ///</summary>
+    [Description("Input type used to specify filters on `ID` fields.")]
+    public class BasicIDFilter : GraphQLObject<BasicIDFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `ID` fields.
+    ///</summary>
+    [Description("Input type used to specify filters on `ID` fields.")]
+    public class BasicIDFilterInput : GraphQLObject<BasicIDFilterInput>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `Int` fields.
+    ///</summary>
+    [Description("Input type used to specify filters on `Int` fields.")]
+    public class BasicIntFilter : GraphQLObject<BasicIntFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `JsonSafeLong` fields.
+    ///</summary>
+    [Description("Input type used to specify filters on `JsonSafeLong` fields.")]
+    public class BasicJsonSafeLongFilter : GraphQLObject<BasicJsonSafeLongFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `Money` fields.
+    ///</summary>
+    [Description("Input type used to specify filters on `Money` fields.")]
+    public class BasicMoneyFilter : GraphQLObject<BasicMoneyFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `String` fields.
+    ///</summary>
+    [Description("Input type used to specify filters on `String` fields.")]
+    public class BasicStringFilter : GraphQLObject<BasicStringFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `Boolean` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `Boolean` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class BooleanFilter : GraphQLObject<BooleanFilter>
+    {
     }
 
     ///<summary>
@@ -405,6 +565,16 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `BuyNowPayLaterPaymentBrand` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `BuyNowPayLaterPaymentBrand` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class BuyNowPayLaterPaymentBrandFilter : GraphQLObject<BuyNowPayLaterPaymentBrandFilter>
+    {
+    }
+
+    ///<summary>
     ///Permissions: PAYMENTS_READ
     ///
     ///Additional details about a Buy Now Pay Later payment type.
@@ -429,6 +599,16 @@ namespace Square.Types
         ///</summary>
         [Description("Details about a Clearpay payment. These details are only populated if the `brand` is `CLEARPAY`.")]
         public ClearpayPaymentDetails? clearpayDetails { get; set; }
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `BuyNowPayLaterPaymentDetails` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `BuyNowPayLaterPaymentDetails` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class BuyNowPayLaterPaymentDetailsFilter : GraphQLObject<BuyNowPayLaterPaymentDetailsFilter>
+    {
     }
 
     ///<summary>
@@ -777,6 +957,36 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `CardBrand` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `CardBrand` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CardBrandFilter : GraphQLObject<CardBrandFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on elements of a `[CardBrand]` field.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on elements of a `[CardBrand]` field.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CardBrandListElementFilter : GraphQLObject<CardBrandListElementFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `[CardBrand]` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `[CardBrand]` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CardBrandListFilter : GraphQLObject<CardBrandListFilter>
+    {
+    }
+
+    ///<summary>
     ///Indicates the brand for a co-branded card.
     ///</summary>
     [Description("Indicates the brand for a co-branded card.")]
@@ -792,6 +1002,26 @@ namespace Square.Types
         public const string UNKNOWN = @"UNKNOWN";
         public const string AFTERPAY = @"AFTERPAY";
         public const string CLEARPAY = @"CLEARPAY";
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `CardCoBrand` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `CardCoBrand` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CardCoBrandFilter : GraphQLObject<CardCoBrandFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `Card` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `Card` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CardFilter : GraphQLObject<CardFilter>
+    {
     }
 
     ///<summary>
@@ -946,6 +1176,14 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///The filter to return CardOnFile.
+    ///</summary>
+    [Description("The filter to return CardOnFile.")]
+    public class CardOnFileFilter : GraphQLObject<CardOnFileFilter>
+    {
+    }
+
+    ///<summary>
     ///Permissions: PAYMENTS_READ
     ///
     ///Reflects the current status of a card payment. Contains only non-confidential information.
@@ -1066,6 +1304,16 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `CardPaymentDetailsAvsStatus` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `CardPaymentDetailsAvsStatus` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CardPaymentDetailsAvsStatusFilter : GraphQLObject<CardPaymentDetailsAvsStatusFilter>
+    {
+    }
+
+    ///<summary>
     ///Enumeration of possible status codes returned from a Card Verification Value (CVV) check.
     ///</summary>
     [Description("Enumeration of possible status codes returned from a Card Verification Value (CVV) check.")]
@@ -1081,6 +1329,16 @@ namespace Square.Types
         public const string CVV_ACCEPTED = @"CVV_ACCEPTED";
         public const string CVV_NOT_CHECKED = @"CVV_NOT_CHECKED";
         public const string CVV_REJECTED = @"CVV_REJECTED";
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `CardPaymentDetailsCvvStatus` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `CardPaymentDetailsCvvStatus` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CardPaymentDetailsCvvStatusFilter : GraphQLObject<CardPaymentDetailsCvvStatusFilter>
+    {
     }
 
     ///<summary>
@@ -1126,6 +1384,26 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `CardPaymentDetailsEntryMethod` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `CardPaymentDetailsEntryMethod` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CardPaymentDetailsEntryMethodFilter : GraphQLObject<CardPaymentDetailsEntryMethodFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `CardPaymentDetails` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `CardPaymentDetails` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CardPaymentDetailsFilter : GraphQLObject<CardPaymentDetailsFilter>
+    {
+    }
+
+    ///<summary>
     ///A card payment&apos;s current state.
     ///</summary>
     [Description("A card payment's current state.")]
@@ -1143,6 +1421,16 @@ namespace Square.Types
         public const string CAPTURED = @"CAPTURED";
         public const string FAILED = @"FAILED";
         public const string VOIDED = @"VOIDED";
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `CardPaymentDetailsStatus` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `CardPaymentDetailsStatus` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CardPaymentDetailsStatusFilter : GraphQLObject<CardPaymentDetailsStatusFilter>
+    {
     }
 
     ///<summary>
@@ -1168,6 +1456,16 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `CardPaymentDetailsVerificationMethod` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `CardPaymentDetailsVerificationMethod` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CardPaymentDetailsVerificationMethodFilter : GraphQLObject<CardPaymentDetailsVerificationMethodFilter>
+    {
+    }
+
+    ///<summary>
     ///Enumeration of possible card verification results for EMV payments.
     ///</summary>
     [Description("Enumeration of possible card verification results for EMV payments.")]
@@ -1183,6 +1481,16 @@ namespace Square.Types
         public const string FAILURE = @"FAILURE";
         public const string SUCCESS = @"SUCCESS";
         public const string UNKNOWN = @"UNKNOWN";
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `CardPaymentDetailsVerificationResult` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `CardPaymentDetailsVerificationResult` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CardPaymentDetailsVerificationResultFilter : GraphQLObject<CardPaymentDetailsVerificationResultFilter>
+    {
     }
 
     ///<summary>
@@ -1213,6 +1521,16 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `CardPaymentTimeline` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `CardPaymentTimeline` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CardPaymentTimelineFilter : GraphQLObject<CardPaymentTimelineFilter>
+    {
+    }
+
+    ///<summary>
     ///Indicates a card&apos;s prepaid type, such as `NOT_PREPAID` or `PREPAID`.
     ///</summary>
     [Description("Indicates a card's prepaid type, such as `NOT_PREPAID` or `PREPAID`.")]
@@ -1231,6 +1549,16 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `CardPrepaidType` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `CardPrepaidType` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CardPrepaidTypeFilter : GraphQLObject<CardPrepaidTypeFilter>
+    {
+    }
+
+    ///<summary>
     ///Indicates a card&apos;s type, such as `CREDIT` or `DEBIT`.
     ///</summary>
     [Description("Indicates a card's type, such as `CREDIT` or `DEBIT`.")]
@@ -1246,6 +1574,16 @@ namespace Square.Types
         public const string CREDIT = @"CREDIT";
         public const string DEBIT = @"DEBIT";
         public const string UNKNOWN_CARD_TYPE = @"UNKNOWN_CARD_TYPE";
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `CardType` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `CardType` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CardTypeFilter : GraphQLObject<CardTypeFilter>
+    {
     }
 
     ///<summary>
@@ -1276,6 +1614,16 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `CashAppPaymentDetails` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `CashAppPaymentDetails` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CashAppPaymentDetailsFilter : GraphQLObject<CashAppPaymentDetailsFilter>
+    {
+    }
+
+    ///<summary>
     ///Permissions: PAYMENTS_READ
     ///
     ///Stores details about a cash payment. Contains only non-confidential information. For more information, see
@@ -1296,6 +1644,56 @@ namespace Square.Types
         ///</summary>
         [Description("The amount of change due back to the buyer.\nThis read-only field is calculated from the `amountMoney` and `buyerSuppliedMoney` fields.")]
         public Money? changeBackMoney { get; set; }
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `CashPaymentDetails` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `CashPaymentDetails` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CashPaymentDetailsFilter : GraphQLObject<CashPaymentDetailsFilter>
+    {
+    }
+
+    ///<summary>
+    ///CatalogAttributeBasicStringFilter is used for filtering a query with a string attribute
+    ///</summary>
+    [Description("CatalogAttributeBasicStringFilter is used for filtering a query with a string attribute")]
+    public class CatalogAttributeBasicStringFilter : GraphQLObject<CatalogAttributeBasicStringFilter>
+    {
+    }
+
+    ///<summary>
+    ///CatalogAttributeListLengthFilter is used for filtering a query with a list attribute
+    ///</summary>
+    [Description("CatalogAttributeListLengthFilter is used for filtering a query with a list attribute")]
+    public class CatalogAttributeListLengthFilter : GraphQLObject<CatalogAttributeListLengthFilter>
+    {
+    }
+
+    ///<summary>
+    ///CatalogAttributeRangeFilter is used for filtering a query with an int attribute
+    ///</summary>
+    [Description("CatalogAttributeRangeFilter is used for filtering a query with an int attribute")]
+    public class CatalogAttributeRangeFilter : GraphQLObject<CatalogAttributeRangeFilter>
+    {
+    }
+
+    ///<summary>
+    ///CatalogAttributeSort is used for filtering the result in an item query
+    ///</summary>
+    [Description("CatalogAttributeSort is used for filtering the result in an item query")]
+    public class CatalogAttributeSort : GraphQLObject<CatalogAttributeSort>
+    {
+    }
+
+    ///<summary>
+    ///CatalogAttributeStringSetFilter is used for filtering a query with a string set or array attribute
+    ///</summary>
+    [Description("CatalogAttributeStringSetFilter is used for filtering a query with a string set or array attribute")]
+    public class CatalogAttributeStringSetFilter : GraphQLObject<CatalogAttributeStringSetFilter>
+    {
     }
 
     ///<summary>
@@ -1620,6 +2018,14 @@ namespace Square.Types
     {
         public const string SELLER_VISIBILITY_HIDDEN = @"SELLER_VISIBILITY_HIDDEN";
         public const string SELLER_VISIBILITY_READ_WRITE_VALUES = @"SELLER_VISIBILITY_READ_WRITE_VALUES";
+    }
+
+    ///<summary>
+    ///CatalogCustomAttributeFilter allows custom attribute query expressions for the item query
+    ///</summary>
+    [Description("CatalogCustomAttributeFilter allows custom attribute query expressions for the item query")]
+    public class CatalogCustomAttributeFilter : GraphQLObject<CatalogCustomAttributeFilter>
+    {
     }
 
     ///<summary>
@@ -2390,6 +2796,14 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Used for filtering results for Items of CatalogQueries
+    ///</summary>
+    [Description("Used for filtering results for Items of CatalogQueries")]
+    public class CatalogItemFilter : GraphQLObject<CatalogItemFilter>
+    {
+    }
+
+    ///<summary>
     ///Options to control the properties of a `CatalogModifierList` applied to a `CatalogItem` instance.
     ///Permissions: ITEMS_READ
     ///</summary>
@@ -2666,6 +3080,14 @@ namespace Square.Types
         public const string REGULAR = @"REGULAR";
         public const string GIFT_CARD = @"GIFT_CARD";
         public const string APPOINTMENTS_SERVICE = @"APPOINTMENTS_SERVICE";
+    }
+
+    ///<summary>
+    ///CatalogObjectTypeFilter is used for filtering a query with CatalogItemProductType
+    ///</summary>
+    [Description("CatalogObjectTypeFilter is used for filtering a query with CatalogItemProductType")]
+    public class CatalogItemProductTypeFilter : GraphQLObject<CatalogItemProductTypeFilter>
+    {
     }
 
     ///<summary>
@@ -3448,6 +3870,24 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///CatalogObjectFilter is used for querying catalog objects.
+    ///
+    ///There are rules on what filters can be set at a time.
+    ///1. IdFilter and CatalogObjectTypeFilter do not apply if type specific query such as ItemsForTax, ItemsForModifierList,
+    ///ItemsForItemOptions, or ItemVariationsForItemOptionValues is set.
+    ///2. Only 1 type specifc query can be set at a time.
+    ///3. Only one of the followings can exist
+    ///(a) set one type specific query
+    ///(b) set any combinations of &apos;text&apos;, &apos;prefix&apos;, &apos;exact&apos;, &apos;range&apos; together
+    ///(c) set &apos;set&apos; query
+    ///4. The rest of filters are logically AND together.s
+    ///</summary>
+    [Description("CatalogObjectFilter is used for querying catalog objects.\n\nThere are rules on what filters can be set at a time.\n1. IdFilter and CatalogObjectTypeFilter do not apply if type specific query such as ItemsForTax, ItemsForModifierList,\nItemsForItemOptions, or ItemVariationsForItemOptionValues is set.\n2. Only 1 type specifc query can be set at a time.\n3. Only one of the followings can exist\n(a) set one type specific query\n(b) set any combinations of 'text', 'prefix', 'exact', 'range' together\n(c) set 'set' query\n4. The rest of filters are logically AND together.s")]
+    public class CatalogObjectFilter : GraphQLObject<CatalogObjectFilter>
+    {
+    }
+
+    ///<summary>
     ///Possible types of CatalogObjects returned from the catalog, each
     ///containing type-specific properties in the `*_data` field corresponding to the specified object type.
     ///</summary>
@@ -3586,6 +4026,14 @@ namespace Square.Types
         public const string CUSTOM_ATTRIBUTE_DEFINITION = @"CUSTOM_ATTRIBUTE_DEFINITION";
         public const string QUICK_AMOUNTS_SETTINGS = @"QUICK_AMOUNTS_SETTINGS";
         public const string SUBSCRIPTION_PLAN = @"SUBSCRIPTION_PLAN";
+    }
+
+    ///<summary>
+    ///CatalogObjectTypeFilter is used for filtering a query with CatalogObjectType
+    ///</summary>
+    [Description("CatalogObjectTypeFilter is used for filtering a query with CatalogObjectType")]
+    public class CatalogObjectTypeFilter : GraphQLObject<CatalogObjectTypeFilter>
+    {
     }
 
     ///<summary>
@@ -4201,6 +4649,14 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///CatalogStringSetFilter is used for filtering a query with a string set or arrays
+    ///</summary>
+    [Description("CatalogStringSetFilter is used for filtering a query with a string set or arrays")]
+    public class CatalogStringSetFilter : GraphQLObject<CatalogStringSetFilter>
+    {
+    }
+
+    ///<summary>
     ///Describes a subscription plan.A subscription plan represents what you want to sell in a subscription model, and includes references to each of the associated subscription plan variations. 
     ///For more information, see [Subscription Plans and Variations](https://developer.squareup.com/docs/subscriptions-api/plans-and-variations).
     ///Permissions: ITEMS_READ
@@ -4618,6 +5074,16 @@ namespace Square.Types
         ///</summary>
         [Description("Email address on the buyer's Clearpay account.")]
         public string? emailAddress { get; set; }
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `ClearpayPaymentDetails` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `ClearpayPaymentDetails` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class ClearpayPaymentDetailsFilter : GraphQLObject<ClearpayPaymentDetailsFilter>
+    {
     }
 
     ///<summary>
@@ -7653,6 +8119,46 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `CountryCode` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `CountryCode` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CountryCodeFilter : GraphQLObject<CountryCodeFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `Country` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `Country` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CountryFilter : GraphQLObject<CountryFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on elements of a `[Country]` field.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on elements of a `[Country]` field.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CountryListElementFilter : GraphQLObject<CountryListElementFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `[Country]` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `[Country]` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CountryListFilter : GraphQLObject<CountryListFilter>
+    {
+    }
+
+    ///<summary>
     ///Indicates the associated currency for an amount of money.
     ///
     ///Values correspond to [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217).
@@ -9858,6 +10364,46 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `CurrencyCode` fields.
+    ///
+    ///Will be completely ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `CurrencyCode` fields.\n\nWill be completely ignored if passed as an empty object (or as `null`).")]
+    public class CurrencyCodeFilter : GraphQLObject<CurrencyCodeFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on elements of a `[CurrencyCode]` field.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on elements of a `[CurrencyCode]` field.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CurrencyCodeListElementFilter : GraphQLObject<CurrencyCodeListElementFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `[CurrencyCode]` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `[CurrencyCode]` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CurrencyCodeListFilter : GraphQLObject<CurrencyCodeListFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `Currency` fields.
+    ///
+    ///Will be completely ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `Currency` fields.\n\nWill be completely ignored if passed as an empty object (or as `null`).")]
+    public class CurrencyFilter : GraphQLObject<CurrencyFilter>
+    {
+    }
+
+    ///<summary>
     ///Indicates the associated currency for an amount of money.
     ///
     ///Values correspond to [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217).
@@ -10236,6 +10782,26 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on elements of a `[Currency]` field.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on elements of a `[Currency]` field.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CurrencyListElementFilter : GraphQLObject<CurrencyListElementFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `[Currency]` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `[Currency]` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class CurrencyListFilter : GraphQLObject<CurrencyListFilter>
+    {
+    }
+
+    ///<summary>
     ///References to Customers subgraph entities
     ///
     ///Permissions:CUSTOMERS_READ
@@ -10383,6 +10949,18 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///The filtering criteria for the query. A query can contain multiple filters in any combination.
+    ///Multiple filters are combined as `AND` statements.
+    ///
+    ///Note: Combining multiple filters as `OR` statements is not supported. Instead, send multiple single-filter
+    ///searches and join the result sets.
+    ///</summary>
+    [Description("The filtering criteria for the query. A query can contain multiple filters in any combination.\nMultiple filters are combined as `AND` statements.\n\nNote: Combining multiple filters as `OR` statements is not supported. Instead, send multiple single-filter\nsearches and join the result sets.")]
+    public class CustomerFilter : GraphQLObject<CustomerFilter>
+    {
+    }
+
+    ///<summary>
     ///Represents communication preferences for the customer profile.
     ///
     ///Permissions:CUSTOMERS_READ
@@ -10397,6 +10975,77 @@ namespace Square.Types
         ///</summary>
         [Description("Indicates whether the customer has unsubscribed from marketing campaign emails.\nA value of true means that the customer chose to opt out of email marketing from the current Square seller or from all Square sellers.\nThis value is read-only from the Customers API.")]
         public bool? emailUnsubscribed { get; set; }
+    }
+
+    ///<summary>
+    ///A filter to select customers based on exact matching of customer attributes
+    ///against a specified query.
+    ///</summary>
+    [Description("A filter to select customers based on exact matching of customer attributes\nagainst a specified query.")]
+    public class CustomerTextFilter : GraphQLObject<CustomerTextFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `Date` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `Date` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class DateFilter : GraphQLObject<DateFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `DateTime` fields.
+    ///
+    ///Will be completely ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `DateTime` fields.\n\nWill be completely ignored if passed as an empty object (or as `null`).")]
+    public class DateTimeFilter : GraphQLObject<DateTimeFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type offered when grouping on `DateTime` fields, representing the amount of offset
+    ///(positive or negative) to shift the `DateTime` boundaries of each grouping bucket.
+    ///
+    ///For example, when grouping by `WEEK`, you can shift by 24 hours to change
+    ///what day-of-week weeks are considered to start on.
+    ///</summary>
+    [Description("Input type offered when grouping on `DateTime` fields, representing the amount of offset\n(positive or negative) to shift the `DateTime` boundaries of each grouping bucket.\n\nFor example, when grouping by `WEEK`, you can shift by 24 hours to change\nwhat day-of-week weeks are considered to start on.")]
+    public class DateTimeGroupingOffset : GraphQLObject<DateTimeGroupingOffset>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on elements of a `[DateTime]` field.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on elements of a `[DateTime]` field.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class DateTimeListElementFilter : GraphQLObject<DateTimeListElementFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `[DateTime]` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `[DateTime]` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class DateTimeListFilter : GraphQLObject<DateTimeListFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on the time-of-day of `DateTime` fields.
+    ///
+    ///Will be completely ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on the time-of-day of `DateTime` fields.\n\nWill be completely ignored if passed as an empty object (or as `null`).")]
+    public class DateTimeTimeOfDayFilter : GraphQLObject<DateTimeTimeOfDayFilter>
+    {
     }
 
     ///<summary>
@@ -10516,6 +11165,16 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `DigitalWalletPaymentBrand` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `DigitalWalletPaymentBrand` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class DigitalWalletPaymentBrandFilter : GraphQLObject<DigitalWalletPaymentBrandFilter>
+    {
+    }
+
+    ///<summary>
     ///Permissions: PAYMENTS_READ
     ///
     ///Additional details about `WALLET` type payments. Contains only non-confidential information.
@@ -10543,6 +11202,16 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `DigitalWalletPaymentDetails` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `DigitalWalletPaymentDetails` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class DigitalWalletPaymentDetailsFilter : GraphQLObject<DigitalWalletPaymentDetailsFilter>
+    {
+    }
+
+    ///<summary>
     ///The status of a `WALLET` payment.
     ///</summary>
     [Description("The status of a `WALLET` payment.")]
@@ -10560,6 +11229,16 @@ namespace Square.Types
         public const string CAPTURED = @"CAPTURED";
         public const string FAILED = @"FAILED";
         public const string VOIDED = @"VOIDED";
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `DigitalWalletPaymentStatus` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `DigitalWalletPaymentStatus` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class DigitalWalletPaymentStatusFilter : GraphQLObject<DigitalWalletPaymentStatusFilter>
+    {
     }
 
     ///<summary>
@@ -10654,6 +11333,26 @@ namespace Square.Types
         public const string MILLIMETER = @"MILLIMETER";
         public const string NAUTICAL_MILE = @"NAUTICAL_MILE";
         public const string YARD = @"YARD";
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `Duration` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `Duration` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class DurationFilter : GraphQLObject<DurationFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `EmailAddress` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `EmailAddress` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class EmailAddressFilter : GraphQLObject<EmailAddressFilter>
+    {
     }
 
     ///<summary>
@@ -10773,6 +11472,26 @@ namespace Square.Types
         public const string PAYMENT_METHOD_ERROR = @"PAYMENT_METHOD_ERROR";
         public const string RATE_LIMIT_ERROR = @"RATE_LIMIT_ERROR";
         public const string REFUND_ERROR = @"REFUND_ERROR";
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on elements of a `[ErrorCategory]` field.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on elements of a `[ErrorCategory]` field.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class ErrorCategoryListElementFilter : GraphQLObject<ErrorCategoryListElementFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `[ErrorCategory]` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `[ErrorCategory]` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class ErrorCategoryListFilter : GraphQLObject<ErrorCategoryListFilter>
+    {
     }
 
     ///<summary>
@@ -11912,6 +12631,38 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on elements of a `[ErrorCode]` field.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on elements of a `[ErrorCode]` field.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class ErrorCodeListElementFilter : GraphQLObject<ErrorCodeListElementFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `[ErrorCode]` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `[ErrorCode]` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class ErrorCodeListFilter : GraphQLObject<ErrorCodeListFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on a `Error` object referenced directly
+    ///or transitively from a list field that has been configured to index each leaf field as
+    ///its own flattened list of values.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on a `Error` object referenced directly\nor transitively from a list field that has been configured to index each leaf field as\nits own flattened list of values.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class ErrorFieldsListFilter : GraphQLObject<ErrorFieldsListFilter>
+    {
+    }
+
+    ///<summary>
     ///Indicates which products matched by a CatalogPricingRule
     ///will be excluded if the pricing rule uses an exclude set.
     ///</summary>
@@ -11977,6 +12728,16 @@ namespace Square.Types
         ///</summary>
         [Description("The type of external payment the seller received.")]
         public ExternalPaymentType? type { get; set; }
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `ExternalPaymentDetails` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `ExternalPaymentDetails` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class ExternalPaymentDetailsFilter : GraphQLObject<ExternalPaymentDetailsFilter>
+    {
     }
 
     ///<summary>
@@ -12064,6 +12825,26 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `ExternalPaymentType` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `ExternalPaymentType` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class ExternalPaymentTypeFilter : GraphQLObject<ExternalPaymentTypeFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `Float` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `Float` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class FloatFilter : GraphQLObject<FloatFilter>
+    {
+    }
+
+    ///<summary>
     ///Latitude and longitude coordinates.
     ///</summary>
     [Description("Latitude and longitude coordinates.")]
@@ -12099,6 +12880,64 @@ namespace Square.Types
         ///</summary>
         [Description("Angular distance east or west of the Prime Meridian at Greenwich, UK, measured in degrees from -180 to +180.")]
         public double? longitude { get; set; }
+    }
+
+    ///<summary>
+    ///Input type used to specify distance filtering parameters on `GeoLocation` fields.
+    ///</summary>
+    [Description("Input type used to specify distance filtering parameters on `GeoLocation` fields.")]
+    public class GeoLocationDistanceFilter : GraphQLObject<GeoLocationDistanceFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `GeoLocation` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `GeoLocation` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class GeoLocationFilter : GraphQLObject<GeoLocationFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `ID` fields.
+    ///
+    ///Will be completely ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `ID` fields.\n\nWill be completely ignored if passed as an empty object (or as `null`).")]
+    public class IDFilter : GraphQLObject<IDFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on elements of a `[ID]` field.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on elements of a `[ID]` field.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class IDListElementFilter : GraphQLObject<IDListElementFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `[ID]` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `[ID]` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class IDListFilter : GraphQLObject<IDListFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `Int` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `Int` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class IntFilter : GraphQLObject<IntFilter>
+    {
     }
 
     ///<summary>
@@ -12426,6 +13265,14 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Used for filtering query inventoryChanges.
+    ///</summary>
+    [Description("Used for filtering query inventoryChanges.")]
+    public class InventoryChangeFilter : GraphQLObject<InventoryChangeFilter>
+    {
+    }
+
+    ///<summary>
     ///Indicates how the inventory change was applied to a tracked product quantity.
     ///</summary>
     [Description("Indicates how the inventory change was applied to a tracked product quantity.")]
@@ -12454,6 +13301,14 @@ namespace Square.Types
         public const string PHYSICAL_COUNT = @"PHYSICAL_COUNT";
         public const string ADJUSTMENT = @"ADJUSTMENT";
         public const string TRANSFER = @"TRANSFER";
+    }
+
+    ///<summary>
+    ///Used for filtering with InventoryChangeType.
+    ///</summary>
+    [Description("Used for filtering with InventoryChangeType.")]
+    public class InventoryChangeTypeFilter : GraphQLObject<InventoryChangeTypeFilter>
+    {
     }
 
     ///<summary>
@@ -12538,6 +13393,14 @@ namespace Square.Types
         [Description("Provides pagination-related information.")]
         [NonNull]
         public PageInfo? pageInfo { get; set; }
+    }
+
+    ///<summary>
+    ///Used for filtering query inventoryCounts.
+    ///</summary>
+    [Description("Used for filtering query inventoryCounts.")]
+    public class InventoryCountFilter : GraphQLObject<InventoryCountFilter>
+    {
     }
 
     ///<summary>
@@ -12755,6 +13618,14 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Used for filtering with InventoryState.
+    ///</summary>
+    [Description("Used for filtering with InventoryState.")]
+    public class InventoryStateFilter : GraphQLObject<InventoryStateFilter>
+    {
+    }
+
+    ///<summary>
     ///Represents the transfer of a quantity of product inventory at a
     ///particular time from one location to another.
     ///Permissions: INVENTORY_READ
@@ -12845,6 +13716,36 @@ namespace Square.Types
         ///</summary>
         [Description("The Team Member responsible for")]
         public TeamMember? teamMember { get; set; }
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `JsonSafeLong` fields.
+    ///
+    ///Will be completely ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `JsonSafeLong` fields.\n\nWill be completely ignored if passed as an empty object (or as `null`).")]
+    public class JsonSafeLongFilter : GraphQLObject<JsonSafeLongFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on elements of a `[JsonSafeLong]` field.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on elements of a `[JsonSafeLong]` field.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class JsonSafeLongListElementFilter : GraphQLObject<JsonSafeLongListElementFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `[JsonSafeLong]` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `[JsonSafeLong]` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class JsonSafeLongListFilter : GraphQLObject<JsonSafeLongListFilter>
+    {
     }
 
     ///<summary>
@@ -13105,6 +14006,16 @@ namespace Square.Types
     {
         public const string MOBILE = @"MOBILE";
         public const string PHYSICAL = @"PHYSICAL";
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `LongString` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `LongString` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class LongStringFilter : GraphQLObject<LongStringFilter>
+    {
     }
 
     ///<summary>
@@ -13680,6 +14591,14 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///The Merchant ID to filter with.
+    ///</summary>
+    [Description("The Merchant ID to filter with.")]
+    public class MerchantFilterInput : GraphQLObject<MerchantFilterInput>
+    {
+    }
+
+    ///<summary>
     ///The public capabilities a merchant might have.
     ///</summary>
     [Description("The public capabilities a merchant might have.")]
@@ -13819,6 +14738,28 @@ namespace Square.Types
         ///</summary>
         [Description("The type of currency in currency code.")]
         public Currency? currency { get; set; }
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on a `Money` object referenced directly
+    ///or transitively from a list field that has been configured to index each leaf field as
+    ///its own flattened list of values.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on a `Money` object referenced directly\nor transitively from a list field that has been configured to index each leaf field as\nits own flattened list of values.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class MoneyFieldsListFilter : GraphQLObject<MoneyFieldsListFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `Money` fields.
+    ///
+    ///Will be completely ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `Money` fields.\n\nWill be completely ignored if passed as an empty object (or as `null`).")]
+    public class MoneyFilter : GraphQLObject<MoneyFilter>
+    {
     }
 
     ///<summary>
@@ -15092,6 +16033,14 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///OrderFilter is used for filtering a query with Order
+    ///</summary>
+    [Description("OrderFilter is used for filtering a query with Order")]
+    public class OrderFilter : GraphQLObject<OrderFilter>
+    {
+    }
+
+    ///<summary>
     ///Contains details about how to fulfill this order.Orders can only be created with at most one fulfillment using the API.
     ///However, orders returned by the Orders API might contain multiple fulfillments because sellers can create multiple fulfillments using Square products such as Square Online.
     ///Permissions: ORDERS_READ
@@ -15378,6 +16327,14 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///OrderFulfillmentStateFilter is used for filtering a query with OrderFulfillmentState
+    ///</summary>
+    [Description("OrderFulfillmentStateFilter is used for filtering a query with OrderFulfillmentState")]
+    public class OrderFulfillmentStateFilter : GraphQLObject<OrderFulfillmentStateFilter>
+    {
+    }
+
+    ///<summary>
     ///The type of fulfillment.
     ///</summary>
     [Description("The type of fulfillment.")]
@@ -15405,6 +16362,14 @@ namespace Square.Types
         public const string DELIVERY = @"DELIVERY";
         public const string PICKUP = @"PICKUP";
         public const string SHIPMENT = @"SHIPMENT";
+    }
+
+    ///<summary>
+    ///OrderFulfillmentTypeFilter is used for filtering a query with OrderFulfillmentType
+    ///</summary>
+    [Description("OrderFulfillmentTypeFilter is used for filtering a query with OrderFulfillmentType")]
+    public class OrderFulfillmentTypeFilter : GraphQLObject<OrderFulfillmentTypeFilter>
+    {
     }
 
     ///<summary>
@@ -17851,6 +18816,14 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///OrderStateFilter is used for filtering a query with OrderState
+    ///</summary>
+    [Description("OrderStateFilter is used for filtering a query with OrderState")]
+    public class OrderStateFilter : GraphQLObject<OrderStateFilter>
+    {
+    }
+
+    ///<summary>
     ///Represents a tender (i.e., a method of payment) used in a Square transaction.
     ///</summary>
     [Description("Represents a tender (i.e., a method of payment) used in a Square transaction.")]
@@ -18397,6 +19370,26 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `PaymentApplicationDetailsExternalSquareProduct` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `PaymentApplicationDetailsExternalSquareProduct` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentApplicationDetailsExternalSquareProductFilter : GraphQLObject<PaymentApplicationDetailsExternalSquareProductFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `PaymentApplicationDetails` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `PaymentApplicationDetails` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentApplicationDetailsFilter : GraphQLObject<PaymentApplicationDetailsFilter>
+    {
+    }
+
+    ///<summary>
     ///Permissions: PAYMENTS_READ
     ///
     ///Represents an application processing fee.
@@ -18438,6 +19431,18 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on a `PaymentAppProcessingFee` object referenced directly
+    ///or transitively from a list field that has been configured to index each leaf field as
+    ///its own flattened list of values.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on a `PaymentAppProcessingFee` object referenced directly\nor transitively from a list field that has been configured to index each leaf field as\nits own flattened list of values.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentAppProcessingFeeFieldsListFilter : GraphQLObject<PaymentAppProcessingFeeFieldsListFilter>
+    {
+    }
+
+    ///<summary>
     ///The type of payment fee being applied.
     ///</summary>
     [Description("The type of payment fee being applied.")]
@@ -18451,6 +19456,26 @@ namespace Square.Types
     {
         public const string THIRD_PARTY_PAYMENT_FEE = @"THIRD_PARTY_PAYMENT_FEE";
         public const string THIRD_PARTY_REFUND_FEE = @"THIRD_PARTY_REFUND_FEE";
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on elements of a `[PaymentAppProcessingFeeType]` field.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on elements of a `[PaymentAppProcessingFeeType]` field.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentAppProcessingFeeTypeListElementFilter : GraphQLObject<PaymentAppProcessingFeeTypeListElementFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `[PaymentAppProcessingFeeType]` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `[PaymentAppProcessingFeeType]` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentAppProcessingFeeTypeListFilter : GraphQLObject<PaymentAppProcessingFeeTypeListFilter>
+    {
     }
 
     ///<summary>
@@ -18493,6 +19518,26 @@ namespace Square.Types
         public const string EDIT_DELAY_ACTION = @"EDIT_DELAY_ACTION";
         public const string EDIT_TIP_AMOUNT_DOWN = @"EDIT_TIP_AMOUNT_DOWN";
         public const string EDIT_TIP_AMOUNT_UP = @"EDIT_TIP_AMOUNT_UP";
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on elements of a `[PaymentCapability]` field.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on elements of a `[PaymentCapability]` field.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentCapabilityListElementFilter : GraphQLObject<PaymentCapabilityListElementFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `[PaymentCapability]` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `[PaymentCapability]` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentCapabilityListFilter : GraphQLObject<PaymentCapabilityListFilter>
+    {
     }
 
     ///<summary>
@@ -18545,6 +19590,16 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `PaymentDelayAction` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `PaymentDelayAction` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentDelayActionFilter : GraphQLObject<PaymentDelayActionFilter>
+    {
+    }
+
+    ///<summary>
     ///Permissions: PAYMENTS_READ
     ///
     ///Details about the device that took the payment.
@@ -18572,6 +19627,16 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `PaymentDeviceDetails` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `PaymentDeviceDetails` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentDeviceDetailsFilter : GraphQLObject<PaymentDeviceDetailsFilter>
+    {
+    }
+
+    ///<summary>
     ///Represents a specific `Payment` in the context of a `PaymentConnection`,
     ///providing access to both the `Payment` and a pagination `Cursor`.
     ///
@@ -18595,6 +19660,16 @@ namespace Square.Types
         ///</summary>
         [Description("The `Payment` of this edge.")]
         public Payment? node { get; set; }
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `Payment` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `Payment` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentFilter : GraphQLObject<PaymentFilter>
+    {
     }
 
     ///<summary>
@@ -18627,6 +19702,18 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on a `PaymentProcessingFee` object referenced directly
+    ///or transitively from a list field that has been configured to index each leaf field as
+    ///its own flattened list of values.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on a `PaymentProcessingFee` object referenced directly\nor transitively from a list field that has been configured to index each leaf field as\nits own flattened list of values.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentProcessingFeeFieldsListFilter : GraphQLObject<PaymentProcessingFeeFieldsListFilter>
+    {
+    }
+
+    ///<summary>
     ///The type of fee assessed or adjusted.
     ///</summary>
     [Description("The type of fee assessed or adjusted.")]
@@ -18648,6 +19735,26 @@ namespace Square.Types
     {
         public const string ADJUSTMENT = @"ADJUSTMENT";
         public const string INITIAL = @"INITIAL";
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on elements of a `[PaymentProcessingFeeType]` field.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on elements of a `[PaymentProcessingFeeType]` field.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentProcessingFeeTypeListElementFilter : GraphQLObject<PaymentProcessingFeeTypeListElementFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `[PaymentProcessingFeeType]` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `[PaymentProcessingFeeType]` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentProcessingFeeTypeListFilter : GraphQLObject<PaymentProcessingFeeTypeListFilter>
+    {
     }
 
     ///<summary>
@@ -18810,6 +19917,16 @@ namespace Square.Types
         ///</summary>
         [Description("The `PaymentRefund` of this edge.")]
         public PaymentRefund? node { get; set; }
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `PaymentRefund` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `PaymentRefund` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentRefundFilter : GraphQLObject<PaymentRefundFilter>
+    {
     }
 
     ///<summary>
@@ -19029,6 +20146,16 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `PaymentRefundStatus` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `PaymentRefundStatus` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentRefundStatusFilter : GraphQLObject<PaymentRefundStatusFilter>
+    {
+    }
+
+    ///<summary>
     ///Permissions: PAYMENTS_READ
     ///
     ///Represents fraud risk information for the associated payment.
@@ -19052,6 +20179,16 @@ namespace Square.Types
         ///</summary>
         [Description("The risk level associated with the payment.")]
         public PaymentRiskEvaluationRiskLevel? riskLevel { get; set; }
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `PaymentRiskEvaluation` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `PaymentRiskEvaluation` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentRiskEvaluationFilter : GraphQLObject<PaymentRiskEvaluationFilter>
+    {
     }
 
     ///<summary>
@@ -19088,6 +20225,16 @@ namespace Square.Types
         public const string MODERATE = @"MODERATE";
         public const string NORMAL = @"NORMAL";
         public const string PENDING = @"PENDING";
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `PaymentRiskEvaluationRiskLevel` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `PaymentRiskEvaluationRiskLevel` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentRiskEvaluationRiskLevelFilter : GraphQLObject<PaymentRiskEvaluationRiskLevelFilter>
+    {
     }
 
     ///<summary>
@@ -20152,6 +21299,16 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `PaymentSourceType` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `PaymentSourceType` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentSourceTypeFilter : GraphQLObject<PaymentSourceTypeFilter>
+    {
+    }
+
+    ///<summary>
     ///Indicates the current status of a `Payment` object.
     ///</summary>
     [Description("Indicates the current status of a `Payment` object.")]
@@ -20171,6 +21328,16 @@ namespace Square.Types
         public const string COMPLETED = @"COMPLETED";
         public const string FAILED = @"FAILED";
         public const string PENDING = @"PENDING";
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `PaymentStatus` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `PaymentStatus` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class PaymentStatusFilter : GraphQLObject<PaymentStatusFilter>
+    {
     }
 
     ///<summary>
@@ -20584,6 +21751,16 @@ namespace Square.Types
     }
 
     ///<summary>
+    ///Input type used to specify filters on `SquareAccountPaymentDetails` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `SquareAccountPaymentDetails` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class SquareAccountPaymentDetailsFilter : GraphQLObject<SquareAccountPaymentDetailsFilter>
+    {
+    }
+
+    ///<summary>
     ///An enumeration of Square products.
     ///</summary>
     [Description("An enumeration of Square products.")]
@@ -20617,6 +21794,36 @@ namespace Square.Types
         public const string READER_SDK = @"READER_SDK";
         public const string SQUARE_PROFILE = @"SQUARE_PROFILE";
         public const string SQUARE_LOCAL = @"SQUARE_LOCAL";
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `String` fields.
+    ///
+    ///Will be completely ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `String` fields.\n\nWill be completely ignored if passed as an empty object (or as `null`).")]
+    public class StringFilter : GraphQLObject<StringFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on elements of a `[String]` field.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on elements of a `[String]` field.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class StringListElementFilter : GraphQLObject<StringListElementFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `[String]` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `[String]` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class StringListFilter : GraphQLObject<StringListFilter>
+    {
     }
 
     ///<summary>
@@ -20885,6 +22092,38 @@ namespace Square.Types
         [Description("The Square-issued ID of the team member.")]
         [NonNull]
         public string? id { get; set; }
+    }
+
+    ///<summary>
+    ///Represents a generic time range. The start and end values are
+    ///represented in RFC 3339 format. Time ranges are customized to be
+    ///inclusive or exclusive based on the needs of a particular endpoint.
+    ///Refer to the relevant endpoint-specific documentation to determine
+    ///how time ranges are handled.
+    ///</summary>
+    [Description("Represents a generic time range. The start and end values are\nrepresented in RFC 3339 format. Time ranges are customized to be\ninclusive or exclusive based on the needs of a particular endpoint.\nRefer to the relevant endpoint-specific documentation to determine\nhow time ranges are handled.")]
+    public class TimeRangeFilter : GraphQLObject<TimeRangeFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `Untyped` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `Untyped` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class UntypedFilter : GraphQLObject<UntypedFilter>
+    {
+    }
+
+    ///<summary>
+    ///Input type used to specify filters on `Url` fields.
+    ///
+    ///Will be ignored if passed as an empty object (or as `null`).
+    ///</summary>
+    [Description("Input type used to specify filters on `Url` fields.\n\nWill be ignored if passed as an empty object (or as `null`).")]
+    public class UrlFilter : GraphQLObject<UrlFilter>
+    {
     }
 
     ///<summary>
