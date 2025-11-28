@@ -99,6 +99,7 @@ public class GraphQLTypeGenerator
                 { "Float", "double" },
                 { "Boolean", "bool" },
                 { "ID", "string" },
+                { "Scalar", "object" },
             };
 
 
