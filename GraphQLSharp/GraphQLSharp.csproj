@@ -4,7 +4,7 @@
 		<PackageProjectUrl>https://github.com/Wish-Org/GraphQLSharp</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/Wish-Org/GraphQLSharp</RepositoryUrl>
 		<Description>.NET Client for GraphQL - Modern and fast</Description>
-		<Version>2.17.0</Version>
+		<Version>2.18.0</Version>
 		<PackageTags>graphql;client;graphql-client;graphql-generator</PackageTags>
 		<Authors>Wish-Org</Authors>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
@@ -12,12 +12,12 @@
 
 		<!-- Ensure the XML doc file is generated -->
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
-		
+
 		<!-- This prevents the warning about missing XML documentation on public members -->
 		<NoWarn>$(NoWarn);1591</NoWarn>
 
 		<!-- Embed PDBs in DLL -->
-	    <DebugType>embedded</DebugType>
+		<DebugType>embedded</DebugType>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -26,7 +26,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Include="..\README.md" Pack="true" PackagePath="README.md" />
+		<None Include="..\README.md" Pack="true" PackagePath="README.md" />
 	</ItemGroup>
 
 
