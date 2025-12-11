@@ -1,3 +1,4 @@
+using System.Net;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text.Json;
@@ -46,7 +47,10 @@ public class GraphQLClient<TRequest, TOptions>
     where TRequest : GraphQLRequest
     where TOptions : class, IGraphQLClientOptions<TOptions, TRequest>
 {
-    private static readonly HttpClient _defaultHttpClient = new();
+    private static readonly HttpClient _defaultHttpClient = new(new SocketsHttpHandler
+    {
+        AutomaticDecompression = DecompressionMethods.All
+    });
 
     private static readonly ProductInfoHeaderValue _defaultUserAgent = new(typeof(GraphQLClient<TRequest, TOptions>).Assembly.GetName().Name!, typeof(GraphQLClient<TRequest, TOptions>).Assembly.GetName().Version!.ToString());
 
