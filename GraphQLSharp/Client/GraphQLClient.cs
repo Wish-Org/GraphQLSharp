@@ -50,7 +50,11 @@ public class GraphQLClient<TRequest, TOptions>
     private static readonly HttpClient _defaultHttpClient = new(new SocketsHttpHandler
     {
         AutomaticDecompression = DecompressionMethods.All
-    });
+    })
+    {
+        DefaultRequestVersion = HttpVersion.Version20,
+        DefaultVersionPolicy = HttpVersionPolicy.RequestVersionOrLower,
+    };
 
     private static readonly ProductInfoHeaderValue _defaultUserAgent = new(typeof(GraphQLClient<TRequest, TOptions>).Assembly.GetName().Name!, typeof(GraphQLClient<TRequest, TOptions>).Assembly.GetName().Version!.ToString());
 
