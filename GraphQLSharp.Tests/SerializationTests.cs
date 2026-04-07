@@ -75,7 +75,7 @@ public class SerializationTests
         string json = """
                 { 
                     "at": "invalid-date", 
-                    "atNullable": "invalid-date", 
+                    "atNullable": "invalid-date"
                 }
                 """;
         JsonSerializer.Deserialize<MyDateTimeObject>(json, Serializer.GetOptions());

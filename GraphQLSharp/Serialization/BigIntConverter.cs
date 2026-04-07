@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -15,13 +16,13 @@ public abstract class BigIntToStringConverter<T> : JsonConverter<T>
     public override T Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
         if (reader.TokenType == JsonTokenType.String)
-            return (T)Convert.ChangeType(reader.GetString(), typeof(T));
+            return (T)Convert.ChangeType(reader.GetString(), typeof(T), CultureInfo.InvariantCulture);
 
-        return JsonSerializer.Deserialize<T>(ref reader);
+        return _defaultConverter.Read(ref reader, typeToConvert, options);
     }
 
     public override void Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
     {
-        writer.WriteStringValue(value.ToString());
+        writer.WriteStringValue(((IFormattable)value).ToString(null, CultureInfo.InvariantCulture));
     }
 }

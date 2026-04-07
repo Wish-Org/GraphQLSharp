@@ -8,7 +8,7 @@ namespace GraphQLSharp;
 
 public static class Serializer
 {
-    private static readonly ConcurrentDictionary<(bool indent, bool serializeInt64ToString), JsonSerializerOptions> optionstoJsonOptions = new();
+    private static readonly ConcurrentDictionary<(bool indent, bool serializeInt64ToString), JsonSerializerOptions> _optionsToJsonOptions = new();
 
     static Serializer()
     {
@@ -39,7 +39,7 @@ public static class Serializer
 
     public static JsonSerializerOptions GetOptions(bool indent = false, bool serializeInt64ToString = true)
     {
-        return optionstoJsonOptions.GetOrAdd((indent, serializeInt64ToString), _ => CreateOptions(indent, serializeInt64ToString));
+        return _optionsToJsonOptions.GetOrAdd((indent, serializeInt64ToString), _ => CreateOptions(indent, serializeInt64ToString));
     }
 
     public static string Serialize(object obj, bool indent = false, bool serializeInt64ToString = true)
