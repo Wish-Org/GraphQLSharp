@@ -29,6 +29,7 @@ public class GraphQLClientOptions : IGraphQLClientOptions<GraphQLClientOptions, 
 
     /// <summary>
     /// An (optional) JSON serializer options to be used for serializing and deserializing GraphQL requests and responses.
+    /// If null, default options are used which include converters for DateTime, DateTimeOffset, enums and (u)int64 values.
     /// </summary>
     public JsonSerializerOptions JsonSerializerOptions { get; set; }
 
