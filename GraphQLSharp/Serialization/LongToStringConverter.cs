@@ -2,15 +2,15 @@ using System.Globalization;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-public class Int64ToStringConverter : BigIntToStringConverter<long>
+public class Int64ToStringConverter : LongToStringConverter<long>
 {
 }
 
-public class UInt64ToStringConverter : BigIntToStringConverter<ulong>
+public class UInt64ToStringConverter : LongToStringConverter<ulong>
 {
 }
 
-public abstract class BigIntToStringConverter<T> : JsonConverter<T>
+public abstract class LongToStringConverter<T> : JsonConverter<T>
 {
     private readonly static JsonConverter<T> _defaultConverter = (JsonConverter<T>)JsonSerializerOptions.Default.GetConverter(typeof(T));
     public override T Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
