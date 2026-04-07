@@ -8,7 +8,7 @@ namespace GraphQLSharp;
 
 public static class Serializer
 {
-    public static ConcurrentDictionary<(bool indent, bool serializeInt64ToString), JsonSerializerOptions> optionstoJsonOptions = new();
+    private static readonly ConcurrentDictionary<(bool indent, bool serializeInt64ToString), JsonSerializerOptions> optionstoJsonOptions = new();
 
     static Serializer()
     {

@@ -11,6 +11,7 @@ public class ULongConverter : BigIntConverter<ulong>
 
 public abstract class BigIntConverter<T> : JsonConverter<T>
 {
+    private readonly static JsonConverter<T> _defaultConverter = (JsonConverter<T>)JsonSerializerOptions.Default.GetConverter(typeof(T));
     public override T Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
         if (reader.TokenType == JsonTokenType.String)
