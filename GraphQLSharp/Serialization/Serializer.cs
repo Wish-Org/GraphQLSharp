@@ -19,11 +19,13 @@ public static class Serializer
         var options = new JsonSerializerOptions
         {
             NumberHandling = JsonNumberHandling.AllowReadingFromString,
-            Converters = { new JsonStringEnumConverter() },
+            Converters = {
+                new JsonStringEnumConverter(),
+                new SafeDateTimeConverter(),
+                new SafeDateTimeOffsetConverter()
+            },
             DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
         };
-        options.Converters.Add(new SafeDateTimeConverter());
-        options.Converters.Add(new SafeDateTimeOffsetConverter());
 
         if (serializeInt64ToString)
         {
