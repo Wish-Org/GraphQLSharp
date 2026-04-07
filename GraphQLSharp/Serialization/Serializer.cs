@@ -27,8 +27,8 @@ public static class Serializer
 
         if (serializeInt64ToString)
         {
-            options.Converters.Add(new LongConverter());
-            options.Converters.Add(new ULongConverter());
+            options.Converters.Add(new Int64ToStringConverter());
+            options.Converters.Add(new UInt64ToStringConverter());
         }
 
         if (indent)
