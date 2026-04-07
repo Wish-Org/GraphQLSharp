@@ -108,7 +108,7 @@ public class GraphQLClient<TRequest, TOptions>
             GraphQLResponse<T> res;
             try
             {
-                res = await httpResponseMsg.Content.ReadFromJsonAsync<GraphQLResponse<T>>(_options.JsonSerializerOptions ?? Serializer.Options, cancellationToken);
+                res = await httpResponseMsg.Content.ReadFromJsonAsync<GraphQLResponse<T>>(_options.JsonSerializerOptions ?? Serializer.GetOptions(), cancellationToken);
                 if (res == null)
                     throw new GraphQLException(request, httpResponse, $"Failed to deserialize null GraphQL response. Request: {request}");
             }
@@ -139,7 +139,7 @@ public class GraphQLClient<TRequest, TOptions>
         {
             Method = HttpMethod.Post,
             RequestUri = uri,
-            Content = JsonContent.Create(request, options: _options.JsonSerializerOptions ?? Serializer.Options),
+            Content = JsonContent.Create(request, options: _options.JsonSerializerOptions ?? Serializer.GetOptions()),
         };
 
         requestMessage.Headers.UserAgent.Add(_defaultUserAgent);

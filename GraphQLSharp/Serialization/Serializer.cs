@@ -1,5 +1,6 @@
 using System.Text.Json.Serialization;
 using System.Text.Json;
+using System.Collections.Concurrent;
 
 namespace GraphQLSharp;
 
@@ -7,44 +8,52 @@ namespace GraphQLSharp;
 
 public static class Serializer
 {
-    public static readonly JsonSerializerOptions Options;
-
-    public static readonly JsonSerializerOptions OptionsIndented;
+    public static ConcurrentDictionary<(bool indent, bool serializeInt64ToString), JsonSerializerOptions> optionstoJsonOptions = new();
 
     static Serializer()
     {
-        Options = new JsonSerializerOptions
+    }
+
+    public static JsonSerializerOptions CreateOptions(bool indent, bool serializeInt64ToString)
+    {
+        var options = new JsonSerializerOptions
         {
             NumberHandling = JsonNumberHandling.AllowReadingFromString,
             Converters = { new JsonStringEnumConverter() },
             DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
         };
-        Options.Converters.Add(new SafeDateTimeConverter());
-        Options.Converters.Add(new SafeDateTimeOffsetConverter());
+        options.Converters.Add(new SafeDateTimeConverter());
+        options.Converters.Add(new SafeDateTimeOffsetConverter());
 
-        OptionsIndented = new JsonSerializerOptions(Options)
+        if (serializeInt64ToString)
         {
-            WriteIndented = true
-        };
+            options.Converters.Add(new LongConverter());
+            options.Converters.Add(new ULongConverter());
+        }
+
+        if (indent)
+            options.WriteIndented = true;
+
+        return options;
     }
 
-    public static JsonSerializerOptions GetOptions(bool indent)
+    public static JsonSerializerOptions GetOptions(bool indent = false, bool serializeInt64ToString = true)
     {
-        return indent ? OptionsIndented : Options;
+        return optionstoJsonOptions.GetOrAdd((indent, serializeInt64ToString), _ => CreateOptions(indent, serializeInt64ToString));
     }
 
-    public static string Serialize(object obj, bool indent = false)
+    public static string Serialize(object obj, bool indent = false, bool serializeInt64ToString = true)
     {
-        return JsonSerializer.Serialize(obj, obj.GetType(), GetOptions(indent));
+        return JsonSerializer.Serialize(obj, obj.GetType(), GetOptions(indent, serializeInt64ToString));
     }
 
-    public static object? Deserialize(string json, Type type, bool indent = false)
+    public static object? Deserialize(string json, Type type, bool indent = false, bool serializeInt64ToString = true)
     {
-        return JsonSerializer.Deserialize(json, type, GetOptions(indent));
+        return JsonSerializer.Deserialize(json, type, GetOptions(indent, serializeInt64ToString));
     }
 
-    public static T? Deserialize<T>(string json, bool indent = false)
+    public static T? Deserialize<T>(string json, bool indent = false, bool serializeInt64ToString = true)
     {
-        return JsonSerializer.Deserialize<T>(json, GetOptions(indent));
+        return JsonSerializer.Deserialize<T>(json, GetOptions(indent, serializeInt64ToString));
     }
 }
