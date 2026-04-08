@@ -6,7 +6,7 @@ namespace GraphQLSharp.Tests;
 [TestClass]
 public class SerializationTests
 {
-    private class MyObject
+    private class MyDateTimeObject
     {
         public DateTime at { get; set; }
         public DateTime? atNullable { get; set; }
@@ -16,6 +16,13 @@ public class SerializationTests
         public DateTimeOffset? atOffsetNullable2 { get; set; }
     }
 
+    private class MyBigIntObject
+    {
+        public long longValue { get; set; }
+        public ulong ulongValue { get; set; }
+        public int intValue { get; set; }
+        public uint uintValue { get; set; }
+    }
 
     [TestMethod]
     public void DeserializeDateTimePropertyValid()
@@ -32,7 +39,7 @@ public class SerializationTests
                 }
                 """;
 
-        MyObject result = JsonSerializer.Deserialize<MyObject>(json, Serializer.Options);
+        MyDateTimeObject result = JsonSerializer.Deserialize<MyDateTimeObject>(json, Serializer.GetOptions());
         Assert.AreEqual(now, result.at);
         Assert.AreEqual(now, result.atNullable);
         Assert.AreEqual(nowOffset, result.atOffset);
@@ -52,7 +59,7 @@ public class SerializationTests
                     "atOffsetNullable2": null
                 }
                 """;
-        MyObject result = JsonSerializer.Deserialize<MyObject>(json, Serializer.Options);
+        MyDateTimeObject result = JsonSerializer.Deserialize<MyDateTimeObject>(json, Serializer.GetOptions());
         Assert.AreEqual(DateTime.MinValue, result.at);
         Assert.AreEqual(DateTime.MinValue, result.atNullable);
         Assert.IsNull(result.atNullable2);
@@ -68,9 +75,46 @@ public class SerializationTests
         string json = """
                 { 
                     "at": "invalid-date", 
-                    "atNullable": "invalid-date", 
+                    "atNullable": "invalid-date"
                 }
                 """;
-        JsonSerializer.Deserialize<MyObject>(json, Serializer.Options);
+        JsonSerializer.Deserialize<MyDateTimeObject>(json, Serializer.GetOptions());
+    }
+
+    [TestMethod]
+    public void DeserializeBigInt()
+    {
+        string json = $$"""
+                {
+                    "longValue": "9223372036854775807", 
+                    "ulongValue": "18446744073709551615",
+                    "intValue": 2147483647,
+                    "uintValue": 4294967295
+                }
+                """;
+
+        MyBigIntObject result = JsonSerializer.Deserialize<MyBigIntObject>(json, Serializer.GetOptions());
+        Assert.AreEqual(9223372036854775807, result.longValue);
+        Assert.AreEqual(18446744073709551615, result.ulongValue);
+        Assert.AreEqual(2147483647, result.intValue);
+        Assert.AreEqual(4294967295, result.uintValue);
+    }
+
+    [TestMethod]
+    public void SerializeBigInt()
+    {
+        var obj = new MyBigIntObject
+        {
+            longValue = 9223372036854775807,
+            ulongValue = 18446744073709551615,
+            intValue = 2147483647,
+            uintValue = 4294967295
+        };
+
+        string json = JsonSerializer.Serialize(obj, Serializer.GetOptions());
+        Assert.IsTrue(json.Contains(@"""longValue"":""9223372036854775807"""));
+        Assert.IsTrue(json.Contains(@"""ulongValue"":""18446744073709551615"""));
+        Assert.IsTrue(json.Contains(@"""intValue"":2147483647"));
+        Assert.IsTrue(json.Contains(@"""uintValue"":4294967295"));
     }
 }

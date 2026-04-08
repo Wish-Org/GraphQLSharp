@@ -228,9 +228,9 @@ public class GraphQLClientTests
         var response = await _client.ExecuteAsync(request);
         //response.data is JsonElement
         var myProducts = response.data.Value.GetProperty("myProducts")
-                                     .Deserialize<ProductConnection>(Serializer.Options);
+                                     .Deserialize<ProductConnection>(Serializer.GetOptions());
         var myOrders = response.data.Value.GetProperty("myOrders")
-                                     .Deserialize<OrderConnection>(Serializer.Options);
+                                     .Deserialize<OrderConnection>(Serializer.GetOptions());
         Assert.IsNotNull(myProducts.nodes.FirstOrDefault()?.title);
         Assert.IsNotNull(myOrders.nodes.FirstOrDefault()?.name);
     }

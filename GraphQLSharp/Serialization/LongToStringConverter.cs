@@ -1,0 +1,28 @@
+using System.Globalization;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+
+public class Int64ToStringConverter : LongToStringConverter<long>
+{
+}
+
+public class UInt64ToStringConverter : LongToStringConverter<ulong>
+{
+}
+
+public abstract class LongToStringConverter<T> : JsonConverter<T>
+{
+    private readonly static JsonConverter<T> _defaultConverter = (JsonConverter<T>)JsonSerializerOptions.Default.GetConverter(typeof(T));
+    public override T Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+    {
+        if (reader.TokenType == JsonTokenType.String)
+            return (T)Convert.ChangeType(reader.GetString(), typeof(T), CultureInfo.InvariantCulture);
+
+        return _defaultConverter.Read(ref reader, typeToConvert, options);
+    }
+
+    public override void Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+    {
+        writer.WriteStringValue(((IFormattable)value).ToString(null, CultureInfo.InvariantCulture));
+    }
+}
