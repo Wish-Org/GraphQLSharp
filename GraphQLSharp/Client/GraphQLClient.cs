@@ -91,8 +91,8 @@ public class GraphQLClient<TRequest, TOptions>
         HttpResponse httpResponse = null;
         try
         {
-            using HttpRequestMessage requestMessage = CreateHttpRequest(request);
             var httpClient = _options.HttpClient ?? _defaultHttpClient;
+            using HttpRequestMessage requestMessage = CreateHttpRequest(request, httpClient);
             using var httpResponseMsg = await httpClient.SendAsync(requestMessage, cancellationToken);
             //httpResponseMsg needs to disposed so we create a small copy of basic information
             httpResponse = new HttpResponse(httpResponseMsg);
@@ -131,7 +131,7 @@ public class GraphQLClient<TRequest, TOptions>
         }
     }
 
-    private HttpRequestMessage CreateHttpRequest(TRequest request)
+    private HttpRequestMessage CreateHttpRequest(TRequest request, HttpClient httpClient)
     {
         _ = request.query ?? throw new ArgumentNullException(nameof(request.query));
         var uri = _options.Uri ?? throw new ArgumentNullException($"{nameof(IGraphQLClientOptions<TOptions, TRequest>.Uri)} must a non-null URI.");
@@ -140,6 +140,8 @@ public class GraphQLClient<TRequest, TOptions>
             Method = HttpMethod.Post,
             RequestUri = uri,
             Content = JsonContent.Create(request, options: _options.JsonSerializerOptions ?? Serializer.GetOptions()),
+            Version = httpClient.DefaultRequestVersion,
+            VersionPolicy = httpClient.DefaultVersionPolicy,
         };
 
         requestMessage.Headers.UserAgent.Add(_defaultUserAgent);
