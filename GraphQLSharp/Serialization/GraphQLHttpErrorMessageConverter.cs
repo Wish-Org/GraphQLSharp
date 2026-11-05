@@ -3,27 +3,36 @@ using System.Text.Json.Serialization;
 
 namespace GraphQLSharp;
 
-internal sealed class GraphQLHttpErrorMessageConverter : JsonConverter<string>
+internal sealed class GraphQLHttpErrorMessageConverter : JsonConverter<List<string>>
 {
-    public override string Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+    public override List<string> Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
         if (reader.TokenType == JsonTokenType.String)
-            return reader.GetString();
+            return [reader.GetString()];
 
         using var document = JsonDocument.ParseValue(ref reader);
         var errors = document.RootElement;
         if (errors.ValueKind != JsonValueKind.Array)
             return null;
 
-        return string.Join("\n", errors.EnumerateArray()
-            .Where(error => error.ValueKind == JsonValueKind.Object
+        var messages = new List<string>();
+        foreach (var error in errors.EnumerateArray())
+        {
+            if (error.ValueKind == JsonValueKind.String)
+                messages.Add(error.GetString());
+            else if (error.ValueKind == JsonValueKind.Object
                 && error.TryGetProperty("message", out var message)
                 && message.ValueKind == JsonValueKind.String)
-            .Select(error => error.GetProperty("message").GetString()));
+                messages.Add(message.GetString());
+        }
+        return messages;
     }
 
-    public override void Write(Utf8JsonWriter writer, string value, JsonSerializerOptions options)
+    public override void Write(Utf8JsonWriter writer, List<string> value, JsonSerializerOptions options)
     {
-        writer.WriteStringValue(value);
+        writer.WriteStartArray();
+        foreach (var message in value)
+            writer.WriteStringValue(message);
+        writer.WriteEndArray();
     }
 }
