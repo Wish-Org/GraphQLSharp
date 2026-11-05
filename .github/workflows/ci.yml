@@ -10,6 +10,9 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
+        permissions:
+            contents: read # required by actions/checkout once permissions are set explicitly
+            id-token: write # enable GitHub OIDC token issuance for NuGet Trusted Publishing
 
         steps:
             - uses: actions/checkout@v4
@@ -31,6 +34,14 @@ jobs:
                   GRAPHQLSHARP_SHOP_TOKEN: ${{ secrets.GRAPHQLSHARP_SHOP_TOKEN }}
               run: dotnet test --no-restore --verbosity normal
 
+            # Exchange the GitHub OIDC token for a short-lived (1 hour) NuGet API key via Trusted Publishing
+            - name: NuGet login (OIDC -> temp API key)
+              if: github.event_name == 'workflow_dispatch' # Only runs when manually triggered for deployment
+              uses: NuGet/login@v1
+              id: nuget-login
+              with:
+                  user: BetterReports # nuget.org profile name, NOT email address
+
             - name: Publish to nuget
               if: github.event_name == 'workflow_dispatch' # Only runs when manually triggered for deployment
-              run: dotnet nuget push GraphQLSharp/bin/Release/*.nupkg  -s https://api.nuget.org/v3/index.json --skip-duplicate -k "${{ secrets.NUGET_API_KEY }}"
+              run: dotnet nuget push GraphQLSharp/bin/Release/*.nupkg -s https://api.nuget.org/v3/index.json --skip-duplicate -k "${{ steps.nuget-login.outputs.NUGET_API_KEY }}"
