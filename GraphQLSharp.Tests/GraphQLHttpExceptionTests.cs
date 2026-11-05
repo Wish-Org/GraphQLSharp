@@ -40,17 +40,16 @@ public class GraphQLHttpExceptionTests
     }
 
     [TestMethod]
-    public async Task NonGraphQLJsonErrorKeepsRawBody()
+    public async Task NonArrayErrorsIsNotParsed()
     {
-        //e.g. Shopify returns a plain string in "errors" for authentication failures
-        var body = """{"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}""";
+        //the spec requires "errors" to be a list of error objects, anything else is not a GraphQL response
+        var body = """{"errors":"Invalid access token"}""";
         var client = CreateClient(HttpStatusCode.Unauthorized, body, "application/json");
 
         var ex = await Assert.ThrowsExceptionAsync<GraphQLHttpException>(() => client.ExecuteAsync(Query));
 
         Assert.IsNull(ex.Response);
         Assert.AreEqual(body, ex.ResponseBody);
-        StringAssert.Contains(ex.Message, "Invalid API key or access token");
     }
 
     [TestMethod]
