@@ -10,5 +10,6 @@ public class GraphQLHttpError : IGraphQLObject
     [JsonIgnore]
     public HttpResponse HttpResponse { get; internal set; }
 
+    [JsonConverter(typeof(GraphQLHttpErrorMessageConverter))]
     public string errors { get; set; }
 }
