@@ -102,7 +102,12 @@ public class GraphQLClient<TRequest, TOptions>
             }
             catch (Exception httpEx)
             {
-                throw new GraphQLHttpException(request, httpResponse, httpEx);
+                var gqlHttpError = await httpResponseMsg.Content.ReadFromJsonAsync<GraphQLHttpError>(cancellationToken);
+                if (gqlHttpError == null)
+                    gqlHttpError = new GraphQLHttpError();
+                gqlHttpError.Request = request;
+                gqlHttpError.HttpResponse = httpResponse;
+                throw new GraphQLHttpException(gqlHttpError, httpEx);
             }
 
             GraphQLResponse<T> res;

@@ -2,10 +2,10 @@ namespace GraphQLSharp;
 
 public class GraphQLHttpException : GraphQLException
 {
-    public GraphQLHttpException(GraphQLRequest request, HttpResponse httpResponse, Exception ex)
-        : base(request, httpResponse, $"""
-                            GraphQL request failed with an HTTP error:
-                            Request: {request}
+    public GraphQLHttpException(GraphQLHttpError error, Exception ex)
+        : base(error.Request, error.HttpResponse, $"""
+                            GraphQL request failed with an HTTP error: {(error.errors != null ? $"{error.errors}" : "")}
+                            Request: {error.Request}
                         """, ex)
     {
     }
