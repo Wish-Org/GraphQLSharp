@@ -102,7 +102,8 @@ public class GraphQLClient<TRequest, TOptions>
             }
             catch (Exception httpEx)
             {
-                throw new GraphQLHttpException(request, httpResponse, httpEx);
+                var (responseBody, errorResponse) = await ReadErrorResponseAsync(request, httpResponse, httpResponseMsg.Content, cancellationToken);
+                throw new GraphQLHttpException(request, httpResponse, httpEx, responseBody, errorResponse);
             }
 
             GraphQLResponse<T> res;
@@ -128,6 +129,46 @@ public class GraphQLClient<TRequest, TOptions>
         catch (Exception ex) when (ex is not GraphQLException)
         {
             throw new GraphQLException(request, httpResponse, $"Unexpected GraphQL error: {request}", ex);
+        }
+    }
+
+    // Best effort: the body of a non-success response is only used to enrich GraphQLHttpException.
+    // Any failure here (I/O, cancellation, invalid JSON...) must not replace the HTTP error, which drives retries.
+    private async Task<(string responseBody, GraphQLResponse response)> ReadErrorResponseAsync(TRequest request, HttpResponse httpResponse, HttpContent content, CancellationToken cancellationToken)
+    {
+        string responseBody;
+        try
+        {
+            responseBody = await content.ReadAsStringAsync(cancellationToken);
+        }
+        catch
+        {
+            return (null, null);
+        }
+
+        if (string.IsNullOrWhiteSpace(responseBody))
+            return (null, null);
+
+        // Per the GraphQL over HTTP spec, a non-2xx body may come from an intermediary (proxy, gateway...)
+        // so it is only parsed when it is JSON, and only kept when it actually looks like a GraphQL response.
+        var mediaType = content.Headers.ContentType?.MediaType;
+        if (!string.Equals(mediaType, "application/json", StringComparison.OrdinalIgnoreCase) &&
+            !string.Equals(mediaType, "application/graphql-response+json", StringComparison.OrdinalIgnoreCase))
+            return (responseBody, null);
+
+        try
+        {
+            var response = JsonSerializer.Deserialize<GraphQLResponse>(responseBody, _options.JsonSerializerOptions ?? Serializer.GetOptions());
+            if (response?.errors == null && response?.data == null)
+                return (responseBody, null);
+
+            response.Request = request;
+            response.HttpResponse = httpResponse;
+            return (responseBody, response);
+        }
+        catch
+        {
+            return (responseBody, null);
         }
     }
 
