@@ -105,7 +105,8 @@ public class GraphQLClient<TRequest, TOptions>
                 GraphQLHttpError gqlHttpError = null;
                 try
                 {
-                    gqlHttpError = await httpResponseMsg.Content.ReadFromJsonAsync<GraphQLHttpError>(cancellationToken);
+                    gqlHttpError = await httpResponseMsg.Content.ReadFromJsonAsync<GraphQLHttpError>(_options.JsonSerializerOptions ?? Serializer.GetOptions(),
+                                                                                                     cancellationToken);
                 }
                 catch (Exception errorDetailsException) when (errorDetailsException is JsonException or InvalidOperationException)
                 {
