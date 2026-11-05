@@ -102,20 +102,7 @@ public class GraphQLClient<TRequest, TOptions>
             }
             catch (Exception httpEx)
             {
-                GraphQLHttpError gqlHttpError = null;
-                try
-                {
-                    gqlHttpError = await httpResponseMsg.Content.ReadFromJsonAsync<GraphQLHttpError>(_options.JsonSerializerOptions ?? Serializer.GetOptions(),
-                                                                                                     cancellationToken);
-                }
-                catch (Exception errorDetailsException) when (errorDetailsException is JsonException or InvalidOperationException)
-                {
-                    // Error details are optional; preserve the HTTP failure for callers and retries.
-                }
-                gqlHttpError ??= new GraphQLHttpError();
-                gqlHttpError.Request = request;
-                gqlHttpError.HttpResponse = httpResponse;
-                throw new GraphQLHttpException(gqlHttpError, httpEx);
+                throw new GraphQLHttpException(request, httpResponse, httpEx);
             }
 
             GraphQLResponse<T> res;
