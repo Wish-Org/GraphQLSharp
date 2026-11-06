@@ -205,12 +205,12 @@ public class GraphQLClientTests
                         title
                     }
                 }
-                myOrders: orders(first: $first)
+                myVariants: productVariants(first: $first)
                 {
                     nodes
                     {
                         id
-                        name
+                        title
                     }
                 }
             }
@@ -229,10 +229,10 @@ public class GraphQLClientTests
         //response.data is JsonElement
         var myProducts = response.data.Value.GetProperty("myProducts")
                                      .Deserialize<ProductConnection>(Serializer.GetOptions());
-        var myOrders = response.data.Value.GetProperty("myOrders")
-                                     .Deserialize<OrderConnection>(Serializer.GetOptions());
+        var myVariants = response.data.Value.GetProperty("myVariants")
+                                     .Deserialize<ProductVariantConnection>(Serializer.GetOptions());
         Assert.IsNotNull(myProducts.nodes.FirstOrDefault()?.title);
-        Assert.IsNotNull(myOrders.nodes.FirstOrDefault()?.name);
+        Assert.IsNotNull(myVariants.nodes.FirstOrDefault()?.title);
     }
 
     [TestMethod]
