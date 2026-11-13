@@ -18,6 +18,7 @@ public class ChainedInterceptorTests
             ConfigureHttpRequestHeaders = headers => headers.Add("X-Order", "options"),
             Interceptor = new ChainedInterceptor<GraphQLRequest, GraphQLClientOptions>(
                 new HeaderInterceptor(headers => headers.Add("X-Order", "inner")),
+                new HeaderInterceptor(headers => headers.Add("X-Order", "middle")),
                 new RetryInterceptor<GraphQLRequest, GraphQLClientOptions>(),
                 new HeaderInterceptor(headers => headers.Add("X-Order", "outer"))),
             HttpClient = new TestHttpClient(msg =>
@@ -35,7 +36,7 @@ public class ChainedInterceptorTests
 
         Assert.AreEqual(retry ? 2 : 1, attempts.Count);
         foreach (var headers in attempts)
-            CollectionAssert.AreEqual(new[] { "options", "outer", "inner" }, headers);
+            CollectionAssert.AreEqual(new[] { "options", "outer", "middle", "inner" }, headers);
     }
 
     private sealed class HeaderInterceptor(Action<HttpRequestHeaders> configureHeaders)
