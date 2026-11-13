@@ -19,15 +19,21 @@ public class ChainedInterceptor<TRequest, TOptions> : IInterceptor<TRequest, TOp
         this._interceptors = interceptors;
     }
 
-    public async Task<GraphQLResponse<TData>> InterceptRequestAsync<TData>(TRequest request, TOptions options, CancellationToken cancellationToken, Func<TRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync)
+    public async Task<GraphQLResponse<TData>> InterceptRequestAsync<TData>(TRequest request, TOptions options, CancellationToken cancellationToken, ExecuteRequestAsync<TRequest, TData> executeAsync)
     {
         foreach (var interceptor in _interceptors)
         {
             var capturedInterceptor = interceptor;
             var capturedExecuteAsync = executeAsync;
-            executeAsync = (req, ct) => capturedInterceptor.InterceptRequestAsync(req, options, ct, capturedExecuteAsync);
+            executeAsync = (req, configureHttpRequestHeaders, ct) => capturedInterceptor.InterceptRequestAsync(req, options, ct,
+                (innerRequest, configureInnerHttpRequestHeaders, innerCancellationToken) => capturedExecuteAsync(innerRequest, headers =>
+                {
+                    // Apply callbacks in request order, from outermost to innermost.
+                    configureHttpRequestHeaders?.Invoke(headers);
+                    configureInnerHttpRequestHeaders?.Invoke(headers);
+                }, innerCancellationToken));
         }
 
-        return await executeAsync(request, cancellationToken);
+        return await executeAsync(request, null, cancellationToken);
     }
 }

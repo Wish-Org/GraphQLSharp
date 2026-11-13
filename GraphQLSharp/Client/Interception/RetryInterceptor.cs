@@ -24,7 +24,7 @@ public class RetryInterceptor<TRequest, TOptions> : IInterceptor<TRequest, TOpti
         return _retryableStatusCodes.Contains(r.StatusCode);
     }
 
-    public async Task<GraphQLResponse<TData>> InterceptRequestAsync<TData>(TRequest request, TOptions options, CancellationToken cancellationToken, Func<TRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync)
+    public async Task<GraphQLResponse<TData>> InterceptRequestAsync<TData>(TRequest request, TOptions options, CancellationToken cancellationToken, ExecuteRequestAsync<TRequest, TData> executeAsync)
     {
         int tryCount = 0;
 
@@ -32,7 +32,7 @@ public class RetryInterceptor<TRequest, TOptions> : IInterceptor<TRequest, TOpti
         {
             try
             {
-                return await executeAsync(request, cancellationToken);
+                return await executeAsync(request, null, cancellationToken);
             }
             catch (GraphQLHttpException ex) when (ShouldRetry(ex.HttpResponse) && ++tryCount < MAX_TRIES)
             {
