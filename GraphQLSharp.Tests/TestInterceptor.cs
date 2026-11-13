@@ -11,10 +11,10 @@ public class TestInterceptor : IInterceptor<GraphQLRequest, GraphQLClientOptions
         _onAfterExecute = onAfterExecute;
     }
 
-    public async Task<GraphQLResponse<TData>> InterceptRequestAsync<TData>(GraphQLRequest request, GraphQLClientOptions options, CancellationToken cancellationToken, Func<GraphQLRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync)
+    public async Task<GraphQLResponse<TData>> InterceptRequestAsync<TData>(GraphQLRequest request, GraphQLClientOptions options, CancellationToken cancellationToken, ExecuteRequestAsync<GraphQLRequest, TData> executeAsync)
     {
         _onBeforeExecute?.Invoke();
-        var response = await executeAsync(request, cancellationToken);
+        var response = await executeAsync(request, null, cancellationToken);
         _onAfterExecute?.Invoke();
         return response;
     }

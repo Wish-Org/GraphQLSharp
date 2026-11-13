@@ -1,4 +1,12 @@
+using System.Net.Http.Headers;
+
 namespace GraphQLSharp;
+
+/// <summary>
+/// Executes the next step of the request pipeline.
+/// configureHttpRequestHeaders is optional and may be null.
+/// </summary>
+public delegate Task<GraphQLResponse<TData>> ExecuteRequestAsync<TRequest, TData>(TRequest request, Action<HttpRequestHeaders> configureHttpRequestHeaders, CancellationToken cancellationToken);
 
 /// <summary>
 /// Interface for intercepting GraphQL requests.
@@ -12,7 +20,7 @@ public interface IInterceptor<TRequest, TOptions> : IInterceptor
     Task<GraphQLResponse<TData>> InterceptRequestAsync<TData>(TRequest request,
                                                             TOptions options,
                                                             CancellationToken cancellationToken,
-                                                            Func<TRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync);
+                                                            ExecuteRequestAsync<TRequest, TData> executeAsync);
 }
 
 public interface IInterceptor

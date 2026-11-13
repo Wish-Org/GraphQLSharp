@@ -8,8 +8,8 @@ public class NoOpInterceptor<TRequest, TOptions> : IInterceptor<TRequest, TOptio
 
     private NoOpInterceptor() { }
 
-    public Task<GraphQLResponse<TData>> InterceptRequestAsync<TData>(TRequest request, TOptions options, CancellationToken cancellationToken, Func<TRequest, CancellationToken, Task<GraphQLResponse<TData>>> executeAsync)
+    public Task<GraphQLResponse<TData>> InterceptRequestAsync<TData>(TRequest request, TOptions options, CancellationToken cancellationToken, ExecuteRequestAsync<TRequest, TData> executeAsync)
     {
-        return executeAsync(request, cancellationToken);
+        return executeAsync(request, null, cancellationToken);
     }
 }
